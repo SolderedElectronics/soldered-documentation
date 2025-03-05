@@ -1,0 +1,39 @@
+/* src/components/quickLink.module.css */
+
+.quickLink {
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0;
+  padding-bottom: 0.2rem;
+  background-color: rgb(251, 251, 251);
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  filter: drop-shadow(0px 1px 1px #e2e2e2);
+}
+
+.quickLink:hover {
+  background-color: #f0f0f0;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: #23b9d6;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Dark mode: Apply filter to convert the color to #23B9D6 */
+[data-theme='dark'] .quickLink {
+  background-color: rgb(40, 44, 52);
+  filter: drop-shadow(0px 1px 1px #252525);
+}
+
+/* Dark mode: Apply filter to convert the color to #23B9D6 */
+[data-theme='dark'] .description {
+  color: rgb(227, 227, 227);
+}

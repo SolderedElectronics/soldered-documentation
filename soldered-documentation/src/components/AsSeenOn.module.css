@@ -1,0 +1,60 @@
+/* Wrapper styling */
+.asSeenOn {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Header styling */
+.header {
+  font-size: 1.3rem;
+  font-weight: regular;
+  margin-bottom: 20px;
+}
+
+/* Row container for logos */
+.logoRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual logo item */
+.logoItem {
+  flex: 1 1 calc(33.33% - 20px);
+  /* Default: 3 logos per row */
+  max-width: calc(33.33% - 20px);
+  text-align: center;
+}
+
+/* Logo image styling */
+.logoIcon {
+  width: 80px;
+  height: auto;
+}
+
+/* Light mode: Apply dark gray (#4A4A4A) to the logos */
+.logoIcon {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(50%) contrast(100%);
+}
+
+/* Dark mode: Apply light gray (#D3D3D3) to the logos */
+[data-theme='dark'] .logoIcon {
+  filter: brightness(0) saturate(100%) invert(83%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+/* Responsive: 2 logos per row on smaller screens */
+@media (max-width: 768px) {
+  .logoItem {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* Responsive: 1 logo per row on small screens */
+@media (max-width: 480px) {
+  .logoItem {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

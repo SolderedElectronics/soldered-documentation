@@ -1,0 +1,29 @@
+/* Flex container */
+.twoColumnLayout {
+    display: flex; /* Enable side-by-side layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 20px; /* Spacing between columns */
+    justify-content: space-between; /* Ensure even spacing */
+    align-items:center;
+  }
+  
+  /* Individual column styling */
+  .column {
+    flex: 1 1 50%; /* Each column takes up 50% of the available space */
+    max-width: 50%; /* Prevent columns from growing beyond 50% */
+    box-sizing: border-box; /* Include padding in size calculation */
+    padding: 10px;
+  }
+  
+  /* Responsive: Stack columns vertically on smaller screens */
+  @media (max-width: 768px) {
+    .twoColumnLayout {
+      flex-wrap: wrap; /* Allow wrapping */
+    }
+  
+    .column {
+      flex: 1 1 100%; /* Each column takes full width */
+      max-width: 100%;
+    }
+  }
+  

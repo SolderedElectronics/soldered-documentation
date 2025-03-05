@@ -1,0 +1,61 @@
+/* src/components/sectionTitle.module.css */
+
+.sectionTitle {
+    position: relative;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    font-weight: 700;
+    background-color: #5B2379;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 21px;
+    border-radius: var(--ifm-global-radius);
+    margin-bottom: 25px;
+}
+
+.sectionTitle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%) opacity(0.4) blur(1px);
+    /* Desaturate and reduce opacity */
+    mix-blend-mode:soft-light;
+    /* Adjust blend mode as desired */
+    z-index: 0;
+}
+
+.title {
+    position: relative;
+    color: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-left: 1em;
+}
+
+.indent {
+    display: inline-block;
+    width: 6px;
+    /* Thickness of the vertical line */
+    height: 1.2em;
+    /* Set a fixed height to ensure visibility */
+    background-color: #23b9d6;
+    margin-right: 0.5rem;
+    /* Spacing between the line and the text */
+}
+
+[data-theme='dark'] .sectionTitle {
+    background-color: #242424;
+    /* Light gray hover */
+}

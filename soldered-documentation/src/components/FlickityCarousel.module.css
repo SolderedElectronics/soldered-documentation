@@ -1,0 +1,69 @@
+.carousel {
+  background: transparent;
+  width: 100%;
+  margin: 2rem auto;
+  min-height: 350px;
+  font-family: "Source Code Pro", monospace;
+  background-color: white;
+}
+
+.carouselCell {
+  width: 66%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flickity-viewport {
+  min-height: 100%;
+}
+
+.imageWrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* ✅ Limits image height to 350px */
+  object-fit: contain; /* ✅ Ensures the entire image fits within the max height */
+}
+
+.caption {
+  margin-top: auto;
+  padding: 10px 0;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(61, 63, 66);
+}
+
+/* Flickity arrow styles override */
+.flickity-button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  opacity: 1;
+}
+
+.flickity-prev-next-button.previous {
+  left: 10px;
+  color: #5B2379;
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+  color: #5B2379;
+}
+
+.jumpersBackground {
+  background-color: rgb(153, 153, 153);
+  color: black;
+}

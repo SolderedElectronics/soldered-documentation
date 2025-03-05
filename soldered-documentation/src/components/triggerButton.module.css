@@ -1,0 +1,52 @@
+.selectWrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.innerDiv {
+  display: flex; /* Align arrow and button horizontally */
+  align-items: center; /* Vertically align arrow and button */
+  gap: 1rem; /* Add spacing between the arrow and the button */
+  width: 100%; /* Ensure it spans the container */
+}
+
+.triggerButton {
+  background-color: #23b9d6;
+  color: #ffffff;
+  font-family: source code pro, monospace;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%; /* Button adjusts to content size */
+  border: none;
+  box-shadow: 6px 6px 0px #5b2379;
+}
+
+.triggerButton:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 7px 7px 0px #5b2379;
+}
+
+.notifyArrow {
+  width: 80px; /* Adjust size as needed */
+  transform: rotate(0deg); /* Rotate arrow as needed */
+  display: block; /* Ensure the arrow remains visible */
+  padding-bottom: 40px;
+}
+
+/* Dark Mode Styling */
+[data-theme='dark'] .triggerButton {
+  background-color: #23b9d6;
+  color: rgb(227, 227, 227);
+  box-shadow: 6px 6px 0px #146A7B;
+}
+
+[data-theme='dark'] .triggerButton:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 7px 7px 0px #146A7B;
+}

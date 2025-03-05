@@ -1,0 +1,124 @@
+.functionDocumentation {
+  background-color: rgb(246, 248, 250);
+  /* Light gray background */
+  padding: 0;
+  margin-bottom: 20px;
+  border-radius: var(--ifm-global-radius);
+  filter: drop-shadow(0px 1px 1px #e2e2e2);
+  width: 100%;
+  box-sizing: border-box;
+  /* Include padding in the width calculation */
+}
+
+.headerSection {
+  background-color: #f6effa;
+  /* Slightly darker gray */
+  padding: 16px;
+  border-radius: var(--ifm-global-radius) var(--ifm-global-radius) 0 0;
+}
+
+.headerSection h3 {
+  color: #5b2379;
+  font-family: source code pro;
+  margin: 0;
+}
+
+.headerDivider {
+  height: 2px;
+  background-color: #5b2379;
+}
+
+.bodySection {
+  padding: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed;
+  /* Ensures columns respect their width constraints */
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  /* Align text to the left horizontally */
+  vertical-align: top;
+  /* Align text to the top vertically */
+}
+
+th {
+  background-color: #eee;
+}
+
+/* Ensure the third column takes at most 50% of the table's width */
+td:nth-child(3),
+th:nth-child(3) {
+  max-width: 50%;
+  width: 50%;
+  /* Default width for consistent behavior */
+  word-wrap: break-word;
+  /* Wrap long words to prevent overflow */
+  overflow-wrap: break-word;
+}
+
+/* Return Type Alignment */
+
+
+.returnType {
+  padding-left: 20px;
+  /* Add consistent tabbing for alignment */
+}
+
+.paramsText {
+  font-family: Source Code Pro, Monospace;
+  color: #878787;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-left: 3px;
+}
+
+/* Dark Mode Styling */
+[data-theme='dark'] .functionDocumentation {
+  background-color: #2b2b2b;
+  /* Dark gray background */
+  filter: drop-shadow(0px 1px 1px #1a1a1a);
+  /* Subtle shadow for dark mode */
+}
+ 
+[data-theme='dark'] .headerSection {
+  background-color: rgb(31, 34, 41);
+  /* Darker header background for contrast */
+}
+
+[data-theme='dark'] .headerSection h3 {
+  color: #23b9d6;
+  /* Bright blue for header text */
+}
+
+[data-theme='dark'] .headerDivider {
+  background-color: #23b9d6;
+  /* Bright blue for divider */
+}
+
+[data-theme='dark'] th {
+  background-color: #333;
+  /* Dark table header background */
+  color: #eee;
+  /* Light text color for readability */
+}
+
+[data-theme='dark'] td {
+  background-color: #2b2b2b;
+  /* Dark table cell background */
+  color: #e0e0e0;
+  /* Light text for readability */
+}
+
+[data-theme='dark'] .paramsText {
+  color: #b0b0b0;
+  /* Soft gray for parameter text */
+}

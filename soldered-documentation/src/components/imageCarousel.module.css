@@ -1,0 +1,54 @@
+.carouselContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .caption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: rgb(61, 63, 66);
+    text-align: center;
+  }
+  
+  .arrowLeft,
+  .arrowRight {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .arrowLeft {
+    left: 10px;
+    color: #5B2379;
+  }
+  
+  .arrowRight {
+    right: 10px;
+    color: #5B2379;
+  }
+  
+  [data-theme='dark'] .arrowLeft,
+  [data-theme='dark'] .arrowRight {
+    color: #23b9D6;
+  }
+  

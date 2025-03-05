@@ -1,0 +1,109 @@
+/* Container for the custom select */
+.selectContainer {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin-left: 20px;
+}
+
+/* The clickable button */
+.selectButton {
+    background-color: rgb(251, 251, 251);
+    color: #5b2379;
+    /* Purple text color */
+    font-size: 1rem;
+    padding: 5px 5px;
+    /* Add padding for a large button */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: source code pro, monospace;
+}
+
+/* Hover effect for the button */
+.selectButton:hover {
+    background-color: #eaecef;
+    /* Slightly darker gray */
+    border-color: #5b2379;
+    /* Purple border on hover */
+}
+
+.arrowDown {
+    display: inline-block;
+    width: 2rem;
+    /* Adjust size as needed */
+    height: 2rem;
+    /* Adjust size as needed */
+    background: var(--ifm-menu-link-sublist-icon) no-repeat center center;
+    background-size: 50%;
+    /* Adjust the size of the icon relative to the container */
+    filter: var(--ifm-menu-link-sublist-icon-filter);
+    /* Apply theme filter */
+    margin-left: 10px;
+    /* Space between text and arrow */
+    transform: rotate(180deg);
+    /* Rotate the icon 180 degrees */
+
+}
+
+
+/* Dropdown menu */
+.selectMenu {
+    position: absolute;
+    top: calc(100% + 5px);
+    /* Position the menu below the button */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 8px;
+    /* Rounded corners */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* Match button width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    z-index: 1000;
+    font-family: source code pro, monospace;
+}
+
+/* Dropdown options */
+.selectOption {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for options */
+.selectOption:hover {
+    background-color: #f8f9fa;
+    /* Light gray hover */
+}
+
+[data-theme='dark'] .selectButton {
+    color: #23B9D6;
+    background-color: #272729;
+    filter: drop-shadow(0px 1px 1px #252525);
+}
+
+[data-theme='dark'] .arrowDown {
+    color: #23B9D6;
+}
+
+[data-theme='dark'] .selectMenu {
+    background-color: #1B1B1D;
+    border: 1px solid #444950;
+}
+
+[data-theme='dark'] .selectOption:hover {
+    background-color: #353535;
+    /* Light gray hover */
+}

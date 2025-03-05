@@ -1,0 +1,24 @@
+/* src/components/centered_image.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image {
+  height: auto;
+  border-radius: 8px;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: rgb(61, 63, 66);
+}
+
+[data-theme='dark'] .caption {
+  color: rgb(227, 227, 227);
+}

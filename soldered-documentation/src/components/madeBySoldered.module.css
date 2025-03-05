@@ -1,0 +1,69 @@
+/* src/components/sectionTitle.module.css */
+
+.sectionTitle {
+    position: relative;
+    height: 160px; /* Allow height to adjust for additional content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #5B2379;
+    text-align: center;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: var(--ifm-global-radius);
+    font-size: 1.3rem;
+}
+
+.sectionTitle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%) opacity(0.4) blur(1px);
+    mix-blend-mode: luminosity;
+    z-index: 0;
+}
+
+.title {
+    position: relative;
+    color: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+.solderedElectronics {
+    margin-left: 0.2rem;
+    text-decoration: underline;
+    text-decoration-color: #23b9d6;
+}
+
+.visitUs {
+    position: relative;
+    z-index: 1;
+    margin-top: 0.1rem; /* Spacing from the text above */
+    font-size:0.8rem;
+    color: #ffffff;
+    font-family: source code pro, monospace;
+    text-decoration: none;
+}
+
+.visitUs:hover {
+    text-decoration: underline;
+    color: #23b9d6;
+}
+
+[data-theme='dark'] .sectionTitle {
+    background-color: #242424;
+}

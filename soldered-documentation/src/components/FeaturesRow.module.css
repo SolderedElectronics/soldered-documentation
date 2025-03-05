@@ -1,0 +1,60 @@
+.featuresRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.featureItem {
+    flex: 1 1 calc(33.33% - 20px);
+    /* Default: 3 items in a row */
+    max-width: calc(33.33% - 20px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.featureIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.featureTitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.featureDescription {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: justify;
+}
+
+/* Responsive: 2 items per row */
+@media (max-width: 768px) {
+    .featureItem {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Responsive: 1 item per row */
+@media (max-width: 480px) {
+    .featureItem {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Light mode: No filter needed as the image is already #5B2379 */
+.featureIcon {
+    filter: none;
+  }
+  
+  /* Dark mode: Apply filter to convert the color to #23B9D6 */
+  [data-theme='dark'] .featureIcon {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(21%) saturate(1982%) hue-rotate(167deg) brightness(95%) contrast(85%);
+  }
+  
