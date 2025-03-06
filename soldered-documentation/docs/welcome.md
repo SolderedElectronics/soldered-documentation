@@ -7,4 +7,8 @@ pagination_next: null
 pagination_prev: null
 ---
 
+import ProductsHero from '@site/src/components/ProductsHero';
+
+<ProductsHero />
+
 Welcome

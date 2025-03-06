@@ -15,13 +15,13 @@ import ErrorBox from '@site/src/components/error_box';
 import InfoBox from '@site/src/components/info_box';
 import WarningBox from '@site/src/components/warning_box';
 import SuccessBox from '@site/src/components/successbox';
-//import ProductTable from '@site/src/components/ProductTable';
-//import CenteredImage from '@site/src/components/centeredImage';
-//import ExpandableSection from '@site/src/components/ExpandableSection';
-//import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
-//import QuickLink from '@site/src/components/QuickLink';
-//import SectionTitle from '@site/src/components/SectionTitle';
-//import FunctionDocumentation from '@site/src/components/FunctionDocumentation';
+import ProductTable from '@site/src/components/ProductTable';
+import CenteredImage from '@site/src/components/centeredImage';
+import ExpandableSection from '@site/src/components/ExpandableSection';
+import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
+import QuickLink from '@site/src/components/QuickLink';
+import SectionTitle from '@site/src/components/SectionTitle';
+import FunctionDocumentation from '@site/src/components/FunctionDocumentation';
 //import YouTubeWithDescription from '@site/src/components/YouTubeWithDescription';
 //import FlickityCarousel from '@site/src/components/FlickityCarousel';
 
@@ -46,17 +46,17 @@ const MDXComponents = {
   mermaid: Mermaid,
 
   // Custom components
-  //ProductTable,
   ErrorBox,
   InfoBox,
   WarningBox,
   SuccessBox,
-  //CenteredImage,
-  //ExpandableSection,
-  //YouTubeEmbed,
-  //QuickLink,
-  //SectionTitle,
-  //FunctionDocumentation,
+  ProductTable,
+  CenteredImage,
+  ExpandableSection,
+  YouTubeEmbed,
+  QuickLink,
+  SectionTitle,
+  FunctionDocumentation,
   //YouTubeWithDescription,
   //FlickityCarousel,
 };
