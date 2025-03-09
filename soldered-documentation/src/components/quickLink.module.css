@@ -1,10 +1,9 @@
 /* src/components/quickLink.module.css */
 
 .quickLink {
-  display: block;
+  display: flex;
   padding: 1rem;
   margin: 1rem 0;
-  padding-bottom: 0.2rem;
   background-color: rgb(251, 251, 251);
   border-radius: 5px;
   text-decoration: none;
@@ -16,6 +15,26 @@
   background-color: #f0f0f0;
 }
 
+.imageContainer {
+  width: 20%;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.content {
+  width: 100%;
+}
+
+.contentWithImage {
+  width: 80%;
+}
+
 .title {
   font-size: 1.2rem;
   margin: 0 0 0.5rem 0;
@@ -25,15 +44,15 @@
 .description {
   font-size: 0.95rem;
   color: #666;
+  margin-bottom: 0.2rem;
 }
 
-/* Dark mode: Apply filter to convert the color to #23B9D6 */
+/* Dark mode styles */
 [data-theme='dark'] .quickLink {
   background-color: rgb(40, 44, 52);
   filter: drop-shadow(0px 1px 1px #252525);
 }
 
-/* Dark mode: Apply filter to convert the color to #23B9D6 */
 [data-theme='dark'] .description {
   color: rgb(227, 227, 227);
 }

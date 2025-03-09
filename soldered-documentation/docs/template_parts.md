@@ -86,7 +86,9 @@ void loop() {
 ## Expandable Section
 
 <ExpandableSection title="Click on this, and it will expand!">
+
 You can write markdown here!
+
 ```cpp
 // include the library code:
 #include <LiquidCrystal.h>
@@ -134,6 +136,17 @@ void loop() {
   title="Soldered Electronics GitHub" 
   description="Find libraries, hardware files and more"
   url="https://github.com/SolderedElectronics" 
+/>
+
+---
+
+## QuickLink with image
+
+<QuickLink 
+  title="1-channel relay board with easyC" 
+  description="Soldered webstore page for 1-channel relay board with easyC"
+  url="https://soldered.com/product/1-channel-relay-board-with-easyc/"
+  image="img/small_product_images/333021.jpg" 
 />
 
 ---

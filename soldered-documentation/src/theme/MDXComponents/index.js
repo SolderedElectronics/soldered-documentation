@@ -22,8 +22,7 @@ import YouTubeEmbed from '@site/src/components/YouTubeEmbed';
 import QuickLink from '@site/src/components/QuickLink';
 import SectionTitle from '@site/src/components/SectionTitle';
 import FunctionDocumentation from '@site/src/components/FunctionDocumentation';
-//import YouTubeWithDescription from '@site/src/components/YouTubeWithDescription';
-//import FlickityCarousel from '@site/src/components/FlickityCarousel';
+import FlickityCarousel from '@site/src/components/FlickityCarousel';
 
 const MDXComponents = {
   // Built-in Docusaurus components
@@ -57,8 +56,7 @@ const MDXComponents = {
   QuickLink,
   SectionTitle,
   FunctionDocumentation,
-  //YouTubeWithDescription,
-  //FlickityCarousel,
+  FlickityCarousel,
 };
 
 export default MDXComponents;

@@ -1,0 +1,166 @@
+---
+slug: /shtc3/hardware 
+title: Hardware details
+id: shtc3-hardware 
+hide_title: False
+---
+
+## Pinout
+
+<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+
+### Pin details
+
+| Pin Marking | Pin Name | Description                                     |
+| ----------- | -------- | ----------------------------------------------- |
+| **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
+| **GND**     | Ground   | Common ground for power and signals.            |
+| **SDA**     | Data     | I2C data line for communication.                |
+| **SCL**     | Clock    | I2C clock line for communication.               |
+
+<InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
+
+---
+
+## Qwiic (formerly easyC)  
+
+<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
+ 
+<InfoBox> This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+
+<QuickLink 
+  title="Qwiic (formerly easyC) details and specifications" 
+  description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
+  url="https://github.com/SolderedElectronics" 
+/>
+
+<ExpandableSection title="More info on EasyC/Qwiic">
+
+EasyC was our original name for this connector system, but we are **retiring it in favor of Qwiic**. Functionally, EasyC and Qwiic are the same—both use the **JST-SH 4-pin connector (1.00mm pitch)** and are fully compatible with **SparkFun Qwiic and Adafruit STEMMA QT**.  
+
+Find the mechanical drawing of the female connector [**here**](https://soldered.com/productdata/2018/07/Soldered_A1001-SR04_datasheet.pdf) and the male connector on the cable [**here**](https://soldered.com/productdata/2018/07/Soldered_A1001-H04_datasheet.pdf).
+
+The **4-pin EasyC/Qwiic cable** follows this **standard color coding**:  
+
+| Color      | Function            |
+| ---------- | ------------------- |
+| **Black**  | **GND** (Ground)    |
+| **Red**    | **3.3V** (Power)    |
+| **Blue**   | **SDA** (I2C Data)  |
+| **Yellow** | **SCL** (I2C Clock) |
+
+---
+
+EasyC/Qwiic is a **solder-free, plug-and-play connection system** designed for **I2C communication** between microcontroller boards, sensors, and actuators. With EasyC/Qwiic, you can **focus on coding and prototyping** without dealing with messy wiring or soldering. 
+- You can **chain multiple devices together** without extra wiring. This allows for **efficient expansion** of projects, such as IoT-enabled weather stations.  
+- The **polarized connectors** prevent incorrect connections, so you never mix up **SDA and SCL lines** or accidentally reverse a connection.  
+- Since EasyC/Qwiic is based on **I2C**, multiple sensors and modules can be **connected in parallel** to a single microcontroller, simplifying wiring for complex projects.  
+- Works with **any board that supports I2C**. If your board **doesn’t have an EasyC/Qwiic connector**, you can use an **adapter** to convert a standard I2C header into EasyC/Qwiic. 
+
+---
+
+<YouTubeEmbed videoId="fkst0veJaEw" width={520} />
+</ExpandableSection>
+
+---
+
+## Power consumption
+
+The SHTC3 is designed for low-power operation, making it ideal for IoT and battery-powered applications.  
+
+| Mode             | Current Consumption |
+| ---------------- | ------------------- |
+| Measurement Mode | ~478 µA             |
+| Idle Mode        | ~42 µA              |
+| Sleep Mode       | ~0.3 µA             |
+
+The sensor automatically enters sleep mode between measurements to minimize power usage.  
+
+---
+
+## Dimensions
+
+- **Board Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)  
+- **Header Pin Holes:** 1.5 mm  
+- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
+- Soldered boards are LEGO compatible! 🧱 
+
+---
+
+## Jumper Details
+
+This board contains hardware jumpers, see below for their locations and functions:
+
+<FlickityCarousel
+  images={[
+    { src: '/img/shtc3_jp1.png', alt: 'SHTC3 jumper 1', caption: 'JP1' },
+    { src: '/img/shtc3_jp2.png', alt: 'SHTC3 jumper 2', caption: 'JP2' },
+    { src: '/img/shtc3_jp3.png', alt: 'SHTC3 jumper 3', caption: 'JP3' },
+    { src: '/img/shtc3_jp4.png', alt: 'SHTC3 jumper 4', caption: 'JP4' },
+  ]}
+  jumpers={true}
+/>
+
+| Jumper  | Default State            | Function                                                                                                      |
+| ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                           |
+| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                         |
+| **JP3** | **NC** (Normally closed) | Connects **5V to the voltage regulator EN pin**—removing this **disables the regulator**.                     |
+| **JP4** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, connecting **5V directly to 3.3V** (⚠ use with caution). |
+
+---
+
+## Hardware repository
+
+<WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to recieve the hardware files.</WarningBox>
+
+### Repository contents  
+
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
+
+Below is an overview of the available files.  
+
+#### CAD files
+
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+
+The `PANEL` files are used internally for production.  
+
+#### Schematic
+
+The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from KiCad.
+
+#### BOM (Bill of Materials)
+
+The bill of materials (BOM) is provided in two formats:  
+
+- A **standard `.csv` table**, listing all components, part numbers, and values.  
+- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
+
+
+#### 3D files
+
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
+
+#### Gerber files 
+
+Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
+
+- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
+- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
+- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
+- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
+- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
+- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+
+These files are ready for fabrication and can be used in PCB manufacturing.
+
+#### Compliance  
+
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+
+- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
+- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
+- **Safety Instructions** – Safety guidelines and precautions in English and in German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  

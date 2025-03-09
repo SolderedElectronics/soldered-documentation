@@ -58,7 +58,7 @@ const config = {
     [
       '@docusaurus/plugin-ideal-image',
       {
-        quality: 70, // Adjust image quality (default is 75)
+        quality: 80, // Adjust image quality (default is 75)
         max: 1700, // Max resolution
         min: 400, // Min resolution
         steps: 2, // Number of sizes generated
@@ -74,7 +74,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'Welcome to the new and improved documentation page for Soldered products! Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="#">here</a>.',
+          'Welcome to the new and improved documentation page for Soldered products! <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://soldered.com/contact/">here</a></b>.',
         backgroundColor: '#6F3B8B',
         textColor: '#ffffff',
         isCloseable: false,
@@ -87,6 +87,7 @@ const config = {
       },
       image: 'img/soldered_docs_social_card.jpg',
       navbar: {
+        title: "Documentation",
         logo: {
           alt: 'Soldered Electronics',
           src: 'img/soldered_logo_white.svg',
@@ -102,7 +103,7 @@ const config = {
         ],
       },
       algolia: {
-        // TODO when docs are published, request API key
+        // TODO when docs are published, request API key so it can be implemented
         apiKey: 'YOUR_API_KEY',
         indexName: 'YOUR_INDEX_NAME',
         appId: 'YOUR_APP_ID',
