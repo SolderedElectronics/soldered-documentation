@@ -31,36 +31,8 @@ hide_title: False
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
   description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
-  url="https://github.com/SolderedElectronics" 
+  url="/qwiic" 
 />
-
-<ExpandableSection title="More info on EasyC/Qwiic">
-
-EasyC was our original name for this connector system, but we are **retiring it in favor of Qwiic**. Functionally, EasyC and Qwiic are the same—both use the **JST-SH 4-pin connector (1.00mm pitch)** and are fully compatible with **SparkFun Qwiic and Adafruit STEMMA QT**.  
-
-Find the mechanical drawing of the female connector [**here**](https://soldered.com/productdata/2018/07/Soldered_A1001-SR04_datasheet.pdf) and the male connector on the cable [**here**](https://soldered.com/productdata/2018/07/Soldered_A1001-H04_datasheet.pdf).
-
-The **4-pin EasyC/Qwiic cable** follows this **standard color coding**:  
-
-| Color      | Function            |
-| ---------- | ------------------- |
-| **Black**  | **GND** (Ground)    |
-| **Red**    | **3.3V** (Power)    |
-| **Blue**   | **SDA** (I2C Data)  |
-| **Yellow** | **SCL** (I2C Clock) |
-
----
-
-EasyC/Qwiic is a **solder-free, plug-and-play connection system** designed for **I2C communication** between microcontroller boards, sensors, and actuators. With EasyC/Qwiic, you can **focus on coding and prototyping** without dealing with messy wiring or soldering. 
-- You can **chain multiple devices together** without extra wiring. This allows for **efficient expansion** of projects, such as IoT-enabled weather stations.  
-- The **polarized connectors** prevent incorrect connections, so you never mix up **SDA and SCL lines** or accidentally reverse a connection.  
-- Since EasyC/Qwiic is based on **I2C**, multiple sensors and modules can be **connected in parallel** to a single microcontroller, simplifying wiring for complex projects.  
-- Works with **any board that supports I2C**. If your board **doesn’t have an EasyC/Qwiic connector**, you can use an **adapter** to convert a standard I2C header into EasyC/Qwiic. 
-
----
-
-<YouTubeEmbed videoId="fkst0veJaEw" width={520} />
-</ExpandableSection>
 
 ---
 
@@ -93,10 +65,10 @@ This board contains hardware jumpers, see below for their locations and function
 
 <FlickityCarousel
   images={[
-    { src: '/img/shtc3_jp1.png', alt: 'SHTC3 jumper 1', caption: 'JP1' },
-    { src: '/img/shtc3_jp2.png', alt: 'SHTC3 jumper 2', caption: 'JP2' },
-    { src: '/img/shtc3_jp3.png', alt: 'SHTC3 jumper 3', caption: 'JP3' },
-    { src: '/img/shtc3_jp4.png', alt: 'SHTC3 jumper 4', caption: 'JP4' },
+    { src: '/img/shtc3/shtc3_jp1.png', alt: 'SHTC3 jumper 1', caption: 'JP1' },
+    { src: '/img/shtc3/shtc3_jp2.png', alt: 'SHTC3 jumper 2', caption: 'JP2' },
+    { src: '/img/shtc3/shtc3_jp3.png', alt: 'SHTC3 jumper 3', caption: 'JP3' },
+    { src: '/img/shtc3/shtc3_jp4.png', alt: 'SHTC3 jumper 4', caption: 'JP4' },
   ]}
   jumpers={true}
 />

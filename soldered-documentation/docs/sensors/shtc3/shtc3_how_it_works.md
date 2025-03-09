@@ -7,7 +7,7 @@ hide_title: False
 
 SHTC3 is an integrated circuit by [**Sensirion**](https://sensirion.com/products/catalog/SHTC3). When using our board, you are essentially communicating with the onboard SHTC3 directly via **I2C communication**.
 
-<CenteredImage src="/img/shtc3_onboard.png" alt="SHTC3 sensor on board" caption="SHTC3 sensor on the board" width="400px" />
+<CenteredImage src="/img/shtc3/shtc3_onboard.png" alt="SHTC3 sensor on board" caption="SHTC3 sensor on the board" width="400px" />
 
 ---
 

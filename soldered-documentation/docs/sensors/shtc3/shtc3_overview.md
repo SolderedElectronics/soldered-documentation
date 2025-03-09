@@ -12,7 +12,9 @@ The **Temperature and humidity sensor SHTC3 breakout** is a high-precision digit
 
 <CenteredImage src="/img/shtc3/333032.jpg" alt="SHTC3 Temperature and Humidity Sensor" caption="SHTC3 Temperature and Humidity Sensor" />
 
-## Which Products Use This Documentation?
+---
+
+## Which products is this documentation for?
 
 <QuickLink 
   title="Temperature and humidity sensor SHTC3 breakout" 
@@ -41,7 +43,7 @@ The **Temperature and humidity sensor SHTC3 breakout** is a high-precision digit
 
 ---
 
-## Related products
+## You may also need
 
 <QuickLink 
   title="Qwiic cable" 

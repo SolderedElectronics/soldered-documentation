@@ -13,7 +13,7 @@ const FlickityCarouselInner = ({ images, options = { wrapAround: true }, jumpers
     if (typeof window !== 'undefined') {
       const Flickity = require('flickity');
       const imagesLoaded = require('imagesloaded');
-
+      
       if (carouselRef.current && !flickityInstance.current) {
         imagesLoaded(carouselRef.current, function() {
           console.log('Images loaded, initializing Flickity');
@@ -26,7 +26,7 @@ const FlickityCarouselInner = ({ images, options = { wrapAround: true }, jumpers
         });
       }
     }
-
+    
     return () => {
       if (flickityInstance.current) {
         flickityInstance.current.destroy();

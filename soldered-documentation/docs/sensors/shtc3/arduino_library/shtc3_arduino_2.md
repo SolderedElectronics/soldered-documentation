@@ -47,7 +47,7 @@ void setup()
 
 ## Sampling new measurements
 
-Before reading temperature or humidity, call `sample()` to request a new measurement from the sensor:
+Before reading temperature or humidity, call `sample()` to request a new measurement from the sensor.
 
 ```cpp
 shtcSensor.sample(); // Request new temperature and humidity readings
@@ -70,6 +70,7 @@ The available commands to send are as follows:
 | `SHTC3_READ`    | `0x7CA2` | Initiates a temperature-first measurement with clock stretching enabled.                                                       |
 | `SHTC3_READ_LP` | `0x6458` | Default, similar to `SHTC3_READ`, but after measuring, puts the SHTC3 in **low power mode**. Clock stretching remains enabled. |
 
+<WarningBox>**If you skip this function call, data read back from the sensor will be incorrect!** It's important to call `sample()`!</WarningBox>
 
 ---
 
@@ -160,3 +161,5 @@ void loop()
   description="Example file for using SHTC3 sensor with easyC/Qwiic/I2C"
   url="https://github.com/SolderedElectronics/Soldered-SHTC3-Temperature-Humidity-Sensor-Arduino-Library/blob/main/examples/TempAndHumidity/TempAndHumidity.ino" 
 />
+
+<!-- Add the example result here, add pictures -->

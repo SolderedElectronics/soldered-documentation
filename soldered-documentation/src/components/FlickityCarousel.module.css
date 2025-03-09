@@ -1,48 +1,67 @@
+.carouselContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .carousel {
   background: transparent;
   width: 100%;
   margin: 2rem auto;
-  min-height: 350px;
+  min-height: 100px; /* Reduced min-height */
   font-family: "Source Code Pro", monospace;
   background-color: white;
 }
 
 .carouselCell {
   width: 66%;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  border-radius: 8px;
+  justify-content: center; /* Changed to center for better vertical alignment */
   overflow: hidden;
 }
 
 .flickity-viewport {
-  min-height: 100%;
+  transition: height 0.3s ease; /* Smooth height transitions */
 }
 
 .imageWrapper {
-  width: 80%;
-  height: 100%;
+  width: 100%; /* Changed from 80% to 100% */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0;
 }
 
 .image {
-  width: 100%;
+  width: auto; /* Changed from 100% to auto */
   height: auto;
-  max-height: 400px; /* ✅ Limits image height to 350px */
-  object-fit: contain; /* ✅ Ensures the entire image fits within the max height */
+  max-width: 100%; /* Added max-width */
+  max-height: 400px;
+  object-fit: contain;
 }
 
 .caption {
-  margin-top: auto;
+  width: 100%; /* Full width captions */
   padding: 10px 0;
   font-size: 1rem;
   text-align: center;
   color: rgb(61, 63, 66);
+  background-color: white;
+  margin: 0; /* Reset margin */
+}
+
+/* Dark mode support */
+
+[data-theme='dark'] .caption {
+  background-color: rgb(27, 27, 29);
+  color: white;
+}
+
+/* Jumpers specific styling */
+.jumpersBackground {
+  background-color: rgb(153, 153, 153);
 }
 
 /* Flickity arrow styles override */
@@ -63,7 +82,23 @@
   color: #5B2379;
 }
 
-.jumpersBackground {
-  background-color: rgb(153, 153, 153);
-  color: black;
+[data-theme='dark'] .flickity-prev-next-button {
+  color: #9575cd; /* Purple color for dark mode */
+}
+
+/* Loading indicator */
+.loadingIndicator {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media queries for better responsiveness */
+@media (max-width: 768px) {
+  .carouselCell {
+    width: 90%; /* Wider cells on smaller screens */
+  }
+  
+  .imageWrapper {
+    width: 100%;
+  }
 }
