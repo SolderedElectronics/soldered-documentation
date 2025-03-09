@@ -9,23 +9,25 @@ pagination_prev: null
 
 ## Overview
 
-<CenteredImage src="/img/easyc-about.png" alt="Qwiic (formerly easyC demonstration)" width="350px" />
+<CenteredImage src="/img/easyc-about.png" alt="Qwiic (formerly easyC) demonstration" width="350px" />
 
-**Qwiic** is a **solder-free, plug-and-play connection system** designed for **I2C communication** between microcontroller boards, sensors, and actuators. With Qwiic, you can **focus on coding and prototyping** without dealing with messy wiring or soldering. 
-- You can **chain multiple devices together** without extra wiring. This allows for **efficient expansion** of projects, such as IoT-enabled weather stations.  
-- The **polarized connectors** prevent incorrect connections, so you never mix up **SDA and SCL lines** or accidentally reverse a connection.  
-- Since Qwiic/easyC is based on **I2C**, multiple sensors and modules can be **connected in parallel** to a single microcontroller, simplifying wiring for complex projects.  
-- Works with **any board that supports I2C** and has a Qwiic connector (all Dasduino boards). If your board **doesn’t have a Qwiic connector**, you can use an **adapter** to convert standard pin headers into a Qwiic cable.   
+**Qwiic** is a **solder-free, plug-and-play connection system** designed for **I2C communication** between microcontroller boards, sensors, and actuators. With Qwiic, you can **focus on coding and prototyping** without dealing with messy wiring or soldering.  
+- You can **chain multiple devices together** without extra wiring, allowing for **efficient expansion** of projects like IoT-enabled weather stations.  
+- The **polarized connectors** prevent incorrect connections, so you never mix up SDA and SCL lines or accidentally reverse a connection.  
+- Since Qwiic (formerly easyC) is based on **I2C**, multiple sensors and modules can be connected to a single microcontroller, simplifying wiring for complex projects.  
+- Works with **any board that supports I2C** and has a Qwiic connector (including all Dasduino boards). If your board **doesn’t have a Qwiic connector**, you can use an **adapter** to convert standard pin headers into a Qwiic cable.  
 
 ---
 
-## Name change
+## Name Change
 
-<InfoBox>**EasyC was our original name for our connector system, but we are retiring it in favor of Qwiic**. Functionally, easyC and Qwiic are the same. Both use the **JST-SH 4-pin connector (1.00mm pitch)** and are fully compatible with **SparkFun Qwiic and Adafruit STEMMA QT**.</InfoBox>
+<InfoBox>**EasyC was our original name for this connector system, but we are now transitioning to Qwiic.** Functionally, easyC and Qwiic are the same. Both use the **JST-SH 4-pin connector (1.00mm pitch)** and are fully compatible with **SparkFun Qwiic and Adafruit STEMMA QT**.</InfoBox>
 
-<InfoBox>Find the mechanical drawing of the female connector [**here**](https://soldered.com/productdata/2018/07/Soldered_A1001-SR04_datasheet.pdf) and the male connector on the cable [**here**](https://soldered.com/productdata/2018/07/Soldered_A1001-H04_datasheet.pdf).</InfoBox>
+---
 
-The **4-pin EasyC/Qwiic cable** follows this **standard color coding**:  
+## Hardware Details
+
+The **4-pin Qwiic cable** follows this **standard color coding**:  
 
 | Color      | Function            |
 | ---------- | ------------------- |
@@ -34,8 +36,25 @@ The **4-pin EasyC/Qwiic cable** follows this **standard color coding**:
 | **Blue**   | **SDA** (I2C Data)  |
 | **Yellow** | **SCL** (I2C Clock) |
 
+<CenteredImage src="/img/easyc_connector_closeup.jpg" alt="Qwiic (formerly easyC) cable closeup" width="350px" caption="Qwiic connector closeup" />
+
+<InfoBox>Find the mechanical drawing of the **female connector** [**here**](https://soldered.com/productdata/2018/07/Soldered_A1001-SR04_datasheet.pdf) and the **male connector** on the cable [**here**](https://soldered.com/productdata/2018/07/Soldered_A1001-H04_datasheet.pdf).</InfoBox>
+
 ---
 
-## Related video
+## Related Video
 
 <YouTubeEmbed videoId="fkst0veJaEw" width={520} />
+
+---
+
+## Related products
+
+<QuickLink 
+  title="Qwiic cable" 
+  description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
+  url="https://soldered.com/product/easyc-cable/"
+  image="/img/333311.webp" 
+/>  
+
+
