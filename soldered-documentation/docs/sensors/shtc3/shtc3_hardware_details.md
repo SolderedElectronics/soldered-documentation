@@ -9,7 +9,7 @@ hide_title: False
 
 <ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
-### Pin details
+## Pin details
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |
@@ -77,16 +77,14 @@ This board contains hardware jumpers, see below for their locations and function
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                           |
 | **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                         |
-| **JP3** | **NC** (Normally closed) | Connects **5V to the voltage regulator EN pin**—removing this **disables the regulator**.                     |
-| **JP4** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, connecting **5V directly to 3.3V** (⚠ use with caution). |
+| **JP3** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.          |
+| **JP4** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP3 is disconnected if JP4 is connected.** |
 
 ---
 
 ## Hardware repository
 
 <WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to recieve the hardware files.</WarningBox>
-
-### Repository contents  
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
