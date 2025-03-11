@@ -7,199 +7,208 @@
 /* =============================
    Root Theme Variables
    ============================= */
-   :root {
-    --ifm-color-primary: #5B2379;
-    --ifm-color-primary-dark: #421c61; /* Darker shade */
-    --ifm-color-primary-darker: #351550;
-    --ifm-color-primary-darkest: #290f40;
-    --ifm-color-primary-light: #86669E; /* Lighter shade */
-    --ifm-color-primary-lighter: #A892BA;
-    --ifm-color-primary-lightest: #D3C6DC;
-    --ifm-code-font-size: 95%;
-    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  }
-  
-  /* =============================
+:root {
+  --ifm-color-primary: #5B2379;
+  --ifm-color-primary-dark: #421c61;
+  /* Darker shade */
+  --ifm-color-primary-darker: #351550;
+  --ifm-color-primary-darkest: #290f40;
+  --ifm-color-primary-light: #86669E;
+  /* Lighter shade */
+  --ifm-color-primary-lighter: #A892BA;
+  --ifm-color-primary-lightest: #D3C6DC;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* =============================
      Dark Mode Variables
      ============================= */
-  [data-theme='dark'] {
-    --ifm-color-primary: #23b9d6;
-    --ifm-color-primary-dark: #1e9fb7;
-    --ifm-color-primary-darker: #1a8ba3;
-    --ifm-color-primary-darkest: #156c7f;
-    --ifm-color-primary-light: #4fc9de;
-    --ifm-color-primary-lighter: #79d9e6;
-    --ifm-color-primary-lightest: #a3e9ef;
-    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  }
-  
-  /* =============================
+[data-theme='dark'] {
+  --ifm-color-primary: #23b9d6;
+  --ifm-color-primary-dark: #1e9fb7;
+  --ifm-color-primary-darker: #1a8ba3;
+  --ifm-color-primary-darkest: #156c7f;
+  --ifm-color-primary-light: #4fc9de;
+  --ifm-color-primary-lighter: #79d9e6;
+  --ifm-color-primary-lightest: #a3e9ef;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* =============================
      Footer Styles
      ============================= */
-  [data-theme='dark'] .footer {
-    background-color: rgb(51, 51, 51) !important;
-  }
-  
-  [data-theme='dark'] .footer__title {
-    color: rgb(216, 216, 216);
-  }
-  
-  [data-theme='dark'] .footer__link-item {
-    color: #23b9d6;
-  }
-  
-  footer {
-    background-color: #f2f2f8 !important;
-  }
-  
-  .footer__title {
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-    color: #6d6d6d;
-    margin-bottom: 12px;
-  }
-  
-  .footer__link-item {
-    font-weight: 400;
-    color: #5b2379;
-  }
-  
-  .footer__copyright {
-    color: #6d6d6d;
-  }
-  
-  /* =============================
+[data-theme='dark'] .footer {
+  background-color: rgb(51, 51, 51) !important;
+}
+
+[data-theme='dark'] .footer__title {
+  color: rgb(216, 216, 216);
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: #23b9d6;
+}
+
+footer {
+  background-color: #f2f2f8 !important;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #6d6d6d;
+  margin-bottom: 12px;
+}
+
+.footer__link-item {
+  font-weight: 400;
+  color: #5b2379;
+}
+
+.footer__copyright {
+  color: #6d6d6d;
+}
+
+[data-theme='dark'] .footer__logo {
+  filter: brightness(0) invert(1);
+}
+
+
+
+/* =============================
      Navbar Styles
      ============================= */
-  .navbar {
-    background-color: #5B2379;
-  }
-  
-  [data-theme='dark'] .navbar {
-    background-color: #1f2229;
-  }
-  
-  /* Center logo in navbar */
-  .navbar-logo-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  /* Navbar button styles */
-  .navbar__items--right button {
-    color: white;
-  }
-  
-  .navbar__items--right button:hover {
-    background: #86669E;
-  }
-  
-  [data-theme='dark'] .navbar__items--right button:hover {
-    background: #4F5769;
-  }
+.navbar {
+  background-color: #5B2379;
+}
 
-  .navbar__title {
-    color: white;
-    margin-top: 6px;
-    font-size: 105%;
-  }
-  
-  /* =============================
+[data-theme='dark'] .navbar {
+  background-color: #1f2229;
+}
+
+/* Center logo in navbar */
+.navbar-logo-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Navbar button styles */
+.navbar__items--right button {
+  color: white;
+}
+
+.navbar__items--right button:hover {
+  background: #86669E;
+}
+
+[data-theme='dark'] .navbar__items--right button:hover {
+  background: #4F5769;
+}
+
+.navbar__title {
+  color: white;
+  margin-top: 6px;
+  font-size: 105%;
+}
+
+/* =============================
      Typography & Layout
      ============================= */
-  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&family=Source+Sans+3:wght@200..900&display=swap');
-  
-  body {
-    font-family: 'Source Sans 3', sans-serif;
-  }
-  
-  code, pre {
-    font-family: 'Source Code Pro', monospace;
-  }
-  
-  main {
-    line-height: 1.8; /* Improve readability */
-  }
-  
-  main > * {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  main h2 {
-    margin-top: 5px !important;
-  }
-  
-  /* =============================
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&family=Source+Sans+3:wght@200..900&display=swap');
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+code,
+pre {
+  font-family: 'Source Code Pro', monospace;
+}
+
+main {
+  line-height: 1.8;
+  /* Improve readability */
+}
+
+main>* {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  margin-top: 5px !important;
+}
+
+/* =============================
      Tables
      ============================= */
-  table {
-    display: table;
-    width: initial;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  
-  /* =============================
+table {
+  display: table;
+  width: initial;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* =============================
      Buttons
      ============================= */
-  .back-to-soldered-button {
-    background-color: #23b9d6;
-    color: #fff;
-    padding: 0.5rem 1.5rem;
-    margin-right: 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .back-to-soldered-button:hover {
-    background-color: rgb(19, 157, 184);
-    color: #fff !important;
-  }
-  
-  /* =============================
+.back-to-soldered-button {
+  background-color: #23b9d6;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin-right: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-soldered-button:hover {
+  background-color: rgb(19, 157, 184);
+  color: #fff !important;
+}
+
+/* =============================
      Search Styles
      ============================= */
-  [data-theme='light'] .DocSearch {
-    --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-    --docsearch-container-background: rgba(94, 100, 112, 0.7);
-    --docsearch-modal-background: var(--ifm-color-secondary-lighter);
-    --docsearch-searchbox-background: var(--ifm-color-secondary);
-    --docsearch-searchbox-focus-background: var(--ifm-color-white);
-    --docsearch-hit-color: var(--ifm-font-color-base);
-    --docsearch-hit-active-color: var(--ifm-color-white);
-    --docsearch-hit-background: var(--ifm-color-white);
-    --docsearch-footer-background: var(--ifm-color-white);
-    padding: 0.5rem 0.5rem;
-    font-family: 'Source Code Pro', sans-serif;
-  }
-  
-  [data-theme='dark'] .DocSearch {
-    --docsearch-container-background: rgba(47, 55, 69, 0.7);
-    --docsearch-modal-background: var(--ifm-background-color);
-    --docsearch-searchbox-background: var(--ifm-background-color);
-    --docsearch-searchbox-focus-background: var(--ifm-color-black);
-    --docsearch-hit-color: var(--ifm-font-color-base);
-    --docsearch-hit-active-color: var(--ifm-color-white);
-    --docsearch-hit-background: var(--ifm-color-emphasis-100);
-    --docsearch-footer-background: var(--ifm-background-surface-color);
-    --docsearch-key-gradient: linear-gradient(-26.5deg, var(--ifm-color-emphasis-200) 0%, var(--ifm-color-emphasis-100) 100%);
-    padding: 0.5rem 0.5rem;
-    font-family: 'Source Code Pro', sans-serif;
-  }
-  
-  /* =============================
+[data-theme='light'] .DocSearch {
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  --docsearch-footer-background: var(--ifm-color-white);
+  padding: 0.5rem 0.5rem;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  --docsearch-modal-background: var(--ifm-background-color);
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(-26.5deg, var(--ifm-color-emphasis-200) 0%, var(--ifm-color-emphasis-100) 100%);
+  padding: 0.5rem 0.5rem;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+/* =============================
      Miscellaneous Styles
      ============================= */
-  div[role=banner] {
-    border-bottom: 0px;
-  }
-  
-  [data-theme='dark'] div[role=banner] {
-    background-color: #393e4a !important;
-  }
-  
+div[role=banner] {
+  border-bottom: 0px;
+}
+
+[data-theme='dark'] div[role=banner] {
+  background-color: #393e4a !important;
+}

@@ -74,7 +74,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'Welcome to the new and improved documentation page for Soldered products! <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://soldered.com/contact/">here</a></b>.',
+          'Welcome to the new and improved documentation page for Soldered products! • <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://soldered.com/contact/">here</a></b>.',
         backgroundColor: '#6F3B8B',
         textColor: '#ffffff',
         isCloseable: false,
@@ -93,7 +93,9 @@ const config = {
           src: 'img/soldered_logo_white.svg',
         },
         items: [
+          /*
           { type: 'search', position: 'left' },
+           */
           {
             href: 'https://soldered.com',
             label: 'Back to Soldered.com',
@@ -109,11 +111,68 @@ const config = {
         appId: 'YOUR_APP_ID',
       },
       footer: {
-        style: 'dark',
         links: [
-          
+          {
+            title: 'About',
+            items: [
+              {
+                label: 'Homepage',
+                href: 'https://soldered.com/',
+              },
+              {
+                label: 'About Soldered Electronics',
+                href: 'https://soldered.com/about-us/',
+              },
+              {
+                label: 'Why Soldered products?',
+                href: 'https://soldered.com/why-soldered-products/',
+              },
+              {
+                label: 'Contact us',
+                href: 'https://soldered.com/contact/',
+              },
+            ],
+          },
+          {
+            title: 'Soldered Product Documentation',
+            items: [
+              {
+                label: 'Soldered Electronics GitHub',
+                href: 'https://github.com/SolderedElectronics',
+              },
+              {
+                label: 'Qwiic/easyC',
+                href: '/qwiic',
+              },
+            ],
+          },
+          {
+            title: 'Inkplate documentation',
+            items: [
+              {
+                label: 'Getting started with Inkplate',
+                href: 'https://docs.inkplate.com/',
+              },
+              {
+                label: 'Inkplate Arduino Library',
+                href: 'https://github.com/SolderedElectronics/Inkplate-Arduino-library',
+              },
+              {
+                label: 'Soldered Image Converter',
+                href: 'https://docs.inkplate.com/Inkplate-6MOTION/basics/image-converter',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Soldered. All rights reserved. Built with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Docusaurus <svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_node_modules-@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>`,      },
+        logo: {
+          alt: 'Soldered Electronics',
+          src: 'img/soldered_logo_purple.svg',
+          href: 'https://soldered.com/',
+          width: 160,
+          height: 51,
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} Soldered. All rights reserved. Built with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Docusaurus <svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_node_modules-@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>`
+      },
       prism: {
         theme: prismThemes.nightOwlLight,
         darkTheme: prismThemes.oceanicNext,

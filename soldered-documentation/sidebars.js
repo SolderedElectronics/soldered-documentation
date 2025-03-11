@@ -25,7 +25,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'General Information',
-      // Qwiic (ex. easyC)
       // CH340 drivers
       // Soldered board dimensions (LEGO compatible)
       // ...
@@ -34,16 +33,6 @@ const sidebars = {
         {
           type: 'doc',
           id: 'misc/qwiic'
-        }
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Inkplate',
-      items: [
-        {
-          type: 'doc',
-          id: 'under-construction'
         }
       ]
     },
@@ -92,16 +81,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Actuators',
-      items: [
-        {
-          type: 'doc',
-          id: 'under-construction'
-        }
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Communication',
       items: [
         {
           type: 'doc',
