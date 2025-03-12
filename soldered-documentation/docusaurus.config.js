@@ -93,9 +93,7 @@ const config = {
           src: 'img/soldered_logo_white.svg',
         },
         items: [
-          /*
           { type: 'search', position: 'left' },
-           */
           {
             href: 'https://soldered.com',
             label: 'Back to Soldered.com',

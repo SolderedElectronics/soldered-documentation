@@ -27,14 +27,12 @@ const sidebars = {
       label: 'General Information',
       // CH340 drivers
       // Soldered board dimensions (LEGO compatible)
-      // ...
-      // 
       items: [
         {
           type: 'doc',
-          id: 'misc/qwiic'
-        }
-      ]
+          id: 'misc/qwiic',
+        },
+      ],
     },
     {
       type: 'category',
@@ -76,20 +74,68 @@ const sidebars = {
             },
           ],
         },
-      ]
+      ],
     },
     {
       type: 'category',
       label: 'Actuators',
       items: [
         {
-          type: 'doc',
-          id: 'under-construction'
-        }
-      ]
+          type: 'category',
+          label: 'Basic Stepper Driver',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/stepper-motor-driver/stepper-motor-driver-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/stepper-motor-driver/stepper-motor-driver-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/stepper-motor-driver/stepper-motor-driver-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-1'
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-2'
+                },
+              ],
+            },
+            // Uncomment and update the following sections if needed
+            /*
+            {
+              type: 'doc',
+              id: 'sensors/basic-stepper-driver/hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/basic-stepper-driver/how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/basic-stepper-driver/arduino_library/stepper-arduino-1',
+                },
+              ],
+            },
+            */
+          ],
+        },
+      ],
     },
   ],
-
 };
 
 export default sidebars;
