@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'APDS-9960 Color and Gesture Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/apds-9960/apds-9960-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/apds-9960/apds-9960-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/apds-9960/apds-9960-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/apds-9960/arduino_library/apds-9960-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/apds-9960/arduino_library/apds-9960-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/apds-9960/arduino_library/apds-9960-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'SHTC3 Temperature and Humidity Sensor',
           items: [
             {
