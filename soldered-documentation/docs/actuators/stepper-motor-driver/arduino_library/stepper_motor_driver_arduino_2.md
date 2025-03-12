@@ -170,36 +170,18 @@ while (stepper.run()); // Run until the target position is reached
 
 ---
 
-## Changing direction
+## Full examples
 
-To change direction, use a **negative motor speed**:
+Try these full working examples from the library:
 
-```cpp
-// Include the library
-#include "Basic-Stepper-Driver-SOLDERED.h"
+<QuickLink 
+  title="ConstantSpeed.ino" 
+  description="Run the motor at constant speed"
+  url="https://github.com/SolderedElectronics/Soldered-Basic-Stepper-Driver-Arduino-Library/blob/main/examples/ConstantSpeed/ConstantSpeed.ino" 
+/>
 
-// Create a bipolar stepper on pins 2, 3, 4, 5
-BasicStepper stepper(BasicStepper::FULL4WIRE, 2, 3, 4, 5);
-
-// Setup code, runs only once
-void setup()
-{
-  stepper.setMaxSpeed(500);  // Set maximum speed (steps per second)
-  stepper.setAcceleration(100); // Set acceleration (steps per second²)
-  stepper.setSpeed(200); // Set initial speed
-}
-
-// Loop runs continuously
-void loop()
-{
-  // Move to absolute position 1024
-  stepper.moveTo(1024);
-  while (stepper.run()) {} // Wait until movement is complete
-  delay(1000); // 1-second delay
-
-  // Move back to absolute position 0
-  stepper.moveTo(0);
-  while (stepper.run()) {} // Wait until movement is complete
-  delay(1000); // 1-second delay
-}
-```
+<QuickLink 
+  title="Blocking.ino" 
+  description="Place the motor in certain positions"
+  url="https://github.com/SolderedElectronics/Soldered-Basic-Stepper-Driver-Arduino-Library/blob/main/examples/Blocking/Blocking.ino" 
+/>

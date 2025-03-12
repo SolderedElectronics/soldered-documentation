@@ -1,7 +1,7 @@
 ---
-slug: /basic-stepper-driver/arduino/troubleshooting
+slug: /stepper-motor-driver/arduino/troubleshooting
 title: Troubleshooting
-id: stepper-arduino-3
+id: stepper-motor-driver-arduino-3
 hide_title: False
 pagination_next: null
 ---

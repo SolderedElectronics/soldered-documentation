@@ -108,29 +108,12 @@ const sidebars = {
                   type: 'doc',
                   id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-2'
                 },
-              ],
-            },
-            // Uncomment and update the following sections if needed
-            /*
-            {
-              type: 'doc',
-              id: 'sensors/basic-stepper-driver/hardware',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/basic-stepper-driver/how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
                 {
                   type: 'doc',
-                  id: 'sensors/basic-stepper-driver/arduino_library/stepper-arduino-1',
+                  id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-3'
                 },
               ],
             },
-            */
           ],
         },
       ],
