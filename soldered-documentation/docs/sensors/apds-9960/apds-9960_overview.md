@@ -24,7 +24,6 @@ The **Color and Gesture sensor APDS-9960 breakout** is a compact and powerful mo
   image="/img/apds9960/333002.jpg" 
 />
 
-
 ---
 
 ## Key Features
@@ -38,6 +37,7 @@ The **Color and Gesture sensor APDS-9960 breakout** is a compact and powerful mo
   - Programmable gain and integration time
   - Very **high sensitivity** - suited for operation in open air, also performs well behind dark glass
 - **I2C-bus Fast Mode Compatible Interface**
+  - Fixed address: **0x39**
   - Data Rates up to 400 kHz
   - **Dedicated Interrupt Pin**
 - **Logic / Operating voltage level:** 3.3V (onboard regulator for 5V compatibility)  

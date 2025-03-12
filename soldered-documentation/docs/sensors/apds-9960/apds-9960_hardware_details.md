@@ -9,6 +9,8 @@ hide_title: False
 
 <CenteredImage src="/img/apds-9960/apds9960_pinout.png" alt="APDS-9960 pinout diagram" caption="APDS-9960 pinout diagram"/>
 
+Click [**here**](\img\apds-9960\apds9960_pinout.png) for a high reoslution image of the pinout.
+
 ## Pin details
 
 | Pin Marking | Pin Name | Description                                     |
@@ -17,6 +19,8 @@ hide_title: False
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **SDA**     | Data     | I2C data line for communication.                |
 | **SCL**     | Clock    | I2C clock line for communication.               |
+| **VLED**    | Power    | Supply voltage (3 - 4.5V).                      |
+| **INT**     | Control  | Interrupt signal.                               |
 
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
 
@@ -39,26 +43,24 @@ hide_title: False
 ## Power Consumption
 
 - **Sleep mode:** Uses just 1.0 µA, making it ideal for **low-power applications**.
-- **Active mode:** Depends on the functions in use. Can supply up to 100mA
+- **Active mode:** Depends on the functions in use. Uses up to 100mA.
 
 <InfoBox> For best results, consider utilizing sleep mode during inactivity and fine-tuning the IR LED timing for your specific needs. </InfoBox>
 
 
 ---
 
-## Crosstalk and Window Air Gap
+## Window Air Gap
 
-Crosstalk is PS or Gesture output caused by unwanted LED
-IR rays reflection without any object present. To control
-crosstalk when operating the sensor in gesture mode, we
-recommend that a rubber isolating barrier be fitted over
-the sensor.
+<InfoBox> Skip this section if using the sensor in open air. </InfoBox>
 
-<CenteredImage src="/img/apds-9960/apds9960_window_gap.png" alt="APDS-9960 Barrier design" caption="APDS-9960 Barrier design"/>
+**Proximity sensing** is the output caused by unwanted reflection of LED IR rays, even in the absence of any object. To control this interference when the sensor is used in gesture mode, we recommend fitting a rubber isolating barrier over the sensor.
+
+<CenteredImage src="/img/apds-9960/apds9960_window_gap.png" alt="APDS-9960 Barrier design" caption="APDS-9960 Barrier design" width="600px"/>
 
 The rubber consists of two cylindrical openings, one for
-the LED and the other for the Photodetector. The window
-thickness should not be more than 1mm. When assembled the rubber barrier should form a good optical seal to
+the **LED** and the other for the **Photodetector**. The window
+thickness should not be more than **1mm**. When assembled the rubber barrier should form a good optical seal to
 the bottom of the window. 
 
 |    Air Gap    |    PD Opening Diameter    |   LED Opening Diameter    |
@@ -85,15 +87,22 @@ the bottom of the window.
 | ------- | ------------------------ | -----------------------------------------------------------------------------|
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.          |
 | **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.        |
-| **JP3** | **NC** (Normally closed) | Disconnect to use VLED power supply                                          |
-| **JP4** | **NC** (Normally closed) | **3.3V** Voltage regulator disconnect                                        |
-| **JP5** | **NO** (Normally open)   | **3.3V** Voltage regulator bypass                                            |
+| **JP3** | **NC** (Normally closed) | Disconnect to use VLED power supply.                                          |
+| **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                      |
+| **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**.                                        |
 
 ---
 
 ## Hardware repository
 
-<WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to recieve the hardware files.</WarningBox>
+Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+
+<QuickLink 
+  title="APDS-9960 Hardware design" 
+  description="GitHub hardware repository for this product"
+  url="https://github.com/SolderedElectronics/Color---gesture-sensor-APDS-9960-breakout-hardware-design" 
+/> 
+
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
