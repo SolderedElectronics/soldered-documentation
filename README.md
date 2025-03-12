@@ -83,6 +83,3 @@ At Soldered, we design and manufacture a wide selection of electronic products t
 ## Have fun!
 
 And thank you from your fellow makers at Soldered Electronics.
-
-
-
