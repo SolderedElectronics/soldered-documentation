@@ -29,12 +29,11 @@ The APDS-9960 is a versatile sensor that detects **ambient light, proximity, and
 
 The APDS-9960 operates efficiently with **low power consumption** and **stable performance**, making it ideal for **touchless control** and **smart lighting applications**.
 
-- **Gesture Recognition** - Gesture detection utilizes four directional photodiodes to sense reflected IR energy to convert physical motion information. The architecture of the gesture engine features automatic activation, ambient light subtraction, cross-talk cancelation, dual 8-bit data converters, power saving inter-conversion delay, 32-dataset FIFO, and
-interrupt driven I2C communication. The gesture engine accommodates a wide range of gestures: **up, down, left, right**, and **swipe movements**.
+- **Gesture Recognition** - Gesture detection utilizes **four directional photodiodes** to sense reflected IR energy to convert physical motion information to digital data. The gesture engine accommodates a wide range of gestures: **up, down, left, right**, and **swipe movements**.
 
 - **Proximity Sensing** - Using a photodiode, the sensor detects reflected IR energy to measure the distance to nearby objects, enabling **proximity detection**.
 
-- **Ambient Light Sensing** - The sensor uses a photodiode to measure ambient light, converting it into a **digital signal** via an onboard ADC (analogue-digital converter), providing **precise lux measurements** for **automatic brightness control**.
+- **Ambient Light Sensing** - The sensor uses a photodiode to measure ambient light, converting it into a **digital signal** via an onboard ADC (analog-digital converter), providing **precise lux measurements**.
 
 - **Signal Processing and Output** - The sensor processes the data internally, ensuring accurate and stable readings. The results are transmitted via an **I2C** interface for **easy integration with microcontrollers**.
 
@@ -44,4 +43,4 @@ interrupt driven I2C communication. The gesture engine accommodates a wide range
 
 The APDS-9960 sensor uses **I2C** (Inter-Integrated Circuit) communication to exchange data with a microcontroller. I2C uses two lines: **SDA** for **data transfer** and **SCL** for **clock synchronization**. 
 
-As a slave device (a device that accepts or provides a digital message carrying measurement or other data, but only when specifically requested), the APDS-9960 has a unique address that allows a master device to send commands and receive data, enabling features like **gesture recognition, proximity sensing**, and **ambient light measurements**.
+As a follower device (a device that accepts or provides a digital message carrying measurement or other data, but only when specifically requested), the APDS-9960 has a unique address that allows a master device to send commands and receive data, enabling features like **gesture recognition, proximity sensing**, and **ambient light measurements**.

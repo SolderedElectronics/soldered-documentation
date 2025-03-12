@@ -19,8 +19,8 @@ Click [**here**](\img\apds-9960\apds9960_pinout.png) for a high reoslution image
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **SDA**     | Data     | I2C data line for communication.                |
 | **SCL**     | Clock    | I2C clock line for communication.               |
-| **VLED**    | Power    | Supply voltage (3 - 4.5V).                      |
-| **INT**     | Control  | Interrupt signal.                               |
+| **VLED**    | Power    | Supply voltage for IR LED.                      |
+| **INT**     | Control  | Interrupt signal (from APDS-9960).              |
 
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
 
@@ -54,7 +54,7 @@ Click [**here**](\img\apds-9960\apds9960_pinout.png) for a high reoslution image
 
 <InfoBox> Skip this section if using the sensor in open air. </InfoBox>
 
-**Proximity sensing** is the output caused by unwanted reflection of LED IR rays, even in the absence of any object. To control this interference when the sensor is used in gesture mode, we recommend fitting a rubber isolating barrier over the sensor.
+**Crosstalk** is the output caused by unwanted reflection of LED IR rays, even in the absence of any object. To control this interference when the sensor is used in gesture mode, we recommend fitting a rubber isolating barrier over the sensor.
 
 <CenteredImage src="/img/apds-9960/apds9960_window_gap.png" alt="APDS-9960 Barrier design" caption="APDS-9960 Barrier design" width="600px"/>
 
@@ -63,9 +63,9 @@ the **LED** and the other for the **Photodetector**. The window
 thickness should not be more than **1mm**. When assembled the rubber barrier should form a good optical seal to
 the bottom of the window. 
 
-|    Air Gap    |    PD Opening Diameter    |   LED Opening Diameter    |
-| --------------| ------------------------- | --------------------------|
-|      1mm      |           2mm             |           1.5mm           |
+| Air Gap | PD Opening Diameter | LED Opening Diameter |
+| ------- | ------------------- | -------------------- |
+| 1mm     | 2mm                 | 1.5mm                |
 
 
 
@@ -83,13 +83,13 @@ the bottom of the window.
 
 ## Jumper Details
 
-| Jumper  | Default State            | Function                                                                     |
-| ------- | ------------------------ | -----------------------------------------------------------------------------|
-| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.          |
-| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.        |
-| **JP3** | **NC** (Normally closed) | Disconnect to use VLED power supply.                                          |
-| **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                      |
-| **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**.                                        |
+| Jumper  | Default State            | Function                                                                                                                                                                      |
+| ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                           |
+| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                         |
+| **JP3** | **NC** (Normally closed) | Disconnect to remove VLED power supply.                                                                                                                                          |
+| **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
+| **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
 
 ---
 
