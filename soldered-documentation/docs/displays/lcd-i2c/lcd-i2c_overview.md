@@ -6,11 +6,13 @@ hide_title: False
 pagination_prev: null
 ---
 
-## LCD-I2C adapter
+## LCD I2C adapter
 
 This LCD I2C Adapter simplifies the connection between your **LCD display** and any **Arduino-compatible board**, such as Dasduino. Utilizing I2C communication, it only requires two pins for operation, making setup quick and straightforward.
 
-With our provided library, you can get started in just a few minutes. Plus, with **Qwiic (formerly easyC) connectivity**, no soldering is required making the process even more convenient!
+Our **LCD I2C displays** come with the adapter soldered on, which enables characters to be displayed on the LCD screen via the I2C bus.
+
+With our **provided library**, you can get started in just a few minutes. Plus, with **Qwiic (formerly easyC) connectivity**, no soldering is required making the process even more convenient!
 
 <CenteredImage src="/img/lcd-i2c/333003.png" alt="lcd-l2c-adapter" caption="LCD-I2C Adapter" />
 
@@ -19,7 +21,7 @@ With our provided library, you can get started in just a few minutes. Plus, with
 ## Which products is this documentation for?
 
 <QuickLink 
-  title="LCD-I2C Adapter" 
+  title="LCD I2C Adapter" 
   description="333003"
   url="https://soldered.com/product/i2c-lcd-driver-board/"
   image="/img/lcd-i2c/333003.png" 
@@ -36,12 +38,9 @@ With our provided library, you can get started in just a few minutes. Plus, with
 
 ## Key features
 
-- **Voltage**
-  - **Operating Voltage**: 3V
-  - **Wide Voltage Range**: Supports 1.65V to 5.5V power supply
-  - **5V Tolerant I/O Ports**: Safe to interface with 5V devices
+- **Logic / Operating voltage level:** 3.3V (onboard regulator for 5V compatibility)  
 - **I2C**
-  - **Fixed Address**: **0x20**
+  - **Modular Address**: **0x20 - 0x27**
   - **Communication**: 400kHz
 - **Dimensions**: **54 x 22 mm** (2,1 x 0.9 inch)
 - Compatable with **HDD44780 LCD driver**

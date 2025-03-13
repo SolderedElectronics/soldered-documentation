@@ -66,19 +66,30 @@ Click [**here**](\img\lcd-i2c\lcd-i2c_pinout.png) for a high reoslution image of
 
 ## Address Details
 
-Three hardware pins (A0, A1, and A2) are used to program and vary the fixed I2C **follower address** and allow up to eight devices to share the same I2C bus or SMBus. Value of the pin is **0 when opened** and **1 when closed**.
+Three hardware pins (A0, A1, and A2) are used to program and vary the fixed I2C **follower address** and allow up to eight devices to share the same I2C bus or SMBus. Value of the pin is **0 when opened** and **1 when closed**. The address can be shifted to select a unique address from **0x20** to **0x27**.
 
 <CenteredImage src="/img/lcd-i2c/lcd-i2c_address_details.png" alt="follower address" width="500px" />
 
 <InfoBox>Default I2C follower address is **0x20** (0100000).</InfoBox>
 
-| I2C address |      Default State       | Follower Address if closed |
-| :---------: | :----------------------: | :------------------------: |
-|   **A0**    | **NO** (Normally opened) |            0x21            |
-|   **A1**    | **NO** (Normally opened) |            0x22            |
-|   **A2**    | **NO** (Normally opened) |            0x24            |
+| I2C address pin |      Default State       | Follower Address if closed |
+| :-------------: | :----------------------: | :------------------------: |
+|     **A0**      | **NO** (Normally opened) |            0x21            |
+|     **A1**      | **NO** (Normally opened) |            0x22            |
+|     **A2**      | **NO** (Normally opened) |            0x24            |
 
-<InfoBox>Different combinations are possible! (e.g. A0 and A2 closed, A1 opened) Convert the binary address to hexadecimal for the 0x00 format.</InfoBox>
+<InfoBox>
+
+Different combinations are possible! Convert the binary address to hexadecimal for the 0x00 format.
+
+ You can run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check which address is in use. 
+
+
+</InfoBox>
+
+---
+
+## 
 
 ---
 

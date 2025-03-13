@@ -40,7 +40,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'LCD-I2C adapter',
+          label: 'LCD I2C Displays',
           items: [
             {
               type: 'doc',
