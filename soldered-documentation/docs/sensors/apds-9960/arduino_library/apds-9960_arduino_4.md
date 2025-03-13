@@ -1,110 +1,61 @@
 ---
-slug: /apds-9960/arduino/color-sensor
-title: Color Sensor
+slug: /apds-9960/arduino/proximity-sensor
+title: Proximity Sensor
 id: apds-9960-arduino-4
 hide_title: False
 ---
 
-
-This page contains simple examples of initialization and color detection with the APDS-9960 sensor.
-
----
-
-## Initialization
-
-To use the APDS-9960 sensor, first, include the required library, create the sensor object and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
-
-```cpp
-// Include the library
-#include "APDS9960-SOLDERED.h"
-
-// Create an APDS-9960 object
-APDS_9960 APDS;
-
-// Setup function, runs once
-void setup()
-{
-    Serial.begin(115200); //Begin serial communication with PC
-    while (!Serial) //Wait until serial becomes active
-        ;
-
-    if (!APDS.begin())  //Begin communication with sensor
-    {
-        Serial.println("Error initializing APDS-9960 sensor!");
-      while(1); //Loop forever if sensor is not available
-    }
-
-    Serial.println("Sensor initialized.");
-}
-
-// ...
-```
-
-<FunctionDocumentation
-  functionName="APDS.begin()"
-  description="Initializes the APDS-9960 sensor, setting up communication over I2C and verifying its presence."
-  returnDescription="True if initialization is successful, false otherwise."
-  parameters={[]}
-/>
+This page contains simple examples of initialization and proximity detection with the APDS-9960 sensor.
 
 ---
 
-## Color Sensor
+In this code snippet, the `loop()` function continuously checks if a proximity reading is available from the APDS-9960 sensor using the `proximityAvailable()` function. If a reading is available, the `readProximity()` function is called to retrieve the proximity value.
 
-In this section, the `loop()` function continuously checks if a color reading is available from the APDS-9960 sensor. The `colorAvailable()` function is used to wait until the color reading is ready. If the reading is not available, the `delay(5)` function is used to pause briefly before checking again.
-
-Once a color reading becomes available, the `readColor()` function is called to retrieve the red, green, and blue (RGB) color intensities. These values are stored in the variables r, g, and b.
-
-The RGB values are then printed to the Serial Monitor to display the current color detected by the sensor. A newline is added after each set of color values for readability.
-
-To prevent continuous querying and to control the reading frequency, a `delay(1000)` function is used to pause for one second before taking another color reading.
+To avoid constantly querying the sensor and overwhelming the Serial Monitor, the `delay(100)` function is used to pause for 100 milliseconds before the next reading is taken.
 
 ```cpp
 void loop()
 {
-    // check if a color reading is available
-    while (!APDS.colorAvailable())
+    // check if a proximity reading is available
+    if (APDS.proximityAvailable())
     {
-        delay(5); //Wait for color reading to be available
+
+        int proximity = APDS.readProximity();
+
+        // print value to the Serial Monitor
+        Serial.println(proximity);
     }
-    int r, g, b;  //Initialize variables for color intensities
-
-    // read the color
-    APDS.readColor(r, g, b);
-
-    // print the values
-    Serial.print("r = ");
-    Serial.println(r);
-    Serial.print("g = ");
-    Serial.println(g);
-    Serial.print("b = ");
-    Serial.println(b);
-    Serial.println();
 
     // wait a bit before reading again
-    delay(1000);
+    delay(100);
 }
 ```
 
 <FunctionDocumentation
-  functionName="APDS.colorAvailable()"
-  description="Enables the color sensor and verifies the sensor's status."
-  returnDescription="1 if color data is available, 0 otherwise."
+  functionName="APDS.proximityAvailable()"
+  description="Enables the proximity sensor and verifies the sensor's status."
+  returnDescription="An integer: 1 if proximity data is available, 0 otherwise."
   parameters={[]}
 />
 
 <FunctionDocumentation
-  functionName="APDS.readColor()"
-  description="Reads color data (clear, red, green, and blue) from the APDS9960 sensor and stores the values in references."
-  returnDescription="True if the data is successfully read and false if an error occurs, setting the color values to -1 in case of failure."
+  functionName="APDS.readProximity()"
+  description="Reads the proximity data from the APDS9960 sensor and returns the proximity value after processing."
+  returnDescription="An integer representing the processed proximity value. If an error occurs while retrieving the data, it returns -1. The proximity value is calculated as 255 - r, where r is the raw proximity data retrieved from the sensor."
   parameters={[]}
 />
+
+| Integer | Proximity |
+| :-----: | :-------: |
+|    0    |   close   |
+|   255   |    far    |
+|   -1    |   error   |
 
 ---
 
 ## Full example
 
-Open the Serial Monitor at 115200 baud to observe the detected color values.
+Open the Serial Monitor at 115200 baud to observe the detected proximity values.
 
 ```cpp
 // Include the library
@@ -128,35 +79,27 @@ void setup()
 
     Serial.println("Sensor initialized.");
 }
-
 void loop()
 {
-    // check if a color reading is available
-    while (!APDS.colorAvailable())
+    // check if a proximity reading is available
+    if (APDS.proximityAvailable())
     {
-        delay(5); //Wait for color reading to be available
+
+        int proximity = APDS.readProximity();
+
+        // print value to the Serial Monitor
+        Serial.println(proximity);
     }
-    int r, g, b;  //Initialize variables for color intensities
-
-    // read the color
-    APDS.readColor(r, g, b);
-
-    // print the values
-    Serial.print("r = ");
-    Serial.println(r);
-    Serial.print("g = ");
-    Serial.println(g);
-    Serial.print("b = ");
-    Serial.println(b);
-    Serial.println();
 
     // wait a bit before reading again
-    delay(1000);
+    delay(100);
 }
 ```
 
+<CenteredImage src="/img/apds-9960/apds9960_proximity.png" alt="Serial Monitor" caption="Proximity Sensor Serial Monitor output"/>
+
 <QuickLink 
-  title="ColorSensor.ino" 
+  title="ProximitySensor.ino" 
   description="Example file for using the APDS-9960 sensor with easyC/Qwiic/I2C"
-  url="https://github.com/SolderedElectronics/Soldered-APDS9960-Light-Gesture-Color-Sensor-Arduino-Library/blob/main/examples/ColorSensor/ColorSensor.ino" 
+  url="https://github.com/SolderedElectronics/Soldered-APDS9960-Light-Gesture-Color-Sensor-Arduino-Library/blob/main/examples/ProximitySensor/ProximitySensor.ino" 
 />

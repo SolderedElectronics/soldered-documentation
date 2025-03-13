@@ -1,102 +1,76 @@
 ---
-slug: /apds-9960/arduino/proximity-sensor
-title: Proximity Sensor
-id: apds-9960-arduino-3 
+slug: /apds-9960/arduino/gesture-detection
+title: Gesture Detection
+id: apds-9960-arduino-3
 hide_title: False
 ---
 
-This page contains simple examples of initialization and proximity detection with the APDS-9960 sensor.
+This page contains simple examples of initialization and gesture detection with the APDS-9960 sensor.
 
 ---
 
-## Initialization
-
-To use the APDS-9960 sensor, first, include the required library, create the sensor object and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
-
-```cpp
-// Include the library
-#include "APDS9960-SOLDERED.h"
-
-// Create an APDS-9960 object
-APDS_9960 APDS;
-
-// Setup function, runs once
-void setup()
-{
-    Serial.begin(115200); //Begin serial communication with PC
-    while (!Serial) //Wait until serial becomes active
-        ;
-
-    if (!APDS.begin())  //Begin communication with sensor
-    {
-        Serial.println("Error initializing APDS-9960 sensor!");
-      while(1); //Loop forever if sensor is not available
-    }
-
-    Serial.println("Sensor initialized.");
-}
-
-// ...
-```
-
-<FunctionDocumentation
-  functionName="APDS.begin()"
-  description="Initializes the APDS-9960 sensor, setting up communication over I2C and verifying its presence."
-  returnDescription="True if initialization is successful, false otherwise."
-  parameters={[]}
-/>
-
----
-
-## Proximity Sensor
-
-In this section, the `loop()` function continuously checks if a proximity reading is available from the APDS-9960 sensor using the `proximityAvailable()` function. If a reading is available, the `readProximity()` function is called to retrieve the proximity value.
-
-To avoid constantly querying the sensor and overwhelming the Serial Monitor, the `delay(100)` function is used to pause for 100 milliseconds before the next reading is taken.
+In this code snippet, the `loop()` function continuously checks if a gesture has been detected by the APDS-9960 sensor. The `gestureAvailable()` function is used to determine if a gesture is ready to be read. If a gesture is detected, the `readGesture()` function is called to retrieve the gesture.
 
 ```cpp
 void loop()
 {
-    // check if a proximity reading is available
-    if (APDS.proximityAvailable())
+    if (APDS.gestureAvailable())
     {
+        // a gesture was detected, read and print to Serial Monitor
+        int gesture = APDS.readGesture();
 
-        int proximity = APDS.readProximity();
+        switch (gesture)  //Determine which gesture was captured
+        {
+        case GESTURE_UP:
+            Serial.println("Detected UP gesture");
+            break;
 
-        // print value to the Serial Monitor
-        Serial.println(proximity);
+        case GESTURE_DOWN:
+            Serial.println("Detected DOWN gesture");
+            break;
+
+        case GESTURE_LEFT:
+            Serial.println("Detected LEFT gesture");
+            break;
+
+        case GESTURE_RIGHT:
+            Serial.println("Detected RIGHT gesture");
+            break;
+
+        default:
+            // ignore
+            break;
+        }
     }
-
-    // wait a bit before reading again
-    delay(100);
 }
 ```
 
 <FunctionDocumentation
-  functionName="APDS.proximityAvailable()"
-  description="Enables the proximity sensor and verifies the sensor's status."
-  returnDescription="1 if proximity data is available, 0 otherwise."
+  functionName="APDS.gestureAvailable()"
+  description="Enables the gesture sensor and checks if a gesture is available for reading."
+  returnDescription="An integer: 1 if a gesture was detected, 0 otherwise."
   parameters={[]}
 />
 
 <FunctionDocumentation
-  functionName="APDS.readProximity()"
-  description="Reads the proximity data from the APDS9960 sensor and returns the proximity value after processing."
-  returnDescription="An integer representing the processed proximity value. If an error occurs while retrieving the data, it returns -1. The proximity value is calculated as 255 - r, where r is the raw proximity data retrieved from the sensor."
+  functionName="APDS.readGesture()"
+  description="Reads the detected gesture."
+  returnDescription="An integer corresponding to a detected gesture (check table below)."
   parameters={[]}
 />
 
-| Integer | Proximity |
-| :-----: | :-------: |
-|    0    |   close   |
-|   255   |    far    |
-|   -1    |   error   |
-
+| Integer |    Gesture    |
+| :-----: | :-----------: |
+|   -1    | GESTURE_NONE  |
+|    0    |  GESTURE_UP   |
+|    1    | GESTURE_DOWN  |
+|    2    | GESTURE_LEFT  |
+|    3    | GESTURE_RIGHT |
 ---
 
 ## Full example
 
-Open the Serial Monitor at 115200 baud to observe the detected proximity values.
+Open the Serial Monitor at 115200 baud to observe detected gestures.
 
 ```cpp
 // Include the library
@@ -120,25 +94,44 @@ void setup()
 
     Serial.println("Sensor initialized.");
 }
+
 void loop()
 {
-    // check if a proximity reading is available
-    if (APDS.proximityAvailable())
+    if (APDS.gestureAvailable())
     {
+        // a gesture was detected, read and print to Serial Monitor
+        int gesture = APDS.readGesture();
 
-        int proximity = APDS.readProximity();
+        switch (gesture)  //Determine which gesture was captured
+        {
+        case GESTURE_UP:
+            Serial.println("Detected UP gesture");
+            break;
 
-        // print value to the Serial Monitor
-        Serial.println(proximity);
+        case GESTURE_DOWN:
+            Serial.println("Detected DOWN gesture");
+            break;
+
+        case GESTURE_LEFT:
+            Serial.println("Detected LEFT gesture");
+            break;
+
+        case GESTURE_RIGHT:
+            Serial.println("Detected RIGHT gesture");
+            break;
+
+        default:
+            // ignore
+            break;
+        }
     }
-
-    // wait a bit before reading again
-    delay(100);
 }
 ```
 
+<CenteredImage src="/img/apds-9960/apds9960_gesture.png" alt="Serial Monitor" caption="Gesture Detection Serial Monitor output"/>
+
 <QuickLink 
-  title="ProximitySensor.ino" 
+  title="GestureSensor.ino" 
   description="Example file for using the APDS-9960 sensor with easyC/Qwiic/I2C"
-  url="https://github.com/SolderedElectronics/Soldered-APDS9960-Light-Gesture-Color-Sensor-Arduino-Library/blob/main/examples/ProximitySensor/ProximitySensor.ino" 
+  url="https://github.com/SolderedElectronics/Soldered-APDS9960-Light-Gesture-Color-Sensor-Arduino-Library/blob/main/examples/GestureSensor/GestureSensor.ino" 
 />

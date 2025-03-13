@@ -14,7 +14,6 @@ To install the Arduino library, you can use the **Arduino library manager** or d
   url="https://github.com/SolderedElectronics/Soldered-APDS9960-Light-Gesture-Color-Sensor-Arduino-Library/tree/main"  
 />  
 
-
 <InfoBox>
 
 **First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
@@ -41,14 +40,14 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 If you prefer, you can use I2C pins to manually connect:
 
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| IO21 (Default SDA pin)   | SDA                |
-| IO22 (Default SCL pin)   | SCL                |
-| VCC                      | VCC                |
-| GND                      | GND                |
-| 3V3                      | VLED               |
-| any digital pin          | INT                |
+| **Dasduino CONNECTPLUS**     | **Breakout Board** |
+| ---------------------------- | ------------------ |
+| IO21 (Default SDA pin)       | SDA                |
+| IO22 (Default SCL pin)       | SCL                |
+| VCC                          | VCC                |
+| GND                          | GND                |
+| 3V3                          | VLED               |
+| IO25 (any digital pin works) | INT                |
 
 
 </InfoBox>

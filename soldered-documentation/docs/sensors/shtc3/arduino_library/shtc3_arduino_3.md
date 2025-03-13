@@ -27,5 +27,27 @@ If the sensor fails to initialize on the first attempt, try calling `shtcSensor.
 
 </ExpandableSection>
 
+<ExpandableSection title="My sensor is not detecting properly!">
+
+### Check sensor placement
+Ensure that your APDS9960 sensor is positioned correctly with a clear line of sight for proximity and gesture detection. Obstructions or a poor angle can interfere with the sensor's ability to detect motion or proximity.
+
+### Adjust sensitivity settings
+If the sensor is not detecting gestures or proximity accurately, try adjusting the sensitivity settings. The default settings might be too low or high depending on your environment. Experiment with different configurations to find the optimal setting for your application.
+
+### Verify proper I2C connection
+Double-check your I2C wiring and ensure the sensor is properly connected. If you're using an I2C interface, verify that the SDA and SCL pins are correctly connected to your microcontroller. A common issue can be incorrect wiring, so double-check each pin assignment.
+
+### Scan for I2C devices
+Run an I2C scanner sketch to ensure the sensor is detected on the I2C bus. If the scanner cannot detect the sensor, verify the wiring, check for pull-up resistors, and make sure the correct I2C address (usually 0x39) is being used in your code.
+
+### Test the sensor in a different environment
+The APDS9960 sensor's performance can be affected by ambient lighting conditions. If you’re in a very bright or very dark room, try moving to an area with more moderate lighting. The sensor is designed for indoor use and might struggle in extreme lighting conditions.
+
+### Reinitialize the sensor
+If the sensor is still not working after your initial setup, try reinitializing it by calling the appropriate initialization function in your code (e.g., sensor.begin()). Sometimes the sensor may fail to initialize properly on the first attempt, and a second try can resolve the issue.
+
+</ExpandableSection>
+
 
 <InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
