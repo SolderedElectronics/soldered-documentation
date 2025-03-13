@@ -5,6 +5,18 @@
 {% block content %}
     <h1>Board Highlight</h1>
     
+    <div class="instructions">
+        <p>
+            <strong>How to use:</strong><br>
+            1. Upload your board image<br>
+            2. Click two opposite corners to create a rectangular highlight<br>
+            3. Click SAVE IMAGE to download the result<br>
+            4. To highlight a different area, simply click two new corners<br>
+            5. Use RESET to return to the original image<br>
+            6. Click GO BACK to upload a different image
+        </p>
+    </div>
+    
     <div class="form-container">
         <form id="boardHighlightForm" method="POST" action="{{ url_for('board_highlight_upload') }}" enctype="multipart/form-data">
             <div class="form-group">
@@ -31,7 +43,6 @@
             </div>
         </div>
         <div class="editor-controls">
-            <button id="resetButton" class="action-btn reset-btn">RESET</button>
             <button id="saveButton" class="action-btn save-btn">SAVE IMAGE</button>
             <button id="backButton" class="action-btn back-btn">GO BACK</button>
         </div>
@@ -114,7 +125,7 @@
                             y1: scaledY1,
                             x2: scaledX2,
                             y2: scaledY2,
-                            imagePath: imageDisplay.getAttribute('data-original')
+                            imagePath: imageDisplay.getAttribute('data-original').replace(/\\/g, '/')
                         }),
                     })
                     .then(response => response.json())
@@ -175,7 +186,7 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        imagePath: imageDisplay.getAttribute('data-original')
+                        imagePath: imageDisplay.getAttribute('data-original').replace(/\\/g, '/')
                     }),
                 })
                 .then(response => response.json())

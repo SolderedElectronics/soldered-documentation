@@ -19,6 +19,9 @@ def process_image(image_path, x1, y1, x2, y2):
         x1, x2 = sorted([x1, x2])
         y1, y2 = sorted([y1, y2])
         
+        # Normalize path with forward slashes
+        image_path = image_path.replace('\\', '/')
+        
         # Open the image
         img = Image.open(image_path).convert("RGB")
         
@@ -50,7 +53,8 @@ def process_image(image_path, x1, y1, x2, y2):
         if filename.endswith('_highlighted'):
             output_path = image_path
         else:
-            output_path = os.path.join(output_dir, f"{filename}_highlighted{ext}")
+            # Use forward slashes for consistency
+            output_path = output_dir + '/' + f"{filename}_highlighted{ext}"
         
         final_img.save(output_path)
         return output_path

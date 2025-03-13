@@ -3,7 +3,6 @@ import sys
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, send_file
 import io
 from contextlib import redirect_stdout
-import json
 
 # Import functionality modules
 from create_files import create_files_process
@@ -93,11 +92,14 @@ def board_highlight_upload():
                                       message="Error saving image", success=False)
             
             # Get relative path for display
-            rel_path = os.path.join('uploads', os.path.basename(image_path))
+            rel_path = 'uploads/' + os.path.basename(image_path)
             display_path = url_for('static', filename=rel_path)
             
+            # Ensure forward slashes for the original path
+            original_path_fixed = image_path.replace('\\', '/')
+            
             return render_template('board_highlight.html', active_page='board_highlight',
-                                  image_path=display_path, original_path=image_path,
+                                  image_path=display_path, original_path=original_path_fixed,
                                   message="Image uploaded successfully. Click to select area to highlight.", 
                                   success=True)
         
@@ -127,7 +129,7 @@ def board_highlight_process():
             return jsonify({'success': False, 'message': 'Error processing image'})
         
         # Get relative path for display
-        rel_path = os.path.join('uploads', os.path.basename(output_path))
+        rel_path = 'uploads/' + os.path.basename(output_path)
         display_path = url_for('static', filename=rel_path)
         
         return jsonify({'success': True, 'imagePath': display_path})
@@ -155,7 +157,7 @@ def board_highlight_reset():
             return jsonify({'success': False, 'message': 'Original image not found'})
         
         # Get relative path for display
-        rel_path = os.path.join('uploads', os.path.basename(original_path))
+        rel_path = 'uploads/' + os.path.basename(original_path)
         display_path = url_for('static', filename=rel_path)
         
         return jsonify({'success': True, 'imagePath': display_path})
