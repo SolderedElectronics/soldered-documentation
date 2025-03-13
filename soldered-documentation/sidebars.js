@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'BME280 Enviromental sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bme280/bme280-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme280/bme280-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme280/bme280-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bme280/arduino_library/bme280-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme280/arduino_library/bme280-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme280/arduino_library/bme280-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'SHTC3 Temperature and Humidity Sensor',
           items: [
             {
