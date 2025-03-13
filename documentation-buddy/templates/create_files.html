@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Create Files - Soldered Documentation Buddy{% endblock %}
+
+{% block content %}
+<h1>Create Files</h1>
+<div class="form-container">
+    <form id="createFilesForm" method="POST" action="{{ url_for('create_files_submit') }}">
+        <div class="form-group">
+            <label for="keyword">Enter keyword (e.g., shtc3):</label>
+            <input type="text" id="keyword" name="keyword" required class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label class="category-label">Select a category:</label>
+            <div class="radio-options">
+                <div class="radio-option">
+                    <input type="radio" id="sensors" name="category" value="sensors" checked>
+                    <label for="sensors">Sensors</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="actuators" name="category" value="actuators">
+                    <label for="actuators">Actuators</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="communication" name="category" value="communication">
+                    <label for="communication">Communication</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">CREATE FILES</button>
+    </form>
+</div>
+
+{% if message %}
+<div class="result-message {% if success %}success{% else %}error{% endif %}">
+    {{ message }}
+</div>
+{% endif %}
+
+{% if log_output %}
+<div class="log-output">
+    <h3>Generation Log:</h3>
+    <pre>{{ log_output }}</pre>
+</div>
+{% endif %}
+{% endblock %}

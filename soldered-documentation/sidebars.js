@@ -70,6 +70,14 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/apds-9960/arduino_library/apds-9960-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'sensors/apds-9960/arduino_library/apds-9960-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/apds-9960/arduino_library/apds-9960-arduino-5',
+                },
               ],
             },
           ],

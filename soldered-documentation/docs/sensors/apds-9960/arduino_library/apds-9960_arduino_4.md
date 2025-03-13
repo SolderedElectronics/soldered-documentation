@@ -1,11 +1,12 @@
 ---
-slug: /apds-9960/arduino/proximity-sensor
-title: Proximity Sensor
-id: apds-9960-arduino-3 
+slug: /apds-9960/arduino/color-sensor
+title: Color Sensor
+id: apds-9960-arduino-4
 hide_title: False
 ---
 
-This page contains simple examples of initialization and proximity detection with the APDS-9960 sensor.
+
+This page contains simple examples of initialization and color detection with the APDS-9960 sensor.
 
 ---
 
@@ -48,51 +49,54 @@ void setup()
 
 ---
 
-## Proximity Sensor
+## Color Sensor
 
 ```cpp
 void loop()
 {
-    // check if a proximity reading is available
-    if (APDS.proximityAvailable())
+    // check if a color reading is available
+    while (!APDS.colorAvailable())
     {
-
-        int proximity = APDS.readProximity();
-
-        // print value to the Serial Monitor
-        Serial.println(proximity);
+        delay(5); //Wait for color reading to be available
     }
+    int r, g, b;  //Initialize variables for color intensities
+
+    // read the color
+    APDS.readColor(r, g, b);
+
+    // print the values
+    Serial.print("r = ");
+    Serial.println(r);
+    Serial.print("g = ");
+    Serial.println(g);
+    Serial.print("b = ");
+    Serial.println(b);
+    Serial.println();
 
     // wait a bit before reading again
-    delay(100);
+    delay(1000);
 }
 ```
 
 <FunctionDocumentation
-  functionName="APDS.proximityAvailable()"
-  description="Enables the proximity sensor and verifies the sensor's status."
-  returnDescription="1 if proximity data is available, 0 otherwise."
+  functionName="APDS.colorAvailable()"
+  description="Enables the color sensor and verifies the sensor's status."
+  returnDescription="1 if color data is available, 0 otherwise."
   parameters={[]}
 />
 
 <FunctionDocumentation
-  functionName="APDS.readProximity()"
-  description="Reads the proximity data from the APDS9960 sensor and returns the proximity value after processing."
-  returnDescription="An integer representing the processed proximity value. If an error occurs while retrieving the data, it returns -1. The proximity value is calculated as 255 - r, where r is the raw proximity data retrieved from the sensor."
+  functionName="APDS.readColor()"
+  description="Reads color data (clear, red, green, and blue) from the APDS9960 sensor and stores the values in references."
+  returnDescription="True if the data is successfully read and false if an error occurs, setting the color values to -1 in case of failure."
   parameters={[]}
 />
-
-| Integer | Proximity |
-| :-----: | :-------: |
-|    0    |   close   |
-|   255   |    far    |
-|   -1    |   error   |
 
 ---
 
 ## Full example
 
-Open the Serial Monitor at 115200 baud to observe the detected proximity values.
+Open the Serial Monitor at 115200 baud to observe the detected color values.
 
 ```cpp
 // Include the library
@@ -116,25 +120,35 @@ void setup()
 
     Serial.println("Sensor initialized.");
 }
+
 void loop()
 {
-    // check if a proximity reading is available
-    if (APDS.proximityAvailable())
+    // check if a color reading is available
+    while (!APDS.colorAvailable())
     {
-
-        int proximity = APDS.readProximity();
-
-        // print value to the Serial Monitor
-        Serial.println(proximity);
+        delay(5); //Wait for color reading to be available
     }
+    int r, g, b;  //Initialize variables for color intensities
+
+    // read the color
+    APDS.readColor(r, g, b);
+
+    // print the values
+    Serial.print("r = ");
+    Serial.println(r);
+    Serial.print("g = ");
+    Serial.println(g);
+    Serial.print("b = ");
+    Serial.println(b);
+    Serial.println();
 
     // wait a bit before reading again
-    delay(100);
+    delay(1000);
 }
 ```
 
 <QuickLink 
-  title="ProximitySensor.ino" 
+  title="ColorSensor.ino" 
   description="Example file for using the APDS-9960 sensor with easyC/Qwiic/I2C"
-  url="https://github.com/SolderedElectronics/Soldered-APDS9960-Light-Gesture-Color-Sensor-Arduino-Library/blob/main/examples/ProximitySensor/ProximitySensor.ino" 
+  url="https://github.com/SolderedElectronics/Soldered-APDS9960-Light-Gesture-Color-Sensor-Arduino-Library/blob/main/examples/ColorSensor/ColorSensor.ino" 
 />

@@ -7,7 +7,7 @@ hide_title: False
 
 APDS-9960 is a digital RGB, ambient light, proximity and gesture sensor device in a single 8-pin package manufactured by [**Broadcom**](https://www.broadcom.com/products/optical-sensors/integrated-ambient-light-and-proximity-sensors/apds-9960). 
 
-<CenteredImage src="/img/apds-9960/apds9960_onboard.png" alt="APDS-9960 sensor on board" caption="APDS-9960 sensor on board" width="400px" />
+<CenteredImage src="/img/apds-9960/apds9960_onboard.png" alt="APDS-9960 sensor on board" caption="APDS-9960 sensor on board" width="500px" />
 
 ---
 
