@@ -51,6 +51,14 @@ void setup()
 
 ## Color Sensor
 
+In this section, the `loop()` function continuously checks if a color reading is available from the APDS-9960 sensor. The `colorAvailable()` function is used to wait until the color reading is ready. If the reading is not available, the `delay(5)` function is used to pause briefly before checking again.
+
+Once a color reading becomes available, the `readColor()` function is called to retrieve the red, green, and blue (RGB) color intensities. These values are stored in the variables r, g, and b.
+
+The RGB values are then printed to the Serial Monitor to display the current color detected by the sensor. A newline is added after each set of color values for readability.
+
+To prevent continuous querying and to control the reading frequency, a `delay(1000)` function is used to pause for one second before taking another color reading.
+
 ```cpp
 void loop()
 {

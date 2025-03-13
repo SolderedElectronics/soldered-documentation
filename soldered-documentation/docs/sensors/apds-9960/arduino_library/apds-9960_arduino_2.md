@@ -1,5 +1,5 @@
 ---
-slug: /apds-9960/arduino/initialization-and-gesture-detection
+slug: /apds-9960/arduino/gesture-detection
 title: Gesture Detection
 id: apds-9960-arduino-2 
 hide_title: False
@@ -50,6 +50,8 @@ void setup()
 
 ## Gesture Detection
 
+In this section, the `loop()` function continuously checks if a gesture has been detected by the APDS-9960 sensor. The `gestureAvailable()` function is used to determine if a gesture is ready to be read. If a gesture is detected, the `readGesture()` function is called to retrieve the gesture.
+
 ```cpp
 void loop()
 {
@@ -86,8 +88,8 @@ void loop()
 
 <FunctionDocumentation
   functionName="APDS.gestureAvailable()"
-  description="Checks if there is a detected gesture."
-  returnDescription="True if a gesture is detected, false otherwise."
+  description="Enables the gesture sensor and checks if a gesture is available for reading."
+  returnDescription="1 if a gesture was detected, 0 otherwise."
   parameters={[]}
 />
 

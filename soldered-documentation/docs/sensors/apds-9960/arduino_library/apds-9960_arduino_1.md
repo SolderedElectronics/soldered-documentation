@@ -47,6 +47,8 @@ If you prefer, you can use I2C pins to manually connect:
 | IO22 (Default SCL pin)   | SCL                |
 | VCC                      | VCC                |
 | GND                      | GND                |
+| 3V3                      | VLED               |
+| any digital pin          | INT                |
 
 
 </InfoBox>
