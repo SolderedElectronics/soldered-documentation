@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Soldered Documentation Buddy{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/soldered_logo_white.svg') }}" alt="Soldered Logo">
+                <span class="app-title">Documentation Buddy v1.0.0</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}" class="{% if active_page == 'home' %}active{% endif %}">Home</a></li>
+                    <li><a href="{{ url_for('create_files') }}" class="{% if active_page == 'create_files' %}active{% endif %}">Create files</a></li>
+                    <li><a href="{{ url_for('board_highlight') }}" class="{% if active_page == 'board_highlight' %}active{% endif %}">Board highlight</a></li>
+                    <li><a href="{{ url_for('generate_pages') }}" class="{% if active_page == 'generate_pages' %}active{% endif %}">Generate pages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

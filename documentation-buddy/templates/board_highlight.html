@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block title %}Board Highlight - Soldered Documentation Buddy{% endblock %}
+
+{% block content %}
+    <h1>Board Highlight</h1>
+    
+    <div class="form-container">
+        <form id="boardHighlightForm" method="POST" action="{{ url_for('board_highlight_upload') }}" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="boardImage">Upload a board image:</label>
+                <input type="file" id="boardImage" name="boardImage" accept="image/*" required class="form-control file-input">
+            </div>
+            
+            <button type="submit" class="submit-btn">UPLOAD IMAGE</button>
+        </form>
+    </div>
+    
+    {% if message %}
+    <div class="result-message {% if success %}success{% else %}error{% endif %}">
+        {{ message }}
+    </div>
+    {% endif %}
+    
+    {% if image_path %}
+    <div class="image-editor">
+        <div class="image-container">
+            <img src="{{ image_path }}" id="boardImageDisplay" data-original="{{ original_path }}">
+            <div class="instructions">
+                <p>Click two opposite corners to select a rectangular area to highlight.</p>
+            </div>
+        </div>
+        <div class="editor-controls">
+            <button id="resetButton" class="action-btn reset-btn">RESET</button>
+            <button id="saveButton" class="action-btn save-btn">SAVE IMAGE</button>
+            <button id="backButton" class="action-btn back-btn">GO BACK</button>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const imageDisplay = document.getElementById('boardImageDisplay');
+        
+        if (imageDisplay) {
+            let clickPoints = [];
+            let tempRect = null;
+            
+            // Function to get cursor position relative to image
+            function getCursorPosition(img, event) {
+                const rect = img.getBoundingClientRect();
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
+                return { x, y };
+            }
+            
+            // Add overlay for drawing
+            const imageContainer = document.querySelector('.image-container');
+            const overlay = document.createElement('div');
+            overlay.className = 'highlight-overlay';
+            imageContainer.appendChild(overlay);
+            
+            // Handle clicks on the image
+            imageDisplay.addEventListener('click', function(e) {
+                const pos = getCursorPosition(imageDisplay, e);
+                clickPoints.push({ x: pos.x, y: pos.y });
+                
+                if (clickPoints.length === 1) {
+                    // First click - start drawing
+                    if (tempRect) overlay.removeChild(tempRect);
+                    tempRect = document.createElement('div');
+                    tempRect.className = 'temp-rect';
+                    tempRect.style.left = pos.x + 'px';
+                    tempRect.style.top = pos.y + 'px';
+                    overlay.appendChild(tempRect);
+                    
+                    // Add mousemove handler to show rectangle preview
+                    imageDisplay.addEventListener('mousemove', updateRectPreview);
+                } else if (clickPoints.length === 2) {
+                    // Second click - finalize the rectangle
+                    imageDisplay.removeEventListener('mousemove', updateRectPreview);
+                    
+                    // Send rectangle coordinates to server for processing
+                    const x1 = clickPoints[0].x;
+                    const y1 = clickPoints[0].y;
+                    const x2 = clickPoints[1].x;
+                    const y2 = clickPoints[1].y;
+                    
+                    // Get image scale factors
+                    const naturalWidth = imageDisplay.naturalWidth;
+                    const naturalHeight = imageDisplay.naturalHeight;
+                    const displayWidth = imageDisplay.width;
+                    const displayHeight = imageDisplay.height;
+                    
+                    const scaleX = naturalWidth / displayWidth;
+                    const scaleY = naturalHeight / displayHeight;
+                    
+                    // Scale coordinates to original image size
+                    const scaledX1 = Math.round(Math.min(x1, x2) * scaleX);
+                    const scaledY1 = Math.round(Math.min(y1, y2) * scaleY);
+                    const scaledX2 = Math.round(Math.max(x1, x2) * scaleX);
+                    const scaledY2 = Math.round(Math.max(y1, y2) * scaleY);
+                    
+                    // Send to server for processing
+                    fetch('{{ url_for("board_highlight_process") }}', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            x1: scaledX1,
+                            y1: scaledY1,
+                            x2: scaledX2,
+                            y2: scaledY2,
+                            imagePath: imageDisplay.getAttribute('data-original')
+                        }),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Reload the image with the highlighted version
+                            imageDisplay.src = data.imagePath + '?t=' + new Date().getTime(); // Add timestamp to avoid caching
+                            
+                            // Reset click points for next selection
+                            clickPoints = [];
+                            if (tempRect) {
+                                overlay.removeChild(tempRect);
+                                tempRect = null;
+                            }
+                        } else {
+                            alert('Error processing image: ' + data.message);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('An error occurred while processing the image.');
+                    });
+                }
+            });
+            
+            function updateRectPreview(e) {
+                if (clickPoints.length === 1 && tempRect) {
+                    const pos = getCursorPosition(imageDisplay, e);
+                    const x1 = clickPoints[0].x;
+                    const y1 = clickPoints[0].y;
+                    const width = pos.x - x1;
+                    const height = pos.y - y1;
+                    
+                    if (width >= 0) {
+                        tempRect.style.left = x1 + 'px';
+                        tempRect.style.width = width + 'px';
+                    } else {
+                        tempRect.style.left = pos.x + 'px';
+                        tempRect.style.width = Math.abs(width) + 'px';
+                    }
+                    
+                    if (height >= 0) {
+                        tempRect.style.top = y1 + 'px';
+                        tempRect.style.height = height + 'px';
+                    } else {
+                        tempRect.style.top = pos.y + 'px';
+                        tempRect.style.height = Math.abs(height) + 'px';
+                    }
+                }
+            }
+            
+            // Reset button functionality
+            document.getElementById('resetButton').addEventListener('click', function() {
+                // Reset to original image
+                fetch('{{ url_for("board_highlight_reset") }}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        imagePath: imageDisplay.getAttribute('data-original')
+                    }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        imageDisplay.src = data.imagePath + '?t=' + new Date().getTime();
+                        clickPoints = [];
+                        if (tempRect) {
+                            overlay.removeChild(tempRect);
+                            tempRect = null;
+                        }
+                    } else {
+                        alert('Error resetting image: ' + data.message);
+                    }
+                });
+            });
+            
+            // Save button functionality
+            document.getElementById('saveButton').addEventListener('click', function() {
+                window.location.href = '{{ url_for("board_highlight_save") }}?image=' + encodeURIComponent(imageDisplay.src);
+            });
+            
+            // Back button functionality
+            document.getElementById('backButton').addEventListener('click', function() {
+                window.location.href = '{{ url_for("board_highlight") }}';
+            });
+        }
+    });
+</script>
+{% endblock %}
