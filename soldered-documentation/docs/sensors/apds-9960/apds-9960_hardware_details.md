@@ -11,7 +11,7 @@ hide_title: False
 
 Click [**here**](\img\apds-9960\apds9960_pinout.png) for a high reoslution image of the pinout.
 
-## Pin details
+## Pin Details
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |
