@@ -66,30 +66,36 @@ Click [**here**](\img\lcd-i2c\lcd-i2c_pinout.png) for a high reoslution image of
 
 ## Address Details
 
-Three hardware pins (A0, A1, and A2) are used to program and vary the fixed I2C **follower address** and allow up to eight devices to share the same I2C bus or SMBus. Value of the pin is **0 when opened** and **1 when closed**. The address can be shifted to select a unique address from **0x20** to **0x27**.
+Three hardware pins (A0, A1, and A2) are used to program and vary the fixed I2C **follower address** and allow up to eight devices to share the same I2C bus or SMBus. The address can be shifted to select a unique address from **0x20** to **0x27**.
 
 <CenteredImage src="/img/lcd-i2c/lcd-i2c_address_details.png" alt="follower address" width="500px" />
 
 <InfoBox>Default I2C follower address is **0x20** (0100000).</InfoBox>
 
-| I2C address pin |      Default State       | Follower Address if closed |
-| :-------------: | :----------------------: | :------------------------: |
-|     **A0**      | **NO** (Normally opened) |            0x21            |
-|     **A1**      | **NO** (Normally opened) |            0x22            |
-|     **A2**      | **NO** (Normally opened) |            0x24            |
+The default state of all address pins is **NO** (Normally opened). Closing the pins in different combinations results in different follower addresses. Value of the pin is **0 when opened** and **1 when closed**. (see table below)
 
-<InfoBox>
+|  A2   |  A1   |  A0   | Follower Address |
+| :---: | :---: | :---: | :--------------: |
+|   0   |   0   |   0   |       0x20       |
+|   0   |   0   |   1   |       0x21       |
+|   0   |   1   |   0   |       0x22       |
+|   0   |   1   |   1   |       0x23       |
+|   1   |   0   |   0   |       0x24       |
+|   1   |   0   |   1   |       0x25       |
+|   1   |   1   |   0   |       0x26       |
+|   1   |   1   |   1   |       0x27       |
 
-Different combinations are possible! Convert the binary address to hexadecimal for the 0x00 format.
-
- You can run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check which address is in use. 
-
-
-</InfoBox>
+<InfoBox> You can run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check which address is in use. </InfoBox>
 
 ---
 
-## 
+## LCD Display
+
+The version of the product with the LCD display comes with the **HD44780 Dot Matrix Display Driver**. It consists of two rows and each row can print 16 characters (**16x2**). Each character is build by a **5x8 pixel box** which makes the total number of pixels **1280**.
+
+<InfoBox>If you're using our 16x2 I2C LCD Display make sure you also use our [**drivers**](https://github.com/SolderedElectronics/Soldered-16x2-LCD-Arduino-Library)!</InfoBox>
+
+<CenteredImage src="/img/lcd-i2c/lcd display.png" alt="lcd display" caption="16x2 LCD module" width="500px" />
 
 ---
 

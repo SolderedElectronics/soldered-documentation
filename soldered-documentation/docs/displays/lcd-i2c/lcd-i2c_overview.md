@@ -14,7 +14,7 @@ Our **LCD I2C displays** come with the adapter soldered on, which enables charac
 
 With our **provided library**, you can get started in just a few minutes. Plus, with **Qwiic (formerly easyC) connectivity**, no soldering is required making the process even more convenient!
 
-<CenteredImage src="/img/lcd-i2c/333003.png" alt="lcd-l2c-adapter" caption="LCD-I2C Adapter" />
+<CenteredImage src="/img/lcd-i2c/333003.png" alt="lcd-l2c-adapter" caption="LCD I2C Adapter" />
 
 ---
 
