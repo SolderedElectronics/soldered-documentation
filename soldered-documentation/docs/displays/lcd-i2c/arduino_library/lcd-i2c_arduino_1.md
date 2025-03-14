@@ -47,8 +47,8 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | ------------------------ | ------------------------ |
 | IO21 (Default SDA pin)   | SDA                      |
 | IO22 (Default SCL pin)   | SCL                      |
-| VCC (5V)                 | 5V / A                   |
-| GND                      | GND / C                  |
+| VCC (5V)                 | 5V                       |
+| GND                      | GND                      |
 
 ### What About the Other Pins?
 Most of the other pins **(D0-D7, E, R/W, RS, VO)** are used for parallel communication with an LCD. However, since this board is an **I2C interface**, these extra pins are **not required**.
