@@ -47,4 +47,4 @@ The BME280 uses the I2C protocol to communicate with a microcontroller. It opera
 
 Upon request, the sensor responds with pressure and temperature values in a 20 bit format and the humidity value as a 16 bit ADC value
 
-
+<InfoBox>While the BME280 shares a lot of similarities with the BME680 sensor, the main difference is that the BME 680 has an additional gas resistance sensor. [Check out the BME680 here!](../bme680/bme680_overview.md)</InfoBox>
