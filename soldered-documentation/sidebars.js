@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'BMP180 EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bmp180/bmp180-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmp180/bmp180-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmp180/bmp180-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'BME680 Enviromental & air quality sensor',
           items: [
             {
