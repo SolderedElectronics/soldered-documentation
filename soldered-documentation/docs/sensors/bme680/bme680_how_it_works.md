@@ -31,16 +31,20 @@ Temperature and humidity sensors work by measuring the capacitance or resistance
 
 Moisture from the air collects on the film and causes changes within the voltage levels between the two plates. This alter is then converted into a computerize measurement of the air’s relative humidity after taking the air temperature into account.
 
+The BME680 also supports a self test on soft reset, as pictured below:
+
+<CenteredImage src="/img/bme680/bme680_selftest.png" alt="BME680 self test diagram" caption="BME680 self test diagram" width="200px" />
+
 The Gas resistance sensor works as follows: Based on the volume and concentration of a gas in an area, the sensor will produce what is called a “corresponding potential difference,” which changes the level of resistance of the material inside the sensor. From this change in the level of resistance comes an electrical signal which is measured as output voltage.
 
 <CenteredImage src="/img/bme680/bme680_resistance.png" alt="BME680 gas resistance depending on pollutants" caption="BME680 gas resistance depending on pollutants" width="600px" />
 
-<InfoBox>To calculate the Air Quality Index (AQI), it is recommended to use [BSEC Software by Bosch](https://www.bosch-sensortec.com/software-tools/software/bme680-software-bsec/)</InfoBox>
+<InfoBox>To calculate the Air Quality Index (AQI), it is recommended to use the [BSEC Software arduino library by Bosch](https://www.bosch-sensortec.com/software-tools/software/bme680-software-bsec/)</InfoBox>
 
 ## I2C communication  
 
-The BME280 uses the I2C protocol to communicate with a microcontroller. It operates with a fixed I2C address of **0x76** and supports a speed of up to 3.4MHz for rapid data transmission.  
+The BME680 uses the I2C protocol to communicate with a microcontroller. It operates with a fixed I2C address of **0x76** and supports a speed of up to 3.4MHz for rapid data transmission.  
 
 Upon request, the sensor responds with pressure and temperature values in a 20 bit format and the humidity value as a 16 bit ADC value
 
-<InfoBox>While the BME680 shares a lot of similarities with the BME280 sensor, the main difference is that the BME 680 has an additional gas resistance sensor. Check out the BME280 here!</InfoBox>
+<InfoBox>While the BME680 shares a lot of similarities with the BME280 sensor, the main difference is that the BME 680 has an additional gas resistance sensor. [Check out the BME280 here!](../bme280/bme280_overview.md)</InfoBox>

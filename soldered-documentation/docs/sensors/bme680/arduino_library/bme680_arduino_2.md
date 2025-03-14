@@ -77,7 +77,7 @@ void loop()
 <CenteredImage src="/img/bme680/bme680_gas.png" alt="Serial monitor pressure readings" caption="Serial monitor" width="100%" />
 
 <FunctionDocumentation
-  functionName="bme280.readGasResistance()"
+  functionName="bme680.readGasResistance()"
   description="Reads the value from the sensor and returns the scaled mOhm value"
   returnDescription="Float value of the gas resistance in mOhms"
   parameters={[]}
