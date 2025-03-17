@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Hall effect sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/hall-effect-sensor/hall-effect-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/hall-effect-sensor/hall-effect-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/hall-effect-sensor/hall-effect-sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'SHTC3 Temperature and Humidity Sensor',
           items: [
             {
