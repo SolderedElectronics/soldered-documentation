@@ -68,6 +68,18 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-6',
+                },
+                {
+                  type: 'doc',
                   id: 'sensors/bmp180/arduino_library/bmp180-arduino-3',
                 },
               ],
@@ -146,6 +158,7 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/bme280/arduino_library/bme280-arduino-2',
                 },
+                
                 {
                   type: 'doc',
                   id: 'sensors/bme280/arduino_library/bme280-arduino-3',
@@ -234,6 +247,56 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Displays',
+      items: [
+        {
+          type: 'category',
+          label: 'SSD1306 0.96" I2C OLED Display',
+          items: [
+            {
+              type: 'doc',
+              id: 'displays/ssd1306/ssd1306-overview',
+            },
+            {
+              type: 'doc',
+              id: 'displays/ssd1306/ssd1306-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'displays/ssd1306/ssd1306-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+      ]
+    }
   ],
 };
 
