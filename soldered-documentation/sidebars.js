@@ -86,7 +86,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'LTR-507 Light and proximity sensor',
+          label: 'LTR-507 Light and Proximity Sensor',
           items: [
             {
               type: 'doc',
@@ -115,6 +115,10 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'sensors/ltr-507/arduino_library/ltr-507-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ltr-507/arduino_library/ltr-507-arduino-4',
                 },
               ],
             },

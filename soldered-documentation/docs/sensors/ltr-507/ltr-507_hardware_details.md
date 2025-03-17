@@ -20,6 +20,8 @@ hide_title: False
 | **VLED**    | Power    | Supply voltage.                                 |
 | **INT**     | Control  | Interrupt signal (from LTR-507).                |
 
+<WarningBox>**IMPORTANT: an IR LED must be connected!**</WarningBox>
+
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
 
 ---
@@ -70,8 +72,26 @@ The sensor can be placed in a sleep mode where it completely shuts down its inte
 | ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                           |
 | **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                         |
-| **JP3** | **NC** (Normally closed) | Disconnect to remove VLED power supply.                                                                                                                                          |
+| **JP3** | **NC** (Normally closed) | Disconnect to remove VLED power supply.                                                                                                                                       |
 | **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
 | **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
 
 ---
+
+## I2C Address Selection  
+
+The LTR-507 sensor has a configurable **7-bit I2C address**, determined by the state of the **SEL pin** (Pin 4).  
+Depending on how the pin is connected, the sensor will respond to one of three possible addresses:
+
+| **SEL Pin State** | **7-bit I2C Address** |
+| :---------------: | :-------------------: |
+|      **GND**      |        `0x23`         |
+|      **VCC**      |        `0x26`         |
+|   **Floating**    |        `0x3A`         |
+
+If your **I2C scanner detects address `0x3A`**, this means the **SEL pin is floating** (not connected to either GND or VCC).  
+To change the address, connect **SEL to GND or VCC** as needed.
+
+<WarningBox>**This adjustment is only possible if the sensor is not integrated into a breakout board.**</WarningBox>
+
+If your LTR-507 sensor is part of a breakout board, the SEL pin may already be internally connected to GND, VCC, or left floating by default. In this case, you won’t be able to manually change the I2C address via the SEL pin unless you modify the board itself. Be sure to check your breakout board’s documentation to confirm how the SEL pin is configured.
