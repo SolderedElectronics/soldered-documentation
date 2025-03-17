@@ -43,7 +43,7 @@ The Gas resistance sensor works as follows: Based on the volume and concentratio
 
 ## I2C communication  
 
-The BME680 uses the I2C protocol to communicate with a microcontroller. It operates with a fixed I2C address of **0x76** and supports a speed of up to 3.4MHz for rapid data transmission.  
+The BME680 uses the I2C protocol to communicate with a microcontroller. It operates with a fixed I2C address of **0x76**.
 
 Upon request, the sensor responds with pressure and temperature values in a 20 bit format and the humidity value as a 16 bit ADC value
 
