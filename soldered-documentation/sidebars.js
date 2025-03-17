@@ -40,7 +40,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'BMP180 EDIT THIS NAME',
+          label: 'BMP180 Pressure & Temperature Sensor',
           items: [
             {
               type: 'doc',
@@ -76,7 +76,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'BME680 Enviromental & air quality sensor',
+          label: 'BME680 Enviromental & Air Quality Sensor',
           items: [
             {
               type: 'doc',
@@ -120,7 +120,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'BME280 Enviromental sensor',
+          label: 'BME280 Enviromental Sensor',
           items: [
             {
               type: 'doc',

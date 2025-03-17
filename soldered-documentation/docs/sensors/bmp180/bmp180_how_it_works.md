@@ -28,8 +28,14 @@ For an in-depth look at technical specifications, refer to the official BME680 D
 The BMP180 is a **Pressure & temperature sensor** that can also calculate the altitude depending on the pressure. 
 The sensor takes measurements by using the piezoresistive effect to gather information
 
-The **piezoresistive effect** is a change in the electrical resistivity of a material (e.g. semiconductor, metal) when mechanical strain is applied. The electrical resistance change is due to two causes; geometry change and conductivity change of the material. The change in resistance is much more pronounced for semiconductors than for metals. 
+The **piezoresistive effect** is a change in the electrical resistivity of a material (e.g. semiconductor, metal) when mechanical strain is applied. The electrical resistance change is due to two causes: geometry change and conductivity change of the material. The change in resistance is much more pronounced for semiconductors than for metals. 
 
 Four Si-resistors are diffused into a semiconductor membrane and connected with another to form a Wheatstone-Bridge. Under the influence of pressure, the diaphragm deforms, thereby affecting the electrical resistance of the four Si-resistors. The change in resistance is proportional to the applied pressure.
 
 <CenteredImage src="/img/bmp180/bmp180_piezoresistance.png" alt="Piezoresistor schema" caption="Schematic diagram of the pressure sensor, originally from article [Temperature Compensation Method for Piezoresistive Pressure Sensors Based on Gated Recurrent Unit](https://www.mdpi.com/1424-8220/24/16/5394)" width="600px" />
+
+## I2C communication  
+
+The BMP180 uses the I2C protocol to communicate with a microcontroller. It operates with a fixed I2C address of **0x77** and supports a speed of up to 3.4MHz for rapid data transmission.  
+
+Upon request, the sensor responds with pressure values in a 16 to 19 bit format and temperature values in a 16 bit format
