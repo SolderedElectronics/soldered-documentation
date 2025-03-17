@@ -8,9 +8,11 @@ pagination_prev: null
 
 ## LTR-507
 
-The LTR-507 Breakout board features precise **ambient light (ALS)** and **proximity (PS)** measurements, transmitting data via **I2C communication** for easy integration with microcontrollers like **Arduino**.
+The LTR-507 Breakout board features precise **ambient light (ALS)** and **proximity (PS)** measurements, transmitting data via **I2C communication** for easy integration with microcontrollers like **Dasduino**. The device supports an interrupt feature that removes the
+need to poll the sensor for a reading which improves
+system efficiency. 
 
-Our breakout board comes **fully assembled**, simplifying setup with the use of **Qwiic (formerly easyC) connectivity** and eliminating the need for soldering. To get started quickly, we offer a comprehensive Arduino library, complete with example codes and detailed documentation.
+Our breakout board comes **fully assembled**, simplifying setup with the use of **Qwiic (formerly easyC) connectivity** and eliminating the need for soldering. To get started quickly, we offer a comprehensive [**Arduino library**](https://github.com/SolderedElectronics/Soldered-Digital-Light-Sensor-Arduino-Library/tree/main), complete with example codes and detailed documentation.
 
 <CenteredImage src="/img/ltr-507/333063.png" alt="ltr-507 sensor" caption="LTR-507 Light and Proximity Sensor"/>
 
@@ -30,9 +32,9 @@ Our breakout board comes **fully assembled**, simplifying setup with the use of 
 - **Proximity Detection**: Detects objects within a range of up to **20cm**
 - **Ambient Light Measurement**: Measures light levels from **0 to 65535 lux**
 - **Communication**: I2C (400kHz)
-- **I2C Address**: **0x3A**
+- **I2C Address**: **0x3A** (configurable)
 - **Logic / Operating voltage level:** 3.3V (onboard regulator for 5V compatibility) 
-- **Compatibility**: **Arduino**, **Raspberry Pi**, and other **I2C-compatible** microcontrollers
+- **Compatibility**: **Arduino**, nd other **I2C-compatible** microcontrollers
 - **Operating Temperature Range**: -40°C to +85°C
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
 - **Mounting:** **Four mounting holes** for secure attachment 

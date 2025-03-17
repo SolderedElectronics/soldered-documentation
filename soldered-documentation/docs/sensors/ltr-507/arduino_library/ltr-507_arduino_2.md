@@ -1,6 +1,6 @@
 ---
-slug: /ltr-507/arduino/settings
-title: Adjusting the Settings
+slug: /ltr-507/arduino/init-and-settings
+title: Initialization and Settings
 id: ltr-507-arduino-2 
 hide_title: False
 ---
@@ -9,7 +9,7 @@ This page contains an example how to modify parameters of the LTR-507 light sens
 
 ## Initialization
 
-To use the LTR-507 sensor, include the required library, create the sensor object, and initialize the sensor in the `setup()` function using `sensor.init()`. You can adjust the sensor’s settings, such as **ALS (ambient light sensor) gain**, **measurement rates**, and **IR LED configuration**.
+To use the LTR-507 sensor, include the required library, create the light_sensor object, and initialize the light_sensor in the `setup()` function using `light_sensor.init()`. You can adjust the sensor’s settings, such as **ALS (ambient light sensor) gain**, **measurement rates**, and **IR LED configuration**.
 
 
 
@@ -17,20 +17,27 @@ To use the LTR-507 sensor, include the required library, create the sensor objec
 // Include needed libraries
 #include "LTR-507-Light-And-Proximity-Sensor-SOLDERED.h"
 
-// Create sensor object
-LTR507 sensor;
+// Create light_sensor object
+LTR507 light_sensor;
 
 void setup()
 {
     // Begin Serial for debugging purposes
     Serial.begin(115200);
 
-    // Initialize the sensor!
-    // This function initializes the sensor with the default settings
-    sensor.init();
+    // Initialize the light_light_sensor!
+    // This function initializes the light_light_sensor with the default settings
+    light_light_sensor.init();
 }
 // ...
 ```
+
+<FunctionDocumentation
+  functionName="light_sensor.init()"
+  description="Initializes the LTR507 light_sensor by setting up I2C communication and configuring default settings for ALS (ambient light light_sensor) and PS (proximity light_sensor) modes. This includes configuring gain, measurement rates, LED settings, and proximity light_sensor pulses."
+  returnDescription="None"
+  parameters={[]}
+/>
 
 ---
 
@@ -39,10 +46,8 @@ void setup()
 ### Turning the sensor on and off
 
 ```cpp
-
-    // This turns off the ambient light sensor (ALS) and proximity sensor
-    sensor.setALSMode(false);
-    sensor.setPSMode(false);
+    light_sensor.setALSMode(false);
+    light_sensor.setPSMode(false);
     // Setting the parameter to 'true' will turn it back on, this is done by default in init()
 
 ```
@@ -50,152 +55,174 @@ void setup()
 ### Setting the gain of the sensor
 
 ```cpp
-
-    // Set the gain of the sensor
-    // This way you can get more or less sensitivity
-    // From the datasheet:
-    //      -LTR507_ALS_GAIN_RANGE1: 1 lux to 64k lux (1 lux/count) (default)
-    //      -LTR507_ALS_GAIN_RANGE2: 0.5 lux to 32k lux (0.5 lux/count)
-    //      -LTR507_ALS_GAIN_RANGE3: 0.02 lux to 640 lux (0.01 lux/count)
-    //      -LTR507_ALS_GAIN_RANGE4: 0.01 lux to 320 lux (0.005 lux/count)
-    sensor.setALSGain(LTR507_ALS_GAIN_RANGE1);
+  light_sensor.setALSGain(LTR507_ALS_GAIN_RANGE1);
 ```
 
 <FunctionDocumentation
-functionName="sensor.setALSGain(uint8_t gain)"
-description="Sets the gain for the ALS sensor to adjust its sensitivity."
-returnDescription="None"
+  functionName="light_sensor.setALSGain()"
+  description="Sets the gain for the ALS (Ambient Light sensor) to adjust its sensitivity. The 'gain' parameter controls the amplification of the sensor's signal. (See table below)."
+  returnDescription="None"
+  parameters={[
+    { type: 'uint8_t', name: 'gain', description: "The gain level to set for the ALS sensor. Higher values increase sensitivity, while lower values decrease it." }
+  ]}
 />
+
+| Gain Range               | Lux Range           | Lux per Count   |
+| ------------------------ | ------------------- | --------------- |
+| `LTR507_ALS_GAIN_RANGE1` | 1 lux to 64k lux    | 1 lux/count     |
+| `LTR507_ALS_GAIN_RANGE2` | 0.5 lux to 32k lux  | 0.5 lux/count   |
+| `LTR507_ALS_GAIN_RANGE3` | 0.02 lux to 640 lux | 0.01 lux/count  |
+| `LTR507_ALS_GAIN_RANGE4` | 0.01 lux to 320 lux | 0.005 lux/count |
+
 
 ### Setting the automatic measurement rate for ambient lighting
 
 ```cpp
-
-    // You can use:
-    //      -LTR507_ALS_MEASUREMENT_RATE_100MS (default)
-    //      -LTR507_ALS_MEASUREMENT_RATE_200MS
-    //      -LTR507_ALS_MEASUREMENT_RATE_500MS
-    //      -LTR507_ALS_MEASUREMENT_RATE_1000MS
-    //      -LTR507_ALS_MEASUREMENT_RATE_2000MS
-    sensor.setALSMeasRate(LTR507_ALS_MEASUREMENT_RATE_100MS);
-
-    // Set the bit width of the ALS measurement
-    // This changes the time required to complete a single measurement
-    // So, it's reccomended to leave it as default
-    // sensor.setALSBitWidth(LTR507_ALS_ADC_BIT_WIDTH_16BIT);
-
+  light_sensor.setALSMeasRate(LTR507_ALS_MEASUREMENT_RATE_100MS);
 ```
 
 <FunctionDocumentation
-functionName="sensor.setALSMeasRate(uint8_t rate)"
-description="Sets the measurement rate for the ambient light sensor."
-returnDescription="None"
+  functionName="light_sensor.setALSMeasRate()"
+  description="Sets the measurement rate for the Ambient Light sensor (ALS). The 'rate' parameter defines how frequently the sensor takes measurements. (See table below)."
+  returnDescription="None"
+  parameters={[
+    { type: 'uint8_t', name: 'rate', description: "The measurement rate to set for the ALS sensor, typically represented in Hz or cycles per second." }
+  ]}
 />
+
+| Measurement Rate                     | Description                       |
+| ------------------------------------ | --------------------------------- |
+| `LTR507_ALS_MEASUREMENT_RATE_100MS`  | Default measurement rate          |
+| `LTR507_ALS_MEASUREMENT_RATE_200MS`  | 200 milliseconds per measurement  |
+| `LTR507_ALS_MEASUREMENT_RATE_500MS`  | 500 milliseconds per measurement  |
+| `LTR507_ALS_MEASUREMENT_RATE_1000MS` | 1000 milliseconds per measurement |
+| `LTR507_ALS_MEASUREMENT_RATE_2000MS` | 2000 milliseconds per measurement |
+
+
 
 ### Setting the automatic measurement rate for proximity
 
 ```cpp
-
-    // You can use:
-    //      -LTR507_PS_MEASUREMENT_RATE_12_5MS
-    //      -LTR507_PS_MEASUREMENT_RATE_50MS
-    //      -LTR507_PS_MEASUREMENT_RATE_70MS
-    //      -LTR507_PS_MEASUREMENT_RATE_100MS (default)
-    //      -LTR507_PS_MEASUREMENT_RATE_200MS
-    //      -LTR507_PS_MEASUREMENT_RATE_500MS
-    //      -LTR507_PS_MEASUREMENT_RATE_1000MS
-    //      -LTR507_PS_MEASUREMENT_RATE_2000MS
-    sensor.setPSMeasRate(LTR507_PS_MEASUREMENT_RATE_100MS);
+  light_sensor.setPSMeasRate(LTR507_PS_MEASUREMENT_RATE_100MS);
 ```
 
 <FunctionDocumentation
-functionName="sensor.setPSMeasRate(uint8_t rate)"
-description="Sets the measurement rate for the proximity sensor."
-returnDescription="None"
+  functionName="light_sensor.setPSMeasRate()"
+  description="Sets the measurement rate for the proximity sensor. The 'rate' parameter defines how often the sensor performs measurements. (See table below)."
+  returnDescription="None"
+  parameters={[
+    { type: 'uint8_t', name: 'rate', description: "The measurement rate to set for the proximity sensor, typically represented in Hz or cycles per second." }
+  ]}
 />
+
+| Measurement Rate                    | Description                       |
+| ----------------------------------- | --------------------------------- |
+| `LTR507_PS_MEASUREMENT_RATE_12_5MS` | 12.5 milliseconds per measurement |
+| `LTR507_PS_MEASUREMENT_RATE_50MS  ` | 50 milliseconds per measurement   |
+| `LTR507_PS_MEASUREMENT_RATE_70MS  ` | 70 milliseconds per measurement   |
+| `LTR507_PS_MEASUREMENT_RATE_100MS ` | Default measurement rate          |
+| `LTR507_PS_MEASUREMENT_RATE_200MS ` | 200 milliseconds per measurement  |
+| `LTR507_PS_MEASUREMENT_RATE_500MS ` | 500 milliseconds per measurement  |
+| `LTR507_PS_MEASUREMENT_RATE_1000MS` | 1000 milliseconds per measurement |
+| `LTR507_PS_MEASUREMENT_RATE_2000MS` | 2000 milliseconds per measurement |
+
+
 
 ### Setting the maximum current supplied to the IR LED
 
 ```cpp
-
-    // You can use:
-    //      -LTR507_LED_PEAK_CURRENT_5MA
-    //      -LTR507_LED_PEAK_CURRENT_10MA
-    //      -LTR507_LED_PEAK_CURRENT_20MA
-    //      -LTR507_LED_PEAK_CURRENT_50MA (default)
-    sensor.setLEDPeakCurrent(LTR507_LED_PEAK_CURRENT_50MA);
+  light_sensor.setLEDPeakCurrent(LTR507_LED_PEAK_CURRENT_50MA);
 ```
 <FunctionDocumentation
-functionName="sensor.setLEDPeakCurrent(uint8_t current)"
-description="Sets the peak current for the IR LED used in proximity sensing."
-returnDescription="None"
+  functionName="light_sensor.setLEDPeakCurrent()"
+  description="Sets the peak current for the IR LED used in proximity sensing. The 'current' parameter controls the maximum current supplied to the LED. (See table below)."
+  returnDescription="None"
+  parameters={[
+    { type: 'uint8_t', name: 'current', description: "The peak current to set for the IR LED, which affects the intensity of the emitted light." }
+  ]}
 />
+
+| LED Peak Current               | Description                         |
+| ------------------------------ | ----------------------------------- |
+| `LTR507_LED_PEAK_CURRENT_5MA ` | 5 milliamps peak current            |
+| `LTR507_LED_PEAK_CURRENT_10MA` | 10 milliamps peak current           |
+| `LTR507_LED_PEAK_CURRENT_20MA` | 20 milliamps peak current           |
+| `LTR507_LED_PEAK_CURRENT_50MA` | Default peak current (50 milliamps) |
+
+
 
 ### Setting the pulse frequency of the IR LED
 
 ```cpp
-    // You can use:
-    //      -LTR507_LED_PULSE_FREQ_30KHZ
-    //      -LTR507_LED_PULSE_FREQ_40KHZ
-    //      -LTR507_LED_PULSE_FREQ_50KHZ
-    //      -LTR507_LED_PULSE_FREQ_60KHZ (default)
-    //      -LTR507_LED_PULSE_FREQ_70KHZ
-    //      -LTR507_LED_PULSE_FREQ_80KHZ
-    //      -LTR507_LED_PULSE_FREQ_90KHZ
-    //      -LTR507_LED_PULSE_FREQ_100KHZ
-    sensor.setLEDPulseFreq(LTR507_LED_PULSE_FREQ_60KHZ);
+  light_sensor.setLEDPulseFreq(LTR507_LED_PULSE_FREQ_60KHZ);
 
-    // Set the number of pulses for a proximity measurement
-    // You can use any number from 1 to 15, default is 1
-    sensor.setPSNumPulses(1);
+  // Set the number of pulses for a proximity measurement
+  // You can use any number from 1 to 15, default is 1
+  light_sensor.setPSNumPulses(1);
 }
 // ...
 
 ```
 
 <FunctionDocumentation
-functionName="sensor.setLEDPulseFreq(uint8_t freq)"
-description="Sets the pulse frequency for the IR LED used in proximity sensing."
-returnDescription="None"
+  functionName="light_sensor.setLEDPulseFreq()"
+  description="Sets the pulse frequency for the IR LED used in proximity sensing. The 'freq' parameter controls how often the LED pulses. (See table below)."
+  returnDescription="None"
+  parameters={[
+    { type: 'uint8_t', name: 'freq', description: "The pulse frequency to set for the IR LED, typically represented in Hz or pulses per second." }
+  ]}
 />
+
+| LED Pulse Frequency            | Description                      |
+| ------------------------------ | -------------------------------- |
+| `LTR507_LED_PULSE_FREQ_30KHZ ` | 30 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_40KHZ ` | 40 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_50KHZ ` | 50 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_60KHZ ` | Default pulse frequency (60 kHz) |
+| `LTR507_LED_PULSE_FREQ_70KHZ ` | 70 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_80KHZ ` | 80 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_90KHZ ` | 90 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_100KHZ` | 100 kilohertz pulse frequency    |
+
 
 ---
 
 ## Full Setup (default settings)
 
-```cpp
+This section outlines the default settings used when initializing the sensor. It can be helpful to refer to these if you wish to modify any of the settings during your project.
 
+```cpp
 // Include needed libraries
 #include "LTR-507-Light-And-Proximity-Sensor-SOLDERED.h"
 
-// Create sensor object
-LTR507 sensor;
+// Create light_sensor object
+LTR507 light_sensor;
 
 void setup()
 {
     // Begin Serial for debugging purposes
     Serial.begin(115200);
 
-    // Initialize the sensor!
-    sensor.init();
+    // Initialize the light_sensor!
+    light_sensor.init();
 
-    // Set the gain of the sensor
-    sensor.setALSGain(LTR507_ALS_GAIN_RANGE1);
+    // Set the gain of the light_sensor
+    light_sensor.setALSGain(LTR507_ALS_GAIN_RANGE1);
 
     // Set the automatic measurement rate
-    sensor.setALSMeasRate(LTR507_ALS_MEASUREMENT_RATE_100MS);
+    light_sensor.setALSMeasRate(LTR507_ALS_MEASUREMENT_RATE_100MS);
 
     // Set the auto measurement rate for proximity
-    sensor.setPSMeasRate(LTR507_PS_MEASUREMENT_RATE_100MS);
+    light_sensor.setPSMeasRate(LTR507_PS_MEASUREMENT_RATE_100MS);
 
     // Set the max current supplied to the IR LED
-    sensor.setLEDPeakCurrent(LTR507_LED_PEAK_CURRENT_50MA);
+    light_sensor.setLEDPeakCurrent(LTR507_LED_PEAK_CURRENT_50MA);
 
     // Set the pulse frequency of the IR LED
-    sensor.setLEDPulseFreq(LTR507_LED_PULSE_FREQ_60KHZ);
+    light_sensor.setLEDPulseFreq(LTR507_LED_PULSE_FREQ_60KHZ);
 
     // Set the number of pulses for a proximity measurement (1-15)
-    sensor.setPSNumPulses(1);
+    light_sensor.setPSNumPulses(1);
 }
 ```
 

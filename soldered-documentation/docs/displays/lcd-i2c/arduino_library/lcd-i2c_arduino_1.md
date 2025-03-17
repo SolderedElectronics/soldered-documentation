@@ -19,7 +19,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
   url="https://github.com/SolderedElectronics/Soldered-16x2-LCD-Arduino-Library"  
 />  
 
-<WarningBox>Make sure you're using our library! Otherwise it probably won't work.</WarningBox>
+<WarningBox>Make sure you're using our library! Generic libraries don't work with our adapter.</WarningBox>
 
 <InfoBox>
 
@@ -43,7 +43,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 <InfoBox> If you prefer, you can use I2C pins to manually connect. Since this board is an I2C LCD driver, most of the pins are not needed for I2C communication. </InfoBox>
 
-### The Key Pins to Connect
+## The Key Pins to Connect
 
 | **Dasduino CONNECTPLUS** | **I2C LCD Driver Board** |
 | ------------------------ | ------------------------ |
@@ -52,17 +52,13 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | VCC (5V)                 | 5V                       |
 | GND                      | GND                      |
 
-### What About the Other Pins?
+## What About the Other Pins?
 Most of the other pins **(D0-D7, E, R/W, RS, VO)** are used for parallel communication with an LCD. However, since this board is an **I2C interface**, these extra pins **don't require** connecting with Dasduino.
 
-<InfoBox>
 
+## Adjusting the contrast
 If your LCD display appears **blank** or the **characters** are **not visible**, you may need to adjust the **contrast**. This is a common issue when first setting up an LCD with the Dasduino.
 
-On the back of the Dasduino board, there is a small potentiometer (usually a square component with a tiny screw). Use a small screwdriver to carefully turn it left or right until the characters become visible.
+On the back of the adapter board, there is a small potentiometer (usually a square component with a tiny screw). Use a small screwdriver to carefully turn it left or right until the characters become visible.
 
-</InfoBox>
-
-### Optional Connections
-- **VO (Contrast Control)**: Usually, this is handled internally by the board, but if needed, you might connect it to a potentiometer or a fixed resistor.
-- **Backlight Control**: If the board has a **VLED pin**, you might connect it to **3V3** or **5V** from Dasduino to enable the LCD backlight.
+<CenteredImage src="/img/lcd-i2c/contrast_onboard.png" alt="contrast control" caption="Potentiometer on the LCD I2C adapter" width="500px"/>

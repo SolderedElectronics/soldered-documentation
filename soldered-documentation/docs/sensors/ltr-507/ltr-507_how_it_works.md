@@ -30,11 +30,9 @@ For an in-depth look at technical specifications, refer to the official LTR-507 
 
 The LTR-507 is a highly efficient **ambient light** and **proximity sensor** designed for **low power consumption** and **precise measurements** in a compact form factor. It integrates a **photodiode**, **analog-to-digital converter (ADC)**, and a **digital output interface**, making it ideal for applications in energy-efficient systems, smart lighting, and proximity sensing.
 
-- **Proximity Sensing** – The LTR-507 uses **infrared (IR)** light to detect objects within its proximity range (**up to 20 cm**). The sensor emits IR light, and the photodiode measures the amount of reflected light to calculate the distance to nearby objects, providing accurate proximity sensing for various applications.
-
 - **Ambient Light Sensing** – The LTR-507 features a **photodiode** that measures the **intensity of ambient light**. The sensor then converts this **analog signal** into a **digital output** using its onboard **ADC**, delivering precise lux measurements ranging **from 0 to 65535 lux**. This makes the sensor perfect for applications requiring **dynamic light adjustments** based on environmental lighting conditions.
-
-- **Low Power Operation** – With its **low current consumption** in both normal and low-power modes, the LTR-507 is ideal for battery-powered or energy-efficient designs. It allows for **efficient operation** without sacrificing performance, making it a great choice for portable and wearable devices.
+  
+- **Proximity Sensing** – The LTR-507 uses **infrared (IR)** light to detect objects within its proximity range (**up to 20 cm**). The sensor emits IR light, and the photodiode measures the amount of reflected light to calculate the distance to nearby objects, providing accurate proximity sensing for various applications.
 
 - **Signal Processing and Output** – After collecting data, the LTR-507 processes the light and proximity readings internally. The sensor provides the processed data through the **I2C interface**, ensuring easy integration with microcontrollers like **Arduino** or **Raspberry Pi**.
 

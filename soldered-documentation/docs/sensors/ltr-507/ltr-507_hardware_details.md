@@ -17,10 +17,11 @@ hide_title: False
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **SDA**     | Data     | I2C data line for communication.                |
 | **SCL**     | Clock    | I2C clock line for communication.               |
-| **VLED**    | Power    | Supply voltage.                                 |
+| **VLED**    | Power    | Current supply for the proximity LED.                                 |
 | **INT**     | Control  | Interrupt signal (from LTR-507).                |
 
-<WarningBox>**IMPORTANT: an IR LED must be connected!**</WarningBox>
+<WarningBox>**IMPORTANT: An IR LED must be connected for the proximity sensor to function!**</WarningBox>
+
 
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
 
@@ -45,6 +46,9 @@ hide_title: False
 The LTR-507ALS-01 sensor is designed for low power consumption, making it suitable for battery-powered applications. 
 
 - **Low-power mode**: 0.2mA
+
+<InfoBox>Low-power mode is not implemented in our library.</InfoBox>
+
 - **Active mode**: 2.3 mA
 
 <InfoBox>Power consumption can be minimized by utilizing **interrupt** and **sleep** modes!</InfoBox>
@@ -76,9 +80,23 @@ The sensor can be placed in a sleep mode where it completely shuts down its inte
 | **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
 | **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
 
+<FlickityCarousel
+  images={[
+    { src: '/img/ltr-507/jp1.png', alt: 'ltr507jumper1', caption: 'JP1' },
+    { src: '/img/ltr-507/jp2.png', alt: 'ltr507jumper2', caption: 'JP2' },
+    { src: '/img/ltr-507/jp3.png', alt: 'ltr507jumper3', caption: 'JP3' },
+    { src: '/img/ltr-507/jp4.png', alt: 'ltr507jumper4', caption: 'JP4' },
+    { src: '/img/ltr-507/jp5.png', alt: 'ltr507jumper5', caption: 'JP5' },
+
+  ]}
+  jumpers={true}
+/>
+
 ---
 
 ## I2C Address Selection  
+
+<WarningBox>**This adjustment is only possible if the sensor is not integrated into a breakout board.**</WarningBox>
 
 The LTR-507 sensor has a configurable **7-bit I2C address**, determined by the state of the **SEL pin** (Pin 4).  
 Depending on how the pin is connected, the sensor will respond to one of three possible addresses:
@@ -91,7 +109,5 @@ Depending on how the pin is connected, the sensor will respond to one of three p
 
 If your **I2C scanner detects address `0x3A`**, this means the **SEL pin is floating** (not connected to either GND or VCC).  
 To change the address, connect **SEL to GND or VCC** as needed.
-
-<WarningBox>**This adjustment is only possible if the sensor is not integrated into a breakout board.**</WarningBox>
 
 If your LTR-507 sensor is part of a breakout board, the SEL pin may already be internally connected to GND, VCC, or left floating by default. In this case, you won’t be able to manually change the I2C address via the SEL pin unless you modify the board itself. Be sure to check your breakout board’s documentation to confirm how the SEL pin is configured.
