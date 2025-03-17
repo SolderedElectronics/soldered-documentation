@@ -70,6 +70,10 @@ const sidebars = {
                   type: 'doc',
                   id: 'displays/lcd-i2c/arduino_library/lcd-i2c-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'displays/lcd-i2c/arduino_library/lcd-i2c-arduino-4',
+                },
               ],
             },
           ],

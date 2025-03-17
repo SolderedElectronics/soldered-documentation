@@ -19,6 +19,8 @@ To install the Arduino library, you can use the **Arduino library manager** or d
   url="https://github.com/SolderedElectronics/Soldered-16x2-LCD-Arduino-Library"  
 />  
 
+<WarningBox>Make sure you're using our library! Otherwise it probably won't work.</WarningBox>
+
 <InfoBox>
 
 **First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
@@ -51,7 +53,15 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | GND                      | GND                      |
 
 ### What About the Other Pins?
-Most of the other pins **(D0-D7, E, R/W, RS, VO)** are used for parallel communication with an LCD. However, since this board is an **I2C interface**, these extra pins are **not required**.
+Most of the other pins **(D0-D7, E, R/W, RS, VO)** are used for parallel communication with an LCD. However, since this board is an **I2C interface**, these extra pins **don't require** connecting with Dasduino.
+
+<InfoBox>
+
+If your LCD display appears **blank** or the **characters** are **not visible**, you may need to adjust the **contrast**. This is a common issue when first setting up an LCD with the Dasduino.
+
+On the back of the Dasduino board, there is a small potentiometer (usually a square component with a tiny screw). Use a small screwdriver to carefully turn it left or right until the characters become visible.
+
+</InfoBox>
 
 ### Optional Connections
 - **VO (Contrast Control)**: Usually, this is handled internally by the board, but if needed, you might connect it to a potentiometer or a fixed resistor.
