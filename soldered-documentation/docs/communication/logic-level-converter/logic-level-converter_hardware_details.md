@@ -13,29 +13,21 @@ Click [**here**](/img/logic-level-converter/llc_pinout.png) for a high reoslutio
 
 ## Pin Details
 
-| Pin Marking | Pin Name   | Description                                          |
-| ----------- | ---------- | ---------------------------------------------------- |
-| **GND**     | Ground     | Common ground for both high and low voltage sides.  |
-| **HVCC**    | High Voltage Power | Supply voltage for the high-voltage side (typically 5V). |
-| **LVCC**    | Low Voltage Power  | Supply voltage for the low-voltage side (typically 3.3V). |
-| **HV1 - HV4** | High Voltage Pins | High-voltage side signal pins (typically 5V logic). |
-| **LV1 - LV4** | Low Voltage Pins  | Low-voltage side signal pins (typically 3.3V logic). |
+| Pin Marking   | Pin Name           | Description                                               |
+| ------------- | ------------------ | --------------------------------------------------------- |
+| **GND**       | Ground             | Common ground for both high and low voltage sides.        |
+| **HVCC**      | High Voltage Power | Supply voltage for the high-voltage side (typically 5V).  |
+| **LVCC**      | Low Voltage Power  | Supply voltage for the low-voltage side (typically 3.3V). |
+| **HV1 - HV4** | High Voltage Pins  | High-voltage side signal pins (typically 5V logic).       |
+| **LV1 - LV4** | Low Voltage Pins   | Low-voltage side signal pins (typically 3.3V logic).      |
 
 <WarningBox>Ensure that **GND** is connected to both the high and low voltage grounds to establish a common reference for signals.</WarningBox>
 
 ---
 
-## Qwiic (formerly easyC)  
+## MOSFET
 
-<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
- 
-<InfoBox> This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
-
-<QuickLink 
-  title="Qwiic (formerly easyC) details and specifications" 
-  description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
-  url="/qwiic" 
-/>
+The [**NMOS-SOT-23-3**](https://soldered.com/product/generic-nmos-transistor-sot23-3-smd/?srsltid=AfmBOoqELxJDfgK11ySlBu_o4AypMN-VrVFhc8BzLo_O8vqi423ZL6US) transistor used in the board is an N-channel MOSFET packaged in a compact SOT-23 form factor. This component functions as a switching transistor, efficiently controlling current flow between the drain and source when a voltage is applied to the gate.
 
 ---
 

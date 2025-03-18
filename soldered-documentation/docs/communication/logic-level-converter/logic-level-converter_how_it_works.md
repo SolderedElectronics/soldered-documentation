@@ -5,9 +5,9 @@ id: logic-level-converter-how-it-works
 hide_title: False
 ---
 
-The Logic Level Converter Board by [**Soldered**](https://soldered.com/product/logic-level-converter-board/) enables safe voltage level shifting between 3.3V and 5V logic systems, facilitating communication between devices with differing voltage requirements. Using **MOSFETs** for **bidirectional signal conversion**, the board supports multiple communication protocols, including **I2C**, **SPI**, and **UART**.
+The Logic Level Converter Board by [**Soldered**](https://soldered.com/product/logic-level-converter-board/) enables safe voltage level shifting between 3.3V and 5V logic systems, facilitating communication between devices with differing voltage requirements. Using **MOSFETs** (Metal-Oxide-Semiconductor Field-Effect Transistor) for **bidirectional signal conversion**, the board supports multiple communication protocols, including **I2C**, **SPI**, and **UART**.
 
-<CenteredImage src="/img/logic-level-converter/llc_howitworks.png" alt="llc_howitworks" caption="Logic Level Converter board" width="500px" />
+<CenteredImage src="/img/logic-level-converter/llc_mosfetsonboard.png" alt="llc_howitworks" caption="MOSFETs on the Logic Level Converter board" width="500px" />
 
 ---
 
@@ -19,13 +19,19 @@ MOSFET logic level shifting is an efficient method to safely translate signals b
 
 <InfoBox>The use of **MOSFETs** for logic level shifting ensures minimal power consumption and reliable signal translation, especially in bidirectional communication scenarios. </InfoBox>
 
-MOSFETs operate by switching the signal voltage between the two levels, with the gate controlling the switch. A typical setup uses an N-channel MOSFET with pull-up resistors to allow both low-to-high and high-to-low signal translation.
+The key to **bidirectional MOSFET logic level shifting** lies in the use of **pull-up resistors** and the **MOSFET’s switching capabilities**. Here’s how it works:
+
+1. **Pull-up Resistors**: When the MOSFET is off (no voltage applied to the gate), the pull-up resistors pull the signal to the **high voltage level** (e.g., 5V). This ensures that the signal remains at the correct logic level for the high-voltage side when it's not actively being driven by the low-voltage device.
+
+2. **MOSFET Switching**: When the low-voltage device (e.g., 3.3V microcontroller) needs to send a low signal, it pulls the gate of the MOSFET low, turning it on. This allows current to flow from the **high-voltage side** to the **low-voltage side**. In this state, the MOSFET switches the signal from high to low, enabling the low-voltage device to send a low signal.
+
+3. **Bidirectional Functionality**: For bidirectional communication (such as in **I2C**), when the high-voltage side wants to send a low signal, the MOSFET allows the current to flow in the opposite direction. The **pull-up resistor** on the low-voltage side ensures the signal goes back to the high state once the MOSFET is turned off.
+
+<InfoBox>An **N-channel MOSFET** is a type of transistor that uses a negative charge to control current flow.</InfoBox>
 
 **Enhancing** and **depleting** modes refer to how MOSFETs operate based on the voltage applied to the gate. In **enhancement mode**, a positive voltage at the gate creates a conductive channel between the source and drain, **allowing current to flow**. In **depletion mode**, the gate voltage depletes the channel, **reducing** or **stopping current flow**.
 
 <CenteredImage src="/img/logic-level-converter/llc_enhance_deplete.png" alt="llc_enhance_deplete" caption="N-CHANNEL MOSFET Symbols" width="700px" />
-
-<InfoBox>An **N-channel MOSFET** is a type of transistor that uses a negative charge to control current flow.</InfoBox>
 
 MOSFET logic level shifting is commonly used for protocols like **I2C**, **SPI**, and **UART**, where bidirectional communication is needed. The I2C bus, for example, requires a safe voltage translation in both directions to prevent damage to the low-voltage devices.
 
@@ -37,8 +43,6 @@ MOSFET logic level shifting is commonly used for protocols like **I2C**, **SPI**
 
 ## How to connect it?
 
-To use the MOSFET logic level converter, follow these steps:
-
 - **Connect Power**:
    - Connect HVCC to the high-voltage power source (e.g., 5V) and LVCC to the low-voltage source (e.g., 3.3V).
    - Connect GND to the ground of both the high and low-voltage systems.
@@ -47,16 +51,3 @@ To use the MOSFET logic level converter, follow these steps:
   - Connect the LV1-LV4 pins to the low-voltage signal lines (e.g., 3.3V sensor). 
 - **Verify Connections**: 
    - Ensure the correct orientation and check that each signal is connected to the proper high or low-voltage side.
-
----
-
-## Connection example
-
-Since the SH21 sensor works at a 3.3V voltage, and Dasduino works at 5V, for connecting the sensor to Dasduino, we must use the Logic Level Converter Module that lowers these 5V to 3.3V as well as on all pins (VDD, SDA, SCL) and therefore ensures safe operation with the sensor.
-
-<CenteredImage src="/img/logic-level-converter/llc_connecting.png" alt="llc_connecting" caption="Connecting the SHT21 with Dasduino using the Logic Level Converter" width="500px" />
-
-> To connect the **Dasduino Connect controller** with the **SHT21 sensor** using the **logic level converter**:
-> - Supply **5V** to the **HVCC** pin and **GND** to ground.
-> - Connect **3.3V** to the **LVCC** pin and **GND** to the ground for the **Dasduino**.
-> - Wire **SDA** and **SCL** signals from the sensor to the **A side**, and from the **B side** to the controller for communication.

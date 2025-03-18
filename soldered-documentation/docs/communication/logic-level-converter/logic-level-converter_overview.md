@@ -25,20 +25,8 @@ The Logic Level Converter Board **bidirectional** voltage level translation betw
 
 ## Key Features
 
-- **Bidirectional Voltage Level Translation**: Safely shifts voltage levels between **3.3V** and **5V** systems
+- **Bidirectional Voltage Level Translation**: Safely shifts voltage levels between **low voltage** and **high voltage** systems (usually **3.3V** and **5V**)
 - **Number of Channels**: 4
 - **Maximum Voltage**: 30V
-- **Easy Integration**: **Fully assembled** with **pin headers** for straightforward, no-soldering setup
 - **Mounting**: **Two mounting holes** for secure attachment
 - **Dimensions**: **22 x 22 mm** (0.9 x 0.9 inches)
-
----
-
-## You may also need
-
-<QuickLink 
-  title="Qwiic cable" 
-  description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
-  url="https://soldered.com/product/easyc-cable/"
-  image="/img/333311.webp" 
-/>  
