@@ -59,7 +59,7 @@ The LTR-507 measures the **infrared reflection** from nearby objects to determin
 
 ```cpp
 // Include the library
-#include "LTR-507-Light-And-Proximity-light_sensor-SOLDERED.h"
+#include "LTR-507-Light-And-Proximity-Sensor-SOLDERED.h"
 
 LTR507 light_sensor; // Create light_sensor object
 

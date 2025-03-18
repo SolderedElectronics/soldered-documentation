@@ -273,6 +273,31 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Communication',
+      items: [
+        {
+          type: 'category',
+          label: 'Logic Level Converter',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/logic-level-converter/logic-level-converter-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/logic-level-converter/logic-level-converter-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/logic-level-converter/logic-level-converter-how-it-works',
+            },
+          ],
+        },
+      ],
+    },
+
   ],
 };
 

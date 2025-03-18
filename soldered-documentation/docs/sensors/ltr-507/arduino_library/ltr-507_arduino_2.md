@@ -9,7 +9,7 @@ This page contains an example how to modify parameters of the LTR-507 light sens
 
 ## Initialization
 
-To use the LTR-507 sensor, include the required library, create the light_sensor object, and initialize the light_sensor in the `setup()` function using `light_sensor.init()`. You can adjust the sensor’s settings, such as **ALS (ambient light sensor) gain**, **measurement rates**, and **IR LED configuration**.
+To use the LTR-507 sensor, include the required library, create the `light_sensor` object, and initialize the light_sensor in the `setup()` function using `light_sensor.init()`. You can adjust the sensor’s settings, such as **ALS (ambient light sensor) gain**, **measurement rates**, and **IR LED configuration**.
 
 
 
@@ -25,16 +25,16 @@ void setup()
     // Begin Serial for debugging purposes
     Serial.begin(115200);
 
-    // Initialize the light_light_sensor!
-    // This function initializes the light_light_sensor with the default settings
-    light_light_sensor.init();
+    // Initialize the light_sensor!
+    // This function initializes the light_sensor with the default settings
+    light_sensor.init();
 }
 // ...
 ```
 
 <FunctionDocumentation
   functionName="light_sensor.init()"
-  description="Initializes the LTR507 light_sensor by setting up I2C communication and configuring default settings for ALS (ambient light light_sensor) and PS (proximity light_sensor) modes. This includes configuring gain, measurement rates, LED settings, and proximity light_sensor pulses."
+  description="Initializes the LTR507 light_sensor by setting up I2C communication and configuring default settings for ALS (ambient light light_sensor) and PS (proximity sensor) modes. This includes configuring gain, measurement rates, LED settings, and proximity light_sensor pulses."
   returnDescription="None"
   parameters={[]}
 />
