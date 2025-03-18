@@ -90,6 +90,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'HX711 EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/hx711/hx711-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/hx711/hx711-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/hx711/hx711-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'LTR-507 Light and Proximity Sensor',
           items: [
             {
