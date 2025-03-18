@@ -1,28 +1,26 @@
 ---
-slug: /hall-effect-sensor/arduino/regular digital example
-title: Detecting magnetic presence with regular digital sensor (example)
-id: hall-effect-sensor-arduino-2 
+slug: /hall-effect-sensor/arduino/Qwiic digital example 
+title: Detecting magnetic presence with Qwiic digital sensor (example)
+id: hall-effect-sensor-arduino-4 
 hide_title: False
+pagination_next: null
 ---
-This page contains some simple examples with function documentation on how to take measurements using the SI7211-B-06-IV Hall effect sensor.
 
-## Digital output example
+This page contains some simple examples with function documentation on how to take measurements using the SI7211-B-06-IV Hall effect sensor and Qwiic connection.
 
+## Qwiic Digital output example
 ```cpp
 #include "Hall-Effect-SOLDERED.h"
-#define HALL_EFFECT_PIN 5
 
-// To change the reading, place a magnet in front of the sensor
-// getReading returns 1 (True) for a detected magnet and 0 (False) for no magnet detected
-// If it's always reading 0, check connections
-
-// Declare sensor object
-HallEffect_Digital hall(HALL_EFFECT_PIN);
+HallEffect_Digital_EasyC hall;
 
 void setup()
 {
     // Initialize serial communication
     Serial.begin(115200);
+
+    // Initialize sensor via EasyC (required!)
+    hall.begin();
 }
 
 void loop()
@@ -48,14 +46,21 @@ void loop()
     delay(1000);
 }
 ```
+
 <FunctionDocumentation
-  functionName="HallEffect_Digital hall()"
+  functionName="HallEffect_Digital_EasyC hall()"
   description="Instantiates digital sensor object"
-  parameters={[
-    { type: 'uint16_t', name: 'pin', description: "digital pin number for data communication" }
-  ]}
-  
 />
+
+<FunctionDocumentation
+  functionName="hall.begin()"
+  description="Instantiates digital sensor object"
+  returnDescription="Returns true if initialization is successful, false otherwise."
+  parameters={[
+    { type: 'uint16_t', name: 'address', description: "Optional, used for changing breakout address, default is 0x30" }
+  ]}
+/>
+
 <FunctionDocumentation
   functionName="hall.getReading()"
   description="Requests a new reading from the SI7211-B-00-IV sensor. "
@@ -72,10 +77,10 @@ void loop()
 
 ## Full example
 
-Try all of the above mentioned functions in this full example which measures the strenght of magnetic field.
+Try all of the above mentioned functions in this full example which detects presence of magnetic object.
 
 <QuickLink 
-  title="digitalRead.ino" 
-  description="Example file for using digital Hall effect sensor"
-  url="https://github.com/SolderedElectronics/Soldered-Hall-Effect-Sensor-Arduino-Library/blob/main/examples/digitalRead/digitalRead.ino" 
+  title="digitalReadEasyC.ino" 
+  description="Example file for using Digital Hall effect sensor with easyC/Qwiic/I2C"
+  url="https://github.com/SolderedElectronics/Soldered-Hall-Effect-Sensor-Arduino-Library/blob/main/examples/digitalReadEasyC/digitalReadEasyC.ino" 
 />

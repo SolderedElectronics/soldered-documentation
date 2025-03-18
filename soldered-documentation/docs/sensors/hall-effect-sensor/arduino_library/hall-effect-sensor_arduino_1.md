@@ -32,26 +32,20 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 |---|---|
-| D5 | OUT |
+| IO5 for digital / IO12 for analog | OUT |
 | 3V3 | VCC |
 | GND | GND |
 
+<InfoBox> Digital version can use any **digital** input pin while analog can use any **analog** pin input, Check Pinout drawing for your specific board </InfoBox>
+
+---
+
 ## Connections Qwiic
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
+Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change breakboard's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |
 | Qwiic                    | Qwiic              |
 
-<InfoBox>
+<InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they will not be used in the following examples. </InfoBox>
 
-If you prefer, you can use I2C pins to manually connect:
-
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| IO21 (Default SDA pin)   | SDA                |
-| IO22 (Default SCL pin)   | SCL                |
-| VCC                      | VCC                |
-| GND                      | GND                |
-
-</InfoBox>

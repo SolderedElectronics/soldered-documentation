@@ -6,13 +6,13 @@ hide_title: False
 pagination_prev: null
 ---
 
-## SI7211-B-00-IV Hall effect sensor
+## Hall effect sensor
 
-The **SI7211-B-00-IV Hall effect sensor breakout** is a high-precision that measures **presence of magnetic field** in  version with **digital output** and **value of magnetic field** with **analog version** of the breakboard. This sensor is a great option for measuring the presence, position and proximity of objects. It also comes in a version with **I2C communication** with default address of **0x30** nd is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
+The **Hall effect sensor circuit board** is a high-precision sensor that measures **presence of magnetic field** in  version with **digital output** and **value of magnetic field** with **analog version** of the breakboard. This sensor is a great option for measuring the presence, position and proximity of magnetized objects. It also comes in a version with **I2C communication** with default address of **0x30** and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
 
 
 
-<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_onboard.jpg" alt="SI7211-B-00-IV on board" caption="SI7211-B-00-IV on the board"/>
+<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_onboard_digital.jpg" alt="SI721x on board" caption="SI721x on the board"/>
 
 ---
 
@@ -38,7 +38,7 @@ The **SI7211-B-00-IV Hall effect sensor breakout** is a high-precision that meas
 />
 <QuickLink 
   title="Hall effect sensor breakout with analog output & easyC " 
-  description="333081"
+  description="333082"
   url="https://soldered.com/product/hall-effect-sensor-breakout-with-digital-output-easyc/"
   image="/img/hall-effect-sensor/333082.jpg" 
 />
@@ -49,20 +49,24 @@ The **SI7211-B-00-IV Hall effect sensor breakout** is a high-precision that meas
 - **Regular**
   - **Logic voltage level:** 3.3V - 5V
   - **Operating voltage:** 2.25V - 5V
-  - **Sensor:** SI7211-B-00-IV
+  - **Sensor:**
+    - **Analog:** SI7211-B-00-IV
+    - **Digital:** SI7211-B-06-IV
   - **Output:** 
-    - **analog**
-    - **digital**
+    - **Analog**
+    - **Digital**
   - **Communication:** 
-    - **analog pin** for analog version
-    - **digital pin** for digital version 
+    - **Analog pin** for analog version
+    - **Digital pin** for digital version 
 - **Qwiic**
   - **Logic voltage level:** 3.3V
   - **Operating voltage:** 2.25V - 3.3V
-  - **Sensor:** SI7211-B-00-IV
+  - **Sensor:** 
+    - **Analog:** SI7211-B-00-IV
+    - **Digital:** SI7211-B-06-IV
   - **Output:** 
-    - **analog**
-    - **digital**
+    - **Analog**
+    - **Digital**
   - **Communication:** I2C (You may change the address via the switches on the front of the board) 
   - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)
 - **Mounting:** **Two mounting holes** for secure attachment  

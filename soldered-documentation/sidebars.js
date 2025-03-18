@@ -70,6 +70,18 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-6',
+                }
               ],
             },
           ],

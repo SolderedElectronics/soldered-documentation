@@ -8,15 +8,15 @@ hide_title: False
 ## Pinout
 
 <CenteredImage src="/img/hall-effect-sensor/333079_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333079_pinout.jpg) for a high reoslution image of the pinout.
+Click [**here**](/img/hall-effect-sensor/333079_pinout.jpg) for a high resolution image of the pinout.
 <CenteredImage src="/img/hall-effect-sensor/333080_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333080_pinout.jpg) for a high reoslution image of the pinout.
+Click [**here**](/img/hall-effect-sensor/333080_pinout.jpg) for a high resolution image of the pinout.
 <CenteredImage src="/img/hall-effect-sensor/333081_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333081_pinout.jpg) for a high reoslution image of the pinout.
+Click [**here**](/img/hall-effect-sensor/333081_pinout.jpg) for a high resolution image of the pinout.
 <CenteredImage src="/img/hall-effect-sensor/333082_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high reoslution image of the pinout.
+Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolution image of the pinout.
 
-## Pin details regular-digital
+## Pin details for regular version with digital output
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |
@@ -24,22 +24,13 @@ Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high reoslutio
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **OUT**     | Data     | Data line for digital communication
 
-## Pin details regular-analog
+## Pin details for regular version with analog output
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |
 | **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **OUT**     | Data     | Data line for analog communication
-
-## Pin details Qwiic
-
-| Pin Marking | Pin Name | Description                                     |
-| ----------- | -------- | ----------------------------------------------- |
-| **VCC**     | Power    | Supply voltage (3V3 is supported). |
-| **GND**     | Ground   | Common ground for power and signals.            |
-| **SDA**     | Data     | I2C data line for communication
-| **SCL**     | Clock     | I2C clock line for communication
              
 ---
 
@@ -47,25 +38,13 @@ Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high reoslutio
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox> This board has **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
   description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
   url="/qwiic" 
 />
-
----
-
-## Power consumption
-
-The Hall effect sensor is designed for low-power operation, making it ideal for IoT and battery-powered applications.  
-
-| Mode             | Current Consumption |
-| ---------------- | ------------------- |
-| Measurement Mode | ~5 mA             |
-| Idle Mode        | ~600 µA              |
-| Sleep Mode       | ~50 nA             |
 
 ---
 
@@ -84,8 +63,8 @@ This board contains hardware adress switches, see below how to change breakout b
 
 <CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_jp.jpg" alt="Pinout" />
 
-| address | sw3 | sw2 | sw1 |
-|---|---|---|---|
+| Address | SW3 | SW2 | SW1 |
+|:---:|:---:|:---:|:---:|
 | 0x30 | 0 | 0 | 0 |
 | 0x31 | 0 | 0 | 1 |
 | 0x32 | 0 | 1 | 0 |
