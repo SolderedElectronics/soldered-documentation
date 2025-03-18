@@ -34,7 +34,7 @@ The HX711 Load Cell Amplifier is a highly efficient and precise module designed 
 
 ## Key Features  
 
-- **Standard version**
+- **Regular version**
    - **ADC Precision:** 24-bit  
    - **Amplification:** 128 for A channel, 64 for B channel  
    - **Voltage:** 2.7V – 5.5V  

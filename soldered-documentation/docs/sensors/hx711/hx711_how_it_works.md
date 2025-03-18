@@ -7,14 +7,9 @@ hide_title: False
 
 The **HX711** is a precision 24-bit analog-to-digital converter (ADC) designed for **weigh scales** and **industrial control applications**. Manufactured by [**AVIA**](http://en.aviaic.com/detail/730856.html), the HX711 provides high-precision digital output and can interface directly with **load cells** for **accurate weight measurements**.
 
-<FlickityCarousel
-  images={[
-    { src: '/img/hx711/standard_onboard.png', alt: 'ltr507jumper1', caption: 'HX711 Standard Board' },
-    { src: '/img/hx711/easyc_onboard.png', alt: 'ltr507jumper1', caption: 'HX711 Qwiic (easyC) Board' },
-        { src: '/img/hx711/standard_onboard.png', alt: 'ltr507jumper1', caption: 'HX711 Standard Board' },
-  ]}
-  jumpers={true}
-/>
+<CenteredImage src="/img/hx711/standard_onboard.png" alt="HX711 Standard Board" caption="HX711 Regular Board" width="500px" />
+
+<CenteredImage src="/img/hx711/easyc_onboard.png" alt="HX711 Standard Board" caption="HX711 Qwiic (easyC) Board" width="500px" />
 
 ---
 
@@ -58,3 +53,11 @@ With the HX711, the microcontroller can control the rate at which data is clocke
 ## Power and Precision
 
 The HX711 operates with a **low-power supply voltage** and is optimized for energy-efficient operation, allowing it to be used in portable and battery-powered devices. Its **high precision** and **low noise** make it suitable for critical applications where accurate weight measurements are necessary.
+
+---
+
+## I2C communication - Qwiic
+
+Qwiic versions of the product use onboard ATTINY404 MCU to implement I2C communication. Breakout board perates with a default I2C address of **0x30**  but can be changed with onboard switches. When detected, ATTINY404 recives data from sensor and passes it to the main MCU using I2C data line. To check in detail how to ATTINY404 is programmed, check [**firmware github page**](https://github.com/SolderedElectronics/Soldered-Hall-Effect-Sensor-Arduino-Library/tree/dev/extras/attiny_firmware).
+
+

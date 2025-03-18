@@ -5,9 +5,9 @@ id: hx711-hardware
 hide_title: False
 ---
 
-## HX711 Standard Pinout
+## HX711 Regular Pinout
 
-<CenteredImage src="/img/hx711/hx711_standard_pinout.png" alt="hx711_standard_pinout" caption="HX711 standard pinout diagram"/>
+<CenteredImage src="/img/hx711/hx711_standard_pinout.png" alt="hx711_standard_pinout" caption="HX711 regular pinout diagram"/>
 
 Click [**here**](/img/hx711/hx711_standard_pinout.png) for a high reoslution image of the pinout.
 
@@ -19,35 +19,35 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 
 ---
 
-## Pin Details Standard Version
+## Pin Details Regular Version
 
-| Pin Marking | Pin Name | Description                                                                 |
-| ----------- | -------- | --------------------------------------------------------------------------- |
-| **E+**      | Excitation Positive | Provides positive excitation voltage to the load cell. Typically connected to the red wire of the load cell. |
-| **E-**      | Excitation Negative | Provides negative excitation voltage (ground) to the load cell. Typically connected to the black wire of the load cell. |
-| **A+**      | Channel A Positive Input | Positive differential input for Channel A. Typically connected to the white wire of the load cell. |
-| **A-**      | Channel A Negative Input | Negative differential input for Channel A. Typically connected to the green wire of the load cell. |
-| **B+**      | Channel B Positive Input | Positive differential input for Channel B. This is a secondary input channel. |
-| **B-**      | Channel B Negative Input | Negative differential input for Channel B. This is a secondary input channel. |
-| **GND**     | Ground | Common ground for power and signals. |
-| **VCC**     | Power | Supply voltage for the HX711 module. Accepts 2.7V to 5.5V. |
-| **DAT**     | Data | Serial data output for communication with a microcontroller. |
-| **SCK**     | Clock | Serial clock input for communication with a microcontroller. |
+| Pin Marking | Pin Name                 | Description                                                                                                             |
+| ----------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| **E+**      | Excitation Positive      | Provides positive excitation voltage to the load cell. Typically connected to the red wire of the load cell.            |
+| **E-**      | Excitation Negative      | Provides negative excitation voltage (ground) to the load cell. Typically connected to the black wire of the load cell. |
+| **A+**      | Channel A Positive Input | Positive differential input for Channel A. Typically connected to the white wire of the load cell.                      |
+| **A-**      | Channel A Negative Input | Negative differential input for Channel A. Typically connected to the green wire of the load cell.                      |
+| **B+**      | Channel B Positive Input | Positive differential input for Channel B. This is a secondary input channel.                                           |
+| **B-**      | Channel B Negative Input | Negative differential input for Channel B. This is a secondary input channel.                                           |
+| **GND**     | Ground                   | Common ground for power and signals.                                                                                    |
+| **VCC**     | Power                    | Supply voltage for the HX711 module. Accepts 2.7V to 5.5V.                                                              |
+| **DAT**     | Data                     | Serial data output for communication with a microcontroller.                                                            |
+| **SCK**     | Clock                    | Serial clock input for communication with a microcontroller.                                                            |
 
 
 ## Pin Details Qwiic (easyC) Version
 
-| Pin Marking | Pin Name | Description                                                                 |
-| ----------- | -------- | --------------------------------------------------------------------------- |
-| **E+**      | Excitation Positive | Provides positive excitation voltage to the load cell. Typically connected to the red wire of the load cell. |
-| **E-**      | Excitation Negative | Provides negative excitation voltage (ground) to the load cell. Typically connected to the black wire of the load cell. |
-| **A+**      | Channel A Positive Input | Positive differential input for Channel A. Typically connected to the white wire of the load cell. |
-| **A-**      | Channel A Negative Input | Negative differential input for Channel A. Typically connected to the green wire of the load cell. |
-| **B+**      | Channel B Positive Input | Positive differential input for Channel B. This is a secondary input channel. |
-| **B-**      | Channel B Negative Input | Negative differential input for Channel B. This is a secondary input channel. |
-| **GND**     | Debug Ground | Ground pin for debugging purposes. |
-| **UPDI**    | Debug Interface | Used for debugging and programming the onboard ATTiny404 microcontroller. |
-| **3V3**     | Debug Power | 3.3V power supply for debugging purposes. |
+| Pin Marking | Pin Name                 | Description                                                                                                             |
+| ----------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| **E+**      | Excitation Positive      | Provides positive excitation voltage to the load cell. Typically connected to the red wire of the load cell.            |
+| **E-**      | Excitation Negative      | Provides negative excitation voltage (ground) to the load cell. Typically connected to the black wire of the load cell. |
+| **A+**      | Channel A Positive Input | Positive differential input for Channel A. Typically connected to the white wire of the load cell.                      |
+| **A-**      | Channel A Negative Input | Negative differential input for Channel A. Typically connected to the green wire of the load cell.                      |
+| **B+**      | Channel B Positive Input | Positive differential input for Channel B. This is a secondary input channel.                                           |
+| **B-**      | Channel B Negative Input | Negative differential input for Channel B. This is a secondary input channel.                                           |
+| **GND**     | Debug Ground             | Ground pin for debugging purposes.                                                                                      |
+| **UPDI**    | Debug Interface          | Used for debugging and programming the onboard ATTiny404 microcontroller.                                               |
+| **3V3**     | Debug Power              | 3.3V power supply for debugging purposes.                                                                               |
 
 <WarningBox>The **GND, UPDI, and 3V3 pins** are **for debugging and programming purposes only**. They are **not required** for normal operation and should only be used by advanced users.</WarningBox>
 
@@ -79,11 +79,30 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 
 ## Dimensions
 
-- **Board Dimensions Standard:** 22 × 22 mm (0.9 × 0.9 inch)  
+- **Board Dimensions Regular:** 22 × 22 mm (0.9 × 0.9 inch)  
 - **Board Dimensions Qwiic (easyC)**: 38 × 22 mm (1.5 × 0.9 inch)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO compatible! 🧱 
+
+---
+
+## Address selection (Qwiic (easyC) version)
+
+This board contains hardware adress switches, see below how to change breakout board's address:
+
+<CenteredImage src="/img/hx711/address_selection.png" alt="Pinout" width="500px" />
+
+| Address |  SW3  |  SW2  |  SW1  |
+| :-----: | :---: | :---: | :---: |
+|  0x30   |   0   |   0   |   0   |
+|  0x31   |   0   |   0   |   1   |
+|  0x32   |   0   |   1   |   0   |
+|  0x33   |   0   |   1   |   1   |
+|  0x34   |   1   |   0   |   0   |
+|  0x35   |   1   |   0   |   1   |
+|  0x36   |   1   |   1   |   0   |
+|  0x37   |   1   |   1   |   1   |
 
 ---
 
@@ -92,7 +111,7 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
 <QuickLink 
-  title="HX711 Standard Hardware design" 
+  title="HX711 Regular Hardware design" 
   description="GitHub hardware repository for this product"
   url="https://github.com/SolderedElectronics/Load-cell-ampfilier-HX711-board-hardware-design" 
 /> 
