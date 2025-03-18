@@ -67,14 +67,13 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 
 ## Electrical Characteristics  
 
-### **Power Requirements**  
-- **Operating Voltage:** 2.6V – 5.5V  
-- **Current Consumption:** < 1.5mA (typical during operation)  
-- **Sleep Mode Current:** < 1µA (low-power standby mode)  
-
-### **Operating Conditions**  
-- **Operating Temperature Range:** **-40°C to 85°C**  
-- **Recommended Load Cell Type:** **Wheatstone Bridge-based strain gauges**  
+- **Power Requirements**  
+   - **Operating Voltage:** 2.6V – 5.5V  
+   - **Current Consumption:** < 1.5mA (typical during operation)  
+   - **Sleep Mode Current:** < 1µA (low-power standby mode)  
+- **Operating Conditions**  
+   - **Operating Temperature Range:** **-40°C to 85°C**  
+   - **Recommended Load Cell Type:** **Wheatstone Bridge-based strain gauges**  
 
 ---
 
@@ -93,7 +92,7 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
 <QuickLink 
-  title="HX711 Hardware design" 
+  title="HX711 Standard Hardware design" 
   description="GitHub hardware repository for this product"
   url="https://github.com/SolderedElectronics/Load-cell-ampfilier-HX711-board-hardware-design" 
 /> 

@@ -90,7 +90,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'HX711 EDIT THIS NAME',
+          label: 'HX711 Load-cell Amplifier',
           items: [
             {
               type: 'doc',
