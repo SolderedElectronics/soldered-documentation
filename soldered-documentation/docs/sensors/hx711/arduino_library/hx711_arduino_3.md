@@ -167,6 +167,8 @@ void loop()
                             { type: "uint8_t", name: "numReadings", description: "The number of readings to average." }
                         ]} />
 
+<CenteredImage src="/img/hx711/hx711_unitread.png" alt="Serial Monitor" caption="HX711 Sensor Serial Monitor output"/>
+
 <QuickLink 
   title="calibrate.ino" 
   description="Example file for calibrating the HX711 Sensor"

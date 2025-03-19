@@ -68,3 +68,11 @@ void loop()
     { type: "bool", name: "sleep", description: "True to enable deep sleep mode, false to wake the HX711 from sleep." }
   ]}
 />
+
+<CenteredImage src="/img/hx711/hx711_deepsleep.png" alt="Serial Monitor" caption="HX711 Sensor Serial Monitor output"/>
+
+<QuickLink 
+  title="deepSleep.ino" 
+  description="Example file for utilizing deep sleep while using the HX711"
+  url="https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/blob/main/examples/deepSleep/deepSleep.ino" 
+/>
