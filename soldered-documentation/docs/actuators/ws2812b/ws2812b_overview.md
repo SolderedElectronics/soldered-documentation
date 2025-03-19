@@ -59,6 +59,6 @@ The **Smart LED WS2812B** is a **highly versatile LED strip** featuring individu
 - **Current Consumption:** Up to 60mA per LED at full brightness (white color)  
 - **Control Interface:** Single-wire communication via data input (compatible with microcontrollers such as Arduino, Raspberry Pi)  
 - **Addressable LEDs:** Each LED can be individually controlled, supporting a variety of effects like fades, color shifts, and dynamic animations  
-- **LED Density Options:** Available in strips of 10, 50, and more LEDs, making it adaptable to different project sizes  
+- **LED Density Options:** Available in strips of 1, 7, 12, and more LEDs, making it adaptable to different project sizes  
 - **Dimensions:** 500mm length (for 50-LED strip) with 10mm spacing between each LED  
 - **Durability:** Flexible and durable design suitable for a range of applications from home decor to professional projects

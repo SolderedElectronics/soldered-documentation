@@ -43,7 +43,6 @@ The WS2812B uses a **single-wire** protocol for data transmission. It works by r
 
 The WS2812B communicates through **serial data** transfer and does not require any complex protocol such as I2C or SPI. The data is simply sent in a sequence of bits, where each bit defines the **brightness** of the respective color channel for the LED.
 
-### Key Points:
 - **Single-wire data protocol** for communication
 - **PWM control** for individual LED brightness and color
 - **Chaining capability**, allowing multiple LEDs to be controlled by a single data line
@@ -51,3 +50,15 @@ The WS2812B communicates through **serial data** transfer and does not require a
 
 The simplicity of the **single-wire protocol** makes the WS2812B LED strip a popular choice for LED displays, decorative lighting, and other DIY electronics projects.
 
+---
+
+## Daisy Chain Configuration
+
+The **WS2812B** LEDs are designed to be **chained together** in a **daisy chain configuration**. Each LED receives data through its **DIN (Data Input)** pin, processes its assigned color, and then forwards the remaining data to the next LED via **DOUT (Data Output)**. This allows a single microcontroller to control an entire strip or matrix of LEDs using just one data line.
+
+To set up a daisy chain:
+1. Connect the **DOUT** of the first LED to the **DIN** of the next LED.
+2. Repeat this connection for all LEDs in the strip.
+3. Ensure all LEDs share a common **VCC (Power)** and **GND (Ground)**.
+
+This configuration enables the creation of **dynamic lighting effects** across large LED installations with minimal wiring.
