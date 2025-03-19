@@ -4,7 +4,7 @@ title: Detecting magnetic presence with regular digital sensor (example)
 id: hall-effect-sensor-arduino-2 
 hide_title: False
 ---
-This page contains some simple examples with function documentation on how to take measurements using the SI7211-B-06-IV Hall effect sensor.
+This page contains a simple example with function documentation on how to take measurements using the SI7211-B-06-IV Hall effect sensor.
 
 ## Digital output example
 
@@ -50,9 +50,10 @@ void loop()
 ```
 <FunctionDocumentation
   functionName="HallEffect_Digital hall()"
-  description="Instantiates digital sensor object"
+  description="Creates digital sensor object"
+  returnDescription="NaN "
   parameters={[
-    { type: 'uint16_t', name: 'pin', description: "digital pin number for data communication" }
+    { type: 'uint16_t', name: 'pin', description: "Digital pin number for data communication" }
   ]}
   
 />
@@ -66,16 +67,16 @@ void loop()
 ---
 
 ## Serial Monitor output
-<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_digital_serial_monitor.jpg" alt="SI7211-B-00-IV sensor on board" caption="output from Serial Monitor" width="400px" />
+<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_digital_serial_monitor.jpg" alt="SI7211-B-00-IV sensor on board" caption="Output from Serial Monitor" width="400px" />
 
 ---
 
 ## Full example
 
-Try all of the above mentioned functions in this full example which measures the strenght of magnetic field.
+Try all of the above mentioned functions in this full example which detects presence of magnetic object.
 
 <QuickLink 
   title="digitalRead.ino" 
-  description="Example file for using digital Hall effect sensor"
+  description="Example file for using digital Hall effect sensor."
   url="https://github.com/SolderedElectronics/Soldered-Hall-Effect-Sensor-Arduino-Library/blob/main/examples/digitalRead/digitalRead.ino" 
 />

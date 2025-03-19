@@ -76,7 +76,7 @@ void loop()
 
 ## Full example
 
-Try all of the above mentioned functions in this full example which detects presence of magnetic object.
+Try all of the above mentioned functions in this full example which measures the strenght of magnetic field.
 
 <QuickLink 
   title="analogRead.ino" 

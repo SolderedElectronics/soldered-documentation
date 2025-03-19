@@ -16,13 +16,15 @@ Click [**here**](/img/hall-effect-sensor/333081_pinout.jpg) for a high resolutio
 <CenteredImage src="/img/hall-effect-sensor/333082_pinout.jpg" alt="Pinout" />
 Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolution image of the pinout.
 
+---
+
 ## Pin details for regular version with digital output
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |
 | **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
 | **GND**     | Ground   | Common ground for power and signals.            |
-| **OUT**     | Data     | Data line for digital communication
+| **OUT**     | Data     | Data line for digital communication |
 
 ## Pin details for regular version with analog output
 
@@ -57,9 +59,9 @@ Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolutio
 
 ---
 
-## Address selection
+## Address selection for Qwiic version
 
-This board contains hardware adress switches, see below how to change breakout board's address:
+This board contains hardware adress switches, see below how to change circuit board's address.
 
 <CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_jp.jpg" alt="Pinout" />
 

@@ -1,7 +1,7 @@
 ---
-slug: /hall-effect-sensor/arduino/geting-started 
+slug: /relay/arduino/geting-started 
 title: Getting started
-id: hall-effect-sensor-arduino-1 
+id: relay-arduino-1 
 hide_title: False
 ---
 
@@ -9,9 +9,9 @@ hide_title: False
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
 <QuickLink  
-  title="Hall effect sensor Arduino library"  
-  description="Hall effect sensor Arduino library by Soldered"  
-  url="https://github.com/SolderedElectronics/Soldered-Hall-Effect-Sensor-Arduino-Library"  
+  title="Relay board Arduino library"  
+  description="Relay board Arduino library by Soldered"  
+  url="https://github.com/SolderedElectronics/Soldered-Relay-Arduino-Library"  
 />  
 <InfoBox>
 
@@ -27,25 +27,24 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ---
 
-## Connections regular version
+## Connections for regular version
 Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 |---|---|
-| IO5 for digital / IO12 for analog | OUT |
-| 3V3 | VCC |
+| IO5 | IN |
+| 3V3 or 5V | VCC |
 | GND | GND |
 
-<InfoBox> Digital version can use any **digital** input pin while analog can use any **analog** pin input, Check Pinout drawing for your specific board </InfoBox>
+<InfoBox> Digital version can use any **digital** input pin, Check Pinout drawing for your specific board </InfoBox>
 
 ---
 
-## Connections Qwiic
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection).
+## Connections for Qwiic version
+Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit boards address, check the [**Address selection**](/documentation/relay/hardware#address-selection-for-qwiic-version).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |
 | Qwiic                    | Qwiic              |
 
 <InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they will not be used in the following examples. </InfoBox>
-
