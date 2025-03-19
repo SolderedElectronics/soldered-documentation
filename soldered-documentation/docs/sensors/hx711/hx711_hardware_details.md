@@ -87,9 +87,9 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 
 ---
 
-## Address selection (Qwiic (easyC) version)
+## Address selection (Qwiic version)
 
-This board contains hardware adress switches, see below how to change breakout board's address:
+This board contains hardware address switches, see below how to change breakout board's address:
 
 <CenteredImage src="/img/hx711/address_selection.png" alt="Pinout" width="500px" />
 

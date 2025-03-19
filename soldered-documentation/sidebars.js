@@ -120,6 +120,14 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/hx711/arduino_library/hx711-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-5',
+                },
               ],
             },
           ],
