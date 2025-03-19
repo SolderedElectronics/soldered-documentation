@@ -52,3 +52,5 @@ Make sure to clear the display buffer using `display.clearDisplay();` before dra
 If ghosting persists, try turning the display off for a few hours to allow residual charge to dissipate.
 
 </ExpandableSection>
+
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>

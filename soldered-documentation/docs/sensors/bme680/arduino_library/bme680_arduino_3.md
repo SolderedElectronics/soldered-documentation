@@ -40,3 +40,5 @@ Because the sensor by itself generates heat, a temperature offset may be needed.
 Because of the way the gas sensor works, taking infrequent readings may make them inaccurate. To combat this, take readings more frequently, even if you don't plan on using the values
 
 </ExpandableSection>
+
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>

@@ -46,3 +46,5 @@ Depending on your altitude, the pressure may be different than expected, with an
 Taking too long to call `getTemperature()` after calling `startTemperature()` may result in inaccurate readings, it is best to get the values right after the small reading delay.
 
 </ExpandableSection>
+
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>

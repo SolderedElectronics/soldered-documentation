@@ -35,3 +35,5 @@ If the sensor fails to initialize on the first attempt, try calling `bme280.begi
 Because the sensor by itself generates heat, a temperature offset may be needed. You must find an independent temperature reading and apply the offset to the temperature value if needed
 
 </ExpandableSection>
+
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
