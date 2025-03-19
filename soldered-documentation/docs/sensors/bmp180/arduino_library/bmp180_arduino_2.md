@@ -13,6 +13,8 @@ This page contains some simple examples with function documentation on how to ta
 
 To use the BMP180 sensor, first, include the required library, create the sensor object and initialize the sensor in the `setup()` function.
 
+<WarningBox>This library uses the char value to return error codes and delay values in the form of numbers. While the type being char seems unintuitive when it returns numbers, the char data type is basically an 8-bit unsigned integer</WarningBox>
+
 ```cpp
 //Include the library
 #include <BMP180-SOLDERED.h>
@@ -42,7 +44,7 @@ void setup() {
 <FunctionDocumentation
   functionName="bmp180.begin()"
   description="Initializes the BMP180 sensor, setting up communication over I2C and retrieving calibration data from device"
-  returnDescription="Char value, returns 1 if sensor was properly initialized, 0 if not. (While the type being char seems unintuitive when it returns 1 or 0, the char datatype is basically an 8-bit unsigned integer)"
+  returnDescription="Char value, returns 1 if sensor was properly initialized, 0 if not."
   parameters={[]}
 />
 

@@ -5,7 +5,10 @@ id: bmp180-arduino-4
 hide_title: False
 ---
 
+<WarningBox>This library uses the char value to return error codes and delay values in the form of numbers. While the type being char seems unintuitive when it returns numbers, the char data type is basically an 8-bit unsigned integer</WarningBox>
+
 To get temperature values, first you must begin a reading using the `startTemperature()` function, then after a short delay get the value of that reading using the `getTemperature()` function.
+
 
 ```cpp
 void loop() {
