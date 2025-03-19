@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## Relay board
 
-The **Relay board** is an electronic switch that is activated by a signal sent from Dasduino or Arduino. It's used in applications where is needed to turn on and off a device that needs large current or voltage. It works both on AC and DC. It comes in 1, 2, 4 channel boards and it also comes in a version with **I2C communication** (only 1 and 2 channel versions) which is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
+The **Relay board** is an electronic switch that is activated by a signal sent from microcontroller. It's used in applications where it is needed to turn on and off a device that needs large current or voltage. It works both on AC and DC. It comes in 1, 2 or 4 channel version and it also comes in versions with **I2C communication** (only 1 and 2 channel versions) which is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
 
 <CenteredImage src="/img/relay/333024_onboard.jpg" alt="1 channel relay on board regular version" caption="1 channel relay on board regular version"/>
 
@@ -72,7 +72,7 @@ The **Relay board** is an electronic switch that is activated by a signal sent f
     - **Operating voltage:** 5V
     - **Max. DC voltage and current:** 30V, 10A
     - **Max. AC vltage and current:** 250V, 10A
-    - **Number of relays:**
+    - **Number of relays:** 
         - **1 relay**
         - **2 relays**
     - **Dimensions:**

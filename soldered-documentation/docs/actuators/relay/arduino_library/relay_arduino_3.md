@@ -38,13 +38,13 @@ void loop()
 
 <FunctionDocumentation
   functionName="CH_Relay Relay()"
-  description="Creates 1 channel relay object"
+   description="Creates relay object, number of channels depends on how many parameters are given to the constructor (there can be 1,2,4 arguments)"
   returnDescription="NaN"
 />
 
 <FunctionDocumentation
   functionName="Relay.begin()"
-  description="Initializes relay library"
+  description="Initializes relay object for I2C communication"
   returnDescription="NaN"
   parameters={[
     { type: 'uint16_t', name: 'relay_adderss', description: "Board address for I2C communicaion" }
