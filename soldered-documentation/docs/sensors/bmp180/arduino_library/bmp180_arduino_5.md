@@ -1,5 +1,5 @@
 ---
-slug: /bmp180/arduino/examples3
+slug: /bmp180/arduino/measuring-pressure
 title: Measuring pressure
 id: bmp180-arduino-5
 hide_title: False

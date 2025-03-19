@@ -1,5 +1,5 @@
 ---
-slug: /bme680/arduino/examples1
+slug: /bme680/arduino/measuring-temperature-humidity-pressure
 title: Measuring temperature, humidity and pressure (examples)
 id: bme680-arduino-4 
 hide_title: False

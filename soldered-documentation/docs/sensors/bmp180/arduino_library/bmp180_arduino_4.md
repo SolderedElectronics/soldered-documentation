@@ -1,5 +1,5 @@
 ---
-slug: /bmp180/arduino/examples2 
+slug: /bmp180/arduino/measuring-temperature
 title: Measuring temperature
 id: bmp180-arduino-4 
 hide_title: False

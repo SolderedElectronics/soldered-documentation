@@ -1,5 +1,5 @@
 ---
-slug: /bmp180/arduino/examples4
+slug: /bmp180/arduino/calculating-altitude
 title: Calculating altitude
 id: bmp180-arduino-6
 hide_title: False

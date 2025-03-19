@@ -1,5 +1,5 @@
 ---
-slug: /bmp180/arduino/examples 
+slug: /bmp180/arduino/initialization
 title: Initialization
 id: bmp180-arduino-2 
 hide_title: False

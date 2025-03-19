@@ -1,5 +1,5 @@
 ---
-slug: /bme680/arduino/examples3
+slug: /bme680/arduino/initializing
 title: Initializing
 id: bme680-arduino-5
 hide_title: False
