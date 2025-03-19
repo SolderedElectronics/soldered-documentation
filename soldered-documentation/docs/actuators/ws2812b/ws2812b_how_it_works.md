@@ -21,6 +21,8 @@ The **WS2812B** LED is designed for **individually addressable lighting**. Each 
 
 - **Color and Brightness Control**: Each WS2812B LED contains a red, green, and blue LED chip that can be independently controlled. The microcontroller sends pulse width modulation (PWM) signals to control the brightness of each color, allowing the creation of over **16 million colors**.
 
+<CenteredImage src="/img/ws2812b/color_control.jpg" alt="WS2812B LED Strip in Action" caption="WS2812B LED Strip Color Control" width="600px" />
+
 - **PWM Control**: The LED driver uses **PWM** to control the intensity of each individual color channel (Red, Green, Blue). By adjusting the duty cycle of the PWM signal, the brightness of each channel is varied, and combined, they produce different colors and effects.
 
 - **Chaining**: You can chain multiple WS2812B LEDs together in a series, with each LED passing the data to the next. This allows for the control of large LED strips or matrices with a single data line.

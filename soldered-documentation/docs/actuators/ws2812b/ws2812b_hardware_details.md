@@ -11,7 +11,19 @@ hide_title: False
 
 Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B-Stick10.png) for a high resolution image of the pinout.
 
+<CenteredImage src="/img/ws2812b/pixel_pinout.jpg" alt="Pinout" />
+
+Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B-Pixel.png) for a high resolution image of the pinout.
+
+<CenteredImage src="/img/ws2812b/ring7_pinout.jpg" alt="Pinout" />
+
+Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B.png) for a high resolution image of the pinout.
+
+<ErrorBox>The pinout images for the Ring12 and Ring24 version haven't been generated yet! We're working on it!</ErrorBox>
+
 ### Pin details
+
+<InfoBox>Ignore the **DIN** and **DOUT** pins if using the Pixel version! </InfoBox>
 
 | Pin Marking | Pin Name      | Description                                                          |
 | ----------- | ------------- | -------------------------------------------------------------------- |
@@ -62,3 +74,77 @@ The **WS2812B** LEDs use a **single-wire** control protocol for data transmissio
 
 - **Control Protocol:** Single-wire (data)
 - **Microcontroller Compatibility:** Compatible with **Arduino**, **Raspberry Pi**, and other microcontrollers with a **PWM** output.
+
+---
+
+## Hardware repository
+
+Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+
+<QuickLink 
+  title="Smart LED WS2812B Stick10 Hardware Design" 
+  description="GitHub hardware repository for this product"
+  url="https://github.com/SolderedElectronics/Smart-LED-WS2812B-Stick10-hardware-design" 
+/> 
+
+<QuickLink 
+  title="Smart LED WS2812B Pixel Hardware Design" 
+  description="GitHub hardware repository for this product"
+  url="https://github.com/SolderedElectronics/Smart-LED-WS2812B-Pixel-hardware-design" 
+/> 
+
+<QuickLink 
+  title="Smart LED WS2812B Ring7 Hardware Design" 
+  description="GitHub hardware repository for this product"
+  url="https://github.com/SolderedElectronics/Smart-LED-WS2812B-Ring7-hardware-design" 
+/> 
+
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
+
+Below is an overview of the available files.  
+
+#### CAD files
+
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+
+The `PANEL` files are used internally for production.  
+
+#### Schematic
+
+The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from KiCad.
+
+#### BOM (Bill of Materials)
+
+The bill of materials (BOM) is provided in two formats:  
+
+- A **standard `.csv` table**, listing all components, part numbers, and values.  
+- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
+
+
+#### 3D files
+
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
+
+#### Gerber files 
+
+Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
+
+- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
+- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
+- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
+- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
+- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
+- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+
+These files are ready for fabrication and can be used in PCB manufacturing.
+
+#### Compliance  
+
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+
+- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
+- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
+- **Safety Instructions** – Safety guidelines and precautions in English and in German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+
