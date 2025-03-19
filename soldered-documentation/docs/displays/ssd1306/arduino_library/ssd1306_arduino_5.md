@@ -5,6 +5,10 @@ id: ssd1306-arduino-5
 hide_title: False
 ---
 
+This page contains some examples on drawing and rendering shapes onto the OLED Display
+
+---
+
 ## Rectangles
 
 Rectangles can be dravn onto the screen by using the `drawRect()` function and defining the upper left x and y coordinate, as well as the height and width of the rectangle. In this example, we are drawing smaller and smaller rectangles until we reach the center:
@@ -65,18 +69,17 @@ void loop() {
   display.clearDisplay();
   int16_t x,y;
   //Iterate the y coordinates every time we fill a row with circles
-  for(y=5;y<display.height();y+=10)
+  for(y=4;y<display.height();y+=8)
   {
-    for(x=5;x<display.width();x+=10)
+    for(x=4;x<display.width();x+=8)
     {
-      //Draw a circle at current x and y with a radius of 5 pixels
-      display.drawCircle(x, y, 5, SSD1306_WHITE);
+      //Draw a circle at current x and y with a radius of 4 pixels
+      display.drawCircle(x, y, 4, SSD1306_WHITE);
       //Display the circle
       display.display();
       delay(300);
     }
   }
-
 }
 
 ```

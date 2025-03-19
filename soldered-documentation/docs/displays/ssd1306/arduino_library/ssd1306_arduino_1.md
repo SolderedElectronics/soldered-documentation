@@ -9,6 +9,14 @@ This page provides the essential information for getting started, including boar
 
 ---
 
+## Acknowledgement
+
+<InfoBox> The Soldered OLED Display Arduino library is based on the [**Adafruit_SSD1306** library](https://github.com/adafruit/Adafruit_SSD1306/tree/master) by [Adafruit](https://www.adafruit.com/). As such, its source code is licensed under the **BSD License**. For more details, see the [**BSD license**](https://pitt.libguides.com/openlicensing/BSD).</InfoBox>
+
+<CenteredImage src="/img/license/BSD.webp" alt="BSD license" width="250px" />
+
+---
+
 ## Arduino library
 
 To install the Arduino library, you can download it from the GitHub repository:

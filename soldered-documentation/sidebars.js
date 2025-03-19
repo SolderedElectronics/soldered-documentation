@@ -289,6 +289,10 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-6',
+                },
+                {
+                  type: 'doc',
                   id: 'displays/ssd1306/arduino_library/ssd1306-arduino-3',
                 },
               ],

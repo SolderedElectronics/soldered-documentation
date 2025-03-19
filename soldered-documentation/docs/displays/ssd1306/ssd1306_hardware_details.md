@@ -20,18 +20,32 @@ Click [**here**](/img/ssd1306/333100_pinout.jpg) for a high reoslution image of 
 
 ---
 
+## Qwiic (formerly easyC)  
+
+<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
+ 
+<InfoBox> This display is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+
+<QuickLink 
+  title="Qwiic (formerly easyC) details and specifications" 
+  description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
+  url="/qwiic" 
+/>
+
+---
+
 ## Jumper Details
 
 This board contains hardware jumpers, see below for their locations and functions:
 
 <FlickityCarousel
   images={[
-    { src: '/img/ssd1306/placeholder.png', alt: 'Stepper display jumper 1', caption: 'JP1' },
-    { src: '/img/ssd1306/placeholder.png', alt: 'Stepper display jumper 2', caption: 'JP2' },
-    { src: '/img/ssd1306/placeholder.png', alt: 'Stepper display jumper 3', caption: 'JP3' },
-    { src: '/img/ssd1306/placeholder.png', alt: 'Stepper display jumper 4', caption: 'JP4' },
-    { src: '/img/ssd1306/placeholder.png', alt: 'Stepper display jumper 5', caption: 'JP5' },
-    { src: '/img/ssd1306/placeholder.png', alt: 'Stepper display jumper 6', caption: 'JP6' },
+    { src: '/img/ssd1306/333100_jp1.jpg', alt: 'Stepper display jumper 1', caption: 'JP1' },
+    { src: '/img/ssd1306/333100_jp2.jpg', alt: 'Stepper display jumper 2', caption: 'JP2' },
+    { src: '/img/ssd1306/333100_jp3.jpg', alt: 'Stepper display jumper 3', caption: 'JP3' },
+    { src: '/img/ssd1306/333100_jp4.jpg', alt: 'Stepper display jumper 4', caption: 'JP4' },
+    { src: '/img/ssd1306/333100_jp5.jpg', alt: 'Stepper display jumper 5', caption: 'JP5' },
+    { src: '/img/ssd1306/333100_jp6.jpg', alt: 'Stepper display jumper 6', caption: 'JP6' },
   ]}
   jumpers={true}
 />
