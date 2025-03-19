@@ -9,7 +9,7 @@ This page contains an example of initialization of the HX711 load-cell amplifier
 
 ---
 
-To use the HX711 sensor, first, include the required [**library**] (https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/main), create the sensor object, and initialize the sensor in the `setup()` function.
+To use the HX711 sensor, first, include the required [**library**](https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/main), create the sensor object, and initialize the sensor in the `setup()` function.
 
 <WarningBox>Ensure that the correct pins for `DAT` and `SCK` are defined before initialization. </WarningBox>
 
