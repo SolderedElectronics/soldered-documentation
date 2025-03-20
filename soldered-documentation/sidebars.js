@@ -363,6 +363,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'USB-UART CH340 converter',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/ch340/ch340-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/ch340/ch340-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/ch340/ch340-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Logic Level Converter',
           items: [
             {
