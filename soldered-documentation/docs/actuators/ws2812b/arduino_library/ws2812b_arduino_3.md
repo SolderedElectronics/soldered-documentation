@@ -1,11 +1,9 @@
 ---
 slug: /ws2812b/arduino/brightness-control
-title: Brightness Control
+title: Brightness Control and Effects
 id: ws2812b-arduino-3 
 hide_title: False
 ---
-
-# Brightness Control  
 
 This page contains examples of **brightness effects** for the WS2812B LED strip. These effects use **variable brightness levels** to create visually appealing animations like breathing, twinkling, and smooth transitions.  
 

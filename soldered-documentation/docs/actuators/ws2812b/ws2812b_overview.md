@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## Smart LED WS2812B
 
-The **Smart LED WS2812B** is a **highly versatile LED strip** featuring individually addressable RGB LEDs, capable of displaying millions of colors. With an operating voltage of **5V**, this strip offers seamless control through **PWM (Pulse Width Modulation)**, making it perfect for creative lighting projects, decorative displays, and DIY electronics. Compatible with popular microcontrollers like **Dasduino**, it provides **precise control** of each LED, allowing for complex animations and lighting effects.
+The **Smart LED WS2812B** is a **highly versatile LED strip** featuring individually addressable RGB LEDs, capable of displaying millions of colors. With an operating voltage of **5V**, this strip offers seamless control through the [**Arduino Library**](http://localhost:3000/documentation/ws2812b/arduino/geting-started#arduino-library), making it perfect for creative lighting projects, decorative displays, and DIY electronics. Compatible with popular microcontrollers like **Dasduino**, it provides **precise control** of each LED, allowing for complex animations and lighting effects.
 
 <CenteredImage src="/img/ws2812b/333056.jpg" alt="Smart LED WS2812B" caption="Smart LED WS2812B Strip" />
 
@@ -59,6 +59,6 @@ The **Smart LED WS2812B** is a **highly versatile LED strip** featuring individu
 - **Current Consumption:** Up to 60mA per LED at full brightness (white color)  
 - **Control Interface:** Single-wire communication via data input (compatible with microcontrollers such as Arduino, Raspberry Pi)  
 - **Addressable LEDs:** Each LED can be individually controlled, supporting a variety of effects like fades, color shifts, and dynamic animations  
-- **LED Density Options:** Available in strips of 1, 7, 12, and more LEDs, making it adaptable to different project sizes  
-- **Dimensions:** 500mm length (for 50-LED strip) with 10mm spacing between each LED  
-- **Durability:** Flexible and durable design suitable for a range of applications from home decor to professional projects
+- **LED Density Options:** Available in strips of 1, 7, 12, and more LEDs, making it adaptable to different project sizes 
+- [**Dimensions**](http://localhost:3000/documentation/ws2812b/hardware#dimensions)
+
