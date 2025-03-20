@@ -148,6 +148,47 @@ void rainbow(int wait)
   ]}  
 />  
 
+---
+
+## Cylon / Knight Rider Effect
+
+A single **bright LED moves back and forth**, similar to the iconic scanner from *Knight Rider*.
+
+```cpp
+void cylonEffect()
+{
+    int maxBrightness = 255;
+    
+    // Move forward
+    for (int i = 0; i < NUMPIXELS; i++)
+    {
+        pixels.clear();
+        pixels.setPixelColor(i, pixels.Color(75, 0, 130));
+        pixels.setBrightness(maxBrightness);
+        pixels.show();
+        delay(50);
+    }
+
+    // Move backward
+    for (int i = NUMPIXELS - 1; i >= 0; i--)
+    {
+        pixels.clear();
+        pixels.setPixelColor(i, pixels.Color(75, 0, 130));
+        pixels.setBrightness(maxBrightness);
+        pixels.show();
+        delay(50);
+    }
+}
+
+void loop()
+{
+    while (true)
+    {
+        cylonEffect();
+    }
+}
+```
+
 <QuickLink 
   title="Simple.ino" 
   description="Example file for initializing and using the WS2812B LEDs."
