@@ -105,10 +105,15 @@ void twinklingStars()
     pixels.clear();
     for (int i = 0; i < NUMPIXELS; i++)
     {
-        if (random(10) > 7) // 30% chance of twinkling
+        int randomBrightness = random(0, MAX_BRIGHTNESS); // Random brightness value
+        if (random(0, 10) > 3) // Random chance of turning on the LED
         {
-            pixels.setBrightness(random(50, 255)); // Vary brightness randomly
-            pixels.setPixelColor(i, pixels.Color(75, 0, 130)); // Dark purple
+            pixels.setPixelColor(i, pixels.Color(75, 0, 130)); // Dark purple color
+            pixels.setBrightness(randomBrightness); // Set random brightness
+        }
+        else
+        {
+            pixels.setPixelColor(i, pixels.Color(0, 0, 0)); // Turn off LED
         }
     }
     pixels.show();
@@ -121,5 +126,87 @@ void loop()
     {
         twinklingStars();
     }
+}
+```
+
+## Full example
+
+```cpp
+#include "WS2812-SOLDERED.h"
+
+// Pin connected to the NeoPixels
+#define PIN       25
+#define NUMPIXELS 10
+
+WS2812 pixels(NUMPIXELS, PIN);
+
+#define DELAYVAL 100   // Speed of twinkling (smaller = faster)
+#define MAX_BRIGHTNESS 255 // Maximum brightness level
+
+// Function to create a rainbow fade effect
+void rainbowFade(int wait)
+{
+    for (long firstPixelHue = 0; firstPixelHue < 5 * 65536; firstPixelHue += 256)
+    {
+        for (uint16_t i = 0; i < pixels.numPixels(); i++)
+        {
+            int pixelHue = firstPixelHue + (i * 65536L / pixels.numPixels());
+            pixels.setPixelColor(i, pixels.gamma32(pixels.ColorHSV(pixelHue)));
+        }
+        pixels.setBrightness(abs(255 - (firstPixelHue / 256) % 256)); // Create a brightness fade
+        pixels.show();
+        delay(wait);
+    }
+}
+
+// Function to create a breathing effect
+void breathingEffect()
+{
+    float brightness;
+    for (float t = 0; t < 3.14; t += 0.05) // Use a sine wave for smooth breathing effect
+    {
+        brightness = (exp(sin(t)) - 0.36787944) * 108.0; // Adjusted sine wave for smooth brightness
+        pixels.setBrightness((int)brightness);
+        for (int i = 0; i < NUMPIXELS; i++)
+        {
+            pixels.setPixelColor(i, pixels.Color(75, 0, 130)); // Dark purple
+        }
+        pixels.show();
+        delay(20);
+    }
+}
+
+// Function to create twinkling star effect
+void twinklingStars()
+{
+    // Randomly turn on and off LEDs
+    for (int i = 0; i < NUMPIXELS; i++)
+    {
+        int randomBrightness = random(0, MAX_BRIGHTNESS); // Random brightness value
+        if (random(0, 10) > 3) // Random chance of turning on the LED
+        {
+            pixels.setPixelColor(i, pixels.Color(75, 0, 130)); // Dark purple color
+            pixels.setBrightness(randomBrightness); // Set random brightness
+        }
+        else
+        {
+            pixels.setPixelColor(i, pixels.Color(0, 0, 0)); // Turn off LED
+        }
+    }
+    pixels.show();
+    delay(DELAYVAL); // Delay for twinkling effect speed
+}
+
+void setup()
+{
+    pixels.begin(); // Initialize NeoPixel strip object (REQUIRED)
+}
+
+void loop()
+{
+    // Choose the effect to run
+    rainbowFade(10);           // Rainbow effect with a 10ms delay between color changes
+    breathingEffect();         // Breathing effect with dark purple color
+    twinklingStars();           // Twinkling stars effect
 }
 ```
