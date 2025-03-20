@@ -5,7 +5,7 @@ id: ws2812b-arduino-2
 hide_title: False
 ---
 
-This page contains an example of **initialization** of the WS2812B LED strip and examples of **setting colors**.
+This page contains an example of **initialization** of the WS2812B LED strip and examples of **setting colors** for different effects.
 
 ## Initialization
 
@@ -37,6 +37,8 @@ void setup()
   returnDescription="None."
   parameters={[]}
 />
+
+---
 
 ## Setting the LEDs color one by one
 
@@ -89,6 +91,7 @@ void loop()
                             { "name": "b", "type": "uint8_t", "description": "Blue component of the color (0-255)." }
                         ]} />
 
+---
 
 ## Creating a Rainbow Effect  
 

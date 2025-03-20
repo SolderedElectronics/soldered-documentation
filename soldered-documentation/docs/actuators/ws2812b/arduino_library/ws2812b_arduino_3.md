@@ -9,7 +9,11 @@ hide_title: False
 
 This page contains examples of **brightness effects** for the WS2812B LED strip. These effects use **variable brightness levels** to create visually appealing animations like breathing, twinkling, and smooth transitions.  
 
-## Adjusting Brightness  
+## Adjusting Brightness
+
+To use the WS2812B LEDs, include the required [**library**](https://github.com/SolderedElectronics/Soldered-WS2812-Smart-Leds-Arduino-Library/tree/main).
+
+<InfoBox>Our library is using the [**Adafruit Neopixel library**](https://github.com/adafruit/Adafruit_NeoPixel)</InfoBox>
 
 To modify the brightness of the LEDs, use the `setBrightness()` function before calling `show()`.  
 
@@ -29,6 +33,32 @@ parameters={[
 { "name": "brightness", "type": "uint8_t", "description": "Brightness level (0-255)." }
 ]}
 />
+
+## Other functions used in the examples
+
+<FunctionDocumentation
+  functionName="pixels.clear()"
+  description="Sets all pixel colors to 'off'."
+  returnDescription="None"
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="pixels.show()"
+  description="Sends the updated pixel colors to the hardware."
+  returnDescription="None"
+  parameters={[]}
+/>
+
+<FunctionDocumentation functionName="pixels.setPixelColor()" 
+                        description="Sets the color of a specific LED in the NeoPixel strip by assigning red, green, and blue values."
+                        returnDescription="None"
+                        parameters={[
+                            { "name": "n", "type": "uint16_t", "description": "Index of the LED to set the color for." },
+                            { "name": "r", "type": "uint8_t", "description": "Red component of the color (0-255)." },
+                            { "name": "g", "type": "uint8_t", "description": "Green component of the color (0-255)." },
+                            { "name": "b", "type": "uint8_t", "description": "Blue component of the color (0-255)." }
+                        ]} />
 
 ---
 
@@ -129,9 +159,12 @@ void loop()
 }
 ```
 
+---
+
 ## Full example
 
 ```cpp
+// Include the library
 #include "WS2812-SOLDERED.h"
 
 // Pin connected to the NeoPixels
