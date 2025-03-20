@@ -294,6 +294,14 @@ const sidebars = {
                   type: 'doc',
                   id: 'actuators/ws2812b/arduino_library/ws2812b-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812b/arduino_library/ws2812b-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812b/arduino_library/ws2812b-arduino-5',
+                },
               ],
             },
           ],
