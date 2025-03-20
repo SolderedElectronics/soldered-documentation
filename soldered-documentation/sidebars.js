@@ -130,6 +130,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'LED-Matrix',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/led-matrix/led-matrix-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/led-matrix/led-matrix-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/led-matrix/led-matrix-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Relay',
           items: [
             {
