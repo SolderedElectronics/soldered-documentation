@@ -49,7 +49,7 @@ When connected to a computer via USB, the board is powered by the USB port, and 
 
 ---
 
-## How to Connect the CH340 Converter Board
+## How to Connect it?
 
 - **Connect Power**:
    - Connect the **VCC** pin to the **5V power supply** (typically from the USB port).

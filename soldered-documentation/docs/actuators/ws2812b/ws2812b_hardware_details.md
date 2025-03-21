@@ -68,15 +68,6 @@ The **WS2812B** operates with a **5V** supply, which is typically delivered to t
 
 ---
 
-## Control Protocol
-
-The **WS2812B** LEDs use a **single-wire** control protocol for data transmission. The data is sent in a **serial protocol**, meaning that the data is transmitted one bit at a time, allowing for precise control of each individual LED in the strip.
-
-- **Control Protocol:** Single-wire (data)
-- **Microcontroller Compatibility:** Compatible with **Arduino**, **Raspberry Pi**, and other microcontrollers with a **PWM** output.
-
----
-
 ## Hardware repository
 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
