@@ -33,7 +33,7 @@ The **GNSS GPS L86-M33** is a compact, high-performance module designed for accu
 ## Key Features
 
 - **Position Accuracy**: 2.5 meters (CEP50) typical
-- **Multiple GNSS Support**: Works with GPS, GLONASS, Galileo, and BeiDou systems for improved positioning accuracy.
+- **Multiple GNSS Support**: Works with GPS, GLONASS, and Galileo systems for improved positioning accuracy.
 - **High Sensitivity**: Features a high-performance chipset for precise tracking even in challenging environments with weak satellite signals.
 - **Low Power Consumption**: Designed for low power consumption, making it ideal for battery-powered applications.
 - **Communication**: **UART** interface for easy connection to microcontrollers and other devices.
