@@ -32,22 +32,30 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
 
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| Qwiic                    | Qwiic              |
+| **Dasduino CONNECTPLUS** | **LTR-507** |
+| ------------------------ | ----------- |
+| Qwiic                    | Qwiic       |
 
 <InfoBox>
 
 If you prefer, you can use I2C pins to manually connect:
 
-| **Dasduino CONNECTPLUS**     | **Breakout Board** |
-| ---------------------------- | ------------------ |
-| IO21 (Default SDA pin)       | SDA                |
-| IO22 (Default SCL pin)       | SCL                |
-| VCC                          | VCC                |
-| GND                          | GND                |
-| 3V3                          | VLED               |
-| IO25 (any digital pin works) | INT                |
+| **Dasduino CONNECTPLUS**     | **LTR-507** |
+| ---------------------------- | ----------- |
+| IO21 (Default SDA pin)       | SDA         |
+| IO22 (Default SCL pin)       | SCL         |
+| VCC                          | VCC         |
+| GND                          | GND         |
+| 3V3                          | VLED        |
+| IO25 (any digital pin works) | INT         |
+
+<WarningBox>An IR LED must be connected! Ensure proper wiring for the IR LED as shown below for the proximity sensor to work.</WarningBox>
+
+| **LTR-507** | **IR LED**  |
+| ----------- | ----------- |
+| VLED        | CATHODE (-) |
+| VCC         | ANODE (+)   |
+
 
 <WarningBox> Interrupt not yet implemented. </WarningBox>
 
