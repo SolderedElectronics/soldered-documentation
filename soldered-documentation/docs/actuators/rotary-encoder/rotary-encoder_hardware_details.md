@@ -1,46 +1,19 @@
 ---
-slug: /hall-effect-sensor/hardware 
+slug: /rotary-encoder/hardware 
 title: Hardware details
-id: hall-effect-sensor-hardware 
+id: rotary-encoder-hardware 
 hide_title: False
 ---
 
 ## Pinout
 
-<CenteredImage src="/img/hall-effect-sensor/333079_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333079_pinout.jpg) for a high resolution image of the pinout.
-<CenteredImage src="/img/hall-effect-sensor/333080_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333080_pinout.jpg) for a high resolution image of the pinout.
-<CenteredImage src="/img/hall-effect-sensor/333081_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333081_pinout.jpg) for a high resolution image of the pinout.
-<CenteredImage src="/img/hall-effect-sensor/333082_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolution image of the pinout.
+<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
 ---
 
-## Pin details for regular version with digital output
+## Pin details
 
-| Pin Marking | Pin Name | Description                                     |
-| ----------- | -------- | ----------------------------------------------- |
-| **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
-| **GND**     | Ground   | Common ground for power and signals.            |
-| **OUT**     | Data     | Data line for digital communication. |
-
----
-
-## Pin details for regular version with analog output
-
-| Pin Marking | Pin Name | Description                                     |
-| ----------- | -------- | ----------------------------------------------- |
-| **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
-| **GND**     | Ground   | Common ground for power and signals.            |
-| **OUT**     | Data     | Data line for analog communication.
-             
----
-
-## Pin details for Qwiic version
-
-For Qwiic version, connection is achived with Qwiic connector.
+Connection is achived with Qwiic connector.
 
 <InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they will not be used in the following examples. </InfoBox>
 
@@ -50,7 +23,7 @@ For Qwiic version, connection is achived with Qwiic connector.
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board has **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox> This board is **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -62,18 +35,18 @@ For Qwiic version, connection is achived with Qwiic connector.
 
 ## Dimensions
 
-- **Board Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)  
+- **Board Dimensions:** 38 × 38 mm (1.5 × 1.5 inch)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO compatible! 🧱 
 
 ---
 
-## Address selection for Qwiic version
+## Address selection
 
-This board contains hardware address switches, see below how to change breakout board's address.
+This board contains hardware address switches, see below how to change breakout board's address
 
-<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_jp.jpg" alt="Pinout" />
+<CenteredImage src="/img/rotary-encoder/333188_add_highlighted.jpg" alt="Address selection" />
 
 | Address | SW3 | SW2 | SW1 |
 |:---:|:---:|:---:|:---:|
@@ -93,27 +66,9 @@ This board contains hardware address switches, see below how to change breakout 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
 <QuickLink 
-  title="Hall effect sensor breakout with digital output hardware design" 
-  description="Hardware design, BOM, gerbers and 3D files for Hall-effect-sensor-breakout-with-digital-output designed by Soldered Electronics."
-  url="https://github.com/SolderedElectronics/Hall-effect-sensor-breakout-with-digital-output-hardware-design" 
-/>  
-
-<QuickLink 
-  title="Hall effect sensor breakout with analog output hardware design" 
-  description="Hardware design, BOM, gerbers and 3D files for Hall-effect-sensor-breakout-with-analog-output designed by Soldered Electronics."
-  url="https://github.com/SolderedElectronics/Hall-effect-sensor-breakout-with-analog-output-hardware-design" 
-/>  
-
-<QuickLink 
-  title="Hall effect sensor breakout with digital output---qwiic hardware design" 
-  description="Hardware design, BOM, gerbers and 3D files for Hall-effect-sensor-breakout-with-digital-output-&-qwiic designed by Soldered Electronics."
-  url="https://github.com/SolderedElectronics/Hall-effect-sensor-breakout-with-digital-output---qwiic-hardware-design" 
-/>  
-
-<QuickLink 
-  title="Hall effect sensor breakout with analog output---qwiic hardware design" 
-  description="Hardware design, BOM, gerbers and 3D files for Hall-effect-sensor-breakout-with-analog-output-&-qwiic designed by Soldered Electronics."
-  url="https://github.com/SolderedElectronics/Hall-effect-sensor-breakout-with-analog-output---qwiic-hardware-design" 
+  title="Rotary-encoder-board-qwiic-hardware-design" 
+  description="Hardware design, BOM, gerbers and 3D files for Rotary-encoder-board-qwiic designed by Soldered Electronics."
+  url="https://github.com/SolderedElectronics/Rotary-encoder-board-qwiic-hardware-design" 
 />  
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.

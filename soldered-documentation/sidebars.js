@@ -130,6 +130,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Rotary encoder',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/rotary-encoder/rotary-encoder-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/rotary-encoder/rotary-encoder-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/rotary-encoder/rotary-encoder-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/rotary-encoder/arduino_library/rotary-encoder-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/rotary-encoder/arduino_library/rotary-encoder-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/rotary-encoder/arduino_library/rotary-encoder-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'LED-Matrix',
           items: [
             {
@@ -167,6 +203,14 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-7',
                 },
               ],
             },
