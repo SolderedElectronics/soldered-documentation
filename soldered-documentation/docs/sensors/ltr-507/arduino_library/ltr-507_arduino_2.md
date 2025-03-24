@@ -7,11 +7,11 @@ hide_title: False
 
 This page contains an example how to modify parameters of the LTR-507 light sensor.
 
+---
+
 ## Initialization
 
 To use the LTR-507 sensor, include the required library, create the `light_sensor` object, and initialize the light_sensor in the `setup()` function using `light_sensor.init()`. You can adjust the sensor’s settings, such as **ALS (ambient light sensor) gain**, **measurement rates**, and **IR LED configuration**.
-
-
 
 ```cpp
 // Include needed libraries

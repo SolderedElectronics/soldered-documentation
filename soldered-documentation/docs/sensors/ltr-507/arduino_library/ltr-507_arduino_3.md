@@ -7,6 +7,8 @@ hide_title: False
 
 This page contains simple examples with function documentation on how to use the **LTR-507 sensor** to read **ambient light** levels and **proximity**.
 
+---
+
 ## Reading Light
 
 ```cpp

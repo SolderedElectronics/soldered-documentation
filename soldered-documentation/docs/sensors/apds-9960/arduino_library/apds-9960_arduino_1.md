@@ -48,7 +48,7 @@ If you prefer, you can use I2C pins to manually connect:
 | GND                          | GND                |
 | IO25 (any digital pin works) | INT                |
 
-<WarningBox>VLED pin is used for optional power to the IR LED if PS jumper is disconnected.</WarningBox>
+<WarningBox>VLED pin is used for power to the IR LED if **JP3** jumper is opened.</WarningBox>
 | **Dasduino CONNECTPLUS**     | **Breakout Board** |
 | ---------------------------- | ------------------ |
 | 3V3                          | VLED               |

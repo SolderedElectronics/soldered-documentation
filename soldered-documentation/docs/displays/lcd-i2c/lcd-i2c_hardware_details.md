@@ -63,7 +63,7 @@ This board contains hardware jumpers, see below for their locations and function
   images={[
     { src: '/img/lcd-i2c/jp1.png', alt: 'lcd-i2cjumper1', caption: 'JP1' },
     { src: '/img/lcd-i2c/jp2.png', alt: 'lcd-i2cjumper2', caption: 'JP2' },
-    { src: '/img/lcd-i2c/jp1.png', alt: 'lcd-i2cjumper1', caption: 'JP1' },
+
   ]}
   jumpers={true}
 />

@@ -32,7 +32,7 @@ Our breakout board comes **fully assembled**, simplifying setup with the use of 
 - **Proximity Detection**: Detects objects within a range of up to **20cm**
 - **Ambient Light Measurement**: Measures light levels from **0 to 65535 lux**
 - **Communication**: I2C (400kHz)
-- **I2C Address**: **0x3A** (configurable)
+- **I2C Address**: **0x3A**
 - **Logic / Operating voltage level:** 3.3V (onboard regulator for 5V compatibility) 
 - **Compatibility**: **Arduino**, nd other **I2C-compatible** microcontrollers
 - **Operating Temperature Range**: -40°C to +85°C

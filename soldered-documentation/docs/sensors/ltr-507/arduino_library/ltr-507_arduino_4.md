@@ -63,4 +63,4 @@ I2C communication requires pull-up resistors on the SDA and SCL lines. Ensure th
 
 </ExpandableSection>
 
-<InfoBox>If you have not found a solution to your issue, please contact us for further assistance.</InfoBox>
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
