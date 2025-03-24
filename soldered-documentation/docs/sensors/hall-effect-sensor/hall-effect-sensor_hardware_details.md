@@ -24,7 +24,7 @@ Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolutio
 | ----------- | -------- | ----------------------------------------------- |
 | **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
 | **GND**     | Ground   | Common ground for power and signals.            |
-| **OUT**     | Data     | Data line for digital communication |
+| **OUT**     | Data     | Data line for digital communication. |
 
 ## Pin details for regular version with analog output
 
@@ -32,7 +32,7 @@ Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolutio
 | ----------- | -------- | ----------------------------------------------- |
 | **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
 | **GND**     | Ground   | Common ground for power and signals.            |
-| **OUT**     | Data     | Data line for analog communication
+| **OUT**     | Data     | Data line for analog communication.
              
 ---
 
