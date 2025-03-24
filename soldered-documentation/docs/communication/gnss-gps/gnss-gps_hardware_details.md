@@ -31,6 +31,12 @@ hide_title: False
 
 <InfoBox>If the built-in antenna doesn't provide a strong enough signal, connect an **external antenna** via the **ANT-D** pin for better performance.</InfoBox>
 
+The board also features an **IPX connector** with SMA for an **external antenna**.
+
+<CenteredImage src="/img/gnss-gps/antenna.png" alt="antenna on board" caption="IPX Antenna connector on board" width="600px" />
+
+<CenteredImage src="/img/gnss-gps/antennaC.png" alt="antenna on board" caption="IPX Antenna connector on easyC board" width="600px" />
+
 ## Pin Details (Qwiic version)
 
 | Pin Marking | Pin Name                 | Description                                                                                                             |
