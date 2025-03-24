@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Joystick',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/joystick/joystick-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/joystick/joystick-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/joystick/joystick-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/joystick/arduino_library/joystick-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/joystick/arduino_library/joystick-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/joystick/arduino_library/joystick-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Hall effect sensor',
           items: [
             {
