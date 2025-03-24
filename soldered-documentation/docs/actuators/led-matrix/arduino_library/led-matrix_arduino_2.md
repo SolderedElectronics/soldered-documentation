@@ -1,6 +1,6 @@
 ---
 slug: /led-matrix/arduino/examples 
-title: Displaying text example
+title: Displaying text (example)
 id: led-matrix-arduino-2 
 hide_title: False
 ---
@@ -108,7 +108,7 @@ void loop()
 <FunctionDocumentation
   functionName="Led_Matrix mx = Led_Matrix()"
   description="Creates matrix object"
-  returnDescription="NaN"
+  returnDescription="none"
   parameters={[
   { type: 'moduleType_t', name: 'mod', description: "Sets the mode in which module will be working" },
   { type: 'uint8_t', name: 'csPin', description: "Digital pin number for data communication" },
@@ -119,13 +119,13 @@ void loop()
 <FunctionDocumentation
   functionName="mx.clear()"
   description="Clears the buffer and all dislay data on the devices"
-  returnDescription="NaN"
+  returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="mx.begin()"
   description="Initialize the object."
-  returnDescription="NaN"
+  returnDescription="none"
 />
 
 <FunctionDocumentation

@@ -160,6 +160,14 @@ const sidebars = {
                   type: 'doc',
                   id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-5',
+                },
               ],
             },
           ],
