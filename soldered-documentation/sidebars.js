@@ -371,6 +371,18 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-6',
+                },
+                {
+                  type: 'doc',
                   id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-3',
                 },
               ],
