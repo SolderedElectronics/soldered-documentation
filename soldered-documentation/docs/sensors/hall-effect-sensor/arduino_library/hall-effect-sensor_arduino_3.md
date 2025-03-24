@@ -1,5 +1,5 @@
 ---
-slug: /hall-effect-sensor/arduino/regular analog example
+slug: /hall-effect-sensor/arduino/regular-analog-example
 title: Measuring strenght of magnetic field with regular analog sensor (example)
 id: hall-effect-sensor-arduino-3 
 hide_title: False
@@ -62,7 +62,7 @@ void loop()
 
 <FunctionDocumentation
   functionName="hall.getMilliTeslas()"
-  description="calculates the value of magnetic induction from current reading"
+  description="Calculates the value of magnetic induction from current reading"
   returnDescription="Returns float value that represents magnetic induction in milli Teslas"
   
 />

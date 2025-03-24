@@ -8,11 +8,11 @@ pagination_prev: null
 
 ## Hall effect sensor
 
-The **Hall effect sensor circuit board** is a high-precision sensor that measures **presence of magnetic field** in  version with **digital output** and **value of magnetic field** with **analog version** of the breakboard. This sensor is a great option for measuring the presence, position and proximity of magnetized objects. It also comes in a version with **I2C communication** with default address of **0x30** and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
+The **Hall effect sensor circuit board** is a high-precision sensor that measures **presence of magnetic field** in  version with **digital output** and **value of magnetic field** with **analog version** of the breakout board. This sensor is a great option for measuring the presence, position and proximity of magnetized objects. It also comes in a version with **I2C communication** with default address of **0x30** and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
 
 
 
-<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_onboard_digital.jpg" alt="SI721x on board" caption="SI721x on the board"/>
+<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_onboard_digital.jpg" alt="Hall effect sensor board" caption="Hall effect sensor board"/>
 
 ---
 

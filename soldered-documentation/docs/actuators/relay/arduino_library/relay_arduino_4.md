@@ -8,7 +8,7 @@ pagination_next: null
 
 This page contains some tips in case you are having problems using this product.
 
-<ExpandableSection title="My sensor won't initialize! Qwiic breakboard">
+<ExpandableSection title="My sensor won't initialize! (Qwiic breakout board)">
 
 #### Check wiring
 Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another easyC-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
@@ -26,7 +26,7 @@ If you have multiple I2C devices connected to the same bus, ensure that none of 
 If the sensor fails to initialize on the first attempt, try calling `Relay.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
 
 </ExpandableSection>
-<ExpandableSection title="My sensor doesn't work! Regular breakboard">
+<ExpandableSection title="My sensor doesn't work! (Regular breakout board)">
 
 #### Check wiring
 Ensure that your cables are properly connected and in good condition. Try using the same cable with another device to verify that it works. If the issue persists, swap them out for  different cables to rule out any possible damage or defects.

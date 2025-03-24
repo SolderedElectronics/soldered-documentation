@@ -1,6 +1,6 @@
 ---
-slug: /relay/arduino/regular 1 channel example 
-title: Controlling regular relay board
+slug: /relay/arduino/regular-example 
+title: Switching the relay (regular example)
 id: relay-arduino-2 
 hide_title: False
 ---
@@ -37,23 +37,23 @@ void loop()
   description="Creates relay object, number of channels depends on how many parameters are given to the constructor (there can be 1,2,4 arguments)"
   returnDescription="NaN"
   parameters={[
-    { type: 'uint16_t', name: 'pin1', description: "digital pin number for data communication" },
-    { type: 'uint16_t', name: 'pin2', description: "digital pin number for data communication" },
-    { type: 'uint16_t', name: 'pin3', description: "digital pin number for data communication" },
-    { type: 'uint16_t', name: 'pin4', description: "digital pin number for data communication" }
+    { type: 'uint16_t', name: 'pin1', description: "digital pin number for controlling relay on channel 1" },
+    { type: 'uint16_t', name: 'pin2', description: "digital pin number for controlling relay on channel 2" },
+    { type: 'uint16_t', name: 'pin3', description: "digital pin number for controlling relay on channel 3" },
+    { type: 'uint16_t', name: 'pin4', description: "digital pin number for controlling relay on channel 4" }
   ]}
 />
 
 <FunctionDocumentation
   functionName="Relay.begin()"
   description="Initializes relay library"
-  returnDescription="NaN"
+  returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="Relay.relayControl()"
   description="Sets specified relay in high or low state"
-  returnDescription="NaN"
+  returnDescription="none"
   parameters={[
     { type: 'uint16_t', name: 'channel', description: "Channel selection" },
     { type: 'uint16_t', name: 'mode', description: "Set relay in HIGH (on) or LOW (off) mode" }

@@ -26,6 +26,8 @@ Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolutio
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **OUT**     | Data     | Data line for digital communication. |
 
+---
+
 ## Pin details for regular version with analog output
 
 | Pin Marking | Pin Name | Description                                     |
@@ -34,6 +36,14 @@ Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolutio
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **OUT**     | Data     | Data line for analog communication.
              
+---
+
+## Pin details for Qwiic version
+
+For Qwiic version, connection is achived with Qwiic connector.
+
+<InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they will not be used in the following examples. </InfoBox>
+
 ---
 
 ## Qwiic (formerly easyC)  

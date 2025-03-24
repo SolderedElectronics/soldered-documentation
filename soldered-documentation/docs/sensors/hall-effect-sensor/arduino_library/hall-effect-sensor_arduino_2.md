@@ -1,5 +1,5 @@
 ---
-slug: /hall-effect-sensor/arduino/regular digital example
+slug: /hall-effect-sensor/arduino/regular-digital-example
 title: Detecting magnetic presence with regular digital sensor (example)
 id: hall-effect-sensor-arduino-2 
 hide_title: False
@@ -51,7 +51,7 @@ void loop()
 <FunctionDocumentation
   functionName="HallEffect_Digital hall()"
   description="Creates digital sensor object"
-  returnDescription="NaN "
+  returnDescription="none "
   parameters={[
     { type: 'uint16_t', name: 'pin', description: "Digital pin number for data communication" }
   ]}

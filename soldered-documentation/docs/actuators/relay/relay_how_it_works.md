@@ -7,9 +7,9 @@ hide_title: False
 This is a circuit board with integated **SRD-05VDC-SL-C** relay by [**SONGLE**](https://www.circuitbasics.com/wp-content/uploads/2015/11/). It comes in both **single channel** (1 relay) and **multi channel** (2 and 4 relays) version. For **Qwiic**, currenty 1 and 2 channel versions are available. When using an Qwiic version you are essentially communicating with an onboard ATTINY404 MCU via **I2C communication**.
 
 
-<CenteredImage src="/img/relay/relay_on_board.jpg" alt="SRD-05VDC-SL-C on board" caption="SRD-05VDC-SL-C on the board" width="400px" />
+<CenteredImage src="/img/relay/relay_on_board.jpg" alt="SRD-05VDC-SL-C on board" caption="SRD-05VDC-SL-C on the board of easyC breakout board" width="400px" />
 
-<CenteredImage src="/img/relay/ATTINY_on_board.jpg" alt="ATTINY404 on board" caption="ATTINY404 on the board" width="400px" />
+<CenteredImage src="/img/relay/ATTINY_on_board.jpg" alt="ATTINY404 on board" caption="ATTINY404 on the board of easyC breakout board" width="400px" />
 
 ---
 
@@ -44,4 +44,4 @@ To help visualize if board is operational, each relay on board is accompanied by
 
 ## I2C communication - Qwiic
 
-Qwiic versions of the product use onboard ATTINY404 MCU to implement I2C communication. Breakout board perates with a default I2C address of **0x30**  but can be changed with onboard switches. When detected, ATTINY404 recives data from sensor and passes it to the main MCU using I2C data line. To check in detail how to ATTINY404 is preprogrammed, check [**firmware github page**](https://github.com/SolderedElectronics/Soldered-Relay-Arduino-Library/blob/dev/extras/attiny_firmware/attiny_firmware.cpp).
+Qwiic versions of the product use onboard ATTINY404 MCU to implement I2C communication. Breakout board perates with a default I2C address of **0x30**  but can be changed with onboard switches, to cange breakout board's address, check the  When detected, [**Address selection**](/documentation/relay/hardware#jumper-details).ATTINY404 recives data from sensor and passes it to the main MCU using I2C data line. To check in detail how to ATTINY404 is preprogrammed, check [**firmware github page**](https://github.com/SolderedElectronics/Soldered-Relay-Arduino-Library/blob/dev/extras/attiny_firmware/attiny_firmware.cpp).

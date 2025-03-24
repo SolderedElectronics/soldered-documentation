@@ -1,6 +1,6 @@
 ---
-slug: /relay/arduino/Qwiic example 
-title: Controlling Qwiic relay board
+slug: /relay/arduino/Qwiic-example 
+title: Switching the relay (Qwiic example)
 id: relay-arduino-3
 hide_title: False
 ---
@@ -39,13 +39,13 @@ void loop()
 <FunctionDocumentation
   functionName="CH_Relay Relay()"
    description="Creates relay object, number of channels depends on how many parameters are given to the constructor (there can be 1,2,4 arguments)"
-  returnDescription="NaN"
+  returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="Relay.begin()"
   description="Initializes relay object for I2C communication"
-  returnDescription="NaN"
+  returnDescription="none"
   parameters={[
     { type: 'uint16_t', name: 'relay_adderss', description: "Board address for I2C communicaion" }
   ]}
@@ -54,7 +54,7 @@ void loop()
 <FunctionDocumentation
   functionName="Relay.relayControl()"
   description="Sets specified relay in high or low state"
-  returnDescription="NaN"
+  returnDescription="none"
   parameters={[
     { type: 'uint16_t', name: 'channel', description: "Channel selection" },
     { type: 'uint16_t', name: 'mode', description: "Set relay in HIGH (on) or LOW (off) mode" }

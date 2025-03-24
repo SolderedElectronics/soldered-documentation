@@ -1,9 +1,8 @@
 ---
-slug: /hall-effect-sensor/arduino/Qwiic digital example 
+slug: /hall-effect-sensor/arduino/Qwiic-digital-example 
 title: Detecting magnetic presence with Qwiic digital sensor (example)
 id: hall-effect-sensor-arduino-4 
 hide_title: False
-pagination_next: null
 ---
 
 This page contains some simple examples with function documentation on how to take measurements using the SI7211-B-06-IV Hall effect sensor and Qwiic connection.
@@ -49,12 +48,12 @@ void loop()
 
 <FunctionDocumentation
   functionName="HallEffect_Digital_EasyC hall()"
-  description="Instantiates digital sensor object"
+  description="Creates digital sensor object"
 />
 
 <FunctionDocumentation
   functionName="hall.begin()"
-  description="Instantiates digital sensor object"
+  description="Initialises digital sensor object"
   returnDescription="Returns true if initialization is successful, false otherwise."
   parameters={[
     { type: 'uint16_t', name: 'address', description: "Optional, used for changing breakout address, default is 0x30" }

@@ -88,13 +88,13 @@ This board contains hardware address switches, see below how to change circuit b
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers, see below **example for 2 channel regular relay board** for their locations and functions:
 
 <FlickityCarousel
   images={[
-    { src: '/img/relay/333022_jp1.jpg', alt: 'Stepper driver jumper 1', caption: 'JP1' },
-    { src: '/img/relay/333022_jp2.jpg', alt: 'Stepper driver jumper 2', caption: 'JP2' },
-    { src: '/img/relay/333022_jp3.jpg', alt: 'Stepper driver jumper 2', caption: 'JP2' },
+    { src: '/img/relay/333022_jp1.jpg', alt: 'Relay jumper 1', caption: 'JP1' },
+    { src: '/img/relay/333022_jp2.jpg', alt: 'Relay jumper 2', caption: 'JP2' },
+    { src: '/img/relay/333022_jp3.jpg', alt: 'Relay jumper 3', caption: 'JP3' },
   ]}
   jumpers={true}
 />
@@ -105,7 +105,9 @@ This board contains hardware jumpers, see below for their locations and function
 | **JP2** | **NO** (Normally open)   | When shorted, it **enables the output LEDs** that pulse for each pin.                             |
 | **JP3** | **NO** (Normally open)   | Enables the **power indicator LED**, which indicates when power is supplied to the circuit board.                           |
 
-<InfoBox>Jumper with the biggest number always represents power indicator LED for the entire circuit board.</InfoBox>
+<InfoBox>First n (where n represents the number of channels) jumpers always represent output LEDs for every channel. Jumper with the biggest number always represents power indicator LED for the entire circuit board.</InfoBox>
+
+<InfoBox>Jumpers on regular and Qwiic version work in the same way!</InfoBox>
 
 ---
 

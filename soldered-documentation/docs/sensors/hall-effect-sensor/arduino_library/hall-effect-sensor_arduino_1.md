@@ -27,7 +27,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ---
 
-## Connections regular version
+## Connections (regular version)
 Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
@@ -40,8 +40,8 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 ---
 
-## Connections Qwiic
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection).
+## Connections (Qwiic)
+Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |
