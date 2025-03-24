@@ -25,20 +25,6 @@ Click [**here**](/img/led-matrix/led-matrix_pinout.jpg) for a high resolution im
 
 ---
 
-## Qwiic (formerly easyC)  
-
-<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
- 
-<InfoBox> This board has **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
-
-<QuickLink 
-  title="Qwiic (formerly easyC) details and specifications" 
-  description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
-  url="/qwiic" 
-/>
-
----
-
 ## Dimensions
 
 - **Board Dimensions:** 54 x 22 mm (2.1 x 0.9 inch)  

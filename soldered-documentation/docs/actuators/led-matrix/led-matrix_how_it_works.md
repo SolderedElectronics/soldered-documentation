@@ -7,8 +7,6 @@ hide_title: False
 
 The **LED matrix** is a circuit board that contains a system of **64 interconnected LEDs** that are controlled by onboard **MAX7219 LED driver** by [**Adafruit**](https://www.adafruit.com/product/453).
 
-<CenteredImage src="/img/led-matrix/led-matrix_matrix_highlighted.jpg" alt="Matrix on board" caption="Matrix on board" width="400px" />
-
 <CenteredImage src="/img/led-matrix/led-matrix_MAX7219_highlighted.jpg" alt="MAX7219 LED driver on board" caption="MAX7219 LED driver on board" width="400px" />
 
 ## Datasheet
@@ -26,6 +24,8 @@ For an in-depth look at technical specifications, refer to the official MAX7219 
 ## How the driver works
 
 The MAX7219 uses a 3-wire SPI-compatible protocol with **DIN** (**data in**), **CLK** (**clock**), and **LOAD** (**chip select**) pins. Data is shifted into the chip, controlling the LED states through an internal shift register. The driver can control up to **8 digits of a 7-segment display** or an **8x8 LED matrix**. It achieves this through **multiplexing** , meaning it quickly switches between LED segments to make them appear continuously lit to human eye.
+
+<CenteredImage src="/img/led-matrix/multiplexing.jpg" alt="Visualization of multiplexing" caption="Visualization of multiplexing" width="400px" />
 
 ---
 

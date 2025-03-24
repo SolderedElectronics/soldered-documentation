@@ -8,8 +8,6 @@ pagination_next: null
 
 This page contains some tips in case you are having problems using this product.
 
-
-
 ---
 
 <ExpandableSection title="My sensor won't initialize! (Qwiic breakout board)">

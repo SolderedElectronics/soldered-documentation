@@ -69,13 +69,3 @@ The **8x8 LED matrix** is a system of 64 interconnected LEDs that, with help of 
 - **Available in colors:** purple, red, white, blue, orange, green
 - **Dimensions:** **54 x 22 mm** (2.1 x 0.9 inch)
 
----
-
-## You may also need
-
-<QuickLink 
-  title="Qwiic cable" 
-  description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
-  url="https://soldered.com/product/easyc-cable/"
-  image="/img/333311.webp" 
-/> 

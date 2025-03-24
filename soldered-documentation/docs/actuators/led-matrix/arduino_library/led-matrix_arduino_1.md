@@ -40,6 +40,12 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | VCC | VCC |
 |GND | GND |
 
+<InfoBox>
+LOAD pin can be any digital IO  pin on controller, CLK and DIN pins must be default SPI communication pins(SCK for CLK and MOSI for DIN) if no external library such as Wire.h is used!
+
+</InfoBox>
+
+
 ## Connections for daisy chaining
 
 | **First Board** | **Next Board**|

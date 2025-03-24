@@ -15,7 +15,7 @@ hide_title: False
 
 Connection is achived with Qwiic connector.
 
-<InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they will not be used in the following examples. </InfoBox>
+<InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they are not used for encoder communication! </InfoBox>
 
 ---
 

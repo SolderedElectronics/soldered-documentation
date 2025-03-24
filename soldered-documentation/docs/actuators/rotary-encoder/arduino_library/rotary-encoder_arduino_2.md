@@ -50,7 +50,7 @@ void setup()
 ## Detecting rotation
 
 To get a reading, call `getState()`. Function returns the current state of the rotary encoder. It mst be in the loop() and run constanty to get proper readings.
-```cp
+```cpp
 int state = rotary.getState();
 
 // If the state is zero or ROTARY_IDLE constant, the rotary encoder is not moving
@@ -94,7 +94,7 @@ if (state != ROTARY_IDLE)
 ## Detecting button press
 the rothary encoder contains an addintional button, to use it, press the shaft.
 
-```cp
+```cpp
 //...
     if (state == BTN_CLICK)
         {

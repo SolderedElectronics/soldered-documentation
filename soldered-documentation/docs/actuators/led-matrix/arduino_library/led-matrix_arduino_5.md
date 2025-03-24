@@ -190,8 +190,8 @@ void loop(void)
   description="Set all LEDs in a specific column to a new state."
   returnDescription="Returns bool value, fales if parameter errors, true otherwise"
   parameters={[
-  { type: 'uint8_t', name: 'c', description: "column which is to be set [0..getColumnCount()-1]." },
-  { type: 'uint8_value', name:'vale', description:"each bit set to 1 will light up the corresponding LED." }
+  { type: 'uint8_t', name: 'c', description: "Column which is to be set [0..getColumnCount()-1]." },
+  { type: 'uint8_value', name:'vale', description:"Each bit set to 1 will light up the corresponding LED." }
   ]}
 />
 
