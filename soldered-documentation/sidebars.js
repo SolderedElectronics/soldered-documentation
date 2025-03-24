@@ -363,6 +363,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'GNSS GPS L86-M33',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/gnss-gps/gnss-gps-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/gnss-gps/gnss-gps-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/gnss-gps/gnss-gps-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/gnss-gps/arduino_library/gnss-gps-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/gnss-gps/arduino_library/gnss-gps-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/gnss-gps/arduino_library/gnss-gps-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'USB-UART CH340 converter',
           items: [
             {

@@ -12,8 +12,6 @@ The LTR-507 Breakout board features precise **ambient light (ALS)** and **proxim
 need to poll the sensor for a reading which improves
 system efficiency. 
 
-Our breakout board comes **fully assembled**, simplifying setup with the use of **Qwiic (formerly easyC) connectivity** and  eliminating the need for soldering. To get started quickly, we offer a comprehensive **Arduino library**, complete with example codes and detailed documentation.
-
 <CenteredImage src="/img/ltr-507/333063.png" alt="ltr-507 sensor" caption="LTR-507 Light and Proximity Sensor"/>
 
 ## Which products is this documentation for?
