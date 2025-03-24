@@ -6,9 +6,9 @@ hide_title: False
 pagination_prev: null
 ---
 
-## L86-M33 GNSS GPS Receiver
+## GNSS GPS L86-M33
 
-The **L86-M33 GNSS GPS Receiver** is a compact, high-performance module designed for accurate positioning and navigation applications. Equipped with **GNSS (Global Navigation Satellite System)** support, this receiver can track multiple satellite systems, ensuring reliable location data even in challenging environments. The device communicates via **UART** for easy integration with microcontrollers like **Arduino**, making it a great choice for outdoor navigation, robotics, and IoT applications.
+The **GNSS GPS L86-M33** is a compact, high-performance module designed for accurate positioning and navigation applications. Equipped with **GNSS (Global Navigation Satellite System)** support, this receiver can track multiple satellite systems, ensuring reliable location data even in challenging environments. The device communicates via **UART** for easy integration with microcontrollers like **Arduino**, making it a great choice for outdoor navigation, robotics, and IoT applications.
 
 <CenteredImage src="/img/gnss-gps/333201.jpg" alt="gnss-gps" caption="GNSS GPS L86-M33"/>
 
