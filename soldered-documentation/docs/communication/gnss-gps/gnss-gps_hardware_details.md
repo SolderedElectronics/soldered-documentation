@@ -18,11 +18,7 @@ hide_title: False
 | **RX**      | Receive (UART)  | UART receive pin for communication.  |
 | **TX**      | Transmit (UART) | UART transmit pin for communication. |
 
-<WarningBox>
-- **5V and GND pins are mandatory**.
-- **RX and TX pins are mandatory if using UART**. 
-- **RST, F-ON, PPS and ANT-D are optional**.
-</WarningBox>
+<WarningBox>**RST, F-ON, PPS and ANT-D are optional**.</WarningBox>
 
 | Pin Marking | Pin Name         | Description                                            |
 | ----------- | ---------------- | ------------------------------------------------------ |

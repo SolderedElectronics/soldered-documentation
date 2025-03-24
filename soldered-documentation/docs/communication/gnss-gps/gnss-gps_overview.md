@@ -35,7 +35,6 @@ The **L86-M33 GNSS GPS Receiver** is a compact, high-performance module designed
 - **Position Accuracy**: 2.5 meters (CEP50) typical
 - **Multiple GNSS Support**: Works with GPS, GLONASS, Galileo, and BeiDou systems for improved positioning accuracy.
 - **High Sensitivity**: Features a high-performance chipset for precise tracking even in challenging environments with weak satellite signals.
-- **Fast Startup**: With **cold start** and **hot start** capabilities, the receiver can quickly lock onto satellite signals for fast positioning data.
 - **Low Power Consumption**: Designed for low power consumption, making it ideal for battery-powered applications.
 - **Communication**: **UART** interface for easy connection to microcontrollers and other devices.
 - **Update Rate**: 1 Hz (default), configurable to 5 Hz or 10 Hz for higher accuracy.
