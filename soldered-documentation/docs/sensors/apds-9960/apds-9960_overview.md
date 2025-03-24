@@ -20,7 +20,7 @@ The **Color and Gesture sensor APDS-9960 breakout** is a compact and powerful mo
   title="Color and Gesture sensor APDS-9960 breakout" 
   description="333002"
   url="https://soldered.com/product/color-gesture-sensor-apds-9960-breakout/"
-  image="/img/apds9960/333002.jpg" 
+  image="/img/apds-9960/333002.jpg" 
 />
 
 ---

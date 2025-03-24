@@ -52,11 +52,13 @@ Click [**here**](https://soldered.com/productdata/2022/03/USB-UART-converter.png
 
 ## Jumper Details
 
+This board contains hardware jumpers, see below for their locations and functions:
+
+<CenteredImage src="/img/ch340/jp1pwrled.png" alt="USB-UART CH340 converter pinout diagram" caption="JP1 on the board" width="500px"/>
+
 | Jumper  | Default State            | Function                  |
 | ------- | ------------------------ | ------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects 3V3 with an LED. |
-
-<CenteredImage src="/img/ch340/jp1pwrled.png" alt="USB-UART CH340 converter pinout diagram" caption="JP1 on the board" width="500px"/>
 
 ---
 

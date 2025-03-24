@@ -12,7 +12,7 @@ The LTR-507 Breakout board features precise **ambient light (ALS)** and **proxim
 need to poll the sensor for a reading which improves
 system efficiency. 
 
-Our breakout board comes **fully assembled**, simplifying setup with the use of **Qwiic (formerly easyC) connectivity** and eliminating the need for soldering. To get started quickly, we offer a comprehensive [**Arduino library**](https://github.com/SolderedElectronics/Soldered-Digital-Light-Sensor-Arduino-Library/tree/main), complete with example codes and detailed documentation.
+Our breakout board comes **fully assembled**, simplifying setup with the use of **Qwiic (formerly easyC) connectivity** and  eliminating the need for soldering. To get started quickly, we offer a comprehensive **Arduino library**, complete with example codes and detailed documentation.
 
 <CenteredImage src="/img/ltr-507/333063.png" alt="ltr-507 sensor" caption="LTR-507 Light and Proximity Sensor"/>
 
@@ -49,4 +49,11 @@ Our breakout board comes **fully assembled**, simplifying setup with the use of 
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
+/>  
+
+<QuickLink 
+  title="5mm IR LED" 
+  description="Infra-red (IR) diode emits light in the spectrum that the human eye can’t see."
+  url="https://soldered.com/product/5mm-ir-led/"
+  image="/img/101922.webp" 
 />  

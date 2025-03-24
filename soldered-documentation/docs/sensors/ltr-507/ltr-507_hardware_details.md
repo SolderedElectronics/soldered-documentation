@@ -7,7 +7,9 @@ hide_title: False
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/ltr-507/pinout.jpg" alt="APDS-9960 pinout diagram" caption="LTR-507 pinout diagram"/>
+
+Click [**here**](/img/ltr-507/pinout.jpg) for a high reoslution image of the pinout.
 
 ## Pin details
 
@@ -53,12 +55,6 @@ The LTR-507ALS-01 sensor is designed for low power consumption, making it suitab
 
 <InfoBox>Power consumption can be minimized by utilizing **interrupt** and **sleep** modes!</InfoBox>
 
-- **Interrupt Mode**:
-By using interrupts, the sensor can **wake up** from its low-power state only when a **significant change** in **ambient light** or **proximity** is detected. This allows the sensor to stay in a **low-power mode** most of the time and only activate when it’s required to take action, further **saving power**.
-
-- **Sleep Mode**:
-The sensor can be placed in a sleep mode where it completely shuts down its internal circuitry, **consuming minimal current**. This is useful for scenarios where the sensor doesn't need to be active for extended periods. You can program it to **wake up periodically** or only upon receiving an **external trigger**.
-
 ---
 
 ## Dimensions
@@ -72,13 +68,7 @@ The sensor can be placed in a sleep mode where it completely shuts down its inte
 
 ## Jumper Details
 
-| Jumper  | Default State            | Function                                                                                                                                                                      |
-| ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                           |
-| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                         |
-| **JP3** | **NC** (Normally closed) | Disconnect to remove VLED power supply.                                                                                                                                       |
-| **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
-| **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
+This board contains hardware jumpers, see below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -91,6 +81,14 @@ The sensor can be placed in a sleep mode where it completely shuts down its inte
   ]}
   jumpers={true}
 />
+
+| Jumper  | Default State            | Function                                                                                                                                                                      |
+| ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                           |
+| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                         |
+| **JP3** | **NC** (Normally closed) | Disconnect to remove VLED power supply.                                                                                                                                       |
+| **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
+| **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
 
 ---
 
@@ -111,3 +109,65 @@ If your **I2C scanner detects address `0x3A`**, this means the **SEL pin is floa
 To change the address, connect **SEL to GND or VCC** as needed.
 
 If your LTR-507 sensor is part of a breakout board, the SEL pin may already be internally connected to GND, VCC, or left floating by default. In this case, you won’t be able to manually change the I2C address via the SEL pin unless you modify the board itself. Be sure to check your breakout board’s documentation to confirm how the SEL pin is configured.
+
+---
+
+## Hardware repository
+
+Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+
+<QuickLink 
+  title="LTR-507 Hardware design" 
+  description="GitHub hardware repository for this product"
+  url="https://github.com/SolderedElectronics/Digital-light---proximity-sensor-LTR-507ALS-breakout-hardware-design" 
+/> 
+
+
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
+
+Below is an overview of the available files.  
+
+#### CAD files
+
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+
+The `PANEL` files are used internally for production.  
+
+#### Schematic
+
+The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from KiCad.
+
+#### BOM (Bill of Materials)
+
+The bill of materials (BOM) is provided in two formats:  
+
+- A **standard `.csv` table**, listing all components, part numbers, and values.  
+- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
+
+
+#### 3D files
+
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
+
+#### Gerber files 
+
+Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
+
+- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
+- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
+- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
+- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
+- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
+- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+
+These files are ready for fabrication and can be used in PCB manufacturing.
+
+#### Compliance  
+
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+
+- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
+- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
+- **Safety Instructions** – Safety guidelines and precautions in English and in German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  

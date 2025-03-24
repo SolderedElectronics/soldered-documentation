@@ -57,6 +57,17 @@ Click [**here**](\img\lcd-i2c\lcd-i2c_pinout.png) for a high reoslution image of
 
 ## Jumper Details
 
+This board contains hardware jumpers, see below for their locations and functions:
+
+<FlickityCarousel
+  images={[
+    { src: '/img/lcd-i2c/jp1.png', alt: 'lcd-i2cjumper1', caption: 'JP1' },
+    { src: '/img/lcd-i2c/jp2.png', alt: 'lcd-i2cjumper2', caption: 'JP2' },
+    { src: '/img/lcd-i2c/jp1.png', alt: 'lcd-i2cjumper1', caption: 'JP1' },
+  ]}
+  jumpers={true}
+/>
+
 | Jumper  | Default State            | Function                                                              |
 | ------- | ------------------------ | --------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.   |

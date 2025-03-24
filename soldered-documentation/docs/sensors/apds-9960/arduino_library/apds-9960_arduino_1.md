@@ -46,8 +46,12 @@ If you prefer, you can use I2C pins to manually connect:
 | IO22 (Default SCL pin)       | SCL                |
 | VCC                          | VCC                |
 | GND                          | GND                |
-| 3V3                          | VLED               |
 | IO25 (any digital pin works) | INT                |
+
+<WarningBox>VLED pin is used for optional power to the IR LED if PS jumper is disconnected.</WarningBox>
+| **Dasduino CONNECTPLUS**     | **Breakout Board** |
+| ---------------------------- | ------------------ |
+| 3V3                          | VLED               |
 
 
 </InfoBox>

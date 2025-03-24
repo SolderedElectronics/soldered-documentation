@@ -7,6 +7,8 @@ hide_title: False
 
 This page contains examples of **brightness effects** for the WS2812B LED strip. These effects use **variable brightness levels** to create visually appealing animations like breathing, twinkling, and smooth transitions.  
 
+---
+
 ## Adjusting Brightness
 
 To use the WS2812B LEDs, include the required [**library**](https://github.com/SolderedElectronics/Soldered-WS2812-Smart-Leds-Arduino-Library/tree/main).

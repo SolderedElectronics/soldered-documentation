@@ -14,8 +14,6 @@ To install the Arduino library, you can use the **Arduino library manager** or d
   url="https://github.com/SolderedElectronics/Soldered-Digital-Light-Sensor-Arduino-Library/tree/main"  
 />  
 
-<WarningBox>Make sure you're using our library! Otherwise it might won't work.</WarningBox>
-
 <InfoBox>
 
 **First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:

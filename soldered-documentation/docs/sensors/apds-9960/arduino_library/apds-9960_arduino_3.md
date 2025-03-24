@@ -9,6 +9,8 @@ This page contains simple examples of initialization and gesture detection with 
 
 ---
 
+## Gesture Detection
+
 In this code snippet, the `loop()` function continuously checks if a gesture has been detected by the APDS-9960 sensor. The `gestureAvailable()` function is used to determine if a gesture is ready to be read. If a gesture is detected, the `readGesture()` function is called to retrieve the gesture.
 
 ```cpp

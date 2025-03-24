@@ -48,9 +48,25 @@ void setup()
 ```cpp
     light_sensor.setALSMode(false);
     light_sensor.setPSMode(false);
-    // Setting the parameter to 'true' will turn it back on, this is done by default in init()
 
 ```
+<FunctionDocumentation
+  functionName="light_sensor.setALSMode()"
+  description="Enables or disables the ambient light sensing (ALS) mode. The 'mode' parameter determines whether ALS is turned on or off."
+  returnDescription="None"
+  parameters={[
+    { type: 'bool', name: 'mode', description: "Set to 'true' to enable ALS mode or 'false' to disable it." }
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="light_sensor.setPSMode()"
+  description="Enables or disables the proximity sensing (PS) mode. The 'mode' parameter determines whether proximity sensing is turned on or off."
+  returnDescription="None"
+  parameters={[
+    { type: 'bool', name: 'mode', description: "Set to 'true' to enable proximity sensing mode or 'false' to disable it." }
+  ]}
+/>
 
 ### Setting the gain of the sensor
 
@@ -75,7 +91,7 @@ void setup()
 | `LTR507_ALS_GAIN_RANGE4` | 0.01 lux to 320 lux | 0.005 lux/count |
 
 
-### Setting the automatic measurement rate for ambient lighting
+### Setting the measurement rate for ambient lighting
 
 ```cpp
   light_sensor.setALSMeasRate(LTR507_ALS_MEASUREMENT_RATE_100MS);
@@ -100,7 +116,7 @@ void setup()
 
 
 
-### Setting the automatic measurement rate for proximity
+### Setting the measurement rate for proximity
 
 ```cpp
   light_sensor.setPSMeasRate(LTR507_PS_MEASUREMENT_RATE_100MS);

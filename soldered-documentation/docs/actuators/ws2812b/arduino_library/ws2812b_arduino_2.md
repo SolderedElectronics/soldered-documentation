@@ -7,6 +7,8 @@ hide_title: False
 
 This page contains an example of **initialization** of the WS2812B LED strip and examples of **setting colors** for different effects.
 
+---
+
 ## Initialization
 
 To use the WS2812B LEDs, include the required [**library**](https://github.com/SolderedElectronics/Soldered-WS2812-Smart-Leds-Arduino-Library/tree/main).

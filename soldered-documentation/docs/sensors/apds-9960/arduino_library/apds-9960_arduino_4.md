@@ -9,6 +9,8 @@ This page contains simple examples of initialization and proximity detection wit
 
 ---
 
+## Proximity Sensor
+
 In this code snippet, the `loop()` function continuously checks if a proximity reading is available from the APDS-9960 sensor using the `proximityAvailable()` function. If a reading is available, the `readProximity()` function is called to retrieve the proximity value.
 
 To avoid constantly querying the sensor and overwhelming the Serial Monitor, the `delay(100)` function is used to pause for 100 milliseconds before the next reading is taken.

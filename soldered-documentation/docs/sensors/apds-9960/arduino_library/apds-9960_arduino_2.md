@@ -9,6 +9,8 @@ This page contains a simple example of initialization of the APDS-9960 sensor.
 
 ---
 
+## Initialization
+
 To use the APDS-9960 sensor, first, include the required library, create the sensor object and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
 
 ```cpp

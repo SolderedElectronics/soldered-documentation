@@ -19,7 +19,7 @@ Click [**here**](\img\apds-9960\apds9960_pinout.png) for a high reoslution image
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **SDA**     | Data     | I2C data line for communication.                |
 | **SCL**     | Clock    | I2C clock line for communication.               |
-| **VLED**    | Power    | Supply voltage for IR LED.                      |
+| **VLED**    | Power    | Supply current for IR LED.                      |
 | **INT**     | Control  | Interrupt signal (from APDS-9960).              |
 
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
@@ -83,6 +83,20 @@ the bottom of the window.
 
 ## Jumper Details
 
+This board contains hardware jumpers, see below for their locations and functions:
+
+<FlickityCarousel
+  images={[
+    { src: '/img/apds-9960/jp1.jpg', alt: 'apds-9960jumper1', caption: 'JP1' },
+    { src: '/img/apds-9960/jp2.jpg', alt: 'apds-9960jumper2', caption: 'JP2' },
+    { src: '/img/apds-9960/jp3.jpg', alt: 'apds-9960jumper3', caption: 'JP3' },
+    { src: '/img/apds-9960/jp4.jpg', alt: 'apds-9960jumper4', caption: 'JP4' },
+    { src: '/img/apds-9960/jp5.jpeg', alt: 'apds-9960jumper5', caption: 'JP5' },
+
+  ]}
+  jumpers={true}
+/>
+
 | Jumper  | Default State            | Function                                                                                                                                                                      |
 | ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                           |
@@ -90,6 +104,7 @@ the bottom of the window.
 | **JP3** | **NC** (Normally closed) | Disconnect to remove VLED power supply.                                                                                                                                          |
 | **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
 | **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
+
 
 ---
 

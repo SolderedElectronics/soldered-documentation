@@ -9,6 +9,8 @@ This page contains simple examples of initialization and color detection with th
 
 ---
 
+## Color Sensor
+
 In this code snippet, the `loop()` function continuously checks if a color reading is available from the APDS-9960 sensor. The `colorAvailable()` function is used to wait until the color reading is ready. If the reading is not available, the `delay(5)` function is used to pause briefly before checking again.
 
 Once a color reading becomes available, the `readColor()` function is called to retrieve the red, green, and blue (RGB) color intensities. These values are stored in the variables r, g, and b.
