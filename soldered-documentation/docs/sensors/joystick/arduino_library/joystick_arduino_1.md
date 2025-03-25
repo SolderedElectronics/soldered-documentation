@@ -28,12 +28,12 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 |---|---|
-| IO12 | POSX |
-| IO13 | POSY |
-| IO14 | SW |
+| IO13 | POSX |
+| IO14 | POSY |
+| IO15 | SW |
 | VCC | VCC |
 |GND | GND |
 
 <InfoBox>
-POSX, POSY, pins can be any analog pin on controller, SW can be any digital IO pin on conteoller.
+POSX, POSY, pins can be any analog pin on controller, SW can be any digital IO pin on controller.
 </InfoBox>

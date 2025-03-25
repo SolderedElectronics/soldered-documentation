@@ -1,6 +1,6 @@
 ---
 slug: /joystick/arduino/examples 
-title: Controlling the module (example)
+title: Using the module (example)
 id: joystick-arduino-2 
 hide_title: False
 ---
@@ -12,8 +12,8 @@ This page contains some basic examples with function documentation on how to use
 ## Moving X and Y axis
 To read values of the potentiometers, call `analogRead()` function.
 ```cpp
-#define X_PIN 12
-#define Y_PIN 13
+#define X_PIN 13
+#define Y_PIN 14
 
 int x_Value=0;
 int y_Value=0;
@@ -41,17 +41,68 @@ void loop(){
   ]}
 />
 
-## Serial monitor output
+### Serial monitor output
+<CenteredImage src="/img/joystick/joystick_serial_monitor_example1.jpg" alt="Output from Serial Monitor" caption="Output from Serial Monitor" width="400px" />
 ---
 
 ## Detecting button press
+To read value from the button, call `digitalRead()` function.
+```cpp
+#define SW 15
+int swValue=0;
+void setup(){
+    Serial.begin(115200);
+    pinMode(SW,INPUT);
+}
+void loop(){
+    swValue=digitalRead(SW);
 
-## Serial monitor output
-
+    //reverse logic!
+    if(swValue==0){
+      Serial.println("Button pressed!");
+    }
+    else{
+      Serial.println("Button not pressed!");
+    }
+    delay(200);
+}
+```
+### Serial monitor output
+<CenteredImage src="/img/joystick/joystick_serial_monitor_example2.jpg" alt="Output from Serial Monitor" caption="Output from Serial Monitor" width="400px" />
 ---
 
 ## Full example
 Try all of the above mentioned functions in this full example which prints out the  x,y position and button state:
 
 ```cpp
+#define X_PIN 13
+#define Y_PIN 14
+#define SW 15
+
+int xValue=0;
+int yValue=0;
+int swValue=0;
+
+void setup(){
+    Serial.begin(115200);
+    pinMode(SW,INPUT);
+}
+void loop(){
+    xValue=analogRead(X_PIN);
+    yValue=analogRead(Y_PIN);
+    swValue=digitalRead(SW);
+
+    //reverse logic!
+    if(swValue==0){
+      Serial.println("Button pressed!");
+    }
+    else{
+      Serial.println("Button not pressed!");
+    }
+    Serial.print("x = ");
+    Serial.print(xValue);
+    Serial.print(" y = ");
+    Serial.print(yValue);
+    delay(200);
+}
 ```
