@@ -40,6 +40,78 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Digipot',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/digipot/digipot-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/digipot/digipot-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/digipot/digipot-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/digipot/arduino_library/digipot-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/digipot/arduino_library/digipot-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/digipot/arduino_library/digipot-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SIMPLE-SENSOR EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/simple-sensor/simple-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/simple-sensor/simple-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/simple-sensor/simple-sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/arduino_library/simple-sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/arduino_library/simple-sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/arduino_library/simple-sensor-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Joystick',
           items: [
             {

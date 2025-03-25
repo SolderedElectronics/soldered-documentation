@@ -114,8 +114,8 @@ the rothary encoder contains an addintional button, to use it, press the shaft.
 
 />
 
-## Serial monitor output
-<CenteredImage src="/img/rotary-encoder/rotary-encoder_serial_monitor_output.jpg" alt="SI7211-B-00-IV sensor on board" caption="Output from Serial Monitor" width="400px" />
+### Serial monitor output
+<CenteredImage src="/img/rotary-encoder/rotary-encoder_serial_monitor_output.jpg" alt="Output from Serial Monitor" caption="Output from Serial Monitor" width="400px" />
 
 
 ---
