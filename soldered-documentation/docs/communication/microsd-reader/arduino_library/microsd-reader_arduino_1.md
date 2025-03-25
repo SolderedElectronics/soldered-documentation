@@ -5,6 +5,15 @@ id: microsd-reader-arduino-1
 hide_title: False
 ---
 
+## Acknowledgement
+
+<InfoBox> The Soldered microSD Card Breakout Arduino library is based on the popular [**SdFat** library](https://github.com/greiman/SdFat) by [Bill Greiman](https://github.com/greiman). As such, its source code is licensed under the **GNU General Public License v3.0 (GPL v3)**. For more details, see the [**GPL v3 license**](https://www.gnu.org/licenses/gpl-3.0.html).</InfoBox>
+
+<CenteredImage src="/img/license/GPL_V3.png" alt="GNU GPL v3" width="150px" />
+
+---
+
+
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

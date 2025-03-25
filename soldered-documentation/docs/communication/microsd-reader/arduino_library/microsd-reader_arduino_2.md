@@ -43,6 +43,7 @@ void setup()
 //...
 ```
 
+---
 
 ## Loop() function
 
@@ -95,6 +96,8 @@ void loop()
   returnDescription="Boolean value, true for success and false for failure"
   parameters={[{ type: 'SdSpiConfig (object)', name: 'spiConfig', description: "An object of the current SPI configuration, including the CS pin" },]}
 />
+
+---
 
 ## Full example
 Below you can find the full example:

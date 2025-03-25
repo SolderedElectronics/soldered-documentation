@@ -38,6 +38,8 @@ char line[40];
 
 ```
 
+---
+
 ## Reading from a file
 Since we want to read the file only once, the whole program is located in the `setup()` function.
 First, we initialize the Serial communication, next we initialize the sd card as well as its volume so we can be able to write and read data from it. Finally we can read data from the sd card using the FsFile object:
