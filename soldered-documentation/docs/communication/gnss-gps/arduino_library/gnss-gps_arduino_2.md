@@ -1,6 +1,6 @@
 ---
-slug: /gnss-gps/arduino/init-and-basic-readings
-title: Initialization and Basic Readings
+slug: /gnss-gps/arduino/init-and-readings
+title: Initialization and Readings
 id: gnss-gps-arduino-2 
 hide_title: False
 ---
@@ -125,6 +125,36 @@ void displayInfo()
 | `gps.time.minute()`      | `int`       | Retrieves the current minute (0-59).          |
 | `gps.time.second()`      | `int`       | Retrieves the current second (0-59).          |
 | `gps.time.centisecond()` | `int`       | Retrieves the current centisecond (0-99).     |
+
+---
+
+## Advanced Features
+If you wish to activate the AlwaysLocate™ Mode, Multi-tone AIC, and NMEA Message Filtering, you can send the appropriate commands after initializing the sensor. These features improve the accuracy and reliability of the GPS data, especially in challenging environments.
+
+Here’s how to activate these advanced features:
+```cpp
+// AlwaysLocate™ Mode Command
+char alwaysLocateCmd[] = {"$PMTK225,8"};
+
+// Multi-tone AIC Command
+char multitoneAICCmd[] = {"$PMTK 286,1"};
+
+// NMEA Message Filter Command
+char nmeaMessageFilterCmd[] = {"$PMTK314,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0"};
+
+void setup()
+{
+    Serial.begin(9600);  // Initialize serial communication
+    gps.begin();         // Initialize the GNSS module
+    
+    // Send commands to activate advanced features
+    gps.sendCommand(alwaysLocateCmd);  // Activate AlwaysLocate™ Mode
+    gps.sendCommand(multitoneAICCmd);  // Activate Multi-tone AIC
+    gps.sendCommand(nmeaMessageFilterCmd);  // Filter NMEA messages
+}
+```
+
+<FunctionDocumentation functionName="gps.sendCommand()" description="Sends a command to the GNSS module to configure advanced features like AlwaysLocate™ Mode, Multi-tone AIC, and NMEA message filtering." returnDescription="Void" parameters={[{ name: "command", description: "The command string to send to the GNSS module." }]} />
 
 ---
 
@@ -260,3 +290,16 @@ void displayInfo()
   description="Example file for using the GNSS-GPS L86-M33 with easyC"
   url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/easyC/L86_M33_easyC_Basic_Readings/L86_M33_easyC_Basic_Readings.ino" 
 />
+
+<QuickLink 
+  title="L86_M33_Advanced_Example.ino" 
+  description="Example file for using the GNSS-GPS L86-M33 with advanced features"
+  url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/native/L86_M33_Advanced_Example/L86_M33_Advanced_Example.ino" 
+/>
+
+<QuickLink 
+  title="L86_M33_easyC_Advanced_Example.ino" 
+  description="Example file for using the GNSS-GPS L86-M33 easyC with advanced features"
+  url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/easyC/L86_M33_easyC_Advanced_Example/L86_M33_easyC_Advanced_Example.ino" 
+/>
+

@@ -397,10 +397,6 @@ const sidebars = {
                   type: 'doc',
                   id: 'communication/gnss-gps/arduino_library/gnss-gps-arduino-4',
                 },
-                {
-                  type: 'doc',
-                  id: 'communication/gnss-gps/arduino_library/gnss-gps-arduino-5',
-                },
               ],
             },
           ],
