@@ -238,6 +238,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'DRV8825 EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/drv8825/drv8825-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/drv8825/drv8825-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/drv8825/drv8825-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/drv8825/arduino_library/drv8825-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/drv8825/arduino_library/drv8825-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/drv8825/arduino_library/drv8825-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Rotary encoder',
           items: [
             {
