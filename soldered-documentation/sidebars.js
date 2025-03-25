@@ -363,6 +363,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Logic Level Converter TXB0104',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/txb0104/txb0104-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/txb0104/txb0104-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/txb0104/txb0104-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Logic Level Converter I2C TXS0104',
           items: [
             {

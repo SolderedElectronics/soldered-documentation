@@ -1,25 +1,25 @@
 ---
-slug: /txs0104/hardware 
+slug: /txb0104/hardware 
 title: Hardware details
-id: txs0104-hardware 
+id: txb0104-hardware 
 hide_title: False
 ---
 
 ## Pinout
 
-<CenteredImage src="/img/txs0104/pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter I2C TXS0104 pinout diagram"/>
+<CenteredImage src="/img/txb0104/pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter TXB0104 pinout diagram"/>
 
-Click [**here**](/img/txs0104/pinout.png) for a high reoslution image of the pinout.
+Click [**here**](/img/txb0104/pinout.png) for a high reoslution image of the pinout.
 
 ## Pin Details
 
-| Pin Marking | Pin Name           | Description                                                                                                                 |
-| ----------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| **GND**     | Ground             | Common ground for both high and low voltage sides.                                                                          |
-| **VCCH**    | High Voltage Power | Supply voltage for the high-voltage side (typically 5V).                                                                    |
-| **VCCL**    | Low Voltage Power  | Supply voltage for the low-voltage side (typically 3.3V).                                                                   |
-| **B1 - B4** | High Voltage Pins  | High-voltage side signal pins (typically 5V logic).                                                                         |
-| **A1 - A4** | Low Voltage Pins   | Low-voltage side signal pins (typically 3.3V logic).                                                                        |
+| Pin Marking | Pin Name           | Description                                                                                       |
+| ----------- | ------------------ | ------------------------------------------------------------------------------------------------- |
+| **GND**     | Ground             | Common ground for both high and low voltage sides.                                                |
+| **VCCH**    | High Voltage Power | Supply voltage for the high-voltage side (typically 5V).                                          |
+| **VCCL**    | Low Voltage Power  | Supply voltage for the low-voltage side (typically 3.3V).                                         |
+| **B1 - B4** | High Voltage Pins  | High-voltage side signal pins (typically 5V logic).                                               |
+| **A1 - A4** | Low Voltage Pins   | Low-voltage side signal pins (typically 3.3V logic).                                              |
 | **OE**      | Output Enable Pin  | Enables or disables output, switching between active (HIGH/LOW) and high-impedance (Hi-Z) states. |
 
 <InfoBox>
@@ -47,9 +47,9 @@ Click [**here**](/img/txs0104/pinout.png) for a high reoslution image of the pin
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
 <QuickLink 
-  title="Logic Level Converter I2C TXS0104 board Hardware design" 
+  title="Logic Level Converter TXB0104 board Hardware design" 
   description="GitHub hardware repository for this product"
-  url="https://github.com/SolderedElectronics/Logic-level-converter-I2C-TXS0104-breakout-hardware-design/tree/main" 
+  url="https://github.com/SolderedElectronics/Logic-level-converter-generic-TXB0104-breakout-hardware-design" 
 /> 
 
 

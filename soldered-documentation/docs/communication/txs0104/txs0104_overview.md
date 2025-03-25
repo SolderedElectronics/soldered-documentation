@@ -10,7 +10,7 @@ pagination_prev: null
 
 This board is specialized for signal conversion for **I2C communication protocol**, and for this conversion it uses a special integrated circuit that enables communication at **high speeds**.
 
-The Logic Level Converter Board **bidirectional** voltage level translation between two signals, enabling seamless **communication** between devices **operating at different logic voltages**. Whether you're connecting a 5V microcontroller to a 3.3V sensor or working with other voltage combinations, this module ensures compatibility while **protecting lower-voltage components from damage**. Essential for **mixed-voltage projects**, it provides a simple and reliable way to bridge the gap between different logic levels.
+The Logic Level Converter Board **bidirectional** voltage level translation between two signals, enabling **communication** between devices **operating at different logic voltages**. Whether you're connecting a 5V microcontroller to a 3.3V sensor or working with other voltage combinations, this module ensures compatibility while **protecting lower-voltage components from damage**.
 
 <CenteredImage src="/img/txs0104/333016.png" alt="logic-level-converter" caption="Logic Level Converter Board"/>
 
