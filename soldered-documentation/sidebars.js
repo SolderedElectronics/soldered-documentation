@@ -90,6 +90,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Analog Digital Converter (ADC)',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/adc/adc-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/adc/adc-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/adc/adc-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'HX711 Load-cell Amplifier',
           items: [
             {
