@@ -90,7 +90,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Analog Digital Converter (ADC)',
+          label: 'Analog Digital Converter',
           items: [
             {
               type: 'doc',

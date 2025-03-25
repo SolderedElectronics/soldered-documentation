@@ -53,5 +53,4 @@ If you prefer, you can use I2C pins to manually connect:
 | ---------------------------- | ------------------ |
 | 3V3                          | VLED               |
 
-
 </InfoBox>
