@@ -11,6 +11,8 @@ hide_title: False
 
 Click [**here**](/img/hc-sr04/hc-sr04_pinout.jpg) for a high reoslution image of the pinout.
 
+---
+
 ## Pin details
 
 | Pin Marking | Pin Name | Description                                     |
@@ -24,7 +26,9 @@ Click [**here**](/img/hc-sr04/hc-sr04_pinout.jpg) for a high reoslution image of
 
 <WarningBox>UPDI stands for Unified Program and Debug Interface. It is used to program and debug Atmel devices. The atmel chip on this board is used for the easyC I2C communication only. DO NOT try to use this for sensor communication!</WarningBox>
 
-<InfoBox>This sensor is made to work specifically with the Qwiic connector, the echo and trigger pins are connected internally</InfoBox>
+
+<InfoBox> This sensor is made to work specifically with the Qwiic connector, the echo and trigger pins are pre-connected </InfoBox>
+
 ---
 
 ## Qwiic (formerly easyC)  
@@ -60,6 +64,8 @@ This board contains hardware address switches, see below how to change breakout 
 |  0x35   |   1   |   0   |   1   |
 |  0x36   |   1   |   1   |   0   |
 |  0x37   |   1   |   1   |   1   |
+
+---
 
 ## Hardware repository
 

@@ -36,3 +36,6 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |
 | Qwiic                    | Qwiic              |
+
+
+<WarningBox>UPDI stands for Unified Program and Debug Interface. It is used to program and debug Atmel devices. The atmel chip on this board is used for the easyC I2C communication only. DO NOT try to use this for sensor communication!</WarningBox>

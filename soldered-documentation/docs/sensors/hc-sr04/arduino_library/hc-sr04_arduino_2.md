@@ -57,6 +57,9 @@ void loop() {
   Serial.print(distance);               
   Serial.println(" cm.");  
 
+  //Small delay between taking measurements
+  delay(100);
+
 }
 ```
 
@@ -110,7 +113,10 @@ void loop() {
 
   Serial.print("Time it took the wave to return: ");
   Serial.print(duration);               
-  Serial.println(" uS.");  
+  Serial.println(" uS.");
+
+  //Small delay between taking measurements
+  delay(100);
 
 }
 ```
@@ -166,6 +172,8 @@ void loop() {
   Serial.print(duration);               
   Serial.println(" uS.");  
 
+  //Small delay between taking measurements
+  delay(100);
 }
 ```
 <QuickLink 
