@@ -30,7 +30,7 @@ If the display fails to initialize on the first attempt, try calling `display.be
 <ExpandableSection title="My Display is displaying static">
 
 #### Call the display() function
-The display shows static when it has successfully initialized, but the `display.display()` hasn't been called yet. When the function is called, you should see the **Soldered logo** on the screen!
+If the function is called **before drawing anything** you should see the soldered logo on the screen
 
 #### Check connection
 The I2C connection may be loose so that it is giving power to the display, but the communication isn't stable enough to send data to it. Troubleshoot with the **My Display won't initialize!** section.

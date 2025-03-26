@@ -54,10 +54,10 @@ This board contains hardware jumpers, see below for their locations and function
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                               |
 | **JP2** | **NC** (Normally closed) | Supplies power to purple LED that indicates the display is turned on                              |
-| **JP3** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                  |
+| **JP3** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                             |
 | **JP4** | **NC** (Normally closed) | Disconnects the 3.3V Voltage regulator                                                            |
 | **JP5** | **NO** (Normally open  ) | When closed, bypasses 3.3V voltage regulator                                                      |
-| **JP6** | **NO** (Normally open  ) | I2C address jumper                                                                                |
+| **JP6** | **NO** (Normally open  ) | I2C address jumper, when shorted address is 0x3D, if not it is 0x3C                               |
 
 ---
 

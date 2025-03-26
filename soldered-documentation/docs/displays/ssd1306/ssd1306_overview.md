@@ -19,9 +19,16 @@ It is simple to use since it communicates via **I2C communication** with a hardw
 ## Which products is this documentation for?
 
 <QuickLink 
-  title="Display OLED I2C 0.96' SSD1306" 
+  title="Display OLED I2C 0.96' SSD1306 (Blue screen color)" 
   description="333100"
-  url="https://soldered.com/product/enviromental-sensor-bme280-breakout/"
+  url="https://soldered.com/product/display-oled-i2c-white-0-96-ssd1306/"
+  image="/img/ssd1306/333100_1.webp" 
+/>
+
+<QuickLink 
+  title="Display OLED I2C 0.96' SSD1306 (White screen color)" 
+  description="333099"
+  url="https://soldered.com/product/display-oled-i2c-white-0-96-ssd1306/"
   image="/img/ssd1306/333100_1.webp" 
 />
 

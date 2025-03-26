@@ -1,5 +1,5 @@
 ---
-slug: /ssd1306/arduino/examples2
+slug: /ssd1306/arduino/writing-text
 title: Writing text
 id: ssd1306-arduino-4 
 hide_title: False

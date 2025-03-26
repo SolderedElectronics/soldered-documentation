@@ -1,5 +1,5 @@
 ---
-slug: /ssd1306/arduino/examples 
+slug: /ssd1306/arduino/initializing-the-screen
 title: Initializing the screen
 id: ssd1306-arduino-2 
 hide_title: False
@@ -42,7 +42,7 @@ void setup() {
 
 <FunctionDocumentation
   functionName="display.display()"
-  description="Pushes data currently in RAM to SSD1306 display."
+  description="Displays what we had defined to be drawn previously"
   returnDescription="None"
   parameters={[]}
 />

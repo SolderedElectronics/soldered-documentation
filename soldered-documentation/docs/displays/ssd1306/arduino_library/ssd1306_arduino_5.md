@@ -1,5 +1,5 @@
 ---
-slug: /ssd1306/arduino/examples3
+slug: /ssd1306/arduino/drawing-shapes
 title: Drawing shapes
 id: ssd1306-arduino-5
 hide_title: False
