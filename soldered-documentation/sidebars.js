@@ -40,6 +40,36 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'TCRT5000 EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/tcrt5000/tcrt5000-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tcrt5000/tcrt5000-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tcrt5000/tcrt5000-how-it-works',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tcrt5000/arduino_library/tcrt5000-arduino-1',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tcrt5000/arduino_library/tcrt5000-arduino-2',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tcrt5000/arduino_library/tcrt5000-arduino-3',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Digipot',
           items: [
             {

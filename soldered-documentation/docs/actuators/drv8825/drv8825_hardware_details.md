@@ -30,3 +30,11 @@ Click [**here**](/img/drv8825/333000_pinout.jpg) for a high reoslution image of 
 | **SLP** 	| Sleep mode input 	| Logic high to disable device outputs, logic low to enter low-power sleep mode. 	|
 | **STEP** 	| Step input 	| Rising edge causes the indexer to move one step. 	|
 | **DIR** 	| Direction input 	| Sets the direction of stepping. 	|
+
+<WarningBox>**45V is the maximum** supported Motor supply voltage!</WarningBox>
+
+---
+
+## Jumper Details
+
+This board contains hardware jumpers, se below for  their locations and functions:

@@ -64,10 +64,9 @@ void loop()
   
 />
 
----
 
-## Serial Monitor output
-<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_digital_serial_monitor.jpg" alt="SI7211-B-00-IV sensor on board" caption="Output from Serial Monitor" width="400px" />
+### Serial Monitor output
+<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_digital_serial_monitor.jpg" alt="Output from Serial Monitor" caption="Output from Serial Monitor" width="400px" />
 
 ---
 
