@@ -8,6 +8,7 @@ hide_title: False
 This page contains a simple example with function documentation on how to take measurements using the TCRT5000 sensor.
 
 ## Measuring with both digital and analog output
+To use this sensor, basic Arduino functions are enough. Black color absorbs the transmitted IR radioation and reflects it very poorly so the output will be LOW if there is a black object in front of the sensor, but if shinier object is placed in front of the sensor, output becomes HIGH.
 
 ```cpp
 #define digitalPin 14
