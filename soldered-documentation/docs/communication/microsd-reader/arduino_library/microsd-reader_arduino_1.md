@@ -23,7 +23,6 @@ To install the Arduino library, you can use the **Arduino library manager** or d
   url="https://github.com/SolderedElectronics/Soldered-SdFat-Arduino-Library/tree/master"  
 />  
 
-s
 <InfoBox>
 
 **First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:

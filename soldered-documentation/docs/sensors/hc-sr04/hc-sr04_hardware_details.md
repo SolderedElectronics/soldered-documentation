@@ -47,7 +47,7 @@ Click [**here**](/img/hc-sr04/hc-sr04_pinout.jpg) for a high reoslution image of
 
 ## Dimensions
 
-- **Board Dimensions:** 38 x 22 mm (1.5 x 0.9 inch)
+- **Board Dimensions:** 45 x 22 mm (1.8 x 0.9 inch)
 
 ---
 
