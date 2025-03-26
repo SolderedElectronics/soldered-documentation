@@ -55,24 +55,6 @@ const sidebars = {
               type: 'doc',
               id: 'batteries and power supplies/battery-protection/battery-protection-how-it-works',
             },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'batteries and power supplies/battery-protection/arduino_library/battery-protection-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'batteries and power supplies/battery-protection/arduino_library/battery-protection-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'batteries and power supplies/battery-protection/arduino_library/battery-protection-arduino-3',
-                },
-              ],
-            },
           ],
         },
       ]

@@ -13,7 +13,7 @@ ADS1015/ADS1115 are low-power, high-precision 12-bit (ADS1015) and 16-bit (ADS11
 
 ## Datasheet
 
-For an in-depth look at technical specifications, refer to the official APDS-9960 Datasheet:  
+For an in-depth look at technical specifications, refer to the official ADS1x15 Datasheet:  
 
 <QuickLink  
   title="ADC 12-bit ADS1015 Datasheet"  
