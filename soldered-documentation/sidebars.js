@@ -40,7 +40,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'TCRT5000 EDIT THIS NAME',
+          label: 'TCRT5000',
           items: [
             {
               type: 'doc',
