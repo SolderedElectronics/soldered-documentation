@@ -43,7 +43,7 @@ The I2C connection may be loose so that it is giving power to the display, but t
 OLED displays can experience ghosting or burn-in if a static image remains on the screen for too long. Periodically refresh the screen or implement a screen saver function.
 
 #### Reduce display brightness
-Running the OLED display at full brightness for extended periods can accelerate ghosting. Lower the brightness using `display.dim(bool dim)` where `dim` set to 1 dims the display 
+Running the OLED display at full brightness for extended periods can accelerate ghosting. Lower the brightness using `display.dim(bool dim)` where `dim` set to 1 dims the display so that its almost turned off.
 
 #### Clear the buffer before updating
 Make sure to clear the display buffer using `display.clearDisplay();` before drawing new content to prevent unwanted artifacts.
