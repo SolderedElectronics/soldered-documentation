@@ -120,6 +120,14 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/adc/arduino_library/adc-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-5',
+                },
               ],
             },
           ],
