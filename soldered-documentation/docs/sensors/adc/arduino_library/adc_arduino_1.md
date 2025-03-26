@@ -47,7 +47,7 @@ If you prefer, you can use I2C pins to manually connect:
 | VCC                          | VCC                |
 | GND                          | GND                |
 
-<WarningBox>For the ALERT functionality, you can also connect the **ALERT** pin to an available GPIO pin if you plan to use the comparator feature.</WarningBox>
+<WarningBox>For the ALERT functionality, you can also connect the **ALERT** pin to an available IO pin if you plan to use the comparator feature.</WarningBox>
 
 | **Dasduino CONNECTPLUS**     | **Breakout Board** |
 | ---------------------------- | ------------------ |

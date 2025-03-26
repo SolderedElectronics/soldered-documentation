@@ -57,5 +57,5 @@ An **Analog-to-Digital Converter (ADC)** is a device that reads analog signalsâ€
   title="Potentiometer 10k" 
   description="Potentiometer with mutable resistance from 10k that corresponds with the breadboard. They can be used for various kinds of control, for example adjusting the intensity of LED lights."
   url="https://soldered.com/product/potentiometer-10k/"
-  image="/img/333311.webp" 
+  image="/img/adc/potent.png" 
 />  

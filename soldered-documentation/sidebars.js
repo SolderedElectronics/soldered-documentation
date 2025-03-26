@@ -34,6 +34,49 @@ const sidebars = {
         },
       ],
     },
+
+    {
+      type: 'category',
+      label: 'Batteries and Power Supplies',
+      items:[
+        {
+          type: 'category',
+          label: '1S Li-Ion Battery Protection',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/battery-protection/battery-protection-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/battery-protection/battery-protection-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/battery-protection/battery-protection-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'batteries and power supplies/battery-protection/arduino_library/battery-protection-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'batteries and power supplies/battery-protection/arduino_library/battery-protection-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'batteries and power supplies/battery-protection/arduino_library/battery-protection-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+      ]
+    },
     {
       type: 'category',
       label: 'Displays',
