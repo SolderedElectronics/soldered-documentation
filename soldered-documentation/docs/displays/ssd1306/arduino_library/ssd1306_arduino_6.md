@@ -5,9 +5,9 @@ id: ssd1306-arduino-6
 hide_title: False
 ---
 
-Since this Display has so much to offer, we encourage you to also browse through this documentation and examples:
+Since this display has so much to offer, we encourage you to browse the accompanying documentation and examples:
 
-See how advanced functions such as text scrolling and bitmap rendering work by checking out the example included with the library:
+See how advanced functions, such as text scrolling and bitmap rendering, work by checking out the example included with the library:
 
 <QuickLink  
   title="OLED Display Drawing Example"  
@@ -22,10 +22,10 @@ See how advanced functions such as text scrolling and bitmap rendering work by c
 
 ## Documentation
 
-You can find in-depth details about specific functions in the **Adafruit GFX Graphics Library** linked below:
+You can find in-depth details about specific functions in the **Adafruit GFX Graphics Library** via the link below:
 
 <QuickLink  
   title="Adafruit GFX Graphics Library"  
   description="Documentation for the Adafruit GFX Graphics Library"  
   url="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-gfx-graphics-library.pdf"  
-/> 
+/>

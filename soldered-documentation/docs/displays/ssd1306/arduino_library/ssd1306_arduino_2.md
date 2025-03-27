@@ -5,7 +5,7 @@ id: ssd1306-arduino-2
 hide_title: False
 ---
 
-To use the SSD1306 OLED Display, first, include the required library, create the display object and initialize the sensor in the `setup()` function.
+To use the SSD1306 OLED Display, first include the required library, create the display object, and initialize the display in the `setup()` function.
 
 ```cpp
 //Include the library
@@ -21,7 +21,7 @@ void setup() {
   //Initialize the display
   if(display.begin())
   {
-    //If the display initialized successfully, print a message and show logo on display
+    //If the display initialized successfully, print a message and show the logo on the display
     Serial.println("OLED display initialized successfully!");
     display.display();
   }
@@ -35,14 +35,14 @@ void setup() {
 
 <FunctionDocumentation
   functionName="display.begin()"
-  description="Initializes the OLED Display, setting up communication over I2C and setting resolution to 128x64"
-  returnDescription="Boolean value, returns true if display was successfully initialized, false if not"
+  description="Initializes the OLED Display, setting up communication over I2C and setting the resolution to 128x64"
+  returnDescription="Boolean value, returns true if the display was successfully initialized, false if not"
   parameters={[]}
 />
 
 <FunctionDocumentation
   functionName="display.display()"
-  description="Displays what we had defined to be drawn previously"
+  description="Displays the content that was previously defined to be drawn"
   returnDescription="None"
   parameters={[]}
 />

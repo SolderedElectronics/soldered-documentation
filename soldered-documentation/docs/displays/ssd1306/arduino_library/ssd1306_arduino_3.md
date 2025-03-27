@@ -14,7 +14,7 @@ This page contains some tips in case you are having problems using this product.
 Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another easyC-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
 
 #### Check I2C pins
-If you are connecting the sensor using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Refer to your microcontroller's documentation to confirm the correct pin assignments. Test
+If you are connecting the sensor using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Refer to your microcontroller's documentation to confirm the correct pin assignments.
 
 #### Scan for I2C devices
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller’s I2C bus.
@@ -30,10 +30,10 @@ If the display fails to initialize on the first attempt, try calling `display.be
 <ExpandableSection title="My Display is displaying static">
 
 #### Call the display() function
-If the function is called **before drawing anything** you should see the soldered logo on the screen
+If the function is called **before drawing anything**, you should see the soldered logo on the screen.
 
 #### Check connection
-The I2C connection may be loose so that it is giving power to the display, but the communication isn't stable enough to send data to it. Troubleshoot with the **My Display won't initialize!** section.
+The I2C connection may be loose, so that it is giving power to the display but not establishing a stable communication channel to send data. Troubleshoot using the **My Display won't initialize!** section.
 
 </ExpandableSection>
 
@@ -43,7 +43,7 @@ The I2C connection may be loose so that it is giving power to the display, but t
 OLED displays can experience ghosting or burn-in if a static image remains on the screen for too long. Periodically refresh the screen or implement a screen saver function.
 
 #### Reduce display brightness
-Running the OLED display at full brightness for extended periods can accelerate ghosting. Lower the brightness using `display.dim(bool dim)` where `dim` set to 1 dims the display so that its almost turned off.
+Running the OLED display at full brightness for extended periods can accelerate ghosting. Lower the brightness using `display.dim(bool dim)` where setting `dim` to 1 dims the display so that it's almost turned off.
 
 #### Clear the buffer before updating
 Make sure to clear the display buffer using `display.clearDisplay();` before drawing new content to prevent unwanted artifacts.

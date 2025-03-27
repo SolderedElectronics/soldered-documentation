@@ -1,17 +1,17 @@
----
-slug: /ssd1306/arduino/writing-text
-title: Writing text
-id: ssd1306-arduino-4 
-hide_title: False
+---  
+slug: /ssd1306/arduino/writing-text  
+title: Writing text  
+id: ssd1306-arduino-4   
+hide_title: False  
 ---
 
-This page contains some examples on drawing text onto the OLED display
+This page contains some examples of drawing text onto the OLED display
 
 ---
 
 ## Writing text
 
-To write text onto the display, we must define what size and color the text will be, as well as from what coordinate the text will be drawn to onto the display.
+To write text onto the display, you must define the text size, color, and the starting coordinate from which the text will be drawn onto the display.
 
 ```cpp
 void loop() {
@@ -26,9 +26,9 @@ void loop() {
   display.setCursor(0, 0);
   // Message we want to display             
   String message = "Hello World!";
-  //Inform the display what text you want to print
+  // Inform the display of the text you want to print
   display.print(message);
-  //Display the message
+  // Display the message
   display.display();
 }
 ```
@@ -39,7 +39,7 @@ void loop() {
   returnDescription="None"
   parameters={[]}
 />
-<WarningBox>Because the clearDisplay() function only clears the buffer, it has no immediate effect on the screen, the display() function still must be called</WarningBox>
+<WarningBox>Because the clearDisplay() function only clears the buffer, it has no immediate effect on the screen. The display() function must still be called.</WarningBox>
 
 <FunctionDocumentation
   functionName="display.setTextColor(uint16_t c, uint16_t bg)"
@@ -56,7 +56,7 @@ void loop() {
   description="Sets text cursor location"
   returnDescription="None"
   parameters={[
-  { type: 'int16_t', name: 'x', description: "x coordiate of cursor" },
+  { type: 'int16_t', name: 'x', description: "x coordinate of cursor" },
   { type: 'int16_t', name: 'y', description: "y coordinate of cursor" },
   ]}
 />

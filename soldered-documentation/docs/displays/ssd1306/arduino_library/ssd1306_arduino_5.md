@@ -5,13 +5,13 @@ id: ssd1306-arduino-5
 hide_title: False
 ---
 
-This page contains some examples on drawing and rendering shapes onto the OLED Display
+This page contains some examples of drawing and rendering shapes onto the OLED display.
 
 ---
 
 ## Rectangles
 
-Rectangles can be dravn onto the screen by using the `drawRect()` function and defining the upper left x and y coordinate, as well as the height and width of the rectangle. In this example, we are drawing smaller and smaller rectangles until we reach the center:
+Rectangles can be drawn onto the screen by using the `drawRect()` function and defining the upper left x and y coordinate, as well as the height and width of the rectangle. In this example, we are drawing smaller and smaller rectangles until we reach the center:
 
 ```cpp
 
@@ -47,7 +47,7 @@ void loop() {
   functionName="display.drawRect(uint16_t x0, uint16_t y0, uint16_t w, uint16_t h, uint16_t color)"
   description="Puts a rectangle into the buffer, ready to be drawn"
   returnDescription="None"
-  parameters={[
+  parameters={[ 
   { type: 'uint16_t', name: 'x0', description: "Upper left x coordinate of the rectangle" },
   { type: 'uint16_t', name: 'y0', description: "Upper y coordinate of the rectangle" },
   { type: 'uint16_t', name: 'w', description: "Width of the rectangle" },
@@ -60,7 +60,7 @@ void loop() {
 
 ## Circles
 
-Circles can be drawn onto the screen by using the `drawCircle()` function and defining the x and y coordinates of the circle center, the radius as well as the color. In this example, we are drawing 10 pixel wide circles until they reach the end of the screen:
+Circles can be drawn onto the screen by using the `drawCircle()` function and defining the x and y coordinates of the circle center, the radius, as well as the color. In this example, we are drawing 10-pixel-wide circles until they reach the end of the screen:
 
 ```cpp
 void loop() {
@@ -88,7 +88,7 @@ void loop() {
   functionName="display.drawCircle(uint16_t x0, uint16_t y0, uint16_t r, uint16_t color)"
   description="Puts a rectangle into the buffer, ready to be drawn"
   returnDescription="None"
-  parameters={[
+  parameters={[ 
   { type: 'uint16_t', name: 'x0', description: "x coordinate of centre of circle" },
   { type: 'uint16_t', name: 'y0', description: "y coordinate of centre of circle" },
   { type: 'uint16_t', name: 'r', description: "Radius of circle" },
