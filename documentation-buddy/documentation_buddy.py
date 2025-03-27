@@ -237,7 +237,7 @@ def spell_check():
 @app.route('/spell-check/submit', methods=['POST'])
 def spell_check_submit():
     text_to_check = request.form.get('textToCheck', '').strip()
-    
+     
     if not text_to_check:
         return render_template('spell_check.html', active_page='spell_check',
                               error_message="Please enter some text to check")
@@ -250,7 +250,7 @@ def spell_check_submit():
     
     if error:
         return render_template('spell_check.html', active_page='spell_check',
-                              error_message=error, original_text=text_to_check)
+                              error_message=error)
     
     # Clean the corrected text if it has markdown code blocks
     if corrected_text and isinstance(corrected_text, str):
@@ -264,7 +264,6 @@ def spell_check_submit():
     print(f"Spell check changes: {changes}")
     
     return render_template('spell_check.html', active_page='spell_check',
-                          original_text=text_to_check,
                           corrected_text=corrected_text,
                           changes=changes,
                           success=True)
