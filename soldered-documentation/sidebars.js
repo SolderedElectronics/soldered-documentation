@@ -40,7 +40,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'PIR-SENSOR EDIT THIS NAME',
+          label: 'PIR Movement sensor',
           items: [
             {
               type: 'doc',
@@ -65,6 +65,10 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'sensors/pir-sensor/arduino_library/pir-sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/pir-sensor/arduino_library/pir-sensor-arduino-4',
                 },
                 {
                   type: 'doc',
