@@ -5,13 +5,13 @@ id: microsd-reader-arduino-2
 hide_title: False
 ---
 
-This page contains an example of initializing the SD card
+This page contains an example of initializing the SD card.
 
 ---
 
 ## Defining the CS pin
 
-At the start of the example file, we have to define on what pin Chip Select (CS) is connected by changing the `SD_CS_PIN variable`, in this tutorial we picked `GPIO5`:
+At the beginning of the example file, we define the pin to which the Chip Select (CS) is connected by changing the `SD_CS_PIN variable`. In this tutorial, we picked `GPIO5`:
 
 ```cpp
 //...
@@ -26,7 +26,7 @@ const uint8_t SD_CS_PIN = 5; //SET THIS PIN
 
 ## Setup() function
 
-In the setup function, we are initializing a Serial connection with the PC and when it is established, we print out the current library version.
+In the setup function, we initialize a Serial connection to the PC; once it is established, we print out the current library version.
 
 ```cpp
 //...
@@ -47,7 +47,7 @@ void setup()
 
 ## Loop() function
 
-In the loop function, we wait for user input, then we try to initialize an SPI connection with the card reader, if it failed we get informed via the Serial monitor and are given some troubleshooting ideas:
+In the loop function, we wait for user input and then attempt to initialize an SPI connection with the card reader. If it fails, a message is printed via the Serial monitor along with some troubleshooting ideas:
 
 ```cpp
 void loop()
@@ -202,13 +202,3 @@ void loop()
 
 }
 ```
-
-
-
-
-
-
-
-
-
-

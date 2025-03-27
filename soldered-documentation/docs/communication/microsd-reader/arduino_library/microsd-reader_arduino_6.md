@@ -5,21 +5,21 @@ id: microsd-reader-arduino-6
 hide_title: False
 ---
 
-On this page we will read binary data from an image
+On this page, we will read binary data from an image
 
 ---
 
 ## Preparation
-To read from an image we first must have an image. Load an image on the sd card via a computer. For this example, we will use a screenshot from the previous example:
+To read from an image, we must first have an image. Load an image onto the SD card via a computer. For this example, we will use a screenshot from the previous example:
 
 <CenteredImage src="/img/microsd-reader/picture_put.png" alt="Sd card directory with picture" caption="Sd card directory with picture" width="100%" />
 
-Next, we follow simillar steps to the previous examples:
+Next, we follow similar steps to the previous examples:
 
 ---
 
 ## Defining the CS pin and instances
-To write data to the sd card, firstly we must again define the CS pin used for SPI communication (GPIO 5 in our case):
+To write data to the SD card, we must first define, once again, the CS pin used for SPI communication (GPIO 5 in our case):
 
 ```cpp
 //...
@@ -32,10 +32,9 @@ const uint8_t SD_CS_PIN = 5; //SET THIS PIN
 //...
 ```
 
-We also have to create instances of objects for the sd card and file we will create as well as a buffer for the binary data we are reading:
+We also have to create instances for the SD card and the file we will create, as well as a buffer for the binary data we are reading:
 
 ```cpp
-
 //Create an instance of the SD card
 SdFs sd;
 
@@ -44,11 +43,10 @@ FsFile file;
 
 //Create a buffer which will hold 16 bytes
 char buffer[16];
-
 ```
 
 ## Reading binary data
-First, we initialize the Serial communication, next we initialize the sd card as well as its volume so we can be able to write and read data from it. Finally we can read data from the sd card using the FsFile object:
+First, we initialize the Serial communication; next, we initialize the SD card as well as its volume so that we can write and read data from it. Finally, we can read data from the SD card using the FsFile object:
 
 ```cpp
 void setup()
@@ -84,14 +82,14 @@ void setup()
     Serial.println("Failed to open file!");
     return;
   }
-  //Read first n bytes depending on size of buffer array 
+  // Read the first n bytes, depending on the size of the buffer array 
   file.read(buffer, sizeof(buffer));
 
-  for(int i=0; i<sizeof(buffer);i+=2)
+  for(int i = 0; i < sizeof(buffer); i += 2)
   {
-    //Print out the buffer values two at a time
-    Serial.print(buffer[i],HEX);
-    Serial.print(buffer[i+1],HEX);
+    // Print out the buffer values two at a time
+    Serial.print(buffer[i], HEX);
+    Serial.print(buffer[i + 1], HEX);
     Serial.print(" ");
   }
   Serial.println();
@@ -103,11 +101,11 @@ void setup()
 }
 ```
 
-The output, depending on the chosen image, should look like this
+The output, depending on the chosen image, should look like this:
 
 <CenteredImage src="/img/microsd-reader/binary_read.png" alt="Picture data in hex values" caption="Picture data in hex values" width="100%" />
 
-<InfoBox>Dont be alarmed if the number of hex values doesnt correspond with the buffer size, as the Serial.print() function disregards upper nibbles that are equal to 0</InfoBox>
+<InfoBox>Don't be alarmed if the number of hex values doesn't correspond with the buffer size, as the Serial.print() function disregards upper nibbles that are equal to 0</InfoBox>
 
 ---
 
@@ -115,10 +113,9 @@ The output, depending on the chosen image, should look like this
 Below you can find the full example:
 
 ```cpp
-
 #include "SdFat.h"
 
-//Set to one if there are more SPI devicxes connected to the bus
+//Set to one if there are more SPI devices connected to the bus
 const int8_t DISABLE_CS_PIN = -1;
 
 // SDCARD_SS_PIN is defined for the built-in SD on some boards.
@@ -179,14 +176,14 @@ void setup()
     Serial.println("Failed to open file!");
     return;
   }
-  //Read first n bytes depending on size of buffer array 
+  // Read the first n bytes, depending on the size of the buffer array 
   file.read(buffer, sizeof(buffer));
 
-  for(int i=0; i<sizeof(buffer);i+=2)
+  for(int i = 0; i < sizeof(buffer); i += 2)
   {
-    //Print out the buffer values two at a time
-    Serial.print(buffer[i],HEX);
-    Serial.print(buffer[i+1],HEX);
+    // Print out the buffer values two at a time
+    Serial.print(buffer[i], HEX);
+    Serial.print(buffer[i + 1], HEX);
     Serial.print(" ");
   }
   Serial.println();
@@ -200,6 +197,4 @@ void setup()
 void loop()
 {
 }
-
-
 ```

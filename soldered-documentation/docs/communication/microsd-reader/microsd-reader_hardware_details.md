@@ -9,38 +9,38 @@ hide_title: False
 
 <CenteredImage src="/img/microsd-reader/pinout.webp" alt="Pinout" />
 
-Click [**here**](/img/microsd-reader/pinout.webp) for a high reoslution image of the pinout.
+Click [**here**](/img/microsd-reader/pinout.webp) for a high resolution image of the pinout.
 
 ### Pin details
 
-| Pin Marking | Pin Name | Description                                                      |
-| ----------- | -------- | ---------------------------------------------------------------- |
-| **VCC**     | Power                   | Supply voltage (5V)                               |
-| **GND**     | Ground                  | Common ground for power and signals.              |
-| **CS**      | Chip select             | Is chip selected for SPI communication by leader  |
-| **MOSI**    | Leader out follower in  | Serial data output from leader                    |
-| **MISO**    | Leader in follower out  | Serial data output from follower                  |
+| Pin Marking | Pin Name                | Description                                                           |
+| ----------- | ----------------------- | --------------------------------------------------------------------- |
+| **VCC**     | Power                   | Supply voltage (5V)                                                   |
+| **GND**     | Ground                  | Common ground for power and signals.                                  |
+| **CS**      | Chip select             | Indicates whether the chip is selected for SPI communication by the leader |
+| **MOSI**    | Leader out follower in  | Serial data output from the leader                                    |
+| **MISO**    | Leader in follower out  | Serial data output from the follower                                  |
 
 ---
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers; see below for their locations and functions:
 
 <FlickityCarousel
   images={[
     { src: '/img/microsd-reader/microsd_jp1.jpg', alt: 'sd card reader jumper 1', caption: 'JP1' },
-    { src: '/img/microsd-reader/microsd_jp2.jpg', alt: 'sd car reader jumper 2', caption: 'JP2' },
+    { src: '/img/microsd-reader/microsd_jp2.jpg', alt: 'sd card reader jumper 2', caption: 'JP2' },
     { src: '/img/microsd-reader/microsd_jp1.jpg', alt: 'sd card reader jumper 1', caption: 'JP1' },
-    { src: '/img/microsd-reader/microsd_jp2.jpg', alt: 'sd car reader jumper 2', caption: 'JP2' },
+    { src: '/img/microsd-reader/microsd_jp2.jpg', alt: 'sd card reader jumper 2', caption: 'JP2' },
   ]}
   jumpers={true}
 />
 
-| Jumper  | Default State            | Function                                                                                          |
+| Jumper  | Default State            | Function                                                                                        |
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed) | Disconnects the 3.3V voltage regulator|
-| **JP2** | **NO** (Normally open)   | When shorted, bypasses the 3.3 voltage regulator                             |
+| **JP1** | **NC** (Normally closed) | Disconnects the 3.3V voltage regulator                                                            |
+| **JP2** | **NO** (Normally open)   | When shorted, bypasses the 3.3V voltage regulator                                               |
 
 ---
 
@@ -63,7 +63,6 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
   url="https://github.com/SolderedElectronics/MicroSD-breakout-hardware-design" 
 /> 
 
-
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
 Below is an overview of the available files.  
@@ -84,7 +83,6 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
 
 #### 3D files
 
@@ -111,4 +109,4 @@ The **Compliance** section includes important regulatory and safety documentatio
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

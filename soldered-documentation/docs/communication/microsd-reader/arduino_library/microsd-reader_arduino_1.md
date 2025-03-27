@@ -13,7 +13,6 @@ hide_title: False
 
 ---
 
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
@@ -25,11 +24,11 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
-  description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
+  description="A full, comprehensive tutorial on how to set up and upload code for the first time on an Arduino board, from scratch!"  
   url="#"  
 />  
 
@@ -43,9 +42,9 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |
-| IO5 (Default CS pin)   | CS                 |
-| IO23 (Default MOSI pin)  | MOSI                |
-| IO19 (Default MISO pin)  | MISO                |
-| IO18 (Default CLK pin)   | SCLK                |
-| GND                      | GND                 |
-| 3.3V                      | VCC                |
+| IO5 (Default CS pin)     | CS                 |
+| IO23 (Default MOSI pin)   | MOSI               |
+| IO19 (Default MISO pin)   | MISO               |
+| IO18 (Default CLK pin)    | SCLK               |
+| GND                      | GND                |
+| 3.3V                     | VCC                |

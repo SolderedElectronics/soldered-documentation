@@ -5,12 +5,12 @@ id: microsd-reader-arduino-4
 hide_title: False
 ---
 
-This page contains and example on writing data tot the SD card in the form of a txt file
+This page contains an example of writing data to an SD card in the form of a text file
 
 ---
 
 ## Defining the CS pin and instances
-To write data to the sd card, firstly we must again define the CS pin used for SPI communication (GPIO 5 in our case):
+To write data to the SD card, we must first define the CS pin used for SPI communication (GPIO 5 in our case):
 
 ```cpp
 //...
@@ -23,26 +23,22 @@ const uint8_t SD_CS_PIN = 5; //SET THIS PIN
 //...
 ```
 
-We also have to create instances of objects for the sd card and file we will create:
+We also have to create instances of objects for the SD card and the file we will create:
 
 ```cpp
-
 //Create an instance of the SD card
 SdFs sd;
 
 //Create an instance of the file system file object
 FsFile file;
-
 ```
 
 ---
 
 ## Writing to the file
-Since we want to create the file only once, the whole program is located in the `setup()` function.
-First, we initialize the Serial communication, next we initialize the sd card as well as its volume so we can be able to write and read data from it. Finally we can write data to the sd card using the FsFile object:
+Since we want to create the file only once, the entire program is located in the `setup()` function. First, we initialize the Serial communication; next, we initialize the SD card and its volume so that we can write and read data from it. Finally, we write data to the SD card using the FsFile object:
 
 ```cpp
-
 void setup()
 {
   //Initialize the serial communication
@@ -83,9 +79,8 @@ void setup()
 
   Serial.println("Writing to file done!");
 }
-
 ```
-If the file creation and writing were successful, when connected to a computer, we can see and open the created file:
+If the file creation and writing are successful, when connected to a computer, we can see and open the created file:
 
 <CenteredImage src="/img/microsd-reader/file_created.png" alt="Successful file writing" caption="Successful file writing" width="100%" />
 
@@ -118,10 +113,9 @@ If the file creation and writing were successful, when connected to a computer, 
 Below you can find the full example:
 
 ```cpp
-
 #include "SdFat.h"
 
-//Set to one if there are more SPI devicxes connected to the bus
+//Set to one if there are more SPI devices connected to the bus
 const int8_t DISABLE_CS_PIN = -1;
 
 // SDCARD_SS_PIN is defined for the built-in SD on some boards.
@@ -190,5 +184,4 @@ void setup()
 void loop()
 {
 }
-
 ```

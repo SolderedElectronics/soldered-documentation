@@ -5,12 +5,12 @@ id: microsd-reader-arduino-5
 hide_title: False
 ---
 
-On this page we will read data from the file we created in the previous example
+On this page, we will read data from the file we created in the previous example.
 
 ---
 
 ## Defining the CS pin and instances
-To write data to the sd card, firstly we must again define the CS pin used for SPI communication (GPIO 5 in our case):
+To write data to the SD card, we must first define the CS pin used for SPI communication (GPIO 5 in our case):
 
 ```cpp
 //...
@@ -23,10 +23,9 @@ const uint8_t SD_CS_PIN = 5; //SET THIS PIN
 //...
 ```
 
-We also have to create instances of objects for the sd card and file we will create as well as a buffer for the string we are reading:
+We also have to create instances of objects for the SD card and the file we will create, as well as a buffer for the string we are reading:
 
 ```cpp
-
 //Create an instance of the SD card
 SdFs sd;
 
@@ -35,17 +34,15 @@ FsFile file;
 
 //Create a char buffer for the text we will read
 char line[40];
-
 ```
 
 ---
 
 ## Reading from a file
-Since we want to read the file only once, the whole program is located in the `setup()` function.
-First, we initialize the Serial communication, next we initialize the sd card as well as its volume so we can be able to write and read data from it. Finally we can read data from the sd card using the FsFile object:
+Since we want to read the file only once, the entire program is placed in the `setup()` function.
+First, we initialize the Serial communication, then we initialize the SD card and its volume so that we can write and read data from it. Finally, we read data from the SD card using the FsFile object:
 
 ```cpp
-
 void setup()
 {
   //Initialize the serial communication
@@ -83,12 +80,12 @@ void setup()
   while(file.available())
   {
     int n = file.fgets(line, sizeof(line));
-    //Check if there was an error getting line from text
+    //Check if there was an error getting the line from text
     if (n <= 0)
     {
       Serial.println("fgets failed");
     }
-    //Check if line was longer than buffer
+    //Check if the line was longer than the buffer
     if (line[n - 1] != '\n' && n == (sizeof(line) - 1))
     {
       Serial.println("line too long");
@@ -100,7 +97,6 @@ void setup()
 
   Serial.println("Reading from file done!");
 }
-
 ```
 
 If everything works as it should, you should get an output like this:
@@ -113,10 +109,9 @@ If everything works as it should, you should get an output like this:
 Below you can find the full example:
 
 ```cpp
-
 #include "SdFat.h"
 
-//Set to one if there are more SPI devicxes connected to the bus
+//Set to one if there are more SPI devices connected to the bus
 const int8_t DISABLE_CS_PIN = -1;
 
 // SDCARD_SS_PIN is defined for the built-in SD on some boards.
@@ -180,12 +175,12 @@ void setup()
   while(file.available())
   {
     int n = file.fgets(line, sizeof(line));
-    //Check if there was an error getting line from text
+    //Check if there was an error getting the line from text
     if (n <= 0)
     {
       Serial.println("fgets failed");
     }
-    //Check if line was longer than buffer
+    //Check if the line was longer than the buffer
     if (line[n - 1] != '\n' && n == (sizeof(line) - 1))
     {
       Serial.println("line too long");
@@ -201,5 +196,4 @@ void setup()
 void loop()
 {
 }
-
 ```
