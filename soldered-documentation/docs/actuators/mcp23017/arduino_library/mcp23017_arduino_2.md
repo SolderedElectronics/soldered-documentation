@@ -5,16 +5,15 @@ id: mcp23017-arduino-2
 hide_title: False
 ---
 
-This page contains an example for setting up a blinking LED via the I/O extender
+This page contains an example for setting up a blinking LED via the I/O extender.
 
 ---
 
 ## Full example
 
-In this example, we first include the library and create an instance of the board. Next, in the `setup()` function, we initialize the I2C communication with the I/O expander and set the Pin mode for the GPA0 pin (We are using this pin for the LED). Finally, in the `loop()` we are changing the pin output every second:
+In this example, we first include the library and create an instance of the board. Next, in the `setup()` function, we initialize the I2C communication with the I/O expander and set the pin mode for the GPA0 pin (we are using this pin for the LED). Finally, in the `loop()` function, we change the pin output every second:
 
 ```cpp
-
 // Include the board file
 #include "MCP23017-SOLDERED.h"
 
@@ -40,7 +39,6 @@ void loop()
     mcp.digitalWrite(GPA0, LOW);
     delay(1000);
 }
-
 ```
 
 <FunctionDocumentation
@@ -52,11 +50,11 @@ void loop()
 
 <FunctionDocumentation
   functionName="mcp.pinMode(uint8_t pin, uint8_t mode)"
-  description="Controls a single pin direction"
+  description="Controls a single pin's direction"
   returnDescription="None"
   parameters={[
     { type: 'uint8_t', name: 'pin', description: "pin number" },
-  { type: 'uint8_t', name: 'mode', description: "OUTPUT, INPUT or INPUT_PULLUP" },
+    { type: 'uint8_t', name: 'mode', description: "OUTPUT, INPUT or INPUT_PULLUP" },
   ]}
 />
 
@@ -65,7 +63,7 @@ void loop()
   description="Sets the state for a specific pin"
   returnDescription="None"
   parameters={[
-  { type: 'uint8_t', name: 'pin', description: "pin number" },
-  { type: 'uint8_t', name: 'state', description: "state in which to put the pin" },
+    { type: 'uint8_t', name: 'pin', description: "pin number" },
+    { type: 'uint8_t', name: 'state', description: "state in which to put the pin" },
   ]}
 />

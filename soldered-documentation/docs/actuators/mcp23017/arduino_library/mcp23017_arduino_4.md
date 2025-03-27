@@ -5,16 +5,15 @@ id: mcp23017-arduino-4
 hide_title: False
 ---
 
-This page contains an example for getting the input from a button
+This page contains an example of reading input from a button.
 
 ---
 
 ## Full example
 
-In this example, we first include the library and create an instance of the board. Next, in the `setup()` function, we initialize the I2C communication with the I/O expander and set the Pin mode for the GPB0 pin (We are using this pin for the button). Finally, in the `loop()` we are reading the pin and printing to the Serial monitor the status of the button:
+In this example, we first include the library and create an instance of the board. Next, in the `setup()` function, we initialize the I2C communication with the I/O expander and set the pin mode for the GPB0 pin (which is used for the button). Finally, in the `loop()` function, we read the pin and print the status of the button to the Serial monitor:
 
 ```cpp
-
 #include "MCP23017-SOLDERED.h"
 
 MCP_23017 mcp;
@@ -33,21 +32,20 @@ void setup()
 
 void loop()
 {
-    // read the button
+    // Read the button
     if (mcp.digitalRead(GPB0) == LOW)
     {
-        // button is pressed
+        // Button is pressed
         Serial.println("Button is pressed");
     }
     else
     {
-        // button is not pressed
+        // Button is not pressed
         Serial.println("Button is not pressed");
     }
 
     delay(1000);
 }
-
 ```
 
 <CenteredImage src="/img/mcp23017/button.png" alt="Button state on serial monitor" caption="Button state on serial monitor" width="100%" />
@@ -65,7 +63,7 @@ void loop()
   returnDescription="None"
   parameters={[
     { type: 'uint8_t', name: 'pin', description: "pin number" },
-  { type: 'uint8_t', name: 'mode', description: "OUTPUT, INPUT or INPUT_PULLUP" },
+    { type: 'uint8_t', name: 'mode', description: "OUTPUT, INPUT, or INPUT_PULLUP" },
   ]}
 />
 
@@ -74,8 +72,8 @@ void loop()
   description="Sets the state for a specific pin"
   returnDescription="None"
   parameters={[
-  { type: 'uint8_t', name: 'pin', description: "pin number" },
-  { type: 'uint8_t', name: 'state', description: "state in which to put the pin" },
+    { type: 'uint8_t', name: 'pin', description: "pin number" },
+    { type: 'uint8_t', name: 'state', description: "state in which to put the pin" },
   ]}
 />
 
@@ -84,6 +82,6 @@ void loop()
   description="Gets the state of a specific pin"
   returnDescription="None"
   parameters={[
-  { type: 'uint8_t', name: 'pin', description: "pin number" },
+    { type: 'uint8_t', name: 'pin', description: "pin number" },
   ]}
 />

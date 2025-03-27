@@ -115,6 +115,10 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'actuators/mcp23017/arduino_library/mcp23017-arduino-5',
+                },
+                {
+                  type: 'doc',
                   id: 'actuators/mcp23017/arduino_library/mcp23017-arduino-3',
                 },
               ],

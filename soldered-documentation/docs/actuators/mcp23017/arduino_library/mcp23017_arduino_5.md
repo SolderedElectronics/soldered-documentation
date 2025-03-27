@@ -5,13 +5,13 @@ id: mcp23017-arduino-5
 hide_title: False
 ---
 
-This page contains an example for getting an interrupt on a specific port of the board and sending it to the main board.
+This page contains an example for receiving an interrupt on a specific port of the board and sending it to the main board.
 
 ---
 
 ## Initialization
 
-First, we must include the library and create an instance if the object. We also have to create the interrupt service routine function and the variable that will change with that function:
+First, we must include the library and create an instance of the object. We also have to create the interrupt service routine and the variable that will be modified by that function:
 
 ```cpp
 
@@ -34,7 +34,7 @@ void interruptHandler()
 
 ## Setup
 
-In the `setup()` function, we initialize the I2C communication for the board. We also define on what port we want to enable interrupts and what pin will take the interrupt on our main board:
+In the `setup()` function, we initialize the I2C communication for the board. We also define the port on which we want to enable interrupts and the pin that will receive the interrupt on our main board:
 
 ```cpp
 
@@ -114,7 +114,7 @@ void setup()
 
 ## Loop
 
-In the `loop()` function, we are cheking if an inerrupt has happened, if it did we send a message to the serial monitor:
+In the `loop()` function, we are checking if an interrupt has occurred; if it has, we send a message to the serial monitor:
 
 ```cpp
 
