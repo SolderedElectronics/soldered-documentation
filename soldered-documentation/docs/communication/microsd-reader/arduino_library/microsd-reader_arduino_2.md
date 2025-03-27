@@ -5,7 +5,7 @@ id: microsd-reader-arduino-2
 hide_title: False
 ---
 
-This page contains a deep dive into the [**SdInfo library example**](https://github.com/SolderedElectronics/Soldered-SdFat-Arduino-Library/blob/master/examples/SdInfo/SdInfo.ino) and how to get it working
+This page contains an example of initializing the SD card
 
 ---
 
