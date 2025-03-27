@@ -6,17 +6,17 @@ hide_title: False
 pagination_prev: null
 ---
 
-## Enviromental & air quality sensor BME680
-The **BME680 Enviromental & air quality sensor** is an atmospheric sensor that measures four values: temperature, pressure, humidity and air quality as an IAQ index. Using that data can calculate elevation. It is really simple to use considering that it’s using the **I2C communication protocol** with a hardware-defined address of **0x76** and its dimensions are really small so it can fit anywhere. Everything you need to know about the atmospheric conditions and the quality of the air – you can find out using this sensor (ideal for weather station projects!)
+## Environmental & air quality sensor BME680
+The **BME680 Environmental & air quality sensor** is an atmospheric sensor that measures four values: temperature, pressure, humidity, and air quality as an IAQ index. With that data, you can calculate elevation. It is really simple to use considering that it uses the **I2C communication protocol** with a hardware-defined address of **0x76**, and its small dimensions allow it to fit anywhere. With this sensor, you can find out everything you need to know about atmospheric conditions and air quality (ideal for weather station projects!).
 
-<CenteredImage src="/img/bme680/333035.webp" alt="Enviromental & air quality sensor BME680" caption="Enviromental & air quality sensor BME680" />
+<CenteredImage src="/img/bme680/333035.webp" alt="Environmental & air quality sensor BME680" caption="Environmental & air quality sensor BME680" />
 
 ---
 
-## Which products is this documentation for?
+## Which product is this documentation for?
 
 <QuickLink 
-  title="Enviromental & air quality sensor BME680 breakout" 
+  title="Environmental & air quality sensor BME680 breakout" 
   description="333035"
   url="https://soldered.com/product/enviromental-air-quality-sensor-bme680-breakout/"
   image="/img/bme680/333035.webp" 
@@ -49,4 +49,4 @@ The **BME680 Enviromental & air quality sensor** is an atmospheric sensor that m
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
-/>  
+/>
