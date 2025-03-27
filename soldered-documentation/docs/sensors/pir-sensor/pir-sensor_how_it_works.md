@@ -17,8 +17,6 @@ We can communicate with the sensor with two pins: **Sensor output(SOUT)** and **
 
 <CenteredImage src="/img/pir-sensor/potentiometer.webp" alt="Onboard potentiometer" caption="Onboard potentiometer" width="400px" />
 
-**The reason for a delay** is that pir sensors after each detection must reset, so by having a delay we are ensuring we dont get bad readings while the reset is ongoing.
-
 ---
 
 ## Communication (Qwiic version)
