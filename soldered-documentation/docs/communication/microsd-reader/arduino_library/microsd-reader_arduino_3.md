@@ -13,17 +13,14 @@ This page contains some tips in case you are having problems using this product.
 #### Check wiring
 Make sure the SD card module is correctly wired to the ESP32 by following the wiring described [**here**](geting-started#connections)
 
----
 
 #### Set the CS pin value
 When setting up the SPI communication in the code, you must set the **SD_CS_PIN variable** to the pin that CS is connected to (If you're following our connections, the pin is **GPIO5**)
 
----
 
 #### Connect the pins to VSPI
 When not defined manually, the SPI.h library tries to initialize over the VSPI (Very High-Speed SPI) Pins. See the pinout for the Dasduino CONNECTPLUS [**here**](https://soldered.com/productdata/2022/06/Dasduino-CONNECTPLUS.png)
 
----
 
 #### Try running our examples
 If you are sure that the wiring is good and they are connected via the **VSPI pins**, try our [**Initialization example**](initializing-the-SD-Card)
@@ -35,22 +32,19 @@ If you are sure that the wiring is good and they are connected via the **VSPI pi
 
 If the SPI connection has initialized successfully, but the SD card can't be accessed, here are some ways to fix it:
 
----
 
 #### Format the card
 The library only support SD cards that are formatted as **FAT16/FAT32/exFAT**. For the card tu be recognized, please format it into one of the aforementioned formats
 
----
 
 #### Connect VCC with 3.3V
 While the breakout board supports a 5V supply, its onboard 3.3V regulator is disconnected by default with the shorted jumper **JP1**. To combat this, either connect 3.3V to the VCC pin or desolder the short on JP1 if your SD card expects 5V
 
----
 
 #### Make sure the card is less than 32GB
 The reader only supports microSD cards up to 32GB, so bigger cards won't be recognized
 
----
+
 
 #### Try a different card
 If you've tried the previous tips, the problem may be with the SD card itself. Try a different one and see if the problem persists.
