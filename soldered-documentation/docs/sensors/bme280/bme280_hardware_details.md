@@ -9,7 +9,8 @@ hide_title: False
 
 <CenteredImage src="/img/bme280/bme280_pinout.jpg" alt="BME280 pinout" />
 
-Click [**here**](/img/bme280/bme280_pinout.jpg) for a high reoslution image of the pinout.
+Click [**here**](/img/bme280/bme280_pinout.jpg) for a high-resolution image of the pinout.
+
 ## Pin details
 
 | Pin Marking | Pin Name | Description                                     |
@@ -36,7 +37,6 @@ Click [**here**](/img/bme280/bme280_pinout.jpg) for a high reoslution image of t
 />
 
 ---
-
 
 ## Dimensions
 
@@ -72,7 +72,7 @@ This board contains hardware jumpers, see below for their locations and function
 
 ## Hardware repository
 
-<WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to recieve the hardware files.</WarningBox>
+<WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
@@ -94,7 +94,6 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
 
 #### 3D files
 
@@ -121,4 +120,4 @@ The **Compliance** section includes important regulatory and safety documentatio
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
