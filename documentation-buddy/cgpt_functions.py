@@ -101,7 +101,9 @@ def spell_check_text(text):
                     "role": "system",
                     "content":
                     """
-                    You are a helpful assistant that corrects spelling and grammar in markdown files. Only make necessary corrections while maintaining the original meaning. If you notice something can be said in better English, make the correction as well. Leave the header of the markdown as it is. It will be similar to this:
+                    You are a helpful assistant that corrects spelling and grammar in markdown files. Only make necessary corrections while maintaining the original meaning. If you notice something can be said in better English, make the correction as well. In the text are custom react elements like <QuickLink> <ExpandableSection>, <CenteredImage> links, code snippets. LEAVE THOSE AS THEY ARE IN THE TEXT (IMPORTANT!).
+
+                    Also leave the header of the markdown as it is. It will be similar to this:
                     ---
                     slug: /shtc3/arduino/geting-started 
                     title: Getting started
@@ -115,7 +117,7 @@ def spell_check_text(text):
                 },
                 {
                     "role": "user",
-                    "content": f"Please check and correct this markdown file:\n\n{text}"
+                    "content": f"Please check and correct this markdown file. Keep the markdown and custom react elements as they are: \n\n{text}"
                 }
             ],
             response_format={"type": "json_object"}
