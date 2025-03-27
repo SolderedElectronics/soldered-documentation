@@ -91,9 +91,9 @@ def spell_check_text(text):
     client = create_openai_client()
     if not client:
         return None, None, "API key not configured or invalid"
-
+    
     try:
-        # Instruct the API to correct spelling and grammar and return JSON
+        # Use text format for the response
         completion = client.chat.completions.create(
             model="gpt-4o",
             messages=[
@@ -101,69 +101,81 @@ def spell_check_text(text):
                     "role": "system",
                     "content":
                     """
-                    You are a helpful assistant that corrects spelling and grammar in markdown files. Only make necessary corrections while maintaining the original meaning. If you notice something can be said in better English, make the correction as well. In the text are custom react elements like <QuickLink> <ExpandableSection>, <CenteredImage> links, code snippets. LEAVE THOSE AS THEY ARE IN THE TEXT (IMPORTANT!).
-
-                    Also leave the header of the markdown as it is. It will be similar to this:
+                    You are a helpful assistant tasked with correcting spelling and grammar in markdown files. Follow these instructions carefully:
+                    1. Correct spelling and grammar mistakes and improve sentence structure when necessary, but do NOT alter the original meaning.
+                    2. The markdown text contains custom React components (such as <QuickLink>, <ExpandableSection>, <CenteredImage>, <InfoBox>, <WarningBox>) and standard markdown syntax (links, headers, bullet points, code blocks, bold, italic, etc.).
+                    IMPORTANT: These custom React elements MUST NOT be removed, modified, or omitted under any circumstances. Preserve these EXACTLY as they appear.
+                    3. Keep the front matter (header) of the markdown intact and unchanged. It typically looks like this:
                     ---
-                    slug: /shtc3/arduino/geting-started 
-                    title: Getting started
-                    id: shtc3-arduino-1 
+                    slug: /example/path
+                    title: Example Title
+                    id: example-id
                     hide_title: False
                     ---
-                    * Here below is the markdown you need to spell check *
+                    4. Return your response in this exact format:
+                       a. First, provide the complete corrected markdown text.
+                       b. Then, add a line containing only "###CORRECTIONS###" as a separator.
+                       c. After the separator, list all corrections made as bullet points.
+                       
+                    Example:
+                    <corrected markdown text here>
                     
-                    Return the corrected text and a list of changes made in JSON format (IMPORTANT): {\"corrected_text\": \"...\", \"changes\": [\"Change 1\", \"Change 2\", ...]}.
+                    ###CORRECTIONS###
+                    * Changed "recieve" to "receive"
+                    * Fixed capitalization in heading
+                    * Added missing period at end of paragraph
+                    
+                    NEVER omit or modify the React elements or markdown syntax.
                     """
                 },
                 {
                     "role": "user",
-                    "content": f"Please check and correct this markdown file. Keep the markdown and custom react elements as they are: \n\n{text}"
+                    "content": f"Please check and correct this markdown file, preserving all markdown syntax and custom React elements exactly as they appear:\n\n{text}"
                 }
-            ],
-            response_format={"type": "json_object"}
+            ]
         )
-
-        # Parse the response
+        
+        # Get the response content
         response_content = completion.choices[0].message.content
-
-        try:
-            # Remove any markdown code block formatting if present
-            clean_content = response_content
-            if clean_content.startswith("```"):
-                clean_content = clean_content.split("```")[1]
-                if clean_content.startswith("json"):
-                    clean_content = clean_content[4:].strip()
-            if clean_content.endswith("```"):
-                clean_content = clean_content.rsplit("```", 1)[0].strip()
-
-            # Try to parse as JSON
-            result = json.loads(clean_content)
-            corrected_text = result.get("corrected_text", text)
-            changes = result.get("changes", [])
-
-            # If no changes were made, provide feedback
-            if not changes or (len(changes) == 1 and changes[0] == "No changes needed"):
-                changes = ["No spelling or grammar errors found."]
-
-            return corrected_text, changes, None
-
-        except json.JSONDecodeError as e:
-            # If not valid JSON, try to extract what we can
-            print(f"JSON parse error: {e}")
-            print(f"Response content: {response_content}")
-
-            # Try to extract text between quotes after "corrected_text":
-            import re
-            text_match = re.search(
-                r'"corrected_text"\s*:\s*"([^"]*)"', response_content)
-            if text_match:
-                corrected_text = text_match.group(1)
-            else:
-                corrected_text = text
-
-            return corrected_text, ["Could not parse changes - API response format error"], None
-
+        
+        # Print the raw response for debugging
+        print("Raw response from GPT-4o:")
+        print(response_content)
+        
+        # Split the response at the separator
+        if "###CORRECTIONS###" in response_content:
+            parts = response_content.split("###CORRECTIONS###", 1)
+            corrected_text = parts[0].strip()
+            changes_text = parts[1].strip()
+            
+            # Parse changes into a list of bullet points
+            changes = []
+            for line in changes_text.split('\n'):
+                line = line.strip()
+                # Be more lenient with what we consider a bullet point
+                if line and (line.startswith('*') or line.startswith('-') or line.startswith('•')):
+                    # Remove the bullet character and any whitespace
+                    change = line.lstrip('*-• \t').strip()
+                    if change:  # Ensure we're not adding empty strings
+                        changes.append(change)
+            
+            # If no changes were found in the expected format
+            if not changes:
+                # Try to just split the text into lines as a fallback
+                changes = [line.strip() for line in changes_text.split('\n') if line.strip()]
+                if not changes:
+                    changes = ["No significant changes needed"]
+        else:
+            # Fallback if separator not found
+            corrected_text = response_content
+            changes = ["Response format error - separator not found"]
+        
+        return corrected_text, changes, None
+        
     except Exception as e:
+        import traceback
+        print(f"Spell check error: {str(e)}")
+        print(traceback.format_exc())
         return None, None, f"Error during spell check: {str(e)}"
 
 
