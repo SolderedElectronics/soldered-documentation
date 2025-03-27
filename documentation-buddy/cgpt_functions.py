@@ -91,11 +91,11 @@ def spell_check_text(text):
     client = create_openai_client()
     if not client:
         return None, None, "API key not configured or invalid"
-    
+
     try:
         # Use text format for the response
         completion = client.chat.completions.create(
-            model="gpt-4o",
+            model="o3-mini",
             messages=[
                 {
                     "role": "system",
@@ -134,20 +134,20 @@ def spell_check_text(text):
                 }
             ]
         )
-        
+
         # Get the response content
         response_content = completion.choices[0].message.content
-        
+
         # Print the raw response for debugging
         print("Raw response from GPT-4o:")
         print(response_content)
-        
+
         # Split the response at the separator
         if "###CORRECTIONS###" in response_content:
             parts = response_content.split("###CORRECTIONS###", 1)
             corrected_text = parts[0].strip()
             changes_text = parts[1].strip()
-            
+
             # Parse changes into a list of bullet points
             changes = []
             for line in changes_text.split('\n'):
@@ -158,20 +158,21 @@ def spell_check_text(text):
                     change = line.lstrip('*-• \t').strip()
                     if change:  # Ensure we're not adding empty strings
                         changes.append(change)
-            
+
             # If no changes were found in the expected format
             if not changes:
                 # Try to just split the text into lines as a fallback
-                changes = [line.strip() for line in changes_text.split('\n') if line.strip()]
+                changes = [line.strip()
+                           for line in changes_text.split('\n') if line.strip()]
                 if not changes:
                     changes = ["No significant changes needed"]
         else:
             # Fallback if separator not found
             corrected_text = response_content
             changes = ["Response format error - separator not found"]
-        
+
         return corrected_text, changes, None
-        
+
     except Exception as e:
         import traceback
         print(f"Spell check error: {str(e)}")

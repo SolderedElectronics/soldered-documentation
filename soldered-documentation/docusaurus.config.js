@@ -74,7 +74,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'Welcome to the new and improved documentation page for Soldered products! • <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://soldered.com/contact/">here</a></b>.',
+          'This documentation is a work in progress! <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://soldered.com/contact/">here</a></b>.',
         backgroundColor: '#6F3B8B',
         textColor: '#ffffff',
         isCloseable: false,
@@ -93,7 +93,9 @@ const config = {
           src: 'img/soldered_logo_white.svg',
         },
         items: [
+          /*
           { type: 'search', position: 'left' },
+          */
           {
             href: 'https://soldered.com',
             label: 'Back to Soldered.com',
@@ -102,12 +104,14 @@ const config = {
           },
         ],
       },
+      /*
       algolia: {
         // TODO when docs are published, request API key so it can be implemented
         apiKey: 'YOUR_API_KEY',
         indexName: 'YOUR_INDEX_NAME',
         appId: 'YOUR_APP_ID',
       },
+      */
       footer: {
         links: [
           {
@@ -149,6 +153,10 @@ const config = {
             items: [
               {
                 label: 'Getting started with Inkplate',
+                href: 'https://inkplate.readthedocs.io/',
+              },
+              {
+                label: 'Getting started with Inkplate 6MOTION',
                 href: 'https://docs.inkplate.com/',
               },
               {
