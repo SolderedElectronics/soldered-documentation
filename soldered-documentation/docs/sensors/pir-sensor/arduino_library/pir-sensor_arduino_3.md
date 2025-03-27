@@ -6,7 +6,7 @@ hide_title: False
 pagination_next: null
 ---
 
-This page contains some tips in case you are having problems using this product.
+This page contains some tips in case you are experiencing problems using this product.
 
 <ExpandableSection title="My sensor won't initialize! (Qwiic)">
 
@@ -16,7 +16,6 @@ Ensure that your Qwiic cable is properly connected and in good condition. Try us
 #### Scan for I2C devices
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller’s I2C bus.
 
-
 #### Try reinitializing
 If the sensor fails to initialize on the first attempt, try calling `PIR.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
 
@@ -24,14 +23,12 @@ If the sensor fails to initialize on the first attempt, try calling `PIR.begin()
 
 <ExpandableSection title="My sketch won't upload! (Regular)">
 
-The sensor could be pulling too much power when uploading a sketch
+The sensor might be drawing too much power when uploading a sketch.
 
 #### Disconnect the wires connected to the sensor
-Before uploading the sketch, disconnect the wiring and then upload the sketch.
+Before uploading the sketch, disconnect the wires connected to the sensor.
 
 #### Connect an external battery
-Connect an external battery so that the board gets enough power
+Connect an external battery so that the board receives enough power.
 
 </ExpandableSection>
-
-
