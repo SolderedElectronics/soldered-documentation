@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}Spell Check - Soldered Documentation Buddy{% endblock %}
+
+{% block content %}
+<h1>Spell Check</h1>
+
+<div class="form-container">
+    <form id="spellCheckForm" method="POST" action="{{ url_for('spell_check_submit') }}">
+        <div class="form-group">
+            <label for="textToCheck">Paste markdown file to check:</label>
+            <textarea id="textToCheck" name="textToCheck" rows="10" required class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">CHECK SPELLING</button>
+    </form>
+</div>
+
+{% if original_text %}
+<div class="result-container">
+    <div class="result-section">
+    </div>
+    
+    <div class="result-section">
+        <h3>Corrected Text:</h3>
+        <div class="text-box {% if success %}success{% else %}error{% endif %}" id="correctedText">{{ corrected_text }}</div>
+    </div>
+    
+    <h2>Make sure to check the output file after copying!</h2>
+
+    <button id="copyBtn" class="action-btn" onclick="copyToClipboard()">Copy Corrected Text</button>
+    
+    {% if changes %}
+    <div class="changes-section">
+        <h3>Changes Made:</h3>
+        <ul class="changes-list">
+            {% for change in changes %}
+            <li>{{ change }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+
+{% if error_message %}
+<div class="result-message error">
+    {{ error_message }}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function copyToClipboard() {
+        const textToCopy = document.getElementById('correctedText').textContent;
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                // Show a temporary success message instead of alert
+                const btn = document.getElementById('copyBtn');
+                const originalText = btn.textContent;
+                btn.textContent = '✓ Copied!';
+                btn.classList.add('copy-success');
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('copy-success');
+                }, 2000);
+            })
+            .catch(err => {
+                console.error('Failed to copy text:', err);
+                alert('Failed to copy text: ' + err);
+            });
+    }
+    
+    // Add highlighting to changes when hovering over change items
+    document.addEventListener('DOMContentLoaded', function() {
+        const changesList = document.querySelectorAll('.changes-list li');
+        changesList.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                const changeText = this.textContent;
+                // Extract the changed text if it follows a pattern like "Changed 'X' to 'Y'"
+                const match = changeText.match(/Changed ['"](.+?)['"]\s+to\s+['"](.+?)['"]/i);
+                if (match) {
+                    const [_, before, after] = match;
+                    highlightChange(before, after);
+                }
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                // Remove any highlighting
+                const correctedText = document.getElementById('correctedText');
+                correctedText.innerHTML = correctedText.textContent;
+            });
+        });
+    });
+    
+    function highlightChange(before, after) {
+        const correctedText = document.getElementById('correctedText');
+        const text = correctedText.textContent;
+        
+        // Simple highlight for exact matches
+        if (text.includes(after)) {
+            correctedText.innerHTML = text.replace(
+                after, 
+                `<span class="highlight-change">${after}</span>`
+            );
+        }
+    }
+</script>
+
+<style>
+    .copy-success {
+        background-color: #4CAF50 !important;
+        color: white !important;
+    }
+    
+    .highlight-change {
+        background-color: #fff3cd;
+        padding: 0 2px;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+    
+    .changes-list li {
+        cursor: pointer;
+        padding: 4px 0;
+        transition: background-color 0.2s;
+    }
+    
+    .changes-list li:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+{% endblock %}

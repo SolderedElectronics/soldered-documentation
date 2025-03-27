@@ -187,5 +187,87 @@ def board_highlight_save():
 def generate_pages():
     return render_template('generate_pages.html', active_page='generate_pages')
 
+@app.route('/config', methods=['GET'])
+def config():
+    return render_template('config.html', active_page='config')
+
+@app.route('/config/save', methods=['POST'])
+def save_config():
+    api_key_path = request.form.get('api_key_path', '').strip()
+    log_output = io.StringIO()
+    success = False
+    
+    with redirect_stdout(log_output):
+        print(f"Checking API key path: {api_key_path}")
+        
+        # Validate that the file exists and is a .txt file
+        if not api_key_path.endswith('.txt'):
+            print("Error: API key path must point to a .txt file")
+        elif not os.path.exists(api_key_path):
+            print(f"Error: File not found at {api_key_path}")
+        else:
+            # Try to read the file to verify it contains an API key
+            try:
+                with open(api_key_path, 'r') as f:
+                    api_key = f.read().strip()
+                
+                if not api_key:
+                    print("Error: API key file is empty")
+                else:
+                    # Import the function to save the API key path
+                    from cgpt_functions import save_api_key_path
+                    
+                    # Save the configuration
+                    if save_api_key_path(api_key_path):
+                        print(f"API key path successfully saved")
+                        success = True
+                    else:
+                        print(f"Error saving API key path")
+            except Exception as e:
+                print(f"Error reading API key file: {str(e)}")
+    
+    return render_template('config.html', active_page='config',
+                          message="Configuration saved successfully!" if success else "Error saving configuration",
+                          success=success, log_output=log_output.getvalue())
+
+@app.route('/spell-check', methods=['GET'])
+def spell_check():
+    return render_template('spell_check.html', active_page='spell_check')
+
+@app.route('/spell-check/submit', methods=['POST'])
+def spell_check_submit():
+    text_to_check = request.form.get('textToCheck', '').strip()
+    
+    if not text_to_check:
+        return render_template('spell_check.html', active_page='spell_check',
+                              error_message="Please enter some text to check")
+    
+    # Import spell_check function
+    from cgpt_functions import spell_check_text
+    
+    # Perform spell check
+    corrected_text, changes, error = spell_check_text(text_to_check)
+    
+    if error:
+        return render_template('spell_check.html', active_page='spell_check',
+                              error_message=error, original_text=text_to_check)
+    
+    # Clean the corrected text if it has markdown code blocks
+    if corrected_text and isinstance(corrected_text, str):
+        # Remove markdown code blocks if present
+        if corrected_text.startswith("```") and corrected_text.endswith("```"):
+            corrected_text = corrected_text.split("```", 2)[1]
+            if corrected_text.startswith("markdown"):
+                corrected_text = corrected_text[9:].strip()
+    
+    # Add a debug log of changes
+    print(f"Spell check changes: {changes}")
+    
+    return render_template('spell_check.html', active_page='spell_check',
+                          original_text=text_to_check,
+                          corrected_text=corrected_text,
+                          changes=changes,
+                          success=True)
+
 if __name__ == '__main__':
     app.run(debug=True)
