@@ -41,7 +41,7 @@ It is straightforward to use because it communicates via **I2C** with a hardware
   - **Dimensions:** 30 x 30 mm / 1.2 x 1.2 inches
   - **Mounting holes:** 2 
 - **Current consumption:** ~20 mA (depending on active pixels)
-- **Logic voltage level:** 5V (on the I2C header)
+- **Logic voltage level:** 5V on the I2C header, 3.3V on Qwiic
 - **Operating voltage:** 5V (onboard regulator for 3.3V compatibility)  
 - **Communication:** I2C (address: 0x3C)  
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  

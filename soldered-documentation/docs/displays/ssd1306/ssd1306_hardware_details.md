@@ -34,7 +34,7 @@ Click [**here**](/img/ssd1306/333100_pinout.jpg) for a high resolution image of 
 
 ---
 
-## Jumper Details
+## Jumper details
 
 This board contains hardware jumpers; see below for their locations and functions:
 
@@ -50,14 +50,14 @@ This board contains hardware jumpers; see below for their locations and function
   jumpers={true}
 />
 
-| Jumper  | Default State            | Function                                                                                          |
-| ------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                |
-| **JP2** | **NC** (Normally closed) | Supplies power to the purple LED that indicates the display is turned on.                         |
-| **JP3** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                              |
-| **JP4** | **NC** (Normally closed) | Disconnects the 3.3V voltage regulator.                                                           |
-| **JP5** | **NO** (Normally open)   | When closed, bypasses the 3.3V voltage regulator.                                                 |
-| **JP6** | **NO** (Normally open)   | I2C address jumper. When shorted, the address is 0x3D; if not, it is 0x3C.                        |
+| Jumper  | Default State            | Function                                                                                                                                                                 |
+| ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                      |
+| **JP2** | **NC** (Normally closed) | Supplies power to the purple LED that indicates the display is turned on.                                                                                                |
+| **JP3** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                    |
+| **JP4** | **NC** (Normally closed) | Connects the VCC pin to a 5V to 3V3 voltage regulator IC.                                                                                                                |
+| **JP5** | **NO** (Normally open)   | When connected, bypasses the voltage regulator on VCC pin, allowing 3V3 to be connected instead of 5V on VCC pin. **Make sure JP4 is disconnected if JP5 is connected.** |
+| **JP6** | **NO** (Normally open)   | I2C address jumper. When shorted, the address is 0x3D; if not, it is 0x3C.                                                                                               |
 
 ---
 
@@ -78,6 +78,12 @@ Schematics, KiCad files, Gerber files, and more can be found in the GitHub repos
   title="Display OLED I2C White 0.96' SSD1306 Hardware design" 
   description="GitHub hardware repository for this product"
   url="https://github.com/SolderedElectronics/Display-OLED-I2C-White-0.96-hardware-design/tree/main" 
+/> 
+
+<QuickLink 
+  title="Display OLED I2C Blue 0.96' SSD1306 Hardware design" 
+  description="GitHub hardware repository for this product"
+  url="https://github.com/SolderedElectronics/Display-OLED-I2C-Blue-0.96-hardware-design" 
 /> 
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have by finding the version mark on the PCB.
