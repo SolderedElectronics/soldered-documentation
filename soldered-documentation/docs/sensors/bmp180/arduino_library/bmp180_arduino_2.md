@@ -11,9 +11,9 @@ This page contains some simple examples with function documentation on how to ta
 
 ## Initialization
 
-To use the BMP180 sensor, first, include the required library, create the sensor object and initialize the sensor in the `setup()` function.
+To use the BMP180 sensor, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function.
 
-<WarningBox>This library uses the char value to return error codes and delay values in the form of numbers. While the type being char seems unintuitive when it returns numbers, the char data type is basically an 8-bit unsigned integer</WarningBox>
+<WarningBox>This library uses the char value to return error codes and delay values in the form of numbers. While the type being char seems unintuitive when it returns numbers, the char data type is basically an 8-bit unsigned integer.</WarningBox>
 
 ```cpp
 //Include the library
@@ -29,7 +29,7 @@ void setup() {
   //Initialize the sensor
   if(bmp180.begin())
   {
-    //If sensor returns 1, then it has succesfully initialized
+    //If sensor returns 1, then it has successfully initialized
     Serial.println("BMP180 sensor successfully initialized!");
   }
   else
@@ -47,4 +47,3 @@ void setup() {
   returnDescription="Char value, returns 1 if sensor was properly initialized, 0 if not."
   parameters={[]}
 />
-

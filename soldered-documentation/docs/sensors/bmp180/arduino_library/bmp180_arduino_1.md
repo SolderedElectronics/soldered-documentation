@@ -10,14 +10,14 @@ hide_title: False
 To install the Arduino library, download it from the GitHub repository:
 <QuickLink  
   title="Pressure & temperature sensor BMP180 breakout Arduino library"  
-  description="BME280 and BME680 Arduino library by Soldered"  
+  description="BMP180 Arduino library by Soldered"  
   url="https://github.com/SolderedElectronics/Soldered-BMP180-Temperature-Pressure-Sensor-Arduino-Library"  
 />  
 
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  

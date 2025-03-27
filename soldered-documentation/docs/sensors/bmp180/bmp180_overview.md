@@ -8,12 +8,12 @@ pagination_prev: null
 
 ## Pressure & temperature sensor BMP180
 
-The **BMP180 Pressure & temperature sensor** is an atmospheric sensor that measures 2 values: temperature and pressure. The digital sensor on the board precisely measures the changes in barometric pressure and temperature. It uses the **piezoresistive effect** to gather the information. Since the pressure varies depending on altitude, the sensor can measure altitude too. It is simple to use since it communicates via **I2C communication** with a hardware-defined address of **0x77** and is designed for seamless **Qwiic (formerly easyC) connectivity**. Very low current consumption and voltage allow this type of sensor to be used in many modern devices. 
+The **BMP180 Pressure & temperature sensor** is an atmospheric sensor that measures two values: temperature and pressure. The digital sensor on the board precisely measures changes in barometric pressure and temperature. It uses the **piezoresistive effect** to gather information. Since atmospheric pressure varies with altitude, the sensor can also measure altitude. It is simple to use, as it communicates via **I2C communication** with a hardware-defined address of **0x77** and is designed for seamless **Qwiic (formerly easyC) connectivity**. Its very low current consumption and voltage make this sensor suitable for many modern devices.
 
 <CenteredImage src="/img/bmp180/333060.jpg" alt="BMP180 Pressure & temperature sensor" caption="BMP180 Pressure & temperature sensor" />
 ---
 
-## Which products is this documentation for?
+## Which product is this documentation for?
 
 <QuickLink 
   title="Pressure & temperature sensor BMP180 breakout" 
@@ -48,4 +48,4 @@ The **BMP180 Pressure & temperature sensor** is an atmospheric sensor that measu
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
-/>  
+/>
