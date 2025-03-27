@@ -12,6 +12,20 @@ On this page, we will explain how an OLED display actually functions.
 ## Overview
 **OLEDs** are organic LEDs, which means that their key building blocks are organic (i.e., carbon-based) materials. Unlike LEDs, which are point light sources, OLEDs are manufactured as sheets that act as diffuse-area light sources. **OLED technology** is developing rapidly, and there are a handful of product offerings with efficacy, lifetime, and color quality specifications comparable to their LED counterparts. However, OLEDs are still several years away from widespread use as a source of general illumination, largely due to their high cost.
 
+---
+
+## Datasheet
+
+For an in-depth look at technical specifications, refer to the official SHTC3 Datasheet:  
+
+<QuickLink  
+  title="SSD1306 Datasheet"  
+  description="Detailed technical documentation for the SSD1306 display"  
+  url="soldered.com/productdata/2022/03/Soldered_SSD1315_datasheet.pdf"  
+/>  
+
+---
+
 ## Structure
 An OLED is a solid-state device consisting of a thin, carbon-based **semiconductor layer** that emits light when electricity is applied by adjacent electrodes. In order for light to escape from the device, at least one of the electrodes must be transparent. The intensity of the light emitted is controlled by the amount of electric current applied by the electrodes, and the light's color is determined by the type of emissive material used. To create white light, most devices use red, green, and blue emitters that can be arranged in several configurations.
 
@@ -19,25 +33,12 @@ An OLED is a solid-state device consisting of a thin, carbon-based **semiconduct
 
 ---
 
-## How we communicate with it
+## SSD1306
 
 **SSD1306** is a single-chip **CMOS OLED/PLED driver** with a controller for an organic/polymer light-emitting diode dot-matrix graphic display system. It consists of 128 segments and 64 commons. 
 
 The SSD1306 displays data directly from its internal 128 x 64-bit **Graphic Display Data RAM (GDDRAM)**. Data/commands are sent from a general MCU through the hardware-selectable **I2C Interface**.
 
----
-
-## Pros & Cons
-
-- **Pros**  
-  - The plastic, organic layers of an OLED are **thinner, lighter, and more flexible** than the crystalline layers in an LED or LCD.
-  - OLEDs are **brighter than LEDs**. Because the organic layers of an OLED are much thinner than the corresponding inorganic crystal layers of an LED, the conductive and emissive layers of an OLED can be multi-layered.
-  - OLEDs do not require backlighting and thus **consume less electricity**.
-
-- **Cons**
-  - While red and green OLED films have longer lifetimes (46,000 to 230,000 hours), blue organics currently have much shorter lifetimes (up to around 14,000 hours).
-  - Manufacturing processes are currently **expensive**.
-  - Water can easily damage OLEDs.
 
 ---
 

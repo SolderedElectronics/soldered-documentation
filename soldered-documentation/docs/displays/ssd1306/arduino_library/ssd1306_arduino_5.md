@@ -11,7 +11,7 @@ This page contains some examples of drawing and rendering shapes onto the OLED d
 
 ## Rectangles
 
-Rectangles can be drawn onto the screen by using the `drawRect()` function and defining the upper left x and y coordinate, as well as the height and width of the rectangle. In this example, we are drawing smaller and smaller rectangles until we reach the center:
+Rectangles can be drawn onto the screen using the `drawRect()` function by specifying the upper left x and y coordinates, as well as the height and width of the rectangle. In this example, we draw progressively smaller rectangles until we reach the center:
 
 ```cpp
 
@@ -60,7 +60,7 @@ void loop() {
 
 ## Circles
 
-Circles can be drawn onto the screen by using the `drawCircle()` function and defining the x and y coordinates of the circle center, the radius, as well as the color. In this example, we are drawing 10-pixel-wide circles until they reach the end of the screen:
+Circles can be drawn onto the screen using the `drawCircle()` function by specifying the x and y coordinates of the circle's center, its radius, and its color. In this example, we draw 10-pixel-wide circles until they reach the end of the screen:
 
 ```cpp
 void loop() {
@@ -86,7 +86,7 @@ void loop() {
 
 <FunctionDocumentation
   functionName="display.drawCircle(uint16_t x0, uint16_t y0, uint16_t r, uint16_t color)"
-  description="Puts a rectangle into the buffer, ready to be drawn"
+  description="Puts a circle into the buffer, ready to be drawn"
   returnDescription="None"
   parameters={[ 
   { type: 'uint16_t', name: 'x0', description: "x coordinate of centre of circle" },

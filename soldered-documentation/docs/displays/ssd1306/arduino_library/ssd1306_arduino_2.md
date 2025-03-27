@@ -30,6 +30,12 @@ void setup() {
     Serial.println("OLED failed to initialize, check connection");
   }
 }
+
+void loop()
+{
+  
+}
+
 ```
 <InfoBox>If you did everything correctly, you should be greeted with the **Soldered logo!**</InfoBox>
 

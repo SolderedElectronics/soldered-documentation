@@ -5,12 +5,6 @@ id: ssd1306-arduino-4
 hide_title: False  
 ---
 
-This page contains some examples of drawing text onto the OLED display
-
----
-
-## Writing text
-
 To write text onto the display, you must define the text size, color, and the starting coordinate from which the text will be drawn onto the display.
 
 ```cpp

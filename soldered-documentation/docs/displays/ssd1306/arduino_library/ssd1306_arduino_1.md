@@ -52,11 +52,4 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 If you prefer, you can use I2C pins to manually connect:
 
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| IO21 (Default SDA pin)   | SDA                |
-| IO22 (Default SCL pin)   | SCL                |
-| VCC                      | VCC                |
-| GND                      | GND                |
-
 </InfoBox>

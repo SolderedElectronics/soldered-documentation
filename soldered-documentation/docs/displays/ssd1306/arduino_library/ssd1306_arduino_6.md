@@ -5,9 +5,9 @@ id: ssd1306-arduino-6
 hide_title: False
 ---
 
-Since this display has so much to offer, we encourage you to browse the accompanying documentation and examples:
+Since this display offers so much to explore, we encourage you to review the accompanying documentation and examples:
 
-See how advanced functions, such as text scrolling and bitmap rendering, work by checking out the example included with the library:
+See how advanced functions such as text scrolling and bitmap rendering work by checking out the example included with the library:
 
 <QuickLink  
   title="OLED Display Drawing Example"  
@@ -16,13 +16,13 @@ See how advanced functions, such as text scrolling and bitmap rendering, work by
 />  
 
 <InfoBox>You can also open the given example inside the Arduino IDE by going to:  
-**File->Examples->Soldered Oled Display Arduino Library->Drawing_Example**</InfoBox>
+**File>Examples>Soldered Oled Display Arduino Library>Drawing_Example**</InfoBox>
 
 ---
 
 ## Documentation
 
-You can find in-depth details about specific functions in the **Adafruit GFX Graphics Library** via the link below:
+You can find in-depth details about specific functions in the **Adafruit GFX Graphics Library** by following the link below:
 
 <QuickLink  
   title="Adafruit GFX Graphics Library"  
