@@ -8,14 +8,13 @@ pagination_prev: null
 
 ## HC-SR04 ultrasonic sensor
 
-The **HC-SR04 ultrasonic sensor** is an affordable and popular sensor that measures the distance between itself and an object located in front of the sensor. Very simple to use, it returns the distance in centimeters or inches.
-In this variation, it comes on a board with an ATTINY microcontroller that sends readings from the sensor as a digital signal via **I2C communication** and is designed for seamless **Qwiic (formerly easyC) connectivity**.
+The **HC-SR04 ultrasonic sensor** is an affordable and popular sensor that measures the distance between itself and an object in front of it. It is very simple to use and returns the distance in centimeters or inches. In this variation, it comes on a board with an ATTINY microcontroller that sends readings from the sensor as a digital signal via **I2C communication** and is designed for seamless **Qwiic (formerly easyC) connectivity**.
 
 <CenteredImage src="/img/hc-sr04/333001.jpg" alt="Ultrasonic sensor HC-SR04" caption="Ultrasonic sensor HC-SR04" />
 
 ---
 
-## Which products is this documentation for?
+## Which product is this documentation for?
 
 <QuickLink 
   title="HC-SR04 ultrasonic sensor with easyC" 
@@ -29,12 +28,12 @@ In this variation, it comes on a board with an ATTINY microcontroller that sends
 ## Key Features
 
 - **Measuring range:** 2cm to 400cm, ±1cm accuracy
-- **Measurment angle:** 15°
+- **Measurement angle:** 15°
 - **Operating voltage:** 5V
 - **ATTINY404 microcontroller onboard**
 - **Communication:** I2C, UPDI, Directly
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)
-- **Dimensions:**  45 x 22 mm / 1.8 x 0.9 inch
+- **Dimensions:** 45 x 22 mm / 1.8 x 0.9 inch
 
 ---
 
@@ -45,4 +44,4 @@ In this variation, it comes on a board with an ATTINY microcontroller that sends
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
-/>  
+/>

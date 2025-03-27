@@ -1,15 +1,15 @@
----
-slug: /hc-sr04/hardware 
-title: Hardware details
-id: hc-sr04-hardware 
-hide_title: False
+---  
+slug: /hc-sr04/hardware  
+title: Hardware details  
+id: hc-sr04-hardware  
+hide_title: False  
 ---
 
 ## Pinout
 
 <CenteredImage src="/img/hc-sr04/hc-sr04_pinout.png" alt="Pinout" />
 
-Click [**here**](/img/hc-sr04/hc-sr04_pinout.jpg) for a high reoslution image of the pinout.
+Click [**here**](/img/hc-sr04/hc-sr04_pinout.jpg) for a high resolution image of the pinout.
 
 ---
 
@@ -19,19 +19,18 @@ Click [**here**](/img/hc-sr04/hc-sr04_pinout.jpg) for a high reoslution image of
 | ----------- | -------- | ----------------------------------------------- |
 | **VCC**     | Power    | Supply voltage (5V)                             |
 | **GND**     | Ground   | Common ground for power and signals.            |
-| **ECHO**    | Echo     | Pin that recieves the reflected wave            |
+| **ECHO**    | Echo     | Pin that receives the reflected wave            |
 | **TRIG**    | Trigger  | Pin that emits the start pulse                  |
 | **3V3**     | Power    | Supply voltage for the UPDI                     |
 | **UPDI**    | UPDI     | Communication pin for UPDI                      |
 
 <WarningBox>UPDI stands for Unified Program and Debug Interface. It is used to program and debug Atmel devices. The atmel chip on this board is used for the easyC I2C communication only. DO NOT try to use this for sensor communication!</WarningBox>
 
-
-<InfoBox> This sensor is made to work specifically with the Qwiic connector, the echo and trigger pins are pre-connected </InfoBox>
+<InfoBox> This sensor is made to work specifically with the Qwiic connector; the echo and trigger pins are pre-connected. </InfoBox>
 
 ---
 
-## Qwiic (formerly easyC)  
+## Qwiic (formerly easyC)
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
@@ -52,7 +51,7 @@ Click [**here**](/img/hc-sr04/hc-sr04_pinout.jpg) for a high reoslution image of
 ---
 
 ## Address selection (Qwiic version)
-This board contains hardware address switches, see below how to change breakout board's address:
+This board contains hardware address switches. See below for instructions on changing the breakout board's address:
 <CenteredImage src="/img/hc-sr04/333001_address.jpg" alt="Pinout" width="500px" />
 | Address |  SW3  |  SW2  |  SW1  |
 | :-----: | :---: | :---: | :---: |
@@ -77,7 +76,7 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
   url="https://github.com/SolderedElectronics/Ultrasonic-sensor-with-easyC-hardware-design" 
 /> 
 
-The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can determine your board version by checking the version mark on the PCB.
 
 Below is an overview of the available files.  
 
@@ -98,7 +97,6 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-
 #### 3D files
 
 A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
@@ -117,11 +115,11 @@ Gerber files are essential for PCB manufacturing, as they contain precise instru
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
-#### Compliance  
+#### Compliance
 
-The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

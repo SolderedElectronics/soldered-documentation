@@ -11,7 +11,7 @@ This page contains some simple examples with function documentation on how to ta
 
 ## Initialization
 
-To use the HC-SR04 sensor, first, include the required library, create the sensor object and initialize the sensor in the `setup()` function:
+To use the HC-SR04 sensor, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function:
 ```cpp
 //Include the library
 #include <Ultrasonic-distance-sensor-easyC-SOLDERED.h>
@@ -40,18 +40,18 @@ void setup() {
 
 ## Measuring distance
 
-To measure the distance, first take tke measurement using the `takeMeasure()` function, and after a short delay (Measurement takes at most 38 ms), you can call the `getDistance()` function to get the distance value:
+To measure the distance, first take the measurement using the `takeMeasure()` function. After a short delay (the measurement takes at most 38 ms), you can call the `getDistance()` function to obtain the distance value:
 
 ```cpp
 void loop() {
   //Send command to sensor to take a measurement
   hc_ultrasonic.takeMeasure();
   
-  //Measurement takes at most 38 miliseconds                             
+  //Measurement takes at most 38 milliseconds                             
   delay(38);  
 
-  //Get distance saved in sensors register
-  int distance=hc_ultrasonic.getDistance();
+  //Get the distance saved in the sensor's register
+  int distance = hc_ultrasonic.getDistance();
 
   Serial.print("Distance from obstacle is: ");
   Serial.print(distance);               
@@ -67,7 +67,7 @@ void loop() {
 
 <FunctionDocumentation
   functionName="hc_ultrasonic.takeMeasure()"
-  description="Starts a distance measurement"
+  description="Starts a distance measurement."
   returnDescription="Integer value, returns an error code from the Wire.h library"
   parameters={[]}
 />
@@ -79,18 +79,18 @@ Error codes that the function returns mean the following:
 | **Error code**       | **Meaning**                              |
 | -------------------- | -----------------------------------------|
 | 0                    | Success                                  |
-| 1                    | data too long to fit in transmit buffer  |
-| 2                    | received NACK on transmit of address     |
-| 3                    | received NACK on transmit of data.       |
-| 4                    | other error.                             |
-| 5                    | timeout                                  |
+| 1                    | Data too long to fit in transmit buffer  |
+| 2                    | Received NACK on transmit of address     |
+| 3                    | Received NACK on transmit of data.       |
+| 4                    | Other error.                             |
+| 5                    | Timeout                                  |
 
 </InfoBox>
 
 <FunctionDocumentation
   functionName="hc_ultrasonic.getDistance()"
-  description="receives data and converts distance from binary code to value in centimeters."
-  returnDescription="Integer value, returns distance from obstacle in centimeters"
+  description="Receives data and converts the binary data into a distance value in centimeters."
+  returnDescription="Integer value, returns the distance from obstacle in centimeters"
   parameters={[]}
 />
 
@@ -98,18 +98,18 @@ Error codes that the function returns mean the following:
 
 ## Measuring wave duration
 
-To measure the duration the ultrasonic wave took to travel back, first take tke measurement using the `takeMeasure()` function, and after a short delay (Measurement takes at most 38 ms), you can call the `getDuration()` function to get the duration value in microseconds:
+To measure the duration the ultrasonic wave takes to travel back, first take the measurement using the `takeMeasure()` function. After a short delay (the measurement takes at most 38 ms), you can call the `getDuration()` function to obtain the duration value in microseconds:
 
 ```cpp
 void loop() {
   //Send command to sensor to take a measurement
   hc_ultrasonic.takeMeasure();
 
-  //Measurement takes at most 38 miliseconds                             
+  //Measurement takes at most 38 milliseconds                             
   delay(38);  
 
-  //Get duration saved in sensors register
-  int duration=hc_ultrasonic.getDuration();
+  //Get the duration saved in the sensor's register
+  int duration = hc_ultrasonic.getDuration();
 
   Serial.print("Time it took the wave to return: ");
   Serial.print(duration);               
@@ -125,15 +125,15 @@ void loop() {
 
 <FunctionDocumentation
   functionName="hc_ultrasonic.getDuration()"
-  description="Receives data and converts it to time needed for bounced sound wave to return to sensor"
-  returnDescription="Integer value, returns time in microseconds needed for bounced sound wave to return"
+  description="Receives data and converts it into the time required for the echoed sound wave to return to the sensor."
+  returnDescription="Integer value, returns the time in microseconds needed for the echoed sound wave to return"
   parameters={[]}
 />
 
 ---
 
 ## Full example
-Try all of the above mentioned functions in this full example which prints out the distance and wave duration over Serial at 115200 baud:
+Try all of the functions mentioned above in this full example, which prints out the distance and wave duration over Serial at 115200 baud:
 
 ```cpp
 //Include the library
@@ -154,19 +154,18 @@ void loop() {
   //Send command to sensor to take a measurement
   hc_ultrasonic.takeMeasure();
 
-  //Measurement takes at most 38 miliseconds                             
+  //Measurement takes at most 38 milliseconds                             
   delay(38);  
 
-  //Get distance saved in sensors register
-  int distance=hc_ultrasonic.getDistance();
+  //Get the distance saved in the sensor's register
+  int distance = hc_ultrasonic.getDistance();
 
   Serial.print("Distance from obstacle is: ");
   Serial.print(distance);               
   Serial.println(" cm.");  
 
-
-  //Get duration saved in sensors register
-  int duration=hc_ultrasonic.getDuration();
+  //Get the duration saved in the sensor's register
+  int duration = hc_ultrasonic.getDuration();
 
   Serial.print("Time it took the wave to return: ");
   Serial.print(duration);               
