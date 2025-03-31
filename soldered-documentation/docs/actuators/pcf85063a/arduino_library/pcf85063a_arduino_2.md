@@ -5,28 +5,26 @@ id: pcf85063a-arduino-2
 hide_title: False
 ---
 
-For first time use, we have to initialize the RTC by providing it with the current time and date. First, we include the library and create an instance of the RTC object, then we initialize it in the `setup()` function:
+For first-time use, we must initialize the RTC by providing it with the current time and date. First, include the library and create an instance of the RTC object, then initialize it in the `setup()` function:
 
 ```cpp
-
-//Include the library
+// Include the library
 #include "PCF85063A-SOLDERED.h"
 
-//Create an instance ov the RTC
+// Create an instance of the RTC
 PCF85063A rtc; 
 
 
 void setup()
 {
-    Serial.begin(115200); //Start serial communication with PC using 115200 baudrate
-    rtc.begin();  //Initialize RTC module
+    Serial.begin(115200); // Start serial communication with the PC using a baud rate of 115200
+    rtc.begin();  // Initialize RTC module
 
     //  setTime(hour, minute, sec);
-    rtc.setTime(11, 53, 00); // 24H mode, ex. 11:53:00
+    rtc.setTime(11, 53, 00); // 24-hour mode, e.g., 11:53:00
     //  setDate(weekday, day, month, yr);
-    rtc.setDate(1, 31, 3, 2025); // 0 for Sunday, ex. Monday, 31.3.2025.
+    rtc.setDate(1, 31, 3, 2025); // 0 for Sunday, e.g., Monday, 31.3.2025.
 }
-
 ```
 
 <FunctionDocumentation
@@ -49,7 +47,7 @@ void setup()
 
 <FunctionDocumentation
   functionName="rtc.setDate(uint8_t weekday, uint8_t day, uint8_t month, uint16_t yr)"
-  description="Sets the time on the RTC"
+  description="Sets the date on the RTC"
   returnDescription="None"
   parameters={[
   { type: 'uint8_t', name: 'weekday', description: "What weekday you want to set" },

@@ -6,13 +6,13 @@ hide_title: False
 pagination_prev: null
 ---
 
-## PCF85063A Real time clock
+## PCF85063A Real-time clock
 
-The **PCF85063A Real time clock** is a device that carefully and precisely tracks time and dates. It is extremely precise, so it is more suitable for long-term time tracking than clocks on microcontrollers. This breakout can work with an extremely low current and thanks to the **alarm feature** and **interrupt pin**, it will allow a microcontroller to enter sleep mode until its awoken by this RTC.
+The **PCF85063A Real-time clock** is a device that carefully and precisely tracks time and dates. It is extremely precise, making it more suitable for long-term time tracking than the clocks found on microcontrollers. This breakout can operate on extremely low current, and thanks to its **alarm feature** and **interrupt pin**, it allows a microcontroller to enter sleep mode until it is awakened by this RTC.
 
-It has a **built-in battery holder** (battery not included) and even if power is lost, real-time tracking won’t be affected.
+It has a **built-in battery holder** (battery not included), and even if power is lost, real-time tracking won’t be affected.
 
-It is simple to use since it communicates via **I2C communication** with a hardware-defined address of **0x51** and is designed for seamless **Qwiic (formerly easyC) connectivity**.
+It is simple to use since it communicates via **I2C** with a hardware-defined address of **0x51** and is designed for seamless **Qwiic (formerly easyC) connectivity**.
 
 <CenteredImage src="/img/pcf85063a/333051.jpg" alt="PCF85063A Real time clock" caption="PCF85063A Real time clock" width="500px"/>
 
@@ -26,7 +26,6 @@ It is simple to use since it communicates via **I2C communication** with a hardw
   url="https://soldered.com/product/real-time-clock-rtc-pcf85063a-breakout/"
   image="/img/pcf85063a/333051.jpg" 
 />
-
 
 ---
 
@@ -47,4 +46,4 @@ It is simple to use since it communicates via **I2C communication** with a hardw
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
-/>  
+/>

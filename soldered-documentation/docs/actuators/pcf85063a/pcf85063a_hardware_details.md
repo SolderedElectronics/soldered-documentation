@@ -9,21 +9,21 @@ hide_title: False
 
 <CenteredImage src="/img/pcf85063a/pinout.jpg" alt="Pinout" />
 
-Click [**here**](/img/pcf85063a/pinout.jpg) for a high reoslution image of the pinout.
+Click [**here**](/img/pcf85063a/pinout.jpg) for a high resolution image of the pinout.
 
 ---
 
 ## Pin details
 
-| Pin Marking | Pin Name | Description                                     |
-| ----------- | -------- | ----------------------------------------------- |
-| **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
-| **GND**     | Ground   | Common ground for power and signals.            |
-| **SDA**     | Data     | I2C data line for communication.                |
-| **SCL**     | Clock    | I2C clock line for communication.               |
-| **CLK-OE**     | Clock output enable  | Enables the clock output pin when pin is set to HIGH          |
-| **CLK-OUT**     | Clock output    | Sends square wave signals at speed defined by user               |
-| **INT**     | Interrupt   | Sends a hardware interrupt    |
+| Pin Marking | Pin Name | Description                                                                  |
+| ----------- | -------- | ---------------------------------------------------------------------------- |
+| **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported).                              |
+| **GND**     | Ground   | Common ground for power and signals.                                         |
+| **SDA**     | Data     | I2C data line for communication.                                             |
+| **SCL**     | Clock    | I2C clock line for communication.                                            |
+| **CLK-OE**  | Clock output enable  | Enables the clock output pin when the pin is set to HIGH.          |
+| **CLK-OUT** | Clock output         | Sends square wave signals at a speed defined by the user.          |
+| **INT**     | Interrupt            | Sends a hardware interrupt.                                        |
 
 ---
 
@@ -43,7 +43,7 @@ Click [**here**](/img/pcf85063a/pinout.jpg) for a high reoslution image of the p
 
 ## Jumper details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers; see below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -51,17 +51,16 @@ This board contains hardware jumpers, see below for their locations and function
     { src: '/img/pcf85063a/jp2.webp', alt: 'RTC jumper 2', caption: 'JP2' },
     { src: '/img/pcf85063a/jp3.webp', alt: 'RTC jumper 3', caption: 'JP3' },
     { src: '/img/pcf85063a/jp4.webp', alt: 'RTC jumper 4', caption: 'JP4' },
-
   ]}
   jumpers={true}
 />
 
-| Jumper  | Default State            | Function                                                                                                                                                                 |
-| ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                      |
-| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                    |
-| **JP3** | **NC** (Normally closed) | Connects the VCC pin to a 5V to 3V3 voltage regulator IC.                                                                                                                |
-| **JP4** | **NO** (Normally open)   | When connected, bypasses the voltage regulator on VCC pin, allowing 3V3 to be connected instead of 5V on VCC pin. **Make sure JP3 is disconnected if JP4 is connected.** |
+| Jumper  | Default State            | Function                                                                                                                                                                      |
+| ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                           |
+| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                         |
+| **JP3** | **NC** (Normally closed) | Connects the VCC pin to a 5V-to-3V3 voltage regulator IC.                                                                                                                     |
+| **JP4** | **NO** (Normally open)   | When connected, bypasses the voltage regulator on the VCC pin, allowing 3V3 to be connected instead of 5V. **Make sure JP3 is disconnected if JP4 is connected.** |
 
 ---
 
@@ -76,7 +75,7 @@ This board contains hardware jumpers, see below for their locations and function
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="Real time clock RTC PCF85063A breakout Hardware Design" 
@@ -105,7 +104,6 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-
 #### 3D files
 
 A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
@@ -131,4 +129,4 @@ The **Compliance** section includes important regulatory and safety documentatio
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
