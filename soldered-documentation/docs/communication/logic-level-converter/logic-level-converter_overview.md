@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## Logic Level Converter Board
 
-The Logic Level Converter Board **bidirectional** voltage level translation between two signals, enabling seamless **communication** between devices **operating at different logic voltages**. Whether you're connecting a 5V microcontroller to a 3.3V sensor or working with other voltage combinations, this module ensures compatibility while **protecting lower-voltage components from damage**. Essential for **mixed-voltage projects**, it provides a simple and reliable way to bridge the gap between different logic levels.
+The Logic Level Converter Board provides **bidirectional** voltage level translation between two signals, enabling seamless **communication** between devices **operating at different logic voltages**. Whether you're connecting a 5V microcontroller to a 3.3V sensor or working with other voltage combinations, this module ensures compatibility while **protecting lower-voltage components from damage**. Essential for **mixed-voltage projects**, it provides a simple and reliable way to bridge the gap between different logic levels.
 
 <CenteredImage src="/img/logic-level-converter/333029.png" alt="logic-level-converter" caption="Logic Level Converter Board"/>
 

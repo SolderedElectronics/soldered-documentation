@@ -17,15 +17,13 @@ MOSFET logic level shifting is an efficient method to safely translate signals b
 
 <CenteredImage src="/img/logic-level-converter/llc_mosfet.png" alt="llc_mosfet" caption="MOSFET level converter" width="500px" />
 
-<InfoBox>The use of **MOSFETs** for logic level shifting ensures minimal power consumption and reliable signal translation, especially in bidirectional communication scenarios. </InfoBox>
+<InfoBox>The use of **MOSFETs** for logic level shifting ensures minimal power consumption and reliable signal translation, especially in bidirectional communication scenarios.</InfoBox>
 
 The key to **bidirectional MOSFET logic level shifting** lies in the use of **pull-up resistors** and the **MOSFET’s switching capabilities**. Here’s how it works:
 
 1. **Pull-up Resistors**: When the MOSFET is off (no voltage applied to the gate), the pull-up resistors pull the signal to the **high voltage level** (e.g., 5V). This ensures that the signal remains at the correct logic level for the high-voltage side when it's not actively being driven by the low-voltage device.
-
 2. **MOSFET Switching**: When the low-voltage device (e.g., 3.3V microcontroller) needs to send a low signal, it pulls the gate of the MOSFET low, turning it on. This allows current to flow from the **high-voltage side** to the **low-voltage side**. In this state, the MOSFET switches the signal from high to low, enabling the low-voltage device to send a low signal.
-
-3. **Bidirectional Functionality**: For bidirectional communication (such as in **I2C**), when the high-voltage side wants to send a low signal, the MOSFET allows the current to flow in the opposite direction. The **pull-up resistor** on the low-voltage side ensures the signal goes back to the high state once the MOSFET is turned off.
+3. **Bidirectional Functionality**: For bidirectional communication (such as in **I2C**), when the high-voltage side wants to send a low signal, the MOSFET allows the current to flow in the opposite direction. The **pull-up resistor** on the low-voltage side ensures the signal returns to the high state once the MOSFET is turned off.
 
 <InfoBox>An **N-channel MOSFET** is a type of transistor that uses a negative charge to control current flow.</InfoBox>
 
@@ -33,9 +31,9 @@ The key to **bidirectional MOSFET logic level shifting** lies in the use of **pu
 
 <CenteredImage src="/img/logic-level-converter/llc_enhance_deplete.png" alt="llc_enhance_deplete" caption="N-CHANNEL MOSFET Symbols" width="700px" />
 
-MOSFET logic level shifting is commonly used for protocols like **I2C**, **SPI**, and **UART**, where bidirectional communication is needed. The I2C bus, for example, requires a safe voltage translation in both directions to prevent damage to the low-voltage devices.
+MOSFET logic level shifting is commonly used for protocols like **I2C**, **SPI**, and **UART**, where bidirectional communication is needed. The I2C bus, for example, requires safe voltage translation in both directions to prevent damage to low-voltage devices.
 
-<InfoBox>MOSFET logic level shifting allows for **safe communication** between devices with differing voltage levels, enabling **5V** and **3.3V** systems to interface without risk. </InfoBox>
+<InfoBox>MOSFET logic level shifting allows for **safe communication** between devices with differing voltage levels, enabling **5V** and **3.3V** systems to interface without risk.</InfoBox>
 
 <CenteredImage src="/img/logic-level-converter/llc_piduino.png" alt="llc_piduino" caption="Bidirectional Logic Level Converter usage example" width="500px" />
 
@@ -49,5 +47,5 @@ MOSFET logic level shifting is commonly used for protocols like **I2C**, **SPI**
 - **Wiring the Signals**:
   - Connect the HV1-HV4 pins to the high-voltage signal lines from your device (e.g., 5V microcontroller).
   - Connect the LV1-LV4 pins to the low-voltage signal lines (e.g., 3.3V sensor). 
-- **Verify Connections**: 
-   - Ensure the correct orientation and check that each signal is connected to the proper high or low-voltage side.
+- **Verify Connections**:
+   - Ensure the correct orientation and check that each signal is connected to the proper high- or low-voltage side.

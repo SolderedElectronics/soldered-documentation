@@ -9,7 +9,7 @@ hide_title: False
 
 <CenteredImage src="/img/logic-level-converter/llc_pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter pinout diagram"/>
 
-Click [**here**](/img/logic-level-converter/llc_pinout.png) for a high reoslution image of the pinout.
+Click [**here**](/img/logic-level-converter/llc_pinout.png) for a high resolution image of the pinout.
 
 ## Pin Details
 
@@ -27,7 +27,7 @@ Click [**here**](/img/logic-level-converter/llc_pinout.png) for a high reoslutio
 
 ## MOSFET
 
-The [**NMOS-SOT-23-3**](https://soldered.com/product/generic-nmos-transistor-sot23-3-smd/?srsltid=AfmBOoqELxJDfgK11ySlBu_o4AypMN-VrVFhc8BzLo_O8vqi423ZL6US) transistor used in the board is an N-channel MOSFET packaged in a compact SOT-23 form factor. This component functions as a switching transistor, efficiently controlling current flow between the drain and source when a voltage is applied to the gate.
+The [**NMOS-SOT-23-3**](https://soldered.com/product/generic-nmos-transistor-sot23-3-smd/?srsltid=AfmBOoqELxJDfgK11ySlBu_o4AypMN-VrVFhc8BzLo_O8vqi423ZL6US) transistor used on the board is an N-channel MOSFET packaged in a compact SOT-23 form factor. This component functions as a switching transistor, efficiently controlling current flow between the drain and source when a voltage is applied to the gate.
 
 ---
 
@@ -42,7 +42,7 @@ The [**NMOS-SOT-23-3**](https://soldered.com/product/generic-nmos-transistor-sot
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="Logic Level Converter board Hardware design" 
@@ -72,7 +72,6 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-
 #### 3D files
 
 A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
@@ -97,5 +96,5 @@ The **Compliance** section includes important regulatory and safety documentatio
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Safety Instructions** – Safety guidelines and precautions in English and German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
