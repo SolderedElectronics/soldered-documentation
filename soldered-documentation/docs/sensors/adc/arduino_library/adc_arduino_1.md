@@ -1,5 +1,5 @@
 ---
-slug: /adc/arduino/geting-started 
+slug: /adc/arduino/getting-started 
 title: Getting started
 id: adc-arduino-1 
 hide_title: False
@@ -7,7 +7,7 @@ hide_title: False
 
 ## Arduino library
 
-To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
+To install the Arduino library, you can use the **Arduino Library Manager** or download it from the GitHub repository:
 <QuickLink  
   title="SOLDERED ADS1015 ADS1115 ADC Arduino library"  
   description="ADC Arduino library by Soldered"  
@@ -16,7 +16,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
