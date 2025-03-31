@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Configuration - Soldered Documentation Buddy{% endblock %}
+
+{% block content %}
+<h1>Configuration</h1>
+
+<div class="form-container">
+    <form id="configForm" method="POST" action="{{ url_for('save_config') }}">
+        <div class="form-group">
+            <label for="api_key_path">ChatGPT API Key Path:</label>
+            <input type="text" id="api_key_path" name="api_key_path" value="C:/cgpt_api_key_soldered.txt" required class="form-control">
+            <small class="form-text text-muted">Path to a .txt file containing only your ChatGPT API key</small>
+        </div>
+
+        <button type="submit" class="submit-btn">SAVE CONFIGURATION</button>
+    </form>
+</div>
+
+{% if message %}
+<div class="result-message {% if success %}success{% else %}error{% endif %}">
+    {{ message }}
+</div>
+{% endif %}
+
+{% if log_output %}
+<div class="log-output">
+    <h3>Config Log:</h3>
+    <pre>{{ log_output }}</pre>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.getElementById('configForm').addEventListener('submit', function(event) {
+        const apiKeyPath = document.getElementById('api_key_path').value.trim();
+        
+        // Basic validation
+        if (!apiKeyPath.endsWith('.txt')) {
+            event.preventDefault();
+            alert('The API key path must point to a .txt file');
+        }
+    });
+</script>
+{% endblock %}
