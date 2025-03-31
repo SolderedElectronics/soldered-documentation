@@ -73,4 +73,3 @@ The module supports standard **NMEA** sentences for easy parsing of positioning 
 Qwiic versions of the product use onboard ATTINY404 MCU to implement I2C communication. Breakout board perates with a default I2C address of **0x30**  but can be changed with onboard switches. When detected, ATTINY404 recives data from sensor and passes it to the main MCU using I2C data line. To check in detail how to ATTINY404 is programmed, check [**firmware github page**](https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/dev/extras/attiny_firmware).
 
 <CenteredImage src="/img/gnss-gps/tiny404onboard.png" alt="attiny404 on the HX711 easyC Board" caption="attiny404 on the L86-M33 easyC Board" width="500px" />
-
