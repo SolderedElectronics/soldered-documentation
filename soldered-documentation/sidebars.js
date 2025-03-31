@@ -287,6 +287,50 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Real time clock PCF85063A',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/pcf85063a/pcf85063a-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/pcf85063a/pcf85063a-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/pcf85063a/pcf85063a-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/pcf85063a/arduino_library/pcf85063a-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/pcf85063a/arduino_library/pcf85063a-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/pcf85063a/arduino_library/pcf85063a-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/pcf85063a/arduino_library/pcf85063a-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/pcf85063a/arduino_library/pcf85063a-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'MCP23017 IO expander',
           items: [
             {
