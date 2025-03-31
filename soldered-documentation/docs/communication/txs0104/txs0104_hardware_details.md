@@ -9,7 +9,7 @@ hide_title: False
 
 <CenteredImage src="/img/txs0104/pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter I2C TXS0104 pinout diagram"/>
 
-Click [**here**](/img/txs0104/pinout.png) for a high reoslution image of the pinout.
+Click [**here**](/img/txs0104/pinout.png) for a high-resolution image of the pinout.
 
 ## Pin Details
 
@@ -20,7 +20,7 @@ Click [**here**](/img/txs0104/pinout.png) for a high reoslution image of the pin
 | **VCCL**    | Low Voltage Power  | Supply voltage for the low-voltage side (typically 3.3V).                                                                   |
 | **B1 - B4** | High Voltage Pins  | High-voltage side signal pins (typically 5V logic).                                                                         |
 | **A1 - A4** | Low Voltage Pins   | Low-voltage side signal pins (typically 3.3V logic).                                                                        |
-| **OE**      | Output Enable Pin  | Enables or disables output, switching between active (HIGH/LOW) and high-impedance (Hi-Z) states. |
+| **OE**      | Output Enable Pin  | Enables or disables output, switching between active (HIGH/LOW) and high-impedance (Hi-Z) states.                           |
 
 <InfoBox>
 - VCCH: 2.3V - 5V
@@ -38,7 +38,7 @@ Click [**here**](/img/txs0104/pinout.png) for a high reoslution image of the pin
 - **Board Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+- Soldered boards are LEGO-compatible! 🧱 
 
 ---
 
@@ -51,7 +51,6 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
   description="GitHub hardware repository for this product"
   url="https://github.com/SolderedElectronics/Logic-level-converter-I2C-TXS0104-breakout-hardware-design/tree/main" 
 /> 
-
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
@@ -73,7 +72,6 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
 
 #### 3D files
 
@@ -100,4 +98,4 @@ The **Compliance** section includes important regulatory and safety documentatio
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

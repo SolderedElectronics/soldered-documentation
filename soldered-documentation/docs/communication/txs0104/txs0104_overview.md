@@ -8,13 +8,13 @@ pagination_prev: null
 
 ## Logic Level Converter I2C TXS0104
 
-This board is specialized for signal conversion for **I2C communication protocol**, and for this conversion it uses a special integrated circuit that enables communication at **high speeds**.
+This board is specialized in signal conversion for the **I2C communication protocol**. It uses a special integrated circuit that enables high-speed communication.
 
-The Logic Level Converter Board **bidirectional** voltage level translation between two signals, enabling **communication** between devices **operating at different logic voltages**. Whether you're connecting a 5V microcontroller to a 3.3V sensor or working with other voltage combinations, this module ensures compatibility while **protecting lower-voltage components from damage**.
+The Logic Level Converter Board provides bidirectional voltage level translation between two signals, enabling communication between devices operating at different logic voltages. Whether you're connecting a 5V microcontroller to a 3.3V sensor or working with other voltage combinations, this module ensures compatibility while **protecting lower-voltage components from damage**.
 
 <CenteredImage src="/img/txs0104/333016.png" alt="logic-level-converter" caption="Logic Level Converter Board"/>
 
-## Which products is this documentation for?
+## Which product is this documentation for?
 
 <QuickLink 
   title="Logic Level Converter I2C TXS0104" 
