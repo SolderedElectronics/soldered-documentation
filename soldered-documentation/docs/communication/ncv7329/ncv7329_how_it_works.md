@@ -47,14 +47,4 @@ In **Normal Mode**, the transceiver is fully active, allowing data transmission 
 
 **Standby Mode** is an intermediate state in which the transceiver monitors the LIN bus for wake-up signals while consuming less power than in Normal Mode. When a valid wake-up event occurs, the transceiver quickly transitions back to Normal Mode for full operation.
 
-<CenteredImage src="/img/ncv7329/opstates.png" alt="op" caption="NCV7329 operating states"/>
-
----
-
-## Role of the NCV7329 Transceiver
-
-The **NCV7329** transceiver serves as a bridge between the LIN protocol controller and the physical bus. Its primary functions include:
-
-- **Signal Conversion**: Translates digital signals from the microcontroller to the appropriate LIN bus levels and vice versa.
-- **Bus Control**: Manages the state of the LIN bus, ensuring proper communication flow.
-- **Protection Features**: Provides safeguards against voltage spikes, thermal overload, and other electrical anomalies, enhancing system robustness.
+<CenteredImage src="/img/ncv7329/opstates.png" alt="op" caption="NCV7329 operating state diagram"/>
