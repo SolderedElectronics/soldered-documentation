@@ -5,7 +5,6 @@ id: lcd-i2c-arduino-4
 hide_title: False
 ---
 
-
 This section covers features like **autoscrolling**, **cursor control**, and **screen shifting**, allowing for dynamic text movement and improved readability. These functions help create smoother user interactions and animated effects on the display.
 
 <WarningBox>Don't forget to initialize the LCD display first!</WarningBox>
@@ -20,19 +19,18 @@ This section demonstrates the use of **autoscrolling** on the LCD. When enabled,
 void loop()
 {
     // Autoscroll
-    lcd.setCursor(5, 0); //Set cursor to 6th (starts from 0) place in row, 1st row
-    lcd.print(F("Autoscrolling")); //Print text to LCD
-    lcd.setCursor(10, 1);   //Set cursor
-    lcd.autoscroll();   //Enable autoscroll
+    lcd.setCursor(5, 0); // Set cursor to the 6th position of the first row (index starts at 0)
+    lcd.print(F("Autoscrolling")); // Print text to LCD
+    lcd.setCursor(10, 1);   // Set cursor
+    lcd.autoscroll();   // Enable autoscroll
 
-    for (int i = 0; i < 10; i++)    //Print first 10 integers
+    for (int i = 0; i < 10; i++)    // Print first 10 integers
     {
         lcd.print(i);   
         delay(200);
     }
 }
 ```
-
 
 <FunctionDocumentation
   functionName="lcd.autoscroll()"
@@ -62,14 +60,14 @@ void loop()
     lcd.print(F("To the left!"));
     for (int i = 0; i < 10; i++)
     {
-        lcd.scrollDisplayLeft();    //This command shifts al content to left by 1 place
+        lcd.scrollDisplayLeft();    // This command shifts all content to the left by one position
         delay(200);
     }
-    lcd.clear(); //Clear content from LCD
+    lcd.clear(); // Clear content from LCD
     lcd.print(F("To the right!"));
     for (int i = 0; i < 10; i++)
     {
-        lcd.scrollDisplayRight();   //This command shifts al content to right by 1 place
+        lcd.scrollDisplayRight();   // This command shifts all content to the right by one position
         delay(200);
     }
     lcd.clear();
@@ -99,7 +97,7 @@ This section demonstrates how to control the cursor on the LCD display, includin
 ```cpp
 void loop()
 {
-  // Cursor
+    // Cursor
     lcd.setCursor(0, 0);
     lcd.cursor();
     lcd.print(F("Cursor"));
@@ -108,17 +106,17 @@ void loop()
 
     // Cursor blink
     lcd.setCursor(0, 0);
-    lcd.blink();    //This command enables cursor blink
+    lcd.blink();    // This command enables cursor blink
     lcd.print(F("Cursor blink"));
     delay(3000);
     lcd.clear();
 
     // Blink without cursor
     lcd.setCursor(0, 0);
-    lcd.noCursor(); //Disable cursor, so it is no longer shown on screen
+    lcd.noCursor(); // Disable the cursor so that it is no longer shown on the screen
     lcd.print(F("Just blink"));
     delay(3000);
-    lcd.noBlink();  //Stop cursor blinking
+    lcd.noBlink();  // Stop cursor blinking
     lcd.clear();
 }
 ```
@@ -173,33 +171,33 @@ void setup()
 void loop()
 {
     // Autoscroll
-    lcd.setCursor(5, 0); //Set cursor to 6th (starts from 0) place in row, 1st row
-    lcd.print(F("Autoscrolling")); //Print text to LCD
-    lcd.setCursor(10, 1);   //Set cursor
-    lcd.autoscroll();   //Enable autoscroll
+    lcd.setCursor(5, 0); // Set cursor to the 6th position of the first row (index starts at 0)
+    lcd.print(F("Autoscrolling")); // Print text to LCD
+    lcd.setCursor(10, 1);   // Set cursor
+    lcd.autoscroll();   // Enable autoscroll
 
-    for (int i = 0; i < 10; i++)    //Print first 10 integers
+    for (int i = 0; i < 10; i++)    // Print first 10 integers
     {
         lcd.print(i);   
         delay(200);
     }
 
-    lcd.noAutoscroll(); //Disable autoscroll
-    lcd.clear();    //Clear content from LCD
+    lcd.noAutoscroll(); // Disable autoscroll
+    lcd.clear();    // Clear content from LCD
 
     // Scroll left and right
     lcd.setCursor(10, 0); 
     lcd.print(F("To the left!"));
     for (int i = 0; i < 10; i++)
     {
-        lcd.scrollDisplayLeft();    //This command shifts al content to left by 1 place
+        lcd.scrollDisplayLeft();    // This command shifts all content to the left by one position
         delay(200);
     }
-    lcd.clear(); //Clear content from LCD
+    lcd.clear(); // Clear content from LCD
     lcd.print(F("To the right!"));
     for (int i = 0; i < 10; i++)
     {
-        lcd.scrollDisplayRight();   //This command shifts al content to right by 1 place
+        lcd.scrollDisplayRight();   // This command shifts all content to the right by one position
         delay(200);
     }
     lcd.clear();
@@ -213,17 +211,17 @@ void loop()
 
     // Cursor blink
     lcd.setCursor(0, 0);
-    lcd.blink();    //This command enables cursor blink
+    lcd.blink();    // This command enables cursor blink
     lcd.print(F("Cursor blink"));
     delay(3000);
     lcd.clear();
 
     // Blink without cursor
     lcd.setCursor(0, 0);
-    lcd.noCursor(); //Disable cursor, so it is no longer shown on screen
+    lcd.noCursor(); // Disable the cursor so that it is no longer shown on the screen
     lcd.print(F("Just blink"));
     delay(3000);
-    lcd.noBlink();  //Stop cursor blinking
+    lcd.noBlink();  // Stop cursor blinking
     lcd.clear();
 }
 ```

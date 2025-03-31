@@ -5,7 +5,7 @@ id: lcd-i2c-how-it-works
 hide_title: False
 ---  
 
-The LCD I2C Displays utilize an I/O expander **TCA9534** made by [**Texas Instruments**](https://www.ti.com/product/TCA9534). 
+The LCD I2C displays utilize an I/O expander **TCA9534** made by [**Texas Instruments**](https://www.ti.com/product/TCA9534). 
 
 <CenteredImage src="/img/lcd-i2c/lcd-i2c_onboardd.png" alt="TCA9534 on board" caption="TCA9534 on board" width="500px" />
 
@@ -25,10 +25,9 @@ For an in-depth look at technical specifications, refer to the official TCA9534 
 
 ## How the TCA9534 works
 
-The TCA9534 is a **16-pin device** that provides **8 bits**
-of general purpose **I/O expansion** for the **I2C bus** (or SMBus) protocol.
+The TCA9534 is a **16-pin device** that provides **8-bit** general purpose **I/O expansion** for the **I2C bus** (or SMBus) protocol.
 
-I/O expanders such as TCA9534 provide a simple solution when additional I/Os are needed for switches, sensors, push-buttons, LEDs, fans, and other similar devices.
+I/O expanders such as the TCA9534 provide a simple solution when additional I/Os are needed for switches, sensors, push-buttons, LEDs, fans, and other similar devices.
 
 <CenteredImage src="/img/lcd-i2c/tca_schematic.png" alt="tca schematic" caption="TCA9534 simplified schematic" width="500px" />
 
@@ -79,9 +78,6 @@ If configured for input operations, the adapter can read button presses or senso
 ## Other Applications
 
 - Expanding general purpose I/O for microcontrollers
-
 - Reading switches and sensors
-
 - Industrial automation systems
-
 - Smart home and IoT applications

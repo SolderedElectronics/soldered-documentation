@@ -12,7 +12,7 @@ This LCD I2C Adapter simplifies the connection between your **LCD display** and 
 
 Our **LCD I2C displays** come with the adapter soldered on, which enables characters to be displayed on the LCD screen via the I2C bus.
 
-With our **provided library**, you can get started in just a few minutes. Plus, with **Qwiic (formerly easyC) connectivity**, no soldering is required making the process even more convenient!
+With our **provided library**, you can get started in just a few minutes. Plus, with **Qwiic (formerly easyC) connectivity**, no soldering is required, making the process even more convenient!
 
 <CenteredImage src="/img/lcd-i2c/333003.png" alt="lcd-l2c-adapter" caption="LCD I2C Adapter" />
 
@@ -42,15 +42,14 @@ With our **provided library**, you can get started in just a few minutes. Plus, 
 - **I2C**
   - **Modular Address**: **0x20 - 0x27**
   - **Communication**: 400kHz
-- **Dimensions**: **54 x 22 mm** (2,1 x 0.9 inch)
-- Compatable with **HDD44780 LCD driver**
+- **Compatible with** **HD44780 LCD driver**
 - **LCD version**
   - **Color of symbols**: White
   - **Backlight**: Blue
   - **Number of chars**: 16 chars in 2 rows
   - **Voltage**: 3V3
-  - **Display dimensions**: **64.5 x 16 mm** (2.5 x 0.6 inch)
-  - **Dimensions**: **80 x 36 x 12 mm** (3.1 x 1.4 0.5 inch)
+  - **Display dimensions**: **64.5 x 16 mm** (2.1 x 0.9 inch)
+  - **Dimensions**: **80 x 36 x 12 mm** (3.1 x 1.4 x 0.5 inch)
 
 ---
 
@@ -61,4 +60,4 @@ With our **provided library**, you can get started in just a few minutes. Plus, 
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
-/>  
+/>

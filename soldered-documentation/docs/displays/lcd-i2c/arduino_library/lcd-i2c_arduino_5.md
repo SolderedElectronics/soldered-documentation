@@ -1,12 +1,12 @@
----
-slug: /lcd-i2c/arduino/troubleshooting 
-title: Troubleshooting
-id: lcd-i2c-arduino-5 
-hide_title: False
-pagination_next: null
+---  
+slug: /lcd-i2c/arduino/troubleshooting  
+title: Troubleshooting  
+id: lcd-i2c-arduino-5  
+hide_title: False  
+pagination_next: null  
 ---
 
-This page contains some tips in case you are having problems using the LCD I2C display.
+This page provides some tips in case you are experiencing issues with the LCD I2C display.
 
 <ExpandableSection title="My LCD is not displaying anything!">
 
@@ -17,15 +17,15 @@ Ensure that your I2C wiring is correct. Verify that the SDA (Data) and SCL (Cloc
 The LCD I2C modules often come with a default I2C address, but it might vary. Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected.
 
 #### Adjust potentiometer
-Some LCD I2C displays have a small potentiometer on the back that controls the contrast. If nothing is appearing on the screen, try adjusting the potentiometer to see if the text becomes visible.
+Some LCD I2C displays have a small potentiometer on the back that controls the contrast. If nothing appears on the screen, try adjusting the potentiometer to see if the text becomes visible.
 
 #### Check for power issues
-Make sure the LCD display is receiving proper power. If the screen is dim or showing faint text, it could be underpowered. Ensure your power supply is stable and provides sufficient voltage (usually 5V or 3.3V depending on the module).
+Make sure the LCD display is receiving proper power. If the screen is dim or shows faint text, it could be underpowered. Ensure your power supply is stable and provides sufficient voltage (usually 5V or 3.3V depending on the module).
 
 #### Reinitialize the LCD
 If the screen fails to display, try reinitializing the LCD by calling the initialization function again in your code or restarting your microcontroller to reset the display.
 
-</ExpandableSection> 
+</ExpandableSection>
 
 <ExpandableSection title="My LCD is showing weird characters!">
 
@@ -54,7 +54,7 @@ Loose or poor wiring connections can also cause flickering. Double-check all con
 #### Test with different code
 If the flickering occurs only when running a specific part of your code, it could be related to the program’s logic. Try running a simple LCD example sketch to check if the issue persists.
 
-</ExpandableSection> 
+</ExpandableSection>
 
 <ExpandableSection title="Other common issues">
 
@@ -67,6 +67,6 @@ If the display is unresponsive, try resetting your microcontroller or reinitiali
 #### Characters are not displayed properly
 Make sure your code is properly sending data to the LCD. If you're using custom characters, check that the createChar() function is being called correctly and that you're addressing the right location for the custom characters.
 
-</ExpandableSection> 
+</ExpandableSection>
 
 <InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>

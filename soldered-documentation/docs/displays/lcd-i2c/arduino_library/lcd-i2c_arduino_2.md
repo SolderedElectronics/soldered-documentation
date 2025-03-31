@@ -11,7 +11,7 @@ This page contains some simple examples with function documentation on how to us
 
 ## Initialization
 
-To use the LCD display include the **required library**, create the **LCD object** and **initialize** the LCD in the `setup.()` function with `begin.()`. **Backlight** is also initialized here.
+To use the LCD display include the **required library**, create the **LCD object** and **initialize** the LCD in the `setup()` function with `begin()`. **Backlight** is also initialized here.
 
 <InfoBox> Our library uses the [**Wire.h**](https://docs.arduino.cc/language-reference/en/functions/communication/wire/) library!</InfoBox>
 
@@ -57,7 +57,7 @@ void setup()
 void loop()
 {
     lcd.print("     Hello"); // Prints Hello on the LCD 
-    lcd.setCursor(5, 1);     // set cursor to 5th character in line 1
+    lcd.setCursor(5, 1);     // Set the cursor to the 5th character in line 1
     lcd.print("World!");     // Prints World! on the LCD
     delay(500);
 
@@ -66,7 +66,7 @@ void loop()
 }
 ```
 
-<InfoBox>Numbering of both **row** and **column** starts at **0**. For printing a character in the first column and the first row we would set the cursor to (0, 0) which is also the **default position**. </InfoBox>
+<InfoBox>Numbering of both **row** and **column** starts at **0**. For printing a character in the first column and the first row, we would set the cursor to (0, 0), which is also the **default position**. </InfoBox>
 
 <FunctionDocumentation
   functionName="lcd.setCursor()"
