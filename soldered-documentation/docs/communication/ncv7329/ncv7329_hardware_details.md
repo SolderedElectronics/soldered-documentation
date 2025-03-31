@@ -1,8 +1,8 @@
----
-slug: /ncv7329/hardware 
-title: Hardware details
-id: ncv7329-hardware 
-hide_title: False
+---  
+slug: /ncv7329/hardware  
+title: Hardware details  
+id: ncv7329-hardware  
+hide_title: False  
 ---
 
 ## Pinout
@@ -13,32 +13,37 @@ Click [**here**](/img/lin-transceiver-ncv7329/lin_transceiver_pinout.png) for a 
 
 ## Pin Details
 
-| Pin Marking | Pin Name           | Description                                                                 |
-| ----------- | ------------------ | --------------------------------------------------------------------------- |
-| **GND**     | Ground             | Common ground for the module.                                               |
-| **VCC**     | Supply Voltage     | Operating voltage input (typically 5V to 18V).                              |
-| **LIN**     | LIN Bus I/O        | Connection to the LIN bus for data transmission and reception.              |
-| **EN**      | Enable             | Controls the transceiver's operating mode; high to enable normal operation. |
-| **TXD**     | Transmit Data      | Input for data to be transmitted over the LIN bus.                          |
-| **RXD**     | Receive Data       | Output for data received from the LIN bus.                                  |
+| Pin Marking | Pin Name       | Description                                                                 |
+| ----------- | -------------- | --------------------------------------------------------------------------- |
+| **GND**     | Ground         | Common ground for the module.                                               |
+| **VCC**     | Supply Voltage | Operating voltage input (typically 5V to 18V).                              |
+| **LIN**     | LIN Bus I/O    | Connection to the LIN bus for data transmission and reception.              |
+| **EN**      | Enable         | Controls the transceiver's operating mode; high to enable normal operation. |
+| **TXD**     | Transmit Data  | Input for data to be transmitted over the LIN bus.                          |
+| **RXD**     | Receive Data   | Output for data received from the LIN bus.                                  |
 
 <WarningBox>Ensure that **GND** is connected to the common ground of your system to establish a proper reference for signals.</WarningBox>
 
 ---
 
-## Jumper Configuration
+## Jumper Details (Qwiic version)
 
-The board includes a jumper labeled **LED_EN** that controls the power indicator LED:
+This board contains hardware jumpers. See below for their locations and functions:
 
-- **Jumper Connected**: Power LED is enabled, indicating the presence of supply voltage.
-- **Jumper Disconnected**: Power LED is disabled, reducing power consumption.
+<CenteredImage src="/img/ncv7329/jp1.png" alt="jp1" caption="JP1" width="600px"/>
+
+| Jumper  | Default State            | Function                                                                                   |
+| ------- | ------------------------ | ------------------------------------------------------------------------------------------ |
+| **JP1** | **NC** (Normally closed) | Controls the **PWR LED**.                                                                    |
 
 ---
 
 ## Dimensions
 
 - **Board Dimensions:** 21.3 × 22.6 × 12.3 mm (0.8 × 0.9 × 0.5 inches)
-- **Mounting Holes:** Designed for secure attachment in various applications.
+- **Header Pin Holes:** 1.5 mm  
+- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
+- Soldered boards are LEGO compatible! 🧱
 
 ---
 
@@ -49,37 +54,54 @@ Schematics, PCB layouts, and other design files are available in the GitHub repo
 <QuickLink 
   title="LIN Transceiver NCV7329 Breakout Hardware Design" 
   description="GitHub hardware repository for this product"
-  url="https://github.com/SolderedElectronics/LIN-transceiver-NCV7329-breakout-hardware-design"
-  image="/img/lin-transceiver-ncv7329/lin_transceiver_board.png" 
+  url="https://github.com/SolderedElectronics/LIN-Transceiver-NCV7329-MASTER-breakout-hardware-design/tree/main"
+  image="/img/ncv7329/333026.png" 
 />
 
-The repository contains comprehensive resources to understand, modify, or manufacture the board. Below is an overview of the available files:
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The various output folders are versioned. You can identify your board version by locating the version mark on the PCB.
 
-### CAD Files
+Below is an overview of the available files.
 
-The design files are created using KiCad, an open-source PCB design tool. The repository includes the complete project file (`.kicad_pro`), encompassing both the schematic and PCB layout.
+#### CAD files
 
-### Schematic
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.
 
-The **OUTPUTS** folder contains the schematic in `.pdf` format, providing a detailed circuit diagram of the board.
+The `PANEL` files are used internally for production.
 
-### Bill of Materials (BOM)
+#### Schematic
 
-The BOM is provided in two formats:
+The **OUTPUTS** folder contains the schematic in `.pdf` format, exported from KiCad.
 
-- A **standard `.csv` file**, listing all components, part numbers, and values.
-- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, facilitating easy identification.
+#### BOM (Bill of Materials)
 
-### 3D Files
+The bill of materials (BOM) is provided in two formats:  
 
-A **3D model** of the PCB is available in `.step` format, allowing inspection of the board design in compatible CAD software.
+- A **standard `.csv` table**, listing all components, part numbers, and values.  
+- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-### Gerber Files
+#### 3D files
 
-Gerber files are included for PCB manufacturing, containing precise instructions for each layer of the board. The repository provides these files in a `.zip` archive, ready for fabrication.
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.
 
-### Compliance
+#### Gerber files
 
-The repository also includes regulatory and safety documentation, ensuring compliance with relevant industry standards and legal requirements.
+Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
 
-For detailed technical specifications and operational guidelines, refer to the [NCV7329 datasheet](https://soldered.com/productdata/2020/03/Soldered_NCV7329_datasheet.pdf).
+- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
+- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
+- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
+- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
+- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
+- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+
+These files are ready for fabrication and can be used in PCB manufacturing.
+
+#### Compliance
+
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
+
+- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
+- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
+- **Safety Instructions** – Safety guidelines and precautions in English and German.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
