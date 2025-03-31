@@ -13,7 +13,7 @@ hide_title: False
 
 | Pin Marking | Pin Name  | Description                                              |
 | ----------- | --------- | -------------------------------------------------------- |
-| **GND**     | Ground    | Common ground for the battery circuit.                   |
+| **GND**     | Ground    | Common ground for the battery circuit.                 |
 | **VBAT**    | Battery   | Main voltage input from the battery (positive terminal). |
 | **BAT-**    | Negative  | Battery negative terminal (connected to the negative pole). |
 | **BAT+**    | Positive  | Battery positive terminal (connected to the positive pole). |
@@ -30,11 +30,11 @@ The **FS8205A** is a dual N-channel MOSFET commonly used in battery protection c
 
 <CenteredImage src="/img/battery-protection/mosfet.png" alt="bp pinout diagram" caption="FS8205A MOSFET on the Battery Protection Board" width="600px"/>
 
-The FS8205A has a **low on-resistance** of 25mΩ (max) at V_GS = 4.5V, which ensures minimal power dissipation during operation. It also has a **drain-source voltage (V_DSS)** rating of 20V, making it suitable for typical lithium battery voltage levels. With a **continuous drain current (I_D)** of 6A, it provides sufficient current handling for most battery protection applications. The MOSFET is packaged in an **SOT-23-6**, a compact, space-efficient surface-mount package.
+The FS8205A has a **low on-resistance** of 25mΩ (max) at V_GS = 4.5V, ensuring minimal power dissipation during operation. It also has a **drain-source voltage (V_DSS)** rating of 20V, making it suitable for typical lithium battery voltage levels. With a **continuous drain current (I_D)** of 6A, it provides sufficient current handling for most battery protection applications. The MOSFET is packaged in an **SOT-23-6**, a compact, space-efficient surface-mount package.
 
-In battery protection systems, the FS8205A is used in the charge and discharge paths. It ensures safe operation by preventing overcurrent and short-circuit conditions, helping to protect the battery and associated circuits.
+In battery protection systems, the FS8205A is used in both the charge and discharge paths. It ensures safe operation by preventing overcurrent and short-circuit conditions, thereby protecting the battery and associated circuits.
 
-The FS8205A operates with a **junction temperature range** of -55°C to 150°C, making it suitable for a wide range of operating conditions. Its **gate threshold voltage (V_GS(th))** is around 1V, which allows for efficient switching with low gate drive voltages, contributing to the overall energy efficiency of the system.
+The FS8205A operates within a **junction temperature range** of -55°C to 150°C, making it suitable for a wide range of operating conditions. Its **gate threshold voltage (V_GS(th))** is around 1V, which allows for efficient switching with low gate drive voltages and contributes to the system’s overall energy efficiency.
 
 ---
 
@@ -49,7 +49,7 @@ The FS8205A operates with a **junction temperature range** of -55°C to 150°C, 
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers; see below for their locations and functions:
 
 <CenteredImage src="/img/battery-protection/jp1.png" alt="jp1" caption="JP1" width="600px"/>
 
@@ -61,7 +61,7 @@ This board contains hardware jumpers, see below for their locations and function
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="1S Li-Ion Battery Protection Hardware Design" 
@@ -69,13 +69,13 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
   url="https://github.com/SolderedElectronics/1S-Li-Ion-battery-protection-hardware-design/tree/main" 
 /> 
 
-The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The various output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
 Below is an overview of the available files.  
 
 #### CAD files
 
-We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.
 
 The `PANEL` files are used internally for production.  
 
@@ -89,7 +89,6 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
 
 #### 3D files
 
@@ -115,5 +114,5 @@ The **Compliance** section includes important regulatory and safety documentatio
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Safety Instructions** – Safety guidelines and precautions are provided in English and German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

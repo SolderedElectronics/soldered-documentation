@@ -8,11 +8,11 @@ pagination_prev: null
 
 ## 1S Li-Ion Battery Protection
 
-A battery protector is a small yet essential device designed to safeguard your lithium battery. This compact circuit board ensures the longevity and safety of your battery by preventing **overcharge, overdischarge, overcurrent**, and **short circuits**. It features a **JST connector** for easy connection to the battery, with the **option for direct soldering**. This protector helps maintain **optimal battery performance** and **protects it from potential damage**.
+A battery protector is a small yet essential device designed to safeguard your lithium battery. This compact circuit board ensures the longevity and safety of your battery by preventing **overcharge, overdischarge, overcurrent**, and **short circuits**. It features a **JST connector** for an easy connection to the battery, with the **option for direct soldering**. This protector helps maintain **optimal battery performance** and **protects it from potential damage**.
 
 <CenteredImage src="/img/battery-protection/333049.png" alt="logic-level-converter" caption="1S Li-Ion Battery Protection board"/>
 
-## Which products is this documentation for?
+## Which products is this documentation intended for?
 
 <QuickLink 
   title="1S Li-Ion Battery Protection" 
