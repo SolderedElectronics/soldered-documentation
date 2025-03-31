@@ -24,7 +24,7 @@ If possible, test the HX711 module with another known working load cell and micr
 <ExpandableSection title="My sensor is not providing stable readings!">
 
 #### Calibrate your load cell
-Load cells require calibration to ensure accurate measurements. Use known weights to calibrate your load cell by recording the counts at known weights and calculating the scale factor.
+Load cells require calibration to ensure accurate measurements. Use known weights to calibrate your load cell by recording the counts at these weights and calculating the scale factor.
 
 #### Check for electrical noise
 Electromagnetic interference can affect the stability of load cell readings. Ensure that the load cell and HX711 module are placed away from sources of electrical noise, and consider using shielded cables if necessary.

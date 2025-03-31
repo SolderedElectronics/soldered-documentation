@@ -1,5 +1,5 @@
 ---
-slug: /hx711/arduino/geting-started 
+slug: /hx711/arduino/getting-started 
 title: Getting started
 id: hx711-arduino-1 
 hide_title: False
@@ -16,11 +16,11 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
-  description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
+  description="A full, comprehensive tutorial on how to set up and upload code for the first time on an Arduino board, from scratch!"  
   url="#"  
 />  
 
@@ -38,7 +38,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 <InfoBox>
 
-If you're using the **regular version** use these pins to manually connect:
+If you're using the **regular version**, use these pins to manually connect:
 
 | **Dasduino CONNECT**  | **HX711 Breakout Board** |
 | --------------------- | ------------------------ |
@@ -46,7 +46,6 @@ If you're using the **regular version** use these pins to manually connect:
 | GND                   | GND                      |
 | IO2 (any digital pin) | DT (Data)                |
 | IO3 (any digital pin) | SCK (Clock)              |
-
 
 </InfoBox>
 

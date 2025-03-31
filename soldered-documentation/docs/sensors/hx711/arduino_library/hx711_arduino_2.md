@@ -5,17 +5,17 @@ id: hx711-arduino-2
 hide_title: False
 ---
 
-This page contains an example of initialization of the HX711 load-cell amplifier and a simple **reading example** using the **regular** and the **easyC versions**.
+This page contains an example of initializing the HX711 load-cell amplifier and a simple **reading example** using both the **regular** and **easyC versions**.
 
 ---
 
-To use the HX711 sensor, first, include the required [**library**](https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/main), create the sensor object, and initialize the sensor in the `setup()` function.
+To use the HX711 sensor, first include the required [**library**](https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/main), create the sensor object, and initialize the sensor in the `setup()` function.
 
-<WarningBox>Ensure that the correct pins for `DAT` and `SCK` are defined before initialization. </WarningBox>
+<WarningBox>Ensure that the correct pins for `DAT` and `SCK` are defined before initialization.</WarningBox>
 
 <InfoBox>
 
-If you're using the easyC version there is **no need to define DAT and SCK pins** and creating the HX711 object looks like this:
+If you're using the easyC version, there is **no need to define the DAT and SCK pins**, and the HX711 object is created as follows:
 
 ```cpp
 // Create the easyC variant of the HX711 object

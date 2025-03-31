@@ -9,13 +9,13 @@ hide_title: False
 
 <CenteredImage src="/img/hx711/hx711_standard_pinout.png" alt="hx711_standard_pinout" caption="HX711 regular pinout diagram"/>
 
-Click [**here**](/img/hx711/hx711_standard_pinout.png) for a high reoslution image of the pinout.
+Click [**here**](/img/hx711/hx711_standard_pinout.png) for a high resolution image of the pinout.
 
 ## HX711 Qwiic (easyC) Pinout
 
 <CenteredImage src="/img/hx711/hx711_easyc_pinout.png" alt="hx711_easyc_pinout" caption="HX711 qwiic (easyC) pinout diagram"/>
 
-Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image of the pinout.
+Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high resolution image of the pinout.
 
 ---
 
@@ -33,7 +33,6 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 | **VCC**     | Power                    | Supply voltage for the HX711 module. Accepts 2.7V to 5.5V.                                                              |
 | **DAT**     | Data                     | Serial data output for communication with a microcontroller.                                                            |
 | **SCK**     | Clock                    | Serial clock input for communication with a microcontroller.                                                            |
-
 
 ## Pin Details Qwiic (easyC) Version
 
@@ -80,7 +79,7 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 ## Dimensions
 
 - **Board Dimensions Regular:** 22 × 22 mm (0.9 × 0.9 inch)  
-- **Board Dimensions Qwiic (easyC)**: 38 × 22 mm (1.5 × 0.9 inch)  
+- **Board Dimensions Qwiic (easyC):** 38 × 22 mm (1.5 × 0.9 inch)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO compatible! 🧱 
@@ -89,7 +88,7 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high reoslution image 
 
 ## Address selection (Qwiic version)
 
-This board contains hardware address switches, see below how to change breakout board's address:
+This board contains hardware address switches. See below for instructions on how to change the breakout board's address:
 
 <CenteredImage src="/img/hx711/address_selection.png" alt="Pinout" width="500px" />
 
@@ -143,7 +142,6 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-
 #### 3D files
 
 A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
@@ -164,9 +162,9 @@ These files are ready for fabrication and can be used in PCB manufacturing.
 
 #### Compliance  
 
-The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

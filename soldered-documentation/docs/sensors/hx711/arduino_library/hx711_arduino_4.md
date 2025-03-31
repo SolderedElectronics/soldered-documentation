@@ -26,12 +26,12 @@ HX711 hx711(PIN_DAT, PIN_SCK);
 
 void setup()
 {
-    Serial.begin(115200); // For debugging
+    Serial.begin(115200); // for debugging
 
-    // Init HX711
+    // Initialize HX711
     hx711.begin();
 
-    // Wait a bit until it initializes fully
+    // Wait a bit until it fully initializes
     delay(200);
 }
 
@@ -40,10 +40,10 @@ void loop()
     // Wake up the HX711 from deep sleep
     hx711.setDeepSleep(false);
 
-    // Wait a bit until it initializes fully
+    // Wait a bit until it fully initializes
     delay(200);
 
-    // Make raw reading and store in variable
+    // Make a raw reading and store it in a variable
     long reading = hx711.getRawReading();
 
     // Print the reading

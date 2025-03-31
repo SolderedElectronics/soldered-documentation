@@ -1,8 +1,8 @@
----
-slug: /hx711/arduino/calibration-and-unit-read
-title: Calibration and Unit Read
-id: hx711-arduino-3
-hide_title: False
+---  
+slug: /hx711/arduino/calibration-and-unit-read  
+title: Calibration and Unit Read  
+id: hx711-arduino-3  
+hide_title: False  
 ---
 
 This page contains an example of **calibrating** the HX711 load-cell amplifier and **reading calibrated values in units** using **regular** and **easyC versions**.
@@ -11,13 +11,13 @@ This page contains an example of **calibrating** the HX711 load-cell amplifier a
 
 ## Calibration
 
-To calibrate the HX711 sensor, first, include the required [**library**](https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/main), create the sensor object, and initialize the sensor in the `setup()` function.
+To calibrate the HX711 sensor, first include the required [**library**](https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/main), create the sensor object, and initialize the sensor in the `setup()` function.
 
 <WarningBox>Ensure that the correct pins for `DAT` and `SCK` are defined before initialization. </WarningBox>
 
 <InfoBox>
 
-If you're using the easyC version, there is **no need to define DAT and SCK pins** and creating the HX711 object looks like this:
+If you're using the easyC version, there is **no need to define DAT and SCK pins**, and creating the HX711 object looks like this:
 
 ```cpp
 // Create the easyC variant of the HX711 object
@@ -27,7 +27,6 @@ HX711 hx711;
 </InfoBox>
 
 ```cpp
-
 // Include the library
 #include "HX711-SOLDERED.h"
 
@@ -48,31 +47,28 @@ void setup()
     // Wait a bit until it initializes fully
     delay(200);
 
-    // While calibrating - don't put any load on the load cell!
-    // It has to measure the value of the signal without any weight
-    // This way we know where the 0 is
-    // 15 measurements are made and their average is considered the 0 (to reduce noise)
+    // While calibrating, don't put any load on the load cell!
+    // It has to measure the signal without any weight so that we know where the zero is.
+    // 15 measurements are taken, and their average is considered 0 (to reduce noise).
     hx711.setZero();
 }
 
 void loop()
 {
-    // Make raw reading of the calibrated sensor and store in variable
-    // Note that this is not the same function as getRawReading()
-    // The applied offset is the calibration
+    // Make a raw reading from the calibrated sensor and store it in a variable.
+    // Note that this is not the same function as getRawReading().
+    // The applied offset is the calibration.
     long ofsettedReading = hx711.getOffsettedReading();
 
-    // You may also call getOffsettedReading(n) for the result to be an average of n readings
+    // You may also call getOffsettedReading(n) for the result to be an average of n readings.
 
     // Print the reading
     Serial.print("HX711 Reading: ");
     Serial.println(ofsettedReading);
     
-    // Wait a bit until the next reading
+    // Wait a bit before the next reading
     delay(200);
 }
-
-
 ```
 
 <FunctionDocumentation functionName="hx711.begin()" 
@@ -81,12 +77,12 @@ void loop()
                         parameters={[]} />
 
 <FunctionDocumentation functionName="hx711.setZero()" 
-                        description="Sets the zero reference value (offset) for calibration. Makes 15 average readings to get the zero and sets it. This should be done with no load on the load cell." 
+                        description="Sets the zero reference value (offset) for calibration. Takes 15 average readings to determine zero with no load on the load cell." 
                         returnDescription="None." 
                         parameters={[]} />
 
 <FunctionDocumentation functionName="hx711.getOffsettedReading()" 
-                        description="Gets the average of raw readings minus any offset (calibration value set by setOffset)." 
+                        description="Gets the average of raw readings minus any offset (calibration value set by setZero)." 
                         returnDescription="A double representing the offset-corrected reading." 
                         parameters={[
                             { type: "uint8_t", name: "numReadings", description: "The number of readings to average." }
@@ -96,18 +92,18 @@ void loop()
 
 ## Reading in Units
 
-In this example, we will read the weight in a specific unit (e.g., kilograms, grams, pounds) using the HX711 sensor. To do so, you need to calibrate the sensor with a known weight and then use that calibration to get readings in your desired unit.
+In this example, we will read the weight in a specific unit (e.g., kilograms, grams, pounds) using the HX711 sensor. To do so, you need to calibrate the sensor with a known weight and then use that calibration to obtain readings in your desired unit.
 
 <InfoBox>
-**Reading values from the Load Cell in units requires doing one test measurement**
-    1. Get an object which you know the weight of (for example, a 0.5kg weight)
-    2. Run this sketch, don't change the SCALE_UNITS value fow now
-    3. After running the sketch, place the known weight on the load cell
-    4. Note the displayed value, let's call it X
-    5. Your SCALE_UNITS is X / known weight, set it to that
+**Reading values from the Load Cell in units requires performing one test measurement:**
+    1. Obtain an object whose weight you know (for example, a 0.5kg weight).
+    2. Run this sketch without changing the SCALE_UNITS value for now.
+    3. After running the sketch, place the known weight on the load cell.
+    4. Note the displayed value—let's call it X.
+    5. Your SCALE_UNITS is X divided by the known weight; set it to that value.
 
-    As an example, our 5kg load cell returned 391254 for a 0.5 kg weight.
-    So, SCALE_UNITS in that case would be 391254 * 0.5
+As an example, our 5kg load cell returned 391254 for a 0.5 kg weight.  
+Thus, SCALE_UNITS in that case would be 391254 * 0.5.
 </InfoBox>
 
 <WarningBox>Ensure that the correct pins for `DAT` and `SCK` are defined before initialization. </WarningBox>
@@ -120,7 +116,7 @@ In this example, we will read the weight in a specific unit (e.g., kilograms, gr
 #define PIN_DAT 4
 #define PIN_SCK 3
 
-// Scale units, for more info see setup() below
+// Scale units; for more information, refer to setup() below
 #define SCALE_UNITS 1.0
 
 // Create the HX711 object on the right pins
@@ -130,13 +126,13 @@ void setup()
 {
     Serial.begin(115200); // For debugging
 
-    // Init HX711
+    // Initialize HX711
     hx711.begin();
 
     // Wait a bit until it initializes fully
     delay(200);
 
-    // While calibrating - don't put any load on the load cell!
+    // While calibrating, don't put any load on the load cell!
     hx711.setZero();
 
     hx711.setScale(SCALE_UNITS);
@@ -144,18 +140,17 @@ void setup()
 
 void loop()
 {
-    // Make reading in units
+    // Make a reading in units.
     double readingInUnits = hx711.getReadingInUnits();
 
-    // You may also call getReadingInUnits(n) for the result to be an average of n readings
+    // You may also call getReadingInUnits(n) for the result to be an average of n readings.
 
     // Print the reading
-    // Try reading this over the serial plotter!
+    // Try viewing this on the serial plotter!
     Serial.print("HX711 Reading: ");
     Serial.println(readingInUnits);
     
-    // Wait a short while until the next reading
-    // This serial print is quite fast because it looks better on the serial plotter
+    // Wait a short while before the next reading.
     delay(200);
 }
 ```

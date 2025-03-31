@@ -43,7 +43,7 @@ The HX711 Load Cell Amplifier is a highly efficient and precise module designed 
    - **Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)
 - **Qwiic (easyC) version**
    - **ADC Precision:** 24-bit  
-   - onboard ATTiny404 microcontroller
+   - **Onboard ATTiny404 microcontroller**  
    - **Input Voltage:** 2.6V – 5.5V  
    - **Mounting Holes:** 2  
    - **Dimensions:** 38 × 22 mm (1.5 × 0.9 inch) 
@@ -57,4 +57,4 @@ The HX711 Load Cell Amplifier is a highly efficient and precise module designed 
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
-/>  
+/>
