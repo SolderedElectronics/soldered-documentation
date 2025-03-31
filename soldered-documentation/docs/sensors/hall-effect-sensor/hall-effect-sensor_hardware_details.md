@@ -73,7 +73,7 @@ For Qwiic version, connection is achived with Qwiic connector.
 
 This board contains hardware address switches, see below how to change breakout board's address.
 
-<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_jp.jpg" alt="Pinout" />
+<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_jp.jpg" alt="Address Switches" />
 
 | Address | SW3 | SW2 | SW1 |
 |:---:|:---:|:---:|:---:|
