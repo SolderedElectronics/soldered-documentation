@@ -1,15 +1,15 @@
----
-slug: /ch340/hardware 
-title: Hardware details
-id: ch340-hardware 
-hide_title: False
+---  
+slug: /ch340/hardware  
+title: Hardware details  
+id: ch340-hardware  
+hide_title: False  
 ---
 
 ## Pinout
 
 <CenteredImage src="/img/ch340/pinout.png" alt="USB-UART CH340 converter pinout diagram" caption="USB-UART CH340 converter pinout diagram"/>
 
-Click [**here**](https://soldered.com/productdata/2022/03/USB-UART-converter.png) for a high reoslution image of the pinout.
+Click [**here**](https://soldered.com/productdata/2022/03/USB-UART-converter.png) for a high resolution image of the pinout.
 
 ## Pin Details
 
@@ -30,7 +30,7 @@ Click [**here**](https://soldered.com/productdata/2022/03/USB-UART-converter.png
 | **5V**      | 5V Output     | Provides a **5V** output, typically used to power external devices.                  |
 | **R232**    | RS-232 Signal | Used for RS-232 communication (specific function depends on implementation).         |
 
-<InfoBox>**Hardware flow control pins** (**CTS, RTS, DTR, DSR, DCD**) can be used for **advanced serial communication**. </InfoBox> 
+<InfoBox>**Hardware flow control pins** (**CTS, RTS, DTR, DSR, DCD**) can be used for **advanced serial communication**.</InfoBox> 
 
 | Pin Marking | Pin Name            | Description                                                           |
 | ----------- | ------------------- | --------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ Click [**here**](https://soldered.com/productdata/2022/03/USB-UART-converter.png
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers. See below for their locations and functions:
 
 <CenteredImage src="/img/ch340/jp1pwrled.png" alt="USB-UART CH340 converter pinout diagram" caption="JP1 on the board" width="500px"/>
 
@@ -64,7 +64,7 @@ This board contains hardware jumpers, see below for their locations and function
 
 ## Voltage Selection Switch
 
-Used for selecting 5V or 3V3 Power supply on the VCC pin.
+Used to select the 5V or 3V3 power supply on the VCC pin.
 
 <CenteredImage src="/img/ch340/voltageswitch.png" alt="USB-UART CH340 converter pinout diagram" caption="Voltage switch on the board" width="500px"/>
 
@@ -89,7 +89,6 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
   url="https://github.com/SolderedElectronics/USB-UART-CH340C-converter-board-hardware-design/tree/main" 
 /> 
 
-
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
 Below is an overview of the available files.  
@@ -110,7 +109,6 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
 
 #### 3D files
 
@@ -136,5 +134,5 @@ The **Compliance** section includes important regulatory and safety documentatio
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Safety Instructions** – Safety guidelines and precautions in English and in German.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
