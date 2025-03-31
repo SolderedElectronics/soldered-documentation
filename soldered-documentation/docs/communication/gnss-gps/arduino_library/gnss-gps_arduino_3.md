@@ -11,7 +11,7 @@ This page provides a complete example of using the GNSS L86-M33 sensor with an A
 
 ## Full Example
 
-This example demonstrates how to initialize the GNSS L86-M33 sensor, retrieve GPS data, and display it in a formatted table on the Arduino Serial Monitor. The code includes information like satellite count, HDOP (Horizontal Dilution of Precision), GPS location (latitude and longitude), fix status, date and time, altitude, speed, and distance to a predefined location (Osijek, Croatia).
+This example demonstrates how to initialize the GNSS L86-M33 sensor, retrieve GPS data, and display it in a formatted table on the Arduino Serial Monitor. The code includes information such as satellite count, HDOP (Horizontal Dilution of Precision), GPS location (latitude and longitude), fix status, date and time, altitude, speed, and the distance to a predefined location (Osijek, Croatia).
 
 ```cpp
 #include "GNSS-L86-M33-SOLDERED.h" // Include L86-L33 GNSS Library
@@ -88,7 +88,7 @@ static void smartDelay(unsigned long ms)
     } while (millis() - start < ms);
 }
 
-// Functions used for printing floating numbers more easily
+// Function used for printing floating-point numbers more easily
 static void printFloat(float val, bool valid, int len, int prec)
 {
     if (!valid)
@@ -109,7 +109,7 @@ static void printFloat(float val, bool valid, int len, int prec)
     smartDelay(0);
 }
 
-// Functions prints integers (with unsigned long data type)
+// Function to print integers (with unsigned long data type)
 static void printInt(unsigned long val, bool valid, int len)
 {
     char sz[32] = "*****************";
@@ -124,7 +124,7 @@ static void printInt(unsigned long val, bool valid, int len)
     smartDelay(0);
 }
 
-// Functions print date and time from TinyGPS library date format
+// Function to print date and time from the TinyGPS library date format
 static void printDateTime(TinyGPSDate &d, TinyGPSTime &t)
 {
     if (!d.isValid())
@@ -176,18 +176,18 @@ static void printStr(const char *str, int len)
 
 | Function                        | Return Type  | Description                                                       |
 | ------------------------------- | ------------ | ----------------------------------------------------------------- |
-| `gps.satellites.value()`         | `int`        | Retrieves the number of satellites used in the fix.               |
-| `gps.hdop.hdop()`                | `float`      | Retrieves the Horizontal Dilution of Precision (HDOP).            |
-| `gps.location.lat()`             | `double`     | Retrieves the latitude of the GNSS location.                      |
-| `gps.location.lng()`             | `double`     | Retrieves the longitude of the GNSS location.                     |
-| `gps.location.age()`             | `unsigned`   | Retrieves the age of the location fix in milliseconds.           |
-| `gps.date.month()`               | `int`        | Retrieves the month of the date from the GNSS data.               |
-| `gps.date.day()`                 | `int`        | Retrieves the day of the date from the GNSS data.                 |
-| `gps.date.year()`                | `int`        | Retrieves the year of the date from the GNSS data.                |
-| `gps.time.hour()`                | `int`        | Retrieves the hour of the time from the GNSS data.                |
-| `gps.time.minute()`              | `int`        | Retrieves the minute of the time from the GNSS data.              |
-| `gps.time.second()`              | `int`        | Retrieves the second of the time from the GNSS data.              |
-| `gps.time.centisecond()`         | `int`        | Retrieves the centisecond of the time from the GNSS data.         |
+| `gps.satellites.value()`        | `int`        | Retrieves the number of satellites used in the fix.               |
+| `gps.hdop.hdop()`               | `float`      | Retrieves the Horizontal Dilution of Precision (HDOP).            |
+| `gps.location.lat()`            | `double`     | Retrieves the latitude of the GNSS location.                      |
+| `gps.location.lng()`            | `double`     | Retrieves the longitude of the GNSS location.                     |
+| `gps.location.age()`            | `unsigned`   | Retrieves the age of the location fix in milliseconds.            |
+| `gps.date.month()`              | `int`        | Retrieves the month of the date from the GNSS data.               |
+| `gps.date.day()`                | `int`        | Retrieves the day of the date from the GNSS data.                 |
+| `gps.date.year()`               | `int`        | Retrieves the year of the date from the GNSS data.                |
+| `gps.time.hour()`               | `int`        | Retrieves the hour of the time from the GNSS data.                |
+| `gps.time.minute()`             | `int`        | Retrieves the minute of the time from the GNSS data.              |
+| `gps.time.second()`             | `int`        | Retrieves the second of the time from the GNSS data.              |
+| `gps.time.centisecond()`        | `int`        | Retrieves the centisecond of the time from the GNSS data.         |
 
 <CenteredImage src="/img/gnss-gps/fullexample.png" alt="Serial Monitor" caption="Serial Monitor output"/>
 
@@ -202,4 +202,3 @@ static void printStr(const char *str, int len)
   description="Example file for using the GNSS-GPS L86-M33 easyC"
   url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/easyC/L86_M33_easyC_Full_Example/L86_M33_easyC_Full_Example.ino"
 />
-

@@ -5,7 +5,7 @@ id: gnss-gps-arduino-2
 hide_title: False
 ---
 
-This page provides a simple example of initializing the GNSS L86-M33 sensor with an Arduino.
+This page provides a simple example of how to initialize the GNSS L86-M33 sensor with an Arduino.
 
 ---
 
@@ -103,7 +103,6 @@ void displayInfo()
 }
 ```
 
-
 <FunctionDocumentation
   functionName="isValid()"
   description="Checks if the GNSS location, date, or time data is valid."
@@ -129,7 +128,7 @@ void displayInfo()
 ---
 
 ## Advanced Features
-If you wish to activate the AlwaysLocate™ Mode, Multi-tone AIC, and NMEA Message Filtering, you can send the appropriate commands after initializing the sensor. These features improve the accuracy and reliability of the GPS data, especially in challenging environments.
+If you wish to activate AlwaysLocate™ Mode, Multi-tone AIC, and NMEA Message Filtering, you can send the appropriate commands after initializing the sensor. These features improve the accuracy and reliability of the GPS data, especially in challenging environments.
 
 Here’s how to activate these advanced features:
 ```cpp
@@ -149,7 +148,7 @@ void setup()
     
     // Send commands to activate advanced features
     gps.sendCommand(alwaysLocateCmd);  // Activate AlwaysLocate™ Mode
-    gps.sendCommand(multitoneAICCmd);  // Activate Multi-tone AIC
+    gps.sendCommand(multitoneAICCmd);    // Activate Multi-tone AIC
     gps.sendCommand(nmeaMessageFilterCmd);  // Filter NMEA messages
 }
 ```
@@ -205,7 +204,7 @@ void loop()
         }
     }
 
-    // No data in the first 5 seconds after startup? Something is wrong... Check the wiring!
+    // No data within the first 5 seconds after startup? Something might be wrong—please check the wiring!
     if (millis() > 5000 && gps.charsProcessed() < 10)
     {
         Serial.println(F("No GPS detected: check wiring."));
@@ -302,4 +301,3 @@ void displayInfo()
   description="Example file for using the GNSS-GPS L86-M33 easyC with advanced features"
   url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/easyC/L86_M33_easyC_Advanced_Example/L86_M33_easyC_Advanced_Example.ino" 
 />
-

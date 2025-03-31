@@ -7,7 +7,7 @@ hide_title: False
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<ErrorBox>The pinout image for this board has not been generated yet! We're working on it!</ErrorBox>
 
 ## Pin Details
 
@@ -49,7 +49,7 @@ The board also features an **IPX connector** with SMA for an **external antenna*
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board comes in a **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox>This board comes in a **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -83,7 +83,7 @@ The board also features an **IPX connector** with SMA for an **external antenna*
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers; see below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -95,18 +95,18 @@ This board contains hardware jumpers, see below for their locations and function
   jumpers={true}
 />
 
-
 | Jumper  | Default State            | Function                                                                                                                                                                      |
 | ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
 | **JP2** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP1 is disconnected if JP2 is connected.** |
 | **JP3** | **NC** (Normally closed) | Controls the **PWR LED**.                                                                                                                                                     |
 | **JP4** | **NC** (Normally closed) | Controls the **PPS LED**.                                                                                                                                                     |
+
 ---
 
 ## Jumper Details (Qwiic version)
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers; see below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -115,7 +115,6 @@ This board contains hardware jumpers, see below for their locations and function
   ]}
   jumpers={true}
 />
-
 
 | Jumper  | Default State            | Function                                                                                                                                                                      |
 | ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -126,7 +125,7 @@ This board contains hardware jumpers, see below for their locations and function
 
 ## Address selection (Qwiic version)
 
-This board contains hardware address switches, see below how to change breakout board's address:
+This board contains hardware address switches; see below for how to change the breakout board's address:
 
 <CenteredImage src="/img/hx711/address_selection.png" alt="Pinout" width="500px" />
 
@@ -145,7 +144,7 @@ This board contains hardware address switches, see below how to change breakout 
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="GNSS GPS L86-M33 breakout hardware design" 
@@ -161,13 +160,13 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
-Below is an overview of the available files.  
+Below is an overview of the available files.
 
 #### CAD files
 
-We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.
 
-The `PANEL` files are used internally for production.  
+The `PANEL` files are used internally for production.
 
 #### Schematic
 
@@ -180,10 +179,9 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-
 #### 3D files
 
-A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.
 
 #### Gerber files 
 
@@ -199,11 +197,11 @@ Gerber files are essential for PCB manufacturing, as they contain precise instru
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
-#### Compliance  
+#### Compliance
 
-The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Safety Instructions** – Safety guidelines and precautions in English and in German.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

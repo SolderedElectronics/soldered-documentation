@@ -1,5 +1,5 @@
 ---
-slug: /gnss-gps/arduino/geting-started 
+slug: /gnss-gps/arduino/getting-started 
 title: Getting started
 id: gnss-gps-arduino-1 
 hide_title: False
@@ -16,7 +16,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
@@ -38,7 +38,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 <InfoBox>
 
-If you're using the **regular version** use these pins to manually connect:
+If you're using the **regular version**, use these pins to manually connect:
 
 | **Dasduino CONNECTPLUS** | **L86-M33 Board** |
 | ------------------------ | ----------------- |
@@ -47,12 +47,12 @@ If you're using the **regular version** use these pins to manually connect:
 | IO21 (any digital pin)   | TX                |
 | IO22 (any digital pin)   | RX                |
 
-If using the **regular version** and **optionals pins**.
+For the **optional pins**:
 
-| **Dasduino CONNECTPLUS** | **L86-M33 Board** |
-| ------------------------ | ----------------- |
-| RESET                    | RST               |
-| IO18(any digital pin)    | F-ON              |
-| IO19(any digital pin)    | PPS               |
-| Antenna connector        | ANT-D             |
+| **Dasduino CONNECTPLUS**  | **L86-M33 Board**  |
+| ------------------------- | ------------------ |
+| RESET                     | RST                |
+| IO18 (any digital pin)    | F-ON              |
+| IO19 (any digital pin)    | PPS               |
+| Antenna connector         | ANT-D             |
 </InfoBox>

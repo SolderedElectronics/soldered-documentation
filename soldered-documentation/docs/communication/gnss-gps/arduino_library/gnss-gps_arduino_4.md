@@ -6,12 +6,12 @@ hide_title: False
 pagination_next: null
 ---
 
-This page contains some helpful tips in case you are having problems using your L86-M33 GNSS GPS module.
+This page contains some helpful tips if you are having problems using your L86-M33 GNSS GPS module.
 
 <ExpandableSection title="My GPS module won't initialize!">
 
 #### Check wiring  
-Ensure that your GPS module is properly connected to your microcontroller. Double-check the wiring for the VCC, GND, TX, and RX pins. If you’re using a UART interface, make sure TX from the GPS goes to RX on the microcontroller and vice versa.  
+Ensure that your GPS module is properly connected to your microcontroller. Double-check the wiring for the VCC, GND, TX, and RX pins. If you’re using a UART interface, make sure the TX from the GPS goes to the RX on the microcontroller and vice versa.  
 
 #### Power supply  
 Make sure your GPS module is receiving sufficient power. The L86-M33 typically operates at 3.3V to 5V. If using a 3.3V supply, ensure that the regulator can handle the current requirements.
@@ -52,7 +52,7 @@ If you recently updated the firmware on your microcontroller or GPS module and t
 
 #### Slow or intermittent GPS fixes  
 Check for interference  
-If the GPS module is giving intermittent fixes, try to ensure there is minimal interference from other electronic devices, and that the module has an unobstructed view of the sky. Additionally, check if the antenna is working correctly.
+If the GPS module is giving intermittent fixes, ensure that there is minimal interference from other electronic devices and that the module has an unobstructed view of the sky. Additionally, check if the antenna is working correctly.
 
 #### GPS data is fluctuating  
 Check power supply  
