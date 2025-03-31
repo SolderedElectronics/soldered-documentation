@@ -9,7 +9,7 @@ hide_title: False
 
 <CenteredImage src="/img/apds-9960/apds9960_pinout.png" alt="APDS-9960 pinout diagram" caption="APDS-9960 pinout diagram"/>
 
-Click [**here**](\img\apds-9960\apds9960_pinout.png) for a high reoslution image of the pinout.
+Click [**here**](\img\apds-9960\apds9960_pinout.png) for a high resolution image of the pinout.
 
 ## Pin Details
 
