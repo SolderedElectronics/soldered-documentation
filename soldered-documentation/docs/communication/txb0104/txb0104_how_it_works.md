@@ -29,10 +29,7 @@ The TXB0104 includes **one-shot edge accelerators** to enhance signal transition
 
 ## Enable and Disable
 
-The TXB0104 has an OE input that is used to disable the device by setting OE = low, which places all I/Os in
-the high-impedance (Hi-Z) state. The disable time (tdis) indicates the delay between when OE goes low and
-when the outputs acutally get disabled (Hi-Z). The enable time (ten) indicates the amount of time the user must
-allow for the one-shot circuitry to become operational after OE is taken high.
+The TXB0104 has an OE input that is used to disable the device by setting OE = low, which places all I/Os in the high-impedance (Hi-Z) state. The disable time (tdis) indicates the delay between when OE goes low and when the outputs are actually disabled (Hi-Z). The enable time (ten) indicates the amount of time the user must allow for the one-shot circuitry to become operational after OE is taken high.
 
 ---
 
