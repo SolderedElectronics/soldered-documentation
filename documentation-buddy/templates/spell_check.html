@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Spell Check - Soldered Documentation Buddy{% endblock %}
+
+{% block content %}
+<h1>Spell check</h1>
+
+<div class="form-container">
+    <form id="spellCheckForm" method="POST" action="{{ url_for('spell_check_submit') }}">
+        <div class="form-group">
+            <label for="textToCheck">Paste markdown file to check:</label>
+            <textarea id="textToCheck" name="textToCheck" rows="10" required class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">CHECK SPELLING</button>
+    </form>
+</div>
+
+{% if corrected_text %}
+<div class="result-container">
+    <div class="result-section">
+        <h3>Corrected Text:</h3>
+        <div class="text-box {% if success %}success{% else %}error{% endif %}" id="correctedText">{{ corrected_text }}</div>
+    </div>
+    
+    <h2>Make sure to check the output file after copying!</h2>
+
+    <button id="copyBtn" class="action-btn" onclick="copyToClipboard()">Copy Corrected Text</button>
+    
+    {% if changes %}
+    <div class="changes-section">
+        <h3>Changes Made:</h3>
+        <ul class="changes-list">
+            {% for change in changes %}
+            <li>{{ change }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+
+{% if error_message %}
+<div class="result-message error">
+    {{ error_message }}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function copyToClipboard() {
+        const textToCopy = document.getElementById('correctedText').textContent;
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                // Show a temporary success message instead of alert
+                const btn = document.getElementById('copyBtn');
+                const originalText = btn.textContent;
+                btn.textContent = '✓ Copied!';
+                btn.classList.add('copy-success');
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('copy-success');
+                }, 2000);
+            })
+            .catch(err => {
+                console.error('Failed to copy text:', err);
+                alert('Failed to copy text: ' + err);
+            });
+    }
+</script>
+
+<style>
+    .copy-success {
+        background-color: #4CAF50 !important;
+        color: white !important;
+    }
+    
+    .changes-list li {
+        padding: 4px 0;
+    }
+    
+    /* Make the text box properly display markdown */
+    #correctedText {
+        white-space: pre-wrap;
+        font-family: monospace;
+        padding: 15px;
+        overflow-x: auto;
+    }
+    
+    /* Style for the copy button */
+    .action-btn {
+        margin: 20px 0;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    
+    .action-btn:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Style for the changes section */
+    .changes-section {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+    }
+</style>
+{% endblock %}
