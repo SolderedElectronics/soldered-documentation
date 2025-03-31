@@ -8,13 +8,11 @@ pagination_prev: null
 
 ## LTR-507
 
-The LTR-507 Breakout board features precise **ambient light (ALS)** and **proximity (PS)** measurements, transmitting data via **I2C communication** for easy integration with microcontrollers like **Dasduino**. The device supports an interrupt feature that removes the
-need to poll the sensor for a reading which improves
-system efficiency. 
+The LTR-507 Breakout board offers precise **ambient light (ALS)** and **proximity (PS)** measurements, transmitting data via **I2C communication** for easy integration with microcontrollers such as **Dasduino**. The device supports an interrupt feature that eliminates the need to poll the sensor for a reading, thereby improving system efficiency.
 
 <CenteredImage src="/img/ltr-507/333063.png" alt="ltr-507 sensor" caption="LTR-507 Light and Proximity Sensor"/>
 
-## Which products is this documentation for?
+## Which product is this documentation for?
 
 <QuickLink 
   title="LTR-507 Light and Proximity Sensor" 
@@ -51,7 +49,7 @@ system efficiency.
 
 <QuickLink 
   title="5mm IR LED" 
-  description="Infra-red (IR) diode emits light in the spectrum that the human eye can’t see."
+  description="Infra-red (IR) diode that emits light in the spectrum which the human eye can’t see."
   url="https://soldered.com/product/5mm-ir-led/"
   image="/img/101922.webp" 
-/>  
+/>

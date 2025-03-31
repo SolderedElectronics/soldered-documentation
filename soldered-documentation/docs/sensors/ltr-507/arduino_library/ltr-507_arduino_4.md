@@ -14,7 +14,7 @@ This page offers guidance for troubleshooting common issues encountered when usi
 Ensure that all connections between the LTR-507 sensor and the Arduino board are secure and correctly aligned. Loose or incorrect wiring can lead to communication failures.
 
 #### Verify I2C Address
-The LTR-507 communicates via the I2C protocol. Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected.
+Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected.
 
 #### Inspect Power Supply
 Confirm that the sensor is receiving the appropriate voltage (typically 3.3V or 5V, depending on your setup). An unstable or incorrect power supply can cause the sensor to malfunction.

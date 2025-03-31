@@ -29,20 +29,19 @@ void setup()
 
 void loop()
 {
-    // Make local variable for reading the light value
+    // Create a local variable for the light reading
     uint16_t lightReading;
 
-    // Make reading!
+    // Obtain the reading!
     lightReading = light_sensor.getLightIntensity();
     
     // Print the reading
     Serial.print("Light sensor reading: ");
     Serial.println(lightReading);
 
-    // Wait a bit until the next reading so output isn't too fast
+    // Wait a bit before taking the next reading so that the output isn't too fast
     delay(1000);
 }
-
 ```
 
 <FunctionDocumentation functionName="light_sensor.getLightIntensity()" description="Reads the ambient light intensity in lux from the LTR-507 sensor." returnDescription="A 16-bit integer (lux)." parameters={[]} />
@@ -51,7 +50,7 @@ void loop()
 
 <CenteredImage src="/img/ltr-507/serialmonitor_light.png" alt="Serial Monitor" caption="LCR-507 Light Sensor Serial Monitor output"/>
 
-<QuickLink title="readLight.ino" description="Example file for reading the light light_sensor value using the LTR-507" url="https://github.com/SolderedElectronics/Soldered-Digital-Light-Sensor-Arduino-Library/blob/main/examples/readLight/readLight.ino" />
+<QuickLink title="readLight.ino" description="Example file for reading the light sensor value using the LTR-507" url="https://github.com/SolderedElectronics/Soldered-Digital-Light-Sensor-Arduino-Library/blob/main/examples/readLight/readLight.ino" />
 
 ---
 
@@ -68,7 +67,7 @@ LTR507 light_sensor; // Create light_sensor object
 void setup()
 {
     Serial.begin(115200); // Initialize Serial Monitor
-    light_sensor.init();        // Initialize the light_sensor
+    light_sensor.init();  // Initialize the light_sensor
 }
 
 void loop()
@@ -80,7 +79,6 @@ void loop()
 
     delay(1000); // Wait before the next reading
 }
-
 ```
 
 <FunctionDocumentation functionName="light_sensor.getProximity()" description="Reads the proximity value based on infrared reflection from nearby objects." returnDescription="A 16-bit integer." parameters={[]} />

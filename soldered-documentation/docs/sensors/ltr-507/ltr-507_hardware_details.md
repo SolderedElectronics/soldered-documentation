@@ -1,15 +1,15 @@
----
-slug: /ltr-507/hardware 
-title: Hardware details
-id: ltr-507-hardware 
-hide_title: False
+---  
+slug: /ltr-507/hardware  
+title: Hardware details  
+id: ltr-507-hardware  
+hide_title: False  
 ---
 
 ## Pinout
 
 <CenteredImage src="/img/ltr-507/pinout.jpg" alt="APDS-9960 pinout diagram" caption="LTR-507 pinout diagram"/>
 
-Click [**here**](/img/ltr-507/pinout.jpg) for a high resolution image of the pinout.
+Click [**here**](/img/ltr-507/pinout.jpg) for a high-resolution image of the pinout.
 
 ## Pin details
 
@@ -20,16 +20,15 @@ Click [**here**](/img/ltr-507/pinout.jpg) for a high resolution image of the pin
 | **SDA**     | Data     | I2C data line for communication.                |
 | **SCL**     | Clock    | I2C clock line for communication.               |
 | **VLED**    | Power    | Current supply for the proximity LED.           |
-| **INT**     | Control  | Interrupt signal (from LTR-507).                |
+| **INT**     | Control  | Interrupt signal (from LTR-507).                 |
 
 <WarningBox>**IMPORTANT: An IR LED must be connected for the proximity sensor to function!**</WarningBox>
-
 
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
 
 ---
 
-## Qwiic (formerly easyC)  
+## Qwiic (formerly easyC)
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
@@ -45,7 +44,7 @@ Click [**here**](/img/ltr-507/pinout.jpg) for a high resolution image of the pin
 
 ## Power Consumption
 
-The LTR-507ALS-01 sensor is designed for low power consumption, making it suitable for battery-powered applications. 
+The LTR-507ALS-01 sensor is designed for low power consumption, making it suitable for battery-powered applications.
 
 - **Low-power mode**: 0.2mA
 
@@ -68,7 +67,7 @@ The LTR-507ALS-01 sensor is designed for low power consumption, making it suitab
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers. See below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -77,7 +76,6 @@ This board contains hardware jumpers, see below for their locations and function
     { src: '/img/ltr-507/jp3.png', alt: 'ltr507jumper3', caption: 'JP3' },
     { src: '/img/ltr-507/jp4.png', alt: 'ltr507jumper4', caption: 'JP4' },
     { src: '/img/ltr-507/jp5.png', alt: 'ltr507jumper5', caption: 'JP5' },
-
   ]}
   jumpers={true}
 />
@@ -94,7 +92,7 @@ This board contains hardware jumpers, see below for their locations and function
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="Digital light & proximity sensor LTR-507 breakout Hardware Design" 
@@ -102,16 +100,15 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
   url="https://github.com/SolderedElectronics/Digital-light---proximity-sensor-LTR-507ALS-breakout-hardware-design" 
 /> 
 
-
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
-Below is an overview of the available files.  
+Below is an overview of the available files.
 
 #### CAD files
 
-We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.
 
-The `PANEL` files are used internally for production.  
+The `PANEL` files are used internally for production.
 
 #### Schematic
 
@@ -119,35 +116,34 @@ The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported fro
 
 #### BOM (Bill of Materials)
 
-The bill of materials (BOM) is provided in two formats:  
+The bill of materials (BOM) is provided in two formats:
 
-- A **standard `.csv` table**, listing all components, part numbers, and values.  
-- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
+- A **standard `.csv` table**, listing all components, part numbers, and values.
+- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.
 
 #### 3D files
 
-A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.
 
-#### Gerber files 
+#### Gerber files
 
-Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
+Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
-- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.
+- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.
+- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.
+- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.
+- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.
+- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
-#### Compliance  
+#### Compliance
 
-The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
-- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
-- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
+- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.
+- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

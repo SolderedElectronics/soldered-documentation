@@ -34,7 +34,7 @@ void setup()
 
 <FunctionDocumentation
   functionName="light_sensor.init()"
-  description="Initializes the LTR507 light_sensor by setting up I2C communication and configuring default settings for ALS (ambient light light_sensor) and PS (proximity sensor) modes. This includes configuring gain, measurement rates, LED settings, and proximity light_sensor pulses."
+  description="Initializes the LTR507 light_sensor by setting up I2C communication and configuring default settings for ALS (ambient light sensor) and PS (proximity sensor) modes. This includes configuring gain, measurement rates, LED settings, and proximity sensor pulses."
   returnDescription="None"
   parameters={[]}
 />
@@ -90,7 +90,6 @@ void setup()
 | `LTR507_ALS_GAIN_RANGE3` | 0.02 lux to 640 lux | 0.01 lux/count  |
 | `LTR507_ALS_GAIN_RANGE4` | 0.01 lux to 320 lux | 0.005 lux/count |
 
-
 ### Setting the measurement rate for ambient lighting
 
 ```cpp
@@ -114,8 +113,6 @@ void setup()
 | `LTR507_ALS_MEASUREMENT_RATE_1000MS` | 1000 milliseconds per measurement |
 | `LTR507_ALS_MEASUREMENT_RATE_2000MS` | 2000 milliseconds per measurement |
 
-
-
 ### Setting the measurement rate for proximity
 
 ```cpp
@@ -134,15 +131,13 @@ void setup()
 | Measurement Rate                    | Description                       |
 | ----------------------------------- | --------------------------------- |
 | `LTR507_PS_MEASUREMENT_RATE_12_5MS` | 12.5 milliseconds per measurement |
-| `LTR507_PS_MEASUREMENT_RATE_50MS  ` | 50 milliseconds per measurement   |
-| `LTR507_PS_MEASUREMENT_RATE_70MS  ` | 70 milliseconds per measurement   |
-| `LTR507_PS_MEASUREMENT_RATE_100MS ` | Default measurement rate          |
-| `LTR507_PS_MEASUREMENT_RATE_200MS ` | 200 milliseconds per measurement  |
-| `LTR507_PS_MEASUREMENT_RATE_500MS ` | 500 milliseconds per measurement  |
+| `LTR507_PS_MEASUREMENT_RATE_50MS`   | 50 milliseconds per measurement   |
+| `LTR507_PS_MEASUREMENT_RATE_70MS`   | 70 milliseconds per measurement   |
+| `LTR507_PS_MEASUREMENT_RATE_100MS`  | Default measurement rate          |
+| `LTR507_PS_MEASUREMENT_RATE_200MS`  | 200 milliseconds per measurement  |
+| `LTR507_PS_MEASUREMENT_RATE_500MS`  | 500 milliseconds per measurement  |
 | `LTR507_PS_MEASUREMENT_RATE_1000MS` | 1000 milliseconds per measurement |
 | `LTR507_PS_MEASUREMENT_RATE_2000MS` | 2000 milliseconds per measurement |
-
-
 
 ### Setting the maximum current supplied to the IR LED
 
@@ -160,12 +155,10 @@ void setup()
 
 | LED Peak Current               | Description                         |
 | ------------------------------ | ----------------------------------- |
-| `LTR507_LED_PEAK_CURRENT_5MA ` | 5 milliamps peak current            |
+| `LTR507_LED_PEAK_CURRENT_5MA`  | 5 milliamps peak current            |
 | `LTR507_LED_PEAK_CURRENT_10MA` | 10 milliamps peak current           |
 | `LTR507_LED_PEAK_CURRENT_20MA` | 20 milliamps peak current           |
 | `LTR507_LED_PEAK_CURRENT_50MA` | Default peak current (50 milliamps) |
-
-
 
 ### Setting the pulse frequency of the IR LED
 
@@ -177,7 +170,6 @@ void setup()
   light_sensor.setPSNumPulses(1);
 }
 // ...
-
 ```
 
 <FunctionDocumentation
@@ -191,15 +183,14 @@ void setup()
 
 | LED Pulse Frequency            | Description                      |
 | ------------------------------ | -------------------------------- |
-| `LTR507_LED_PULSE_FREQ_30KHZ ` | 30 kilohertz pulse frequency     |
-| `LTR507_LED_PULSE_FREQ_40KHZ ` | 40 kilohertz pulse frequency     |
-| `LTR507_LED_PULSE_FREQ_50KHZ ` | 50 kilohertz pulse frequency     |
-| `LTR507_LED_PULSE_FREQ_60KHZ ` | Default pulse frequency (60 kHz) |
-| `LTR507_LED_PULSE_FREQ_70KHZ ` | 70 kilohertz pulse frequency     |
-| `LTR507_LED_PULSE_FREQ_80KHZ ` | 80 kilohertz pulse frequency     |
-| `LTR507_LED_PULSE_FREQ_90KHZ ` | 90 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_30KHZ`  | 30 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_40KHZ`  | 40 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_50KHZ`  | 50 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_60KHZ`  | Default pulse frequency (60 kHz) |
+| `LTR507_LED_PULSE_FREQ_70KHZ`  | 70 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_80KHZ`  | 80 kilohertz pulse frequency     |
+| `LTR507_LED_PULSE_FREQ_90KHZ`  | 90 kilohertz pulse frequency     |
 | `LTR507_LED_PULSE_FREQ_100KHZ` | 100 kilohertz pulse frequency    |
-
 
 ---
 
@@ -244,6 +235,6 @@ void setup()
 
 <QuickLink 
   title="adjustSettings.ino" 
-  description="Example file for adjusting the setting with the LTR-507 sensor"
+  description="Example file for adjusting the settings with the LTR-507 sensor"
   url="https://github.com/SolderedElectronics/Soldered-Digital-Light-Sensor-Arduino-Library/blob/main/examples/adjustSettings/adjustSettings.ino" 
 />

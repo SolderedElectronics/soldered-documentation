@@ -16,11 +16,11 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
+**First-time Arduino user?** For a detailed tutorial on getting started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
-  description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
+  description="A comprehensive and detailed tutorial on how to set up and upload code to an Arduino board for the first time from scratch!"  
   url="#"  
 />  
 
@@ -57,7 +57,6 @@ If you prefer, you can use I2C pins to manually connect:
 | VCC         | ANODE (+)   |
 
 
-<WarningBox> Interrupt not yet implemented. </WarningBox>
+<WarningBox>Interrupt functionality is not yet implemented.</WarningBox>
 
 </InfoBox>
-
