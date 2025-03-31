@@ -37,6 +37,6 @@ The Hall Voltage generated is **typically very small (in microvolts)**, so it is
 
 ## I2C communication - Qwiic
 
-Qwiic versions of the product use onboard ATTINY404 MCU to implement I2C communication. Breakout board perates with a default I2C address of **0x30**  but can be changed with onboard switches,to change breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection). When detected, ATTINY404 recives data from sensor and passes it to the main MCU using I2C data line. To check in detail how to ATTINY404 is preprogrammed, check [**firmware github page**](https://github.com/SolderedElectronics/Soldered-Hall-Effect-Sensor-Arduino-Library/tree/dev/extras/attiny_firmware).
+Qwiic versions of the product use onboard ATTINY404 MCU to implement I2C communication. Breakout board operates with a default I2C address of **0x30**  but can be changed with onboard switches,to change breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection). When detected, ATTINY404 recives data from sensor and passes it to the main MCU using I2C data line. To check in detail how to ATTINY404 is preprogrammed, check [**firmware github page**](https://github.com/SolderedElectronics/Soldered-Hall-Effect-Sensor-Arduino-Library/tree/dev/extras/attiny_firmware).
 
 

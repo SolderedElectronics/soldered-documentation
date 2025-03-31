@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Obstacle-sensor-with-easyC',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/obstacle-sensor/obstacle-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/obstacle-sensor/obstacle-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/obstacle-sensor/obstacle-sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/obstacle-sensor/arduino_library/obstacle-sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/obstacle-sensor/arduino_library/obstacle-sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/obstacle-sensor/arduino_library/obstacle-sensor-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'TCRT5000',
           items: [
             {

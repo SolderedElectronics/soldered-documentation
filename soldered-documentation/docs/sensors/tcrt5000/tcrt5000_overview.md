@@ -26,7 +26,7 @@ The **Obstacle sensor TCRT5000 breakout board** is a sensor capable of detecting
 ---
 
 ## Key features
-- **working Voltage:** 3.3 - 5V
+- **Working Voltage:** 3.3 - 5V
 - **Sensor:** TCRT5000
 - **Comparator:** LM303
 - **Dimensions:** **22 × 22 mm** (0.9 × 0.9 inch)
