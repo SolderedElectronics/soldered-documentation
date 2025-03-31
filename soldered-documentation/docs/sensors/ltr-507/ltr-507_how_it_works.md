@@ -6,7 +6,7 @@ hide_title: False
 ---  
 
 The LTR-507ALS-01 is an integrated I2C digital light
-sensor (ALS) and proximity sensor (PS) with built-in LED
+sensor (ALS) and proximity sensor (PS) with a built-in LED
 driver manufactured by [**Lite-On**](https://optoelectronics.liteon.com/en-global/led/LED-Component)
 
 

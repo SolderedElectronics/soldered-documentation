@@ -5,7 +5,7 @@ id: ltr-507-arduino-2
 hide_title: False
 ---
 
-This page contains an example how to modify parameters of the LTR-507 light sensor.
+This page contains an example of how to modify parameters of the LTR-507 light sensor.
 
 ---
 

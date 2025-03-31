@@ -32,7 +32,7 @@ system efficiency.
 - **Communication**: I2C (400kHz)
 - **I2C Address**: **0x3A**
 - **Logic / Operating voltage level:** 3.3V (onboard regulator for 5V compatibility) 
-- **Compatibility**: **Arduino**, nd other **I2C-compatible** microcontrollers
+- **Compatibility**: **Arduino**, and other **I2C-compatible** microcontrollers
 - **Operating Temperature Range**: -40°C to +85°C
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
 - **Mounting:** **Four mounting holes** for secure attachment 

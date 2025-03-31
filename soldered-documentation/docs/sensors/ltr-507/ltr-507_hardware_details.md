@@ -9,7 +9,7 @@ hide_title: False
 
 <CenteredImage src="/img/ltr-507/pinout.jpg" alt="APDS-9960 pinout diagram" caption="LTR-507 pinout diagram"/>
 
-Click [**here**](/img/ltr-507/pinout.jpg) for a high reoslution image of the pinout.
+Click [**here**](/img/ltr-507/pinout.jpg) for a high resolution image of the pinout.
 
 ## Pin details
 
@@ -19,7 +19,7 @@ Click [**here**](/img/ltr-507/pinout.jpg) for a high reoslution image of the pin
 | **GND**     | Ground   | Common ground for power and signals.            |
 | **SDA**     | Data     | I2C data line for communication.                |
 | **SCL**     | Clock    | I2C clock line for communication.               |
-| **VLED**    | Power    | Current supply for the proximity LED.                                 |
+| **VLED**    | Power    | Current supply for the proximity LED.           |
 | **INT**     | Control  | Interrupt signal (from LTR-507).                |
 
 <WarningBox>**IMPORTANT: An IR LED must be connected for the proximity sensor to function!**</WarningBox>
@@ -86,7 +86,7 @@ This board contains hardware jumpers, see below for their locations and function
 | ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                           |
 | **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                         |
-| **JP3** | **NC** (Normally closed) | Address selection (Default I2C address **0x3A**).                                                                                                                                      |
+| **JP3** | **NC** (Normally closed) | Address selection (Default I2C address **0x3A**).                                                                                                                             |
 | **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
 | **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
 
