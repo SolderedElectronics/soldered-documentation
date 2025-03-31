@@ -16,7 +16,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
+**Are you a first-time Arduino user?** For a detailed tutorial on getting started with Arduino, refer to this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
@@ -38,7 +38,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 <InfoBox>
 
-If you prefer, you can use I2C pins to manually connect:
+If you prefer, you can manually connect using I2C pins:
 
 | **Dasduino CONNECTPLUS**     | **Breakout Board** |
 | ---------------------------- | ------------------ |
@@ -49,6 +49,7 @@ If you prefer, you can use I2C pins to manually connect:
 | IO25 (any digital pin works) | INT                |
 
 <WarningBox>VLED pin is used for power to the IR LED if **JP3** jumper is opened.</WarningBox>
+
 | **Dasduino CONNECTPLUS**     | **Breakout Board** |
 | ---------------------------- | ------------------ |
 | 3V3                          | VLED               |

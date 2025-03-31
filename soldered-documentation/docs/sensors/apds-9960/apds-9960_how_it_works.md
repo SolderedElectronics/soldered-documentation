@@ -5,7 +5,7 @@ id: apds-9960-how-it-works
 hide_title: False
 ---  
 
-APDS-9960 is a digital RGB, ambient light, proximity and gesture sensor device in a single 8-pin package manufactured by [**Broadcom**](https://www.broadcom.com/products/optical-sensors/integrated-ambient-light-and-proximity-sensors/apds-9960). 
+APDS-9960 is a digital sensor that integrates RGB, ambient light, proximity, and gesture sensing in a single 8-pin package manufactured by [**Broadcom**](https://www.broadcom.com/products/optical-sensors/integrated-ambient-light-and-proximity-sensors/apds-9960). 
 
 <CenteredImage src="/img/apds-9960/apds9960_onboard.png" alt="APDS-9960 sensor on board" caption="APDS-9960 sensor on board" width="500px" />
 
@@ -29,11 +29,11 @@ The APDS-9960 is a versatile sensor that detects **ambient light, proximity, and
 
 The APDS-9960 operates efficiently with **low power consumption** and **stable performance**, making it ideal for **touchless control** and **smart lighting applications**.
 
-- **Gesture Recognition** - Gesture detection utilizes **four directional photodiodes** to sense reflected IR energy to convert physical motion information to digital data. The gesture engine accommodates a wide range of gestures: **up, down, left, right**, and **swipe movements**.
+- **Gesture Recognition** - Gesture detection utilizes four directional photodiodes to sense reflected IR energy, converting physical motion information into digital data. The gesture engine accommodates a wide range of gestures: **up, down, left, right**, and **swipe movements**.
 
 - **Proximity Sensing** - Using a photodiode, the sensor detects reflected IR energy to measure the distance to nearby objects, enabling **proximity detection**.
 
-- **Ambient Light Sensing** - The sensor uses a photodiode to measure ambient light, converting it into a **digital signal** via an onboard ADC (analog-digital converter), providing **precise lux measurements**.
+- **Ambient Light Sensing** - The sensor uses a photodiode to measure ambient light, converting it into a digital signal via an onboard ADC (analog-to-digital converter), providing **precise lux measurements**.
 
 - **Signal Processing and Output** - The sensor processes the data internally, ensuring accurate and stable readings. The results are transmitted via an **I2C** interface for **easy integration with microcontrollers**.
 

@@ -66,17 +66,17 @@ Open the Serial Monitor at 115200 baud to observe the detected proximity values.
 // Create an APDS-9960 object
 APDS_9960 APDS;
 
-// Setup function, runs once
+// Setup function that runs once
 void setup()
 {
-    Serial.begin(115200); //Begin serial communication with PC
-    while (!Serial) //Wait until serial becomes active
+    Serial.begin(115200); // Begin serial communication with PC
+    while (!Serial) // Wait until serial becomes active
         ;
 
-    if (!APDS.begin())  //Begin communication with sensor
+    if (!APDS.begin())  // Begin communication with sensor
     {
         Serial.println("Error initializing APDS-9960 sensor!");
-      while(1); //Loop forever if sensor is not available
+        while(1); // Loop forever if sensor is not available
     }
 
     Serial.println("Sensor initialized.");

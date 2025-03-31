@@ -11,7 +11,7 @@ This page contains simple examples of initialization and color detection with th
 
 ## Color Sensor
 
-In this code snippet, the `loop()` function continuously checks if a color reading is available from the APDS-9960 sensor. The `colorAvailable()` function is used to wait until the color reading is ready. If the reading is not available, the `delay(5)` function is used to pause briefly before checking again.
+In this code snippet, the `loop()` function continuously checks whether a color reading is available from the APDS-9960 sensor. It uses the `colorAvailable()` function to wait until the color reading is ready. If the reading is not available, the `delay(5)` function pauses briefly before checking again.
 
 Once a color reading becomes available, the `readColor()` function is called to retrieve the red, green, and blue (RGB) color intensities. These values are stored in the variables r, g, and b.
 
@@ -25,9 +25,9 @@ void loop()
     // check if a color reading is available
     while (!APDS.colorAvailable())
     {
-        delay(5); //Wait for color reading to be available
+        delay(5); // Wait for a color reading to be available
     }
-    int r, g, b;  //Initialize variables for color intensities
+    int r, g, b;  // Initialize variables for color intensities
 
     // read the color
     APDS.readColor(r, g, b);
@@ -76,14 +76,14 @@ APDS_9960 APDS;
 // Setup function, runs once
 void setup()
 {
-    Serial.begin(115200); //Begin serial communication with PC
-    while (!Serial) //Wait until serial becomes active
+    Serial.begin(115200); // Begin serial communication with PC
+    while (!Serial) // Wait until serial becomes active
         ;
 
-    if (!APDS.begin())  //Begin communication with sensor
+    if (!APDS.begin())  // Begin communication with sensor
     {
         Serial.println("Error initializing APDS-9960 sensor!");
-      while(1); //Loop forever if sensor is not available
+        while (1); // Loop forever if sensor is not available
     }
 
     Serial.println("Sensor initialized.");
@@ -94,9 +94,9 @@ void loop()
     // check if a color reading is available
     while (!APDS.colorAvailable())
     {
-        delay(5); //Wait for color reading to be available
+        delay(5); // Wait for a color reading to be available
     }
-    int r, g, b;  //Initialize variables for color intensities
+    int r, g, b;  // Initialize variables for color intensities
 
     // read the color
     APDS.readColor(r, g, b);
