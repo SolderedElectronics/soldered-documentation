@@ -1,8 +1,8 @@
----
-slug: /ws2812b/arduino/brightness-control
-title: Brightness Control and Effects
-id: ws2812b-arduino-3 
-hide_title: False
+---  
+slug: /ws2812b/arduino/brightness-control  
+title: Brightness Control and Effects  
+id: ws2812b-arduino-3  
+hide_title: False  
 ---
 
 This page contains examples of **brightness effects** for the WS2812B LED strip. These effects use **variable brightness levels** to create visually appealing animations like breathing, twinkling, and smooth transitions.  
@@ -15,9 +15,9 @@ To use the WS2812B LEDs, include the required [**library**](https://github.com/S
 
 <InfoBox>Our library is using the [**Adafruit Neopixel library**](https://github.com/adafruit/Adafruit_NeoPixel)</InfoBox>
 
-To modify the brightness of the LEDs, use the `setBrightness()` function before calling `show()`.  
+To modify the brightness of the LEDs, use the `setBrightness()` function before calling `show()`.
 
-<InfoBox>Brightness values range from 0 (off) to 255 (maximum brightness).</InfoBox>  
+<InfoBox>Brightness values range from 0 (off) to 255 (maximum brightness).</InfoBox>
 
 ```cpp
 // Set brightness to 50%
@@ -64,7 +64,7 @@ parameters={[
 
 ## Rainbow Fade Effect
 
-A smooth brightness-controlled rainbow animation cycles across the LED strip. 
+A smooth brightness-controlled rainbow animation cycles across the LED strip.
 
 ```cpp
 void rainbowFade(int wait)
@@ -127,7 +127,7 @@ void loop()
 
 ## Twinkling Stars Effect
 
-This effect randomly selects LEDs t o twinkle with varying brightness, simulating a starry sky.
+This effect randomly selects LEDs to twinkle with varying brightness, simulating a starry sky.
 
 ```cpp
 void twinklingStars()
@@ -240,6 +240,6 @@ void loop()
     // Choose the effect to run
     rainbowFade(10);           // Rainbow effect with a 10ms delay between color changes
     breathingEffect();         // Breathing effect with dark purple color
-    twinklingStars();           // Twinkling stars effect
+    twinklingStars();          // Twinkling stars effect
 }
 ```

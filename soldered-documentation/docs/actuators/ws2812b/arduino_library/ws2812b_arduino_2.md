@@ -5,7 +5,7 @@ id: ws2812b-arduino-2
 hide_title: False
 ---
 
-This page contains an example of **initialization** of the WS2812B LED strip and examples of **setting colors** for different effects.
+This page contains an example of initializing the WS2812B LED strip and examples of setting colors for different effects.
 
 ---
 
@@ -13,9 +13,9 @@ This page contains an example of **initialization** of the WS2812B LED strip and
 
 To use the WS2812B LEDs, include the required [**library**](https://github.com/SolderedElectronics/Soldered-WS2812-Smart-Leds-Arduino-Library/tree/main).
 
-<InfoBox>Our library is using the [**Adafruit Neopixel library**](https://github.com/adafruit/Adafruit_NeoPixel)</InfoBox>
+<InfoBox>Our library uses the [**Adafruit Neopixel library**](https://github.com/adafruit/Adafruit_NeoPixel)</InfoBox>
 
-Create the `pixels` object, and initialize the LEDs in the `setup()` function using `pixels.begin()`. 
+Create the `pixels` object and initialize the LEDs in the `setup()` function using `pixels.begin()`.
 
 ```cpp
 // Include needed libraries
@@ -42,11 +42,11 @@ void setup()
 
 ---
 
-## Setting the LEDs color one by one
+## Setting the LED Colors One by One
 
-To control the colors of the LEDs, use functions like `clear()` and `show()`, along with the primary function, `setPixelColor()`. The `delay()` function can also be used for timing adjustments.
+To control the colors of the LEDs, use functions such as `clear()` and `show()`, along with the primary function `setPixelColor()`. The `delay()` function can also be used for timing adjustments.
 
-<InfoBox>The first Pixel in a strand is #0, second is 1, all the way up.</InfoBox>
+<InfoBox>The first pixel in a strand is #0, the second is #1, and so on.</InfoBox>
 
 ```cpp
 #define DELAYVAL 500 // Time (in milliseconds) to pause between pixels
@@ -97,10 +97,10 @@ void loop()
 
 ## Creating a Rainbow Effect  
 
-To produce a smooth rainbow animation along the entire LED strip, the `rainbow()` function continuously updates pixel colors using the HSV color wheel. It cycles through different hues to create a flowing rainbow effect. The `show()` function updates the strip, while `delay()` controls the animation speed.  
+To produce a smooth rainbow animation along the entire LED strip, the `rainbow()` function continuously updates pixel colors using the HSV color wheel. It cycles through different hues to create a flowing rainbow effect. The `show()` function updates the strip, while `delay()` controls the animation speed.
 
 <WarningBox>
-Make sure to call the `rainbow` function with a delay parameter somewhere! Example:
+Make sure to call the `rainbow()` function with a delay parameter somewhere! Example:
 ```cpp
 void loop()
 {
@@ -157,7 +157,7 @@ void rainbow(int wait)
 
 ## Cylon / Knight Rider Effect
 
-A single **bright LED moves back and forth**, similar to the iconic scanner from *Knight Rider*.
+A single bright LED moves back and forth, similar to the iconic scanner from *Knight Rider*.
 
 ```cpp
 void cylonEffect()

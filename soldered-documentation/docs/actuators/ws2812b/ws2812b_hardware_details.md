@@ -9,21 +9,21 @@ hide_title: False
 
 <CenteredImage src="/img/ws2812b/pinout.jpg" alt="Pinout" />
 
-Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B-Stick10.png) for a high resolution image of the pinout.
+Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B-Stick10.png) for a high-resolution image of the pinout.
 
 <CenteredImage src="/img/ws2812b/pixel_pinout.jpg" alt="Pinout" />
 
-Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B-Pixel.png) for a high resolution image of the pinout.
+Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B-Pixel.png) for a high-resolution image of the pinout.
 
 <CenteredImage src="/img/ws2812b/ring7_pinout.jpg" alt="Pinout" />
 
-Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B.png) for a high resolution image of the pinout.
+Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B.png) for a high-resolution image of the pinout.
 
-<ErrorBox>The pinout images for the Ring12 and Ring24 version haven't been generated yet! We're working on it!</ErrorBox>
+<ErrorBox>The pinout images for the Ring12 and Ring24 versions haven't been generated yet! We're working on it!</ErrorBox>
 
 ### Pin details
 
-<InfoBox>Ignore the **DIN** and **DOUT** pins if using the Pixel version! </InfoBox>
+<InfoBox>Ignore the **DIN** and **DOUT** pins if using the Pixel version!</InfoBox>
 
 | Pin Marking | Pin Name      | Description                                                          |
 | ----------- | ------------- | -------------------------------------------------------------------- |
@@ -43,15 +43,15 @@ Click [**here**](https://soldered.com/productdata/2022/03/Smart-LED-WS2812B.png)
 - **LED Pitch (spacing between LEDs):** 10mm
 - **Stick10 version**
    - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
-   - **Dimensions**: 80 x 10 mm (3.15 x 0.4 inch)
+   - **Dimensions:** 80 x 10 mm (3.15 x 0.4 inch)
 - **Pixel version**
-   - **Dimensions**: Diameter of 10mm (0.4 inch)
+   - **Dimensions:** Diameter of 10mm (0.4 inch)
 - **Ring7 version**
-   - **Dimensions**: Diameter of 23mm (0.9 inch)
+   - **Dimensions:** Diameter of 23mm (0.9 inch)
 - **Ring12 version**
-   - **Dimensions**: Outer diameter of 44mm (1.6 inch)
+   - **Dimensions:** Outer diameter of 44mm (1.6 inch)
 - **Ring24 version**
-   - **Dimensions**: Outer diameter of 67mm (2.6 inch)
+   - **Dimensions:** Outer diameter of 67mm (2.6 inch)
 - Soldered boards are LEGO compatible! 🧱
 
 ---
@@ -70,7 +70,7 @@ The **WS2812B** operates with a **5V** supply, which is typically delivered to t
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="Smart LED WS2812B Stick10 Hardware Design" 
@@ -111,7 +111,6 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-
 #### 3D files
 
 A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
@@ -137,5 +136,4 @@ The **Compliance** section includes important regulatory and safety documentatio
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
-
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
