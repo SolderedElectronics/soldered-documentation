@@ -5,16 +5,16 @@ id: adc-arduino-2
 hide_title: False
 ---
 
-This page provides various examples for using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, covering initialization and reading analog inputs.
+This page provides various examples on using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, covering initialization and reading analog inputs.
 
 ---
 
 ## Initialization and Gain
 
-This section initializes the ADS1015/ADS1115 sensor, setting up the communication and preparing the ADC for use. It also configures the gain, which adjusts the input voltage range, ensuring optimal resolution and accuracy for the ADC readings based on the expected signal levels.
+This section initializes the ADS1015/ADS1115 sensor, setting up communication and preparing the ADC for use. It also configures the gain, which adjusts the input voltage range, ensuring optimal resolution and accuracy for the ADC readings based on the expected signal levels.
 
 <WarningBox>
-**Make sure you're including the correct library and declaring the correct ADC object!**
+**Make sure you include the correct library and declare the correct ADC object!**
 
 ```cpp
 #include "ADS1115-SOLDERED.h"
@@ -69,7 +69,7 @@ void loop()
   functionName="ADS.setGain()"
   description="Sets the gain for the ADS1115 to adjust the input voltage range."
   returnDescription="True if the gain is successfully set, false otherwise."
-  parameters={[
+  parameters={[ 
     { name: "gain", type: "ADSGain", description: "The gain value to be set for the sensor." }
   ]}
 />
@@ -136,9 +136,9 @@ void loop()
 
 <FunctionDocumentation
   functionName="ADS.readADC()"
-  description="Reads an ADC value from the ADS1115 sensor. It can read either single-ended or differential values depending on the provided input."
+  description="Reads an ADC value from the ADS1115 sensor. It can read either single-ended or differential values, depending on the provided input."
   returnDescription="The raw ADC value read from the sensor. The value represents the measured voltage or differential voltage, depending on the mode."
-  parameters={[
+  parameters={[ 
     { name: "channel1", type: "uint8_t", description: "The first input channel to read from (0 to 3 for single-ended mode or channel pair for differential mode)." },
     { name: "channel2", type: "uint8_t", description: "The second input channel to read from, used only in differential mode (optional)." }
   ]}

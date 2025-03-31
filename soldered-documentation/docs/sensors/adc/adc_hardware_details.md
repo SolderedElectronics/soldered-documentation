@@ -1,8 +1,8 @@
----
-slug: /adc/hardware 
-title: Hardware details
-id: adc-hardware 
-hide_title: False
+---  
+slug: /adc/hardware  
+title: Hardware details  
+id: adc-hardware  
+hide_title: False  
 ---
 
 ## Pinout
@@ -21,17 +21,17 @@ hide_title: False
 | **SCL**     | Clock    | I2C clock line for communication.               |
 | **VLED**    | Power    | Supply current for IR LED.                      |
 | **A0-A3**   | Input    | Analog input channels.                          |
-| **ALERT**   | Output   | Alert pin for programmable comparator function. |
+| **ALERT**   | Output   | Alert pin for the programmable comparator function. |
 
 <InfoBox>The ALERT pin functions as an interrupt output for the programmable comparator, triggering when an input voltage exceeds a set threshold. This allows the microcontroller to respond to changes without continuous polling.</InfoBox>
 
 ---
 
-## Qwiic (formerly easyC)  
+## Qwiic (formerly easyC)
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -61,15 +61,15 @@ The timing characteristics of the **ADS1015** and **ADS1115** are crucial for un
 
 ## Power Consumption
 
-The **ADS1015** and **ADS1115** are both designed for low power consumption. The power consumption varies depending on the operating mode and data rate:
+The **ADS1015** and **ADS1115** are both designed for low power consumption. The power usage varies depending on the operating mode and data rate:
 
 - **ADS1015 (12-bit resolution)**:
-  - **Continuous Conversion Mode**: ~150 µA (at full data rate of 3.3 kSPS)
-  - **Single-Shot Mode**: Current consumption significantly reduces in single-shot mode due to automatic shutdown after a conversion.
+  - **Continuous Conversion Mode**: ~150 µA (at a full data rate of 3.3 kSPS)
+  - **Single-Shot Mode**: Current consumption is significantly reduced in single-shot mode due to automatic shutdown after a conversion.
 
 - **ADS1115 (16-bit resolution)**:
-  - **Continuous Conversion Mode**: ~230 µA (at full data rate of 860 SPS)
-  - **Single-Shot Mode**: Similar to ADS1015, the current consumption drops significantly when in shutdown mode after conversion.
+  - **Continuous Conversion Mode**: ~230 µA (at a full data rate of 860 SPS)
+  - **Single-Shot Mode**: Similar to the ADS1015, the current consumption drops significantly in shutdown mode after a conversion.
 
 ---
 
@@ -78,7 +78,7 @@ The **ADS1015** and **ADS1115** are both designed for low power consumption. The
 - **Board Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+- Soldered boards are LEGO compatible! 🧱
 
 ---
 
@@ -86,7 +86,7 @@ The **ADS1015** and **ADS1115** are both designed for low power consumption. The
 
 <InfoBox>Jumper details are the same for 12-bit and 16-bit versions.</InfoBox>
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers; see below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -95,11 +95,9 @@ This board contains hardware jumpers, see below for their locations and function
     { src: '/img/adc/jp3.png', alt: 'adcjumper3', caption: 'JP3' },
     { src: '/img/adc/jp4.png', alt: 'adcjumper4', caption: 'JP4' },
     { src: '/img/adc/jp5.png', alt: 'adcjumper5', caption: 'JP5' },
-
   ]}
   jumpers={true}
 />
-
 
 | Jumper  | Default State            | Function                      |
 | ------- | ------------------------ | ----------------------------- |
@@ -113,7 +111,7 @@ This board contains hardware jumpers, see below for their locations and function
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="ADC 12-bit ADS1015 Hardware design" 
@@ -129,13 +127,13 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
-Below is an overview of the available files.  
+Below is an overview of the available files.
 
 #### CAD files
 
-We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.
 
-The `PANEL` files are used internally for production.  
+The `PANEL` files are used internally for production.
 
 #### Schematic
 
@@ -148,10 +146,9 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-
 #### 3D files
 
-A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.
 
 #### Gerber files 
 
@@ -163,15 +160,15 @@ Gerber files are essential for PCB manufacturing, as they contain precise instru
 - **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
 - **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
 - **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
-#### Compliance  
+#### Compliance
 
-The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Safety Instructions** – Safety guidelines and precautions in English and in German.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

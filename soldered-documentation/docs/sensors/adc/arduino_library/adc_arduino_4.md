@@ -5,12 +5,12 @@ id: adc-arduino-4
 hide_title: False
 ---
 
-This page provides various examples for using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, covering asynchronous and continuous readings.
+This page provides various examples of using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, covering asynchronous and continuous readings.
 
 ---
 ## Asynchronous ADC Read
 
-This example demonstrates how to asynchronously read the ADC values without blocking the program flow. The ADS1115 allows you to request ADC values and read them later once they are ready.
+This example demonstrates how to asynchronously read ADC values without blocking the program flow. The ADS1115 allows you to request ADC values and read them later once they are ready.
 
 ```cpp
 #include "ADS1115-SOLDERED.h"
@@ -27,7 +27,7 @@ void setup()
     Serial.print("ADS1X15_LIB_VERSION: ");
     Serial.println(ADS1X15_LIB_VERSION);
 
-    // Setup the ADS1115
+    // Set up the ADS1115
     ADS.begin();
     ADS.setGain(0);
     f = ADS.toVoltage(); // Voltage factor
@@ -59,12 +59,11 @@ void loop()
   url="https://github.com/SolderedElectronics/Soldered-ADS1015-ADS1115-ADC-Arduino-Library/blob/main/examples/ADS_read_async/ADS_read_async.ino" 
 />
 
-
 ---
 
 ## Continuous ADS Read
 
-This example demonstrates how to continuously read the ADC values from the ADS1015 without needing to manually trigger each read. In continuous mode, the ADS1015 automatically samples the analog input at the specified data rate, allowing for real-time monitoring of the signal as long as the system is powered on.
+This example demonstrates how to continuously read ADC values from the ADS1015 without needing to manually trigger each read. In continuous mode, the ADS1015 automatically samples the analog input at the specified data rate, allowing for real-time monitoring of the signal as long as the system is powered on.
 
 ```cpp
 #include "ADS1015-SOLDERED.h"
@@ -74,13 +73,13 @@ ADS1015 ADS;
 
 void setup()
 {
-    // Setup Serial
+    // Set up Serial
     Serial.begin(115200);
     Serial.println(__FILE__);
     Serial.print("ADS1X15_LIB_VERSION: ");
     Serial.println(ADS1X15_LIB_VERSION);
 
-    // setup ADS1015
+    // Set up the ADS1015
     ADS.begin();
     ADS.setGain(0);     // 6.144 volt
     ADS.setDataRate(7); // fast
@@ -90,7 +89,7 @@ void setup()
 
 void loop()
 {
-    // read ADC
+    // Read ADC
     Serial.println(ADS.getValue());
 }
 ```

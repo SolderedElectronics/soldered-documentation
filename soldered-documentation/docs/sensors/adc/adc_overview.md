@@ -6,7 +6,7 @@ hide_title: False
 pagination_prev: null
 ---
 
-## Analog Digital Converter
+## Analog-to-Digital Converter
 
 An **Analog-to-Digital Converter (ADC)** is a device that reads analog signalsâ€”similar to the `analogRead()` function in the Arduino IDEâ€”and converts them into digital signals that can be processed by a microcontroller.
 
@@ -14,7 +14,7 @@ An **Analog-to-Digital Converter (ADC)** is a device that reads analog signalsâ€
 
 ---
 
-## Which products is this documentation for?
+## Which products does this documentation cover?
 
 <QuickLink 
   title="ADC 12-bit ADS1015" 
@@ -55,7 +55,7 @@ An **Analog-to-Digital Converter (ADC)** is a device that reads analog signalsâ€
 
 <QuickLink 
   title="Potentiometer 10k" 
-  description="Potentiometer with mutable resistance from 10k that corresponds with the breadboard. They can be used for various kinds of control, for example adjusting the intensity of LED lights."
+  description="A potentiometer with adjustable resistance of 10k ohm that is compatible with breadboards. It can be used for various kinds of control, such as adjusting the intensity of LED lights."
   url="https://soldered.com/product/potentiometer-10k/"
   image="/img/adc/potent.png" 
-/>  
+/>

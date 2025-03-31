@@ -5,9 +5,9 @@ id: adc-how-it-works
 hide_title: False
 ---  
 
-ADS1015/ADS1115 are low-power, high-precision 12-bit (ADS1015) and 16-bit (ADS1115) analog-to-digital converters manufactured by [**Texas Instruments**](https://eu.mouser.com/c/semiconductors/data-converter-ics/analog-to-digital-converters-adc/?q=ads1015&m=Texas%20Instruments) with programmable gain and an integrated I2C interface, offering easy integration for accurate analog signal conversion in embedded systems.
+The ADS1015/ADS1115 are low-power, high-precision 12-bit (ADS1015) and 16-bit (ADS1115) analog-to-digital converters manufactured by [**Texas Instruments**](https://eu.mouser.com/c/semiconductors/data-converter-ics/analog-to-digital-converters-adc/?q=ads1015&m=Texas%20Instruments) with programmable gain and an integrated I2C interface, offering easy integration for accurate analog signal conversion in embedded systems.
 
-<CenteredImage src="/img/adc/onboard.png" alt="adc on board" caption="ADC 12-bit APS1015 on board" width="500px" />
+<CenteredImage src="/img/adc/onboard.png" alt="adc on board" caption="ADC 12-bit ADS1015 on board" width="500px" />
 
 ---
 
@@ -35,11 +35,11 @@ The **ADS1015** and **ADS1115** are **delta-sigma (ΔΣ) analog-to-digital conve
 
 <CenteredImage src="/img/adc/diagram.png" alt="adcdiagram" caption="ADS1015 Functional Block Diagram" width="500px" />
 
-The core of the ADCs measures a **differential input**, with the voltage difference between two input pins: **AINP** (positive input) and **AINN** (negative input). This differential signal, **VIN**, is passed through a **switched-capacitor ΔΣ modulator** that converts the analog input into a high-speed bitstream. The bitstream is then processed by a **digital filter**, which outputs a final digital code that is proportional to the input voltage. This differential architecture helps attenuate common-mode signals, making the devices ideal for accurate measurements in noisy environments.
+The core of the ADCs measures a **differential input**, with the voltage difference between two input pins: **AINP** (positive input) and **AINN** (negative input). This differential signal, **VIN**, is passed through a **switched-capacitor ΔΣ modulator** that converts the analog input into a high-speed bitstream. The bitstream is then processed by a **digital filter**, which outputs a final digital code proportional to the input voltage. This differential architecture helps attenuate common-mode signals, making the devices ideal for accurate measurements in noisy environments.
 
 The ADS1015 and ADS1115 provide two operating modes: **single-shot mode** and **continuous-conversion mode**. In **single-shot mode**, the ADC performs one conversion when triggered, stores the result in an internal register, and enters a **power-down state**. This mode is well-suited for systems requiring periodic measurements, as it conserves power between conversions. In **continuous-conversion mode**, the ADC continuously performs conversions at the programmed data rate. After each conversion is completed, the ADC immediately begins the next conversion, ensuring that data is always up-to-date.
 
-Both the ADS1015 and ADS1115 include several programmable features that enhance flexibility. The **programmable gain amplifier (PGA)** (available in the ADS1015 and ADS1115, except the ADS1113) allows for adjustment of the input signal’s gain, making it adaptable to various signal amplitudes. Additionally, the **programmable digital comparator** (available in the ADS1114 and ADS1115) enables users to set a voltage threshold. When the input signal exceeds or falls below this threshold, the comparator triggers an **alert** on the **ALERT** pin, providing an interrupt signal to the microcontroller.
+Both the ADS1015 and ADS1115 include several programmable features that enhance flexibility. The **programmable gain amplifier (PGA)** (available in the ADS1015 and ADS1115, except the ADS1113) allows adjustment of the input signal’s gain, making it adaptable to various signal amplitudes. Additionally, the **programmable digital comparator** (available in the ADS1114 and ADS1115) enables users to set a voltage threshold. When the input signal exceeds or falls below this threshold, the comparator triggers an **alert** on the **ALERT** pin, providing an interrupt signal to the microcontroller.
 
 ---
 

@@ -5,7 +5,7 @@ id: adc-arduino-3
 hide_title: False
 ---
 
-This page provides an example for using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, covering using the comparator.
+This page provides an example of using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, with a focus on using the comparator.
 
 ---
 
@@ -71,23 +71,23 @@ void loop()
 
 <FunctionDocumentation
   functionName="ADS.toVoltage()"
-  description="Converts the raw ADC value to voltage using the specified conversion factor."
+  description="Converts the raw ADC value to a voltage using the specified conversion factor."
   returnDescription="The voltage equivalent of the raw ADC value."
   parameters={[ 
     { name: "factor", type: "float", description: "The conversion factor to scale the raw ADC value to voltage." }
   ]}
 />
 
-| Function                             | Return Type | Description                                                                      |
-| ------------------------------------ | ----------- | -------------------------------------------------------------------------------- |
-| `ADS.setComparatorMode(1)`           | `void`      | Sets the comparator mode for the ADS1115. Mode `0` is traditional, `1` is window. |
-| `ADS.setComparatorPolarity(0)`       | `void`      | Sets the comparator polarity. Mode `0` is low (default), `1` is high.            |
-| `ADS.setComparatorLatch(1)`          | `void`      | Sets the comparator latch. Mode `0` is non-latch, `1` is latch.                  |
-| `ADS.setComparatorQueConvert(0)`     | `void`      | Sets the comparator to trigger after 1 conversion.                               |
-| `ADS.setComparatorThresholdLow(1.234 / f)` | `void`      | Sets the low threshold for the comparator. The value is in voltage and converted to a number. |
-| `ADS.setComparatorThresholdHigh(3.142 / f)`| `void`      | Sets the high threshold for the comparator. The value is in voltage and converted to a number. |
-| `ADS.getComparatorThresholdLow()`    | `float`     | Retrieves the low comparator threshold value in raw ADC counts.                 |
-| `ADS.getComparatorThresholdHigh()`   | `float`     | Retrieves the high comparator threshold value in raw ADC counts.                |
+| Function                                 | Return Type | Description                                                                      |
+| ---------------------------------------- | ----------- | -------------------------------------------------------------------------------- |
+| `ADS.setComparatorMode(1)`               | `void`      | Sets the comparator mode for the ADS1115. Mode `0` is traditional, `1` is window.  |
+| `ADS.setComparatorPolarity(0)`           | `void`      | Sets the comparator polarity. Mode `0` is low (default), `1` is high.             |
+| `ADS.setComparatorLatch(1)`              | `void`      | Sets the comparator latch. Mode `0` is non-latch, `1` is latch.                   |
+| `ADS.setComparatorQueConvert(0)`         | `void`      | Sets the comparator to trigger after one conversion.                           |
+| `ADS.setComparatorThresholdLow(1.234 / f)` | `void`      | Sets the low threshold for the comparator. The value is provided in volts and converted to a number. |
+| `ADS.setComparatorThresholdHigh(3.142 / f)`| `void`      | Sets the high threshold for the comparator. The value is provided in volts and converted to a number. |
+| `ADS.getComparatorThresholdLow()`        | `float`     | Retrieves the low comparator threshold value in raw ADC counts.                 |
+| `ADS.getComparatorThresholdHigh()`       | `float`     | Retrieves the high comparator threshold value in raw ADC counts.                |
 
 <CenteredImage src="/img/adc/adccomp.png" alt="Serial Monitor" caption="ADC Serial Monitor output" width="700px"/>
 
