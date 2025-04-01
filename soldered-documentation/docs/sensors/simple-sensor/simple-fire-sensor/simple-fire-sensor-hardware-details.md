@@ -37,7 +37,7 @@ Click [**here**](/img/simple-sensor/simple-fire-sensor/333047_pinout.jpg) for a 
 ## Pin details for Qwiic version
 For Qwiic version, connection is achieved with Qwiic connector.
 
-<InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, thex are used only for debugging purposes. </InfoBox>
+<InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, they are used only for debugging purposes. </InfoBox>
 
 ### Dimensions for Qwiic version
 - **Board Dimensions:** 38 × 22 mm (1.5 × 0.9 inch)  

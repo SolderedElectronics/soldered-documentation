@@ -24,7 +24,7 @@ The **simple fire sensor breakout board** is a precise sensor that detects infra
   image="/img/simple-sensor/simple-fire-sensor/333042.jpg" 
 />
 <QuickLink 
-  title="Hall effect sensor breakout with digital output " 
+  title="Simple fire sensor" 
   description="333047"
   url="https://soldered.com/product/simple-fire-sensor-board/"
   image="/img/simple-sensor/simple-fire-sensor/333047.jpg" 
