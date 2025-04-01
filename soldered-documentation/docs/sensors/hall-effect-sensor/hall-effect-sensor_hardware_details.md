@@ -40,9 +40,9 @@ Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolutio
 
 ## Pin details for Qwiic version
 
-For Qwiic version, connection is achived with Qwiic connector.
+For Qwiic version, connection is achieved with Qwiic connector.
 
-<InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they will not be used in the following examples. </InfoBox>
+<InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, they are used for debugging purposes only!. </InfoBox>
 
 ---
 
@@ -50,7 +50,7 @@ For Qwiic version, connection is achived with Qwiic connector.
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board has **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox> This board has a **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -71,7 +71,7 @@ For Qwiic version, connection is achived with Qwiic connector.
 
 ## Address selection for Qwiic version
 
-This board contains hardware address switches, see below how to change breakout board's address.
+This board contains hardware address switches, see below how to change the breakout board's address.
 
 <CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_jp.jpg" alt="Pinout" />
 

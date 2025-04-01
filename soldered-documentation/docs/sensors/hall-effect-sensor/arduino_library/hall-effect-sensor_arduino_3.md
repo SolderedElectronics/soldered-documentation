@@ -1,10 +1,10 @@
 ---
 slug: /hall-effect-sensor/arduino/regular-analog-example
-title: Measuring strenght of magnetic field with regular analog sensor (example)
+title: Measuring strength of magnetic field with regular analog sensor (example)
 id: hall-effect-sensor-arduino-3 
 hide_title: False
 ---
-his page contains some simple examples with function documentation on how to take measurements using the SI7211-B-00-IV Hall effect sensor.
+This page contains a simple example with function documentation on how to take measurements using the SI7211-B-00-IV Hall effect sensor.
 
 
 
@@ -47,7 +47,7 @@ void loop()
 
 <FunctionDocumentation
   functionName="HallEffect_Analog hall()"
-  description="Instantiates analog sensor object"
+  description="Creates analog sensor object"
   parameters={[
     { type: 'uint16_t', name: 'pin', description: "Analog pin number for data communication" }
   ]}

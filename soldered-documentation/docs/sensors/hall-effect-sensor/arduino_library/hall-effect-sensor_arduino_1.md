@@ -15,7 +15,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 />  
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
@@ -41,11 +41,11 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 ---
 
 ## Connections (Qwiic)
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection).
+Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change the breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |
 | Qwiic                    | Qwiic              |
 
-<InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they will not be used in the following examples. </InfoBox>
+<InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, they are used for debugging purposes only!. </InfoBox>
 

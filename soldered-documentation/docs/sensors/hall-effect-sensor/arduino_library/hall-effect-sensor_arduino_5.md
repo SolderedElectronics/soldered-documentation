@@ -1,12 +1,12 @@
 ---
 slug: /hall-effect-sensor/arduino/Qwiic analog example 
-title: Measuring strenght of magnetic field with Qwiic analog sensor (example)
+title: Measuring strength of magnetic field with Qwiic analog sensor (example)
 id: hall-effect-sensor-arduino-5 
 hide_title: False
 
 ---
 
-This page contains some simple examples with function documentation on how to take measurements using the SI7211-B-00-IV Hall effect sensor and Qwiic connection.
+This page contains a simple example with function documentation on how to take measurements using the SI7211-B-00-IV Hall effect sensor and the Qwiic connection.
 
 ## Qwiic Analog output example
 ```cpp
@@ -51,12 +51,13 @@ void loop()
 
 <FunctionDocumentation
   functionName="HallEffect_Analog_EasyC hall()"
-  description="Instantiates analog sensor object"
+  description="Creates analog sensor object"
+  returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="hall.begin()"
-  description="Instantiates digital sensor object"
+  description="Initializes analog sensor object"
   returnDescription="Returns true if initialization is successful, false otherwise."
   parameters={[
     { type: 'uint16_t', name: 'address', description: "Optional, used for changing breakout address, default is 0x30" }
@@ -72,7 +73,7 @@ void loop()
 
 <FunctionDocumentation
   functionName="hall.getMilliTeslas()"
-  description="calculates the value of magnetic induction from current reading"
+  description="Calculates the value of magnetic induction from current reading"
   returnDescription="Returns float value that represents magnetic induction in milli Teslas"
   
 />

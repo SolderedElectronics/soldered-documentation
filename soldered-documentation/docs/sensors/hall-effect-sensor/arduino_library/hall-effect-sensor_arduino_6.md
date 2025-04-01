@@ -13,7 +13,7 @@ This page contains some tips in case you are having problems using this product.
 <ExpandableSection title="My sensor won't initialize! (Qwiic breakout board)">
 
 #### My sensor can't detect my magnet
-Check if the magnet is working well and is actually magnetized
+Check if the magnet is working well and is actually magnetized.
 
 #### Check wiring
 Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another easyC-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
@@ -34,12 +34,11 @@ If the sensor fails to initialize on the first attempt, try calling `hall.begin(
 <ExpandableSection title="My sensor doesn't work! (Regular breakout board)">
 
 #### My sensor can't detect my magnet
-Check if the magnet is working well and is actually magnetized
+Check if the magnet is working well and is actually magnetized.
 
 #### Check wiring
-Ensure that your cables are properly connected and in good condition. Try using the same cable with another device to verify that it works. If the issue persists, swap them out for  different cables to rule out any possible damage or defects.
+Ensure that your cables are properly connected and in good condition. Try using the same cable with another device to verify that it works. If the issue persists, swap them out for different cables to rule out any possible damage or defects.
 
 </ExpandableSection>
-
 
 <InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>

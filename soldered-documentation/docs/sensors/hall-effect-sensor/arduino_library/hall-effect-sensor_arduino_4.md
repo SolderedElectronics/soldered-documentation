@@ -5,7 +5,7 @@ id: hall-effect-sensor-arduino-4
 hide_title: False
 ---
 
-This page contains some simple examples with function documentation on how to take measurements using the SI7211-B-06-IV Hall effect sensor and Qwiic connection.
+This page contains a simple example with function documentation on how to take measurements using the SI7211-B-06-IV Hall effect sensor and Qwiic connection.
 
 ## Qwiic Digital output example
 ```cpp
@@ -49,6 +49,7 @@ void loop()
 <FunctionDocumentation
   functionName="HallEffect_Digital_EasyC hall()"
   description="Creates digital sensor object"
+  returnDescription="none"
 />
 
 <FunctionDocumentation
