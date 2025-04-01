@@ -8,7 +8,7 @@ hide_title: False
 This page contains a simple example with function documentation on how to take measurements using the TCRT5000 sensor.
 
 ## Measuring with both digital and analog output
-To use this sensor, basic Arduino functions are enough. Black color absorbs the transmitted IR radioation and reflects it very poorly so the output will be LOW if there is a black object in front of the sensor, but if shinier object is placed in front of the sensor, output becomes HIGH.
+To use this sensor, basic Arduino functions are enough. Black color absorbs the transmitted IR radiation and reflects it very poorly, so the output will be LOW if there is a black object in front of the sensor; but if a shinier object is placed in front of the sensor, the output becomes HIGH.
 
 ```cpp
 #define digitalPin 14
@@ -37,4 +37,3 @@ void loop() {
 
 ### Serial Monitor output
 <CenteredImage src="/img/tcrt5000/obstacle_sensor_output.jpg" alt="Output from Serial Monitor" caption="Output from Serial Monitor" width="400px" />
- 

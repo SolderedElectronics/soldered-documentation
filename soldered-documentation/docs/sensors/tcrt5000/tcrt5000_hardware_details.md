@@ -6,7 +6,7 @@ hide_title: False
 ---
 ## Pinout
 <CenteredImage src="/img/tcrt5000/333012_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/tcrt5000/333012_pinout.jpg) for a high resolution image of the pinout.
+Click [**here**](/img/tcrt5000/333012_pinout.jpg) for a high-resolution image of the pinout.
 
 ---
 

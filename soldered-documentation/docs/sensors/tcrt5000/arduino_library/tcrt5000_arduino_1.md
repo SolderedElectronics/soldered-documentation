@@ -12,7 +12,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
@@ -24,7 +24,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ---
 
-## Conections
+## Connections
 
 Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
 

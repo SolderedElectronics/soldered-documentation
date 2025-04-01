@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## Obstacle sensor TCRT5000
 
-The **Obstacle sensor TCRT5000 breakout board** is a sensor capable of detecting presence and color (black and white). This board also includes a onboard potentiomeret to set a threshold distance which is **between 2 and 8 milimeters**. Ths sensor is often used in line following robots and automatic data logging on utility meters.
+The **Obstacle sensor TCRT5000 breakout board** is a sensor capable of detecting presence and color (black and white). This board also includes an onboard potentiometer to set a threshold distance which is **between 2 and 8 millimeters**. This sensor is often used in line-following robots and automatic data logging on utility meters.
 
 <CenteredImage src="/img/tcrt5000/333012.jpg" alt="TCRT5000 sensor board" caption="TCRT5000 sensor board"/>
 
