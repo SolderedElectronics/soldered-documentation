@@ -5,12 +5,12 @@ id: digipot-arduino-2
 hide_title: False
 ---
 
-This page contains a simple example with function documentation on how to control digital potentiometer.
+This page contains a simple example with function documentation on how to control a digital potentiometer.
 
 ---
 
 ## Initialization
-To use the digital potentiometer, first include the required library, create the digipot object and initialize it in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly.
+To use the digital potentiometer, first include the required library, create the digipot object, and initialize it in the `setup()` function. You can use the return value of `begin()` to check if everything is connected correctly.
 
 ```cpp
 #include "MCP4018-SOLDERED.h" //Include Soldered library for MCP4018 Digipot.
@@ -38,7 +38,7 @@ void setup() {
 ---
 
 ## Controlling wiper value
-To set wiper value, call `setWhiperPercent()` function. It is possible to increment the value with `increment()` function. To get its current value, call `getWiperValue()` function.
+To set the wiper value, call the `setWiperPercent()` function. You can increment the value using the `increment()` function. To get its current value, call the `getWiperValue()` function.
 
 ```cpp
 #include "MCP4018-SOLDERED.h" //Include Soldered library for MCP4018 Digipot.
@@ -104,20 +104,20 @@ void printDigipotData(int _v)
 
 ## Full example
 
-Try all of the above mentioned functions in full examples below:
+Try all of the above-mentioned functions in the full examples below:
 
 <QuickLink 
   title="digipot_serial.ino" 
-  description="Example file to show how to increment and decrement digipot value from Arduino Serial Monitor."
+  description="Example file to show how to increment and decrement digipot value from the Arduino Serial Monitor."
   url="https://github.com/SolderedElectronics/Soldered-Digipot-MCP4018-Arduino-Library/blob/main/examples/digipot_serial/digipot_serial.ino" 
 />
 <QuickLink 
   title="get_digipot.ino" 
-  description="Example file to show how to set the desired value to digipot and read thta value from it"
+  description="Example file to show how to set the desired value to the digipot and read that value from it"
   url="https://github.com/SolderedElectronics/Soldered-Digipot-MCP4018-Arduino-Library/blob/main/examples/get_digipot/get_digipot.ino" 
 />
 <QuickLink 
   title="set_digipot.ino" 
-  description="Example file to show how to set the desired value to digipot and read thta value from it"
+  description="Example file to show how to set the desired value to the digipot and read that value from it"
   url="https://github.com/SolderedElectronics/Soldered-Digipot-MCP4018-Arduino-Library/blob/main/examples/set_digipot/set_digipot.ino" 
 />

@@ -8,7 +8,7 @@ hide_title: False
 ## Pinout
 
 <CenteredImage src="/img/digipot/digipot_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/digipot/digipot_pinout.jpg) for a high resolution image of the pinout.
+Click [**here**](/img/digipot/digipot_pinout.jpg) for a high-resolution image of the pinout.
 
 ---
 
@@ -50,7 +50,7 @@ Click [**here**](/img/digipot/digipot_pinout.jpg) for a high resolution image of
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers. See below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -62,7 +62,7 @@ This board contains hardware jumpers, see below for their locations and function
 
 | Jumper  | Default State            | Function                                                                                                      |
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed) | Disconects onboard **PWR LED**                                           |
+| **JP1** | **NC** (Normally closed) | Disconnects onboard **PWR LED**                                           |
 | **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                         |
 
 ---
