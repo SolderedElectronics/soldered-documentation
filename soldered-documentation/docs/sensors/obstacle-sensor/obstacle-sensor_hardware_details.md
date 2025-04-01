@@ -13,9 +13,9 @@ Click [**here**](/img/obstacle-sensor/333004_pinout.jpg) for a high resolution i
 
 ## Pin details
 
-Connection is achived with Qwiic connector.
+Connection is achieved with the Qwiic connector.
 
-<InfoBox> This board also contains UPDI headers for preprogramming the onboard ATTINY404, they are used only for debugging purposes. </InfoBox>
+<InfoBox> This board also contains UPDI headers for preprogramming the onboard ATTINY404. They are used only for debugging purposes. </InfoBox>
 
 ---
 
@@ -23,7 +23,7 @@ Connection is achived with Qwiic connector.
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board has **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox> This board has a **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -44,7 +44,7 @@ Connection is achived with Qwiic connector.
 
 ## Address selection
 
-This board contains hardware address switches, see below how to change breakout board's address.
+This board contains hardware address switches. See below for instructions on how to change the breakout board's address.
 
 <CenteredImage src="/img/obstacle-sensor/333004_add_highlighted.jpg" alt="Address selection" />
 

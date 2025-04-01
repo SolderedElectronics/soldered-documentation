@@ -11,12 +11,12 @@ This page contains a simple example with function documentation on how to take m
 
 ## Initialization
 
-To use the obstacle sensor board, first, include the required library, create the sensr object and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
+To use the obstacle sensor board, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
 ```cpp
 // Include the library
 #include "Obstacle-Sensor_SOLDERED.h"
 
-// Create an Ostacle_Sensor object
+// Create an Obstacle_Sensor object
 Obstacle_Sensor obstacle_sensor;
 
 // Setup function, runs once
@@ -35,13 +35,14 @@ void setup(){
 ```
 <FunctionDocumentation
   functionName="obstacle_sensor.begin()"
-  description="Initializes the  Obstacle_Sensor, setting up communication over I2C and verifying its presence."
+  description="Initializes the Obstacle_Sensor, setting up communication over I2C and verifying its presence."
   returnDescription="Returns true if initialization is successful, false otherwise."
   parameters={[]}
 />
 
 ## Measuring with both digital and analog output
-To take a reading, call `analogRead()`function for analog reading and `digitalRead()` for digital reading. The output values can be interpreted in two ways. First, black objects absorb the transmitted IR radiation and reflect it poorly, so the output will be smaller for analog and LOW for digital output if a black object is in front of the sensor. However, if a shinier object is placed in front of the sensor, the output becomes larger for analog and HIGH for digital output. Second, if an object is placed further away from the sensor, the output value becomes smaller.
+
+To take a reading, call the `analogRead()` function for an analog reading and the `digitalRead()` function for a digital reading. The output values can be interpreted in two ways. First, black objects absorb the transmitted IR radiation and reflect it poorly, so the analog output will be smaller and the digital output will be LOW when a black object is in front of the sensor. However, if a shinier object is placed in front of the sensor, the analog output becomes larger and the digital output becomes HIGH. Second, if an object is placed further away from the sensor, the output value becomes smaller.
 ```cpp
 #include "Obstacle-Sensor-SOLDERED.h"
 
@@ -56,7 +57,7 @@ void setup()
     // Initialize the sensor
     obstacle_sensor.begin();
 
-    // Set treshold for onboard LED and digital read
+    // Set threshold for the onboard LED and digital reading
     obstacle_sensor.setTreshold(128);
 }
 
@@ -83,9 +84,9 @@ void loop()
   functionName="obstacle_sensor.setTreshold()"
   description="Set Threshold value for digital output."
   returnDescription="None."
-  parameters={[
-    { type: 'uint16_t', name: 'VALUE', description: "Threshold value." },
-  ]}
+  parameters={[{
+    type: 'uint16_t', name: 'value', description: "Threshold value."
+  }]}
 />
 
 ### Serial Monitor output
@@ -95,7 +96,7 @@ void loop()
 
 ## Full example
 
-Try all of the above mentioned functions in this full example which prints out the measured  value over Serial at 115200 baud:
+Try all the functions mentioned above in this complete example, which prints out the measured value over Serial at 115200 baud:
 
 <QuickLink 
   title="Analog.ino" 

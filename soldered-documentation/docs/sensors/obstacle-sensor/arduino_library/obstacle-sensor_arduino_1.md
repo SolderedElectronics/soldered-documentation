@@ -7,7 +7,7 @@ hide_title: False
 
 ## Arduino library 
 
-To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
+To install the Arduino Library, you can use the **Arduino Library Manager** or download it from the GitHub repository:
 <QuickLink  
   title="Soldered-Obstacle-Sensor-Arduino-Library"  
   description="Library for Qwiic IR Obstacle Sensor board."  
@@ -16,7 +16,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
+**First-time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
@@ -28,7 +28,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ---
 
-## Connections 
+## Connections
 
 Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
 
@@ -36,4 +36,4 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | ------------------------ | ------------------ |
 | Qwiic                    | Qwiic              |
 
-<InfoBox> This board also contains UPDI headers for preprogramming the onboard ATTINY404; they are used only for debugging purposes. </InfoBox>
+<InfoBox> This board also contains UPDI headers for preprogramming the onboard ATTINY404, which are used only for debugging purposes. </InfoBox>
