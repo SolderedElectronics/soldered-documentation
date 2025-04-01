@@ -36,23 +36,57 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Communication',
+      label: 'Sensors',
       items: [
         {
           type: 'category',
-          label: 'Logic Level Converter',
+          label: 'SHTC3 Temperature and Humidity Sensor',
           items: [
             {
               type: 'doc',
-              id: 'communication/logic-level-converter/logic-level-converter-overview',
+              id: 'sensors/shtc3/shtc3-overview',
             },
             {
               type: 'doc',
-              id: 'communication/logic-level-converter/logic-level-converter-hardware',
+              id: 'sensors/shtc3/shtc3-hardware',
             },
             {
               type: 'doc',
-              id: 'communication/logic-level-converter/logic-level-converter-how-it-works',
+              id: 'sensors/shtc3/shtc3-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Actuators',
+      items: [
+        {
+          type: 'category',
+          label: 'Basic Stepper Driver',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/stepper-motor-driver/stepper-motor-driver-overview',
             },
             {
               type: 'doc',
@@ -79,6 +113,34 @@ const sidebars = {
                   id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-3'
                 },
               ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Communication',
+      items: [
+        {
+          type: 'category',
+          label: 'Logic Level Converter',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/logic-level-converter/logic-level-converter-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/logic-level-converter/logic-level-converter-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/logic-level-converter/logic-level-converter-how-it-works',
+            },
+            {
+              type: 'doc',
+              id: 'communication/logic-level-converter/logic-level-converter-how-to-connect-it',
             },
           ],
         },
