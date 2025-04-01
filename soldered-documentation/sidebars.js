@@ -36,57 +36,23 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Sensors',
+      label: 'Communication',
       items: [
         {
           type: 'category',
-          label: 'SHTC3 Temperature and Humidity Sensor',
+          label: 'Logic Level Converter',
           items: [
             {
               type: 'doc',
-              id: 'sensors/shtc3/shtc3-overview',
+              id: 'communication/logic-level-converter/logic-level-converter-overview',
             },
             {
               type: 'doc',
-              id: 'sensors/shtc3/shtc3-hardware',
+              id: 'communication/logic-level-converter/logic-level-converter-hardware',
             },
             {
               type: 'doc',
-              id: 'sensors/shtc3/shtc3-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-3',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Actuators',
-      items: [
-        {
-          type: 'category',
-          label: 'Basic Stepper Driver',
-          items: [
-            {
-              type: 'doc',
-              id: 'actuators/stepper-motor-driver/stepper-motor-driver-overview',
+              id: 'communication/logic-level-converter/logic-level-converter-how-it-works',
             },
             {
               type: 'doc',
