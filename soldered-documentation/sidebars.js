@@ -40,6 +40,58 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Accelerometer & Gyroscope & Magnetometer LSM9DS1TR',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/lsm9ds1tr/lsm9ds1tr-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/lsm9ds1tr/lsm9ds1tr-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/lsm9ds1tr/lsm9ds1tr-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm9ds1tr/arduino_library/lsm9ds1tr-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm9ds1tr/arduino_library/lsm9ds1tr-arduino-init-config',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm9ds1tr/arduino_library/lsm9ds1tr-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm9ds1tr/arduino_library/lsm9ds1tr-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm9ds1tr/arduino_library/lsm9ds1tr-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm9ds1tr/arduino_library/lsm9ds1tr-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/lsm9ds1tr/arduino_library/lsm9ds1tr-arduino-6',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'SHTC3 Temperature and Humidity Sensor',
           items: [
             {
