@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## 8x8 LED matrix 
 
-The **8x8 LED matrix** is a system of 64 interconnected LEDs that, with help of the **MAX7219 LED driver**, light up as programmed, and all of this is located on one board and is truly easy to use. You can use them to show letters or symbols, display text ect. It comes in **green**, **red**, **purple**, **white** , **orange** or **blue** version.
+The **8x8 LED matrix** is a system of 64 interconnected LEDs that, with the help of the **MAX7219 LED driver**, light up as programmed. All of this is located on one board and is truly easy to use. You can use it to show letters or symbols, display text, etc. It comes in a **green**, **red**, **purple**, **white**, **orange**, or **blue** version.
 
 <InfoBox> It is possible to connect several modules with just a few wires and control several matrices at once! </InfoBox>
 
@@ -68,4 +68,3 @@ The **8x8 LED matrix** is a system of 64 interconnected LEDs that, with help of 
 - **Driver:** MAX7219
 - **Available in colors:** purple, red, white, blue, orange, green
 - **Dimensions:** **54 x 22 mm** (2.1 x 0.9 inch)
-

@@ -8,7 +8,7 @@ hide_title: False
 ## Pinout
 
 <CenteredImage src="/img/led-matrix/led-matrix_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/led-matrix/led-matrix_pinout.jpg) for a high resolution image of the pinout.
+Click [**here**](/img/led-matrix/led-matrix_pinout.jpg) for a high-resolution image of the pinout.
 
 ---
 
@@ -18,9 +18,9 @@ Click [**here**](/img/led-matrix/led-matrix_pinout.jpg) for a high resolution im
 | ----------- | -------- | ----------------------------------------------- |
 | **VCC**     | Power    | 5V Supply voltage. |
 | **GND**     | Ground   | Common ground for power and signals.            |
-| **DOUT**     | Data     | Serial-Data Output. |
-| **LOAD**     | Data     | Load-Data Input. |
-| **DIN**     | Data     | Serial-Data input. |
+| **DOUT**    | Data     | Serial-Data Output. |
+| **LOAD**    | Data     | Load-Data Input. |
+| **DIN**     | Data     | Serial-Data Input. |
 | **CLK**     | Data     | Serial-Clock Input. |
 
 ---
@@ -36,7 +36,7 @@ Click [**here**](/img/led-matrix/led-matrix_pinout.jpg) for a high resolution im
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="8x8-LED-matrix-Blue-MAX7219-board-hardware-design" 
@@ -76,7 +76,7 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
-Below is an overview of the available files.  
+Below is an overview of the available files:  
 #### CAD files
 
 We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
@@ -93,7 +93,6 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
 
 #### 3D files
 
@@ -119,5 +118,5 @@ The **Compliance** section includes important regulatory and safety documentatio
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Safety Instructions** – Safety guidelines and precautions in English and German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

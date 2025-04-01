@@ -5,13 +5,13 @@ id: led-matrix-arduino-2
 hide_title: False
 ---
 
-This page contains the first steps when starting with programing the LED matrix breakout board.
+This page outlines the initial steps for programming the LED matrix breakout board.
 
 ---
 
 ## Initialization
 
-To use the LED matrix board, first, include the required library, create the LED matrix object and define CLK_PIN, DATA_PIN, CS_PIN and MAX_DEVICES (it represents the number of daisychained boards, in this example, it will be 1),
+To use the LED matrix board, first include the required library, create the LED matrix object, and define CLK_PIN, DATA_PIN, CS_PIN, and MAX_DEVICES (which represents the number of daisy-chained boards; in this example, it is 1).
 
 ```cpp
 #include "Led-Matrix-SOLDERED.h"

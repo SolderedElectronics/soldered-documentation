@@ -5,19 +5,17 @@ id: led-matrix-arduino-5
 hide_title: False
 ---
 
-This page contains a simple example with function documentation on how to display simple animation.
+This page contains a simple example with function documentation on how to display a simple animation.
 
 ---
 
 ## Initialization
 
-To use the matrix, first, include the required library, create the sensor object and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
+To use the matrix, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function. You can check the return value of `begin()` to verify that everything is connected correctly:
 
 ```cpp
-
 #include "Led-Matrix-SOLDERED.h"
 #include <SPI.h>
-
 
 #define HARDWARE_TYPE Led_Matrix::PAROLA_HW
 #define MAX_DEVICES   3
@@ -60,17 +58,17 @@ void resetMatrix(void)
 
 void setup()
 {
-    mx.begin(); // Init matrix
+    mx.begin(); // Initialize matrix
     resetMatrix();
     prevTimeAnim = millis(); // Remember the last animation time
 
-    // Init serial communication if it's needed
+    // Initialize serial communication if needed
 
 }
 
 void loop(void)
 {
-    static boolean bInit = true; // Initialise the animation
+    static boolean bInit = true; // Initialize the animation
 
     // Is it time to animate?
     if (millis() - prevTimeAnim < ANIMATION_DELAY)
@@ -111,7 +109,7 @@ void loop(void)
     if (frame == 0 || frame == MAX_FRAMES - 1)
         deltaFrame = -deltaFrame;
 
-    // Check if we are completed and set initialise for next time around
+    // Check if the animation is complete and reinitialize for the next cycle
     bInit = (idx == mx.getColumnCount() + DATA_WIDTH);
 
     mx.control(Led_Matrix::UPDATE, Led_Matrix::ON);
@@ -124,8 +122,8 @@ void loop(void)
   functionName="Led_Matrix mx = Led_Matrix()"
   description="Creates matrix object"
   returnDescription="none"
-  parameters={[
-  { type: 'moduleType_t', name: 'mod', description: "Sets the mode in which module will be working" },
+  parameters={[ 
+  { type: 'moduleType_t', name: 'mod', description: "Sets the mode in which the module will be working" },
   { type: 'uint8_t', name: 'csPin', description: "Digital pin number for data communication" },
   { type: 'uint8_t', name: 'numDevices', description: "Sets the number of daisy chained modules" }
   ]}
@@ -133,78 +131,78 @@ void loop(void)
 
 <FunctionDocumentation
   functionName="mx.control()"
-  description="Set the control status of the specified parameter for all devices."
+  description="Sets the control status of the specified parameter for all devices."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
   { type: 'ControlRequest_t', name: 'mode', description: "One of the defined control requests." },
   { type: 'uint8_t', name: 'csPin', description: "Digital pin number for data communication" },
-  { type: 'int', name: 'values', description: "Parameter value or one of the control status defined." }
+  { type: 'int', name: 'values', description: "Parameter value or one of the defined control statuses." }
   ]}
 />
 
 <FunctionDocumentation
   functionName="mx.clear()"
-  description="Clears the buffer and all dislay data on the devices"
+  description="Clears the buffer and all display data on the devices"
   returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="mx.begin()"
-  description="Initialize the object."
+  description="Initializes the object."
   returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="mx.setPoint()"
-  description="Set the status of a single LED, addressed as a pixel."
-  returnDescription="Returns bool value, false if parameter errors, true otherwise."
-  parameters={[
+  description="Sets the status of a single LED, addressed as a pixel."
+  returnDescription="Returns a bool value, false if there are parameter errors, true otherwise."
+  parameters={[ 
   { type: 'uint16_t', name: 'r', description: "Row coordinate for the point [0..ROW_SIZE-1]." },
   { type: 'uint16_t', name: 'c', description: "Column coordinate for the point [0..getColumnCount()-1]" },
-  { type: 'bool', name: 'state', description: "Sets the state of pixel." }
+  { type: 'bool', name: 'state', description: "Sets the state of the pixel." }
   ]}
 />
 
 <FunctionDocumentation
   functionName="mx.getChar()"
-  description="Load a character from the font data into a user buffer."
-  returnDescription="Width (in columns) of the character, 0 if parameter error"
-  parameters={[
+  description="Loads a character from the font data into a user buffer."
+  returnDescription="Width (in columns) of the character, 0 if there is a parameter error"
+  parameters={[ 
   { type: 'uint16_t', name: 'c', description: "The character to retrieve." },
-  { type: 'uint8_t', name: 'size', description: "The size of the user buffer in unit8_t units" },
-  { type: 'uint8_t', name: '*buf*', description: "Address of the user buffer supplied" }
+  { type: 'uint8_t', name: 'size', description: "The size of the user buffer in uint8_t units" },
+  { type: 'uint8_t', name: '*buf*', description: "Address of the user-supplied buffer" }
   ]}
 />
 
 <FunctionDocumentation
   functionName="mx.transform()"
-  description="Apply a transformation to the data in contiguous subset of devices."
-  returnDescription="Returns bool value, fales if parameter errors, true otherwise"
-  parameters={[
-  { type: 'transformType_t', name: 'ttype', description: "The character to retrieve." }
+  description="Applies a transformation to the data in a contiguous subset of devices."
+  returnDescription="Returns a bool value, false if there are parameter errors, true otherwise"
+  parameters={[ 
+  { type: 'transformType_t', name: 'ttype', description: "The type of transformation to apply." }
   ]}
 />
 
 <FunctionDocumentation
   functionName="mx.setColumn()"
-  description="Set all LEDs in a specific column to a new state."
-  returnDescription="Returns bool value, fales if parameter errors, true otherwise"
-  parameters={[
-  { type: 'uint8_t', name: 'c', description: "Column which is to be set [0..getColumnCount()-1]." },
-  { type: 'uint8_value', name:'vale', description:"Each bit set to 1 will light up the corresponding LED." }
+  description="Sets all LEDs in a specific column to a new state."
+  returnDescription="Returns a bool value, false if there are parameter errors, true otherwise"
+  parameters={[ 
+  { type: 'uint8_t', name: 'c', description: "Column to be set [0..getColumnCount()-1]." },
+  { type: 'uint8_value', name: 'value', description: "Each bit set to 1 will light up the corresponding LED." }
   ]}
 />
 
 <FunctionDocumentation
   functionName="mx.getColumnCount()"
   description="Gets the maximum number of columns for devices attached to this class instance."
-  returnDescription="Returns uint16_t representing the number of columns."
+  returnDescription="Returns a uint16_t representing the number of columns."
 />
 
 ---
 
 ## Full example
-Try all of the above mentioned functions and more in this full example which detects presence of magnetic object.
+Try all of the above-mentioned functions and more in this full example, which detects the presence of a magnetic object.
 
 <QuickLink 
   title="Led_Matrix_Pacman.ino" 

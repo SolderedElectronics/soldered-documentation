@@ -5,13 +5,13 @@ id: led-matrix-arduino-4
 hide_title: False
 ---
 
-This page contains a simple example with function documantation on how to display simple text with scrolling animation.
+This page contains a simple example with function documentation on how to display simple text with scrolling animation.
 
 ---
 
 ## Initialization
 
-To use the matrix, first, include the required library, create the sensor object and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
+To use the matrix, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
 ```cpp
 #include "Led-Matrix-SOLDERED.h"
 #include <SPI.h>
@@ -109,7 +109,7 @@ void loop()
   functionName="Led_Matrix mx = Led_Matrix()"
   description="Creates matrix object"
   returnDescription="none"
-  parameters={[
+  parameters={[  
   { type: 'moduleType_t', name: 'mod', description: "Sets the mode in which module will be working" },
   { type: 'uint8_t', name: 'csPin', description: "Digital pin number for data communication" },
   { type: 'uint8_t', name: 'numDevices', description: "Sets the number of daisy chained modules" }
@@ -118,43 +118,43 @@ void loop()
 
 <FunctionDocumentation
   functionName="mx.clear()"
-  description="Clears the buffer and all dislay data on the devices"
+  description="Clears the buffer and all display data on the devices"
   returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="mx.begin()"
-  description="Initialize the object."
+  description="Initializes the object."
   returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="mx.getChar()"
-  description="Load a character from the font data into a user buffer."
+  description="Loads a character from the font data into a user buffer."
   returnDescription="Width (in columns) of the character, 0 if parameter error"
-  parameters={[
+  parameters={[  
   { type: 'uint16_t', name: 'c', description: "The character to retrieve." },
-  { type: 'uint8_t', name: 'size', description: "The size of the user buffer in unit8_t units" },
+  { type: 'uint8_t', name: 'size', description: "The size of the user buffer in uint8_t units" },
   { type: 'uint8_t', name: '*buf*', description: "Address of the user buffer supplied" }
   ]}
 />
 
 <FunctionDocumentation
   functionName="mx.transform()"
-  description="Apply a transformation to the data in contiguous subset of devices."
-  returnDescription="Returns bool value, fales if parameter errors, true otherwise"
-  parameters={[
-  { type: 'transformType_t', name: 'ttype', description: "The character to retrieve." }
+  description="Applies a transformation to the data in a contiguous subset of devices."
+  returnDescription="Returns bool value; false if parameter errors, true otherwise"
+  parameters={[  
+  { type: 'transformType_t', name: 'ttype', description: "The type of transformation to apply." }
   ]}
 />
 
 <FunctionDocumentation
   functionName="mx.setColumn()"
-  description="Set all LEDs in a specific column to a new state."
-  returnDescription="Returns bool value, fales if parameter errors, true otherwise"
-  parameters={[
+  description="Sets all LEDs in a specific column to a new state."
+  returnDescription="Returns bool value; false if parameter errors, true otherwise"
+  parameters={[  
   { type: 'uint8_t', name: 'c', description: "Column which is to be set [0..getColumnCount()-1]." },
-  { type: 'uint8_value', name:'value', description:"Each bit set to 1 will light up the corresponding LED." }
+  { type: 'uint8_value', name: 'value', description: "Each bit set to 1 will light up the corresponding LED." }
   ]}
 />
 
@@ -162,7 +162,7 @@ void loop()
 
 ## Full example
 
-Try all of the above mentioned functions and more in this full example which detects presence of magnetic object.
+Try all of the above-mentioned functions and more in this full example which detects the presence of a magnetic object.
 
 <QuickLink 
   title="Led_Matrix_Test.ino" 

@@ -17,7 +17,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
@@ -38,11 +38,10 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | IO18 | CLK |
 | IO23 | DIN |
 | VCC | VCC |
-|GND | GND |
+| GND | GND |
 
 <InfoBox>
-LOAD pin can be any digital IO  pin on controller, CLK and DIN pins must be default SPI communication pins(SCK for CLK and MOSI for DIN) if no external library such as Wire.h is used!
-
+The LOAD pin can be any digital I/O pin on the controller. The CLK and DIN pins must be the default SPI communication pins (SCK for CLK and MOSI for DIN) if no external library, such as Wire.h, is used.
 </InfoBox>
 
 
@@ -54,5 +53,4 @@ LOAD pin can be any digital IO  pin on controller, CLK and DIN pins must be defa
 | LOAD | LOAD |
 | DIN | DOUT |
 | VCC | VCC |
-|GND | GND |
-
+| GND | GND |
