@@ -11,6 +11,8 @@ hide_title: False
 
 Click [**here**](/img/logic-level-converter/llc_pinout.png) for a high resolution image of the pinout.
 
+---
+
 ## Pin Details
 
 | Pin Marking   | Pin Name           | Description                                               |
