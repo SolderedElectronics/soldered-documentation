@@ -36,16 +36,3 @@ MOSFET logic level shifting is commonly used for protocols like **I2C**, **SPI**
 <InfoBox>MOSFET logic level shifting allows for **safe communication** between devices with differing voltage levels, enabling **5V** and **3.3V** systems to interface without risk.</InfoBox>
 
 <CenteredImage src="/img/logic-level-converter/llc_piduino.png" alt="llc_piduino" caption="Bidirectional Logic Level Converter usage example" width="500px" />
-
----
-
-## How to connect it?
-
-- **Connect Power**:
-   - Connect HVCC to the high-voltage power source (e.g., 5V) and LVCC to the low-voltage source (e.g., 3.3V).
-   - Connect GND to the ground of both the high and low-voltage systems.
-- **Wiring the Signals**:
-  - Connect the HV1-HV4 pins to the high-voltage signal lines from your device (e.g., 5V microcontroller).
-  - Connect the LV1-LV4 pins to the low-voltage signal lines (e.g., 3.3V sensor). 
-- **Verify Connections**:
-   - Ensure the correct orientation and check that each signal is connected to the proper high- or low-voltage side.

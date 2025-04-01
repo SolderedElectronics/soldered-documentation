@@ -54,6 +54,10 @@ const sidebars = {
               type: 'doc',
               id: 'communication/logic-level-converter/logic-level-converter-how-it-works',
             },
+            {
+              type: 'doc',
+              id: 'communication/logic-level-converter/logic-level-converter-how-to-connect-it',
+            },
           ],
         },
       ],
