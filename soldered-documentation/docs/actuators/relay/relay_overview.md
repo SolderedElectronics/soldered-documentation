@@ -8,7 +8,8 @@ pagination_prev: null
 
 ## Relay board
 
-The **Relay board** is an electronic switch that is activated by a signal sent from microcontroller. It's used in applications where it is needed to turn on and off a device that needs large current or voltage. It works both on AC and DC. It comes in 1, 2 or 4 channel version and it also comes in versions with **I2C communication** (only 1 and 2 channel versions) which is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
+The **Relay board** is an electronic switch activated by a signal sent from a microcontroller. It is used in applications where it is necessary to turn a device on and off that requires high current or voltage. It works with both AC and DC power. It comes in 1-, 2-, or 4-channel versions and also in versions with **I2C communication** (available only for the 1- and 2-channel models), which are designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
+
 
 <CenteredImage src="/img/relay/333024_onboard.jpg" alt="1 channel relay on board regular version" caption="1 channel relay on board regular version"/>
 
@@ -56,7 +57,7 @@ The **Relay board** is an electronic switch that is activated by a signal sent f
     - **Logic voltage level:** 3.3V - 5V
     - **Operating voltage:** 5V 
     - **Max. DC voltage and current:** 30V, 10A
-    - **Max. AC vltage and current:** 250V, 10A
+    - **Max. AC voltage and current:** 250V, 10A
     - **Number of relays:**
         - **1 relay**
         - **2 relays**
@@ -71,14 +72,14 @@ The **Relay board** is an electronic switch that is activated by a signal sent f
     - **Logic voltage level:** 3.3V - 5V
     - **Operating voltage:** 5V
     - **Max. DC voltage and current:** 30V, 10A
-    - **Max. AC vltage and current:** 250V, 10A
+    - **Max. AC voltage and current:** 250V, 10A
     - **Number of relays:** 
         - **1 relay**
         - **2 relays**
     - **Dimensions:**
         - **70 x 22 mm** (2.8 x 0.9 inch)
         - **70 x 40 mm** (2.8 x 1.6 inch)
-    - **Commuication:** I2C
+    - **Communication:** I2C
     - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)
     - **Mounting:** **Four mounting holes** for secure attachment
 

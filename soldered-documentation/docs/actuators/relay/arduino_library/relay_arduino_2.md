@@ -5,7 +5,7 @@ id: relay-arduino-2
 hide_title: False
 ---
 
-This page contains a simple example with function documentation on how to control the 1 or multi channel regular relay board.
+This page contains a simple example with function documentation on how to control a one- or multi-channel regular relay board.
 
 ## Code example for 1 channel
 
@@ -34,7 +34,7 @@ void loop()
 
 <FunctionDocumentation
   functionName="CH_Relay Relay()"
-  description="Creates relay object, number of channels depends on how many parameters are given to the constructor (there can be 1,2,4 arguments)"
+  description="Creates relay object, number of channels depends on how many parameters are given to the constructor (there can be 1, 2, or 4 arguments)"
   returnDescription="NaN"
   parameters={[
     { type: 'uint16_t', name: 'pin1', description: "digital pin number for controlling relay on channel 1" },
@@ -46,17 +46,17 @@ void loop()
 
 <FunctionDocumentation
   functionName="Relay.begin()"
-  description="Initializes relay library"
+  description="Initializes the relay library"
   returnDescription="none"
 />
 
 <FunctionDocumentation
   functionName="Relay.relayControl()"
-  description="Sets specified relay in high or low state"
+  description="Sets the specified relay to a high or low state"
   returnDescription="none"
   parameters={[
     { type: 'uint16_t', name: 'channel', description: "Channel selection" },
-    { type: 'uint16_t', name: 'mode', description: "Set relay in HIGH (on) or LOW (off) mode" }
+    { type: 'uint16_t', name: 'mode', description: "Sets the relay to HIGH (on) or LOW (off) mode" }
   ]}
 />
 

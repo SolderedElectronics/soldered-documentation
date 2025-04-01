@@ -24,7 +24,7 @@ Click [**here**](/img/relay/333024_pinout.jpg) for a high resolution image of th
 | ----------- | -------- | ----------------------------------------------- |
 | **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
 | **GND**     | Ground   | Common ground for power and signals.            |
-| **IN**     | Data     | Data line for digital communication |
+| **IN**      | Data     | Data line for digital communication             |
 
 <InfoBox>The IN pins can work at **3V3** or **5V** logic</InfoBox>
 
@@ -34,7 +34,7 @@ Click [**here**](/img/relay/333024_pinout.jpg) for a high resolution image of th
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board has **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox> This board has a **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -107,7 +107,7 @@ This board contains hardware jumpers, see below **example for 2 channel regular 
 
 <InfoBox>First n (where n represents the number of channels) jumpers always represent output LEDs for every channel. Jumper with the biggest number always represents power indicator LED for the entire circuit board.</InfoBox>
 
-<InfoBox>Jumpers on regular and Qwiic version work in the same way!</InfoBox>
+<InfoBox>Jumpers on both the regular and Qwiic version work in the same way!</InfoBox>
 
 ---
 

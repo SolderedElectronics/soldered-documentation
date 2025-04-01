@@ -36,15 +36,16 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | 3V3 or 5V | VCC |
 | GND | GND |
 
-<InfoBox> Digital version can use any **digital** input pin, Check Pinout drawing for your specific board </InfoBox>
+<InfoBox> Digital version can use any **digital** input pin, Check pinout drawing for your specific board </InfoBox>
 
 ---
 
 ## Connections for Qwiic version
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit boards address, check the [**Address selection**](/documentation/relay/hardware#address-selection-for-qwiic-version).
+Below is an example **Qwiic** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change the circuit board's address, check the [**Address selection**](/documentation/relay/hardware#address-selection-for-qwiic-version).
+
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |
 | Qwiic                    | Qwiic              |
 
-<InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they will not be used in the following examples. </InfoBox>
+<InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, they are used for debugging purposes only! </InfoBox>
