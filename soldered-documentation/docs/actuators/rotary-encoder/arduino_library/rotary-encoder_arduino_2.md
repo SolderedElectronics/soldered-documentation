@@ -5,12 +5,12 @@ id: rotary-encoder-arduino-2
 hide_title: False
 ---
 
-This page contains some simple examples with function documentation on how to take readings unsing the rotary encoder.
+This page contains some simple examples with function documentation on how to take readings using the rotary encoder.
 
 ---
 
 ## Initialization
-To use the rotary encoder, fist include the required library, create the sensor object and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
+To use the rotary encoder, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
 ```cpp
 #include "Rotary-encoder-easyC-SOLDERED.h"
 
@@ -49,7 +49,7 @@ void setup()
 
 ## Detecting rotation
 
-To get a reading, call `getState()`. Function returns the current state of the rotary encoder. It mst be in the loop() and run constanty to get proper readings.
+To get a reading, call `getState()`. The function returns the current state of the rotary encoder. It must be in the loop() and run constantly to get proper readings.
 ```cpp
 int state = rotary.getState();
 
@@ -62,8 +62,8 @@ if (state != ROTARY_IDLE)
         // Print the message and internal counter variable
         Serial.print("Clockwise: ");
 
-        // getCount function returns a counter variable. Counter add 1 if the encoder is rotated clockwise or
-        // subtract 1 if the encoder is rotated counterclockwise.
+        // getCount function returns a counter variable. Counter adds 1 if the encoder is rotated clockwise or
+        // subtracts 1 if the encoder is rotated counterclockwise.
         Serial.println(rotary.getCount());
     }
 
@@ -81,7 +81,7 @@ if (state != ROTARY_IDLE)
 
 <FunctionDocumentation
   functionName="rotary.getState()"
-  description="Returns the curent state of the rotary encoder"
+  description="Returns the current state of the rotary encoder"
   returnDescription="Returns true if initialization is successful, false otherwise."
 
 />
@@ -92,7 +92,7 @@ if (state != ROTARY_IDLE)
 ---
 
 ## Detecting button press
-the rothary encoder contains an addintional button, to use it, press the shaft.
+The rotary encoder contains an additional button. To use it, press the shaft.
 
 ```cpp
 //...
@@ -109,7 +109,7 @@ the rothary encoder contains an addintional button, to use it, press the shaft.
 ```
 <FunctionDocumentation
   functionName="rotary.resetCounter()"
-  description="resets the internal counter"
+  description="Resets the internal counter"
   returnDescription="none"
 
 />
@@ -122,7 +122,7 @@ the rothary encoder contains an addintional button, to use it, press the shaft.
 
 ## Full example
 
-Try all of the above mentioned functions in this full example.
+Try all of the functions mentioned above in this full example.
 
 <QuickLink 
   title="RotaryCounter.ino" 

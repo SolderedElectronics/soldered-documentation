@@ -5,25 +5,25 @@ id: rotary-encoder-hardware
 hide_title: False
 ---
 
-## Pinout
+# Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<ErrorBox>The pinout image for this board has not been generated yet. We're working on it!</ErrorBox>
 
 ---
 
 ## Pin details
 
-Connection is achived with Qwiic connector.
+The connection is achieved using a Qwiic connector.
 
-<InfoBox> Qwiic versions also contain UPDI headers for onboard ATTINY404 programing, they are not used for encoder communication! </InfoBox>
+<InfoBox>This board also contains UPDI headers for preprogramming the onboard ATTINY404 MCU. They are used for debugging purposes only!</InfoBox>
 
 ---
 
-## Qwiic (formerly easyC)  
+## Qwiic (formerly easyC)
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board is **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox>This board is **Qwiic-compatible**! Simply plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -35,16 +35,16 @@ Connection is achived with Qwiic connector.
 
 ## Dimensions
 
-- **Board Dimensions:** 38 × 38 mm (1.5 × 1.5 inch)  
+- **Board Dimensions:** 38 × 38 mm (1.5 × 1.5 inches)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+- Soldered boards are LEGO compatible! 🧱
 
 ---
 
 ## Address selection
 
-This board contains hardware address switches, see below how to change breakout board's address
+This board contains hardware address switches. See below for instructions on how to change the breakout board's address.
 
 <CenteredImage src="/img/rotary-encoder/333188_add_highlighted.jpg" alt="Address selection" />
 
@@ -57,8 +57,7 @@ This board contains hardware address switches, see below how to change breakout 
 | 0x34 | 1 | 0 | 0 |
 | 0x35 | 1 | 0 | 1 |
 | 0x36 | 1 | 1 | 0 |
-| 0x37 | 1 | 1 | 1 |                  
-
+| 0x37 | 1 | 1 | 1 |
 ---
 
 ## Hardware repository

@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## Rotary encoder
 
-The **Rotary encoder board**, also calles a shaft encoder, is an electro-mechanical device that converts the angular position or motion of a shaft to analog or digital output signals. This product is a great option for projects that implement linear model to change data value,such as volume control knobs. It features **I2C communication** with a hardware-defined address of **0x70** and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
+The **Rotary encoder board**, also called a shaft encoder, is an electro-mechanical device that converts the angular position or motion of a shaft to analog or digital output signals. This product is a great option for projects that implement a linear model to change data values, such as volume control knobs. It features **I2C communication** with a hardware-defined address of **0x70** and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.
 
 <CenteredImage src="/img/rotary-encoder/333188.jpg" alt="Rotary encoder board with easyC" caption="Rotary encoder board with easyC" />
 
