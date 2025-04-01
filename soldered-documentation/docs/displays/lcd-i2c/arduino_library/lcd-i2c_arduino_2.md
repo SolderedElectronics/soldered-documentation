@@ -78,6 +78,8 @@ void loop()
   ]}
 />
 
+<CenteredImage src="/img/lcd-i2c/hello_world.png" alt="tca schematic" caption="LCD Preview" width="700px" />
+
 <QuickLink 
   title="Hello_World.ino" 
   description="Example file for a Hello World printout using the LCD I2C display"

@@ -11,6 +11,8 @@ hide_title: False
 
 Click [**here**](\img\lcd-i2c\lcd-i2c_pinout.png) for a high-resolution image of the pinout.
 
+---
+
 ## Pin Details
 
 | Pin Marking | Pin Name         | Description                          |
@@ -76,7 +78,9 @@ This board contains hardware jumpers; see below for their locations and function
 
 ## Address Details
 
-Three hardware pins (A0, A1, and A2) are used to program and vary the fixed I2C **follower address** and allow up to eight devices to share the same I2C bus or SMBus. The address can be shifted to select a unique address from **0x20** to **0x27**.
+<CenteredImage src="/img/lcd-i2c/addressjumpers.png" alt="follower address" width="500px" />
+
+Three hardware jumpers (A0, A1, and A2) are used to program and vary the fixed I2C **follower address** and allow up to eight devices to share the same I2C bus or SMBus. The address can be shifted to select a unique address from **0x20** to **0x27**.
 
 <CenteredImage src="/img/lcd-i2c/lcd-i2c_address_details.png" alt="follower address" width="500px" />
 

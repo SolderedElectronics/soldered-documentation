@@ -45,8 +45,6 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 <InfoBox> If you prefer, you can use I2C pins to manually connect. Since this board is an I2C LCD driver, most of the pins are not needed for I2C communication. </InfoBox>
 
-## The Key Pins to Connect
-
 | **Dasduino CONNECTPLUS** | **I2C LCD Driver Board** |
 | ------------------------ | ------------------------ |
 | IO21 (Default SDA pin)   | SDA                      |
@@ -56,6 +54,8 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 ## What About the Other Pins?
 Most of the other pins **(D0-D7, E, R/W, RS, VO)** are used for parallel communication with an LCD. However, since this board is an **I2C interface**, these extra pins **don't require** connecting with Dasduino.
+
+<CenteredImage src="/img/lcd-i2c/whatabouttheotherpins.png" alt="contrast control" caption="LCD I2C adapter on the LCD display" width="500px"/>
 
 --- 
 

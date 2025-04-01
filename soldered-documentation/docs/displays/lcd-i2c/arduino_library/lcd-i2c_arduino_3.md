@@ -66,6 +66,8 @@ void loop()
   ]}
 />
 
+<CenteredImage src="/img/lcd-i2c/custom_chars.png" alt="tca schematic" caption="LCD Preview" width="700px" />
+
 <QuickLink 
   title="Custom_Chars.ino" 
   description="Example file for displaying custom characters using the LCD I2C display"

@@ -226,6 +226,8 @@ void loop()
 }
 ```
 
+<CenteredImage src="/img/lcd-i2c/advancedexamps.gif" alt="tca schematic" caption="LCD Preview" width="700px" />
+
 <QuickLink 
   title="Functions.ino" 
   description="Example file for using some functions with the LCD I2C display"
