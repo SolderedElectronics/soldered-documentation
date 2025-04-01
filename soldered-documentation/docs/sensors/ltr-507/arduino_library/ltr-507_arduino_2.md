@@ -41,7 +41,7 @@ void setup()
 
 ---
 
-## Different Settings
+## Other Settings
 
 ### Turning the sensor on and off
 

@@ -25,7 +25,7 @@ For an in-depth look at the technical specifications, refer to the official LTR-
 
 ## How the Sensor Works
 
-The LTR-507 is a highly efficient **ambient light** and **proximity sensor** designed for **low power consumption** and **precise measurements** in a compact form factor. It integrates a **photodiode**, **analog-to-digital converter (ADC)**, and a **digital output interface**, making it ideal for applications in energy-efficient systems, smart lighting, and proximity sensing.
+The LTR-507 is a highly efficient **ambient light** and **proximity sensor** designed for **low power consumption** and **precise measurements** in a compact form factor. It integrates a **photodiode**, an **analog-to-digital converter (ADC)**, and a **digital output interface**, making it ideal for applications in energy-efficient systems, smart lighting, and proximity sensing.
 
 - **Ambient Light Sensing** – The LTR-507 features a **photodiode** that measures the **intensity of ambient light**. The sensor then converts this **analog signal** into a **digital output** using its onboard **ADC**, delivering precise lux measurements ranging from 0 to 65,535 lux. This makes the sensor perfect for applications requiring **dynamic light adjustments** based on environmental lighting conditions.
   
@@ -38,5 +38,7 @@ The LTR-507 is a highly efficient **ambient light** and **proximity sensor** des
 ## I2C Communication
 
 The LTR-507ALS-01 sensor utilizes **I2C** (Inter-Integrated Circuit) communication to transmit data between the sensor and a microcontroller. I2C operates with two main lines: **SDA** for **data transfer** and **SCL** for **clock synchronization**.
+
+<InfoBox>The I2C address can be changed! [**Address selection**](/ltr-507/hardware#address-selection)</InfoBox>
 
 As a follower device, the LTR-507 responds to commands sent from the leader device. It has a configurable I2C address, allowing for easy communication. The leader device can request **ambient light** and **proximity data**, enabling the sensor to provide measurements of **lux levels** and the **distance to nearby objects**.

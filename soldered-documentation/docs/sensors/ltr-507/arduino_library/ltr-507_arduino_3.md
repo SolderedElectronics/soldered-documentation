@@ -48,7 +48,11 @@ void loop()
 
 <InfoBox> The higher the lux value, the brighter the environment. A lower lux value means a darker setting. This can be useful for automatic brightness adjustment, environment monitoring, and smart lighting applications. </InfoBox>
 
-<CenteredImage src="/img/ltr-507/serialmonitor_light.png" alt="Serial Monitor" caption="LCR-507 Light Sensor Serial Monitor output"/>
+<CenteredImage src="/img/ltr-507/light_noo_hand.png" alt="Serial Monitor" caption="Sensor with a connected IR LED in open air" width="700px"/>
+<CenteredImage src="/img/ltr-507/serial_light_no_hand.png" alt="Serial Monitor" caption="Serial Monitor output" width="700px"/>
+
+<CenteredImage src="/img/ltr-507/light_with_hand.png" alt="Serial Monitor" caption="Sensor covered by a hand" width="700px"/>
+<CenteredImage src="/img/ltr-507/serial_light_with_hand.png" alt="Serial Monitor" caption="LTR-507 Light Sensor Serial Monitor output" width="700px"/>
 
 <QuickLink title="readLight.ino" description="Example file for reading the light sensor value using the LTR-507" url="https://github.com/SolderedElectronics/Soldered-Digital-Light-Sensor-Arduino-Library/blob/main/examples/readLight/readLight.ino" />
 
@@ -57,6 +61,8 @@ void loop()
 ## Reading Proximity
 
 The LTR-507 measures the **infrared reflection** from nearby objects to determine their **proximity**. This is useful for **gesture detection**, **object detection**, and **automatic triggering systems**.
+
+<WarningBox>**An IR LED must be connected!**</WarningBox>
 
 ```cpp
 // Include the library
@@ -83,8 +89,10 @@ void loop()
 
 <FunctionDocumentation functionName="light_sensor.getProximity()" description="Reads the proximity value based on infrared reflection from nearby objects." returnDescription="A 16-bit integer." parameters={[]} />
 
-<InfoBox> The higher the proximity value, the closer the object is to the sensor. A lower value means the object is farther away or absent.</InfoBox>
+<CenteredImage src="/img/ltr-507/proximity_no_hand.png" alt="Serial Monitor" caption="Sensor with a connected IR LED in open air" width="700px"/>
+<CenteredImage src="/img/ltr-507/serial_distance_to_camera.png" alt="Serial Monitor" caption="Serial Monitor output" width="700px"/>
 
-<CenteredImage src="/img/ltr-507/serialmonitor_proximity.png" alt="Serial Monitor" caption="LCR-507 Proximity Sensor Serial Monitor output"/>
+<CenteredImage src="/img/ltr-507/proximity_with_hand.png" alt="Serial Monitor" caption="Sensor covered by a hand" width="700px"/>
+<CenteredImage src="/img/ltr-507/serial_distance_to_hand.png" alt="Serial Monitor" caption="LTR-507 Light Sensor Serial Monitor output" width="700px"/>
 
 <QuickLink title="readProximity.ino" description="Example file for reading the proximity sensor value using the LTR-507" url="https://github.com/SolderedElectronics/Soldered-Digital-Light-Sensor-Arduino-Library/blob/main/examples/readProximity/readProximity.ino" />

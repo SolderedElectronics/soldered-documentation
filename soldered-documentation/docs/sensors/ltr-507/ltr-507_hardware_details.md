@@ -11,6 +11,8 @@ hide_title: False
 
 Click [**here**](/img/ltr-507/pinout.jpg) for a high-resolution image of the pinout.
 
+---
+
 ## Pin details
 
 | Pin Marking | Pin Name | Description                                     |
@@ -20,7 +22,7 @@ Click [**here**](/img/ltr-507/pinout.jpg) for a high-resolution image of the pin
 | **SDA**     | Data     | I2C data line for communication.                |
 | **SCL**     | Clock    | I2C clock line for communication.               |
 | **VLED**    | Power    | Current supply for the proximity LED.           |
-| **INT**     | Control  | Interrupt signal (from LTR-507).                 |
+| **INT**     | Control  | Interrupt signal (from LTR-507).                |
 
 <WarningBox>**IMPORTANT: An IR LED must be connected for the proximity sensor to function!**</WarningBox>
 
@@ -32,7 +34,7 @@ Click [**here**](/img/ltr-507/pinout.jpg) for a high-resolution image of the pin
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -61,7 +63,7 @@ The LTR-507ALS-01 sensor is designed for low power consumption, making it suitab
 - **Board Dimensions:** 38 × 22 mm (1.5 × 0.9 inch)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+- Soldered boards are LEGO compatible! 🧱
 
 ---
 
@@ -80,13 +82,29 @@ This board contains hardware jumpers. See below for their locations and function
   jumpers={true}
 />
 
-| Jumper  | Default State            | Function                                                                                                                                                                      |
-| ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                           |
-| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                         |
-| **JP3** | **NC** (Normally closed) | Address selection (Default I2C address **0x3A**).                                                                                                                             |
-| **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
-| **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
+| Jumper  | Default State            | Function                                                                                                                                                                       |
+| ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **JP1** | **NC** (Normally closed) | Connects the **SDA/SCL pull-up resistors to 5V** for I2C communication.                                                                                                        |
+| **JP2** | **NC** (Normally closed) | Connects the **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                                                                                      |
+| **JP3** | **NC** (Normally closed) | Address selection (default I2C address **0x3A**).                                                                                                                             |
+| **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, which steps it down to **3.3V for the IC**.                                                                         |
+| **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure that JP4 is disconnected if JP5 is connected.** |
+
+---
+
+## Address Selection
+
+The LTR-507 sensor has a configurable **7-bit I2C address**, determined by the state of the **SEL pin**. Depending on how the pin is connected, the sensor will respond to one of three possible addresses:
+
+| **SEL Pin State** | **I2C Address** |
+| ----------------- | --------------- |
+| **GND (0)**       | `0x23`          |
+| **VCC (1)**       | `0x26`          |
+| **Floating**      | `0x3A`          |
+
+If your **I2C scanner detects address `0x3A`**, this means the **SEL pin is floating** (not connected to either GND or VCC).
+
+<InfoBox>To change the address, connect **SEL to GND or VCC** as needed via the **JP3**.</InfoBox>
 
 ---
 
@@ -145,5 +163,5 @@ The **Compliance** section includes important regulatory and safety documentatio
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
+- **Safety Instructions** – Safety guidelines and precautions in both English and German.
 - **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
