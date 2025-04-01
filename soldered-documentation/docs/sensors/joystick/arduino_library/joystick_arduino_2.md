@@ -5,12 +5,12 @@ id: joystick-arduino-2
 hide_title: False
 ---
 
-This page contains some basic examples with function documentation on how to use Joystick module.
+This page contains some basic examples with function documentation on how to use the Joystick module.
 
 --
 
 ## Moving X and Y axis
-To read values of the potentiometers, call `analogRead()` function.
+To read the values of the potentiometers, call the `analogRead()` function.
 ```cpp
 #define X_PIN 13
 #define Y_PIN 14
@@ -35,8 +35,8 @@ void loop(){
 <FunctionDocumentation
   functionName="analogRead()"
   description="Get ADC value for specified pin"
-  returnDescription="Returns integer value that is the result of analog to digital conversion."
-  parameters={[
+  returnDescription="Returns an integer value that is the result of the analog-to-digital conversion."
+  parameters={[ 
     { type: 'uint8_t', name: 'pin', description: "Pin used for ADC." },
   ]}
 />
@@ -46,7 +46,7 @@ void loop(){
 ---
 
 ## Detecting button press
-To read value from the button, call `digitalRead()` function.
+To read the value from the button, call the `digitalRead()` function.
 ```cpp
 #define SW 15
 int swValue=0;
@@ -72,7 +72,7 @@ void loop(){
 ---
 
 ## Full example
-Try all of the above mentioned functions in this full example which prints out the  x,y position and button state:
+Try all of the above-mentioned functions in this full example, which prints out the x and y positions and the button state:
 
 ```cpp
 #define X_PIN 13

@@ -7,7 +7,7 @@ hide_title: False
 
 ## Pinout
 <CenteredImage src="/img/joystick/333089_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/joystick/333089_pinout.jpg) for a high resolution image of the pinout.
+Click [**here**](/img/joystick/333089_pinout.jpg) for a high-resolution image of the pinout.
 
 ---
 
@@ -18,17 +18,17 @@ Click [**here**](/img/joystick/333089_pinout.jpg) for a high resolution image of
 | **GND** 	| Ground 	| Common ground for power and signals 	|
 | **VCC** 	| Power 	| Supply voltage 	|
 | **POSX** 	| Data 	| Value of the X component 	|
-| **POSY** 	| Data 	| Value of the y component 	|
+| **POSY** 	| Data 	| Value of the Y component 	|
 | **SW** 	| Data 	| Value of the onboard button 	|
 
 ---
 
 ## Dimensions 
 
-- **Board Dimensions:** 38 × 38 mm (1.5 × 1.5 inch)  
+- **Board Dimensions:** 38 × 38 mm (1.5 × 1.5 inches)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+- Soldered boards are LEGO compatible! 🧱
 
 ---
 
