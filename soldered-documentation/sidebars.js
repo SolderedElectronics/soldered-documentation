@@ -208,6 +208,56 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Displays',
+      items: [
+        {
+          type: 'category',
+          label: 'LCD I2C Displays',
+          items: [
+            {
+              type: 'doc',
+              id: 'displays/lcd-i2c/lcd-i2c-overview',
+            },
+            {
+              type: 'doc',
+              id: 'displays/lcd-i2c/lcd-i2c-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'displays/lcd-i2c/lcd-i2c-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'displays/lcd-i2c/arduino_library/lcd-i2c-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/lcd-i2c/arduino_library/lcd-i2c-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/lcd-i2c/arduino_library/lcd-i2c-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/lcd-i2c/arduino_library/lcd-i2c-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/lcd-i2c/arduino_library/lcd-i2c-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
+      ]
+    },
+    {
+      type: 'category',
       label: 'Communication',
       items: [
         {
