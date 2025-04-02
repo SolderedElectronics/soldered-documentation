@@ -30,11 +30,11 @@ The **FS8205A** is a dual N-channel MOSFET commonly used in battery protection c
 
 <CenteredImage src="/img/battery-protection/mosfet.png" alt="bp pinout diagram" caption="FS8205A MOSFET on the Battery Protection Board" width="600px"/>
 
-The FS8205A has a **low on-resistance** of 25mΩ (max) at V_GS = 4.5V, ensuring minimal power dissipation during operation. It also has a **drain-source voltage (V_DSS)** rating of 20V, making it suitable for typical lithium battery voltage levels. With a **continuous drain current (I_D)** of 6A, it provides sufficient current handling for most battery protection applications. The MOSFET is packaged in an **SOT-23-6**, a compact, space-efficient surface-mount package.
+The FS8205A has a **low on-resistance** of 25mΩ (max) at V_GS = 4.5V, ensuring minimal power dissipation during operation. It also has a **drain-source voltage** rating of 20V, making it suitable for typical lithium battery voltage levels. With a **continuous drain current** of 6A, it provides sufficient current handling for most battery protection applications. The MOSFET is packaged in an **SOT-23-6**, a compact, space-efficient surface-mount package.
 
 In battery protection systems, the FS8205A is used in both the charge and discharge paths. It ensures safe operation by preventing overcurrent and short-circuit conditions, thereby protecting the battery and associated circuits.
 
-The FS8205A operates within a **junction temperature range** of -55°C to 150°C, making it suitable for a wide range of operating conditions. Its **gate threshold voltage (V_GS(th))** is around 1V, which allows for efficient switching with low gate drive voltages and contributes to the system’s overall energy efficiency.
+The FS8205A operates within a **junction temperature range** of -55°C to 150°C, making it suitable for a wide range of operating conditions. Its **gate threshold voltage** is around 1V, which allows for efficient switching with low gate drive voltages and contributes to the system’s overall energy efficiency.
 
 ---
 
