@@ -40,6 +40,46 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'LTR-507 Light and Proximity Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/ltr-507/ltr-507-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ltr-507/ltr-507-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ltr-507/ltr-507-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ltr-507/arduino_library/ltr-507-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ltr-507/arduino_library/ltr-507-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ltr-507/arduino_library/ltr-507-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ltr-507/arduino_library/ltr-507-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'SHTC3 Temperature and Humidity Sensor',
           items: [
             {
