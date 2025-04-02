@@ -34,7 +34,7 @@ The **simple fire sensor breakout board** is a precise sensor that detects infra
 
 ## Key Features
 - **Regular**
-    - **Operating voltage:** 3V - 5V
+    - **Operating voltage:** 3.3V - 5V
     - **Output:** analog and digital
     - **IC:** LM393 comparator
     - **Mounting:** **Two mounting holes**

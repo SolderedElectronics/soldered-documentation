@@ -35,7 +35,7 @@ Click [**here**](/img/simple-sensor/simple-fire-sensor/333047_pinout.jpg) for a 
 ---
 
 ## Pin details for Qwiic version
-For Qwiic version, connection is achieved with Qwiic connector.
+For the Qwiic version, connection is achieved using a Qwiic connector.
 
 <InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, they are used only for debugging purposes. </InfoBox>
 
