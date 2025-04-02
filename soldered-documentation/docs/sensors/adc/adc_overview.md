@@ -6,9 +6,9 @@ hide_title: False
 pagination_prev: null
 ---
 
-## Analog-to-Digital Converter
+## Analog to Digital Converter
 
-An **Analog-to-Digital Converter (ADC)** is a device that reads analog signals—similar to the `analogRead()` function in the Arduino IDE—and converts them into digital signals that can be processed by a microcontroller.
+An **Analog to Digital Converter (ADC)** is a device that reads analog signals—similar to the `analogRead()` function in the Arduino IDE—and converts them into digital signals that can be processed by a microcontroller.
 
 <CenteredImage src="/img/adc/333094.png" alt="adc" caption="ADC 12-bit ADS1015" />
 

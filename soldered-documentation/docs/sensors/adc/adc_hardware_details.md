@@ -13,14 +13,13 @@ hide_title: False
 
 ## Pin Details
 
-| Pin Marking | Pin Name | Description                                     |
-| ----------- | -------- | ----------------------------------------------- |
-| **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
-| **GND**     | Ground   | Common ground for power and signals.            |
-| **SDA**     | Data     | I2C data line for communication.                |
-| **SCL**     | Clock    | I2C clock line for communication.               |
-| **VLED**    | Power    | Supply current for IR LED.                      |
-| **A0-A3**   | Input    | Analog input channels.                          |
+| Pin Marking | Pin Name | Description                                         |
+| ----------- | -------- | --------------------------------------------------- |
+| **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported).     |
+| **GND**     | Ground   | Common ground for power and signals.                |
+| **SDA**     | Data     | I2C data line for communication.                    |
+| **SCL**     | Clock    | I2C clock line for communication.                   |
+| **A0-A3**   | Input    | Analog input channels.                              |
 | **ALERT**   | Output   | Alert pin for the programmable comparator function. |
 
 <InfoBox>The ALERT pin functions as an interrupt output for the programmable comparator, triggering when an input voltage exceeds a set threshold. This allows the microcontroller to respond to changes without continuous polling.</InfoBox>
