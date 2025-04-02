@@ -67,7 +67,8 @@ void loop()
                         returnDescription="A 32-bit signed long representing the raw reading from the load cell."
                         parameters={[]} />
 
-<CenteredImage src="/img/hx711/hx711_simpleread.png" alt="Serial Monitor" caption="HX711 Sensor Serial Monitor output"/>
+<CenteredImage src="/img/hx711/load_cell_hx711_vid.gif" alt="Serial Monitor" caption="Placing weight on the load cell" width="700px"/>
+<CenteredImage src="/img/hx711/hx711_simpleread.png" alt="Serial Monitor" caption="HX711 Sensor Serial Monitor output" width="700px"/>
 
 <QuickLink 
   title="simpleRead.ino" 

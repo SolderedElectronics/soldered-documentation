@@ -9,7 +9,7 @@ hide_title: False
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
 <QuickLink  
-  title="Load-cell amplifier HX711 board Arduino library"  
+  title="Load cell amplifier HX711 board Arduino library"  
   description="HX711 Arduino library by Soldered"  
   url="https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/main"  
 />  
@@ -42,14 +42,14 @@ If you're using the **regular version**, use these pins to manually connect:
 
 | **Dasduino CONNECT**  | **HX711 Breakout Board** |
 | --------------------- | ------------------------ |
-| VCC (3.3V)            | VCC                      |
+| VCC                   | VCC                      |
 | GND                   | GND                      |
 | IO2 (any digital pin) | DT (Data)                |
 | IO3 (any digital pin) | SCK (Clock)              |
 
 </InfoBox>
 
-## Connecting the Load-cell with the HX711
+## Connecting the Load cell with the HX711
 
 | **Load Cell Wires** | **HX711 Breakout Board** |
 | ------------------- | ------------------------ |

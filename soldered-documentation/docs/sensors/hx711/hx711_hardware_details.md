@@ -11,7 +11,9 @@ hide_title: False
 
 Click [**here**](/img/hx711/hx711_standard_pinout.png) for a high resolution image of the pinout.
 
-## HX711 Qwiic (easyC) Pinout
+---
+
+## HX711 Qwiic Pinout
 
 <CenteredImage src="/img/hx711/hx711_easyc_pinout.png" alt="hx711_easyc_pinout" caption="HX711 qwiic (easyC) pinout diagram"/>
 
@@ -34,7 +36,9 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high resolution image 
 | **DAT**     | Data                     | Serial data output for communication with a microcontroller.                                                            |
 | **SCK**     | Clock                    | Serial clock input for communication with a microcontroller.                                                            |
 
-## Pin Details Qwiic (easyC) Version
+---
+
+## Pin Details Qwiic Version
 
 | Pin Marking | Pin Name                 | Description                                                                                                             |
 | ----------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
@@ -48,7 +52,9 @@ Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high resolution image 
 | **UPDI**    | Debug Interface          | Used for debugging and programming the onboard ATTiny404 microcontroller.                                               |
 | **3V3**     | Debug Power              | 3.3V power supply for debugging purposes.                                                                               |
 
-<WarningBox>The **GND, UPDI, and 3V3 pins** are **for debugging and programming purposes only**. They are **not required** for normal operation and should only be used by advanced users.</WarningBox>
+<WarningBox>The **GND, UPDI, and 3V3 pins** are **for debugging and programming the onboard ATTINY**. They are **not required** for normal operation and should only be used by advanced users.</WarningBox>
+
+---
 
 ## Qwiic (formerly easyC)  
 
