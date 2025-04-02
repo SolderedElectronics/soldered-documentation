@@ -46,8 +46,6 @@ void setup()
 
 To control the colors of the LEDs, use functions such as `clear()` and `show()`, along with the primary function `setPixelColor()`. The `delay()` function can also be used for timing adjustments.
 
-<CenteredImage src="/img/ws2812b/one_by_one_vid.gif" alt="wow" width="700px"/>
-
 <InfoBox>The first pixel in a strand is #0, the second is #1, and so on.</InfoBox>
 
 ```cpp
