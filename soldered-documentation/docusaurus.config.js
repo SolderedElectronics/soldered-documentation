@@ -6,6 +6,8 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
+require('dotenv').config();
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -93,9 +95,7 @@ const config = {
           src: 'img/soldered_logo_white.svg',
         },
         items: [
-          /*
           { type: 'search', position: 'left' },
-          */
           {
             href: 'https://soldered.com',
             label: 'Back to Soldered.com',
@@ -104,14 +104,13 @@ const config = {
           },
         ],
       },
-      /*
-      algolia: {
-        // TODO when docs are published, request API key so it can be implemented
-        apiKey: 'YOUR_API_KEY',
-        indexName: 'YOUR_INDEX_NAME',
-        appId: 'YOUR_APP_ID',
-      },
-      */
+      algolia: process.env.ALGOLIA_APP_ID
+        ? {
+          apiKey: process.env.ALGOLIA_API_KEY,
+          indexName: process.env.ALGOLIA_INDEX_NAME,
+          appId: process.env.ALGOLIA_APP_ID,
+        }
+        : undefined,
       footer: {
         links: [
           {

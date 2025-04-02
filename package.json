@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@docusaurus/plugin-ideal-image": "^3.7.0"
+    "@docusaurus/plugin-ideal-image": "^3.7.0",
+    "dotenv": "^16.4.7"
   }
 }
