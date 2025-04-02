@@ -101,6 +101,12 @@ returnDescription="Outputs raw 64-bit RFID data to the serial monitor."
 parameters={[{name:"data", type: "uint64_t", description: "Raw RFID data to be printed"}]}
 />
 
+
+---
+<CenteredImage src="/img/rfid/qwiic_rfid.gif" alt="RFID (QWIIC)" caption="RFID (QWIIC)" />
+
+<CenteredImage src="/img/rfid/serialMonitorQWIIC.png" alt="Serial Monitor for RFID (QWIIC)" caption="Serial Monitor for RFID (QWIIC)" />
+
 ---
 
 ## Full example

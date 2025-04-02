@@ -74,6 +74,11 @@ void loop()
 <FunctionDocumentation functionName="rfid.available()" description="Checks if new RFID tag data is available in the buffer." returnDescription="Returns true if data is available, false otherwise." parameters={[]} />
 
 ---
+<CenteredImage src="/img/rfid/uart_rfid.gif" alt="RFID (UART)" caption="RFID (UART)" />
+
+<CenteredImage src="/img/rfid/serialMonitorRFID.png" alt="Serial Monitor for RFID (UART)" caption="Serial Monitor for RFID (UART)" />
+
+---
 
 ## Full example
 

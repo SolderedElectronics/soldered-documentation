@@ -9,22 +9,25 @@ This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My sensor won't initialize!">
 
-#### Check wiring
-Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another easyC-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
+### Check wiring
+Ensure that your Qwiic cable is properly connected to the **125 kHz RFID reader**. Verify that the cable is in good condition by testing it with another **I2C-compatible device**. If the cable does not work, replace it with a new one to rule out potential damage or defects.
 
-#### Check I2C pins
-If you are connecting the sensor using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Refer to your microcontroller's documentation to confirm the correct pin assignments. Test
+### Check I2C pins
+If you are connecting the RFID reader using standard I2C pins on your microcontroller, confirm that you are using the **correct pins**. Different microcontrollers may label their I2C pins differently, so consult your microcontroller's documentation for proper pin assignments.
 
-#### Scan for I2C devices
-Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller’s I2C bus.
+### Check for conflicting devices
+If multiple I2C devices are connected to the same bus, ensure there are no address conflicts. The 125 kHz RFID reader has a specific I2C address (refer to its documentation for details), so verify that no other device is using the same address.
 
-#### Check for conflicting devices
-If you have multiple I2C devices connected to the same bus, ensure that none of them have conflicting addresses. The SHTC3 uses the **fixed I2C address 0x70**, so verify that no other device is using this address.
+### Try reinitializing
+If the RFID reader fails to initialize, try resetting your microcontroller or reinitializing the device in your code. For example, call the initialization function for the RFID reader again or perform a system reboot to resolve potential initialization issues.
 
-#### Try reinitializing
-If the sensor fails to initialize on the first attempt, try calling `shtcSensor.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
+### Try swapping TX and RX pin allocations
+If the RFID reader is connected via UART, ensure that the TX and RX pins are correctly assigned. Sometimes, communication issues arise due to incorrect pin allocations. Swap the TX and RX connections (e.g., connect the reader's TX pin to the microcontroller's RX pin and vice versa) and test the setup again.
 
 </ExpandableSection>
+
+
+
 
 
 <InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
