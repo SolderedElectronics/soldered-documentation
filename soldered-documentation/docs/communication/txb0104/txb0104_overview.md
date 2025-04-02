@@ -22,6 +22,8 @@ If you need one for **I2C communication**, we offer an [**I2C TXS0104 board**](h
 
 <CenteredImage src="/img/txb0104/333017.png" alt="logic-level-converter" caption="Logic Level Converter TXB0104 Board"/>
 
+---
+
 ## Which product is this documentation for?
 
 <QuickLink 
