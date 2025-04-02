@@ -14,6 +14,8 @@ The Logic Level Converter Board provides bidirectional voltage level translation
 
 <CenteredImage src="/img/txs0104/333016.png" alt="logic-level-converter" caption="Logic Level Converter Board"/>
 
+---
+
 ## Which product is this documentation for?
 
 <QuickLink 
