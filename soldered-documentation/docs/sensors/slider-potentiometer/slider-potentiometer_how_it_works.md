@@ -15,7 +15,7 @@ When using the **Qwiic** version, you are essentially communicating with an onbo
 
 Qwiic versions of the product use the onboard ATTINY404 MCU to implement I2C communication.
 The breakout board operates with a default I2C address of **0x30** but can be changed with onboard switches.
-To change the breakout board's address, check the **Address selection**.
+To change the breakout board's address, check the **[Address selection](slider-potentiometer_hardware_details.md#addressSelection)**.
 
 **When detected**, ATTINY404 receives data from the sensor and passes it to the main MCU using the I2C data line.
 To check in detail how ATTINY404 is preprogrammed, check the **[firmware GitHub page](https://github.com/SolderedElectronics/Soldered-Slider-Potentiometer-with-easyC-Arduino-Library/blob/dev/extras/attiny_firmware/attiny_firmware.ino)**.
@@ -23,9 +23,12 @@ To check in detail how ATTINY404 is preprogrammed, check the **[firmware GitHub 
 ---
 ## How the potentiometer works
 
-The Slider Potentiometer is a passive component that adjusts resistance based on the position of its slider. It features two sets of pins (A and B) for dual analog output functionality. Each side can operate independently, providing flexibility for different configurations.
+The Slider Potentiometer is a passive component that adjusts resistance based on the position of its slider(wiper). It features two sets of pins (A and B) for dual analog output functionality. Each side can operate independently, providing flexibility for different configurations.
 
 Internally, the potentiometer acts as a variable resistor, dividing voltage across its terminals. The position of the slider determines the output voltage on the wiper pin (OUTA or OUTB), enabling precise control in your circuit.
+
+
+<CenteredImage src="/img/slider-potentiometer/Potentiometer_sheme.png" alt="Visual representation of a potentiometer" caption="Visual representation of a potentiometer" width="400px" />
 
 ---
 

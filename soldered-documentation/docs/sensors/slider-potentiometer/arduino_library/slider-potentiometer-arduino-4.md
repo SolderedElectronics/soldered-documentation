@@ -3,6 +3,7 @@ slug: /slider-potentiometer/troubleshooting
 title: Troubleshooting
 id: slider-potentiometer-arduino-4
 hide_title: False
+pagination_next: null
 ---
 
 

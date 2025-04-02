@@ -16,14 +16,14 @@ The **Slider Potentiometer Breakout** is a linear potentiometer with a resistanc
 ## Which products is this documentation for?
 
 <QuickLink 
-  title="Slider potentiometer breakout" 
+  title="Slider potentiometer" 
   description="333130"
   url="https://soldered.com/product/slider-potentiometer-breakout/"
   image="/img/slider-potentiometer/333130.jpg" 
 />
 
 <QuickLink 
-  title="Slider potentiometer breakout with easyC" 
+  title="Slider potentiometer with easyC" 
   description="333131"
   url="https://soldered.com/product/slider-potentiometer-breakout-with-easyc/"
   image="/img/slider-potentiometer/333131.jpg" 

@@ -17,11 +17,11 @@ Here's how you can set it up:
 
 ```cpp
 // Define the analog pin connected to the potentiometer
-#define SLIDER_PIN A0
+#define SLIDER_PIN 2
 
 void setup() {
 // Initialize serial communication for debugging
-Serial.begin(9600);
+Serial.begin(115200);
 }
 
 void loop() {
@@ -43,3 +43,10 @@ delay(100); // Add a short delay for stability
   returnDescription="Returns an integer representing the slider's position as a digital value."  
   parameters={[]}  
 />
+
+---
+
+<CenteredImage src="/img/slider-potentiometer/uart_slider.gif" alt="Slider potentiometer example of usage" caption="Slider potentiometer example of usage" />
+
+<CenteredImage src="/img/slider-potentiometer/result1UART.png" alt="Slider potentiometer readings 1" caption="Serial Monitor output for position 1" />
+<CenteredImage src="/img/slider-potentiometer/result2UART.png" alt="Slider potentiometer readings 2" caption="Serial Monitor output for position 2" />

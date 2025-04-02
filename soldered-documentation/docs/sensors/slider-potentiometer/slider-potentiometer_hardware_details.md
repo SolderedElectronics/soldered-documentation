@@ -42,7 +42,8 @@ For the Qwiic version, connection is achieved with the Qwiic connector.
 
 <InfoBox>Qwiic versions also contain UPDI headers for onboard ATTINY404 programming; they will not be used in the following examples.</InfoBox>
 
-## Address selection for Qwiic version
+<a id="addressSelection"></a>
+## Address selection for Qwiic version 
 
 The board contains hardware address switches. See below how to change the breakout board's address.
 

@@ -55,10 +55,12 @@ To start reading data given by moving the slider, we can follow the code given b
     delay(1000);
 ```
 
+---
 
+<CenteredImage src="/img/slider-potentiometer/qwiic_slider.gif" alt="Slider potentiometer example of usage" caption="Slider potentiometer (Qwiic) example of usage" />
 
-
-
+<CenteredImage src="/img/slider-potentiometer/result1QWIIC.png" alt="Slider potentiometer(Qwiic) readings 1" caption="Serial Monitor output for position 1" />
+<CenteredImage src="/img/slider-potentiometer/result2QWIIC.png" alt="Slider potentiometer(Qwiic) readings 2" caption="Serial Monitor output for position 2" />
 
 ---
 
