@@ -7,6 +7,8 @@ hide_title: False
 
 This page provides a complete example of using the GNSS L86-M33 sensor with an Arduino, displaying detailed information such as latitude, longitude, altitude, course, speed, and other GNSS-related data.
 
+<InfoBox>Our library includes the [**TinyGPSPlus library**](https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/tree/main/src/libs/TinyGPSPlus)</InfoBox>
+
 ---
 
 ## Full Example
@@ -14,7 +16,7 @@ This page provides a complete example of using the GNSS L86-M33 sensor with an A
 This example demonstrates how to initialize the GNSS L86-M33 sensor, retrieve GPS data, and display it in a formatted table on the Arduino Serial Monitor. The code includes information such as satellite count, HDOP (Horizontal Dilution of Precision), GPS location (latitude and longitude), fix status, date and time, altitude, speed, and the distance to a predefined location (Osijek, Croatia).
 
 ```cpp
-#include "GNSS-L86-M33-SOLDERED.h" // Include L86-L33 GNSS Library
+#include "GNSS-L86-M33-SOLDERED.h" // Include L86-M33 GNSS Library
 
 // Define pins for the GNSS module
 #define GNSS_RX 3
@@ -74,7 +76,7 @@ void loop()
     smartDelay(1000);  // Use smartDelay instead of delay to prevent data loss
 
     if (millis() > 5000 && gps.charsProcessed() < 10)
-        Serial.println(F("No GPS data received: check wiring"));
+        Serial.println(F("No GPS data received: Check wiring"));
 }
 
 // Smart delay to ensure that the GNSS module is "fed" with data
@@ -165,12 +167,38 @@ static void printStr(const char *str, int len)
 
 <FunctionDocumentation functionName="gps.begin()" description="Initializes the GNSS L86-M33 module, setting up communication over the defined serial pins and configuring the module for operation." returnDescription="Void" parameters={[]} />
 
-<FunctionDocumentation functionName="gps.distanceToOsijek()" description="Calculates the distance in meters from the current GPS location to Osijek, Croatia, using the Haversine formula for spherical distance calculation." returnDescription="float - The distance in meters to Osijek." parameters={[]} />
+<FunctionDocumentation 
+  functionName="GNSS::distanceBetween" 
+  description="Calculates the distance in meters between two geographic coordinates using the great-circle distance formula, assuming a spherical Earth with a radius of 6,372,795 meters. Rounding errors may introduce up to 0.5% deviation." 
+  returnDescription="double - The distance in meters between the two locations." 
+  parameters={[
+    { "name": "lat1", "type": "double", "description": "Latitude of the first location in decimal degrees." },
+    { "name": "long1", "type": "double", "description": "Longitude of the first location in decimal degrees." },
+    { "name": "lat2", "type": "double", "description": "Latitude of the second location in decimal degrees." },
+    { "name": "long2", "type": "double", "description": "Longitude of the second location in decimal degrees." }
+  ]} 
+/>
 
-<FunctionDocumentation functionName="gps.courseToOsijek()" description="Calculates the course (heading) in degrees from the current GPS location to Osijek. The course is returned relative to true north, indicating the direction of travel." returnDescription="float - The heading in degrees towards Osijek." parameters={[]} />
+<FunctionDocumentation 
+  functionName="GNSS::courseTo" 
+  description="Computes the initial course (bearing) in degrees from one geographic coordinate to another. The course is measured relative to true north, with 0° representing north, 90° east, 180° south, and 270° west." 
+  returnDescription="double - The initial heading in degrees from the first location to the second." 
+  parameters={[
+    { "name": "lat1", "type": "double", "description": "Latitude of the starting location in decimal degrees." },
+    { "name": "long1", "type": "double", "description": "Longitude of the starting location in decimal degrees." },
+    { "name": "lat2", "type": "double", "description": "Latitude of the destination in decimal degrees." },
+    { "name": "long2", "type": "double", "description": "Longitude of the destination in decimal degrees." }
+  ]} 
+/>
 
-<FunctionDocumentation functionName="gps.cardinalDirectionToOsijek()" description="Calculates the cardinal direction (N, NE, E, SE, S, SW, W, NW) from the current GPS location to Osijek, based on the computed course." returnDescription="String - The cardinal direction towards Osijek." parameters={[]} />
-
+<FunctionDocumentation 
+  functionName="GNSS::cardinal" 
+  description="Determines the cardinal direction (e.g., N, NE, E, etc.) corresponding to a given course in degrees. The function divides the 360-degree compass into 16 segments for more precise directional output." 
+  returnDescription="const char* - A string representing the cardinal direction closest to the given course." 
+  parameters={[
+    { "name": "course", "type": "double", "description": "The course in degrees, measured clockwise from true north." }
+  ]} 
+/>
 
 ## GNSS Function Overview
 

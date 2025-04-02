@@ -9,6 +9,8 @@ hide_title: False
 
 <ErrorBox>The pinout image for this board has not been generated yet! We're working on it!</ErrorBox>
 
+---
+
 ## Pin Details
 
 | Pin Marking | Pin Name        | Description                          |
@@ -36,6 +38,8 @@ The board also features an **IPX connector** with SMA for an **external antenna*
 <CenteredImage src="/img/gnss-gps/antenna.png" alt="antenna on board" caption="IPX Antenna connector on board" width="600px" />
 
 <CenteredImage src="/img/gnss-gps/antennaC.png" alt="antenna on board" caption="IPX Antenna connector on easyC board" width="600px" />
+
+---
 
 ## Pin Details (Qwiic version)
 
@@ -83,7 +87,7 @@ The board also features an **IPX connector** with SMA for an **external antenna*
 
 ## Jumper Details
 
-This board contains hardware jumpers; see below for their locations and functions:
+This board contains hardware jumpers. See below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -99,14 +103,14 @@ This board contains hardware jumpers; see below for their locations and function
 | ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
 | **JP2** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP1 is disconnected if JP2 is connected.** |
-| **JP3** | **NC** (Normally closed) | Controls the **PWR LED**.                                                                                                                                                     |
-| **JP4** | **NC** (Normally closed) | Controls the **PPS LED**.                                                                                                                                                     |
+| **JP3** | **NC** (Normally closed) | When closed, enables the **PWR LED**.                                                                                                                                           |
+| **JP4** | **NC** (Normally closed) | When closed, enables the **PPS LED**.                                                                                                                                           |
 
 ---
 
 ## Jumper Details (Qwiic version)
 
-This board contains hardware jumpers; see below for their locations and functions:
+This board contains hardware jumpers. See below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -116,16 +120,16 @@ This board contains hardware jumpers; see below for their locations and function
   jumpers={true}
 />
 
-| Jumper  | Default State            | Function                                                                                                                                                                      |
-| ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed) | Controls the **PWR LED**.                                                                                                                                                     |
-| **JP2** | **NC** (Normally closed) | Controls the **PPS LED**.                                                                                                                                                     |
+| Jumper  | Default State            | Function                                                                                     |
+| ------- | ------------------------ | -------------------------------------------------------------------------------------------- |
+| **JP1** | **NC** (Normally closed) | When closed, enables the **PWR LED**.                                                        |
+| **JP2** | **NC** (Normally closed) | When closed, enables the **PPS LED**.                                                        |
 
 ---
 
 ## Address selection (Qwiic version)
 
-This board contains hardware address switches; see below for how to change the breakout board's address:
+This board contains hardware address switches. See below for how to change the breakout board's address:
 
 <CenteredImage src="/img/hx711/address_selection.png" alt="Pinout" width="500px" />
 
@@ -158,7 +162,7 @@ Schematics, KiCad files, Gerber files, and more can be found in the GitHub repos
   url="https://github.com/SolderedElectronics/GNSS-GPS-L86-M33-breakout-with-easyC-hardware-design/tree/main" 
 /> 
 
-The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have by finding the version mark on the PCB.
 
 Below is an overview of the available files.
 

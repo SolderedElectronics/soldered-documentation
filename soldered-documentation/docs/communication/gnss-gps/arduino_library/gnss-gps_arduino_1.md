@@ -42,17 +42,17 @@ If you're using the **regular version**, use these pins to manually connect:
 
 | **Dasduino CONNECTPLUS** | **L86-M33 Board** |
 | ------------------------ | ----------------- |
-| VCC (3.3V)               | 5V                |
+| VCC                      | 5V                |
 | GND                      | GND               |
-| IO21 (any digital pin)   | TX                |
-| IO22 (any digital pin)   | RX                |
+| IO22 (any digital pin)   | TX                |
+| IO21 (any digital pin)   | RX                |
 
 For the **optional pins**:
 
-| **Dasduino CONNECTPLUS**  | **L86-M33 Board**  |
-| ------------------------- | ------------------ |
-| RESET                     | RST                |
-| IO18 (any digital pin)    | F-ON              |
-| IO19 (any digital pin)    | PPS               |
-| Antenna connector         | ANT-D             |
+| **Dasduino CONNECTPLUS** | **L86-M33 Board** |
+| ------------------------ | ----------------- |
+| RESET                    | RST               |
+| IO18 (any digital pin)   | F-ON              |
+| IO19 (any digital pin)   | PPS               |
+| Antenna connector        | ANT-D             |
 </InfoBox>

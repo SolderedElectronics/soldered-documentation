@@ -5,7 +5,11 @@ id: gnss-gps-arduino-2
 hide_title: False
 ---
 
-This page provides a simple example of how to initialize the GNSS L86-M33 sensor with an Arduino.
+This page provides a simple example of how to initialize and use the GNSS L86-M33 sensor with a Dasduino CONNECTPLUS.
+
+<CenteredImage src="/img/gnss-gps/simple_read_build.png" alt="Serial Monitor" width="700px"/>
+
+<WarningBox>**The antenna may take a couple of minutes to start reading proper data - this is normal.**</WarningBox>
 
 ---
 
@@ -35,6 +39,28 @@ void setup()
 // ...
 ```
 
+<InfoBox>
+
+If you're using the Qwiic (easyC) version, you don't need to define RX and TX pins, so the initialization looks like this:
+
+```cpp
+// Include the GNSS L86-M33 library
+#include "GNSS-L86-M33-SOLDERED.h"
+
+// Create the GNSS object
+GNSS gnss;
+
+void setup()
+{
+    Serial.begin(9600); // Initialize serial communication with the PC
+    gps.begin();        // Initialize the GNSS module
+}
+// ...
+```
+</InfoBox>
+
+
+
 <FunctionDocumentation functionName="gps.begin()" description="Initializes the GNSS L86-M33 module, setting up communication over the defined serial pins and configuring the module for operation." returnDescription="Void" parameters={[]} />
 
 ---
@@ -46,7 +72,7 @@ This snippet provides an example of how to retrieve and display GNSS data using 
 ```cpp
 void displayInfo()
 {
-    // Print out GPS LAT & LON. If there is no valid data, show an error message.
+    // Print out GPS latitude and longitude. If there is no valid data, show an error message.
     Serial.print(F("Location: "));
     if (gps.location.isValid())
     {
@@ -110,9 +136,6 @@ void displayInfo()
   parameters={[]}
 />
 
-## GNSS Data Retrieval
-
-
 | Function                 | Return Type | Description                                   |
 | ------------------------ | ----------- | --------------------------------------------- |
 | `gps.location.lat()`     | `double`    | Retrieves the latitude of the GNSS location.  |
@@ -147,8 +170,8 @@ void setup()
     gps.begin();         // Initialize the GNSS module
     
     // Send commands to activate advanced features
-    gps.sendCommand(alwaysLocateCmd);  // Activate AlwaysLocate™ Mode
-    gps.sendCommand(multitoneAICCmd);    // Activate Multi-tone AIC
+    gps.sendCommand(alwaysLocateCmd);   // Activate AlwaysLocate™ Mode
+    gps.sendCommand(multitoneAICCmd);     // Activate Multi-tone AIC
     gps.sendCommand(nmeaMessageFilterCmd);  // Filter NMEA messages
 }
 ```
@@ -162,7 +185,7 @@ void setup()
 Open the Serial Monitor at 9600 baud to observe the detected data.
 
 ```cpp
-// Include L86-L33 GNSS Library
+// Include L86-M33 GNSS Library
 #include "GNSS-L86-M33-SOLDERED.h"
 
 // Define pins for the GNSS module
@@ -219,7 +242,7 @@ void loop()
 // Function that displays decoded data from the GNSS library.
 void displayInfo()
 {
-    // Print out GPS latitude & longitude. If there is no valid data, show an error message.
+    // Print out GPS latitude and longitude. If there is no valid data, show an error message.
     Serial.print(F("Location: "));
     if (gps.location.isValid())
     {
