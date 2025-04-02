@@ -13,7 +13,7 @@ The USB-UART CH340 Converter Board by [**Soldered**](https://soldered.com/produc
 
 ## Datasheet
 
-For an in-depth look at technical specifications, refer to the official CH340 Datasheet:  
+For an in-depth look at the technical specifications, refer to the official CH340 Datasheet:  
 
 <QuickLink  
   title="USB to serial chip CH340 Datasheet"  
@@ -31,7 +31,7 @@ The CH340G works by converting **USB signals** into **serial communication** sig
 
 2. **Signal Conversion**: The CH340G handles the conversion between the **USB protocol** and the **UART protocol**. The chip automatically detects the **baud rate** and **flow control** settings, making it easy to set up and use.
 
-3. **Baud Rate Control**: The CH340G supports a wide range of baud rates, which ensures flexibility when connecting to various devices. The default baud rate can be adjusted using software settings or tools like the **Arduino IDE** or other terminal programs.
+3. **Baud Rate Control**: The CH340G supports a wide range of baud rates, ensuring flexibility when connecting to various devices. The default baud rate can be adjusted using software settings or tools like the **Arduino IDE** or other terminal programs.
 
 4. **Flow Control**: For more advanced serial communication, the CH340G supports hardware flow control pins like **CTS, RTS, DTR, DSR**, and **DCD**. These pins help manage the data flow, preventing data loss during communication.
 
@@ -49,7 +49,7 @@ When connected to a computer via USB, the board is powered by the USB port, and 
 
 ---
 
-## How to Connect it?
+## How to Connect It?
 
 - **Connect Power**:
    - Connect the **VCC** pin to the **5V power supply** (typically from the USB port).
@@ -62,4 +62,4 @@ When connected to a computer via USB, the board is powered by the USB port, and 
    - Ensure the **TXD** and **RXD** are properly connected for data transfer.
    - Confirm that the **GND** pin is common across both devices.
 
-<InfoBox>Make sure you have installed the necessary **CH340 drivers** if the device isn't automatically recognized, especially on older versions of **Windows**.</InfoBox>
+<InfoBox>Make sure you have installed the necessary **CH340 drivers** if the device is not automatically recognized, especially on older versions of **Windows**.</InfoBox>

@@ -9,18 +9,20 @@ hide_title: False
 
 <CenteredImage src="/img/ch340/pinout.png" alt="USB-UART CH340 converter pinout diagram" caption="USB-UART CH340 converter pinout diagram"/>
 
-Click [**here**](https://soldered.com/productdata/2022/03/USB-UART-converter.png) for a high resolution image of the pinout.
+Click [**here**](https://soldered.com/productdata/2022/03/USB-UART-converter.png) for a high-resolution image of the pinout.
+
+---
 
 ## Pin Details
 
 <WarningBox>**Mandatory pins** for basic operation are **VCC, GND, RXD** and **TXD**.</WarningBox>
 
-| Pin Marking | Pin Name      | Description                                                                          |
-| ----------- | ------------- | ------------------------------------------------------------------------------------ |
-| **VCC**     | Power Input   | Main power input (usually **5V**) for the CH340 module.                              |
-| **GND**     | Ground        | Common ground for all signals and power connections.                                 |
-| **RXD**     | Receive Data  | Serial data input (data received from the USB host or external device).              |
-| **TXD**     | Transmit Data | Serial data output (data sent to the USB host or external device).                   |
+| Pin Marking | Pin Name      | Description                                                                      |
+| ----------- | ------------- | -------------------------------------------------------------------------------- |
+| **VCC**     | Power Input   | Main power (3V3 or 5V depending on the board switch) input for the CH340 module. |
+| **GND**     | Ground        | Common ground for all signals and power connections.                             |
+| **RXD**     | Receive Data  | Serial data input (data received from the USB host or external device).          |
+| **TXD**     | Transmit Data | Serial data output (data sent to the USB host or external device).               |
 
 <InfoBox>**Optional pins** for additional features are **3V3, 5V** and **R232**.</InfoBox>
 
@@ -40,8 +42,6 @@ Click [**here**](https://soldered.com/productdata/2022/03/USB-UART-converter.png
 | **DSR**     | Data Set Ready      | Indicates that the device is ready to receive data.                   |
 | **DCD**     | Data Carrier Detect | Detects the presence of a connected device in serial communication.   |
 
-<InfoBox>The CH340 USB-UART converter is compatible with **Windows, macOS, and Linux**. Ensure that you select the correct driver for your operating system.</InfoBox>
-
 <WarningBox>Make sure you're using a **data-capable USB cable**. Some USB cables only provide power and do not support data transfer.</WarningBox>
 
 <WarningBox>Ensure that **GND** is properly connected to establish a common reference for all signals.</WarningBox>
@@ -56,9 +56,9 @@ This board contains hardware jumpers. See below for their locations and function
 
 <CenteredImage src="/img/ch340/jp1pwrled.png" alt="USB-UART CH340 converter pinout diagram" caption="JP1 on the board" width="500px"/>
 
-| Jumper  | Default State            | Function                  |
-| ------- | ------------------------ | ------------------------- |
-| **JP1** | **NC** (Normally closed) | Connects 3V3 with an LED. |
+| Jumper  | Default State            | Function                          |
+| ------- | ------------------------ | --------------------------------- |
+| **JP1** | **NC** (Normally closed) | When closed, enables the PWR LED. |
 
 ---
 
@@ -89,7 +89,7 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
   url="https://github.com/SolderedElectronics/USB-UART-CH340C-converter-board-hardware-design/tree/main" 
 /> 
 
-The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have by looking for the version mark on the PCB.
 
 Below is an overview of the available files.  
 
