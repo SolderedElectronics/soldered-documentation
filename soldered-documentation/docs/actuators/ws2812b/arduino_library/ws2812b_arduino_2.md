@@ -46,6 +46,8 @@ void setup()
 
 To control the colors of the LEDs, use functions such as `clear()` and `show()`, along with the primary function `setPixelColor()`. The `delay()` function can also be used for timing adjustments.
 
+<CenteredImage src="/img/ws2812b/one_by_one_vid.gif" alt="wow" width="700px"/>
+
 <InfoBox>The first pixel in a strand is #0, the second is #1, and so on.</InfoBox>
 
 ```cpp
@@ -93,11 +95,14 @@ void loop()
                             { "name": "b", "type": "uint8_t", "description": "Blue component of the color (0-255)." }
                         ]} />
 
+
 ---
 
 ## Creating a Rainbow Effect  
 
 To produce a smooth rainbow animation along the entire LED strip, the `rainbow()` function continuously updates pixel colors using the HSV color wheel. It cycles through different hues to create a flowing rainbow effect. The `show()` function updates the strip, while `delay()` controls the animation speed.
+
+<CenteredImage src="/img/ws2812b/rainboww_vid.gif" alt="wow" width="700px"/>
 
 <WarningBox>
 Make sure to call the `rainbow()` function with a delay parameter somewhere! Example:
@@ -158,6 +163,8 @@ void rainbow(int wait)
 ## Cylon / Knight Rider Effect
 
 A single bright LED moves back and forth, similar to the iconic scanner from *Knight Rider*.
+
+<CenteredImage src="/img/ws2812b/knight_rider.gif" alt="wow" width="700px"/>
 
 ```cpp
 void cylonEffect()

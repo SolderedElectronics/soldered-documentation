@@ -34,9 +34,11 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 | **Dasduino CONNECT**  | **Smart LED WS2812B** |
 | --------------------- | --------------------- |
-| VCC (3.3V)            | VCC                   |
+| VCC                   | VCC                   |
 | GND                   | GND                   |
 | IO2 (any digital pin) | DIN                   |
+
+<CenteredImage src="/img/ws2812b/connections.png" alt="wow" width="700px"/>
 
 <InfoBox>The DOUT pin on a WS2812B LED strip is used to pass the data signal to the next LED or another strip in a daisy-chain configuration.</InfoBox>
 
@@ -46,12 +48,12 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 Below is the wiring setup for connecting an **Arduino** with an **external 5V power supply** to a **WS2812B LED strip**.  
 
-| **Component**        | **Connection Point**                | **Notes**                                                              |
-| -------------------- | ----------------------------------- | ---------------------------------------------------------------------- |
-| **WS2812B VCC**      | 5V output of external power supply  | Ensure the power supply provides sufficient current for the LED strip. |
-| **WS2812B GND**      | GND of external power supply        | Must be connected to create a common ground.                           |
-| **WS2812B DIN**      | IO2 (or any digital pin) on Arduino | Data signal should be at 5V for proper operation.                      |
-| **Arduino 5V**       | 5V from external power supply       | Use **5V** if powering directly.                                       |
-| **Arduino GND**      | GND of external power supply        | Ensures a common reference for signal transmission.                    |
+| **Component**   | **Connection Point**                | **Notes**                                                              |
+| --------------- | ----------------------------------- | ---------------------------------------------------------------------- |
+| **WS2812B VCC** | 5V output of external power supply  | Ensure the power supply provides sufficient current for the LED strip. |
+| **WS2812B GND** | GND of external power supply        | Must be connected to create a common ground.                           |
+| **WS2812B DIN** | IO2 (or any digital pin) on Arduino | Data signal should be at 5V for proper operation.                      |
+| **Arduino 5V**  | 5V from external power supply       | Use **5V** if powering directly.                                       |
+| **Arduino GND** | GND of external power supply        | Ensures a common reference for signal transmission.                    |
 
 <InfoBox>For stability, use a **1000µF capacitor** across the power and ground of the LED strip and a **330Ω resistor** in series with the data line.</InfoBox>
