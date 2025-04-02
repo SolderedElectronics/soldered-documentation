@@ -5,11 +5,15 @@ id: adc-hardware
 hide_title: False  
 ---
 
+---
+
 ## Pinout
 
 <CenteredImage src="/img/adc/pinout.png" alt="adc pinout diagram" caption="ADC pinout diagram"/>
 
 <InfoBox>Pinouts for the 12-bit and the 16-bit ADC are the same!</InfoBox>
+
+---
 
 ## Pin Details
 
@@ -98,13 +102,15 @@ This board contains hardware jumpers; see below for their locations and function
   jumpers={true}
 />
 
-| Jumper  | Default State            | Function                      |
-| ------- | ------------------------ | ----------------------------- |
-| **JP1** | **NC** (Normally closed) | Connects PWR LED.             |
-| **JP2** | **NC** (Normally closed) | I2C address 0x48 (Default).   |
-| **JP3** | **NO** (Normally open)   | I2C address 0x39 when closed. |
-| **JP4** | **NO** (Normally open)   | I2C address 0x4A when closed. |
-| **JP5** | **NO** (Normally open)   | I2C address 0x4B when closed. |
+| Jumper  | Default State            | Function                        |
+| ------- | ------------------------ | ------------------------------- |
+| **JP1** | **NC** (Normally closed) | Connects PWR LED.               |
+| **JP2** | **NC** (Normally closed) | I2C address 0x48 (**Default**). |
+| **JP3** | **NO** (Normally open)   | I2C address 0x39 when closed.   |
+| **JP4** | **NO** (Normally open)   | I2C address 0x4A when closed.   |
+| **JP5** | **NO** (Normally open)   | I2C address 0x4B when closed.   |
+
+<WarningBox>The ADC should have only one I2C address at a time. Having multiple address jumpers closed at the same time may cause malfunction or damage.</WarningBox>
 
 ---
 

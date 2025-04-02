@@ -14,7 +14,8 @@ This page provides various examples on using the ADS1015/ADS1115 analog-to-digit
 This section initializes the ADS1015/ADS1115 sensor, setting up communication and preparing the ADC for use. It also configures the gain, which adjusts the input voltage range, ensuring optimal resolution and accuracy for the ADC readings based on the expected signal levels.
 
 <WarningBox>
-**Make sure you include the correct library and declare the correct ADC object!**
+
+Since the Arduino libraries work generally the same, let's overview examples for ADS1115 here. Make sure to include the correct library for your sensor!
 
 ```cpp
 #include "ADS1115-SOLDERED.h"
@@ -144,6 +145,7 @@ void loop()
   ]}
 />
 
+<CenteredImage src="/img/adc/potent_build.png" alt="Serial Monitor" width="700px"/>
 <CenteredImage src="/img/adc/singlesimpleanalog.png" alt="Serial Monitor" caption="ADC Serial Monitor output" width="700px"/>
 
 ---
