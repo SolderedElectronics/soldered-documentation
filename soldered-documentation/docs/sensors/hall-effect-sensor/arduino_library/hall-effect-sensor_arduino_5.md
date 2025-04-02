@@ -78,10 +78,11 @@ void loop()
   
 />
 
----
+<CenteredImage src="/img/hall-effect-sensor/qwiic_no_magnet.png" alt="Sensor when magnet is not present" caption="Sensor when magnet is not present" width="700px" />
+<CenteredImage src="/img/hall-effect-sensor/analog_serial_no_magnet.jpg" alt="Serial Monitor output" caption="Serial Monitor output" width="700px" />
+<CenteredImage src="/img/hall-effect-sensor/qwiic_magnet.png" alt="Sensor when magnet is present" caption="Sensor when magnet is present" width="700px" />
+<CenteredImage src="/img/hall-effect-sensor/analog_serial_magnet.jpg" alt="Serial Monitor output" caption="Serial Monitor output" width="700px" />
 
-## Serial Monitor output
-<CenteredImage src="/img/hall-effect-sensor/hall-effect-sensor_analog_serial_monitor.jpg" alt="SI7211-B-00-IV sensor on board" caption="output from Serial Monitor" width="400px" />
 
 ---
 
