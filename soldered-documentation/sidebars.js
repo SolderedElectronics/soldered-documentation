@@ -170,6 +170,46 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Smart LED WS2812B',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/ws2812b/ws2812b-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/ws2812b/ws2812b-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/ws2812b/ws2812b-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812b/arduino_library/ws2812b-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812b/arduino_library/ws2812b-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812b/arduino_library/ws2812b-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812b/arduino_library/ws2812b-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Basic Stepper Driver',
           items: [
             {
