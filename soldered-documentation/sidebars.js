@@ -48,7 +48,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'sensors/apds-9960/apds-9960-hardware-details',
+              id: 'sensors/apds-9960/apds-9960-hardware',
             },
             {
               type: 'doc',

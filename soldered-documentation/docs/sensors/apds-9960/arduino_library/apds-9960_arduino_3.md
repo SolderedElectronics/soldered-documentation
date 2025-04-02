@@ -5,7 +5,7 @@ id: apds-9960-arduino-3
 hide_title: False
 ---
 
-This page contains simple examples of sensor initialization and gesture detection using the APDS-9960 sensor.
+This page contains simple examples demonstrating sensor initialization and gesture detection using the APDS-9960 sensor.
 
 ---
 
@@ -18,10 +18,10 @@ void loop()
 {
     if (APDS.gestureAvailable())
     {
-        // a gesture was detected, read and print to Serial Monitor
+        // A gesture was detected; read it and print to the Serial Monitor
         int gesture = APDS.readGesture();
 
-        switch (gesture)  //Determine which gesture was captured
+        switch (gesture)  // Determine which gesture was captured
         {
         case GESTURE_UP:
             Serial.println("Detected UP gesture");
@@ -40,7 +40,7 @@ void loop()
             break;
 
         default:
-            // ignore
+            // Ignore
             break;
         }
     }
@@ -84,14 +84,14 @@ APDS_9960 APDS;
 // Setup function, runs once
 void setup()
 {
-    Serial.begin(115200); //Begin serial communication with PC
-    while (!Serial) //Wait until serial becomes active
+    Serial.begin(115200); // Begin serial communication with the PC
+    while (!Serial) // Wait until the serial becomes active
         ;
 
-    if (!APDS.begin())  //Begin communication with sensor
+    if (!APDS.begin())  // Begin communication with the sensor
     {
-        Serial.println("Error initializing APDS-9960 sensor!");
-      while(1); //Loop forever if sensor is not available
+        Serial.println("Error initializing the APDS-9960 sensor!");
+        while(1); // Loop forever if the sensor is not available
     }
 
     Serial.println("Sensor initialized.");
@@ -101,10 +101,10 @@ void loop()
 {
     if (APDS.gestureAvailable())
     {
-        // a gesture was detected, read and print to Serial Monitor
+        // A gesture was detected; read it and print to the Serial Monitor
         int gesture = APDS.readGesture();
 
-        switch (gesture)  //Determine which gesture was captured
+        switch (gesture)  // Determine which gesture was captured
         {
         case GESTURE_UP:
             Serial.println("Detected UP gesture");
@@ -123,13 +123,13 @@ void loop()
             break;
 
         default:
-            // ignore
+            // Ignore
             break;
         }
     }
 }
 ```
-
+<CenteredImage src="/img/apds-9960/gesture_vid.gif" alt="Serial Monitor" caption="Gesture Detection" width="700px"/>
 <CenteredImage src="/img/apds-9960/apds9960_gesture.png" alt="Serial Monitor" caption="Gesture Detection Serial Monitor output"/>
 
 <QuickLink 

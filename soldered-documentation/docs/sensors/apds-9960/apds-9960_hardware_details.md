@@ -1,15 +1,15 @@
----
-slug: /apds-9960/hardware 
-title: Hardware details
-id: apds-9960-hardware 
-hide_title: False
+---  
+slug: /apds-9960/hardware  
+title: Hardware details  
+id: apds-9960-hardware  
+hide_title: False  
 ---
 
 ## Pinout
 
 <CenteredImage src="/img/apds-9960/apds9960_pinout.png" alt="APDS-9960 pinout diagram" caption="APDS-9960 pinout diagram"/>
 
-Click [**here**](/img/apds-9960/apds9960_pinout.png) for a high reoslution image of the pinout.
+Click [**here**](/img/apds-9960/apds9960_pinout.png) for a high resolution image of the pinout.
 
 ---
 
@@ -24,7 +24,7 @@ Click [**here**](/img/apds-9960/apds9960_pinout.png) for a high reoslution image
 | **VLED**    | Power    | Supply current for IR LED.                      |
 | **INT**     | Control  | Interrupt signal (from APDS-9960).              |
 
-<InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
+<InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility**, so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
 
 ---
 
@@ -32,7 +32,7 @@ Click [**here**](/img/apds-9960/apds9960_pinout.png) for a high reoslution image
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
  
-<InfoBox> This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding! </InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -47,30 +47,23 @@ Click [**here**](/img/apds-9960/apds9960_pinout.png) for a high reoslution image
 - **Sleep mode:** Uses just 1.0 µA, making it ideal for **low-power applications**.
 - **Active mode:** Depends on the functions in use. Uses up to 100mA.
 
-<InfoBox> For best results, consider utilizing sleep mode during inactivity and fine-tuning the IR LED timing for your specific needs. </InfoBox>
-
+<InfoBox>For best results, consider utilizing sleep mode during inactivity and fine-tuning the IR LED timing for your specific needs.</InfoBox>
 
 ---
 
 ## Window Air Gap
 
-<InfoBox> Skip this section if using the sensor in open air. </InfoBox>
+<InfoBox>Skip this section if using the sensor in open air.</InfoBox>
 
 **Crosstalk** is the output caused by unwanted reflection of LED IR rays, even in the absence of any object. To control this interference when the sensor is used in gesture mode, we recommend fitting a rubber isolating barrier over the sensor.
 
 <CenteredImage src="/img/apds-9960/apds9960_window_gap.png" alt="APDS-9960 Barrier design" caption="APDS-9960 Barrier design" width="600px"/>
 
-The rubber consists of two cylindrical openings, one for
-the **LED** and the other for the **Photodetector**. The window
-thickness should not be more than **1mm**. When assembled the rubber barrier should form a good optical seal to
-the bottom of the window. 
+The rubber consists of two cylindrical openings, one for the **LED** and the other for the **Photodetector**. When assembled, the rubber barrier should form a good optical seal to the bottom of the window.
 
 | Air Gap | PD Opening Diameter | LED Opening Diameter |
 | ------- | ------------------- | -------------------- |
 | 1mm     | 2mm                 | 1.5mm                |
-
-
-
 
 ---
 
@@ -85,7 +78,7 @@ the bottom of the window.
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers; see below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -94,7 +87,6 @@ This board contains hardware jumpers, see below for their locations and function
     { src: '/img/apds-9960/jp3.jpg', alt: 'apds-9960jumper3', caption: 'JP3' },
     { src: '/img/apds-9960/jp4.jpg', alt: 'apds-9960jumper4', caption: 'JP4' },
     { src: '/img/apds-9960/jp5.jpeg', alt: 'apds-9960jumper5', caption: 'JP5' },
-
   ]}
   jumpers={true}
 />
@@ -107,7 +99,6 @@ This board contains hardware jumpers, see below for their locations and function
 | **JP4** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.                                                                          |
 | **JP5** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP4 is disconnected if JP5 is connected**. |
 
-
 ---
 
 ## Hardware repository
@@ -119,7 +110,6 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
   description="GitHub hardware repository for this product"
   url="https://github.com/SolderedElectronics/Color---gesture-sensor-APDS-9960-breakout-hardware-design" 
 /> 
-
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
@@ -141,7 +131,6 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
 
 #### 3D files
 
@@ -168,4 +157,4 @@ The **Compliance** section includes important regulatory and safety documentatio
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

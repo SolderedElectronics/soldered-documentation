@@ -1,13 +1,13 @@
----
-slug: /apds-9960/arduino/geting-started 
-title: Getting started
-id: apds-9960-arduino-1 
-hide_title: False
+---  
+slug: /apds-9960/arduino/geting-started  
+title: Getting started  
+id: apds-9960-arduino-1  
+hide_title: False  
 ---
 
 ## Arduino library
 
-To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
+To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:  
 <QuickLink  
   title="APDS-9960 Color and Gesture Sensor breakout Arduino library"  
   description="APDS-9960 Arduino library by Soldered"  
@@ -20,7 +20,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <QuickLink  
   title="Getting started with Arduino"  
-  description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
+  description="A comprehensive tutorial on how to set up and upload code to an Arduino board for the first time, from scratch!"  
   url="#"  
 />  
 
@@ -48,7 +48,7 @@ If you prefer, you can manually connect using I2C pins:
 | GND                          | GND                |
 | IO25 (any digital pin works) | INT                |
 
-<WarningBox>VLED pin is used for power to the IR LED if **JP3** jumper is opened.</WarningBox>
+<WarningBox>The VLED pin is used for power to the IR LED if the **JP3** jumper is open.</WarningBox>
 
 | **Dasduino CONNECTPLUS**     | **Breakout Board** |
 | ---------------------------- | ------------------ |

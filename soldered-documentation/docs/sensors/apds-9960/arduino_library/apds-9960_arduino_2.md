@@ -11,7 +11,7 @@ This page contains a simple example of initializing the APDS-9960 sensor.
 
 ## Initialization
 
-To use the APDS-9960 sensor, first include the required library, create a sensor object, and initialize it in the `setup()` function. You can use the return value of `begin()` to check if everything is connected correctly:
+To use the APDS-9960 sensor, first include the required library, create a sensor object, and initialize it in the `setup()` function. You can use the return value of `begin()` to verify that everything is connected correctly:
 
 ```cpp
 // Include the library
@@ -24,10 +24,10 @@ APDS_9960 APDS;
 void setup()
 {
     Serial.begin(115200); // Begin serial communication with the PC
-    while (!Serial) // Wait until serial becomes active
+    while (!Serial) // Wait until the serial port is active
         ;
 
-    if (!APDS.begin())  // Begin communication with the sensor
+    if (!APDS.begin())  // Start communication with the sensor
     {
         Serial.println("Error initializing APDS-9960 sensor!");
         while (1); // Loop forever if the sensor is not available

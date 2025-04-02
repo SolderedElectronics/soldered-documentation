@@ -5,7 +5,7 @@ id: apds-9960-arduino-5
 hide_title: False
 ---
 
-This page contains simple examples of initialization and color detection with the APDS-9960 sensor.
+This page contains simple examples of initialization and color detection using the APDS-9960 sensor.
 
 ---
 
@@ -13,7 +13,7 @@ This page contains simple examples of initialization and color detection with th
 
 In this code snippet, the `loop()` function continuously checks whether a color reading is available from the APDS-9960 sensor. It uses the `colorAvailable()` function to wait until the color reading is ready. If the reading is not available, the `delay(5)` function pauses briefly before checking again.
 
-Once a color reading becomes available, the `readColor()` function is called to retrieve the red, green, and blue (RGB) color intensities. These values are stored in the variables r, g, and b.
+Once a color reading becomes available, the `readColor()` function is called to retrieve the red, green, and blue (RGB) color intensities. These values are stored in the variables r, g, and b, respectively.
 
 The RGB values are then printed to the Serial Monitor to display the current color detected by the sensor. A newline is added after each set of color values for readability.
 
@@ -76,14 +76,14 @@ APDS_9960 APDS;
 // Setup function, runs once
 void setup()
 {
-    Serial.begin(115200); // Begin serial communication with PC
+    Serial.begin(115200); // Begin serial communication with the PC
     while (!Serial) // Wait until serial becomes active
         ;
 
-    if (!APDS.begin())  // Begin communication with sensor
+    if (!APDS.begin())  // Begin communication with the sensor
     {
         Serial.println("Error initializing APDS-9960 sensor!");
-        while (1); // Loop forever if sensor is not available
+        while (1); // Loop forever if the sensor is not available
     }
 
     Serial.println("Sensor initialized.");
@@ -115,7 +115,11 @@ void loop()
 }
 ```
 
-<CenteredImage src="/img/apds-9960/apds9960_color.png" alt="Serial Monitor" caption="Color Sensor Serial Monitor output"/>
+<CenteredImage src="/img/apds-9960/blue_pic.png" alt="Serial Monitor" width="700px"/>
+<CenteredImage src="/img/apds-9960/serial_color_blue.png" alt="Serial Monitor" caption="Color Sensor Serial Monitor output for a blue bag" width="700px"/>
+
+<CenteredImage src="/img/apds-9960/pink_pic.png" alt="Serial Monitor" width="700px"/>
+<CenteredImage src="/img/apds-9960/serial_color_pink.png" alt="Serial Monitor" caption="Color Sensor Serial Monitor output for a pink sticky note" width="700px"/>
 
 <QuickLink 
   title="ColorSensor.ino" 

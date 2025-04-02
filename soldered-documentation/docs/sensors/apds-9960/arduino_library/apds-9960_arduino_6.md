@@ -6,7 +6,7 @@ hide_title: False
 pagination_next: null
 ---
 
-This page contains some tips in case you are having problems using this product.
+This page contains some tips if you are experiencing problems with this product.
 
 <ExpandableSection title="My sensor won't initialize!">
 
@@ -20,7 +20,7 @@ If you are connecting the sensor using standard I2C pins on your microcontroller
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller’s I2C bus.
 
 #### Check for conflicting devices
-If you have multiple I2C devices connected to the same bus, ensure that none of them have conflicting addresses. The APDS-9960 uses the **fixed I2C address 0x39**, so verify that no other device is using this address.
+If you have multiple I2C devices connected to the same bus, ensure that none of them have conflicting addresses. The APDS-9960 uses the **fixed I2C address 0x39,** so verify that no other device is using this address.
 
 #### Try reinitializing
 If the sensor fails to initialize on the first attempt, try calling `APDS.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
@@ -32,7 +32,7 @@ If the sensor fails to initialize on the first attempt, try calling `APDS.begin(
 #### Check sensor placement
 Ensure that your APDS-9960 sensor is positioned correctly with a clear line of sight for proximity and gesture detection. Obstructions or a poor angle can interfere with the sensor's ability to detect motion or proximity.
 
-<InfoBox> If you're using glass over your sensor, make sure you [leave an adequate gap of 1mm](  /apds-9960/hardware#window-air-gap)! </InfoBox>
+<InfoBox> If you're using glass over your sensor, make sure you [leave an adequate gap of 1mm](/apds-9960/hardware#window-air-gap)! </InfoBox>
 
 #### Adjust sensitivity settings
 If the sensor is not detecting gestures or proximity accurately, try adjusting the sensitivity settings. The default settings might be too low or too high depending on your environment. Experiment with different configurations to find the optimal setting for your application.
@@ -65,7 +65,7 @@ Make sure you are performing gestures within the correct range and angle that th
 
 #### Sensor data is inaccurate or fluctuating
 Verify Power Supply  
-Inconsistent or fluctuating power supply can lead to unreliable readings. Make sure the sensor is receiving stable voltage and that your microcontroller is providing sufficient power to the sensor.
+Inconsistent or fluctuating power supply can lead to unreliable readings. Make sure the sensor is receiving a stable voltage and that your microcontroller is providing sufficient power to the sensor.
 
 #### Sensor doesn't respond after firmware update
 Revert to Previous Version  

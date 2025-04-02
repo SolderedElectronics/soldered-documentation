@@ -14,7 +14,7 @@ The **Color and Gesture sensor APDS-9960 breakout** is a compact and powerful mo
 
 ---
 
-## Which products is this documentation for?
+## Which product is this documentation for?
 
 <QuickLink 
   title="Color and Gesture sensor APDS-9960 breakout" 

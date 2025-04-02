@@ -98,7 +98,13 @@ void loop()
 }
 ```
 
-<CenteredImage src="/img/apds-9960/apds9960_proximity.png" alt="Serial Monitor" caption="Proximity Sensor Serial Monitor output"/>
+<InfoBox>When reading open-air proximity, the sensor reaches the maximum value of 255.</InfoBox>
+
+<CenteredImage src="/img/apds-9960/open_air_prox.png" alt="Serial Monitor" width="700px"/>
+<CenteredImage src="/img/apds-9960/open_air_proximity.png" alt="Serial Monitor" caption="Proximity Sensor Serial Monitor output" width="700px"/>
+
+<CenteredImage src="/img/apds-9960/hand_prox.png" alt="Serial Monitor" width="700px"/>
+<CenteredImage src="/img/apds-9960/hand_proximity.png" alt="Serial Monitor" caption="Proximity Sensor Serial Monitor output" width="700px"/>
 
 <QuickLink 
   title="ProximitySensor.ino" 
