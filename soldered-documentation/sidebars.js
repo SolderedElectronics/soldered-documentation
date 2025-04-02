@@ -232,6 +232,25 @@ const sidebars = {
             },
           ],
         },
+
+        {
+          type: 'category',
+          label: 'Logic Level Converter I2C TXS0104',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/txs0104/txs0104-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/txs0104/txs0104-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/txs0104/txs0104-how-it-works',
+            },
+          ],
+        },
       ],
     },
   ],
