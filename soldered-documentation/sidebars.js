@@ -301,26 +301,21 @@ const sidebars = {
           ],
         },
         {
+
           type: 'category',
-          label: 'Communication',
+          label: 'USB-UART CH340 converter',
           items: [
             {
-              type: 'category',
-              label: 'USB-UART CH340 converter',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'communication/ch340/ch340-overview',
-                },
-                {
-                  type: 'doc',
-                  id: 'communication/ch340/ch340-hardware',
-                },
-                {
-                  type: 'doc',
-                  id: 'communication/ch340/ch340-how-it-works',
-                },
-              ],
+              type: 'doc',
+              id: 'communication/ch340/ch340-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/ch340/ch340-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/ch340/ch340-how-it-works',
             },
           ],
         },
