@@ -3,7 +3,6 @@ slug: /relay/arduino/Qwiic-example
 title: Switching the relay (Qwiic example)
 id: relay-arduino-3
 hide_title: False
-pagination_next: null
 ---
 
 This page contains a simple example with function documentation on how to control the 1 channel relay board using Qwiic conncetion.
@@ -13,7 +12,7 @@ This page contains a simple example with function documentation on how to contro
 // Include our CH_Relay library
 #include "Relays-SOLDERED.h"
 
-#define RELAY_ADDRESS 0x32
+#define RELAY_ADDRESS 0x30
 
 CH_Relay Relay;
 
@@ -61,6 +60,8 @@ void loop()
     { type: 'uint16_t', name: 'mode', description: "Set relay in HIGH (on) or LOW (off) mode" }
   ]}
 />
+
+<CenteredImage src="/img/relay/relay_qwiic_working.gif" alt="Relay board working" caption="Relay board working" width="700px" />
 
 ---
 

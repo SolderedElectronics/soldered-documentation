@@ -7,13 +7,14 @@ hide_title: False
 
 This page contains a simple example with function documentation on how to control a one- or multi-channel regular relay board.
 
-## Code example for 1 channel
+## Code example for 2 channel
 
 ```cpp
 // Include our CH_Relay library
 #include "Relays-SOLDERED.h"
 
-#define RELAY_PIN 5
+#define RElAY_PIN1 4
+#define RELAY_PIN2 5
 
 CH_Relay Relay(RELAY_PIN); 
 
@@ -59,6 +60,8 @@ void loop()
     { type: 'uint16_t', name: 'mode', description: "Sets the relay to HIGH (on) or LOW (off) mode" }
   ]}
 />
+
+<CenteredImage src="/img/relay/relay_working.gif" alt="Channel 2 on relay board working" caption="Channel 2 on relay board working" width="700px" />
 
 ---
 
