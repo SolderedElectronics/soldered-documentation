@@ -16,7 +16,7 @@ The Logic Level Converter TXB0104 Board provides **bidirectional** voltage level
 
 **Should not be used in applications such as I2C, 1-Wire, or an MMC card interface** where an open-drain driver is connected to the bidirectional data I/O.
 
-If you need one for **I2C communication**, we offer a [**TXS0104 board**](https://soldered.com/product/logic-level-converter-i2c-txs0104-breakout/).
+If you need one for **I2C communication**, we offer an [**I2C TXS0104 board**](https://soldered.com/product/logic-level-converter-i2c-txs0104-breakout/).
 
 </InfoBox>
 
