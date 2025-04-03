@@ -7,6 +7,16 @@ hide_title: False
 
 With the RTC, it is possible to set an alarm that sends an interrupt signal when triggered from the INT pin. First, we need to define on which pin we want to listen for an interrupt; for this example, we pick GPIO4. We also need to decide which function will be called when an interrupt occurs:
 
+---
+
+## Connections for this example
+
+<CenteredImage src="/img/pcf85063a/connections_interrupt.png" alt="connections"/>
+
+---
+
+## Setting up the alarm
+
 ```cpp
 //...
 

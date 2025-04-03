@@ -5,6 +5,14 @@ id: pcf85063a-arduino-2
 hide_title: False
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/pcf85063a/connections.png" alt="connections"/>
+
+---
+
+## Initializing
+
 For first-time use, we must initialize the RTC by providing it with the current time and date. First, include the library and create an instance of the RTC object, then initialize it in the `setup()` function:
 
 ```cpp
