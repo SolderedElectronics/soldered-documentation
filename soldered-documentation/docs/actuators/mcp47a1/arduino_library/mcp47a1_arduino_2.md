@@ -6,6 +6,14 @@ hide_title: False
 ---
 
 We can set the DAC to output a specific voltage at any time.  
+
+---
+
+## Connections for each example
+
+<CenteredImage src="/img/mcp47a1/connections.png" alt="Connections" />
+
+---
 First, we have to include the library and create an instance of the DAC object:
 
 ```cpp
