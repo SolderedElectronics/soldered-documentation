@@ -23,6 +23,7 @@ import QuickLink from '@site/src/components/QuickLink';
 import SectionTitle from '@site/src/components/SectionTitle';
 import FunctionDocumentation from '@site/src/components/FunctionDocumentation';
 import FlickityCarousel from '@site/src/components/FlickityCarousel';
+import WebmVideo from '@site/src/components/WebmVideo';
 
 const MDXComponents = {
   // Built-in Docusaurus components
@@ -57,6 +58,7 @@ const MDXComponents = {
   SectionTitle,
   FunctionDocumentation,
   FlickityCarousel,
+  WebmVideo
 };
 
 export default MDXComponents;
