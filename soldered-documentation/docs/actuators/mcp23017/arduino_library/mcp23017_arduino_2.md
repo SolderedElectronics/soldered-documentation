@@ -9,6 +9,12 @@ This page contains an example for setting up a blinking LED via the I/O extender
 
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/mcp23017/led_connection.png" width="100%" />
+
+---
+
 ## Full example
 
 In this example, we first include the library and create an instance of the board. Next, in the `setup()` function, we initialize the I2C communication with the I/O expander and set the pin mode for the GPA0 pin (we are using this pin for the LED). Finally, in the `loop()` function, we change the pin output every second:

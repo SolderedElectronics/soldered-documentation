@@ -9,6 +9,12 @@ This page contains an example for receiving an interrupt on a specific port of t
 
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/mcp23017/interrupt_connection.png" width="100%" />
+
+---
+
 ## Initialization
 
 First, we must include the library and create an instance of the object. We also have to create the interrupt service routine and the variable that will be modified by that function:

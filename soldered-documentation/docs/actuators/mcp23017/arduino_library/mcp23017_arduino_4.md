@@ -9,6 +9,12 @@ This page contains an example of reading input from a button.
 
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/mcp23017/button_connection.png" width="100%" />
+
+---
+
 ## Full example
 
 In this example, we first include the library and create an instance of the board. Next, in the `setup()` function, we initialize the I2C communication with the I/O expander and set the pin mode for the GPB0 pin (which is used for the button). Finally, in the `loop()` function, we read the pin and print the status of the button to the Serial monitor:
