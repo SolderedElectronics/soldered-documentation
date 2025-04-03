@@ -9,6 +9,12 @@ This page contains some simple examples with function documentation on how to ta
 
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/hc-sr04/connection.png" alt="connection" />
+
+---
+
 ## Initialization
 
 To use the HC-SR04 sensor, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function:
