@@ -9,6 +9,12 @@ This page contains a movement detection example for the Qwiic version of the boa
 
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/pir-sensor/connections_qwiic.png" alt="connections" />
+
+---
+
 ## Initializing the sensor
 
 First, we must include the library and create an instance of the sensor:

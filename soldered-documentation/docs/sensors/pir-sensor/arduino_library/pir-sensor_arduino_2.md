@@ -9,6 +9,12 @@ This page contains an example of detecting movement using the standard version o
 
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/pir-sensor/connections_standard.png" alt="connections" />
+
+---
+
 ## Setting up the pins
 
 First, we must define which pins to use and for what purpose:
