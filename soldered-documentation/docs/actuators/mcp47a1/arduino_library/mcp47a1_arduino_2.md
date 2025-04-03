@@ -5,22 +5,20 @@ id: mcp47a1-arduino-2
 hide_title: False
 ---
 
-We can set the DAC to output a specific voltage at any time. 
+We can set the DAC to output a specific voltage at any time.  
 First, we have to include the library and create an instance of the DAC object:
 
 ```cpp
-
 #include "MCP47A1-SOLDERED.h" // Include Soldered library for MCP47A1 DAC.
-MCP47A1_SOLDERED dac; // Create instance of an object
-
+MCP47A1_SOLDERED dac; // Create an instance of the object
 ```
 
-Next, in the `setup()` function, we are initializing the I2C communication with the DAC:
+Next, in the `setup()` function, we initialize the I2C communication with the DAC:
 
 ```cpp
 void setup()
 {
-    dac.begin();          // Initialize DACs library.
+    dac.begin();          // Initialize the DAC library.
 }
 ```
 
@@ -31,10 +29,9 @@ void setup()
   parameters={[]}
 />
 
-Finally, in the `loop()` function, we can hook up an LED to the VOUT and GND connectors and change the voltage every 2 seconds: 
+Finally, in the `loop()` function, we can hook up an LED to the VOUT and GND connectors and change the voltage every 2 seconds:
 
 ```cpp
-
 void loop()
 {
     float volts;
@@ -59,15 +56,14 @@ void loop()
     dac.setVoltage(volts);
     delay(2000);
 }
-
 ```
 
 <FunctionDocumentation
   functionName="dac.setVoltage(float _volts)"
-  description="Set voltage at DACs output."
+  description="Sets the voltage at the DAC's output."
   returnDescription="None"
   parameters={[
-  { type: 'float', name: '_volts', description: "Voltage at DACs output in range from 0V to VCC." },
+  { type: 'float', name: '_volts', description: "Voltage at the DAC's output in the range from 0V to VCC." },
   ]}
 />
 
@@ -78,11 +74,11 @@ See the full example below:
 ```cpp
 #include "MCP47A1-SOLDERED.h" // Include Soldered library for MCP47A1 DAC.
 
-MCP47A1_SOLDERED dac; // Create instance of an object
+MCP47A1_SOLDERED dac; // Create an instance of the object
 
 void setup()
 {
-    dac.begin();          // Initialize DACs library.
+    dac.begin();          // Initialize the DAC library.
 }
 
 void loop()
@@ -109,6 +105,4 @@ void loop()
     dac.setVoltage(volts);
     delay(2000);
 }
-
-
 ```

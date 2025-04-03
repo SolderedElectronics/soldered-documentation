@@ -15,7 +15,7 @@ Click [**here**](/img/mcp47a1/pinout.jpg) for a high-resolution image of the pin
 | **VCC**     | Power    | Supply voltage (both 5V and 3V3 are supported). |
 | **SDA**     | Data     | I2C data line for communication.                |
 | **SCL**     | Clock    | I2C clock line for communication.               |
-| **VOUT**     | Voltage output    | Outputs the converted voltage               |
+| **VOUT**    | Voltage output | Outputs the converted voltage.             |
 
 ---
 
@@ -35,7 +35,7 @@ Click [**here**](/img/mcp47a1/pinout.jpg) for a high-resolution image of the pin
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers. See below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -48,7 +48,7 @@ This board contains hardware jumpers, see below for their locations and function
 | Jumper  | Default State            | Function                                                                                          |
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to VCC** for I2C communication.                              |
-| **JP2** | **NC** (Normally closed) | When connected, provides power to the power LED |
+| **JP2** | **NC** (Normally closed) | When connected, provides power to the power LED.                                                |
 
 ---
 
@@ -73,7 +73,7 @@ Schematics, KiCad files, Gerber files, and more can be found in the GitHub repos
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
-Below is an overview of the available files.  
+Below is an overview of the available files:  
 
 #### CAD files
 
@@ -110,7 +110,7 @@ Gerber files are essential for PCB manufacturing, as they contain precise instru
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
-#### Compliance  
+#### Compliance
 
 The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
 

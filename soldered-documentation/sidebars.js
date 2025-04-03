@@ -315,6 +315,10 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'actuators/mcp47a1/arduino_library/mcp47a1-arduino-4',
+                },
+                {
+                  type: 'doc',
                   id: 'actuators/mcp47a1/arduino_library/mcp47a1-arduino-3',
                 },
               ],

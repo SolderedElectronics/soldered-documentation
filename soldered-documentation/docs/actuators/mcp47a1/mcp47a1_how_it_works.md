@@ -13,7 +13,7 @@ The MCP47A1 is an integrated circuit by [**Microchip Technology**]. When using o
 
 ## Datasheet
 
-For an in-depth look at technical specifications, refer to the official BME280 Datasheet:  
+For an in-depth look at technical specifications, refer to the official MCP47A1 Datasheet:  
 
 <QuickLink  
   title="MCP47A1 Datasheet"  

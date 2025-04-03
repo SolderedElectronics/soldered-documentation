@@ -8,13 +8,13 @@ pagination_prev: null
 
 ## MCP47A1 DAC
 
-The **MCP47A1 digital to analog converter** is a single channel, 6-bit digital to analog converter with an **I2C compatible serial interface**. It has a hardware-defined address of **0x2E** and is designed for seamless **Qwiic (formerly easyC) connectivity**.
+The **MCP47A1 digital-to-analog converter** is a single-channel, 6-bit digital-to-analog converter with an **I2C-compatible serial interface**. It has a hardware-defined address of **0x2E** and is designed for seamless **Qwiic (formerly easyC) connectivity**.
 
 <CenteredImage src="/img/mcp47a1/333052.jpg" alt="MCP47A1 DAC" caption="MCP47A1 DAC" />
 
 ---
 
-## Which products is this documentation for?
+## Which products does this documentation cover?
 
 <QuickLink 
   title="DAC 6-bit 1-channel MCP47A1 breakout" 
@@ -27,7 +27,7 @@ The **MCP47A1 digital to analog converter** is a single channel, 6-bit digital t
 
 ## Key Features
 
-- **Resolution:** 6bit
+- **Resolution:** 6-bit
 - **Voltage:** 1.8V - 5.5V
 - **Connectors:** Qwiic x2
 - **Mounting holes:** 2
