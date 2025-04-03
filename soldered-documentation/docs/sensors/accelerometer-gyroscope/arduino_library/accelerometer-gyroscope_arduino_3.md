@@ -3,7 +3,6 @@ slug: /accelerometer-gyroscope/arduino/examples-gyroscope
 title: Measuring linear acceleration with LSM6DS3 Gyroscope (example)
 id: accelerometer-gyroscope-arduino-3 
 hide_title: False
-pagination_next: null
 ---
 
 This page contains some simple examples with function documentation on how to take gyroscope measurements using the LSM6DS Accelerometer & Gyroscope.
@@ -12,7 +11,7 @@ This page contains some simple examples with function documentation on how to ta
 
 ## Initialization
 
-To start working with the **Gyroscope in LSM6DS 6-DOF Breakout**, you need to set up your Arduino environment. Firstly, include the required library, create the sensor object, and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly
+To start working with the **Gyroscope in LSM6DS 6-DOF Breakout**, you need to set up your Arduino environment. Firstly, include the required library, create the sensor object, and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly.
 
 ```cpp
 // Include libraries
@@ -26,7 +25,7 @@ void setup()
 {
 // Initialize serial communication
 Serial.begin(115200);
-delay(1000); 
+delay(1000);
 //...
 
 // Initialize sensor
@@ -45,7 +44,7 @@ Serial.println("LSM6DS3 initialized successfully.");
 ```
 
 <FunctionDocumentation
-  functionName="!myIMU.begin()"
+  functionName="myIMU.begin()"
   description="Initializes the **LSM6DS Accelerometer & Gyroscope sensor**, setting up communication over I2C or SPI and configuring the sensor for operation. This function also verifies the presence of the sensor on the specified I2C address or SPI bus."
   returnDescription="**Returns `true`**: If initialization is successful, indicating that the sensor is properly connected and configured.
 - **Returns `false`**: If initialization fails, indicating a connection issue or incorrect configuration."
@@ -82,9 +81,14 @@ Serial.print(",");
 
 ---
 
+<!-- <CenteredImage src="/img/accelerometer-gyroscope/AGposition3.gif" alt="LSM6DS in position 1" caption="LSM6DS in position 1" width="750px" /> -->
+<CenteredImage src="/img/accelerometer-gyroscope/serialMonitor3.png" alt="Serial Monitor for LSM6DS Gyroscope measurement" caption="Serial Monitor for LSM6DS Gyroscope measurement" width="1000px" />
+
+---
+
 ## Full example
 
-Try all of the above-mentioned functions in this full example which prints out the measured gyroscope data over Serial at 115200 baud:
+Try all of the above-mentioned functions in this full example, which prints out the measured gyroscope data over Serial at 115200 baud:
 
 ```cpp
 

@@ -20,14 +20,14 @@ hide_title: False
 | **INT1**    | Interrupt | Programmable interrupt 1.                       |
 | **INT2**    | Interrupt | Programmable interrupt 2.                       |
 
-<InfoBox>This breakout board operates on supply voltages of 2.5V to 3.6V, making it work with both 3.3V and 5V systems.</InfoBox>
+<InfoBox>This breakout board operates on supply voltages of 2.5V to 3.6V, making it compatible with both 3.3V and 5V systems.</InfoBox>
 
 ---
 
-## Qwiic (formerly easyC)  
+## Qwiic (formerly easyC)
 
 <CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
- 
+
 <InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
 
 <QuickLink 
@@ -54,7 +54,7 @@ The LSM6DS3 is designed for low-power operation, making it ideal for IoT and bat
 - **Board Dimensions:** 2.5 mm × 3 mm × 0.83 mm (0.09 × 0.11 × 0.03 inch)
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO-compatible! 🧱 
+- Soldered boards are LEGO-compatible! 🧱
 
 ---
 
@@ -85,7 +85,7 @@ This board contains hardware jumpers; see below for their locations and function
 
 ## Address jumper
 
-As mentioned before, the **JP5** is an **address jumper** that, when left **open**, has the address **0x6B**, while when closed its address changes to **0x6A**.
+As mentioned above, the **JP5** is an **address jumper** that, when left **open**, has the address **0x6B**, while when closed its address changes to **0x6A**.
 
 ---
 
@@ -118,7 +118,7 @@ The bill of materials (BOM) is provided in two formats:
 
 A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.
 
-#### Gerber files 
+#### Gerber files
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
 

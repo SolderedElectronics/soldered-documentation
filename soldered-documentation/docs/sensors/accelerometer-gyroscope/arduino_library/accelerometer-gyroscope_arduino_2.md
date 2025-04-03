@@ -5,13 +5,13 @@ id: accelerometer-gyroscope-arduino-2
 hide_title: False
 ---
 
-This page contains some simple examples with function documentation on how to take accelerometer measurements using the LSM6DS Accelerometer & Gyroscope.
+This page contains some simple examples with function documentation on how to take accelerometer measurements using the LSM6DS3 Accelerometer & Gyroscope.
 
 ---
 
 ## Initialization
 
-To start working with the **Accelerometer & Gyroscope LSM6DS 6-DOF Breakout**, you need to set up your Arduino environment. Firstly, include the required library, create the sensor object and initialize the sensor in the `setup()` function. You can use the return of `begin()` to check if everything is connected correctly:
+To start working with the **Accelerometer & Gyroscope LSM6DS 6-DOF Breakout**, you need to set up your Arduino environment. First, include the required library, create the sensor object, and initialize the sensor in the `setup()` function. You can use the return value of `begin()` to check if everything is connected correctly:
 
 ```cpp
 // Include libraries
@@ -43,7 +43,7 @@ void setup()
 ```
 
 <FunctionDocumentation
-  functionName="!myIMU.begin()"
+  functionName="myIMU.begin()"
   description="Initializes the **LSM6DS Accelerometer & Gyroscope sensor**, setting up communication over I2C or SPI and configuring the sensor for operation. This function also verifies the presence of the sensor on the specified I2C address or SPI bus."
   returnDescription="**Returns `true`**: If initialization is successful, indicating that the sensor is properly connected and configured.
 - **Returns `false`**: If initialization fails, indicating a connection issue or incorrect configuration."
@@ -54,7 +54,7 @@ void setup()
 
 ## Measuring acceleration 
 
-To start measuring velocity information we firstly need read all 3 (x,y,z) directional vectors and display them as showed bellow.
+To start measuring velocity information, we first need to read all 3 (x, y, z) directional vectors and display them as shown below.
 
 ```cpp
     // Read acceleration and print it on serial
@@ -70,17 +70,23 @@ To start measuring velocity information we firstly need read all 3 (x,y,z) direc
 ```
 
 <FunctionDocumentation
-  functionName="(myIMU.readFloatAccel* (), 4);"
-  description="reads the acceleration value along the given axis from the LSM6DS3 sensor."
+  functionName="myIMU.readFloatAccel*(),4;"
+  description="Reads the acceleration value along the given axis from the LSM6DS3 sensor."
   returnDescription="Returns a floating-point number in units of g (gravitational force)."
   parameters={[]}
 />
 
 ---
+<CenteredImage src="/img/accelerometer-gyroscope/AGposition1.png" alt="LSM6DS in position 1" caption="LSM6DS in position 1" width="750px" />
+<CenteredImage src="/img/accelerometer-gyroscope/serialMonitor1.png" alt="Serial Monitor for LSM6DS in position 1" caption="Serial Monitor for LSM6DS in position 1" width="1000px" />
+
+<CenteredImage src="/img/accelerometer-gyroscope/AGposition2.png" alt="LSM6DS in position 2" caption="LSM6DS in position 2" width="750px" />
+<CenteredImage src="/img/accelerometer-gyroscope/serialMonitor2.png" alt="Serial Monitor for LSM6DS in position 2" caption="Serial Monitor for LSM6DS in position 2" width="1000px" />
+---
 
 ## Full example
 
-Try all of the above mentioned functions in this full example which prints out the measured temperature and humidity over Serial at 115200 baud:
+Try all of the aforementioned functions in this full example, which prints out the measured acceleration over Serial at 115200 baud:
 
 ```cpp
 
@@ -103,7 +109,7 @@ void setup()
 
 void loop()
 {
-    // Get all parameters and print it on the Serial Monitor
+    // Get all parameters and print them on the Serial Monitor
 
     // Read acceleration and print it on serial
     Serial.print("ACCX:");
@@ -122,6 +128,6 @@ void loop()
 ```
 <QuickLink 
   title="minimalistExample.ino" 
-  description=" Most basic example of use. Example using the LSM6DS3 with basic settings"
+  description="Most basic example of use. Example using the LSM6DS3 with basic settings"
   url="https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library/blob/main/examples/MinimalistExample/MinimalistExample.ino" 
 />

@@ -1,25 +1,21 @@
 ---
 slug: /accelerometer-gyroscope/arduino/Initilization & Configuration
-title: Initilization & Configuration
+title: Initialization & Configuration
 id: accelerometer-gyroscope-arduino-6
 hide_title: False
-pagination_next: null
 ---
 
-
-This page outlines the some of the **most important initializations and configurations** available for the **LSM6DS Accelerometer & Gyroscope sensor** and its in depth confuguration ability.
+This page outlines some of the **most important initializations and configurations** available for the **LSM6DS Accelerometer & Gyroscope sensor** and its in-depth configuration ability.
 
 ---
 
-## Initilization 
+## Initialization 
 
-To start using the LSM6DS3 Accelerometer & Gyroscope sensor we need to include the required library `#include "LSM6DS3-SOLDERED.h"` and then initialize the sensor `myIMU.begin();` by configuring its communication protocol (I2C or SPI) and setting up its registers for operation. This process ensures proper data acquisition for motion tracking, temperature monitoring, and interrupt-driven events.
+To start using the LSM6DS3 Accelerometer & Gyroscope sensor, we need to include the required library `#include "LSM6DS3-SOLDERED.h"` and then initialize the sensor `myIMU.begin();` by configuring its communication protocol (I2C or SPI) and setting up its registers for operation. This process ensures proper data acquisition for motion tracking, temperature monitoring, and interrupt-driven events.
 
 Any reference to `LSM6DS3` is made due to it being the base for Arduino code. The code itself still works on all devices this documentation is for, and this naming should not worry the user.
 
-
 ```cpp
-
 // Include libraries
 #include "LSM6DS3-SOLDERED.h"
 #include "Wire.h"
@@ -36,11 +32,12 @@ void setup()
 }
 //...
 ```
+
 ---
 
 ## Configuration
 
-The **LSM6DS Accelerometer & Gyroscope sensor** is configured by writing **specific values to its control registers**, which set the operating modes, full-scale ranges, and output data rates for both the accelerometer and gyroscope. This configuration process typically involves selecting **low-power** or **high-performance** modes and **fine-tuning filtering** and calibration settings to match the application's requirements. **Communication** with the sensor is handled via **I2C** or **SPI**, ensuring that the initialization sequence properly sets up the sensor for accurate motion detection and orientation tracking. **Some configuration options are showed below**.
+The **LSM6DS Accelerometer & Gyroscope sensor** is configured by writing **specific values to its control registers**, which set the operating modes, full-scale ranges, and output data rates for both the accelerometer and gyroscope. This configuration process typically involves selecting **low-power** or **high-performance** modes and **fine-tuning filtering** and calibration settings to match the application's requirements. **Communication** with the sensor is handled via **I2C** or **SPI**, ensuring that the initialization sequence properly sets up the sensor for accurate motion detection and orientation tracking. **Some configuration options are shown below**.
 
 ```cpp
 // Include libraries
@@ -76,16 +73,17 @@ void setup()
 ```
 
 ---
+
 ## Different Setting Options
 
-### Initilialize the LSM6DS3 sensor with default or user-defined settings
+### Initialize the LSM6DS3 sensor with default or user-defined settings
 
 ```cpp
 status_t begin(SensorSettings* pSettingsYouWanted = NULL);
 //Initializes the LSM6DS3 sensor with default or user-defined settings for accelerometer, gyroscope, and communication mode.
 ```
 
-### Adjust accelerometer bandwith
+### Adjust accelerometer bandwidth
 
 ```cpp
 dataToWrite = LSM6DS3_ACC_GYRO_BW_XL_400Hz ;
@@ -105,8 +103,6 @@ dataToWrite = LSM6DS3_ACC_GYRO_BW_XL_400Hz ;
 | `LSM6DS3_ACC_GYRO_BW_XL_100Hz`     | Sets the accelerometer bandwidth to **100 Hz**, filtering noise effectively for slower movements or applications requiring smoother data. |
 | `LSM6DS3_ACC_GYRO_BW_XL_50Hz`      | Sets the accelerometer bandwidth to **50 Hz**, heavily filtering high-frequency noise. Suitable for applications with very slow-moving objects or static measurements. |
 
-
-
 ### Monitor data input number
 
 ```cpp
@@ -124,7 +120,6 @@ LSM6DS3_ACC_GYRO_INT1_FTH_DISABLED = 0x00,
 |----------------------------------------|-----------------------------------------------------------------------------|
 | `LSM6DS3_ACC_GYRO_INT1_FTH_DISABLED`   | Disables the FIFO threshold interrupt on the INT1 pin.                      |
 | `LSM6DS3_ACC_GYRO_INT1_FTH_ENABLED`    | Enables the FIFO threshold interrupt on the INT1 pin.                       |
-
 
 ### Define data update rate
 
@@ -154,7 +149,6 @@ LSM6DS3_ACC_GYRO_ODR_XL_13Hz = 0x10,
 | `LSM6DS3_ACC_GYRO_ODR_XL_6660Hz`       | Sets the accelerometer output data rate (ODR) to **6660 Hz** for extreme high-speed applications. |
 | `LSM6DS3_ACC_GYRO_ODR_XL_13330Hz`      | Sets the accelerometer output data rate (ODR) to **13330 Hz** for maximum speed applications. |
 
-
 ### Wake-up detection status (example specifically for the Y-axis of the accelerometer)
 
 ```cpp
@@ -167,7 +161,6 @@ LSM6DS3_ACC_GYRO_Y_WU_NOT_DETECTED = 0x00,
   returnDescription="No direct return value; this enum is used to interpret the sensor's wake-up detection status."
   parameters={[]}
 />
-
 
 | Command                              | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
@@ -194,12 +187,11 @@ LSM6DS3_ACC_GYRO_SIXD_THS_80_degree = 0x00,
 | `LSM6DS3_ACC_GYRO_SIXD_THS_60_degree`  | Sets the 6D orientation detection threshold to **60 degrees** |
 | `LSM6DS3_ACC_GYRO_SIXD_THS_50_degree`  | Sets the 6D orientation detection threshold to **50 degrees** |
 
-
 ---
 
 ## Full Setup (default settings)
 
-This section otlines the default settings when initializing the sensor. It can be helpful to refer to these if you wish to modify some of the settings during your project.
+This section outlines the default settings when initializing the sensor. It can be helpful to refer to these if you wish to modify some of the settings during your project.
 
 ```cpp
 // Include libraries
@@ -246,7 +238,6 @@ void setup()
     dataToWrite &= ~((uint8_t)LSM6DS3_ACC_GYRO_BW_SCAL_ODR_ENABLED);
 }
 
-
 void loop()
 {
     int16_t temp;
@@ -287,18 +278,18 @@ void loop()
 
 <QuickLink 
   title="lowLevelExample.ino" 
-  description=" Example using the LSM6DS3 with ONLY read and write methods."
+  description="Example using the LSM6DS3 with ONLY read and write methods."
   url="https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library/blob/main/examples/LowLevelExample/LowLevelExample.ino" 
 />
 
 --- 
 
-## In depth Initilization & Configuration list
+## In-depth Initialization & Configuration list
 
-For an in-depth look at all available commands, refer to the below given code.  
+For an in-depth look at all available commands, refer to the code given below.  
 
 <QuickLink  
   title="SparkFunLSM6DS3.h"  
-  description="Detailed list of various commands for initilization and configuration of the LSM6DS3 6-DOF"  
+  description="Detailed list of various commands for initialization and configuration of the LSM6DS3 6-DOF"  
   url="https://github.com/SolderedElectronics/Soldered-LSM6DS3-Arduino-Library/blob/main/src/libs/SparkFun_LSM6DS3_Arduino_Library/src/SparkFunLSM6DS3.h"  
-/>  
+/>

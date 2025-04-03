@@ -9,8 +9,7 @@ pagination_prev: null
 ## Accelerometer & Gyroscope LSM6DS 6-DOF breakout
 
 **Accelerometer & Gyroscope - Breakout** is a compact board that integrates a **3D accelerometer** and a **3D gyroscope**, enabling the tracking of linear acceleration and rotational motion. Thanks to high measurement resolutions (up to ±16 g and ±2000 dps), it is ideal for designing gesture-controlled robots, fitness trackers, or drones. The board contains a built-in **temperature sensor** and **FIFO buffer** for efficient data management, and its high resistance to mechanical shock makes LSM6DS the preferred choice for system designers creating and manufacturing reliable products.  
-It also includes **2 Qwiic (formerly easyC) connectors**, making it easy to connect with microcontrollers. The Qwiic module connection system eliminates the risk of incorrect connections or damaged modules, ensuring a seamless setup experience while operating on supply voltages of **2.5V** to **3.6V**, making it work with both **3.3V** and **5V** systems.
-
+It also includes **2 Qwiic (formerly easyC) connectors**, making it easy to connect with microcontrollers and eliminating the need for soldering.
 <CenteredImage src="/img/accelerometer-gyroscope/333115.jpg" alt="Accelerometer & Gyroscope LSM6DS 6-DOF breakout" caption="Accelerometer & Gyroscope LSM6DS 6-DOF breakout" />
 
 ---
@@ -52,7 +51,7 @@ It also includes **2 Qwiic (formerly easyC) connectors**, making it easy to conn
   - **Combo high-performance mode:** 0.55mA (LSM6DSO32)(LSM6DSO) 
 - **Logic voltage level:** 1.71V to 3.6V  
 - **Operating voltage:** 3.3V (onboard regulator for 5V compatibility)  
-- **Communication:** SPI, I2C, and MIPI I3C (LSM6DSO32)(LSM6DSO) / I2C (LSM6DS3)  
+- **Communication:**  I2C, and MIPI I3C (LSM6DSO32)(LSM6DSO) / I2C (LSM6DS3)  
 - **FIFO Buffer:** Smart FIFO up to 9 kbytes (LSM6DSO32)(LSM6DSO) / 8 kbytes (LSM6DS3)
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
 - **Mounting:** **Two mounting holes** for secure attachment  
