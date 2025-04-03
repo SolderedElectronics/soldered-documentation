@@ -441,6 +441,28 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'LI-ION-BATTERY',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/li-ion-battery/li-ion-battery-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/li-ion-battery/li-ion-battery-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/li-ion-battery/li-ion-battery-how-it-works',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/li-ion-battery/li-ion-battery-dimensions',
+            },
+          ],
+        },
       ]
     },
   ],
