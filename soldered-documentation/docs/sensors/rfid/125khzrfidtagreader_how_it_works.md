@@ -13,10 +13,9 @@ The **125kHz RFID Tag Reader Board** is a compact and efficient module designed 
 
 ## How the RFID reader works  
 
-The **RFID reader** operates by detecting the presence of a compatible 125kHz tag near its antenna. The tag receives power wirelessly through electromagnetic waves emitted by the reader's antenna. Once powered, the tag transmits its unique code back to the RFID reader. This code is then decoded and sent to a microcontroller via UART communication.
+The **RFID reader** operates by detecting the presence of a compatible 125kHz tag near its antenna. The tag receives power wirelessly through electromagnetic waves emitted by the reader's antenna. Once powered, the tag transmits its unique code to the RFID reader, where it is decoded and sent to a microcontroller via UART communication.
 
 The module supports a reading distance of **2–5 cm**, ensuring reliable performance in close-range applications. It uses **125kHz-compatible read-only or read/write tags**, making it suitable for various identification and control systems.
-
 
 <CenteredImage src="/img/rfid/RFID_info.png" alt="Basic RFID principle" caption="Basic RFID principle" width="400px" />
 
@@ -28,10 +27,10 @@ The **125kHz RFID Tag Reader Board** supports **UART** communication to send dat
 
 #### Pinout:
 
-| Pin Name | Function        | Notes                          |
-|----------|-----------------|--------------------------------|
-| TX       | Transmit Data   | Sends tag data to microcontroller. |
-| RX       | Receive Data    | Receives commands from microcontroller (optional). |
+| Pin Name | Function        | Notes                                          |
+|----------|-----------------|------------------------------------------------|
+| TX       | Transmit Data   | Sends tag data to the microcontroller.         |
+| RX       | Receive Data    | Receives commands from the microcontroller (optional). |
 
 ---
 
@@ -41,13 +40,12 @@ The **125kHz RFID Tag Reader Board** supports **I2C communication**, allowing se
 
 #### Pinout:
 
-| Pin Name | Function        | Notes                          |
-|----------|-----------------|--------------------------------|
-| SDA      | Data Line       | Connect to the microcontroller's I2C data pin. |
-| SCL      | Clock Line      | Connect to the microcontroller's I2C clock pin. |
+| Pin Name | Function        | Notes                                                 |
+|----------|-----------------|-------------------------------------------------------|
+| SDA      | Data Line       | Connect to the microcontroller's I2C data pin.         |
+| SCL      | Clock Line      | Connect to the microcontroller's I2C clock pin.        |
 
 ---
-
 
 ## Measurement process  
 
@@ -64,4 +62,4 @@ The **125kHz RFID Tag Reader Board** supports **I2C communication**, allowing se
    - Use UART commands on your microcontroller to read and process the transmitted data.
 
 4. **Code Decoding**
-   - Decode the received data using software logic to extract meaningful information like tag ID or serial number.
+   - Decode the received data using software logic to extract meaningful information such as the tag ID or serial number.

@@ -10,8 +10,7 @@ This page contains some simple examples with function documentation on how to us
 
 ## Initialization
 
-
-To start working with the **125kHz RFID Tag Reader Board**, you need to set up your Arduino environment. Firstly, include the **required library**, configure the pins, and **initialize** the RFID reader in the `setup()` function. The `checkHW()` function can be used to verify that the hardware is properly connected:
+To start working with the **125kHz RFID Tag Reader Board**, you need to set up your Arduino environment. Firstly, include the **required library**, configure the pins, and **initialize** the RFID reader in the `setup()` function. The `checkHW()` function can be used to verify that the hardware is properly connected:
 
 ```cpp
 // Include breakout-specific library
@@ -34,7 +33,7 @@ void isr()
 
 void setup()
 {
-    // Initialize serial communica// Include breakout-specific library
+    // Initialize serial communication// Include breakout-specific library
 #include "RFID-SOLDERED.h"
 
 // RFID library constructor (easyC mode)
@@ -101,9 +100,8 @@ returnDescription="Outputs raw 64-bit RFID data to the serial monitor."
 parameters={[{name:"data", type: "uint64_t", description: "Raw RFID data to be printed"}]}
 />
 
-
 ---
-<CenteredImage src="/img/rfid/qwiic_rfid.gif" alt="RFID (QWIIC)" caption="RFID (QWIIC)" />
+<!-- <CenteredImage src="/img/rfid/qwiic_rfid.gif" alt="RFID (QWIIC)" caption="RFID (QWIIC)" /> -->
 
 <CenteredImage src="/img/rfid/serialMonitorQWIIC.png" alt="Serial Monitor for RFID (QWIIC)" caption="Serial Monitor for RFID (QWIIC)" />
 

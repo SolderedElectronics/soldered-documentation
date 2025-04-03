@@ -5,11 +5,11 @@ id: 125khzrfidtagreader-arduino-2
 hide_title: False
 ---
 
-This page contains some simple examples with function documentation on how to use the **125kHz RFID Tag Reader Board (UART)**.
+This page contains a few simple examples along with function documentation that explains how to use the **125kHz RFID Tag Reader Board (UART)**.
 
 ## Initialization
 
-To start working with the **RFID reader via UART**, configure the serial pins and baud rate. The default baud rate is **9600** but can be changed using **DIP switches**:
+To start working with the **RFID reader via UART**, configure the serial pins and baud rate. The default baud rate is **9600**, but it can be changed using the **DIP switches**:
 
 ```cpp
 // Include breakout-specific library
@@ -33,7 +33,7 @@ void setup()
         while (1) delay(1);
     }
     
-    Serial.println("Place your tag near RFID antenna");
+    Serial.println("Place your tag near the RFID antenna");
 }
 //...
 ```
@@ -44,7 +44,7 @@ void setup()
 
 ## Reading RFID Tags
 
-Read tags by checking data availability in the loop. Supported baud rates (set via DIP switches):
+Read tags by checking for data availability in the loop. Supported baud rates (set via DIP switches):
 
 | Switch 1 | Switch 2 | Switch 3 | Baud Rate |
 |----------|----------|----------|-----------|
@@ -74,7 +74,7 @@ void loop()
 <FunctionDocumentation functionName="rfid.available()" description="Checks if new RFID tag data is available in the buffer." returnDescription="Returns true if data is available, false otherwise." parameters={[]} />
 
 ---
-<CenteredImage src="/img/rfid/uart_rfid.gif" alt="RFID (UART)" caption="RFID (UART)" />
+<!-- <CenteredImage src="/img/rfid/uart_rfid.gif" alt="RFID (UART)" caption="RFID (UART)" /> -->
 
 <CenteredImage src="/img/rfid/serialMonitorRFID.png" alt="Serial Monitor for RFID (UART)" caption="Serial Monitor for RFID (UART)" />
 
@@ -82,7 +82,7 @@ void loop()
 
 ## Full example
 
-Complete code for UART communication with the RFID reader:
+Complete code example for UART communication with the RFID reader:
 
 ```cpp
 #include "RFID-SOLDERED.h"

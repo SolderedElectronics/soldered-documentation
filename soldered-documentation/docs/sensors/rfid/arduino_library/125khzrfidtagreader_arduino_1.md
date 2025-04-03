@@ -5,26 +5,25 @@ id: 125khzrfidtagreader-arduino-1
 hide_title: False
 ---
 
-# Arduino library
+# Arduino Library
 
-To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
+To install the Arduino library, you can use the **Arduino Library Manager** or download it from the GitHub repository:
 <QuickLink
   title="125kHz RFID tag reader board - I2C & UART Arduino library"  
   description="Soldered-RFID-Reader-125kHz-Arduino-Library"  
   url="https://github.com/SolderedElectronics/Soldered-RFID-Reader-125kHz-Arduino-Library/tree/main"  
 />
 
-
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
+**First-time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
   description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
   url="#"  
 />  
-
+Note: This tutorial is for the Qwiic-compatible version of the product
 </InfoBox>
 
 ---
