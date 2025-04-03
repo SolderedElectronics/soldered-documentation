@@ -32,3 +32,14 @@ The **Breadboard power supply** is a simple and stable power source for your bre
 - **Voltage on USB-C:** 5V
 - **Output current:** 3V3 @ 500mA, 5V @ 1A
 - **Dimensions:** 54 x 30mm (2.1 x 1.2 inches)
+  
+---
+
+## You may also need
+
+<QuickLink 
+  title="Power supply 12V 2A 24W" 
+  description="108769"
+  url="https://soldered.com/product/power-supply-12v-2a/"
+  image="/img/breadboard-power/adapter.webp" 
+/>

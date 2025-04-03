@@ -44,7 +44,7 @@ This board contains switches that control the voltage output; see below for thei
 
 | Switch  | Function                                    |
 | ------- | ------------------------------------------- |
-| **S1**  | Switches between a 5V or 12V input          |
+| **S1**  | Switches power to the board on or off          |
 | **S2**  | Switches between a 12V or 3V3 output on VOUT1 pin |
 | **S3**  | Switches between a 5V or 3V3 output on VOUT2 pin |
 

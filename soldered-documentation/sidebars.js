@@ -138,6 +138,10 @@ const sidebars = {
               type: 'doc',
               id: 'batteries and power supplies/breadboard-power/breadboard-power-how-it-works',
             },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/breadboard-power/breadboard-power-connecting',
+            },
           ],
         },
       ]
