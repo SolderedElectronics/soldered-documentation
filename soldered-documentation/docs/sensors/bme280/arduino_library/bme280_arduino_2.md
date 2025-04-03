@@ -9,6 +9,12 @@ This page contains some simple examples with function documentation on how to ta
 
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/bme280/connections.png" alt="Connections"  />
+
+---
+
 ## Initialization
 
 To use the BME280 sensor, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function.
