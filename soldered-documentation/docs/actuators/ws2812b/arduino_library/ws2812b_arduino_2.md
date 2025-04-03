@@ -100,7 +100,7 @@ void loop()
 
 To produce a smooth rainbow animation along the entire LED strip, the `rainbow()` function continuously updates pixel colors using the HSV color wheel. It cycles through different hues to create a flowing rainbow effect. The `show()` function updates the strip, while `delay()` controls the animation speed.
 
-<CenteredImage src="/img/ws2812b/rainboww_vid.gif" alt="wow" width="700px"/>
+<!-- <CenteredImage src="/img/ws2812b/rainboww_vid.gif" alt="wow" width="700px"/> -->
 
 <WarningBox>
 Make sure to call the `rainbow()` function with a delay parameter somewhere! Example:
@@ -162,7 +162,7 @@ void rainbow(int wait)
 
 A single bright LED moves back and forth, similar to the iconic scanner from *Knight Rider*.
 
-<CenteredImage src="/img/ws2812b/knight_rider.gif" alt="wow" width="700px"/>
+<!-- <CenteredImage src="/img/ws2812b/knight_rider.gif" alt="wow" width="700px"/> -->
 
 ```cpp
 void cylonEffect()
