@@ -48,3 +48,5 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | IO18 (Default CLK pin)    | SCLK               |
 | GND                      | GND                |
 | 3.3V                     | VCC                |
+
+<CenteredImage src="/img/microsd-reader/connections.png" alt="Connections" />
