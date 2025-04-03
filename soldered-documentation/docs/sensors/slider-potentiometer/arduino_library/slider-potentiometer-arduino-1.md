@@ -16,7 +16,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**First time Arduino user?** For a detailed tutorial on how to get started with Arduino, see this section of our docs:
+**First time Arduino user?** For a detailed tutorial on getting started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  
@@ -24,7 +24,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
   url="#"  
 />  
 
-**Note** this tutorial is only for the Qwiic version of the product.
+**Note:** This tutorial is only for the Qwiic version of the product.
 
 </InfoBox>
 
@@ -51,4 +51,4 @@ If you prefer, you can use I2C pins to manually connect:
 
 </InfoBox>
 
-<WarningBox> The **IO21** and **IO22** pins can differ for your personally used board, so **make sure to validate** the information before you start working!</WarningBox>
+<WarningBox> The **IO21** and **IO22** pins may differ depending on the board you are using, so **make sure to validate** the information before you start working! </WarningBox>

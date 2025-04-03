@@ -5,7 +5,7 @@ id: slider-potentiometer-arduino-3
 hide_title: False
 ---
 
-This page contains some simple examples on how to take analog slider measurements using the Slider Potentiometer with Qwiic.
+This page contains simple examples illustrating how to take analog slider measurements using the Slider Potentiometer with Qwiic.
 
 ---
 
@@ -31,14 +31,11 @@ void setup()
 }
 ```
 
-
-
-
 ---
 
-## Reading slider given data
+## Reading slider data
 
-To start reading data given by moving the slider, we can follow the code given below.
+To start reading data obtained by moving the slider, follow the code given below.
 
 ```cpp
     Serial.print("Raw value of slider potentiometer: "); // Print information message
@@ -57,7 +54,7 @@ To start reading data given by moving the slider, we can follow the code given b
 
 ---
 
-<CenteredImage src="/img/slider-potentiometer/qwiic_slider.gif" alt="Slider potentiometer example of usage" caption="Slider potentiometer (Qwiic) example of usage" />
+<!-- <CenteredImage src="/img/slider-potentiometer/qwiic_slider.gif" alt="Slider potentiometer example of usage" caption="Slider potentiometer (Qwiic) example of usage" /> -->
 
 <CenteredImage src="/img/slider-potentiometer/result1QWIIC.png" alt="Slider potentiometer(Qwiic) readings 1" caption="Serial Monitor output for position 1" />
 <CenteredImage src="/img/slider-potentiometer/result2QWIIC.png" alt="Slider potentiometer(Qwiic) readings 2" caption="Serial Monitor output for position 2" />
@@ -66,7 +63,7 @@ To start reading data given by moving the slider, we can follow the code given b
 
 ## Full example
 
-Try all of the above-mentioned functions in this full example which prints out the measured gyroscope data over Serial at 115200 baud:
+Try all of the above-mentioned functions in this full example which prints out the measured slider potentiometer data over Serial at 115200 baud:
 
 ```cpp
 #include "Slider-potentiometer-easyC-SOLDERED.h"
@@ -97,7 +94,5 @@ void loop()
     Serial.print("Percent value of slider potentiometer: "); // Print information message
     Serial.println(slider.getPercentage()); // Prints percent value of slider potentiometer
     delay(1000);
-    
 }
-
 ```

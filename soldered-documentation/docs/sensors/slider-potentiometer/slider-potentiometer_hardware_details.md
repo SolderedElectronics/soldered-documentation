@@ -11,13 +11,13 @@ hide_title: False
 
 ## Pin details
 
-| Pin Name | Description       | Notes                          |
-|----------|-------------------|--------------------------------|
-| OUTA     | Analog Output A   | Outputs analog signal (side A).|
-| VCCA     | Power Supply A    | Connect to 5V for side A.      |
-| GND      | Ground            | Common ground for both sides.  |
-| OUTB     | Analog Output B   | Outputs analog signal (side B).|
-| VCCB     | Power Supply B    | Connect to 5V for side B.      |
+| Pin Name | Description       | Notes                           |
+|----------|-------------------|---------------------------------|
+| OUTA     | Analog Output A   | Outputs analog signal (side A). |
+| VCCA     | Power Supply A    | Connect to 5V for side A.       |
+| GND      | Ground            | Common ground for both sides.   |
+| OUTB     | Analog Output B   | Outputs analog signal (side B). |
+| VCCB     | Power Supply B    | Connect to 5V for side B.       |
 
 
 ---
@@ -40,27 +40,27 @@ hide_title: False
 
 For the Qwiic version, connection is achieved with the Qwiic connector.
 
-<InfoBox>Qwiic versions also contain UPDI headers for onboard ATTINY404 programming; they will not be used in the following examples.</InfoBox>
+<InfoBox>Qwiic versions also contain UPDI headers for onboard ATTINY404 programming. They will not be used in the following examples.</InfoBox>
 
 <a id="addressSelection"></a>
 ## Address selection for Qwiic version 
 
-The board contains hardware address switches. See below how to change the breakout board's address.
+The board contains hardware address switches. See below for instructions on how to change the breakout board's address.
 
 <CenteredImage src="/img/slider-potentiometer/333131addr.jpg" alt="ADDR" width="550px" />
 
 ### Address Table
 
 | Address | SW3 | SW2 | SW1 |
-|---------|----|----|----|
-| 0x30    | 0  | 0  | 0  |
-| 0x31    | 0  | 0  | 1  |
-| 0x32    | 0  | 1  | 0  |
-| 0x33    | 0  | 1  | 1  |
-| 0x34    | 1  | 0  | 0  |
-| 0x35    | 1  | 0  | 1  |
-| 0x36    | 1  | 1  | 0  |
-| 0x37    | 1  | 1  | 1  |
+|---------|-----|-----|-----|
+| 0x30    | 0   | 0   | 0   |
+| 0x31    | 0   | 0   | 1   |
+| 0x32    | 0   | 1   | 0   |
+| 0x33    | 0   | 1   | 1   |
+| 0x34    | 1   | 0   | 0   |
+| 0x35    | 1   | 0   | 1   |
+| 0x36    | 1   | 1   | 0   |
+| 0x37    | 1   | 1   | 1   |
 
 ---
 
@@ -69,7 +69,7 @@ The board contains hardware address switches. See below how to change the breako
 - **Board Dimensions:** 86 × 22 mm (3.39 × 0.9 inch)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+- Soldered boards are LEGO-compatible! 🧱 
 
 ---
 
@@ -98,7 +98,6 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-
 #### 3D files
 
 A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
@@ -123,5 +122,5 @@ The **Compliance** section includes important regulatory and safety documentatio
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and German.
+- **Safety Instructions** – Safety guidelines and precautions in English and German.  
 - **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
