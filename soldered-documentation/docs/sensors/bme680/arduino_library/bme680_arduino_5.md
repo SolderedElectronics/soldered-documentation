@@ -5,6 +5,14 @@ id: bme680-arduino-5
 hide_title: False
 ---
 
+## Connections for this example
+
+<CenteredImage src="/img/bme680/connections.png" alt="Connections"  />
+
+---
+
+## Initialization
+
 To use the BME680 sensor, first include the required library, create the sensor object, and initialize the sensor in the `setup()` function.
 
 ```cpp
