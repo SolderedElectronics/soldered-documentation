@@ -49,4 +49,3 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | GND                      | GND                |
 | 3.3V                     | VCC                |
 
-<CenteredImage src="/img/microsd-reader/connections.png" alt="Connections" />

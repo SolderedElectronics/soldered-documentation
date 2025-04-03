@@ -9,6 +9,12 @@ This page contains an example of initializing the SD card.
 
 ---
 
+## Connecting to the board
+
+<CenteredImage src="/img/microsd-reader/connections.png" alt="Connections" />
+
+---
+
 ## Defining the CS pin
 
 At the beginning of the example file, we define the pin to which the Chip Select (CS) is connected by changing the `SD_CS_PIN variable`. In this tutorial, we picked `GPIO5`:
