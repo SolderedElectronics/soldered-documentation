@@ -39,6 +39,9 @@ void loop()
 ```
 <InfoBox>If you did everything correctly, you should be greeted with the **Soldered logo!**</InfoBox>
 
+<CenteredImage src="/img/ssd1306/splash.png" alt="Splash screen"/>
+
+
 <FunctionDocumentation
   functionName="display.begin()"
   description="Initializes the OLED Display, setting up communication over I2C and setting the resolution to 128x64"

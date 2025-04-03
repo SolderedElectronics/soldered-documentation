@@ -27,6 +27,8 @@ void loop() {
 }
 ```
 
+<CenteredImage src="/img/ssd1306/text.png" alt="Hello world displayed"/>
+
 <FunctionDocumentation
   functionName="display.clearDisplay()"
   description="Clears contents of display buffer (sets all pixels to off)."
