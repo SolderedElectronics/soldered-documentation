@@ -9,7 +9,7 @@ pagination_prev: null
 ## Environmental & air quality sensor BME680
 The **BME680 Environmental & air quality sensor** is an atmospheric sensor that measures four values: temperature, pressure, humidity, and air quality as an IAQ index. With that data, you can calculate elevation. It is really simple to use considering that it uses the **I2C communication protocol** with a hardware-defined address of **0x76**, and its small dimensions allow it to fit anywhere. With this sensor, you can find out everything you need to know about atmospheric conditions and air quality (ideal for weather station projects!).
 
-<CenteredImage src="/img/bme680/333035.webp" alt="Environmental & air quality sensor BME680" caption="Environmental & air quality sensor BME680" />
+<CenteredImage src="/img/bme680/333035.jpg" alt="Environmental & air quality sensor BME680" caption="Environmental & air quality sensor BME680" />
 
 ---
 

@@ -1,2 +1,3 @@
 node_modules/
 /documentation-buddy/static/uploads
+.env
