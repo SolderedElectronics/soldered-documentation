@@ -40,6 +40,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'HC-SR04 Ultrasonic Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/hc-sr04/hc-sr04-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/hc-sr04/hc-sr04-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/hc-sr04/hc-sr04-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/hc-sr04/arduino_library/hc-sr04-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hc-sr04/arduino_library/hc-sr04-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hc-sr04/arduino_library/hc-sr04-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'LTR-507 Light and Proximity Sensor',
           items: [
             {
