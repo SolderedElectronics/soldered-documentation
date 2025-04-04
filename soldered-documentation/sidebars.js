@@ -80,6 +80,54 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'BMP180 Pressure & Temperature Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bmp180/bmp180-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmp180/bmp180-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmp180/bmp180-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp180/arduino_library/bmp180-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'BME280 Enviromental Sensor',
           items: [
             {
