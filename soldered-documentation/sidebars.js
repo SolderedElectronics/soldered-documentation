@@ -117,6 +117,50 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'BME680 Enviromental & Air Quality Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bme680/bme680-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme680/bme680-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme680/bme680-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bme680/arduino_library/bme680-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme680/arduino_library/bme680-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme680/arduino_library/bme680-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme680/arduino_library/bme680-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme680/arduino_library/bme680-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Hall effect sensor',
           items: [
             {
