@@ -252,6 +252,54 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'SSD1306 0.96" I2C OLED Display',
+          items: [
+            {
+              type: 'doc',
+              id: 'displays/ssd1306/ssd1306-overview',
+            },
+            {
+              type: 'doc',
+              id: 'displays/ssd1306/ssd1306-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'displays/ssd1306/ssd1306-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306/arduino_library/ssd1306-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'LCD I2C Displays',
           items: [
             {
