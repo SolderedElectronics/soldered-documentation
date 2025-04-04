@@ -16,7 +16,7 @@ On this page, we will explain how an OLED display actually functions.
 
 ## Datasheet
 
-For an in-depth look at technical specifications, refer to the official SHTC3 Datasheet:  
+For an in-depth look at technical specifications, refer to the official SSD1306 Datasheet:  
 
 <QuickLink  
   title="SSD1306 Datasheet"  
