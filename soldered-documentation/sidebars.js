@@ -415,6 +415,46 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'MCP47A1 DAC 6-bit',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/mcp47a1/mcp47a1-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/mcp47a1/mcp47a1-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/mcp47a1/mcp47a1-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp47a1/arduino_library/mcp47a1-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp47a1/arduino_library/mcp47a1-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp47a1/arduino_library/mcp47a1-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp47a1/arduino_library/mcp47a1-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'MCP23017 IO expander',
           items: [
             {
