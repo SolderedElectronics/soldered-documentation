@@ -27,7 +27,6 @@ If you have multiple I2C devices connected to the same bus, ensure that none of 
 If the sensor fails to initialize on the first attempt, try calling `bme280.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
 
 </ExpandableSection>
----
 
 <ExpandableSection title="The temperature readings aren't accurate!">
 

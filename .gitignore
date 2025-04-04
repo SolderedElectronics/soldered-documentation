@@ -1,2 +1,4 @@
 node_modules/
 /documentation-buddy/static/uploads
+.env
+soldered-documentation/deploy.ps1
