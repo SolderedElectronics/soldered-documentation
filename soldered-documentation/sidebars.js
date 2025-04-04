@@ -770,6 +770,28 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Breadboard power supply board',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/breadboard-power/breadboard-power-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/breadboard-power/breadboard-power-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/breadboard-power/breadboard-power-how-it-works',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/breadboard-power/breadboard-power-connecting',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: '1S Li-Ion Battery Protection',
           items: [
             {
