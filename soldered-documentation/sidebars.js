@@ -515,6 +515,54 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'MicroSD Card Reader',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/microsd-reader/microsd-reader-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/microsd-reader/microsd-reader-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/microsd-reader/microsd-reader-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/microsd-reader/arduino_library/microsd-reader-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'GNSS GPS L86-M33',
           items: [
             {
