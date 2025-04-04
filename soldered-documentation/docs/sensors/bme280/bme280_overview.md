@@ -10,7 +10,7 @@ pagination_prev: null
 
 The **BME280 Environmental sensor** is an atmospheric sensor that measures three values: temperature, pressure, and humidity. Additionally, elevation can be calculated. It is simple to use since it communicates via **I2C** with a hardware-defined address of **0x76** and is designed for seamless **Qwiic (formerly easyC) connectivity**. It is extra small, so it can be placed anywhere. This sensor measures everything you need to know about atmospheric conditions; it is ideal for meteorological station projects! This board comes with two easyC connectors, providing easy connections.
 
-<CenteredImage src="/img/bme280/333036.webp" alt="Enviromental sensor BME280" caption="Enviromental sensor BME280" />
+<CenteredImage src="/img/bme280/333036.jpg" alt="Enviromental sensor BME280" caption="Enviromental sensor BME280" />
 
 ---
 
