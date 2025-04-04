@@ -415,6 +415,50 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'MCP23017 IO expander',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/mcp23017/mcp23017-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/mcp23017/mcp23017-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/mcp23017/mcp23017-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp23017/arduino_library/mcp23017-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp23017/arduino_library/mcp23017-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp23017/arduino_library/mcp23017-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp23017/arduino_library/mcp23017-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/mcp23017/arduino_library/mcp23017-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Basic Stepper Driver',
           items: [
             {
