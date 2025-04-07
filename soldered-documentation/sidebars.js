@@ -443,7 +443,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'LI-ION-BATTERY',
+          label: 'Li-Ion Batteries',
           items: [
             {
               type: 'doc',
@@ -456,10 +456,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'batteries and power supplies/li-ion-battery/li-ion-battery-how-it-works',
-            },
-            {
-              type: 'doc',
-              id: 'batteries and power supplies/li-ion-battery/li-ion-battery-dimensions',
             },
           ],
         },
