@@ -1,11 +1,11 @@
 ---
-slug: /txb0104/how-it-works 
+slug: /rs-232/how-it-works 
 title: How it works
-id: txb0104-how-it-works 
+id: rs-232-how-it-works 
 hide_title: False
 ---  
 
-The Logic Level Converter Board by [**Soldered**](https://soldered.com/product/logic-level-converter-generic-txb0104-breakout/) enables safe voltage-level shifting between 3.3V and 5V logic systems, facilitating communication between devices with differing voltage requirements.
+The **RS-232 Transceiver Breakout Board** by [**Soldered**](https://soldered.com/product/rs-232-transciever-breakout/) enables seamless communication between devices using the **RS-232 protocol**. It leverages the **MAX232E integrated circuit**, which converts RS-232 voltage levels (±3V to ±15V) to TTL/CMOS logic levels (0V to 5V) and vice versa. This ensures compatibility between modern microcontrollers and legacy RS-232 devices.
 
 <CenteredImage src="/img/rs-232/onboard.png" alt="howitworks" caption="MAX232E Dual RS-232 Driver and Receiver With IEC61000-4-2 Protection" width="500px" />
 
@@ -13,13 +13,15 @@ The Logic Level Converter Board by [**Soldered**](https://soldered.com/product/l
 
 ## How it works
 
-The **RS-232 Transceiver Breakout Board** is like a translator for your devices. It takes the high-voltage signals used in RS-232 communication (±3V to ±15V) and converts them into the low-voltage signals (0V to 5V) that modern microcontrollers and logic devices understand—and it works the other way around, too! This magic happens thanks to the **MAX232E chip** onboard, which handles all the heavy lifting.
+The **RS-232 Transceiver Breakout Board** acts like a translator for your devices. It takes the high-voltage signals used in RS-232 communication (±3V to ±15V) and converts them into the low-voltage signals (0V to 5V) that modern microcontrollers and logic devices understand—and it works the other way around, which is all made possible due to the **MAX232E chip** onboard that handles all the heavy lifting.
 
-Here’s how it works:
+Main points:
 
 *   The **charge pump circuit** inside the MAX232E generates the higher voltages needed for RS-232 communication from a simple 5V power supply.  
 *   It has two channels for sending data (**DIN1/DIN2 to DOUT1/DOUT2**) and two for receiving data (**RIN1/RIN2 to ROUT1/ROUT2**), so you can send and receive at the same time (full-duplex communication).
-*   Plus, it’s built tough with **ESD protection**, so it won’t fry if there’s static electricity or electrical noise.
+  
+<InfoBox>Plus, it’s built with **ESD protection**, so it won’t fry if there’s static electricity or electrical noise.</InfoBox>
+
 ---
 
 ## Enable and Disable

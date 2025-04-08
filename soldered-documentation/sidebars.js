@@ -683,6 +683,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'RS-232',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/rs-232/rs-232-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/rs-232/rs-232-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/rs-232/rs-232-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/rs-232/arduino_library/rs-232-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rs-232/arduino_library/rs-232-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rs-232/arduino_library/rs-232-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'MicroSD Card Reader',
           items: [
             {
