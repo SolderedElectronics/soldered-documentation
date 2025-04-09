@@ -9,7 +9,7 @@ hide_title: False
 
 <CenteredImage src="/img/hc-sr04/hc-sr04_pinout.png" alt="Pinout" />
 
-Click [**here**](/img/hc-sr04/hc-sr04_pinout.jpg) for a high resolution image of the pinout.
+Click [**here**](/img/hc-sr04/hc-sr04_pinout.png) for a high resolution image of the pinout.
 
 ---
 

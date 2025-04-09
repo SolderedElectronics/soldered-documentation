@@ -12,7 +12,7 @@ The **Smart LED WS2812B** is a **highly versatile LED strip** featuring individu
 
 <CenteredImage src="/img/ws2812b/333056.jpg" alt="Smart LED WS2812B" caption="Smart LED WS2812B Strip" width="700px" />
 
-<CenteredImage src="/img/ws2812b/rainboww_vid.gif" alt="wow" caption="WS2812B Rainbow Effect" width="700px"/>
+<!-- <CenteredImage src="/img/ws2812b/rainboww_vid.gif" alt="wow" caption="WS2812B Rainbow Effect" width="700px"/> -->
 
 ---
 

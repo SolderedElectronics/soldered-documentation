@@ -7,7 +7,7 @@ hide_title: False
 
 <CenteredImage src="/img/mcp23017/pinout.png" alt="Pinout" />
 
-Click [**here**](/img/mcp23017/pinout.jpg) for a high-resolution image of the pinout.
+Click [**here**](/img/mcp23017/pinout.png) for a high-resolution image of the pinout.
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |
