@@ -24,7 +24,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
   url="#"  
 />  
 
-**Note:** This tutorial is only for the Qwiic version of the product.
+**Note:** The library is only required for the Qwiic version of the product.
 
 </InfoBox>
 
