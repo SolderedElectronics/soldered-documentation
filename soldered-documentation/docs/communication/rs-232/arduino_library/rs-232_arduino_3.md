@@ -30,7 +30,7 @@ To verify if each RS-232 breakout board is functioning:
    
 #### Try running our examples
 
-If you’re confident that your wiring and configuration are correct, try running our [**RS-232 Communication Example**](rs-232_arduino_2.md#full-example).
+If you’re confident that your wiring and configuration are correct, try running our [**RS-232 Communication Example**](rs-232_arduino_2.md#sender-code).
 
 </ExpandableSection>
 
