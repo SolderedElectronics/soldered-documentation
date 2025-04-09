@@ -5,9 +5,11 @@ id: 125khzrfidtagreader-how-it-works
 hide_title: False
 ---  
 
-The **125kHz RFID Tag Reader Board** is a compact and efficient module designed for reading RFID tags operating at 125kHz. It is ideal for applications such as access control, personal identification, security systems, and interactive projects. It operates using its **ATTINY1604-SSNR chip** to read cards.
+The **125kHz RFID Tag Reader Board** is a compact and efficient module designed for reading RFID tags operating at 125kHz. It is ideal for applications such as access control, personal identification, security systems, and interactive projects. It operates using its **ATTINY1604 chip** to read cards.
 
-<CenteredImage src="/img/rfid/RFID_chip.jpg" alt="ATTINY1604-SSNR chip on the board" caption="ATTINY1604-SSNR chip on the board" width="400px" /> 
+<CenteredImage src="/img/rfid/RFID_chip.jpg" alt="ATTINY1604 chip on the board" caption="ATTINY1604 chip on the board" width="400px" /> 
+
+<InfoBox>For more in-depth view on ATTINY1604 firmware make sure to visit the **[extras](https://github.com/SolderedElectronics/Soldered-RFID-Reader-125kHz-Arduino-Library/tree/dev/extras)** section of the Arduino Library</InfoBox>
 
 ---
 
@@ -45,6 +47,8 @@ The **125kHz RFID Tag Reader Board** supports **I2C communication**, allowing se
 | SDA      | Data Line       | Connect to the microcontroller's I2C data pin.         |
 | SCL      | Clock Line      | Connect to the microcontroller's I2C clock pin.        |
 
+
+<InfoBox>You can use Qwiic cables to easily connect the Qwiic version to your microcontroller</InfoBox>
 ---
 
 ## Measurement process  

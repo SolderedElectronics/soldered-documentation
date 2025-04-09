@@ -40,46 +40,6 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'RFID',
-          items: [
-            {
-              type: 'doc',
-              id: 'sensors/rfid/125khzrfidtagreader-overview',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/rfid/125khzrfidtagreader-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/rfid/125khzrfidtagreader-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/rfid/arduino_library/125khzrfidtagreader-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/rfid/arduino_library/125khzrfidtagreader-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/rfid/arduino_library/125khzrfidtagreader-arduino-3',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/rfid/arduino_library/125khzrfidtagreader-arduino-4',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
           label: 'SHTC3 Temperature and Humidity Sensor',
           items: [
             {
@@ -151,6 +111,52 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-3'
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Communication',
+      items: [
+        {
+          type: 'category',
+          label: 'RFID',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/rfid/125khzrfidtagreader-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/rfid/125khzrfidtagreader-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/rfid/125khzrfidtagreader-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/rfid/arduino_library/125khzrfidtagreader-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rfid/arduino_library/125khzrfidtagreader-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rfid/arduino_library/125khzrfidtagreader-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rfid/arduino_library/125khzrfidtagreader-arduino-4',
                 },
               ],
             },

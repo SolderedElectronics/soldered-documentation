@@ -36,10 +36,10 @@ The **125kHz RFID Reader** is a device that enables wireless identification of o
 *   **Frequency:** 125 kHz  
 *   **Reading distance:** up to 5 cm
 *   **Communication:** I2C,UART (depends on device version)
-*   **Operating voltage:** 5V (±5%)
+*   **Operating voltage:** 3v3 for Qwiic, 5V for header pins
 *   **Supported tags:** EM4100, EM4001, or compatible 125 kHz RFID cards/tags
 *   **Dimensions:** 38 x 38 mm (1.5 x 1.5 inch)
-*   **Connector:** 2 × Qwiic (plug-and-play, no soldering required)
+*   **Connector:** 2 × Qwiic (plug-and-play, no soldering required)(Qwiic version) , external 125kHz antenna connector , TX/RX (UART) or SDA/SCL (Qwiic) for communication.
 *   **Antenna:** Built-in
 *   **Power consumption:** Active mode: < 50mA
 

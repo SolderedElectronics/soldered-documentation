@@ -23,7 +23,6 @@ To install the Arduino library, you can use the **Arduino Library Manager** or d
   description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
   url="#"  
 />  
-Note: This tutorial is for the Qwiic-compatible version of the product
 </InfoBox>
 
 ---
@@ -31,6 +30,19 @@ Note: This tutorial is for the Qwiic-compatible version of the product
 ## Connections
 
 Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
+
+### UART version
+
+| **Dasduino CONNECTPLUS** | **Breakout Board** |
+| ------------------------ | ------------------ |
+| IO4 (User choice)        | TXD                |
+| IO5 (User choice)        | RXD                |
+| VCC                      | VCC                |
+| GND                      | GND                |
+
+---
+
+### Qwiic version
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |

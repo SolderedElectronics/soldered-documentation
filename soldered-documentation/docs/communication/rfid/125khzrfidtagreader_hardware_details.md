@@ -19,11 +19,11 @@ hide_title: False
 | VCC      | Power Supply      | Connect to 5V power supply.                          |
 | RXD      | UART Receive      | For UART communication (UART version only).          |
 | TXD      | UART Transmit     | For UART communication (UART version only).          |
-| INT      | Interrupt         | Signals when a tag is detected (I2C version only).   |
+| INT      | Interrupt         | Signals when a tag is detected.   |
 | UPDI     | Programming       | For firmware updates (do not use in normal operation). |
 | 3V3      | 3.3V Output       | 3.3V output from onboard regulator.                  |
-| SCL      | I2C Clock         | For I2C communication (I2C version only).            |
-| SDA      | I2C Data          | For I2C communication (I2C version only).            |
+| SCL      | I2C Clock         | For I2C communication (Qwiic version only).            |
+| SDA      | I2C Data          | For I2C communication (Qwiic version only).            |
 
 ---
 
@@ -45,7 +45,7 @@ hide_title: False
 
 The board contains hardware address switches; see below for instructions on changing the breakout board's address.
 
-<CenteredImage src="/img/rfid/RFID_switch.jpg" alt="ADDR" width="550px" />
+<CenteredImage src="/img/rfid/RFID_switch.png" alt="ADDR" width="550px" />
 
 ### Address Table
 
@@ -60,7 +60,7 @@ The board contains hardware address switches; see below for instructions on chan
 | 0x36    | 1  | 1  | 0  |
 | 0x37    | 1  | 1  | 1  |
 
-<InfoBox>Qwiic versions also contain UPDI headers for onboard ATTINY1604-SSNR programming; they will not be used in the following examples.</InfoBox>
+<InfoBox>Qwiic versions also contain UPDI headers for onboard ATTINY1604 programming; they will not be used in the following examples.</InfoBox>
 
 ---
 

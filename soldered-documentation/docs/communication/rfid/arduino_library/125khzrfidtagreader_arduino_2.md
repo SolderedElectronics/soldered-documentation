@@ -1,6 +1,6 @@
 ---
 slug: /125khzrfidtagreader/arduino/uart examples 
-title: 125kHz RFID tag reader board reading (example)(UART)
+title: 125kHz RFID tag reader board (UART) - reading example
 id: 125khzrfidtagreader-arduino-2 
 hide_title: False
 ---
