@@ -415,6 +415,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'TCA9548A EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/tca9548a/tca9548a-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/tca9548a/tca9548a-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/tca9548a/tca9548a-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/tca9548a/arduino_library/tca9548a-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/tca9548a/arduino_library/tca9548a-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/tca9548a/arduino_library/tca9548a-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Smart LED WS2812B',
           items: [
             {
