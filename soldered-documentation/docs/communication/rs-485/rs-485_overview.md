@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## RS-485 Transceiver Breakout Board
 
-The **RS-485 Transceiver Breakout Board** is a compact and reliable solution for **serial communication** between devices using the RS-485 protocol. It utilizes the **SN65176BDR integrated circuit**, which provides robust differential signal transmission and reception, enabling communication over long distances (up to 1200 meters) and in high-noise environments. This board is ideal for industrial applications, motor control systems, and other systems requiring RS-485 connectivity.
+The **RS-485 Transceiver Breakout Board** is a compact and reliable solution for **serial communication** between devices using the **RS-485** protocol. It utilizes the **SN65176BDR integrated circuit**, which provides robust differential signal transmission and reception, enabling communication over long distances (up to 1200 meters) and in high-noise environments. This board is ideal for industrial applications, motor control systems, and other systems requiring RS-485 connectivity.
 
 <CenteredImage src="/img/rs-485/333068.jpg" alt="standard protocol for communication" caption="RS-485 transceiver breakout"/>
 

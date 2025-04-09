@@ -26,7 +26,7 @@ Click [**here**](/img/rs-485/RS-485-breakout.png) for a high-resolution image of
 | **A**           | Data Line A        | Non-inverting differential data line for RS-485 communication.                 |
 | **B**           | Data Line B        | Inverting differential data line for RS-485 communication.                     |
 
-<InfoBox> - **VCC Range**: 4.75V - 5.25V - **RS-485 Communication Distance**: Up to 1200 meters </InfoBox>
+
 <WarningBox>**Ensure that GND is connected between all devices on the RS-485 bus to establish a common reference for signals.**</WarningBox>
 
 ---

@@ -683,7 +683,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'RS-485 EDIT THIS NAME',
+          label: 'RS-485',
           items: [
             {
               type: 'doc',
