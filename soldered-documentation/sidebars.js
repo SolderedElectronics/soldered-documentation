@@ -329,6 +329,46 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Slider potentiometer',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/slider-potentiometer/slider-potentiometer-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/slider-potentiometer/slider-potentiometer-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/slider-potentiometer/slider-potentiometer-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/slider-potentiometer/arduino_library/slider-potentiometer-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/slider-potentiometer/arduino_library/slider-potentiometer-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/slider-potentiometer/arduino_library/slider-potentiometer-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/slider-potentiometer/arduino_library/slider-potentiometer-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'PIR Movement sensor',
           items: [
             {
