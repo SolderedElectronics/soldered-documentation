@@ -27,8 +27,6 @@ hide_title: False
 | **SDO-M**    | Data Output| SPI serial data output (SDO) for the magnetometer, I2C address bit (SA0) for the magnetometer. |
 | **SDO-A**    | Data Output| SPI serial data output (SDO) for the accelerometer and gyroscope, I2C address bit (SA0) for A/G. |
 
-<InfoBox>This breakout board operates on supply voltages of 2.5V to 3.6V, making it work with both 3.3V and 5V systems.</InfoBox>
-
 ---
 
 ## Qwiic (formerly easyC)  
@@ -45,9 +43,7 @@ hide_title: False
 
 ---
 
-## Power consumption
-
-The LSM6DS3 is designed for low-power operation, making it ideal for IoT and battery-powered applications.  
+## Power consumption  
 
 | Mode                    | Current Consumption |
 |-------------------------|---------------------|

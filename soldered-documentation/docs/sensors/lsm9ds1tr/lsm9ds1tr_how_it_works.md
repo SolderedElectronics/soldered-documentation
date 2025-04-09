@@ -12,11 +12,11 @@ The **Accelerometer & Gyroscope & Magnetometer LSM9DS1TR 9-DOF breakout** is an 
 
 ## Datasheet
 
-For an in-depth look at technical specifications, refer to the official **LSM9DS1TR 9-DOF breakout Datasheet**:
+For an in-depth look at technical specifications, refer to the official **LSM9DS1TR 9-DOF Datasheet**:
 
 <QuickLink  
-  title="LSM9DS1TR 9-DOF breakout Datasheet"  
-  description="Detailed technical documentation for the Accelerometer & Gyroscope & Magnetometer LSM9DS1TR 9-DOF breakout"  
+  title="LSM9DS1TR 9-DOF Datasheet"  
+  description="Detailed technical documentation for the Accelerometer & Gyroscope & Magnetometer LSM9DS1TR 9-DOF"  
   url="https://soldered.com/productdata/2023/08/Soldered_lsm9ds1_datasheet.pdf"  
 />  
 
