@@ -120,7 +120,7 @@ The **Li-Ion Batteries** offered are a **versatile and reliable power solutio
 *   **Wide Capacity Range**: Available in capacities from **40mAh to 10000mAh**, catering to both low-power and high-energy applications. 
 *   **Standard JST-PH-2mm Connector**: Ensures easy integration with devices like **Dasduino** and **Inkplate**.  
 *   **On-Board Protection**: Built-in circuit protection against **overcharging, over-discharging, and short circuits**, ensuring safety and durability. 
-*   **Nominal Voltage**: Operates at a standard voltage of **3.7V**, suitable for most embedded systems. 
+*   **Nominal Voltage**: **3.7V**
 *   **Compact and Lightweight Design**: Ideal for portable and space-constrained projects.
 ---
 ## You may also need
