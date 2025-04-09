@@ -36,585 +36,63 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Sensors',
+      label: 'Solder kits',
       items: [
         {
           type: 'category',
-          label: 'Obstacle-sensor-with-easyC',
+          label: 'Stop me game',
           items: [
             {
               type: 'doc',
-              id: 'sensors/obstacle-sensor/obstacle-sensor-overview',
+              id: 'solder-kits/stop-me-game/stop-me-game-overview',
             },
             {
               type: 'doc',
-              id: 'sensors/obstacle-sensor/obstacle-sensor-hardware',
+              id: 'solder-kits/stop-me-game/stop-me-game-assembly-guide',
             },
-            {
-              type: 'doc',
-              id: 'sensors/obstacle-sensor/obstacle-sensor-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/obstacle-sensor/arduino_library/obstacle-sensor-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/obstacle-sensor/arduino_library/obstacle-sensor-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/obstacle-sensor/arduino_library/obstacle-sensor-arduino-3',
-                },
-              ],
-            },
-          ],
+          ]
         },
         {
           type: 'category',
-          label: 'TCRT5000',
-          items: [
+          label: 'Reaction game',
+          items:[
             {
               type: 'doc',
-              id: 'sensors/tcrt5000/tcrt5000-overview',
+              id: 'solder-kits/reaction-game/reaction-game-overview',
             },
             {
               type: 'doc',
-              id: 'sensors/tcrt5000/tcrt5000-hardware',
+              id: 'solder-kits/reaction-game/reaction-game-assembly-guide',
             },
-            {
-              type: 'doc',
-              id: 'sensors/tcrt5000/tcrt5000-how-it-works',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/tcrt5000/arduino_library/tcrt5000-arduino-1',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/tcrt5000/arduino_library/tcrt5000-arduino-2',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/tcrt5000/arduino_library/tcrt5000-arduino-3',
-            },
-          ],
+          ]
         },
         {
           type: 'category',
-          label: 'Digipot',
-          items: [
+          label: 'Simon says',
+          items:[
             {
               type: 'doc',
-              id: 'sensors/digipot/digipot-overview',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/digipot/digipot-hardware',
+              id: 'solder-kits/solder-kit-simon-says/simon-says-game-overview',
             },
             {
               type: 'doc',
-              id: 'sensors/digipot/digipot-how-it-works',
+              id: 'solder-kits/solder-kit-simon-says/simon-says-game-assembly-guide',
             },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/digipot/arduino_library/digipot-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/digipot/arduino_library/digipot-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/digipot/arduino_library/digipot-arduino-3',
-                },
-              ],
-            },
-          ],
+          ]
         },
         {
           type: 'category',
-          label: 'Simple sensors',
-          items: [
-            {
-              type: 'category',
-              label: 'Simple soil humidity sensor',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-overview',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-hardware',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-how-it-works',
-                },
-                {
-                  type: 'category',
-                  label: 'Arduino library',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-soil-humidity-sensor/arduino_library/simple-soil-humidity-sensor-arduino-1',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-soil-humidity-sensor/arduino_library/simple-soil-humidity-sensor-arduino-2',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-soil-humidity-sensor/arduino_library/simple-soil-humidity-sensor-arduino-3',
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Simple light sensor',
-              items:[
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-light-sensor/simple-light-sensor-overview',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-light-sensor/simple-light-sensor-hardware',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-light-sensor/simple-light-sensor-how-it-works',
-                },
-                {
-                  type: 'category',
-                  label: 'Arduino library',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-light-sensor/arduino_library/simple-light-sensor-arduino-1',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-light-sensor/arduino_library/simple-light-sensor-arduino-2',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-light-sensor/arduino_library/simple-light-sensor-arduino-3',
-                    },
-                  ],
-                },
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Simple fire sensor',
-              items:[
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-fire-sensor/simple-fire-sensor-overview',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-fire-sensor/simple-fire-sensor-hardware',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-fire-sensor/simple-fire-sensor-how-it-works',
-                },
-                {
-                  type: 'category',
-                  label: 'Arduino library',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-fire-sensor/arduino_library/simple-fire-sensor-arduino-1',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-fire-sensor/arduino_library/simple-fire-sensor-arduino-2',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-fire-sensor/arduino_library/simple-fire-sensor-arduino-3',
-                    },
-                  ],
-                },
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Simple rain sensor',
-              items:[
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-rain-sensor/simple-rain-sensor-overview',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-rain-sensor/simple-rain-sensor-hardware',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/simple-sensor/simple-rain-sensor/simple-rain-sensor-how-it-works',
-                },
-                {
-                  type: 'category',
-                  label: 'Arduino library',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-rain-sensor/arduino_library/simple-rain-sensor-arduino-1',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-rain-sensor/arduino_library/simple-rain-sensor-arduino-2',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'sensors/simple-sensor/simple-rain-sensor/arduino_library/simple-rain-sensor-arduino-3',
-                    },
-                  ],
-                },
-              ]
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Joystick',
-          items: [
+          label: 'DasduinoCORE',
+          items:[
             {
               type: 'doc',
-              id: 'sensors/joystick/joystick-overview',
+              id: 'solder-kits/solder-kit-dasduino/solder-kit-dasduino-overview',
             },
             {
               type: 'doc',
-              id: 'sensors/joystick/joystick-hardware',
+              id: 'solder-kits/solder-kit-dasduino/solder-kit-dasduino-assembly-guide',
             },
-            {
-              type: 'doc',
-              id: 'sensors/joystick/joystick-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/joystick/arduino_library/joystick-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/joystick/arduino_library/joystick-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/joystick/arduino_library/joystick-arduino-3',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Hall effect sensor',
-          items: [
-            {
-              type: 'doc',
-              id: 'sensors/hall-effect-sensor/hall-effect-sensor-overview',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/hall-effect-sensor/hall-effect-sensor-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/hall-effect-sensor/hall-effect-sensor-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-3',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-4',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-5',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/hall-effect-sensor/arduino_library/hall-effect-sensor-arduino-6',
-                }
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'SHTC3 Temperature and Humidity Sensor',
-          items: [
-            {
-              type: 'doc',
-              id: 'sensors/shtc3/shtc3-overview',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/shtc3/shtc3-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/shtc3/shtc3-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/shtc3/arduino_library/shtc3-arduino-3',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Actuators',
-      items: [
-        {
-          type: 'category',
-          label: 'DRV8825 EDIT THIS NAME',
-          items: [
-            {
-              type: 'doc',
-              id: 'actuators/drv8825/drv8825-overview',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/drv8825/drv8825-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/drv8825/drv8825-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'actuators/drv8825/arduino_library/drv8825-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/drv8825/arduino_library/drv8825-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/drv8825/arduino_library/drv8825-arduino-3',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Rotary encoder',
-          items: [
-            {
-              type: 'doc',
-              id: 'actuators/rotary-encoder/rotary-encoder-overview',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/rotary-encoder/rotary-encoder-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/rotary-encoder/rotary-encoder-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'actuators/rotary-encoder/arduino_library/rotary-encoder-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/rotary-encoder/arduino_library/rotary-encoder-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/rotary-encoder/arduino_library/rotary-encoder-arduino-3',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'LED-Matrix',
-          items: [
-            {
-              type: 'doc',
-              id: 'actuators/led-matrix/led-matrix-overview',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/led-matrix/led-matrix-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/led-matrix/led-matrix-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-3',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-4',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-5',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-6',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-7',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Relay',
-          items: [
-            {
-              type: 'doc',
-              id: 'actuators/relay/relay-overview',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/relay/relay-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/relay/relay-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'actuators/relay/arduino_library/relay-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/relay/arduino_library/relay-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/relay/arduino_library/relay-arduino-3',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/relay/arduino_library/relay-arduino-4',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Basic Stepper Driver',
-          items: [
-            {
-              type: 'doc',
-              id: 'actuators/stepper-motor-driver/stepper-motor-driver-overview',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/stepper-motor-driver/stepper-motor-driver-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'actuators/stepper-motor-driver/stepper-motor-driver-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-1'
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-2'
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/stepper-motor-driver/arduino_library/stepper-motor-driver-arduino-3'
-                },
-              ],
-            },
-          ],
+          ]
         },
       ],
     },
