@@ -36,6 +36,16 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Arduino',
+      items: [
+      {
+        type: 'doc',
+        id: 'misc/arduino-VSCode',
+      },
+    ]
+  },
+    {
+      type: 'category',
       label: 'Sensors',
       items: [
         {
