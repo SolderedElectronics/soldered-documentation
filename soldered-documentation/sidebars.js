@@ -40,7 +40,7 @@ const sidebars = {
       items: [
       {
         type: 'doc',
-        id: 'misc/arduino-VSCode',
+        id: 'arduino guides/arduino-VSCode',
       },
     ]
   },
