@@ -5,32 +5,36 @@ id: tca9548a-arduino-2
 hide_title: False
 ---
 
-This page contains an example for setting up the **LSM6DS3** and **SHTC3** sensors with I2C multiplexer **TCA9548A**.
+This page contains an example for setting up the 2 **APDS-9960** sensors with I2C multiplexer **TCA9548A**.
 
 ---
 
 ## Connections for this example
 
-<CenteredImage src="/img/tca9548a/led_connection.png" alt="LSM6DS3 and SHTC3 sensors with I2C multiplexer TCA9548A" caption="LSM6DS3 and SHTC3 sensors with I2C multiplexer TCA9548A" width="600px" />
+<CenteredImage src="/img/tca9548a/led_connection.png" alt="APDS-9960 sensors with I2C multiplexer TCA9548A" caption="APDS-9960 sensors with I2C multiplexer TCA9548A" width="600px" />
 <CenteredImage src="/img/tca9548a/sides.png" alt="Serial monitor for TCA9548A" caption="Serial monitor for TCA9548A" width="600px" />
 
 ---
 
 ## Full example
 
-In this example, we first include the necessary libraries for the **TCA9548A I2C multiplexer**, **SHTC3 sensor**, and **LSM6DS3TR sensor**. We then create instances of the multiplexer and sensors. In the `setup()` function, we initialize the I2C communication with the multiplexer and sensors, ensuring all channels are properly configured. Finally, in the `loop()` function, we read data from each sensor on its respective channel and print the results to the Serial Monitor.
-
+In this example, we first include the necessary libraries for the TCA9548A I2C multiplexer and APDS-9960 sensors. We then create instances of the multiplexer and sensors. In the `setup()` function, we initialize the I2C communication with the multiplexer and configure each sensor on its respective channel. The multiplexer ensures that each sensor operates independently without address conflicts.
 
 ```cpp
 #include "TCA9548A-SOLDERED.h"
-#include "SHTC3-SOLDERED.h"
-#include "LSM6DS3-SOLDERED.h"
+#include "APDS9960-SOLDERED.h"
 #include <Arduino.h>
 
-// Create objects for the multiplexer, SHTC3, and LSM6DS3 sensors
+// Create objects for the multiplexer and APDS-9960 sensors
 TCA9548A I2CMux; // Default address is 0x70
-SHTC3 shtcSensor;
-Soldered_LSM6DS3 myIMU; // Default address is 0x6B
+APDS_9960 APDS1; // APDS-9960 on Channel 0
+APDS_9960 APDS2; // APDS-9960 on Channel 1
+
+// Variables for sensor data
+int proximity1 = 0, proximity2 = 0;
+int r1 = 0, g1 = 0, b1 = 0;
+int r2 = 0, g2 = 0, b2 = 0;
+unsigned long lastUpdate = 0;
 
 void setup()
 {
@@ -41,70 +45,94 @@ void setup()
     I2CMux.begin();       // Initialize multiplexer
     I2CMux.closeAll();    // Ensure all channels are closed initially
 
-    // Initialize SHTC3 sensor on channel 0
+    // Initialize APDS-9960 sensor on Channel 0
     I2CMux.openChannel(0);
-    if (!shtcSensor.begin())
+    if (!APDS1.begin())
     {
-        Serial.println("Failed to initialize SHTC3 sensor!");
+        Serial.println("Error initializing APDS-9960 sensor on Channel 0.");
+        while (true)
+            ; // Stop forever
     }
     else
     {
-        Serial.println("SHTC3 sensor initialized successfully.");
+        Serial.println("APDS-9960 sensor initialized successfully on Channel 0.");
     }
     I2CMux.closeChannel(0);
 
-    // Initialize LSM6DS3TR sensor on channel 1
+    // Initialize APDS-9960 sensor on Channel 1
     I2CMux.openChannel(1);
-    if (!myIMU.begin())
+    if (!APDS2.begin())
     {
-        Serial.println("Failed to initialize LSM6DS3TR sensor!");
+        Serial.println("Error initializing APDS-9960 sensor on Channel 1.");
+        while (true)
+            ; // Stop forever
     }
     else
     {
-        Serial.println("LSM6DS3TR sensor initialized successfully.");
+        Serial.println("APDS-9960 sensor initialized successfully on Channel 1.");
     }
     I2CMux.closeChannel(1);
 }
 
 void loop()
 {
-    // Read data from SHTC3 sensor on channel 0
+    // Read data from APDS-9960 sensor on Channel 0
     I2CMux.openChannel(0);
-    shtcSensor.sample();
-    Serial.print("Temp (°C): ");
-    Serial.println(shtcSensor.readTempC(), 2);
-    Serial.print("Humidity (%): ");
-    Serial.println(shtcSensor.readHumidity(), 2);
+
+    if (APDS1.proximityAvailable())
+    {
+        proximity1 = APDS1.readProximity(); // Read proximity from Sensor 1
+    }
+
+    if (APDS1.colorAvailable())
+    {
+        APDS1.readColor(r1, g1, b1); // Read color from Sensor 1
+    }
+
     I2CMux.closeChannel(0);
 
-    delay(1000); // Wait before switching to the next channel
+    delay(100); // Wait before switching to the next channel
 
-    // Read data from LSM6DS3TR sensor on channel 1
+    // Read data from APDS-9960 sensor on Channel 1
     I2CMux.openChannel(1);
-    
-    // Read acceleration data
-    Serial.print("ACCX: ");
-    Serial.print(myIMU.readFloatAccelX(), 4);
-    Serial.print(", ACCY: ");
-    Serial.print(myIMU.readFloatAccelY(), 4);
-    Serial.print(", ACCZ: ");
-    Serial.println(myIMU.readFloatAccelZ(), 4);
 
-    // Read gyroscope data
-    Serial.print("GYROX: ");
-    Serial.print(myIMU.readFloatGyroX(), 4);
-    Serial.print(", GYROY: ");
-    Serial.print(myIMU.readFloatGyroY(), 4);
-    Serial.print(", GYROZ: ");
-    Serial.println(myIMU.readFloatGyroZ(), 4);
+    if (APDS2.proximityAvailable())
+    {
+        proximity2 = APDS2.readProximity(); // Read proximity from Sensor 2
+    }
 
-    // Read temperature data from LSM6DS3TR
-    Serial.print("Temp (°C): ");
-    Serial.println(myIMU.readTempC(), 4);
+    if (APDS2.colorAvailable())
+    {
+        APDS2.readColor(r2, g2, b2); // Read color from Sensor 2
+    }
 
     I2CMux.closeChannel(1);
 
-    delay(2000); // Wait before the next loop iteration
+    // Print updates every 1000 ms
+    if (millis() - lastUpdate > 1000)
+    {
+        lastUpdate = millis();
+
+        Serial.print("Sensor 1 - PR=");
+        Serial.print(proximity1);
+        Serial.print(" RGB=");
+        Serial.print(r1);
+        Serial.print(",");
+        Serial.print(g1);
+        Serial.print(",");
+        Serial.println(b1);
+
+        Serial.print("Sensor 2 - PR=");
+        Serial.print(proximity2);
+        Serial.print(" RGB=");
+        Serial.print(r2);
+        Serial.print(",");
+        Serial.print(g2);
+        Serial.print(",");
+        Serial.println(b2);
+    }
+
+    delay(100); // Small delay before repeating the loop
 }
 ```
 
