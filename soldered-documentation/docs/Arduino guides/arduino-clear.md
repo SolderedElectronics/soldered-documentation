@@ -82,6 +82,8 @@ you may encounter strange compile errors unrelated to your code. Clearing these 
 1.  Navigate to **Documents > Arduino**.
 2.  If you see a file named preferences.txt, you can delete it to reset personal settings (not usually necessary).
 
+---
+
 ### For Linux Users (Ubuntu, Fedora, etc.)
 
 #### Step 1: Show Hidden Files
