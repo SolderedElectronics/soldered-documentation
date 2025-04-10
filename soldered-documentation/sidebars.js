@@ -32,12 +32,18 @@ const sidebars = {
           type: 'doc',
           id: 'misc/qwiic',
         },
-        {
-          type: 'doc',
-          id: 'misc/arduino-clear',
-        },
       ],
     },
+    {
+    type: 'category',
+    label: 'Arduino',
+    items: [
+    {
+      type: 'doc',
+      id: 'misc/arduino-clear',
+    },
+  ]
+},
     {
       type: 'category',
       label: 'Sensors',
