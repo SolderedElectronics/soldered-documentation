@@ -36,6 +36,16 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Arduino',
+      items: [
+        {
+          type:'doc',
+          id:'arduino/arduino-quick-start-guide',
+        }
+      ]
+    },
+    {
+      type: 'category',
       label: 'Sensors',
       items: [
         {
