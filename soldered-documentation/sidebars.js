@@ -415,7 +415,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'TCA9548A EDIT THIS NAME',
+          label: 'TCA9548A',
           items: [
             {
               type: 'doc',

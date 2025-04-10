@@ -5,14 +5,14 @@ id: tca9548a-arduino-2
 hide_title: False
 ---
 
-This page contains an example for setting up the LSM6DS3 and SHTC3 sensors with I2C multiplexer TCA9548A.
+This page contains an example for setting up the **LSM6DS3** and **SHTC3** sensors with I2C multiplexer **TCA9548A**.
 
 ---
 
 ## Connections for this example
 
-take image!!
-<!-- <CenteredImage src="/img/tca9548a/led_connection.png" width="100%" /> -->
+<CenteredImage src="/img/tca9548a/led_connection.png" alt="LSM6DS3 and SHTC3 sensors with I2C multiplexer TCA9548A" caption="LSM6DS3 and SHTC3 sensors with I2C multiplexer TCA9548A" width="600px" />
+<CenteredImage src="/img/tca9548a/sides.png" alt="Serial monitor for TCA9548A" caption="Serial monitor for TCA9548A" width="600px" />
 
 ---
 
@@ -107,3 +107,25 @@ void loop()
     delay(2000); // Wait before the next loop iteration
 }
 ```
+
+<FunctionDocumentation functionName="I2CMux.begin()" description="Initializes the TCA9548A I2C multiplexer and sets up communication." returnDescription="None" parameters={[]} />
+
+<FunctionDocumentation
+  functionName="I2CMux.openChannel(uint8_t channel)"
+  description="Opens a specific channel on the I2C multiplexer to enable communication with devices on that channel."
+  returnDescription="None"
+  parameters={[
+    { type: 'uint8_t', name: 'channel', description: "Channel number to open (0-7)." },
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="I2CMux.closeChannel(uint8_t channel)"
+  description="Closes a specific channel on the I2C multiplexer, isolating devices on that channel."
+  returnDescription="None"
+  parameters={[
+    { type: 'uint8_t', name: 'channel', description: "Channel number to open (0-7)." },
+  ]}
+/>
+
+<FunctionDocumentation functionName="I2CMux.closeAll()" description="Closes all channels on the I2C multiplexer, ensuring no devices are connected to the main bus." returnDescription="None" parameters={[]} />
