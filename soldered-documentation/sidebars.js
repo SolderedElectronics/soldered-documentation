@@ -32,6 +32,10 @@ const sidebars = {
           type: 'doc',
           id: 'misc/qwiic',
         },
+        {
+          type: 'doc',
+          id: 'misc/arduino-clear',
+        },
       ],
     },
     {
