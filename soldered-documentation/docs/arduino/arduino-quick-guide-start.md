@@ -8,10 +8,12 @@ pagination_prev: null
 
 To get started with Arduino, complete a few simple steps to install the required software.
 
+---
+
 ## 1. Install Arduino IDE
 If you haven't installed it yet, download and install the Arduino IDE from the [official website](https://www.arduino.cc/en/software).
 
-<InfoBox>Arduino IDE 2.0 or newer is recommended.</InfoBox> 
+<InfoBox>The latest version of Arduino is recommended.</InfoBox> 
 
 <CenteredImage src="/img/arduino/quick-start-guide/ide_download.jpg" alt="Download options for the latest release" caption="Download options for the latest release" width="600px"/>
 
@@ -19,7 +21,12 @@ If you haven't installed it yet, download and install the Arduino IDE from the [
 
 ---
 
-## 2. Install Dasduino board definition
+## 2. Install Dasduino board definitions
+
+If you have a Dasduino or Inkplate board, you will have to install the board definitions. These are like complete packages of software so that Arduino can compile and upload your code correctly.
+
+<InfoBox>If you have an official **Arduino** board, you already have the board definition pre-installed in Arduino IDE. If you have a board by some other manufacturer, the process following process to install the board definition is the same, just with a different board definitions URL. **Check your board manufacturer's site for how to install board definitions**!</InfoBox>
+
 Copy the following URL:
 ```
 https://github.com/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE/raw/master/package_Dasduino_Boards_index.json
@@ -44,7 +51,7 @@ Use the provided **USB-C cable** to connect the Dasduino board to your computer.
 ---
 
 ## 4. Connections
-To test if everything is working, we will use a basic circuit that consists of a single LED, a resistor, and two wires. Connect the circuit as shown below. Connect the red wire to the pin marked **14** and the black wire to the pin marked **GND**.
+To test if everything is working, we will use a basic circuit that consists of a single LED, a resistor, and two wires.
 
 <CenteredImage src="/img/arduino/quick-start-guide/circuit.png" alt="Wiring example" caption="Wiring example" width="600px"/>
 
@@ -55,15 +62,15 @@ In this example, we will use a modified version of the premade example called `B
 
 ```cpp
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
+  // Initialize pin 14 as OUTPUT
   pinMode(14, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(14, HIGH);  // turn the LED on (HIGH is the voltage level)
+  digitalWrite(14, HIGH);  // turn the LED on
   delay(1000);             // wait for a second
-  digitalWrite(14, LOW);   // turn the LED off by making the voltage LOW
+  digitalWrite(14, LOW);   // turn the LED off
   delay(1000);             // wait for a second
 }
 ```
@@ -84,4 +91,4 @@ Upload the code to the board by pressing the `Upload` button in the top left cor
 
 If all of the steps were completed correctly, your LED should blink as shown in the video below:
 
-<CenteredImage src="/img/arduino/quick-start-guide/led_blinking.gif" alt="Upload code button" caption="Upload code button" width="600px"/>
+<CenteredImage src="/img/arduino/quick-start-guide/led_blinking.gif" alt="Upload code button" caption="Blinking LED" width="600px"/>
