@@ -38,20 +38,20 @@ const sidebars = {
       type: 'category',
       label: 'Arduino Guides',
       items: [
-      {
-        type: 'doc',
-        id: 'arduino/arduino-quick-start-guide',
-      },
-      {
-        type: 'doc',
-        id: 'arduino/arduino-VSCode',
-      },
-      {
-        type: 'doc',
-        id: 'arduino/arduino-clear',
-      },
-    ]
-  },
+        {
+          type: 'doc',
+          id: 'arduino/arduino-quick-start-guide',
+        },
+        {
+          type: 'doc',
+          id: 'arduino/arduino-VSCode',
+        },
+        {
+          type: 'doc',
+          id: 'arduino/arduino-clear',
+        },
+      ]
+    },
     {
       type: 'category',
       label: 'Sensors',
@@ -208,7 +208,7 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/bme280/arduino_library/bme280-arduino-2',
                 },
-                
+
                 {
                   type: 'doc',
                   id: 'sensors/bme280/arduino_library/bme280-arduino-3',
@@ -828,7 +828,42 @@ const sidebars = {
           ],
         },
         {
-
+          type: 'category',
+          label: 'TCA9548A I2C Expander',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/tca9548a/tca9548a-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/tca9548a/tca9548a-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/tca9548a/tca9548a-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/tca9548a/arduino_library/tca9548a-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/tca9548a/arduino_library/tca9548a-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/tca9548a/arduino_library/tca9548a-arduino-3',
+                },
+              ]
+            }
+          ]
+        },
+        {
           type: 'category',
           label: 'USB-UART CH340 converter',
           items: [
