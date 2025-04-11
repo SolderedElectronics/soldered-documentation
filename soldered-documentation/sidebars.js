@@ -40,7 +40,7 @@ const sidebars = {
     items: [
     {
       type: 'doc',
-      id: 'misc/arduino-clear',
+      id: 'Arduino guides/arduino-clear',
     },
   ]
 },

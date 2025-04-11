@@ -1,6 +1,6 @@
 ---  
 slug: /arduino-clear   
-title: How to Clear Arduino Boards and Cache  
+title: Clear Arduino Boards and Cache  
 id: arduino-clear  
 hide_title: False  
 pagination_next: null  
@@ -21,11 +21,11 @@ When installing or updating a board (like ESP32, STM32, etc.), the download proc
 
 The Arduino IDE stores tools (like compilers, uploaders, and scripts) in these folders. If any of these tools are:
 
-*   Not fully downloaded,
-*   Mismatched with the board version, or
-*   Corrupted,
+*   Not fully downloaded
+*   Mismatched with the board version
+*   Corrupted
 
-you may encounter strange compile errors unrelated to your code. Clearing these folders forces the IDE to re-download the correct tools and ensures everything functions as expected. This guide explains how to safely delete these files step by step without using the terminal.
+You may encounter strange compile errors unrelated to your code. Clearing these folders forces the IDE to re-download the correct tools and ensures everything functions as expected. This guide explains how to safely delete these files step by step.
 
 ---
 
@@ -56,7 +56,7 @@ you may encounter strange compile errors unrelated to your code. Clearing these 
         
 <CenteredImage src="/img/arduino-clear/windows3.png" width="700px" />
 
-👉 **Optional**: To completely reset Arduino, you can delete the entire **Arduino15** folder. Note that this will remove all installed boards and some settings.
+<InfoBox>Optional: To completely reset Arduino, you can delete the entire **Arduino15** folder. Note that this will remove all installed boards and some settings.</InfoBox>
 
 ---
 
@@ -75,9 +75,9 @@ you may encounter strange compile errors unrelated to your code. Clearing these 
     *   The **packages** folder.  
     *   The **cache** folder. _(Right-click each folder and select Delete.)_
         
-👉 **Optional**: You can delete the entire **Arduino15** folder to reset everything. Note that this will remove all installed boards and some settings.
+<InfoBox>Optional: To completely reset Arduino, you can delete the entire **Arduino15** folder. Note that this will remove all installed boards and some settings.</InfoBox>
 
-#### Step 3: Clean Optional Preferences
+#### Step 3: Optionally Clean Preferences
 
 1.  Navigate to **Documents > Arduino**.
 2.  If you see a file named preferences.txt, you can delete it to reset personal settings (not usually necessary).
@@ -99,11 +99,9 @@ you may encounter strange compile errors unrelated to your code. Clearing these 
     *   The **packages** folder.
     *   The **cache** folder.
         
-👉 **Optional**: You can delete the entire .arduino15 folder to fully reset the Arduino environment.
+<InfoBox>Optional: To completely reset Arduino, you can delete the entire **Arduino15** folder. Note that this will remove all installed boards and some settings.</InfoBox>
 
 #### Step 3: Optional Sketchbook Cleanup
 
 1.  Still in your Home folder, open the **Arduino** folder.
 2.  If there’s a file called preferences.txt, you can delete it to reset settings.
-    
-These steps ensure a clean slate for your Arduino IDE on macOS or Linux, resolving potential issues caused by corrupted or outdated files.
