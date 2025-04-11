@@ -1,5 +1,5 @@
 ---  
-slug: /arduino-clear   
+slug: /arduino/clear-cache   
 title: Clear Arduino Boards and Cache  
 id: arduino-clear  
 hide_title: False  

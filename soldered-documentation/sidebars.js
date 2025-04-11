@@ -42,6 +42,10 @@ const sidebars = {
         type: 'doc',
         id: 'arduino_guides/arduino-VSCode',
       },
+      {
+        type: 'doc',
+        id: 'arduino_guides/arduino-clear',
+      },
     ]
   },
     {

@@ -1,5 +1,5 @@
 ---
-slug: /arduino-VSCode 
+slug: /arduino/VSCode 
 title: Using VSCode with Arduino
 id: arduino-VSCode
 hide_title: False
