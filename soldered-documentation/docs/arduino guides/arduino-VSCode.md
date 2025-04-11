@@ -47,7 +47,7 @@ Using **Visual Studio Code (VSCode)** alongside **Arduino IDE** allows you to or
 1.  Choose the folder created by Arduino IDE: `Documents/Arduino/exampleProject/`
 2.  VSCode will treat this as your working project folder, allowing you to add `.cpp` and `.h` files and enjoy full IntelliSense and code navigation.
 
-**Important**: Do not open just the `.ino` file! You must open the entire sketch folder to ensure relative paths and file structure work correctly.
+<WarningBox>**Important**: Do not open just the `.ino` file! You must open the entire sketch folder to ensure relative paths and file structure work correctly.</WarningBox>
 
 ---
 
@@ -57,10 +57,10 @@ Using **Visual Studio Code (VSCode)** alongside **Arduino IDE** allows you to or
 
 #### Example:
 
-If you install the Adafruit NeoPixel library via the Library Manager:
+If you install the [Soldered Smart LEDs WS2812 library](https://github.com/SolderedElectronics/Soldered-WS2812-Smart-Leds-Arduino-Library) via the Library Manager:
 
 ```cpp
-#include <Adafruit_NeoPixel.h>
+#include <WS2812-SOLDERED.h>
 ```
 
 You can use it in your `.ino` file without manually setting include paths.
@@ -69,7 +69,7 @@ You can use it in your `.ino` file without manually setting include paths.
 
 ## Step 4: Add Custom C++ Code (.cpp/.h)
 
-Using VSCode for Arduino projects makes your code more organized and scalable by encouraging modular structures with `.ino`, `.h`, and `.cpp` files, as shown in the LedBlinker example. It offers powerful features like IntelliSense, auto-complete, and real-time error highlighting that the Arduino IDE lacks. Navigating between files, such as jumping from `exampleProject.ino` to `LedBlinker.cpp`, is seamless with features like “Go to Definition.” Refactoring and debugging are much easier, especially when working with larger or more complex projects. Overall, VSCode brings a professional development experience that helps you write cleaner, more maintainable Arduino code.
+Using VSCode for Arduino projects makes your code more organized and scalable by encouraging modular structures with `.ino`, `.h`, and `.cpp` files, as shown in the following example, where a separate class used for blinking a LED is included through external files. Navigating between files, such as jumping from `exampleProject.ino` to `LedBlinker.cpp`, is seamless with features like “Go to Definition.” Refactoring and debugging are much easier, especially when working with larger or more complex projects. Overall, VSCode brings a professional development experience that helps you write cleaner, more maintainable Arduino code.
 
 
 The code defines a LedBlinker class that controls an LED by toggling its state at a set interval using the `blink()` method. In the exampleProject.ino file, an instance of this class is created for pin 33 with a 1000ms blink interval, and `blink()` is called repeatedly inside the `loop()`. This structure keeps the main sketch clean while encapsulating the LED logic inside a reusable class.
@@ -157,5 +157,3 @@ void loop() {
 
 
 <CenteredImage src="/img/arduino-VSCode/end.png"   />
-
----
