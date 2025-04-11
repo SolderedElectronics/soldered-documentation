@@ -5,14 +5,15 @@ id: tca9548a-arduino-2
 hide_title: False
 ---
 
-This page contains an example for setting up the 2 **APDS-9960** sensors with I2C multiplexer **TCA9548A**.
+This page contains an example for setting up 2 **APDS-9960** sensors with the I2C multiplexer **TCA9548A**.
 
 ---
 
 ## Connections for this example
 
+Simply connect the sensors via Qwiic to the multiplexer board. They have the same I2C address, so they usually couldn't be used from the same microcontroller board.
+
 <CenteredImage src="/img/tca9548a/led_connection.png" alt="APDS-9960 sensors with I2C multiplexer TCA9548A" caption="APDS-9960 sensors with I2C multiplexer TCA9548A" width="600px" />
-<CenteredImage src="/img/tca9548a/sides.png" alt="Serial monitor for TCA9548A" caption="Serial monitor for TCA9548A" width="600px" />
 
 ---
 
@@ -157,3 +158,5 @@ void loop()
 />
 
 <FunctionDocumentation functionName="I2CMux.closeAll()" description="Closes all channels on the I2C multiplexer, ensuring no devices are connected to the main bus." returnDescription="None" parameters={[]} />
+
+<CenteredImage src="/img/tca9548a/sides.png" alt="Serial monitor for TCA9548A" caption="Serial monitor for TCA9548A" width="600px" />
