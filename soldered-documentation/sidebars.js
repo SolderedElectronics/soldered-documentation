@@ -40,11 +40,15 @@ const sidebars = {
       items: [
       {
         type: 'doc',
-        id: 'arduino_guides/arduino-VSCode',
+        id: 'arduino/arduino-quick-start-guide',
       },
       {
         type: 'doc',
-        id: 'arduino_guides/arduino-clear',
+        id: 'arduino/arduino-VSCode',
+      },
+      {
+        type: 'doc',
+        id: 'arduino/arduino-clear',
       },
     ]
   },
