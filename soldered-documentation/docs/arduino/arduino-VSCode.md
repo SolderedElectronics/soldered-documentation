@@ -3,8 +3,6 @@ slug: /arduino/VSCode
 title: Using VSCode with Arduino
 id: arduino-VSCode
 hide_title: False
-pagination_next: null
-pagination_prev: null
 ---
 
 ## Why Use VSCode with Arduino?

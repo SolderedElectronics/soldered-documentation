@@ -4,7 +4,6 @@ title: Clear Arduino Boards and Cache
 id: arduino-clear  
 hide_title: False  
 pagination_next: null  
-pagination_prev: null  
 ---
 
 This page provides a short guide for clearing compiler errors and generally resetting the software to its default state. If you're familiar with the issue, you can just jump to the [Windows](arduino-clear.md#for-windows-users), [macOS](arduino-clear.md#for-macos-users) or [Linux](arduino-clear.md#for-linux-users-ubuntu-fedora-etc) sections of the guide.

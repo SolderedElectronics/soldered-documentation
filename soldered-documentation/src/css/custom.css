@@ -212,3 +212,31 @@ div[role=banner] {
 [data-theme='dark'] div[role=banner] {
   background-color: #393e4a !important;
 }
+
+.menu__list-item {
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) * var(--docusaurus-sidebar-level));
+}
+
+.menu__link {
+  font-weight: normal;
+}
+
+.menu__list-item--collapsed>.menu__link {
+  font-weight: bold;
+}
+
+/* Thin pale accent on all sidebar levels */
+.theme-doc-sidebar-item-link-level-1>.menu__link,
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible>.menu__link,
+.theme-doc-sidebar-item-link-level-2>.menu__link,
+.theme-doc-sidebar-item-category-level-2>.menu__list-item-collapsible>.menu__link,
+.theme-doc-sidebar-item-link-level-3>.menu__link,
+.theme-doc-sidebar-item-category-level-3>.menu__list-item-collapsible>.menu__link,
+.theme-doc-sidebar-item-link-level-4>.menu__link,
+.theme-doc-sidebar-item-category-level-4>.menu__list-item-collapsible>.menu__link {
+  border-left: 2px solid rgba(91, 35, 121, 0.25);
+  /* subtle purple line */
+  padding-left: 0.75rem;
+  border-radius: 0;
+  /* no rounding so the line is clean */
+}
