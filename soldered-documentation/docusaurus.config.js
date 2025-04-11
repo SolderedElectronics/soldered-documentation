@@ -76,7 +76,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'This documentation is a work in progress! <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://soldered.com/contact/">here</a></b>.',
+          'This documentation is a work in progress! <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfrMbqVxULcbCoIPQa1QBy6WXbjvJDai8psRWJbCaa6lGO9lw/viewform?usp=header">here</a></b>.',
         backgroundColor: '#6F3B8B',
         textColor: '#ffffff',
         isCloseable: false,
