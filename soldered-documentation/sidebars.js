@@ -58,6 +58,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'ELECTROCHEMICAL-GAS-SENSOR EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/electrochemical-gas-sensor/electrochemical-gas-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/electrochemical-gas-sensor/electrochemical-gas-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/electrochemical-gas-sensor/electrochemical-gas-sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'HC-SR04 Ultrasonic Sensor',
           items: [
             {
