@@ -740,6 +740,16 @@ const sidebars = {
       label: 'Communication',
       items: [
         {
+          type:'category',
+          label: 'NRF24L01 adapter',
+          items:[
+            {
+              type:'doc',
+              id: 'communication/nrf24l01/nrf24l01-overview',
+            },
+          ]
+        },
+        {
           type: 'category',
           label: 'MicroSD Card Reader',
           items: [
