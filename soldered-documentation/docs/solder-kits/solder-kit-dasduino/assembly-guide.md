@@ -22,6 +22,9 @@ Solder the 10kOhm resistors to the pcb on pins marked **R8**, **R9**, **R11**,**
 Solder the 1kOhm resistors to the pbc on pins marked **R1**, **R3**, **R5**. Their orientation doesn't matter.
 <CenteredImage src="/img/dasduinoCORE-solder-kit/1kR_highlighted.jpg" alt="Highlighted pins for 2.2kOhm resistors" caption="Highlighted pins for 1kOhm resistors" width="400px"/>
 
+### Solder the 100Ohm resitors
+Solder the 100Ohm resistors to the bpc on pins marked **R18**. Their orientation doesn't matter.
+<CenteredImage src="/img/dasduinoCORE-solder-kit/r18.jpg" alt="Highlighted pins for 100Ohm resistors" caption="Highlighted pins for 100Ohm resistors" width="400px"/>
 ---
 
 ## Step 2: Solder the capacitors

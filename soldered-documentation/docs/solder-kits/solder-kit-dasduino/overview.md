@@ -9,7 +9,15 @@ pagination_prev: null
 ## Introduction
 **Make your own Dasduino** is an educational electronics kit that teaches you how to solder, with which you end up with a functional microcontroller board. It is based on the ATmega328P microcontroller, and all SMD components are already soldered on the board. The set also includes a THT socket for the microcontroller, which simplifies the replacement of the microcontroller should it ever become necessary.
 
+---
+
+## What does it do
+When this kit is fully assembled, it functions as any ATmega328P-based microcontroler board.
+
 <CenteredImage src="/img/dasduinoCORE-solder-kit/333200.jpg" alt="Make yout own Dasduino" caption="Make yout own Dasduino" />
+
+
+---
 
 ## Contents of the kit
 
