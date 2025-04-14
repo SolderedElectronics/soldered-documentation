@@ -747,6 +747,14 @@ const sidebars = {
               type:'doc',
               id: 'communication/nrf24l01/nrf24l01-overview',
             },
+            {
+              type:'doc',
+              id: 'communication/nrf24l01/nrf24l01-hardware',
+            },
+            {
+              type:'doc',
+              id: 'communication/nrf24l01/nrf24l01-how-it-works',
+            },
           ]
         },
         {
