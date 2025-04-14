@@ -26,10 +26,12 @@ image="/img/nfr24l01/333059.jpg" />
 ---
 
 ## Key Features
-* **Operating voltage:** 1.9V - 3.6V
-* **Logic voltage:** 5V
-* **Mac. operating current:** 12.3mA
-* **Standby current:** 22uA
-* **Data rates:** 250 Kbps / 1Mbps / 2Mbps
-* **Communication range:** 100m (open space)
+- **Operating voltage:** 1.9V - 3.6V
+- **Logic voltage:** 5V
+- **Mac. operating current:** 12.3mA
+- **Standby current:** 22uA
+- **Data rates:** 250 Kbps / 1Mbps / 2Mbps
+- **Communication range:** 100m (open space)
+- **Dimensions:** **38 x 22 mm** (1.5 x 0.9 inch)
+
  
