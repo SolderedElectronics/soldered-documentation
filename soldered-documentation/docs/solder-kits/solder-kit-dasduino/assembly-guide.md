@@ -25,6 +25,10 @@ Solder the 1kOhm resistors to the pbc on pins marked **R1**, **R3**, **R5**. The
 ### Solder the 100Ohm resitors
 Solder the 100Ohm resistors to the bpc on pins marked **R18**. Their orientation doesn't matter.
 <CenteredImage src="/img/dasduinoCORE-solder-kit/r18.jpg" alt="Highlighted pins for 100Ohm resistors" caption="Highlighted pins for 100Ohm resistors" width="400px"/>
+
+### Solder the 100kOhm resitors
+Solder the 100Ohm resistors to the bpc on pins marked **R15**. Their orientation doesn't matter.
+<CenteredImage src="/img/dasduinoCORE-solder-kit/r15.jpg" alt="Highlighted pins for 100kOhm resistors" caption="Highlighted pins for 100kOhm resistors" width="400px"/>
 ---
 
 ## Step 2: Solder the capacitors
@@ -54,6 +58,7 @@ Solder the LEDs to the pcb in the order provided below:
 | Blue 	| D6 	|
 | White 	| D7 	|
 | Orange 	| D13 	|
+<CenteredImage src="/img/dasduinoCORE-solder-kit/led.jpg" alt="Marked pins on LED" caption="Marked pins on LED" width="600px"/>
 <CenteredImage src="/img/dasduinoCORE-solder-kit/leds_highlighted.jpg" alt="Highlighted pins for LEDs" caption="Highlighted pins for LEDs" width="400px" />
 
 ---

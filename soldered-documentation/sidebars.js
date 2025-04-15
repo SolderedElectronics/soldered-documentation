@@ -82,7 +82,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'DasduinoCORE',
+          label: 'Make your own Dasduino',
           items:[
             {
               type: 'doc',

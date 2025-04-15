@@ -20,6 +20,7 @@ Solder the switch on pins marked **S1**, orientation doesn't matter.
 
 ## Step 3: Solder the LEDs
 Solder the LEDs on pins marked **L1** to **L7**. Keep in mind that the LED's cathode (-) is on the left pin, and anode (+) is on the right side!
+<CenteredImage src="/img/stop-me-game/led.jpg" alt="Marked pins on LED" caption="Marked pins on LED" width="600px"/>
 <CenteredImage src="/img/stop-me-game/leds_highlighted.jpg" alt="Highlighted pins for LEDs" caption="Highlighted pins for LEDs" width="600px"/>
 
 ---
