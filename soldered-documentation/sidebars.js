@@ -267,6 +267,50 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Analog Digital Converter',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/adc/adc-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/adc/adc-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/adc/adc-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/adc/arduino_library/adc-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Hall effect sensor',
           items: [
             {
