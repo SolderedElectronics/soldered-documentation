@@ -50,6 +50,10 @@ const sidebars = {
           type: 'doc',
           id: 'arduino/arduino-clear',
         },
+        {
+          type: 'doc',
+          id: 'arduino/arduino-bootloader',
+        },
       ]
     },
     {

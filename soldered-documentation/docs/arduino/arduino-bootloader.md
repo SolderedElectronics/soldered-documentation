@@ -1,6 +1,6 @@
 ---
 slug: /arduino/bootloader
-title: Burning Bootloader to Arduino board
+title: Burning the Arduino Bootloader
 id: arduino-bootloader 
 hide_title: False
 pagination_prev: null
