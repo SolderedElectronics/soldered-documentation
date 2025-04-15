@@ -359,6 +359,50 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'HX711 Load-cell Amplifier',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/hx711/hx711-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/hx711/hx711-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/hx711/hx711-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/hx711/arduino_library/hx711-arduino-5',
+                },
+              ],
+            },
+          ]
+        },
+        {
+          type: 'category',
           label: 'Hall effect sensor',
           items: [
             {
