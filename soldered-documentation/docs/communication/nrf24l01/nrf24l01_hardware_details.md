@@ -6,7 +6,7 @@ hide_title: False
 ---
 
 ## Pinout
-<CenteredImage src="/img/nfr24l01/pinout.jpg" alt="NRF24L01 adapter pinout diagram" caption="NRF24L01 adapter pinout diagram"/>
+<CenteredImage src="/img/nrf24l01/pinout.jpg" alt="nFR24L01+ adapter pinout diagram" caption="nFR24L01+ adapter pinout diagram"/>
 
 ---
 

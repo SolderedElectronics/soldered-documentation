@@ -6,13 +6,13 @@ hide_title: False
 pagination_prev: null
 ---
 
-## NRF24L01 Adapter
+## nFR24L01+ Adapter
 
-The **NRF24L01 adapter** is an adapter board for the **NRF24L01+ module**. It uses the 2.4 GHz band and it can operate with baud rates ranging from **250 kbps up to 2Mbps**. If used in oper space and with lower baud rate its rance can reach up to 100 meters.
+The **nFR24L01+ adapter** is an adapter board for the **nFR24L01+ module**. It uses the 2.4 GHz band and it can operate with baud rates ranging from **250 kbps up to 2Mbps**. If used in open space and with lower baud rate its rance can reach up to 100 meters. It is commonly used in wireless PC Peripherals, VoIP headsets, Sports watches and sensors, active RFID, Ultra low power sensor networks and more.
 
 ---
 
-<CenteredImage src="/img/nfr24l01/333059.jpg" alt="NRF24L01 adapter board" caption="NRF24L01 adapter board" />
+<CenteredImage src="/img/nrf24l01/333059.jpg" alt="NRF24L01 adapter board" caption="NRF24L01 adapter board" />
 
 ---
 
