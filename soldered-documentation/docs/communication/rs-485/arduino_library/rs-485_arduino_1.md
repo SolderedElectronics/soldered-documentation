@@ -12,7 +12,7 @@ To test the **RS-485 Transceiver Breakout Board** with **Arduino**, you can use 
 <InfoBox>
 First time Arduino user? For a detailed tutorial on how to get started with Arduino, see this section of our docs:
 
-<QuickLink title="Getting started with Arduino" description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!" url="#" />
+<QuickLink title="Getting started with Arduino" description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!" url="/documentation/arduino/quick-start-guide" />
 
 </InfoBox>
 
