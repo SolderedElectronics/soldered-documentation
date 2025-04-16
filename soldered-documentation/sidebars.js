@@ -897,6 +897,42 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Digipot',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/digipot/digipot-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/digipot/digipot-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/digipot/digipot-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/digipot/arduino_library/digipot-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/digipot/arduino_library/digipot-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/digipot/arduino_library/digipot-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Real time clock PCF85063A',
           items: [
             {
