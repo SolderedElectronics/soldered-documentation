@@ -62,6 +62,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'MQ Gas Sensors',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/mq/mq-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/mq/mq-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/mq/mq-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/mq/arduino_library/mq-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/mq/arduino_library/mq-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/mq/arduino_library/mq-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'HC-SR04 Ultrasonic Sensor',
           items: [
             {
