@@ -84,7 +84,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: false,
-          autoCollapseCategories: false,
+          autoCollapseCategories: true,
         },
       },
       image: 'img/soldered_docs_social_card.jpg',
