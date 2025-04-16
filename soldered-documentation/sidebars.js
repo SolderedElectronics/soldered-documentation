@@ -94,6 +94,10 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-6',
+                },
+                {
+                  type: 'doc',
                   id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-3',
                 },
               ],
