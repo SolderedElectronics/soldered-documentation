@@ -689,6 +689,58 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'LED-Matrix',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/led-matrix/led-matrix-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/led-matrix/led-matrix-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/led-matrix/led-matrix-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/led-matrix/arduino_library/led-matrix-arduino-7',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'MCP47A1 DAC 6-bit',
           items: [
             {
