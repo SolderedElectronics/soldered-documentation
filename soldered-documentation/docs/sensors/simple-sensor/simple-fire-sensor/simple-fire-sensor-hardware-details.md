@@ -8,10 +8,16 @@ hide_title: False
 ## Pinout
 
 <CenteredImage src="/img/simple-sensor/simple-fire-sensor/333042_pinout.jpg" alt="Pinout" />
+
+
 Click [**here**](/img/simple-sensor/simple-fire-sensor/333042_pinout.jpg) for a high resolution image of the pinout.
 
+
 <CenteredImage src="/img/simple-sensor/simple-fire-sensor/333047_pinout.jpg" alt="Pinout" />
+
+
 Click [**here**](/img/simple-sensor/simple-fire-sensor/333047_pinout.jpg) for a high resolution image of the pinout.
+
 
 ---
 
@@ -35,6 +41,7 @@ Click [**here**](/img/simple-sensor/simple-fire-sensor/333047_pinout.jpg) for a 
 ---
 
 ## Pin details for Qwiic version
+
 For the Qwiic version, connection is achieved using a Qwiic connector.
 
 <InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, they are used only for debugging purposes. </InfoBox>
@@ -46,6 +53,7 @@ For the Qwiic version, connection is achieved using a Qwiic connector.
 - Soldered boards are LEGO compatible! 🧱 
 
 ### Address selection for Qwiic version
+
 This board contains hardware address switches. See below for instructions on how to change the breakout board's address.
 
 <CenteredImage src="/img/simple-sensor/simple-fire-sensor/333042_add_highlighted.jpg" alt="Address Switches" />

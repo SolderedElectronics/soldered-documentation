@@ -11,6 +11,7 @@ hide_title: False
 Click [**here**](/img/simple-sensor/simple-soil-humidity-sensor/333040_pinout.jpg) for a high resolution image of the pinout.
 
 <ErrorBox>The pinout image for the regular board hasn't been generated yet! We're working on it!</ErrorBox>
+
 ---
 
 # Pin details for regular version
@@ -34,6 +35,7 @@ Click [**here**](/img/simple-sensor/simple-soil-humidity-sensor/333040_pinout.jp
 ---
 
 ## Pin details for Qwiic version
+
 For the Qwiic version, connection is achieved using a Qwiic connector.
 
 <InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, they are used only for debugging purposes. </InfoBox>
