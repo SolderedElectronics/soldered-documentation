@@ -8,13 +8,13 @@ pagination_prev: null
 
 ## Electrochemical gas sensors
 
-The **Electrochemical gas sensors** are a family of **high precision gas sensors** by **SGX**. Each of them is used to detect a specific gas with exceptional accuracy. This breakout board is perfect for industrial safety, environmental monitoring, and research projects and provides a reliable foundation for precise gas detection solutions. The breakout board works with both **3.3V and 5V power supplies**. The **Qwiic** connector provides a fast and easy connection with the microcontroller board. The board provides both analog and digital output with integrated ADC. The analog front end is fully programmable with **I2C communication**.
+The **Electrochemical gas sensors** are a family of **high precision gas sensors** by **SGX**. Each sensor is used to detect a specific gas with exceptional accuracy. This breakout board is perfect for industrial safety, environmental monitoring, and research projects, providing a reliable foundation for precise gas detection solutions. The breakout board works with both **3.3V and 5V power supplies**. The **Qwiic** connector provides a fast and easy connection with the microcontroller board. The board provides both analog and digital output with an integrated ADC. The analog front end is fully programmable with **I2C communication**.
 
 <CenteredImage src="/img/electrochemical-gas-sensor/333329.webp" alt="High precision electrochemical O₃ gas sensor" caption="High precision electrochemical O₃ gas sensor" />
 
 ---
 
-## Which products is this documentation for?
+## Which products is this documentation intended for?
 
 <QuickLink 
   title="High precision electrochemical SO₂ gas sensor breakout" 
@@ -82,11 +82,10 @@ The **Electrochemical gas sensors** are a family of **high precision gas sensors
 
 ## Key Features
 
-- **Accurately measures specific gas levels, providing reliable data for various applications.**  
-- **Compatible with microcontrollers like Arduino and Raspberry Pi, featuring an I²C interface for straightforward communication and data acquisition**   
+- **Accurately measures specific gas levels, providing reliable data for various applications.**   
 - **Communication:** I2C (fixed address: 0x48 for LMP, 0x49 for ADC)  
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
-- **Mounting:** **Four mounting holes** for secure attachment  
+- **Mounting:** **Four mounting holes** for secure attachment.  
 - **Dimensions:** **38 × 38 mm** (1.5 × 1.5 inch)  
 
 ---

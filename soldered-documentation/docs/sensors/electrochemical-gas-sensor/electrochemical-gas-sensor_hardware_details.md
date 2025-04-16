@@ -22,8 +22,10 @@ hide_title: False
 | **AIN2**    | Analog input    | Analog input 2                                  |
 | **AIN3**    | Analog input    | Analog input 3                                  |
 | **VOUT**    | Analog output   | Analog output from LMP                          |
-| **ALERT**   | Digital output   | when the conversion data exceeds the Hi_thresh register or falls below the Lo_thresh register value.                         |
-| **LMPEN**    | LMP enable    | Module Enable, Active-Low                                  |
+| **ALERT**   | Digital output  | High when the conversion data exceeds the Hi_thresh register or falls below the Lo_thresh register value.                         |
+| **LMPEN**   | LMP enable      | Module Enable, Active-Low                                  |
+
+<InfoBox>While the LMP91000 only outputs the sensor voltage to the VOUT pin (AIN0), the other analog inputs (AIN1-AIN3) can be used to read and convert different analog signals to digital ones if needed</InfoBox>
 
 ---
 
@@ -52,10 +54,7 @@ hide_title: False
 
 ## LMPEN pin functionality
 
-The LMP91000 comes with a unique and fixed I2C address of **0x48**. It is still possible to connect more than one LMP91000 to an I2C bus and select each device using the LMPEN pin. The LMPEN simply enables/disables the
-I2C communication of the LMP91000. When the LMPEN is at logic level low all the I2C communication is enabled,
-it is disabled when LMPEN is at high logic level. In a system based on a μcontroller and more than one LMP91000 connected to the I2C bus, the I2C lines (SDAand SCL) are shared, while the LMPEN of each LMP91000 is connected to a dedicate GPIO port of the μcontroller. The μcontroller starts communication asserting one out of N LMPEN signals where N is the total number of LMP91000s connected to the I2C bus. Only the enabled device will acknowledge the I2C commands. After
-finishing communicating with this particular LMP91000, the microcontroller de-asserts the corresponding LMPEN and repeats the procedure for other LMP91000s
+The LMP91000 comes with a unique and fixed I2C address of **0x48**. It is still possible to connect more than one LMP91000 to an I2C bus and select each device using the LMPEN pin. The LMPEN simply enables or disables the I2C communication of the LMP91000. When the LMPEN is at a logic level low, all I2C communication is enabled; conversely, when the LMPEN is at a high logic level, I2C communication is disabled. In a system based on a microcontroller with more than one LMP91000 connected to the I2C bus, the I2C lines (SDA and SCL) are shared, while the LMPEN of each LMP91000 is connected to a dedicated GPIO port of the microcontroller. The microcontroller starts communication by asserting one out of N LMPEN signals, where N is the total number of LMP91000s connected to the I2C bus. Only the enabled device will acknowledge the I2C commands. After finishing communication with this particular LMP91000, the microcontroller de-asserts the corresponding LMPEN and repeats the procedure for the other LMP91000s.
 
 <CenteredImage src="/img/electrochemical-gas-sensor/LMPEN.png" alt="LMPEN pin functionality" width="550px" />
 
@@ -74,7 +73,7 @@ finishing communicating with this particular LMP91000, the microcontroller de-as
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers. See below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -93,11 +92,11 @@ This board contains hardware jumpers, see below for their locations and function
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                           |
 | **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                         |
-| **JP3** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.          |
-| **JP4** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP3 is disconnected if JP4 is connected.** |
-| **JP5** | **NC** (Normally closed) | When shorted, sets the I2C address to **0x49**                                          |
-| **JP6** | **NO** (Normally open) | When shorted, sets the I2C address to **0x4A**                                          |
-| **JP7** | **NO** (Normally open) | When shorted, sets the I2C address to **0x4B**                                          |
+| **JP3** | **NC** (Normally closed) | When connected, the voltage regulator is powered by 5V, stepping it down to 3.3V for the IC.                    |
+| **JP4** | **NO** (Normally open)   | When shorted, it bypasses the voltage regulator, allowing the board to be powered directly from 3.3V via headers. **Ensure JP3 is disconnected if JP4 is connected.** |
+| **JP5** | **NC** (Normally closed) | When shorted, it sets the I2C address to **0x49**.                                          |
+| **JP6** | **NO** (Normally open)   | When shorted, it sets the I2C address to **0x4A**.                                          |
+| **JP7** | **NO** (Normally open)   | When shorted, it sets the I2C address to **0x4B**.                                          |
 
 ---
 
@@ -150,5 +149,5 @@ The **Compliance** section includes important regulatory and safety documentatio
 
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
+- **Safety Instructions** – Safety guidelines and precautions in both English and German.
 - **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

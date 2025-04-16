@@ -58,7 +58,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'ELECTROCHEMICAL-GAS-SENSOR EDIT THIS NAME',
+          label: 'Electrochemical Gas Sensors',
           items: [
             {
               type: 'doc',
@@ -83,6 +83,14 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-5',
                 },
                 {
                   type: 'doc',
