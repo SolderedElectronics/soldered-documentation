@@ -331,6 +331,173 @@ const sidebars = {
             },
           ],
         },
+        
+        {
+          type: 'category',
+          label: 'Simple sensors',
+          items: [
+            {
+              type: 'category',
+              label: 'Simple soil humidity sensor',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-overview',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-hardware',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-how-it-works',
+                },
+                {
+                  type: 'category',
+                  label: 'Arduino library',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-soil-humidity-sensor/arduino_library/simple-soil-humidity-sensor-arduino-1',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-soil-humidity-sensor/arduino_library/simple-soil-humidity-sensor-arduino-2',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-soil-humidity-sensor/arduino_library/simple-soil-humidity-sensor-arduino-3',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-soil-humidity-sensor/arduino_library/simple-soil-humidity-sensor-arduino-4',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Simple light sensor',
+              items:[
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-light-sensor/simple-light-sensor-overview',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-light-sensor/simple-light-sensor-hardware',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-light-sensor/simple-light-sensor-how-it-works',
+                },
+                {
+                  type: 'category',
+                  label: 'Arduino library',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-light-sensor/arduino_library/simple-light-sensor-arduino-1',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-light-sensor/arduino_library/simple-light-sensor-arduino-2',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-light-sensor/arduino_library/simple-light-sensor-arduino-3',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-light-sensor/arduino_library/simple-light-sensor-arduino-4',
+                    },
+                  ],
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Simple fire sensor',
+              items:[
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-fire-sensor/simple-fire-sensor-overview',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-fire-sensor/simple-fire-sensor-hardware',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-fire-sensor/simple-fire-sensor-how-it-works',
+                },
+                {
+                  type: 'category',
+                  label: 'Arduino library',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-fire-sensor/arduino_library/simple-fire-sensor-arduino-1',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-fire-sensor/arduino_library/simple-fire-sensor-arduino-2',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-fire-sensor/arduino_library/simple-fire-sensor-arduino-3',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-fire-sensor/arduino_library/simple-fire-sensor-arduino-4',
+                    },
+                  ],
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Simple rain sensor',
+              items:[
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-rain-sensor/simple-rain-sensor-overview',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-rain-sensor/simple-rain-sensor-hardware',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/simple-sensor/simple-rain-sensor/simple-rain-sensor-how-it-works',
+                },
+                {
+                  type: 'category',
+                  label: 'Arduino library',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-rain-sensor/arduino_library/simple-rain-sensor-arduino-1',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-rain-sensor/arduino_library/simple-rain-sensor-arduino-2',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-rain-sensor/arduino_library/simple-rain-sensor-arduino-3',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'sensors/simple-sensor/simple-rain-sensor/arduino_library/simple-rain-sensor-arduino-4',
+                    },
+                  ],
+                },
+              ]
+            },
+          ],
+        },
         {
           type: 'category',
           label: 'Rotary encoder',
