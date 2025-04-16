@@ -33,7 +33,7 @@ The TCA9548A works as a switch for I2C communication. It has:
     
 
 Through **I2C commands** the TCA9548A simplifies complex I2C setups by enabling multiple devices with identical addresses to coexist on a single bus, you can activate a specific channel enabling communication with the device connected to that channel while isolating the others. This ensures no address conflicts between devices with identical I2C addresses.
-The default I2C address of the TCA9548A is **0x70**, but it can be adjusted using the **A0**, **A1**, and **A2** pins where each combination is listed [**here**](tca9548a/tca9548a_hardware_details#adress-selection). Up to eight multiplexers can be connected to a single bus, allowing communication with up to **64 devices**.
+The default I2C address of the TCA9548A is **0x70**, but it can be adjusted using the **A0**, **A1**, and **A2** pins where each combination is listed [**here**](documentation/tca9548a/hardware#adress-selection). Up to eight multiplexers can be connected to a single bus, allowing communication with up to **64 devices**.
 
 <CenteredImage src="/img/tca9548a/diagram.png" alt="Multiplexing diagram" caption="Multiplexing diagram" width="400px" />
 
