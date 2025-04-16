@@ -1618,6 +1618,68 @@ const sidebars = {
         },
       ]
     },
+    {
+      type: 'category',
+      label: 'Solder Kits',
+      items: [
+        {
+          type: 'category',
+          label: 'Stop me game',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/stop-me-game/stop-me-game-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/stop-me-game/stop-me-game-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Reaction game',
+          items:[
+            {
+              type: 'doc',
+              id: 'solder-kits/reaction-game/reaction-game-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/reaction-game/reaction-game-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Simon says',
+          items:[
+            {
+              type: 'doc',
+              id: 'solder-kits/solder-kit-simon-says/simon-says-game-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/solder-kit-simon-says/simon-says-game-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Make your own Dasduino',
+          items:[
+            {
+              type: 'doc',
+              id: 'solder-kits/solder-kit-dasduino/solder-kit-dasduino-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/solder-kit-dasduino/solder-kit-dasduino-assembly-guide',
+            },
+          ]
+        },
+      ],
+    },
   ],
 };
 
