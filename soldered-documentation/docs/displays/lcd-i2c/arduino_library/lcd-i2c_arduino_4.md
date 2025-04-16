@@ -226,7 +226,7 @@ void loop()
 }
 ```
 
-<!-- <CenteredImage src="/img/lcd-i2c/advancedexamps.gif" alt="tca schematic" caption="LCD Preview" width="700px" /> -->
+<!-- <CenteredImage src="/img/lcd-i2c/advancedexamps.gif" alt="tca schematic" caption="LCD Preview" width="700px" /> -->  
 
 <QuickLink 
   title="Functions.ino" 
