@@ -331,7 +331,7 @@ const sidebars = {
             },
           ],
         },
-        
+
         {
           type: 'category',
           label: 'Simple sensors',
@@ -379,7 +379,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'Simple light sensor',
-              items:[
+              items: [
                 {
                   type: 'doc',
                   id: 'sensors/simple-sensor/simple-light-sensor/simple-light-sensor-overview',
@@ -419,7 +419,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'Simple fire sensor',
-              items:[
+              items: [
                 {
                   type: 'doc',
                   id: 'sensors/simple-sensor/simple-fire-sensor/simple-fire-sensor-overview',
@@ -459,7 +459,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'Simple rain sensor',
-              items:[
+              items: [
                 {
                   type: 'doc',
                   id: 'sensors/simple-sensor/simple-rain-sensor/simple-rain-sensor-overview',
@@ -1496,6 +1496,78 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'RS-232',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/rs-232/rs-232-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/rs-232/rs-232-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/rs-232/rs-232-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/rs-232/arduino_library/rs-232-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rs-232/arduino_library/rs-232-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rs-232/arduino_library/rs-232-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'RS-485',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/rs-485/rs-485-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/rs-485/rs-485-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/rs-485/rs-485-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/rs-485/arduino_library/rs-485-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rs-485/arduino_library/rs-485-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/rs-485/arduino_library/rs-485-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Logic Level Converter',
           items: [
             {
@@ -1639,7 +1711,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Reaction game',
-          items:[
+          items: [
             {
               type: 'doc',
               id: 'solder-kits/reaction-game/reaction-game-overview',
@@ -1653,7 +1725,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Simon says',
-          items:[
+          items: [
             {
               type: 'doc',
               id: 'solder-kits/solder-kit-simon-says/simon-says-game-overview',
@@ -1667,7 +1739,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Make your own Dasduino',
-          items:[
+          items: [
             {
               type: 'doc',
               id: 'solder-kits/solder-kit-dasduino/solder-kit-dasduino-overview',
