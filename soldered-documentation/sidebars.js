@@ -613,6 +613,46 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Relay',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/relay/relay-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/relay/relay-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/relay/relay-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/relay/arduino_library/relay-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/relay/arduino_library/relay-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/relay/arduino_library/relay-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/relay/arduino_library/relay-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'MCP47A1 DAC 6-bit',
           items: [
             {
