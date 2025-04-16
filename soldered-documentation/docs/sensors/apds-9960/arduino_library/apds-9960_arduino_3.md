@@ -129,7 +129,8 @@ void loop()
     }
 }
 ```
-<CenteredImage src="/img/apds-9960/gesture_vid.gif" alt="Serial Monitor" caption="Gesture Detection" width="700px"/>
+<!-- <CenteredImage src="/img/apds-9960/gesture_vid.gif" alt="Serial Monitor" caption="Gesture Detection" width="700px"/> -->
+
 <CenteredImage src="/img/apds-9960/apds9960_gesture.png" alt="Serial Monitor" caption="Gesture Detection Serial Monitor output"/>
 
 <QuickLink 

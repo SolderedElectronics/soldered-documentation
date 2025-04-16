@@ -89,6 +89,6 @@ Upload the code to the board by pressing the `Upload` button in the top left cor
 
 <InfoBox>If the code doesn't upload, try selecting a different port.</InfoBox>
 
-If all of the steps were completed correctly, your LED should blink as shown in the video below:
+If all of the steps were completed correctly, your LED should blink.
 
-<CenteredImage src="/img/arduino/quick-start-guide/led_blinking.gif" alt="Upload code button" caption="Blinking LED" width="600px"/>
+<!-- <CenteredImage src="/img/arduino/quick-start-guide/led_blinking.gif" alt="Upload code button" caption="Blinking LED" width="600px"/> -->
