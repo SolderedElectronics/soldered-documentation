@@ -267,6 +267,42 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Rotary encoder',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/rotary-encoder/rotary-encoder-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/rotary-encoder/rotary-encoder-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/rotary-encoder/rotary-encoder-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/rotary-encoder/arduino_library/rotary-encoder-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/rotary-encoder/arduino_library/rotary-encoder-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/rotary-encoder/arduino_library/rotary-encoder-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Analog Digital Converter',
           items: [
             {
