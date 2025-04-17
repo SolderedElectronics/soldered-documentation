@@ -130,6 +130,19 @@ void loop() {
 
 ---
 
+## Centered Image with attribution
+
+<CenteredImage
+  src="/img/soldered_docs_social_card.jpg"
+  alt="Descriptive alt text"
+  caption="This is a cool image"
+  attribution_name="Unsplash Author"
+  attribution_link="https://unsplash.com/@author"
+/>
+
+
+---
+
 ## QuickLink
 
 <QuickLink 
