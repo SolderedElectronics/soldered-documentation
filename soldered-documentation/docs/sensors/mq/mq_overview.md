@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## MQ Gas Sensors
 
-The **MQ gas sensor** family consists of affordable, widely used semiconductor gas sensors designed to detect various gases. These sensors operate on the principle of **chemiresistance**, where gas exposure changes the sensor's conductivity, producing an analog output proportional to gas concentration. MQ sensors are popular in DIY projects, air quality monitors, and basic industrial safety systems due to their low cost and ease of use. MQ sensors remain a practical choice for hobbyists and cost-sensitive applications where approximate gas levels are sufficient. The sensors come in two versions: **native** and **Qwiic**. The Qwiic version enables the use of **I2C connectivity** with the board 
+The **MQ gas sensor** family consists of affordable, widely used semiconductor gas sensors designed to detect various gases. These sensors operate on the principle of **chemiresistance**, where gas exposure changes the sensor's conductivity, producing an analog output proportional to gas concentration. MQ sensors are popular in DIY projects, air quality monitors, and basic industrial safety systems due to their low cost and ease of use. MQ sensors remain a practical choice for hobbyists and cost-sensitive applications where approximate gas levels are sufficient. The sensors come in two versions: **native** and **Qwiic**. The Qwiic version enables the use of **I2C connectivity** with the board.
 
 <CenteredImage src="/img/mq/333116.jpg" alt="MQ2 Sensor" caption="MQ2 Sensor" />
 
@@ -68,7 +68,7 @@ The **MQ gas sensor** family consists of affordable, widely used semiconductor g
 />  
 
 <QuickLink 
-  title="CO, flammable gasses sensor MQ9 breakout with easyC" 
+  title="CO, flammable gases sensor MQ9 breakout with easyC" 
   description="333123" 
   url="https://soldered.com/product/co-flammable-gasses-sensor-mq9-breakout-with-easyc/" 
   image="/img/mq/333116.jpg"
@@ -154,7 +154,7 @@ The **MQ gas sensor** family consists of affordable, widely used semiconductor g
 /> 
 
 <QuickLink 
-  title="CO, flammable gasses sensor MQ9 breakout" 
+  title="CO, flammable gases sensor MQ9 breakout" 
   description="333109" 
   url="https://soldered.com/product/co-flammable-gasses-sensor-mq9-breakout/"
   image="/img/mq/333102.jpg"

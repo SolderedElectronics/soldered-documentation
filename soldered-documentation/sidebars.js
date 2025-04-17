@@ -90,6 +90,22 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'sensors/mq/arduino_library/mq-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/mq/arduino_library/mq-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/mq/arduino_library/mq-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/mq/arduino_library/mq-arduino-7',
+                },
+                {
+                  type: 'doc',
                   id: 'sensors/mq/arduino_library/mq-arduino-3',
                 },
               ],

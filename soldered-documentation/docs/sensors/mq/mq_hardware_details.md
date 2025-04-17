@@ -58,14 +58,14 @@ Click [**here**](/img/mq/pinout_native.webp) for a high-resolution image of the 
 - **Board Dimensions:** 54 x 22 mm (2.1 x 0.9 inches)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+- Soldered boards are LEGO-compatible! 🧱 
 
 ### Native
 
 - **Board Dimensions:** 22 x 38 mm (0.9 x 1.5 inches)
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+- Soldered boards are LEGO-compatible! 🧱 
 
 ---
 
@@ -90,7 +90,7 @@ Click [**here**](/img/mq/pinout_native.webp) for a high-resolution image of the 
 
 ## Jumper Details (Qwiic version)
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers. See below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -128,7 +128,7 @@ This board contains hardware address switches. See below for instructions on cha
 
 ## Hardware repository
 
-In the link below you can find repositories of hardware designs for all MQ sensor types, which include Schematics, KiCad files, Gerber files and more:
+In the link below, you can find repositories of hardware designs for all MQ sensor types, which include Schematics, KiCad files, Gerber files and more:
 
 <QuickLink 
   title="MQ Sensors Hardware Design" 
