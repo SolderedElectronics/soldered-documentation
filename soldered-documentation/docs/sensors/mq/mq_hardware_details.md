@@ -7,6 +7,22 @@ hide_title: False
 
 ## Pinout
 
+### Native version
+
+<CenteredImage src="/img/mq/pinout_native.webp" alt="MQ Native pinout" />
+
+Click [**here**](/img/mq/pinout_native.webp) for a high-resolution image of the pinout.
+
+<InfoBox>While the pinout shown is for the MQ135, it is exactly the same for any Native MQ sensor</InfoBox>
+
+| Pin Marking | Pin Name | Description                                     |
+| ----------- | -------- | ----------------------------------------------- |
+| **5V**      | Power    | Supply voltage for the sensor                   |
+| **DO**    | Digital Output    | Set to HIGH when sensor reads gas concentration over the trigger level set by the onboard potentiometer                    |
+| **AO**      | Analog Output    | Voltage output proportional to gas measurement                  |
+| **GND**     | Ground   | Common ground for power and signals.            |
+
+
 ### Qwiic version
 
 <CenteredImage src="/img/mq/pinout_qwiic.png" alt="MQ Qwiic pinout" />
@@ -34,31 +50,10 @@ Click [**here**](/img/mq/pinout_qwiic.png) for a high-resolution image of the pi
   url="/qwiic" 
 />
 
-### Native version
-
-<CenteredImage src="/img/mq/pinout_native.webp" alt="MQ Native pinout" />
-
-Click [**here**](/img/mq/pinout_native.webp) for a high-resolution image of the pinout.
-
-<InfoBox>While the pinout shown is for the MQ135, it is exactly the same for any Native MQ sensor</InfoBox>
-
-| Pin Marking | Pin Name | Description                                     |
-| ----------- | -------- | ----------------------------------------------- |
-| **5V**      | Power    | Supply voltage for the sensor                   |
-| **DO**    | Digital Output    | Set to HIGH when sensor reads gas concentration over the trigger level set by the onboard potentiometer                    |
-| **AO**      | Analog Output    | Voltage output proportional to gas measurement                  |
-| **GND**     | Ground   | Common ground for power and signals.            |
 
 ---
 
-## Dimensions
-
-### Qwiic
-
-- **Board Dimensions:** 54 x 22 mm (2.1 x 0.9 inches)  
-- **Header Pin Holes:** 1.5 mm  
-- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO-compatible! 🧱 
+## Dimensions 
 
 ### Native
 
@@ -67,24 +62,12 @@ Click [**here**](/img/mq/pinout_native.webp) for a high-resolution image of the 
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO-compatible! 🧱 
 
----
+### Qwiic
 
-## Datasheets
-
-| Sensor      | Datasheet | 
-| ----------- | --------- | 
-| MQ2         | [Datasheet](https://soldered.com/productdata/2015/02/Soldered_MQ-2_datasheet.pdf)     | 
-| MQ3    | [Datasheet](https://soldered.com/productdata/2015/02/Soldered_MQ-3_datasheet.pdf)   |
-| MQ4   | [Datasheet](https://soldered.com/productdata/2015/09/Soldered_MQ-4_datasheet.pdf)     |
-| MQ5    | [Datasheet](https://soldered.com/productdata/2022/03/Soldered_MQ-5_datasheet.pdf)  | 
-| MQ6    | [Datasheet](https://soldered.com/product/lpg-butane-sensor-mq6-breakout-with-easyc/)    |
-| MQ7    | [Datasheet](https://soldered.com/product/co-sensor-mq7-breakout-with-easyc/)     |
-| MQ8      | [Datasheet](https://soldered.com/productdata/2015/09/Soldered_MQ-8_datasheet.pdf) | 
-| MQ9        | [Datasheet](https://soldered.com/productdata/2015/09/Soldered_MQ-9_datasheet.pdf) | 
-| MQ131      | [Datasheet](https://soldered.com/productdata/2021/01/Soldered_o3.winsen-mq131_datasheet.pdf) | 
-| MQ135      | [Datasheet](https://soldered.com/productdata/2022/03/Soldered_MQ-135_datasheet.pdf) | 
-| MQ137      | [Datasheet](https://soldered.com/productdata/2022/03/Soldered_MQ-137_datasheet.pdf) | 
-| MQ138      | [Datasheet](https://soldered.com/productdata/2022/03/Soldered_MQ-138_datasheet.pdf) | 
+- **Board Dimensions:** 54 x 22 mm (2.1 x 0.9 inches)  
+- **Header Pin Holes:** 1.5 mm  
+- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
+- Soldered boards are LEGO-compatible! 🧱
 
 ---
 

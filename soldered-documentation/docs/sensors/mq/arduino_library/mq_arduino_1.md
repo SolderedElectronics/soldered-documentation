@@ -11,7 +11,7 @@ This page provides the essential information for getting started, including boar
 
 ## Acknowledgement
 
-<InfoBox> The Soldered OLED Display Arduino library is based on the [**MQSensorsLib** library](https://github.com/miguel5612/MQSensorsLib) by [Miguel Angel Califa Urquiza](https://github.com/miguel5612). As such, its source code is licensed under the **MIT License**. For more details, see the [**MIT License**](https://opensource.org/license/mit).</InfoBox>
+<InfoBox> The MQ Gas Sensor Arduino library is based on the [**MQSensorsLib** library](https://github.com/miguel5612/MQSensorsLib) by [Miguel Angel Califa Urquiza](https://github.com/miguel5612). As such, its source code is licensed under the **MIT License**. For more details, see the [**MIT License**](https://opensource.org/license/mit).</InfoBox>
 
 <CenteredImage src="/img/license/MIT.png" alt="BSD license" width="250px" />
 

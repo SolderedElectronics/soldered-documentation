@@ -16,92 +16,6 @@ The **MQ gas sensor** family consists of affordable, widely used semiconductor g
 
 ## Which products is this documentation for?
 
-### Qwiic
-
-<QuickLink 
-  title="Butane, LPG & Smoke sensor MQ2 breakout with easyC" 
-  description="333116" 
-  url="https://soldered.com/products/butane-lpg-smoke-sensor-mq2-breakout-with-easyc/" 
-  image="/img/mq/333116.jpg"
-/>  
-
-<QuickLink 
-  title="Alcohol, Ethanol sensor MQ3 breakout with easyC" 
-  description="333117" 
-  url="https://soldered.com/product/alcohol-ethanol-sensor-mq3-breakout-with-easyc/" 
-  image="/img/mq/333117.jpg"
-/>  
-
-<QuickLink 
-  title="Methane, CNG sensor MQ4 breakout with easyC" 
-  description="333118" 
-  url="https://soldered.com/product/methane-cng-sensor-mq4-breakout-with-easyc/" 
-  image="/img/mq/333116.jpg"
-/>  
-
-<QuickLink 
-  title="Natural gas, LPG sensor MQ5 breakout with easyC" 
-  description="333119" 
-  url="https://soldered.com/product/natural-gas-lpg-sensor-mq5-breakout-with-easyc/" 
-  image="/img/mq/333116.jpg"
-/>  
-
-<QuickLink 
-  title="LPG, Butane sensor MQ6 breakout with easyC" 
-  description="333120" 
-  url="https://soldered.com/product/lpg-butane-sensor-mq6-breakout-with-easyc/" 
-  image="/img/mq/333116.jpg"
-/>  
-
-<QuickLink 
-  title="CO sensor MQ7 breakout with easyC" 
-  description="333121" 
-  url="https://soldered.com/product/co-sensor-mq7-breakout-with-easyc/" 
-  image="/img/mq/333121.jpg"
-/>  
-
-<QuickLink 
-  title="Hydrogen sensor MQ8 breakout with easyC" 
-  description="333122" 
-  url="https://soldered.com/product/hydrogen-sensor-mq8-breakout-with-easyc/" 
-  image="/img/mq/333116.jpg"
-/>  
-
-<QuickLink 
-  title="CO, flammable gases sensor MQ9 breakout with easyC" 
-  description="333123" 
-  url="https://soldered.com/product/co-flammable-gasses-sensor-mq9-breakout-with-easyc/" 
-  image="/img/mq/333116.jpg"
-/>  
-
-<QuickLink 
-  title="Ozone sensor MQ131 breakout with easyC" 
-  description="333124" 
-  url="https://soldered.com/product/ozone-sensor-mq131-breakout-with-easyc/"
-  image="/img/mq/333116.jpg" 
-/>  
-
-<QuickLink 
-  title="Air quality sensor MQ135 breakout with easyC" 
-  description="333125" 
-  url="https://soldered.com/product/air-quality-sensor-mq135-breakout-with-easyc/"
-  image="/img/mq/333116.jpg"
-/>  
-
-<QuickLink 
-  title="Ammonia sensor MQ137 breakout with easyC" 
-  description="333127" 
-  url="https://soldered.com/product/ammonia-sensor-mq137-breakout-with-easyc/"
-  image="/img/mq/333116.jpg"
-/>  
-
-<QuickLink 
-  title="Benzene, Toluene, Acetone, Formaldehyde sensor MQ138 breakout with easyC" 
-  description="333128" 
-  url="https://soldered.com/product/benzene-toluene-acetone-formaldehyde-sensor-mq138-breakout-with-easyc/"
-  image="/img/mq/333116.jpg"
-/> 
-
 ### Native
 
 <QuickLink 
@@ -186,6 +100,93 @@ The **MQ gas sensor** family consists of affordable, widely used semiconductor g
   description="333114" 
   url="https://soldered.com/product/voc-sensor-mq138-breakout/"
   image="/img/mq/333102.jpg"
+/> 
+
+
+### Qwiic
+
+<QuickLink 
+  title="Butane, LPG & Smoke sensor MQ2 breakout with easyC" 
+  description="333116" 
+  url="https://soldered.com/products/butane-lpg-smoke-sensor-mq2-breakout-with-easyc/" 
+  image="/img/mq/333116.jpg"
+/>  
+
+<QuickLink 
+  title="Alcohol, Ethanol sensor MQ3 breakout with easyC" 
+  description="333117" 
+  url="https://soldered.com/product/alcohol-ethanol-sensor-mq3-breakout-with-easyc/" 
+  image="/img/mq/333117.jpg"
+/>  
+
+<QuickLink 
+  title="Methane, CNG sensor MQ4 breakout with easyC" 
+  description="333118" 
+  url="https://soldered.com/product/methane-cng-sensor-mq4-breakout-with-easyc/" 
+  image="/img/mq/333116.jpg"
+/>  
+
+<QuickLink 
+  title="Natural gas, LPG sensor MQ5 breakout with easyC" 
+  description="333119" 
+  url="https://soldered.com/product/natural-gas-lpg-sensor-mq5-breakout-with-easyc/" 
+  image="/img/mq/333116.jpg"
+/>  
+
+<QuickLink 
+  title="LPG, Butane sensor MQ6 breakout with easyC" 
+  description="333120" 
+  url="https://soldered.com/product/lpg-butane-sensor-mq6-breakout-with-easyc/" 
+  image="/img/mq/333116.jpg"
+/>  
+
+<QuickLink 
+  title="CO sensor MQ7 breakout with easyC" 
+  description="333121" 
+  url="https://soldered.com/product/co-sensor-mq7-breakout-with-easyc/" 
+  image="/img/mq/333121.jpg"
+/>  
+
+<QuickLink 
+  title="Hydrogen sensor MQ8 breakout with easyC" 
+  description="333122" 
+  url="https://soldered.com/product/hydrogen-sensor-mq8-breakout-with-easyc/" 
+  image="/img/mq/333116.jpg"
+/>  
+
+<QuickLink 
+  title="CO, flammable gases sensor MQ9 breakout with easyC" 
+  description="333123" 
+  url="https://soldered.com/product/co-flammable-gasses-sensor-mq9-breakout-with-easyc/" 
+  image="/img/mq/333116.jpg"
+/>  
+
+<QuickLink 
+  title="Ozone sensor MQ131 breakout with easyC" 
+  description="333124" 
+  url="https://soldered.com/product/ozone-sensor-mq131-breakout-with-easyc/"
+  image="/img/mq/333116.jpg" 
+/>  
+
+<QuickLink 
+  title="Air quality sensor MQ135 breakout with easyC" 
+  description="333125" 
+  url="https://soldered.com/product/air-quality-sensor-mq135-breakout-with-easyc/"
+  image="/img/mq/333116.jpg"
+/>  
+
+<QuickLink 
+  title="Ammonia sensor MQ137 breakout with easyC" 
+  description="333127" 
+  url="https://soldered.com/product/ammonia-sensor-mq137-breakout-with-easyc/"
+  image="/img/mq/333116.jpg"
+/>  
+
+<QuickLink 
+  title="Benzene, Toluene, Acetone, Formaldehyde sensor MQ138 breakout with easyC" 
+  description="333128" 
+  url="https://soldered.com/product/benzene-toluene-acetone-formaldehyde-sensor-mq138-breakout-with-easyc/"
+  image="/img/mq/333116.jpg"
 /> 
 
 ---

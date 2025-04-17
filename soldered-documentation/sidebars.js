@@ -86,11 +86,11 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  id: 'sensors/mq/arduino_library/mq-arduino-2',
+                  id: 'sensors/mq/arduino_library/mq-arduino-4',
                 },
                 {
                   type: 'doc',
-                  id: 'sensors/mq/arduino_library/mq-arduino-4',
+                  id: 'sensors/mq/arduino_library/mq-arduino-2',
                 },
                 {
                   type: 'doc',
