@@ -1,4 +1,5 @@
 import os
+import subprocess
 import sys
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, send_file
 import io
@@ -284,6 +285,59 @@ def spell_check_submit():
                            changes=changes,
                            success=True)
 
+@app.route('/webm-maker')
+def webm_maker():
+    return render_template('webm_maker.html', active_page='webm-maker')
+
+@app.route('/webm-maker/upload', methods=['POST'])
+def webm_maker_upload():
+    video = request.files.get('video')
+    if not video or video.filename == '':
+        flash("No video selected")
+        return redirect(url_for('webm_maker'))
+
+    filename = os.path.join(uploads_dir, video.filename)
+    video.save(filename)
+    return redirect(url_for('webm_maker_edit', filename=video.filename))
+
+
+@app.route('/webm-maker/edit')
+def webm_maker_edit():
+    filename = request.args.get('filename')
+    return render_template('webm_maker_edit.html', filename=filename)
+
+@app.route('/webm-maker/export', methods=['POST'])
+def webm_maker_export():
+    filename = request.form.get('filename')
+    start = request.form.get('start_time')
+    end = request.form.get('end_time')
+
+    if not filename or not start or not end:
+        flash("Missing data for export")
+        return redirect(url_for('webm_maker'))
+
+    input_path = os.path.join(uploads_dir, filename)
+    output_filename = filename.rsplit('.', 1)[0] + '_trimmed.webm'
+    output_path = os.path.join(uploads_dir, output_filename)
+
+    try:
+        subprocess.run([
+            'ffmpeg',
+            '-ss', start,
+            '-to', end,
+            '-i', input_path,
+            '-vf', 'scale=-1:720',  # preserve aspect ratio, scale height to 720
+            '-c:v', 'libvpx-vp9',
+            '-b:v', '2M',            # higher bitrate for better quality
+            '-crf', '28',            # constant quality (lower = better quality, larger file)
+            '-c:a', 'libopus',
+            output_path
+        ], check=True)
+    except subprocess.CalledProcessError as e:
+        flash(f"Error: {e}")
+        return redirect(url_for('webm_maker'))
+
+    return send_file(output_path, as_attachment=True, download_name=output_filename)
 
 if __name__ == '__main__':
     app.run(debug=True)

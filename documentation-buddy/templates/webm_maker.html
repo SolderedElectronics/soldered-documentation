@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Webm Maker - Soldered Documentation Buddy{% endblock %}
+
+{% block content %}
+<h1>Webm Maker</h1>
+<div class="form-container">
+    <form id="webmUploadForm" method="POST" action="{{ url_for('webm_maker_upload') }}" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="video">Upload MP4 video:</label>
+            <input type="file" id="video" name="video" accept="video/mp4" required class="form-control">
+        </div>
+
+        <button type="submit" class="submit-btn">UPLOAD VIDEO</button>
+    </form>
+</div>
+
+{% if message %}
+<div class="result-message {% if success %}success{% else %}error{% endif %}">
+    {{ message }}
+</div>
+{% endif %}
+{% endblock %}
