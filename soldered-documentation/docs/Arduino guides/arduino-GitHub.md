@@ -64,7 +64,7 @@ git init
 git status
 ```
 
-<CenteredImage src="/img/arduino-GitHub/1.png"/>
+<CenteredImage src="/img/arduino-GitHub/2.png"/>
 
 
 2.  You’ll see all files in the folder marked as untracked (e.g., .ino, .cpp, .h, etc.).
@@ -97,16 +97,14 @@ Some files don’t belong in Git (like compiled binaries or temporary files). Cr
 ```cpp
 git add .
 ```
-     
-<CenteredImage src="/img/arduino-GitHub/1.png"/>
 
-2.  Save a snapshot of the project:
+1.  Save a snapshot of the project:
     
 ```cpp
 git commit -m "Initial commit – exampleProject"
 ```
 
-<CenteredImage src="/img/arduino-GitHub/1.png"/>
+<CenteredImage src="/img/arduino-GitHub/3.png"/>
 
 
 ### Step 6: Create a New GitHub Repository
@@ -117,8 +115,6 @@ git commit -m "Initial commit – exampleProject"
 4.  Choose Private or Public visibility. 
 5.  Don’t initialize with a README — you already have code.
 6.  Click **Create repository**.
-    
-<CenteredImage src="/img/arduino-GitHub/1.png"/>
 
 
 GitHub will show instructions for pushing an existing repo.
@@ -133,7 +129,7 @@ git branch -M main
 git push -u origin main
 ```
 
-<CenteredImage src="/img/arduino-GitHub/1.png"/>
+<CenteredImage src="/img/arduino-GitHub/4.png"/>
 
 
 2.  Your local Arduino project is now published on GitHub!
