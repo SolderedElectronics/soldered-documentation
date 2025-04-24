@@ -58,6 +58,196 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Inkplate',
+      items: [
+        {
+          type: 'category',
+          label: 'Inkplate 6MOTION',
+          items: [
+            {
+              type: 'doc',
+              id: 'inkplate/6motion/6motion-quick-start-guide',
+            },
+            {
+              type: 'doc',
+              id: 'inkplate/6motion/6motion-uploading-code',
+            },
+            {
+            type: 'category',
+            label: 'Hardware',
+            items: [
+                {
+                  type: 'doc',
+                  id: 'inkplate/6motion/hardware/6motion-hardware-design',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6motion/hardware/6motion-hardware-open-source',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6motion/hardware/6motion-hardware-files',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6motion/hardware/6motion-hardware-jumpers',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6motion/hardware/6motion-hardware-esp32',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6motion/hardware/6motion-hardware-battery',
+                },
+            ],
+            },
+            {
+              type: 'category',
+              label: 'Arduino Library',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Basics',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/basics/6motion-init',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/basics/6motion-display-modes',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/basics/6motion-graphics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/basics/6motion-text',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/basics/6motion-partial-update',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/basics/6motion-image-converter',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'WiFi',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/wifi/6motion-wifi-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/wifi/6motion-wifi-image-from-web',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/wifi/6motion-wifi-get-post',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/wifi/6motion-wifi-mqtt',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/wifi/6motion-wifi-udp',
+                    },
+                  ]
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6motion/deepsleep/6motion-deep-sleep',
+                },
+                {
+                  type: 'category',
+                  label: 'MicroSD',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/microsd/6motion-microsd-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/microsd/6motion-microsd-image',
+                    },
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Real Time Clock',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/rtc/6motion-rtc-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/rtc/6motion-rtc-alarm',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/rtc/6motion-rtc-wakeup',
+                    },
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Peripherals',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/peripherals/6motion-periph-intro',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/peripherals/6motion-periph-apds9960',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/peripherals/6motion-periph-shtc3',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/peripherals/6motion-periph-accelerometer',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/peripherals/6motion-periph-buttons',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/peripherals/6motion-periph-wsled',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6motion/peripherals/6motion-periph-rotary',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              id: 'inkplate/6motion/6motion-faq-troubleshooting',
+            },
+            {
+              type: 'doc',
+              id: 'inkplate/6motion/6motion-additional-resources',
+            },
+          ]
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Sensors',
       items: [
         {
@@ -331,7 +521,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Simple sensors',
