@@ -1,11 +1,17 @@
 ---
 slug: /bq27441/arduino/examples 
-title: Measuring temperature and humidity (examples)
+title: Measuring battery information (example)
 id: bq27441-arduino-2 
 hide_title: False
 ---
 
 This page contains an example with function documentation on how to get battery readings (state of charge, voltage and current).
+
+---
+
+## Connections for this example
+
+<CenteredImage src="/img/bq27441/connections.png" alt="Connections"  />
 
 ---
 
@@ -18,7 +24,7 @@ To use the BQ27441 sensor, first, include the required library, create the senso
 
 BQ27441 battery;
 
-const unsigned int BATTERY_CAPACITY = 500; //Put the value of your battery
+const unsigned int BATTERY_CAPACITY = 1200; //Put the value of your battery
 
 void setup(){
     Serial.begin(115200);
@@ -53,7 +59,7 @@ Before taking measurements, call `soc()˝` for state of charge, `voltage()` for 
 BQ27441 battery;
 
 // Set BATTERY_CAPACITY to the design capacity of your battery in mAh.
-const unsigned int BATTERY_CAPACITY = 500;
+const unsigned int BATTERY_CAPACITY = 1200;
 
 void setup()
 {
@@ -104,6 +110,9 @@ void loop()
 }
 ```
 
+<CenteredImage src="/img/bq27441/serial_monitor.jpg" alt="Serial Monitor output" caption="Serial monitor output" />
+
+
 <FunctionDocumentation
   functionName="battery.soc()"
   description="Reads and returns specified state of charge measurement."
@@ -117,13 +126,46 @@ void loop()
 />
 
 <FunctionDocumentation
-  functionName="battery.voltage()"
+  functionName="battery.current()"
   description="Reads and returns the specified current measurement."
   returnDescription="Returns integer representation of voltage measurement in %."
   parameters={[
-    { type: 'current_measure', name: 'type', description: "Optional, default is AVG. Command specifying the type of measurement to be performed. See table below for details." },
+    { type: 'current_measure', name: 'type', description: "Optional, default is AVG. Command specifying the type of measurement to be performed." },
   ]}
 />
 
+<FunctionDocumentation
+  functionName="battery.capacity()"
+  description="Reads and returns the specified current measurement."
+  returnDescription="Returns integer representation of voltage measurement in %."
+  parameters={[
+    { type: 'capacity_measure', name: 'type', description: "Optional, default is FULL. Reads and returns the specified capacity measurement." },
+  ]}
+/>
 
+<FunctionDocumentation
+  functionName="battery.power()"
+  description="Reads and returns measured average power."
+  returnDescription="Returns integer representation of power measurement in mAh."
+/>
 
+<FunctionDocumentation
+  functionName="battery.soh()"
+  description="Reads and returns specified state of health measurement."
+  returnDescription="Returns specified state of health measurement in %, or status bits."
+  parameters={[
+    { type: 'soh_measure', name: 'type', description: "Optional, default is PERCENT. Reads and returns the specified state of health measurement." },
+  ]}
+/>
+
+---
+
+## Full example
+
+Try all of the above mentioned functions in this full example which prints out the measured temperature and humidity over Serial at 115200 baud:
+
+<QuickLink 
+  title="BasicBatteryReading.ino" 
+  description="This example is to show how BQ27441-G1 can be used for basic battery readings."
+  url="https://github.com/SolderedElectronics/Soldered-BQ27441-Battery-Fuel-Gauge-Arduino-Library/blob/main/examples/BasicBatteryReading/BasicBatteryReading.ino" 
+/>
