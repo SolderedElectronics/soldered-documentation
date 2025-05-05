@@ -182,6 +182,7 @@ void loop() {
   functionName="inkplate.connectWiFi()"
   description="This function attempts to connect to WiFi."
   returnDescription="Number"
+  returnType="int"
   parameters={[
     { type: 'Number', name: 'a', description: 'The first number to add.' },
     { type: 'Number', name: 'b', description: 'The second number to add.' },
