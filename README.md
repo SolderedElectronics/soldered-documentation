@@ -2,7 +2,7 @@
 
 ![Soldered Documentation](https://soldered.com/documentation/assets/ideal-img/soldered_docs_social_card.54d7173.1700.jpg))
 
-Welcome to the **Soldered Documentation** repository! This repository hosts all official documentation for Soldered products, which is published at [soldered.com/documentation](https://soldered.com/documentation). The documentation is built using [Docusaurus](https://docusaurus.io/).
+Welcome to the **Soldered Documentation** repository! This repository hosts all official documentation for Soldered products, which is published at [soldered.com/documentation](https://soldered.com/documentation/). The documentation is built using [Docusaurus](https://docusaurus.io/).
 
 ### This documentation is a work in progress!
 
