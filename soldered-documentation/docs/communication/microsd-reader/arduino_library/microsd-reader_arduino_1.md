@@ -1,8 +1,8 @@
 ---
-slug: /microsd-reader/arduino/geting-started 
-title: Getting started
-id: microsd-reader-arduino-1 
-hide_title: False
+slug: /microsd-reader/arduino/geting-started
+title: Microsd Reader - Getting started
+id: microsd-reader-arduino-1
+hide_title: false
 ---
 
 ## Acknowledgement

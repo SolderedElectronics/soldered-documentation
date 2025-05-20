@@ -1,8 +1,8 @@
 ---
-slug: /led-matrix/hardware 
-title: Hardware details
-id: led-matrix-hardware 
-hide_title: False
+slug: /led-matrix/hardware
+title: Hardware - Hardware details
+id: led-matrix-hardware
+hide_title: false
 ---
 
 ## Pinout

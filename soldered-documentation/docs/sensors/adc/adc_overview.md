@@ -1,8 +1,8 @@
 ---
 slug: /adc/overview
-title: Overview
-id: adc-overview 
-hide_title: False
+title: Adc - Overview
+id: adc-overview
+hide_title: false
 pagination_prev: null
 ---
 

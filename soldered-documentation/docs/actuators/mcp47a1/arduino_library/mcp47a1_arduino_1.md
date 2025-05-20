@@ -1,8 +1,8 @@
 ---
-slug: /mcp47a1/arduino/geting-started 
-title: Getting started
-id: mcp47a1-arduino-1 
-hide_title: False
+slug: /mcp47a1/arduino/geting-started
+title: Mcp47A1 - Getting started
+id: mcp47a1-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

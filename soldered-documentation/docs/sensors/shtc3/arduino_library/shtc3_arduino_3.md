@@ -1,8 +1,8 @@
 ---
-slug: /shtc3/arduino/troubleshooting 
-title: Troubleshooting
-id: shtc3-arduino-3 
-hide_title: False
+slug: /shtc3/arduino/troubleshooting
+title: Shtc3 - Troubleshooting
+id: shtc3-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

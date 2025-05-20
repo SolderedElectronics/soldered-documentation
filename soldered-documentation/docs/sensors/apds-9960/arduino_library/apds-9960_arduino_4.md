@@ -1,8 +1,8 @@
 ---
 slug: /apds-9960/arduino/proximity-sensor
-title: Proximity Sensor
+title: Apds 9960 - Proximity Sensor
 id: apds-9960-arduino-4
-hide_title: False
+hide_title: false
 ---
 
 This page contains simple examples of initialization and proximity detection with the APDS-9960 sensor.

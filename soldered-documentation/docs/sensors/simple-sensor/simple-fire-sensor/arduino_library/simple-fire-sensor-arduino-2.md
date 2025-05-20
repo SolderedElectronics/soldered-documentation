@@ -1,8 +1,8 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/arduino_library/regular-example
-title: Detecting and maesuring fire with regular fire sensor (example)
+title: Simple Sensor - Detecting and maesuring fire with regular fire sensor (example)
 id: simple-fire-sensor-arduino-2
-hide_title: False
+hide_title: false
 ---
 This page contains a simple example with function documentation on how to detect and measure intensity of fire with the sensor.
 

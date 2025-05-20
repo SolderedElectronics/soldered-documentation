@@ -1,8 +1,8 @@
 ---
 slug: /stop-me-game/assemby-guide
-title: Assembly guide
+title: Stop Me Game - Assembly guide
 id: stop-me-game-assembly-guide
-hide_title: False
+hide_title: false
 ---
 
 On this page, we will guide step by step on how to assemble this kit.

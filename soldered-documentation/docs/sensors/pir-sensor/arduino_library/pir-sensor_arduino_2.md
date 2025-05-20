@@ -1,8 +1,8 @@
 ---
 slug: /pir-sensor/arduino/detecting-movement-standard
-title: Detecting movement (Standard)
+title: Pir Sensor - Detecting movement (Standard)
 id: pir-sensor-arduino-2
-hide_title: False
+hide_title: false
 ---
 
 This page contains an example of detecting movement using the standard version of the board

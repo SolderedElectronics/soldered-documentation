@@ -1,8 +1,8 @@
 ---
 slug: /stepper-motor-driver/hardware
-title: Hardware details
+title: Stepper Motor Driver - Hardware details
 id: stepper-motor-driver-hardware
-hide_title: False
+hide_title: false
 ---
 
 ## Pinout

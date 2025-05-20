@@ -1,8 +1,8 @@
 ---
 slug: /solder-kit-dasduino/assembly-guide
-title: Assembly guide
-id: solder-kit-dasduino-assembly-guide 
-hide_title: False
+title: Solder Kit Dasduino - Assembly guide
+id: solder-kit-dasduino-assembly-guide
+hide_title: false
 ---
 On this page, we will guide step by step on how to assemble this kit.
 

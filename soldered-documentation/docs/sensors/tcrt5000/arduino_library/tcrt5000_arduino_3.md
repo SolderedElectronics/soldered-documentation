@@ -1,8 +1,8 @@
 ---
-slug: /tcrt5000/arduino/troubleshooting 
-title: Troubleshooting
-id: tcrt5000-arduino-3 
-hide_title: False
+slug: /tcrt5000/arduino/troubleshooting
+title: Tcrt5000 - Troubleshooting
+id: tcrt5000-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

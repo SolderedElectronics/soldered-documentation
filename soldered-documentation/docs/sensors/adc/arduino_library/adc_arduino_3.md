@@ -1,8 +1,8 @@
 ---
 slug: /adc/arduino/comparator
-title: Using the Comparator
+title: Adc - Using the Comparator
 id: adc-arduino-3
-hide_title: False
+hide_title: false
 ---
 
 This page provides an example of using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, with a focus on using the comparator.

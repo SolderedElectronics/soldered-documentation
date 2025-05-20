@@ -1,8 +1,8 @@
 ---
 slug: /mcp23017/arduino/button-interrupt-example
-title: Button interrupt example
-id: mcp23017-arduino-5 
-hide_title: False
+title: Mcp23017 - Button interrupt example
+id: mcp23017-arduino-5
+hide_title: false
 ---
 
 This page contains an example for receiving an interrupt on a specific port of the board and sending it to the main board.

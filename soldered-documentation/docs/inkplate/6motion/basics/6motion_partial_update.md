@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/basics/partial-update
-title: Partial Update
+title: 6Motion - Partial Update
 id: 6motion-partial-update
 hide_title: true
 ---

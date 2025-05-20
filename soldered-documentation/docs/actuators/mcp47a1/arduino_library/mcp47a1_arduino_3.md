@@ -1,8 +1,8 @@
 ---
-slug: /mcp47a1/arduino/troubleshooting 
-title: Troubleshooting
-id: mcp47a1-arduino-3 
-hide_title: False
+slug: /mcp47a1/arduino/troubleshooting
+title: Mcp47A1 - Troubleshooting
+id: mcp47a1-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

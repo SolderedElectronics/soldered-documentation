@@ -1,8 +1,8 @@
 ---
 slug: /pcf85063a/arduino/setting-up-an-alarm
-title: Setting up an alarm
+title: Pcf85063A - Setting up an alarm
 id: pcf85063a-arduino-5
-hide_title: False
+hide_title: false
 ---
 
 With the RTC, it is possible to set an alarm that sends an interrupt signal when triggered from the INT pin. First, we need to define on which pin we want to listen for an interrupt; for this example, we pick GPIO4. We also need to decide which function will be called when an interrupt occurs:

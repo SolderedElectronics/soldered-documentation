@@ -1,8 +1,8 @@
 ---
-slug: /slider-potentiometer/arduino-1 
-title: Getting Started
-id: slider-potentiometer-arduino-1 
-hide_title: False
+slug: /slider-potentiometer/arduino-1
+title: Slider Potentiometer - Getting Started
+id: slider-potentiometer-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

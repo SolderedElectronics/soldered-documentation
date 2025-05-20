@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/hardware/enclosure
-title: Enclosure
+title: 6Motion - Enclosure
 id: 6motion-hardware-enclosure
 hide_title: true
 ---

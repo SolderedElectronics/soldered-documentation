@@ -1,8 +1,8 @@
 ---
 slug: /pcf85063a/arduino/reading-the-time-and-date
-title: Reading the time and date
-id: pcf85063a-arduino-4 
-hide_title: False
+title: Pcf85063A - Reading the time and date
+id: pcf85063a-arduino-4
+hide_title: false
 ---
 
 In the `loop()` function, we will read the time on the RTC every second:

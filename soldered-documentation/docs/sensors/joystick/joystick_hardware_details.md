@@ -1,8 +1,8 @@
 ---
-slug: /joystick/hardware 
-title: Hardware details
-id: joystick-hardware 
-hide_title: False
+slug: /joystick/hardware
+title: Joystick - Hardware details
+id: joystick-hardware
+hide_title: false
 ---
 
 ## Pinout

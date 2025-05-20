@@ -1,8 +1,8 @@
 ---
-slug: /bme280/hardware 
-title: Hardware details
-id: bme280-hardware 
-hide_title: False
+slug: /bme280/hardware
+title: Bme280 - Hardware details
+id: bme280-hardware
+hide_title: false
 ---
 
 ## Pinout

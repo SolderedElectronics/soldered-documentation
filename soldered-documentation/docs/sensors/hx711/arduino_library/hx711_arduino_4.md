@@ -1,8 +1,8 @@
 ---
 slug: /hx711/arduino/deep-sleep
-title: Deep Sleep
+title: Hx711 - Deep Sleep
 id: hx711-arduino-4
-hide_title: False
+hide_title: false
 ---
 
 This page contains a simple example of shutting down the HX711 between readings (deep sleep).

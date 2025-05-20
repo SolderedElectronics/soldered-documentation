@@ -1,8 +1,8 @@
 ---
 slug: /ltr-507/arduino/light-and-proximity
-title: Reading Light and Proximity
+title: Ltr 507 - Reading Light and Proximity
 id: ltr-507-arduino-3
-hide_title: False
+hide_title: false
 ---
 
 This page contains simple examples with function documentation on how to use the **LTR-507 sensor** to read **ambient light** levels and **proximity**.

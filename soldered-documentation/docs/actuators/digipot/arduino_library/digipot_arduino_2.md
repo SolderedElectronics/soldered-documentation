@@ -1,8 +1,8 @@
 ---
-slug: /digipot/arduino/examples 
-title: Controlling the DigiPot (example)
-id: digipot-arduino-2 
-hide_title: False
+slug: /digipot/arduino/examples
+title: Digipot - Controlling the DigiPot (example)
+id: digipot-arduino-2
+hide_title: false
 ---
 
 This page contains a simple example with function documentation on how to control digital potentiometer.

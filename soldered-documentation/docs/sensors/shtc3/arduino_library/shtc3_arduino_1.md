@@ -1,8 +1,8 @@
 ---
-slug: /shtc3/arduino/geting-started 
-title: Getting started
-id: shtc3-arduino-1 
-hide_title: False
+slug: /shtc3/arduino/geting-started
+title: Shtc3 - Getting started
+id: shtc3-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

@@ -1,8 +1,8 @@
 ---
 slug: /gnss-gps/arduino/init-and-readings
-title: Initialization and Readings
-id: gnss-gps-arduino-2 
-hide_title: False
+title: Gnss Gps - Initialization and Readings
+id: gnss-gps-arduino-2
+hide_title: false
 ---
 
 This page provides a simple example of how to initialize and use the GNSS L86-M33 sensor with a Dasduino CONNECTPLUS.

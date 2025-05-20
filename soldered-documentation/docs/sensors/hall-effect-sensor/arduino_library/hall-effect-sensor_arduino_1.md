@@ -1,8 +1,8 @@
 ---
-slug: /hall-effect-sensor/arduino/geting-started 
-title: Getting started
-id: hall-effect-sensor-arduino-1 
-hide_title: False
+slug: /hall-effect-sensor/arduino/geting-started
+title: Hall Effect Sensor - Getting started
+id: hall-effect-sensor-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

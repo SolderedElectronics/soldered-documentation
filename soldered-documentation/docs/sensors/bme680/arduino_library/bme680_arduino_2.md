@@ -1,8 +1,8 @@
 ---
 slug: /bme680/arduino/measuring-altitude-and-gas
-title: Measuring Altitude and Gas Resistance
-id: bme680-arduino-2 
-hide_title: False
+title: Bme680 - Measuring Altitude and Gas Resistance
+id: bme680-arduino-2
+hide_title: false
 ---
 
 ## Altitude

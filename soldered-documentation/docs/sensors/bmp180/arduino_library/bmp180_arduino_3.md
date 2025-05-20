@@ -1,8 +1,8 @@
 ---
-slug: /bmp180/arduino/troubleshooting 
-title: Troubleshooting
-id: bmp180-arduino-3 
-hide_title: False
+slug: /bmp180/arduino/troubleshooting
+title: Bmp180 - Troubleshooting
+id: bmp180-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

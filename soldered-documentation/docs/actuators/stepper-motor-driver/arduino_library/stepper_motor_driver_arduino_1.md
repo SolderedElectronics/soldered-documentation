@@ -1,8 +1,8 @@
 ---
 slug: /stepper-motor-driver/arduino/geting-started
-title: Getting started
+title: Stepper Motor Driver - Getting started
 id: stepper-motor-driver-arduino-1
-hide_title: False
+hide_title: false
 ---
 
 This page provides the essential information for getting started, including board and library installation and wiring the breakout board to your microcontroller.

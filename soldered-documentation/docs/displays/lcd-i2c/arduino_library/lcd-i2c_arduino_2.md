@@ -1,8 +1,8 @@
 ---
-slug: /lcd-i2c/arduino/examples 
-title: Basic Examples
-id: lcd-i2c-arduino-2 
-hide_title: False
+slug: /lcd-i2c/arduino/examples
+title: Lcd I2C - Basic Examples
+id: lcd-i2c-arduino-2
+hide_title: false
 ---
 
 This page contains some simple examples with function documentation on how to use the LCD display in different ways.

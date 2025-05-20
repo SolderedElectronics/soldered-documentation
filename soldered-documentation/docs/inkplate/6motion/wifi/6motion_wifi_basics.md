@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/wifi/wifi-basics
-title: WiFi basics
+title: 6Motion - WiFi basics
 id: 6motion-wifi-basics
 hide_title: true
 ---

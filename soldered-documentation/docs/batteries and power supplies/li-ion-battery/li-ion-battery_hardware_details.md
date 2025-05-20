@@ -1,8 +1,8 @@
 ---
-slug: /li-ion-battery/hardware 
-title: Hardware details
-id: li-ion-battery-hardware 
-hide_title: False
+slug: /li-ion-battery/hardware
+title: Li Ion Battery - Hardware details
+id: li-ion-battery-hardware
+hide_title: false
 ---
 
 The **Li-Ion batteries** are designed with **1C discharge** rates (designed to charge or discharge at a rate equal to its full capacity within one hour), making them suitable for a variety of low to moderate power applications. Each battery includes on-board protection circuitry, ensuring safety by preventing **overcharging**, **over-discharging**, and **short circuits**. They all operate at a nominal voltage of **3.7V** and are equipped with a **JST-PH-2mm** connector for easy integration.

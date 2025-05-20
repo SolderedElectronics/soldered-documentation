@@ -1,8 +1,8 @@
 ---
-slug: /hc-sr04/arduino/troubleshooting 
-title: Troubleshooting
-id: hc-sr04-arduino-3 
-hide_title: False
+slug: /hc-sr04/arduino/troubleshooting
+title: Hc Sr04 - Troubleshooting
+id: hc-sr04-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

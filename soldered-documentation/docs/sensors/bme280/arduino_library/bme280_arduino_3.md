@@ -1,8 +1,8 @@
 ---
-slug: /bme280/arduino/troubleshooting 
-title: Troubleshooting
-id: bme280-arduino-3 
-hide_title: False
+slug: /bme280/arduino/troubleshooting
+title: Bme280 - Troubleshooting
+id: bme280-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

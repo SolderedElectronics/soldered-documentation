@@ -1,8 +1,8 @@
 ---
-slug: /ltr-507/arduino/troubleshooting 
-title: Troubleshooting
+slug: /ltr-507/arduino/troubleshooting
+title: Ltr 507 - Troubleshooting
 id: ltr-507-arduino-4
-hide_title: False
+hide_title: false
 pagination_next: null
 ---
 

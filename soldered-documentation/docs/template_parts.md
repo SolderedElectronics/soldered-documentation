@@ -1,6 +1,6 @@
 ---
 slug: /template-parts
-title: Template parts
+title: Template Parts - Template parts
 id: template-parts
 hide_title: false
 ---

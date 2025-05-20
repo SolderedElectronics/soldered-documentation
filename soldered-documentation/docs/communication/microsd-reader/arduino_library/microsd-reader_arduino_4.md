@@ -1,8 +1,8 @@
 ---
 slug: /microsd-reader/arduino/writing-files
-title: Writing files (example)
-id: microsd-reader-arduino-4 
-hide_title: False
+title: Microsd Reader - Writing files (example)
+id: microsd-reader-arduino-4
+hide_title: false
 ---
 
 This page contains an example of writing data to an SD card in the form of a text file

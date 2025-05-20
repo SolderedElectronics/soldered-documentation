@@ -1,8 +1,8 @@
 ---
-slug: /pcf85063a/hardware 
-title: Hardware details
-id: pcf85063a-hardware 
-hide_title: False
+slug: /pcf85063a/hardware
+title: Pcf85063A - Hardware details
+id: pcf85063a-hardware
+hide_title: false
 ---
 
 ## Pinout

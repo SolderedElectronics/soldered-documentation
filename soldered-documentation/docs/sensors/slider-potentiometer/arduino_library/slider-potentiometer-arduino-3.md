@@ -1,8 +1,8 @@
 ---
 slug: /slider-potentiometer/arduino-3
-title: Reading Slider Potentiometer (Qwiic version)
+title: Slider Potentiometer - Reading Slider Potentiometer (Qwiic version)
 id: slider-potentiometer-arduino-3
-hide_title: False
+hide_title: false
 ---
 
 This page contains simple examples illustrating how to take analog slider measurements using the Slider Potentiometer with Qwiic.

@@ -1,8 +1,8 @@
 ---
 slug: /ssd1306/overview
-title: Overview
-id: ssd1306-overview 
-hide_title: False
+title: Ssd1306 - Overview
+id: ssd1306-overview
+hide_title: false
 pagination_prev: null
 ---
 

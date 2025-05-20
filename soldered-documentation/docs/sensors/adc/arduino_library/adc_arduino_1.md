@@ -1,8 +1,8 @@
 ---
-slug: /adc/arduino/getting-started 
-title: Getting started
-id: adc-arduino-1 
-hide_title: False
+slug: /adc/arduino/getting-started
+title: Adc - Getting started
+id: adc-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

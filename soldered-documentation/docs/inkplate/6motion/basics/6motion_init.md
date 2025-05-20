@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/basics/initialization
-title: Initialization
+title: 6Motion - Initialization
 id: 6motion-init
 hide_title: true
 ---

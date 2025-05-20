@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/peripherals/leds
-title: RGB LEDs
+title: 6Motion - RGB LEDs
 id: 6motion-periph-wsled
 ---
 

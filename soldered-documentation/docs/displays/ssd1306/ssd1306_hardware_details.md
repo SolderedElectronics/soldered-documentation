@@ -1,8 +1,8 @@
 ---
-slug: /ssd1306/hardware 
-title: Hardware details
-id: ssd1306-hardware 
-hide_title: False
+slug: /ssd1306/hardware
+title: Ssd1306 - Hardware details
+id: ssd1306-hardware
+hide_title: false
 ---
 
 <CenteredImage src="/img/ssd1306/333100_pinout.jpg" alt="Pinout" />

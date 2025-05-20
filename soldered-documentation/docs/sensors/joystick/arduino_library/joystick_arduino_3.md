@@ -1,8 +1,8 @@
 ---
-slug: /joystick/arduino/troubleshooting 
-title: Troubleshooting
-id: joystick-arduino-3 
-hide_title: False
+slug: /joystick/arduino/troubleshooting
+title: Joystick - Troubleshooting
+id: joystick-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

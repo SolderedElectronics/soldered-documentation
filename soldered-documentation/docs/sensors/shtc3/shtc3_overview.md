@@ -1,8 +1,8 @@
 ---
 slug: /shtc3/overview
-title: Overview
-id: shtc3-overview 
-hide_title: False
+title: Shtc3 - Overview
+id: shtc3-overview
+hide_title: false
 pagination_prev: null
 ---
 

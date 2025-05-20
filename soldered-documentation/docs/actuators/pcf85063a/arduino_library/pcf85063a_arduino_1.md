@@ -1,8 +1,8 @@
 ---
-slug: /pcf85063a/arduino/geting-started 
-title: Getting started
-id: pcf85063a-arduino-1 
-hide_title: False
+slug: /pcf85063a/arduino/geting-started
+title: Pcf85063A - Getting started
+id: pcf85063a-arduino-1
+hide_title: false
 ---
 
 This page provides the essential information for getting started, including board and library installation and wiring the breakout board to your microcontroller.

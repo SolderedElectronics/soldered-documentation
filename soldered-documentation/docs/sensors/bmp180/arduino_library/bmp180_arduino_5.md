@@ -1,8 +1,8 @@
 ---
 slug: /bmp180/arduino/measuring-pressure
-title: Measuring pressure
+title: Bmp180 - Measuring pressure
 id: bmp180-arduino-5
-hide_title: False
+hide_title: false
 ---
 
 <WarningBox>This library uses the char value to return error codes and delay values in the form of numbers. Although using the char data type may seem unintuitive when returning numbers, it is essentially an 8-bit unsigned integer.</WarningBox>

@@ -1,8 +1,8 @@
 ---
-slug: /mcp47a1/hardware 
-title: Hardware details
-id: mcp47a1-hardware 
-hide_title: False
+slug: /mcp47a1/hardware
+title: Mcp47A1 - Hardware details
+id: mcp47a1-hardware
+hide_title: false
 ---
 
 <CenteredImage src="/img/mcp47a1/pinout.png" alt="Pinout" />

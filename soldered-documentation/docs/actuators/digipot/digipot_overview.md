@@ -1,8 +1,8 @@
 ---
 slug: /digipot/overview
-title: Overview
-id: digipot-overview 
-hide_title: False
+title: Digipot - Overview
+id: digipot-overview
+hide_title: false
 pagination_prev: null
 ---
 

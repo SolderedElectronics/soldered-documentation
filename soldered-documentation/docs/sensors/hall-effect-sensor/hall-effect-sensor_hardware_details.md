@@ -1,8 +1,8 @@
 ---
-slug: /hall-effect-sensor/hardware 
-title: Hardware details
-id: hall-effect-sensor-hardware 
-hide_title: False
+slug: /hall-effect-sensor/hardware
+title: Hall Effect Sensor - Hardware details
+id: hall-effect-sensor-hardware
+hide_title: false
 ---
 
 ## Pinout

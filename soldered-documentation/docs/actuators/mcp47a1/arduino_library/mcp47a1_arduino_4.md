@@ -1,8 +1,8 @@
 ---
-slug: /mcp47a1/arduino/generating-a-waveform 
-title: Generating a waveform
-id: mcp47a1-arduino-4 
-hide_title: False
+slug: /mcp47a1/arduino/generating-a-waveform
+title: Mcp47A1 - Generating a waveform
+id: mcp47a1-arduino-4
+hide_title: false
 ---
 
 In this example, we will be generating a sine wave with the MCP47A1:

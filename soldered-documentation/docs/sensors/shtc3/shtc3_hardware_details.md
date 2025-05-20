@@ -1,8 +1,8 @@
 ---
-slug: /shtc3/hardware 
-title: Hardware details
-id: shtc3-hardware 
-hide_title: False
+slug: /shtc3/hardware
+title: Shtc3 - Hardware details
+id: shtc3-hardware
+hide_title: false
 ---
 
 ## Pinout

@@ -1,8 +1,8 @@
 ---
-slug: /adc/arduino/troubleshooting 
-title: Troubleshooting
-id: adc-arduino-5 
-hide_title: False
+slug: /adc/arduino/troubleshooting
+title: Adc - Troubleshooting
+id: adc-arduino-5
+hide_title: false
 pagination_next: null
 ---
 

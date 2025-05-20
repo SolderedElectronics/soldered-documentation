@@ -1,8 +1,8 @@
 ---
-slug: /slider-potentiometer/hardware 
-title: Hardware details
-id: slider-potentiometer-hardware 
-hide_title: False
+slug: /slider-potentiometer/hardware
+title: Slider Potentiometer - Hardware details
+id: slider-potentiometer-hardware
+hide_title: false
 ---
 
 ## Pinout

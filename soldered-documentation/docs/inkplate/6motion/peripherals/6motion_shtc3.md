@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/peripherals/shtc3
-title: Temperature and humidity sensor
+title: 6Motion - Temperature and humidity sensor
 id: 6motion-periph-shtc3
 ---
 

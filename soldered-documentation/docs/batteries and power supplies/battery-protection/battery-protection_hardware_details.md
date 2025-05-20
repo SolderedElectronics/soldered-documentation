@@ -1,8 +1,8 @@
 ---
-slug: /battery-protection/hardware 
-title: Hardware details
-id: battery-protection-hardware 
-hide_title: False
+slug: /battery-protection/hardware
+title: Battery Protection - Hardware details
+id: battery-protection-hardware
+hide_title: false
 ---
 
 ## Pinout

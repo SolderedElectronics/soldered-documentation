@@ -1,8 +1,8 @@
 ---
 slug: /apds-9960/overview
-title: Overview
-id: apds-9960-overview 
-hide_title: False
+title: Apds 9960 - Overview
+id: apds-9960-overview
+hide_title: false
 pagination_prev: null
 ---
 

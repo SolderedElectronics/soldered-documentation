@@ -1,8 +1,8 @@
 ---
 slug: /slider-potentiometer/overview
-title: Overview
-id: slider-potentiometer-overview 
-hide_title: False
+title: Slider Potentiometer - Overview
+id: slider-potentiometer-overview
+hide_title: false
 pagination_prev: null
 ---
 ## Slider Potentiometer Breakout

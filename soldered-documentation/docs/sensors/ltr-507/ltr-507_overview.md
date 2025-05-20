@@ -1,8 +1,8 @@
 ---
 slug: /ltr-507/overview
-title: Overview
-id: ltr-507-overview 
-hide_title: False
+title: Ltr 507 - Overview
+id: ltr-507-overview
+hide_title: false
 pagination_prev: null
 ---
 

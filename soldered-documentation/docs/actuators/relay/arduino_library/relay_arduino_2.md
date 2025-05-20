@@ -1,8 +1,8 @@
 ---
-slug: /relay/arduino/regular-example 
-title: Switching the relay (regular example)
-id: relay-arduino-2 
-hide_title: False
+slug: /relay/arduino/regular-example
+title: Relay - Switching the relay (regular example)
+id: relay-arduino-2
+hide_title: false
 ---
 
 This page contains a simple example with function documentation on how to control the 1 or multi channel regular relay board.

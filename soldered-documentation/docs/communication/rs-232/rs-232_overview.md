@@ -1,8 +1,8 @@
 ---
 slug: /rs-232/overview
-title: Overview
-id: rs-232-overview 
-hide_title: False
+title: Rs 232 - Overview
+id: rs-232-overview
+hide_title: false
 pagination_prev: null
 ---
 

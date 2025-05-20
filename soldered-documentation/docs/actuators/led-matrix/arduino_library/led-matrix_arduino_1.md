@@ -1,8 +1,8 @@
 ---
-slug: /led-matrix/arduino/geting-started 
-title: Getting started
-id: led-matrix-arduino-1 
-hide_title: False
+slug: /led-matrix/arduino/geting-started
+title: Arduino - Getting started
+id: led-matrix-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

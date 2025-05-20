@@ -1,8 +1,8 @@
 ---
 slug: /logic-level-converter-how-to-connect-it
-title: How to Connect It?
+title: Logic Level Converter How To Connect It - How to Connect It?
 id: logic-level-converter-how-to-connect-it
-hide_title: False
+hide_title: false
 ---
 
 This page explains how to connect the Logic Level Converter to devices with different voltage levels, ensuring safe and proper communication.

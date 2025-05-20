@@ -1,8 +1,8 @@
 ---
 slug: /bmp180/arduino/measuring-temperature
-title: Measuring temperature
-id: bmp180-arduino-4 
-hide_title: False
+title: Bmp180 - Measuring temperature
+id: bmp180-arduino-4
+hide_title: false
 ---
 
 <WarningBox>This library uses the char value to return error codes and delay values in the form of numbers. While the char type may seem unintuitive for returning numbers, the char data type is essentially an 8-bit unsigned integer.</WarningBox>

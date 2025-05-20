@@ -1,8 +1,8 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/arduino_library/regular-example
-title: Measuring and detecting moisture with regular rain sensor (example)
+title: Simple Sensor - Measuring and detecting moisture with regular rain sensor (example)
 id: simple-rain-sensor-arduino-2
-hide_title: False
+hide_title: false
 ---
 This page contains a simple example with function documentation on how to detect and measure the intensity of the present light using the sensor.
 

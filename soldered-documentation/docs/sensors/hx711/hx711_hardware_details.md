@@ -1,8 +1,8 @@
 ---
-slug: /hx711/hardware 
-title: Hardware details
-id: hx711-hardware 
-hide_title: False
+slug: /hx711/hardware
+title: Hx711 - Hardware details
+id: hx711-hardware
+hide_title: false
 ---
 
 ## HX711 Regular Pinout

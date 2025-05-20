@@ -1,8 +1,8 @@
 ---
-slug: /bme280/arduino/geting-started 
-title: Getting started
-id: bme280-arduino-1 
-hide_title: False
+slug: /bme280/arduino/geting-started
+title: Bme280 - Getting started
+id: bme280-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

@@ -1,8 +1,8 @@
 ---
-slug: /mcp23017/hardware 
-title: Hardware Details
-id: mcp23017-hardware 
-hide_title: False
+slug: /mcp23017/hardware
+title: Mcp23017 - Hardware Details
+id: mcp23017-hardware
+hide_title: false
 ---
 
 <CenteredImage src="/img/mcp23017/pinout.png" alt="Pinout" />

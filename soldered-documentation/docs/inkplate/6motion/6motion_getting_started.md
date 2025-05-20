@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/quick-start-guide
-title: Quick start guide
+title: 6Motion - Quick start guide
 id: 6motion-quick-start-guide
 hide_title: true
 ---

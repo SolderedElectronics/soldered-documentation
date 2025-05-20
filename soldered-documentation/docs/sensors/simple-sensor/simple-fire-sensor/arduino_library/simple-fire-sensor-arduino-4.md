@@ -1,8 +1,8 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/arduino_library/troubleshooting
-title: Troubleshooting
+title: Simple Sensor - Troubleshooting
 id: simple-fire-sensor-arduino-4
-hide_title: False
+hide_title: false
 pagination_next: null
 ---
 This page contains some tips in case you are having problems using this product.

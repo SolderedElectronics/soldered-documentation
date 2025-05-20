@@ -1,8 +1,8 @@
 ---
 slug: /joystick/overview
-title: Overview
-id: joystick-overview 
-hide_title: False
+title: Joystick - Overview
+id: joystick-overview
+hide_title: false
 pagination_prev: null
 ---
 

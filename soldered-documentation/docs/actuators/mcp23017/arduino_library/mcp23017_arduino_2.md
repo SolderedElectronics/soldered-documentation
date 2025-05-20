@@ -1,8 +1,8 @@
 ---
-slug: /mcp23017/arduino/blinking-led-example 
-title: Blinking LED example
-id: mcp23017-arduino-2 
-hide_title: False
+slug: /mcp23017/arduino/blinking-led-example
+title: Mcp23017 - Blinking LED example
+id: mcp23017-arduino-2
+hide_title: false
 ---
 
 This page contains an example for setting up a blinking LED via the I/O extender.

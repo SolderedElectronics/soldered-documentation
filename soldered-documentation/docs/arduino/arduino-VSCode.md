@@ -1,8 +1,8 @@
 ---
-slug: /arduino/VSCode 
-title: Using VSCode with Arduino
+slug: /arduino/VSCode
+title: Arduino - Using VSCode with Arduino
 id: arduino-VSCode
-hide_title: False
+hide_title: false
 ---
 
 ## Why Use VSCode with Arduino?

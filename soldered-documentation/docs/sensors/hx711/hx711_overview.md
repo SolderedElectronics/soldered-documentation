@@ -1,8 +1,8 @@
 ---
 slug: /hx711/overview
-title: Overview
-id: hx711-overview 
-hide_title: False
+title: Hx711 - Overview
+id: hx711-overview
+hide_title: false
 pagination_prev: null
 ---
 

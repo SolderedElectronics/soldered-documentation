@@ -1,8 +1,8 @@
 ---
 slug: /rfid/overview
-title: Overview
-id: 125khzrfidtagreader-overview 
-hide_title: False
+title: Rfid - Overview
+id: 125khzrfidtagreader-overview
+hide_title: false
 pagination_prev: null
 ---
 

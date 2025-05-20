@@ -1,8 +1,8 @@
 ---
-slug: /hc-sr04/arduino/examples 
-title: Measuring distance and delay (examples)
-id: hc-sr04-arduino-2 
-hide_title: False
+slug: /hc-sr04/arduino/examples
+title: Hc Sr04 - Measuring distance and delay (examples)
+id: hc-sr04-arduino-2
+hide_title: false
 ---
 
 This page contains some simple examples with function documentation on how to take measurements using the HC-SR04 ultrasonic sensor.

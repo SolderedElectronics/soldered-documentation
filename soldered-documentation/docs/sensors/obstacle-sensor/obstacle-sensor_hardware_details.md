@@ -1,8 +1,8 @@
 ---
-slug: /obstacle-sensor/hardware 
-title: Hardware details
-id: obstacle-sensor-hardware 
-hide_title: False
+slug: /obstacle-sensor/hardware
+title: Obstacle Sensor - Hardware details
+id: obstacle-sensor-hardware
+hide_title: false
 ---
 
 ## Pinout

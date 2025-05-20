@@ -1,8 +1,8 @@
 ---
-slug: /pir-sensor/hardware 
-title: Hardware details
-id: pir-sensor-hardware 
-hide_title: False
+slug: /pir-sensor/hardware
+title: Pir Sensor - Hardware details
+id: pir-sensor-hardware
+hide_title: false
 ---
 
 ## Pinout

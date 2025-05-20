@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/peripherals/introduction
-title: Peripheral basics
+title: 6Motion - Peripheral basics
 id: 6motion-periph-intro
 ---
 

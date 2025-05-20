@@ -1,8 +1,8 @@
 ---
-slug: /mcp23017/arduino/troubleshooting 
-title: Troubleshooting
-id: mcp23017-arduino-3 
-hide_title: False
+slug: /mcp23017/arduino/troubleshooting
+title: Mcp23017 - Troubleshooting
+id: mcp23017-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/faq-troubleshooting
-title: FAQ and troubleshooting
+title: 6Motion - FAQ and troubleshooting
 id: 6motion-faq-troubleshooting
 hide_title: true
 ---

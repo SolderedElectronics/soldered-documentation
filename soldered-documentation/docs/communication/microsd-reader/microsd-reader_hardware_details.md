@@ -1,8 +1,8 @@
 ---
-slug: /microsd-reader/hardware 
-title: Hardware details
-id: microsd-reader-hardware 
-hide_title: False
+slug: /microsd-reader/hardware
+title: Microsd Reader - Hardware details
+id: microsd-reader-hardware
+hide_title: false
 ---
 
 ## Pinout

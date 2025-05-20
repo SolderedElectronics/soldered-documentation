@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/low-power/deep-sleep
-title: Deep sleep
+title: 6Motion - Deep sleep
 id: 6motion-deep-sleep
 hide_title: true
 ---

@@ -1,8 +1,8 @@
 ---
-slug: /obstacle-sensor/arduino/geting-started 
-title: Getting started
-id: obstacle-sensor-arduino-1 
-hide_title: False
+slug: /obstacle-sensor/arduino/geting-started
+title: Obstacle Sensor - Getting started
+id: obstacle-sensor-arduino-1
+hide_title: false
 ---
 
 ## Arduino library 

@@ -1,8 +1,8 @@
 ---
-slug: /tca9548a/hardware 
-title: Hardware details
-id: tca9548a-hardware 
-hide_title: False
+slug: /tca9548a/hardware
+title: Tca9548A - Hardware details
+id: tca9548a-hardware
+hide_title: false
 ---
 
 <CenteredImage src="/img/tca9548a/pinout.png" alt="Pinout" />

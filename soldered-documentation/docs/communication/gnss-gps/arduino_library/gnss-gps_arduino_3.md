@@ -1,8 +1,8 @@
 ---
 slug: /gnss-gps/arduino/advanced
-title: Advanced Example
+title: Gnss Gps - Advanced Example
 id: gnss-gps-arduino-3
-hide_title: False
+hide_title: false
 ---
 
 This page provides a complete example of using the GNSS L86-M33 sensor with an Arduino, displaying detailed information such as latitude, longitude, altitude, course, speed, and other GNSS-related data.

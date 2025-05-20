@@ -1,8 +1,8 @@
 ---
 slug: /gnss-gps/overview
-title: Overview
-id: gnss-gps-overview 
-hide_title: False
+title: Gnss Gps - Overview
+id: gnss-gps-overview
+hide_title: false
 pagination_prev: null
 ---
 

@@ -1,8 +1,8 @@
 ---
 slug: /adc/arduino/init-and-simple-read
-title: Initialization and Simple ADC Read
-id: adc-arduino-2 
-hide_title: False
+title: Adc - Initialization and Simple ADC Read
+id: adc-arduino-2
+hide_title: false
 ---
 
 This page provides various examples on using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, covering initialization and reading analog inputs.

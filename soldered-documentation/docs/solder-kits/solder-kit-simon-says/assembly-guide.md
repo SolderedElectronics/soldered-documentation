@@ -1,8 +1,8 @@
 ---
 slug: /simon-says-game/assemby-guide
-title: Assembly guide
+title: Simon Says Game - Assembly guide
 id: simon-says-game-assembly-guide
-hide_title: False
+hide_title: false
 ---
 
 ## Step 1: Solder the resistors to the PCB.

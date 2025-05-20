@@ -1,8 +1,8 @@
 ---
 slug: /simple-sensor/simple-light-sensor/arduino_library/regular-example
-title: Detecting and measuring light with regular light sensor (example)
+title: Simple Sensor - Detecting and measuring light with regular light sensor (example)
 id: simple-light-sensor-arduino-2
-hide_title: False
+hide_title: false
 ---
 This page contains a simple example with function documentation on how to detect and measure intensity of present light with the sensor.
 

@@ -1,8 +1,8 @@
 ---
 slug: /reaction-game/overview
-title: Overview
-id: reaction-game-overview 
-hide_title: False
+title: Reaction Game - Overview
+id: reaction-game-overview
+hide_title: false
 pagination_prev: null
 ---
 

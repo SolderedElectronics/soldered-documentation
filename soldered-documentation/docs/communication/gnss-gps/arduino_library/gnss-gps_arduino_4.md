@@ -1,8 +1,8 @@
 ---
-slug: /gnss-gps/arduino/troubleshooting 
-title: Troubleshooting
+slug: /gnss-gps/arduino/troubleshooting
+title: Gnss Gps - Troubleshooting
 id: gnss-gps-arduino-4
-hide_title: False
+hide_title: false
 pagination_next: null
 ---
 

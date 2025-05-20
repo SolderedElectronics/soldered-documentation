@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/peripherals/buttons
-title: User Buttons
+title: 6Motion - User Buttons
 id: 6motion-periph-buttons
 ---
 

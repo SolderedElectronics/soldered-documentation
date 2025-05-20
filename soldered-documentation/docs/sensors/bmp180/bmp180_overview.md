@@ -1,8 +1,8 @@
 ---
 slug: /bmp180/overview
-title: Overview
-id: bmp180-overview 
-hide_title: False
+title: Bmp180 - Overview
+id: bmp180-overview
+hide_title: false
 pagination_prev: null
 ---
 

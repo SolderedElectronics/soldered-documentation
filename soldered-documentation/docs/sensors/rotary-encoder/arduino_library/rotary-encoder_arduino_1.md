@@ -1,8 +1,8 @@
 ---
-slug: /rotary-encoder/arduino/geting-started 
-title: Getting started
-id: rotary-encoder-arduino-1 
-hide_title: False
+slug: /rotary-encoder/arduino/geting-started
+title: Rotary Encoder - Getting started
+id: rotary-encoder-arduino-1
+hide_title: false
 ---
 
 ## Arduino Library

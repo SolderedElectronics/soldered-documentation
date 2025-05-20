@@ -1,8 +1,8 @@
 ---
-slug: /obstacle-sensor/arduino/troubleshooting 
-title: Troubleshooting
-id: obstacle-sensor-arduino-3 
-hide_title: False
+slug: /obstacle-sensor/arduino/troubleshooting
+title: Obstacle Sensor - Troubleshooting
+id: obstacle-sensor-arduino-3
+hide_title: false
 pagination_next: null
 ---
 <ExpandableSection title="My sensor won't initialize!">

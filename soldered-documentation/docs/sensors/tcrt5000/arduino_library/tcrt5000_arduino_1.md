@@ -1,8 +1,8 @@
 ---
-slug: /tcrt5000/arduino/geting-started 
-title: Getting started
-id: tcrt5000-arduino-1 
-hide_title: False
+slug: /tcrt5000/arduino/geting-started
+title: Tcrt5000 - Getting started
+id: tcrt5000-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

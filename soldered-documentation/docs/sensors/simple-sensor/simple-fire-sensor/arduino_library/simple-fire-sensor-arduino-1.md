@@ -1,8 +1,8 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/arduino_library/getting-started
-title: Getting started
+title: Simple Sensor - Getting started
 id: simple-fire-sensor-arduino-1
-hide_title: False
+hide_title: false
 ---
 
 ## Arduino library

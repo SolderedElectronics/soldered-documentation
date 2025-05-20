@@ -1,8 +1,8 @@
 ---
-slug: /tca9548a/arduino/geting-started 
-title: Getting started
-id: tca9548a-arduino-1 
-hide_title: False
+slug: /tca9548a/arduino/geting-started
+title: Tca9548A - Getting started
+id: tca9548a-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

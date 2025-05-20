@@ -1,8 +1,8 @@
 ---
-slug: /breadboard-power/hardware 
-title: Hardware details
-id: breadboard-power-hardware 
-hide_title: False
+slug: /breadboard-power/hardware
+title: Breadboard Power - Hardware details
+id: breadboard-power-hardware
+hide_title: false
 ---
 
 <CenteredImage src="/img/breadboard-power/pinout.png" alt="Pinout" />

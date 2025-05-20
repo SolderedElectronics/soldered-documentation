@@ -1,8 +1,8 @@
 ---
-slug: /microsd-reader/arduino/troubleshooting 
-title: Troubleshooting
-id: microsd-reader-arduino-3 
-hide_title: False
+slug: /microsd-reader/arduino/troubleshooting
+title: Microsd Reader - Troubleshooting
+id: microsd-reader-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

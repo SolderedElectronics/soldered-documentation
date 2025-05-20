@@ -1,8 +1,8 @@
 ---
 slug: /lcd-i2c/arduino/advanced-examples
-title: Advanced Examples
+title: Lcd I2C - Advanced Examples
 id: lcd-i2c-arduino-4
-hide_title: False
+hide_title: false
 ---
 
 This section covers features like **autoscrolling**, **cursor control**, and **screen shifting**, allowing for dynamic text movement and improved readability. These functions help create smoother user interactions and animated effects on the display.

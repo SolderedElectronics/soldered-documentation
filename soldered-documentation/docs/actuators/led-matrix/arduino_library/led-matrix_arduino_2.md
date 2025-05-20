@@ -1,8 +1,8 @@
 ---
-slug: /relay/arduino/Initialization 
-title: Initialization
+slug: /relay/arduino/Initialization
+title: Relay - Initialization
 id: led-matrix-arduino-2
-hide_title: False
+hide_title: false
 ---
 
 This page contains the first steps when starting with programing the LED matrix breakout board.

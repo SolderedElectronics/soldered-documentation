@@ -1,8 +1,8 @@
 ---
 slug: /pir-sensor/arduino/detecting-movement-qwiic
-title: Detecting movement (Qwiic)
+title: Pir Sensor - Detecting movement (Qwiic)
 id: pir-sensor-arduino-4
-hide_title: False
+hide_title: false
 ---
 
 This page contains a movement detection example for the Qwiic version of the board.

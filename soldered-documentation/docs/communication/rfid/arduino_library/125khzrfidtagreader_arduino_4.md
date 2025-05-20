@@ -1,8 +1,8 @@
 ---
-slug: /125khzrfidtagreader/arduino/troubleshooting 
-title: Troubleshooting
+slug: /125khzrfidtagreader/arduino/troubleshooting
+title: 125Khzrfidtagreader - Troubleshooting
 id: 125khzrfidtagreader-arduino-4
-hide_title: False
+hide_title: false
 pagination_next: null
 ---
 This page contains some tips in case you experience problems using this product.

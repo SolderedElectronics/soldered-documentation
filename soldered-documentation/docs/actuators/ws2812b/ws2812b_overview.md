@@ -1,8 +1,8 @@
 ---
 slug: /ws2812b/overview
-title: Overview
-id: ws2812b-overview 
-hide_title: False
+title: Ws2812B - Overview
+id: ws2812b-overview
+hide_title: false
 pagination_prev: null
 ---
 

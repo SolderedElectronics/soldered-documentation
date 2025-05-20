@@ -1,8 +1,8 @@
 ---
 slug: /ch340/overview
-title: Overview
-id: ch340-overview 
-hide_title: False
+title: Ch340 - Overview
+id: ch340-overview
+hide_title: false
 pagination_prev: null
 ---
 

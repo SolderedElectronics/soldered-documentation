@@ -1,8 +1,8 @@
 ---
-slug: /rs-485/arduino/geting-started 
-title: Getting started
-id: rs-485-arduino-1 
-hide_title: False
+slug: /rs-485/arduino/geting-started
+title: Rs 485 - Getting started
+id: rs-485-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

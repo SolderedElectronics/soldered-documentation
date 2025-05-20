@@ -1,8 +1,8 @@
 ---
-slug: /tcrt5000/hardware 
-title: Hardware details
-id: tcrt5000-hardware 
-hide_title: False
+slug: /tcrt5000/hardware
+title: Tcrt5000 - Hardware details
+id: tcrt5000-hardware
+hide_title: false
 ---
 ## Pinout
 <CenteredImage src="/img/tcrt5000/333012_pinout.jpg" alt="Pinout" />

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/hardware/design
-title: Hardware design
+title: 6Motion - Hardware design
 id: 6motion-hardware-design
 hide_title: true
 ---

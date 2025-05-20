@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/uploading-code
-title: Uploading code
+title: 6Motion - Uploading code
 id: 6motion-uploading-code
 ---
 

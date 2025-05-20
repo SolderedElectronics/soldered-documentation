@@ -1,8 +1,8 @@
 ---
-slug: /ltr-507/arduino/getting-started 
-title: Getting started
-id: ltr-507-arduino-1 
-hide_title: False
+slug: /ltr-507/arduino/getting-started
+title: Ltr 507 - Getting started
+id: ltr-507-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

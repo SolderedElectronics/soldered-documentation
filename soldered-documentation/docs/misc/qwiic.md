@@ -1,8 +1,8 @@
 ---
-slug: /qwiic 
-title: Qwiic (formerly easyC)
+slug: /qwiic
+title: Qwiic - Qwiic (formerly easyC)
 id: qwiic
-hide_title: False
+hide_title: false
 pagination_next: null
 pagination_prev: null
 ---

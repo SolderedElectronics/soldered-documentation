@@ -1,8 +1,8 @@
 ---
-slug: /lcd-i2c/hardware 
-title: Hardware details
-id: lcd-i2c-hardware 
-hide_title: False
+slug: /lcd-i2c/hardware
+title: Lcd I2C - Hardware details
+id: lcd-i2c-hardware
+hide_title: false
 ---
 
 ## Pinout

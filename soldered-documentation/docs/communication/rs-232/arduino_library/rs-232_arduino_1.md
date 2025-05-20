@@ -1,8 +1,8 @@
 ---
-slug: /rs-232/arduino/geting-started 
-title: Getting started
-id: rs-232-arduino-1 
-hide_title: False
+slug: /rs-232/arduino/geting-started
+title: Rs 232 - Getting started
+id: rs-232-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

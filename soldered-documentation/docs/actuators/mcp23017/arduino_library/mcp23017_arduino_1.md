@@ -1,8 +1,8 @@
 ---
-slug: /mcp23017/arduino/geting-started 
-title: Getting started
-id: mcp23017-arduino-1 
-hide_title: False
+slug: /mcp23017/arduino/geting-started
+title: Mcp23017 - Getting started
+id: mcp23017-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/rtc/wakeup
-title: RTC wakeup
+title: 6Motion - RTC wakeup
 id: 6motion-rtc-wakeup
 ---
 

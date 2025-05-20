@@ -1,8 +1,8 @@
 ---
 slug: /slider-potentiometer/arduino-2
-title: Reading Slider Potentiometer
+title: Slider Potentiometer - Reading Slider Potentiometer
 id: slider-potentiometer-arduino-2
-hide_title: False
+hide_title: false
 ---
 
 This page contains some simple examples of how to take analog slider measurements using the Slider Potentiometer.

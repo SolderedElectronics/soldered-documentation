@@ -1,8 +1,8 @@
 ---
-slug: /joystick/arduino/geting-started 
-title: Getting started
-id: joystick-arduino-1 
-hide_title: False
+slug: /joystick/arduino/geting-started
+title: Joystick - Getting started
+id: joystick-arduino-1
+hide_title: false
 ---
 
 

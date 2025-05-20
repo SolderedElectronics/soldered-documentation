@@ -1,8 +1,8 @@
 ---
-slug: /txs0104/hardware 
-title: Hardware details
-id: txs0104-hardware 
-hide_title: False
+slug: /txs0104/hardware
+title: Txs0104 - Hardware details
+id: txs0104-hardware
+hide_title: false
 ---
 
 ## Pinout

@@ -1,8 +1,8 @@
 ---
-slug: /bmp180/hardware 
-title: Hardware details
-id: bmp180-hardware 
-hide_title: False
+slug: /bmp180/hardware
+title: Bmp180 - Hardware details
+id: bmp180-hardware
+hide_title: false
 ---
 
 ## Pinout

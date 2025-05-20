@@ -1,8 +1,8 @@
 ---
 slug: /apds-9960/arduino/gesture-detection
-title: Gesture Detection
+title: Apds 9960 - Gesture Detection
 id: apds-9960-arduino-3
-hide_title: False
+hide_title: false
 ---
 
 This page contains simple examples demonstrating sensor initialization and gesture detection using the APDS-9960 sensor.

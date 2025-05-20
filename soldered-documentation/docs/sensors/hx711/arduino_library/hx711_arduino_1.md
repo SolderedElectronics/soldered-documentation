@@ -1,8 +1,8 @@
 ---
-slug: /hx711/arduino/getting-started 
-title: Getting started
-id: hx711-arduino-1 
-hide_title: False
+slug: /hx711/arduino/getting-started
+title: Hx711 - Getting started
+id: hx711-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

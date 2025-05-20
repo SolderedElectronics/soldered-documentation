@@ -1,8 +1,8 @@
 ---
-slug: /joystick/arduino/examples 
-title: Using the module (example)
-id: joystick-arduino-2 
-hide_title: False
+slug: /joystick/arduino/examples
+title: Joystick - Using the module (example)
+id: joystick-arduino-2
+hide_title: false
 ---
 
 This page contains some basic examples with function documentation on how to use Joystick module.

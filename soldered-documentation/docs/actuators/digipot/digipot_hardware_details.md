@@ -1,8 +1,8 @@
 ---
-slug: /digipot/hardware 
-title: Hardware details
-id: digipot-hardware 
-hide_title: False
+slug: /digipot/hardware
+title: Digipot - Hardware details
+id: digipot-hardware
+hide_title: false
 ---
 
 ## Pinout

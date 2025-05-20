@@ -1,8 +1,8 @@
 ---
-slug: /hx711/how-it-works  
-title: How it works  
-id: hx711-how-it-works  
-hide_title: False  
+slug: /hx711/how-it-works
+title: Hx711 - How it works
+id: hx711-how-it-works
+hide_title: false
 ---
 
 The **HX711** is a precision 24-bit analog-to-digital converter (ADC) designed for **weigh scales** and **industrial control applications**. Manufactured by [**AVIA**](http://en.aviaic.com/detail/730856.html), the HX711 provides high-precision digital output and can interface directly with **load cells** for **accurate weight measurements**.

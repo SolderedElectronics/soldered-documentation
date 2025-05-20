@@ -1,8 +1,8 @@
 ---
 slug: /pcf85063a/arduino/initialization
-title: Initialization
-id: pcf85063a-arduino-2 
-hide_title: False
+title: Pcf85063A - Initialization
+id: pcf85063a-arduino-2
+hide_title: false
 ---
 
 ## Connections for this example

@@ -1,8 +1,8 @@
 ---
-slug: /relay/hardware 
-title: Hardware details
-id: relay-hardware 
-hide_title: False
+slug: /relay/hardware
+title: Relay - Hardware details
+id: relay-hardware
+hide_title: false
 ---
 
 ## Pinout

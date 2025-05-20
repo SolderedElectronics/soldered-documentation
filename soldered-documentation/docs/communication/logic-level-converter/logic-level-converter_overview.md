@@ -1,8 +1,8 @@
 ---
 slug: /logic-level-converter/overview
-title: Overview
-id: logic-level-converter-overview 
-hide_title: False
+title: Logic Level Converter - Overview
+id: logic-level-converter-overview
+hide_title: false
 pagination_prev: null
 ---
 

@@ -1,8 +1,8 @@
 ---
-slug: /logic-level-converter/hardware 
-title: Hardware details
-id: logic-level-converter-hardware 
-hide_title: False
+slug: /logic-level-converter/hardware
+title: Logic Level Converter - Hardware details
+id: logic-level-converter-hardware
+hide_title: false
 ---
 
 ## Pinout

@@ -1,8 +1,8 @@
 ---
-slug: /rotary-encoder/hardware 
-title: Hardware details
-id: rotary-encoder-hardware 
-hide_title: False
+slug: /rotary-encoder/hardware
+title: Rotary Encoder - Hardware details
+id: rotary-encoder-hardware
+hide_title: false
 ---
 
 ## Pinout

@@ -1,8 +1,8 @@
 ---
 slug: /lcd-i2c/arduino/custom-characters
-title: Custom Characters
+title: Lcd I2C - Custom Characters
 id: lcd-i2c-arduino-3
-hide_title: False
+hide_title: false
 ---
 
 LCD displays with an HD44780 controller support custom characters, which are stored in **CGRAM (Character Generator RAM)**. These characters are defined using an **8-byte array**, where **each byte** represents a **row** of a **5x8 pixel grid**. By setting the pixels with binary values (1 for on, 0 for off), you can design unique symbols like faces, icons, or symbols.

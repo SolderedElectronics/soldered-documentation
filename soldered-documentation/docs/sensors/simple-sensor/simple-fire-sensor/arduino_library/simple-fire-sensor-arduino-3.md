@@ -1,8 +1,8 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/arduino_library/qwiic-example
-title: Detecting and maesuring fire with Qwiic fire sensor (example)
+title: Simple Sensor - Detecting and maesuring fire with Qwiic fire sensor (example)
 id: simple-fire-sensor-arduino-3
-hide_title: False
+hide_title: false
 ---
 This page contains a simple example with function documentation on how to detect and measure intensity of fire with the sensor.
 

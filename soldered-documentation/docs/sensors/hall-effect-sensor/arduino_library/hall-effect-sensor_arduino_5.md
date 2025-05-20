@@ -1,9 +1,9 @@
 ---
-slug: /hall-effect-sensor/arduino/Qwiic analog example 
-title: Measuring strength of magnetic field with Qwiic analog sensor (example)
-id: hall-effect-sensor-arduino-5 
-hide_title: False
-
+slug: /hall-effect-sensor/arduino/Qwiic analog example
+title: Hall Effect Sensor - Measuring strength of magnetic field with Qwiic analog
+  sensor (example)
+id: hall-effect-sensor-arduino-5
+hide_title: false
 ---
 
 This page contains a simple example with function documentation on how to take measurements using the SI7211-B-00-IV Hall effect sensor and the Qwiic connection.

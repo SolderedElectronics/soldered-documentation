@@ -1,8 +1,8 @@
 ---
 slug: /tcrt5000/arduino/example
-title: Example usage (Arduino)
-id: tcrt5000-arduino-2 
-hide_title: False
+title: Tcrt5000 - Example usage (Arduino)
+id: tcrt5000-arduino-2
+hide_title: false
 ---
 
 This page contains a simple example with function documentation on how to take measurements using the TCRT5000 sensor.

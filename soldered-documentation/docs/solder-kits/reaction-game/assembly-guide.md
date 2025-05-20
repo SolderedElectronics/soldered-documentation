@@ -1,8 +1,8 @@
 ---
 slug: /reaction-game/assembly-guide
-title: Assembly guide
-id: reaction-game-assembly-guide 
-hide_title: False
+title: Assembly Guide - Assembly guide
+id: reaction-game-assembly-guide
+hide_title: false
 ---
 
 On this page, we will guide step by step on how to assemble this kit.

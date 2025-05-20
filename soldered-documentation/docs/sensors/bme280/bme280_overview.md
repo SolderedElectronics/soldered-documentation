@@ -1,8 +1,8 @@
 ---
 slug: /bme280/overview
-title: Overview
-id: bme280-overview 
-hide_title: False
+title: Bme280 - Overview
+id: bme280-overview
+hide_title: false
 pagination_prev: null
 ---
 

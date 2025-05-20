@@ -1,8 +1,8 @@
 ---
-slug: /mcp23017/arduino/button-input-example 
-title: Button input example
-id: mcp23017-arduino-4 
-hide_title: False
+slug: /mcp23017/arduino/button-input-example
+title: Mcp23017 - Button input example
+id: mcp23017-arduino-4
+hide_title: false
 ---
 
 This page contains an example of reading input from a button.

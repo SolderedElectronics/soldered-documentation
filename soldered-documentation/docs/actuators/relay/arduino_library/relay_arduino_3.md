@@ -1,8 +1,8 @@
 ---
-slug: /relay/arduino/Qwiic-example 
-title: Switching the relay (Qwiic example)
+slug: /relay/arduino/Qwiic-example
+title: Relay - Switching the relay (Qwiic example)
 id: relay-arduino-3
-hide_title: False
+hide_title: false
 pagination_next: null
 ---
 

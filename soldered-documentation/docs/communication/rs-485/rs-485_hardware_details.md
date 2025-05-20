@@ -1,8 +1,8 @@
 ---
-slug: /rs-485/hardware 
-title: Hardware details
-id: rs-485-hardware 
-hide_title: False
+slug: /rs-485/hardware
+title: Rs 485 - Hardware details
+id: rs-485-hardware
+hide_title: false
 ---
 
 ## Pinout

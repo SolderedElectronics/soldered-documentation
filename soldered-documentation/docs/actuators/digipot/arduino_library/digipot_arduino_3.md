@@ -1,8 +1,8 @@
 ---
-slug: /digipot/arduino/troubleshooting 
-title: Troubleshooting
-id: digipot-arduino-3 
-hide_title: False
+slug: /digipot/arduino/troubleshooting
+title: Digipot - Troubleshooting
+id: digipot-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

@@ -1,8 +1,8 @@
 ---
-slug: /ws2812b/hardware 
-title: Hardware details
-id: ws2812b-hardware 
-hide_title: False
+slug: /ws2812b/hardware
+title: Ws2812B - Hardware details
+id: ws2812b-hardware
+hide_title: false
 ---
 
 ## Pinout

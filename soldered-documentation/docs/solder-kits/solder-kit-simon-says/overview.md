@@ -1,8 +1,8 @@
 ---
 slug: /simon-says-game/overview
-title: Overview
-id: simon-says-game-overview 
-hide_title: False
+title: Simon Says Game - Overview
+id: simon-says-game-overview
+hide_title: false
 pagination_prev: null
 ---
 ## Introduction

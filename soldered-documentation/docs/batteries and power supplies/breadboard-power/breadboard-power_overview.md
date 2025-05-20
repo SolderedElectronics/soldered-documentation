@@ -1,8 +1,8 @@
 ---
 slug: /breadboard-power/overview
-title: Overview
-id: breadboard-power-overview 
-hide_title: False
+title: Breadboard Power - Overview
+id: breadboard-power-overview
+hide_title: false
 pagination_prev: null
 ---
 

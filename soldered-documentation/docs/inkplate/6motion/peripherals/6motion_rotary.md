@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/peripherals/rotary-encoder
-title: Rotary Encoder
+title: 6Motion - Rotary Encoder
 id: 6motion-periph-rotary
 ---
 

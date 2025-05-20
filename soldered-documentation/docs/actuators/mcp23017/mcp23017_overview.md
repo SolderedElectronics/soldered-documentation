@@ -1,8 +1,8 @@
 ---
 slug: /mcp23017/overview
-title: Overview
-id: mcp23017-overview 
-hide_title: False
+title: Mcp23017 - Overview
+id: mcp23017-overview
+hide_title: false
 pagination_prev: null
 ---
 

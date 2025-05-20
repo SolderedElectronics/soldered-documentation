@@ -1,8 +1,8 @@
 ---
-slug: /bme680/arduino/troubleshooting 
-title: Troubleshooting
-id: bme680-arduino-3 
-hide_title: False
+slug: /bme680/arduino/troubleshooting
+title: Bme680 - Troubleshooting
+id: bme680-arduino-3
+hide_title: false
 pagination_next: null
 ---
 This page contains some tips in case you are having problems using this product.

@@ -1,8 +1,8 @@
 ---
-slug: /ssd1306/arduino/troubleshooting 
-title: Troubleshooting
-id: ssd1306-arduino-3 
-hide_title: False
+slug: /ssd1306/arduino/troubleshooting
+title: Ssd1306 - Troubleshooting
+id: ssd1306-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

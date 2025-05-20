@@ -1,8 +1,8 @@
 ---
 slug: /obstacle-sensor/overview
-title: Overview
-id: obstacle-sensor-overview 
-hide_title: False
+title: Obstacle Sensor - Overview
+id: obstacle-sensor-overview
+hide_title: false
 pagination_prev: null
 ---
 

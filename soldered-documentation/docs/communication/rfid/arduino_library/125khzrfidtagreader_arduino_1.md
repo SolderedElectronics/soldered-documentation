@@ -1,8 +1,8 @@
 ---
-slug: /rfid/arduino/geting-started 
-title: Getting started
-id: 125khzrfidtagreader-arduino-1 
-hide_title: False
+slug: /rfid/arduino/geting-started
+title: Rfid - Getting started
+id: 125khzrfidtagreader-arduino-1
+hide_title: false
 ---
 
 # Arduino Library

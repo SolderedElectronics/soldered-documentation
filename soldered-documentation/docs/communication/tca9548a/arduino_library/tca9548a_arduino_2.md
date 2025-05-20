@@ -1,8 +1,8 @@
 ---
-slug: /tca9548a/arduino/examples 
-title: Arduino example
-id: tca9548a-arduino-2 
-hide_title: False
+slug: /tca9548a/arduino/examples
+title: Tca9548A - Arduino example
+id: tca9548a-arduino-2
+hide_title: false
 ---
 
 This page contains an example for setting up 2 **APDS-9960** sensors with the I2C multiplexer **TCA9548A**.

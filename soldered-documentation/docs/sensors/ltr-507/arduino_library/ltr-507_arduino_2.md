@@ -1,8 +1,8 @@
 ---
 slug: /ltr-507/arduino/init-and-settings
-title: Initialization and Settings
-id: ltr-507-arduino-2 
-hide_title: False
+title: Ltr 507 - Initialization and Settings
+id: ltr-507-arduino-2
+hide_title: false
 ---
 
 This page contains an example of how to modify parameters of the LTR-507 light sensor.

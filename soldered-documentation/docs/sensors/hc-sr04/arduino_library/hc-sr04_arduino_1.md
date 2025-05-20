@@ -1,8 +1,8 @@
 ---
-slug: /hc-sr04/arduino/geting-started 
-title: Getting started
-id: hc-sr04-arduino-1 
-hide_title: False
+slug: /hc-sr04/arduino/geting-started
+title: Hc Sr04 - Getting started
+id: hc-sr04-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

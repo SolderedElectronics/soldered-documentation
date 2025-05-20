@@ -1,8 +1,8 @@
 ---
 slug: /rs-485/overview
-title: Overview
-id: rs-485-overview 
-hide_title: False
+title: Rs 485 - Overview
+id: rs-485-overview
+hide_title: false
 pagination_prev: null
 ---
 

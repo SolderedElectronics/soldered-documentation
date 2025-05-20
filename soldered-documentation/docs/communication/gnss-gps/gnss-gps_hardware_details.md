@@ -1,8 +1,8 @@
 ---
-slug: /gnss-gps/hardware 
-title: Hardware details
-id: gnss-gps-hardware 
-hide_title: False
+slug: /gnss-gps/hardware
+title: Gnss Gps - Hardware details
+id: gnss-gps-hardware
+hide_title: false
 ---
 
 ## Pinout

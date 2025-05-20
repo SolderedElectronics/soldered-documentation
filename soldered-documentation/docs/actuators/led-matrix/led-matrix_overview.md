@@ -1,8 +1,8 @@
 ---
 slug: /led-matrix/overview
-title: Overview
-id: led-matrix-overview 
-hide_title: False
+title: Led Matrix - Overview
+id: led-matrix-overview
+hide_title: false
 pagination_prev: null
 ---
 

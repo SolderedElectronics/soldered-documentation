@@ -1,8 +1,8 @@
 ---
-slug: /relay/arduino/geting-started 
-title: Getting started
-id: relay-arduino-1 
-hide_title: False
+slug: /relay/arduino/geting-started
+title: Relay - Getting started
+id: relay-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

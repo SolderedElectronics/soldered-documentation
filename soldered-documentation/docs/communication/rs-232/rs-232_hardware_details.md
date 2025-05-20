@@ -1,8 +1,8 @@
 ---
-slug: /rs-232/hardware 
-title: Hardware details
-id: rs-232-hardware 
-hide_title: False
+slug: /rs-232/hardware
+title: Rs 232 - Hardware details
+id: rs-232-hardware
+hide_title: false
 ---
 
 ## Pinout

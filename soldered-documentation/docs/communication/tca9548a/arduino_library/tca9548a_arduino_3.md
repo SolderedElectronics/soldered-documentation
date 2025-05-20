@@ -1,8 +1,8 @@
 ---
-slug: /tca9548a/arduino/troubleshooting 
-title: Troubleshooting
-id: tca9548a-arduino-3 
-hide_title: False
+slug: /tca9548a/arduino/troubleshooting
+title: Tca9548A - Troubleshooting
+id: tca9548a-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

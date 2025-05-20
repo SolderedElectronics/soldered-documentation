@@ -1,8 +1,8 @@
 ---
-slug: /digipot/arduino/geting-started 
-title: Getting started
-id: digipot-arduino-1 
-hide_title: False
+slug: /digipot/arduino/geting-started
+title: Digipot - Getting started
+id: digipot-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

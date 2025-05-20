@@ -1,8 +1,8 @@
 ---
-slug: /gnss-gps/arduino/getting-started 
-title: Getting started
-id: gnss-gps-arduino-1 
-hide_title: False
+slug: /gnss-gps/arduino/getting-started
+title: Gnss Gps - Getting started
+id: gnss-gps-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

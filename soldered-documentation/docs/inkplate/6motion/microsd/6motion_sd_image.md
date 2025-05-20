@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/microsd/sd-image
-title: Image from microSD
+title: 6Motion - Image from microSD
 id: 6motion-microsd-image
 ---
 

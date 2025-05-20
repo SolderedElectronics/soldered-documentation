@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/additional-resources
-title: Additional resources
+title: 6Motion - Additional resources
 id: 6motion-additional-resources
 ---
 

@@ -1,8 +1,8 @@
 ---
-slug: /obstacle-sensor/arduino/examples 
-title: Example usage (Arduino)
-id: obstacle-sensor-arduino-2 
-hide_title: False
+slug: /obstacle-sensor/arduino/examples
+title: Obstacle Sensor - Example usage (Arduino)
+id: obstacle-sensor-arduino-2
+hide_title: false
 ---
 
 This page contains a simple example with function documentation on how to take measurements using the sensor.

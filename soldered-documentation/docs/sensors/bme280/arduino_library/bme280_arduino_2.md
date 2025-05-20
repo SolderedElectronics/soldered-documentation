@@ -1,8 +1,8 @@
 ---
-slug: /bme280/arduino/examples 
-title: Measuring temperature, pressure and humidity (examples)
-id: bme280-arduino-2 
-hide_title: False
+slug: /bme280/arduino/examples
+title: Bme280 - Measuring temperature, pressure and humidity (examples)
+id: bme280-arduino-2
+hide_title: false
 ---
 
 This page contains some simple examples with function documentation on how to take measurements using the BME280 temperature, pressure, and humidity sensor.

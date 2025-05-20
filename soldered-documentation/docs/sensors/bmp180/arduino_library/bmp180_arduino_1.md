@@ -1,8 +1,8 @@
 ---
-slug: /bmp180/arduino/geting-started 
-title: Getting started
-id: bmp180-arduino-1 
-hide_title: False
+slug: /bmp180/arduino/geting-started
+title: Bmp180 - Getting started
+id: bmp180-arduino-1
+hide_title: false
 ---
 
 ## Arduino library

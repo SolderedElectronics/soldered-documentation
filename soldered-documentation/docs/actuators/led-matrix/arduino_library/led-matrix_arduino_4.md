@@ -1,8 +1,8 @@
 ---
-slug: /led-matrix/arduino/examples 
-title: Displaying text (example)
+slug: /led-matrix/arduino/examples
+title: Arduino - Displaying text (example)
 id: led-matrix-arduino-4
-hide_title: False
+hide_title: false
 ---
 
 This page contains a simple example with function documantation on how to display simple text with scrolling animation.

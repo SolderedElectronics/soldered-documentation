@@ -1,8 +1,8 @@
 ---
 slug: /rs-232/arduino/troubleshooting
-title: Troubleshooting
-id: rs-232-arduino-3 
-hide_title: False
+title: Rs 232 - Troubleshooting
+id: rs-232-arduino-3
+hide_title: false
 pagination_next: null
 ---
 

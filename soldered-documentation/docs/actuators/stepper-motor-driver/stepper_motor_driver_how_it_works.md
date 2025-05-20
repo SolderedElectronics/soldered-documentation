@@ -1,8 +1,8 @@
 ---
 slug: /stepper-motor-driver/how-it-works
-title: How it works
+title: Stepper Motor Driver - How it works
 id: stepper-motor-driver-how-it-works
-hide_title: False
+hide_title: false
 ---
 
 On this page, let's go over how this breakout board actually drives a stepper motor.  

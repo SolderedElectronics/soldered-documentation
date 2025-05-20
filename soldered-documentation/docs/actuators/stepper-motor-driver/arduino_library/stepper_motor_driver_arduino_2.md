@@ -1,8 +1,8 @@
 ---
 slug: /stepper-motor-driver/arduino/examples
-title: Driving the motor (examples)
+title: Stepper Motor Driver - Driving the motor (examples)
 id: stepper-motor-driver-arduino-2
-hide_title: False
+hide_title: false
 ---
 
 This page contains a simple example along with some function documentation on how to drive the stepper motor.
