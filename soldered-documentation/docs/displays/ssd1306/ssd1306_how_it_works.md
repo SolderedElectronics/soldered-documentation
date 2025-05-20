@@ -44,4 +44,4 @@ The SSD1306 displays data directly from its internal 128 x 64-bit **Graphic Disp
 
 ## I2C communication
 
-The SSD1306 uses the I2C protocol to communicate with a microcontroller. It operates with an I2C address of **0x3C** (it can also operate with an address of **0x3D** when shorting the **JP6** jumper—see the jumper details [**here**](/ssd1306/hardware#jumper-details)).
+The SSD1306 uses the I2C protocol to communicate with a microcontroller. It operates with an I2C address of **0x3C** (it can also operate with an address of **0x3D** when shorting the **JP6** jumper—see the jumper details [**here**](/ssd1306/hardware#jumper-details/)).

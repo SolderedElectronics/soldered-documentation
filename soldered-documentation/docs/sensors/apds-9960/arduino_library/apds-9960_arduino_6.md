@@ -32,7 +32,7 @@ If the sensor fails to initialize on the first attempt, try calling `APDS.begin(
 #### Check sensor placement
 Ensure that your APDS-9960 sensor is positioned correctly with a clear line of sight for proximity and gesture detection. Obstructions or a poor angle can interfere with the sensor's ability to detect motion or proximity.
 
-<InfoBox> If you're using glass over your sensor, make sure you [leave an adequate gap of 1mm](/apds-9960/hardware#window-air-gap)! </InfoBox>
+<InfoBox> If you're using glass over your sensor, make sure you [leave an adequate gap of 1mm](/apds-9960/hardware#window-air-gap/)! </InfoBox>
 
 #### Adjust sensitivity settings
 If the sensor is not detecting gestures or proximity accurately, try adjusting the sensitivity settings. The default settings might be too low or too high depending on your environment. Experiment with different configurations to find the optimal setting for your application.

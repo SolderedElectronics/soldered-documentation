@@ -43,7 +43,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 ---
 
 ## Connections (Qwiic)
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change breakout board's address, check the [**Address selection**](/documentation/simple-sensor/simple-rain-sensor/simple-rain-sensor-hardware#address-selection-for-qwiic-version).
+Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change breakout board's address, check the [**Address selection**](/documentation/simple-sensor/simple-rain-sensor/simple-rain-sensor-hardware#address-selection-for-qwiic-version/).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |

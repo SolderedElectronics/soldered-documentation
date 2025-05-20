@@ -25,7 +25,7 @@ The Qwiic compatibility is made possible with the [**Atmel ATTINY404-N**](https:
 
 <CenteredImage src="/img/pir-sensor/atmel.webp" alt="ATTINY404-N on board" caption="ATTINY404-N on board" width="400px" />
 
-The breakout board operates with a default I2C address of **0x30** but it can be changed using onboard switches. To change the breakout board's address, check out the [**Address selection**](/pir-sensor/hardware#address-selection-qwiic-version). When detected, the ATTINY404-N receives data from the sensor and passes it to the main MCU using the **I2C data line**.
+The breakout board operates with a default I2C address of **0x30** but it can be changed using onboard switches. To change the breakout board's address, check out the [**Address selection**](/pir-sensor/hardware#address-selection-qwiic-version/). When detected, the ATTINY404-N receives data from the sensor and passes it to the main MCU using the **I2C data line**.
 
 ---
 

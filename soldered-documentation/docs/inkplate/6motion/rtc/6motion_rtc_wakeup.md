@@ -7,7 +7,7 @@ id: 6motion-rtc-wakeup
 
 Other than just measuring time while Inkplate is running, it's possible to use the built-in RTC to wake Inkplate up from deep sleep at a certain time.
 
-<InfoBox>For more info on deep sleep on Inkplate 6 MOTION, see [**this**](/inkplate/6motion/low-power/deep-sleep) page.</InfoBox>
+<InfoBox>For more info on deep sleep on Inkplate 6 MOTION, see [**this**](/inkplate/6motion/low-power/deep-sleep/) page.</InfoBox>
 
 <WarningBox>If you want to keep RTC data between sleeps and power-offs, place a **CR2032 battery** in the battery holder.</WarningBox>
 
@@ -56,7 +56,7 @@ if (!inkplate.rtc.isRTCSet())
 />
 
 
-For more info on `alarmMask` check the [**RTC alarm**](/inkplate/6motion/rtc/alarm) page.
+For more info on `alarmMask` check the [**RTC alarm**](/inkplate/6motion/rtc/alarm/) page.
 
 
 <FunctionDocumentation functionName="inkplate.rtc.enableAlarmInterrupt()" 

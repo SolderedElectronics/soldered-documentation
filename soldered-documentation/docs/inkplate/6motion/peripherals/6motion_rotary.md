@@ -10,7 +10,7 @@ The **Inkplate 6 MOTION** includes a **AS5600 magnetic rotary encoder**, which a
 
 <CenteredImage src="/img/inkplate_6_motion/6motion_rotary.jpg" alt="Inkplate 6 MOTION Rotary Encoder" caption="Rotary encoder on the Inkplate 6 MOTION enclosure" width="600px" />
 
-The dial made to interface with the rotary encoder is **transparent**! It's made this way so that the **first** onboard [**RGB LED**](/inkplate/6motion/peripherals/leds) can change it's color when it lights up!
+The dial made to interface with the rotary encoder is **transparent**! It's made this way so that the **first** onboard [**RGB LED**](/inkplate/6motion/peripherals/leds/) can change it's color when it lights up!
 
 <InfoBox>The **AS5600** implementation in the Inkplate library uses this library from **Rob Tillaart**:<QuickLink 
   title="AS5600" 

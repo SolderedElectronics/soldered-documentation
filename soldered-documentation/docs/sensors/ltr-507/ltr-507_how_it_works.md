@@ -39,6 +39,6 @@ The LTR-507 is a highly efficient **ambient light** and **proximity sensor** des
 
 The LTR-507ALS-01 sensor utilizes **I2C** (Inter-Integrated Circuit) communication to transmit data between the sensor and a microcontroller. I2C operates with two main lines: **SDA** for **data transfer** and **SCL** for **clock synchronization**.
 
-<InfoBox>The I2C address can be changed! [**Address selection**](/ltr-507/hardware#address-selection)</InfoBox>
+<InfoBox>The I2C address can be changed! [**Address selection**](/ltr-507/hardware#address-selection/)</InfoBox>
 
 As a follower device, the LTR-507 responds to commands sent from the leader device. It has a configurable I2C address, allowing for easy communication. The leader device can request **ambient light** and **proximity data**, enabling the sensor to provide measurements of **lux levels** and the **distance to nearby objects**.

@@ -72,7 +72,7 @@ void loop()
 
 ## Drawing Fast Bitmaps
 
-For the fastest bitmap rendering on Inkplate 6 MOTION, use `drawBitmapFast`. To convert images for displaying with this function, use the [**Soldered Image Converter**](/inkplate/6motion/basics/image-converter). **For the moment, this function supports only bitmaps size 1024x758px**.
+For the fastest bitmap rendering on Inkplate 6 MOTION, use `drawBitmapFast`. To convert images for displaying with this function, use the [**Soldered Image Converter**](/inkplate/6motion/basics/image-converter/). **For the moment, this function supports only bitmaps size 1024x758px**.
 
 This efficiently fills the framebuffer with the provided bitmap data:
 

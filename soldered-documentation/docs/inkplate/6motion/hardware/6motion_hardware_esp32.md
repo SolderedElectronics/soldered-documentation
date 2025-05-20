@@ -36,7 +36,7 @@ The **ESP-AT binary** used on Inkplate 6 MOTION was built using Espressif's offi
 
 ## Using ESP32 with the Inkplate Library  
 
-The Inkplate library includes a **software driver** that manages the ESP32 co-processor, making WiFi features easy to use. Check out the [**WiFi example**](/inkplate/6motion/wifi/wifi-basics) for practical implementation.  
+The Inkplate library includes a **software driver** that manages the ESP32 co-processor, making WiFi features easy to use. Check out the [**WiFi example**](/inkplate/6motion/wifi/wifi-basics/) for practical implementation.  
 
 If you're curious about **how the driver works internally**, you can explore its **low-level communication** with the ESP32 in the [**source files**](https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/tree/main/src/system/wifi) inside the Inkplate MOTION library (`src/system/wifi`).  
 

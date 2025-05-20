@@ -10,7 +10,7 @@ The **Inkplate 6 MOTION** features **three onboard buttons** that can be used fo
 - **USER2** (`INKPLATE_USER2`)
 - **WAKE** (`INKPLATE_WAKE`)
 
-The **WAKE** button has a special function - it can be used to wake up the Inkplate 6 MOTION from deep sleep. See [**here**](/inkplate/6motion/low-power/deep-sleep#wake-on-button-press) for more info on waking via **WAKE** button.
+The **WAKE** button has a special function - it can be used to wake up the Inkplate 6 MOTION from deep sleep. See [**here**](/inkplate/6motion/low-power/deep-sleep#wake-on-button-press/) for more info on waking via **WAKE** button.
 
 ---
 

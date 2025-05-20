@@ -17,7 +17,7 @@ Inkplate 6 MOTION allows you to draw graphics on a **1024x758px canvas**.
 
 Below is an example demonstrating functions used for drawing graphics on the Inkplate 6 MOTION:
 
-<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 15. Refer to the [**display modes**](/inkplate/6motion/basics/basic-display-modes) page for more details.</InfoBox>
+<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 15. Refer to the [**display modes**](/inkplate/6motion/basics/basic-display-modes/) page for more details.</InfoBox>
 
 ```cpp
 inkplate.begin(INKPLATE_BLACKWHITE); // Initialize Inkplate

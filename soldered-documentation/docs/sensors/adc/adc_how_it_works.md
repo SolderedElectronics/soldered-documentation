@@ -47,7 +47,7 @@ Both the ADS1015 and ADS1115 include several programmable features that enhance 
 
 The **ADS1015** and **ADS1115** communicate via the **I2C interface**, allowing for easy integration with microcontrollers. Key features of the I2C protocol are:
 
-- **Addressing**: The devices support [**four selectable I2C addresses**](/adc/hardware#jumper-details), allowing multiple devices to be used on the same bus.
+- **Addressing**: The devices support [**four selectable I2C addresses**](/adc/hardware#jumper-details/), allowing multiple devices to be used on the same bus.
 - **Data Read/Write**: Data is transferred using standard I2C commands to configure the ADC, start conversions, and read conversion results.
 - **Clock Speed**: The devices support standard I2C speeds (100 kHz, 400 kHz) for reliable communication.
 - **Register Map**: Configuration and data are accessed via a well-defined register map, allowing full control over conversion settings, input channels, and comparator functionality.

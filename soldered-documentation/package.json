@@ -1,6 +1,6 @@
 {
   "name": "soldered-documentation",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -21,7 +21,7 @@
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "flickity": "^3.0.0",
-    "image-size": "^2.0.2",
+    "image-size": "2.0.2",
     "imagesloaded": "^5.0.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
