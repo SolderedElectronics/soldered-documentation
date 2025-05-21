@@ -4,7 +4,7 @@ title: Display modes
 id: 10-display-modes
 ---
 
-As mentioned on the previous page, Inkplate MOTION has two different display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page contains more information on both.
+As mentioned on the previous page, Inkplate 10 has two different display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page contains more information on both.
 
 ---
 

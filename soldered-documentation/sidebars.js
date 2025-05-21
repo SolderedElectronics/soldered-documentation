@@ -253,10 +253,6 @@ const sidebars = {
               id: 'inkplate/10/10-quick-start-guide',
             },
             {
-              type: 'doc',
-              id: 'inkplate/10/10-uploading-code',
-            },
-            {
             type: 'category',
             label: 'Hardware',
             items: [
@@ -300,19 +296,19 @@ const sidebars = {
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/basics/6motion-graphics',
+                      id: 'inkplate/10/basics/10-graphics',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/basics/6motion-text',
+                      id: 'inkplate/10/basics/10-text',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/basics/6motion-partial-update',
+                      id: 'inkplate/10/basics/10-partial-update',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/basics/6motion-image-converter',
+                      id: 'inkplate/10/basics/10-image-converter',
                     },
                   ],
                 },
@@ -322,29 +318,21 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/wifi/6motion-wifi-basics',
+                      id: 'inkplate/10/wifi/10-wifi-basics',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/wifi/6motion-wifi-image-from-web',
+                      id: 'inkplate/10/wifi/10-wifi-image-from-web',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/wifi/6motion-wifi-get-post',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/wifi/6motion-wifi-mqtt',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/wifi/6motion-wifi-udp',
+                      id: 'inkplate/10/wifi/10-wifi-get-post',
                     },
                   ]
                 },
                 {
                   type: 'doc',
-                  id: 'inkplate/6motion/deepsleep/6motion-deep-sleep',
+                  id: 'inkplate/10/deepsleep/10-deep-sleep',
                 },
                 {
                   type: 'category',
@@ -352,11 +340,11 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/microsd/6motion-microsd-basics',
+                      id: 'inkplate/10/microsd/10-microsd-basics',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/microsd/6motion-microsd-image',
+                      id: 'inkplate/10/microsd/10-microsd-image',
                     },
                   ]
                 },
@@ -366,57 +354,19 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/rtc/6motion-rtc-basics',
+                      id: 'inkplate/10/rtc/10-rtc-basics',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6motion/rtc/6motion-rtc-alarm',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/rtc/6motion-rtc-wakeup',
+                      id: 'inkplate/10/rtc/10-rtc-alarm',
                     },
                   ]
-                },
-                {
-                  type: 'category',
-                  label: 'Peripherals',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/peripherals/6motion-periph-intro',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/peripherals/6motion-periph-apds9960',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/peripherals/6motion-periph-shtc3',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/peripherals/6motion-periph-accelerometer',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/peripherals/6motion-periph-buttons',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/peripherals/6motion-periph-wsled',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/6motion/peripherals/6motion-periph-rotary',
-                    },
-                  ],
                 },
               ],
             },
             {
               type: 'doc',
-              id: 'inkplate/6motion/6motion-faq-troubleshooting',
+              id: 'inkplate/10/10-faq-troubleshooting',
             },
             {
               type: 'doc',

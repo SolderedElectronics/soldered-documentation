@@ -12,11 +12,21 @@ See the table below for a detailed explanation of each jumper's function:
 
 ## Board jumpers
 
-| Jumper  | Default State | Function |
-|---------|--------------|----------|
-| **JP1** | **Open** (not connected) | When shorted, it **keeps the microSD card powered at 3.3V** at all times. Useful for troubleshooting, but not ideal for low-power applications. |
-| **JP2** | **Connected by default** | Bridges the **WAKE button** with **PC13**, allowing the board to wake from deep sleep via button press. |
-| **JP3** | **Connected by default** | Bridges the **USER1 button** with **PG6**, enabling button input functionality. |
-| **JP4** | **Connected by default** | Bridges the **USER2 button** with **PG0**, allowing interaction with USER2. |
-
-<CenteredImage src="/img/inkplate10/jumpers.png" alt="Inkplate 10 on-board jumpers" caption="Inkplate 10 on-board jumpers" />  
+| **Jumper** 	| **Default State** 	| **Function** 	|
+|---	|---	|---	|
+| **JP1** 	| **NO**(not connected) 	| When shorted, it keeps the microSD card powered at 3.3v at all times. Useful for troubleshooting, but not ideal for low-power applications. 	|
+| **JP2** 	| **Connected to INT by default** 	| Switch between a digital, open-drain, active low interrupt output and a programmable digital quare-wavee output that can be used as a system clock. 	|
+| **JP3** 	| **NC** (connected) 	| When shorted, enables Chip Select function for communication with microSD card. 	|
+| **JP4** 	| **NC** (connected) 	| When shorted, it sends the PCAL6416A an interrupt signal that informs the microcontroller that there is incoming data 	|
+| **JP5** 	| **NC** (connected) 	| When shorted, it enables microSD card trough mosfet. 	|
+| **JP6** 	| **NC** (connected) 	| When shorted, it enables the battery 	|
+<FlickityCarousel
+images={[
+{src:'/img/inkplate10/jp1.webp', alt: 'Jumper JP1', caption:'JP1'},
+{src:'/img/inkplate10/jp2.webp', alt: 'Jumper JP2', caption:'JP2'},
+{src:'/img/inkplate10/jp3.webp', alt: 'Jumper JP3', caption:'JP3'},
+{src:'/img/inkplate10/jp4.webp', alt: 'Jumper JP4', caption:'JP4'},
+{src:'/img/inkplate10/jp5.webp', alt: 'Jumper JP5', caption:'JP5'},
+{src:'/img/inkplate10/jp6.webp', alt: 'Jumper JP6', caption:'JP6'},
+]}
+/>

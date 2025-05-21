@@ -8,15 +8,15 @@ id: 10-hardware-battery
 
 Inkplate 10 includes a **2-pin 2mm JST connector**, allowing you to connect a **3.7V Li-ion battery**. The onboard charging IC, **MCP73831**, **automatically charges the battery** when Inkplate is plugged into **USB-C** and switches to battery power when unplugged. A **charging indicator LED** provides real-time charging status.  
 
-<CenteredImage src="/img/inkplate10/CHRG_LED.jpg" alt="Inkplate 10 Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
+<CenteredImage src="/img/inkplate10/battery_jst_connector.png" alt="Inkplate 10 battery JST connector" caption="JST battery connector" width="500px"/>  
 
 ---
 
-## Connector and polarity
+<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**. </InfoBox>  
 
-The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**.  
+<CenteredImage src="/img/inkplate10/CHRG_LED.jpg" alt="Inkplate 10 Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
 
-<CenteredImage src="/img/inkplate10/battery_jst_connector.png" alt="Inkplate 10 battery JST connector" caption="JST battery connector" width="500px"/>  
+
 
 <WarningBox>**Battery polarity can vary!** Some Li-ion batteries have reversed polarity. **Connecting a battery with the wrong polarity may permanently damage your Inkplate!** Double-check before plugging it in.</WarningBox>  
 

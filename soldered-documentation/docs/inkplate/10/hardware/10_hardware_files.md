@@ -12,6 +12,12 @@ The **hardware repositories** for Inkplate 10 hardware files can be found on the
   url="https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design" 
 />
 
+<QuickLink 
+  title="E-Radionica Inkplate 10 hardware design" 
+  description="Hardware design, BOM, gerbers and 3D files for E-Radionica Inkplate 10, designed by Soldered Electronics"
+  url="https://github.com/SolderedElectronics/Inkplate-10-hardware" 
+/>
+
 ## Repository contents  
 
 The Inkplate 10 hardware repository contains everything you need to understand, modify, or manufacture the board. Below is an overview of the available files.  
@@ -22,6 +28,8 @@ We use [**KiCad**](https://www.kicad.org/), an open-source PCB design tool. You 
 
 The `PANEL` files are used internally for production.  
 
+<CenteredImage src="/img/inkplate10/inkplate_10_cad_files.png" alt="Inkplate 10 KiCad project" caption="Inkplate 10 KiCad project" />
+
 ---
 
 ### Schematic
@@ -29,11 +37,7 @@ The `PANEL` files are used internally for production.
 The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from Kicad. The schematic is divided into sections based on functionality, making it easy to navigate.
 
 <CenteredImage src="/img/inkplate10/inkplate_10_schematic0.png" alt="Inkplate 10 schematic" caption="Inkplate 10 schematic 1/6" />  
-<CenteredImage src="/img/inkplate10/inkplate_10_schematic1.png" alt="Inkplate 10 schematic" caption="Inkplate 10 schematic 2/6" />  
-<CenteredImage src="/img/inkplate10/inkplate_10_schematic2.png" alt="Inkplate 10 schematic" caption="Inkplate 10 schematic 3/6" />
-<CenteredImage src="/img/inkplate10/inkplate_10_schematic3.png" alt="Inkplate 10 schematic" caption="Inkplate 10 schematic 4/6" />
-<CenteredImage src="/img/inkplate10/inkplate_10_schematic4.png" alt="Inkplate 10 schematic" caption="Inkplate 10 schematic 5/6" />
-<CenteredImage src="/img/inkplate10/inkplate_10_schematic5.png" alt="Inkplate 10 schematic" caption="Inkplate 10 schematic 6/6" />        
+        
 
 ---
 
@@ -43,6 +47,8 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
+
+<CenteredImage src="/img/inkplate10/inkplate_10_ibom.png" alt="Inkplate 10 interactive BOM" caption="IBOM for 10 MOTION" />
 
 ---
 
