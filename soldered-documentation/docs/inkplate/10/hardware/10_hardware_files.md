@@ -48,7 +48,7 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-<CenteredImage src="/img/inkplate10/inkplate_10_ibom.png" alt="Inkplate 10 interactive BOM" caption="IBOM for 10 MOTION" />
+<CenteredImage src="/img/inkplate10/inkplate_10_ibom.png" alt="Inkplate 10 interactive BOM" caption="IBOM for 10" />
 
 ---
 

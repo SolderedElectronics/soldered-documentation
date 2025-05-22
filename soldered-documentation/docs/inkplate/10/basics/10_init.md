@@ -12,10 +12,10 @@ Let's get started with writing our first Inkplate sketch! Before doing anything 
 
 ## Initializing Inkplate and updating the display
 
-The most basic sketch on Inkplate 6 MOTION is as follows, it will initialize Inkplate in memory and clear the e-paper display:
+The most basic sketch on Inkplate 10 is as follows, it will initialize Inkplate in memory and clear the e-paper display:
 
 ```cpp
-// Include Inkplate Motion Arduino Library.
+// Include Inkplate Arduino Library.
 #include <Inkplate.h>
 Inkplate inkplate(INKPLATE_1BIT); // Create Inkplate object
 void setup() 

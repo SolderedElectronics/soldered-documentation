@@ -15,7 +15,9 @@ Inkplate 10 is an **open-source** product, and we are happy to share an overview
 
 ## Basic overview
 
-The Inkplate 10 features a spacious 9.7″ e-paper display, intuitive capacitive touch, and mechanical buttons reminiscent of the old E-Radionica model; USB-C connectivity for both power and programming; abundant GPIO pins with I2C, SPI, and Qwiic header; on-board ESP32–driven Wi‑Fi/Bluetooth; CH340C USB‑to‑UART bridging; microSD expansion; and TI-based power management (battery charging and temperature sensing) — all in a form factor primed for custom enclosures.
+The Inkplate 10 features a 9.7″ e-paper display, USB-C connectivity for both power and programming, abundant GPIO pins with I2C, SPI, and Qwiic header, on-board ESP32–driven Wi‑Fi/Bluetooth, CH340C USB‑to‑UART bridging, microSD expansion,chac and TI-based power management (battery charging and temperature sensing) — all in a form factor primed for custom enclosures.
+
+<InfoBox>Fun fact: Inkplate 10 displays come from reused Kindle E-Books </InfoBox>
 
 ---
 
@@ -48,13 +50,8 @@ See the table below for detailed specifications:
 | **Outline Dimensions** | 218.8(H)×156.425(V)×1.28(D) mm |
 | **Surface Treatment** | Anti‑glare |
 | **Contrast Ratio** | 7:1 (Typ.) (Reflective) |
-| **Viewing Angle** | Not specified |
-| **Response Time** | Not specified |
-| **Refresh Rate** | Not specified |
 | **Touchscreen** | No (this version has no touchscreen) |
 | **Backlight** | No backlight, no driver |
-| **Good Viewing Mode** | Not specified |
-| **Work Mode** | Not specified |
 | **Color Depth** | Grayscale |
 | **Mass** | 80.0 ± 5.0 g |
 | **Use Case** | E‑Book Readers |

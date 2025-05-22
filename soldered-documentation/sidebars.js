@@ -328,6 +328,10 @@ const sidebars = {
                       type: 'doc',
                       id: 'inkplate/10/wifi/10-wifi-get-post',
                     },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/10/wifi/10-wifi-https-certificate',
+                    },
                   ]
                 },
                 {
@@ -367,10 +371,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'inkplate/10/10-faq-troubleshooting',
-            },
-            {
-              type: 'doc',
-              id: 'inkplate/6motion/6motion-additional-resources',
             },
           ]
         },

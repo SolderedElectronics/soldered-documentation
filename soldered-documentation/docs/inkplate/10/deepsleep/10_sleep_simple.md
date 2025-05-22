@@ -46,6 +46,35 @@ void setup(){
 
 ---
 
+## Wake on button press
+
+To wake on button press of the `Wake` button, use the ESP32 function `esp_sleep_enable_ext0_wakeup()` before putting it to sleep.
+
+```cpp
+// Go to sleep for TIME_TO_SLEEP seconds
+esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
+
+// Enable wakeup from deep sleep on gpio 36 (wake button)
+esp_sleep_enable_ext0_wakeup(GPIO_NUM_36, LOW);
+
+// Go to sleep
+esp_deep_sleep_start();
+
+```
+
+<FunctionDocumentation
+  functionName="esp_sleep_enable_ext0_wakeup()"
+  description="This function uses external wakeup feature of RTC_IO peripheral."
+  returnDescription="Returns ESP error constant"
+  returnType="int"
+  parameters={[
+    { type: 'gpio_num_t', name: 'gpio_num', description: 'GPIO number used as wakeup source. Only GPIOs which are have RTC functionality can be used.' },
+    { type: 'int', name: 'level', description: 'Input level which will trigger wakeup.' },
+  ]}
+/>
+
+---
+
 ## Full examples
 Check out the full examples from this page and many more usage options down below:
 

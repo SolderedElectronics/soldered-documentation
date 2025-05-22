@@ -82,7 +82,7 @@ void loop()
 ## Full Example
 
 <QuickLink 
-  title="Inkplate_6_Motion_Image_From_Web.ino" 
+  title="Inkplate10_Image_From_Web.ino" 
   description="Connect to WiFi and draw an image from the web."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/WEB_WiFi/Inkplate10_Show_Pictures_From_Web/Inkplate10_Show_Pictures_From_Web.ino" 
 />

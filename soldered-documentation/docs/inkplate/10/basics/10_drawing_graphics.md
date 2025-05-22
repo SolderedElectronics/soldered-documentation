@@ -7,7 +7,7 @@ id: 10-graphics
 Inkplate 10 allows you to draw graphics on a **1200 x 825px canvas**.
 
 <InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
-  description="The core graphics library for Inkplate MOTION, created by Adafruit."
+  description="The core graphics library for Inkplate library, created by Adafruit."
   url="https://github.com/adafruit/Adafruit-GFX-Library" 
 /></InfoBox>
 
@@ -17,7 +17,7 @@ Inkplate 10 allows you to draw graphics on a **1200 x 825px canvas**.
 
 Below is an example demonstrating functions used for drawing graphics on the Inkplate 10:
 
-<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/6motion/basics/basic-display-modes) page for more details.</InfoBox>
+<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/10/basics/basic-display-modes/) page for more details.</InfoBox>
 
 ```cpp
 #include "Inkplate.h"

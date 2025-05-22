@@ -112,3 +112,86 @@ void loop() {
     {type: 'const GFXfont *', name:'f', description: 'pointer to the GFXfont structure of the font to be set.'}
   ]}
 />
+
+
+---
+
+## TextBox
+
+You can manually define the area in which text will appear by using the `drawTextBox()` function.
+
+```cpp
+#include "Inkplate.h"            //Include Inkplate library to the sketch
+#include "Roboto_Light_36.h"
+Inkplate inkplate(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+
+// Define the text you will show in the text box
+const char* text="This is an example of a text written in a textbox. When a word doesn't fit into the current row, it goes to the next one."\
+" If the text reaches the lower bound, it ends with three dots (...) to mark that the text isnt displayed fully";
+
+void setup()
+{
+    inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    inkplate.clearDisplay(); // Clear frame buffer of display
+    inkplate.display();      // Put clear image on display
+
+    // Create a text box without any optional parameters
+    // x0- x coordinate of upper left corner
+    // y0- y coordinate of upper left corner
+    // x1- x coordinate of bottom right corner
+    // y1- y coordinate of bottom right corner
+    // text - text we want to display
+    inkplate.drawTextBox(100,100,300,300,text);
+
+    // Create a text box with all parameters
+    // x0- x coordinate of upper left corner
+    // y0- y coordinate of upper left corner
+    // x1- x coordinate of bottom right corner
+    // y1- y coordinate of bottom right corner
+    // text - text we want to display
+    // textSizeMultiplier - by what factor we want to enlarge the size of a font
+    // font - address of selected custom font
+    // verticalSpacing - how many pixels between each row of text
+    // showBorder - Create a visible rectangle around the box
+    // fontSize - size of the used font in pt
+    int offset=32; // Note - some custom fonts are drawn from bottom-to-top which requires an offset, use an offset that best suits the font you use 
+    inkplate.drawTextBox(400,100+offset,600,300,text,1,&Roboto_Light_36,27,false,36);
+
+    // Display both text boxes
+    inkplate.display();
+}
+void loop()
+{
+    // Nothing...
+}
+```
+
+<FunctionDocumentation
+  functionName="inkplate.drawTextBox()"
+  description="This function creates a TextBox."
+  returnType="void"
+  parameters={[
+    { type: 'uint16_t', name: 'x0', description: 'X coordinate of upper left corner.' },
+    { type: 'uint16_t', name: 'y0', description: 'Y coordinate of upper left corner.' },
+    { type: 'uint16_t', name: 'x1', description: 'X coordinate of bottom right corner.' },
+    { type: 'uint16_t', name: 'x2', description: 'Y coordinate of bottom right corner.' },
+    { type: 'const char*', name: 'text', description: 'Text we want to display.' },
+    { type: 'uint16_t', name: 'textSize', description: 'Factor we want to enlarge the size of a font.' },
+    { type: 'const GFXfont* ', name: 'font', description: 'Address of selected custom font.' },
+    { type: 'uint16_t', name: 'verticalSpacing', description: 'How many pixels between each row of text.' },
+    { type: 'bool', name: 'showBorder', description: 'Create a visible rectangle around the box.' },
+    { type: 'uint16_t', name: 'fontSize', description: 'Size of the used font in pt.' },
+  ]}
+/>
+
+
+---
+
+## Full examples
+Check out the full examples:
+
+<QuickLink 
+  title="Inkplate10_TextBox.ino" 
+  description="This example will show you how to use the TextBox function with and without special parameters"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate10/Advanced/Other/Inkplate10_TextBox" 
+/>

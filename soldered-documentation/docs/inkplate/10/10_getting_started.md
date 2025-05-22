@@ -18,8 +18,6 @@ If you haven’t installed it yet, download and install the Arduino IDE from the
 
 <CenteredImage src="/img/inkplate10/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
 
----
-
 ### 2. Install Inkplate boards definition
 
 Copy the following URL:
@@ -36,8 +34,6 @@ Now, you can open the Boards Manager, search for Inkplate Boards, and install th
 Click `Install` here:  
 <CenteredImage src="/img/inkplate10/install_board.png" alt="Install Inkplate boards" caption="Adding Inkplate boards to Arduino IDE" width="400px" />
 
----
-
 ### 3. Install Inkplate library
 
 In the Arduino Library Manager, search for the Inkplate Motion library and click `Install`:  
@@ -45,16 +41,12 @@ In the Arduino Library Manager, search for the Inkplate Motion library and click
 
 <InfoBox>It's also possible to install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
 
----
-
 ### 4. Install CH340 driver
 
 <InfoBox>Mac and Linux users can skip this step because the CH340 driver is already installed.</InfoBox>
 
 The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions:  
 <CenteredImage src="/img/inkplate10/ch340.png" alt="Install CH340 Driver" caption="Installing the CH340 Driver on Windows" width="350px" />
-
----
 
 ### Done!
 
@@ -65,7 +57,7 @@ Inkplate 10 setup is complete. Now, try out some examples from the Arduino libra
 ## Uploading code
 To upload your own sketch or an Arduino example to **Inkplate 10**, follow this brief guide.
 
----
+
 
 ### 1. Connect Inkplate via USB and power it on
 
@@ -75,9 +67,14 @@ Use the provided **USB-C cable** to connect Inkplate 10 to your computer. Ensure
 
 <CenteredImage src="/img/inkplate10/10_power_button.png" alt="Inkplate 10 onboard POWER button" caption="Inkplate 10 onboard POWER button" width="500px" />
 
----
+### 2. Create a sketch
 
-### 2. Upload the code
+For the needs of this documentation, we will be using a premade example. Go to `File->Examples->InkplateLibrary->Inkplate10->Basic->Inkplate10_Hello_World`
+
+<CenteredImage src="/img/inkplate10/arduino_sketch.png" alt="Selecting a basic example for Inkplate 10" caption="Selecting a basic example for Inkplate 10" width="700px" />
+
+### 3. Upload the code
+
 Before uploading the code, select the correct board definition. The table below should help you out:
 
 | Board Definition               | Board Description                                                                                          |
@@ -94,15 +91,13 @@ Once the process completes, **Inkplate will restart automatically** and run the 
 Leaving...
 Hard resetting via RTS pin...
 ```
----
 
 ### Troubleshooting
 
-If uploading fails, verify that the board is powered on and that the correct board is selected.
+Having problems with uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/10/faq-troubleshooting/):
 
-Also, verify you are using Arduino IDE 2.0. Inkplate 10 requires **Arduino IDE 2.0** or later for proper **board and library support**. If you are using an older version, update to **Arduino 2.0+** for the best compatibility.
 
-If you are having problems with uploading a sketch where it uploads to a certain percentage, please [**contact us via support**](https://soldered.com/contact/).
+
 
 
 

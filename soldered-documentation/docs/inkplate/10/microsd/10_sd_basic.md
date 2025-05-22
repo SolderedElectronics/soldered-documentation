@@ -11,7 +11,7 @@ The built-in microSD card slot on Inkplate 10 can be of great use for your proje
 
 <CenteredImage src="/img/inkplate10/10_sdcard.jpg" alt="MicroSD card slot on Inkplate 10" caption="MicroSD card slot on Inkplate 10" width="600px" />
 
-<InfoBox>Inkplate 6 MOTION uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
+<InfoBox>Inkplate 10  uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 <WarningBox>All supported card types are: **SD, SDHC and SDXC**</WarningBox>
 

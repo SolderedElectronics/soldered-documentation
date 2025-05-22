@@ -10,12 +10,14 @@ Inkplate 10 includes a **2-pin 2mm JST connector**, allowing you to connect a **
 
 <CenteredImage src="/img/inkplate10/battery_jst_connector.png" alt="Inkplate 10 battery JST connector" caption="JST battery connector" width="500px"/>  
 
+<CenteredImage src="/img/inkplate10/CHRG_LED.jpg" alt="Inkplate 10 Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
+
 ---
 
 <InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**. </InfoBox>  
 
-<CenteredImage src="/img/inkplate10/CHRG_LED.jpg" alt="Inkplate 10 Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
 
+<CenteredImage src="/img/inkplate10/battery_polarity.png" alt="Battery polarity on Inkplate 10" caption="Battery polarity on Inkplate 10" width="500px"/>  
 
 
 <WarningBox>**Battery polarity can vary!** Some Li-ion batteries have reversed polarity. **Connecting a battery with the wrong polarity may permanently damage your Inkplate!** Double-check before plugging it in.</WarningBox>  
@@ -31,6 +33,9 @@ Inkplate 10 is compatible with **3.7V Li-ion batteries with protection**. If you
 Any of **[Soldered’s 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
 
 <InfoBox>Due to shipping restrictions, **we cannot ship Li-ion batteries outside the EU**. If you're in the US, we recommend checking out [Adafruit's Li-ion battery stock](https://www.adafruit.com/category/574).</InfoBox>  
+
+Check out our [battery documentation](/documentation/li-ion-battery/overview/) page.
+
 
 ---
 

@@ -116,10 +116,6 @@ If none of these steps resolve the issue, **contact our support team** [**here**
 
 <ExpandableSection title="Can I use partial update all the time on Inkplate 10?">
 To preserve display quality and extend the lifespan of the panel, it's recommended to perform a full update (`inkplate.display()`) after a certain number of partial updates. 
-
-In the [**accelerometer example**](https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_Accelerometer_Cube/Inkplate_6_MOTION_Accelerometer_Cube.ino), we managed to achieve up to 75 partial updates before requiring a full refresh. In most other examples, we use 20-30 partial updates before a full update. Your results may vary depending on the content and update frequency, but we strongly recommend incorporating full updates periodically to avoid ghosting and degradation.
-
-To simplify this process, you can use the `setFullUpdateThreshold()` function, which automatically handles full refreshes at defined intervals. Learn more about this function [**here**](/inkplate/6motion/basics/partial-update#partial-update).
 </ExpandableSection>
 
 <ExpandableSection title="How to connect a battery to Inkplate?">
@@ -127,13 +123,13 @@ All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-io
 
 <CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 10 battery JST connector" caption="JST battery connector" width="500px"/>
 
-<WarningBox>**Warning:** Battery polarity must be correct! Connecting a battery with reversed polarity may permanently damage your Inkplate. See [**this**](/inkplate/6motion/hardware/battery) page in the documentation for info regarding the battery.</WarningBox>
+<WarningBox>**Warning:** Battery polarity must be correct! Connecting a battery with reversed polarity may permanently damage your Inkplate. See [**this**](/inkplate/10/hardware/battery) page in the documentation for info regarding the battery.</WarningBox>
 </ExpandableSection>
 
 <ExpandableSection title="Where can I find hardware files and schematics for Inkplate 10?">
 All hardware design files, including schematics, KiCad project files, gerber files, and more, are available in the [**Inkplate 10 hardware repository on GitHub**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design).
 
-Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/6motion/hardware/design).
+Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/10/hardware/design/).
 </ExpandableSection>
 
 <ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 10?">
