@@ -53,6 +53,8 @@ void loop() {
 }
 ```
 
+<CenteredImage src="/img/inkplate10/drawing_graphics_preview.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="750px" />
+
 Below are the detailed references for these functions:
 
 <FunctionDocumentation

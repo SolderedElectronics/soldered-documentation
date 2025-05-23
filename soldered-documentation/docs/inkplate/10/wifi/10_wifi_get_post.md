@@ -96,6 +96,8 @@ void loop()
 }
 ```
 
+<CenteredImage src="/img/inkplate10/wifi_get_example.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
+
 <FunctionDocumentation
     functionName="WiFi.begin()"
     description="This function attemps to connect to WiFi"

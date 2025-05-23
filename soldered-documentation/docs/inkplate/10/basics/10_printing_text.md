@@ -45,6 +45,8 @@ void loop() {
 }
 ```
 
+<CenteredImage src="/img/inkplate10/printing_text_sizes.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
+
 <FunctionDocumentation
   functionName="inkplate.setTextSize()"
   description="Increases the text size by a given factor."
@@ -103,6 +105,8 @@ void setup() {
 void loop() {
 }
 ```
+
+<CenteredImage src="/img/inkplate10/printing_text_custom_font.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
 
 <FunctionDocumentation
   functionName="inkplate.setFont()"
@@ -165,6 +169,8 @@ void loop()
     // Nothing...
 }
 ```
+
+<CenteredImage src="/img/inkplate10/printing_text_textbox.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
 
 <FunctionDocumentation
   functionName="inkplate.drawTextBox()"
