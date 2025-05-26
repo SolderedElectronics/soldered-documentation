@@ -374,6 +374,136 @@ const sidebars = {
             },
           ]
         },
+                {
+          type: 'category',
+          label: 'Inkplate 6flick',
+          items: [
+            {
+              type: 'doc',
+              id: 'inkplate/6flick/6flick-quick-start-guide',
+            },
+            {
+            type: 'category',
+            label: 'Hardware',
+            items: [
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/hardware/6flick-hardware-design',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/hardware/6flick-hardware-open-source',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/hardware/6flick-hardware-files',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/hardware/6flick-hardware-jumpers',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/hardware/6flick-hardware-battery',
+                },
+            ],
+            },
+            {
+              type: 'category',
+              label: 'Arduino Library',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Basics',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/basics/6flick-init',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/basics/6flick-display-modes',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/basics/6flick-graphics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/basics/6flick-text',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/basics/6flick-partial-update',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/basics/6flick-image-converter',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'WiFi',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/wifi/6flick-wifi-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/wifi/6flick-wifi-image-from-web',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/wifi/6flick-wifi-get-post',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/wifi/6flick-wifi-https-certificate',
+                    },
+                  ]
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/deepsleep/6flick-deep-sleep',
+                },
+                {
+                  type: 'category',
+                  label: 'MicroSD',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/microsd/6flick-microsd-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/microsd/6flick-microsd-image',
+                    },
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Real Time Clock',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/rtc/6flick-rtc-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/rtc/6flick-rtc-alarm',
+                    },
+                  ]
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              id: 'inkplate/6flick/6flick-faq-troubleshooting',
+            },
+          ]
+        },
       ],
     },
     {
