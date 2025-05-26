@@ -388,6 +388,54 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Accelerometer & Gyroscope LSM6DS',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/accelerometer-gyroscope/accelerometer-gyroscope-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/accelerometer-gyroscope/accelerometer-gyroscope-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/accelerometer-gyroscope/accelerometer-gyroscope-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/accelerometer-gyroscope/arduino_library/accelerometer-gyroscope-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Accelerometer & Gyroscope & Magnetometer LSM9DS1TR',
           items: [
             {
