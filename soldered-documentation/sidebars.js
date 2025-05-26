@@ -328,6 +328,42 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'BQ27441 Fuel gauge',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bq27441/bq27441-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bq27441/bq27441-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bq27441/bq27441-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bq27441/arduino_library/bq27441-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bq27441/arduino_library/bq27441-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bq27441/arduino_library/bq27441-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Obstacle sensor',
           items: [
             {
