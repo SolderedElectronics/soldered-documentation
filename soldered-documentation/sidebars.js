@@ -340,6 +340,54 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Electrochemical Gas Sensors',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/electrochemical-gas-sensor/electrochemical-gas-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/electrochemical-gas-sensor/electrochemical-gas-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/electrochemical-gas-sensor/electrochemical-gas-sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/electrochemical-gas-sensor/arduino_library/electrochemical-gas-sensor-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'LTR-507 Light and Proximity Sensor',
           items: [
             {
