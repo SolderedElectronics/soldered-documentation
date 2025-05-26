@@ -1,16 +1,16 @@
----
-slug: /inkplate/6flick/rtc/alarm
-title: RTC alarm
-id: 6flick-rtc-alarm
+---  
+slug: /inkplate/6flick/rtc/alarm  
+title: RTC alarm  
+id: 6flick-rtc-alarm  
 ---
 
-The onboard RTC supports creating an alarm that triggers at a specific time, alowing the firmware to detect and respond accordingly. Alarms can be configred to trigger once per day, per hour, or per minute.
+The onboard RTC supports creating an alarm that triggers at a specific time, allowing the firmware to detect and respond accordingly. Alarms can be configured to trigger once per day, per hour, or per minute.
 
 ---
 
 ## Simple alarm
 
-Thi section demonstrates setting a simple RTC aarm that is cecked sing polling. The firmware continuously cecks the alarm flag and responds when it is triggered.
+This section demonstrates setting a simple RTC alarm that is checked using polling. The firmware continuously checks the alarm flag and responds when it is triggered.
 
 ```cpp
 #include "Inkplate.h"            // Include Inkplate library to the sketch
@@ -56,7 +56,7 @@ void loop()
     if ((unsigned long)(millis() - time1) > REFRESH_DELAY)
     {
         inkplate.rtcGetRtcData();           // Get the time and date from RTC
-        seconds = inkplate.rtcGetSecond();  // Store senconds in a variable
+        seconds = inkplate.rtcGetSecond();  // Store seconds in a variable
         minutes = inkplate.rtcGetMinute();  // Store minutes in a variable
         hour = inkplate.rtcGetHour();       // Store hours in a variable
         day = inkplate.rtcGetDay();         // Store day of month in a variable
@@ -82,7 +82,7 @@ void loop()
         }
         else
         {
-            inkplate.partialUpdate(false, true); // Do partial update and keep e-papr power supply on
+            inkplate.partialUpdate(false, true); // Do partial update and keep e-paper power supply on
             n++;                                // Keep track on how many times screen has been partially updated
         }
 
@@ -125,7 +125,7 @@ void print2Digits(uint8_t _d)
     functionName="inkplate.rtcSetAlarm()"
     description="Sets the alarm to all the parameters."
     returnType="void"
-    parameters={[
+    parameters={[ 
     { type: 'uint8_t', name: 'rtcAlarmSecond', description: 'Set the alarm seconds.' },
     { type: 'uint8_t', name: 'rtcAlarmminute', description: 'Set the alarm minutes.' },
     { type: 'uint8_t', name: 'rtcAlarmHour', description: 'Set the alarm hours.' },
@@ -144,10 +144,9 @@ void print2Digits(uint8_t _d)
 ---
 
 ## Interrupt Alarm
-The RTC alarm can also generate an **interrupt** instead of requiring polling. The alarm event can wake up the MCU from sleep or trigger an action immediately. To use this, you will need to globally declare a `volatile bool` to use as the alarm flag and a function which modifies this flag:
+The RTC alarm can also generate an **interrupt** instead of requiring polling. The alarm event can wake up the MCU from sleep or trigger an action immediately. To use this, you will need to globally declare a `volatile bool` to use as the alarm flag and a function that modifies this flag:
 
 ```cpp
-
 #include "Inkplate.h"             // Include Inkplate library to the sketch
 Inkplate inkplate(INKPLATE_1BIT);  // Create an object on Inkplate library and also set library into 1-bit mode (BW)
 
@@ -203,7 +202,7 @@ void loop()
     }
     else
     {
-        inkplate.partialUpdate(false, true); // Do partial update and keep e-papr power supply on
+        inkplate.partialUpdate(false, true); // Do partial update and keep e-paper power supply on
         n++;                                // Keep track on how many times screen has been partially updated
     }
 
@@ -239,23 +238,22 @@ void print2Digits(uint8_t _d)
         inkplate.print('0');
     inkplate.print(_d, DEC);
 }
-
 ```
 
 ---
 
 ## Full examples
 
-For full working code examples, which provide a great overwiew, a real-world use scenario and **code comments**, see the links below:
+For full working code examples, which provide a great overview, a real-world use scenario and **code comments**, see the links below:
 
 <QuickLink 
-  title="Inkplate10_RTC_Simple.ino" 
-  description="This example will show how to set time and date, how to read time and how to print time on Inkplate using partial updates."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/RTC/Inkplate10_RTC_Simple/Inkplate10_RTC_Simple.ino" 
+  title="Inkplate6FLICK_RTC_Alarm.ino" 
+  description="This example will show how to set time and date, how to set up an alarm, how to read time, how to print time on Inkplate using partial updates and how to handle interrupt."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Alarm/Inkplate6FLICK_RTC_Alarm.ino" 
 />
 
 <QuickLink 
-  title="Inkplate10_RTC_Interrupt_Alarm.ino" 
-  description="This example will show how to set time and date, how to set up a alarm, how to read time, how to print time on Inkplate using partial updates and how to handle interrupt."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/RTC/Inkplate10_RTC_Interrupt_Alarm/Inkplate10_RTC_Interrupt_Alarm.ino" 
+  title="Inkplate6FLICK_RTC_Interrupt_Alarm.ino" 
+  description="This example will show how to set time and date, how to set up an alarm, how to read time, how to print time on Inkplate using partial updates and how to handle interrupt."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Interrupt_Alarm/Inkplate6FLICK_RTC_Interrupt_Alarm.ino" 
 />

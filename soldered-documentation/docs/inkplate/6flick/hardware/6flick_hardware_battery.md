@@ -14,11 +14,9 @@ Inkplate 6FLICK includes a **2-pin 2mm JST connector**, allowing you to connect 
 
 ---
 
-<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**. </InfoBox>  
-
+<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**.</InfoBox>  
 
 <CenteredImage src="/img/inkplate10/battery_polarity.png" alt="Battery polarity on Inkplate 6FLICK" caption="Battery polarity on Inkplate 6FLICK" width="500px"/>  
-
 
 <WarningBox>**Battery polarity can vary!** Some Li-ion batteries have reversed polarity. **Connecting a battery with the wrong polarity may permanently damage your Inkplate!** Double-check before plugging it in.</WarningBox>  
 
@@ -36,12 +34,11 @@ Any of **[Soldered’s 3.7V Li-ion batteries](https://soldered.com/categories/po
 
 Check out our [battery documentation](/documentation/li-ion-battery/overview/) page.
 
-
 ---
 
-## Charging IC (MCP73831)  
+## Charging IC (MCP73831)
 
-The **MCP73831** is a compact, single-cell **Li-ion/Li-Polymer charge management controller**. It regulates the **charging process**, ensuring safe and efficient charging via USB. The chip follows a **constant-current / constant-voltage (CC/CV) charging profile**, automatically switching to **trickle charge** when the battery nears full capacity.  
+The **MCP73831** is a compact, single-cell **Li-ion/Li-Polymer charge management controller** that regulates the **charging process**, ensuring safe and efficient charging via USB. The chip follows a **constant-current/constant-voltage (CC/CV) charging profile**, automatically switching to **trickle charge** when the battery nears full capacity.
 
 Key features:  
 - **Automatic charge termination** when the battery is full  
@@ -52,4 +49,4 @@ Key features:
   title="MCP73831/2 Data Sheet"  
   description="Official data sheet for MCP73831/2 charger by Microchip"  
   url="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf"  
-/></InfoBox>  
+/></InfoBox>

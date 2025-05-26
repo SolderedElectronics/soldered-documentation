@@ -376,7 +376,7 @@ const sidebars = {
         },
                 {
           type: 'category',
-          label: 'Inkplate 6flick',
+          label: 'Inkplate 6FLICK',
           items: [
             {
               type: 'doc',
@@ -397,6 +397,14 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'inkplate/6flick/hardware/6flick-hardware-files',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/hardware/6flick-hardware-touchscreen',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/hardware/6flick-hardware-frontlight',
                 },
                 {
                   type: 'doc',
@@ -435,6 +443,10 @@ const sidebars = {
                     {
                       type: 'doc',
                       id: 'inkplate/6flick/basics/6flick-partial-update',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/basics/6flick-touch-in-area',
                     },
                     {
                       type: 'doc',

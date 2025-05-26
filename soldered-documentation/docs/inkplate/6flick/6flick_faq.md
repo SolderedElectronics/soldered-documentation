@@ -5,149 +5,147 @@ id: 6flick-faq-troubleshooting
 hide_title: true
 ---
 
+<SectionTitle title="FAQ and Troubleshooting" backgroundImage="/img/faq.webp" />
 
-<SectionTitle title="FAQ and troublesohoting" backgroundImage="/img/faq.webp" />
+Here, we've gathered the most frequently asked questions and answers to help you get the most out of your Inkplate 6Flick. Whether you're new to e-paper development or troubleshooting an issue, this page is here to guide you through common problems and solutions.
 
-Here, we've gathered the most frequently asked questions along with detailed answers to help you get the most out of your device. We know that working with maker hardware and software can sometimes be challenging, so we created this resource to make things easier. Browse through the questions below—you might find the solution you're looking for.
+<ExpandableSection title="I can't upload code to Inkplate 6Flick">
+If you're having trouble uploading code, try the following steps:
 
-<ExpandableSection title="I can't upload code to Inkplate 10">
-If you're having trouble uploading code, try the following troubleshooting steps.
+#### Restart the device
+- Disconnect the board and power it off completely.
+- Reconnect via USB.
 
-#### Restart device
-- Disconnect the device and power it off completely.
-- Reconnect via USB.  
+#### Make sure the device is turned ON
+This is a commonly overlooked step. Ensure the **ON** LED is lit.
 
-#### Make shure that the device is turned ON
-This is a very crucial step that is often forgoten about. make Sure that the **ON** LED is turned on.
-
-#### Verify Arduino IDE version
-Inkplate 10 requires Arduino IDE 2.0+ for proper board and library support.  
-If you're using an older version, update to Arduino 2.0 or later to avoid compatibility issues.
+#### Check Arduino IDE version
+Inkplate 6Flick requires **Arduino IDE 2.0 or newer**. Update your IDE if you're using an older version to avoid compatibility issues.
 
 #### Still having issues?
-If none of these steps resolve the issue, contact our support team [**here**](https://soldered.com/contact/) with details of your setup and the troubleshooting steps you've tried.
+If none of these steps help, contact our support team [**here**](https://soldered.com/contact/) and include details of your setup and what you've tried so far.
 </ExpandableSection>
 
-
-
 <ExpandableSection title="My display won't refresh, what am I doing wrong?">
-If your Inkplate 10 display is not refreshing, follow these steps to diagnose and resolve the issue.
+If the e-paper display is not updating correctly:
 
-#### 1. Verify that the code is uploading correctly
-- **Enable verbose output** in Arduino under **File → Preferences**, then check the **compile and upload logs**.
-- When uploading , a successful upload should print:
+#### 1. Verify successful upload
+Enable **verbose output** in Arduino (**File → Preferences**) and check the terminal for:
 
 ```
 Leaving... 
 Hard resetting via RTS pin...
 ```
 
-#### 2. Test with an official example
-Make sure you're testing with an **unmodified Arduino example** from the Inkplate library. Running custom code might be **almost correct** but could still prevent the display from refreshing properly.
-
-Try uploading these tested examples:
+#### 2. Test with official examples
+Try uploading unmodified Inkplate 6Flick examples to verify that the hardware is working:
 
 <QuickLink 
-  title="Inkplate10_Black_And_White.ino" 
-  description="Full example using black and white display mode on Inkplate 10." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate10/Basic/Inkplate10_Black_And_White/Inkplate10_Black_And_White.ino" 
+  title="Inkplate6FLICK_Black_And_White.ino" 
+  description="Example using black-and-white display mode." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Black_And_White/Inkplate6FLICK_Black_And_White.ino" 
 />
+
+#### 3. Check power supply
+- Some USB ports (especially on laptops) may not provide enough power.
+- Try a different USB port, cable, or use a powered USB hub.
+
+#### 4. Inspect the display connection
+- Check the **flat cable connection** between the e-paper panel and the board.
+- Gently re-seat the cable if needed.
+
+<CenteredImage src="/img/inkplate_6_motion/flat_cable.jpg" alt="Inkplate 6Flick flat cable" caption="E-paper flat cable connector" width="500px" />
+
+#### 5. Still not working?
+Contact [**Soldered support**](https://soldered.com/contact/) for further assistance.
+</ExpandableSection>
+
+<ExpandableSection title="My display refreshes but shows artifacts or ghosting">
+If you see streaks, ghosting, or leftover pixels:
+
+#### 1. Run a cleaning cycle
+Perform multiple full refreshes to reset the screen and clear artifacts.
+
+#### 2. Check the flat cable
+Artifacts may indicate a loose or damaged display cable. Carefully check and re-seat it if necessary.
+
+#### 3. Environmental factors
+Cold environments can slow down refresh rates and cause image persistence. Let the device warm up if needed.
+
+Still having issues? Contact [**support**](https://soldered.com/contact/) for help.
+</ExpandableSection>
+
+<ExpandableSection title="Touchscreen isn't working or unresponsive">
+If you're having trouble with touch input:
+
+#### 1. Make sure you're using your finger
+The Inkplate 6Flick uses a **capacitive touchscreen**, which works best with bare fingers or compatible styluses. Gloves and fingernails won't register properly.
+
+#### 2. Ensure the screen isn't refreshing
+Touch input is disabled during screen updates. Wait until the display finishes refreshing before polling for touch.
+
+#### 3. Try a known working example
+Test using the official example below to rule out code issues:
 
 <QuickLink 
-  title="Inkplate10_Grayscale.ino" 
-  description="Full example using grayscale display mode on Inkplate 10." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate10/Basic/Inkplate10_Grayscale/Inkplate10_Grayscale.ino" 
+  title="Inkplate6FLICK_Touch_In_Area.ino" 
+  description="Example detecting touches in a defined screen area." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Touch_In_Area/Inkplate6FLICK_Touch_In_Area.ino" 
 />
 
-#### 3. Check your power source
-- Some **laptop or PC USB ports provide insufficient current**, which may cause Inkplate to get stuck while refreshing.
-- Try a **different USB port, power adapter, or USB cable** to ensure the board is receiving stable power.
-
-#### 4. Inspect the e-paper flat cable and panel
-- Examine the **flat-flex cable connector** to ensure it's properly seated.
-- Check the **edges of the e-paper panel** for any visible damage or cracks.
-<CenteredImage src="/img/inkplate_6_motion/flat_cable.jpg" alt="Inkplate 10 e-Paper flat cable" caption="E-paper flat cable connector" width="500px"/>
-
-#### 5. Still having issues?
-If none of these steps resolve the issue, **contact our support team** [**here**](https://soldered.com/contact/) with details of your setup and troubleshooting steps taken.
+#### 4. Check for damage
+Inspect the front surface of the screen for cracks or pressure damage. If the issue persists, reach out to [**support**](https://soldered.com/contact/).
 </ExpandableSection>
 
-<ExpandableSection title="My display refreshes but has artifacts/streaks">
-If you notice **artifacts, streaks, or ghosting** on your Inkplate 10 display, follow these steps to clean the screen and check for potential connection issues.
+<ExpandableSection title="Frontlight isn't turning on or is too dim">
+The frontlight improves visibility in low-light settings. If it's not working:
 
-#### 1. Run a display cleaning cycle
-Try running the following sketch, which performs **30** full refresh cycles to remove any persistent artifacts:
+#### 1. Verify brightness settings
+Make sure your sketch is actually enabling the frontlight and setting the brightness level above 0.
 
-```cpp
-#include <Inkplate.h>
-Inkplate inkplate(INKPLATE_1BIT);
-int cleanTimes = 30;
+#### 2. Power considerations
+The frontlight draws additional current. Ensure you're using a stable power source (USB 5V or battery).
 
-void setup()
-{
-    inkplate.begin();
-    for(int i = 0; i < cleanTimes; i++)
-    {
-        inkplate.clearDisplay();
-        inkplate.display();
-        delay(500);
-        inkplate.fillRect(0, 0, 1024, 758, BLACK);
-        inkplate.display();
-        delay(500);
-    }
-}
+#### 3. Try the example
+Use the official brightness control example to confirm hardware functionality:
 
-void loop()
-{
-    // Do nothing
-}
-```
-
-#### 2. Check the e-paper flat cable connector
-If artifacts persist after cleaning or appear as long vertical lines or streaks, it may indicate a loose, improperly connected or possibly **damaged** flat cable.
-
-Try re-seating the e-paper flat cable by carefully disconnecting and reconnecting it.
-
-<CenteredImage src="/img/inkplate_6_motion/flat_cable.jpg" alt="Inkplate 10 e-Paper flat cable" caption="E-paper flat cable connector" width="500px"/>
-
-#### 3. Still having issues?
-If none of these steps resolve the issue, **contact our support team** [**here**](https://soldered.com/contact/) with details of your setup and the troubleshooting steps you've tried.
+<QuickLink 
+  title="Inkplate6FLICK_Frontlight.ino" 
+  description="Adjust frontlight brightness in real time." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/Frontlight/Inkplate6FLICK_Frontlight/Inkplate6FLICK_Frontlight.ino"
+/>
 </ExpandableSection>
 
-<ExpandableSection title="Can I use partial update all the time on Inkplate 10?">
-To preserve display quality and extend the lifespan of the panel, it's recommended to perform a full update (`inkplate.display()`) after a certain number of partial updates. 
+<ExpandableSection title="How do I connect a battery to Inkplate 6Flick?">
+Inkplate 6Flick has a **2-pin 2.0mm JST connector** for a 3.7V Li-ion battery. It includes an onboard charger (MCP73831) that charges the battery when USB is connected.
+
+<CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Battery JST connector" caption="JST battery connector on Inkplate 6Flick" width="500px" />
+
+<WarningBox>**Important:** Be sure to match the battery polarity! Reversing polarity can permanently damage the board. See the [**battery connection page**](/inkplate/6flick/hardware/battery) for more info.</WarningBox>
 </ExpandableSection>
 
-<ExpandableSection title="How to connect a battery to Inkplate?">
-All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-ion battery. Inkplate 10 features an onboard MCP73831 charging IC, which automatically charges the battery when connected via USB and seamlessly switches to battery power when unplugged.
+<ExpandableSection title="Where can I find schematics and hardware files for Inkplate 6Flick?">
+All hardware design files—including schematics, KiCad files, and gerbers—are available in the [**Inkplate 6Flick hardware GitHub repo**](https://github.com/SolderedElectronics/Soldered-Inkplate-6Flick-hardware-design).
 
-<CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 10 battery JST connector" caption="JST battery connector" width="500px"/>
-
-<WarningBox>**Warning:** Battery polarity must be correct! Connecting a battery with reversed polarity may permanently damage your Inkplate. See [**this**](/inkplate/10/hardware/battery) page in the documentation for info regarding the battery.</WarningBox>
+You can also find documentation on the [**hardware design page**](/inkplate/6flick/hardware/design).
 </ExpandableSection>
 
-<ExpandableSection title="Where can I find hardware files and schematics for Inkplate 10?">
-All hardware design files, including schematics, KiCad project files, gerber files, and more, are available in the [**Inkplate 10 hardware repository on GitHub**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design).
-
-Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/10/hardware/design/).
+<ExpandableSection title="Where can I download 3D enclosure files?">
+We're working on providing 3D printable enclosure models. Once ready, they’ll be available in the [**Inkplate 6Flick hardware repo**](https://github.com/SolderedElectronics/Soldered-Inkplate-6Flick-hardware-design). Stay tuned!
 </ExpandableSection>
 
-<ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 10?">
-We are currently working on making 3D enclosure files available in the [**Inkplate 10 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design). Stay tuned for updates!
+<ExpandableSection title="Can I use Inkplate 6Flick as an external monitor or e-reader?">
+Short answer: **No**.
+
+Inkplate is a microcontroller-based platform designed to run Arduino sketches. It does not function as a traditional monitor or plug-and-play e-reader. However, you can write a sketch that displays data sent over USB or Wi-Fi.
+
+If you’re looking for a real-time e-ink monitor, Inkplate 6Flick is not the right fit.
 </ExpandableSection>
 
-<ExpandableSection title="Can I use Inkplate 10 as an e-reader/monitor?">
-Short answer: No.  
+<ExpandableSection title="Is Inkplate 6Flick compatible with ESPHome or Home Assistant?">
+Currently, Inkplate 6Flick is **not officially supported by ESPHome**.
 
-Inkplate 10 is an e-paper development platform and functions similarly to an Arduino with an integrated e-paper display. While it is not designed to be a plug-and-play e-reader or monitor, you could write your own Arduino sketch to display data sent from a PC via USB.
-
-However, if you're looking for a true e-ink monitor experience, Inkplate 10 is not the right choice.
+We're working on extending support across all Inkplate models, and future firmware or component updates may enable this. Stay tuned for developments on this front!
 </ExpandableSection>
 
-<ExpandableSection title="Can I use Inkplate 10 with ESPHome/Home Assistant?">
-At this time, Inkplate 10 is not officially supported by ESPHome.  
-
-There is currently no ESPHome display component for this model, but we are actively working on expanding ESPHome compatibility for all Inkplate devices. Stay tuned for future updates!
-</ExpandableSection>
-
-<InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+<InfoBox>If you didn’t find the answer you were looking for, please don’t hesitate to [**contact our support team**](https://soldered.com/contact/). We're happy to help!</InfoBox>

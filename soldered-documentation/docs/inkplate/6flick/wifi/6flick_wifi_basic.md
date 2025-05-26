@@ -7,12 +7,12 @@ hide_title: true
 
 <SectionTitle title="WiFi basics" backgroundImage="/img/wifi.png" />
 
-On Inkplate 10, WiFi is handled by the onboard ESP32 processor, these pages contain tutorials on how to use this processor to implement WiFi into your projects.
+On Inkplate 6FLICK, WiFi is handled by the onboard ESP32 processor. These pages contain tutorials on how to use this processor to implement WiFi in your projects.
 
 ---
 
-## Connectiong to WiFi
-these are the basic steps to connectiong to WiFi, followed by the key function explanations:
+## Connecting to WiFi
+These are the basic steps for connecting to WiFi, followed by the key function explanations:
 ```cpp
 #include "Inkplate.h"
 #include <WiFi.h>
@@ -41,7 +41,7 @@ void loop(){}
     functionName="WiFi.begin()"
     description="Connects to a WiFi access point using the specified SSID and password. Sends an AT command to establish the connection. Avoid using the following characters in SSID and password: , {, }, \\"
     returnDescription="Returns true if the command execution was successful, otherwise returns false."
-    parameters={[
+    parameters={[ 
     { type: "char*", name: "_ssid", description: "Pointer to the SSID (AP name). Must be a valid UTF-8 string." },
     { type: "char*", name: "_pass", description: "Pointer to the AP password. Maximum length is 63 characters." }
   ]}
@@ -59,7 +59,7 @@ void loop(){}
 
 To see more details, check out our full examples:
 <QuickLink 
-  title="Inkplate_10_WiFi_examples" 
-  description="Inkpate 10 WiFi examples from Inkplate library"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate10/Advanced/WEB_WiFi" 
+  title="Inkplate_6FLICK_WiFi_examples" 
+  description="Inkpate 6FLICK WiFi examples from Inkplate library"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi" 
 />

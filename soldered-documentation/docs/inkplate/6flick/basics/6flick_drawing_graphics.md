@@ -4,7 +4,7 @@ title: Drawing graphics
 id: 6flick-graphics
 ---
 
-Inkplate 10 allows you to draw graphics on a **1200 x 825px canvas**.
+Inkplate 6FLICK allows you to draw graphics on a **1200 x 825px canvas**.
 
 <InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
   description="The core graphics library for Inkplate library, created by Adafruit."
@@ -15,7 +15,7 @@ Inkplate 10 allows you to draw graphics on a **1200 x 825px canvas**.
 
 ## Drawing Geometric Shapes
 
-Below is an example demonstrating functions used for drawing graphics on the Inkplate 10:
+Below is an example demonstrating how to use various functions to draw graphics on the Inkplate 6FLICK:
 
 <InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/10/basics/basic-display-modes/) page for more details.</InfoBox>
 
@@ -46,7 +46,7 @@ void setup() {
     inkplate.drawTriangle(300, 500, 700, 500, 512, 200, 2);
     // Draw a filled triangle
     inkplate.fillTriangle(350, 467, 650, 467, 512, 250, 1);
-     // Update the display to render the drawings
+    // Update the display to render the drawings
     inkplate.display();
 }
 void loop() {
@@ -61,7 +61,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.drawPixel()"
   description="Draws a single pixel on the display at the specified coordinates."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x', description: 'The x-coordinate of the pixel.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the pixel.' },
     { type: 'uint8_t', name: 'color', description: 'The color of the pixel.' },
@@ -72,7 +72,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.drawLine()"
   description="Draws a straight line between two points on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x0', description: 'The x-coordinate of the starting point.' },
     { type: 'int', name: 'y0', description: 'The y-coordinate of the starting point.' },
     { type: 'int', name: 'x1', description: 'The x-coordinate of the ending point.' },
@@ -85,7 +85,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.drawRect()"
   description="Draws a rectangle outline on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },
     { type: 'int', name: 'width', description: 'The width of the rectangle.' },
@@ -98,7 +98,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.fillRect()"
   description="Draws a filled rectangle on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },
     { type: 'int', name: 'width', description: 'The width of the rectangle.' },
@@ -111,7 +111,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.drawCircle()"
   description="Draws a circle outline on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x', description: 'The x-coordinate of the circle center.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the circle center.' },
     { type: 'int', name: 'radius', description: 'The radius of the circle.' },
@@ -123,7 +123,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.fillCircle()"
   description="Draws a filled circle on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x', description: 'The x-coordinate of the circle center.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the circle center.' },
     { type: 'int', name: 'radius', description: 'The radius of the circle.' },
@@ -135,7 +135,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.drawRoundRect()"
   description="Draws a rounded rectangle outline on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },
     { type: 'int', name: 'width', description: 'The width of the rectangle.' },
@@ -149,7 +149,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.fillRoundRect()"
   description="Draws a filled rounded rectangle on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },
     { type: 'int', name: 'width', description: 'The width of the rectangle.' },
@@ -163,7 +163,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.drawTriangle()"
   description="Draws a triangle outline on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x0', description: 'The x-coordinate of the first vertex.' },
     { type: 'int', name: 'y0', description: 'The y-coordinate of the first vertex.' },
     { type: 'int', name: 'x1', description: 'The x-coordinate of the second vertex.' },
@@ -178,7 +178,7 @@ Below are the detailed references for these functions:
   functionName="inkplate.fillTriangle()"
   description="Draws a filled triangle on the display."
   returnDescription="none"
-  parameters={[
+  parameters={[ 
     { type: 'int', name: 'x0', description: 'The x-coordinate of the first vertex.' },
     { type: 'int', name: 'y0', description: 'The y-coordinate of the first vertex.' },
     { type: 'int', name: 'x1', description: 'The x-coordinate of the second vertex.' },

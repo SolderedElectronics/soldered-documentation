@@ -4,10 +4,10 @@ title: HTTPS certificate
 id: 6flick-wifi-https-certificate
 ---
 
-Now that Inkplate is connected to the internet, you will likely want to securely receive data from a website. This page contains an example on how to implement HTTPS certificate into your connecton.
+Now that Inkplate is connected to the internet, you will likely want to securely receive data from a website. This page contains an example on how to implement an HTTPS certificate into your connection.
 
 ## HTTPS example
-This example will show you how to download a .bmp file from web securely by providing a certificate for the website that will be validated upon connection. Using `applyHttpsCertificate()` you can store the certificate for your connection:
+This example will show you how to download a .bmp file from the web securely by providing a certificate for the website that will be validated upon connection. Using `applyHttpsCertificate()` you can store the certificate for your connection:
 
 ```cpp
 Inkplate inkplate(INKPLATE_1BIT);
@@ -23,7 +23,7 @@ void setup(){
   functionName="inkplate.applyHttpsCertificate()"
   description="Applies a certificate that will be checked when communicating with a website."
   returnType="void"
-  parameters={[
+  parameters={[ 
     { type: 'const char*', name: 'certificate', description: 'The certificate in a string format.' },
   ]}
 />
@@ -31,10 +31,10 @@ void setup(){
 ---
 
 ## Full example
-Check out all the above mentioned functions in this example:
+Check out all the above-mentioned functions in this example:
 
 <QuickLink 
-  title="Inkplate10_HTTPS_With_Certificate.ino" 
-  description="This example will show you how you can download a .bmp file (picture) from the web securely by providing a certificate for the website that will be validated upon conncection and display that image on e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/WEB_WiFi/Inkplate10_HTTPS_With_Certificate/Inkplate10_HTTPS_With_Certificate.ino" 
+  title="Inkplate6FLICK_HTTPS_With_Certificate.ino" 
+  description="This example will show you how you can download a .bmp file (picture) from the web securely by providing a certificate for the website that will be validated upon connection and display that image on the e-paper display."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTPS_With_Certificate/Inkplate6FLICK_HTTPS_With_Certificate.ino" 
 />

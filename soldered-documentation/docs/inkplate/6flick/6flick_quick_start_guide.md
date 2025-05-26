@@ -7,7 +7,7 @@ hide_title: true
 
 <SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
 
-To get started with Arduino on Inkplate 6FLICK, a few simple steps need to be completed to install the required software.
+To get started with Arduino on Inkplate 6FLICK, complete a few simple steps to install the required software.
 
 ---
 
@@ -30,7 +30,7 @@ And add it to the `Additional boards manager URLs` in Arduino settings:
 
 <CenteredImage src="/img/inkplate_6_flick/add_board_def.png" alt="Add Inkplate to Arduino boards Manager" caption="Adding the Inkplate boards link to Arduino IDE" width="600px" />
 
-Now, you can open the Boards Manager, search for Inkplate Boards, and install the Inkplate Boards board definitions.  
+Now you can open the Boards Manager, search for Inkplate Boards, and install the Inkplate Boards board definitions.  
 Click `Install` here:  
 <CenteredImage src="/img/inkplate_6_flick/install_board.png" alt="Install Inkplate boards" caption="Adding Inkplate boards to Arduino IDE" width="400px" />
 
@@ -57,8 +57,6 @@ Inkplate 6FLICK setup is complete. Now, try out some examples from the Arduino l
 ## Uploading code
 To upload your own sketch or an Arduino example to **Inkplate 6FLICK**, follow this brief guide.
 
-
-
 ### 1. Connect Inkplate via USB and power it on
 
 Use the provided **USB-C cable** to connect Inkplate 6FLICK to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
@@ -69,7 +67,8 @@ Use the provided **USB-C cable** to connect Inkplate 6FLICK to your computer. En
 
 ### 2. Create a sketch
 
-For the needs of this documentation, we will be using a premade example. Go to `File->Examples->InkplateLibrary->Inkplate6FLICK->Basic->Inkplate6FLICK_Hello_World`
+For the purposes of this documentation, we will use a pre-made example. Go to  
+`File->Examples->InkplateLibrary->Inkplate6FLICK->Basic->Inkplate6FLICK_Hello_World`
 
 <CenteredImage src="/img/inkplate_6_flick/arduino_sketch.png" alt="Selecting a basic example for Inkplate 6FLICK" caption="Selecting a basic example for Inkplate 6FLICK" width="800px" />
 
@@ -77,10 +76,10 @@ For the needs of this documentation, we will be using a premade example. Go to `
 
 Before uploading the code, select the correct board definition. The table below should help you out:
 
-| Board Definition               | Board Description                                                                                          |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| Soldered inkplate_6_flick            | The newer and more stylish version of the product, and the PCB is purple.                                  |
-| e-radionica.com Inkplate 6FLICK    | The older version; the PCB is blue.                                                                        |
+| Board Definition                  | Board Description                                                        |
+| --------------------------------- | ------------------------------------------------------------------------ |
+| Soldered inkplate_6_flick         | The newer and more stylish version of the product, with a purple PCB.    |
+| e-radionica.com Inkplate 6FLICK    | The older version, with a blue PCB.                                      |
 
 Click **Upload** in the Arduino IDE.
 
@@ -94,10 +93,4 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having problems with uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/10/faq-troubleshooting/):
-
-
-
-
-
-
+Having trouble uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/10/faq-troubleshooting/):

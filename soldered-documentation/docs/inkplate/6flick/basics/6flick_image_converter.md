@@ -12,8 +12,8 @@ Soldered Image Converter is an open-source Python program by Soldered. It is use
   url="https://github.com/SolderedElectronics/Soldered-Image-Converter/" 
 />
 
-After converting images, export the .h files and save them in your Inkplate sketch's project folder. To find this folder, go to `Sketch -> Show Sketch Folder` in Arduino.
+After converting images, export the .h files and save them in your Inkplate sketch's project folder. To locate this folder, go to `Sketch -> Show Sketch Folder` in Arduino.
 
-Place the exported .h files in that folder, then include them in the sketch and use the `drawImage` function.
+Once the exported .h files are in the folder, include them in the sketch and use the `drawImage` function.
 
 ---

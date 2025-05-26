@@ -4,7 +4,7 @@ title: Draw Image from Web
 id: 6flick-wifi-image-from-web
 ---
 
-Drawing an image from the web on Inkplate 10 is simple using the `draw` function, which supports multiple image formats.
+Drawing an image from the web on Inkplate 6FLICK is simple using the `draw` function, which supports multiple image formats.
 
 <InfoBox>Supported formats: JPG, BMP, and PNG.</InfoBox>
 
@@ -16,22 +16,22 @@ Drawing an image from the web on Inkplate 10 is simple using the `draw` function
 
 ## Drawing an Image from a URL
 
-Let's draw this image of the Eurodom building in Osijek, Croatia on Inkplate 10:
+Let's draw this image of the Eurodom building in Osijek, Croatia, on Inkplate 6FLICK:
 <CenteredImage src="/img/inkplate_6_motion/sample_image.jpg" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
 
 ```cpp
-#include "Inkplate.h"            //Include Inkplate library to the sketch
-#include "WiFi.h"                //Include library for WiFi
-Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+#include "Inkplate.h"            // Include the Inkplate library for the sketch
+#include "WiFi.h"                // Include the WiFi library
+Inkplate display(INKPLATE_3BIT); // Create an Inkplate object and set the library to 3-bit mode (grayscale)
 
-const char ssid[] = "yourssid";    // Your WiFi SSID
-const char *password = "yourpassword"; // Your WiFi password
+const char ssid[] = "yourssid";                // Your WiFi SSID
+const char *password = "yourpassword";         // Your WiFi password
 
 void setup()
 {
-    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    display.clearDisplay(); // Clear frame buffer of display
-    display.display();      // Put clear image on display
+    display.begin();        // Initialize the Inkplate library (call this function ONLY ONCE)
+    display.clearDisplay(); // Clear the display's frame buffer
+    display.display();      // Display the cleared image
 
     display.print("Connecting to WiFi...");
     display.partialUpdate();
@@ -49,8 +49,8 @@ void setup()
     display.partialUpdate();
     if (!display.drawImage("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
     {
-        // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
-        // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
+        // If something failed (wrong filename or unsupported bitmap format), write an error message on the screen.
+        // REMEMBER! You can only use Windows Bitmap files with a color depth of 1, 4, 8, or 24 bits with no compression!
         display.println("Image open error");
         display.display();
     }
@@ -63,6 +63,8 @@ void loop()
     // Nothing...
 }
 ```
+
+<CenteredImage src="/img/inkplate_6_flick/img_from_web.png" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
 
 <FunctionDocumentation
     functionName="inkplate.drawImage()"
@@ -82,7 +84,7 @@ void loop()
 ## Full Example
 
 <QuickLink 
-  title="Inkplate10_Image_From_Web.ino" 
+  title="Inkplate6FLICK_Image_From_Web.ino" 
   description="Connect to WiFi and draw an image from the web."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/WEB_WiFi/Inkplate10_Show_Pictures_From_Web/Inkplate10_Show_Pictures_From_Web.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_Show_Pictures_From_Web" 
 />

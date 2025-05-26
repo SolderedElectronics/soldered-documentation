@@ -7,7 +7,7 @@ hide_title: true
 
 <SectionTitle title="Partial Updates" backgroundImage="img/partial_update.jpg" />
 
-Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a faster display refresh. This prevents full-screen flickering, updating only the pixels that have changed in the frame buffer.
+Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a faster display refresh. This prevents full-screen flickering by updating only the pixels that have changed in the frame buffer.
 
 ---
 
@@ -15,7 +15,7 @@ Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a fas
 
 Partial updates in black-and-white (1-bit) mode offer the fastest e-Paper update available on Inkplate.
 
-<WarningBox>It is recommended to perform a full update after a certain number of partial updates to maintain the lifespan and image quality of the e-Paper display. Around 50 partial updates should still look good, depending on the content being displayed. Use `inkplate.setFullUpdateTreshold()` to automate this process.</WarningBox>
+<WarningBox>It is recommended to perform a full update after a certain number of partial updates to maintain the lifespan and image quality of the e-Paper display. Around 50 partial updates should still look good, depending on the content being displayed. Use `inkplate.setFullUpdateThreshold()` to automate this process.</WarningBox>
 <InfoBox>Partial updates are also supported in grayscale (3-bit) mode, but they are significantly faster and more effective in black-and-white mode. In grayscale mode, their primary benefit is reducing full-screen flickering.</InfoBox>
 
 ```cpp
@@ -51,7 +51,7 @@ void loop(){
   ]}
 />
 <FunctionDocumentation
-  functionName="inkplate.setFullUpdateTreshold()"
+  functionName="inkplate.setFullUpdateThreshold()"
   description="Sets the number of partial updates after which a full update is automatically performed."
   returnDescription="None"
   parameters={[ 
@@ -64,7 +64,7 @@ void loop(){
 ## Full Examples
 
 <QuickLink 
-  title="Inkplate10_Partial_Update.ino" 
-  description="Example demonstrating the use of partialUpdate for fast display refreshes on Inkplate 10."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Basic/Inkplate10_Partial_Update/Inkplate10_Partial_Update.ino" 
+  title="Inkplate6FLICK_Partial_Update.ino" 
+  description="Example demonstrating the use of partialUpdate for fast display refreshes on Inkplate 6FLICK."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Partial_Update/Inkplate6FLICK_Partial_Update.ino" 
 />

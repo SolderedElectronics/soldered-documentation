@@ -10,7 +10,7 @@ As mentioned on the previous page, Inkplate 6FLICK has two different display mod
 
 ## Black and white mode
 
-1-bit or black and white mode is the simpler and faster display mode. In this mode, pixels are either black or white. You can use shorthand defines `BLACK` and `WHITE` when selecting colors in this mode. For example, to draw and display a single black and a single white pixel:
+1-bit or black and white mode is the simpler and faster display mode. In this mode, pixels are either black or white. You can use shorthand defines `BLACK` and `WHITE` when selecting colors in this mode. For example, to draw and display a single black pixel and a single white pixel:
 
 ```cpp
 #include "Inkplate.h"
@@ -36,7 +36,7 @@ void loop() {
 
 ## Grayscale mode
 
-3-bit or grayscale mode offers the possibility to draw in 8 different levels of brightness, not just black and white. See below for an approximate visualization of black levels as they correspond to their numerical value in code:
+3-bit or grayscale mode offers the possibility to draw in 8 different levels of brightness, not just black and white. See below for an approximate visualization of black levels corresponding to their numerical values in code:
 
 <CenteredImage src="/img/inkplate_6_flick/grayscale.png" alt="3bit grayscale" caption="Black levels in 3-bit mode" width="450px" />
 

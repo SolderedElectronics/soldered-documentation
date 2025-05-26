@@ -12,11 +12,11 @@ The real time clock on Inkplate 10 is the **onboard PCF85063 RTC**. The RTC uses
 
 ## Setting time and date
 
-Setting the current time and date is the most basic RTC usage. Once you set the time, it will keep 'ticking' and you will be able to get the current time later and it will be accurate. Of course, the RTC isn't perfect so during one day it will drift off a couple seconds early or late. If you're using the RTC, **it's reccomended to set it approx. once per day**.
+Setting the current time and date is the most basic RTC usage. Once you set the time, it will keep "ticking" and you will be able to get the current time later, and it will be accurate. Of course, the RTC isn't perfect, so during one day it will drift off a couple of seconds early or late. If you're using the RTC, **it's recommended to set it approx. once per day**.
 
 ```cpp
-#include "Inkplate.h"            // Include Inkplate library to the sketch
-Inkplate inkplate(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1-bit mode (BW)
+#include "Inkplate.h"            // Include Inkplate library in the sketch
+Inkplate inkplate(INKPLATE_1BIT); // Create an Inkplate object and set the library into 1-bit mode (BW)
 
 #define REFRESH_DELAY 1000 // Delay between refreshes
 unsigned long time1;       // Time for measuring refresh in millis
@@ -39,17 +39,17 @@ void setup()
     inkplate.display();      // Put clear image on display
     inkplate.setTextSize(5); // Set text to be 5 times bigger than classic 5x7 px text
     inkplate.rtcSetTime(hour, minutes, seconds);    // Send time to RTC
-    inkplate.rtcSetDate(weekday, day, month, year); // Send date to RTC
+    inkplate.rtcSetDate(weekday, day, month, year);   // Send date to RTC
 }
 
-// Variable that keeps count on how much screen has been partially updated
+// Variable that keeps count on how many times the screen has been partially updated
 int n = 0;
 void loop()
 {
     if ((unsigned long)(millis() - time1) > REFRESH_DELAY)
     {
         inkplate.rtcGetRtcData();           // Get the time and date from RTC
-        seconds = inkplate.rtcGetSecond();  // Store senconds in a variable
+        seconds = inkplate.rtcGetSecond();  // Store seconds in a variable
         minutes = inkplate.rtcGetMinute();  // Store minutes in a variable
         hour = inkplate.rtcGetHour();       // Store hours in a variable
         day = inkplate.rtcGetDay();         // Store day of month in a variable
@@ -59,17 +59,17 @@ void loop()
 
         inkplate.clearDisplay();                                       // Clear content in frame buffer
         inkplate.setCursor(100, 300);                                  // Set position of the text
-        printTime(hour, minutes, seconds, day, weekday, month, year); // Print the time on screen
+        printTime(hour, minutes, seconds, day, weekday, month, year);   // Print the time on screen
 
-        if (n > 9) // Check if you need to do full refresh or you can do partial update
+        if (n > 9) // Check if you need to do a full refresh or you can do a partial update
         {
             inkplate.display(true); // Do a full refresh
             n = 0;
         }
         else
         {
-            inkplate.partialUpdate(false, true); // Do partial update and keep e-papr power supply on
-            n++;                                // Keep track on how many times screen has been partially updated
+            inkplate.partialUpdate(false, true); // Do a partial update and keep the e-paper power supply on
+            n++;                                // Keep track of how many times the screen has been partially updated
         }
 
         time1 = millis(); // Store current millis
@@ -111,7 +111,7 @@ void print2Digits(uint8_t _d)
   functionName="inkplate.rtcSetTime()"
   description="Method for setting time."
   returnType="void"
-  parameters={[
+  parameters={[ 
     { type: 'uint8_t', name: 'rtcHour', description: "RTC Hour value." },
     { type: 'uint8_t', name: 'rtcMinute', description: "RTC Minute value." },
     { type: 'uint8_t', name: 'rtcSecond', description: "RTC Seconds value." },
@@ -122,7 +122,7 @@ void print2Digits(uint8_t _d)
   functionName="inkplate.rtcSetDate()"
   description="Method for setting date."
   returnDescription="void"
-  parameters={[
+  parameters={[ 
     { type: 'uint8_t', name: 'rtcWeekday', description: "Weekday value." },
     { type: 'uint8_t', name: 'rtcDay', description: "Day of the month." },
     { type: 'uint16_t', name: 'rtcMonth', description: "Month value." },
@@ -134,4 +134,14 @@ void print2Digits(uint8_t _d)
   functionName="inkplate.rtcGetRtcData()"
   description="Reads time and date from the RTC, and stores them in their corresponding variables."
   returnDescription="void"
+/>
+
+## Full example
+
+For full working code examples, which provide a great overview, a real-world use scenario, and **code comments**, see the links below:
+
+<QuickLink 
+  title="Inkplate6FLICK_RTC_Simple.ino" 
+  description="This example will show how to set time and date, how to read time, and how to print time on Inkplate using partial updates."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Simple/Inkplate6FLICK_RTC_Simple.ino" 
 />
