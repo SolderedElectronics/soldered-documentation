@@ -1779,6 +1779,24 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'LIN Transceiver NCV7329',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/ncv7329/ncv7329-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/ncv7329/ncv7329-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/ncv7329/ncv7329-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'GNSS GPS L86-M33',
           items: [
             {
