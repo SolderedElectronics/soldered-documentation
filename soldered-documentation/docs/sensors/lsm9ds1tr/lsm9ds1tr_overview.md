@@ -1,10 +1,11 @@
- ---
+---
 slug: /lsm9ds1tr/overview
 title: Overview
 id: lsm9ds1tr-overview 
 hide_title: False
 pagination_prev: null
 ---
+
 ## Accelerometer & Gyroscope & Magnetometer LSM9DS1TR 9-DOF breakout
 
 **Accelerometer, Gyroscope, & Magnetometer - Breakout** is a compact board that integrates a **3D accelerometer**, a **3D gyroscope**, and a **3D magnetometer**, enabling comprehensive tracking of linear acceleration, rotational motion, and orientation in space. Thanks to high measurement resolutions (up to **±16 g** for an accelerometer, **±2000 dps** for a gyroscope, and **±16** gauss for a magnetometer), it is ideal for designing advanced navigation systems, gesture-controlled robots, fitness trackers, drones, and virtual reality applications. The board contains a **built-in temperature sensor** and **FIFO buffer** for efficient data management, where its high resistance to mechanical shock makes the LSM9DS1 a preferred choice for system designers creating and manufacturing reliable products.
