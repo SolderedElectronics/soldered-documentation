@@ -76,7 +76,7 @@ For this documentation, we will use a pre-made example. Go to `File->Examples->I
 
 Click **Upload** in the Arduino IDE.
 
-<CenteredImage src="/img/inkplate10/upload_button.png" alt="Arduino IDE Upload Button" caption="Arduino IDE Upload Button" width="500px" />
+<CenteredImage src="/img/6color/helloworld.png" alt="Arduino IDE Upload Button" caption="Arduino IDE Upload Button" width="500px" />
 
 Once the process completes, **Inkplate will restart automatically** and run the newly uploaded code. Arduino's upload log should read:
 ```
@@ -86,4 +86,4 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having problems uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/10/faq-troubleshooting/):
+Having problems uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/6color/faq-troubleshooting/):
