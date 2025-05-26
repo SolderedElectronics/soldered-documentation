@@ -1,7 +1,7 @@
 ---
-slug: /inkplate/6flick/hardware/jumpers
+slug: /inkplate/4tempera/hardware/jumpers
 title: Jumpers
-id: 6flick-hardware-jumpers
+id: 4tempera-hardware-jumpers
 ---
 
 Inkplate 6FLICK features several **on-board jumpers** that can be used to modify the behavior of certain components. Some jumpers are **connected by default**, while others need to be manually shorted.

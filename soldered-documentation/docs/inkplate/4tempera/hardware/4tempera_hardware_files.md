@@ -1,20 +1,20 @@
 ---
-slug: /inkplate/6flick/hardware/open-source-files
+slug: /inkplate/4tempera/hardware/open-source-files
 title: Hardware files
-id: 6flick-hardware-files
+id: 4tempera-hardware-files
 ---
 
-The **hardware repositories** for Inkplate 6FLICK hardware files can be found at the following links:
+The **hardware repositories** for Inkplate 4TEMPERA hardware files can be found at the following links:
 
 <QuickLink 
-  title="Soldered Inkplate 6FLICK hardware design" 
-  description="Hardware design, BOM, gerbers and 3D files for Soldered Inkplate 6FLICK, designed by Soldered Electronics"
-  url="https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design" 
+  title="Soldered Inkplate 4TEMPERA hardware design" 
+  description="Hardware design, BOM, gerbers and 3D files for Soldered Inkplate 4TEMPERA, designed by Soldered Electronics"
+  url="https://github.com/SolderedElectronics/Soldered-Inkplate-4-TEMPERA-with-glass-panel-hardware-design" 
 />
 
 ## Repository contents
 
-The Inkplate 6FLICK hardware repository contains everything you need to understand, modify, or manufacture the board. Below is an overview of the available files.
+The Inkplate 4TEMPERA hardware repository contains everything you need to understand, modify, or manufacture the board. Below is an overview of the available files.
 
 ### CAD files
 
@@ -22,7 +22,7 @@ We use [**KiCad**](https://www.kicad.org/), an open-source PCB design tool. You 
 
 The `PANEL` files are used internally for production.
 
-<CenteredImage src="/img/inkplate_6_flick/kicad.png" alt="Inkplate 6FLICK KiCad project" caption="Inkplate 6FLICK KiCad project" />
+<CenteredImage src="/img/inkplate_4_tempera/kicad.png" alt="Inkplate 4TEMPERA KiCad project" caption="Inkplate 4TEMPERA KiCad project" />
 
 ---
 
@@ -30,7 +30,7 @@ The `PANEL` files are used internally for production.
 
 The **OUTPUTS** folder contains the schematic in `.pdf` format, exported from KiCad. The schematic is divided into sections based on functionality, making it easy to navigate.
 
-<CenteredImage src="/img/inkplate_6_flick/schematic.png" alt="Inkplate 6FLICK schematic" caption="Inkplate 6FLICK schematic 2/7" />
+<CenteredImage src="/img/inkplate_4_tempera/schematic.png" alt="Inkplate 4TEMPERA schematic" caption="Inkplate 4TEMPERA schematic 2/7" />
 
 ---
 
@@ -41,7 +41,7 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.
 
-<CenteredImage src="/img/inkplate_6_flick/ibom.png" alt="Inkplate 6FLICK interactive BOM" caption="IBOM for 6FLICK" />
+<CenteredImage src="/img/inkplate_4_tempera/ibom.png" alt="Inkplate 4TEMPERA interactive BOM" caption="IBOM for 4TEMPERA" />
 
 ---
 

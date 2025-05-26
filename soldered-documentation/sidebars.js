@@ -530,31 +530,31 @@ const sidebars = {
             items: [
                 {
                   type: 'doc',
-                  id: 'inkplate/4tempera/hardware/6flick-hardware-design',
+                  id: 'inkplate/4tempera/hardware/4tempera-hardware-design',
                 },
                 {
                   type: 'doc',
-                  id: 'inkplate/4tempera/hardware/6flick-hardware-open-source',
+                  id: 'inkplate/4tempera/hardware/4tempera-hardware-open-source',
                 },
                 {
                   type: 'doc',
-                  id: 'inkplate/4tempera/hardware/6flick-hardware-files',
+                  id: 'inkplate/4tempera/hardware/4tempera-hardware-files',
                 },
                 {
                   type: 'doc',
-                  id: 'inkplate/4tempera/hardware/6flick-hardware-touchscreen',
+                  id: 'inkplate/4tempera/hardware/4tempera-hardware-touchscreen',
                 },
                 {
                   type: 'doc',
-                  id: 'inkplate/4tempera/hardware/6flick-hardware-frontlight',
+                  id: 'inkplate/4tempera/hardware/4tempera-hardware-frontlight',
                 },
                 {
                   type: 'doc',
-                  id: 'inkplate/4tempera/hardware/6flick-hardware-jumpers',
+                  id: 'inkplate/4tempera/hardware/4tempera-hardware-jumpers',
                 },
                 {
                   type: 'doc',
-                  id: 'inkplate/4tempera/hardware/6flick-hardware-battery',
+                  id: 'inkplate/4tempera/hardware/4tempera-hardware-battery',
                 },
             ],
             },
@@ -654,7 +654,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'inkplate/4tempera/6flick-faq-troubleshooting',
+              id: 'inkplate/4tempera/4tempera-faq-troubleshooting',
             },
           ]
         },
