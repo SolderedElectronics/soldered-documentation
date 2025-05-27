@@ -16,7 +16,7 @@ Inkplate 5V2 allows you to draw graphics on a **1280 x 720px canvas**.
 
 Below is an example demonstrating the functions used for drawing graphics on the Inkplate 5V2:
 
-<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/10/basics/basic-display-modes/) page for more details.</InfoBox>
+<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/5v2/basics/basic-display-modes/) page for more details.</InfoBox>
 
 ```cpp
 #include "Inkplate.h"
