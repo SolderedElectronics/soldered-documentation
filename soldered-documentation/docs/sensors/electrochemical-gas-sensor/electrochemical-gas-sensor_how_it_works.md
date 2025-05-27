@@ -29,7 +29,7 @@ The breakout board consists of a sensor by **SGX**. For the sensor to maintain i
   url="https://www.ti.com/lit/ds/symlink/ads1115.pdf?ts=1744268937468&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252Fde-de%252FADS1115%252Fpart-details%252FADS1115IRUGT"  
 />
 
-<InfoBox>You can find the datasheet for each specific sensor [**here**](hardware#sensor-datasheets).</InfoBox>
+<InfoBox>You can find the datasheet for each specific sensor [**here**](/documentation/electrochemical-gas-sensor/hardware/#sensor-datasheets).</InfoBox>
 
 ---
 

@@ -31,7 +31,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ## Connections
 
-Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit boards address, check the [**Address selection**](/documentation/rotary-encoder/hardware#address-selection/).
+Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit boards address, check the [**Address selection**](/documentation/rotary-encoder/hardware#address-selection).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |

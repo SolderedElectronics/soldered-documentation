@@ -43,4 +43,4 @@ The trigger pin is used to initiate the ultrasonic sound pulses, and the echo pi
 
 ## Qwiic I2C communication
 
-This product uses the onboard ATTINY404-F MCU to implement I2C communication. The breakout board operates with a default I2C address of **0x30** but can be changed with onboard switches. To change the breakout board's address, check out the [**Address selection**](/hc-sr04/hardware#address-selection-qwiic-version/). When detected, the ATTINY404-F receives data from the sensor and passes it to the main MCU using the **I2C data line**.
+This product uses the onboard ATTINY404-F MCU to implement I2C communication. The breakout board operates with a default I2C address of **0x30** but can be changed with onboard switches. To change the breakout board's address, check out the [**Address selection**](/hc-sr04/hardware#address-selection-qwiic-version). When detected, the ATTINY404-F receives data from the sensor and passes it to the main MCU using the **I2C data line**.

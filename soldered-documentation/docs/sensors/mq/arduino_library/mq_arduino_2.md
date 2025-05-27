@@ -44,7 +44,7 @@ if(!mq8.begin(0x30))
   parameters={[{ type: 'int', name: '_addr', description: "Specifies the I2C address of the sensor" }]}
 />
 
-Next, we have to calibrate the sensor. Calibration is done in a clean air environment after the sensor has been heated. You can find preheat times for the sensor in their datasheets, which are linked [**here**](../hardware#datasheets). All the calibration does is take measurements of the resistance, which will be used later for resistance measurements in an environment with the specific gas calculated.
+Next, we have to calibrate the sensor. Calibration is done in a clean air environment after the sensor has been heated. You can find preheat times for the sensor in their datasheets, which are linked [**here**](/documentation/mq/how-it-works/#datasheets). All the calibration does is take measurements of the resistance, which will be used later for resistance measurements in an environment with the specific gas calculated.
 
 ```cpp
 // In the setup() function...

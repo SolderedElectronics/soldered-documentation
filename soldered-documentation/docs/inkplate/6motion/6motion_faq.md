@@ -126,7 +126,7 @@ To preserve display quality and extend the lifespan of the panel, it's recommend
 
 In the [**accelerometer example**](https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_Accelerometer_Cube/Inkplate_6_MOTION_Accelerometer_Cube.ino), we managed to achieve up to 75 partial updates before requiring a full refresh. In most other examples, we use 20-30 partial updates before a full update. Your results may vary depending on the content and update frequency, but we strongly recommend incorporating full updates periodically to avoid ghosting and degradation.
 
-To simplify this process, you can use the `setFullUpdateThreshold()` function, which automatically handles full refreshes at defined intervals. Learn more about this function [**here**](/inkplate/6motion/basics/partial-update#partial-update/).
+To simplify this process, you can use the `setFullUpdateThreshold()` function, which automatically handles full refreshes at defined intervals. Learn more about this function [**here**](/inkplate/6motion/basics/partial-update#partial-update).
 </ExpandableSection>
 
 <ExpandableSection title="How to connect a battery to Inkplate?">

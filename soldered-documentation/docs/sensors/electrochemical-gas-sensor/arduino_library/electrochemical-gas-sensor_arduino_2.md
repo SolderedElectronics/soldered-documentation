@@ -11,7 +11,7 @@ hide_title: False
 
 <InfoBox>
 
-When using a single sensor, make sure to connect the **LMPEN** pin to the **GND** pin on the board. This ensures that the pin is set to LOW and that the LMP91000 is always enabled. For more information, look [**here**](../hardware#lmpen-pin-functionality).
+When using a single sensor, make sure to connect the **LMPEN** pin to the **GND** pin on the board. This ensures that the pin is set to LOW and that the LMP91000 is always enabled. For more information, look [**here**](/documentation/electrochemical-gas-sensor/hardware/#lmpen-pin-functionality).
 
 </InfoBox>
 

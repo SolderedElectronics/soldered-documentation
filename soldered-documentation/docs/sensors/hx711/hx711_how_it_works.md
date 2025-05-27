@@ -58,6 +58,6 @@ The HX711 operates with a **low-power supply voltage** and is optimized for ener
 
 ## I2C communication - Qwiic
 
-Qwiic versions of the product use an onboard ATTINY404 MCU to implement I2C communication. The breakout board operates with a default I2C address of **0x30** but can be changed using [**onboard switches**](/hx711/hardware#address-selection-qwiic-version/). When detected, the ATTINY404 receives data from the sensor and passes it to the main MCU using the I2C data line. To check in detail how the ATTINY404 is programmed, refer to the [**firmware GitHub page**](https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/dev/extras/attiny_firmware).
+Qwiic versions of the product use an onboard ATTINY404 MCU to implement I2C communication. The breakout board operates with a default I2C address of **0x30** but can be changed using [**onboard switches**](/hx711/hardware#address-selection-qwiic-version). When detected, the ATTINY404 receives data from the sensor and passes it to the main MCU using the I2C data line. To check in detail how the ATTINY404 is programmed, refer to the [**firmware GitHub page**](https://github.com/SolderedElectronics/Soldered-HX711-ADC-For-Weight-Scales-Arduino-Library/tree/dev/extras/attiny_firmware).
 
 <CenteredImage src="/img/hx711/hx711_tiny_onboard.png" alt="attiny404 on the HX711 easyC Board" caption="attiny404 on the HX711 easyC Board" width="500px" />

@@ -35,7 +35,7 @@ void deepSleep()
 ```
 <WarningBox>**Code will not continue after the final call to `HAL_PWREx_EnterSTANDBYMode`!**</WarningBox>
 
-<InfoBox>For more information on turning off peripherals via `peripheralState`, see [**this**](/inkplate/6motion/peripherals/introduction#powering-off/) page</InfoBox>
+<InfoBox>For more information on turning off peripherals via `peripheralState`, see [**this**](/inkplate/6motion/peripherals/introduction#powering-off) page</InfoBox>
 
 To create a sketch which uses deep sleep - it's common practice to put all code in the `setup` function, and then at the end put Inkplate into deep sleep.
 

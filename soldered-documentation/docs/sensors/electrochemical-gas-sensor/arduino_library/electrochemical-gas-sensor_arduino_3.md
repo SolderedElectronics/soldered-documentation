@@ -19,14 +19,14 @@ If you are connecting the sensor using standard I2C pins on your microcontroller
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller’s I2C bus.
 
 #### Check for conflicting sensors
-If you have multiple sensors connected, you must ensure that each ADS1115 has a different I2C address. You also have to connect the LMPEN pin to the GPIO pins on the board to be able to differentiate between them. You can find a detailed description in [**this example**](reading-from-multiple-sensors).
+If you have multiple sensors connected, you must ensure that each ADS1115 has a different I2C address. You also have to connect the LMPEN pin to the GPIO pins on the board to be able to differentiate between them. You can find a detailed description in [**this example**](/electrochemical-gas-sensor/arduino/reading-from-multiple-sensors/).
 
 </ExpandableSection>
 
 <ExpandableSection title="The readings from the sensor are off!">
 
 #### Create a custom configuration
-Depending on your environment, you may need a different configuration than the predefined one. Check out the [**How it works**](../how-it-works) section as well as the [**Custom configuration example**](custom-config-example).
+Depending on your environment, you may need a different configuration than the predefined one. Check out the [**How it works**](/documentation/electrochemical-gas-sensor/how-it-works/) section as well as the [**Custom configuration example**](/documentation/electrochemical-gas-sensor/arduino/custom-config-example/).
 
 </ExpandableSection>
 

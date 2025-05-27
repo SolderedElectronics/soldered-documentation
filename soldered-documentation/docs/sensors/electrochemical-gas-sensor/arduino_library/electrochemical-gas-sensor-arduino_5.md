@@ -20,9 +20,9 @@ First, include the library and create the sensor objects by providing the config
 ElectrochemicalGasSensor sensorCO(SENSOR_CO, 0x4A, 25);
 ElectrochemicalGasSensor sensorNO2(SENSOR_NO2, 0x49, 32);
 ```
-<InfoBox>We can change the I2C address of the ADS1115 ADC module by shorting jumpers on the breakout board. For more information on the jumpers look [**here**](../hardware#jumper-details)</InfoBox>
+<InfoBox>We can change the I2C address of the ADS1115 ADC module by shorting jumpers on the breakout board. For more information on the jumpers look [**here**](/documentation/electrochemical-gas-sensor/hardware/#jumper-details)</InfoBox>
 
-<InfoBox>While the LMP91000 has a non-configurable I2C address, we can distinguish them by setting the **LMPEN pin**. When we want to configure a specific one, we can disable all the others by setting their LMPEN pin to HIGH via the GPIO pins while the one we want to configure stays at a HIGH state. More information about this can be found [**here**](../hardware#lmpen-pin-functionality)</InfoBox>
+<InfoBox>While the LMP91000 has a non-configurable I2C address, we can distinguish them by setting the **LMPEN pin**. When we want to configure a specific one, we can disable all the others by setting their LMPEN pin to HIGH via the GPIO pins while the one we want to configure stays at a HIGH state. More information about this can be found [**here**](/documentation/electrochemical-gas-sensor/hardware/#lmpen-pin-functionality)</InfoBox>
 
 Next, in the `setup()` function, both sensors are initialized, along with the serial communication:
 

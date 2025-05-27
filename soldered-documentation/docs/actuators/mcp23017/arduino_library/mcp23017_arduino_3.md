@@ -21,7 +21,7 @@ If you are connecting the sensor using standard I2C pins on your microcontroller
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller’s I2C bus.
 
 #### Check for conflicting devices
-If you have multiple I2C devices connected to the same bus, ensure that none of them have conflicting addresses. The I/O expander uses the **I2C address 0x27**, so verify that no other device is using this address; if it is, connect one of the address jumpers to ground as explained [**here**](/mcp23017/hardware#jumper-details/).
+If you have multiple I2C devices connected to the same bus, ensure that none of them have conflicting addresses. The I/O expander uses the **I2C address 0x27**, so verify that no other device is using this address; if it is, connect one of the address jumpers to ground as explained [**here**](/mcp23017/hardware#jumper-details).
 
 #### Try reinitializing
 If the sensor fails to initialize on the first attempt, try calling `mcp.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.

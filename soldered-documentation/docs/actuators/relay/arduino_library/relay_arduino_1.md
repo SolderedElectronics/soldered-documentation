@@ -41,7 +41,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 ---
 
 ## Connections for Qwiic version
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit boards address, check the [**Address selection**](/documentation/relay/hardware#address-selection-for-qwiic-version/).
+Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit boards address, check the [**Address selection**](/documentation/relay/hardware#address-selection-for-qwiic-version).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |

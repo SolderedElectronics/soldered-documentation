@@ -35,9 +35,9 @@ Connect an external battery so that the board receives enough power.
 <ExpandableSection title="My readings are inaccurate!">
 
 #### Preheat the sensors
-All MQ sensors require a preheat time so they can clean themselves of any impurities that have stuck to them. This is mandatory, and each sensor has its own preheat time, which you can check in the [**datasheet**](../hardware#datasheets).
+All MQ sensors require a preheat time so they can clean themselves of any impurities that have stuck to them. This is mandatory, and each sensor has its own preheat time, which you can check in the [**datasheet**](/documentation/mq/how-it-works/#datasheets).
 
 #### Create a custom configuration
-Depending on your needs, the predefined configuration structure for your sensor may be inadequate. Creating a custom configuration structure may help. You can see the example for creating one [**here**](creating-a-custom-configuration).
+Depending on your needs, the predefined configuration structure for your sensor may be inadequate. Creating a custom configuration structure may help. You can see the example for creating one [**here**](/documentation/mq/arduino/creating-a-custom-configuration/).
 
 </ExpandableSection>

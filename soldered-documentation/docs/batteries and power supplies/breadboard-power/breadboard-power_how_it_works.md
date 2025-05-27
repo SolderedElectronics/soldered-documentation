@@ -17,4 +17,4 @@ You can also use the 12V input to obtain a 5V output thanks to the onboard **780
 
 <CenteredImage src="/img/breadboard-power/regulator.webp" alt="Onboard 7805 voltage regulator" caption="Onboard 7805 voltage regulator" width="550px" />
 
-The **S1** switch can turn the power supply on/off, while With the **S2 and S3 switches**, you can pick your desired voltage for all your maker needs! Find more information about the switches [**here**](/breadboard-power/hardware#switch-details/)
+The **S1** switch can turn the power supply on/off, while With the **S2 and S3 switches**, you can pick your desired voltage for all your maker needs! Find more information about the switches [**here**](/breadboard-power/hardware#switch-details)

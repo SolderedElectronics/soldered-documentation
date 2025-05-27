@@ -11,7 +11,7 @@ This page contains some tips in case you are having problems using this product.
 <ExpandableSection title="The SPI communication won't initialize!">
 
 #### Check wiring
-Make sure the SD card module is correctly wired to the ESP32 by following the wiring described [**here**](/microsd-reader/arduino/geting-started#connections/)
+Make sure the SD card module is correctly wired to the ESP32 by following the wiring described [**here**](/microsd-reader/arduino/geting-started#connections)
 
 #### Set the CS pin value
 When setting up the SPI communication in the code, ensure that you set the **SD_CS_PIN** variable to the pin to which CS is connected. If you're following our connections, the pin is **GPIO5**.
