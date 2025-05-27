@@ -246,6 +246,128 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Inkplate 2',
+          items: [
+            {
+              type: 'doc',
+              id: 'inkplate/2/2-quick-start-guide',
+            },
+            {
+            type: 'category',
+            label: 'Hardware',
+            items: [
+                {
+                  type: 'doc',
+                  id: 'inkplate/2/hardware/2-hardware-design',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/2/hardware/2-hardware-open-source',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/2/hardware/2-hardware-files',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/2/hardware/2-hardware-battery',
+                },
+            ],
+            },
+            {
+              type: 'category',
+              label: 'Arduino Library',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Basics',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/basics/2-init',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/basics/2-display-modes',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/basics/2-graphics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/basics/2-text',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/basics/2-image-converter',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'WiFi',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/wifi/2-wifi-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/wifi/2-wifi-image-from-web',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/wifi/2-wifi-get-post',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/wifi/2-wifi-https-certificate',
+                    },
+                  ]
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/2/deepsleep/2-deep-sleep',
+                },
+                {
+                  type: 'category',
+                  label: 'MicroSD',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/microsd/2-microsd-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/microsd/2-microsd-image',
+                    },
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Real Time Clock',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/rtc/2-rtc-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/2/rtc/2-rtc-alarm',
+                    },
+                  ]
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              id: 'inkplate/2/2-faq-troubleshooting',
+            },
+          ]
+        },
+        {
+          type: 'category',
           label: 'Inkplate 10',
           items: [
             {
