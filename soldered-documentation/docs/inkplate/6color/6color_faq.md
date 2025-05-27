@@ -118,17 +118,17 @@ All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-io
 
 <CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 6COLOR battery JST connector" caption="JST battery connector" width="500px"/>
 
-<WarningBox>**Warning:** Battery polarity must be correct! Connecting a battery with reversed polarity may permanently damage your Inkplate. See [**this**](/inkplate/10/hardware/battery) page in the documentation for info regarding the battery.</WarningBox>
+<WarningBox>**Warning:** Battery polarity must be correct! Connecting a battery with reversed polarity may permanently damage your Inkplate. See [**this**](/inkplate/6color/hardware/battery) page in the documentation for info regarding the battery.</WarningBox>
 </ExpandableSection>
 
 <ExpandableSection title="Where can I find hardware files and schematics for Inkplate 6COLOR?">
-All hardware design files, including schematics, KiCad project files, gerber files, and more, are available in the [**Inkplate 6COLOR hardware repository on GitHub**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design).
+All hardware design files, including schematics, KiCad project files, gerber files, and more, are available in the [**Inkplate 6COLOR hardware repository on GitHub**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-COLOR-hardware-design).
 
-Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/10/hardware/design/).
+Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/6color/hardware/design/).
 </ExpandableSection>
 
 <ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 6COLOR?">
-We are currently working on making 3D enclosure files available in the [**Inkplate 6COLOR hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design). Stay tuned for updates!
+We are currently working on making 3D enclosure files available in the [**Inkplate 6COLOR hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-COLOR-hardware-design). Stay tuned for updates!
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 6COLOR as an e-reader/monitor?">

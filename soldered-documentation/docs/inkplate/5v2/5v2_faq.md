@@ -120,17 +120,17 @@ All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-io
 
 <CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 5V2 battery JST connector" caption="JST battery connector" width="500px"/>
 
-<WarningBox>**Warning:** Battery polarity must be correct! Connecting a battery with reversed polarity may permanently damage your Inkplate. See [**this**](/inkplate/10/hardware/battery) page in the documentation for info regarding the battery.</WarningBox>
+<WarningBox>**Warning:** Battery polarity must be correct! Connecting a battery with reversed polarity may permanently damage your Inkplate. See [**this**](/inkplate/5v2/hardware/battery) page in the documentation for info regarding the battery.</WarningBox>
 </ExpandableSection>
 
 <ExpandableSection title="Where can I find hardware files and schematics for Inkplate 5V2?">
-All hardware design files, including schematics, KiCad project files, gerber files, and more, are available in the [**Inkplate 5V2 hardware repository on GitHub**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design).
+All hardware design files, including schematics, KiCad project files, gerber files, and more, are available in the [**Inkplate 5V2 hardware repository on GitHub**](https://github.com/SolderedElectronics/Soldered-Inkplate-5-Gen2-hardware-design).
 
-Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/10/hardware/design/).
+Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/5v2/hardware/design/).
 </ExpandableSection>
 
 <ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 5V2?">
-We are currently working on making 3D enclosure files available in the [**Inkplate 5V2 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design). Stay tuned for updates!
+We are currently working on making 3D enclosure files available in the [**Inkplate 5V2 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-5-Gen2-hardware-design). Stay tuned for updates!
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 5V2 as an e-reader/monitor?">
