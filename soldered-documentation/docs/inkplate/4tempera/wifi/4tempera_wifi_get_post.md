@@ -1,7 +1,7 @@
 ---
-slug: /inkplate/6flick/wifi/get-post
+slug: /inkplate/4tempera/wifi/get-post
 title: GET & POST requests
-id: 6flick-wifi-get-post
+id: 4tempera-wifi-get-post
 ---
 
 Now that Inkplate is connected to the internet, you will likely want to send and receive data on it from sensors, messages, and your custom APIs, etc. This page contains examples on how to send and receive data on Inkplate via the internet:
@@ -93,8 +93,6 @@ void loop()
     // Nothing
 }
 ```
-
-<CenteredImage src="/img/inkplate_6_flick/wifi_get_example.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
@@ -285,13 +283,13 @@ void loop()
 
 To see more details, check out our full examples:
 <QuickLink 
-  title="Inkplate6FLICK_HTTP_GET_Request.ino" 
-  description="Inkplate 6FLICK WiFi GET request example from the Inkplate library"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTP_Request/Inkplate6FLICK_HTTP_Request.ino" 
+  title="Inkplate4TEMPERA_HTTP_GET_Request.ino" 
+  description="Inkplate 4TEMPERA WiFi GET request example from the Inkplate library"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Advanced/WEB_WiFi/Inkplate4TEMPERA_HTTP_Request/Inkplate4TEMPERA_HTTP_Request.ino" 
 />
 
 <QuickLink 
-  title="Inkplate6FLICK_HTTP_POST_Request.ino" 
-  description="Inkplate 6FLICK WiFi POST request example from the Inkplate library"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTP_POST_Request/Inkplate6FLICK_HTTP_POST_Request.ino" 
+  title="Inkplate4TEMPERA_HTTP_POST_Request.ino" 
+  description="Inkplate 4TEMPERA WiFi POST request example from the Inkplate library"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Advanced/WEB_WiFi/Inkplate4TEMPERA_HTTP_POST_Request/Inkplate4TEMPERA_HTTP_POST_Request.ino" 
 />

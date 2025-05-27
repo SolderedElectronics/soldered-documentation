@@ -1,7 +1,7 @@
 ---
-slug: /inkplate/6flick/wifi/https_certificate
+slug: /inkplate/4tempera/wifi/https_certificate
 title: HTTPS certificate
-id: 6flick-wifi-https-certificate
+id: 4tempera-wifi-https-certificate
 ---
 
 Now that Inkplate is connected to the internet, you will likely want to securely receive data from a website. This page contains an example on how to implement an HTTPS certificate into your connection.
@@ -34,7 +34,7 @@ void setup(){
 Check out all the above-mentioned functions in this example:
 
 <QuickLink 
-  title="Inkplate6FLICK_HTTPS_With_Certificate.ino" 
+  title="Inkplate4TEMPERA_HTTPS_With_Certificate.ino" 
   description="This example will show you how you can download a .bmp file (picture) from the web securely by providing a certificate for the website that will be validated upon connection and display that image on the e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTPS_With_Certificate/Inkplate6FLICK_HTTPS_With_Certificate.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Advanced/WEB_WiFi/Inkplate4TEMPERA_HTTPS_With_Certificate/Inkplate4TEMPERA_HTTPS_With_Certificate.ino" 
 />

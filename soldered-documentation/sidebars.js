@@ -568,31 +568,31 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/basics/6flick-init',
+                      id: 'inkplate/4tempera/basics/4tempera-init',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/basics/6flick-display-modes',
+                      id: 'inkplate/4tempera/basics/4tempera-display-modes',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/basics/6flick-graphics',
+                      id: 'inkplate/4tempera/basics/4tempera-graphics',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/basics/6flick-text',
+                      id: 'inkplate/4tempera/basics/4tempera-text',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/basics/6flick-partial-update',
+                      id: 'inkplate/4tempera/basics/4tempera-partial-update',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/basics/6flick-touch-in-area',
+                      id: 'inkplate/4tempera/basics/4tempera-touch-in-area',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/basics/6flick-image-converter',
+                      id: 'inkplate/4tempera/basics/4tempera-image-converter',
                     },
                   ],
                 },
@@ -602,25 +602,25 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/wifi/6flick-wifi-basics',
+                      id: 'inkplate/4tempera/wifi/4tempera-wifi-basics',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/wifi/6flick-wifi-image-from-web',
+                      id: 'inkplate/4tempera/wifi/4tempera-wifi-image-from-web',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/wifi/6flick-wifi-get-post',
+                      id: 'inkplate/4tempera/wifi/4tempera-wifi-get-post',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/wifi/6flick-wifi-https-certificate',
+                      id: 'inkplate/4tempera/wifi/4tempera-wifi-https-certificate',
                     },
                   ]
                 },
                 {
                   type: 'doc',
-                  id: 'inkplate/4tempera/deepsleep/6flick-deep-sleep',
+                  id: 'inkplate/4tempera/deepsleep/4tempera-deep-sleep',
                 },
                 {
                   type: 'category',
@@ -628,11 +628,11 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/microsd/6flick-microsd-basics',
+                      id: 'inkplate/4tempera/microsd/4tempera-microsd-basics',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/microsd/6flick-microsd-image',
+                      id: 'inkplate/4tempera/microsd/4tempera-microsd-image',
                     },
                   ]
                 },
@@ -642,13 +642,39 @@ const sidebars = {
                   items: [
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/rtc/6flick-rtc-basics',
+                      id: 'inkplate/4tempera/rtc/4tempera-rtc-basics',
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/rtc/6flick-rtc-alarm',
+                      id: 'inkplate/4tempera/rtc/4tempera-rtc-alarm',
                     },
                   ]
+                },
+                {
+                  type: 'category',
+                  label: 'Peripherals',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/4tempera/peripherals/4tempera-periph-intro',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/4tempera/peripherals/4tempera-periph-apds9960',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/4tempera/peripherals/4tempera-periph-bme688',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/4tempera/peripherals/4tempera-periph-accelerometer',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/4tempera/peripherals/4tempera-periph-buzzer',
+                    },
+                  ],
                 },
               ],
             },

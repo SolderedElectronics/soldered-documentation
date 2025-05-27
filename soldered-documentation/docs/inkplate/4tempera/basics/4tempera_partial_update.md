@@ -1,7 +1,7 @@
 ---
-slug: /inkplate/6flick/basics/partial-update
+slug: /inkplate/4tempera/basics/partial-update
 title: Partial Update
-id: 6flick-partial-update
+id: 4tempera-partial-update
 hide_title: true
 ---
 
@@ -64,7 +64,7 @@ void loop(){
 ## Full Examples
 
 <QuickLink 
-  title="Inkplate6FLICK_Partial_Update.ino" 
-  description="Example demonstrating the use of partialUpdate for fast display refreshes on Inkplate 6FLICK."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Partial_Update/Inkplate6FLICK_Partial_Update.ino" 
+  title="Inkplate4TEMPERA_Partial_Update.ino" 
+  description="Example demonstrating the use of partialUpdate for fast display refreshes."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Partial_Update/Inkplate4TEMPERA_Partial_Update.ino" 
 />

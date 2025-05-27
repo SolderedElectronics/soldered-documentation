@@ -1,7 +1,7 @@
 ---  
-slug: /inkplate/6flick/microsd/sd-image  
+slug: /inkplate/4tempera/microsd/sd-image  
 title: Image from microSD  
-id: 6flick-microsd-image  
+id: 4tempera-microsd-image  
 hide_title: true  
 ---
 
@@ -93,8 +93,6 @@ void loop()
 }
 ```
 
-<CenteredImage src="/img/inkplate_6_flick/img_from_sd.png" alt="Example Image" caption="Example Image" />
-
 <FunctionDocumentation
     functionName="inkplate.drawImage()"
     description="This function draws an image from a char path."
@@ -113,7 +111,7 @@ void loop()
 ## Full example
 
 <QuickLink 
-  title="Inkplate6FLICK_SD_Pictures.ino" 
+  title="Inkplate4TEMPERA_SD_Pictures.ino" 
   description="This example will show you how to read .bmp and .jpeg files (pictures) from an SD card and display the image on an e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_Pictures" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_Pictures" 
 />

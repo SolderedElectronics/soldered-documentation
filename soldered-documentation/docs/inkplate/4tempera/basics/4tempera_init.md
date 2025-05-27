@@ -1,7 +1,7 @@
 ---  
-slug: /inkplate/6flick/basics/initialization  
+slug: /inkplate/4tempera/basics/initialization  
 title: Initialization  
-id: 6flick-init  
+id: 4tempera-init  
 hide_title: true  
 ---  
 <SectionTitle title="Initialization" backgroundImage="img/arduino_bg.jpg" />

@@ -1,10 +1,10 @@
 ---
-slug: /inkplate/6flick/basics/basic-display-modes
+slug: /inkplate/4tempera/basics/basic-display-modes
 title: Display modes
-id: 6flick-display-modes
+id: 4tempera-display-modes
 ---
 
-As mentioned on the previous page, Inkplate 6FLICK has two different display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page contains more information on both.
+As mentioned on the previous page, Inkplate 4TEMPERA has two different display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page contains more information on both.
 
 ---
 
@@ -64,13 +64,13 @@ void loop() {
 ## Full example
 
 <QuickLink 
-  title="Inkplate6FLICK_Black_And_White.ino" 
-  description="Full example using black and white display mode on Inkplate 6FLICK." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Black_And_White/Inkplate6FLICK_Black_And_White.ino" 
+  title="Inkplate4TEMPERA_Black_And_White.ino" 
+  description="Full example using black and white display mode on Inkplate 4TEMPERA." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Black_And_White" 
 />
 
 <QuickLink 
-  title="Inkplate6FLICK_Grayscale.ino" 
-  description="Full example using grayscale display mode on Inkplate 6FLICK." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Grayscale" 
+  title="Inkplate4TEMPERA_Grayscale.ino" 
+  description="Full example using grayscale display mode on Inkplate 4TEMPERA." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Grayscale" 
 />

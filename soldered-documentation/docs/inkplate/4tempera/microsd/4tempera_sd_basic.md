@@ -1,17 +1,17 @@
 ---
-slug: /inkplate/6flick/microsd/sd-basics
+slug: /inkplate/4tempera/microsd/sd-basics
 title: MicroSD basics
-id: 6flick-microsd-basics
+id: 4tempera-microsd-basics
 hide_title: true
 ---
 
 <SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
 
-The built-in microSD card slot on Inkplate 6FLICK can be of great use for your project. It can store a very large number of high-quality image files to be displayed, and it can also read and write data during deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
+The built-in microSD card slot on Inkplate 4TEMPERA can be of great use for your project. It can store a very large number of high-quality image files to be displayed, and it can also read and write data during deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
 
-<CenteredImage src="/img/inkplate10/10_sdcard.jpg" alt="MicroSD card slot on Inkplate 6FLICK" caption="MicroSD card slot on Inkplate 6FLICK" width="600px" />
+<CenteredImage src="/img/inkplate10/10_sdcard.jpg" alt="MicroSD card slot on Inkplate 4TEMPERA" caption="MicroSD card slot on Inkplate 4TEMPERA" width="600px" />
 
-<InfoBox>Inkplate 6FLICK  uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
+<InfoBox>Inkplate 4TEMPERA  uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 <WarningBox>All supported card types are: **SD, SDHC and SDXC**</WarningBox>
 
@@ -73,11 +73,11 @@ void loop()
 Place a sample `text.txt` file on the microSD card and write something in it. This code snippet will read it and print it to the e-Paper:
 ```cpp
 /*
-   Inkplate6FLICK_SD_TXT_Read example for Soldered Inkplate 6FLICK
-   For this example you will need only a micro USB cable, Inkplate 6FLICK and a SD card
+   Inkplate4TEMPERA_SD_TXT_Read example for Soldered Inkplate 4TEMPERA
+   For this example you will need only a micro USB cable, Inkplate 4TEMPERA and a SD card
    loaded with text.txt file that can be found inside folder of this example.
-   Select "Soldered Inkplate 6FLICK" from Tools -> Board menu.
-   Don't have "Inkplate 6FLICK(ESP32)" option? Follow our tutorial and add it:
+   Select "Soldered Inkplate 4TEMPERA" from Tools -> Board menu.
+   Don't have "Inkplate 4TEMPERA(ESP32)" option? Follow our tutorial and add it:
    https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
 
    To work with SD card on Inkplate, you will need to add one extra library.
@@ -94,8 +94,8 @@ Place a sample `text.txt` file on the microSD card and write something in it. Th
 */
 
 // Next 3 lines are a precaution, you can ignore those, and the example would also work without them
-#ifndef ARDUINO_INKPLATE6FLICK
-#error "Wrong board selection for this example, please select Soldered Inkplate 6FLICK"
+#ifndef ARDUINO_INKPLATE4TEMPERA
+#error "Wrong board selection for this example, please select Soldered Inkplate 4TEMPERA"
 #endif
 
 #include "Inkplate.h"            //Include Inkplate library to the sketch
@@ -199,13 +199,13 @@ void loop()
 <InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
 
 <QuickLink 
-  title="Inkplate6FLICK_SD_TXT_Read.ino" 
+  title="Inkplate4TEMPERA_SD_TXT_Read.ino" 
   description="This example will show you how to open .txt files and display the content of that file on Inkplate epaper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_TXT_Read" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_TXT_Read" 
 />
 
 <QuickLink 
-  title="Inkplate6FLICK_SD_TXT_Write.ino" 
+  title="Inkplate4TEMPERA_SD_TXT_Write.ino" 
   description="This example will show you how to write to a .txt file."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_TXT_Write/Inkplate6FLICK_SD_TXT_Write.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_TXT_Write/Inkplate4TEMPERA_SD_TXT_Write.ino" 
 />

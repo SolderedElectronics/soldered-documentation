@@ -1,7 +1,7 @@
 ---
-slug: /inkplate/6flick/basics/image-converter
+slug: /inkplate/4tempera/basics/image-converter
 title: Soldered Image Converter
-id: 6flick-image-converter
+id: 4tempera-image-converter
 ---
 <CenteredImage src="/img/inkplate_6_motion/image_converter.png" alt="Soldered Image Converter" caption="Graphical user interface of the Soldered Image Converter" width="800px" />
 

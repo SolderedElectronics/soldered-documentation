@@ -1,13 +1,13 @@
 ---  
-slug: /inkplate/6flick/low-power/deep-sleep  
+slug: /inkplate/4tempera/low-power/deep-sleep  
 title: Deep sleep  
-id: 6flick-deep-sleep  
+id: 4tempera-deep-sleep  
 hide_title: true  
 ---
 
 <SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
 
-Using deep sleep on Inkplate 6FLICK is key to writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the image displayed, Inkplate 6FLICK can use little to no current while in deep sleep mode, allowing a sketch to run for months on a battery.
+Using deep sleep on Inkplate 4TEMPERA is key to writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the image displayed, Inkplate 4TEMPERA can use little to no current while in deep sleep mode, allowing a sketch to run for months on a battery.
 
 <InfoBox>If all peripherals are in sleep mode, deep sleep current will be around **20-30µA**</InfoBox>
 
@@ -79,7 +79,7 @@ esp_deep_sleep_start();
 Check out the full examples on this page and many more usage options below:
 
 <QuickLink 
-  title="Inkplate6FLICK_DeepSleep" 
+  title="Inkplate4TEMPERA_DeepSleep" 
   description="This example will show you how you can use the low power functionality of the Inkplate board."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/DeepSleep" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/DeepSleep" 
 />

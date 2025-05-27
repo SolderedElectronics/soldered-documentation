@@ -1,10 +1,10 @@
 ---
-slug: /inkplate/6flick/basics/drawing-graphics
+slug: /inkplate/4tempera/basics/drawing-graphics
 title: Drawing graphics
-id: 6flick-graphics
+id: 4tempera-graphics
 ---
 
-Inkplate 6FLICK allows you to draw graphics on a **1200 x 825px canvas**.
+Inkplate 4TEMPERA allows you to draw graphics on a **600 x 600 px canvas**.
 
 <InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
   description="The core graphics library for Inkplate library, created by Adafruit."
@@ -53,7 +53,7 @@ void loop() {
 }
 ```
 
-<CenteredImage src="/img/inkplate_6_flick/drawing_graphics_preview.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="750px" />
+<CenteredImage src="/img/inkplate_4_tempera/drawing_graphics_preview.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="750px" />
 
 Below are the detailed references for these functions:
 
@@ -189,16 +189,18 @@ Below are the detailed references for these functions:
   ]}
 />
 
+--- 
+
 ## Full example
 
 <QuickLink 
-  title="Inkplate6FLICK_Black_And_White.ino" 
-  description="Full example using black and white display mode on Inkplate 6FLICK." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Black_And_White/Inkplate6FLICK_Black_And_White.ino" 
+  title="Inkplate4TEMPERA_Black_And_White.ino" 
+  description="Full example using black and white display mode on Inkplate 4TEMPERA." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Black_And_White" 
 />
 
 <QuickLink 
-  title="Inkplate6FLICK_Grayscale.ino" 
-  description="Full example using grayscale display mode on Inkplate 6FLICK." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Grayscale" 
+  title="Inkplate4TEMPERA_Grayscale.ino" 
+  description="Full example using grayscale display mode on Inkplate 4TEMPERA." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Grayscale" 
 />

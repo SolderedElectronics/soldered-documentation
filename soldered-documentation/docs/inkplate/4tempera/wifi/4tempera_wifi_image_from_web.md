@@ -1,10 +1,10 @@
 ---
-slug: /inkplate/6flick/wifi/image-from-web
+slug: /inkplate/4tempera/wifi/image-from-web
 title: Draw Image from Web
-id: 6flick-wifi-image-from-web
+id: 4tempera-wifi-image-from-web
 ---
 
-Drawing an image from the web on Inkplate 6FLICK is simple using the `draw` function, which supports multiple image formats.
+Drawing an image from the web on Inkplate 4TEMPERA is simple using the `draw` function, which supports multiple image formats.
 
 <InfoBox>Supported formats: JPG, BMP, and PNG.</InfoBox>
 
@@ -16,7 +16,7 @@ Drawing an image from the web on Inkplate 6FLICK is simple using the `draw` func
 
 ## Drawing an Image from a URL
 
-Let's draw this image of the Eurodom building in Osijek, Croatia, on Inkplate 6FLICK:
+Let's draw this image of the Eurodom building in Osijek, Croatia, on Inkplate 4TEMPERA:
 <CenteredImage src="/img/inkplate_6_motion/sample_image.jpg" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
 
 ```cpp
@@ -64,7 +64,7 @@ void loop()
 }
 ```
 
-<CenteredImage src="/img/inkplate_6_flick/img_from_web.png" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
+<CenteredImage src="/img/inkplate_4_tempera/img_from_web.png" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
 
 <FunctionDocumentation
     functionName="inkplate.drawImage()"
@@ -84,7 +84,7 @@ void loop()
 ## Full Example
 
 <QuickLink 
-  title="Inkplate6FLICK_Image_From_Web.ino" 
+  title="Inkplate4TEMPERA_Image_From_Web.ino" 
   description="Connect to WiFi and draw an image from the web."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_Show_Pictures_From_Web" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/WEB_WiFi/Inkplate4TEMPERA_Show_Pictures_From_Web" 
 />

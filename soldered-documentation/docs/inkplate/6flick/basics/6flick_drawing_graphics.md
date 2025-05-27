@@ -4,7 +4,7 @@ title: Drawing graphics
 id: 6flick-graphics
 ---
 
-Inkplate 6FLICK allows you to draw graphics on a **1200 x 825px canvas**.
+Inkplate 6FLICK allows you to draw graphics on a **1024 x 758px canvas**.
 
 <InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
   description="The core graphics library for Inkplate library, created by Adafruit."

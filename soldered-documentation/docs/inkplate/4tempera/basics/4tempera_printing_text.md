@@ -1,7 +1,7 @@
 ---  
-slug: /inkplate/6flick/basics/printing-text  
+slug: /inkplate/4tempera/basics/printing-text  
 title: Printing Text  
-id: 6flick-text  
+id: 4tempera-text  
 ---  
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts.
 
@@ -45,7 +45,7 @@ void loop() {
 }
 ```
 
-<CenteredImage src="/img/inkplate_6_flick/printing_text_sizes.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
+<CenteredImage src="/img/inkplate_4_tempera/printing_text_sizes.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
 
 <FunctionDocumentation
   functionName="inkplate.setTextSize()"
@@ -106,7 +106,7 @@ void loop() {
 }
 ```
 
-<CenteredImage src="/img/inkplate_6_flick/printing_text_custom_font.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
+<CenteredImage src="/img/inkplate_4_tempera/printing_text_custom_font.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
 
 <FunctionDocumentation
   functionName="inkplate.setFont()"
@@ -169,7 +169,7 @@ void loop()
 }
 ```
 
-<CenteredImage src="/img/inkplate_6_flick/printing_text_textbox.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
+<CenteredImage src="/img/inkplate_4_tempera/printing_text_textbox.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
 
 <FunctionDocumentation
   functionName="inkplate.drawTextBox()"
@@ -195,7 +195,7 @@ void loop()
 Check out the full examples:
 
 <QuickLink 
-  title="Inkplate6FLICK_TextBox.ino" 
+  title="Inkplate4TEMPERA_TextBox.ino" 
   description="This example will show you how to use the TextBox function with and without special parameters"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/Other/Inkplate6FLICK_TextBox" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/Other/Inkplate4TEMPERA_TextBox" 
 />

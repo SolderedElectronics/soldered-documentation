@@ -1,7 +1,7 @@
 ---  
-slug: /inkplate/6flick/rtc/alarm  
+slug: /inkplate/4tempera/rtc/alarm  
 title: RTC alarm  
-id: 6flick-rtc-alarm  
+id: 4tempera-rtc-alarm  
 ---
 
 The onboard RTC supports creating an alarm that triggers at a specific time, allowing the firmware to detect and respond accordingly. Alarms can be configured to trigger once per day, per hour, or per minute.

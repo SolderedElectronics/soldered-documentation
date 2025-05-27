@@ -1,7 +1,7 @@
 ---
-slug: /inkplate/6flick/rtc/basics
+slug: /inkplate/4tempera/rtc/basics
 title: RTC basics
-id: 6flick-rtc-basics
+id: 4tempera-rtc-basics
 hide_title: true
 ---
 <SectionTitle title="RTC basics" backgroundImage="/img/rtc.png" />
