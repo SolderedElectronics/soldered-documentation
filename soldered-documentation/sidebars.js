@@ -191,6 +191,136 @@ const sidebars = {
           ]
         },
         {
+        type: 'category',
+          label: 'Inkplate 6',
+          items: [
+            {
+              type: 'doc',
+              id: 'inkplate/6/quick-start-guide',
+            },
+            {
+            type: 'category',
+            label: 'Hardware',
+            items: [
+                {
+                  type: 'doc',
+                  id: 'inkplate/6/hardware/hardware-design',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6/hardware/hardware-open-source',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6/hardware/hardware-files',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6/hardware/hardware-jumpers',
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6/hardware/hardware-battery',
+                },
+            ],
+            },
+            {
+              type: 'category',
+              label: 'Arduino Library',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Basics',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/basics/init',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/basics/display-modes',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/basics/graphics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/basics/text',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/basics/partial-update',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/basics/image-converter',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'WiFi',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/wifi/wifi-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/wifi/wifi-image-from-web',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/wifi/wifi-get-post',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/wifi/wifi-https-certificate',
+                    },
+                  ]
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6/deepsleep/deep-sleep',
+                },
+                {
+                  type: 'category',
+                  label: 'MicroSD',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/microsd/microsd-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/microsd/microsd-image',
+                    },
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Real Time Clock',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/rtc/rtc-basics',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6/rtc/rtc-alarm',
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+                type: 'doc',
+                id: 'inkplate/6/faq-troubleshooting',
+            },
+          ]
+        },
+        {
           type: 'category',
           label: 'Inkplate 6COLOR',
           items: [
