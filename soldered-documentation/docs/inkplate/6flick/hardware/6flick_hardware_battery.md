@@ -2,7 +2,10 @@
 slug: /inkplate/6flick/hardware/battery
 title: Battery
 id: 6flick-hardware-battery
+hide_title: true
 ---
+
+<SectionTitle title="Battery" backgroundImage="/img/inkplate_2/hardware.png" />
 
 <WarningBox>This page contains important information about using a battery with Inkplate 6FLICK. For safety reasons, **please read this page carefully!**</WarningBox>  
 

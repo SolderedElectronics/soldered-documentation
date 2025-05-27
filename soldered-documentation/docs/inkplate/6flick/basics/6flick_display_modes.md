@@ -2,7 +2,10 @@
 slug: /inkplate/6flick/basics/basic-display-modes
 title: Display modes
 id: 6flick-display-modes
+hide_title: true
 ---
+
+<SectionTitle title="Display Modes" backgroundImage="/img/inkplate_2/hardware.png" />
 
 As mentioned on the previous page, Inkplate 6FLICK has two different display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page contains more information on both.
 

@@ -2,7 +2,10 @@
 slug: /inkplate/6flick/wifi/get-post
 title: GET & POST requests
 id: 6flick-wifi-get-post
+hide_title: true
 ---
+
+<SectionTitle title="GET & POST Requests" backgroundImage="/img/inkplate_2/hardware.png" />
 
 Now that Inkplate is connected to the internet, you will likely want to send and receive data on it from sensors, messages, and your custom APIs, etc. This page contains examples on how to send and receive data on Inkplate via the internet:
 

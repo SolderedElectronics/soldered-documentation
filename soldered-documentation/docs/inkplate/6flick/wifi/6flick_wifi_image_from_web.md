@@ -2,7 +2,10 @@
 slug: /inkplate/6flick/wifi/image-from-web
 title: Draw Image from Web
 id: 6flick-wifi-image-from-web
+hide_title: true
 ---
+
+<SectionTitle title="Displaying Web Images" backgroundImage="/img/wifi.png" />
 
 Drawing an image from the web on Inkplate 6FLICK is simple using the `draw` function, which supports multiple image formats.
 

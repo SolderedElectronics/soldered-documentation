@@ -2,7 +2,10 @@
 slug: /inkplate/6flick/hardware/open-source-files
 title: Hardware files
 id: 6flick-hardware-files
+hide_title: true
 ---
+
+<SectionTitle title="Hardware Files" backgroundImage="/img/inkplate_2/hardware.png" />
 
 The **hardware repositories** for Inkplate 6FLICK hardware files can be found at the following links:
 
