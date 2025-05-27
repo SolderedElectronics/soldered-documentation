@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/peripherals/leds
-title: 6Motion - RGB LEDs
+title: "Inkplate \u2013 6Motion Peripherals LEDs"
 id: 6motion-periph-wsled
 ---
-
-
 The **Inkplate 6 MOTION** includes **two WS2812 RGB LEDs**, allowing full-color control for notifications, status indicators, or creative lighting effects.
 
 <InfoBox>The **WS2812** implementation in the Inkplate library uses this library from **Adafruit**:<QuickLink 

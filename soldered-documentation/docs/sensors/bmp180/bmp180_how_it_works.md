@@ -1,10 +1,9 @@
 ---
-slug: /bmp180/how-it-works 
-title: How it works
-id: bmp180-how-it-works 
-hide_title: False
----  
-
+slug: /bmp180/how-it-works
+title: "BMP180 Pressure & temperature sensor \u2013 How it works"
+id: bmp180-how-it-works
+hide_title: false
+---
 BMP180 is an integrated circuit by **Bosch**. When using our board, you are essentially communicating with the onboard BMP180 directly via **I2C communication**.
 
 <CenteredImage src="/img/bmp180/bmp180_onboard.jpg" alt="BMP180 sensor on board" caption="BMP180 sensor on the board" width="400px" />

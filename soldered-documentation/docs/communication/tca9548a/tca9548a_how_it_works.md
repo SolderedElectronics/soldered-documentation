@@ -1,10 +1,9 @@
 ---
-slug: /tca9548a/how-it-works 
-title: How it works
-id: tca9548a-how-it-works 
-hide_title: False
----  
-
+slug: /tca9548a/how-it-works
+title: "TCA9548A I2C multiplexer \u2013 How it works"
+id: tca9548a-how-it-works
+hide_title: false
+---
 The **I2C multiplexer breakout board** works and communicates thanks to the **TCA9548A** chip by [**Texas Instruments**](https://www.ti.com/product/TCA9548A?dcmp=dsproject&hqs=pf).
 The **TCA9548A chip** enables communication between a microcontroller and up to **eight I2C devices** with identical addresses. This is achieved by multiplexing the I2C bus, allowing the microcontroller to communicate with one device at a time by selecting its corresponding channel.
 

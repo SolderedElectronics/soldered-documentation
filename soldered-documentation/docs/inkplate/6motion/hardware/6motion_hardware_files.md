@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/hardware/open-source-files
-title: 6Motion - Hardware files
+title: "Inkplate \u2013 6Motion Hardware Open Source Files"
 id: 6motion-hardware-files
 ---
-
-
 The **hardware repositories** for Inkplate 6 MOTION hardware files can be found on these links:
 
 <QuickLink 

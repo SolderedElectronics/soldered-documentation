@@ -1,10 +1,9 @@
 ---
 slug: /gnss-gps/arduino/getting-started
-title: Gnss Gps - Getting started
+title: "Gnss Gps L86-M33 \u2013 Arduino getting started"
 id: gnss-gps-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

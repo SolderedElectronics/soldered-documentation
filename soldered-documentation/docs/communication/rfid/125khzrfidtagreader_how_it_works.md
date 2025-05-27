@@ -1,10 +1,9 @@
 ---
-slug: /rfid/how-it-works 
-title: How it works
-id: 125khzrfidtagreader-how-it-works 
-hide_title: False
----  
-
+slug: /rfid/how-it-works
+title: "125kHz RFID Reader \u2013 How it works"
+id: 125khzrfidtagreader-how-it-works
+hide_title: false
+---
 The **125kHz RFID Tag Reader Board** is a compact and efficient module designed for reading RFID tags operating at 125kHz. It is ideal for applications such as access control, personal identification, security systems, and interactive projects. It operates using its **ATTINY1604 chip** to read cards.
 
 <CenteredImage src="/img/rfid/RFID_chip.jpg" alt="ATTINY1604 chip on the board" caption="ATTINY1604 chip on the board" width="400px" /> 

@@ -1,10 +1,9 @@
 ---
 slug: /slider-potentiometer/hardware
-title: Slider Potentiometer - Hardware details
+title: "Slider Potentiometer \u2013 Hardware details"
 id: slider-potentiometer-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>

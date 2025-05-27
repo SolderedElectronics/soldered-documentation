@@ -1,11 +1,8 @@
 ---
 slug: /inkplate/6motion/peripherals/apds9960
-title: 6Motion - Gesture and proximity sensor
+title: "Inkplate \u2013 6Motion Peripherals APDS9960"
 id: 6motion-periph-apds9960
 ---
-
-
-
 The **APDS9960** sensor enables **gesture recognition, proximity sensing, ambient light detection, and color sensing**. It's located on the front of your Inkplate 6 MOTION, at the top edge of the PCB. It's usages can be navigating user menus with gestures or detecting if someone is in front of Inkplate, is the light in the room on or off etc.
 
 <CenteredImage src="/img/inkplate_6_motion/6motion_apds9960.jpg" alt="APDS9960 gesture and proximity sensor on the front of Inkplate 6 MOTION" caption="APDS9960 on the Inkplate 6 MOTION" width="600px" />

@@ -1,10 +1,9 @@
 ---
 slug: /pir-sensor/arduino/geting-started
-title: Pir Sensor - Getting started
+title: "PIR Movement sensor \u2013 Arduino Getting Started"
 id: pir-sensor-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library for the Qwiic version, you can download it from the GitHub repository:

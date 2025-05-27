@@ -1,10 +1,9 @@
 ---
 slug: /hx711/arduino/getting-started
-title: Hx711 - Getting started
+title: "HX711 Load Cell Amplifier \u2013 Arduino getting started"
 id: hx711-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

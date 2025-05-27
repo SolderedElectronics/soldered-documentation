@@ -1,10 +1,9 @@
 ---
 slug: /apds-9960/arduino/Initialization
-title: Apds 9960 - Initialization
+title: "Color and Gesture sensor APDS-9960 \u2013 Arduino initialization"
 id: apds-9960-arduino-2
 hide_title: false
 ---
-
 This page contains a simple example of initializing the APDS-9960 sensor.
 
 ---

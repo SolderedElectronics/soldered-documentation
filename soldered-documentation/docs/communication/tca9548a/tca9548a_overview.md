@@ -1,11 +1,10 @@
 ---
 slug: /tca9548a/overview
-title: Tca9548A - Overview
+title: "TCA9548A I2C multiplexer \u2013 Overview"
 id: tca9548a-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## TCA9548A I2C Multiplexer
 
 The **TCA9548A I2C multiplexer breakout** allows you to connect up to **eight I2C devices** with identical addresses to the same microcontroller. With three adjustable pins for the I2C address, this breakout supports up to **eight multiplexers**, enabling a total of **64 devices with identical addresses** on the same bus. It is simple to use since it communicates via **I2C communication** with a hardware-defined default address of **0x70** (which can be changed via jumpers on the board) and is designed for seamless **Qwiic (formerly easyC) connectivity**.

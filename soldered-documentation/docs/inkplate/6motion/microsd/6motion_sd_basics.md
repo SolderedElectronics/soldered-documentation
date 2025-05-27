@@ -1,11 +1,9 @@
 ---
 slug: /inkplate/6motion/microsd/sd-basics
-title: 6Motion - MicroSD basics
+title: "Inkplate \u2013 6Motion MicroSD SD Basics"
 id: 6motion-microsd-basics
 hide_title: true
 ---
-
-
 <SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
 
 The built-in microSD card slot on Inkplate 6 MOTION can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSDs card slot.

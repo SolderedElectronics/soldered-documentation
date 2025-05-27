@@ -1,10 +1,9 @@
 ---
 slug: /simple-sensor/simple-soil-humidity-sensor/arduino_library/ragular-example
-title: Simple Sensor - Measuring and detectiing humidity with regular sensor (example)
+title: "Simple Soil Humidity Sensor \u2013 Library Ragular Example"
 id: simple-soil-humidity-sensor-arduino-2
 hide_title: false
 ---
-
 This page contains a simple example with function documentation on how to detect and measure humidity of the soil using the sensor.
 
 ---

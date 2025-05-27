@@ -1,11 +1,10 @@
 ---
 slug: /rs-232/arduino/troubleshooting
-title: Rs 232 - Troubleshooting
+title: "RS-232 Transceiver \u2013 Arduino troubleshooting"
 id: rs-232-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="The RS-232 communication won't initialize!">

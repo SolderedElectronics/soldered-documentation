@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/wifi/MQTT
-title: 6Motion - MQTT
+title: "Inkplate \u2013 6Motion WiFi MQTT"
 id: 6motion-wifi-mqtt
 ---
-
 Using **MQTT** on Inkplate 6 MOTION allows sending and receiving messages over the network using the lightweight MQTT protocol, commonly used for IoT applications. The following sections explain how to connect to an MQTT broker, subscribe to topics, and send or receive messages.
 
 ---

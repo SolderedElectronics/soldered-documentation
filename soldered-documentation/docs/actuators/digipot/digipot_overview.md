@@ -1,11 +1,10 @@
 ---
 slug: /digipot/overview
-title: Digipot - Overview
+title: "Digital potentiometer \u2013 Overview"
 id: digipot-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Digital potentiometer
 
 The **Digital potentiometer breakout** is a device identical to a potentiometer, except that instead of a physical rotating part that adjusts the resistance, it uses **digital communication**. The board is based on the **MCP4018** digital potentiometer. The resistance is adjusted via **I2C communication** on hardware-defied address of **0x2F**. Board is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.

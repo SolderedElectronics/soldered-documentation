@@ -1,10 +1,9 @@
 ---
 slug: /bme280/hardware
-title: Bme280 - Hardware details
+title: "BME280 Environmental sensor \u2013 Hardware details"
 id: bme280-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/bme280/bme280_pinout.jpg" alt="BME280 pinout" />

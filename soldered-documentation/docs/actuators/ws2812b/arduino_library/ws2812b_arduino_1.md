@@ -1,10 +1,9 @@
 ---
 slug: /ws2812b/arduino/geting-started
-title: Ws2812B - Getting started
+title: "WS2812B \u2013 Arduino getting started"
 id: ws2812b-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

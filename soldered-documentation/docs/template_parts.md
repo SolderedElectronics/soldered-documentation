@@ -1,10 +1,9 @@
 ---
 slug: /template-parts
-title: Template Parts - Template parts
+title: "Template Parts \u2013 Overview"
 id: template-parts
 hide_title: false
 ---
-
 Hi! You've found the secret **template parts** page! This page contains code snippets of React elements specifically made for this documentation! Let's get started:
 
 ---

@@ -1,11 +1,10 @@
 ---
 slug: /pcf85063a/overview
-title: Pcf85063A - Overview
+title: "PCF85063A RTC \u2013 Overview"
 id: pcf85063a-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## PCF85063A Real-time clock
 
 The **PCF85063A Real-time clock** is a device that carefully and precisely tracks time and dates. It is extremely precise, making it more suitable for long-term time tracking than the clocks found on microcontrollers. This breakout can operate on extremely low current, and thanks to its **alarm feature** and **interrupt pin**, it allows a microcontroller to enter sleep mode until it is awakened by this RTC.

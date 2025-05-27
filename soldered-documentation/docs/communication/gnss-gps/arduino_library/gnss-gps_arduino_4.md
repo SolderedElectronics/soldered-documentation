@@ -1,11 +1,10 @@
 ---
 slug: /gnss-gps/arduino/troubleshooting
-title: Gnss Gps - Troubleshooting
+title: "Gnss Gps L86-M33 \u2013 Arduino troubleshooting"
 id: gnss-gps-arduino-4
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some helpful tips if you are having problems using your L86-M33 GNSS GPS module.
 
 <ExpandableSection title="My GPS module won't initialize!">

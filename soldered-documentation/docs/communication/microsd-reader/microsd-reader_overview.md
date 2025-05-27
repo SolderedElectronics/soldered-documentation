@@ -1,11 +1,10 @@
 ---
 slug: /microsd-reader/overview
-title: Microsd Reader - Overview
+title: "MicroSD Card Reader \u2013 Overview"
 id: microsd-reader-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## microSD card reader
 
 The **microSD card reader** is a module that enables you to use micro SD cards with Arduino via **SPI communication**. You can save various types of data on the SD card, create logs, retrieve information, or perform various actions. The SD card module allows you to connect an SD card of **up to 32GB** to Dasduino, enabling you to store important data for later processing on a computer or reuse on Dasduino.

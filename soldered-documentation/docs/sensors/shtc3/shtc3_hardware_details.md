@@ -1,10 +1,9 @@
 ---
 slug: /shtc3/hardware
-title: Shtc3 - Hardware details
+title: "Temperature and humidity sensor SHTC3 \u2013 Hardware details"
 id: shtc3-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>

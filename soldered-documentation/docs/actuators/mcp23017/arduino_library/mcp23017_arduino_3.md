@@ -1,11 +1,10 @@
 ---
 slug: /mcp23017/arduino/troubleshooting
-title: Mcp23017 - Troubleshooting
+title: "MCP23017 IO expander \u2013 Arduino troubleshooting"
 id: mcp23017-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My board won't initialize!">

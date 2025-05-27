@@ -1,10 +1,9 @@
 ---
 slug: /bmp180/arduino/calculating-altitude
-title: Bmp180 - Calculating altitude
+title: "BMP180 Pressure & temperature sensor \u2013 Arduino calculating altitude"
 id: bmp180-arduino-6
 hide_title: false
 ---
-
 Altitude can be calculated by measuring the pressure, knowing the baseline pressure, and then using the `altitude()` function.
 
 <WarningBox>To calculate altitude, you should have a recent reading of the pressure at sea level for your location. Without it, the values will be very inaccurate.</WarningBox>

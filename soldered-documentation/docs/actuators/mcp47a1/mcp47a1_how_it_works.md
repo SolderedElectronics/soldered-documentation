@@ -1,10 +1,9 @@
 ---
-slug: /mcp47a1/how-it-works 
-title: How it works
-id: mcp47a1-how-it-works 
-hide_title: False
----  
-
+slug: /mcp47a1/how-it-works
+title: "MCP47A1 DAC \u2013 How it works"
+id: mcp47a1-how-it-works
+hide_title: false
+---
 The MCP47A1 is an integrated circuit by [**Microchip Technology**]. When using our board, you are essentially communicating with the onboard MCP47A1 directly via **I2C communication**.
 
 <CenteredImage src="/img/mcp47a1/onboard.webp" alt="MCP47A1 sensor on board" caption="MCP47A1 sensor on the board" width="400px" />

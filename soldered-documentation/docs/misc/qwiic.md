@@ -1,12 +1,11 @@
 ---
 slug: /qwiic
-title: Qwiic - Qwiic (formerly easyC)
+title: "Qwiic \u2013 Overview"
 id: qwiic
 hide_title: false
 pagination_next: null
 pagination_prev: null
 ---
-
 ## What's Qwiic?
 
 <CenteredImage src="/img/easyc-about.png" alt="Qwiic (formerly easyC) demonstration" width="350px" />

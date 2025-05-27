@@ -1,10 +1,9 @@
 ---
 slug: /simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-hardware
-title: Simple Sensor - Hardware details
+title: "Simple Soil Humidity Sensor \u2013 Hardware Details"
 id: simple-soil-humidity-sensor-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/simple-sensor/simple-soil-humidity-sensor/333040_pinout.jpg" alt="Pinout" />

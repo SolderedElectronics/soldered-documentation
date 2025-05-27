@@ -1,6 +1,6 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/arduino_library/qwiic-example
-title: Simple Sensor - Measuring and detecting moisture with regular rain sensor (example)
+title: "Simple Rain Sensor \u2013 Library Qwiic example"
 id: simple-rain-sensor-arduino-3
 hide_title: false
 ---

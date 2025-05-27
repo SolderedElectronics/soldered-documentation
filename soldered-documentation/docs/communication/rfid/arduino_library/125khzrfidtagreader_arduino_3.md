@@ -1,10 +1,9 @@
 ---
 slug: /rfid/arduino/i2c_examples
-title: Rfid - 125kHz RFID tag reader board (Qwiic) - reading example
+title: "125kHz RFID Reader \u2013 Arduino I2C Examples"
 id: 125khzrfidtagreader-arduino-3
 hide_title: false
 ---
-
 This page contains some simple examples with function documentation on how to use the **125kHz RFID Tag Reader Board (I2C)**.
 
 ## Initialization

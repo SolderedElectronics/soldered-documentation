@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/basics/printing-text
-title: 6Motion - Printing Text
+title: "Inkplate 6Motion \u2013 Printing Text"
 id: 6motion-text
 ---
-
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts.
 
 <InfoBox>For complete examples of text printing, most Arduino projects in the [**library**](https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/tree/main/examples/Inkplate6Motion) include some form of text output.</InfoBox>

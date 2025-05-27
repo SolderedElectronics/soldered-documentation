@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/basics/drawing-graphics
-title: 6Motion - Drawing graphics
+title: "Inkplate 6Motion \u2013 Drawing Graphics"
 id: 6motion-graphics
 ---
-
 Inkplate 6 MOTION allows you to draw graphics on a **1024x758px canvas**.
 
 <InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate MOTION library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 

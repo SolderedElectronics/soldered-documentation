@@ -1,10 +1,9 @@
 ---
 slug: /bmp180/arduino/measuring-temperature
-title: Bmp180 - Measuring temperature
+title: "BMP180 Pressure & temperature sensor \u2013 Arduino measuring temperature"
 id: bmp180-arduino-4
 hide_title: false
 ---
-
 <WarningBox>This library uses the char value to return error codes and delay values in the form of numbers. While the char type may seem unintuitive for returning numbers, the char data type is essentially an 8-bit unsigned integer.</WarningBox>
 
 To get temperature values, first call the `startTemperature()` function to begin a reading, and then, after a short delay, retrieve the value of that reading using the `getTemperature()` function.

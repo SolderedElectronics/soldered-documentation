@@ -1,14 +1,13 @@
 ---
 slug: /ltr-507/overview
-title: Ltr 507 - Overview
+title: "LTR-507 Light and Proximity Sensor \u2013 Overview"
 id: ltr-507-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## LTR-507
 
-The LTR-507 Breakout board offers precise **ambient light (ALS)** and **proximity (PS)** measurements, transmitting data via **I2C communication** for easy integration with microcontrollers such as **Dasduino**. The device supports an interrupt feature that eliminates the need to poll the sensor for a reading, thereby improving system efficiency.
+The **LTR-507 Breakout board** offers precise **ambient light (ALS)** and **proximity (PS)** measurements, transmitting data via **I2C communication** for easy integration with microcontrollers such as **Dasduino**. The device supports an interrupt feature that eliminates the need to poll the sensor for a reading, thereby improving system efficiency.
 
 <CenteredImage src="/img/ltr-507/333063.png" alt="ltr-507 sensor" caption="LTR-507 Light and Proximity Sensor"/>
 

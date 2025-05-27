@@ -1,10 +1,9 @@
 ---
 slug: /relay/hardware
-title: Relay - Hardware details
+title: "Relay Board \u2013 Hardware details"
 id: relay-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/relay/333021_pinout.jpg" alt="Pinout" />

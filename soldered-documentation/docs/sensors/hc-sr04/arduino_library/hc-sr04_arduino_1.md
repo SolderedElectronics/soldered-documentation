@@ -1,10 +1,9 @@
 ---
 slug: /hc-sr04/arduino/geting-started
-title: Hc Sr04 - Getting started
+title: "HC-SR04 ultrasonic sensor \u2013 Arduino Getting Started"
 id: hc-sr04-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

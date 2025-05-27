@@ -1,11 +1,10 @@
 ---
 slug: /relay/arduino/Qwiic-example
-title: Relay - Switching the relay (Qwiic example)
+title: "Relay Board \u2013 Arduino qwiic example"
 id: relay-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains a simple example with function documentation on how to control the 1 channel relay board using Qwiic conncetion.
 
 ## Code example for 1 channel 

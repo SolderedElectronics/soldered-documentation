@@ -1,10 +1,9 @@
 ---
 slug: /stepper-motor-driver/hardware
-title: Stepper Motor Driver - Hardware details
+title: "Stepper motor driver \u2013 Hardware details"
 id: stepper-motor-driver-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/stepper-motor-driver/333134_pinout.jpg" alt="Pinout" />

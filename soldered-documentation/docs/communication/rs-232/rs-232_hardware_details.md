@@ -1,10 +1,9 @@
 ---
 slug: /rs-232/hardware
-title: Rs 232 - Hardware details
+title: "RS-232 Transceiver \u2013 Hardware details"
 id: rs-232-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/rs-232/pinout.jpg" alt="RS-232 transceiver pinout diagram" caption="RS-232 transceiver pinout diagram"/>

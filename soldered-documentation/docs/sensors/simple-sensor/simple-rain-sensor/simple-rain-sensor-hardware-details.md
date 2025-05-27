@@ -1,10 +1,9 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/simple-rain-sensor-hardware
-title: Simple Sensor - Hardware details
+title: "Simple Rain Sensor \u2013 Hardware Details"
 id: simple-rain-sensor-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/simple-sensor/simple-rain-sensor/333043_pinout.jpg" alt="Pinout" />

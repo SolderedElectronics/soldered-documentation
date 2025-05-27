@@ -1,6 +1,6 @@
 ---
 slug: /slider-potentiometer/overview
-title: Slider Potentiometer - Overview
+title: "Slider Potentiometer \u2013 Overview"
 id: slider-potentiometer-overview
 hide_title: false
 pagination_prev: null

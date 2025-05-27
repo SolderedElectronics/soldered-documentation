@@ -1,10 +1,9 @@
 ---
 slug: /led-matrix/arduino/geting-started
-title: Arduino - Getting started
+title: "LED Matrix \u2013 Arduino Getting Started"
 id: led-matrix-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

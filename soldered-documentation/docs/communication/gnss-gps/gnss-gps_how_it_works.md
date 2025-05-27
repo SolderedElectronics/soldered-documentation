@@ -1,10 +1,9 @@
 ---
-slug: /gnss-gps/how-it-works 
-title: How it works
-id: gnss-gps-how-it-works 
-hide_title: False
----  
-
+slug: /gnss-gps/how-it-works
+title: "Gnss Gps L86-M33 \u2013 How it works"
+id: gnss-gps-how-it-works
+hide_title: false
+---
 The **L86-M33** is a highly compact and energy-efficient **GNSS module** that supports **GPS, GLONASS, and Galileo** satellite systems. Designed for applications requiring precise positioning, the L86-M33 includes advanced features such as **EASY™ (Embedded Assist System)**, **AlwaysLocate™**, and an integrated **LOCUS™ data logger**.
 
 <CenteredImage src="/img/gnss-gps/onboard.png" alt="HX711 Standard Board" caption="GNSS GPS L86-M33" width="500px" />

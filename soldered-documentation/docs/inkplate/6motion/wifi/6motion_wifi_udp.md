@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/wifi/udp
-title: 6Motion - UDP
+title: "Inkplate \u2013 6Motion WiFi UDP"
 id: 6motion-wifi-udp
 ---
-
 It's possible to use UDP servers to easily retrieve the current time, which is useful for displaying timestamps, scheduling requests, or enabling/disabling display updates during certain hours.
 
 <InfoBox>If you prefer, you can also use regular APIs like [**timeapi**](https://timeapi.io/).</InfoBox>

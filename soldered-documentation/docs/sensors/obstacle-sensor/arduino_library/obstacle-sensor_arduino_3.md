@@ -1,6 +1,6 @@
 ---
 slug: /obstacle-sensor/arduino/troubleshooting
-title: Obstacle Sensor - Troubleshooting
+title: "Obstacle Sensor \u2013 Arduino troubleshooting"
 id: obstacle-sensor-arduino-3
 hide_title: false
 pagination_next: null

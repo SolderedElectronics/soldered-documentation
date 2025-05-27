@@ -1,11 +1,10 @@
 ---
 slug: /joystick/arduino/troubleshooting
-title: Joystick - Troubleshooting
+title: "Joystick 2-axis with pushbutton \u2013 Arduino troubleshooting"
 id: joystick-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My board isn't working">

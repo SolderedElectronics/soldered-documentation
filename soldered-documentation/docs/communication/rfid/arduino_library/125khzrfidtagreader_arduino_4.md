@@ -1,6 +1,6 @@
 ---
 slug: /125khzrfidtagreader/arduino/troubleshooting
-title: 125Khzrfidtagreader - Troubleshooting
+title: "125kHz RFID Reader \u2013 Arduino troubleshooting"
 id: 125khzrfidtagreader-arduino-4
 hide_title: false
 pagination_next: null

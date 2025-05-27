@@ -1,10 +1,9 @@
 ---
 slug: /lcd-i2c/hardware
-title: Lcd I2C - Hardware details
+title: "LCD I2C Adapter \u2013 Hardware details"
 id: lcd-i2c-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/lcd-i2c/lcd-i2c_pinout.png" alt="lcd-i2c pinout diagram" caption="LCD-I2C pinout diagram"/>

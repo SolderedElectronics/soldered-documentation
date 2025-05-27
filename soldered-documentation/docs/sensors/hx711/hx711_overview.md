@@ -1,14 +1,13 @@
 ---
 slug: /hx711/overview
-title: Hx711 - Overview
+title: "HX711 Load Cell Amplifier \u2013 Overview"
 id: hx711-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## HX711 Load Cell Amplifier
 
-The HX711 Load Cell Amplifier is a highly efficient and precise module designed to interface with load cells for **weight measurement applications**. Ideal for use in **digital weighing scales**, **industrial automation**, and **force measurement systems**, the HX711 amplifies the small signal from a load cell and converts it to a digital output. Featuring **high-resolution 24-bit A/D conversion**, it provides **accurate** and **stable readings**, even with **low-power operations**.
+The **HX711 Load Cell Amplifier** is a highly efficient and precise module designed to interface with load cells for **weight measurement applications**. Ideal for use in **digital weighing scales**, **industrial automation**, and **force measurement systems**, the HX711 amplifies the small signal from a load cell and converts it to a digital output. Featuring **high-resolution 24-bit A/D conversion**, it provides **accurate** and **stable readings**, even with **low-power operations**.
 
 <CenteredImage src="/img/hx711/333005.png" alt="Load-cell amplifier HX711 board" caption="Load-cell amplifier HX711 board" />
 

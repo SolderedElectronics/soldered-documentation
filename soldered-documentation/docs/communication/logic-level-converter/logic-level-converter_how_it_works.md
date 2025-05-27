@@ -1,10 +1,9 @@
 ---
 slug: /logic-level-converter/how-it-works
-title: Logic Level Converter - How it works
+title: "Logic Level Converter \u2013 How it works"
 id: logic-level-converter-how-it-works
 hide_title: false
 ---
-
 The Logic Level Converter Board by [**Soldered**](https://soldered.com/product/logic-level-converter-board/) enables safe voltage level shifting between 3.3V and 5V logic systems, facilitating communication between devices with differing voltage requirements. Using **MOSFETs** (Metal-Oxide-Semiconductor Field-Effect Transistor) for **bidirectional signal conversion**, the board supports multiple communication protocols, including **I2C**, **SPI**, and **UART**.
 
 <CenteredImage src="/img/logic-level-converter/llc_mosfetsonboard.png" alt="llc_howitworks" caption="MOSFETs on the Logic Level Converter board" width="500px" />

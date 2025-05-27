@@ -1,11 +1,10 @@
 ---
 slug: /adc/arduino/troubleshooting
-title: Adc - Troubleshooting
+title: "Analog to Digital Converter \u2013 Arduino troubleshooting"
 id: adc-arduino-5
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips if you are having problems using the **1015** or **1115** ADCs.
 
 <ExpandableSection title="My ADC won't initialize!">

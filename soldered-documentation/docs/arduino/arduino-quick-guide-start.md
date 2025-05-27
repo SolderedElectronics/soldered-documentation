@@ -1,11 +1,10 @@
 ---
 slug: /arduino/quick-start-guide
-title: Arduino - Arduino Quick Start Guide
+title: "Arduino \u2013 Quick Start Guide"
 id: arduino-quick-start-guide
 hide_title: false
 pagination_prev: null
 ---
-
 To get started with Arduino, complete a few simple steps to install the required software.
 
 ---

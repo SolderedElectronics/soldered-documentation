@@ -1,15 +1,14 @@
 ---
-slug: /slider-potentiometer/arduino-3
-title: Slider Potentiometer - Reading Slider Potentiometer (Qwiic version)
+slug: /slider-potentiometer/initialization-QWIIC-version
+title: "Slider Potentiometer \u2013 Initialization QWIIC version"
 id: slider-potentiometer-arduino-3
 hide_title: false
 ---
-
 This page contains simple examples illustrating how to take analog slider measurements using the Slider Potentiometer with Qwiic.
 
 ---
 
-## Initialization
+## Initialization QWIIC version
 
 To start using the **Slider Potentiometer Breakout**, you need to connect it to your microcontroller. The potentiometer acts as a voltage divider, and its output can be read through an analog pin on your microcontroller.
 

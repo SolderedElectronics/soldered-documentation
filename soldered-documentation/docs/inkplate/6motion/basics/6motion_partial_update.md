@@ -1,10 +1,9 @@
 ---
 slug: /inkplate/6motion/basics/partial-update
-title: 6Motion - Partial Update
+title: "Inkplate 6Motion \u2013 Partial Update"
 id: 6motion-partial-update
 hide_title: true
 ---
-
 <SectionTitle title="Partial Updates" backgroundImage="img/partial_update.jpg" />
 
 Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a faster display refresh. This prevents full-screen flickering, updating only the pixels that have changed in the frame buffer.

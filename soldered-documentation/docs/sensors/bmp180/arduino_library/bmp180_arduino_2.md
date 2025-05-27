@@ -1,10 +1,9 @@
 ---
 slug: /bmp180/arduino/initialization
-title: Bmp180 - Initialization
+title: "BMP180 Pressure & temperature sensor \u2013 Arduino initialization"
 id: bmp180-arduino-2
 hide_title: false
 ---
-
 This page contains some simple examples with function documentation on how to take measurements using the BMP180 temperature and pressure sensor.
 
 ---

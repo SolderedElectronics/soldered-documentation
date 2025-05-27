@@ -1,10 +1,9 @@
----  
-slug: /ssd1306/arduino/writing-text  
-title: Writing text  
-id: ssd1306-arduino-4   
-hide_title: False  
 ---
-
+slug: /ssd1306/arduino/writing-text
+title: "SSD1306 \u2013 Arduino writing text"
+id: ssd1306-arduino-4
+hide_title: false
+---
 To write text onto the display, you must define the text size, color, and the starting coordinate from which the text will be drawn onto the display.
 
 ```cpp

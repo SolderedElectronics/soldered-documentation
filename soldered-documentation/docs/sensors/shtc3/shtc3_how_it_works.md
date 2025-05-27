@@ -1,10 +1,9 @@
 ---
-slug: /shtc3/how-it-works 
-title: How it works
-id: shtc3-how-it-works 
-hide_title: False
----  
-
+slug: /shtc3/how-it-works
+title: "Temperature and humidity sensor SHTC3 \u2013 How it works"
+id: shtc3-how-it-works
+hide_title: false
+---
 SHTC3 is an integrated circuit by [**Sensirion**](https://sensirion.com/products/catalog/SHTC3). When using our board, you are essentially communicating with the onboard SHTC3 directly via **I2C communication**.
 
 <CenteredImage src="/img/shtc3/shtc3_onboard.png" alt="SHTC3 sensor on board" caption="SHTC3 sensor on the board" width="400px" />

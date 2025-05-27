@@ -1,6 +1,6 @@
 ---
 slug: /simple-sensor/simple-soil-humidity-sensor/arduino_library/qwiic-example
-title: Simple Sensor - Measuring and detectiing humidity with regular sensor (example)
+title: "Simple Soil Humidity Sensor \u2013 Library Qwiic Example"
 id: simple-soil-humidity-sensor-arduino-3
 hide_title: false
 ---

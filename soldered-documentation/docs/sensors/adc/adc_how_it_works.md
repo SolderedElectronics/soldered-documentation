@@ -1,10 +1,9 @@
 ---
-slug: /adc/how-it-works 
-title: How it works
-id: adc-how-it-works 
-hide_title: False
----  
-
+slug: /adc/how-it-works
+title: "Analog to Digital Converter \u2013 How it works"
+id: adc-how-it-works
+hide_title: false
+---
 The ADS1015/ADS1115 are low-power, high-precision 12-bit (ADS1015) and 16-bit (ADS1115) analog-to-digital converters manufactured by [**Texas Instruments**](https://eu.mouser.com/c/semiconductors/data-converter-ics/analog-to-digital-converters-adc/?q=ads1015&m=Texas%20Instruments) with programmable gain and an integrated I2C interface, offering easy integration for accurate analog signal conversion in embedded systems.
 
 <CenteredImage src="/img/adc/onboard.png" alt="adc on board" caption="ADC 12-bit ADS1015 on board" width="500px" />

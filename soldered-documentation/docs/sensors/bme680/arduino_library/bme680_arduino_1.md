@@ -1,10 +1,9 @@
 ---
 slug: /bme680/arduino/geting-started
-title: Bme680 - Getting started
+title: "BME680 Environmental & air quality sensor \u2013 Arduino Getting Started"
 id: bme680-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

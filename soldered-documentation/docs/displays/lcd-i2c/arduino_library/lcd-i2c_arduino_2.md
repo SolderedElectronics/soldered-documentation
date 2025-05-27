@@ -1,10 +1,9 @@
 ---
 slug: /lcd-i2c/arduino/examples
-title: Lcd I2C - Basic Examples
+title: "LCD I2C Adapter \u2013 Arduino examples"
 id: lcd-i2c-arduino-2
 hide_title: false
 ---
-
 This page contains some simple examples with function documentation on how to use the LCD display in different ways.
 
 ---

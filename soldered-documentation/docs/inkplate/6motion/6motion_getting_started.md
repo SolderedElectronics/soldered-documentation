@@ -1,10 +1,9 @@
 ---
 slug: /inkplate/6motion/quick-start-guide
-title: 6Motion - Quick start guide
+title: "Inkplate \u2013 6motion Quick Start Guide"
 id: 6motion-quick-start-guide
 hide_title: true
 ---
-
 <SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
 
 To get started with Arduino on Inkplate 6 MOTION, a few simple steps need to be completed to install the required software.

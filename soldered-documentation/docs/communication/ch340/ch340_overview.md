@@ -1,11 +1,10 @@
 ---
 slug: /ch340/overview
-title: Ch340 - Overview
+title: "Ch340 \u2013 Overview"
 id: ch340-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## USB-UART CH340 Converter Board
 
 The **USB-UART CH340 Converter Board** is a **compact and reliable** solution for **serial communication** between computers and microcontroller-based projects. It enables **USB-to-serial conversion**, making it an essential tool for **programming, debugging, and data exchange** in embedded systems. With its **CH340 chip**, it provides a cost-effective and widely compatible alternative to FTDI-based converters, supporting multiple baud rates and **plug-and-play functionality** across various operating systems.

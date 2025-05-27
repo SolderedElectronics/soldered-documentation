@@ -1,11 +1,10 @@
 ---
 slug: /adc/overview
-title: Adc - Overview
+title: "Analog to Digital Converter \u2013 Overview"
 id: adc-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Analog to Digital Converter
 
 An **Analog to Digital Converter (ADC)** is a device that reads analog signals—similar to the `analogRead()` function in the Arduino IDE—and converts them into digital signals that can be processed by a microcontroller.

@@ -1,10 +1,9 @@
 ---
 slug: /mcp47a1/hardware
-title: Mcp47A1 - Hardware details
+title: "MCP47A1 DAC \u2013 Hardware details"
 id: mcp47a1-hardware
 hide_title: false
 ---
-
 <CenteredImage src="/img/mcp47a1/pinout.png" alt="Pinout" />
 
 Click [**here**](/img/mcp47a1/pinout.png) for a high-resolution image of the pinout.

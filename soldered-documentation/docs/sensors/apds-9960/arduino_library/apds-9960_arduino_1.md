@@ -1,10 +1,9 @@
----  
-slug: /apds-9960/arduino/geting-started  
-title: Getting started  
-id: apds-9960-arduino-1  
-hide_title: False  
 ---
-
+slug: /apds-9960/arduino/geting-started
+title: "Color and Gesture sensor APDS-9960 \u2013 Arduino geting started"
+id: apds-9960-arduino-1
+hide_title: false
+---
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:  

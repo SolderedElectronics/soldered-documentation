@@ -1,11 +1,10 @@
 ---
 slug: /ws2812b/overview
-title: Ws2812B - Overview
+title: "WS2812B \u2013 Overview"
 id: ws2812b-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Smart LED WS2812B
 
 The **Smart LED WS2812B** is a **highly versatile LED strip** featuring individually addressable RGB LEDs capable of displaying millions of colors. With an operating voltage of **5V**, this strip offers seamless control through the **Arduino Library**, making it perfect for creative lighting projects, decorative displays, and DIY electronics. Compatible with popular microcontrollers like **Dasduino**, it provides **precise control** of each LED, allowing for complex animations and lighting effects.

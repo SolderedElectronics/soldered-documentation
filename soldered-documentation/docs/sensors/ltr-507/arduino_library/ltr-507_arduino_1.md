@@ -1,10 +1,9 @@
 ---
 slug: /ltr-507/arduino/getting-started
-title: Ltr 507 - Getting started
+title: "LTR-507 Light and Proximity Sensor \u2013 Arduino getting started"
 id: ltr-507-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

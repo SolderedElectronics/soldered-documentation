@@ -1,10 +1,9 @@
 ---
-slug: /slider-potentiometer/arduino-1
-title: Slider Potentiometer - Getting Started
+slug: /slider-potentiometer/arduino-library
+title: "Slider Potentiometer \u2013 Arduino library"
 id: slider-potentiometer-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

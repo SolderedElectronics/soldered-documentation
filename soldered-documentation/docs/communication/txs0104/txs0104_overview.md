@@ -1,11 +1,10 @@
 ---
 slug: /txs0104/overview
-title: Txs0104 - Overview
+title: "Logic Level Converter TXS0104 \u2013 Overview"
 id: txs0104-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Logic Level Converter I2C TXS0104
 
 This board is specialized in signal conversion for the **I2C communication protocol**. It uses a special integrated circuit that enables high-speed communication.

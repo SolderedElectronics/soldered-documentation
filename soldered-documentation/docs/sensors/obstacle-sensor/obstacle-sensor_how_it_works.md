@@ -1,10 +1,9 @@
 ---
-slug: /obstacle-sensor/how-it-works 
-title: How it works
-id: obstacle-sensor-how-it-works 
-hide_title: False
----  
-
+slug: /obstacle-sensor/how-it-works
+title: "Obstacle Sensor \u2013 How it works"
+id: obstacle-sensor-how-it-works
+hide_title: false
+---
 This board utilizes **TCRT5000 infrared reflective sensor** by [**Vishay**](https://www.digikey.gr/en/products/detail/vishay-semiconductor-opto-division/TCRT5000/1681167) to detect the presence of objects or colors. To make it easier to use, this board employs a preprogrammed **ATTiny404 IC** for binary output and **I2C communication**.
 
 <CenteredImage src="/img/obstacle-sensor/333004_TCRT5000_highlighted.jpg" alt="TCRT5000 IR sensor on board" caption="TCRT5000 IR sensor on board" width="400px" />

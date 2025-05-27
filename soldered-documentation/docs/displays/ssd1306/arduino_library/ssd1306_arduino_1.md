@@ -1,10 +1,9 @@
 ---
 slug: /ssd1306/arduino/geting-started
-title: Ssd1306 - Getting started
+title: "SSD1306 \u2013 Arduino geting started"
 id: ssd1306-arduino-1
 hide_title: false
 ---
-
 This page provides the essential information for getting started, including board and library installation and wiring the breakout board to your microcontroller.
 
 ---

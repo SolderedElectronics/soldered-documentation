@@ -1,11 +1,10 @@
 ---
 slug: /rotary-encoder/arduino/troubleshooting
-title: Rotary Encoder - Troubleshooting
+title: "Rotary Encoder \u2013 Arduino troubleshooting"
 id: rotary-encoder-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My encoder won't initialize!">

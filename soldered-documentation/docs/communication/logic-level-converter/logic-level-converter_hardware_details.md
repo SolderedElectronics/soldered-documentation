@@ -1,10 +1,9 @@
 ---
 slug: /logic-level-converter/hardware
-title: Logic Level Converter - Hardware details
+title: "Logic Level Converter \u2013 Hardware details"
 id: logic-level-converter-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/logic-level-converter/llc_pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter pinout diagram"/>

@@ -1,10 +1,9 @@
 ---
 slug: /relay/arduino/basic-functionality
-title: Relay - Basic functionality
+title: "LED Matrix \u2013 Arduino Basic Functionality"
 id: led-matrix-arduino-3
 hide_title: false
 ---
-
 This page contains some basic examples with function documentation on how to use LED matrix board.
 
 ---

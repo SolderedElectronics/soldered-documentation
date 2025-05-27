@@ -1,11 +1,10 @@
 ---
 slug: /shtc3/overview
-title: Shtc3 - Overview
+title: "Temperature and humidity sensor SHTC3 \u2013 Overview"
 id: shtc3-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## SHTC3 Temperature and Humidity Sensor
 
 The **Temperature and humidity sensor SHTC3 breakout** is a high-precision digital sensor that measures both temperature and humidity. Whether you're monitoring room conditions, greenhouses, or industrial environments, this sensor provides accurate climate data with **minimal power consumption**. It features **I2C communication** with a hardware-defined address of **0x70** and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.

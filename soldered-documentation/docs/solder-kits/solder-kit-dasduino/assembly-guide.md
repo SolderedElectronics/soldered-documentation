@@ -1,6 +1,6 @@
 ---
 slug: /solder-kit-dasduino/assembly-guide
-title: Solder Kit Dasduino - Assembly guide
+title: "Solder Kit Dasduino \u2013 Assembly guide"
 id: solder-kit-dasduino-assembly-guide
 hide_title: false
 ---

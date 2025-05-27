@@ -1,10 +1,9 @@
 ---
 slug: /relay/arduino/regular-example
-title: Relay - Switching the relay (regular example)
+title: "Relay Board \u2013 Arduino switching the relay (regular example)"
 id: relay-arduino-2
 hide_title: false
 ---
-
 This page contains a simple example with function documentation on how to control the 1 or multi channel regular relay board.
 
 ## Code example for 1 channel

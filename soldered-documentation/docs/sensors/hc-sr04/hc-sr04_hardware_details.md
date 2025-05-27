@@ -1,10 +1,9 @@
----  
-slug: /hc-sr04/hardware  
-title: Hardware details  
-id: hc-sr04-hardware  
-hide_title: False  
 ---
-
+slug: /hc-sr04/hardware
+title: "HC-SR04 ultrasonic sensor \u2013 Hardware details"
+id: hc-sr04-hardware
+hide_title: false
+---
 ## Pinout
 
 <CenteredImage src="/img/hc-sr04/hc-sr04_pinout.png" alt="Pinout" />

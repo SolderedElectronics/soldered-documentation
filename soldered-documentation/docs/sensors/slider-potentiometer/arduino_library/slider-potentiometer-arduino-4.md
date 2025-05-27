@@ -1,11 +1,10 @@
 ---
 slug: /slider-potentiometer/troubleshooting
-title: Slider Potentiometer - Troubleshooting
+title: "Slider Potentiometer \u2013 Troubleshooting"
 id: slider-potentiometer-arduino-4
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips if you are having problems using this product.
 
 <ExpandableSection title="My sensor won't initialize!">

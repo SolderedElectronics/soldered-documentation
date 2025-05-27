@@ -1,10 +1,9 @@
 ---
-slug: /pir-sensor/how-it-works 
-title: How it works
-id: pir-sensor-how-it-works 
-hide_title: False
----  
-
+slug: /pir-sensor/how-it-works
+title: "PIR Movement sensor \u2013 How it works"
+id: pir-sensor-how-it-works
+hide_title: false
+---
 ## Communication (Standard version)
 
 We can communicate with the sensor using two pins: **Sensor output(SOUT)** and **Delayed output(DOUT)**.

@@ -1,10 +1,9 @@
----  
-slug: /txb0104/hardware  
-title: Hardware details  
-id: txb0104-hardware  
-hide_title: False  
 ---
-
+slug: /txb0104/hardware
+title: "Logic Level Converter TXB0104 \u2013 Hardware details"
+id: txb0104-hardware
+hide_title: false
+---
 ## Pinout
 
 <CenteredImage src="/img/txb0104/pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter TXB0104 pinout diagram"/>

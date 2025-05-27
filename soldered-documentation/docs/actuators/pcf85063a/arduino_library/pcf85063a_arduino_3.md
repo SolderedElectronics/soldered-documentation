@@ -1,11 +1,10 @@
 ---
 slug: /pcf85063a/arduino/troubleshooting
-title: Pcf85063A - Troubleshooting
+title: "PCF85063A RTC \u2013 Arduino troubleshooting"
 id: pcf85063a-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My RTC won't initialize!">

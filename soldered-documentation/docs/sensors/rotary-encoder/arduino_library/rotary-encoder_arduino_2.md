@@ -1,10 +1,9 @@
 ---
 slug: /rotary-encoder/arduino/examples
-title: Rotary Encoder - Using the encoder (example)
+title: "Rotary Encoder \u2013 Arduino examples"
 id: rotary-encoder-arduino-2
 hide_title: false
 ---
-
 This page contains some simple examples with function documentation on how to take readings unsing the rotary encoder.
 
 ---

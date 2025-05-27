@@ -1,10 +1,9 @@
 ---
 slug: /rs-232/arduino/geting-started
-title: Rs 232 - Getting started
+title: "RS-232 Transceiver \u2013 Arduino Getting Started"
 id: rs-232-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To test the Arduino, you can use the SoftwareSerial/HardwareSerial librarys which dont need to be downloaded since they are built into the device. Since the device requires no additional coding, this example is enough to showcase it.

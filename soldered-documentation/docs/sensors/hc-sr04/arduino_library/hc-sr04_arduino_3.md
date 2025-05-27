@@ -1,11 +1,10 @@
 ---
 slug: /hc-sr04/arduino/troubleshooting
-title: Hc Sr04 - Troubleshooting
+title: "HC-SR04 ultrasonic sensor \u2013 Arduino troubleshooting"
 id: hc-sr04-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My sensor won't initialize!">

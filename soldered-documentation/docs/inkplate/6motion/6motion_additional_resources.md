@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/additional-resources
-title: 6Motion - Additional resources
+title: "Inkplate \u2013 6motion additional resources"
 id: 6motion-additional-resources
 ---
-
 To upload your own sketch or an Arduino example to **Inkplate 6 MOTION**, follow this brief guide.  
 
 <InfoBox>You are uploading code to the onboard **STM32H743**. The **ESP32 co-processor** comes pre-programmed with firmware and **should not be modified**!</InfoBox>  

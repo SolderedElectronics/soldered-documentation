@@ -1,10 +1,9 @@
 ---
 slug: /simple-sensor/simple-light-sensor/arduino_library/geting-started
-title: Simple Sensor - Geting started
+title: "Simple Light Sensor \u2013 Library Getting Started"
 id: simple-light-sensor-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

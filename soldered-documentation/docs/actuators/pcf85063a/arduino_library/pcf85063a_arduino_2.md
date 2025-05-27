@@ -1,10 +1,9 @@
 ---
 slug: /pcf85063a/arduino/initialization
-title: Pcf85063A - Initialization
+title: "PCF85063A RTC \u2013 Arduino initialization"
 id: pcf85063a-arduino-2
 hide_title: false
 ---
-
 ## Connections for this example
 
 <CenteredImage src="/img/pcf85063a/connections.png" alt="connections"/>

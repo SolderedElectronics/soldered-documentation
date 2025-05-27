@@ -1,11 +1,10 @@
 ---
 slug: /tca9548a/arduino/troubleshooting
-title: Tca9548A - Troubleshooting
+title: "TCA9548A I2C multiplexer \u2013 Arduino troubleshooting"
 id: tca9548a-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="The I2C communication won't initialize!">

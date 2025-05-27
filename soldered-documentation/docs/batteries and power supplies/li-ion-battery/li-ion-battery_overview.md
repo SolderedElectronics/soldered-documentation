@@ -1,11 +1,10 @@
 ---
 slug: /li-ion-battery/overview
-title: Li Ion Battery - Overview
+title: "Li Ion Battery \u2013 Overview"
 id: li-ion-battery-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## 3.7V Li-Ion Batteries
 
 The **Li-Ion Batteries** offered are a **versatile and reliable power solution** for a wide range of electronic projects, including those using **Dasduino** and **Inkplate** devices. Equipped with a **JST-PH-2mm connector**, these batteries ensure easy integration and compatibility with numerous development boards and embedded systems. Each battery features **on-board protection**, safeguarding against overcharging, over-discharging, and short circuits, making them a safe and durable choice for powering your applications.

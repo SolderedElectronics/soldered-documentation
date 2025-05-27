@@ -1,10 +1,9 @@
 ---
 slug: /ws2812b/arduino/init-and-set-colors
-title: Ws2812B - Initialization and Setting Colors
+title: "WS2812B \u2013 Arduino init and set colors"
 id: ws2812b-arduino-2
 hide_title: false
 ---
-
 This page contains an example of initializing the WS2812B LED strip and examples of setting colors for different effects.
 
 ---

@@ -1,10 +1,9 @@
 ---
 slug: /rs-485/arduino/geting-started
-title: Rs 485 - Getting started
+title: "RS-485 Transceiver \u2013 Arduino Getting Started"
 id: rs-485-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To test the **RS-485 Transceiver Breakout Board** with **Arduino**, you can use the **HardwareSerial** library, which is built into the Arduino IDE and does not require additional installation. Since RS-485 communication uses differential signals, this example is sufficient to showcase its functionality.

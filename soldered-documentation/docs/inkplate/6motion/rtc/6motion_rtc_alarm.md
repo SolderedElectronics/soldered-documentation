@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/rtc/alarm
-title: 6Motion - RTC alarm
+title: "Inkplate \u2013 6Motion RTC Alarm"
 id: 6motion-rtc-alarm
 ---
-
-
 The built-in RTC supports creating an alarm that triggers at a specific time, allowing the firmware to detect and respond accordingly. Alarms can be configured to trigger once per day, per hour, or per minute.
 
 ---

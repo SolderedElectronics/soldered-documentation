@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/basics/image-converter
-title: 6Motion - Soldered Image Converter
+title: "Inkplate 6Motion \u2013 Image Converter"
 id: 6motion-image-converter
 ---
-
 <CenteredImage src="/img/inkplate_6_motion/image_converter.png" alt="Soldered Image Converter" caption="Graphical user interface of the Soldered Image Converter" width="800px" />
 
 Soldered Image Converter is an open-source Python program by Soldered. It is used to convert images for Inkplate boards into .h files, which can be included in Arduino sketches for Inkplate and then displayed.

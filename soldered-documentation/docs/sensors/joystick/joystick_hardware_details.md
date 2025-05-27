@@ -1,10 +1,9 @@
 ---
 slug: /joystick/hardware
-title: Joystick - Hardware details
+title: "Joystick 2-axis with pushbutton \u2013 Hardware details"
 id: joystick-hardware
 hide_title: false
 ---
-
 ## Pinout
 <CenteredImage src="/img/joystick/333089_pinout.jpg" alt="Pinout" />
 Click [**here**](/img/joystick/333089_pinout.jpg) for a high resolution image of the pinout.

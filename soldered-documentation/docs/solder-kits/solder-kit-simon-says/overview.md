@@ -1,6 +1,6 @@
 ---
 slug: /simon-says-game/overview
-title: Simon Says Game - Overview
+title: "Simon Says Game \u2013 Overview"
 id: simon-says-game-overview
 hide_title: false
 pagination_prev: null

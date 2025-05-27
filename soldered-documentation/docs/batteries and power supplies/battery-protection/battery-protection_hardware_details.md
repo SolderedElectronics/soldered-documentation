@@ -1,10 +1,9 @@
 ---
 slug: /battery-protection/hardware
-title: Battery Protection - Hardware details
+title: "Battery Protection \u2013 Hardware details"
 id: battery-protection-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/battery-protection/pinout.png" alt="bp pinout diagram" caption="1S Li-Ion Battery Protection pinout diagram"/>

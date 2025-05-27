@@ -1,11 +1,10 @@
 ---
 slug: /apds-9960/overview
-title: Apds 9960 - Overview
+title: "Color and Gesture sensor APDS-9960 \u2013 Overview"
 id: apds-9960-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## APDS-9960 Color and Gesture Sensor
 
 The **Color and Gesture sensor APDS-9960 breakout** is a compact and powerful module designed for multiple sensing capabilities. It enables **gesture recognition**, allowing it to detect movements such as up, down, left, and right. In addition to gestures, it features **proximity sensing**, accurately measuring the distance to objects within a range of 10 to 20 cm. It features **I2C communication** and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.

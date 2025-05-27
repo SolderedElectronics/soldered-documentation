@@ -1,10 +1,9 @@
 ---
-slug: /ssd1306/how-it-works 
-title: How it works
-id: ssd1306-how-it-works 
-hide_title: False
----  
-
+slug: /ssd1306/how-it-works
+title: "SSD1306 \u2013 How it works"
+id: ssd1306-how-it-works
+hide_title: false
+---
 On this page, we will explain how an OLED display actually functions.
 
 ---

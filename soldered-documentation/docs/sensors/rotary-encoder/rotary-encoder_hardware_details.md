@@ -1,10 +1,9 @@
 ---
 slug: /rotary-encoder/hardware
-title: Rotary Encoder - Hardware details
+title: "Rotary Encoder \u2013 Hardware details"
 id: rotary-encoder-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>

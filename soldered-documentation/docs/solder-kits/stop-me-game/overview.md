@@ -1,11 +1,10 @@
 ---
 slug: /stop-me-game/overview
-title: Stop Me Game - Overview
+title: "Stop Me Game \u2013 Overview"
 id: stop-me-game-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Introduction
 **Stop me game** is an educational electronics kit that teaches you how to solder, and eventually, you get your own small game. The goal of the game is to press the button as soon as the green LED turns on. With every win, the game becomes increasingly challenging. The kit is based on the STM32 MCU, programmed in Arduino. On the back, you'll find a CR2032 battery that makes the kit portable. It also includes a keychain holder. The soldering process is made easy by the marks on the PCB.
 

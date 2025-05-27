@@ -1,10 +1,9 @@
 ---
 slug: /adc/arduino/getting-started
-title: Adc - Getting started
+title: "Analog to Digital Converter \u2013 Arduino getting started"
 id: adc-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino Library Manager** or download it from the GitHub repository:

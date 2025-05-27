@@ -1,11 +1,9 @@
 ---
 slug: /joystick/arduino/geting-started
-title: Joystick - Getting started
+title: "Joystick 2-axis with pushbutton \u2013 Arduino geting started"
 id: joystick-arduino-1
 hide_title: false
 ---
-
-
 <InfoBox>
 
 **First time Arduino user?** For a detailed tutorial on how to get started wtih Arduino, see this section of our docs:

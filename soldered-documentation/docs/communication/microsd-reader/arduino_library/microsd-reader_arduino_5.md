@@ -1,10 +1,9 @@
 ---
 slug: /microsd-reader/arduino/reading-files
-title: Microsd Reader - Reading files (example)
+title: "MicroSD Card Reader \u2013 Arduino reading files"
 id: microsd-reader-arduino-5
 hide_title: false
 ---
-
 On this page, we will read data from the file we created in the previous example.
 
 ---

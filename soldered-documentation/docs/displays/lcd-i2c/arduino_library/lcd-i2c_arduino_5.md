@@ -1,11 +1,10 @@
----  
-slug: /lcd-i2c/arduino/troubleshooting  
-title: Troubleshooting  
-id: lcd-i2c-arduino-5  
-hide_title: False  
-pagination_next: null  
 ---
-
+slug: /lcd-i2c/arduino/troubleshooting
+title: "LCD I2C Adapter\u2013 Arduino troubleshooting"
+id: lcd-i2c-arduino-5
+hide_title: false
+pagination_next: null
+---
 This page provides some tips in case you are experiencing issues with the LCD I2C display.
 
 <ExpandableSection title="My LCD is not displaying anything!">

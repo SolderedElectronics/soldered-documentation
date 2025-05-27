@@ -1,10 +1,9 @@
----  
-slug: /apds-9960/hardware  
-title: Hardware details  
-id: apds-9960-hardware  
-hide_title: False  
 ---
-
+slug: /apds-9960/hardware
+title: "Color and Gesture sensor APDS-9960 \u2013 Hardware details"
+id: apds-9960-hardware
+hide_title: false
+---
 ## Pinout
 
 <CenteredImage src="/img/apds-9960/apds9960_pinout.png" alt="APDS-9960 pinout diagram" caption="APDS-9960 pinout diagram"/>

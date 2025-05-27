@@ -1,11 +1,10 @@
 ---
 slug: /ssd1306/overview
-title: Ssd1306 - Overview
+title: "SSD1306 \u2013 Overview"
 id: ssd1306-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## SSD1306 0.96" I2C OLED Display
 
 Looking to add visuals to your Arduino projects? The **I2C OLED breakout board** is perfect for that. Thanks to its high contrast, you'll be in awe of its crisp visuals! The display is composed of hundreds of LEDs, with each representing one pixel in a **128×64** grid. Thus, it doesn't require a backlight, and it uses less power than classic LCD screens. That’s 8192 pixels, all individually lit at your fingertips!

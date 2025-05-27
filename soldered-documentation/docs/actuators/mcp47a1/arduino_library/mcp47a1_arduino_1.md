@@ -1,10 +1,9 @@
 ---
 slug: /mcp47a1/arduino/geting-started
-title: Mcp47A1 - Getting started
+title: "MCP47A1 DAC \u2013 Arduino Getting Started"
 id: mcp47a1-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can download it from the GitHub repository:

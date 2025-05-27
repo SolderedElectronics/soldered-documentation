@@ -1,10 +1,9 @@
 ---
-slug: /hall-effect-sensor/how-it-works 
-title: How it works
-id: hall-effect-sensor-how-it-works 
-hide_title: False
----  
-
+slug: /hall-effect-sensor/how-it-works
+title: "Hall Effect Sensor \u2013 How it works"
+id: hall-effect-sensor-how-it-works
+hide_title: false
+---
 Analog versions of the circuit board (both regular and Qwiic) use the SI7211-B-00-IV sensor, while digital (both regular and Qwiic) use SI7211-B-06-IV sensor by [**Silicon Labs**](https://www.silabs.com/sensors/magnetic/si721x/device.si7211-00-iv?tab=specs). When using a Qwiic version you are essentially communicating with an onboard ATTINY404 MCU via **I2C communication**.
 
 

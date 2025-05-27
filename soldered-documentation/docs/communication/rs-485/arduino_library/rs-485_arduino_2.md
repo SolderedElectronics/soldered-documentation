@@ -1,10 +1,9 @@
 ---
 slug: /rs-485/arduino/examples
-title: Rs 485 - Arduino (Example)
+title: "RS-485 Transceiver \u2013 Arduino examples"
 id: rs-485-arduino-2
 hide_title: false
 ---
-
 In this example, **two Dasduino ConnectPlus** boards are connected using the **RS-485 protocol** to enable serial communication. The objective is for one Dasduino (**Sender**) to transmit commands (**"ON" or "OFF"**) via RS-485 to the second Dasduino (**Receiver**), which processes these commands to control an LED (the LED is protected with a **330Ω** resistor).
 
 ---

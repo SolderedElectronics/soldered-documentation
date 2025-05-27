@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/hardware/battery
-title: 6Motion - Battery
+title: "Inkplate \u2013 6Motion Hardware Battery"
 id: 6motion-hardware-battery
 ---
-
 <WarningBox>This page contains important information about using a battery with Inkplate 6 MOTION. For safety reasons, **please read this page carefully!**</WarningBox>  
 
 Inkplate 6 MOTION includes a **2-pin 2mm JST connector**, allowing you to connect a **3.7V Li-ion battery**. The onboard charging IC, **MCP73831**, **automatically charges the battery** when Inkplate is plugged into **USB-C** and switches to battery power when unplugged. A **charging indicator LED** provides real-time charging status.  

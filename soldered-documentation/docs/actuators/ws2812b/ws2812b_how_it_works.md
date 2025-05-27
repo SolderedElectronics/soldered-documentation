@@ -1,10 +1,9 @@
 ---
-slug: /ws2812b/how-it-works 
-title: How it works
-id: ws2812b-how-it-works 
-hide_title: False
----  
-
+slug: /ws2812b/how-it-works
+title: "WS2812B \u2013 How it works"
+id: ws2812b-how-it-works
+hide_title: false
+---
 The **WS2812B** is a **smart RGB LED** that features an integrated driver, meaning that each LED in the strip is individually addressable. The integrated driver enables the **precise control** of brightness and color for each LED via **PWM (Pulse Width Modulation)**.
 
 <CenteredImage src="/img/ws2812b/ws2812b-works.jpg" alt="WS2812B LED Strip in Action" caption="WS2812B LED Strip" width="500px" />

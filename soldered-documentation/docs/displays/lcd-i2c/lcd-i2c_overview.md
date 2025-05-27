@@ -1,11 +1,10 @@
 ---
 slug: /lcd-i2c/overview
-title: Lcd I2C - Overview
+title: "LCD I2C Adapter \u2013 Overview"
 id: lcd-i2c-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## LCD I2C adapter
 
 This LCD I2C Adapter simplifies the connection between your **LCD display** and any **Arduino-compatible board**, such as Dasduino. Utilizing I2C communication, it only requires two pins for operation, making setup quick and straightforward.

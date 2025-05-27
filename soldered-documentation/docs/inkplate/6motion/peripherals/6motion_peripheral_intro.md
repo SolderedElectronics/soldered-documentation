@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/peripherals/introduction
-title: 6Motion - Peripheral basics
+title: "Inkplate \u2013 6Motion Peripherals Introduction"
 id: 6motion-periph-intro
 ---
-
-
 Inkplate 6 MOTION has some useful peripherals, including **sensors**, **LEDs** and **user inputs**. They are all integrated in the Inkplate MOTION library. This page contains a quick overview of functions which are in common with all peripherals.
 
 ---

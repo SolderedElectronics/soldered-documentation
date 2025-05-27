@@ -1,10 +1,9 @@
 ---
 slug: /bme280/arduino/geting-started
-title: Bme280 - Getting started
+title: "BME280 Environmental sensor \u2013 Arduino getting started"
 id: bme280-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

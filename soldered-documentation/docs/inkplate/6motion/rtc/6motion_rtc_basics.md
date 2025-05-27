@@ -1,10 +1,9 @@
 ---
 slug: /inkplate/6motion/rtc/basics
-title: 6Motion - RTC basics
+title: "Inkplate \u2013 6Motion RTC Basics"
 id: 6motion-rtc-basics
 hide_title: true
 ---
-
 <SectionTitle title="RTC basics" backgroundImage="/img/rtc.png" />
 
 The real time clock on Inkplate 6 MOTION is the **internal RTC of the STM32H743ZIT6**. The RTC uses an external clock source, an external XTAL of 32.768kHz.

@@ -1,10 +1,9 @@
 ---
-slug: /txs0104/how-it-works 
-title: How it works
-id: txs0104-how-it-works 
-hide_title: False
----  
-
+slug: /txs0104/how-it-works
+title: "Logic Level Converter TXS0104 \u2013 How it works"
+id: txs0104-how-it-works
+hide_title: false
+---
 The Logic Level Converter I2C TXS0104 Board by [**Soldered**](https://soldered.com/product/logic-level-converter-i2c-txs0104-breakout/) is designed for converting I2C communication signals and enables safe voltage level shifting between 3.3V and 5V logic systems, facilitating communication between devices with different voltage requirements.
 
 <CenteredImage src="/img/txs0104/txsonboard.png" alt="howitworks" caption="TXS0104 on the Logic Level Converter board" width="500px" />

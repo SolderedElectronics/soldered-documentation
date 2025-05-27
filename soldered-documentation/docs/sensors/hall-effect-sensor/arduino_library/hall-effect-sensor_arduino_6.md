@@ -1,11 +1,10 @@
 ---
 slug: /hall-effect-sensor/arduino/troubleshooting
-title: Hall Effect Sensor - Troubleshooting
+title: "Hall Effect Sensor \u2013 Arduino troubleshooting"
 id: hall-effect-sensor-arduino-6
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 ---

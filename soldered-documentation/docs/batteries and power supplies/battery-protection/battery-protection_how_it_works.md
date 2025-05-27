@@ -1,10 +1,9 @@
 ---
-slug: /battery-protection/how-it-works 
-title: How it works
-id: battery-protection-how-it-works 
-hide_title: False
----  
-
+slug: /battery-protection/how-it-works
+title: "Battery Protection \u2013 How it works"
+id: battery-protection-how-it-works
+hide_title: false
+---
 The Battery Protector is a compact, high-performance protection circuit designed to safeguard lithium-ion and lithium-polymer batteries. It provides features such as overcharge, overdischarge, overcurrent, and short-circuit protection. With an integrated DW01x protection IC and FS8205A MOSFETs, this circuit ensures the safe operation of your battery-powered systems.
 
 <CenteredImage src="/img/battery-protection/onboard.png" alt="adc on board" caption="DW01x on board" width="500px" />

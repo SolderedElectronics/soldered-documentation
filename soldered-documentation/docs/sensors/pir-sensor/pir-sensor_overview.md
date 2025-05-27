@@ -1,11 +1,10 @@
 ---
 slug: /pir-sensor/overview
-title: Pir Sensor - Overview
+title: "PIR Movement sensor \u2013 Overview"
 id: pir-sensor-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## PIR Movement sensor
 
 The **PIR Movement sensor** is a device that detects physical movement within its field of vision by sensing changes in infrared radiation. This sensor works on the principle of **detecting thermal signals** emitted by objects, predominantly warm-blooded creatures like humans. The “passive” in the name refers to the fact that the sensor itself does not emit or radiate any energy for detection. The Qwiic version of this product communicates via **I2C** on a user-defined address.

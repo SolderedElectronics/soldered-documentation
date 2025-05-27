@@ -1,10 +1,9 @@
----  
-slug: /adc/hardware  
-title: Hardware details  
-id: adc-hardware  
-hide_title: False  
 ---
-
+slug: /adc/hardware
+title: "Analog to Digital Converter \u2013 Hardware details"
+id: adc-hardware
+hide_title: false
+---
 ---
 
 ## Pinout

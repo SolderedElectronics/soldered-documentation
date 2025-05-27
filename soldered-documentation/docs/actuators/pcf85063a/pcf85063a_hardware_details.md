@@ -1,10 +1,9 @@
 ---
 slug: /pcf85063a/hardware
-title: Pcf85063A - Hardware details
+title: "PCF85063A RTC \u2013 Hardware details"
 id: pcf85063a-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/pcf85063a/pinout.jpg" alt="Pinout" />

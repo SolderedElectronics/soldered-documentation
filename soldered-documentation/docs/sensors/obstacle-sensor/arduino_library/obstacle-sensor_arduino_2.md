@@ -1,10 +1,9 @@
 ---
 slug: /obstacle-sensor/arduino/examples
-title: Obstacle Sensor - Example usage (Arduino)
+title: "Obstacle Sensor \u2013 Arduino examples"
 id: obstacle-sensor-arduino-2
 hide_title: false
 ---
-
 This page contains a simple example with function documentation on how to take measurements using the sensor.
 
 ---

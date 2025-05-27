@@ -1,10 +1,9 @@
 ---
 slug: /simple-sensor/simple-light-sensor/simple-light-sensor-hardware
-title: Simple Sensor - Hardware details
+title: "Simple Light Sensor \u2013 Hardware Details"
 id: simple-light-sensor-hardware
 hide_title: false
 ---
-
 ## Pinout
 <CenteredImage src="/img/simple-sensor/simple-light-sensor/333041_pinout.jpg" alt="Pinout" />
 Click [**here**](/img/simple-sensor/simple-light-sensor/333041_pinout.jpg) for a high resolution image of the pinout.

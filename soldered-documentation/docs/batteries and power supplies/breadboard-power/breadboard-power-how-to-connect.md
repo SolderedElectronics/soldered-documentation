@@ -1,6 +1,6 @@
 ---
 slug: /breadboard-power/how-to-connect-it
-title: Breadboard Power - How to connect it
+title: "Breadboard Power \u2013 How to connect it"
 id: breadboard-power-connecting
 hide_title: false
 pagination_prev: null

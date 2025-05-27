@@ -1,11 +1,10 @@
----  
-slug: /arduino/clear-cache   
-title: Clear Arduino Boards and Cache  
-id: arduino-clear  
-hide_title: False  
-pagination_next: null  
 ---
-
+slug: /arduino/clear-cache
+title: "Arduino \u2013 Clear cache"
+id: arduino-clear
+hide_title: false
+pagination_next: null
+---
 This page provides a short guide for clearing compiler errors and generally resetting the software to its default state. If you're familiar with the issue, you can just jump to the [Windows](arduino-clear.md#for-windows-users), [macOS](arduino-clear.md#for-macos-users) or [Linux](arduino-clear.md#for-linux-users-ubuntu-fedora-etc) sections of the guide.
 
 ### Why Clear Arduino Boards and Cache?

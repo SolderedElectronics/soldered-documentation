@@ -1,10 +1,9 @@
 ---
 slug: /stepper-motor-driver/how-it-works
-title: Stepper Motor Driver - How it works
+title: "Stepper motor driver \u2013 How it works"
 id: stepper-motor-driver-how-it-works
 hide_title: false
 ---
-
 On this page, let's go over how this breakout board actually drives a stepper motor.  
 
 This is a **simple stepper motor driver breakout board** designed to control a **bipolar** or **unipolar** stepper motor using signals from a microcontroller. The board operates by switching the motor coils on and off in a controlled sequence to achieve precise rotational motion. The microcontroller generates pulses on the **IN1–IN4** input pins, which are then used to switch NPN transistors that control the motor’s windings.  

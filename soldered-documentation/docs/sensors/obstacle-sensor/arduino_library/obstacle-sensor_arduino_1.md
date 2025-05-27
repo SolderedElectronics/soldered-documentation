@@ -1,10 +1,9 @@
 ---
 slug: /obstacle-sensor/arduino/geting-started
-title: Obstacle Sensor - Getting started
+title: "Obstacle Sensor \u2013 Arduino getting started"
 id: obstacle-sensor-arduino-1
 hide_title: false
 ---
-
 ## Arduino library 
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

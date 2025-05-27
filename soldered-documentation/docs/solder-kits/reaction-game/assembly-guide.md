@@ -1,10 +1,9 @@
 ---
 slug: /reaction-game/assembly-guide
-title: Assembly Guide - Assembly guide
+title: "Reaction Game \u2013 Assembly Guide"
 id: reaction-game-assembly-guide
 hide_title: false
 ---
-
 On this page, we will guide step by step on how to assemble this kit.
 
 ## Step 1: Solder the resistors to the PCB.

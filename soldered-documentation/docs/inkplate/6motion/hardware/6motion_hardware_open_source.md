@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/hardware/open-source
-title: 6Motion - Inkplate is open source
+title: "Inkplate \u2013 6Motion Hardware Open Source"
 id: 6motion-hardware-open-source
 ---
-
 Inkplate is a **crowdfunded, open-source project**, and its software libraries build upon other free, community-driven libraries. Open-source has been essential to the development of Inkplate, and at [**Soldered Electronics**](https://soldered.com/about-us/), we believe in giving back by sharing the knowledge and resources we've gained along the way.  
 
 <CenteredImage src="/img/inkplate_6_motion/open_source_hardware.png" alt="Open source logo" />

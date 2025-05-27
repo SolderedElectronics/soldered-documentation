@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/microsd/sd-image
-title: 6Motion - Image from microSD
+title: "Inkplate \u2013 6Motion microSD SD image"
 id: 6motion-microsd-image
 ---
-
-
 To draw images from the microSD card, use the `draw` function. 
 
 <InfoBox>Supported formats are: JPG, BMP and BMP.</InfoBox>

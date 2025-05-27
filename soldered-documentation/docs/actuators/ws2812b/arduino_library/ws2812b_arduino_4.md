@@ -1,11 +1,10 @@
 ---
 slug: /ws2812b/arduino/troubleshooting
-title: Ws2812B - Troubleshooting
+title: "WS2812B \u2013 Arduino troubleshooting"
 id: ws2812b-arduino-4
 hide_title: false
 pagination_next: null
 ---
-
 This page provides troubleshooting steps to resolve common issues when using WS2812B smart LEDs with an Arduino or other microcontrollers.
 
 <ExpandableSection title="My LEDs won’t turn on!">

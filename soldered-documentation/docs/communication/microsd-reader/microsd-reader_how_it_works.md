@@ -1,10 +1,9 @@
 ---
-slug: /microsd-reader/how-it-works 
-title: How it works
-id: microsd-reader-how-it-works 
-hide_title: False
----  
-
+slug: /microsd-reader/how-it-works
+title: "MicroSD Card Reader \u2013 How it works"
+id: microsd-reader-how-it-works
+hide_title: false
+---
 The SD card reader's communication is handled by the **TXB0104** chip from **Texas Instruments**.
 
 <CenteredImage src="/img/microsd-reader/texas.jpg" alt="TXB0104 chip on board" caption="TXB0104 chip on board" width="400px" />

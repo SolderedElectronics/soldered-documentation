@@ -1,10 +1,9 @@
 ---
 slug: /stop-me-game/assemby-guide
-title: Stop Me Game - Assembly guide
+title: "Stop Me Game \u2013 Assembly guide"
 id: stop-me-game-assembly-guide
 hide_title: false
 ---
-
 On this page, we will guide step by step on how to assemble this kit.
 
 ## Step 1: Solder the resistors to the PCB.

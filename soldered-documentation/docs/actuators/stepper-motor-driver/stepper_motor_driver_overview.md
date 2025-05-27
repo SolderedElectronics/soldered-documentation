@@ -1,11 +1,10 @@
 ---
 slug: /stepper-motor-driver/overview
-title: Stepper Motor Driver - Overview
+title: "Stepper motor driver \u2013 Overview"
 id: stepper-motor-driver-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Basic stepper driver
 
 The **Basic Stepper Driver** provides **precise control** for stepper motors up to **14V and 800mA**, featuring built-in LED indicators for easy monitoring and seamless integration with microcontrollers via an Arduino library, available as a standalone driver or with an included stepper motor.

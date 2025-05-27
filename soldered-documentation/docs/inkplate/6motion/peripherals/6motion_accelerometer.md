@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/peripherals/accelerometer
-title: 6Motion - Accelerometer and gyroscope
+title: "Inkplate \u2013 6Motion Peripherals Accelerometer"
 id: 6motion-periph-accelerometer
 ---
-
 The **LSM6DSO32** sensor on Inkplate 6 MOTION provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking.
 
 <InfoBox>The **LSM6DSO32** implementation in the Inkplate library uses this library from **Adafruit**:<QuickLink title="Adafruit LSM6DS" 

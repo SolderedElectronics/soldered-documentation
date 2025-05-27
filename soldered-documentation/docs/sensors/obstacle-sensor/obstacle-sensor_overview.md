@@ -1,11 +1,10 @@
 ---
 slug: /obstacle-sensor/overview
-title: Obstacle Sensor - Overview
+title: "Obstacle Sensor \u2013 Overview"
 id: obstacle-sensor-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Obstacle sensor with easyC
 
 The **Obstacle sensor with easyC** is a breakout board based on the **TCRT5000** infrared reflective sensor module. This sensor is capable of detecting the presence of objects within a distance of **2 to 8 millimeters**. This sensor is often used in line-following robots and for automatic data logging on utility meters. The board uses **I2C communication** with a default address of **0x30** and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.

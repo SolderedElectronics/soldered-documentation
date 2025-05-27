@@ -1,10 +1,9 @@
 ---
-slug: /apds-9960/how-it-works 
-title: How it works
-id: apds-9960-how-it-works 
-hide_title: False
----  
-
+slug: /apds-9960/how-it-works
+title: "Color and Gesture sensor APDS-9960 \u2013 How it works"
+id: apds-9960-how-it-works
+hide_title: false
+---
 APDS-9960 is a digital sensor that integrates RGB, ambient light, proximity, and gesture sensing in a single 8-pin package, manufactured by [**Broadcom**](https://www.broadcom.com/products/optical-sensors/integrated-ambient-light-and-proximity-sensors/apds-9960). 
 
 <CenteredImage src="/img/apds-9960/apds9960_onboard.png" alt="APDS-9960 sensor on board" caption="APDS-9960 sensor on board" width="500px" />

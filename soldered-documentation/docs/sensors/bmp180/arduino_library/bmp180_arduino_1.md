@@ -1,10 +1,9 @@
 ---
 slug: /bmp180/arduino/geting-started
-title: Bmp180 - Getting started
+title: "BMP180 Pressure & temperature sensor \u2013 Arduino Getting Started"
 id: bmp180-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, download it from the GitHub repository:

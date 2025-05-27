@@ -1,11 +1,10 @@
 ---
 slug: /breadboard-power/overview
-title: Breadboard Power - Overview
+title: "Breadboard Power \u2013 Overview"
 id: breadboard-power-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Breadboard power supply
 
 The **Breadboard power supply** is a simple and stable power source for your breadboard projects. Supply it with power via the DC jack or with a USB-C cable, and the board provides 3.3V, 5V, or 12V directly to the power supply lines on the breadboard. Output voltages are adjustable separately using the onboard switches. It also includes a power LED, a power switch, and an automatic voltage selection circuit in case both power inputs are connected.

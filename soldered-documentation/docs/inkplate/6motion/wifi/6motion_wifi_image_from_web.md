@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/wifi/image-from-web
-title: 6Motion - Draw Image from Web
+title: "Inkplate \u2013 6Motion WiFi Image From Web"
 id: 6motion-wifi-image-from-web
 ---
-
-
 Drawing an image from the web on Inkplate 6MOTION is simple using the `draw` function, which supports multiple image formats.
 
 <InfoBox>Supported formats: JPG, BMP, and PNG.</InfoBox>

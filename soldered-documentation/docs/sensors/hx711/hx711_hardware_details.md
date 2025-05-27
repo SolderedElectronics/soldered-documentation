@@ -1,10 +1,9 @@
 ---
 slug: /hx711/hardware
-title: Hx711 - Hardware details
+title: "HX711 Load Cell Amplifier \u2013 Hardware details"
 id: hx711-hardware
 hide_title: false
 ---
-
 ## HX711 Regular Pinout
 
 <CenteredImage src="/img/hx711/hx711_standard_pinout.png" alt="hx711_standard_pinout" caption="HX711 regular pinout diagram"/>

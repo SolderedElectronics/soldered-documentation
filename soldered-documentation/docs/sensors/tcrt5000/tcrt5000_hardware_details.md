@@ -1,6 +1,6 @@
 ---
 slug: /tcrt5000/hardware
-title: Tcrt5000 - Hardware details
+title: "Obstacle sensor TCRT5000 \u2013 Hardware details"
 id: tcrt5000-hardware
 hide_title: false
 ---

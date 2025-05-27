@@ -1,11 +1,10 @@
 ---
 slug: /rfid/overview
-title: Rfid - Overview
+title: "125kHz RFID Reader \u2013 Overview"
 id: 125khzrfidtagreader-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## 125kHz RFID tag reader board
 
 The **125kHz RFID Reader** is a device that enables wireless identification of objects using **radio-frequency identification** (RFID) technology. It is ideal for applications in access control systems, time and attendance tracking, inventory management, and similar uses. This reader uses **I2C communication** for easy connection to microcontrollers, simplifying integration into various projects. It comes with an **antenna** and two **QWIIC** connectors for easy connection. It's important to use RFID cards/tags with a **frequency of 125 kHz**, which are compatible with this reader.

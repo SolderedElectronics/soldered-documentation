@@ -1,10 +1,9 @@
 ---
 slug: /lcd-i2c/arduino/geting-started
-title: Lcd I2C - Getting started
+title: "LCD I2C Adapter \u2013 Arduino Getting Started"
 id: lcd-i2c-arduino-1
 hide_title: false
 ---
-
 This page provides the essential information for getting started, including board and library installation.
 
 --- 

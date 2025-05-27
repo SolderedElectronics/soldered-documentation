@@ -1,11 +1,9 @@
 ---
 slug: /inkplate/6motion/hardware/esp32
-title: 6Motion - ESP32 co-processor
+title: "Inkplate \u2013 6Motion Hardware ESP32"
 id: 6motion-hardware-esp32
 hide_title: true
 ---
-
-
 <SectionTitle title="ESP32 co-processor" backgroundImage="/img/esp32.jpg" />  
 
 Inkplate 6 MOTION features an **ESP32-C3-WROOM-02** module, which serves as a **WiFi co-processor**. It communicates with the **STM32** via **SPI**, using **AT commands** to handle network operations.  

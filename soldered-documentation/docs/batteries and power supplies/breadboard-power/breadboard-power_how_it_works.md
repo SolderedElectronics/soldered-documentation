@@ -1,10 +1,9 @@
 ---
-slug: /breadboard-power/how-it-works 
-title: How it works
-id: breadboard-power-how-it-works 
-hide_title: False
----  
-
+slug: /breadboard-power/how-it-works
+title: "Breadboard Power \u2013 How it works"
+id: breadboard-power-how-it-works
+hide_title: false
+---
 On this page, we will examine how the power supply provides different voltages depending on the user's needs.
 
 ---

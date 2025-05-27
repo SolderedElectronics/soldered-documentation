@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/basics/basic-display-modes
-title: 6Motion - Display modes
+title: "Inkplate 6Motion \u2013 Display Modes"
 id: 6motion-display-modes
 ---
-
-
 As mentioned on the previous page, Inkplate MOTION has two different display modes: black and white (1-bit) mode and grayscale (4-bit) mode. This page contains more information on both.
 
 ---

@@ -1,11 +1,10 @@
 ---
 slug: /ssd1306/arduino/troubleshooting
-title: Ssd1306 - Troubleshooting
+title: "SSD1306 \u2013 Arduino troubleshooting"
 id: ssd1306-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My Display won't initialize!">

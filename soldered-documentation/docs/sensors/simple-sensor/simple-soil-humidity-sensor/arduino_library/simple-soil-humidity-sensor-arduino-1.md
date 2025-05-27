@@ -1,6 +1,6 @@
 ---
 slug: /simple-sensor/simple-soil-humidity-sensor/arduino_library/geting-started
-title: Simple Sensor - Geting started
+title: "Simple Soil Humidity Sensor \u2013 Library Getting Started"
 id: simple-soil-humidity-sensor-arduino-1
 hide_title: false
 ---

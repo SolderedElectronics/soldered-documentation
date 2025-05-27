@@ -1,11 +1,10 @@
 ---
 slug: /relay/arduino/Troubleshooting
-title: Relay - Troubleshooting
+title: "Relay Board \u2013 Arduino troubleshooting"
 id: relay-arduino-4
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My sensor won't initialize! (Qwiic breakout board)">

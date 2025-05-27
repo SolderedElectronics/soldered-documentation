@@ -1,10 +1,9 @@
 ---
-slug: /joystick/how-it-works 
-title: How it works
-id: joystick-how-it-works 
-hide_title: False
----  
-
+slug: /joystick/how-it-works
+title: "Joystick 2-axis with pushbutton \u2013 How it works"
+id: joystick-how-it-works
+hide_title: false
+---
 The **Joystick 2-axis with pushbutton breakout board** is a circuit board with onboard **GGL002** Joystick module. It has an integrated pushbutton that is activated by pressing the head of Joystick.
 
 ---

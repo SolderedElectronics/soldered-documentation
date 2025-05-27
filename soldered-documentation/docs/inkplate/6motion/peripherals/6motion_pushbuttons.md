@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/peripherals/buttons
-title: 6Motion - User Buttons
+title: "Inkplate \u2013 6motion peripherals buttons"
 id: 6motion-periph-buttons
 ---
-
 The **Inkplate 6 MOTION** features **three onboard buttons** that can be used for **user interaction** or to wake the device from deep sleep. These buttons are:
 
 - **USER1** (`INKPLATE_USER1`)

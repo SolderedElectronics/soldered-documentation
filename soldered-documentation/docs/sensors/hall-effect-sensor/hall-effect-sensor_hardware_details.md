@@ -1,10 +1,9 @@
 ---
 slug: /hall-effect-sensor/hardware
-title: Hall Effect Sensor - Hardware details
+title: "Hall Effect Sensor \u2013 Hardware details"
 id: hall-effect-sensor-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/hall-effect-sensor/333079_pinout.jpg" alt="Pinout" />

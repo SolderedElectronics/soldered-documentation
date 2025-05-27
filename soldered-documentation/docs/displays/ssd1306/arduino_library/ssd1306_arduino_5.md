@@ -1,10 +1,9 @@
 ---
 slug: /ssd1306/arduino/drawing-shapes
-title: Ssd1306 - Drawing shapes
+title: "SSD1306 \u2013 Arduino drawing shapes"
 id: ssd1306-arduino-5
 hide_title: false
 ---
-
 This page contains some examples of drawing and rendering shapes onto the OLED display.
 
 ---

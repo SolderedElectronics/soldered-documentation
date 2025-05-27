@@ -1,10 +1,9 @@
 ---
-slug: /bme280/how-it-works 
-title: How it works
-id: bme280-how-it-works 
-hide_title: False
----  
-
+slug: /bme280/how-it-works
+title: "BME280 Environmental sensor \u2013 How it works"
+id: bme280-how-it-works
+hide_title: false
+---
 BME280 is an integrated circuit by [**Bosch**](https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/). When using our board, you are essentially communicating directly with the onboard BME280 via **I2C communication**.
 
 <CenteredImage src="/img/bme280/bme280_onboard.webp" alt="BME280 sensor on board" caption="BME280 sensor on the board" width="400px" />

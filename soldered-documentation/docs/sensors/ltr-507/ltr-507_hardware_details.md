@@ -1,10 +1,9 @@
----  
-slug: /ltr-507/hardware  
-title: Hardware details  
-id: ltr-507-hardware  
-hide_title: False  
 ---
-
+slug: /ltr-507/hardware
+title: "LTR-507 Light and Proximity Sensor \u2013 Hardware details"
+id: ltr-507-hardware
+hide_title: false
+---
 ## Pinout
 
 <CenteredImage src="/img/ltr-507/pinout.jpg" alt="APDS-9960 pinout diagram" caption="LTR-507 pinout diagram"/>

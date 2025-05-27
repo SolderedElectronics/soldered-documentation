@@ -1,10 +1,9 @@
 ---
 slug: /ssd1306/hardware
-title: Ssd1306 - Hardware details
+title: "SSD1306 \u2013 Hardware details"
 id: ssd1306-hardware
 hide_title: false
 ---
-
 <CenteredImage src="/img/ssd1306/333100_pinout.jpg" alt="Pinout" />
 
 Click [**here**](/img/ssd1306/333100_pinout.jpg) for a high resolution image of the pinout.

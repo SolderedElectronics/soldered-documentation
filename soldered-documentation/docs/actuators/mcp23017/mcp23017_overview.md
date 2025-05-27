@@ -1,11 +1,10 @@
 ---
 slug: /mcp23017/overview
-title: Mcp23017 - Overview
+title: "MCP23017 IO expander \u2013 Overview"
 id: mcp23017-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## MCP23017 IO Expander
 
 The **MCP23017 IO expander** allows you to connect an additional **sixteen digital inputs/outputs**. It also has **two interrupt pins!** It is simple to use since it communicates via **I2C communication** with a hardware-defined address of **0x27** (which can be changed via jumpers on the board) and is designed for seamless **Qwiic (formerly easyC) connectivity**.

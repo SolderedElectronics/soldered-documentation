@@ -1,10 +1,9 @@
 ---
-slug: /digipot/how-it-works 
-title: How it works
-id: digipot-how-it-works 
-hide_title: False
----  
-
+slug: /digipot/how-it-works
+title: "Digital potentiometer \u2013 How it works"
+id: digipot-how-it-works
+hide_title: false
+---
 The **Digital potentiometer** is a device that uses digital communication to set its resistance instead of a physical rotationg part. This module is based on MCP4018 integrated chip by [**Microchip**](https://www.microchip.com/en-us/product/mcp4018) which has a total of 128 steps between 0 and max ressitance values.
 
 <CenteredImage src="/img/digipot/MCP4018_highlighted.jpg" alt="MCP4018 on board" caption="MCP4018 on board" width="400px" />

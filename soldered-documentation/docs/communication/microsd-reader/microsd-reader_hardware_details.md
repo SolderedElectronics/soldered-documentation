@@ -1,10 +1,9 @@
 ---
 slug: /microsd-reader/hardware
-title: Microsd Reader - Hardware details
+title: "MicroSD Card Reader \u2013 Hardware Details"
 id: microsd-reader-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/microsd-reader/pinout.webp" alt="Pinout" />

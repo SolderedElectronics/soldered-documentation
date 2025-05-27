@@ -1,11 +1,10 @@
 ---
 slug: /arduino/bootloader
-title: Arduino - Burning the Arduino Bootloader
+title: "Arduino \u2013 Bootloader"
 id: arduino-bootloader
 hide_title: false
 pagination_prev: null
 ---
-
 The bootloader is a small piece of software that allows uploading of sketches onto the Arduino board. It comes preprogrammed on the Arduino boards, but when the MCU is bought on its own it usually doesn't have the bootloader preprogrammed. The easiest way to burn the bootloader to standard Atmel chips (ATTINY, ATMEGA ...) is by using a second preprogrammed board as a programmer, which will be covered below. It this example, we will be using a Dasduino CORE to bootload another Dasduino CORE
 
 ---

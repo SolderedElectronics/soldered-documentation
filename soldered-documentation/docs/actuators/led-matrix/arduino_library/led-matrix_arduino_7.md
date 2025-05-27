@@ -1,11 +1,10 @@
 ---
 slug: /led-matrix/arduino/troubleshooting
-title: Arduino - Troubleshooting
+title: "LED Matrix \u2013 Arduino troubleshooting"
 id: led-matrix-arduino-7
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My board isn't working">

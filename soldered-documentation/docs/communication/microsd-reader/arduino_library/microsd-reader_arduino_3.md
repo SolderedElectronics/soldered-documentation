@@ -1,11 +1,10 @@
 ---
 slug: /microsd-reader/arduino/troubleshooting
-title: Microsd Reader - Troubleshooting
+title: "MicroSD Card Reader \u2013 Arduino troubleshooting"
 id: microsd-reader-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="The SPI communication won't initialize!">

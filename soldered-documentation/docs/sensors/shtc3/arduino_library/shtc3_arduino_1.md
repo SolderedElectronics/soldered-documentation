@@ -1,10 +1,9 @@
 ---
 slug: /shtc3/arduino/geting-started
-title: Shtc3 - Getting started
+title: "Temperature and humidity sensor SHTC3 \u2013 Arduino Getting Started"
 id: shtc3-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

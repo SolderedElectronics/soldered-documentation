@@ -1,10 +1,9 @@
 ---
 slug: /shtc3/arduino/examples
-title: Shtc3 - Measuring temperature and humidity (examples)
+title: "Temperature and humidity sensor SHTC3 \u2013 Arduino examples"
 id: shtc3-arduino-2
 hide_title: false
 ---
-
 This page contains some simple examples with function documentation on how to take measurements using the SHTC3 temperature and humidity sensor.
 
 ---

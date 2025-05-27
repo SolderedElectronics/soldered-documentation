@@ -1,10 +1,9 @@
 ---
 slug: /hx711/arduino/deep-sleep
-title: Hx711 - Deep Sleep
+title: "HX711 Load Cell Amplifier \u2013 Arduino deep sleep"
 id: hx711-arduino-4
 hide_title: false
 ---
-
 This page contains a simple example of shutting down the HX711 between readings (deep sleep).
 
 ---

@@ -1,10 +1,9 @@
 ---
 slug: /rfid/arduino/geting-started
-title: Rfid - Getting started
+title: "125kHz RFID Reader \u2013 Arduino Getting Started"
 id: 125khzrfidtagreader-arduino-1
 hide_title: false
 ---
-
 # Arduino Library
 
 To install the Arduino library, you can use the **Arduino Library Manager** or download it from the GitHub repository:

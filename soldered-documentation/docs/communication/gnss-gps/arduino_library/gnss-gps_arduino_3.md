@@ -1,10 +1,9 @@
 ---
 slug: /gnss-gps/arduino/advanced
-title: Gnss Gps - Advanced Example
+title: "Gnss Gps L86-M33 \u2013 Arduino advanced"
 id: gnss-gps-arduino-3
 hide_title: false
 ---
-
 This page provides a complete example of using the GNSS L86-M33 sensor with an Arduino, displaying detailed information such as latitude, longitude, altitude, course, speed, and other GNSS-related data.
 
 <InfoBox>Our library includes the [**TinyGPSPlus library**](https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/tree/main/src/libs/TinyGPSPlus)</InfoBox>

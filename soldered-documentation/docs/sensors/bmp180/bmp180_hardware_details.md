@@ -1,10 +1,9 @@
 ---
 slug: /bmp180/hardware
-title: Bmp180 - Hardware details
+title: "BMP180 Pressure & temperature sensor \u2013 Hardware details"
 id: bmp180-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>

@@ -1,11 +1,10 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/simple-fire-sensor-overview
-title: Simple Sensor - Overview
+title: "Simple Fire Sensor \u2013 Overview"
 id: simple-fire-sensor-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Simple fire sensor
 
 The **simple fire sensor breakout board** is a precise sensor that detects infrared radiation. This sensor is applicable in any project that requires the detection of IR radiation; one example is **flame detection**. This sensor also comes in a version with **I2C communication**, with a default address of **0x30**, and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.

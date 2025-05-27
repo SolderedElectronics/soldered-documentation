@@ -1,12 +1,11 @@
 ---
 slug: /under-construction
-title: Under Construction - Under construction
+title: "Under Construction \u2013 Overview"
 id: under-construction
 hide_title: true
 pagination_next: null
 pagination_prev: null
 ---
-
 <CenteredImage src="/img/under_construction.png" alt="Under construction" width="400px" />
 
 #### Sorry! This page/section is still under construction! Please check back later.

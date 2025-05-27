@@ -1,11 +1,10 @@
 ---
 slug: /rs-232/overview
-title: Rs 232 - Overview
+title: "RS-232 Transceiver \u2013 Overview"
 id: rs-232-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## RS-232 Transceiver Breakout Board
 
 The **RS-232 Transceiver Breakout Board** is a compact and reliable solution for **serial communication** between devices using the RS-232 protocol. It utilizes the **MAX232E integrated circuit**, which provides robust signal conversion between **TTL/CMOS logic levels** and RS-232 voltage levels. This board is ideal for enabling communication with legacy devices, industrial equipment, or other systems requiring RS-232 connectivity.

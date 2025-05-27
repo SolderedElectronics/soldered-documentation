@@ -1,7 +1,6 @@
 ---
 slug: /hall-effect-sensor/arduino/regular-analog-example
-title: Hall Effect Sensor - Measuring strength of magnetic field with regular analog
-  sensor (example)
+title: "Hall Effect Sensor \u2013 Arduino regular analog example"
 id: hall-effect-sensor-arduino-3
 hide_title: false
 ---

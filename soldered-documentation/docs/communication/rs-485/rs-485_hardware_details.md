@@ -1,10 +1,9 @@
 ---
 slug: /rs-485/hardware
-title: Rs 485 - Hardware details
+title: "RS-485 Transceiver \u2013 Hardware details"
 id: rs-485-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/rs-485/RS-485-breakout.png" alt="RS-485 transceiver pinout diagram" caption="RS-485 transceiver pinout diagram"/>

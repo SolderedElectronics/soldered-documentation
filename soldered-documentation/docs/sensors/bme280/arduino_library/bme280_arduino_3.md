@@ -1,11 +1,10 @@
 ---
 slug: /bme280/arduino/troubleshooting
-title: Bme280 - Troubleshooting
+title: "BME280 Environmental sensor \u2013 Arduino troubleshooting"
 id: bme280-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My readings are all equal to Zero!">

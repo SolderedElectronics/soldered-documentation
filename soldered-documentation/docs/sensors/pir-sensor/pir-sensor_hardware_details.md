@@ -1,10 +1,9 @@
 ---
 slug: /pir-sensor/hardware
-title: Pir Sensor - Hardware details
+title: "PIR Movement sensor \u2013 Hardware details"
 id: pir-sensor-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 ### Standard version

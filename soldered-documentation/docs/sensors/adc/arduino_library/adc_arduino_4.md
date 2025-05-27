@@ -1,10 +1,9 @@
 ---
 slug: /adc/arduino/async-and-cont-read
-title: Adc - Asynchronous and Continuous Readings
+title: "Analog to Digital Converter \u2013 Arduino Async and Cont Read"
 id: adc-arduino-4
 hide_title: false
 ---
-
 This page provides various examples of using the ADS1015/ADS1115 analog-to-digital converters (ADC) with Arduino, covering asynchronous and continuous readings.
 
 ---

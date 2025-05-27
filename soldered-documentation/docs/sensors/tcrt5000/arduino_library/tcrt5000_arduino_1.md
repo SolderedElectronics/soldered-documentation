@@ -1,10 +1,9 @@
 ---
 slug: /tcrt5000/arduino/geting-started
-title: Tcrt5000 - Getting started
+title: "Obstacle sensor TCRT5000 \u2013 Arduino getting started"
 id: tcrt5000-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

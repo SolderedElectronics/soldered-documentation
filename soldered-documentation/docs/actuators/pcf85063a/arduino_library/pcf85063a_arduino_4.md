@@ -1,10 +1,9 @@
 ---
 slug: /pcf85063a/arduino/reading-the-time-and-date
-title: Pcf85063A - Reading the time and date
+title: "PCF85063A RTC \u2013 Arduino reading the time and date"
 id: pcf85063a-arduino-4
 hide_title: false
 ---
-
 In the `loop()` function, we will read the time on the RTC every second:
 
 ```cpp

@@ -1,10 +1,9 @@
 ---
 slug: /led-matrix/hardware
-title: Hardware - Hardware details
+title: "LED matrix \u2013 Hardware details"
 id: led-matrix-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/led-matrix/led-matrix_pinout.jpg" alt="Pinout" />

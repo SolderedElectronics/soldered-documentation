@@ -1,10 +1,9 @@
 ---
 slug: /mcp23017/hardware
-title: Mcp23017 - Hardware Details
+title: "MCP23017 IO expander \u2013 Hardware details"
 id: mcp23017-hardware
 hide_title: false
 ---
-
 <CenteredImage src="/img/mcp23017/pinout.png" alt="Pinout" />
 
 Click [**here**](/img/mcp23017/pinout.png) for a high-resolution image of the pinout.

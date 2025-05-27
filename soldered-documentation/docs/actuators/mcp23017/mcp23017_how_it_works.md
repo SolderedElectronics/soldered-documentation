@@ -1,10 +1,9 @@
 ---
-slug: /mcp23017/how-it-works 
-title: How it works
-id: mcp23017-how-it-works 
-hide_title: False
----  
-
+slug: /mcp23017/how-it-works
+title: "MCP23017 IO expander \u2013 How it works"
+id: mcp23017-how-it-works
+hide_title: false
+---
 The I/O expander board works and communicates thanks to the **MCP23017** chip by [**Microchip Technology**](https://www.microchip.com/)
 
 <CenteredImage src="/img/mcp23017/chip.jpg" alt="TXB0104 chip on board" caption="TXB0104 chip on board" width="400px" />

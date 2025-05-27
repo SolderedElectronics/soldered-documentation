@@ -1,11 +1,10 @@
 ---
 slug: /hx711/arduino/troubleshooting
-title: Hx711 - Troubleshooting
+title: "HX711 Load Cell Amplifier \u2013 Arduino troubleshooting"
 id: hx711-arduino-5
 hide_title: false
 pagination_next: null
 ---
-
 This page provides troubleshooting steps to help resolve common issues when using the HX711 load cell amplifier with a load cell.
 
 <ExpandableSection title="My sensor won't initialize!">

@@ -1,10 +1,9 @@
 ---
 slug: /ltr-507/arduino/init-and-settings
-title: Ltr 507 - Initialization and Settings
+title: "LTR-507 Light and Proximity Sensor \u2013 Arduino init and settings"
 id: ltr-507-arduino-2
 hide_title: false
 ---
-
 This page contains an example of how to modify parameters of the LTR-507 light sensor.
 
 ---

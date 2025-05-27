@@ -1,10 +1,9 @@
 ---
 slug: /microsd-reader/arduino/reading-binary-files
-title: Microsd Reader - Reading binary files (example)
+title: "MicroSD Card Reader \u2013 Arduino reading binary files"
 id: microsd-reader-arduino-6
 hide_title: false
 ---
-
 On this page, we will read binary data from an image
 
 ---

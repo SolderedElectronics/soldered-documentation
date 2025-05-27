@@ -1,10 +1,9 @@
 ---
 slug: /digipot/hardware
-title: Digipot - Hardware details
+title: "Digital potentiometer \u2013 Hardware details"
 id: digipot-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/digipot/digipot_pinout.jpg" alt="Pinout" />

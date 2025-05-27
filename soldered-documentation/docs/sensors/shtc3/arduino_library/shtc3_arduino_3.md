@@ -1,11 +1,10 @@
 ---
 slug: /shtc3/arduino/troubleshooting
-title: Shtc3 - Troubleshooting
+title: "Temperature and humidity sensor SHTC3 \u2013 Arduino troubleshooting"
 id: shtc3-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My sensor won't initialize!">

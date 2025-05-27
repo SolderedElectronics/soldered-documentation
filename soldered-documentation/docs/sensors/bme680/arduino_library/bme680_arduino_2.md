@@ -1,10 +1,9 @@
 ---
 slug: /bme680/arduino/measuring-altitude-and-gas
-title: Bme680 - Measuring Altitude and Gas Resistance
+title: "BME680 Environmental & air quality sensor \u2013 Arduino measuring altitude and gas"
 id: bme680-arduino-2
 hide_title: false
 ---
-
 ## Altitude
 ### Based on sensor reading
 The altitude value can be calculated using the `readAltitude()` function. The value is determined by the pressure reading and the sea level.

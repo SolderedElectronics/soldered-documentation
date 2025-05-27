@@ -1,11 +1,10 @@
 ---
 slug: /joystick/overview
-title: Joystick - Overview
+title: "Joystick 2-axis with pushbutton \u2013 Overview"
 id: joystick-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Joystick 2-axis with pushbutton breakout
 
 The **Joystick 2-axis with pushbutton breakout** is a very simple input module. It provides analog readings of **X any Y direction**, along with the **angle** and **digital reading of the push button**. The module is an optimal solution for menu navigation, controlling robots or playing games.

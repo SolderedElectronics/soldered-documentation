@@ -1,11 +1,10 @@
 ---
 slug: /simple-sensor/simple-light-sensor/simple-light-sensor-overview
-title: Simple Sensor - Overview
+title: "Simple Light Sensor \u2013 Overview"
 id: simple-light-sensor-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Simple light sensor
 
 The **simple light sensor breakout board** is a precise sensor that detects the presence and intensity of ambient light. This sensor features a light-dependent resistor (LDR) that detects light. This sensor is also available in a version with **I2C communication**, with a default address of **0x30**, and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.

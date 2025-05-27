@@ -1,10 +1,9 @@
 ---
-slug: /bme680/how-it-works 
-title: How it works
-id: bme680-how-it-works 
-hide_title: False
----  
-
+slug: /bme680/how-it-works
+title: "BME680 Environmental & air quality sensor \u2013 How it works"
+id: bme680-how-it-works
+hide_title: false
+---
 BME680 is an integrated circuit by [**Bosch**](https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/). When using our board, you are essentially communicating with the onboard BME680 directly via **I2C communication**.
 
 <CenteredImage src="/img/bme680/bme680_onboard.webp" alt="BME280 sensor on board" caption="BME680 sensor on the board" width="400px" />

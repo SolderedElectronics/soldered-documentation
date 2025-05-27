@@ -1,11 +1,10 @@
 ---
 slug: /apds-9960/arduino/troubleshooting
-title: Apds 9960 - Troubleshooting
+title: "Color and Gesture sensor APDS-9960 \u2013 Arduino troubleshooting"
 id: apds-9960-arduino-6
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips if you are experiencing problems with this product.
 
 <ExpandableSection title="My sensor won't initialize!">

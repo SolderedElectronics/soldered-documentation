@@ -1,6 +1,6 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/arduino_library/qwiic-example
-title: Simple Sensor - Detecting and maesuring fire with Qwiic fire sensor (example)
+title: "Simple Fire Sensor \u2013 Library Qwiic Example"
 id: simple-fire-sensor-arduino-3
 hide_title: false
 ---

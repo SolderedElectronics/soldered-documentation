@@ -1,11 +1,10 @@
 ---
 slug: /tcrt5000/arduino/troubleshooting
-title: Tcrt5000 - Troubleshooting
+title: "Obstacle sensor TCRT5000 \u2013 Arduino troubleshooting"
 id: tcrt5000-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My sensor doesn't work">

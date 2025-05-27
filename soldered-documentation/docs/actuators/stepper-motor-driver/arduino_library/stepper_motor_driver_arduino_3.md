@@ -1,11 +1,10 @@
 ---
 slug: /stepper-motor-driver/arduino/troubleshooting
-title: Stepper Motor Driver - Troubleshooting
+title: "Stepper motor driver \u2013 Arduino troubleshooting"
 id: stepper-motor-driver-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My stepper won't turn!">

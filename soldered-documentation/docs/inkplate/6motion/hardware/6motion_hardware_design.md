@@ -1,12 +1,9 @@
 ---
 slug: /inkplate/6motion/hardware/design
-title: 6Motion - Hardware design
+title: "Inkplate \u2013 6Motion hardware design"
 id: 6motion-hardware-design
 hide_title: true
 ---
-
-
-
 <SectionTitle title="Hardware design" backgroundImage="/img/inkplate_6_motion/6_motion_hw.png" />
 
 Inkplate 6 MOTION is an **open-source** product, and we are happy to share an overview of its hardware design. On the following pages, you'll find schematics, KiCad design files, and other technical details related to the hardware. Whether you're looking to modify, troubleshoot, or simply understand the inner workings of Inkplate, this section has everything you need.  

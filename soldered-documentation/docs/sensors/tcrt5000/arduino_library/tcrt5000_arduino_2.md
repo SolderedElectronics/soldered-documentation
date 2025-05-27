@@ -1,10 +1,9 @@
 ---
 slug: /tcrt5000/arduino/example
-title: Tcrt5000 - Example usage (Arduino)
+title: "Obstacle sensor TCRT5000 \u2013 Arduino example"
 id: tcrt5000-arduino-2
 hide_title: false
 ---
-
 This page contains a simple example with function documentation on how to take measurements using the TCRT5000 sensor.
 
 ## Measuring with both digital and analog output

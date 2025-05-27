@@ -1,11 +1,10 @@
 ---
 slug: /relay/overview
-title: Relay - Overview
+title: "Relay Board \u2013 Overview"
 id: relay-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Relay board
 
 The **Relay board** is an electronic switch that is activated by a signal sent from microcontroller. It's used in applications where it is needed to turn on and off a device that needs large current or voltage. It works both on AC and DC. It comes in 1, 2 or 4 channel version and it also comes in versions with **I2C communication** (only 1 and 2 channel versions) which is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.

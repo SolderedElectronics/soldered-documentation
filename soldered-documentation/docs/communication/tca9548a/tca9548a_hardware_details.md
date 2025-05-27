@@ -1,10 +1,9 @@
 ---
 slug: /tca9548a/hardware
-title: Tca9548A - Hardware details
+title: "TCA9548A I2C multiplexer \u2013 Hardware details"
 id: tca9548a-hardware
 hide_title: false
 ---
-
 <CenteredImage src="/img/tca9548a/pinout.png" alt="Pinout" />
 
 Click [**here**](/img/tca9548a/pinout.png) for a high-resolution image of the pinout.

@@ -1,9 +1,9 @@
 ---
-slug: /relay/how-it-works 
-title: How it works
-id: relay-how-it-works 
-hide_title: False
----  
+slug: /relay/how-it-works
+title: "Relay board \u2013 How it works"
+id: relay-how-it-works
+hide_title: false
+---
 This is a circuit board with integated **SRD-05VDC-SL-C** relay by [**SONGLE**](https://www.circuitbasics.com/wp-content/uploads/2015/11/). It comes in both **single channel** (1 relay) and **multi channel** (2 and 4 relays) version. For **Qwiic**, currenty 1 and 2 channel versions are available. When using an Qwiic version you are essentially communicating with an onboard ATTINY404 MCU via **I2C communication**.
 
 

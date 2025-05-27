@@ -1,10 +1,9 @@
----  
-slug: /rfid/hardware  
-title: Hardware details  
-id: 125khzrfidtagreader-hardware  
-hide_title: False  
 ---
-
+slug: /rfid/hardware
+title: "125kHz RFID Reader \u2013 Hardware details"
+id: 125khzrfidtagreader-hardware
+hide_title: false
+---
 ## Pinout
 
 <ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>

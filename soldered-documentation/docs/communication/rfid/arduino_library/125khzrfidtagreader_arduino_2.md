@@ -1,10 +1,9 @@
 ---
 slug: /rfid/arduino/uart_examples
-title: Rfid - 125kHz RFID tag reader board (UART) - reading example
+title: "125kHz RFID Reader \u2013 Arduino UART Examples"
 id: 125khzrfidtagreader-arduino-2
 hide_title: false
 ---
-
 This page contains a few simple examples along with function documentation that explains how to use the **125kHz RFID Tag Reader Board (UART)**.
 
 ## Initialization

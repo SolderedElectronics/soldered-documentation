@@ -1,10 +1,9 @@
 ---
 slug: /digipot/arduino/geting-started
-title: Digipot - Getting started
+title: "Digital potentiometer \u2013 Arduino geting started"
 id: digipot-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

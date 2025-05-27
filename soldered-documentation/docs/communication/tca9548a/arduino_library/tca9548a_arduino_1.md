@@ -1,10 +1,9 @@
 ---
 slug: /tca9548a/arduino/geting-started
-title: Tca9548A - Getting started
+title: "TCA9548A I2C multiplexer \u2013 Arduino Getting Started"
 id: tca9548a-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library for the TCA9548A I2C Multiplexer, you can download it from the GitHub repository:

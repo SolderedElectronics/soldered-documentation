@@ -1,10 +1,9 @@
 ---
 slug: /mcp23017/arduino/geting-started
-title: Mcp23017 - Getting started
+title: "MCP23017 IO expander \u2013 Arduino getting started"
 id: mcp23017-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can download it from the GitHub repository:

@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/hardware/jumpers
-title: 6Motion - Jumpers
+title: "Inkplate \u2013 6Motion hardware jumpers"
 id: 6motion-hardware-jumpers
 ---
-
 Inkplate 6 MOTION features several **on-board jumpers**, which can be used to modify the behavior of certain components. Some jumpers are **connected by default**, while others need to be manually shorted.
 
 See the table below for a detailed explanation of each jumper's function:  

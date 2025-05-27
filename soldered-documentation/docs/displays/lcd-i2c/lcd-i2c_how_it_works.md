@@ -1,10 +1,9 @@
 ---
-slug: /lcd-i2c/how-it-works 
-title: How it works
-id: lcd-i2c-how-it-works 
-hide_title: False
----  
-
+slug: /lcd-i2c/how-it-works
+title: "LCD I2C Adapter \u2013 How it works"
+id: lcd-i2c-how-it-works
+hide_title: false
+---
 The LCD I2C displays utilize an I/O expander **TCA9534** made by [**Texas Instruments**](https://www.ti.com/product/TCA9534). 
 
 <CenteredImage src="/img/lcd-i2c/lcd-i2c_onboardd.png" alt="TCA9534 on board" caption="TCA9534 on board" width="500px" />

@@ -1,10 +1,9 @@
 ---
-slug: /ch340/how-it-works 
-title: How it works
-id: ch340-how-it-works 
-hide_title: False
----  
-
+slug: /ch340/how-it-works
+title: "Ch340 \u2013 How it works"
+id: ch340-how-it-works
+hide_title: false
+---
 The USB-UART CH340 Converter Board by [**Soldered**](https://soldered.com/product/usb-uart-ch340-converter-board/) enables communication between a computer and a microcontroller or other embedded devices via USB-to-UART conversion. Featuring the **CH340G chip**, this board supports **asynchronous serial communication** with baud rates **up to 2 Mbps**, making it ideal for programming, debugging, and data transfer. It provides **5V and 3.3V compatibility**.
 
 <CenteredImage src="/img/ch340/ch340onboard.png" alt="ch340onboard" caption="USB-UART CH340 Converter on the board" width="500px" />

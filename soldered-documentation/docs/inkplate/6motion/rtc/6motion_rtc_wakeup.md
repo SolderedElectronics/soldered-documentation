@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/rtc/wakeup
-title: 6Motion - RTC wakeup
+title: "Inkplate \u2013 6Motion RTC Wakeup"
 id: 6motion-rtc-wakeup
 ---
-
-
 Other than just measuring time while Inkplate is running, it's possible to use the built-in RTC to wake Inkplate up from deep sleep at a certain time.
 
 <InfoBox>For more info on deep sleep on Inkplate 6 MOTION, see [**this**](/inkplate/6motion/low-power/deep-sleep/) page.</InfoBox>

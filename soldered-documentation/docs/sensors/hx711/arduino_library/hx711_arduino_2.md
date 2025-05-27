@@ -1,10 +1,9 @@
 ---
 slug: /hx711/arduino/simple-read
-title: Hx711 - Simple Read
+title: "HX711 Load Cell Amplifier \u2013 Arduino simple read"
 id: hx711-arduino-2
 hide_title: false
 ---
-
 This page contains an example of initializing the HX711 load-cell amplifier and a simple **reading example** using both the **regular** and **easyC versions**.
 
 ---

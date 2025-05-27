@@ -1,11 +1,10 @@
 ---
 slug: /rs-485/arduino/troubleshooting
-title: Rs 485 - Troubleshooting
+title: "RS-485 Transceiver \u2013 Arduino troubleshooting"
 id: rs-485-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="The RS-485 communication won't initialize!">

@@ -1,10 +1,9 @@
 ---
-slug: /hc-sr04/how-it-works 
-title: How it works
-id: hc-sr04-how-it-works 
-hide_title: False
----  
-
+slug: /hc-sr04/how-it-works
+title: "HC-SR04 ultrasonic sensor \u2013 How it works"
+id: hc-sr04-how-it-works
+hide_title: false
+---
 The Qwiic compatibility is made possible with the [**Atmel ATTINY404-F**](https://soldered.com/productdata/2022/03/Soldered_ATTINY404_datasheet.pdf). When using Qwiic, you are essentially communicating with an onboard ATTINY404-F MCU via **I2C communication**, and the MCU controls the Trig and Echo pins of the sensor.
 
 <CenteredImage src="/img/hc-sr04/ATiny404.jpg" alt="ATiny404-F on board" caption="ATTINY404-F on board" width="400px" />

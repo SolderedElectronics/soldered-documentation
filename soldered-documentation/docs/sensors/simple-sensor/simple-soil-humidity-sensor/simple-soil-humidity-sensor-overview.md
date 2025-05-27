@@ -1,11 +1,10 @@
----  
-slug: /simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-overview  
-title: Overview  
-id: simple-soil-humidity-sensor-overview  
-hide_title: False  
-pagination_prev: null  
 ---
-
+slug: /simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-overview
+title: "Simple Soil Humidity Sensor \u2013 Overview"
+id: simple-soil-humidity-sensor-overview
+hide_title: false
+pagination_prev: null
+---
 ## Simple soil humidity sensor
 
 The **simple soil sensor breakout board** is a precise sensor that measures soil humidity using two exposed nickel-plated prongs. This sensor is also available in a version with **I2C communication**, featuring a default address of **0x30**, and is designed for seamless **Qwiic (formerly easyC) connectivity**—eliminating the need for soldering.

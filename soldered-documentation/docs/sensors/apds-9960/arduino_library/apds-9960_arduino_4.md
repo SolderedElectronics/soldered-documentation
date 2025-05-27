@@ -1,10 +1,9 @@
 ---
 slug: /apds-9960/arduino/proximity-sensor
-title: Apds 9960 - Proximity Sensor
+title: "Color and Gesture sensor APDS-9960 \u2013 Arduino proximity sensor"
 id: apds-9960-arduino-4
 hide_title: false
 ---
-
 This page contains simple examples of initialization and proximity detection with the APDS-9960 sensor.
 
 ---

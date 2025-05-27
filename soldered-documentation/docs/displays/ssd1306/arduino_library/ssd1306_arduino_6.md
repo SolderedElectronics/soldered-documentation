@@ -1,10 +1,9 @@
 ---
 slug: /ssd1306/arduino/more-examples
-title: Ssd1306 - More examples
+title: "SSD1306 \u2013 Arduino More Examples"
 id: ssd1306-arduino-6
 hide_title: false
 ---
-
 Since this display offers so much to explore, we encourage you to review the accompanying documentation and examples:
 
 See how advanced functions such as text scrolling and bitmap rendering work by checking out the example included with the library:

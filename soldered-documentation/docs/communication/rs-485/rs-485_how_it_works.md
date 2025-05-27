@@ -1,10 +1,9 @@
 ---
-slug: /rs-485/how-it-works 
-title: How it works
-id: rs-485-how-it-works 
-hide_title: False
----  
-
+slug: /rs-485/how-it-works
+title: "RS-485 Transceiver \u2013 How it works"
+id: rs-485-how-it-works
+hide_title: false
+---
 The **RS-485 Transceiver Breakout Board** by [**Soldered**](https://soldered.com/product/rs-485-transciever-breakout/) enables seamless communication between devices using the **RS-485 protocol**. It leverages the **SN65176BDR integrated circuit**, which provides robust differential signal transmission and reception, ensuring reliable communication over long distances (up to 1200 meters) and in noisy environments. This makes it ideal for industrial systems, motor control, and other applications requiring RS-485 connectivity.
 
 <CenteredImage src="/img/rs-485/onboard.png" alt="howitworks" caption="SN65176BDR RS-485 Transceiver with ESD Protection" width="500px" />

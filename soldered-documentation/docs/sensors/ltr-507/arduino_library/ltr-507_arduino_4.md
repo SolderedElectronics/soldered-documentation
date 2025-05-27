@@ -1,11 +1,10 @@
 ---
 slug: /ltr-507/arduino/troubleshooting
-title: Ltr 507 - Troubleshooting
+title: "LTR-507 Light and Proximity Sensor \u2013 Arduino troubleshooting"
 id: ltr-507-arduino-4
 hide_title: false
 pagination_next: null
 ---
-
 This page offers guidance for troubleshooting common issues encountered when using the LTR-507 Light and Proximity Sensor with Arduino platforms.
 
 <ExpandableSection title="Sensor Not Responding or Providing Readings">

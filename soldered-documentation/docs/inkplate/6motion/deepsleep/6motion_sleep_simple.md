@@ -1,10 +1,9 @@
 ---
 slug: /inkplate/6motion/low-power/deep-sleep
-title: 6Motion - Deep sleep
+title: "Inkplate \u2013 6Motion Low Power Deep Sleep"
 id: 6motion-deep-sleep
 hide_title: true
 ---
-
 <SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
 
 Using deep sleep on Inkplate 6 MOTION is key to writing a sketch which maximizes battery efficiency. Since e-Paper does not need any kind of power to retain the image displayed - Inkplate 6 MOTION can use little to no current while in deep sleep mode, and have a sketch running for months on battery.

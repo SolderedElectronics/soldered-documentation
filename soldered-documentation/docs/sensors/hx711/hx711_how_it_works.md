@@ -1,10 +1,9 @@
 ---
 slug: /hx711/how-it-works
-title: Hx711 - How it works
+title: "HX711 Load Cell Amplifier \u2013 How it works"
 id: hx711-how-it-works
 hide_title: false
 ---
-
 The **HX711** is a precision 24-bit analog-to-digital converter (ADC) designed for **weigh scales** and **industrial control applications**. Manufactured by [**AVIA**](http://en.aviaic.com/detail/730856.html), the HX711 provides high-precision digital output and can interface directly with **load cells** for **accurate weight measurements**.
 
 <CenteredImage src="/img/hx711/standard_onboard.png" alt="HX711 Standard Board" caption="HX711 Regular Board" width="500px" />

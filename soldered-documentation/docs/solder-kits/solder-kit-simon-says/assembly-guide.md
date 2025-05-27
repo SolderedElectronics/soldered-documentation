@@ -1,10 +1,9 @@
 ---
 slug: /simon-says-game/assemby-guide
-title: Simon Says Game - Assembly guide
+title: "Simon Says Game \u2013 Assembly guide"
 id: simon-says-game-assembly-guide
 hide_title: false
 ---
-
 ## Step 1: Solder the resistors to the PCB.
 Solder the resistors to the PCB on pins marked **R1** to **R4**. their orientation doesn't matter.
 <CenteredImage src="/img/simon-says-game/resistors_highlighted.jpg" alt="Highlighted pins for resistors R1 to R4" caption="Highlighted pins for resistors R1 to R4" width="600px"/>

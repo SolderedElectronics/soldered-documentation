@@ -1,10 +1,9 @@
 ---
 slug: /slider-potentiometer/how-it-works
-title: Slider Potentiometer - How it works
+title: "Slider Potentiometer \u2013 How it works"
 id: slider-potentiometer-how-it-works
 hide_title: false
 ---
-
 The **Slider Potentiometer Breakout** is a versatile module designed for manual resistance adjustment in various applications, such as audio equipment, robotics, and other control systems. It provides two independent analog outputs for seamless integration into your projects. When using the **Qwiic** version, you are essentially communicating with an onboard **ATTINY404 MCU** via **I2C communication**.
 
 <CenteredImage src="/img/slider-potentiometer/333131_chip.jpg" alt="ATTINY404 MCU chip on the board" caption="ATTINY404 MCU chip on the board" width="400px" />

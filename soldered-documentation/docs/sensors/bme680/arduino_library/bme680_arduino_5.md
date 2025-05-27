@@ -1,10 +1,9 @@
 ---
 slug: /bme680/arduino/initializing
-title: Bme680 - Initializing
+title: "BME680 Environmental & air quality sensor \u2013 Arduino initializing"
 id: bme680-arduino-5
 hide_title: false
 ---
-
 ## Connections for this example
 
 <CenteredImage src="/img/bme680/connections.png" alt="Connections"  />

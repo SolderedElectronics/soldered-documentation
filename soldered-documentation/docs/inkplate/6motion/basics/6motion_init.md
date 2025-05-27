@@ -1,10 +1,9 @@
 ---
 slug: /inkplate/6motion/basics/initialization
-title: 6Motion - Initialization
+title: "Inkplate 6Motion \u2013 initialization"
 id: 6motion-init
 hide_title: true
 ---
-
 <SectionTitle title="Initialization" backgroundImage="img/arduino_bg.jpg" />
 
 Let's get started with writing our first Inkplate sketch! Before doing anything with Inkplate in Arduino code, it needs to be initialized in the `setup()` function of your sketch. This page contains details on how to do that.

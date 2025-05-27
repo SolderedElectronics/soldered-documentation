@@ -1,10 +1,9 @@
 ---
 slug: /gnss-gps/hardware
-title: Gnss Gps - Hardware details
+title: "Gnss Gps L86-M33 \u2013 Hardware details"
 id: gnss-gps-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <ErrorBox>The pinout image for this board has not been generated yet! We're working on it!</ErrorBox>

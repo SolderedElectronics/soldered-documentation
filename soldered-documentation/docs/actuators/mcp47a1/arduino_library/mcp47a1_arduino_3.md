@@ -1,11 +1,10 @@
 ---
 slug: /mcp47a1/arduino/troubleshooting
-title: Mcp47A1 - Troubleshooting
+title: "MCP47A1 DAC \u2013 Arduino troubleshooting"
 id: mcp47a1-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My DAC won't initialize!">

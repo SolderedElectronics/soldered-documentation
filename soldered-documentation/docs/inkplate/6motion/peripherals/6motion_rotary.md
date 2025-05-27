@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/peripherals/rotary-encoder
-title: 6Motion - Rotary Encoder
+title: "Inkplate \u2013 6Motion Peripherals Rotary Encoder"
 id: 6motion-periph-rotary
 ---
-
 The **Inkplate 6 MOTION** includes a **AS5600 magnetic rotary encoder**, which allows precise rotation tracking. It is ideal for navigating menus or fine tuning numerical input values. 
 
 <InfoBox>This peripheral IC is mostly relevant to you only if you have the Inkplate 6 MOTION with **enclosure**, as it cointains the perfectly-placed **dial** with magnet to interface with the rotary encoder IC.</InfoBox>

@@ -1,16 +1,15 @@
----  
-slug: /txb0104/overview  
-title: Overview  
-id: txb0104-overview  
-hide_title: False  
-pagination_prev: null  
 ---
-
+slug: /txb0104/overview
+title: "Logic Level Converter TXB0104 \u2013 Overview"
+id: txb0104-overview
+hide_title: false
+pagination_prev: null
+---
 ## Logic Level Converter TXB0104 Board
 
 This board is designed for signal conversion for almost any communication protocol. It uses a specialized integrated circuit that enables high-speed communication.
 
-The Logic Level Converter TXB0104 Board provides **bidirectional** voltage level translation between two signals, enabling **communication** between devices **operating at different logic voltages**. Whether you're connecting a 5V microcontroller to a 3.3V sensor or working with other voltage combinations, this module ensures compatibility while **protecting lower-voltage components from damage**.
+The **Logic Level Converter TXB0104 Board** provides **bidirectional** voltage level translation between two signals, enabling **communication** between devices **operating at different logic voltages**. Whether you're connecting a 5V microcontroller to a 3.3V sensor or working with other voltage combinations, this module ensures compatibility while **protecting lower-voltage components from damage**.
 
 <InfoBox>
 

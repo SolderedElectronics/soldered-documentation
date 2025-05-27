@@ -1,10 +1,9 @@
 ---
 slug: /hall-effect-sensor/arduino/geting-started
-title: Hall Effect Sensor - Getting started
+title: "Hall Effect Sensor \u2013 Arduino Getting Started"
 id: hall-effect-sensor-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

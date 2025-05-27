@@ -1,10 +1,9 @@
----  
-slug: /ch340/hardware  
-title: Hardware details  
-id: ch340-hardware  
-hide_title: False  
 ---
-
+slug: /ch340/hardware
+title: "Ch340 \u2013 Hardware details"
+id: ch340-hardware
+hide_title: false
+---
 ## Pinout
 
 <CenteredImage src="/img/ch340/pinout.png" alt="USB-UART CH340 converter pinout diagram" caption="USB-UART CH340 converter pinout diagram"/>

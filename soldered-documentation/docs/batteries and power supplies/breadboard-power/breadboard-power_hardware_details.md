@@ -1,10 +1,9 @@
 ---
 slug: /breadboard-power/hardware
-title: Breadboard Power - Hardware details
+title: "Breadboard Power \u2013 Hardware details"
 id: breadboard-power-hardware
 hide_title: false
 ---
-
 <CenteredImage src="/img/breadboard-power/pinout.png" alt="Pinout" />
 
 Click [**here**](/img/breadboard-power/pinout.png) for a high-resolution image of the pinout.

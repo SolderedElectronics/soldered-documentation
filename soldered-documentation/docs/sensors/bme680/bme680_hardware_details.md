@@ -1,10 +1,9 @@
----  
-slug: /bme680/hardware  
-title: Hardware details  
-id: bme680-hardware  
-hide_title: False  
 ---
-
+slug: /bme680/hardware
+title: "BME680 Environmental & air quality sensor \u2013 Hardware details"
+id: bme680-hardware
+hide_title: false
+---
 ## Pinout
 
 <ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>

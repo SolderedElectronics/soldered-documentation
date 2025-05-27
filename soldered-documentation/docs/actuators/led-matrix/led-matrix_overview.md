@@ -1,11 +1,10 @@
 ---
 slug: /led-matrix/overview
-title: Led Matrix - Overview
+title: "LED matrix \u2013 Overview"
 id: led-matrix-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## 8x8 LED matrix 
 
 The **8x8 LED matrix** is a system of 64 interconnected LEDs that, with help of the **MAX7219 LED driver**, light up as programmed, and all of this is located on one board and is truly easy to use. You can use them to show letters or symbols, display text ect. It comes in **green**, **red**, **purple**, **white** , **orange** or **blue** version.

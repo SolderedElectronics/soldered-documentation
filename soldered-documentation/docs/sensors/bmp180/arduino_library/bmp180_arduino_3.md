@@ -1,11 +1,10 @@
 ---
 slug: /bmp180/arduino/troubleshooting
-title: Bmp180 - Troubleshooting
+title: "BMP180 Pressure & temperature sensor \u2013 Arduino troubleshooting"
 id: bmp180-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are having problems using this product.
 
 <ExpandableSection title="My sensor won't initialize!">

@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/wifi/get-post
-title: 6Motion - GET & POST requests
+title: "Inkplate \u2013 6Motion WiFi Get Post"
 id: 6motion-wifi-get-post
 ---
-
-
 Now that Inkplate is connected to the internet, you will likely want to send and recieve data on it form sensors, messages, from your custom API's etc. This page contains examples on how to send and recieve data on Inkplate via the internet:
 
 ---

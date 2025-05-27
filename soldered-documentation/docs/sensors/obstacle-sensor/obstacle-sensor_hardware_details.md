@@ -1,10 +1,9 @@
 ---
 slug: /obstacle-sensor/hardware
-title: Obstacle Sensor - Hardware details
+title: "Obstacle Sensor \u2013 Hardware details"
 id: obstacle-sensor-hardware
 hide_title: false
 ---
-
 ## Pinout
 <CenteredImage src="/img/obstacle-sensor/333004_pinout.jpg" alt="Pinout" />
 Click [**here**](/img/obstacle-sensor/333004_pinout.jpg) for a high resolution image of the pinout.

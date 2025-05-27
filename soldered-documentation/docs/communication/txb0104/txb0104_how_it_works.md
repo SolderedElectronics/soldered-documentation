@@ -1,10 +1,9 @@
 ---
-slug: /txb0104/how-it-works 
-title: How it works
-id: txb0104-how-it-works 
-hide_title: False
----  
-
+slug: /txb0104/how-it-works
+title: "Logic Level Converter TXB0104 \u2013 How it works"
+id: txb0104-how-it-works
+hide_title: false
+---
 The Logic Level Converter Board by [**Soldered**](https://soldered.com/product/logic-level-converter-generic-txb0104-breakout/) enables safe voltage-level shifting between 3.3V and 5V logic systems, facilitating communication between devices with differing voltage requirements.
 
 <CenteredImage src="/img/txb0104/onboard.png" alt="howitworks" caption="TXB0104 on the Logic Level Converter board" width="500px" />

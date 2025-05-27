@@ -1,11 +1,10 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/simple-rain-sensor-overview
-title: Simple Sensor - Overview
+title: "Simple Rain Sensor \u2013 Overview"
 id: simple-rain-sensor-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## Simple rain sensor
 
 The **simple rain sensor breakout board** is a precise sensor that detects if any moisture is present on its surface. It has two nickel-plated lines that are shorted when any moisture is present. It is commonly used as a **rain sensor**.

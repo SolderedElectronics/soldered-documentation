@@ -1,12 +1,9 @@
 ---
 slug: /inkplate/6motion/wifi/wifi-basics
-title: 6Motion - WiFi basics
+title: "Inkplate \u2013 6Motion WiFi Basics"
 id: 6motion-wifi-basics
 hide_title: true
 ---
-
-
-
 <SectionTitle title="WiFi basics" backgroundImage="/img/wifi.png" />
 
 On Inkplate 6MOTION, WiFi is handled by the onboard ESP32 co-processor, these pages contain tutorials on how to use this co-processor to simply connect to WiFi and get and send data.

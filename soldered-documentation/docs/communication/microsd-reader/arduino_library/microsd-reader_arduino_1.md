@@ -1,10 +1,9 @@
 ---
 slug: /microsd-reader/arduino/geting-started
-title: Microsd Reader - Getting started
+title: "MicroSD Card Reader \u2013 Arduino Getting Started"
 id: microsd-reader-arduino-1
 hide_title: false
 ---
-
 ## Acknowledgement
 
 <InfoBox> The Soldered microSD Card Breakout Arduino library is based on the popular [**SdFat** library](https://github.com/greiman/SdFat) by [Bill Greiman](https://github.com/greiman). As such, its source code is licensed under the **GNU General Public License v3.0 (GPL v3)**. For more details, see the [**GPL v3 license**](https://www.gnu.org/licenses/gpl-3.0.html).</InfoBox>

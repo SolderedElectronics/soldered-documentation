@@ -1,10 +1,9 @@
 ---
-slug: /rs-232/how-it-works 
-title: How it works
-id: rs-232-how-it-works 
-hide_title: False
----  
-
+slug: /rs-232/how-it-works
+title: "RS-232 Transceiver \u2013 How it works"
+id: rs-232-how-it-works
+hide_title: false
+---
 The **RS-232 Transceiver Breakout Board** by [**Soldered**](https://soldered.com/product/rs-232-transciever-breakout/) enables seamless communication between devices using the **RS-232 protocol**. It leverages the **MAX232E integrated circuit**, which converts RS-232 voltage levels (±3V to ±15V) to TTL/CMOS logic levels (0V to 5V) and vice versa. This ensures compatibility between modern microcontrollers and legacy RS-232 devices.
 
 <CenteredImage src="/img/rs-232/onboard.png" alt="howitworks" caption="MAX232E Dual RS-232 Driver and Receiver With IEC61000-4-2 Protection" width="500px" />

@@ -1,10 +1,9 @@
 ---
 slug: /ssd1306/arduino/initializing-the-screen
-title: Ssd1306 - Initializing the screen
+title: "SSD1306 \u2013 Arduino initializing the screen"
 id: ssd1306-arduino-2
 hide_title: false
 ---
-
 To use the SSD1306 OLED Display, first include the required library, create the display object, and initialize the display in the `setup()` function.
 
 ```cpp

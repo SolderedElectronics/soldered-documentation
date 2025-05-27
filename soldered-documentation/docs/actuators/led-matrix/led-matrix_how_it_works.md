@@ -1,10 +1,9 @@
 ---
-slug: /led-matrix/how-it-works 
-title: How it works
-id: led-matrix-how-it-works 
-hide_title: False
----  
-
+slug: /led-matrix/how-it-works
+title: "LED matrix \u2013 How it works"
+id: led-matrix-how-it-works
+hide_title: false
+---
 The **LED matrix** is a circuit board that contains a system of **64 interconnected LEDs** that are controlled by onboard **MAX7219 LED driver** by [**Adafruit**](https://www.adafruit.com/product/453).
 
 <CenteredImage src="/img/led-matrix/led-matrix_MAX7219_highlighted.jpg" alt="MAX7219 LED driver on board" caption="MAX7219 LED driver on board" width="400px" />

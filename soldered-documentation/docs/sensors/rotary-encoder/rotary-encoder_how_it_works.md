@@ -1,10 +1,9 @@
 ---
-slug: /rotary-encoder/how-it-works 
-title: How it works
-id: rotary-encoder-how-it-works 
-hide_title: False
----  
-
+slug: /rotary-encoder/how-it-works
+title: "Rotary Encoder \u2013 How it works"
+id: rotary-encoder-how-it-works
+hide_title: false
+---
 Rotary encoder is a **positional sensor** which is used for determining the **angular position of a rotating shaft**, and generates an **electrical output signal** related to that position. Breakout board uses **EC11E1534408** rotary encoder by [ALPS](https://eu.mouser.com/ProductDetail/Alps-Alpine/EC11E1534408?qs=PoKhxlfUXjJk5yy1jIb28A%3D%3D&srsltid=AfmBOoqWdrLCWfukAif74HADQ5xgEWlmpqFwtwPZqIAtxNFYmnJB0LJY) When using an Qwiic version you are essentially communicating with an onboard ATTINY404 MCU via **I2C communication**.
 
 <CenteredImage src="/img/rotary-encoder/333188_ATTiny_highlighted.jpg" alt="ATTINY404 on the board" caption="ATTINY404 on the board" width="400px" />

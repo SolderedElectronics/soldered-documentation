@@ -1,10 +1,9 @@
 ---
 slug: /relay/arduino/geting-started
-title: Relay - Getting started
+title: "Relay Board \u2013 Arduino getting started"
 id: relay-arduino-1
 hide_title: false
 ---
-
 ## Arduino library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

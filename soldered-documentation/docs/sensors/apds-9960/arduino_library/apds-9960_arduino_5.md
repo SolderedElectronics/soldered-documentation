@@ -1,10 +1,9 @@
 ---
 slug: /apds-9960/arduino/color-sensor
-title: Apds 9960 - Color Sensor
+title: "Color and Gesture sensor APDS-9960 \u2013 Arduino color sensor"
 id: apds-9960-arduino-5
 hide_title: false
 ---
-
 This page contains simple examples of initialization and color detection using the APDS-9960 sensor.
 
 ---

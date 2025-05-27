@@ -1,10 +1,9 @@
 ---
 slug: /txs0104/hardware
-title: Txs0104 - Hardware details
+title: "Logic Level Converter TXS0104 \u2013 Hardware details"
 id: txs0104-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/txs0104/pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter I2C TXS0104 pinout diagram"/>

@@ -1,6 +1,6 @@
 ---
 slug: /bme680/arduino/troubleshooting
-title: Bme680 - Troubleshooting
+title: "BME680 Environmental & air quality sensor \u2013 Arduino troubleshooting"
 id: bme680-arduino-3
 hide_title: false
 pagination_next: null

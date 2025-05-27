@@ -1,6 +1,6 @@
 ---
 slug: /simple-sensor/simple-light-sensor/arduino_library/regular-example
-title: Simple Sensor - Detecting and measuring light with regular light sensor (example)
+title: "Simple Light Sensor \u2013 Library Regular Example"
 id: simple-light-sensor-arduino-2
 hide_title: false
 ---

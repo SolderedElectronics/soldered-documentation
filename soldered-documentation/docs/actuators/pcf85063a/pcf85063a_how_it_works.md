@@ -1,10 +1,9 @@
 ---
-slug: /pcf85063a/how-it-works 
-title: How it works
-id: pcf85063a-how-it-works 
-hide_title: False
----  
-
+slug: /pcf85063a/how-it-works
+title: "PCF85063A RTC \u2013 How it works"
+id: pcf85063a-how-it-works
+hide_title: false
+---
 The **PCF85063A** is an RTC by **NXP Semiconductors**. When using our board, you are essentially communicating with the onboard PCF85063A directly via **I2C communication**.
 
 <CenteredImage src="/img/pcf85063a/onboard.webp" alt="PCF85063A onboard" caption="PCF85063A onboard" />

@@ -1,10 +1,8 @@
 ---
 slug: /inkplate/6motion/peripherals/shtc3
-title: 6Motion - Temperature and humidity sensor
+title: "Inkplate \u2013 6Motion Peripherals SHTC3"
 id: 6motion-periph-shtc3
 ---
-
-
 The **SHTC3** sensor provides accurate **temperature and humidity measurements**. It's integrated into Inkplate 6 MOTION and can be used for environmental monitoring applications. 
 
 <CenteredImage src="/img/inkplate_6_motion/6motion_shtc3.jpg" alt="SHTC3 temperature and humidity sensor" caption="SHTC3 on the Inkplate 6 MOTION" width="600px" />

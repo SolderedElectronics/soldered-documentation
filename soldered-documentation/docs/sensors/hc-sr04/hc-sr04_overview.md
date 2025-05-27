@@ -1,11 +1,10 @@
 ---
 slug: /hc-sr04/overview
-title: Hc Sr04 - Overview
+title: "HC-SR04 ultrasonic sensor \u2013 Overview"
 id: hc-sr04-overview
 hide_title: false
 pagination_prev: null
 ---
-
 ## HC-SR04 ultrasonic sensor
 
 The **HC-SR04 ultrasonic sensor** is an affordable and popular sensor that measures the distance between itself and an object in front of it. It is very simple to use and returns the distance in centimeters or inches. In this variation, it comes on a board with an ATTINY microcontroller that sends readings from the sensor as a digital signal via **I2C communication** and is designed for seamless **Qwiic (formerly easyC) connectivity**.

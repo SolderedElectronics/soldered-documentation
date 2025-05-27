@@ -1,11 +1,9 @@
 ---
 slug: /hall-effect-sensor/arduino/Qwiic-digital-example
-title: Hall Effect Sensor - Detecting magnetic presence with Qwiic digital sensor
-  (example)
+title: "Hall Effect Sensor \u2013 Arduino qwiic digital example"
 id: hall-effect-sensor-arduino-4
 hide_title: false
 ---
-
 This page contains a simple example with function documentation on how to take measurements using the SI7211-B-06-IV Hall effect sensor and Qwiic connection.
 
 ## Qwiic Digital output example

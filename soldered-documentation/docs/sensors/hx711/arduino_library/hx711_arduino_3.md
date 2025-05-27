@@ -1,10 +1,9 @@
----  
-slug: /hx711/arduino/calibration-and-unit-read  
-title: Calibration and Unit Read  
-id: hx711-arduino-3  
-hide_title: False  
 ---
-
+slug: /hx711/arduino/calibration-and-unit-read
+title: "HX711 Load Cell Amplifier \u2013 Arduino calibration and unit read"
+id: hx711-arduino-3
+hide_title: false
+---
 This page contains an example of **calibrating** the HX711 load-cell amplifier and **reading calibrated values in units** using **regular** and **easyC versions**.
 
 ---

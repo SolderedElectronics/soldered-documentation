@@ -1,11 +1,10 @@
 ---
 slug: /pir-sensor/arduino/troubleshooting
-title: Pir Sensor - Troubleshooting
+title: "PIR Movement sensor \u2013 Arduino troubleshooting"
 id: pir-sensor-arduino-3
 hide_title: false
 pagination_next: null
 ---
-
 This page contains some tips in case you are experiencing problems using this product.
 
 <ExpandableSection title="My sensor won't initialize! (Qwiic)">

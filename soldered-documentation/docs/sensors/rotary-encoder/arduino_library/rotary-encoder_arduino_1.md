@@ -1,10 +1,9 @@
 ---
 slug: /rotary-encoder/arduino/geting-started
-title: Rotary Encoder - Getting started
+title: "Rotary Encoder \u2013 Arduino Getting Started"
 id: rotary-encoder-arduino-1
 hide_title: false
 ---
-
 ## Arduino Library
 
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:

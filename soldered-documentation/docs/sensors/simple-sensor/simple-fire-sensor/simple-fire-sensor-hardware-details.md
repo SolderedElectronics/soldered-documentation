@@ -1,10 +1,9 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/simple-fire-sensor-hardware
-title: Simple Sensor - Hardware details
+title: "Simple Fire Sensor \u2013 Hardware Details"
 id: simple-fire-sensor-hardware
 hide_title: false
 ---
-
 ## Pinout
 
 <CenteredImage src="/img/simple-sensor/simple-fire-sensor/333042_pinout.jpg" alt="Pinout" />

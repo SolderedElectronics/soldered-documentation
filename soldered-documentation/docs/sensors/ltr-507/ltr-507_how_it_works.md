@@ -1,10 +1,9 @@
 ---
-slug: /ltr-507/how-it-works 
-title: How it works
-id: ltr-507-how-it-works 
-hide_title: False
----  
-
+slug: /ltr-507/how-it-works
+title: "LTR-507 Light and Proximity Sensor \u2013 How it works"
+id: ltr-507-how-it-works
+hide_title: false
+---
 The LTR-507ALS-01 is an integrated I2C digital light sensor (ALS) and proximity sensor (PS) with a built-in LED driver manufactured by [**Lite-On**](https://optoelectronics.liteon.com/en-global/led/LED-Component).
 
 <CenteredImage src="/img/ltr-507/ltr-507onboard.png" alt="ltr-507 sensor on board" caption="LTR-507 sensor on board" width="500px" />

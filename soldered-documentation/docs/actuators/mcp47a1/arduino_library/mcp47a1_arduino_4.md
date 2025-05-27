@@ -1,10 +1,9 @@
 ---
 slug: /mcp47a1/arduino/generating-a-waveform
-title: Mcp47A1 - Generating a waveform
+title: "MCP47A1 DAC \u2013 Arduino generating a waveform"
 id: mcp47a1-arduino-4
 hide_title: false
 ---
-
 In this example, we will be generating a sine wave with the MCP47A1:
 
 First, we have to include the library and create an instance of the DAC object:

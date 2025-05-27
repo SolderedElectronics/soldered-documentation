@@ -1,10 +1,9 @@
 ---
 slug: /mcp47a1/arduino/examples
-title: Mcp47A1 - Setting specific voltages
+title: "MCP47A1 DAC \u2013 Arduino examples"
 id: mcp47a1-arduino-2
 hide_title: false
 ---
-
 We can set the DAC to output a specific voltage at any time.  
 
 ---
