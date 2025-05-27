@@ -33,7 +33,7 @@ The **AC057TC1** is a **5.65-inch** e-paper display panel from **E Ink Holdings 
 
 It features **a 600 × 488 resolution (132 DPI)**, **reflective matte treatment**, and can display **7 colors:** Black, White, Red, Yellow, Blue, Green, and Orange. The display operates in a **15°C to 35°C** temperature range and can be stored in temperatures as low as **-25°C**.  
 
-The panel can **display 7 colors (white,black,red,orange,yellow,green and blue)**, but that comes at the cost of the **screen refresh time**, which takes **12 seconds**
+The inclusion of colors comes at the cost of the **screen refresh time**, which takes **12 seconds**
 
 See the table below for detailed specifications:  
 
