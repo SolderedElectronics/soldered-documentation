@@ -41,7 +41,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 ---
 
 ## Connections (Qwiic)
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change the breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware#address-selection).
+Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change the breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware/#address-selection-for-qwiic-version).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |

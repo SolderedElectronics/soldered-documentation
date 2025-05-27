@@ -12,7 +12,7 @@ The **Slider Potentiometer Breakout** is a versatile module designed for manual 
 ---
 ## I2C communication - Qwiic
 
-Qwiic versions of the product use the onboard ATTINY404 MCU to implement I2C communication. The breakout board operates with a default I2C address of **0x30** but can be changed with onboard switches. To change the breakout board's address, check the **[Address selection](slider-potentiometer_hardware_details.md#addressSelection)**.
+Qwiic versions of the product use the onboard ATTINY404 MCU to implement I2C communication. The breakout board operates with a default I2C address of **0x30** but can be changed with onboard switches. To change the breakout board's address, check the **[Address selection](/documentation/slider-potentiometer/hardware/#address-selection-for-qwiic-version)**.
 
 **When detected**, ATTINY404 receives data from the sensor and passes it to the main MCU using the I2C data line. To learn in detail how the ATTINY404 is preprogrammed, check the **[firmware GitHub page](https://github.com/SolderedElectronics/Soldered-Slider-Potentiometer-with-easyC-Arduino-Library/blob/dev/extras/attiny_firmware/attiny_firmware.ino)**.
 
