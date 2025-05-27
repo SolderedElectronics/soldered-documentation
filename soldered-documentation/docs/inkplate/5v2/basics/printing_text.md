@@ -6,7 +6,7 @@ id: text
 
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts.
 
-<InfoBox>For complete examples of text printing, most Arduino projects in the [**library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate10) include some form of text output.</InfoBox>
+<InfoBox>For complete examples of text printing, most Arduino projects in the [**library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate5V2) include some form of text output.</InfoBox>
 
 ---
 
