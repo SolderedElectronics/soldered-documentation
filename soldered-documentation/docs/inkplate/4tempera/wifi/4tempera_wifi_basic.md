@@ -60,6 +60,6 @@ void loop(){}
 To see more details, check out our full examples:
 <QuickLink 
   title="Inkplate4TEMPERA_WiFi_examples" 
-  description="Inkpate 4TEMPERA WiFi examples from Inkplate library"
+  description="Inkplate 4TEMPERA WiFi examples from Inkplate library"
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/WEB_WiFi" 
 />

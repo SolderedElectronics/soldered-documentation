@@ -4,13 +4,13 @@ title: Display modes
 id: 4tempera-display-modes
 ---
 
-As mentioned on the previous page, Inkplate 4TEMPERA has two different display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page contains more information on both.
+As mentioned on the previous page, Inkplate 4TEMPERA offers two display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page provides more information about both.
 
 ---
 
 ## Black and white mode
 
-1-bit or black and white mode is the simpler and faster display mode. In this mode, pixels are either black or white. You can use shorthand defines `BLACK` and `WHITE` when selecting colors in this mode. For example, to draw and display a single black pixel and a single white pixel:
+1-bit or black and white mode is the simpler and faster display mode. In this mode, pixels are either black or white. You can use the shorthand defines `BLACK` and `WHITE` when selecting colors in this mode. For example, to draw and display a single black pixel and a single white pixel:
 
 ```cpp
 #include "Inkplate.h"
@@ -36,7 +36,7 @@ void loop() {
 
 ## Grayscale mode
 
-3-bit or grayscale mode offers the possibility to draw in 8 different levels of brightness, not just black and white. See below for an approximate visualization of black levels corresponding to their numerical values in code:
+3-bit or grayscale mode allows drawing in eight different levels of brightness, not just black and white. See below for an approximate visualization of the black levels corresponding to their numerical values in the code:
 
 <CenteredImage src="/img/inkplate_6_flick/grayscale.png" alt="3bit grayscale" caption="Black levels in 3-bit mode" width="450px" />
 

@@ -1,10 +1,10 @@
----
-slug: /inkplate/4tempera/peripherals/apds9960
-title: Gesture and proximity sensor
-id: 4tempera-periph-apds9960
+---  
+slug: /inkplate/4tempera/peripherals/apds9960  
+title: Gesture and proximity sensor  
+id: 4tempera-periph-apds9960  
 ---
 
-The **APDS9960** sensor on the Inkplate 4 TEMPERA enables **gesture recognition, proximity sensing, ambient light measurement, and basic RGB color detection**. It’s perfect for swipe-based UI interaction, detecting nearby motion, or adapting the display based on room lighting.
+The **APDS9960** sensor on the Inkplate 4 TEMPERA enables **gesture recognition, proximity sensing, ambient light measurement, and basic RGB color detection**. It’s perfect for swipe-based user interface interaction, detecting nearby motion, or adapting the display based on room lighting.
 
 ---
 
@@ -25,7 +25,7 @@ if (!inkplate.apds9960.init()) {
 
 <FunctionDocumentation functionName="inkplate.apds9960.init()" description="Initializes the APDS9960 sensor with default configuration." returnDescription="Returns true if successful, false if initialization fails." />
 
-Then enable the features you need:
+Then, enable the features you need:
 
 ```cpp
 inkplate.apds9960.enableProximitySensor(false);

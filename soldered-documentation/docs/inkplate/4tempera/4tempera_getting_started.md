@@ -7,7 +7,7 @@ hide_title: true
 
 <SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
 
-To get started with Arduino on Inkplate 4TEMPERA, complete a few simple steps to install the required software.
+To get started with Arduino on Inkplate 4TEMPERA, follow a few simple steps to install the required software.
 
 ---
 
@@ -50,11 +50,12 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 ### Done!
 
-Inkplate 4TEMPERA setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! See the next page in the documentation for details on how to upload code:
+Inkplate 4TEMPERA setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! For details on how to upload code, see the next page in the documentation:
 
 ---
 
 ## Uploading code
+
 To upload your own sketch or an Arduino example to **Inkplate 4TEMPERA**, follow this brief guide.
 
 ### 1. Connect Inkplate via USB and power it on
@@ -76,10 +77,10 @@ For the purposes of this documentation, we will use a pre-made example. Go to
 
 Before uploading the code, select the correct board definition. The table below should help you out:
 
-| Board Definition                  | Board Description                                                        |
-| --------------------------------- | ------------------------------------------------------------------------ |
-| Soldered inkplate_4_tempera         | The newer and more stylish version of the product, with a purple PCB.    |
-| e-radionica.com Inkplate 4TEMPERA    | The older version, with a blue PCB.                                      |
+| Board Definition                   | Board Description                                                     |
+| ---------------------------------- | --------------------------------------------------------------------- |
+| Soldered inkplate_4_tempera        | The newer and more stylish version of the product, with a purple PCB. |
+| e-radionica.com Inkplate 4TEMPERA   | The older version, with a blue PCB.                                   |
 
 Click **Upload** in the Arduino IDE.
 

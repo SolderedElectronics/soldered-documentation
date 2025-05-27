@@ -1,8 +1,8 @@
----
-slug: /inkplate/4tempera/wifi/image-from-web
-title: Draw Image from Web
-id: 4tempera-wifi-image-from-web
----
+---  
+slug: /inkplate/4tempera/wifi/image-from-web  
+title: Draw Image from Web  
+id: 4tempera-wifi-image-from-web  
+---  
 
 Drawing an image from the web on Inkplate 4TEMPERA is simple using the `draw` function, which supports multiple image formats.
 
@@ -16,7 +16,7 @@ Drawing an image from the web on Inkplate 4TEMPERA is simple using the `draw` fu
 
 ## Drawing an Image from a URL
 
-Let's draw this image of the Eurodom building in Osijek, Croatia, on Inkplate 4TEMPERA:
+Let's draw this image of the Eurodom building in Osijek, Croatia, on Inkplate 4TEMPERA:  
 <CenteredImage src="/img/inkplate_6_motion/sample_image.jpg" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
 
 ```cpp
@@ -68,8 +68,8 @@ void loop()
 
 <FunctionDocumentation
     functionName="inkplate.drawImage()"
-    description="Function draws image from char path."
-    returnDescription="Returns true if image was successfully drawn, otherwise false."
+    description="Function draws an image from the char path."
+    returnDescription="Returns true if the image was successfully drawn, otherwise false."
     parameters={[
     { type: "const char*", name: "path", description: "Path and filename of the image. Can be a URL (for web images) or a file path (on the microSD card)." },
     { type: "int", name: "x", description: "X-coordinate of the image's upper-left corner in the framebuffer." },

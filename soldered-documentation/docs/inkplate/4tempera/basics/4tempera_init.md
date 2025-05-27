@@ -6,13 +6,13 @@ hide_title: true
 ---  
 <SectionTitle title="Initialization" backgroundImage="img/arduino_bg.jpg" />
 
-Let's get started with writing our first Inkplate sketch! Before doing anything with Inkplate in Arduino code, it needs to be initialized in the `setup()` function of your sketch. This page contains details on how to do that.
+Let's get started by writing our first Inkplate sketch! Before using Inkplate in Arduino code, it must be initialized in the `setup()` function of your sketch. This page contains details on how to do that.
 
 ---
 
 ## Initializing Inkplate and Updating the Display
 
-The most basic sketch on Inkplate 6FLICK is as follows. It initializes Inkplate in memory and clears the e-paper display:
+The most basic sketch on Inkplate 4TEMPERA is as follows. It initializes Inkplate in memory and clears the e-paper display:
 
 ```cpp
 // Include Inkplate Arduino Library.
@@ -58,7 +58,7 @@ void loop()
 
 ## Display Rotation
 
-In case you want to use Inkplate in portrait mode, or in any 90-degree rotation, use `inkplate.setRotation()`:
+If you want to use Inkplate in portrait mode or any 90-degree rotation, use `inkplate.setRotation()`:
 <FunctionDocumentation
   functionName="inkplate.setRotation()"
   description="Set the cardinal rotation of the display; this adjusts the (0, 0) x-y coordinate origin point automatically as well."

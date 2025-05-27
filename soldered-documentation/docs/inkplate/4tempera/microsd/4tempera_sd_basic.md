@@ -7,11 +7,11 @@ hide_title: true
 
 <SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
 
-The built-in microSD card slot on Inkplate 4TEMPERA can be of great use for your project. It can store a very large number of high-quality image files to be displayed, and it can also read and write data during deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
+The built-in microSD card slot on Inkplate 4TEMPERA can be extremely useful for your project. It can store a vast number of high-quality image files to be displayed, and it can also read and write data during deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
 
 <CenteredImage src="/img/inkplate10/10_sdcard.jpg" alt="MicroSD card slot on Inkplate 4TEMPERA" caption="MicroSD card slot on Inkplate 4TEMPERA" width="600px" />
 
-<InfoBox>Inkplate 4TEMPERA  uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
+<InfoBox>Inkplate 4TEMPERA uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 <WarningBox>All supported card types are: **SD, SDHC and SDXC**</WarningBox>
 
@@ -19,7 +19,7 @@ The built-in microSD card slot on Inkplate 4TEMPERA can be of great use for your
 
 ## Preparing the microSD card before usage
 
-For best results, use the [**official SD card formatter**](https://www.sdcard.org/downloads/formatter/) to format the card to **FAT32** before usage.
+For best results, use the [**official SD card formatter**](https://www.sdcard.org/downloads/formatter/) to format the card to **FAT32** before use.
 
 <CenteredImage src="/img/inkplate10/sdcard_formatter.png" alt="Official SD card formatter" caption="The official SD Card formatter" width="400px" />
 
@@ -27,28 +27,28 @@ For best results, use the [**official SD card formatter**](https://www.sdcard.or
 
 ## Initializing
 
-Before the microSD card can be used in code, it must first be initialized. This powers on the microSD card circuitry and performs all the necessary memory allocations. In this code snippet, the microSD card is initialized and the result of the initialization is checked:
+Before the microSD card can be used in code, it must first be initialized. This process powers on the microSD card circuitry and performs all the necessary memory allocations. In this code snippet, the microSD card is initialized, and the result of the initialization is checked:
 ```cpp
-#include "Inkplate.h"            //Include Inkplate library to the sketch
-#include "SdFat.h"               //Include library for SD card
+#include "Inkplate.h"            // Include Inkplate library to the sketch
+#include "SdFat.h"               // Include library for SD card
 Inkplate inkplate(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
 SdFile file;                     // Create SdFile object used for accessing files on SD card
 
 void setup()
 {
-    inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    inkplate.begin();        // Initialize Inkplate library (you should call this function ONLY ONCE)
     inkplate.clearDisplay(); // Clear frame buffer of display
     inkplate.display();      // Put clear image on display
     inkplate.setTextSize(5);
 
-    // Init SD card. Display if SD card is init properly or not.
+    // Initialize SD card and display whether it was initialized properly.
     if (inkplate.sdCardInit())
     {
         inkplate.println("SD Card ok! Reading data...");
         inkplate.partialUpdate();
     }
     else
-    { // If card init was not successful, display error on screen, put sd card in sleep mode, and stop the program (using infinite loop)
+    { // If initialization fails, display an error on the screen, put the SD card in sleep mode, and stop the program (using an infinite loop)
         inkplate.println("SD Card error!");        
         inkplate.partialUpdate();
         inkplate.sdCardSleep();
@@ -63,84 +63,84 @@ void loop()
 ```
 <FunctionDocumentation
     functionname="inkplate.sdCardInit()"
-    description="Initializes sd card trough SPI."
+    description="Initializes the SD card through SPI."
     returnDescription="Returns true if the initialization was successful, otherwise returns false."
 />
 
 ---
 
 ## Reading and writing
-Place a sample `text.txt` file on the microSD card and write something in it. This code snippet will read it and print it to the e-Paper:
+Place a sample `text.txt` file on the microSD card and add some content to it. This code snippet will read the file and print its contents to the e-Paper:
 ```cpp
 /*
    Inkplate4TEMPERA_SD_TXT_Read example for Soldered Inkplate 4TEMPERA
-   For this example you will need only a micro USB cable, Inkplate 4TEMPERA and a SD card
-   loaded with text.txt file that can be found inside folder of this example.
+   For this example you will need only a micro USB cable, Inkplate 4TEMPERA, and an SD card
+   loaded with the text.txt file found inside the example folder.
    Select "Soldered Inkplate 4TEMPERA" from Tools -> Board menu.
-   Don't have "Inkplate 4TEMPERA(ESP32)" option? Follow our tutorial and add it:
+   Don't see the "Inkplate 4TEMPERA(ESP32)" option? Follow our tutorial to add it:
    https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
 
-   To work with SD card on Inkplate, you will need to add one extra library.
+   To work with the SD card on Inkplate, you will need to add one extra library.
    Download and install it from here: https://github.com/e-radionicacom/Inkplate-6-SDFat-Arduino-Library
 
-   You can open your own .txt file, but in order for this example to work properly it should
-   not have more than 200 chars and you should name it text.txt
+   You can open your own .txt file, but to ensure this example works properly, the file should
+   contain no more than 200 characters and must be named text.txt.
 
-   This example will show you how to open .txt files and display the content of that file on the Inkplate epaper display.
+   This example will show you how to open .txt files and display the content of that file on the Inkplate e-Paper display.
 
    Want to learn more about Inkplate? Visit www.inkplate.io
    Looking to get support? Write on our forums: https://forum.soldered.com/
    15 March 2024 by Soldered
 */
 
-// Next 3 lines are a precaution, you can ignore those, and the example would also work without them
+// The next three lines are a precaution; you can ignore them, and the example will also work without them.
 #ifndef ARDUINO_INKPLATE4TEMPERA
 #error "Wrong board selection for this example, please select Soldered Inkplate 4TEMPERA"
 #endif
 
-#include "Inkplate.h"            //Include Inkplate library to the sketch
-#include "SdFat.h"               //Include library for SD card
-Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+#include "Inkplate.h"            // Include Inkplate library to the sketch
+#include "SdFat.h"               // Include library for SD card
+Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set the library to 1 Bit mode (BW)
 SdFile file;                     // Create SdFile object used for accessing files on SD card
 
 void setup()
 {
-    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    display.begin();        // Initialize Inkplate library (you should call this function ONLY ONCE)
     display.clearDisplay(); // Clear frame buffer of display
     display.display();      // Put clear image on display
     display.setRotation(1);
     display.setFrontlight(15);
-    // Init SD card. Display if SD card is init properly or not.
+    // Initialize SD card and display whether it was initialized properly.
     if (display.sdCardInit())
     {
         display.println("SD Card ok! Reading data...");
         display.partialUpdate();
 
-        // Try to load text with max length of 200 chars.
+        // Try to load text with a maximum length of 200 characters.
         if (!file.open("/text.txt", O_RDONLY))
-        { // If it fails to open, send error message to display, otherwise read the file.
+        { // If it fails to open, display an error message; otherwise, read the file.
             display.println("File open error");
             display.display();
         }
         else
         {
-            display.clearDisplay();    // Clear everything that is stored in the frame buffer of the epaper
-            display.setCursor(0, 0);   // Set print position at the beginning of the screen
-            char text[3001];           // Array where data from SD card is stored (max 200 chars here)
-            int len = file.fileSize(); // Read how big the file that we are opening is
+            display.clearDisplay();    // Clear everything stored in the frame buffer of the e-Paper
+            display.setCursor(0, 0);   // Set the print position at the beginning of the screen
+            char text[3001];           // Array where data from the SD card is stored (max 200 characters expected)
+            int len = file.fileSize(); // Get the size of the file being opened
             if (len > 3000)
-                len = 3000;       // If it's more than 3000 bytes, limit to max 3000 bytes
+                len = 3000;       // If it's more than 3000 bytes, limit to a maximum of 3000 bytes
             file.read(text, len); // Read data from the file and save it in the text array
-            text[len] = 0;        // Put null terminating character at the end of the data
+            text[len] = 0;        // Append a null-terminating character at the end of the data
             display.setTextSize(2);
-            display.print(text);   // Print data/text
-            display.sdCardSleep(); // Put sd card in sleep mode
-            display.display();     // Do a full refresh of the display
+            display.print(text);   // Print the text data
+            display.sdCardSleep(); // Put the SD card in sleep mode
+            display.display();     // Perform a full refresh of the display
         }
     }
     else
-    { // If card init was not successful, display error on screen, put sd card in sleep mode, and stop the program
-      // (using infinite loop)
+    { // If initialization fails, display an error on the screen, put the SD card in sleep mode, and stop the program
+      // (using an infinite loop)
         display.println("SD Card error!");
         display.partialUpdate();
         display.sdCardSleep();
@@ -158,11 +158,11 @@ void loop()
 
 <FunctionDocumentation
     functionName="file.open()"
-    description="Open a file in the current working directory."
+    description="Opens a file in the current working directory."
     returnDescription="Returns true if opening is successful, otherwise returns false."
     parameters={[ 
-      { type: 'const char *', name: 'path', description: "The path to the file which is being opened, if it's in the root folder just write the filename." },
-      { type: 'oflag_t', name: 'oflag', description: "The settings for opening the file. The different flags have to be OR'd, eg. O_CREAT | O_RDWR. Below is a table of these flags and what they mean." }
+      { type: 'const char *', name: 'path', description: "The path to the file which is being opened. If it's in the root folder, just write the filename." },
+      { type: 'oflag_t', name: 'oflag', description: "The settings for opening the file. The different flags have to be OR'd, e.g., O_CREAT | O_RDWR. Below is a table of these flags and what they mean." }
     ]}
  />
 
@@ -194,18 +194,18 @@ void loop()
   ]}
  />
 
-<InfoBox>In the above mentioned functions, the file pointer is like a marker where you continue reading the file from, so subsequent calls to `file.print()` and `file.print()` will continue from where you left off.</InfoBox>
+<InfoBox>In the functions mentioned above, the file pointer acts as a marker indicating where to continue reading the file, so subsequent calls to file.print() will continue from where you left off.</InfoBox>
 
 <InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
 
 <QuickLink 
   title="Inkplate4TEMPERA_SD_TXT_Read.ino" 
-  description="This example will show you how to open .txt files and display the content of that file on Inkplate epaper display."
+  description="This example shows you how to open .txt files and display the content of that file on the Inkplate e-Paper display."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_TXT_Read" 
 />
 
 <QuickLink 
   title="Inkplate4TEMPERA_SD_TXT_Write.ino" 
-  description="This example will show you how to write to a .txt file."
+  description="This example shows you how to write to a .txt file."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_TXT_Write/Inkplate4TEMPERA_SD_TXT_Write.ino" 
 />

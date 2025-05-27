@@ -56,7 +56,7 @@ float altitude = inkplate.bme688.readAltitude(); // m
 
 <FunctionDocumentation functionName="inkplate.bme688.readGasResistance()" description="Reads the gas resistance value in milliohms." returnDescription="Returns gas resistance as a float." />
 
-<FunctionDocumentation functionName="inkplate.bme688.readAltitude()" description="Estimates altitude based on current pressure reading." returnDescription="Returns altitude as a float in meters." />
+<FunctionDocumentation functionName="inkplate.bme688.readAltitude()" description="Estimates altitude based on the current pressure reading." returnDescription="Returns altitude as a float in meters." />
 
 ---
 

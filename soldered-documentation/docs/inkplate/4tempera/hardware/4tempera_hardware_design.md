@@ -1,8 +1,8 @@
----
-slug: /inkplate/4tempera/hardware/design
-title: Hardware Design
-id: 4tempera-hardware-design
-hide_title: true
+---  
+slug: /inkplate/4tempera/hardware/design  
+title: Hardware Design  
+id: 4tempera-hardware-design  
+hide_title: true  
 ---
 
 <SectionTitle title="Hardware Design" backgroundImage="/img/inkplate_4_tempera/4_tempera_hw.png" />
@@ -15,7 +15,7 @@ Inkplate 4 TEMPERA is an **open-source** product, and we're excited to share its
 
 ## Basic Overview
 
-Inkplate 4 TEMPERA is built around a **3.8″ e-paper display** and powered by an **ESP32 microcontroller**, offering built-in Wi-Fi and Bluetooth support. Its compact size makes it ideal for portable or embedded projects that require high-contrast, ultra-low-power display capabilities.
+Inkplate 4 TEMPERA is built around a **3.8″ e-paper display** and is powered by an **ESP32 microcontroller**, which offers built-in Wi-Fi and Bluetooth support. Its compact size makes it ideal for portable or embedded projects that require high-contrast, ultra-low-power display capabilities.
 
 Key features include:
 
@@ -43,7 +43,7 @@ The following images show the front and back of the Inkplate 4 TEMPERA board, wi
 
 ## E-Paper Panel: ED038TH2
 
-Inkplate 4 TEMPERA uses the **ED038TH2** e-paper panel — a compact 3.8″ display from E Ink. This model delivers high pixel density and fast refresh performance, making it suitable for interactive applications and rapid screen changes while retaining the low power consumption e-paper is known for.
+Inkplate 4 TEMPERA uses the **ED038TH2** e-paper panel — a compact 3.8″ display from E Ink. This model delivers high pixel density and fast refresh performance, making it suitable for interactive applications and rapid screen refreshes while retaining the low power consumption that e-paper is known for.
 
 | **Specification**         | **Details**                             |
 | ------------------------- | --------------------------------------- |
@@ -65,4 +65,4 @@ Inkplate 4 TEMPERA uses the **ED038TH2** e-paper panel — a compact 3.8″ disp
 
 ---
 
-Let me know if you'd like to follow this up with jumper documentation, pinout diagrams, or firmware configuration pages.
+Let me know if you'd like additional documentation on jumpers, pinout diagrams, or firmware configuration pages.

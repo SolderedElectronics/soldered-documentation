@@ -4,7 +4,7 @@ title: Jumpers
 id: 4tempera-hardware-jumpers
 ---
 
-Inkplate 6FLICK features several **on-board jumpers** that can be used to modify the behavior of certain components. Some jumpers are **connected by default**, while others need to be manually shorted.
+Inkplate 4TEMPERA features several **on-board jumpers** that can be used to modify the behavior of certain components. Some jumpers are **connected by default**, while others need to be manually shorted.
 
 See the table below for a detailed explanation of each jumper's function:
 

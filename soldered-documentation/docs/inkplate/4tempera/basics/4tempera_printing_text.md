@@ -5,13 +5,13 @@ id: 4tempera-text
 ---  
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts.
 
-<InfoBox>For complete examples of text printing, most Arduino projects in the [**library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK) include some form of text output.</InfoBox>
+<InfoBox>For complete examples of text printing, most Arduino projects in the [**library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA) include some form of text output.</InfoBox>
 
 ---
 
 ## Simple Text Printing 
 
-To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size: 
+To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size:
 
 ```cpp
 #include "Inkplate.h"
@@ -52,7 +52,7 @@ void loop() {
   description="Increases the text size by a given factor."
   returnDescription="None"
   parameters={[ 
-    { type: 'uint8_t', name: 's', description: 'Size factor. 1 is default size, 2 is twice as large, 3 is three times larger, etc.' }
+    { type: 'uint8_t', name: 's', description: 'Size factor. 1 is the default size, 2 is twice as large, 3 is three times larger, etc.' }
   ]}
 />
 <FunctionDocumentation
@@ -69,6 +69,7 @@ void loop() {
 ## Text Background Color
 
 To change the text color, use `setTextColor`. This function can also optionally set a background color, which prints a rectangle in that color behind the text. This can improve visibility in some cases.
+
 <FunctionDocumentation
   functionName="inkplate.setTextColor()"
   description="Sets the color of the text. Must be called before printing."
@@ -83,7 +84,7 @@ To change the text color, use `setTextColor`. This function can also optionally 
 
 ## Custom Fonts
 
-The default font appears blocky as it is optimized for minimal memory usage. You can use custom fonts by downloading them from the [Adafruit GFX official repository](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/Fonts). Adafruit provides well-documented examples on using custom fonts [**here**](https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts). 
+The default font appears blocky because it is optimized for minimal memory usage. You can use custom fonts by downloading them from the [Adafruit GFX official repository](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/Fonts). Adafruit provides well-documented examples of using custom fonts [**here**](https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts).
 
 After downloading a font, place it in your sketch folder, include it, and use `setFont`:
 
@@ -113,7 +114,7 @@ void loop() {
   description="Sets a custom font for text printing. Must be called before printing."
   returnType="None"
   parameters={[
-    {type: 'const GFXfont *', name:'f', description: 'pointer to the GFXfont structure of the font to be set.'}
+    {type: 'const GFXfont *', name:'f', description: 'Pointer to the GFXfont structure of the font to be set.'}
   ]}
 />
 
@@ -124,9 +125,9 @@ void loop() {
 You can manually define the area in which text will appear by using the `drawTextBox()` function.
 
 ```cpp
-#include "Inkplate.h"            // Include Inkplate library in the sketch
+#include "Inkplate.h"            // Include the Inkplate library in the sketch
 #include "Roboto_Light_36.h"
-Inkplate inkplate(INKPLATE_1BIT); // Create an object of the Inkplate library and also set the library into 1 Bit mode (BW)
+Inkplate inkplate(INKPLATE_1BIT); // Create an object of the Inkplate library and set the library to 1 Bit mode (BW)
 
 // Define the text you will show in the text box
 const char* text = "This is an example of a text written in a textbox. When a word doesn't fit into the current row, it goes to the next one."\
@@ -134,30 +135,30 @@ const char* text = "This is an example of a text written in a textbox. When a wo
 
 void setup()
 {
-    inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    inkplate.clearDisplay(); // Clear frame buffer of display
-    inkplate.display();      // Put clear image on display
+    inkplate.begin();        // Initialize the Inkplate library (you should call this function ONLY ONCE)
+    inkplate.clearDisplay(); // Clear the frame buffer of the display
+    inkplate.display();      // Display the clear image
 
     // Create a text box without any optional parameters
-    // x0 - x coordinate of upper left corner
-    // y0 - y coordinate of upper left corner
-    // x1 - x coordinate of bottom right corner
-    // y1 - y coordinate of bottom right corner
+    // x0 - x coordinate of the upper left corner
+    // y0 - y coordinate of the upper left corner
+    // x1 - x coordinate of the bottom right corner
+    // y1 - y coordinate of the bottom right corner
     // text - text we want to display
     inkplate.drawTextBox(100,100,300,300,text);
 
     // Create a text box with all parameters
-    // x0 - x coordinate of upper left corner
-    // y0 - y coordinate of upper left corner
-    // x1 - x coordinate of bottom right corner
-    // y1 - y coordinate of bottom right corner
+    // x0 - x coordinate of the upper left corner
+    // y0 - y coordinate of the upper left corner
+    // x1 - x coordinate of the bottom right corner
+    // y1 - y coordinate of the bottom right corner
     // text - text we want to display
-    // textSizeMultiplier - by what factor we want to enlarge the size of a font
-    // font - address of selected custom font
-    // verticalSpacing - how many pixels between each row of text
+    // textSizeMultiplier - factor by which we want to enlarge the size of the font
+    // font - address of the selected custom font
+    // verticalSpacing - number of pixels between each row of text
     // showBorder - create a visible rectangle around the box
     // fontSize - size of the used font in pt
-    int offset = 32; // Note - some custom fonts are drawn from bottom-to-top which requires an offset; use an offset that best suits the font you use 
+    int offset = 32; // Note: Some custom fonts are drawn from bottom to top, which requires an offset; use an offset that best suits the font you use 
     inkplate.drawTextBox(400,100 + offset,600,300,text,1,&Roboto_Light_36,27,false,36);
 
     // Display both text boxes
@@ -176,14 +177,14 @@ void loop()
   description="This function creates a TextBox."
   returnType="void"
   parameters={[
-    { type: 'uint16_t', name: 'x0', description: 'X coordinate of upper left corner.' },
-    { type: 'uint16_t', name: 'y0', description: 'Y coordinate of upper left corner.' },
-    { type: 'uint16_t', name: 'x1', description: 'X coordinate of bottom right corner.' },
-    { type: 'uint16_t', name: 'x2', description: 'Y coordinate of bottom right corner.' },
+    { type: 'uint16_t', name: 'x0', description: 'X coordinate of the upper left corner.' },
+    { type: 'uint16_t', name: 'y0', description: 'Y coordinate of the upper left corner.' },
+    { type: 'uint16_t', name: 'x1', description: 'X coordinate of the bottom right corner.' },
+    { type: 'uint16_t', name: 'x2', description: 'Y coordinate of the bottom right corner.' },
     { type: 'const char*', name: 'text', description: 'Text we want to display.' },
-    { type: 'uint16_t', name: 'textSize', description: 'Factor we want to enlarge the size of a font.' },
-    { type: 'const GFXfont* ', name: 'font', description: 'Address of selected custom font.' },
-    { type: 'uint16_t', name: 'verticalSpacing', description: 'How many pixels between each row of text.' },
+    { type: 'uint16_t', name: 'textSize', description: 'Factor by which we want to enlarge the size of the font.' },
+    { type: 'const GFXfont* ', name: 'font', description: 'Address of the selected custom font.' },
+    { type: 'uint16_t', name: 'verticalSpacing', description: 'Number of pixels between each row of text.' },
     { type: 'bool', name: 'showBorder', description: 'Create a visible rectangle around the box.' },
     { type: 'uint16_t', name: 'fontSize', description: 'Size of the used font in pt.' },
   ]}
@@ -192,10 +193,11 @@ void loop()
 ---
 
 ## Full examples
+
 Check out the full examples:
 
 <QuickLink 
   title="Inkplate4TEMPERA_TextBox.ino" 
-  description="This example will show you how to use the TextBox function with and without special parameters"
+  description="This example shows you how to use the TextBox function with and without special parameters"
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/Other/Inkplate4TEMPERA_TextBox" 
 />

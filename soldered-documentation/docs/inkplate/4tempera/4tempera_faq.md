@@ -1,8 +1,8 @@
----
-slug: /inkplate/4tempera/faq-troubleshooting
-title: FAQ and troubleshooting
-id: 4tempera-faq-troubleshooting
-hide_title: true
+---  
+slug: /inkplate/4tempera/faq-troubleshooting  
+title: FAQ and troubleshooting  
+id: 4tempera-faq-troubleshooting  
+hide_title: true  
 ---
 
 <SectionTitle title="FAQ and Troubleshooting" backgroundImage="/img/faq.webp" />
@@ -20,7 +20,7 @@ If you're having trouble uploading code, try the following steps:
 Ensure the **power switch is turned ON** and that the power LED is lit.
 
 #### Verify Arduino IDE version
-Inkplate 4 TEMPERA requires **Arduino IDE 2.0 or newer**. Make sure you're using the latest version for best compatibility.
+Inkplate 4 TEMPERA requires **Arduino IDE 2.0 or newer**. Make sure you're using the latest version for the best compatibility.
 
 #### Still having issues?
 Reach out to our support team [**here**](https://soldered.com/contact/) with details about your setup and what you've already tried.
@@ -36,7 +36,6 @@ Enable **verbose output** in Arduino (**File → Preferences**) and watch for:
 Leaving... 
 Hard resetting via RTS pin...
 ```
-
 
 #### 2. Use a known-good example
 Start with an unmodified example sketch from the official Inkplate 4 TEMPERA examples:
@@ -124,7 +123,7 @@ Inkplate 4 TEMPERA supports 3.7V Li-ion batteries via its **2-pin 2.0mm JST conn
 
 <CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 4 TEMPERA battery connector" caption="JST battery connector" width="500px" />
 
-<WarningBox>**Caution:** Always connect the battery with correct polarity. Reversed connections may damage the board. See the [**battery guide**](/inkplate/4tempera/hardware/battery) for more info.</WarningBox>
+<WarningBox>**Caution:** Always connect the battery with correct polarity. Reversed connections may damage the board. See the [**battery guide**](/inkplate/4tempera/hardware/battery) for more information.</WarningBox>
 </ExpandableSection>
 
 <ExpandableSection title="Where can I find schematics and hardware files for Inkplate 4 TEMPERA?">

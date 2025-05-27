@@ -28,7 +28,7 @@ inkplate.initBuzzer();
 
 ### Basic beep
 
-The most straightforward way to produce a sound is using `beep(durationMs)`:
+The most straightforward way to produce a sound is by using `beep(durationMs)`:
 
 ```cpp
 inkplate.beep(80); // 80ms short beep
@@ -54,7 +54,7 @@ inkplate.beep(300, 2400);  // 300ms beep at 2400Hz
 
 <FunctionDocumentation
   functionName="inkplate.beep()"
-  description="Plays a beep with specified duration and frequency."
+  description="Plays a beep with a specified duration and frequency."
   returnDescription="None"
   parameters={[
     { type: 'int', name: 'durationMs', description: "Duration of the beep in milliseconds." },
@@ -81,8 +81,7 @@ inkplate.beepOff();  // Turn buzzer off
 
 ## Full Example
 
-In the official Inkplate example, a small melody is played using notes from a **Cmaj7 chord**:  
-C (523 Hz), E (659 Hz), G (783 Hz), B (987 Hz). It also demonstrates multiple playback methods and variable timing.
+In the official Inkplate example, a small melody is played using notes from a **Cmaj7 chord** — C (523 Hz), E (659 Hz), G (783 Hz), and B (987 Hz). It also demonstrates multiple playback methods and variable timing.
 
 The loop alternates between playing single notes and repeated tones to simulate musical phrasing:
 

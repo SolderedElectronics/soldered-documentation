@@ -1,13 +1,13 @@
----
-slug: /inkplate/4tempera/basics/partial-update
-title: Partial Update
-id: 4tempera-partial-update
-hide_title: true
+---  
+slug: /inkplate/4tempera/basics/partial-update  
+title: Partial Update  
+id: 4tempera-partial-update  
+hide_title: true  
 ---
 
 <SectionTitle title="Partial Updates" backgroundImage="img/partial_update.jpg" />
 
-Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a faster display refresh. This prevents full-screen flickering by updating only the pixels that have changed in the frame buffer.
+Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a faster display refresh. This method prevents full-screen flickering by updating only the pixels that have changed in the frame buffer.
 
 ---
 
@@ -15,8 +15,8 @@ Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a fas
 
 Partial updates in black-and-white (1-bit) mode offer the fastest e-Paper update available on Inkplate.
 
-<WarningBox>It is recommended to perform a full update after a certain number of partial updates to maintain the lifespan and image quality of the e-Paper display. Around 50 partial updates should still look good, depending on the content being displayed. Use `inkplate.setFullUpdateThreshold()` to automate this process.</WarningBox>
-<InfoBox>Partial updates are also supported in grayscale (3-bit) mode, but they are significantly faster and more effective in black-and-white mode. In grayscale mode, their primary benefit is reducing full-screen flickering.</InfoBox>
+<WarningBox>It is recommended to perform a full update after a certain number of partial updates to maintain both the lifespan and the image quality of the e-Paper display. Approximately 50 partial updates should still look good, depending on the content being displayed. Use `inkplate.setFullUpdateThreshold()` to automate this process.</WarningBox>
+<InfoBox>Partial updates are also supported in grayscale (3-bit) mode; however, they are significantly faster and more effective in black-and-white mode. In grayscale mode, their primary benefit is reducing full-screen flickering.</InfoBox>
 
 ```cpp
 #include "Inkplate.h"
@@ -29,16 +29,16 @@ void setup(){
 }
 void loop(){
   int x = -500; // Start from the left of the screen border
-    while (x < 1024)
-    {
-        inkplate.clearDisplay();
-        inkplate.setCursor(x, 300); // Set cursor position
-        inkplate.print("Partial updates!"); // Print scrolling text
-        inkplate.partialUpdate(true); // Perform a partial update
-        x += 15; // Move 15 pixels to the right
-    }
-    inkplate.display(); // Perform a full update
-    delay(1000); // Pause before next update
+  while (x < 1024)
+  {
+    inkplate.clearDisplay();
+    inkplate.setCursor(x, 300); // Set cursor position
+    inkplate.print("Partial updates!"); // Print scrolling text
+    inkplate.partialUpdate(true); // Perform a partial update
+    x += 15; // Move 15 pixels to the right
+  }
+  inkplate.display(); // Perform a full update
+  delay(1000); // Pause before next update
 }
 ```
 

@@ -1,7 +1,7 @@
----
-slug: /inkplate/4tempera/hardware/open-source-files
-title: Hardware files
-id: 4tempera-hardware-files
+---  
+slug: /inkplate/4tempera/hardware/open-source-files  
+title: Hardware files  
+id: 4tempera-hardware-files  
 ---
 
 The **hardware repositories** for Inkplate 4TEMPERA hardware files can be found at the following links:
@@ -47,7 +47,7 @@ The bill of materials (BOM) is provided in two formats:
 
 ### 3D files
 
-A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design using CAD software.
 
 ---
 

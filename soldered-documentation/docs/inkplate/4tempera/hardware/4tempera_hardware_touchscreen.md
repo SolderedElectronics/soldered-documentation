@@ -16,7 +16,7 @@ The Inkplate 4 TEMPERA features a built-in **capacitive touchscreen** bonded to 
 - **Capacitive touch layer** integrated with the 3.8″ ED038TH2 e-paper display  
 - **Two-point multitouch support** for gesture recognition or dual-finger use  
 - Responsive touch tracking with fast screen updates  
-- No additional external touch hardware required — controller is built in  
+- No additional external touch hardware is required — the controller is built in  
 - Works in both **1-bit (black-and-white)** and **3-bit (grayscale)** display modes
 
 ---

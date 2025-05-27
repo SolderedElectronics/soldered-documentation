@@ -1,7 +1,7 @@
----
-slug: /inkplate/4tempera/basics/drawing-graphics
-title: Drawing graphics
-id: 4tempera-graphics
+---  
+slug: /inkplate/4tempera/basics/drawing-graphics  
+title: Drawing graphics  
+id: 4tempera-graphics  
 ---
 
 Inkplate 4TEMPERA allows you to draw graphics on a **600 x 600 px canvas**.
@@ -15,7 +15,7 @@ Inkplate 4TEMPERA allows you to draw graphics on a **600 x 600 px canvas**.
 
 ## Drawing Geometric Shapes
 
-Below is an example demonstrating how to use various functions to draw graphics on the Inkplate 6FLICK:
+Below is an example demonstrating how to use various functions to draw graphics on the Inkplate 4TEMPERA:
 
 <InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/10/basics/basic-display-modes/) page for more details.</InfoBox>
 

@@ -1,13 +1,13 @@
----
-slug: /inkplate/4tempera/hardware/frontlight
-title: Frontlight
-id: 4tempera-hardware-frontlight
-hide_title: true
+---  
+slug: /inkplate/4tempera/hardware/frontlight  
+title: Frontlight  
+id: 4tempera-hardware-frontlight  
+hide_title: true  
 ---
 
 <SectionTitle title="Frontlight Overview" backgroundImage="img/frontlight.jpg" />
 
-The Inkplate 4 TEMPERA includes a built-in **frontlight system** designed to provide even illumination across the display surface, making the screen readable in dark or low-light environments. Unlike backlit displays, this frontlight maintains the e-paper’s natural, glare-free appearance while enhancing visibility.
+The Inkplate 4 TEMPERA includes a built-in **frontlight system** designed to provide even illumination across the display surface, making the screen readable in dark or low-light environments. Unlike backlit displays, this frontlight preserves the e-paper’s natural, glare-free appearance while enhancing visibility.
 
 ---
 
@@ -19,7 +19,7 @@ The Inkplate 4 TEMPERA includes a built-in **frontlight system** designed to pro
 - Energy-efficient LED design with smooth dimming capability  
 - Operates independently of display updates, with no effect on image quality or refresh behavior  
 
-<InfoBox>The frontlight is a built-in part of the original ED038TH2 display assembly used in Inkplate 4 TEMPERA. It is tested for brightness control and consistency during production.</InfoBox>
+<InfoBox>The frontlight is an integral part of the original ED038TH2 display assembly used in Inkplate 4 TEMPERA. It is tested for brightness control and consistency during production.</InfoBox>
 
 ---
 

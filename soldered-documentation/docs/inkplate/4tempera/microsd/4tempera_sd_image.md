@@ -7,7 +7,7 @@ hide_title: true
 
 <SectionTitle title="Display Images from SD Card" backgroundImage="img/sd_picture.jpg" />
 
-The `Inkplate6FLICK_SD_Pictures` example demonstrates how to load and display image files from a microSD card on the Inkplate 6Flick. This is ideal for dynamic content such as photo slideshows or interface elements loaded at runtime.
+The `Inkplate4TEMPERA_SD_Pictures` example demonstrates how to load and display image files from a microSD card on the Inkplate 4TEMPERA. This method is ideal for dynamic content such as photo slideshows or interface elements loaded at runtime.
 
 ---
 
@@ -26,12 +26,12 @@ SdFile file;                   // Create an SdFile object for accessing files on
 
 void setup()
 {
-    display.begin();           // Initialize the Inkplate library (you should call this function ONLY ONCE)
+    display.begin();           // Initialize the Inkplate library (this function should be called ONLY ONCE)
     display.clearDisplay();    // Clear the display's frame buffer
     display.setTextColor(BLACK); // Set the text color to black
-    display.setTextSize(3);    // Set font size to 3
+    display.setTextSize(3);    // Set the font size to 3
 
-    // Initialize SD card. Display whether the SD card is initialized properly or not.
+    // Initialize the SD card and display whether it was initialized properly.
     if (display.sdCardInit())
     {
         display.println("SD Card OK! Reading image...");
@@ -97,12 +97,12 @@ void loop()
     functionName="inkplate.drawImage()"
     description="This function draws an image from a char path."
     returnDescription="Returns true if the image was successfully drawn, otherwise false."
-    parameters={[
-    { type: "const char*", name: "path", description: "Path and filename of the image. Can be a URL (for web images) or a file path (on the microSD card)." },
-    { type: "int", name: "x", description: "X-coordinate of the image's upper-left corner in the framebuffer." },
-    { type: "int", name: "y", description: "Y-coordinate of the image's upper-left corner in the framebuffer." },
-    { type: "uint8_t", name: "dither", description: "Dithering mode: 0 (disabled), 1 (enabled)." },
-    { type: "bool", name: "invert", description: "If true, inverts colors." },
+    parameters={[ 
+        { type: "const char*", name: "path", description: "Path and filename of the image. Can be a URL (for web images) or a file path (on the microSD card)." },
+        { type: "int", name: "x", description: "X-coordinate of the image's upper-left corner in the framebuffer." },
+        { type: "int", name: "y", description: "Y-coordinate of the image's upper-left corner in the framebuffer." },
+        { type: "uint8_t", name: "dither", description: "Dithering mode: 0 (disabled), 1 (enabled)." },
+        { type: "bool", name: "invert", description: "If true, inverts colors." },
     ]}
 />
 
@@ -112,6 +112,6 @@ void loop()
 
 <QuickLink 
   title="Inkplate4TEMPERA_SD_Pictures.ino" 
-  description="This example will show you how to read .bmp and .jpeg files (pictures) from an SD card and display the image on an e-paper display."
+  description="This example shows you how to read .bmp and .jpeg files (pictures) from an SD card and display the image on an e-paper display."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_Pictures" 
 />

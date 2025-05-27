@@ -4,12 +4,12 @@ title: Battery
 id: 4tempera-hardware-battery
 ---
 
-<WarningBox>Inkplate 4TEMPERA comes with a built in battery so skip this page unless you want to replace the battery.</WarningBox>  
+<WarningBox>Inkplate 4TEMPERA comes with a built-in battery, so skip this page unless you want to replace the battery.</WarningBox>  
 
 
 <WarningBox>This page contains important information about using a battery with Inkplate 4TEMPERA. For safety reasons, **please read this page carefully!**</WarningBox>  
 
-Inkplate 4TEMPERA includes a **2-pin 2mm JST connector**, allowing you to connect a **3.7V Li-ion battery**. The onboard charging IC, **MCP73831**, **automatically charges the battery** when Inkplate is plugged into **USB-C** and switches to battery power when unplugged. A **charging indicator LED** provides real-time charging status.  
+Inkplate 4TEMPERA includes a **2-pin 2mm JST connector**, allowing you to connect a **3.7V Li-ion battery**. The onboard charging IC, **MCP73831**, **automatically charges the battery** when the Inkplate is plugged into **USB-C** and switches to battery power when unplugged. A **charging indicator LED** provides real-time charging status.  
 
 <CenteredImage src="/img/inkplate10/battery_jst_connector.png" alt="Inkplate 4TEMPERA battery JST connector" caption="JST battery connector" width="500px"/>  
 

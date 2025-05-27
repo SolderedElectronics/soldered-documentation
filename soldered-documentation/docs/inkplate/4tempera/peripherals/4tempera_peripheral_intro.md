@@ -4,7 +4,7 @@ title: Peripheral basics
 id: 4tempera-periph-intro
 ---
 
-Inkplate 4 TEMPERA includes several onboard peripherals designed to extend its functionality and adapt it to a wide range of projects. These include sensors, a touchscreen, a frontlight system, and more. To conserve power and maintain clean initialization, each peripheral must be individually powered on before use.
+Inkplate 4 TEMPERA includes several onboard peripherals designed to extend its functionality and adapt it to a wide range of projects. These include sensors, a touchscreen, a frontlight system, and more. To conserve power and ensure proper initialization, each peripheral must be individually powered on before use.
 
 All peripherals are managed through the Inkplate library using the `wakePeripheral()` and `sleepPeripheral()` functions.
 
@@ -12,7 +12,7 @@ All peripherals are managed through the Inkplate library using the `wakePeripher
 
 ## Powering on
 
-Peripherals are asleep by default. You must explicitly wake them before use with inkplate.wakePeripheral() — failing to do so will lead to initialization or communication failures.
+Peripherals are asleep by default. You must explicitly wake them before use with `inkplate.wakePeripheral()` — failing to do so will lead to initialization or communication failures.
 
 To enable a peripheral:
 

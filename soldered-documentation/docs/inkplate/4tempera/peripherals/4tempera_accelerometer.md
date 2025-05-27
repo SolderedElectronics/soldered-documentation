@@ -1,10 +1,10 @@
----
-slug: /inkplate/4tempera/peripherals/accelerometer
-title: Accelerometer and gyroscope
-id: 4tempera-periph-accelerometer
+---  
+slug: /inkplate/4tempera/peripherals/accelerometer  
+title: Accelerometer and gyroscope  
+id: 4tempera-periph-accelerometer  
 ---
 
-The **LSM6DS3** sensor on the Inkplate 4 TEMPERA provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking. It is used for both general movement sensing and to demonstrate 3D projections based on device tilt.
+The **LSM6DS3** sensor on the Inkplate 4 TEMPERA provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking. It is used both for general movement sensing and to demonstrate 3D projections based on device tilt.
 
 <InfoBox>The **LSM6DS3** implementation in the Inkplate library is built-in and does not require installing an external library.</InfoBox>
 
@@ -66,29 +66,29 @@ float gz = inkplate.lsm6ds3.readFloatGyroZ();
 
 ## 3D Projection Demo
 
-In the official example, the LSM6DS3's accelerometer values are used to control the tilt of a **3D wireframe cube**. It shows how you can use orientation data for interactive graphics:
+In the official example, the LSM6DS3's accelerometer values are used to control the tilt of a **3D wireframe cube**, illustrating how orientation data can be used for interactive graphics:
 
 - 3D cube rendered using trigonometry and vector rotation
 - Accelerometer values used to rotate the cube in real time
 - Gyroscope and acceleration values printed on screen
 - Optimized display refresh using `partialUpdate()` and periodic full `display()` calls
 
-<InfoBox>The 3D projection is a visualization technique that smooths the motion using the previous accelerometer value to reduce jitter and increase realism.</InfoBox>
+<InfoBox>The 3D projection is a visualization technique that smooths motion by using the previous accelerometer value to reduce jitter and increase realism.</InfoBox>
 
 <CenteredImage src="/img/inkplate_4_tempera/accel.png" alt="Expected output on Inkplate display" caption="Full example display" width="800px" />
 
-<InfoBox>This sketch uses real-time accelerometer data to rotate a projected cube on the e-paper display. Each corner of the cube is rotated in 3D space then projected onto the 2D screen. To avoid flickering, the cube is updated using `partialUpdate()` until 35 frames pass, at which point a full `display()` refresh is performed.</InfoBox>
+<InfoBox>This sketch uses real-time accelerometer data to rotate a projected cube on the e-paper display. Each corner of the cube is rotated in 3D space and then projected onto the 2D screen. To avoid flickering, the cube is updated using `partialUpdate()` until 35 frames have passed, at which point a full `display()` refresh is performed.</InfoBox>
 
 The projection function handles 3-axis rotation:
 ```cpp
 void project(float *v, float angleX, float angleY, float angleZ, int *x, int *y)
 ```
 It uses the following sequence:
-- Rotate vertex around **X**, **Y**, then **Z** axis
+- Rotate the vertex around the **X**, **Y**, and **Z** axes
 - Project to 2D screen space
 - Adjust projection scale and center based on display size
 
-This approach enables smooth interactive rendering — an ideal demo for visual feedback based on motion.
+This approach enables smooth, interactive rendering—an ideal demo for providing visual feedback based on motion.
 
 ---
 

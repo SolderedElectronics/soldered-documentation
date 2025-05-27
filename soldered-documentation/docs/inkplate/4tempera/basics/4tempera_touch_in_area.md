@@ -1,13 +1,13 @@
----
-slug: /inkplate/4tempera/basics/touch-in-area
-title: Touch in Area
-id: 4tempera-touch-in-area
-hide_title: true
+---  
+slug: /inkplate/4tempera/basics/touch-in-area  
+title: Touch in Area  
+id: 4tempera-touch-in-area  
+hide_title: true  
 ---
 
 <SectionTitle title="Touch in Area" backgroundImage="img/touch_area.jpg" />
 
-The `Inkplate4TEMPERA_Touch_In_Area` example shows how to detect touch input within a specific rectangular area of the Inkplate 6Flick's screen. This is useful for creating interactive buttons or UI zones without relying on predefined widgets.
+The `Inkplate4TEMPERA_Touch_In_Area` example demonstrates how to detect touch input within a specific rectangular area of the Inkplate 4TEMPERA's screen. This is useful for creating interactive buttons or UI zones without relying on predefined widgets.
 
 ---
 
@@ -79,7 +79,6 @@ void loop()
         }
     }
 }
-
 ```
 
 <FunctionDocumentation

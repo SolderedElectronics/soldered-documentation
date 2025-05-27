@@ -7,7 +7,7 @@ hide_title: true
 
 <SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
 
-Using deep sleep on Inkplate 4TEMPERA is key to writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the image displayed, Inkplate 4TEMPERA can use little to no current while in deep sleep mode, allowing a sketch to run for months on a battery.
+Using deep sleep on the Inkplate 4TEMPERA is key to creating a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain an image, the Inkplate 4TEMPERA draws little to no current while in deep sleep mode, allowing a sketch to run for months on battery power.
 
 <InfoBox>If all peripherals are in sleep mode, deep sleep current will be around **20-30µA**</InfoBox>
 
@@ -33,7 +33,7 @@ void setup(){
   description="This function enables wakeup by timer."
   returnDescription="Returns ESP error code"
   returnType="int"
-  parameters={[
+  parameters={[ 
     { type: 'uint64_t', name: 'time_in_us', description: 'Wakeup time in microseconds.' },
   ]}
 />
@@ -48,7 +48,7 @@ void setup(){
 
 ## Wake on button press
 
-To wake up on a button press of the `Wake` button, use the ESP32 function `esp_sleep_enable_ext0_wakeup()` before putting it to sleep.
+To wake the device using the `Wake` button, use the ESP32 function `esp_sleep_enable_ext0_wakeup()` before putting it to sleep.
 
 ```cpp
 // Go to sleep for TIME_TO_SLEEP seconds
@@ -66,7 +66,7 @@ esp_deep_sleep_start();
   description="This function utilizes the external wakeup feature of the RTC_IO peripheral."
   returnDescription="Returns ESP error constant"
   returnType="int"
-  parameters={[
+  parameters={[ 
     { type: 'gpio_num_t', name: 'gpio_num', description: 'GPIO number used as wakeup source. Only GPIOs that have RTC functionality can be used.' },
     { type: 'int', name: 'level', description: 'Input level which will trigger wakeup.' },
   ]}
@@ -76,7 +76,7 @@ esp_deep_sleep_start();
 
 ## Full examples
 
-Check out the full examples on this page and many more usage options below:
+Check out the full examples on this page and discover many more usage options below:
 
 <QuickLink 
   title="Inkplate4TEMPERA_DeepSleep" 

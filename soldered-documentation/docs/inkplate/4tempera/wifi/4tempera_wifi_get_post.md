@@ -4,13 +4,13 @@ title: GET & POST requests
 id: 4tempera-wifi-get-post
 ---
 
-Now that Inkplate is connected to the internet, you will likely want to send and receive data on it from sensors, messages, and your custom APIs, etc. This page contains examples on how to send and receive data on Inkplate via the internet:
+Now that Inkplate is connected to the internet, you will likely want to send and receive data from sensors, messages, and your custom APIs. This page contains examples of how to send and receive data on Inkplate via the internet:
 
 ---
 
 ## GET request
 
-Using `client.GET()` will enable you to easily download and handle data on Inkplate however you want. Here is an example on how to GET an HTML file and print it on Inkplate:
+Using `client.GET()` enables you to easily download and handle data on Inkplate as you wish. Here is an example of how to GET an HTML file and print it on Inkplate:
 
 ```cpp
 #include "Inkplate.h"   // Include Inkplate library to the sketch
@@ -71,7 +71,7 @@ void setup()
 
     HTTPClient http;
     if (http.begin("http://example.com/index.html"))
-    { // Now try to connect to some web page (in this example www.example.com. And yes, this is a valid web page :))
+    { // Now try to connect to some web page (in this example www.example.com. And yes, this is a valid web page.)
         if (http.GET() > 0)
         { // If connection was successful, try to read the content of the web page and print it on the screen
             String htmlText;
@@ -134,7 +134,7 @@ To send data from Inkplate to a web server, you can use the same built-in `WiFiC
    1. Go to ThingSpeak.com and create a free account.
    2. Open the Channels tab.
    3. Create a new channel.
-   4. Create the fields you want to use (this example uses 1 field called field1 and this name must be used when sending data).
+   4. Create the fields you want to use (this example uses one field called field1, and this name must be used when sending data).
    5. Open the channel, go to the API Keys tab, and copy your Write API Key.
    6. Enter your API key in the code below.
 
@@ -149,7 +149,7 @@ To send data from Inkplate to a web server, you can use the same built-in `WiFiC
 Inkplate display(INKPLATE_1BIT);
 WiFiClient client;
 
-// Here you can change the interval of sending POST requests (minimum 15 seconds with a free license)
+// Here you can change the interval for sending POST requests (minimum 15 seconds with a free license)
 #define POSTING_INTERVAL_IN_SECS 20
 
 // Enter your WiFi credentials
