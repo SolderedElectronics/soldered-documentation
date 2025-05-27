@@ -15,7 +15,7 @@ See the table below for a detailed explanation of each jumper's function:
 | **Jumper** | **Default State** | **Function** |
 |---|---|---|
 | **JP1** 	| **NO** (not connected) 	| When shorted, it keeps the microSD card powered at 3.3v at all times. Useful for troubleshooting, but not ideal for low-power applications. |
-| **JP2** | **Connected to GPIO39 by default** | Switch between connecting the interrupt pin of the RTC to the GPIO39 pin or to the CLKOUT_RTC pin. |
+| **JP2** | **Connected to INT by default** | Switch between a digital, open-drain, active low interrupt output and a programmable digital square-wave output that can be used as a system clock. |
 | **JP3** | **Connected to SPI_CS(IO15) by default** | Switch between connecting the CS pin of the microSD card reader to the IO15 pin or the SD0 pin on the ESP32. |
 | **JP4** | **NO** (not connected) | When shorted, bypasses the 330-ohm resistor connected to the buffer, causing the ESP32 to enter bootloader mode. |
 | **JP5** | **NC** (connected) | When shorted, it connects the GPIO0 pin to a 100pF capacitor which provides more stable voltages. |
