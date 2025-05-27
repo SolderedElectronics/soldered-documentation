@@ -2,7 +2,10 @@
 slug: /inkplate/2/hardware/battery
 title: Battery
 id: 2-hardware-battery
+hide_title: true
 ---
+
+<SectionTitle title="Battery" backgroundImage="/img/inkplate_2/hardware.png" />
 
 <WarningBox>This page contains important information about using a battery with Inkplate 2. For safety reasons, **please read this page carefully!**</WarningBox>
 

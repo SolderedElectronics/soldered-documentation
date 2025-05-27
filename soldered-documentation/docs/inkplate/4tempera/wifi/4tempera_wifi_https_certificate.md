@@ -2,7 +2,10 @@
 slug: /inkplate/4tempera/wifi/https_certificate
 title: HTTPS certificate
 id: 4tempera-wifi-https-certificate
+hide_title: true
 ---
+
+<SectionTitle title="HTTPS Certificate" backgroundImage="/img/inkplate_2/hardware.png" />
 
 Now that Inkplate is connected to the internet, you will likely want to securely receive data from a website. This page provides an example of how to implement an HTTPS certificate for your connection.
 

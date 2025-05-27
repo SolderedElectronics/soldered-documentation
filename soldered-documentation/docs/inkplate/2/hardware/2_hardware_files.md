@@ -2,9 +2,10 @@
 slug: /inkplate/2/hardware/open-source-files
 title: Hardware files
 id: 2-hardware-files
+hide_title: true
 ---
 
-The **hardware repositories** for Inkplate 2 hardware files can be found on these links:
+<SectionTitle title="Hardware Files" backgroundImage="/img/inkplate_2/hardware.png" />
 
 <QuickLink 
   title="Soldered Inkplate 2 hardware design" 

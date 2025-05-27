@@ -2,7 +2,10 @@
 slug: /inkplate/2/basics/printing-text
 title: Printing Text
 id: 2-text
+hide_title: true
 ---
+
+<SectionTitle title="Printing Text" backgroundImage="/img/inkplate_2/hardware.png" />
 
 Printing text on Inkplate 2 is simple and intuitive. With support for **three colors** (black, white, red) and compatibility with the **Adafruit GFX** library, text rendering is flexible and customizable.
 

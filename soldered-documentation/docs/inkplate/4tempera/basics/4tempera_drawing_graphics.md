@@ -2,7 +2,10 @@
 slug: /inkplate/4tempera/basics/drawing-graphics  
 title: Drawing graphics  
 id: 4tempera-graphics  
+hide_title: true
 ---
+
+<SectionTitle title="Drawing Graphics" backgroundImage="/img/inkplate_2/hardware.png" />
 
 Inkplate 4TEMPERA allows you to draw graphics on a **600 x 600 px canvas**.
 

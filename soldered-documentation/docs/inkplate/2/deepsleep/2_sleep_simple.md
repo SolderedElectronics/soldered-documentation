@@ -7,7 +7,7 @@ hide_title: true
 
 <SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
 
-Using deep sleep on Inkplate 10 is key to writing a sketch which maximizes battery efficiency. Since e-Paper does not need any kind of power to retain the image displayed - Inkplate 10 can use little to no current while in deep sleep mode, and have a sketch running for months on battery.
+Using deep sleep on Inkplate 2 is key to writing a sketch which maximizes battery efficiency. Since e-Paper does not need any kind of power to retain the image displayed - Inkplate 2 can use little to no current while in deep sleep mode, and have a sketch running for months on battery.
 
 <InfoBox>If all peripherals are in sleep mode, deep sleep current will be around **20-30µA**</InfoBox>
 
@@ -79,20 +79,15 @@ esp_deep_sleep_start();
 Check out the full examples from this page and many more usage options down below:
 
 <QuickLink 
-  title="Inkplate10_Simple_Deep_Sleep.ino" 
+  title="Inkplate2_Simple_Deep_Sleep.ino" 
   description="This example will show you how you can use low power functionality of Inkplate board."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate10/Advanced/DeepSleep/Inkplate10_Simple_Deep_Sleep" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate2/Advanced/DeepSleep/Inkplate2_Simple_Deep_Sleep" 
 />
 
-<QuickLink 
-  title="Inkplate10_Wake_Up_Button.ino" 
-  description="Full example on how to implement WAKE UP button with deepsleep on Inkplate 10"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/DeepSleep/Inkplate10_Wake_Up_Button/Inkplate10_Wake_Up_Button.ino" 
-/>
 
 <QuickLink 
-  title="Inkplate10_RTC_Alarm_With_Deep_Sleep.ino" 
+  title="Inkplate2_RTC_Alarm_With_Deep_Sleep.ino" 
   description="This example will show you how to use RTC alarm interrupt with deep sleep."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate10/Advanced/DeepSleep/Inkplate10_RTC_Alarm_With_Deep_Sleep" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate2/Advanced/DeepSleep/Inkplate2_RTC_Alarm_With_Deep_Sleep" 
   
 />

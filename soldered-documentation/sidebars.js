@@ -332,26 +332,8 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'MicroSD',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'inkplate/2/microsd/2-microsd-basics',
-                    },
-                    {
-                      type: 'doc',
-                      id: 'inkplate/2/microsd/2-microsd-image',
-                    },
-                  ]
-                },
-                {
-                  type: 'category',
                   label: 'Real Time Clock',
                   items: [
-                    {
-                      type: 'doc',
-                      id: 'inkplate/2/rtc/2-rtc-basics',
-                    },
                     {
                       type: 'doc',
                       id: 'inkplate/2/rtc/2-rtc-alarm',

@@ -2,7 +2,10 @@
 slug: /inkplate/2/basics/drawing-graphics
 title: Drawing graphics
 id: 2-graphics
+hide_title: true
 ---
+
+<SectionTitle title="Drawing Graphics" backgroundImage="/img/inkplate_2/hardware.png" />
 
 Inkplate 2 features a 2.13″ three-color e-paper display capable of rendering black, white, and red pixels. You can draw geometric shapes using the built-in Adafruit GFX functions, compatible with the Inkplate library.
 

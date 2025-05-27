@@ -2,7 +2,10 @@
 slug: /inkplate/4tempera/hardware/battery
 title: Battery
 id: 4tempera-hardware-battery
+hide_title: true
 ---
+
+<SectionTitle title="Battery" backgroundImage="/img/inkplate_2/hardware.png" />
 
 <WarningBox>Inkplate 4TEMPERA comes with a built-in battery, so skip this page unless you want to replace the battery.</WarningBox>  
 

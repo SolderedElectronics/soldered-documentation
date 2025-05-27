@@ -2,7 +2,10 @@
 slug: /inkplate/2/hardware/open-source
 title: Inkplate is open source
 id: 2-hardware-open-source
+hide_title: true
 ---
+
+<SectionTitle title="Inkplate is open source" backgroundImage="/img/inkplate_2/hardware.png" />
 
 Inkplate is a **crowdfunded, open-source project**, and its software libraries build upon other free, community-driven libraries. Open-source has been essential to the development of Inkplate, and at [**Soldered Electronics**](https://soldered.com/about-us/), we believe in giving back by sharing the knowledge and resources we've gained along the way.  
 

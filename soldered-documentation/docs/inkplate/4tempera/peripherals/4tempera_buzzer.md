@@ -2,7 +2,10 @@
 slug: /inkplate/4tempera/peripherals/buzzer
 title: Buzzer
 id: 4tempera-periph-buzzer
+hide_title: true
 ---
+
+<SectionTitle title="Buzzer" backgroundImage="/img/inkplate_2/hardware.png" />
 
 The Inkplate 4 TEMPERA features a small **built-in buzzer** that can be used for sound effects, notifications, or simple melodies. It supports tone generation and frequency control through software.
 

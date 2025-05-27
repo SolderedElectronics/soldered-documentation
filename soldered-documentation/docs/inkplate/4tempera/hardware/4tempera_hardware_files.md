@@ -2,7 +2,10 @@
 slug: /inkplate/4tempera/hardware/open-source-files  
 title: Hardware files  
 id: 4tempera-hardware-files  
+hide_title: true
 ---
+
+<SectionTitle title="Hardware Files" backgroundImage="/img/inkplate_2/hardware.png" />
 
 The **hardware repositories** for Inkplate 4TEMPERA hardware files can be found at the following links:
 

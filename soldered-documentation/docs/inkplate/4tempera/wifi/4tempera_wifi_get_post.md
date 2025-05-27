@@ -2,7 +2,10 @@
 slug: /inkplate/4tempera/wifi/get-post
 title: GET & POST requests
 id: 4tempera-wifi-get-post
+hide_title: true
 ---
+
+<SectionTitle title="GET & POST Requests" backgroundImage="/img/inkplate_2/hardware.png" />
 
 Now that Inkplate is connected to the internet, you will likely want to send and receive data from sensors, messages, and your custom APIs. This page contains examples of how to send and receive data on Inkplate via the internet:
 

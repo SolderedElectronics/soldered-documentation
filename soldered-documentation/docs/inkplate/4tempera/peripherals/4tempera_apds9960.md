@@ -2,7 +2,10 @@
 slug: /inkplate/4tempera/peripherals/apds9960  
 title: Gesture and proximity sensor  
 id: 4tempera-periph-apds9960  
+hide_title: true
 ---
+
+<SectionTitle title="Gesture and Proximity Sensor" backgroundImage="/img/inkplate_2/hardware.png" />
 
 The **APDS9960** sensor on the Inkplate 4 TEMPERA enables **gesture recognition, proximity sensing, ambient light measurement, and basic RGB color detection**. It’s perfect for swipe-based user interface interaction, detecting nearby motion, or adapting the display based on room lighting.
 

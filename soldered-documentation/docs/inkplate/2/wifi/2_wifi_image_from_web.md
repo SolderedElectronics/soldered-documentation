@@ -2,79 +2,192 @@
 slug: /inkplate/2/wifi/image-from-web
 title: Draw Image from Web
 id: 2-wifi-image-from-web
+hide_title: true
 ---
 
-Drawing an image from the web on Inkplate 10 is simple using the `draw` function, which supports multiple image formats.
+<SectionTitle title="Displaying Web Images" backgroundImage="/img/wifi.png" />
 
-<InfoBox>Supported formats: JPG, BMP, and PNG.</InfoBox>
-
-<WarningBox>JPG files **without** progressive encoding are supported.</WarningBox>
-
-<InfoBox>If you experience issues displaying an image, try re-saving it with an image editing program. The issue is usually related to the image format.</InfoBox>
+You can download and display images directly from the internet on your Inkplate 2 using its built-in WiFi and ESP32 processor. Supported formats include `.bmp`, `.jpg`, and `.png`, with a maximum resolution of **212×104 pixels**.
 
 ---
 
-## Drawing an Image from a URL
+## Supported formats
 
-Let's draw this image of the Eurodom building in Osijek, Croatia on Inkplate 10:
-<CenteredImage src="/img/inkplate_6_motion/sample_image.jpg" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
+- **BMP** – 1-bit, 4-bit, 8-bit, and 24-bit depth BMP images (uncompressed)
+- **JPG** – Must be **Baseline DCT, Huffman encoded**
+- **PNG** – Common formats supported; dithering is applied automatically if needed
+
+<InfoBox>Images must be equal to or smaller than 212x104 pixels. For best performance and compatibility, convert images using common tools like GIMP or Photoshop and re-save them if issues occur.</InfoBox>
+
+
+---
+
+## Basic example
+
+Below is a working example of how to:
+- Connect to WiFi
+- Load images from the web (via URL)
+- Display them using Inkplate’s `drawImage()` or `drawBitmapFromWeb()` functions
 
 ```cpp
-#include "Inkplate.h"            //Include Inkplate library to the sketch
-#include "WiFi.h"                //Include library for WiFi
-Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+#include "HTTPClient.h" // Include library for HTTPClient
+#include "Inkplate.h"   // Include Inkplate library to the sketch
+#include "WiFi.h"       // Include library for WiFi
+Inkplate display;       
 
-const char ssid[] = "yourssid";    // Your WiFi SSID
-const char *password = "yourpassword"; // Your WiFi password
+const char ssid[] = "";     // Your WiFi SSID
+const char password[] = ""; // Your WiFi password
 
 void setup()
 {
+    Serial.begin(115200);   // Init Serial communication.
     display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
     display.clearDisplay(); // Clear frame buffer of display
-    display.display();      // Put clear image on display
 
-    display.print("Connecting to WiFi...");
-    display.partialUpdate();
+    // Set settings for error printing
+    display.setCursor(10, 10);
+    display.setTextSize(2);
+    display.setTextColor(BLACK);
 
     // Connect to the WiFi network.
     WiFi.mode(WIFI_MODE_STA);
     WiFi.begin(ssid, password);
+    Serial.print("Connecting to WiFi...");
     while (WiFi.status() != WL_CONNECTED)
     {
-        delay(500);
-        display.print(".");
-        display.partialUpdate();
+        Serial.print(".");
+        delay(1000);
     }
-    display.println("\nWiFi OK! Downloading...");
-    display.partialUpdate();
-    if (!display.drawImage("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
+    Serial.println("Connected!");
+
+    // Draw the first image from web.
+    // Make sure the link is complete and correct (contains https:// or http://).
+    // The example image is a monochromatic bitmap with 1 bit depth. Images like this load quickest.
+    // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter to true
+    // will flip all colors on the image, making black white and white black. This may be necessary when exporting
+    // bitmaps from certain softwares.
+    // Fourth parameter will dither the image, but this image is already dithered
+    // so it is not needed to dither it again while drawing.
+    display.clearDisplay();
+
+    if (!display.drawImage("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
+                           "master/examples/Inkplate2/Advanced/WEB_WiFi/"
+                           "Inkplate2_Show_Pictures_From_Web/cat_dithered.jpg",
+                           0, 0, false, false))
     {
-        // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
+        // If is something failed (wrong url or unsupported format), write error message on the screen.
         // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
         display.println("Image open error");
+    }
+    display.display(); // Refresh the display
+    delay(8000);       // Wait a little bit
+
+    // Draw the second image from web, this time using a HTTPClient to fetch the response manually.
+    // Full color 24 bit images are large and take a long time to load, will take around 20 secs.
+    HTTPClient http;
+    // Set parameters to speed up the download process.
+    http.getStream().setNoDelay(true);
+    http.getStream().setTimeout(1);
+
+    http.begin("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
+               "master/examples/Inkplate2/Advanced/WEB_WiFi/"
+               "Inkplate2_Show_Pictures_From_Web/car.bmp");
+
+    // Check response code.
+    int httpCode = http.GET();
+    if (httpCode == 200)
+    {
+        // Get the response length and make sure it is not 0.
+        int32_t len = http.getSize();
+        if (len > 0)
+        {
+            if (!display.drawBitmapFromWeb(http.getStreamPtr(), 0, 0, len, true, false))
+            {
+                // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
+                // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no
+                // compression!
+                display.println("Image open error");
+            }
+            display.display(); // Refresh the display.
+        }
+        else
+        {
+            // If something goes wrong, print out the error message and refresh the display.
+            display.println("Invalid response length");
+            display.display();
+        }
+    }
+    else
+    {
+        // Print out the error message and refresh the display.
+        display.println("HTTP error");
         display.display();
     }
-    display.display();
-    WiFi.mode(WIFI_OFF);
+
+    display.clearDisplay(); // Clear the frame buffer
+    delay(8000);            // Wait a little bit
+
+    // Try to load image and display it on e-paper at position X=0, Y=0
+    // NOTE: Both drawJpegFromWeb methods allow for an optional fifth "invert" parameter. Setting this parameter to
+    // true will flip all colors on the image, making black white and white black. fourth parameter will dither the
+    // image.
+    if (!display.drawImage("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
+                           "master/examples/Inkplate2/Advanced/WEB_WiFi/"
+                           "Inkplate2_Show_Pictures_From_Web/mountain.png",
+                           0, 0, true, false))
+    {
+        // If is something failed (wrong filename or format), write error message on the screen.
+        display.clearDisplay();
+        display.println("Image open error");
+    }
+    display.display(); // Refresh the display
+    http.end();        // Close HTTP connection.
+
+    WiFi.mode(WIFI_OFF); // Turn off the WiFi
+
+    // Go to deep sleep
+    Serial.println("Going to sleep..");
+    esp_deep_sleep_start();       // Put ESP32 into deep sleep. Program stops here
 }
 
 void loop()
 {
     // Nothing...
 }
+
 ```
 
+<CenteredImage src="/img/inkplate_2/img_from_web.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="750px" />
+
+---
+
+## Key functions
+
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
-    description="Function draws image from char path."
-    returnDescription="Returns true if image was successfully drawn, otherwise false."
-    parameters={[
-    { type: "const char*", name: "path", description: "Path and filename of the image. Can be a URL (for web images) or a file path (on the microSD card)." },
-    { type: "int", name: "x", description: "X-coordinate of the image's upper-left corner in the framebuffer." },
-    { type: "int", name: "y", description: "Y-coordinate of the image's upper-left corner in the framebuffer." },
-    { type: "uint8_t", name: "dither", description: "Dithering mode: 0 (disabled), 1 (enabled)." },
-    { type: "bool", name: "invert", description: "If true, inverts colors." },
-    ]}
+  functionName="inkplate.drawImage()"
+  description="Downloads and displays an image from the web (JPG, BMP, PNG)."
+  returnDescription="Returns true if the image was successfully drawn, false otherwise."
+  parameters={[
+    { type: "const char*", name: "url", description: "URL of the image." },
+    { type: "int", name: "x", description: "X-coordinate on screen." },
+    { type: "int", name: "y", description: "Y-coordinate on screen." },
+    { type: "bool", name: "dither", description: "Enable dithering for image." },
+    { type: "bool", name: "invert", description: "Invert colors (black to white and vice versa)." }
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="inkplate.drawBitmapFromWeb()"
+  description="Displays a bitmap image streamed from an HTTPClient stream."
+  returnDescription="Returns true if successful, false if an error occurs."
+  parameters={[
+    { type: "WiFiClient*", name: "client", description: "Pointer to the WiFiClient object (stream)." },
+    { type: "int", name: "x", description: "X-coordinate on screen." },
+    { type: "int", name: "y", description: "Y-coordinate on screen." },
+    { type: "int32_t", name: "len", description: "Length of data to read." },
+    { type: "bool", name: "dither", description: "Enable dithering." },
+    { type: "bool", name: "invert", description: "Invert colors." }
+  ]}
 />
 
 ---
@@ -82,7 +195,7 @@ void loop()
 ## Full Example
 
 <QuickLink 
-  title="Inkplate10_Image_From_Web.ino" 
-  description="Connect to WiFi and draw an image from the web."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/WEB_WiFi/Inkplate10_Show_Pictures_From_Web/Inkplate10_Show_Pictures_From_Web.ino" 
+  title="Inkplate2_Show_Pictures_From_Web.ino" 
+  description="Full example that downloads and displays .jpg, .png, and .bmp files over WiFi."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate2/Advanced/WEB_WiFi/Inkplate2_Show_Pictures_From_Web" 
 />
