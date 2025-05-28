@@ -252,6 +252,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'INA219 Voltage & current sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/ina219/ina219-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ina219/ina219-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ina219/ina219-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ina219/arduino_library/ina219-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ina219/arduino_library/ina219-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ina219/arduino_library/ina219-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'HC-SR04 Ultrasonic Sensor',
           items: [
             {
