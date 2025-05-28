@@ -61,11 +61,10 @@ To upload your own sketch or an Arduino example to **Inkplate 2**, follow this b
 
 ### 1. Connect Inkplate via USB and power it on
 
-Use the provided **USB-C cable** to connect Inkplate 2 to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
+Use the provided **USB-C cable** to connect Inkplate 2 to your computer. The board is powered on!
 
-<CenteredImage src="/img/inkplate_2/10_usb_connect.png" alt="Inkplate 2 onboard USB-C connector" caption="Inkplate 2 onboard USB-C connector" width="500px" />
+<CenteredImage src="/img/inkplate_2/inkplate2usbc.png" alt="Inkplate 2 onboard USB-C connector" caption="Inkplate 2 onboard USB-C connector" width="500px" />
 
-<CenteredImage src="/img/inkplate_2/10_power_button.png" alt="Inkplate 2 onboard POWER button" caption="Inkplate 2 onboard POWER button" width="500px" />
 
 ### 2. Create a sketch
 
@@ -80,7 +79,6 @@ Before uploading the code, select the correct board definition. The table below 
 | Board Definition               | Board Description                                                                                          |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | Soldered Inkplate2            | The newer and more stylish version of the product, and the PCB is purple.                                  |
-| e-radionica.com Inkplate 2    | The older version; the PCB is blue.                                                                        |
 
 Click **Upload** in the Arduino IDE.
 

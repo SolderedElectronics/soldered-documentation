@@ -6,7 +6,7 @@ hide_title: true
 ---
 
 
-<SectionTitle title="FAQ and troublesohoting" backgroundImage="/img/faq.webp" />
+<SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />
 
 Here, we've gathered the most frequently asked questions along with detailed answers to help you get the most out of your device. We know that working with maker hardware and software can sometimes be challenging, so we created this resource to make things easier. Browse through the questions below—you might find the solution you're looking for.
 
@@ -17,8 +17,8 @@ If you're having trouble uploading code, try the following troubleshooting steps
 - Disconnect the device and power it off completely.
 - Reconnect via USB.  
 
-#### Make shure that the device is turned ON
-This is a very crucial step that is often forgoten about. make Sure that the **ON** LED is turned on.
+#### Make sure that the device is turned ON
+This is a very crucial step that is often forgotten about. Make sure that the **ON** LED is turned on.
 
 #### Verify Arduino IDE version
 Inkplate 2 requires Arduino IDE 2.0+ for proper board and library support.  
@@ -28,14 +28,12 @@ If you're using an older version, update to Arduino 2.0 or later to avoid compat
 If none of these steps resolve the issue, contact our support team [**here**](https://soldered.com/contact/) with details of your setup and the troubleshooting steps you've tried.
 </ExpandableSection>
 
-
-
 <ExpandableSection title="My display won't refresh, what am I doing wrong?">
 If your Inkplate 2 display is not refreshing, follow these steps to diagnose and resolve the issue.
 
 #### 1. Verify that the code is uploading correctly
 - **Enable verbose output** in Arduino under **File → Preferences**, then check the **compile and upload logs**.
-- When uploading , a successful upload should print:
+- When uploading, a successful upload should print:
 
 ```
 Leaving... 
@@ -45,18 +43,12 @@ Hard resetting via RTS pin...
 #### 2. Test with an official example
 Make sure you're testing with an **unmodified Arduino example** from the Inkplate library. Running custom code might be **almost correct** but could still prevent the display from refreshing properly.
 
-Try uploading these tested examples:
+Try uploading this tested example:
 
 <QuickLink 
   title="Inkplate2_Black_And_White.ino" 
   description="Full example using black and white display mode on Inkplate 2." 
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate2/Basic/Inkplate2_Black_And_White/Inkplate2_Black_And_White.ino" 
-/>
-
-<QuickLink 
-  title="Inkplate2_Grayscale.ino" 
-  description="Full example using grayscale display mode on Inkplate 2." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate2/Basic/Inkplate2_Grayscale/Inkplate2_Grayscale.ino" 
 />
 
 #### 3. Check your power source
@@ -80,7 +72,7 @@ Try running the following sketch, which performs **30** full refresh cycles to r
 
 ```cpp
 #include <Inkplate.h>
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate inkplate;
 int cleanTimes = 30;
 
 void setup()
@@ -91,7 +83,7 @@ void setup()
         inkplate.clearDisplay();
         inkplate.display();
         delay(500);
-        inkplate.fillRect(0, 0, 1024, 758, BLACK);
+        inkplate.fillRect(0, 0, 212, 104, BLACK);
         inkplate.display();
         delay(500);
     }
@@ -115,25 +107,17 @@ If none of these steps resolve the issue, **contact our support team** [**here**
 </ExpandableSection>
 
 <ExpandableSection title="Can I use partial update all the time on Inkplate 2?">
-To preserve display quality and extend the lifespan of the panel, it's recommended to perform a full update (`inkplate.display()`) after a certain number of partial updates. 
-</ExpandableSection>
-
-<ExpandableSection title="How to connect a battery to Inkplate?">
-All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-ion battery. Inkplate 2 features an onboard MCP73831 charging IC, which automatically charges the battery when connected via USB and seamlessly switches to battery power when unplugged.
-
-<CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 2 battery JST connector" caption="JST battery connector" width="500px"/>
-
-<WarningBox>**Warning:** Battery polarity must be correct! Connecting a battery with reversed polarity may permanently damage your Inkplate. See [**this**](/inkplate/10/hardware/battery) page in the documentation for info regarding the battery.</WarningBox>
+Tri-color e-paper displays, like the one on Inkplate 2, are more sensitive to ghosting. It's recommended to perform a full update (`inkplate.display()`) after every few partial updates to maintain clarity and avoid burn-in.
 </ExpandableSection>
 
 <ExpandableSection title="Where can I find hardware files and schematics for Inkplate 2?">
-All hardware design files, including schematics, KiCad project files, gerber files, and more, are available in the [**Inkplate 2 hardware repository on GitHub**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design).
+All hardware design files, including schematics, KiCad project files, gerber files, and more, are available in the [**Inkplate 2 hardware repository on GitHub**](https://github.com/SolderedElectronics/Soldered-Inkplate-2-hardware-design).
 
-Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/10/hardware/design/).
+Additionally, this documentation contains detailed hardware design insights on the [**hardware design page**](/inkplate/2/hardware/design/).
 </ExpandableSection>
 
 <ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 2?">
-We are currently working on making 3D enclosure files available in the [**Inkplate 2 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design). Stay tuned for updates!
+We are currently working on making 3D enclosure files available in the [**Inkplate 2 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-2-hardware-design). Stay tuned for updates!
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 2 as an e-reader/monitor?">
