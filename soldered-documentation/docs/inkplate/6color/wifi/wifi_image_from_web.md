@@ -16,8 +16,8 @@ Drawing an image from the web on Inkplate 6COLOR is simple using the `draw` func
 
 ## Drawing an Image from a URL
 
-Let's draw this image of the Eurodom building in Osijek, Croatia on Inkplate 6COLOR:
-<CenteredImage src="/img/inkplate_6_motion/sample_image.jpg" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
+Let's draw this image on Inkplate 6COLOR:
+<CenteredImage src="/img/6color/splash.jpg" alt="Example Image" caption="Example image" width="800px" />
 
 ```cpp
 #include "Inkplate.h"            // Include the Inkplate library in the sketch
@@ -29,8 +29,10 @@ const char *password = ""; // Your WiFi password
 
 void setup()
 {
+  Serial.begin(115200);
     display.begin();        // Initialize the Inkplate library (you should call this function ONLY ONCE)
     display.clearDisplay(); // Clear the display's frame buffer
+    display.display();
 
     Serial.print("Connecting to WiFi...");
 
@@ -43,7 +45,7 @@ void setup()
         Serial.print(".");
     }
     Serial.println("\nWiFi OK! Downloading...");
-    if (!display.drawImage("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
+    if (!display.drawImage("https://i.imgur.com/EjIOxx7.jpeg", 0, 0, false, false))
     {
         // If something fails (wrong filename or incorrect bitmap format), write an error message on the screen.
         // REMEMBER! You can only use a Windows Bitmap file with a color depth of 1, 4, 8, or 24 bits with no compression!
@@ -59,6 +61,8 @@ void loop()
     // Nothing...
 }
 ```
+
+<CenteredImage src="/img/6color/example_image.jpg" alt="Example Image" width="500px" caption="Example image" />
 
 <FunctionDocumentation
     functionName="inkplate.drawImage()"
