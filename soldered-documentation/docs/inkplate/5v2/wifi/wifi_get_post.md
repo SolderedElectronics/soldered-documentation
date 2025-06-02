@@ -77,7 +77,6 @@ void setup()
         { // If the connection was successful, try to read content of the web page and print it on screen
             String htmlText;
             htmlText = http.getString();
-            inkplate.setTextSize(1); // Set smaller text size, so everything can fit on screen
             inkplate.clearDisplay();
             inkplate.setCursor(0, 0);
             inkplate.print(htmlText);
@@ -94,6 +93,9 @@ void loop()
     // Nothing
 }
 ```
+
+<CenteredImage src="/img/5v2/get.jpg" alt="GET request" width="500px" caption="GET request" />
+
 
 <FunctionDocumentation
     functionName="WiFi.begin()"

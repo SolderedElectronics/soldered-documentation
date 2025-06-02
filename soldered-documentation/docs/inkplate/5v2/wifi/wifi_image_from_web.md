@@ -16,8 +16,8 @@ Drawing an image from the web on Inkplate 5V2 is simple using the `draw` functio
 
 ## Drawing an Image from a URL
 
-Let's draw this image of the Eurodom building in Osijek, Croatia, on Inkplate 5V2:
-<CenteredImage src="/img/inkplate_6_motion/sample_image.jpg" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
+Let's draw this image on Inkplate 5V2:
+<CenteredImage src="/img/5v2/sample_image.jpg" alt="Example Image" caption="Example image by @alexisg on Wallpaper Safari" />
 
 ```cpp
 #include "Inkplate.h"            // Include the Inkplate library in the sketch
@@ -47,7 +47,7 @@ void setup()
     }
     display.println("\nWiFi OK! Downloading...");
     display.display();
-    if (!display.drawImage("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
+    if (!display.drawImage("https://i.imgur.com/ssqBZP9.jpeg", 0, 0, false, false))
     {
         // If something fails (for example, a wrong filename or incorrect bitmap format), write an error message on the screen.
         // REMEMBER! You can only use Windows Bitmap files with a color depth of 1, 4, 8, or 24 bits with no compression!
@@ -63,6 +63,7 @@ void loop()
     // Nothing...
 }
 ```
+<CenteredImage src="/img/5v2/webimage.jpg" alt="Example Image" width="500px" caption="Example image" />
 
 <FunctionDocumentation
     functionName="inkplate.drawImage()"

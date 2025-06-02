@@ -32,7 +32,7 @@ void loop()
 }
 ```
 <FunctionDocumentation
-  FunctionName="Inkplate inkplate()"
+  functionName="Inkplate inkplate(INKPLATE_1BIT)"
   description="Creates an Inkplate object from the Inkplate class."
   returnType="none"
   parameters={[{ type: 'uint8_t ', name: '_mode', description: 'The display mode to be initialized. INKPLATE_1BIT is BW, INKPLATE_3BIT is Grayscale.' }]}
