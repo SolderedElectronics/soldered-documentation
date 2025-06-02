@@ -95,6 +95,8 @@ void loop()
 }
 ```
 
+<CenteredImage src="/img/6/get.jpg" alt="GET request" width="500px" caption="GET request" />
+
 <FunctionDocumentation
     functionName="WiFi.begin()"
     description="This function attempts to connect to WiFi"
