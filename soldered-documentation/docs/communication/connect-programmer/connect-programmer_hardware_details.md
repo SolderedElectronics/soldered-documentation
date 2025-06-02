@@ -13,14 +13,14 @@ Click [**here**](/img/connect-programmer/pinout.jpg) for a high-resolution image
 
 ## Pin details
 
-| Pin Marking | Pin Name | Description                                     |
-| ----------- | -------- | ----------------------------------------------- |
-| **IO0**     | Output   | Pin used when setting ESP into bootloader mode  |
-| **RESET**   | Output    | Resets ESP when set to HIGH |
-| **TXD**     | Transciever     | Transciever pin for UART communication                |
-| **RXD**     | Reciever    | Reciever pin for UART communication                |
-| **3V3**     | Power    | Provides 3V3 to the ESP               |
-| **GND**     | Ground    | Connects to the GND pin of the ESP               |
+| Pin Marking | Pin Name   | Description                                             |
+| ----------- | ---------- | ------------------------------------------------------- |
+| **IO0**     | Output     | Pin used to set the ESP into bootloader mode           |
+| **RESET**   | Output     | Resets the ESP when set to HIGH                          |
+| **TXD**     | Transceiver| Transceiver pin for UART communication                |
+| **RXD**     | Receiver   | Receiver pin for UART communication                   |
+| **3V3**     | Power      | Provides 3V3 to the ESP                                |
+| **GND**     | Ground     | Connects to the GND pin of the ESP                     |
 
 ---
 
@@ -35,7 +35,7 @@ Click [**here**](/img/connect-programmer/pinout.jpg) for a high-resolution image
 
 ## Jumper Details
 
-This board contains hardware jumpers, see below for their locations and functions:
+This board contains hardware jumpers; see below for their locations and functions:
 
 <FlickityCarousel
   images={[
@@ -46,13 +46,13 @@ This board contains hardware jumpers, see below for their locations and function
 
 | Jumper  | Default State            | Function                                                                                                      |
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed) | Connects the onboard **Power LED** to 3V3                                     |
+| **JP1** | **NC** (Normally closed) | Connects the onboard **Power LED** to 3V3                                                                       |
 
 ---
 
 ## Hardware repository
 
-Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
   title="CONNECT programmer Hardware Design" 
@@ -106,4 +106,4 @@ The **Compliance** section includes important regulatory and safety documentatio
 - **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.  
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+- **Info.txt** – Contains product details, such as SKU, country of origin, HS tariff code, and barcode.
