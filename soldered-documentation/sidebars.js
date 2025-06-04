@@ -2129,6 +2129,24 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Chargers',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/chargers/chargers-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/chargers/chargers-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/chargers/chargers-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Breadboard power supply board',
           items: [
             {
