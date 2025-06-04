@@ -550,10 +550,6 @@ const sidebars = {
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/6flick/basics/6flick-touch-in-area',
-                    },
-                    {
-                      type: 'doc',
                       id: 'inkplate/6flick/basics/6flick-image-converter',
                     },
                   ],
@@ -579,6 +575,24 @@ const sidebars = {
                       id: 'inkplate/6flick/wifi/6flick-wifi-https-certificate',
                     },
                   ]
+                },
+                {
+                  type: 'category',
+                  label: 'Touchscreen',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/touchscreen/6flick-touch-in-area',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/6flick/touchscreen/6flick-touchscreen-draw',
+                    },
+                  ]
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/6flick/frontlight/6flick-frontlight',
                 },
                 {
                   type: 'doc',

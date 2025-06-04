@@ -1,5 +1,5 @@
 ---  
-slug: /inkplate/4tempera/basics/touch-in-area  
+slug: /inkplate/4tempera/touchscreen/touch-in-area  
 title: Touch in Area  
 id: 4tempera-touch-in-area  
 hide_title: true  

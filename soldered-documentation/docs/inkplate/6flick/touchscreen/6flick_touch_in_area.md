@@ -1,5 +1,5 @@
 ---
-slug: /inkplate/6flick/basics/touch-in-area
+slug: /inkplate/6flick/touchscreen/touch-in-area
 title: Touch in Area
 id: 6flick-touch-in-area
 hide_title: true
