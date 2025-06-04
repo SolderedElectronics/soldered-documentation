@@ -692,10 +692,6 @@ const sidebars = {
                     },
                     {
                       type: 'doc',
-                      id: 'inkplate/4tempera/basics/4tempera-touch-in-area',
-                    },
-                    {
-                      type: 'doc',
                       id: 'inkplate/4tempera/basics/4tempera-image-converter',
                     },
                   ],
@@ -721,6 +717,24 @@ const sidebars = {
                       id: 'inkplate/4tempera/wifi/4tempera-wifi-https-certificate',
                     },
                   ]
+                },
+                {
+                  type: 'category',
+                  label: 'Touchscreen',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'inkplate/4tempera/touchscreen/4tempera-touch-in-area',
+                    },
+                    {
+                      type: 'doc',
+                      id: 'inkplate/4tempera/touchscreen/4tempera-touchscreen-draw',
+                    },
+                  ]
+                },
+                {
+                  type: 'doc',
+                  id: 'inkplate/4tempera/frontlight/4tempera-frontlight',
                 },
                 {
                   type: 'doc',
