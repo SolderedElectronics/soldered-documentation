@@ -1,8 +1,8 @@
----
-slug: /inkplate/2/basics/printing-text
-title: Printing Text
-id: 2-text
-hide_title: true
+---  
+slug: /inkplate/2/basics/printing-text  
+title: Printing Text  
+id: 2-text  
+hide_title: true  
 ---
 
 <SectionTitle title="Printing Text" backgroundImage="/img/inkplate_2/hardware.png" />
@@ -34,7 +34,7 @@ void setup() {
   inkplate.print("Red text!");
 
   inkplate.setCursor(10, 70);
-  inkplate.setTextColor(INKPLATE2_BLACK, INKPLATE2_WHITE); // black text on white background
+  inkplate.setTextColor(INKPLATE2_WHITE, INKPLATE2_BLACK); // white text on black background
   inkplate.print("Text w/ background");
 
   inkplate.display();
@@ -66,7 +66,7 @@ void loop() {}
 
 <FunctionDocumentation
   functionName="inkplate.setTextColor()"
-  description="Sets the text color, with optional background color."
+  description="Sets the text color, with an optional background color."
   returnDescription="none"
   parameters={[
     { type: 'uint16_t', name: 'color', description: 'Text color.' },
@@ -106,7 +106,6 @@ void loop() {}
   description="Sets a custom font from the GFX font collection."
   returnDescription="none"
   parameters={[
-    { type: 'const GFXfont *', name: 'font', description: 'Pointer to font struct.' },
+    { type: 'const GFXfont *', name: 'font', description: 'Pointer to the font struct.' },
   ]}
 />
-

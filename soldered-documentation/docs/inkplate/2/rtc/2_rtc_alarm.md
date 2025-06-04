@@ -42,24 +42,22 @@ void loop() {
     display.clearDisplay();
     display.setCursor(0, 10);
     display.setTextSize(7);
-    display.printf("%2.1d:%02d
-", currentTime.tm_hour, currentTime.tm_min);
+    display.printf("%2.1d:%02d\n", currentTime.tm_hour, currentTime.tm_min);
     display.setTextSize(3);
-    display.printf(" %2.1d.%2.1d.%04d
-", currentTime.tm_mday, currentTime.tm_mon + 1, currentTime.tm_year + 1900);
+    display.printf(" %2.1d.%2.1d.%04d\n", currentTime.tm_mday, currentTime.tm_mon + 1, currentTime.tm_year + 1900);
     display.display();
 
     delay(DELAY_TIME);
 }
 ```
 
-This will print the current time and date based on your time zone, updated every ~40 seconds.
+This will print the current time and date based on your time zone, updated approximately every 40 seconds.
 
 ---
 
 ## Example 2: Periodic Alarm Wake-Up
 
-This example sets an RTC alarm that triggers periodically (every 1 hour and 30 minutes) and checks whether a target date/time has been reached.
+This example sets an RTC alarm that triggers periodically (every 1 hour and 30 minutes) and checks whether the target date/time has been reached.
 
 ```cpp
 #include "Inkplate.h"
@@ -118,8 +116,7 @@ void waitingScreen() {
 void alarmScreen() {
     display.setTextSize(2);
     display.setCursor(9, 30);
-    display.printf("ALARM!
-");
+    display.printf("ALARM!\n");
     display.setTextSize(1);
     display.display();
 }

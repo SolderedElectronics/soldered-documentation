@@ -18,7 +18,7 @@ If you're having trouble uploading code, try the following troubleshooting steps
 - Reconnect via USB.  
 
 #### Make sure that the device is turned ON
-This is a very crucial step that is often forgotten about. Make sure that the **ON** LED is turned on.
+This is a crucial step that is often overlooked. Make sure that the **ON** LED is turned on.
 
 #### Verify Arduino IDE version
 Inkplate 2 requires Arduino IDE 2.0+ for proper board and library support.  
@@ -41,7 +41,7 @@ Hard resetting via RTS pin...
 ```
 
 #### 2. Test with an official example
-Make sure you're testing with an **unmodified Arduino example** from the Inkplate library. Running custom code might be **almost correct** but could still prevent the display from refreshing properly.
+Make sure you're testing with an **unmodified Arduino example** from the Inkplate library. Running custom code might be almost correct but could still prevent the display from refreshing properly.
 
 Try uploading this tested example:
 
@@ -96,7 +96,7 @@ void loop()
 ```
 
 #### 2. Check the e-paper flat cable connector
-If artifacts persist after cleaning or appear as long vertical lines or streaks, it may indicate a loose, improperly connected or possibly **damaged** flat cable.
+If artifacts persist after cleaning or appear as long vertical lines or streaks, it may indicate a loose, improperly connected, or possibly damaged flat cable.
 
 Try re-seating the e-paper flat cable by carefully disconnecting and reconnecting it.
 

@@ -9,7 +9,7 @@ hide_title: true
 
 <WarningBox>This page contains important information about using a battery with Inkplate 2. For safety reasons, **please read this page carefully!**</WarningBox>
 
-Inkplate 2 includes soldering pads for connecting a **3.7V Li-ion battery** directly to the board. The onboard charging IC, **MCP73831**, automatically charges the battery when Inkplate 2 is connected via **USB-C**, and switches to battery power when unplugged. This design enables **long battery-powered operation**, especially in **low-power applications**.
+Inkplate 2 includes soldering pads for connecting a **3.7V Li-ion battery** directly to the board. The onboard charging IC, **MCP73831**, automatically charges the battery when Inkplate 2 is connected via **USB-C** and switches to battery power when unplugged. This design enables **long battery-powered operation**, especially in **low-power applications**.
 
 <CenteredImage src="/img/inkplate_2/battery_connector.png" alt="Inkplate 2 battery JST connector" caption="Battery connector" width="500px"/>  
 
@@ -31,7 +31,7 @@ Inkplate 2 is compatible with **3.7V Li-ion batteries**, ideally with **built-in
 
 Some recommended battery specs:
 - **Voltage:** 3.7V
-- **Capacity:** 300mAh–1000mAh for typical use
+- **Capacity:** 300 mAh–1000 mAh for typical use
 - **Protection Circuit:** Required
 - **Connector:** No connector required (battery must be soldered)
 

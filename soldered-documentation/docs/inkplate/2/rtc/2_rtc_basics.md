@@ -6,17 +6,17 @@ hide_title: true
 ---
 <SectionTitle title="RTC basics" backgroundImage="/img/rtc.png" />
 
-The real time clock on Inkplate 10 is the **onboard PCF85063 RTC**. The RTC uses an external clock source, an external XTAL of 32.768kHz.
+The real time clock on Inkplate 10 is the **onboard PCF85063 RTC**. The RTC uses an external clock source—an external XTAL of 32.768kHz.
 
 ---
 
 ## Setting time and date
 
-Setting the current time and date is the most basic RTC usage. Once you set the time, it will keep 'ticking' and you will be able to get the current time later and it will be accurate. Of course, the RTC isn't perfect so during one day it will drift off a couple seconds early or late. If you're using the RTC, **it's reccomended to set it approx. once per day**.
+Setting the current time and date is the most basic RTC usage. Once you set the time, it will keep ticking and you will be able to retrieve the current time later with good accuracy. Of course, the RTC isn't perfect, so it may drift by a couple of seconds early or late during the day. If you're using the RTC, **it's recommended to set it approximately once per day**.
 
 ```cpp
-#include "Inkplate.h"            // Include Inkplate library to the sketch
-Inkplate inkplate(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1-bit mode (BW)
+#include "Inkplate.h"            // Include Inkplate library in the sketch
+Inkplate inkplate(INKPLATE_1BIT); // Create an object for the Inkplate library and also set the library into 1-bit mode (BW)
 
 #define REFRESH_DELAY 1000 // Delay between refreshes
 unsigned long time1;       // Time for measuring refresh in millis
@@ -34,52 +34,52 @@ uint8_t year = 21;
 
 void setup()
 {
-    inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    inkplate.clearDisplay(); // Clear frame buffer of display
-    inkplate.display();      // Put clear image on display
-    inkplate.setTextSize(5); // Set text to be 5 times bigger than classic 5x7 px text
+    inkplate.begin();        // Initialize the Inkplate library (this function should be called ONLY ONCE)
+    inkplate.clearDisplay(); // Clear the display's frame buffer
+    inkplate.display();      // Put the clear image on the display
+    inkplate.setTextSize(5); // Set text to be 5 times bigger than the classic 5x7 px text
     inkplate.rtcSetTime(hour, minutes, seconds);    // Send time to RTC
-    inkplate.rtcSetDate(weekday, day, month, year); // Send date to RTC
+    inkplate.rtcSetDate(weekday, day, month, year);   // Send date to RTC
 }
 
-// Variable that keeps count on how much screen has been partially updated
+// Variable that keeps count of how many times the screen has been partially updated
 int n = 0;
 void loop()
 {
     if ((unsigned long)(millis() - time1) > REFRESH_DELAY)
     {
-        inkplate.rtcGetRtcData();           // Get the time and date from RTC
-        seconds = inkplate.rtcGetSecond();  // Store senconds in a variable
+        inkplate.rtcGetRtcData();           // Get the time and date from the RTC
+        seconds = inkplate.rtcGetSecond();  // Store seconds in a variable
         minutes = inkplate.rtcGetMinute();  // Store minutes in a variable
         hour = inkplate.rtcGetHour();       // Store hours in a variable
-        day = inkplate.rtcGetDay();         // Store day of month in a variable
-        weekday = inkplate.rtcGetWeekday(); // Store day of week in a variable
+        day = inkplate.rtcGetDay();         // Store day of the month in a variable
+        weekday = inkplate.rtcGetWeekday(); // Store day of the week in a variable
         month = inkplate.rtcGetMonth();     // Store month in a variable
         year = inkplate.rtcGetYear();       // Store year in a variable
 
-        inkplate.clearDisplay();                                       // Clear content in frame buffer
-        inkplate.setCursor(100, 300);                                  // Set position of the text
-        printTime(hour, minutes, seconds, day, weekday, month, year); // Print the time on screen
+        inkplate.clearDisplay();                                       // Clear content in the frame buffer
+        inkplate.setCursor(100, 300);                                  // Set the position of the text
+        printTime(hour, minutes, seconds, day, weekday, month, year);  // Print the time on the screen
 
-        if (n > 9) // Check if you need to do full refresh or you can do partial update
+        if (n > 9) // Check if you need to do a full refresh or if a partial update is sufficient
         {
             inkplate.display(true); // Do a full refresh
             n = 0;
         }
         else
         {
-            inkplate.partialUpdate(false, true); // Do partial update and keep e-papr power supply on
-            n++;                                // Keep track on how many times screen has been partially updated
+            inkplate.partialUpdate(false, true); // Do a partial update and keep the e-paper power supply on
+            n++;                                 // Keep track of how many times the screen has been partially updated
         }
 
-        time1 = millis(); // Store current millis
+        time1 = millis(); // Store the current millis
     }
 }
 
 void printTime(uint8_t _hour, uint8_t _minutes, uint8_t _seconds, uint8_t _day, uint8_t _weekday, uint8_t _month,
                uint16_t _year)
 {
-    // Write time and date info on screen
+    // Write time and date information on the screen
     char *wday[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     print2Digits(_hour);
@@ -111,7 +111,7 @@ void print2Digits(uint8_t _d)
   functionName="inkplate.rtcSetTime()"
   description="Method for setting time."
   returnType="void"
-  parameters={[
+  parameters={[ 
     { type: 'uint8_t', name: 'rtcHour', description: "RTC Hour value." },
     { type: 'uint8_t', name: 'rtcMinute', description: "RTC Minute value." },
     { type: 'uint8_t', name: 'rtcSecond', description: "RTC Seconds value." },
@@ -122,7 +122,7 @@ void print2Digits(uint8_t _d)
   functionName="inkplate.rtcSetDate()"
   description="Method for setting date."
   returnDescription="void"
-  parameters={[
+  parameters={[ 
     { type: 'uint8_t', name: 'rtcWeekday', description: "Weekday value." },
     { type: 'uint8_t', name: 'rtcDay', description: "Day of the month." },
     { type: 'uint16_t', name: 'rtcMonth', description: "Month value." },

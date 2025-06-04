@@ -1,8 +1,8 @@
----
-slug: /inkplate/2/wifi/image-from-web
-title: Draw Image from Web
-id: 2-wifi-image-from-web
-hide_title: true
+---  
+slug: /inkplate/2/wifi/image-from-web  
+title: Draw Image from Web  
+id: 2-wifi-image-from-web  
+hide_title: true  
 ---
 
 <SectionTitle title="Displaying Web Images" backgroundImage="/img/wifi.png" />
@@ -19,19 +19,18 @@ You can download and display images directly from the internet on your Inkplate 
 
 <InfoBox>Images must be equal to or smaller than 212x104 pixels. For best performance and compatibility, convert images using common tools like GIMP or Photoshop and re-save them if issues occur.</InfoBox>
 
-
 ---
 
 ## Basic example
 
-Below is a working example of how to:
-- Connect to WiFi
-- Load images from the web (via URL)
+Below is a working example of how to:  
+- Connect to WiFi  
+- Load images from the web (via URL)  
 - Display them using Inkplate’s `drawImage()` or `drawBitmapFromWeb()` functions
 
 ```cpp
 #include "HTTPClient.h" // Include library for HTTPClient
-#include "Inkplate.h"   // Include Inkplate library to the sketch
+#include "Inkplate.h"   // Include Inkplate library in the sketch
 #include "WiFi.h"       // Include library for WiFi
 Inkplate display;       
 
@@ -40,8 +39,8 @@ const char password[] = ""; // Your WiFi password
 
 void setup()
 {
-    Serial.begin(115200);   // Init Serial communication.
-    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    Serial.begin(115200);   // Initialize Serial communication.
+    display.begin();        // Initialize Inkplate library (you should call this function ONLY ONCE)
     display.clearDisplay(); // Clear frame buffer of display
 
     // Set settings for error printing
@@ -60,13 +59,13 @@ void setup()
     }
     Serial.println("Connected!");
 
-    // Draw the first image from web.
+    // Draw the first image from the web.
     // Make sure the link is complete and correct (contains https:// or http://).
-    // The example image is a monochromatic bitmap with 1 bit depth. Images like this load quickest.
+    // The example image is a monochromatic bitmap with 1-bit depth. Images like this load the fastest.
     // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter to true
     // will flip all colors on the image, making black white and white black. This may be necessary when exporting
-    // bitmaps from certain softwares.
-    // Fourth parameter will dither the image, but this image is already dithered
+    // bitmaps from certain software.
+    // The fourth parameter dithers the image, but this image is already dithered,
     // so it is not needed to dither it again while drawing.
     display.clearDisplay();
 
@@ -75,15 +74,15 @@ void setup()
                            "Inkplate2_Show_Pictures_From_Web/cat_dithered.jpg",
                            0, 0, false, false))
     {
-        // If is something failed (wrong url or unsupported format), write error message on the screen.
-        // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
+        // If something fails (e.g., wrong URL or unsupported format), write an error message on the screen.
+        // REMEMBER! You can only use Windows Bitmap files with color depths of 1, 4, 8, or 24 bits with no compression!
         display.println("Image open error");
     }
     display.display(); // Refresh the display
     delay(8000);       // Wait a little bit
 
-    // Draw the second image from web, this time using a HTTPClient to fetch the response manually.
-    // Full color 24 bit images are large and take a long time to load, will take around 20 secs.
+    // Draw the second image from the web, this time using an HTTPClient to fetch the response manually.
+    // Full-color 24-bit images are large and take a long time to load; it will take around 20 seconds.
     HTTPClient http;
     // Set parameters to speed up the download process.
     http.getStream().setNoDelay(true);
@@ -103,8 +102,8 @@ void setup()
         {
             if (!display.drawBitmapFromWeb(http.getStreamPtr(), 0, 0, len, true, false))
             {
-                // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
-                // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no
+                // If something fails (e.g., wrong filename or unsupported bitmap format), write an error message on the screen.
+                // REMEMBER! You can only use Windows Bitmap files with color depths of 1, 4, 8, or 24 bits with no
                 // compression!
                 display.println("Image open error");
             }
@@ -127,16 +126,16 @@ void setup()
     display.clearDisplay(); // Clear the frame buffer
     delay(8000);            // Wait a little bit
 
-    // Try to load image and display it on e-paper at position X=0, Y=0
-    // NOTE: Both drawJpegFromWeb methods allow for an optional fifth "invert" parameter. Setting this parameter to
-    // true will flip all colors on the image, making black white and white black. fourth parameter will dither the
+    // Try to load an image and display it on the e-paper at position X=0, Y=0
+    // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter to
+    // true will flip all colors on the image, making black white and white black. The fourth parameter dithers the
     // image.
     if (!display.drawImage("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
                            "master/examples/Inkplate2/Advanced/WEB_WiFi/"
                            "Inkplate2_Show_Pictures_From_Web/mountain.png",
                            0, 0, true, false))
     {
-        // If is something failed (wrong filename or format), write error message on the screen.
+        // If something fails (e.g., wrong filename or format), write an error message on the screen.
         display.clearDisplay();
         display.println("Image open error");
     }
@@ -147,14 +146,13 @@ void setup()
 
     // Go to deep sleep
     Serial.println("Going to sleep..");
-    esp_deep_sleep_start();       // Put ESP32 into deep sleep. Program stops here
+    esp_deep_sleep_start(); // Put ESP32 into deep sleep. Program stops here
 }
 
 void loop()
 {
     // Nothing...
 }
-
 ```
 
 <CenteredImage src="/img/inkplate_2/img_from_web.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="750px" />
@@ -171,7 +169,7 @@ void loop()
     { type: "const char*", name: "url", description: "URL of the image." },
     { type: "int", name: "x", description: "X-coordinate on screen." },
     { type: "int", name: "y", description: "Y-coordinate on screen." },
-    { type: "bool", name: "dither", description: "Enable dithering for image." },
+    { type: "bool", name: "dither", description: "Enable dithering for the image." },
     { type: "bool", name: "invert", description: "Invert colors (black to white and vice versa)." }
   ]}
 />

@@ -1,15 +1,15 @@
----
-slug: /inkplate/2/basics/drawing-graphics
-title: Drawing graphics
-id: 2-graphics
-hide_title: true
+---  
+slug: /inkplate/2/basics/drawing-graphics  
+title: Drawing graphics  
+id: 2-graphics  
+hide_title: true  
 ---
 
 <SectionTitle title="Drawing Graphics" backgroundImage="/img/inkplate_2/hardware.png" />
 
-Inkplate 2 features a 2.13″ three-color e-paper display capable of rendering black, white, and red pixels. You can draw geometric shapes using the built-in Adafruit GFX functions, compatible with the Inkplate library.
+Inkplate 2 features a 2.13″ three-color e-paper display capable of rendering black, white, and red pixels. You can draw geometric shapes using the built-in Adafruit GFX functions, which are compatible with the Inkplate library.
 
-Inkplate 2 supports the Adafruit GFX graphics library for drawing. 
+Inkplate 2 supports the Adafruit GFX graphics library for drawing.
 
 <InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
   description="The core graphics library for Inkplate library, created by Adafruit."
@@ -20,7 +20,7 @@ Inkplate 2 supports the Adafruit GFX graphics library for drawing.
 
 ## Drawing Geometric Shapes
 
-Below is an example demonstrating functions used for drawing graphics on the Inkplate 10:
+Below is an example demonstrating functions used for drawing graphics on the Inkplate 2:
 
 Use these functions to draw pixels, lines, rectangles, circles, and more. Inkplate 2 supports three colors:
 - `INKPLATE2_BLACK`

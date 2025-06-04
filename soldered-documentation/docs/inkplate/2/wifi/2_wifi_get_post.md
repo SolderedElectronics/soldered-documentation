@@ -1,19 +1,19 @@
----
-slug: /inkplate/2/wifi/get-post
-title: GET & POST requests
-id: 2-wifi-get-post
-hide_title: true
----
+---  
+slug: /inkplate/2/wifi/get-post  
+title: GET & POST requests  
+id: 2-wifi-get-post  
+hide_title: true  
+---  
 
 <SectionTitle title="GET & POST Requests" backgroundImage="/img/inkplate_2/hardware.png" />
 
-Now that Inkplate is connected to the internet, you will likely want to send and recieve data on it form sensors, messages, from your custom API's etc. This page contains examples on how to send and recieve data on Inkplate via the internet:
+Now that Inkplate is connected to the internet, you will likely want to send and receive data on it from sensors, messages, or your custom APIs. This page contains examples of how to send and receive data on Inkplate via the internet:
 
 ---
 
 ## GET request
 
-Using `client.GET()` will enable you to easily download and handle data on Inkplate however you want. Here is an example on how to GET a .html flie and print it on Inkplate:
+Using `client.GET()` will enable you to easily download and handle data on Inkplate however you want. Here is an example of how to GET a .html file and print it on Inkplate:
 
 ```cpp
 /*
@@ -23,10 +23,10 @@ Using `client.GET()` will enable you to easily download and handle data on Inkpl
     Don't have "Soldered Inkplate2" option? Follow our tutorial and add it:
     https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
 
-    This example will show you how to connect to WiFi network, get data from Internet and display that data on epaper.
-    This example is NOT on to how to parse HTML data from Internet - it will just print HTML on the screen.
+    This example will show you how to connect to a WiFi network, get data from the Internet and display that data on the e-paper.
+    This example is NOT about how to parse HTML data from the Internet - it will just print HTML on the screen.
 
-    In quotation marks you will need write your WiFi SSID and WiFi password in order to connect to your WiFi network.
+    In quotation marks you will need to write your WiFi SSID and WiFi password in order to connect to your WiFi network.
 
     Want to learn more about Inkplate? Visit www.inkplate.io
     Looking to get support? Write on our forums: https://forum.soldered.com/
@@ -58,7 +58,7 @@ void setup()
     display.display();                                      // Send everything to display (refresh display)
 
     int n =
-        WiFi.scanNetworks(); // Start searching WiFi networks and put the nubmer of found WiFi networks in variable n
+        WiFi.scanNetworks(); // Start searching WiFi networks and put the number of found WiFi networks in variable n
     Serial.println("Scanning networks");
     display.setCursor(0, 0); // Set print position
     if (n == 0)
@@ -137,23 +137,23 @@ void loop()
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
-    description="This function attemps to connect to WiFi"
+    description="This function attempts to connect to WiFi"
     returnDescription="Returns wl_status_t enum value"
     returnType="wl_status_t"
-    parameters={[
+    parameters={[ 
         {type: 'const char*', name:'ssid', description:'Network SSID.' },
         {type: 'const char*', name:'passphrase', description:'Optional, depends on WiFi network security certificate' },
     ]}
+    
 />
-
 
 <FunctionDocumentation
   functionName="http.begin()"
-  description="This function attempts to open a HTTP communication to given url"
-  returnDescription="Returns true if communication is succesfull, otherwise returns false."
+  description="This function attempts to open an HTTP communication to a given URL"
+  returnDescription="Returns true if communication is successful, otherwise returns false."
   returnType="bool"
-  parameters={[
-    { type: 'String', name: 'url', description: 'Url if the specified website' },
+  parameters={[ 
+    { type: 'String', name: 'url', description: 'URL of the specified website' },
   ]}
 />
 
@@ -163,11 +163,12 @@ void loop()
   returnDescription="Returns the size of available data"
   returnType="int"
 />
+
 ---
 
 ## POST request
 
-To send data from Inkplate to a web server, you can use the same built-in `WiFiClient` class. Let's use [**ThingSpeak.com**](https://thingspeak.mathworks.com/), which is a great resource for testing POST and GET requests. By visiting the site, you get a unique URL which can then be sent a POST request to from Inkplate which will then be visible on the site:
+To send data from Inkplate to a web server, you can use the same built-in `WiFiClient` class. Let's use [**ThingSpeak.com**](https://thingspeak.mathworks.com/), which is a great resource for testing POST and GET requests. By visiting the site, you get a unique URL to which a POST request from Inkplate can be sent and that data will then be visible on the site:
 
 ```cpp
 /*
@@ -180,14 +181,14 @@ To send data from Inkplate to a web server, you can use the same built-in `WiFiC
    This example will show you how to connect to a WiFi network and send a POST request via HTTP.
    We will use ThingSpeak API to see post requests. It's a free API that allows you to store and retrieve data using
    HTTP.
-   1. Go to the ThingSpeak.com and create a free account
-   2. Open the Channels tab
-   3. Create a new channel
-   4. Create fields you want to use
-   5. Open the channel, go to the API Keys tab and copy your Write API Key
-   6. Enter your API key in the code below
+   1. Go to ThingSpeak.com and create a free account.
+   2. Open the Channels tab.
+   3. Create a new channel.
+   4. Create fields you want to use.
+   5. Open the channel, go to the API Keys tab and copy your Write API Key.
+   6. Enter your API key in the code below.
 
-   When you send a POST request, open your channel and you will see the graph where is your sent data.
+   When you send a POST request, open your channel and you will see the graph with your sent data.
 
    Want to learn more about Inkplate? Visit www.inkplate.io
    Looking to get support? Write on our forums: https://forum.soldered.com/
@@ -208,7 +209,7 @@ Inkplate display;
 WiFiClient client;
 
 // Here you can change the interval of sending POST requests
-#define POSTING_INTERVAL_IN_SESCS 10
+#define POSTING_INTERVAL_IN_SECS 10
 
 // Enter your WiFi credentials
 const char *ssid = "";
@@ -259,8 +260,8 @@ void setup()
 
 void loop()
 {
-    // Every POSTING_INTERVAL_IN_SESCS seconds make the POST request
-    if (millis() - lastConnectionTime > POSTING_INTERVAL_IN_SESCS * 1000LL)
+    // Every POSTING_INTERVAL_IN_SECS seconds make the POST request
+    if (millis() - lastConnectionTime > POSTING_INTERVAL_IN_SECS * 1000LL)
     {
         // Clear frame buffer of display
         display.clearDisplay();
@@ -304,36 +305,35 @@ void loop()
         client.stop();
     }
 }
-
 ```
 
 <FunctionDocumentation
   functionName="WiFi.mode()"
   description="This function sets the MCU WiFi chip as STA or AP."
   returnType="bool"
-  parameters={[
+  parameters={[ 
     { type: 'wifi_mode_t', name: 'mode', description: 'WiFi mode value, can be either WIFI_MODE_STA or WIFI_MODE_AP' },
   ]}
 />
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
-    description="This function attemps to connect to WiFi"
+    description="This function attempts to connect to WiFi"
     returnDescription="Returns wl_status_t enum value"
     returnType="wl_status_t"
-    parameters={[
+    parameters={[ 
         {type: 'const char*', name:'ssid', description:'Network SSID.' },
         {type: 'const char*', name:'passphrase', description:'Optional, depends on WiFi network security certificate' },
     ]}
+    
 />
-
 
 <FunctionDocumentation
   functionName="http.begin()"
-  description="This function attempts to open a HTTP communication to given url"
-  returnDescription="Returns true if communication is succesfull, otherwise returns false."
+  description="This function attempts to open an HTTP communication to a given URL"
+  returnDescription="Returns true if communication is successful, otherwise returns false."
   returnType="bool"
-  parameters={[
-    { type: 'String', name: 'url', description: 'Url if the specified website' },
+  parameters={[ 
+    { type: 'String', name: 'url', description: 'URL of the specified website' },
   ]}
 />
