@@ -1767,6 +1767,46 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'TFT LCD Display',
+          items: [
+            {
+              type: 'doc',
+              id: 'displays/tft-lcd/tft-lcd-overview',
+            },
+            {
+              type: 'doc',
+              id: 'displays/tft-lcd/tft-lcd-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
       ]
     },
     {
