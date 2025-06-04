@@ -19,13 +19,6 @@ The Inkplate 6 features a 6″ e-paper display, USB-C connectivity for both powe
 
 ---
 
-## Components
-
-Here is an overview of on‑board components with their locations:
-<CenteredImage src="/img/6/placeholder.jpg" alt="Inkplate 6 back" caption="Inkplate 6 back" width="1000px" />
-
----
-
 ## E-paper panel
 
 The **ED060SC7** is a **6-inch** e-paper display panel from **E Ink Holdings Inc.** This model is **without a frontlight or touchscreen**, making it ideal for **low-power, high-contrast applications** such as **e-book readers**.
