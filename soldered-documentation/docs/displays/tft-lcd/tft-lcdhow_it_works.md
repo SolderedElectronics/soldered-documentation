@@ -26,15 +26,9 @@ The breakout uses the **ILI9341 TFT display driver**, which supports SPI communi
 ## Datasheets and References
 
 <QuickLink  
-  title="ILI9341 Datasheet (Sitronix)"  
+  title="ILI9341 Datasheet"  
   description="Detailed register and graphics command set documentation"  
   url="https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf"
-/>
-
-<QuickLink  
-  title="Touchscreen Controller (XPT2046) Datasheet"  
-  description="Touch panel controller for resistive screens (SPI)"  
-  url="https://www.ti.com/lit/ds/symlink/xpt2046.pdf"
 />
 
 ---
