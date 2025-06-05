@@ -1799,10 +1799,6 @@ const sidebars = {
                   type: 'doc',
                   id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-4',
                 },
-                {
-                  type: 'doc',
-                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-5',
-                },
               ],
             },
           ],
