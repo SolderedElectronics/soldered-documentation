@@ -252,6 +252,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Capacitive Soil Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/capacitive-soil-sensor/capacitive-soil-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/capacitive-soil-sensor/capacitive-soil-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/capacitive-soil-sensor/capacitive-soil-sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/capacitive-soil-sensor/arduino_library/capacitive-soil-sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/capacitive-soil-sensor/arduino_library/capacitive-soil-sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/capacitive-soil-sensor/arduino_library/capacitive-soil-sensor-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'HC-SR04 Ultrasonic Sensor',
           items: [
             {
