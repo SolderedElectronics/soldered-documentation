@@ -1303,6 +1303,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'TPS613222A boost converter',
+          items:[
+            {
+              type:'doc',
+              id:'actuators/tps613222a/tps613222a-overview',
+            },
+            {
+              type:'doc',
+              id:'actuators/tps613222a/tps613222a-hardware',
+            },
+            {
+              type:'doc',
+              id:'actuators/tps613222a/tps613222a-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Smart LED WS2812B',
           items: [
             {
