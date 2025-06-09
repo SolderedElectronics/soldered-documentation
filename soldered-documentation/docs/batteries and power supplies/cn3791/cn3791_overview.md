@@ -8,7 +8,7 @@ pagination_prev: null
 
 ## MPPT Li-Ion CN3791 charger board
 
-The **MPPT Li-Ion charger** is an all-in-one solution for efficient and reliable battery charging using **solar energy**. The onboard **CN3791** PWM switch-mode Li-Ion battery controller provides sophisticated charging algorithms tailored to Li-Ion batteries, ensuring **precise control** over the **charging process** for maximum **efficiency** and **safety**. Board is equipped with JST connector for quick and easy battery connection and  KF235 terminal blocks for manually clampling both panel and battery leads.
+The **MPPT Li-Ion charger** is an all-in-one solution for efficient and reliable battery charging using **solar energy**. The onboard **CN3791** PWM switch-mode Li-Ion battery controller provides sophisticated charging algorithms tailored to Li-Ion batteries, ensuring **precise control** over the **charging process** for maximum **efficiency** and **safety**. The board is equipped with a JST connector for quick and easy battery connection and KF235 terminal blocks for manually clamping both panel and battery leads.
 
 <CenteredImage src="/img/cn3791/333136.png" alt="MPPT Li-Ion CN3791 charger board" caption="1MPPT Li-Ion CN3791 charger board"/>
 
@@ -30,7 +30,7 @@ The **MPPT Li-Ion charger** is an all-in-one solution for efficient and reliable
 - **Constant Voltage:** 4.2V ± 1% 
 - **Battery overvoltage Protection**
 - **IC:** CN3791
-- **Dimencions:** **54 x 38 mm** (2.1 x 1.5 inches)
+- **Dimensions:** **54 x 38 mm** (2.1 x 1.5 inches)
 
 ---
 
