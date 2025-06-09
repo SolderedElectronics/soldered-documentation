@@ -1775,6 +1775,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'W5500 Ethernet controller',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/w5500/w5500-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/w5500/w5500-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/w5500/w5500-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'MicroSD Card Reader',
           items: [
             {
