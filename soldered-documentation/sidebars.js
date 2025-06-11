@@ -1805,6 +1805,14 @@ const sidebars = {
                   type: 'doc',
                   id: 'communication/w5500/arduino_library/w5500-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-5',
+                },
               ],
             },
           ],
