@@ -225,4 +225,9 @@ div[role=banner] {
   font-weight: bold;
 }
 
-
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Negative margin to counteract card margins for alignment, if cards have margins */
+  margin: -10px; /* This should match the margin set on .inkplateTileCard */
+}
