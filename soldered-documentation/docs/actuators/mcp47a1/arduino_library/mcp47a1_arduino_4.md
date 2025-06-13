@@ -1,6 +1,6 @@
 ---
 slug: /mcp47a1/arduino/generating-a-waveform
-title: Mcp47A1 - Generating a waveform
+title: MCP47A1 - Generating a waveform
 id: mcp47a1-arduino-4
 hide_title: false
 ---

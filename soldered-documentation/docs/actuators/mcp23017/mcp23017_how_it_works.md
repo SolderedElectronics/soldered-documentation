@@ -1,6 +1,6 @@
 ---
 slug: /mcp23017/how-it-works 
-title: How it works
+title: Mcp23017 – How it works
 id: mcp23017-how-it-works 
 hide_title: False
 ---  

@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6/faq-troubleshooting/  
-title: FAQ and troubleshooting  
+title: Inkplate 6 - FAQ and troubleshooting  
 id: faq-troubleshooting  
 hide_title: true  
 ---

@@ -1,6 +1,6 @@
 ---
 slug: /accelerometer-gyroscope/arduino/Initilization & Configuration
-title: Initialization & Configuration
+title: LSM6DS – Initialization & Configuration
 id: accelerometer-gyroscope-arduino-6
 hide_title: False
 ---

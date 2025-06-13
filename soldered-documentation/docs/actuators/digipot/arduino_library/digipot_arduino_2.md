@@ -1,6 +1,6 @@
 ---
 slug: /digipot/arduino/examples
-title: Digipot - Controlling the DigiPot (example)
+title: Digital Potentiometer - Controlling the DigiPot (example)
 id: digipot-arduino-2
 hide_title: false
 ---

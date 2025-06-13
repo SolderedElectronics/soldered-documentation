@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/quick-start-guide  
-title: Quick start guide  
+title: Inkplate 4TEMPERA - Quick start guide  
 id: 4tempera-quick-start-guide  
 hide_title: true  
 ---

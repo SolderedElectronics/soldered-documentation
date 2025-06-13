@@ -1,6 +1,6 @@
 ---
 slug: /mcp47a1/arduino/geting-started
-title: Mcp47A1 - Getting started
+title: MCP47A1 - Getting started
 id: mcp47a1-arduino-1
 hide_title: false
 ---

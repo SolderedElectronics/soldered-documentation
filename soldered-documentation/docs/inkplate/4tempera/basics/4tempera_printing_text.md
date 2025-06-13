@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/basics/printing-text  
-title: Printing Text  
+title: Inkplate 4TEMPERA – Printing Text
 id: 4tempera-text  
 hide_title: true
 ---

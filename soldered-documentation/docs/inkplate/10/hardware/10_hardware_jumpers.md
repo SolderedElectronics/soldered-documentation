@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/10/hardware/jumpers
-title: Jumpers
+title: Inkplate 10 – Jumpers
 id: 10-hardware-jumpers
 ---
 

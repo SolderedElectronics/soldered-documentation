@@ -1,6 +1,6 @@
 ---
 slug: /accelerometer-gyroscope/arduino/examples-temperature 
-title: Measuring temperature with LSM6DS3 (example)
+title: LSM6DS – Measuring temperature with LSM6DS3 (example)
 id: accelerometer-gyroscope-arduino-4 
 hide_title: False
 ---

@@ -1,6 +1,6 @@
 ---
 slug: /rfid/how-it-works 
-title: How it works
+title: Rfid – How it works
 id: 125khzrfidtagreader-how-it-works 
 hide_title: False
 ---  

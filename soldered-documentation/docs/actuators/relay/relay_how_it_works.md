@@ -1,6 +1,6 @@
 ---
 slug: /relay/how-it-works 
-title: How it works
+title: Relay – How it works
 id: relay-how-it-works 
 hide_title: False
 ---  

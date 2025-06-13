@@ -1,6 +1,6 @@
 ---  
 slug: /ch340/hardware  
-title: Hardware details  
+title: Ch340 – Hardware details
 id: ch340-hardware  
 hide_title: False  
 ---

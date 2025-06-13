@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6color/rtc/basics  
-title: RTC basics  
+title: Inkplate 6COLOR – RTC basics
 id: rtc-basics  
 hide_title: true  
 ---  

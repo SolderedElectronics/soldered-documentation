@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6/hardware/open-source-files  
-title: Hardware files  
+title: Inkplate 6 – Hardware files
 id: hardware-files  
 ---  
 

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/2/basics/initialization
-title: Initialization
+title: Inkplate 2 – Initialization
 id: 2-init
 hide_title: true
 ---

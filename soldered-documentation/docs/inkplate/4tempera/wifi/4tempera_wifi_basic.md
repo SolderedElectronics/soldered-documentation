@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/wifi/wifi-basics
-title: WiFi basics
+title: Inkplate 4TEMPERA – WiFi basics
 id: 4tempera-wifi-basics
 hide_title: true
 ---

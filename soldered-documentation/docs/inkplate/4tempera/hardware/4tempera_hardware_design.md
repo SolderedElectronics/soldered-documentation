@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/hardware/design  
-title: Hardware Design  
+title: Inkplate 4TEMPERA – Hardware Design
 id: 4tempera-hardware-design  
 hide_title: true  
 ---

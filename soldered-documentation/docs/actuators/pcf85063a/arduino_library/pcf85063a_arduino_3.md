@@ -1,6 +1,6 @@
 ---
 slug: /pcf85063a/arduino/troubleshooting
-title: Pcf85063A - Troubleshooting
+title: PCF85063A - Troubleshooting
 id: pcf85063a-arduino-3
 hide_title: false
 pagination_next: null

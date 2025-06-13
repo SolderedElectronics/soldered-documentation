@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/5v2/low-power/deep-sleep  
-title: Deep sleep  
+title: Inkplate 5V2 – Deep sleep
 id: deep-sleep  
 hide_title: true  
 ---

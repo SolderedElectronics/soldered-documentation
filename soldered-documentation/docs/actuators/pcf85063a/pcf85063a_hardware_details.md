@@ -1,6 +1,6 @@
 ---
 slug: /pcf85063a/hardware
-title: Pcf85063A - Hardware details
+title: PCF85063A - Hardware details
 id: pcf85063a-hardware
 hide_title: false
 ---

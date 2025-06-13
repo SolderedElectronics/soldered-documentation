@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6flick/hardware/open-source
-title: Inkplate is open source
+title: Inkplate 6FLICK – Inkplate is open source
 id: 6flick-hardware-open-source
 hide_title: true
 ---

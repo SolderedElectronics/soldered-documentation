@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/2/quick-start-guide  
-title: Quick start guide  
+title: Inkplate 2 - Quick start guide  
 id: 2-quick-start-guide  
 hide_title: true  
 ---

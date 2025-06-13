@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6color/image-converter  
-title: Soldered Image Converter  
+title: Inkplate 6COLOR – Soldered Image Converter
 id: image-converter  
 ---  
 <CenteredImage src="/img/inkplate_6_motion/image_converter.png" alt="Soldered Image Converter" caption="Graphical user interface of the Soldered Image Converter" width="800px" />

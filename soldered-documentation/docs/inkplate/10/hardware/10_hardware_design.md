@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/10/hardware/design
-title: Hardware design
+title: Inkplate 10 – Hardware design
 id: 10-hardware-design
 hide_title: true
 ---

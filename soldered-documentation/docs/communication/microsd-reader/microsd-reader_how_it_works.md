@@ -1,6 +1,6 @@
 ---
 slug: /microsd-reader/how-it-works 
-title: How it works
+title: Microsd Reader – How it works
 id: microsd-reader-how-it-works 
 hide_title: False
 ---  

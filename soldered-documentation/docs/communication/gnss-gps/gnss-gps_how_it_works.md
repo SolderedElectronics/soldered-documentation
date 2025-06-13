@@ -1,6 +1,6 @@
 ---
 slug: /gnss-gps/how-it-works 
-title: How it works
+title: Gnss Gps – How it works
 id: gnss-gps-how-it-works 
 hide_title: False
 ---  

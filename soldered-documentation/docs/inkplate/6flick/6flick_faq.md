@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6flick/faq-troubleshooting
-title: FAQ and troubleshooting
+title: Inkplate 6FLICK - FAQ and troubleshooting
 id: 6flick-faq-troubleshooting
 hide_title: true
 ---

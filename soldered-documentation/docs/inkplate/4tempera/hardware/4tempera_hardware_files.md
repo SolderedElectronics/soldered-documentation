@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/hardware/open-source-files  
-title: Hardware files  
+title: Inkplate 4TEMPERA – Hardware files
 id: 4tempera-hardware-files  
 hide_title: true
 ---

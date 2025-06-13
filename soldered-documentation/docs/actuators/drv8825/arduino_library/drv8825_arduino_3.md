@@ -1,6 +1,6 @@
 ---
 slug: /drv8825/arduino/troubleshooting 
-title: Troubleshooting
+title: DRV8825 – Troubleshooting
 id: drv8825-arduino-3 
 hide_title: False
 pagination_next: null

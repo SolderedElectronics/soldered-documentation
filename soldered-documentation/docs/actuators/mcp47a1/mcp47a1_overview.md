@@ -1,6 +1,6 @@
 ---
 slug: /mcp47a1/overview
-title: Mcp47A1 - Overview
+title: MCP47A1 - Overview
 id: mcp47a1-overview
 hide_title: false
 pagination_prev: null

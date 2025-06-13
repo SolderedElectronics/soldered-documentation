@@ -1,6 +1,6 @@
 ---  
 slug: /apds-9960/arduino/geting-started  
-title: Getting started  
+title: Apds-9960 – Getting started
 id: apds-9960-arduino-1  
 hide_title: False  
 ---

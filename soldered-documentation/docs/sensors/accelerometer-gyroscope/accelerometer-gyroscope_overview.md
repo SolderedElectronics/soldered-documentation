@@ -1,6 +1,6 @@
 ---
 slug: /accelerometer-gyroscope/overview
-title: Overview
+title: LSM6DS – Overview
 id: accelerometer-gyroscope-overview 
 hide_title: False
 pagination_prev: null

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/10/basics/printing-text
-title: Printing Text
+title: Inkplate 10 – Printing Text
 id: 10-text
 ---
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts.

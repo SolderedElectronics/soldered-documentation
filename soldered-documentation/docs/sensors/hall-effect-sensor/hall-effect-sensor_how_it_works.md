@@ -1,6 +1,6 @@
 ---
 slug: /hall-effect-sensor/how-it-works 
-title: How it works
+title: Hall Effect Sensor – How it works
 id: hall-effect-sensor-how-it-works 
 hide_title: False
 ---  

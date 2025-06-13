@@ -1,6 +1,6 @@
 ---
 slug: /pcf85063a/arduino/setting-up-an-alarm
-title: Pcf85063A - Setting up an alarm
+title: PCF85063A - Setting up an alarm
 id: pcf85063a-arduino-5
 hide_title: false
 ---

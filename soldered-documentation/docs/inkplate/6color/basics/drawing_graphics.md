@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6color/basics/drawing-graphics
-title: Drawing colorful graphics
+title: Inkplate 6COLOR – Drawing colorful graphics
 id: graphics
 ---
 

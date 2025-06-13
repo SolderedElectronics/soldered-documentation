@@ -1,6 +1,6 @@
 ---
 slug: /drv8825/hardware 
-title: Hardware details
+title: DRV8825 – Hardware details
 id: drv8825-hardware 
 hide_title: False
 ---

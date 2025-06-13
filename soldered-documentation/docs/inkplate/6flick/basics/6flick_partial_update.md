@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6flick/basics/partial-update
-title: Partial Update
+title: Inkplate 6FLICK – Partial Update
 id: 6flick-partial-update
 hide_title: true
 ---

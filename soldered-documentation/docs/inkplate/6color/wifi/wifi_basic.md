@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6color/wifi/wifi-basics
-title: WiFi basics
+title: Inkplate 6COLOR – WiFi basics
 id: wifi-basics
 hide_title: true
 ---

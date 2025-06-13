@@ -1,6 +1,6 @@
 ---
 slug: /bme280/how-it-works 
-title: How it works
+title: Bme280 – How it works
 id: bme280-how-it-works 
 hide_title: False
 ---  

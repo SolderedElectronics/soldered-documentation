@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6flick/basics/initialization  
-title: Initialization  
+title: Inkplate 6FLICK – Initialization
 id: 6flick-init  
 hide_title: true  
 ---  

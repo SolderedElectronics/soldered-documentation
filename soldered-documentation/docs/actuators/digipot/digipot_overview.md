@@ -1,6 +1,6 @@
 ---
 slug: /digipot/overview
-title: Digipot - Overview
+title: Digital Potentiometer - Overview
 id: digipot-overview
 hide_title: false
 pagination_prev: null

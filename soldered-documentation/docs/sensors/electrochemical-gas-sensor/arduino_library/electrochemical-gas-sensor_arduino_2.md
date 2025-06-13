@@ -1,6 +1,6 @@
 ---
 slug: /electrochemical-gas-sensor/arduino/single-sensor-measurement-example
-title: Single sensor measurement example
+title: Electrochemical Gas Sensors – Single sensor measurement example
 id: electrochemical-gas-sensor-arduino-2 
 hide_title: False
 ---

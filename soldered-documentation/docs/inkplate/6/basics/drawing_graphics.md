@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6/basics/drawing-graphics  
-title: Drawing graphics  
+title: Inkplate 6 – Drawing graphics
 id: graphics  
 ---  
 Inkplate 6 allows you to draw graphics on a **800 x 600px canvas**.

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6flick/frontlight/basic
-title: Simple Frontlight
+title: Inkplate 6FLICK – Simple Frontlight
 id: 6flick-frontlight
 hide_title: true
 ---

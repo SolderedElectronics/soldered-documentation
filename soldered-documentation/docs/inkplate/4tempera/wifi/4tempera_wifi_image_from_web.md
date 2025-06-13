@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/wifi/image-from-web  
-title: Draw Image from Web  
+title: Inkplate 4TEMPERA – Draw Image from Web
 id: 4tempera-wifi-image-from-web  
 hide_title: true
 ---

@@ -1,6 +1,6 @@
 ---
 slug: /apds-9960/how-it-works 
-title: How it works
+title: Apds-9960 – How it works
 id: apds-9960-how-it-works 
 hide_title: False
 ---  

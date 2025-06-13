@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/5v2/hardware/battery  
-title: Battery  
+title: Inkplate 5V2 – Battery
 id: hardware-battery  
 ---  
 

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/10/basics/image-converter
-title: Soldered Image Converter
+title: Inkplate 10 – Soldered Image Converter
 id: 10-image-converter
 ---
 <CenteredImage src="/img/inkplate_6_motion/image_converter.png" alt="Soldered Image Converter" caption="Graphical user interface of the Soldered Image Converter" width="800px" />

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/10/wifi/https_certificate
-title: HTTPS certificate
+title: Inkplate 10 – HTTPS certificate
 id: 10-wifi-https-certificate
 ---
 

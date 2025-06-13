@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/basics/initialization  
-title: Initialization  
+title: Inkplate 4TEMPERA – Initialization
 id: 4tempera-init  
 hide_title: true  
 ---  

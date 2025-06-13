@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/hardware/jumpers
-title: Jumpers
+title: Inkplate 4TEMPERA – Jumpers
 id: 4tempera-hardware-jumpers
 ---
 

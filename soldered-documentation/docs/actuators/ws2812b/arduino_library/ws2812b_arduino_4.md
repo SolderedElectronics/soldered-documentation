@@ -1,6 +1,6 @@
 ---
 slug: /ws2812b/arduino/troubleshooting
-title: Ws2812B - Troubleshooting
+title: WS2812B - Troubleshooting
 id: ws2812b-arduino-4
 hide_title: false
 pagination_next: null

@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/hardware/open-source
-title: Inkplate is open source
+title: Inkplate 4TEMPERA – Inkplate is open source
 id: 4tempera-hardware-open-source
 hide_title: true
 ---

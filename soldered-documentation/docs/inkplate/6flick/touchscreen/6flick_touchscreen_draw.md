@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6flick/touchscreen/draw
-title: Touchscreen Draw
+title: Inkplate 6FLICK – Touchscreen Draw
 id: 6flick-touchscreen-draw
 hide_title: true
 ---

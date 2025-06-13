@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/5v2/basics/printing-text
-title: Printing Text
+title: Inkplate 5V2 – Printing Text
 id: text
 ---
 

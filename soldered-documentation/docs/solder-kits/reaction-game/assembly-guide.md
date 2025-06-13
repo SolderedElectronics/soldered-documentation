@@ -1,6 +1,6 @@
 ---
 slug: /reaction-game/assembly-guide
-title: Assembly Guide - Assembly guide
+title: Reaction Game - Assembly guide
 id: reaction-game-assembly-guide
 hide_title: false
 ---

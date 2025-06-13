@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6flick/hardware/open-source-files
-title: Hardware files
+title: Inkplate 6FLICK – Hardware files
 id: 6flick-hardware-files
 hide_title: true
 ---

@@ -1,6 +1,6 @@
 ---
 slug: /txb0104/how-it-works 
-title: How it works
+title: TXB0104 – How it works
 id: txb0104-how-it-works 
 hide_title: False
 ---  

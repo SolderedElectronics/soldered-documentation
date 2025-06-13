@@ -1,6 +1,6 @@
 ---
 slug: /digipot/how-it-works 
-title: How it works
+title: Digital Potentiometer – How it works
 id: digipot-how-it-works 
 hide_title: False
 ---  

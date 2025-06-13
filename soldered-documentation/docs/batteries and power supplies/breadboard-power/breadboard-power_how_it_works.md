@@ -1,6 +1,6 @@
 ---
 slug: /breadboard-power/how-it-works 
-title: How it works
+title: Breadboard Power – How it works
 id: breadboard-power-how-it-works 
 hide_title: False
 ---  

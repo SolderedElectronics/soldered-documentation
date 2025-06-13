@@ -1,6 +1,6 @@
 ---  
 slug: /lcd-i2c/arduino/troubleshooting  
-title: Troubleshooting  
+title: Lcd I2C – Troubleshooting
 id: lcd-i2c-arduino-5  
 hide_title: False  
 pagination_next: null  

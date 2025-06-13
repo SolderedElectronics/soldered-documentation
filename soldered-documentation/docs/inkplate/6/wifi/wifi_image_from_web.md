@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6/wifi/image-from-web
-title: Draw Image from Web
+title: Inkplate 6 – Draw Image from Web
 id: wifi-image-from-web
 ---
 

@@ -1,6 +1,6 @@
 ---
 slug: /accelerometer-gyroscope/arduino/examples-accelerometer  
-title: Measuring linear acceleration with LSM6DS3 Accelerometer (example)
+title: LSM6DS – Measuring linear acceleration with LSM6DS3 Accelerometer (example)
 id: accelerometer-gyroscope-arduino-2 
 hide_title: False
 ---

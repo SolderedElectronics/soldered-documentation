@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/peripherals/introduction
-title: Peripheral basics
+title: Inkplate 4TEMPERA – Peripheral basics
 id: 4tempera-periph-intro
 hide_title: true
 ---

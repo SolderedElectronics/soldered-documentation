@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6flick/touchscreen/touch-in-area
-title: Touch in Area
+title: Inkplate 6FLICK – Touch in Area
 id: 6flick-touch-in-area
 hide_title: true
 ---

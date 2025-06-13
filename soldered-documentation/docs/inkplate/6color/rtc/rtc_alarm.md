@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6color/rtc/alarm  
-title: RTC alarm  
+title: Inkplate 6COLOR – RTC alarm
 id: rtc-alarm  
 ---  
 

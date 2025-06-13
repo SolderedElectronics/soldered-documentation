@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/10/wifi/wifi-basics
-title: WiFi basics
+title: Inkplate 10 – WiFi basics
 id: 10-wifi-basics
 hide_title: true
 ---

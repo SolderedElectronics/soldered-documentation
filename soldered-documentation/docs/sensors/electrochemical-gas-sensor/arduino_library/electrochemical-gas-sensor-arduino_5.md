@@ -1,6 +1,6 @@
 ---
 slug: /electrochemical-gas-sensor/arduino/reading-from-multiple-sensors
-title: Reading from multiple sensors
+title: Electrochemical Gas Sensors – Reading from multiple sensors
 id: electrochemical-gas-sensor-arduino-5 
 hide_title: False
 ---

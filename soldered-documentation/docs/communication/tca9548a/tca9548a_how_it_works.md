@@ -1,6 +1,6 @@
 ---
 slug: /tca9548a/how-it-works 
-title: How it works
+title: Tca9548A – How it works
 id: tca9548a-how-it-works 
 hide_title: False
 ---  

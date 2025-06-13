@@ -1,6 +1,6 @@
 ---  
 slug: /apds-9960/hardware  
-title: Hardware details  
+title: Apds-9960 – Hardware details
 id: apds-9960-hardware  
 hide_title: False  
 ---

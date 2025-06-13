@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6flick/hardware/design  
-title: Hardware Design  
+title: Inkplate 6FLICK – Hardware Design
 id: 6flick-hardware-design  
 hide_title: true  
 ---

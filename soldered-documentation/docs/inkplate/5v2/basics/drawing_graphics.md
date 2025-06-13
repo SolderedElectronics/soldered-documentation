@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/5v2/basics/drawing-graphics  
-title: Drawing graphics  
+title: Inkplate 5V2 – Drawing graphics
 id: graphics  
 ---  
 Inkplate 5V2 allows you to draw graphics on a **1280 x 720px canvas**.

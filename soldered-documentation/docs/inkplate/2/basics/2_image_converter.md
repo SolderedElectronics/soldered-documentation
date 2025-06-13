@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/2/basics/image-converter
-title: Soldered Image Converter
+title: Inkplate 2 – Soldered Image Converter
 id: 2-image-converter
 hide_title: true
 ---

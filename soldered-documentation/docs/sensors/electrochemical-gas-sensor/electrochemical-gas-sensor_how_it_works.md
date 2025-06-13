@@ -1,6 +1,6 @@
 ---
 slug: /electrochemical-gas-sensor/how-it-works 
-title: How it works
+title: Electrochemical Gas Sensors – How it works
 id: electrochemical-gas-sensor-how-it-works 
 hide_title: False
 ---  

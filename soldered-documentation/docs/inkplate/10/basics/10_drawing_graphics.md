@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/10s/basics/drawing-graphics
-title: Drawing graphics
+title: Inkplate 10 – Drawing graphics
 id: 10-graphics
 ---
 

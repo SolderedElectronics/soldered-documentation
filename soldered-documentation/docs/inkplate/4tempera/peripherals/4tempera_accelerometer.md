@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/peripherals/accelerometer  
-title: Accelerometer and gyroscope  
+title: Inkplate 4TEMPERA – Accelerometer and gyroscope
 id: 4tempera-periph-accelerometer  
 hide_title: true
 ---

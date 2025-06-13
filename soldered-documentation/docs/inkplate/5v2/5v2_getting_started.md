@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/5v2/quick-start-guide/  
-title: Quick start guide  
+title: Inkplate 5V2 - Quick start guide  
 id: quick-start-guide  
 hide_title: True  
 pagination_prev: null  

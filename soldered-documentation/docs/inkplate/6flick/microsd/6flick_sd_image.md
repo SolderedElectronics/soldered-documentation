@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6flick/microsd/sd-image  
-title: Image from microSD  
+title: Inkplate 6FLICK – Image from microSD
 id: 6flick-microsd-image  
 hide_title: true  
 ---

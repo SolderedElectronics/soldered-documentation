@@ -1,6 +1,6 @@
 ---
 slug: /electrochemical-gas-sensor/arduino/calibrating-a-sensor
-title: Calibrating a sensor
+title: Electrochemical Gas Sensors – Calibrating a sensor
 id: electrochemical-gas-sensor-arduino-6 
 hide_title: False
 ---

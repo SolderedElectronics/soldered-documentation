@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6flick/basics/printing-text  
-title: Printing Text  
+title: Inkplate 6FLICK – Printing Text
 id: 6flick-text  
 hide_title: true
 ---

@@ -1,6 +1,6 @@
 ---
 slug: /mcp47a1/hardware
-title: Mcp47A1 - Hardware details
+title: MCP47A1 - Hardware details
 id: mcp47a1-hardware
 hide_title: false
 ---

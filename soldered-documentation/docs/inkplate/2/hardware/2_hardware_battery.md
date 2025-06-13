@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/2/hardware/battery
-title: Battery
+title: Inkplate 2 – Battery
 id: 2-hardware-battery
 hide_title: true
 ---

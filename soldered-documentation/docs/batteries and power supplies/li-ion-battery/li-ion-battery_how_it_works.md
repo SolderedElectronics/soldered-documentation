@@ -1,6 +1,6 @@
 ---
 slug: /li-ion-battery/how-it-works 
-title: How it works
+title: Li Ion Battery – How it works
 id: li-ion-battery-how-it-works 
 hide_title: False
 pagination_next: null

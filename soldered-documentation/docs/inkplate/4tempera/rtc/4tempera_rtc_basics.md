@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/rtc/basics  
-title: RTC basics  
+title: Inkplate 4TEMPERA – RTC basics
 id: 4tempera-rtc-basics  
 hide_title: true  
 ---  

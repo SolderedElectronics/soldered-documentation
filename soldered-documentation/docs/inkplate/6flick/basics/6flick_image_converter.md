@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6flick/basics/image-converter
-title: Soldered Image Converter
+title: Inkplate 6FLICK – Soldered Image Converter
 id: 6flick-image-converter
 hide_title: true
 ---

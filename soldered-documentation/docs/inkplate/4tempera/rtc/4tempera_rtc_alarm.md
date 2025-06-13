@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/rtc/alarm  
-title: RTC alarm  
+title: Inkplate 4TEMPERA – RTC alarm
 id: 4tempera-rtc-alarm  
 hide_title: true
 ---

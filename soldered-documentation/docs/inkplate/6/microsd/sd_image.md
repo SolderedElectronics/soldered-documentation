@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6/microsd/sd-image  
-title: Image from microSD  
+title: Inkplate 6 – Image from microSD
 id: microsd-image  
 ---  
 

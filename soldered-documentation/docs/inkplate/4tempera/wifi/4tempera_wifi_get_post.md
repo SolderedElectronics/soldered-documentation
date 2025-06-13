@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/wifi/get-post
-title: GET & POST requests
+title: Inkplate 4TEMPERA – GET & POST requests
 id: 4tempera-wifi-get-post
 hide_title: true
 ---

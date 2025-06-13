@@ -1,6 +1,6 @@
 ---  
 slug: /txb0104/hardware  
-title: Hardware details  
+title: TXB0104 – Hardware details
 id: txb0104-hardware  
 hide_title: False  
 ---

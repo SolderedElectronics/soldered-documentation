@@ -1,6 +1,6 @@
 ---  
 slug: /ws2812b/arduino/brightness-control  
-title: Brightness Control and Effects  
+title: WS2812B – Brightness Control and Effects
 id: ws2812b-arduino-3  
 hide_title: False  
 ---

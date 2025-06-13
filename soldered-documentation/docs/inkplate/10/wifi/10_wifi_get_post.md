@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/10/wifi/get-post
-title: GET & POST requests
+title: Inkplate 10 – GET & POST requests
 id: 10-wifi-get-post
 ---
 

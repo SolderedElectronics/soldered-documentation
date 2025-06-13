@@ -1,6 +1,6 @@
 ---
 slug: /bq27441/arduino/examples 
-title: Measuring battery information (example)
+title: BQ27441 – Measuring battery information (example)
 id: bq27441-arduino-2 
 hide_title: False
 ---

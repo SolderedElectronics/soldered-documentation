@@ -1,6 +1,6 @@
 ---
 slug: /ssd1306/how-it-works 
-title: How it works
+title: Ssd1306 – How it works
 id: ssd1306-how-it-works 
 hide_title: False
 ---  

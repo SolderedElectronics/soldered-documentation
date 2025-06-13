@@ -1,6 +1,6 @@
 ---
 slug: /electrochemical-gas-sensor/overview
-title: Overview
+title: Electrochemical Gas Sensors – Overview
 id: electrochemical-gas-sensor-overview 
 hide_title: False
 pagination_prev: null

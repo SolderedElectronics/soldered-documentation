@@ -1,6 +1,6 @@
 ---  
 slug: /rfid/hardware  
-title: Hardware details  
+title: Rfid – Hardware details
 id: 125khzrfidtagreader-hardware  
 hide_title: False  
 ---
