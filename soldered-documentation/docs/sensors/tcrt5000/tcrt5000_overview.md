@@ -1,6 +1,7 @@
 ---
 slug: /tcrt5000/overview
 title: Tcrt5000 - Overview
+sidebar_label: Overview
 id: tcrt5000-overview
 hide_title: false
 pagination_prev: null

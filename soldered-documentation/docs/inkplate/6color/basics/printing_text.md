@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6color/basics/printing-text
 title: Inkplate 6COLOR – Printing Text
+sidebar_label: Printing Text
 id: text
 ---
 

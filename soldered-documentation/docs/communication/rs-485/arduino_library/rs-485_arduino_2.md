@@ -1,6 +1,7 @@
 ---
 slug: /rs-485/arduino/examples
 title: Rs 485 - Arduino (Example)
+sidebar_label: Arduino (Example)
 id: rs-485-arduino-2
 hide_title: false
 ---

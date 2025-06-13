@@ -1,6 +1,7 @@
 ---
 slug: /breadboard-power/overview
 title: Breadboard Power - Overview
+sidebar_label: Overview
 id: breadboard-power-overview
 hide_title: false
 pagination_prev: null

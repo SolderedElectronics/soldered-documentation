@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/arduino/calculating-altitude
 title: Bmp180 - Calculating altitude
+sidebar_label: Calculating altitude
 id: bmp180-arduino-6
 hide_title: false
 ---

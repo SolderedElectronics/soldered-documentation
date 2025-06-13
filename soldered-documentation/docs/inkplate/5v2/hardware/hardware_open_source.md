@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/5v2/hardware/open-source  
 title: Inkplate 5V2 – Inkplate is open source
+sidebar_label: Inkplate is open source
 id: hardware-open-source  
 ---  
 

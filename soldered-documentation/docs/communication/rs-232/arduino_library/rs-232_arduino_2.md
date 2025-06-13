@@ -1,6 +1,7 @@
 ---
 slug: /rs-232/arduino/examples
 title: Rs 232 - Arduino (Example)
+sidebar_label: Arduino (Example)
 id: rs-232-arduino-2
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /ltr-507/overview
 title: Ltr 507 - Overview
+sidebar_label: Overview
 id: ltr-507-overview
 hide_title: false
 pagination_prev: null

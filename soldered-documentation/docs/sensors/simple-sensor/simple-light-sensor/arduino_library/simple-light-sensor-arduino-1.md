@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-light-sensor/arduino_library/geting-started
-title: Simple Sensor - Geting started
+title: Simple Light Sensor - Geting started
+sidebar_label: Geting started
 id: simple-light-sensor-arduino-1
 hide_title: false
 ---

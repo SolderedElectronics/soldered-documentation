@@ -1,6 +1,7 @@
 ---
 slug: /obstacle-sensor/overview
 title: Obstacle Sensor - Overview
+sidebar_label: Overview
 id: obstacle-sensor-overview
 hide_title: false
 pagination_prev: null

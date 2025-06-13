@@ -1,6 +1,7 @@
 ---
 slug: /slider-potentiometer/troubleshooting
 title: Slider Potentiometer - Troubleshooting
+sidebar_label: Troubleshooting
 id: slider-potentiometer-arduino-4
 hide_title: false
 pagination_next: null

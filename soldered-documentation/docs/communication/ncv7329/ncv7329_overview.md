@@ -1,6 +1,7 @@
 ---
 slug: /ncv7329/overview
 title: NCV7329 – Overview
+sidebar_label: Overview
 id: ncv7329-overview 
 hide_title: False
 pagination_prev: null

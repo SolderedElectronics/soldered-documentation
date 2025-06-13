@@ -1,6 +1,7 @@
 ---
 slug: /adc/arduino/init-and-simple-read
 title: Adc - Initialization and Simple ADC Read
+sidebar_label: Initialization and Simple ADC Read
 id: adc-arduino-2
 hide_title: false
 ---

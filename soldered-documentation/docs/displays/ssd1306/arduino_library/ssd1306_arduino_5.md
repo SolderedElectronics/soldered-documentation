@@ -1,6 +1,7 @@
 ---
 slug: /ssd1306/arduino/drawing-shapes
 title: Ssd1306 - Drawing shapes
+sidebar_label: Drawing shapes
 id: ssd1306-arduino-5
 hide_title: false
 ---

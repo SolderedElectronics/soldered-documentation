@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/low-power/deep-sleep  
 title: Inkplate 4TEMPERA – Deep sleep
+sidebar_label: Deep sleep
 id: 4tempera-deep-sleep  
 hide_title: true  
 ---

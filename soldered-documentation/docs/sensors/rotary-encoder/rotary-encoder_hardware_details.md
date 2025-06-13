@@ -1,6 +1,7 @@
 ---
 slug: /rotary-encoder/hardware
 title: Rotary Encoder - Hardware details
+sidebar_label: Hardware details
 id: rotary-encoder-hardware
 hide_title: false
 ---

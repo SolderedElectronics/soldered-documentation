@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/arduino/troubleshooting 
-title: Troubleshooting
+title: LSM9DS1TR – Troubleshooting
+sidebar_label: Troubleshooting
 id: lsm9ds1tr-arduino-6 
 hide_title: False
 pagination_next: null

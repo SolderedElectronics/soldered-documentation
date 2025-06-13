@@ -1,6 +1,7 @@
 ---
 slug: /mcp47a1/arduino/examples
 title: MCP47A1 - Setting specific voltages
+sidebar_label: Setting specific voltages
 id: mcp47a1-arduino-2
 hide_title: false
 ---

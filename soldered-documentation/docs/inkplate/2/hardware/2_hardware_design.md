@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/2/hardware/design
 title: Inkplate 2 – Hardware design
+sidebar_label: Hardware design
 id: 2-hardware-design
 hide_title: true
 ---

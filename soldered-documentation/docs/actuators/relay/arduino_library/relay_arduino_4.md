@@ -1,6 +1,7 @@
 ---
 slug: /relay/arduino/Troubleshooting
 title: Relay - Troubleshooting
+sidebar_label: Troubleshooting
 id: relay-arduino-4
 hide_title: false
 pagination_next: null

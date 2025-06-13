@@ -1,6 +1,7 @@
 ---
 slug: /microsd-reader/overview
 title: Microsd Reader - Overview
+sidebar_label: Overview
 id: microsd-reader-overview
 hide_title: false
 pagination_prev: null

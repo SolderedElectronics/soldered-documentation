@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/basics/drawing-graphics
 title: 6Motion - Drawing graphics
+sidebar_label: Drawing graphics
 id: 6motion-graphics
 ---
 

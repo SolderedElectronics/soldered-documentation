@@ -1,6 +1,7 @@
 ---
 slug: /gnss-gps/overview
 title: Gnss Gps - Overview
+sidebar_label: Overview
 id: gnss-gps-overview
 hide_title: false
 pagination_prev: null

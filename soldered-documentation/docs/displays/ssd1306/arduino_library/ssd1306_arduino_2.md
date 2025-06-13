@@ -1,6 +1,7 @@
 ---
 slug: /ssd1306/arduino/initializing-the-screen
 title: Ssd1306 - Initializing the screen
+sidebar_label: Initializing the screen
 id: ssd1306-arduino-2
 hide_title: false
 ---

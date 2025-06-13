@@ -1,6 +1,7 @@
 ---
 slug: /bme280/arduino/troubleshooting
 title: Bme280 - Troubleshooting
+sidebar_label: Troubleshooting
 id: bme280-arduino-3
 hide_title: false
 pagination_next: null

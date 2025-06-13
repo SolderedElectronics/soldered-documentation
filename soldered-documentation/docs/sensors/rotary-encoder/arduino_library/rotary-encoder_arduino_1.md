@@ -1,6 +1,7 @@
 ---
 slug: /rotary-encoder/arduino/geting-started
 title: Rotary Encoder - Getting started
+sidebar_label: Getting started
 id: rotary-encoder-arduino-1
 hide_title: false
 ---

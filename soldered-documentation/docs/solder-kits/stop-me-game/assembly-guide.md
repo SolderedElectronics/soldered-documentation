@@ -1,6 +1,7 @@
 ---
 slug: /stop-me-game/assemby-guide
 title: Stop Me Game - Assembly guide
+sidebar_label: Assembly guide
 id: stop-me-game-assembly-guide
 hide_title: false
 ---

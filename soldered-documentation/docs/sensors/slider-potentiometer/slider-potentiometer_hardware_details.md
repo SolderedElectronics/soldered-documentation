@@ -1,6 +1,7 @@
 ---
 slug: /slider-potentiometer/hardware
 title: Slider Potentiometer - Hardware details
+sidebar_label: Hardware details
 id: slider-potentiometer-hardware
 hide_title: false
 ---

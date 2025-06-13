@@ -1,6 +1,7 @@
 ---
 slug: /mcp23017/overview
 title: Mcp23017 - Overview
+sidebar_label: Overview
 id: mcp23017-overview
 hide_title: false
 pagination_prev: null

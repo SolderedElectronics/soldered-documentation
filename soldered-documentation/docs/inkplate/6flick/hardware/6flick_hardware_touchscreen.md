@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6flick/hardware/touchscreen
 title: Inkplate 6FLICK – Touchscreen
+sidebar_label: Touchscreen
 id: 6flick-hardware-touchscreen
 hide_title: true
 ---

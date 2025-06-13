@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/arduino/measuring-pressure
 title: Bmp180 - Measuring pressure
+sidebar_label: Measuring pressure
 id: bmp180-arduino-5
 hide_title: false
 ---

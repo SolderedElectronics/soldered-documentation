@@ -1,6 +1,7 @@
 ---
 slug: /ssd1306/hardware
 title: Ssd1306 - Hardware details
+sidebar_label: Hardware details
 id: ssd1306-hardware
 hide_title: false
 ---

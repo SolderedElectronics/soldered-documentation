@@ -1,6 +1,7 @@
 ---
 slug: /rotary-encoder/how-it-works 
-title: How it works
+title: Rotary Encoder - How it works
+sidebar_label: How it works 
 id: rotary-encoder-how-it-works 
 hide_title: False
 ---  

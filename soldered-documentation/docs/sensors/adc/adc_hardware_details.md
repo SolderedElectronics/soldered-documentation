@@ -1,6 +1,7 @@
 ---  
 slug: /adc/hardware  
 title: Adc – Hardware details
+sidebar_label: Hardware details
 id: adc-hardware  
 hide_title: False  
 ---

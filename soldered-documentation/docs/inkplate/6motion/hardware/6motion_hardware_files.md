@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/hardware/open-source-files
 title: 6Motion - Hardware files
+sidebar_label: Hardware files
 id: 6motion-hardware-files
 ---
 

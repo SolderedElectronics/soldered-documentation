@@ -1,6 +1,7 @@
 ---
 slug: /mcp23017/arduino/button-input-example
 title: Mcp23017 - Button input example
+sidebar_label: Button input example
 id: mcp23017-arduino-4
 hide_title: false
 ---

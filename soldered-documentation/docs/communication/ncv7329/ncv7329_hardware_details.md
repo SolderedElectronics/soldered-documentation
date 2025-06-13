@@ -1,6 +1,7 @@
 ---  
 slug: /ncv7329/hardware  
 title: NCV7329 – Hardware details
+sidebar_label: Hardware details
 id: ncv7329-hardware  
 hide_title: False  
 ---

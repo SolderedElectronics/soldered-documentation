@@ -1,6 +1,7 @@
 ---
 slug: /rfid/arduino/geting-started
 title: Rfid - Getting started
+sidebar_label: Getting started
 id: 125khzrfidtagreader-arduino-1
 hide_title: false
 ---

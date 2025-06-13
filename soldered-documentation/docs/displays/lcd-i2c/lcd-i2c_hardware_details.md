@@ -1,6 +1,7 @@
 ---
 slug: /lcd-i2c/hardware
 title: Lcd I2C - Hardware details
+sidebar_label: Hardware details
 id: lcd-i2c-hardware
 hide_title: false
 ---

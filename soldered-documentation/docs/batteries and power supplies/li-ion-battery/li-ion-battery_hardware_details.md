@@ -1,6 +1,7 @@
 ---
 slug: /li-ion-battery/hardware
 title: Li Ion Battery - Hardware details
+sidebar_label: Hardware details
 id: li-ion-battery-hardware
 hide_title: false
 ---
@@ -31,4 +32,3 @@ The **Li-Ion batteries** are designed with **1C discharge** rates (designed to c
 | [333288](https://soldered.com/product/li-ion-battery-5000mah-3-7v/)  | 5000mAh            | 67.4 x 54.6 x 10.1 mm / 2.7 x 2.1 x 0.4 inch | [Datasheet](https://soldered.com/productdata/2020/07/Soldered_5000-mAh_datasheet.pdf)          | [CE](/pdf/battery-uk-ca/CE%20UKCA%20baterije/CE-333288.pdf) [UKCA](/pdf/battery-uk-ca/CE%20UKCA%20baterije/UKCA-333288.pdf) |
 | [333289](https://soldered.com/product/li-ion-battery-6000mah-3-7v/)  | 6000mAh            | 90.2 x 60 x 9 mm / 3.6 x 2.4 x 0.4 inch      | [Datasheet](https://soldered.com/productdata/2020/07/Soldered_6000-mAh-baterija_datasheet.pdf) | [CE](/pdf/battery-uk-ca/CE%20UKCA%20baterije/CE-333289.pdf) [UKCA](/pdf/battery-uk-ca/CE%20UKCA%20baterije/UKCA-333289.pdf) |
 | [333290](https://soldered.com/product/li-ion-battery-10000mah-3-7v/) | 10000mAh           | 100 x 60 x 11 mm / 3.9 x 2.4 x 0.4 inch      | [Datasheet](https://soldered.com/productdata/2020/07/Soldered_10000-mAh_datasheet.pdf)         | [CE](/pdf/battery-uk-ca/CE%20UKCA%20baterije/CE-333290.pdf) [UKCA](/pdf/battery-uk-ca/CE%20UKCA%20baterije/UKCA-333290.pdf) |
-

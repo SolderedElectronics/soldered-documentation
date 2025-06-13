@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/wifi/get-post
 title: 6Motion - GET & POST requests
+sidebar_label: GET & POST requests
 id: 6motion-wifi-get-post
 ---
 

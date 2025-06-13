@@ -1,6 +1,7 @@
 ---
 slug: /gnss-gps/arduino/init-and-readings
 title: Gnss Gps - Initialization and Readings
+sidebar_label: Initialization and Readings
 id: gnss-gps-arduino-2
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/wifi/wifi-esp32-modem
 title: 6Motion - ESP32 modem
+sidebar_label: ESP32 modem
 id: 6motion-esp32-modem
 ---
 

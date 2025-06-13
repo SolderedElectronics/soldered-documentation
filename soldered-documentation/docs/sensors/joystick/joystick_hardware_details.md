@@ -1,6 +1,7 @@
 ---
 slug: /joystick/hardware
 title: Joystick - Hardware details
+sidebar_label: Hardware details
 id: joystick-hardware
 hide_title: false
 ---

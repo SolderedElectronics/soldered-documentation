@@ -1,6 +1,7 @@
 ---
 slug: /rs-485/arduino/troubleshooting
 title: Rs 485 - Troubleshooting
+sidebar_label: Troubleshooting
 id: rs-485-arduino-3
 hide_title: false
 pagination_next: null

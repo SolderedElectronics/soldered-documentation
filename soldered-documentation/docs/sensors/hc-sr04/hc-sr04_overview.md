@@ -1,6 +1,7 @@
 ---
 slug: /hc-sr04/overview
 title: Hc Sr04 - Overview
+sidebar_label: Overview
 id: hc-sr04-overview
 hide_title: false
 pagination_prev: null

@@ -1,6 +1,7 @@
 ---
 slug: /logic-level-converter-how-to-connect-it
 title: Logic Level Converter How To Connect It - How to Connect It?
+sidebar_label: How to Connect It?
 id: logic-level-converter-how-to-connect-it
 hide_title: false
 ---

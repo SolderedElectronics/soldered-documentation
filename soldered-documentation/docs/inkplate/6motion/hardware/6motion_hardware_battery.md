@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/hardware/battery
 title: 6Motion - Battery
+sidebar_label: Battery
 id: 6motion-hardware-battery
 ---
 

@@ -1,6 +1,7 @@
 ---
 slug: /drv8825/arduino/geting-started 
 title: DRV8825 – Getting started
+sidebar_label: Getting started
 id: drv8825-arduino-1 
 hide_title: False
 ---

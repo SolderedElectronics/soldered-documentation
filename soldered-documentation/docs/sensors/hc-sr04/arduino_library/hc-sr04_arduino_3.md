@@ -1,6 +1,7 @@
 ---
 slug: /hc-sr04/arduino/troubleshooting
 title: Hc Sr04 - Troubleshooting
+sidebar_label: Troubleshooting
 id: hc-sr04-arduino-3
 hide_title: false
 pagination_next: null

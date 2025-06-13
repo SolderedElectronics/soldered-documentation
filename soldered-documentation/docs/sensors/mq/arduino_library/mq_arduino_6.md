@@ -1,6 +1,7 @@
 ---
 slug: /mq/arduino/creating-a-custom-configuration
-title: Creating a custom configuration
+title: MQ Gas Sensors – Creating a custom configuration
+sidebar_label: Creating a custom configuration
 id: mq-arduino-6
 hide_title: False
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /mq/arduino/geting-started 
-title: Getting started
+title: MQ Gas Sensors – Getting started
+sidebar_label: Getting started
 id: mq-arduino-1 
 hide_title: False
 ---

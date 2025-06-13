@@ -1,6 +1,7 @@
 ---
 slug: /tca9548a/arduino/examples
 title: Tca9548A - Arduino example
+sidebar_label: Arduino example
 id: tca9548a-arduino-2
 hide_title: false
 ---

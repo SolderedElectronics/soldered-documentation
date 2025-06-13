@@ -1,6 +1,7 @@
 ---
 slug: /slider-potentiometer/arduino-2
 title: Slider Potentiometer - Reading Slider Potentiometer
+sidebar_label: Reading Slider Potentiometer
 id: slider-potentiometer-arduino-2
 hide_title: false
 ---

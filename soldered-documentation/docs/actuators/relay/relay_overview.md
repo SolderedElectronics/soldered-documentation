@@ -1,6 +1,7 @@
 ---
 slug: /relay/overview
 title: Relay - Overview
+sidebar_label: Overview
 id: relay-overview
 hide_title: false
 pagination_prev: null

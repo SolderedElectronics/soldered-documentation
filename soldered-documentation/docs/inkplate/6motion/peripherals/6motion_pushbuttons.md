@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/peripherals/buttons
 title: 6Motion - User Buttons
+sidebar_label: User Buttons
 id: 6motion-periph-buttons
 ---
 
@@ -57,4 +58,3 @@ For an all-in-one demonstration, the Inkplate library provides an example:
 description="Full example with pressing buttons and printing out which one was pressed"
 url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_Buttons/Inkplate_6_MOTION_Buttons.ino"
 />
-

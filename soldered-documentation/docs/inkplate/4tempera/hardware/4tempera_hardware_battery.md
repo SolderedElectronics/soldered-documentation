@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/hardware/battery
 title: Inkplate 4TEMPERA – Battery
+sidebar_label: Battery
 id: 4tempera-hardware-battery
 hide_title: true
 ---

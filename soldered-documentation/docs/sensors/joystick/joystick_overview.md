@@ -1,6 +1,7 @@
 ---
 slug: /joystick/overview
 title: Joystick - Overview
+sidebar_label: Overview
 id: joystick-overview
 hide_title: false
 pagination_prev: null

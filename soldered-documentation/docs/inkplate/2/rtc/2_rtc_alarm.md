@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/2/rtc/alarm
 title: Inkplate 2 – RTC alarm
+sidebar_label: RTC alarm
 id: 2-rtc-alarm
 hide_title: true
 ---

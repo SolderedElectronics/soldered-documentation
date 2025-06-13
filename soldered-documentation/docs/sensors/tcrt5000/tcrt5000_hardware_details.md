@@ -1,6 +1,7 @@
 ---
 slug: /tcrt5000/hardware
 title: Tcrt5000 - Hardware details
+sidebar_label: Hardware details
 id: tcrt5000-hardware
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/2/rtc/basics
 title: Inkplate 2 – RTC basics
+sidebar_label: RTC basics
 id: 2-rtc-basics
 hide_title: true
 ---

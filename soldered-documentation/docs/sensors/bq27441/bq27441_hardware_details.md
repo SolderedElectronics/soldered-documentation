@@ -1,6 +1,7 @@
 ---
 slug: /bq27441/hardware 
 title: BQ27441 – Hardware details
+sidebar_label: Hardware details
 id: bq27441-hardware 
 hide_title: False
 ---

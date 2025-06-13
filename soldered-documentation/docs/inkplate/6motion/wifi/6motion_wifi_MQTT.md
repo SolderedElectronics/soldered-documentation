@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/wifi/MQTT
 title: 6Motion - MQTT
+sidebar_label: MQTT
 id: 6motion-wifi-mqtt
 ---
 

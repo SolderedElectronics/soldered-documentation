@@ -1,6 +1,7 @@
 ---
 slug: /hall-effect-sensor/how-it-works 
 title: Hall Effect Sensor – How it works
+sidebar_label: How it works
 id: hall-effect-sensor-how-it-works 
 hide_title: False
 ---  
@@ -38,5 +39,4 @@ The Hall Voltage generated is **typically very small (in microvolts)**, so it is
 ## I2C communication - Qwiic
 
 Qwiic versions of the product use an onboard ATTINY404 MCU to implement I2C communication. The breakout board operates with a default I2C address of **0x30**; however, this can be changed using the onboard switches. To change the breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware/#address-selection-for-qwiic-version). When detected, the ATTINY404 receives data from the sensor and passes it on to the main MCU using the I2C data line. To check in detail how the ATTINY404 is preprogrammed, check the [**firmware github page**](https://github.com/SolderedElectronics/Soldered-Hall-Effect-Sensor-Arduino-Library/tree/dev/extras/attiny_firmware).
-
 

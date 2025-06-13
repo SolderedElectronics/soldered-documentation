@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/arduino/getting-started 
-title: Getting started
+title: LSM9DS1TR – Getting started
+sidebar_label: Getting started
 id: lsm9ds1tr-arduino-1 
 hide_title: False
 ---

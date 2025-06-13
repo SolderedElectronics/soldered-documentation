@@ -1,6 +1,7 @@
 ---
 slug: /ssd1306/arduino/troubleshooting
 title: Ssd1306 - Troubleshooting
+sidebar_label: Troubleshooting
 id: ssd1306-arduino-3
 hide_title: false
 pagination_next: null

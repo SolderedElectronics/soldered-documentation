@@ -1,6 +1,7 @@
 ---
 slug: /tca9548a/arduino/geting-started
 title: Tca9548A - Getting started
+sidebar_label: Getting started
 id: tca9548a-arduino-1
 hide_title: false
 ---

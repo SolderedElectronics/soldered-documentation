@@ -1,6 +1,7 @@
 ---
 slug: /arduino/quick-start-guide
 title: Arduino - Arduino Quick Start Guide
+sidebar_label: Arduino Quick Start Guide
 id: arduino-quick-start-guide
 hide_title: false
 pagination_prev: null

@@ -1,6 +1,7 @@
 ---
 slug: /drv8825/overview
 title: DRV8825 – Overview
+sidebar_label: Overview
 id: drv8825-overview 
 hide_title: False
 pagination_prev: null

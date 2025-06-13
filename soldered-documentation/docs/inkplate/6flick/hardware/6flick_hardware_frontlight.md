@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6flick/hardware/frontlight
 title: Inkplate 6FLICK – Frontlight
+sidebar_label: Frontlight
 id: 6flick-hardware-frontlight
 hide_title: true
 ---

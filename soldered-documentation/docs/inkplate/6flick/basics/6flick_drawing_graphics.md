@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6flick/basics/drawing-graphics
 title: Inkplate 6FLICK – Drawing graphics
+sidebar_label: Drawing graphics
 id: 6flick-graphics
 hide_title: true
 ---

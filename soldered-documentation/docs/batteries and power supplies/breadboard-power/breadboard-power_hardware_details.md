@@ -1,6 +1,7 @@
 ---
 slug: /breadboard-power/hardware
 title: Breadboard Power - Hardware details
+sidebar_label: Hardware details
 id: breadboard-power-hardware
 hide_title: false
 ---

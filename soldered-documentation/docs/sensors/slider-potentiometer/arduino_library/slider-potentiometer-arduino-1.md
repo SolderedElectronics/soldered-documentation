@@ -1,6 +1,7 @@
 ---
 slug: /slider-potentiometer/arduino-1
 title: Slider Potentiometer - Getting Started
+sidebar_label: Getting Started
 id: slider-potentiometer-arduino-1
 hide_title: false
 ---

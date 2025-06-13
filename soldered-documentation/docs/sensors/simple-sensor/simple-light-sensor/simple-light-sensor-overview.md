@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-light-sensor/simple-light-sensor-overview
-title: Simple Sensor - Overview
+title: Simple Light Sensor - Overview
+sidebar_label: Overview
 id: simple-light-sensor-overview
 hide_title: false
 pagination_prev: null

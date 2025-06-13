@@ -1,6 +1,7 @@
 ---
 slug: /hc-sr04/arduino/examples
 title: Hc Sr04 - Measuring distance and delay (examples)
+sidebar_label: Measuring distance and delay (examples)
 id: hc-sr04-arduino-2
 hide_title: false
 ---

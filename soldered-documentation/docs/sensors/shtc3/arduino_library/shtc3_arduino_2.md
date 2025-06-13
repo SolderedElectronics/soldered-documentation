@@ -1,6 +1,7 @@
 ---
 slug: /shtc3/arduino/examples
 title: Shtc3 - Measuring temperature and humidity (examples)
+sidebar_label: Measuring temperature and humidity (examples)
 id: shtc3-arduino-2
 hide_title: false
 ---

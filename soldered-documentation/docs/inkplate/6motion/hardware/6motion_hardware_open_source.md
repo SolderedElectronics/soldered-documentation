@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/hardware/open-source
 title: 6Motion - Inkplate is open source
+sidebar_label: Inkplate is open source
 id: 6motion-hardware-open-source
 ---
 

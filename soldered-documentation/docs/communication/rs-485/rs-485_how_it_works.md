@@ -1,6 +1,7 @@
 ---
 slug: /rs-485/how-it-works 
 title: Rs 485 – How it works
+sidebar_label: How it works
 id: rs-485-how-it-works 
 hide_title: False
 ---  

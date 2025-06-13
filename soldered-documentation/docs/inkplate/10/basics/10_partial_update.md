@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/10/basics/partial-update
 title: Inkplate 10 – Partial Update
+sidebar_label: Partial Update
 id: 10-partial-update
 hide_title: true
 ---

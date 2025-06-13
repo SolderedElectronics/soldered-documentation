@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6color/hardware/design
 title: Inkplate 6COLOR – Hardware design
+sidebar_label: Hardware design
 id: hardware-design
 hide_title: true
 ---

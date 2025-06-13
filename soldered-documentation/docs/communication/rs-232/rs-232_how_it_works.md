@@ -1,6 +1,7 @@
 ---
 slug: /rs-232/how-it-works 
 title: Rs 232 – How it works
+sidebar_label: How it works
 id: rs-232-how-it-works 
 hide_title: False
 ---  

@@ -1,6 +1,7 @@
 ---
 slug: /bme680/arduino/initializing
 title: Bme680 - Initializing
+sidebar_label: Initializing
 id: bme680-arduino-5
 hide_title: false
 ---

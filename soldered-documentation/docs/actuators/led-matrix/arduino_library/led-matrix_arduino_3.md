@@ -1,6 +1,7 @@
 ---
 slug: /relay/arduino/basic-functionality
 title: Relay - Basic functionality
+sidebar_label: Basic functionality
 id: led-matrix-arduino-3
 hide_title: false
 ---

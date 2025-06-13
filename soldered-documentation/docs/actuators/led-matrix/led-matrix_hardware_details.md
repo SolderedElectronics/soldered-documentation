@@ -1,6 +1,7 @@
 ---
 slug: /led-matrix/hardware
 title: Hardware - Hardware details
+sidebar_label: Hardware details
 id: led-matrix-hardware
 hide_title: false
 ---

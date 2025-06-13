@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/simple-rain-sensor-hardware
-title: Simple Sensor - Hardware details
+title: Simple Rain Sensor - Hardware details
+sidebar_label: Hardware details
 id: simple-rain-sensor-hardware
 hide_title: false
 ---

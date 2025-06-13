@@ -1,6 +1,7 @@
 ---
 slug: /battery-protection/overview
 title: Battery Protection - Overview
+sidebar_label: Overview
 id: battery-protection-overview
 hide_title: false
 pagination_prev: null

@@ -1,6 +1,7 @@
 ---
 slug: /gnss-gps/arduino/getting-started
 title: Gnss Gps - Getting started
+sidebar_label: Getting started
 id: gnss-gps-arduino-1
 hide_title: false
 ---

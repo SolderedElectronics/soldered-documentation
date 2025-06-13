@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/2/basics/drawing-graphics  
 title: Inkplate 2 – Drawing graphics
+sidebar_label: Drawing graphics
 id: 2-graphics  
 hide_title: true  
 ---

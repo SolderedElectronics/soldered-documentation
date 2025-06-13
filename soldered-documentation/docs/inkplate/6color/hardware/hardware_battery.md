@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/6color/hardware/battery  
 title: Inkplate 6COLOR – Battery
+sidebar_label: Battery
 id: hardware-battery  
 ---  
 

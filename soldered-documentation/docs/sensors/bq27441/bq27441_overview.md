@@ -1,6 +1,7 @@
 ---
 slug: /bq27441/overview
 title: BQ27441 – Overview
+sidebar_label: Overview
 id: bq27441-overview 
 hide_title: False
 pagination_prev: null

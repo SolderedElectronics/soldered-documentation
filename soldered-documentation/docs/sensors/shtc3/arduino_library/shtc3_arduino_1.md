@@ -1,6 +1,7 @@
 ---
 slug: /shtc3/arduino/geting-started
 title: Shtc3 - Getting started
+sidebar_label: Getting started
 id: shtc3-arduino-1
 hide_title: false
 ---

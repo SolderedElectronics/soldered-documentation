@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6color/wifi/https_certificate
 title: Inkplate 6COLOR – HTTPS certificate
+sidebar_label: HTTPS certificate
 id: wifi-https-certificate
 ---
 

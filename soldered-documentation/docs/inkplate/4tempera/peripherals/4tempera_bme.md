@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/peripherals/bme688
 title: Inkplate 4TEMPERA – Environmental sensor (BME688)
+sidebar_label: Environmental sensor (BME688)
 id: 4tempera-periph-bme688
 hide_title: true
 ---

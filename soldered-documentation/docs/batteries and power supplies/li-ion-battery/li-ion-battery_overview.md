@@ -1,6 +1,7 @@
 ---
 slug: /li-ion-battery/overview
 title: Li Ion Battery - Overview
+sidebar_label: Overview
 id: li-ion-battery-overview
 hide_title: false
 pagination_prev: null

@@ -1,6 +1,7 @@
 ---  
 slug: /ltr-507/hardware  
-title: Hardware details  
+title: Ltr 507 – Hardware details
+sidebar_label: Hardware details
 id: ltr-507-hardware  
 hide_title: False  
 ---

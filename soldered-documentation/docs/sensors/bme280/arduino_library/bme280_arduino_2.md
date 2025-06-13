@@ -1,6 +1,7 @@
 ---
 slug: /bme280/arduino/examples
 title: Bme280 - Measuring temperature, pressure and humidity (examples)
+sidebar_label: Measuring temperature, pressure and humidity (examples)
 id: bme280-arduino-2
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /mq/arduino/measuring-gas
-title: Measuring gas
+title: MQ Gas Sensors – Measuring gas
+sidebar_label: Measuring gas
 id: mq-arduino-5 
 hide_title: False
 ---

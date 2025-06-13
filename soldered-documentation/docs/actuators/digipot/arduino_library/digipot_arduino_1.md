@@ -1,6 +1,7 @@
 ---
 slug: /digipot/arduino/geting-started
 title: Digital Potentiometer - Getting started
+sidebar_label: Getting started
 id: digipot-arduino-1
 hide_title: false
 ---

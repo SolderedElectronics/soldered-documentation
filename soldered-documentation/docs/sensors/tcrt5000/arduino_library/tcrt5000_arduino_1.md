@@ -1,6 +1,7 @@
 ---
 slug: /tcrt5000/arduino/geting-started
 title: Tcrt5000 - Getting started
+sidebar_label: Getting started
 id: tcrt5000-arduino-1
 hide_title: false
 ---

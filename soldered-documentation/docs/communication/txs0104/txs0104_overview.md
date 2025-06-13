@@ -1,6 +1,7 @@
 ---
 slug: /txs0104/overview
 title: Txs0104 - Overview
+sidebar_label: Overview
 id: txs0104-overview
 hide_title: false
 pagination_prev: null

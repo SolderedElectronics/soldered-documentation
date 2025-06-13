@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/wifi/https_certificate
 title: Inkplate 4TEMPERA – HTTPS certificate
+sidebar_label: HTTPS certificate
 id: 4tempera-wifi-https-certificate
 hide_title: true
 ---

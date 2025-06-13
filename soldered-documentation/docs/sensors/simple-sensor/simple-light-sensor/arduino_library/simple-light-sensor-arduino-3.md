@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-light-sensor/arduino_library/qwiic-example
-title: Simple Sensor - Detecting and measuring light with Qwiic light sensor (example)
+title: Simple Light Sensor - Detecting and measuring light with Qwiic light sensor (example)
+sidebar_label: Detecting and measuring light with Qwiic light sensor (example)
 id: simple-light-sensor-arduino-3
 hide_title: false
 ---

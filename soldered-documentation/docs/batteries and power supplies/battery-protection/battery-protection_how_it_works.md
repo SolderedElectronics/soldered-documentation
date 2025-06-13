@@ -1,6 +1,7 @@
 ---
 slug: /battery-protection/how-it-works 
 title: Battery Protection – How it works
+sidebar_label: How it works
 id: battery-protection-how-it-works 
 hide_title: False
 ---  

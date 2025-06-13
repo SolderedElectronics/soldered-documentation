@@ -1,6 +1,7 @@
 ---
 slug: /solder-kit-dasduino/overview
 title: Solder Kit Dasduino - Overview
+sidebar_label: Overview
 id: solder-kit-dasduino-overview
 hide_title: false
 pagination_prev: null

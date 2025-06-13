@@ -1,6 +1,7 @@
 ---
 slug: /ssd1306/arduino/geting-started
 title: Ssd1306 - Getting started
+sidebar_label: Getting started
 id: ssd1306-arduino-1
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6flick/hardware/battery
 title: Inkplate 6FLICK – Battery
+sidebar_label: Battery
 id: 6flick-hardware-battery
 hide_title: true
 ---

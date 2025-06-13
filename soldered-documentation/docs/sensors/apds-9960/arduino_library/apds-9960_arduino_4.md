@@ -1,6 +1,7 @@
 ---
 slug: /apds-9960/arduino/proximity-sensor
 title: Apds 9960 - Proximity Sensor
+sidebar_label: Proximity Sensor
 id: apds-9960-arduino-4
 hide_title: false
 ---

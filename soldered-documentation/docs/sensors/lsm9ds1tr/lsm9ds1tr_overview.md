@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/overview
-title: Overview
+title: LSM9DS1TR – Overview
+sidebar_label: Overview
 id: lsm9ds1tr-overview 
 hide_title: False
 pagination_prev: null

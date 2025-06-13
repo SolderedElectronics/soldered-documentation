@@ -1,6 +1,7 @@
 ---
 slug: /hc-sr04/how-it-works 
-title: How it works
+title: Hc Sr04 – How it works
+sidebar_label: How it works
 id: hc-sr04-how-it-works 
 hide_title: False
 ---  

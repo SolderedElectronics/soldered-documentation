@@ -1,6 +1,7 @@
 ---
 slug: /hx711/overview
 title: Hx711 - Overview
+sidebar_label: Overview
 id: hx711-overview
 hide_title: false
 pagination_prev: null

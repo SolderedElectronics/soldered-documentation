@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/6/basics/basic-display-modes  
 title: Inkplate 6 – Display modes
+sidebar_label: Display modes
 id: display-modes  
 ---  
 

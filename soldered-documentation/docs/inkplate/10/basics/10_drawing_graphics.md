@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/10s/basics/drawing-graphics
 title: Inkplate 10 – Drawing graphics
+sidebar_label: Drawing graphics
 id: 10-graphics
 ---
 
@@ -201,4 +202,3 @@ Below are the detailed references for these functions:
   description="Example on how to draw simple graphics in grayscale"
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Basic/Inkplate10_Grayscale/Inkplate10_Grayscale.ino" 
 />
-

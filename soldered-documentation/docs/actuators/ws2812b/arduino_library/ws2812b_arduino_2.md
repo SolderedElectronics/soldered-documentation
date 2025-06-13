@@ -1,6 +1,7 @@
 ---
 slug: /ws2812b/arduino/init-and-set-colors
 title: WS2812B - Initialization and Setting Colors
+sidebar_label: Initialization and Setting Colors
 id: ws2812b-arduino-2
 hide_title: false
 ---

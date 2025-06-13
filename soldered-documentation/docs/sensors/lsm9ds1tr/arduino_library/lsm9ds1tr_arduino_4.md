@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/arduino/examples-magnetometer
-title: Measuring magnetic field strength with LSM9DS1TR Magnetometer (example)
+title: LSM9DS1TR – Measuring magnetic field strength with LSM9DS1TR Magnetometer (example)
+sidebar_label: Measuring magnetic field strength with LSM9DS1TR Magnetometer (example)
 id: lsm9ds1tr-arduino-4
 hide_title: False
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /shtc3/arduino/troubleshooting
 title: Shtc3 - Troubleshooting
+sidebar_label: Troubleshooting
 id: shtc3-arduino-3
 hide_title: false
 pagination_next: null

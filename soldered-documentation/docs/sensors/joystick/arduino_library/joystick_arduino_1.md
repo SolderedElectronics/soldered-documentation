@@ -1,6 +1,7 @@
 ---
 slug: /joystick/arduino/geting-started
 title: Joystick - Getting started
+sidebar_label: Getting started
 id: joystick-arduino-1
 hide_title: false
 ---

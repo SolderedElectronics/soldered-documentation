@@ -1,6 +1,7 @@
 ---
 slug: /relay/arduino/regular-example
 title: Relay - Switching the relay (regular example)
+sidebar_label: Switching the relay (regular example)
 id: relay-arduino-2
 hide_title: false
 ---

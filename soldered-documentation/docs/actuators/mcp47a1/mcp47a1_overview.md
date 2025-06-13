@@ -1,6 +1,7 @@
 ---
 slug: /mcp47a1/overview
 title: MCP47A1 - Overview
+sidebar_label: Overview
 id: mcp47a1-overview
 hide_title: false
 pagination_prev: null

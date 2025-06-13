@@ -1,6 +1,7 @@
 ---
 slug: /simon-says-game/assemby-guide
 title: Simon Says Game - Assembly guide
+sidebar_label: Assembly guide
 id: simon-says-game-assembly-guide
 hide_title: false
 ---

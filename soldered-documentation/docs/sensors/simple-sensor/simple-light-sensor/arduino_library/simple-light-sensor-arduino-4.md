@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-light-sensor/arduino_library/troubleshooting
-title: Simple Sensor - Troubleshooting
+title: Simple Light Sensor - Troubleshooting
+sidebar_label: Troubleshooting
 id: simple-light-sensor-arduino-4
 hide_title: false
 pagination_next: null

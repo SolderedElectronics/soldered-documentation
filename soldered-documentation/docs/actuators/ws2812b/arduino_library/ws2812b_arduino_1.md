@@ -1,6 +1,7 @@
 ---
 slug: /ws2812b/arduino/geting-started
 title: WS2812B - Getting started
+sidebar_label: Getting started
 id: ws2812b-arduino-1
 hide_title: false
 ---

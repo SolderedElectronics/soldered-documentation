@@ -1,6 +1,7 @@
 ---
 slug: /ws2812b/how-it-works 
 title: WS2812B – How it works
+sidebar_label: How it works
 id: ws2812b-how-it-works 
 hide_title: False
 ---  

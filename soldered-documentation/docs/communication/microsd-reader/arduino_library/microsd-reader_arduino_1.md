@@ -1,6 +1,7 @@
 ---
 slug: /microsd-reader/arduino/geting-started
 title: Microsd Reader - Getting started
+sidebar_label: Getting started
 id: microsd-reader-arduino-1
 hide_title: false
 ---
@@ -48,4 +49,3 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | IO18 (Default CLK pin)    | SCLK               |
 | GND                      | GND                |
 | 3.3V                     | VCC                |
-

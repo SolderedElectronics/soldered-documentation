@@ -1,6 +1,7 @@
 ---
 slug: /joystick/how-it-works 
-title: How it works
+title: Joystick – How it works
+sidebar_label: How it works
 id: joystick-how-it-works 
 hide_title: False
 ---  

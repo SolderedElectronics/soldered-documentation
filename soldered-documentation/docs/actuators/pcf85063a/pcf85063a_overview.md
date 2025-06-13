@@ -1,6 +1,7 @@
 ---
 slug: /pcf85063a/overview
 title: PCF85063A - Overview
+sidebar_label: Overview
 id: pcf85063a-overview
 hide_title: false
 pagination_prev: null

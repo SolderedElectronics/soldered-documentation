@@ -1,6 +1,7 @@
 ---  
 slug: /hx711/arduino/calibration-and-unit-read  
-title: Calibration and Unit Read  
+title: Hx711 – Calibration and Unit Read
+sidebar_label: Calibration and Unit Read
 id: hx711-arduino-3  
 hide_title: False  
 ---

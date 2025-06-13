@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/5v2/image-converter  
 title: Inkplate 5V2 – Soldered Image Converter
+sidebar_label: Soldered Image Converter
 id: image-converter  
 ---  
 <CenteredImage src="/img/inkplate_6_motion/image_converter.png" alt="Soldered Image Converter" caption="Graphical user interface of the Soldered Image Converter" width="800px" />

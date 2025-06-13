@@ -1,6 +1,7 @@
 ---
 slug: /shtc3/how-it-works 
-title: How it works
+title: Shtc3 - How it works
+sidebar_label: How it works
 id: shtc3-how-it-works 
 hide_title: False
 ---  

@@ -1,6 +1,7 @@
 ---
 slug: /accelerometer-gyroscope/hardware 
 title: LSM6DS – Hardware details
+sidebar_label: Hardware details
 id: accelerometer-gyroscope-hardware 
 hide_title: False
 ---

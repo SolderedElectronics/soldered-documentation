@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/overview
 title: Bmp180 - Overview
+sidebar_label: Overview
 id: bmp180-overview
 hide_title: false
 pagination_prev: null

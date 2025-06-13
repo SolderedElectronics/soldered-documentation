@@ -1,6 +1,7 @@
 ---
 slug: /tca9548a/overview
 title: Tca9548A - Overview
+sidebar_label: Overview
 id: tca9548a-overview
 hide_title: false
 pagination_prev: null

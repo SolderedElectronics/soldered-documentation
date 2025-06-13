@@ -1,6 +1,7 @@
 ---
 slug: /mcp23017/hardware
 title: Mcp23017 - Hardware Details
+sidebar_label: Hardware Details
 id: mcp23017-hardware
 hide_title: false
 ---

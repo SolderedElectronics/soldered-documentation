@@ -1,6 +1,7 @@
 ---
 slug: /tcrt5000/arduino/example
 title: Tcrt5000 - Example usage (Arduino)
+sidebar_label: Example usage (Arduino)
 id: tcrt5000-arduino-2
 hide_title: false
 ---

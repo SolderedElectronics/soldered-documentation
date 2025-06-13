@@ -1,6 +1,6 @@
 ---
 slug: /pir-sensor/how-it-works 
-title: How it works
+title: Pir Sensor – How it works
 id: pir-sensor-how-it-works 
 hide_title: False
 ---  

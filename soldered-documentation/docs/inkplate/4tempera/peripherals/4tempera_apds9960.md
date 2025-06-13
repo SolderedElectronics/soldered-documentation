@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/peripherals/apds9960  
 title: Inkplate 4TEMPERA – Gesture and proximity sensor
+sidebar_label: Gesture and proximity sensor
 id: 4tempera-periph-apds9960  
 hide_title: true
 ---

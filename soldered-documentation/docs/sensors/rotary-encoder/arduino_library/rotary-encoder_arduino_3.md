@@ -1,6 +1,7 @@
 ---
 slug: /rotary-encoder/arduino/troubleshooting
 title: Rotary Encoder - Troubleshooting
+sidebar_label: Troubleshooting
 id: rotary-encoder-arduino-3
 hide_title: false
 pagination_next: null

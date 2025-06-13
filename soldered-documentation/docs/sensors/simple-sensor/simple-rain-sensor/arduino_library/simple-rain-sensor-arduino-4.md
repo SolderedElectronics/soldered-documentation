@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/arduino_library/troubleshooting
-title: Simple Sensor - Troubleshooting
+title: Simple Rain Sensor - Troubleshooting
+sidebar_label: Troubleshooting
 id: simple-rain-sensor-arduino-4
 hide_title: false
 pagination_next: null

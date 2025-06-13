@@ -1,6 +1,7 @@
 ---
 slug: /pir-sensor/arduino/troubleshooting
 title: Pir Sensor - Troubleshooting
+sidebar_label: Troubleshooting
 id: pir-sensor-arduino-3
 hide_title: false
 pagination_next: null

@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/basics/image-converter  
 title: Inkplate 4TEMPERA – Soldered Image Converter
+sidebar_label: Soldered Image Converter
 id: 4tempera-image-converter  
 hide_title: true
 ---

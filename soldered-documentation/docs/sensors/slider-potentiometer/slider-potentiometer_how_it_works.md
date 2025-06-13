@@ -1,6 +1,7 @@
 ---
 slug: /slider-potentiometer/how-it-works
 title: Slider Potentiometer - How it works
+sidebar_label: How it works
 id: slider-potentiometer-how-it-works
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /pir-sensor/overview
 title: Pir Sensor - Overview
+sidebar_label: Overview
 id: pir-sensor-overview
 hide_title: false
 pagination_prev: null

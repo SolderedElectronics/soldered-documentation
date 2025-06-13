@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/arduino/troubleshooting
 title: Bmp180 - Troubleshooting
+sidebar_label: Troubleshooting
 id: bmp180-arduino-3
 hide_title: false
 pagination_next: null

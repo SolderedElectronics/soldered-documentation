@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6flick/basics/basic-display-modes
 title: Inkplate 6FLICK – Display modes
+sidebar_label: Display modes
 id: 6flick-display-modes
 hide_title: true
 ---

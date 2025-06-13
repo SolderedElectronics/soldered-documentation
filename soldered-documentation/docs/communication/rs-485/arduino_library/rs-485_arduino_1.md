@@ -1,6 +1,7 @@
 ---
 slug: /rs-485/arduino/geting-started
 title: Rs 485 - Getting started
+sidebar_label: Getting started
 id: rs-485-arduino-1
 hide_title: false
 ---

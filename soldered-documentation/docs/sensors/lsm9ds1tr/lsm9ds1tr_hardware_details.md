@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/hardware
-title: Hardware details
+title: LSM9DS1TR – Hardware details
+sidebar_label: Hardware details
 id: lsm9ds1tr-hardware
 hide_title: False
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /relay/how-it-works 
 title: Relay – How it works
+sidebar_label: How it works
 id: relay-how-it-works 
 hide_title: False
 ---  

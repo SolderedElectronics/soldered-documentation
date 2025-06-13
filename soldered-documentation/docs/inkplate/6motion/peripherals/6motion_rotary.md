@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/peripherals/rotary-encoder
 title: 6Motion - Rotary Encoder
+sidebar_label: Rotary Encoder
 id: 6motion-periph-rotary
 ---
 
@@ -71,4 +72,3 @@ This example tracks the rotary encoder's angle and updates the display when the 
 description="Full rotary encoder example in the Inkplate library"
 url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_Rotary_Encoder/Inkplate_6_MOTION_Rotary_Encoder.ino"
 />
-

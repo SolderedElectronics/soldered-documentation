@@ -1,6 +1,7 @@
 ---
 slug: /pir-sensor/hardware
 title: Pir Sensor - Hardware details
+sidebar_label: Hardware details
 id: pir-sensor-hardware
 hide_title: false
 ---

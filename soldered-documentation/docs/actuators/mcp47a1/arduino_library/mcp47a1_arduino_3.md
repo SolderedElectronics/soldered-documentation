@@ -1,6 +1,7 @@
 ---
 slug: /mcp47a1/arduino/troubleshooting
 title: MCP47A1 - Troubleshooting
+sidebar_label: Troubleshooting
 id: mcp47a1-arduino-3
 hide_title: false
 pagination_next: null

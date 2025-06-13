@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/hardware
 title: Bmp180 - Hardware details
+sidebar_label: Hardware details
 id: bmp180-hardware
 hide_title: false
 ---

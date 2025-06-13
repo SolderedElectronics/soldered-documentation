@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/6/low-power/deep-sleep  
 title: Inkplate 6 – Deep sleep
+sidebar_label: Deep sleep
 id: deep-sleep  
 hide_title: true  
 ---

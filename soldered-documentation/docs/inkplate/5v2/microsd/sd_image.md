@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/5v2/microsd/sd-image  
 title: Inkplate 5V2 – Image from microSD
+sidebar_label: Image from microSD
 id: microsd-image  
 ---  
 

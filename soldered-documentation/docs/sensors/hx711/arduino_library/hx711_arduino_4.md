@@ -1,6 +1,7 @@
 ---
 slug: /hx711/arduino/deep-sleep
 title: Hx711 - Deep Sleep
+sidebar_label: Deep Sleep
 id: hx711-arduino-4
 hide_title: false
 ---

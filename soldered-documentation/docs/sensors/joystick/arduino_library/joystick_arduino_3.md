@@ -1,6 +1,7 @@
 ---
 slug: /joystick/arduino/troubleshooting
 title: Joystick - Troubleshooting
+sidebar_label: Troubleshooting
 id: joystick-arduino-3
 hide_title: false
 pagination_next: null

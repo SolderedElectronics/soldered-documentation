@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/2/basics/printing-text  
 title: Inkplate 2 – Printing Text
+sidebar_label: Printing Text
 id: 2-text  
 hide_title: true  
 ---

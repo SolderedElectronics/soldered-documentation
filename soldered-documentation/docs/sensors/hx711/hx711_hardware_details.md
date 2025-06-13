@@ -1,6 +1,7 @@
 ---
 slug: /hx711/hardware
 title: Hx711 - Hardware details
+sidebar_label: Hardware details
 id: hx711-hardware
 hide_title: false
 ---

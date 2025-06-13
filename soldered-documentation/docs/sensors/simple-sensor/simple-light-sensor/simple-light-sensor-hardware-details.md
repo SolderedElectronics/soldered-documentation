@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-light-sensor/simple-light-sensor-hardware
-title: Simple Sensor - Hardware details
+title: Simple Light Sensor - Hardware details
+sidebar_label: Hardware details
 id: simple-light-sensor-hardware
 hide_title: false
 ---

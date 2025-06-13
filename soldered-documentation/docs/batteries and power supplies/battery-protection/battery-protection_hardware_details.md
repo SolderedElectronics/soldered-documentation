@@ -1,6 +1,7 @@
 ---
 slug: /battery-protection/hardware
 title: Battery Protection - Hardware details
+sidebar_label: Hardware details
 id: battery-protection-hardware
 hide_title: false
 ---

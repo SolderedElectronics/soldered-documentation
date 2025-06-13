@@ -1,6 +1,7 @@
 ---
 slug: /mq/how-it-works 
-title: How it works
+title: MQ Gas Sensors – How it works
+sidebar_label: How it works
 id: mq-how-it-works 
 hide_title: False
 ---  

@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/6color/hardware/open-source-files  
 title: Inkplate 6COLOR – Hardware files
+sidebar_label: Hardware files
 id: hardware-files  
 ---  
 

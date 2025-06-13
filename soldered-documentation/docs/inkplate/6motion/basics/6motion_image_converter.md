@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/basics/image-converter
 title: 6Motion - Soldered Image Converter
+sidebar_label: Soldered Image Converter
 id: 6motion-image-converter
 ---
 

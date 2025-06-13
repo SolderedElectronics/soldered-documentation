@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/touchscreen/draw
 title: Inkplate 4TEMPERA – Touchscreen Draw
+sidebar_label: Touchscreen Draw
 id: 4tempera-touchscreen-draw
 hide_title: true
 ---

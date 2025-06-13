@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/10/basics/initialization
 title: Inkplate 10 – Initialization
+sidebar_label: Initialization
 id: 10-init
 hide_title: true
 ---

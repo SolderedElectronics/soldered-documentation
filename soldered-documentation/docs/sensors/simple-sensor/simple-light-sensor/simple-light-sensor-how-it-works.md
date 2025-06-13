@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-light-sensor/simple-light-sensor-how-it-works
-title: Simple Sensor - How it works
+title: Simple Light Sensor - How it works
+sidebar_label: How it works
 id: simple-light-sensor-how-it-works
 hide_title: false
 ---

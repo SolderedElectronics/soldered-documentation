@@ -1,6 +1,7 @@
 ---
 slug: /tca9548a/hardware
 title: Tca9548A - Hardware details
+sidebar_label: Hardware details
 id: tca9548a-hardware
 hide_title: false
 ---

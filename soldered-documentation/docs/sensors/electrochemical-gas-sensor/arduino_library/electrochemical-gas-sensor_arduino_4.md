@@ -1,6 +1,7 @@
 ---
 slug: /electrochemical-gas-sensor/arduino/custom-config-example 
 title: Electrochemical Gas Sensors – Custom configuration example
+sidebar_label: Custom configuration example
 id: electrochemical-gas-sensor-arduino-4 
 hide_title: False
 ---

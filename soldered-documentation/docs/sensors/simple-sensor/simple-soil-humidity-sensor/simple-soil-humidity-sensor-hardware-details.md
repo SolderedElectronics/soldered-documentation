@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-soil-humidity-sensor/simple-soil-humidity-sensor-hardware
-title: Simple Sensor - Hardware details
+title: Simple Soil Sensor - Hardware details
+sidebar_label: Hardware details
 id: simple-soil-humidity-sensor-hardware
 hide_title: false
 ---

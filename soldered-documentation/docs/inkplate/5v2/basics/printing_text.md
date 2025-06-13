@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/5v2/basics/printing-text
 title: Inkplate 5V2 – Printing Text
+sidebar_label: Printing Text
 id: text
 ---
 

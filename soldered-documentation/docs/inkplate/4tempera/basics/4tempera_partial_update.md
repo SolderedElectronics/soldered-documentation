@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/basics/partial-update  
 title: Inkplate 4TEMPERA – Partial Update
+sidebar_label: Partial Update
 id: 4tempera-partial-update  
 hide_title: true  
 ---

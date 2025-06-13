@@ -1,6 +1,7 @@
 ---
 slug: /stepper-motor-driver/arduino/geting-started
 title: Stepper Motor Driver - Getting started
+sidebar_label: Getting started
 id: stepper-motor-driver-arduino-1
 hide_title: false
 ---

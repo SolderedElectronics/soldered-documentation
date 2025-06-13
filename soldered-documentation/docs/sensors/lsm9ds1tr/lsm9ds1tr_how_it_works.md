@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/how-it-works 
-title: How it works
+title: LSM9DS1TR – How it works
+sidebar_label: How it works
 id: lsm9ds1tr-how-it-works 
 hide_title: False
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /mcp47a1/how-it-works 
 title: MCP47A1 – How it works
+sidebar_label: How it works
 id: mcp47a1-how-it-works 
 hide_title: False
 ---  

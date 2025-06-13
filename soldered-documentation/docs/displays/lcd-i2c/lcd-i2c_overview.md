@@ -1,6 +1,7 @@
 ---
 slug: /lcd-i2c/overview
 title: Lcd I2C - Overview
+sidebar_label: Overview
 id: lcd-i2c-overview
 hide_title: false
 pagination_prev: null

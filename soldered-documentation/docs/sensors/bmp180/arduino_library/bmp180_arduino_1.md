@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/arduino/geting-started
 title: Bmp180 - Getting started
+sidebar_label: Getting started
 id: bmp180-arduino-1
 hide_title: false
 ---

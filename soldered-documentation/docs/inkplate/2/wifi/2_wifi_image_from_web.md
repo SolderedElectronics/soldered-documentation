@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/2/wifi/image-from-web  
 title: Inkplate 2 – Draw Image from Web
+sidebar_label: Draw Image from Web
 id: 2-wifi-image-from-web  
 hide_title: true  
 ---

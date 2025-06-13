@@ -1,6 +1,7 @@
 ---
 slug: /obstacle-sensor/arduino/examples
 title: Obstacle Sensor - Example usage (Arduino)
+sidebar_label: Example usage (Arduino)
 id: obstacle-sensor-arduino-2
 hide_title: false
 ---

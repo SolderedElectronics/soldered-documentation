@@ -1,6 +1,7 @@
 ---
 slug: /ch340/how-it-works 
 title: Ch340 – How it works
+sidebar_label: How it works
 id: ch340-how-it-works 
 hide_title: False
 ---  

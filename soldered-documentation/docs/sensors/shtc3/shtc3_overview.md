@@ -1,6 +1,7 @@
 ---
 slug: /shtc3/overview
 title: Shtc3 - Overview
+sidebar_label: Overview
 id: shtc3-overview
 hide_title: false
 pagination_prev: null

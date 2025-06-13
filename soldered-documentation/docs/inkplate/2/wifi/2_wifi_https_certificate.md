@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/2/wifi/https_certificate
 title: Inkplate 2 – HTTPS certificate
+sidebar_label: HTTPS certificate
 id: 2-wifi-https-certificate
 hide_title: true
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /ws2812b/hardware
 title: WS2812B - Hardware details
+sidebar_label: Hardware details
 id: ws2812b-hardware
 hide_title: false
 ---

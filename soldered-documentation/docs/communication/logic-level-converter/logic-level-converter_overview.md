@@ -1,6 +1,7 @@
 ---
 slug: /logic-level-converter/overview
 title: Logic Level Converter - Overview
+sidebar_label: Overview
 id: logic-level-converter-overview
 hide_title: false
 pagination_prev: null

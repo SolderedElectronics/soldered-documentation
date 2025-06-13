@@ -1,6 +1,7 @@
 ---
 slug: /shtc3/hardware
 title: Shtc3 - Hardware details
+sidebar_label: Hardware details
 id: shtc3-hardware
 hide_title: false
 ---

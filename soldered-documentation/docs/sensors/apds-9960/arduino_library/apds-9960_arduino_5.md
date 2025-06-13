@@ -1,6 +1,7 @@
 ---
 slug: /apds-9960/arduino/color-sensor
 title: Apds 9960 - Color Sensor
+sidebar_label: Color Sensor
 id: apds-9960-arduino-5
 hide_title: false
 ---

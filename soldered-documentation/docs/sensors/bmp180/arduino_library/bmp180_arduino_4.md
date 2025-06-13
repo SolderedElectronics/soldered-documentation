@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/arduino/measuring-temperature
 title: Bmp180 - Measuring temperature
+sidebar_label: Measuring temperature
 id: bmp180-arduino-4
 hide_title: false
 ---

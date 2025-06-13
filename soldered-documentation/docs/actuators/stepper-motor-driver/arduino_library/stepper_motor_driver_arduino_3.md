@@ -1,6 +1,7 @@
 ---
 slug: /stepper-motor-driver/arduino/troubleshooting
 title: Stepper Motor Driver - Troubleshooting
+sidebar_label: Troubleshooting
 id: stepper-motor-driver-arduino-3
 hide_title: false
 pagination_next: null

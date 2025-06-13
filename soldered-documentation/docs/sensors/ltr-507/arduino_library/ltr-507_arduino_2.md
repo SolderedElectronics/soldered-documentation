@@ -1,6 +1,7 @@
 ---
 slug: /ltr-507/arduino/init-and-settings
 title: Ltr 507 - Initialization and Settings
+sidebar_label: Initialization and Settings
 id: ltr-507-arduino-2
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /pcf85063a/how-it-works 
 title: PCF85063A – How it works
+sidebar_label: How it works
 id: pcf85063a-how-it-works 
 hide_title: False
 ---  

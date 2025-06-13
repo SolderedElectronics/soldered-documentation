@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/hardware/esp32
 title: 6Motion - ESP32 co-processor
+sidebar_label: ESP32 co-processor
 id: 6motion-hardware-esp32
 hide_title: true
 ---

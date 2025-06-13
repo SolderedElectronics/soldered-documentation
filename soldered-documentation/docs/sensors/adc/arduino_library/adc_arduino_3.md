@@ -1,6 +1,7 @@
 ---
 slug: /adc/arduino/comparator
 title: Adc - Using the Comparator
+sidebar_label: Using the Comparator
 id: adc-arduino-3
 hide_title: false
 ---

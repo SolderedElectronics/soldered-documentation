@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/2/basics/basic-display-modes
 title: Inkplate 2 – Display mode
+sidebar_label: Display mode
 id: 2-display-modes
 hide_title: true
 ---

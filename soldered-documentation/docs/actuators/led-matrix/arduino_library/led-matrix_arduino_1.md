@@ -1,6 +1,7 @@
 ---
 slug: /led-matrix/arduino/geting-started
 title: Arduino - Getting started
+sidebar_label: Getting started
 id: led-matrix-arduino-1
 hide_title: false
 ---
@@ -55,4 +56,3 @@ LOAD pin can be any digital IO  pin on controller, CLK and DIN pins must be defa
 | DIN | DOUT |
 | VCC | VCC |
 |GND | GND |
-

@@ -1,6 +1,7 @@
 ---
 slug: /led-matrix/arduino/displaying-animation
 title: Arduino - Displaying animation (Pacman example)
+sidebar_label: Displaying animation (Pacman example)
 id: led-matrix-arduino-5
 hide_title: false
 ---

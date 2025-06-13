@@ -1,6 +1,7 @@
 ---
 slug: /mq/arduino/debug-print
-title: Debugging help example
+title: MQ Gas Sensors – Debugging help example
+sidebar_label: Debugging help example
 id: mq-arduino-7
 hide_title: False
 ---

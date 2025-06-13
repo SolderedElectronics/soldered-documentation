@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/faq-troubleshooting  
 title: Inkplate 4TEMPERA - FAQ and troubleshooting  
+sidebar_label: FAQ and troubleshooting
 id: 4tempera-faq-troubleshooting  
 hide_title: true  
 ---

@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/touchscreen/touch-in-area  
 title: Inkplate 4TEMPERA – Touch in Area
+sidebar_label: Touch in Area
 id: 4tempera-touch-in-area  
 hide_title: true  
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /bme680/arduino/measuring-temperature-humidity-pressure
 title: Bme680 - Measuring temperature, humidity and pressure (examples)
+sidebar_label: Measuring temperature, humidity and pressure (examples)
 id: bme680-arduino-4
 hide_title: false
 ---

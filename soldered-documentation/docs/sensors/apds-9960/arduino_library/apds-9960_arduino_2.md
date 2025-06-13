@@ -1,6 +1,7 @@
 ---
 slug: /apds-9960/arduino/Initialization
 title: Apds 9960 - Initialization
+sidebar_label: Initialization
 id: apds-9960-arduino-2
 hide_title: false
 ---

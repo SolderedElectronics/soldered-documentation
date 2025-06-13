@@ -1,6 +1,7 @@
 ---
 slug: /ltr-507/arduino/getting-started
 title: Ltr 507 - Getting started
+sidebar_label: Getting started
 id: ltr-507-arduino-1
 hide_title: false
 ---

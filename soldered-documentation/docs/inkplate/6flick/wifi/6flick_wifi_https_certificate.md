@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6flick/wifi/https_certificate
 title: Inkplate 6FLICK – HTTPS certificate
+sidebar_label: HTTPS certificate
 id: 6flick-wifi-https-certificate
 hide_title: true
 ---

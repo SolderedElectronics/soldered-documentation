@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6color/basics/drawing-graphics
 title: Inkplate 6COLOR – Drawing colorful graphics
+sidebar_label: Drawing colorful graphics
 id: graphics
 ---
 
@@ -69,6 +70,5 @@ Below are the detailed references for these functions:
     { type: 'uint8_t', name: 'color', description: 'The fill color.' },
   ]}
 />
-
 
 

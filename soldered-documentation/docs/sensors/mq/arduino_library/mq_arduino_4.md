@@ -1,6 +1,7 @@
 ---
 slug: /mq/arduino/initialization-native
-title: Initialization (Native)
+title: MQ Gas Sensors – Initialization (Native)
+sidebar_label: Initialization (Native)
 id: mq-arduino-4 
 hide_title: False
 ---

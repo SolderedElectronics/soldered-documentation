@@ -1,6 +1,7 @@
 ---
 slug: /bme280/arduino/geting-started
 title: Bme280 - Getting started
+sidebar_label: Getting started
 id: bme280-arduino-1
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /hall-effect-sensor/hardware
 title: Hall Effect Sensor - Hardware details
+sidebar_label: Hardware details
 id: hall-effect-sensor-hardware
 hide_title: false
 ---

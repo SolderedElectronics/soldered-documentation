@@ -1,6 +1,7 @@
 ---
 slug: /rfid/overview
 title: Rfid - Overview
+sidebar_label: Overview
 id: 125khzrfidtagreader-overview
 hide_title: false
 pagination_prev: null

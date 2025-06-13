@@ -1,6 +1,7 @@
 ---
 slug: /lcd-i2c/how-it-works 
 title: Lcd I2C – How it works
+sidebar_label: How it works
 id: lcd-i2c-how-it-works 
 hide_title: False
 ---  

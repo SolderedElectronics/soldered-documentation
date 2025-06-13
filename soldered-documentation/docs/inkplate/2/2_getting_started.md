@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/2/quick-start-guide  
 title: Inkplate 2 - Quick start guide  
+sidebar_label: Quick start guide
 id: 2-quick-start-guide  
 hide_title: true  
 ---
@@ -91,7 +92,6 @@ Hard resetting via RTS pin...
 ### Troubleshooting
 
 Having problems with uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/2/faq-troubleshooting/):
-
 
 
 

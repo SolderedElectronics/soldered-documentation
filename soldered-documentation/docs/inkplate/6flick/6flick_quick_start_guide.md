@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/6flick/quick-start-guide  
 title: Inkplate 6FLICK - Quick start guide  
+sidebar_label: Quick start guide
 id: 6flick-quick-start-guide  
 hide_title: true  
 ---

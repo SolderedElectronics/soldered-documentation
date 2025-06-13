@@ -1,6 +1,7 @@
 ---
 slug: /gnss-gps/hardware
 title: Gnss Gps - Hardware details
+sidebar_label: Hardware details
 id: gnss-gps-hardware
 hide_title: false
 ---

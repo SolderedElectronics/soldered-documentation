@@ -1,6 +1,7 @@
 ---
 slug: /tcrt5000/arduino/troubleshooting
 title: Tcrt5000 - Troubleshooting
+sidebar_label: Troubleshooting
 id: tcrt5000-arduino-3
 hide_title: false
 pagination_next: null

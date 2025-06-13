@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/arduino/init-and-configuration
-title: Initialization & Configuration
+title: LSM9DS1TR – Initialization & Configuration
+sidebar_label: Initialization & Configuration
 id: lsm9ds1tr-arduino-init-config
 hide_title: False
 ---

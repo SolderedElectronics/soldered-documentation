@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/rtc/basics
 title: 6Motion - RTC basics
+sidebar_label: RTC basics
 id: 6motion-rtc-basics
 hide_title: true
 ---

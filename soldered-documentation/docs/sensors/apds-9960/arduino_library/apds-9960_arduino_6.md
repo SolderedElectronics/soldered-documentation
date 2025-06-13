@@ -1,6 +1,7 @@
 ---
 slug: /apds-9960/arduino/troubleshooting
 title: Apds 9960 - Troubleshooting
+sidebar_label: Troubleshooting
 id: apds-9960-arduino-6
 hide_title: false
 pagination_next: null

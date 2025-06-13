@@ -1,6 +1,7 @@
 ---
 slug: /txs0104/how-it-works 
 title: Txs0104 - How it works
+sidebar_label: How it works
 id: txs0104-how-it-works 
 hide_title: False
 ---  

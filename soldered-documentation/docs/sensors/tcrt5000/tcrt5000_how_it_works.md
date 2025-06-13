@@ -1,6 +1,7 @@
 ---
 slug: /tcrt5000/how-it-works 
-title: How it works
+title: Tcrt5000 - How it works
+sidebar_label: How it works
 id: tcrt5000-how-it-works 
 hide_title: False
 ---  

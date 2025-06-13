@@ -1,6 +1,7 @@
 ---
 slug: /logic-level-converter/hardware
 title: Logic Level Converter - Hardware details
+sidebar_label: Hardware details
 id: logic-level-converter-hardware
 hide_title: false
 ---

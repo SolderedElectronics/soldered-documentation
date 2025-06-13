@@ -1,6 +1,7 @@
 ---
 slug: /rotary-encoder/overview
 title: Rotary Encoder - Overview
+sidebar_label: Overview
 id: rotary-encoder-overview
 hide_title: false
 pagination_prev: null

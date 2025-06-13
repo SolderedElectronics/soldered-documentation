@@ -1,6 +1,7 @@
 ---
 slug: /gnss-gps/arduino/troubleshooting
 title: Gnss Gps - Troubleshooting
+sidebar_label: Troubleshooting
 id: gnss-gps-arduino-4
 hide_title: false
 pagination_next: null

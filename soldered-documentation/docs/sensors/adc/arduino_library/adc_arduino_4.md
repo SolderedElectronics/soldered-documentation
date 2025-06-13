@@ -1,6 +1,7 @@
 ---
 slug: /adc/arduino/async-and-cont-read
 title: Adc - Asynchronous and Continuous Readings
+sidebar_label: Asynchronous and Continuous Readings
 id: adc-arduino-4
 hide_title: false
 ---

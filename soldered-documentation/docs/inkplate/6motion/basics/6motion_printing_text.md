@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/basics/printing-text
 title: 6Motion - Printing Text
+sidebar_label: Printing Text
 id: 6motion-text
 ---
 

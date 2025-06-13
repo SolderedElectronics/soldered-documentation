@@ -1,6 +1,7 @@
 ---
 slug: /relay/hardware
 title: Relay - Hardware details
+sidebar_label: Hardware details
 id: relay-hardware
 hide_title: false
 ---
@@ -192,6 +193,5 @@ The **Compliance** section includes important regulatory and safety documentatio
 - **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
 - **Safety Instructions** – Safety guidelines and precautions in English and in German.
 - **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.  
-
 
 

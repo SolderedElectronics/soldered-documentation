@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/arduino/initialization
 title: Bmp180 - Initialization
+sidebar_label: Initialization
 id: bmp180-arduino-2
 hide_title: false
 ---

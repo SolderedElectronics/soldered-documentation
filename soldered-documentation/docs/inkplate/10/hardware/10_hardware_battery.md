@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/10/hardware/battery
 title: Inkplate 10 – Battery
+sidebar_label: Battery
 id: 10-hardware-battery
 ---
 

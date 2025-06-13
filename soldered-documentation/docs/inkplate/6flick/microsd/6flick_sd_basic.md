@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6flick/microsd/sd-basics
 title: Inkplate 6FLICK – MicroSD basics
+sidebar_label: MicroSD basics
 id: 6flick-microsd-basics
 hide_title: true
 ---

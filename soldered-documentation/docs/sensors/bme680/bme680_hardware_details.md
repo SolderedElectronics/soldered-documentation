@@ -1,6 +1,7 @@
 ---  
 slug: /bme680/hardware  
 title: Bme680 – Hardware details
+sidebar_label: Hardware details
 id: bme680-hardware  
 hide_title: False  
 ---

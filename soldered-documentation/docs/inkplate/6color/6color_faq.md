@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6color/faq-troubleshooting/
 title: Inkplate 6COLOR - FAQ and troubleshooting
+sidebar_label: FAQ and troubleshooting
 id: faq-troubleshooting
 hide_title: true
 ---

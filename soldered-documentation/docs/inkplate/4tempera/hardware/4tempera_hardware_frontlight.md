@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/hardware/frontlight  
 title: Inkplate 4TEMPERA – Frontlight
+sidebar_label: Frontlight
 id: 4tempera-hardware-frontlight  
 hide_title: true  
 ---

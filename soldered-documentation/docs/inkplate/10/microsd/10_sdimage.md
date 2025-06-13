@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/10/microsd/sd-image
 title: Inkplate 10 – Image from microSD
+sidebar_label: Image from microSD
 id: 10-microsd-image
 ---
 

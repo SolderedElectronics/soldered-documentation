@@ -1,6 +1,7 @@
 ---
 slug: /digipot/arduino/troubleshooting
 title: Digital Potentiometer - Troubleshooting
+sidebar_label: Troubleshooting
 id: digipot-arduino-3
 hide_title: false
 pagination_next: null

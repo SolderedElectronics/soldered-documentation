@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/6color/basics/initialization  
 title: Inkplate 6COLOR – Initialization
+sidebar_label: Initialization
 id: init  
 hide_title: true  
 ---  

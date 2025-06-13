@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/arduino/examples-temperature
-title: Measuring temperature with LSM9DS1TR (example)
+title: LSM9DS1TR – Measuring temperature with LSM9DS1TR (example)
+sidebar_label: Measuring temperature with LSM9DS1TR (example)
 id: lsm9ds1tr-arduino-5
 hide_title: False
 ---

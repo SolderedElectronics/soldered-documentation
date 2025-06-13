@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/2/wifi/get-post  
 title: Inkplate 2 – GET & POST requests
+sidebar_label: GET & POST requests
 id: 2-wifi-get-post  
 hide_title: true  
 ---  

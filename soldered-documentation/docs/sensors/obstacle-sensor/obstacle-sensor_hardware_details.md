@@ -1,6 +1,7 @@
 ---
 slug: /obstacle-sensor/hardware
 title: Obstacle Sensor - Hardware details
+sidebar_label: Hardware details
 id: obstacle-sensor-hardware
 hide_title: false
 ---

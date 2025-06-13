@@ -1,6 +1,7 @@
 ---
 slug: /hall-effect-sensor/arduino/regular-digital-example
 title: Hall Effect Sensor - Detecting magnetic presence with regular digital sensor
+sidebar_label: Detecting magnetic presence with regular digital sensor
   (example)
 id: hall-effect-sensor-arduino-2
 hide_title: false

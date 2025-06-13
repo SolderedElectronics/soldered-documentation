@@ -1,6 +1,7 @@
 ---
 slug: /hx711/arduino/getting-started
 title: Hx711 - Getting started
+sidebar_label: Getting started
 id: hx711-arduino-1
 hide_title: false
 ---

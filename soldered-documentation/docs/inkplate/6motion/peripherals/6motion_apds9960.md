@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/peripherals/apds9960
 title: 6Motion - Gesture and proximity sensor
+sidebar_label: Gesture and proximity sensor
 id: 6motion-periph-apds9960
 ---
 

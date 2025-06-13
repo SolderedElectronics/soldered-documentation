@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/6flick/rtc/alarm  
 title: Inkplate 6FLICK – RTC alarm
+sidebar_label: RTC alarm
 id: 6flick-rtc-alarm  
 hide_title: true
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /hall-effect-sensor/overview
 title: Hall Effect Sensor - Overview
+sidebar_label: Overview
 id: hall-effect-sensor-overview
 hide_title: false
 pagination_prev: null

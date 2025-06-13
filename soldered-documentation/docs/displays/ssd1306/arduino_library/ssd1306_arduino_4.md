@@ -1,6 +1,7 @@
 ---  
 slug: /ssd1306/arduino/writing-text  
 title: Ssd1306 – Writing text
+sidebar_label: Writing text
 id: ssd1306-arduino-4   
 hide_title: False  
 ---

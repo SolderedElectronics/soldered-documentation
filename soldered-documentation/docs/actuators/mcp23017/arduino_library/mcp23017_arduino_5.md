@@ -1,6 +1,7 @@
 ---
 slug: /mcp23017/arduino/button-interrupt-example
 title: Mcp23017 - Button interrupt example
+sidebar_label: Button interrupt example
 id: mcp23017-arduino-5
 hide_title: false
 ---

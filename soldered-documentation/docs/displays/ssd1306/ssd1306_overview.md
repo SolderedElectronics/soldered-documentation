@@ -1,6 +1,7 @@
 ---
 slug: /ssd1306/overview
 title: Ssd1306 - Overview
+sidebar_label: Overview
 id: ssd1306-overview
 hide_title: false
 pagination_prev: null

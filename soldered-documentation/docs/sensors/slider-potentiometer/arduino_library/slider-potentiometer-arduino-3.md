@@ -1,6 +1,7 @@
 ---
 slug: /slider-potentiometer/arduino-3
 title: Slider Potentiometer - Reading Slider Potentiometer (Qwiic version)
+sidebar_label: Reading Slider Potentiometer (Qwiic version)
 id: slider-potentiometer-arduino-3
 hide_title: false
 ---

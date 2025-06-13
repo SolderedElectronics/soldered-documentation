@@ -1,6 +1,7 @@
 ---
 slug: /obstacle-sensor/arduino/geting-started
 title: Obstacle Sensor - Getting started
+sidebar_label: Getting started
 id: obstacle-sensor-arduino-1
 hide_title: false
 ---

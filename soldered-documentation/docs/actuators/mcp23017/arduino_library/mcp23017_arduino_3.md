@@ -1,6 +1,7 @@
 ---
 slug: /mcp23017/arduino/troubleshooting
 title: Mcp23017 - Troubleshooting
+sidebar_label: Troubleshooting
 id: mcp23017-arduino-3
 hide_title: false
 pagination_next: null

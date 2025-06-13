@@ -1,6 +1,7 @@
 ---
 slug: /arduino/VSCode
 title: Arduino - Using VSCode with Arduino
+sidebar_label: Using VSCode with Arduino
 id: arduino-VSCode
 hide_title: false
 ---

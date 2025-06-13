@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/simple-fire-sensor-overview
-title: Simple Sensor - Overview
+title: Simple Fire Sensor - Overview
+sidebar_label: Overview
 id: simple-fire-sensor-overview
 hide_title: false
 pagination_prev: null

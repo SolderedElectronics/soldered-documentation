@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/quick-start-guide
 title: 6Motion - Quick start guide
+sidebar_label: Quick start guide
 id: 6motion-quick-start-guide
 hide_title: true
 ---
@@ -80,4 +81,3 @@ If you experience any issues, check the FAQ:
   description="Solve the most common issues with using Inkplate 6 MOTION"
   url="/inkplate/6motion/faq-troubleshooting" 
 />
-

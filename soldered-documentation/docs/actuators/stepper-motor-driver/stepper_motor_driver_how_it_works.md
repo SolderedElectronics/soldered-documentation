@@ -1,6 +1,7 @@
 ---
 slug: /stepper-motor-driver/how-it-works
 title: Stepper Motor Driver - How it works
+sidebar_label: How it works
 id: stepper-motor-driver-how-it-works
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /stepper-motor-driver/overview
 title: Stepper Motor Driver - Overview
+sidebar_label: Overview
 id: stepper-motor-driver-overview
 hide_title: false
 pagination_prev: null

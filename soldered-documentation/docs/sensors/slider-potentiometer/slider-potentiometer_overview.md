@@ -1,6 +1,7 @@
 ---
 slug: /slider-potentiometer/overview
 title: Slider Potentiometer - Overview
+sidebar_label: Overview
 id: slider-potentiometer-overview
 hide_title: false
 pagination_prev: null

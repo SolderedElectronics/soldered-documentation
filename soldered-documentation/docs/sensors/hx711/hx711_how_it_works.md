@@ -1,6 +1,7 @@
 ---
 slug: /hx711/how-it-works
 title: Hx711 - How it works
+sidebar_label: How it works
 id: hx711-how-it-works
 hide_title: false
 ---

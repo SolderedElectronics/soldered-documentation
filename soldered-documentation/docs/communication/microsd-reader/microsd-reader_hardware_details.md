@@ -1,6 +1,7 @@
 ---
 slug: /microsd-reader/hardware
 title: Microsd Reader - Hardware details
+sidebar_label: Hardware details
 id: microsd-reader-hardware
 hide_title: false
 ---

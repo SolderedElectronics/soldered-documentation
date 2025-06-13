@@ -1,6 +1,7 @@
 ---
 slug: /pir-sensor/arduino/detecting-movement-standard
 title: Pir Sensor - Detecting movement (Standard)
+sidebar_label: Detecting movement (Standard)
 id: pir-sensor-arduino-2
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-soil-humidity-sensor/arduino_library/troubleshooting
-title: Simple Sensor - Troubleshooting
+title: Simple Soil Sensor - Troubleshooting
+sidebar_label: Troubleshooting
 id: simple-soil-humidity-sensor-arduino-4
 hide_title: false
 pagination_next: null

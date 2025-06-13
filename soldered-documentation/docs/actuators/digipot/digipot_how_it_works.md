@@ -1,6 +1,7 @@
 ---
 slug: /digipot/how-it-works 
 title: Digital Potentiometer – How it works
+sidebar_label: How it works
 id: digipot-how-it-works 
 hide_title: False
 ---  
@@ -25,5 +26,4 @@ For an in-depth look at technical specifications, refer to the official MCP4018 
 Unlike their analog counterparts, digital potentiometers utilize **electronic signals** to alter resistance levels precisely. Within it is a **network of resistive elements and switches**, resistive elements are devided into sections that are controlled by its corresponding switch. By togglin these switches on or off, the effective resistance between the terminals can be changed.
 
 <CenteredImage src="/img/digipot/Digital_Potentiometer_Principle.svg" alt="Digital potentiometer principle using a resistor ladder" caption="Digital potentiometer principle using a resistor ladder" width="400px" />
-
 

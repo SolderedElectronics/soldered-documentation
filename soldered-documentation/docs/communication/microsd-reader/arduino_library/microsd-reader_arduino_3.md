@@ -1,6 +1,7 @@
 ---
 slug: /microsd-reader/arduino/troubleshooting
 title: Microsd Reader - Troubleshooting
+sidebar_label: Troubleshooting
 id: microsd-reader-arduino-3
 hide_title: false
 pagination_next: null

@@ -1,6 +1,7 @@
 ---
 slug: /apds-9960/arduino/gesture-detection
 title: Apds 9960 - Gesture Detection
+sidebar_label: Gesture Detection
 id: apds-9960-arduino-3
 hide_title: false
 ---

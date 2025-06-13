@@ -1,6 +1,7 @@
 ---
 slug: /bq27441/how-it-works 
 title: BQ27441 – How it works
+sidebar_label: How it works
 id: bq27441-how-it-works 
 hide_title: False
 ---  

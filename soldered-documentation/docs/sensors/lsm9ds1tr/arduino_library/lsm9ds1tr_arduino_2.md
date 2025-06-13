@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/arduino/examples-accelerometer
-title: Measuring linear acceleration with LSM9DS1TR Accelerometer (example)
+title: LSM9DS1TR – Measuring linear acceleration with LSM9DS1TR Accelerometer (example)
+sidebar_label: Measuring linear acceleration with LSM9DS1TR Accelerometer (example)
 id: lsm9ds1tr-arduino-2 
 hide_title: False
 ---

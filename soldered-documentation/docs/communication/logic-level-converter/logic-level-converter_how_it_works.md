@@ -1,6 +1,7 @@
 ---
 slug: /logic-level-converter/how-it-works
 title: Logic Level Converter - How it works
+sidebar_label: How it works
 id: logic-level-converter-how-it-works
 hide_title: false
 ---

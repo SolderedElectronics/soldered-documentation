@@ -1,6 +1,7 @@
 ---
 slug: /relay/arduino/Initialization
 title: Relay - Initialization
+sidebar_label: Initialization
 id: led-matrix-arduino-2
 hide_title: false
 ---

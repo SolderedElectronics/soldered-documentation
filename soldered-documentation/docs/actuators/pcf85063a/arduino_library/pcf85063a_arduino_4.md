@@ -1,6 +1,7 @@
 ---
 slug: /pcf85063a/arduino/reading-the-time-and-date
 title: PCF85063A - Reading the time and date
+sidebar_label: Reading the time and date
 id: pcf85063a-arduino-4
 hide_title: false
 ---

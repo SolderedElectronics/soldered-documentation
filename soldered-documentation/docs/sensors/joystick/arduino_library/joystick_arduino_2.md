@@ -1,6 +1,7 @@
 ---
 slug: /joystick/arduino/examples
 title: Joystick - Using the module (example)
+sidebar_label: Using the module (example)
 id: joystick-arduino-2
 hide_title: false
 ---

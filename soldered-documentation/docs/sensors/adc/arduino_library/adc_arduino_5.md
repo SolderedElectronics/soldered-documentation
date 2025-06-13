@@ -1,6 +1,7 @@
 ---
 slug: /adc/arduino/troubleshooting
 title: Adc - Troubleshooting
+sidebar_label: Troubleshooting
 id: adc-arduino-5
 hide_title: false
 pagination_next: null

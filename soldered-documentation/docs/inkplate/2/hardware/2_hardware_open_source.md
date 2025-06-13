@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/2/hardware/open-source
 title: Inkplate 2 – Inkplate is open source
+sidebar_label: Inkplate is open source
 id: 2-hardware-open-source
 hide_title: true
 ---

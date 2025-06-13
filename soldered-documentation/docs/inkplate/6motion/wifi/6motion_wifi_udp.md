@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/wifi/udp
 title: 6Motion - UDP
+sidebar_label: UDP
 id: 6motion-wifi-udp
 ---
 

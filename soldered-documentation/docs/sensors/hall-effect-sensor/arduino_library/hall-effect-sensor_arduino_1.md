@@ -1,6 +1,7 @@
 ---
 slug: /hall-effect-sensor/arduino/geting-started
 title: Hall Effect Sensor - Getting started
+sidebar_label: Getting started
 id: hall-effect-sensor-arduino-1
 hide_title: false
 ---
@@ -48,4 +49,3 @@ Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLU
 | Qwiic                    | Qwiic              |
 
 <InfoBox> Qwiic versions also contain UPDI headers for preprogramming the onboard ATTINY404 MCU, they are used for debugging purposes only!. </InfoBox>
-

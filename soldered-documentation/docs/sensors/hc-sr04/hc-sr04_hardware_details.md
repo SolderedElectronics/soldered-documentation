@@ -1,6 +1,7 @@
 ---  
 slug: /hc-sr04/hardware  
-title: Hardware details  
+title: Hc Sr04 – Hardware details
+sidebar_label: Hardware details
 id: hc-sr04-hardware  
 hide_title: False  
 ---

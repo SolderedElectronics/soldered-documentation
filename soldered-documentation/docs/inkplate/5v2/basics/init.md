@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/5v2/basics/initialization  
 title: Inkplate 5V2 – Initialization
+sidebar_label: Initialization
 id: init  
 hide_title: true  
 ---  

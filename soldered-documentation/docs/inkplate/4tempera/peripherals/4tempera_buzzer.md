@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/peripherals/buzzer
 title: Inkplate 4TEMPERA – Buzzer
+sidebar_label: Buzzer
 id: 4tempera-periph-buzzer
 hide_title: true
 ---

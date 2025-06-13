@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/arduino_library/regular-example
-title: Simple Sensor - Measuring and detecting moisture with regular rain sensor (example)
+title: Simple Rain Sensor - Measuring and detecting moisture with regular rain sensor (example)
+sidebar_label: Measuring and detecting moisture with regular rain sensor (example)
 id: simple-rain-sensor-arduino-2
 hide_title: false
 ---

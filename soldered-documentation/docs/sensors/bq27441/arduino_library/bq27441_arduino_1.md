@@ -1,6 +1,7 @@
 ---
 slug: /bq27441/arduino/geting-started 
 title: BQ27441 – Getting started
+sidebar_label: Getting started
 id: bq27441-arduino-1 
 hide_title: False
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/simple-fire-sensor-how-it-works
-title: Simple Sensor - How it works
+title: Simple Fire Sensor - How it works
+sidebar_label: How it works
 id: simple-fire-sensor-how-it-works
 hide_title: false
 ---

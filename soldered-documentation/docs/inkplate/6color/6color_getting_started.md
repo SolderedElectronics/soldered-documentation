@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/6color/quick-start-guide/
 title: Inkplate 6COLOR - Quick start guide  
+sidebar_label: Quick start guide
 id: quick-start-guide  
 hide_title: True  
 pagination_prev: null  

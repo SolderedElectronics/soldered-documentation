@@ -1,6 +1,7 @@
 ---
 slug: /lcd-i2c/arduino/advanced-examples
 title: Lcd I2C - Advanced Examples
+sidebar_label: Advanced Examples
 id: lcd-i2c-arduino-4
 hide_title: false
 ---

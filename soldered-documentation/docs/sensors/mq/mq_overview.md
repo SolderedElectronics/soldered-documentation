@@ -1,6 +1,7 @@
 ---
 slug: /mq/overview
-title: Overview
+title: MQ Gas Sensors – Overview
+sidebar_label: Overview
 id: mq-overview 
 hide_title: False
 pagination_prev: null

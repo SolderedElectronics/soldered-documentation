@@ -1,6 +1,7 @@
 ---
 slug: /microsd-reader/arduino/initializing-the-SD-Card
 title: Microsd Reader - Initializing the SD Card (example)
+sidebar_label: Initializing the SD Card (example)
 id: microsd-reader-arduino-2
 hide_title: false
 ---

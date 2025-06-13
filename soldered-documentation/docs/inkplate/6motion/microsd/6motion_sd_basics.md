@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/microsd/sd-basics
 title: 6Motion - MicroSD basics
+sidebar_label: MicroSD basics
 id: 6motion-microsd-basics
 hide_title: true
 ---

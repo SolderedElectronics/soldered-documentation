@@ -1,6 +1,7 @@
 ---
 slug: /rs-232/hardware
 title: Rs 232 - Hardware details
+sidebar_label: Hardware details
 id: rs-232-hardware
 hide_title: false
 ---

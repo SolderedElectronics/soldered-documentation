@@ -1,6 +1,7 @@
 ---
 slug: /led-matrix/arduino/examples
 title: Arduino - Displaying text (example)
+sidebar_label: Displaying text (example)
 id: led-matrix-arduino-4
 hide_title: false
 ---

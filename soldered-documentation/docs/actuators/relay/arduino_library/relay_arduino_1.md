@@ -1,6 +1,7 @@
 ---
 slug: /relay/arduino/geting-started
 title: Relay - Getting started
+sidebar_label: Getting started
 id: relay-arduino-1
 hide_title: false
 ---

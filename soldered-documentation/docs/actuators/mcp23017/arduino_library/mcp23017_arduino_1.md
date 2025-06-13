@@ -1,6 +1,7 @@
 ---
 slug: /mcp23017/arduino/geting-started
 title: Mcp23017 - Getting started
+sidebar_label: Getting started
 id: mcp23017-arduino-1
 hide_title: false
 ---

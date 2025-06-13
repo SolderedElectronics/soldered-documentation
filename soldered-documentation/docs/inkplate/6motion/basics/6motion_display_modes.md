@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/basics/basic-display-modes
 title: 6Motion - Display modes
+sidebar_label: Display modes
 id: 6motion-display-modes
 ---
 
@@ -63,4 +64,3 @@ inkplate.display(); // Show on the display
   description="Full example using grayscale display mode on Inkplate 6 MOTION." 
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Basic/Inkplate_6_Motion_Simple_Grayscale/Inkplate_6_Motion_Simple_Grayscale.ino" 
 />
-

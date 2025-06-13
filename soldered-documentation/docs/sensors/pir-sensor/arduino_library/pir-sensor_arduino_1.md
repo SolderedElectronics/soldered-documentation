@@ -1,6 +1,7 @@
 ---
 slug: /pir-sensor/arduino/geting-started
 title: Pir Sensor - Getting started
+sidebar_label: Getting started
 id: pir-sensor-arduino-1
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /digipot/hardware
 title: Digital Potentiometer - Hardware details
+sidebar_label: Hardware details
 id: digipot-hardware
 hide_title: false
 ---

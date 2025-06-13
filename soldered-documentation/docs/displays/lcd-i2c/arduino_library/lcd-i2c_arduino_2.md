@@ -1,6 +1,7 @@
 ---
 slug: /lcd-i2c/arduino/examples
 title: Lcd I2C - Basic Examples
+sidebar_label: Basic Examples
 id: lcd-i2c-arduino-2
 hide_title: false
 ---

@@ -1,6 +1,7 @@
 ---
 slug: /hx711/arduino/simple-read
 title: Hx711 - Simple Read
+sidebar_label: Simple Read
 id: hx711-arduino-2
 hide_title: false
 ---

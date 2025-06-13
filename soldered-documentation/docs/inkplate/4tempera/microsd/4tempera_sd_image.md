@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/microsd/sd-image  
 title: Inkplate 4TEMPERA – Image from microSD
+sidebar_label: Image from microSD
 id: 4tempera-microsd-image  
 hide_title: true  
 ---

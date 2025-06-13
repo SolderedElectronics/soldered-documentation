@@ -1,6 +1,7 @@
 ---
 slug: /adc/how-it-works 
 title: Adc – How it works
+sidebar_label: How it works
 id: adc-how-it-works 
 hide_title: False
 ---  

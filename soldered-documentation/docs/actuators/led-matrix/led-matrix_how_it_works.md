@@ -1,6 +1,7 @@
 ---
 slug: /led-matrix/how-it-works 
 title: Led Matrix – How it works
+sidebar_label: How it works
 id: led-matrix-how-it-works 
 hide_title: False
 ---  

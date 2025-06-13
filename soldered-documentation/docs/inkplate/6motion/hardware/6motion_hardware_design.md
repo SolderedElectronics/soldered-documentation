@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/hardware/design
 title: 6Motion - Hardware design
+sidebar_label: Hardware design
 id: 6motion-hardware-design
 hide_title: true
 ---
@@ -72,5 +73,4 @@ See the table below for detailed specifications:
 | **Storage Temperature** | -25°C to 70°C |
 
 <InfoBox>**Note:** All specifications listed above are based on available datasheets and may contain minor inaccuracies. Always verify with the manufacturer for the latest details.</InfoBox>  
-
 

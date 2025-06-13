@@ -1,6 +1,7 @@
 ---
 slug: /led-matrix/overview
 title: Led Matrix - Overview
+sidebar_label: Overview
 id: led-matrix-overview
 hide_title: false
 pagination_prev: null
@@ -68,4 +69,3 @@ The **8x8 LED matrix** is a system of 64 interconnected LEDs that, with help of 
 - **Driver:** MAX7219
 - **Available in colors:** purple, red, white, blue, orange, green
 - **Dimensions:** **54 x 22 mm** (2.1 x 0.9 inch)
-

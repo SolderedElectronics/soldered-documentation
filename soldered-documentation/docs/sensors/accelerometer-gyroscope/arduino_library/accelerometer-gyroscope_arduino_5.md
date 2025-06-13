@@ -1,6 +1,7 @@
 ---
 slug: /accelerometer-gyroscope/arduino/troubleshooting 
 title: LSM6DS – Troubleshooting
+sidebar_label: Troubleshooting
 id: accelerometer-gyroscope-arduino-5
 hide_title: False
 pagination_next: null

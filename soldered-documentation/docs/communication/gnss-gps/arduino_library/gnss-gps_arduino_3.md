@@ -1,6 +1,7 @@
 ---
 slug: /gnss-gps/arduino/advanced
 title: Gnss Gps - Advanced Example
+sidebar_label: Advanced Example
 id: gnss-gps-arduino-3
 hide_title: false
 ---

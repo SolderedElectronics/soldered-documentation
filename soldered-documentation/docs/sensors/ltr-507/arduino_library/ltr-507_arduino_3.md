@@ -1,6 +1,7 @@
 ---
 slug: /ltr-507/arduino/light-and-proximity
 title: Ltr 507 - Reading Light and Proximity
+sidebar_label: Reading Light and Proximity
 id: ltr-507-arduino-3
 hide_title: false
 ---

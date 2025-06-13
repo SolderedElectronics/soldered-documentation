@@ -1,6 +1,7 @@
 ---
 slug: /simon-says-game/overview
 title: Simon Says Game - Overview
+sidebar_label: Overview
 id: simon-says-game-overview
 hide_title: false
 pagination_prev: null

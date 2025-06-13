@@ -1,6 +1,7 @@
 ---
 slug: /led-matrix/arduino/troubleshooting
 title: Arduino - Troubleshooting
+sidebar_label: Troubleshooting
 id: led-matrix-arduino-7
 hide_title: false
 pagination_next: null

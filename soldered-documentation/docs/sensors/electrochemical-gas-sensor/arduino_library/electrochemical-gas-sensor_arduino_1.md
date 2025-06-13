@@ -1,6 +1,7 @@
 ---
 slug: /electrochemical-gas-sensor/arduino/geting-started 
 title: Electrochemical Gas Sensors – Getting started
+sidebar_label: Getting started
 id: electrochemical-gas-sensor-arduino-1 
 hide_title: False
 ---

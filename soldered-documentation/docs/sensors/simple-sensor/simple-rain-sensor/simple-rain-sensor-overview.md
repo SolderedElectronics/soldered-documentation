@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/simple-rain-sensor-overview
-title: Simple Sensor - Overview
+title: Simple Rain Sensor - Overview
+sidebar_label: Overview
 id: simple-rain-sensor-overview
 hide_title: false
 pagination_prev: null
@@ -65,4 +66,3 @@ This sensor also comes in a version with **I2C communication**, with a default a
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
 />
-

@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6flick/wifi/get-post
 title: Inkplate 6FLICK – GET & POST requests
+sidebar_label: GET & POST requests
 id: 6flick-wifi-get-post
 hide_title: true
 ---

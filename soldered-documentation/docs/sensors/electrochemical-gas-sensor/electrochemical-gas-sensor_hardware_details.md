@@ -1,6 +1,7 @@
 ---
 slug: /electrochemical-gas-sensor/hardware 
 title: Electrochemical Gas Sensors – Hardware details
+sidebar_label: Hardware details
 id: electrochemical-gas-sensor-hardware 
 hide_title: False
 ---

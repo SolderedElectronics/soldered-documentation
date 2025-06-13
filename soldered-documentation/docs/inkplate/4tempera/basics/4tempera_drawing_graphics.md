@@ -1,6 +1,7 @@
 ---  
 slug: /inkplate/4tempera/basics/drawing-graphics  
 title: Inkplate 4TEMPERA – Drawing graphics
+sidebar_label: Drawing graphics
 id: 4tempera-graphics  
 hide_title: true
 ---

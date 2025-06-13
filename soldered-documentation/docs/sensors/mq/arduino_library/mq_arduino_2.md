@@ -1,6 +1,7 @@
 ---
 slug: /mq/arduino/initialization-qwiic 
-title: Initialization (Qwiic)
+title: MQ Gas Sensors – Initialization (Qwiic)
+sidebar_label: Initialization (Qwiic)
 id: mq-arduino-2 
 hide_title: False
 ---

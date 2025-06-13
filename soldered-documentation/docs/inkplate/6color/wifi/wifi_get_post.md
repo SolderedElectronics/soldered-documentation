@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6color/wifi/get-post
 title: Inkplate 6COLOR – GET & POST requests
+sidebar_label: GET & POST requests
 id: wifi-get-post
 ---
 

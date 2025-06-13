@@ -1,6 +1,7 @@
 ---
 slug: /accelerometer-gyroscope/arduino/geting-started 
 title: LSM6DS – Getting started
+sidebar_label: Getting started
 id: accelerometer-gyroscope-arduino-1 
 hide_title: False
 ---

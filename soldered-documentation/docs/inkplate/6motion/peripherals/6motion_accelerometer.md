@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/peripherals/accelerometer
 title: 6Motion - Accelerometer and gyroscope
+sidebar_label: Accelerometer and gyroscope
 id: 6motion-periph-accelerometer
 ---
 

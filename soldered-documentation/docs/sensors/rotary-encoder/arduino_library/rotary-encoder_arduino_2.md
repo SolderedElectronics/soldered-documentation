@@ -1,6 +1,7 @@
 ---
 slug: /rotary-encoder/arduino/examples
 title: Rotary Encoder - Using the encoder (example)
+sidebar_label: Using the encoder (example)
 id: rotary-encoder-arduino-2
 hide_title: false
 ---

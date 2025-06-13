@@ -1,6 +1,7 @@
 ---
 slug: /rs-232/overview
 title: Rs 232 - Overview
+sidebar_label: Overview
 id: rs-232-overview
 hide_title: false
 pagination_prev: null

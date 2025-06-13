@@ -1,6 +1,7 @@
 ---
 slug: /lcd-i2c/arduino/geting-started
 title: Lcd I2C - Getting started
+sidebar_label: Getting started
 id: lcd-i2c-arduino-1
 hide_title: false
 ---

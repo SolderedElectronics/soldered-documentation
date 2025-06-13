@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-rain-sensor/arduino_library/geting-started
-title: Simple Sensor - Geting started
+title: Simple Rain Sensor - Geting started
+sidebar_label: Geting started
 id: simple-rain-sensor-arduino-1
 hide_title: false
 ---

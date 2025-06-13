@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/peripherals/leds
 title: 6Motion - RGB LEDs
+sidebar_label: RGB LEDs
 id: 6motion-periph-wsled
 ---
 
@@ -97,4 +98,3 @@ For an in-depth example, check out the Inkplate library:
 description="Full WS2812 LED example in the Inkplate library"
 url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_WSLED/Inkplate_6_MOTION_WSLED.ino"
 />
-

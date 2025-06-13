@@ -1,6 +1,7 @@
 ---
 slug: /mq/hardware 
-title: Hardware details
+title: MQ Gas Sensors – Hardware details
+sidebar_label: Hardware details
 id: mq-hardware 
 hide_title: False
 ---

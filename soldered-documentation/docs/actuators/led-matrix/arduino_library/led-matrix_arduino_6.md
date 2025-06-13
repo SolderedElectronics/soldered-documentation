@@ -1,6 +1,7 @@
 ---
 slug: /led-matrix/arduino/other-examples
 title: Arduino - Other examples
+sidebar_label: Other examples
 id: led-matrix-arduino-6
 hide_title: false
 ---

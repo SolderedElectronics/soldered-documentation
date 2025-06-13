@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/hardware/touchscreen
 title: Inkplate 4TEMPERA – Touchscreen
+sidebar_label: Touchscreen
 id: 4tempera-hardware-touchscreen
 hide_title: true
 ---

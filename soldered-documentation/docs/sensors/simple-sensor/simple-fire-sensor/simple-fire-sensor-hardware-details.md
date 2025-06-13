@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/simple-fire-sensor/simple-fire-sensor-hardware
-title: Simple Sensor - Hardware details
+title: Simple Fire Sensor - Hardware details
+sidebar_label: Hardware details
 id: simple-fire-sensor-hardware
 hide_title: false
 ---

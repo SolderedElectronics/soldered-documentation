@@ -1,6 +1,7 @@
 ---
 slug: /microsd-reader/arduino/writing-files
 title: Microsd Reader - Writing files (example)
+sidebar_label: Writing files (example)
 id: microsd-reader-arduino-4
 hide_title: false
 ---

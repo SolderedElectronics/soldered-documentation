@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/frontlight/simple-frontlight
 title: Inkplate 4TEMPERA – Simple Frontlight
+sidebar_label: Simple Frontlight
 id: 4tempera-frontlight
 hide_title: true
 ---

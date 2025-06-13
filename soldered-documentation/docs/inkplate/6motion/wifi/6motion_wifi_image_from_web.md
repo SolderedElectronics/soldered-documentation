@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6motion/wifi/image-from-web
 title: 6Motion - Draw Image from Web
+sidebar_label: Draw Image from Web
 id: 6motion-wifi-image-from-web
 ---
 

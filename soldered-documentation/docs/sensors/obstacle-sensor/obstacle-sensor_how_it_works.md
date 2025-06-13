@@ -1,6 +1,7 @@
 ---
 slug: /obstacle-sensor/how-it-works 
-title: How it works
+title: Obstacle Sensor - How it works
+sidebar_label: How it works
 id: obstacle-sensor-how-it-works 
 hide_title: False
 ---  

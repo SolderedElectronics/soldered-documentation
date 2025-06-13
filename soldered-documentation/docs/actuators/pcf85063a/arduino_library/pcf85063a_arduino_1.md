@@ -1,6 +1,7 @@
 ---
 slug: /pcf85063a/arduino/geting-started
 title: PCF85063A - Getting started
+sidebar_label: Getting started
 id: pcf85063a-arduino-1
 hide_title: false
 ---

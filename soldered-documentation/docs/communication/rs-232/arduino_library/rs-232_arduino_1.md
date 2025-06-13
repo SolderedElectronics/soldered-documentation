@@ -1,6 +1,7 @@
 ---
 slug: /rs-232/arduino/geting-started
 title: Rs 232 - Getting started
+sidebar_label: Getting started
 id: rs-232-arduino-1
 hide_title: false
 ---

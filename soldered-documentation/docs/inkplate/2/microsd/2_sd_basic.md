@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/2/microsd/sd-basics
 title: Inkplate 2 – MicroSD basics
+sidebar_label: MicroSD basics
 id: 2-microsd-basics
 hide_title: true
 ---

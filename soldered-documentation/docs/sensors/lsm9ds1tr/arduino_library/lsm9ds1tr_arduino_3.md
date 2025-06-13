@@ -1,6 +1,7 @@
 ---
 slug: /lsm9ds1tr/arduino/examples-gyroscope
-title: Measuring rotational velocity with LSM9DS1TR Gyroscope (example)
+title: LSM9DS1TR – Measuring rotational velocity with LSM9DS1TR Gyroscope (example)
+sidebar_label: Measuring rotational velocity with LSM9DS1TR Gyroscope (example)
 id: lsm9ds1tr-arduino-3
 hide_title: False
 ---

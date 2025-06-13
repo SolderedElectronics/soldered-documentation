@@ -1,6 +1,7 @@
 ---
 slug: /bme680/how-it-works 
 title: Bme680 – How it works
+sidebar_label: How it works
 id: bme680-how-it-works 
 hide_title: False
 ---  

@@ -1,6 +1,7 @@
 ---  
 slug: /arduino/clear-cache   
 title: Arduino - Clear Arduino Boards and Cache  
+sidebar_label: Clear Arduino Boards and Cache
 id: arduino-clear  
 hide_title: False  
 pagination_next: null  

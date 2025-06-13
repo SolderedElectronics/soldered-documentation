@@ -1,6 +1,7 @@
 ---
 slug: /lcd-i2c/arduino/custom-characters
 title: Lcd I2C - Custom Characters
+sidebar_label: Custom Characters
 id: lcd-i2c-arduino-3
 hide_title: false
 ---

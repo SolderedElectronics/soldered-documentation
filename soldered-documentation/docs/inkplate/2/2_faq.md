@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/2/faq-troubleshooting
 title: Inkplate 2 - FAQ and troubleshooting
+sidebar_label: FAQ and troubleshooting
 id: 2-faq-troubleshooting
 hide_title: true
 ---

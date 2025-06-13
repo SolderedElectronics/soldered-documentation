@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/basics/basic-display-modes
 title: Inkplate 4TEMPERA – Display modes
+sidebar_label: Display modes
 id: 4tempera-display-modes
 hide_title: true
 ---

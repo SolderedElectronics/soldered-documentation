@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/4tempera/microsd/sd-basics
 title: Inkplate 4TEMPERA – MicroSD basics
+sidebar_label: MicroSD basics
 id: 4tempera-microsd-basics
 hide_title: true
 ---

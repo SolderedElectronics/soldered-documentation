@@ -1,6 +1,7 @@
 ---
 slug: /bmp180/how-it-works 
 title: Bmp180 – How it works
+sidebar_label: How it works
 id: bmp180-how-it-works 
 hide_title: False
 ---  

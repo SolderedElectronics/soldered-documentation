@@ -1,6 +1,7 @@
 ---
 slug: /bme680/arduino/troubleshooting
 title: Bme680 - Troubleshooting
+sidebar_label: Troubleshooting
 id: bme680-arduino-3
 hide_title: false
 pagination_next: null

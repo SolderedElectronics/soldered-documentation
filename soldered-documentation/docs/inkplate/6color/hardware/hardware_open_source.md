@@ -1,6 +1,7 @@
 ---
 slug: /inkplate/6color/hardware/open-source
 title: Inkplate 6COLOR – Inkplate is open source
+sidebar_label: Inkplate is open source
 id: hardware-open-source
 ---
 

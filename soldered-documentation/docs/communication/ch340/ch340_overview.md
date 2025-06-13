@@ -1,6 +1,7 @@
 ---
 slug: /ch340/overview
 title: Ch340 - Overview
+sidebar_label: Overview
 id: ch340-overview
 hide_title: false
 pagination_prev: null

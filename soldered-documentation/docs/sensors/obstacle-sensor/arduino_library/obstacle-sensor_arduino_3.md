@@ -1,6 +1,7 @@
 ---
 slug: /obstacle-sensor/arduino/troubleshooting
 title: Obstacle Sensor - Troubleshooting
+sidebar_label: Troubleshooting
 id: obstacle-sensor-arduino-3
 hide_title: false
 pagination_next: null

@@ -1,6 +1,7 @@
 ---
 slug: /ssd1306/arduino/more-examples
 title: Ssd1306 - More examples
+sidebar_label: More examples
 id: ssd1306-arduino-6
 hide_title: false
 ---

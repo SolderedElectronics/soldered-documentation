@@ -1,6 +1,7 @@
 ---
 slug: /hc-sr04/arduino/geting-started
 title: Hc Sr04 - Getting started
+sidebar_label: Getting started
 id: hc-sr04-arduino-1
 hide_title: false
 ---

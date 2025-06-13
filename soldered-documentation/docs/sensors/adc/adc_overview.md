@@ -1,6 +1,7 @@
 ---
 slug: /adc/overview
 title: Adc - Overview
+sidebar_label: Overview
 id: adc-overview
 hide_title: false
 pagination_prev: null

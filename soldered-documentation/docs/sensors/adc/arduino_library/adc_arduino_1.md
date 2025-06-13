@@ -1,6 +1,7 @@
 ---
 slug: /adc/arduino/getting-started
 title: Adc - Getting started
+sidebar_label: Getting started
 id: adc-arduino-1
 hide_title: false
 ---
