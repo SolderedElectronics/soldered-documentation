@@ -53,6 +53,12 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: process.env.GOOGLE_GTAG
+        ? {
+            trackingID: process.env.GOOGLE_GTAG,
+            anonymizeIP: true,
+          }
+        : undefined,
       }),
     ],
   ],
