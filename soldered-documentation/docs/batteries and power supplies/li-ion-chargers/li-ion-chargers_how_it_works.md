@@ -1,8 +1,8 @@
 ---
-slug: /chargers/how-it-works
-title: How it works
-id: chargers-how-it-works
-hide_title: False
+slug: /li-ion-chargers/how-it-works 
+title: Li-ion Charger - How it works
+sidebar_label: How it works
+id: li-ion-chargers-how-it-works
 pagination_next: null
 ---
 
@@ -48,10 +48,40 @@ This makes it suitable for **standalone battery packs** where no additional BMS 
 
 ---
 
+## TP4056 Charging IC
+
+The **TP4056** is a linear charger designed for single-cell lithium-ion batteries. It includes an internal PMOSFET, thermal regulation, and current monitoring.
+
+<CenteredImage src="/img/chargers/tp4056.png" alt="TP4056 IC" caption="TP4056 Linear Li-ion Charger Controller" width="500px"/>
+
+### Key features:
+- Constant-current / constant-voltage operation
+- 1% charging accuracy
+- Built-in protection for overvoltage and undervoltage
+- LED charge and full indicators
+
+---
+
+## DW01 + FS8205A Protection Circuit
+
+The **Li-ion Charger with Protection** includes the **DW01A** battery protection IC and **FS8205A** dual MOSFET to guard against overcharge, overdischarge, and short circuits.
+
+<CenteredImage src="/img/chargers/protected-chip.png" alt="DW01 + FS8205A" caption="DW01 and FS8205A on protected charger" width="500px"/>
+
+### Additional Protection Features:
+- Overcharge protection at 4.28V
+- Overdischarge cutoff at 2.4V
+- Short-circuit and overcurrent protection
+- Automatically resumes operation when safe
+
+---
+
 ## Status LEDs
 
 - **Red LED** – Charging
 - **Green LED** – Charge complete
+
+<CenteredImage src="/img/chargers/charging_red.png" alt="charging" caption="Red LED - Charging status" width="500px"/>
 
 ---
 

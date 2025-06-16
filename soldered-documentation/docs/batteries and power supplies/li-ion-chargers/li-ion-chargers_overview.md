@@ -1,7 +1,8 @@
 ---  
-slug: /chargers/overview  
-title: Li-ion Charger - Overview  
-id: chargers-overview  
+slug: /li-ion-chargers/overview  
+title: Li-ion Charger - Overview
+sidebar_label: Overview
+id: li-ion-chargers-overview
 hide_title: false  
 pagination_prev: null  
 ---  
@@ -58,4 +59,11 @@ These **Li-ion battery charger boards** offer a simple and safe way to recharge 
   description="Standard cable for powering the charger from USB"
   url="https://soldered.com/product/usb-to-usb-c-cable/"
   image="/img/chargers/usbc.png" 
+/>
+
+<QuickLink 
+  title="Li-Ion Battery" 
+  description="Small, light, and durable batteries available in various mAh."
+  url="https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/"
+  image="/img/battery-protection/li_ion_battery.png" 
 />

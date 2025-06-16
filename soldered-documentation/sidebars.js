@@ -2129,19 +2129,19 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Chargers',
+          label: 'Li-ion charger',
           items: [
             {
               type: 'doc',
-              id: 'batteries and power supplies/chargers/chargers-overview',
+              id: 'batteries and power supplies/li-ion-chargers/li-ion-chargers-overview',
             },
             {
               type: 'doc',
-              id: 'batteries and power supplies/chargers/chargers-hardware',
+              id: 'batteries and power supplies/li-ion-chargers/li-ion-chargers-hardware',
             },
             {
               type: 'doc',
-              id: 'batteries and power supplies/chargers/chargers-how-it-works',
+              id: 'batteries and power supplies/li-ion-chargers/li-ion-chargers-how-it-works',
             },
           ],
         },
