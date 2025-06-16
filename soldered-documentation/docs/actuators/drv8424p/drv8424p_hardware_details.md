@@ -1,6 +1,7 @@
 ---
-slug: /drv8424p/hardware 
-title: Hardware details
+slug: /drv8424p/hardware-details
+title: DRV8424P - Hardware details
+sidebar_label: Hardware details
 id: drv8424p-hardware 
 hide_title: False
 ---
@@ -41,12 +42,7 @@ hide_title: False
 
 This board contains one solder jumper:
 
-<FlickityCarousel
-  images={[
-    { src: '/img/drv8424p/jp1.png', alt: 'JP1 - LED enable', caption: 'JP1' }
-  ]}
-  jumpers={true}
-/>
+<CenteredImage src="/img/drv8424p/jp1.png" alt="JP1 LED enable" caption="JP1" />
 
 | Jumper | Default State   | Function                                 |
 |--------|-----------------|------------------------------------------|

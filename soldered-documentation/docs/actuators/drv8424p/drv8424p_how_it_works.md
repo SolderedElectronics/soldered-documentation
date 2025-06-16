@@ -1,6 +1,7 @@
 ---  
 slug: /drv8424p/how-it-works  
-title: How it works  
+title: DRV8424P - How it works
+sidebar_label: How it works
 id: drv8424p-how-it-works  
 hide_title: False  
 ---  

@@ -1,7 +1,8 @@
 ---
 slug: /drv8424p/overview
-title: Overview
-id: drv8424p-overview 
+title: DRV8424P - Overview
+id: drv8424p-overview
+sidebar_label: Overview
 hide_title: False
 pagination_prev: null
 ---
