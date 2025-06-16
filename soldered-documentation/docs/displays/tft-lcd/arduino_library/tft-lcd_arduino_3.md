@@ -1,6 +1,7 @@
 ---
 slug: /tft-lcd/arduino/touchscreen-raw
 title: TFT LCD - Touchscreen Raw
+sidebar_label: Touchscreen raw
 id: tft-lcd-arduino-3
 hide_title: false
 ---

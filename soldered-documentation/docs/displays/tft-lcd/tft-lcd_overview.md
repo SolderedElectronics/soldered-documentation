@@ -1,6 +1,7 @@
 ---
 slug: /tft-lcd/overview
 title: 2.4 TFT LCD with Touch – Overview
+sidebar_label: Overview
 id: tft-lcd-overview
 hide_title: false
 pagination_prev: null
@@ -42,14 +43,3 @@ Whether you're building an interface for a sensor project, a data logger with di
 - **microSD slot:** SPI interface
 - **Operating voltage:** 3.3V logic (level-shifted for compatibility)
 - **Dimensions:** 82 x 51 mm
-
----
-
-## You may also need
-
-<QuickLink 
-  title="Qwiic cable" 
-  description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
-  url="https://soldered.com/product/easyc-cable/"
-  image="/img/333311.webp" 
-/>

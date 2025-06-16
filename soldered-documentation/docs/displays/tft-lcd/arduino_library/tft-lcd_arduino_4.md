@@ -1,7 +1,8 @@
 ---
 slug: /tft-lcd/arduino/touchpaint
-title: TFT LCD - Touch Paint Example
-id: tft-lcd-arduino-touchpaint
+title: TFT LCD - Touch Paint
+sidebar_label: Touch paint
+id: tft-lcd-arduino-4
 hide_title: false
 ---
 
@@ -122,6 +123,8 @@ void loop() {
     { type: 'uint16_t', name: 'color', description: "Color of the filled circle" }
   ]}
 />
+
+<CenteredImage src="/img/tft-lcd/touchpaint.png" alt="tft touchpaint" caption="Example drawing using touchpaint" />
 
 ---
 

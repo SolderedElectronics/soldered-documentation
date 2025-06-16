@@ -1,6 +1,7 @@
 ---
-slug: /tft-lcd/arduino/examples
+slug: /tft-lcd/arduino/graphics-test
 title: TFT LCD - Graphics Test
+sidebar_label: Graphics test
 id: tft-lcd-arduino-2
 hide_title: false
 ---
@@ -96,6 +97,8 @@ void loop() {
   }
 }
 ```
+
+<CenteredImage src="/img/tft-lcd/graphicstest.png" alt="tft graphics test" caption="One frame of the graphics test animation" />
 
 ## Full Example
 
