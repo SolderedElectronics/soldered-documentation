@@ -1,6 +1,7 @@
 ---
 slug: /connect-programmer/hardware 
-title: Hardware details
+title: CONNECT Programmer - Hardware details
+sidebar_label: Hardware details
 id: connect-programmer-hardware 
 hide_title: False
 ---

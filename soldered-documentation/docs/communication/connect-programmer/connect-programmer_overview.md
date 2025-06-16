@@ -1,6 +1,7 @@
 ---
 slug: /connect-programmer/overview
-title: Overview
+title: CONNECT Programmer - Overview
+sidebar_label: Overview
 id: connect-programmer-overview 
 hide_title: False
 pagination_prev: null
