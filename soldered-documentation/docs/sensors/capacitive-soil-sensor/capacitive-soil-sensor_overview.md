@@ -1,6 +1,7 @@
 ---
 slug: /capacitive-soil-sensor/overview
 title: Capacitive Soil Sensor - Overview
+sidebar_label: Overview
 id: capacitive-soil-sensor-overview 
 hide_title: False
 pagination_prev: null
@@ -8,7 +9,7 @@ pagination_prev: null
 
 ## Capacitive Soil Sensor
 
-The **Capacitive Soil Sensor** measures the moisture content in soil using **capacitive sensing** technology. Unlike traditional resistive sensors, this sensor avoids corrosion and offers longer durability thanks to its **protective PCB coating**. It’s ideal for long-term soil monitoring in plant care and gardening applications.
+The **Capacitive Soil Sensor** monitors soil moisture through the capacitive interaction between the soil and a conductive, coated electrode. Unlike traditional resistive sensors, this sensor avoids corrosion and offers longer durability thanks to its **protective PCB coating**. It’s ideal for long-term soil monitoring in plant care and gardening applications.
 
 <CenteredImage src="/img/capacitive-soil-sensor/333098.jpg" alt="Capacitive soil sensor" caption="Capacitive soil sensor"/>
 

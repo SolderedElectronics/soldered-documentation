@@ -1,6 +1,7 @@
 ---
 slug: /capacitive-soil-sensor/hardware 
 title: Capacitive Soil Sensor - Hardware details
+sidebar_label: Hardware details
 id: capacitive-soil-sensor-hardware 
 hide_title: False
 ---

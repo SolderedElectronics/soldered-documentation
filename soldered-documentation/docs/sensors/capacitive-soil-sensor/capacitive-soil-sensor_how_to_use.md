@@ -1,6 +1,7 @@
 ---
 slug: /capacitive-soil-sensor/how-to-use
 title: Capacitive Soil Sensor - How to Use
+sidebar_label: How to use
 id: capacitive-soil-sensor-how-to-use
 hide_title: false
 ---

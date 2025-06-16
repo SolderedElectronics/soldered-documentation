@@ -1,6 +1,7 @@
 ---
 slug: /simple-sensor/capacitive-soil-sensor/how-it-works
 title: Capacitive Soil Sensor - How it works
+sidebar_label: How it works
 id: capacitive-soil-sensor-how-it-works
 hide_title: false
 ---
@@ -11,7 +12,7 @@ The **Capacitive Soil Sensor** is a robust and corrosion-resistant device for me
 
 ---
 
-## What’s inside?
+## What’s on board?
 
 This sensor is based on the **TLC555CD** IC – a CMOS version of the popular 555 timer from **Texas Instruments**. It’s used to generate a frequency that changes based on the capacitance of the soil. As soil moisture increases, the capacitance of the sensing area increases, altering the output frequency or voltage.
 
