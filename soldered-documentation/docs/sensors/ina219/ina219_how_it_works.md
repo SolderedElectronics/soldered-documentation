@@ -1,6 +1,7 @@
 ---  
 slug: /ina219/how-it-works  
-title: How it works  
+title: INA219 - How it works
+sidebar_label: How it works
 id: ina219-how-it-works  
 hide_title: False  
 ---  

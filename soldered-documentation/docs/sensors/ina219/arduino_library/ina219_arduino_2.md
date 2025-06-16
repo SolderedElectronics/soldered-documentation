@@ -1,6 +1,7 @@
 ---
 slug: /ina219/arduino/examples 
-title: Taking measurements
+title: INA219 - Taking measurements
+sidebar_label: Taking measurements
 id: ina219-arduino-2 
 hide_title: False
 ---

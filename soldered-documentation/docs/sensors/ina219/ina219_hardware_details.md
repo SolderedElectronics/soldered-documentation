@@ -1,6 +1,7 @@
 ---
 slug: /ina219/hardware 
-title: Hardware details
+title: INA219 - Hardware details
+sidebar_label: Hardware details
 id: ina219-hardware 
 hide_title: False
 ---

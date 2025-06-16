@@ -1,6 +1,7 @@
 ---
 slug: /ina219/arduino/geting-started 
-title: Getting started
+title: INA219 - Getting started
+sidebar_label: Getting started
 id: ina219-arduino-1 
 hide_title: False
 ---

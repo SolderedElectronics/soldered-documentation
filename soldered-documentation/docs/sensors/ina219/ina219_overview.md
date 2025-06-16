@@ -1,6 +1,7 @@
 ---
 slug: /ina219/overview
-title: Overview
+title: INA219 - Overview
+sidebar_label: Overview
 id: ina219-overview 
 hide_title: False
 pagination_prev: null

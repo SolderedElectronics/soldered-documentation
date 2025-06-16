@@ -1,6 +1,6 @@
 ---
 slug: /ina219/arduino/troubleshooting 
-title: Troubleshooting
+title: INA219 - Troubleshooting
 id: ina219-arduino-3 
 hide_title: False
 pagination_next: null
