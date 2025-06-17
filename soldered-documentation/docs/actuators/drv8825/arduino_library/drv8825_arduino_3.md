@@ -1,8 +1,9 @@
 ---
 slug: /drv8825/arduino/troubleshooting 
-title: Troubleshooting
+title: DRV8825 - Troubleshooting
 id: drv8825-arduino-3 
 hide_title: False
+sidebar_label: Troubleshooting
 pagination_next: null
 ---
 This page contains some tips in case you are having problems using this product.

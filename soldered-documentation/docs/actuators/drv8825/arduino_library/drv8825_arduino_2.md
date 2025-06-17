@@ -1,7 +1,8 @@
 ---
 slug: /drv8825/arduino/examples 
-title: Driving the motor (examples)
+title: DRV8825 - Driving the motor (examples)
 id: drv8825-arduino-2 
+sidebar_label: Driving the motor examples
 hide_title: False
 ---
 
