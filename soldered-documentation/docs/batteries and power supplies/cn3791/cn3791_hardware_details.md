@@ -12,13 +12,13 @@ hide_title: false
 
 ## Pin Details
 
-| Pin Marking       | Pin Name  | Description                                  |
-|-------------------|-----------|----------------------------------------------|
-| **IN+**          | Positive  | Solar positive terminal.                     |
-| **IN-**          | Negative  | Solar negative terminal.                     |
-| **OUT+**         | Positive  | Battery positive terminal.                   |
-| **OUT-**         | Negative  | Battery negative terminal.                   |
-| **SOLAR VOLTAGE** | MPPT      | Photovoltaic cell maximum power point tracking pin. Short the connections on pin that corresponds to the voltage that your panel produces.|
+| Pin Marking       | Description                                                                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **IN+**           | Solar positive terminal.                                                                                                                   |
+| **IN-**           | Solar negative terminal.                                                                                                                   |
+| **OUT+**          | Battery positive terminal.                                                                                                                 |
+| **OUT-**          | Battery negative terminal.                                                                                                                 |
+| **SOLAR VOLTAGE** | Photovoltaic cell maximum power point tracking pin. **Short the connections on pin that corresponds to the voltage that your panel produces.** |
 
 <InfoBox>In maximum power point tracking status, the MPPT pin’s voltage is regulated to 1.205V.</InfoBox>
 
