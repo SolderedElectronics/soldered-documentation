@@ -1,8 +1,8 @@
 ---
 slug: /drv8825/arduino/examples 
-title: DRV8825 – Driving the motor (examples)
-sidebar_label: Driving the motor (examples)
+title: DRV8825 - Driving the motor (examples)
 id: drv8825-arduino-2 
+sidebar_label: Driving the motor examples
 hide_title: False
 ---
 
@@ -99,7 +99,7 @@ void loop() {
   returnDescription="Returns true if the motor was stepped."
   parameters={[]}
 />
-
+<CenteredImage src="/img/drv8825/stepper_constant_speed.gif" alt="Stepper moving at a constant speed " caption="Stepper moving at a constant speed" width="950px" />
 ---
 
 ## Rotating a specified number of steps
@@ -163,6 +163,7 @@ while (stepper.run()); // Run until the target position is reached
   ]}
 />
 
+<CenteredImage src="/img/drv8825/stepper_certain_steps.gif" alt="Stepper moving a specified number of steps " caption="Stepper moving a specified number of steps" width="950px" />
 
 ---
 

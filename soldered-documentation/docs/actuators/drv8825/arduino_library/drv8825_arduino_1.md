@@ -1,8 +1,8 @@
 ---
 slug: /drv8825/arduino/geting-started 
-title: DRV8825 – Getting started
-sidebar_label: Getting started
+title: DRV8825 - Getting started
 id: drv8825-arduino-1 
+sidebar_label: Getting started
 hide_title: False
 ---
 This page provides the essential information for getting started, including board and library installation and wiring the breakout board to your microcontroller.

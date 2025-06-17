@@ -1,7 +1,7 @@
 ---
 slug: /ltr-507/how-it-works 
 title: Ltr 507 – How it works
-sidebar_label: Ltr 507
+sidebar_label: How it works
 id: ltr-507-how-it-works 
 hide_title: False
 ---  

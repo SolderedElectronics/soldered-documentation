@@ -1,8 +1,8 @@
 ---
 slug: /drv8825/hardware 
-title: DRV8825 – Hardware details
-sidebar_label: Hardware details
+title: DRV8825 - Hardware details
 id: drv8825-hardware 
+sidebar_label: Hardware details
 hide_title: False
 ---
 
@@ -34,6 +34,22 @@ Click [**here**](/img/drv8825/333000_pinout.jpg) for a high reoslution image of 
 
 <WarningBox>**45V is the maximum** supported Motor supply voltage!</WarningBox>
 
+
+### Microstepping
+
+Microstepping is a technique used to divide each full step into smaller, discrete increments, resultng in **smoother motion** and **increased precision**. Check the table below for all possible Microstepping combinations:
+
+| **M2** 	| **M1** 	| **M0** 	| **STEP MODE** 	|
+|---	|---	|---	|---	|
+| 0 	| 0 	| 0 	| Full step 	|
+| 0 	| 0 	| 1 	| 1/2 microstep 	|
+| 0 	| 1 	| 0 	| 1/4 microstep 	|
+| 0 	| 1 	| 1 	| 1/8 microstep 	|
+| 1 	| 0 	| 0 	| 1/16 microstep 	|
+| 1 	| 0 	| 1 	| 1/32 microstep 	|
+| 1 	| 1 	| 0 	| 1/32 microstep 	|
+| 1 	| 1 	| 1 	| 1/32 microstep 	|
+
 ---
 
 ## Dimensions
@@ -48,12 +64,7 @@ Click [**here**](/img/drv8825/333000_pinout.jpg) for a high reoslution image of 
 ## Jumper Details
 
 This board contains hardware jumpers, se below for  their locations and functions:
-<FlickityCarousel
-  images={[
-    { src: '/img/drv8825/333000_jp1_highlighted.jpg', alt: 'Stepper driver jumper 1', caption: 'JP1' },
-  ]}
-  jumpers={true}
-/>
+<CenteredImage src="/img/drv8825/333000_jp1_highlighted.jpg" alt="Stepper driver jumper 1" caption="JP1" />
 
 | Jumper 	| Default State 	| Function 	|
 |---	|---	|---	|

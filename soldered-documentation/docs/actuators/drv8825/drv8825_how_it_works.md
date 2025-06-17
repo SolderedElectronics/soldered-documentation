@@ -1,8 +1,8 @@
 ---
 slug: /drv8825/how-it-works 
-title: DRV8825 – How it works
-sidebar_label: How it works
+title: DRV8825 - How it works
 id: drv8825-how-it-works 
+sidebar_label: How it works
 hide_title: False
 ---  
 
@@ -38,13 +38,3 @@ The **DIR** and **STEP** pins on the board serve as control pins. The **DIR** pi
 <InfoBox>The IN pins can work at **3V3** or **5V** logic</InfoBox>
 <WarningBox>**45V is the maximum** supported Motor supply voltage **with heatsink!**</WarningBox>
 
-See below for a visualization and chart of how these different coils take turns in activating:
-
-<div align="center">
-  <a title="Wapcaplet; Teravolt. The original uploader was Teravolt at English Wikipedia., GFDL &lt;http://www.gnu.org/copyleft/fdl.html&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:StepperMotor.gif">
-    <img width="400" alt="StepperMotor" src="https://upload.wikimedia.org/wikipedia/commons/6/67/StepperMotor.gif?20100925065005"/>
-  </a>
-</div>
-<div align="center">
-    <a title="Misan2010, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Drive.png"><img width="500" alt="Drive" src="https://upload.wikimedia.org/wikipedia/commons/8/85/Drive.png"></img></a>
-</div>
