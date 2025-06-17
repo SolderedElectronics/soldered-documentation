@@ -64,12 +64,7 @@ Microstepping is a technique used to divide each full step into smaller, discret
 ## Jumper Details
 
 This board contains hardware jumpers, se below for  their locations and functions:
-<FlickityCarousel
-  images={[
-    { src: '/img/drv8825/333000_jp1_highlighted.jpg', alt: 'Stepper driver jumper 1', caption: 'JP1' },
-  ]}
-  jumpers={true}
-/>
+<CenteredImage src="/img/drv8825/333000_jp1_highlighted.jpg" alt="Stepper driver jumper 1" caption="JP1" />
 
 | Jumper 	| Default State 	| Function 	|
 |---	|---	|---	|
