@@ -1,13 +1,14 @@
 ---
 slug: /w5500/arduino/geting-started 
-title: Getting started
-id: w5500-arduino-1 
+title: W5500 - Getting started
+id: w5500-arduino-1
+sidebar_label: Getting started 
 hide_title: False
 ---
 
 ## Arduino library
 
-To install the Arduino library, you can search for it in the library manager:
+To install the Arduino library, you can search for `Ethernet` in the library manager:
 
 <CenteredImage src="/img/w5500/library.png" alt="Arduino Ethernet library" caption="Arduino Ethernet library" width="500px" />
 
@@ -35,8 +36,8 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 | 3V3 	| VCC 	|
 | Not connected 	| INTN 	|
 | Not connected 	| RSTN 	|
-| VMISO pin 	| MISO 	|
-| VMOSI pin 	| MOSI 	|
-| VCLK pin 	| SCLK 	|
-| VCS pin  	| SCSN 	|
+| IO19 (VMISO pin) 	| MISO 	|
+| IO23 (VMOSI pin) 	| MOSI 	|
+| IO18 (VCLK pin) 	| SCLK 	|
+| IO5 (VCS pin)  	| SCSN 	|
 | Not connected 	| OE 	|

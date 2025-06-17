@@ -1,8 +1,9 @@
 ---
 slug: /w5500/arduino/troubleshooting
-title: Troubleshooting
+title: W5500 - Troubleshooting
 id: w5500-arduino-5
 hide_title: False
+sidebar_label: Troubleshooting
 pagination_next: null
 ---
 

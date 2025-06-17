@@ -1,7 +1,8 @@
 ---  
 slug: /w5500/arduino/NTP  
-title: NTP example  
+title: W5500 - NTP example  
 id: w5500-arduino-4  
+sidebar_label: NTP example
 hide_title: False  
 ---
 
@@ -135,7 +136,7 @@ void sendNTPpacket(const char * address) {
 
 ## Serial Monitor output
 
-<CenteredImage src="/img/w5500/ntpserial.png" alt="Output from Serial Monitor" caption="Output from Serial Monitor" width="1200px" />
+<CenteredImage src="/img/w5500/ntpserial.png" alt="Output from Serial Monitor" caption="Output from Serial Monitor" width="500px" />
 
 ---
 

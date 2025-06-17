@@ -1,7 +1,8 @@
 ---
 slug: /w5500/how-it-works 
-title: How it works
+title: W5500 - How it works
 id: w5500-how-it-works 
+sidebar_label: How it works
 hide_title: False
 ---  
 

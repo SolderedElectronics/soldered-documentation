@@ -1,7 +1,8 @@
 ---  
 slug: /w5500/arduino/examples  
-title: Initialization  
+title: W5500 - Initialization  
 id: w5500-arduino-2  
+sidebar_label: Initialization
 hide_title: False  
 ---  
 This page provides a simple example of how to initialize and use the W5500 module with Dasduino CONNECTPLUS.

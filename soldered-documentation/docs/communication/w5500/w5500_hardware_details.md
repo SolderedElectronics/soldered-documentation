@@ -1,7 +1,8 @@
 ---
 slug: /w5500/hardware 
-title: Hardware details
+title: W5500 - Hardware details
 id: w5500-hardware 
+sidebar_label: Hardware details
 hide_title: False
 ---
 
@@ -23,6 +24,7 @@ hide_title: False
 | **MOSI**   	| SPI communication  	| SPI master output, slave (W5500) input.             	|
 | **SCLK**   	| Clock              	| SPI clock input.                                    	|
 | **SCSN**   	| Chip select        	| Chip select for the SPI bus.                        	|
+| **OE**   	| Output Enable        	| Control whether the I/O ports are active or in a high-impedance tate.                        	|
 
 ---
 
