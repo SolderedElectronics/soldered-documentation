@@ -1,7 +1,8 @@
 ---
 slug: /tps613222a/overview
-title: Overview
+title: TPS61322A - Overview
 id: tps613222a-overview
+sidebar_label: Owerview
 hide_title: false
 pagination_prev: null
 ---
@@ -9,6 +10,8 @@ pagination_prev: null
 ## Mini low-power TPS613222A boost converter
 
 TPS613222A is a compact and efficient boost converter designed to provide a stable power supply for your low-voltage devices, ensuring they run smoothly and reliably. The TPS613222A steps up input voltages from as low as **0.9V** to output voltages up to **5.5V**. This makes it perfect for battery-powered devices, including portable gadgets, wearables, and other low-power electronics. Its ultra-low quiescent current helps extend battery life, making your devices more efficient and eco-friendly. There are quick terminals with springs on the board for even simpler and faster connections within the system.
+
+<InfoBox>The TPS613222A output voltage value cannot be dynamically tuned, for different output voltage check out other members of TPS61322 models </InfoBox>
 
 <CenteredImage src="/img/tps613222a/333096.png" alt="Mini low-power TPS613222A boost converter" caption="Mini low-power TPS613222A boost converter"/>
 

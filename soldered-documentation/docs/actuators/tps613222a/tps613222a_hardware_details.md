@@ -1,8 +1,10 @@
 ---
 slug: /tps613222a/hardware
-title: Hardware details
+title: TPS61322A - Hardware details
 id: tps613222a-hardware
+sidebar_label: Hardware details
 hide_title: false
+pagination_next: null
 ---
 
 ## Pinout
