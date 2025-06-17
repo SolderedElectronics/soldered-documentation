@@ -1,8 +1,9 @@
 ---
 slug: /mcp2518/overview
-title: Overview
+title: MCP2518 - Overview
 id: mcp2518-overview 
 hide_title: False
+sidebar_label: Overview
 pagination_prev: null
 ---
 

@@ -1,8 +1,9 @@
 ---
 slug: /mcp2518/hardware 
-title: Hardware details
+title: MCP2518 - Hardware details
 id: mcp2518-hardware 
 hide_title: False
+sidebar_label: Hardware details
 ---
 
 ## Pinout
