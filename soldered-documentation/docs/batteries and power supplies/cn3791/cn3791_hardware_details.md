@@ -1,6 +1,7 @@
 ---
 slug: /cn3791/hardware
-title: Hardware details
+title: CN3791 - Hardware details
+sidebar_label: Hardware details
 id: cn3791-hardware
 hide_title: false
 ---
@@ -17,7 +18,7 @@ hide_title: false
 | **IN-**          | Negative  | Solar negative terminal.                     |
 | **OUT+**         | Positive  | Battery positive terminal.                   |
 | **OUT-**         | Negative  | Battery negative terminal.                   |
-| **SOLAR VOLTAGE** | MPPT      | Photovoltaic cell maximum power point tracking pin. |
+| **SOLAR VOLTAGE** | MPPT      | Photovoltaic cell maximum power point tracking pin. Short the connections on pin that corresponds to the voltage that your panel produces.|
 
 <InfoBox>In maximum power point tracking status, the MPPT pin’s voltage is regulated to 1.205V.</InfoBox>
 
