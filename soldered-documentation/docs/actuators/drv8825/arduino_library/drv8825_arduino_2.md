@@ -99,7 +99,7 @@ void loop() {
   returnDescription="Returns true if the motor was stepped."
   parameters={[]}
 />
-<CenteredImage src="/img/drv8825/stepper_constant_speed.gif" alt="Stepper moving at a constant speed " caption="Stepper moving at a constant speed" width="950px" />
+
 ---
 
 ## Rotating a specified number of steps
@@ -162,8 +162,6 @@ while (stepper.run()); // Run until the target position is reached
     { type: 'long', name: 'absolute', description: 'The absolute position (in steps) to move to. Negative values move counterclockwise from the home position.' }
   ]}
 />
-
-<CenteredImage src="/img/drv8825/stepper_certain_steps.gif" alt="Stepper moving a specified number of steps " caption="Stepper moving a specified number of steps" width="950px" />
 
 ---
 

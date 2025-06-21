@@ -37,7 +37,7 @@ Click `Install` here:
 
 ### 3. Install Inkplate library
 
-In the Arduino Library Manager, search for the Inkplate Motion library and click `Install`:  
+In the Arduino Library Manager, search for the Inkplate library and click `Install`:  
 <CenteredImage src="/img/inkplate10/install_lib.png" alt="Install Inkplate library" caption="Installing Inkplate library" width="400px" />
 
 <InfoBox>It's also possible to install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
@@ -51,14 +51,12 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 ### Done!
 
-Inkplate 10 setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! See the next page in the documentation for details on how to upload code:
+Inkplate 10 setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! If you need some help with uploading code, check out the section below.
 
 ---
 
 ## Uploading code
 To upload your own sketch or an Arduino example to **Inkplate 10**, follow this brief guide.
-
-
 
 ### 1. Connect Inkplate via USB and power it on
 
@@ -70,9 +68,27 @@ Use the provided **USB-C cable** to connect Inkplate 10 to your computer. Ensure
 
 ### 2. Create a sketch
 
-For the needs of this documentation, we will be using a premade example. Go to `File->Examples->InkplateLibrary->Inkplate10->Basic->Inkplate10_Hello_World`
+Let's create the most basic Inkplate code which writes `Hello World!` to the e-Paper display. Go to `File->New Sketch` and paste this code in:
 
-<CenteredImage src="/img/inkplate10/arduino_sketch.png" alt="Selecting a basic example for Inkplate 10" caption="Selecting a basic example for Inkplate 10" width="700px" />
+```cpp
+
+#include "Inkplate.h" // Include the Inkplate library
+Inkplate display(INKPLATE_1BIT); // Create an Inkplate object for Inkplate6 FLICK
+
+void setup() {
+    display.begin();             // Initialize the display hardware
+    display.clearDisplay();      // Clear the frame buffer (does NOT clear the physical screen)
+    display.setCursor(10, 10);   // Set the text position to (10, 10) pixels
+    display.setTextSize(6);      // Set text size to 6 (default is 1)
+    display.print("Hello World!"); // Print "Hello World!" at the set position
+    display.display();           // Refresh the e-paper display to show changes
+}
+
+void loop() {
+    // No code needed here for this example
+}
+
+```
 
 ### 3. Upload the code
 
@@ -80,7 +96,7 @@ Before uploading the code, select the correct board definition. The table below 
 
 | Board Definition               | Board Description                                                                                          |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| Soldered Inkplate10            | The newer and more stylish version of the product, and the PCB is purple.                                  |
+| Soldered Inkplate10            | The newer version of the Inkplate 10, the PCB is purple.                                  |
 | e-radionica.com Inkplate 10    | The older version; the PCB is blue.                                                                        |
 
 Click **Upload** in the Arduino IDE.
@@ -93,7 +109,9 @@ Leaving...
 Hard resetting via RTS pin...
 ```
 
-### Troubleshooting
+That's how you know you did everything correctly!
+
+## Troubleshooting
 
 Having problems with uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/10/faq-troubleshooting/):
 

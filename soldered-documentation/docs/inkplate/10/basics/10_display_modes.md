@@ -41,27 +41,40 @@ void loop() {
 
 <CenteredImage src="/img/inkplate10/grayscale.png" alt="3bit grayscale" caption="Black levels in 3-bit mode" width="450px" />
 
-Let's draw a couple of pixels of different brightness levels:
-
-Let's draw a couple of pixels of different brightness levels:
+Let's draw a couple of rectangles (with a black outline) of different brightness levels:
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_1BIT);
-void setup() {
+Inkplate inkplate(INKPLATE_3BIT);
+
+void setup() 
+{
   inkplate.begin();
   // Clear the display
   inkplate.clearDisplay();
   inkplate.display();
-  // Draw a black pixel at x=100, y=100
-  inkplate.drawPixel(100,100,0);
-  // Draw a white pixel at x=200, y=200
-  inkplate.drawPixel(200,200,7);
-  inkplate.drawPixel(200,250,3);
-  inkplate.drawPixel(250,200,2);
+
+  // Draw a filled rectangle with a black outline at (100, 100)
+  inkplate.fillRect(100, 100, 10, 10, 0); // Black fill
+  inkplate.drawRect(100, 100, 10, 10, 0); // Black outline
+
+  // Draw a filled rectangle with a black outline at (200, 200)
+  inkplate.fillRect(200, 200, 10, 10, 7); // White fill
+  inkplate.drawRect(200, 200, 10, 10, 0); // Black outline
+
+  // Draw a filled rectangle with a black outline at (200, 250)
+  inkplate.fillRect(200, 250, 10, 10, 3); // Light gray fill
+  inkplate.drawRect(200, 250, 10, 10, 0); // Black outline
+
+  // Draw a filled rectangle with a black outline at (250, 200)
+  inkplate.fillRect(250, 200, 10, 10, 2); // Dark gray fill
+  inkplate.drawRect(250, 200, 10, 10, 0); // Black outline
+
   inkplate.display(); // Show on the display
 }
-void loop() {
+
+void loop() 
+{
 }
 ```
 ---
