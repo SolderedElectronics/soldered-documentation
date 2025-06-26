@@ -6,6 +6,10 @@ id: micropython-install
 hide_title: false
 ---
 
+To get started with MicroPython, begin by setting up a few helpful tools like mpremote for quick module installation and Thonny for writing and uploading code to your board.
+
+---
+
 ## About
 Soldered MicroPython Modules is an open-source library of MicroPython drivers developed and maintained by Soldered for our range of DIY electronics modules, sensors, and development boards. The goal is to make it easy for makers, educators, and engineers to get started quickly with Soldered hardware using MicroPython—whether for prototyping, classroom learning, or embedded projects.
 
