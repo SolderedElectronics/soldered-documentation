@@ -2129,7 +2129,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Li-ion charger',
+          label: 'Li-ion chargers',
           items: [
             {
               type: 'doc',
