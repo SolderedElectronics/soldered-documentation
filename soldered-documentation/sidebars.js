@@ -2598,6 +2598,24 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Li-ion chargers',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/li-ion-chargers/li-ion-chargers-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/li-ion-chargers/li-ion-chargers-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/li-ion-chargers/li-ion-chargers-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'MPPT Li-Ion CN3791 charger board',
           items: [
             {
