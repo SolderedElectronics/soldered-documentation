@@ -1,27 +1,33 @@
 ---
 slug: /micropython/install
-title: MicroPython - Installing Soldered Modules
-sidebar_label: MicroPython Installing Soldered Modules
+title: Installing Soldered MicroPython Modules
+sidebar_label: Installing Soldered MicroPython Modules
 id: micropython-install
 hide_title: false
 ---
 
-To get started with MicroPython, begin by setting up a few helpful tools like mpremote for quick module installation and Thonny for writing and uploading code to your board.
+**Soldered MicroPython Modules** is an open-source library of MicroPython drivers developed and maintained by Soldered for our range of DIY electronics modules, sensors, and development boards. The goal is to make it easy for makers, educators, and engineers to get started quickly with Soldered hardware using MicroPython—whether for prototyping, classroom learning, or embedded projects.
 
----
-
-## About
-Soldered MicroPython Modules is an open-source library of MicroPython drivers developed and maintained by Soldered for our range of DIY electronics modules, sensors, and development boards. The goal is to make it easy for makers, educators, and engineers to get started quickly with Soldered hardware using MicroPython—whether for prototyping, classroom learning, or embedded projects.
+<QuickLink 
+  title="Soldered MicroPython Modules Repository" 
+  description="All available MicroPython Modules for Soldered products"
+  url="https://github.com/SolderedElectronics/Soldered-MicroPython-Modules" 
+/>
 
 Each module in the library is designed to be lightweight, readable, and compatible with a wide range of MicroPython-compatible microcontrollers.
 
----
-
 ## Installation
-You can install a specific module using mpremote or manually downloading specific files onto the board using an IDE such as [Thonny](https://thonny.org/)
+You can install a specific module using mpremote or manually downloading specific files onto the board using an IDE such as [**Thonny**](https://thonny.org/)
 
 ### Installing using mpremote (recommended)
-After [**installing the mpremote package**](https://docs.micropython.org/en/latest/reference/mpremote.html), flash a module to the board using the following command:
+First, see the following tutorial to install the mpremote package:
+<QuickLink 
+  title="Installing mpremote" 
+  description="Official tutorial from MicroPython docs"
+  url="https://docs.micropython.org/en/latest/reference/mpremote.html" 
+/>
+
+After mpremote is installed, you will be able to flash a module to the board using the following command:
 
 ```sh
   mpremote mip install github:SolderedElectronics/Soldered-Micropython-modules/CATEGORY/ENTER-MODULE-HERE
@@ -43,7 +49,7 @@ The module can now be imported and used on your board:
 from bme280 import BME280
 ```
 
-### Installing using an IDE ([Thonny](https://thonny.org/))
+### Installing using Thonny
 
 1. **Connect your board** to your computer via USB.
 2. Open **Thonny**, and make sure the correct interpreter is selected:
