@@ -1786,6 +1786,24 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'DRV8424P',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/drv8424p/drv8424p-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/drv8424p/drv8424p-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/drv8424p/drv8424p-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Relay',
           items: [
             {
