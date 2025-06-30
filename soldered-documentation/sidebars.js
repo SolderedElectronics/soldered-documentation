@@ -659,6 +659,28 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Capacitive Soil Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/capacitive-soil-sensor/capacitive-soil-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/capacitive-soil-sensor/capacitive-soil-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/capacitive-soil-sensor/capacitive-soil-sensor-how-it-works',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/capacitive-soil-sensor/capacitive-soil-sensor-how-to-use',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'HC-SR04 Ultrasonic Sensor',
           items: [
             {
