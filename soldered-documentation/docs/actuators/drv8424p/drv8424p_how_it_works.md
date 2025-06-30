@@ -4,6 +4,7 @@ title: DRV8424P - How it works
 sidebar_label: How it works
 id: drv8424p-how-it-works  
 hide_title: False  
+pagination_next: null
 ---  
 
 This is a **DRV8424P dual motor H-bridge driver breakout** designed to control two brushed DC motors or one bipolar stepper motor. It uses the **DRV8424P** driver from Texas Instruments, which allows for **bidirectional control**, **adjustable current regulation**, and **low power sleep mode**.
