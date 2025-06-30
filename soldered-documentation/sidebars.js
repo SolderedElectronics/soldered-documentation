@@ -2182,6 +2182,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'CONNECT programmer',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/connect-programmer/connect-programmer-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/connect-programmer/connect-programmer-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/connect-programmer/connect-programmer-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'W5500 Ethernet controller',
           items: [
             {
