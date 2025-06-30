@@ -4,6 +4,7 @@ title: Capacitive Soil Sensor - How to Use
 sidebar_label: How to use
 id: capacitive-soil-sensor-how-to-use
 hide_title: false
+pagination_next: null
 ---
 
 This page provides basic usage instructions for the **Capacitive Soil Sensor**, including how to connect it to your microcontroller (e.g., Dasduino Connect Plus), and how to write a simple sketch to start reading soil moisture levels.
