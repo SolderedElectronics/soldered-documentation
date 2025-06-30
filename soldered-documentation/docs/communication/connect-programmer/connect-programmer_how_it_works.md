@@ -4,6 +4,7 @@ title: CONNECT Programmer - How it works
 sidebar_label: How it works
 id: connect-programmer-how-it-works 
 hide_title: False
+pagination_next: null
 ---
 
 The CONNECT programmer uses the onboard **CH340 chip** by [**WCH**](https://www.wch-ic.com/products/CH340.html) to convert the USB protocol into serial communication.

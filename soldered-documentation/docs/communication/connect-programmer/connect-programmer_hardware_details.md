@@ -38,12 +38,7 @@ Click [**here**](/img/connect-programmer/pinout.jpg) for a high-resolution image
 
 This board contains hardware jumpers; see below for their locations and functions:
 
-<FlickityCarousel
-  images={[
-    { src: '/img/connect-programmer/JP1.jpg', alt: 'jumper 1', caption: 'JP1' },
-  ]}
-  jumpers={true}
-/>
+<CenteredImage src="/img/connect-programmer/JP1.jpg" alt="Jumper 1" caption="JP1" />
 
 | Jumper  | Default State            | Function                                                                                                      |
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
