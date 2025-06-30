@@ -623,6 +623,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'INA219 Voltage & current sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/ina219/ina219-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ina219/ina219-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ina219/ina219-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ina219/arduino_library/ina219-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ina219/arduino_library/ina219-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ina219/arduino_library/ina219-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'HC-SR04 Ultrasonic Sensor',
           items: [
             {
@@ -2146,6 +2182,50 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'W5500 Ethernet controller',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/w5500/w5500-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/w5500/w5500-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/w5500/w5500-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/w5500/arduino_library/w5500-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'MicroSD Card Reader',
           items: [
             {
@@ -2495,6 +2575,24 @@ const sidebars = {
             {
               type: 'doc',
               id: 'batteries and power supplies/li-ion-battery/li-ion-battery-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MPPT Li-Ion CN3791 charger board',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/cn3791/cn3791-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/cn3791/cn3791-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/cn3791/cn3791-how-it-works',
             },
           ],
         },
