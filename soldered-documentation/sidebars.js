@@ -2236,6 +2236,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'CAN Transciever MCP2518',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/mcp2518/mcp2518-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/mcp2518/mcp2518-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/mcp2518/mcp2518-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/mcp2518/arduino_library/mcp2518-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/mcp2518/arduino_library/mcp2518-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/mcp2518/arduino_library/mcp2518-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'CONNECT programmer',
           items: [
             {
