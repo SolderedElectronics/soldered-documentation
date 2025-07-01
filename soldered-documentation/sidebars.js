@@ -57,6 +57,20 @@ const sidebars = {
       ]
     },
     {
+      type: 'category',
+      label: 'MicroPython',
+      items: [
+        {
+          type: 'doc',
+          id: 'micropython/micropython-basics',
+        },
+        {
+          type: 'doc',
+          id: 'micropython/micropython-install',
+        },
+      ]
+    },
+    {
       "type": "category",
       "label": "Inkplate",
       "items": [
