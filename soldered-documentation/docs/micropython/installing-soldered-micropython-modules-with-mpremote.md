@@ -73,5 +73,3 @@ from bme280 import BME280
     ["github:SolderedElectronics/Soldered-Micropython-modules/Qwiic/Qwiic.py", "main"]
   ],
 ```
-
----
