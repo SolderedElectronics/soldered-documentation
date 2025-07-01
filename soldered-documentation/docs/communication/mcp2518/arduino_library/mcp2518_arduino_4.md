@@ -1,6 +1,6 @@
 ---
 slug: /mcp2518/arduino/troubleshooting 
-title: MCP2518 -  Troubleshooting
+title: CAN Transciever MCP2518 - Troubleshooting
 id: mcp2518-arduino-4 
 sidebar_label: Troubleshooting
 hide_title: False

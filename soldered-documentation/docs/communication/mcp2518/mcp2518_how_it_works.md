@@ -1,6 +1,6 @@
 ---
 slug: /mcp2518/how-it-works 
-title: MCP2518 - How it works
+title: CAN Transciever MCP2518 - How it works
 id: mcp2518-how-it-works 
 sidebar_label: How it works
 hide_title: False

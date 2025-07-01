@@ -1,9 +1,10 @@
 ---
 slug: /mcp2518/arduino/canfdexamples 
-title: MCP2518 -  CANFD Communication example
+title: CAN Transciever MCP2518 -  CANFD Communication example
 id: mcp2518-arduino-3 
 sidebar_label: CANFD Communication example
 hide_title: False
+pagination_next: null
 ---
 
 This page contains a full communication example between two **Dasduino COREs** using the **MCP2518** modules and **CANFD** protocol.

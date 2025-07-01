@@ -1,6 +1,6 @@
 ---
 slug: /mcp2518/arduino/geting-started 
-title: MCP2518 - Getting started and Initialization
+title: CAN Transciever MCP2518 - Getting started and Initialization
 id: mcp2518-arduino-1
 sidebar_label: Getting started and Initialization
 hide_title: False

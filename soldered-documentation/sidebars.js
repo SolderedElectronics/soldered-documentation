@@ -1775,7 +1775,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'MCP2518 EDIT THIS NAME',
+          label: 'CAN Transciever MCP2518',
           items: [
             {
               type: 'doc',

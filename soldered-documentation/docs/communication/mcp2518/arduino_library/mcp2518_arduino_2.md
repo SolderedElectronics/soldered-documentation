@@ -1,6 +1,6 @@
 ---
 slug: /mcp2518/arduino/can20examples 
-title: MCP2518 - CAN2.0 Communication example
+title: CAN Transciever MCP2518 - CAN2.0 Communication example
 id: mcp2518-arduino-2 
 sidebar_label: CAN2.0 Communication example
 hide_title: False
