@@ -3,7 +3,6 @@ slug: /inkplate
 title: Inkplate Documentation
 id: welcome-inkplate
 hide_title: true
-pagination_next: null
 pagination_prev: null
 ---
 

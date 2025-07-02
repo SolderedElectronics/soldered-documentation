@@ -80,6 +80,10 @@ const sidebars = {
           label: 'Inkplate Documentation Home'
         },
         {
+          type: 'doc',
+          id: 'inkplate/inkplate-features-comparison'
+        },
+        {
           "type": "category",
           "label": "Inkplate 2",
           "items": [
