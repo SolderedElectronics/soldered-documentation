@@ -191,6 +191,14 @@ void loop() {
 
 ---
 
-## Webm
+import WebmPlayer from '@site/src/components/WebmPlayer';
 
-<WebmVideo src="./img/test2.webm"></WebmVideo>
+# My Page with a WebM Video
+
+Here's a cool WebM video:
+
+<WebmPlayer src="/videos/test2.webm" width={600} />
+
+Another video, full width:
+
+<WebmPlayer src="/videos/test2.webm" />
