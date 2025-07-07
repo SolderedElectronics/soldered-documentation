@@ -1769,11 +1769,15 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'TFT LCD Display',
+          label: '2.4" TFT LCD Breakout with Touch',
           items: [
             {
               type: 'doc',
               id: 'displays/tft-lcd/tft-lcd-overview',
+            },
+            {
+              type: 'doc',
+              id: 'displays/tft-lcd/tft-lcd-hardware-details',
             },
             {
               type: 'doc',

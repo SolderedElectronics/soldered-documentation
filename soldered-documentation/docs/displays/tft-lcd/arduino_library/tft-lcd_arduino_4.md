@@ -1,6 +1,6 @@
 ---
 slug: /tft-lcd/arduino/touchpaint
-title: TFT LCD - Touch Paint
+title: 2.4" TFT LCD Breakout with Touch - Touch Paint
 sidebar_label: Touch paint
 id: tft-lcd-arduino-4
 hide_title: false

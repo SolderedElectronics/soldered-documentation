@@ -1,6 +1,6 @@
 ---
 slug: /tft-lcd/arduino/geting-started
-title: TFT LCD - getting started
+title: 2.4" TFT LCD Breakout with Touch - getting started
 sidebar_label: Getting started
 id: tft-lcd-arduino-1
 hide_title: false

@@ -42,4 +42,4 @@ Whether you're building an interface for a sensor project, a data logger with di
 - **Backlight control:** Via pin
 - **microSD slot:** SPI interface
 - **Operating voltage:** 3.3V logic (level-shifted for compatibility)
-- **Dimensions:** 82 x 51 mm
+- **Dimensions:** 70 x 54 mm / 2.8 x 2.1 inch

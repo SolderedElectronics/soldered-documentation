@@ -1,6 +1,6 @@
 ---
 slug: /tft-lcd/arduino/graphics-test
-title: TFT LCD - Graphics Test
+title: 2.4" TFT LCD Breakout with Touch - Graphics Test
 sidebar_label: Graphics test
 id: tft-lcd-arduino-2
 hide_title: false
