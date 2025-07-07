@@ -1,7 +1,7 @@
 ---
 slug: /tft-lcd/arduino/touchscreen-raw
 title: 2.4" TFT LCD Breakout with Touch - Reading Raw Touch Data
-sidebar_label: Touchscreen raw
+sidebar_label: Reading Raw Touch Data
 id: tft-lcd-arduino-3
 hide_title: false
 ---

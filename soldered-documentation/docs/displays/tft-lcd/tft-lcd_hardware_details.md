@@ -1,6 +1,6 @@
 ---
 slug: /tft-lcd/hardware
-title: 2.4" TFT LCD Breakout – Hardware Details
+title: 2.4" TFT LCD Breakout with Touch – Hardware Details
 id: tft-lcd-hardware-details
 sidebar_label: Hardware details
 hide_title: false
