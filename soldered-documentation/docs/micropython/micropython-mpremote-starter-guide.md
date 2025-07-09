@@ -1,14 +1,14 @@
 ---
 slug: /micropython/getting-started-mpremote
-title: MicroPython - Getting Started with mpremote
-sidebar_label: Getting Started with mpremote
+title: MicroPython - Using mpremote with MicroPython
+sidebar_label: Using mpremote with MicroPython
 id: micropython-mpremote-starter
 hide_title: false
 ---
 
 ## What is mpremote?
 
-[**mpremote**](https://docs.micropython.org/en/latest/reference/mpremote.html) is the official MicroPython command-line tool for interacting with MicroPython boards. It allows you to:
+[**mpremote**](https://docs.micropython.org/en/latest/reference/mpremote.html) is the official MicroPython **command-line tool** for interacting with MicroPython boards. It allows you to:
 
 - Upload and download files
 - Run Python scripts directly
