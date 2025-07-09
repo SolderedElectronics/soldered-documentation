@@ -70,6 +70,10 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'micropython/micropython-mpremote-starter',
+        },
+        {
+          type: 'doc',
           id: 'micropython/micropython-install',
         },
       ]

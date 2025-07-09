@@ -51,10 +51,10 @@ These tools power:
 
 #### On Windows
 
-Open **Start**, search for **"environment variables"**, and open **"Edit the system environment variables"**.  
-Click **Environment Variables...**, then under **User variables**, select **Path** and click **Edit**.  
-Click **New**, paste the folder path (e.g., where `esptool` or `mpremote` is installed), and confirm with **OK**.  
-Restart the terminal to apply changes.
+- Open **Start**, search for **"environment variables"**, and open **"Edit the system environment variables"**.  
+- Click **Environment Variables...**, then under **User variables**, select **Path** and click **Edit**.  
+- Click **New**, paste the folder path (e.g., where `esptool` or `mpremote` is installed), and confirm with **OK**.  
+- Restart the terminal to apply changes.
 
 #### On Linux/macOS
 
