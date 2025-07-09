@@ -66,6 +66,10 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'micropython/micropython-vsc-extension',
+        },
+        {
+          type: 'doc',
           id: 'micropython/micropython-install',
         },
       ]
