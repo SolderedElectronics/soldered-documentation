@@ -1,5 +1,5 @@
 ---
-slug: /micropython/install
+slug: /micropython/installing-soldered-micropython-modules
 title: Installing Soldered MicroPython Modules
 sidebar_label: Installing Soldered MicroPython Modules
 id: micropython-install

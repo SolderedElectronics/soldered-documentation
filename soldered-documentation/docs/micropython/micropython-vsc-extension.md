@@ -1,14 +1,14 @@
 ---  
-slug: /micropython/vsc-extension  
-title: MicroPython - Getting started with VSCode
-sidebar_label: Getting started with VSCode
+slug: /micropython/getting-started-with-vscode
+title: MicroPython - Getting started with VSCode  
+sidebar_label: Getting started with VSCode  
 id: micropython-vsc-extension  
 hide_title: false  
 ---  
 
-## Why Use VSCode for MicroPython?
+## Why Use VS Code for MicroPython?
 
-Writing **MicroPython** code in **Visual Studio Code (VSCode)** provides a much more powerful development experience than most built-in editors that come with boards or simple serial terminals. With the help of the [**Soldered MicroPython Helper extension**](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper), you can:
+Writing **MicroPython** code in **Visual Studio Code (VS Code)** provides a much more powerful development experience than most built-in editors that come with boards or simple serial terminals. With the help of the [**Soldered MicroPython Helper extension**](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper), you can:
 
 - Write code with syntax highlighting, IntelliSense, and auto-complete.  
 - Organize code into modules (`.py` files) for better maintainability.  
@@ -25,13 +25,11 @@ Before using the extension, make sure the following tools are installed **and wo
 To upload files, flash firmware, and access serial output from your MicroPython board, your system must have the right tools installed and available globally via your terminal.
 </InfoBox>
 
-
-
 ### Required Tools
 
 - **[Visual Studio Code](https://code.visualstudio.com/)** – main development environment  
 - **[Python 3.7+](https://www.python.org/downloads/)** – used to run `esptool` and `mpremote`  
-- **[Node.js + npm](https://nodejs.org/)** – used by the extension to access serial ports (via `serialport` library)
+- **[Node.js + npm](https://nodejs.org/)** – used by the extension to access serial ports (via the `serialport` library)
 
 <WarningBox title="Important">
 You must be able to run the commands `python`, `node`, and `npm` in your terminal. If these commands fail, your environment is not set up correctly.
@@ -45,15 +43,11 @@ node -v            # Expected: Node.js 14+ or higher
 npm -v             # Confirms npm is available
 ```
 
-
-
 ### What Are These Tools?
 
 - **[`esptool`](https://github.com/espressif/esptool)** – used to flash MicroPython firmware to ESP32/ESP8266 boards
 - **[`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html)** – used to run code, upload files, and interact with your board over USB
 - **[`serialport`](https://www.npmjs.com/package/serialport)** – a Node.js library the extension uses to read/write serial data
-
-
 
 ## Quick Setup: Install Required Tools
 
@@ -67,13 +61,11 @@ pip install esptool mpremote
 npm install serialport
 ```
 
-If these succeed without errors, you’re ready to use the extension.
-
-
+If these commands succeed without errors, you’re ready to use the extension.
 
 ## Test the Setup
 
-Run the following to ensure the tools are globally available:
+Run the following commands to ensure the tools are globally available:
 
 ```bash
 esptool --help
@@ -84,8 +76,6 @@ If you see help text with usage instructions, you're good to go.
 
 If you get an error like “command not found” or “not recognized,” it likely means the tool is not in your PATH.
 
-
-
 ## Fixing PATH Issues
 
 <InfoBox title="Why this matters">
@@ -94,12 +84,12 @@ Your system needs to find `esptool` and `mpremote` when called from the terminal
 
 ### On Windows
 
-1. Open **Start**, search for **"environment variables"**, and select **"Edit the system environment variables"**  
-2. Click **Environment Variables...**  
-3. Under **User variables**, select `Path` and click **Edit**  
+1. Open **Start**, search for **"environment variables"**, and select **"Edit the system environment variables"**.  
+2. Click **Environment Variables...**.  
+3. Under **User variables**, select `Path` and click **Edit**.  
 4. Click **New**, then add the folder where Python installs scripts (usually:  
-   `C:\Users\YOURNAME\AppData\Roaming\Python\Python3x\Scripts`)  
-5. Click **OK** to save and restart your terminal
+   `C:\Users\YOURNAME\AppData\Roaming\Python\Python3x\Scripts`).  
+5. Click **OK** to save and restart your terminal.
 
 ### On Linux/macOS
 
@@ -112,7 +102,7 @@ export PATH="$HOME/.local/bin:$PATH"
 Then apply the changes:
 
 ```bash
-source ~/.bashrc  # or relevant file
+source ~/.bashrc  # or the relevant file
 ```
 
 Once set, re-test with:
@@ -122,7 +112,6 @@ esptool --help
 ```
 
 If help text appears, you're ready to flash and upload!
-
 
 ## Installing the Extension
 
@@ -146,23 +135,22 @@ After installation, you’ll see a **MicroPython** panel in the sidebar. This is
 
 <InfoBox>Tip: If no port appears, ensure drivers are installed and the board is powered.</InfoBox>
 
-Once connected, the extension will automatically detect your board type and show basic info.
+Once connected, the extension will automatically detect your board type and display basic information.
 
 ## Installing MicroPython Firmware
 
 Don't have MicroPython installed **on your development board** yet?
 
-1. In the sidebar, click **"Install MicroPython on your board"**  
-2. Select your board model and desired firmware version  
-3. The extension will automatically download the correct binary and flash it to your device  
-4. Once complete, your board is ready to use with MicroPython
+1. In the sidebar, click **"Install MicroPython on your board"**.  
+2. Select your board model and desired firmware version.  
+3. The extension will automatically download the correct binary and flash it to your device.  
+4. Once complete, your board is ready to use with MicroPython.
 
 <CenteredImage src="/img/mp-vsc-ext/firmware-select.png" width="400px" />
 
 <InfoBox>If you're using a **Soldered** board, MicroPython is already pre-installed. You can skip this step unless you want to update or reflash the firmware.</InfoBox>
 
 <InfoBox>For a list of supported board types and firmware versions, see the **Info & Instructions** section inside the extension panel.</InfoBox>
-
 
 ## Creating or Opening a Project
 
@@ -176,9 +164,9 @@ You can start from scratch or open an existing folder with `.py` files:
 
 Use the sidebar controls to:
 
-- **List and refresh files** – The `Files on Device` window shows what's on your board.  
+- **List and refresh files** – The `Files on Device` window shows what is currently on your board.  
 - **Upload files** – Use the various upload buttons to transfer Python files to your board.  
-- **Run Selected File** – Runs the currently open file on the board and streams its output live in the Output tab.
+- **Run Selected File** – Runs the currently open file on the board and streams its output live in the Output tab.  
 - **Stop Code** – Stops running code, which is usually used for infinite loops. This action is performed automatically if you run another file while one is currently running.  
 - **Delete Selected File** – Removes the selected file from the board.
 
@@ -212,6 +200,7 @@ You can view the full source code for this extension on [**GitHub**](https://git
 <InfoBox>If you'd like to contribute or modify this extension locally, follow the steps below.</InfoBox>
 
 ### 1. Install dependencies
+
 Make sure you have [Node.js](https://nodejs.org/), `npm`, and [Python 3.x](https://www.python.org/) installed.
 
 ```bash
@@ -220,6 +209,7 @@ pip install esptool mpremote
 ```
 
 ### 2. Build the extension
+
 ```bash
 npm run vscode:prepublish
 ```

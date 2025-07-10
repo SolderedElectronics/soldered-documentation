@@ -1,5 +1,5 @@
 ---
-slug: /micropython/getting-started-mpremote
+slug: /micropython/getting-started-with-mpremote
 title: MicroPython - Getting started with mpremote
 sidebar_label: Getting started with mpremote
 id: micropython-mpremote-starter
