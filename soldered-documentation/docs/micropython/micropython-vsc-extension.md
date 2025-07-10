@@ -43,8 +43,8 @@ npm -v             # Confirms npm is available
 
 ## Quick Setup: Install Required Tools
 
-- **[`esptool`](https://github.com/espressif/esptool)** – used to flash MicroPython firmware to ESP32/ESP8266 boards
-- **[`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html)** – used to run code, upload files, and interact with your board over USB
+- **[`esptool`](https://github.com/espressif/esptool)** – used to flash MicroPython firmware to ESP32/ESP8266 boards  
+- **[`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html)** – used to run code, upload files, and interact with your board over USB  
 - **[`serialport`](https://www.npmjs.com/package/serialport)** – a Node.js library the extension uses to read/write serial data
 
 Run the following commands **in your terminal** to install everything:
@@ -85,7 +85,7 @@ If you see help text with usage instructions, you're good to go.
 
 ### On Linux/macOS
 
-Add the following to your shell config file (`~/.bashrc`, `~/.zshrc`, or `~/.profile`):
+Add the following to your shell configuration file (`~/.bashrc`, `~/.zshrc`, or `~/.profile`):
 
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
@@ -152,7 +152,7 @@ You can start from scratch or open an existing folder with `.py` files:
 
 1. Go to **File → Open Folder...** and select your MicroPython project directory.  
 2. Create new files like `main.py`, `boot.py`, or any custom modules.  
-3. All your files in this folder can now be uploaded, edited, and run directly from VS Code.
+3. All the files in this folder can now be uploaded, edited, and run directly from VS Code.
 
 ## Uploading and Running Code
 
@@ -190,7 +190,6 @@ On the left sidebar of VS Code, click the MicroPython icon to open the extension
 
 Use the sidebar controls to:
 
-
 - **Upload files** – Use the various upload buttons to transfer Python files to your board.  
 - **List and refresh files** – The Files on Device window shows what is currently on your board.  
 - **Run Selected File** – Runs the currently open file on the board and streams its output live in the Output tab.  
@@ -204,7 +203,7 @@ Use the sidebar controls to:
 To permanently copy the script to your board:
 
 - Click **"Upload Active File"** — this sends the open file to the board.
-- The file is saved to internal storage and will remain after reset or power-off.
+- The file is saved to internal storage and will remain after a reset or power-off.
 
 You can also click **"Upload Project"** to upload all `.py` files from your open folder.
 
