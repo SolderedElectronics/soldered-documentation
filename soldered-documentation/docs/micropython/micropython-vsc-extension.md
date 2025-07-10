@@ -1,5 +1,5 @@
 ---  
-slug: /micropython/getting-started-with-vscode
+slug: /micropython/getting-started-with-vscode  
 title: MicroPython - Getting started with VSCode  
 sidebar_label: Getting started with VSCode  
 id: micropython-vsc-extension  
@@ -61,7 +61,7 @@ pip install esptool mpremote
 npm install serialport
 ```
 
-If these commands succeed without errors, you’re ready to use the extension.
+If these commands succeed without errors, you're ready to use the extension.
 
 ## Test the Setup
 
@@ -122,7 +122,7 @@ If help text appears, you're ready to flash and upload!
 
 After installation, you’ll see a **MicroPython** panel in the sidebar. This is your main interface for interacting with your device.
 
-<CenteredImage src="/img/mp-vsc-ext/marketplace-install.png" width="600px" />
+<CenteredImage src="/img/mp-vsc-ext/marketplace-install.png" width="600px" alt="Extension on the marketplace" caption="Installing Soldered MicroPython Helper from the extension tab."/>
 
 <InfoBox>You can also find the [**extension**](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper) on the marketplace!</InfoBox>
 
@@ -133,7 +133,7 @@ After installation, you’ll see a **MicroPython** panel in the sidebar. This is
 3. Click the **"Select Port"** dropdown in the sidebar.  
 4. Choose the correct serial port for your device (e.g., `COM3`).
 
-<InfoBox>Tip: If no port appears, ensure drivers are installed and the board is powered.</InfoBox>
+<InfoBox>Tip: If no port appears, ensure that drivers are installed and that the board is powered.</InfoBox>
 
 Once connected, the extension will automatically detect your board type and display basic information.
 
@@ -146,7 +146,7 @@ Don't have MicroPython installed **on your development board** yet?
 3. The extension will automatically download the correct binary and flash it to your device.  
 4. Once complete, your board is ready to use with MicroPython.
 
-<CenteredImage src="/img/mp-vsc-ext/firmware-select.png" width="400px" />
+<CenteredImage src="/img/mp-vsc-ext/firmware-select.png" width="400px" alt="Firmware search" caption="Search and install MicroPython firmware." />
 
 <InfoBox>If you're using a **Soldered** board, MicroPython is already pre-installed. You can skip this step unless you want to update or reflash the firmware.</InfoBox>
 
@@ -170,7 +170,7 @@ Use the sidebar controls to:
 - **Stop Code** – Stops running code, which is usually used for infinite loops. This action is performed automatically if you run another file while one is currently running.  
 - **Delete Selected File** – Removes the selected file from the board.
 
-<CenteredImage src="/img/mp-vsc-ext/upload-active-file.png" width="800px" />
+<CenteredImage src="/img/mp-vsc-ext/upload-active-file.png" width="800px" alt="Upload & Manage" caption="Upload & Manage Python Scripts section." />
 
 ## Viewing Live Serial Output
 
@@ -180,7 +180,7 @@ The extension includes a built-in **Serial Monitor**:
 2. Real-time logs, `print()` output, and exceptions from your MicroPython code will appear here.  
 3. This allows you to debug directly without needing a separate terminal app.
 
-<CenteredImage src="/img/mp-vsc-ext/serial-output.png" width="800px" />
+<CenteredImage src="/img/mp-vsc-ext/serial-output.png" width="800px" alt="Serial output." caption="Live Serial output within VSCode."/>
 
 ## Using the Library Browser to Access Soldered Modules
 
@@ -191,7 +191,9 @@ Need drivers for sensors or displays? You can access the [**Soldered MicroPython
 3. Select which libraries to install (just `.py` files, examples, or both).  
 4. The extension automatically downloads and adds the files to your project.
 
-<CenteredImage src="/img/mp-vsc-ext/soldered-modules.png" width="400px" />
+<InfoBox>For a detailed explanation of how this works, see the [**Installing Soldered Modules via VS Code**](/micropython/installing-soldered-micropython-modules#option-1-installing-modules-via-vs-code-extension) guide.</InfoBox>
+
+<CenteredImage src="/img/mp-vsc-ext/soldered-modules.png" width="400px" alt="Soldered Modules" caption="Fetch Soldered MicroPython Module section."/>
 
 ## Source Code and Development
 

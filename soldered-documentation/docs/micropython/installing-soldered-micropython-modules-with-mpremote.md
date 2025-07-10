@@ -1,12 +1,12 @@
----
-slug: /micropython/installing-soldered-micropython-modules
-title: Installing Soldered MicroPython Modules
-sidebar_label: Installing Soldered MicroPython Modules
-id: micropython-install
-hide_title: false
+---  
+slug: /micropython/installing-soldered-micropython-modules  
+title: Installing Soldered MicroPython Modules  
+sidebar_label: Installing Soldered MicroPython Modules  
+id: micropython-install  
+hide_title: false  
 ---
 
-**Soldered MicroPython Modules** is an open-source library of MicroPython drivers developed and maintained by Soldered for our range of DIY electronics modules, sensors, and development boards. The goal is to make it easy for makers, educators, and engineers to get started quickly with Soldered hardware using MicroPython—whether for prototyping, classroom learning, or embedded projects.
+**Soldered MicroPython Modules** is an open-source collection of MicroPython drivers for various Soldered products, including sensors, displays, and input devices. These libraries are written to be lightweight, beginner-friendly, and compatible with most MicroPython boards.
 
 <QuickLink 
   title="Soldered MicroPython Modules Repository" 
@@ -14,62 +14,90 @@ hide_title: false
   url="https://github.com/SolderedElectronics/Soldered-MicroPython-Modules" 
 />
 
-Each module in the library is designed to be lightweight, readable, and compatible with a wide range of MicroPython-compatible microcontrollers.
+This guide shows how to install the modules using two recommended approaches:
 
-## Installation
-You can install a specific module using mpremote or manually downloading specific files onto the board using an IDE such as [**Thonny**](https://thonny.org/)
+- With the [**Soldered MicroPython Helper**](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper) extension for VS Code
+- Using the [**mpremote CLI**](https://docs.micropython.org/en/latest/reference/mpremote.html) tool 
 
-### Installing using mpremote (recommended)
-First, see the following tutorial to install the mpremote package:
-<QuickLink 
-  title="Installing mpremote" 
-  description="Official tutorial from MicroPython docs"
-  url="https://docs.micropython.org/en/latest/reference/mpremote.html" 
-/>
+## Option 1: Installing Modules via VS Code Extension
 
-After mpremote is installed, you will be able to flash a module to the board using the following command:
+If you're using the **Soldered MicroPython Helper** extension in Visual Studio Code, installing modules is seamless:
 
-```sh
-  mpremote mip install github:SolderedElectronics/Soldered-Micropython-modules/CATEGORY/ENTER-MODULE-HERE
-```
-Or, if you're running a Windows OS:
+1. Open the **Fetch Soldered MicroPython Module** section in the extension sidebar.
+2. Search for the module name or keyword (e.g., `bme280`, `shtc3`, `lcd`).
+3. Choose whether to download:
+   - Only the `.py` driver
+   - Example files
+   - Or both
+4. The selected files will be uploaded directly to your development board.
 
-```sh
-  python -m mpremote mip install github:SolderedElectronics/Soldered-Micropython-modules/CATEGORY/ENTER-MODULE-HERE
-```
+<CenteredImage src="/img/mp-vsc-ext/soldered-modules.png" width="400px" alt="Soldered Modules" caption="Fetch Soldered MicroPython Module section."/>
 
-For example, downloading the BME280 module looks like this:
+<InfoBox>Once uploaded, you can use the modules in your scripts just like any other MicroPython module:</InfoBox>
 
-```sh
-  mpremote mip install github:SolderedElectronics/Soldered-Micropython-modules/Sensors/BME280
+```python
+from shtc3 import SHTC3
 ```
 
-The module can now be imported and used on your board:
+## Option 2: Installing Modules with `mpremote`
+
+You can also install modules using the official `mpremote` tool and the MicroPython package installer (`mip`).
+
+### 1. Install mpremote
+
+Follow the guide on our [**Getting started with mpremote**](/micropython/getting-started-with-mpremote/) page.
+
+Or install it directly:
+
+```bash
+pip install mpremote
+```
+
+### 2. Install the desired module
+
+Use the following command format:
+
+```bash
+mpremote mip install github:SolderedElectronics/Soldered-Micropython-modules/CATEGORY/MODULE_NAME
+```
+
+For example:
+
+```bash
+mpremote mip install github:SolderedElectronics/Soldered-Micropython-modules/Sensors/BME280
+```
+
+<CenteredImage src="/img/mp-vsc-ext/cmd-mpremote-modules.png" width="800px" caption="Installing the BME280 library and examples driectly from github." />
+
+
+### 3. Import and use the module
+
 ```python
 from bme280 import BME280
 ```
 
-### Installing using Thonny
+### 4. Dependencies
 
-1. **Connect your board** to your computer via USB.
-2. Open **Thonny**, and make sure the correct interpreter is selected:
-   - Go to **Tools > Options > Interpreter**
-   - Select "MicroPython (Raspberry Pi Pico / ESP32 / etc.)"
-   - Choose the correct port and click **OK**
-3. Open the `modules/` folder from this library on your computer.
-4. For each module you want to use:
-   - Open the `.py` file (e.g., `shtc3.py`) in Thonny
-   - Go to **File > Save As...**
-   - Choose **MicroPython device**
-   - Save the file inside the `/lib/` directory on the device (create it if it doesn’t exist)
-5. Once the modules are on your board, you can import them in your MicroPython scripts like any other module: 
-```python
-from bme280 import BME280
-```
-**Note:** When manually installing the modules you must also manually install any dependancies a module might use, those can be found in the package.json file in any module folder:
+If a module uses additional dependencies, those must be installed manually. Check the `package.json` in the module folder on GitHub for any listed dependencies:
 
 ```json
 "deps": [
-    ["github:SolderedElectronics/Soldered-Micropython-modules/Qwiic/Qwiic.py", "main"]
-  ],
+  ["github:SolderedElectronics/Soldered-Micropython-modules/Qwiic/Qwiic.py", "main"]
+]
+```
+
+Repeat the same `mpremote mip install ...` process for each listed dependency.
+
+## Manual Installation (Alternative via Thonny)
+
+If you're using **Thonny** or another basic IDE, you can also install modules manually:
+
+1. Open the `.py` module file in Thonny.
+2. Save it to your board via: **File → Save As... → MicroPython device**
+3. Save the file inside a `lib/` folder on the board (create if needed).
+4. Repeat this for any dependencies.
+5. Then import it normally:
+
+```python
+from shtc3 import SHTC3
 ```

@@ -14,10 +14,9 @@ pagination_prev: null
 
 **MicroPython** is a lightweight and efficient implementation of Python 3 designed specifically for microcontrollers and embedded systems.
 
-With MicroPython, your microcontroller can operate similarly to platforms you may already know, such as Arduino, ESP-IDF, or PlatformIO... but using the **Python programming language**. Development is **faster**, with quicker code uploads and easier implementation. It’s perfect for rapid prototyping, testing components with MicroPython modules, or building standalone projects effortlessly.
+With MicroPython, your microcontroller can operate similarly to platforms you may already know, such as Arduino, ESP-IDF, or PlatformIO, but using the **Python programming language**. Development is **faster**, with quicker code uploads and easier implementation. It’s perfect for rapid prototyping, testing components with MicroPython modules, or building standalone projects effortlessly.
 
 Gone are the days of long compile times, heavy board definitions, and clunky development setups. MicroPython brings a streamlined, user-friendly, and modular development experience that enables fast, flexible prototyping and iteration.
-
 
 ## Why Use MicroPython?
 
@@ -28,14 +27,13 @@ Gone are the days of long compile times, heavy board definitions, and clunky dev
 
 ## How MicroPython Works
 
-The basic idea is simple: you write Python code, upload it to your device, and the **interpreter** reads and executes each line as it goes. With this code, you can control sensors, actuators, displays, gather data, and use networking, all while writing in familiar Python syntax.
+The basic idea is simple: you write Python code, upload it to your device, and the **interpreter** reads and executes each line as it goes. With this code, you can control sensors, actuators, and displays, gather data, and use networking, all while writing in familiar Python syntax.
 
-The **MicroPython interpreter** is included in the MicroPython firmware, a precompiled binary code that runs on your microcontroller. **You only need to install this firmware once during initial setup**. After that, your Python scripts and libraries can be uploaded and updated as needed.
+The **MicroPython interpreter** is included in the MicroPython firmware, a precompiled binary that runs on your microcontroller. **You only need to install this firmware once during initial setup**. After that, your Python scripts and libraries can be uploaded and updated as needed.
 
 See the graph below for a visual explanation:
 
 <CenteredImage src="/img/micropython/micropython graph.png" alt="MicroPython Explained" caption="MicroPython interpretation process on a microcontroller" />
-
 
 ## Workflow
 
