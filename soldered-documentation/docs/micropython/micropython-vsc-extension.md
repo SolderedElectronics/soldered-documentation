@@ -39,13 +39,11 @@ node -v            # Expected: Node.js 14+ or higher
 npm -v             # Confirms npm is available
 ```
 
-### What Are These Tools?
+## Quick Setup: Install Required Tools
 
 - **[`esptool`](https://github.com/espressif/esptool)** – used to flash MicroPython firmware to ESP32/ESP8266 boards
 - **[`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html)** – used to run code, upload files, and interact with your board over USB
 - **[`serialport`](https://www.npmjs.com/package/serialport)** – a Node.js library the extension uses to read/write serial data
-
-## Quick Setup: Install Required Tools
 
 Run the following commands **in your terminal** to install everything:
 
@@ -72,9 +70,7 @@ If you see help text with usage instructions, you're good to go.
 
 ## Fixing PATH Issues
 
-If you get an error like “command not found” or “not recognized,” it likely means the tool is not in your PATH.
-
-<InfoBox title="Why this matters">Your system needs to find `esptool` and `mpremote` when called from the terminal. This is done via the PATH environment variable.</InfoBox>
+<InfoBox title="Why this matters">If you get an error like “command not found” or “not recognized,” it likely means the tool is not in your PATH. Your system needs to find `esptool` and `mpremote` when called from the terminal. This is done via the PATH environment variable.</InfoBox>
 
 ### On Windows
 
@@ -126,6 +122,8 @@ After installation, you’ll see a **MicroPython** panel in the sidebar. This is
 2. Open the extension in the tab.  
 3. Click the **"Select Port"** dropdown in the sidebar.  
 4. Choose the correct serial port for your device (e.g., `COM3`).
+
+<CenteredImage src="/img/mp-vsc-ext/com-port-select.png" width="400px" alt="Extension on the marketplace" caption="Selecting the serial port for your device."/>
 
 <InfoBox>Tip: If no port appears, ensure that drivers are installed and that the board is powered.</InfoBox>
 
