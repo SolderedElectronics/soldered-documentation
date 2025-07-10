@@ -156,15 +156,71 @@ You can start from scratch or open an existing folder with `.py` files:
 
 ## Uploading and Running Code
 
+Once your board is connected and a project folder is open in VS Code, you can easily write, upload, and execute code using the MicroPython Helper extension.
+
+Follow these steps:
+
+### 1. Create a new Python file
+
+In your project folder, create a file called `main.py`.  
+Paste or write some basic MicroPython code. For example:
+
+```python
+from machine import Pin
+import time
+
+led = Pin(5, Pin.OUT)
+
+while True:
+    led.toggle()
+    time.sleep(0.5)
+```
+
+This simple script blinks an LED.
+
+<CenteredImage src="/img/mp-vsc-ext/code-build.png" width="500px" alt="ledblink" caption="Circuit build for the code." />
+
+### 2. Save the file
+
+Make sure the file is saved before trying to upload or run it.
+
+### 3. Open the MicroPython sidebar
+
+On the left sidebar of VS Code, click the MicroPython icon to open the extension panel.
+
 Use the sidebar controls to:
 
-- **List and refresh files** – The `Files on Device` window shows what is currently on your board.  
+
 - **Upload files** – Use the various upload buttons to transfer Python files to your board.  
+- **List and refresh files** – The Files on Device window shows what is currently on your board.  
 - **Run Selected File** – Runs the currently open file on the board and streams its output live in the Output tab.  
 - **Stop Code** – Stops running code, which is usually used for infinite loops. This action is performed automatically if you run another file while one is currently running.  
 - **Delete Selected File** – Removes the selected file from the board.
 
-<CenteredImage src="/img/mp-vsc-ext/upload-active-file.png" width="800px" alt="Upload & Manage" caption="Upload & Manage Python Scripts section." />
+<CenteredImage src="/img/mp-vsc-ext/upload&manage.png" width="400px" alt="upandman" caption="Upload & Manage Files section." />
+
+### 4. Upload the script to your board
+
+To permanently copy the script to your board:
+
+- Click **"Upload Active File"** — this sends the open file to the board.
+- The file is saved to internal storage and will remain after reset or power-off.
+
+You can also click **"Upload Project"** to upload all `.py` files from your open folder.
+
+### 5. Run the script
+
+Click **"Run Selected File"** to execute the currently open script.
+
+The live output (from `print()`, exceptions, etc.) will appear in the **Output** panel.
+
+<CenteredImage src="/img/mp-vsc-ext/blink-led.png" width="500px" alt="ledblink" caption="Blink LED code run from the extension." />
+
+### 6. Stop the script
+
+If your script contains an infinite loop (like blinking an LED), you can click **"Stop Code"** to interrupt it.
+
+Running a new file also stops the currently running one automatically.
 
 ## Viewing Live Serial Output
 
