@@ -21,9 +21,7 @@ Writing **MicroPython** code in **Visual Studio Code (VS Code)** provides a much
 
 Before using the extension, make sure the following tools are installed **and working** correctly. These tools are **essential** for communication with your MicroPython board.
 
-<InfoBox title="Why do I need all this?">
-To upload files, flash firmware, and access serial output from your MicroPython board, your system must have the right tools installed and available globally via your terminal.
-</InfoBox>
+<InfoBox title="Why do I need all this?">To upload files, flash firmware, and access serial output from your MicroPython board, your system must have the right tools installed and available globally via your terminal.</InfoBox>
 
 ### Required Tools
 
