@@ -1,37 +1,63 @@
 ---  
 slug: /micropython/vsc-extension  
-title: MicroPython - Using VSCode with MicroPython  
-sidebar_label: Using VSCode with MicroPython  
+title: MicroPython - Getting started with VSCode
+sidebar_label: Getting started with VSCode
 id: micropython-vsc-extension  
 hide_title: false  
 ---  
 
 ## Why Use VSCode for MicroPython?
 
-Writing **MicroPython** code in **Visual Studio Code (VSCode)** provides a much more powerful development experience than most built-in editors that come with boards or simple serial terminals. With the help of the **Soldered MicroPython Helper** extension, you can:
+Writing **MicroPython** code in **Visual Studio Code (VSCode)** provides a much more powerful development experience than most built-in editors that come with boards or simple serial terminals. With the help of the [**Soldered MicroPython Helper extension**](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper), you can:
 
 - Write code with syntax highlighting, IntelliSense, and auto-complete.  
 - Organize code into modules (`.py` files) for better maintainability.  
 - Easily **upload, run, and manage files** on your MicroPython device.  
 - View **live serial output** directly inside VS Code.  
 - Install MicroPython firmware and Soldered libraries with one click.  
-- Use an integrated, modern development workflow — without ever leaving VS Code.
+- Use an integrated, modern development workflow without ever leaving VS Code.
 
-## Requirements
+## Requirements and Initial Setup
 
-To use the extension, install the following tools:
+Before using the extension, make sure the following tools are installed **and working** correctly. These tools are **essential** for communication with your MicroPython board.
 
-- **[Visual Studio Code](https://code.visualstudio.com/)** – your development environment  
-- **[Python 3.7+](https://www.python.org/downloads/)** – required for esptool and mpremote  
-- **[Node.js + npm](https://nodejs.org/)** – used for serial communication
+<InfoBox title="Why do I need all this?">
+To upload files, flash firmware, and access serial output from your MicroPython board, your system must have the right tools installed and available globally via your terminal.
+</InfoBox>
+
+
+
+### Required Tools
+
+- **[Visual Studio Code](https://code.visualstudio.com/)** – main development environment  
+- **[Python 3.7+](https://www.python.org/downloads/)** – used to run `esptool` and `mpremote`  
+- **[Node.js + npm](https://nodejs.org/)** – used by the extension to access serial ports (via `serialport` library)
+
+<WarningBox title="Important">
+You must be able to run the commands `python`, `node`, and `npm` in your terminal. If these commands fail, your environment is not set up correctly.
+</WarningBox>
+
+Verify installation:
 
 ```bash
-python --version
-node -v
-npm -v
+python --version   # Expected: Python 3.7 or higher
+node -v            # Expected: Node.js 14+ or higher
+npm -v             # Confirms npm is available
 ```
 
-**To enable all features of the extension, run the following commands in your terminal**
+
+
+### What Are These Tools?
+
+- **[`esptool`](https://github.com/espressif/esptool)** – used to flash MicroPython firmware to ESP32/ESP8266 boards
+- **[`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html)** – used to run code, upload files, and interact with your board over USB
+- **[`serialport`](https://www.npmjs.com/package/serialport)** – a Node.js library the extension uses to read/write serial data
+
+
+
+## Quick Setup: Install Required Tools
+
+Run the following commands **in your terminal** to install everything:
 
 ```bash
 # Install Python tools for firmware flashing and file communication
@@ -41,52 +67,62 @@ pip install esptool mpremote
 npm install serialport
 ```
 
-These tools power:
+If these succeed without errors, you’re ready to use the extension.
 
-- Firmware flashing: `esptool`  
-- File/device access: `mpremote`  
-- Serial monitor integration: `serialport`
 
-### Editing the PATH Variable
 
-#### On Windows
+## Test the Setup
 
-- Open **Start**, search for **"environment variables"**, and open **"Edit the system environment variables"**.  
-- Click **Environment Variables...**, then under **User variables**, select **Path** and click **Edit**.  
-- Click **New**, paste the folder path (e.g., where `esptool` or `mpremote` is installed), and confirm with **OK**.  
-- Restart the terminal to apply changes.
-
-#### On Linux/macOS
-
-Edit your shell config file (e.g., `~/.bashrc`, `~/.zshrc` or `~/.profile`) and add:
-
-```bash
-export PATH="$HOME/.local/bin:$PATH"
-```
-
-Apply changes with:
-
-```bash
-source ~/.bashrc  # or the appropriate file
-```
-
-Open a new terminal and test with:
+Run the following to ensure the tools are globally available:
 
 ```bash
 esptool --help
 mpremote --help
 ```
 
-### Serial Port Access
+If you see help text with usage instructions, you're good to go.
 
-- **Windows**: Usually works out of the box.  
-- **Linux**: Add your user to the `dialout` group for permission to access serial ports:
+If you get an error like “command not found” or “not recognized,” it likely means the tool is not in your PATH.
+
+
+
+## Fixing PATH Issues
+
+<InfoBox title="Why this matters">
+Your system needs to find `esptool` and `mpremote` when called from the terminal. This is done via the PATH environment variable.
+</InfoBox>
+
+### On Windows
+
+1. Open **Start**, search for **"environment variables"**, and select **"Edit the system environment variables"**  
+2. Click **Environment Variables...**  
+3. Under **User variables**, select `Path` and click **Edit**  
+4. Click **New**, then add the folder where Python installs scripts (usually:  
+   `C:\Users\YOURNAME\AppData\Roaming\Python\Python3x\Scripts`)  
+5. Click **OK** to save and restart your terminal
+
+### On Linux/macOS
+
+Add the following to your shell config file (`~/.bashrc`, `~/.zshrc`, or `~/.profile`):
 
 ```bash
-sudo usermod -a -G dialout $USER
+export PATH="$HOME/.local/bin:$PATH"
 ```
 
-Log out and back in (or reboot) for changes to apply.
+Then apply the changes:
+
+```bash
+source ~/.bashrc  # or relevant file
+```
+
+Once set, re-test with:
+
+```bash
+esptool --help
+```
+
+If help text appears, you're ready to flash and upload!
+
 
 ## Installing the Extension
 
@@ -114,16 +150,19 @@ Once connected, the extension will automatically detect your board type and show
 
 ## Installing MicroPython Firmware
 
-Don’t have MicroPython installed yet?
+Don't have MicroPython installed **on your development board** yet?
 
-1. In the sidebar, click **"Install Firmware"**.  
-2. Choose your board model and firmware version.  
-3. The extension downloads the correct binary and flashes it to your device.  
-4. Done — ready to go.
+1. In the sidebar, click **"Install MicroPython on your board"**  
+2. Select your board model and desired firmware version  
+3. The extension will automatically download the correct binary and flash it to your device  
+4. Once complete, your board is ready to use with MicroPython
 
 <CenteredImage src="/img/mp-vsc-ext/firmware-select.png" width="400px" />
 
-<InfoBox>Read the Info & Instructions section for currently supported Firmware installations.</InfoBox>
+<InfoBox>If you're using a **Soldered** board, MicroPython is already pre-installed. You can skip this step unless you want to update or reflash the firmware.</InfoBox>
+
+<InfoBox>For a list of supported board types and firmware versions, see the **Info & Instructions** section inside the extension panel.</InfoBox>
+
 
 ## Creating or Opening a Project
 
@@ -139,7 +178,7 @@ Use the sidebar controls to:
 
 - **List and refresh files** – The `Files on Device` window shows what's on your board.  
 - **Upload files** – Use the various upload buttons to transfer Python files to your board.  
-- **Run Selected File** – Executes the current script.  
+- **Run Selected File** – Runs the currently open file on the board and streams its output live in the Output tab.
 - **Stop Code** – Stops running code, which is usually used for infinite loops. This action is performed automatically if you run another file while one is currently running.  
 - **Delete Selected File** – Removes the selected file from the board.
 
@@ -157,9 +196,9 @@ The extension includes a built-in **Serial Monitor**:
 
 ## Using the Library Browser to Access Soldered Modules
 
-Need drivers for sensors or displays?
+Need drivers for sensors or displays? You can access the [**Soldered MicroPython Modules library**](https://github.com/SolderedElectronics/Soldered-MicroPython-Modules) from the extension.
 
-1. Click the **"Library Browser"** tab.  
+1. Click the **"Fetch Soldered MicroPython Module"** tab.  
 2. Search for keywords like `APDS`, `LCD`, or `DRV`.  
 3. Select which libraries to install (just `.py` files, examples, or both).  
 4. The extension automatically downloads and adds the files to your project.

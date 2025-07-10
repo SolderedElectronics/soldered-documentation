@@ -1,7 +1,7 @@
 ---
 slug: /micropython/getting-started-mpremote
-title: MicroPython - Using mpremote with MicroPython
-sidebar_label: Using mpremote with MicroPython
+title: MicroPython - Getting started with mpremote
+sidebar_label: Getting started with mpremote
 id: micropython-mpremote-starter
 hide_title: false
 ---
