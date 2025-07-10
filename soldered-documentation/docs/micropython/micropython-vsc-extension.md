@@ -29,9 +29,7 @@ Before using the extension, make sure the following tools are installed **and wo
 - **[Python 3.7+](https://www.python.org/downloads/)** – used to run `esptool` and `mpremote`  
 - **[Node.js + npm](https://nodejs.org/)** – used by the extension to access serial ports (via the `serialport` library)
 
-<WarningBox title="Important">
-You must be able to run the commands `python`, `node`, and `npm` in your terminal. If these commands fail, your environment is not set up correctly.
-</WarningBox>
+<WarningBox title="Important">You must be able to run the commands `python`, `node`, and `npm` in your terminal. If these commands fail, your environment is not set up correctly.</WarningBox>
 
 Verify installation:
 
@@ -72,13 +70,11 @@ mpremote --help
 
 If you see help text with usage instructions, you're good to go.
 
-If you get an error like “command not found” or “not recognized,” it likely means the tool is not in your PATH.
-
 ## Fixing PATH Issues
 
-<InfoBox title="Why this matters">
-Your system needs to find `esptool` and `mpremote` when called from the terminal. This is done via the PATH environment variable.
-</InfoBox>
+If you get an error like “command not found” or “not recognized,” it likely means the tool is not in your PATH.
+
+<InfoBox title="Why this matters">Your system needs to find `esptool` and `mpremote` when called from the terminal. This is done via the PATH environment variable.</InfoBox>
 
 ### On Windows
 
@@ -146,7 +142,7 @@ Don't have MicroPython installed **on your development board** yet?
 
 <CenteredImage src="/img/mp-vsc-ext/firmware-select.png" width="400px" alt="Firmware search" caption="Search and install MicroPython firmware." />
 
-<InfoBox>If you're using a **Soldered** board, MicroPython is already pre-installed. You can skip this step unless you want to update or reflash the firmware.</InfoBox>
+<!-- <InfoBox>If you're using a **Soldered** board, MicroPython is already pre-installed. You can skip this step unless you want to update or reflash the firmware.</InfoBox> -->
 
 <InfoBox>For a list of supported board types and firmware versions, see the **Info & Instructions** section inside the extension panel.</InfoBox>
 
