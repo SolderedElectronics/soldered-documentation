@@ -6,6 +6,8 @@ id: micropython-vsc-extension
 hide_title: false  
 ---  
 
+<CenteredImage src="/img/mp-vsc-ext/pagetitlevisual.png" alt="Soldered and Micropython logo" />
+
 ## Why Use VS Code for MicroPython?
 
 Writing **MicroPython** code in **Visual Studio Code (VS Code)** provides a much more powerful development experience than most built-in editors that come with boards or simple serial terminals. With the help of the [**Soldered MicroPython Helper extension**](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper), you can:
