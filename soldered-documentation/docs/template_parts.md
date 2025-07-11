@@ -195,10 +195,11 @@ import WebmPlayer from '@site/src/components/WebmPlayer';
 
 # My Page with a WebM Video
 
-Here's a cool WebM video:
+<ReactPlayer src='./videos/image_uploader.mp4' controls='true'/>
 
-<WebmPlayer src="/videos/test2.webm" width={600} />
 
-Another video, full width:
 
-<WebmPlayer src="/videos/test2.webm" />
+
+
+
+

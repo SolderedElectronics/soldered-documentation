@@ -11,11 +11,11 @@ pagination_prev: null
 
 <CenteredImage src="/img/google-calendar/showcase.jpg" alt="Google Calendar Showcase"  width="100%"/>
 
-The Google Calendar project is a clean and intuitive user interface that displays your upcoming personal calendar events and national holidays directly on your Inkplate e-paper display. It connects securely to your Google Calendar through the Google Calendar API, fetching and displaying up to two weeks of future events, including event titles, times, and all-day reminders. The interface is designed for at-a-glance time management, making it easy to stay organized without needing to check your phone or computer.
+The **Google Calendar project** is a clean and intuitive user interface that displays your upcoming personal calendar events and national holidays directly on your Inkplate e-paper display. It connects securely to your Google Calendar through the **Google Calendar API**, fetching and displaying up to two weeks of future events, including event titles, times, and all-day reminders. The interface is designed for **at-a-glance time management**, making it easy to stay organized without needing to check your phone or computer.
 
-Thanks to the Inkplate's e-paper screen, content remains visible even when the device is not actively refreshing, mimicking the appearance of real paper. Its low-power design allows it to run on a single battery charge for weeks or even months, making it ideal for use as a desk calendar, wall-mounted organizer, or travel companion.
+Thanks to the Inkplate's e-paper screen, content remains visible even when the device is not actively refreshing, mimicking the appearance of real paper. Its low-power design allows it to run on a **single battery charge for weeks or even months**, making it ideal for use as a desk calendar, wall-mounted organizer, or travel companion.
 
-With this project shows the Wi-Fi and UI capabilities of the Inkplate as it becomes a personal assistant that keeps you on schedule with minimal maintenance and elegant visual presentation.
+With this project shows the **Wi-Fi and UI capabilities** of the Inkplate as it becomes a personal assistant that keeps you on schedule with minimal maintenance and elegant visual presentation.
 
 ## Requirements
 
@@ -113,3 +113,5 @@ If you are having trouble uploading the code, check out our in-depth upload tuto
 />
 
 ## Result
+
+<ReactPlayer src='../../../videos/google_calendar.mp4' width='100%' height='auto' muted='true' autoPlay='true' loop='true'/>

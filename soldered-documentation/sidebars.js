@@ -644,8 +644,10 @@ const sidebars = {
       "label": "Inkplate Projects",
       "items": [
           "inkplate/projects/google-calendar",
+          "inkplate/projects/open-meteo",
           "inkplate/projects/openai-text-prompt",
-          "inkplate/projects/open-meteo"
+          "inkplate/projects/openai-image-slideshow",
+          "inkplate/projects/image-uploader"
       ]
     }
       ]
