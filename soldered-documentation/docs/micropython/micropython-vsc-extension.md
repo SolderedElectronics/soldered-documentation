@@ -240,7 +240,10 @@ Need drivers for sensors or displays? You can access the [**Soldered MicroPython
 3. Select which libraries to install (just `.py` files, examples, or both).  
 4. The extension automatically downloads and adds the files to your project.
 
+<!--
+Broken link, to fix later:
 <InfoBox>For a detailed explanation of how this works, see the [**Installing Soldered Modules via VS Code**](/micropython/installing-soldered-micropython-modules#option-1-installing-modules-via-vs-code-extension) guide.</InfoBox>
+-->
 
 <CenteredImage src="/img/mp-vsc-ext/soldered-modules.png" width="400px" alt="Soldered Modules" caption="Fetch Soldered MicroPython Module section."/>
 
