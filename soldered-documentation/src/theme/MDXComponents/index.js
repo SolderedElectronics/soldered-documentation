@@ -10,6 +10,7 @@ import MDXLi from '@theme/MDXComponents/Li';
 import MDXImg from '@theme/MDXComponents/Img';
 import Admonition from '@theme/Admonition';
 import Mermaid from '@theme/Mermaid';
+import ReactPlayer from 'react-player';
 
 import ErrorBox from '@site/src/components/error_box';
 import InfoBox from '@site/src/components/info_box';
@@ -58,7 +59,8 @@ const MDXComponents = {
   SectionTitle,
   FunctionDocumentation,
   FlickityCarousel,
-  WebmVideo
+  WebmVideo,
+  ReactPlayer
 };
 
 export default MDXComponents;

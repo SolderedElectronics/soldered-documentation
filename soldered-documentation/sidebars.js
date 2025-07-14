@@ -85,6 +85,10 @@ const sidebars = {
         },
         {
           "type": "category",
+          "label": "Inkplate Models",
+          "items":[
+        {
+          "type": "category",
           "label": "Inkplate 2",
           "items": [
             "inkplate/2/2-quick-start-guide",
@@ -633,6 +637,19 @@ const sidebars = {
             "inkplate/6motion/6motion-additional-resources"
           ]
         }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Inkplate Projects",
+      "items": [
+          "inkplate/projects/google-calendar",
+          "inkplate/projects/open-meteo",
+          "inkplate/projects/openai-text-prompt",
+          "inkplate/projects/openai-image-slideshow",
+          "inkplate/projects/image-uploader"
+      ]
+    }
       ]
     },
     {
