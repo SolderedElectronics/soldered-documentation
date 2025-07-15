@@ -77,7 +77,8 @@ const sidebars = {
                 "inkplate/2/hardware/2-hardware-design",
                 "inkplate/2/hardware/2-hardware-open-source",
                 "inkplate/2/hardware/2-hardware-files",
-                "inkplate/2/hardware/2-hardware-battery"
+                "inkplate/2/hardware/2-hardware-battery",
+                "inkplate/2/hardware/2-hardware-free-gpio"
               ]
             },
             {
@@ -217,7 +218,8 @@ const sidebars = {
                 "inkplate/5v2/hardware/hardware-open-source",
                 "inkplate/5v2/hardware/hardware-files",
                 "inkplate/5v2/hardware/hardware-jumpers",
-                "inkplate/5v2/hardware/hardware-battery"
+                "inkplate/5v2/hardware/hardware-battery",
+                "inkplate/5v2/hardware/hardware-free-gpio"
               ]
             },
             {
@@ -281,7 +283,8 @@ const sidebars = {
                 "inkplate/6/hardware/hardware-open-source",
                 "inkplate/6/hardware/hardware-files",
                 "inkplate/6/hardware/hardware-jumpers",
-                "inkplate/6/hardware/hardware-battery"
+                "inkplate/6/hardware/hardware-battery",
+                "inkplate/6/hardware/hardware-free-gpio"
               ]
             },
             {
