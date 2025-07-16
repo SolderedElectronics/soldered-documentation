@@ -348,7 +348,8 @@ const sidebars = {
                 "inkplate/6color/hardware/hardware-open-source",
                 "inkplate/6color/hardware/hardware-files",
                 "inkplate/6color/hardware/hardware-jumpers",
-                "inkplate/6color/hardware/hardware-battery"
+                "inkplate/6color/hardware/hardware-battery",
+                "inkplate/6color/hardware/hardware-free-gpio"
               ]
             },
             {
