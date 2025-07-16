@@ -2855,6 +2855,22 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Project Kits',
+      items: [
+        {
+          type: 'category',
+          label: 'Sonar project',
+          items: [
+            {
+              type: 'doc',
+              id: 'project-kits/sonar/overview.md'
+            }
+          ]
+        }
+      ]
+    },
   ],
 };
 
