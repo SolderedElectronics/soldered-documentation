@@ -666,6 +666,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'AD8495 EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/arduino_library/ad8495-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/arduino_library/ad8495-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/arduino_library/ad8495-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {
