@@ -413,7 +413,8 @@ const sidebars = {
                 "inkplate/6flick/hardware/6flick-hardware-touchscreen",
                 "inkplate/6flick/hardware/6flick-hardware-frontlight",
                 "inkplate/6flick/hardware/6flick-hardware-jumpers",
-                "inkplate/6flick/hardware/6flick-hardware-battery"
+                "inkplate/6flick/hardware/6flick-hardware-battery",
+                "inkplate/6flick/hardware/hardware-free-gpio"
               ]
             },
             {
@@ -486,7 +487,8 @@ const sidebars = {
                 "inkplate/10/hardware/10-hardware-open-source",
                 "inkplate/10/hardware/10-hardware-files",
                 "inkplate/10/hardware/10-hardware-jumpers",
-                "inkplate/10/hardware/10-hardware-battery"
+                "inkplate/10/hardware/10-hardware-battery",
+                "inkplate/10/hardware/10-hardware-free-gpio"
               ]
             },
             {
@@ -552,7 +554,8 @@ const sidebars = {
                 "inkplate/6motion/hardware/6motion-hardware-files",
                 "inkplate/6motion/hardware/6motion-hardware-jumpers",
                 "inkplate/6motion/hardware/6motion-hardware-esp32",
-                "inkplate/6motion/hardware/6motion-hardware-battery"
+                "inkplate/6motion/hardware/6motion-hardware-battery",
+                "inkplate/6motion/hardware/6motion-hardware-free-gpio"
               ]
             },
             {
