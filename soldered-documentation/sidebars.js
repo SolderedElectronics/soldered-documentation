@@ -2265,6 +2265,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'ATMEL-ICE-SAM Adapter',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/atmel-ice-sam/atmel-ice-sam-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/atmel-ice-sam/atmel-ice-sam-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/atmel-ice-sam/atmel-ice-sam-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'CAN Transciever MCP2518',
           items: [
             {
