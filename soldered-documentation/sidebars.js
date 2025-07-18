@@ -2865,7 +2865,11 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'project-kits/sonar/overview'
+              id: 'project-kits/sonar/sonar-project-overview'
+            },
+            {
+              type: 'doc',
+              id: 'project-kits/sonar/sonar-hardware'
             }
           ]
         }
