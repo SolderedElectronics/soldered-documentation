@@ -2265,6 +2265,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'ATMEL-ICE-AVR Adapter',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/atmel-ice-avr/atmel-ice-avr-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/atmel-ice-avr/atmel-ice-avr-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/atmel-ice-avr/atmel-ice-avr-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'CAN Transciever MCP2518',
           items: [
             {
