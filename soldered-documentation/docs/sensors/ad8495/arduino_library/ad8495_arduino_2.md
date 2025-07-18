@@ -19,45 +19,44 @@ This page contains some simple examples with function documentation on how to ta
 
 To use the AD8495 sensor, first include the required library and create the sensor object.
 
-
 ```cpp
-//Include the library
+// Include the library
 #include <AD8495-SOLDERED.hpp>
 
-int analogPin=A1;
-int resolution=10;
+int analogPin = A1;
+int resolution = 10;
 
-//Create an instance of the sensor
-// The reference voltage indicates what voltage the breakout board is connected to, we reccomend 3.3V
+// Create an instance of the sensor
+// The reference voltage indicates what voltage the breakout board is connected to; we recommend 3.3V
 AD8495 sensor(analogPin, resolution, 3.3);
-
 ```
 
 ---
 
 ## Measuring temperature
-To get temperature values, call the `getTemperatureC()` for temperature in celsuis or `getTemperatureF()` for temperature if farenheit.
+
+To get temperature values, call `getTemperatureC()` to obtain the temperature in Celsius or `getTemperatureF()` to obtain the temperature in Fahrenheit.
 
 ```cpp
-float tempC=sensor.getTemperatureC(10);
-float tempF=sensor.getTemperatureF(10);
+float tempC = sensor.getTemperatureC(10);
+float tempF = sensor.getTemperatureF(10);
 ```
 
 <FunctionDocumentation
   functionName="sensor.getTemperatureC(uint16_t samples)"
-  description="Returns a calculated temperature value in celsius"
-  returnDescription="uint16-t value."
-  parameters={[
-  { type: 'uint16_t', name: 'sample', description: "Number of samples from which an average will be taken." },
+  description="Returns a calculated temperature value in Celsius."
+  returnDescription="uint16_t value."
+  parameters={[ 
+    { type: 'uint16_t', name: 'sample', description: "Number of samples from which an average will be taken." }, 
   ]}
 />
 
 <FunctionDocumentation
   functionName="sensor.getTemperatureF(uint16_t samples)"
-  description="Returns a calculated temperature value in farenheit"
-  returnDescription="uint16-t value."
-  parameters={[
-  { type: 'uint16_t', name: 'sample', description: "Number of samples from which an average will be taken." },
+  description="Returns a calculated temperature value in Fahrenheit."
+  returnDescription="uint16_t value."
+  parameters={[ 
+    { type: 'uint16_t', name: 'sample', description: "Number of samples from which an average will be taken." }, 
   ]}
 />
 
@@ -65,10 +64,9 @@ float tempF=sensor.getTemperatureF(10);
 
 ## Full example
 
-Try all of the above mentioned functions in this full example, which prints put the measured data over Serial at 115200 baud:
+Try all of the above-mentioned functions in this full example, which prints the measured data over Serial at 115200 baud:
 
 ```cpp
-
 /**
  **************************************************
  *
@@ -85,23 +83,21 @@ Try all of the above mentioned functions in this full example, which prints put 
 #include "AD8495-SOLDERED.hpp"
 
 #ifdef __AVR__
-int analogPin=A1;
-int resolution=10;
+int analogPin = A1;
+int resolution = 10;
 #elif ESP32 || ESP8266
-int analogPin=32;
-int resolution=12;
-#else //If youre using alternative boards, enter pin and resolution here
-int analogPin=1;
-int resolution=12;
+int analogPin = 32;
+int resolution = 12;
+#else // If you're using alternative boards, enter pin and resolution here
+int analogPin = 1;
+int resolution = 12;
 #endif
-// Create an AD8495 instance on analog pin
-// The reference voltage indicates what voltage the breakout board is connected to, we reccomend 3.3V
+// Create an AD8495 instance on the analog pin
+// The reference voltage indicates what voltage the breakout board is connected to; we recommend 3.3V
 AD8495 sensor(analogPin, resolution, 3.3);  // 3.3V reference
 
-
-
 void setup() {
-  //Initialize serial communication  
+  // Initialize serial communication  
   Serial.begin(115200);
   // Wait for serial connection 
   while (!Serial);
@@ -124,7 +120,6 @@ void loop() {
   Serial.print(voltage, 4);
   Serial.println(" V");
 
-
   Serial.print("Temperature: ");
   Serial.print(tempC, 2);
   Serial.print(" °C / ");
@@ -133,10 +128,12 @@ void loop() {
 
   Serial.println("------------------------------");
 
-  delay(2000);  // Wait 2 seconds before next reading
+  delay(2000);  // Wait 2 seconds before the next reading
 }
 
 ```
+
+<CenteredImage src="/img/ad8495/serial_monitor_output.png" alt="Serial Monitor for AD8495 temperature measurement" caption="Serial Monitor for AD8495 temperature measurement" width="500px" />
 
 <QuickLink 
   title="MeasureTemperatureAndVoltage.ino" 

@@ -666,7 +666,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'AD8495 EDIT THIS NAME',
+          label: 'AD8495',
           items: [
             {
               type: 'doc',
