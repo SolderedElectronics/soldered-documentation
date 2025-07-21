@@ -2861,7 +2861,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Sonar project',
+          label: 'Sonar',
           items: [
             {
               type: 'doc',
@@ -2870,6 +2870,10 @@ const sidebars = {
             {
               type: 'doc',
               id: 'project-kits/sonar/sonar-hardware'
+            },
+            {
+              type: 'doc',
+              id:'project-kits/sonar/tft-lcd-hardware'
             }
           ]
         }
