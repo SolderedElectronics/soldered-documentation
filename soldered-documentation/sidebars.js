@@ -2873,15 +2873,15 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'project-kits/sonar/laser-hardware'
+                  id: 'project-kits/sonar/hardware-components/laser'
                 },
                 {
                   type: 'doc',
-                  id:'project-kits/sonar/tft-lcd-hardware'
+                  id:'project-kits/sonar/hardware-components/tft-lcd'
                 },
                 {
                   type: 'doc',
-                  id: 'project-kits/sonar/servo-motor-hardware'
+                  id: 'project-kits/sonar/hardware-components/servo-motor'
                 }
               ]
             }

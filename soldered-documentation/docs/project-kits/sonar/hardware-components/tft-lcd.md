@@ -1,8 +1,8 @@
 ---
-slug: /sonar/tft
+slug: /sonar/hardware/tft
 title: Sonar Project Kit - Components
 sidebar_label: TFT LCD Display
-id: tft-lcd-hardware
+id: tft-lcd
 hide_title: false
 pagination_prev: null
 ---

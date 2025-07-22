@@ -1,8 +1,8 @@
 ---
-slug: /sonar/servo
+slug: /sonar/hardware/servo
 title: Sonar Project Kit - Components
 sidebar_label: Servo Motor
-id: servo-motor-hardware
+id: servo-motor
 hide_title: false
 pagination_prev: null
 ---

@@ -1,8 +1,8 @@
 ---
-slug: /sonar/laser
+slug: /sonar/hardware/laser
 title: Sonar Project Kit - Components
 sidebar_label: Laser sensor
-id: laser-hardware
+id: laser
 hide_title: false
 pagination_prev: null
 ---
