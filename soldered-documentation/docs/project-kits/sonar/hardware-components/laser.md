@@ -21,6 +21,31 @@ This is a **time-of-flight (ToF)** laser sensor, it works by emitting a tiny inf
 
 ---
 
+## Pin connection
+| Pin Marking | Pin Name | Description |
+|:---:|:---:|:---:|
+| **VCC** | Power | Supply voltage (3V3 or 5V) |
+| **GND** | Ground | Common ground for power and signals |
+| **SDA** | Data | I²C data line for communication |
+| **SCL** | Clock | I²C clock line for communication |
+
+---
+
+## Qwiic (formerly easyC)  
+
+<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
+ 
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
+
+<QuickLink 
+  title="Qwiic (formerly easyC) details and specifications" 
+  description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
+  url="/qwiic" 
+/>
+
+---
+
+
 ## Working example
 
 <CenteredImage src="/img/under_construction.png" alt="Image of laser disance sensor" caption="Video of working example" width="600px"/>
