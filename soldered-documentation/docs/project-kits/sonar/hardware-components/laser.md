@@ -4,7 +4,6 @@ title: Sonar Project Kit - Components
 sidebar_label: Laser sensor
 id: laser
 hide_title: false
-pagination_prev: null
 ---
 
 ## VL53L1X Laser Sensor

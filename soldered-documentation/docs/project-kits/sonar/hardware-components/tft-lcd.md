@@ -4,7 +4,6 @@ title: Sonar Project Kit - Components
 sidebar_label: TFT LCD Display
 id: tft-lcd
 hide_title: false
-pagination_prev: null
 ---
 
 ## 2.4'' TFT LCD with Touchscreen

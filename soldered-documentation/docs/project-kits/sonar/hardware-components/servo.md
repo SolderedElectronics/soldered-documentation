@@ -4,7 +4,6 @@ title: Sonar Project Kit - Components
 sidebar_label: Servo Motor
 id: servo-motor
 hide_title: false
-pagination_prev: null
 ---
 
 ## Servo Motor TowerPro SG90

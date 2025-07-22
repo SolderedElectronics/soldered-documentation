@@ -2884,6 +2884,10 @@ const sidebars = {
                   id: 'project-kits/sonar/hardware-components/servo-motor'
                 }
               ]
+            },
+            {
+              type: 'doc',
+              id: 'project-kits/sonar/final-system-build'
             }
           ]
         }
