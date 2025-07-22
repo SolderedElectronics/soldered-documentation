@@ -2868,12 +2868,22 @@ const sidebars = {
               id: 'project-kits/sonar/sonar-project-overview'
             },
             {
-              type: 'doc',
-              id: 'project-kits/sonar/sonar-hardware'
-            },
-            {
-              type: 'doc',
-              id:'project-kits/sonar/tft-lcd-hardware'
+              type: 'category',
+              label: 'Hardware',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'project-kits/sonar/laser-hardware'
+                },
+                {
+                  type: 'doc',
+                  id:'project-kits/sonar/tft-lcd-hardware'
+                },
+                {
+                  type: 'doc',
+                  id: 'project-kits/sonar/servo-motor-hardware'
+                }
+              ]
             }
           ]
         }

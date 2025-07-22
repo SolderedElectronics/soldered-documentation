@@ -13,7 +13,7 @@ This is a **2.4'' vibrant full-color TFT display** with **capacitive touchscreen
 <CenteredImage src="/img/tft-lcd/tftlcd.png" alt="Image of TFT LCD Breakout" caption="2.4 inch TFT LCD Touch Breakout" width="600px"/>
 
 ---
-## Which products is this documentation for?
+## Explore the product on our store
 
 <QuickLink 
   title="2.4'' TFT LCD Breakout with Touchscreen" description="333211"
@@ -51,7 +51,7 @@ TFT stands for **Thin-Film Transistor**, a display technology that provides acti
 
 ## Pin Connection Table
 
-| TFT LCD Pin | MCU Role | ESP32 Pin | Notes |
+| TFT LCD Pin | MCU Role / Pin Type | ESP32 Pin | Notes |
 |:---:|:---:|:---:|:---:|
 | **VCC** | VCC | VCC or 3V3 | 3.3V or 5V depending on board |
 | **GND** | GND | Ground | Common ground connection |
@@ -60,9 +60,9 @@ TFT stands for **Thin-Film Transistor**, a display technology that provides acti
 | **D0** | SPI MISO	 | IO19 | Needed for reading touch data |
 | **CSL** | Any free digital GPIO | IO25 | Chip Select for TFT |
 | **DC** | Any free digital GPIO| IO33 | Data/Command |
-| **RST** | Any GPIO or -1 | Any GPIO or -1 | Optional hardware reset |
+| **RST** | Any GPIO or `-1` | Any GPIO or `-1` | Optional hardware reset |
 | **CST** | Any free digital GPIO | IO5 | Chip Select for Touch | 
-| **BL** | VCC or PWM-capable GPIO | Power (VCC / 3V3) or GPIO | Connect to 3.3V or 5V for always-on, or a PWM pin for dimming |
+| **BL** | VCC or PWM-capable GPIO | Power or GPIO | Connect to 3.3V or 5V for always-on, or a PWM pin for dimming |
 
 ---
 

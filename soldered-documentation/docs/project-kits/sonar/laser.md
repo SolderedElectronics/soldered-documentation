@@ -1,14 +1,10 @@
 ---
-slug: /sonar/hardware
+slug: /sonar/laser
 title: Sonar Project Kit - Components
-sidebar_label: Hardware
-id: sonar-hardware
+sidebar_label: Laser sensor
+id: laser-hardware
 hide_title: false
 pagination_prev: null
----
-
-In the following pages, we will go through each component used in the project to gain a better understanding of how they work individually and how they all work together.
-
 ---
 
 ## VL53L1X Laser Sensor
