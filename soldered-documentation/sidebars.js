@@ -666,6 +666,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'VL53L1X Laser Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x laser sensor/vl53l1x laser sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x laser sensor/vl53l1x laser sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x laser sensor/vl53l1x laser sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/vl53l1x laser sensor/arduino_library/vl53l1x laser sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/vl53l1x laser sensor/arduino_library/vl53l1x laser sensor-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/vl53l1x laser sensor/arduino_library/vl53l1x laser sensor-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {
