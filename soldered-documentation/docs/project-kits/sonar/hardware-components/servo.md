@@ -39,8 +39,11 @@ We control servo motors by sending out **PWM (Pulse Width Modulation)** signal t
 ## Sweep both directions example
 
 
-<CenteredImage src="/img/under_construction.png" alt="TFT LCD working example" caption="Video of working example" width="600px"/>
+<ReactPlayer src='../../../videos/sonar-project/servo-demo.mp4' width='100%' height='auto' muted='true' autoPlay='true' loop='true'/>
 
+---
+
+### Example code
 
 ```cpp
 #include <ESP32_Servo.h>
@@ -51,9 +54,9 @@ Servo myservo;  // Create servo object to control a servo
 int pos = 0;    // Variable to store the servo position
 
 void setup() {
-// Attaches the servo on pin 9 to the servo object
+// Attaches the servo on pin 15 to the servo object
 // with MIN and MAX pusle width (optional but recommended)
-  myservo.attach(9, 500, 2400);   
+  myservo.attach(15, 500, 2400);   
 }
 
 void loop() {

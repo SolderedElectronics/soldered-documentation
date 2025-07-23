@@ -71,7 +71,7 @@ TFT stands for **Thin-Film Transistor**, a display technology that provides acti
 
 ---
 
-## Example code
+### Example code
 
 ```cpp
 // Include needed libraries
