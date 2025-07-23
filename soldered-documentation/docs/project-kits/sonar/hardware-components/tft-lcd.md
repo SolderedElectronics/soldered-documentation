@@ -67,7 +67,7 @@ TFT stands for **Thin-Film Transistor**, a display technology that provides acti
 
 ## Working example
 
-<CenteredImage src="/img/under_construction.png" alt="TFT LCD working example" caption="Video of working example" width="600px"/>
+<ReactPlayer src='../../../videos/sonar-project/tft-demo.mp4' width='100%' height='auto' muted='true' autoPlay='true' loop='true'/>
 
 ---
 

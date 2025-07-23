@@ -17,9 +17,7 @@ Two interactive buttons are displayed on the bottom of touchscreen:
 - **START/STOP Button** - allows the user to start or pause the system. When stopped, servo stops rotating and distance readings are no longer updated.
 - **Display Button** - toggles between radar-like display and distance meter. When distance meter display is active the servo doesn't rotate, it provides measured distance directly in front of the sensor. 
 
-For radar graph, detected objects are displayed as colored *"triangles"*. Closer objects are represented in `red` (distance < 150cm), more distant objects are shown in `yellow` (between 150 and 200 cm), while objects that surpass 200cm are drawn in `green`.
-
-Distance meter uses the same logic, only the objects that pass max visual range are displayed as one bar.
+For easire visual understanding, detected objects are displayed as colored *triangles*. Objects that are closer appear in `red`, more distant objects are shown in `yellow` while objects that surpass `MAX_DISTANCE` are drawn in `green`. This same color logic is used in both radar graph and distance meter display, with only minor differences in how they are shown.
 
 
 <CenteredImage src="/img/under_construction.png" alt="Working system example" caption="Full demo of working system" width="600px"/>
