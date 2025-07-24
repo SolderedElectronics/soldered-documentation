@@ -17,8 +17,8 @@ hide_title: False
 | **GND**      | Ground     | Common ground for power and signals.                                        |
 | **SCL**      | Clock      | I²C clock line for communication.                                           |
 | **SDA**      | Data       | I²C data line for communication.                                            |
-| **SHTD**     | Shutdown   | Turn the sensor on or off via hardware.                                     |
-| **GPIO1**    | Interrupt? | Interrupt alert?                                                            |
+| **SHTD**     | Shutdown   | Manually power down or reset the sensor.                                    |
+| **GPIO1**    | Interrupt  | Interrupt line from sensor to microcontroller.                              |
 
 
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>

@@ -27,3 +27,23 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 </InfoBox>
 
 ---
+
+## Connections
+
+Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
+
+
+### Qwiic
+
+| **Dasduino CONNECTPLUS** | **Breakout Board** |
+| ------------------------ | ------------------ |
+| Qwiic                    | Qwiic              |
+
+### Native
+
+| **Dasduino CONNECTPLUS** | **Breakout Board** |
+| ------------------------ | ------------------ |
+| VCC / 3V3                | VCC                |
+| IO21                     | SDA                |
+| IO22                     | SCL                |
+| GND                      | GND                |
