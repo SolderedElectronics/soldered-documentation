@@ -1,6 +1,6 @@
 ---  
 slug: /tps613222a/how-it-works  
-title: TPS61322A- How it works  
+title: TPS61322A - How it works  
 id: tps613222a-how-it-works  
 sidebar_label: How it works
 hide_title: False  
