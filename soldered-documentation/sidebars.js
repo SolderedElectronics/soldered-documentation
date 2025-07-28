@@ -2167,6 +2167,46 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: '2.4" TFT LCD Breakout with Touch',
+          items: [
+            {
+              type: 'doc',
+              id: 'displays/tft-lcd/tft-lcd-overview',
+            },
+            {
+              type: 'doc',
+              id: 'displays/tft-lcd/tft-lcd-hardware-details',
+            },
+            {
+              type: 'doc',
+              id: 'displays/tft-lcd/tft-lcd-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/tft-lcd/arduino_library/tft-lcd-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'SSD1306 0.96" I2C OLED Display',
           items: [
             {
