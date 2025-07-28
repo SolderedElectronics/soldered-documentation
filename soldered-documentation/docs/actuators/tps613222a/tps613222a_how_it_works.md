@@ -4,6 +4,7 @@ title: TPS61322A- How it works
 id: tps613222a-how-it-works  
 sidebar_label: How it works
 hide_title: False  
+pagination_next: null
 --- 
 
 The **TPS613222A** is a synchronous boost converter with only **6.5 µA** quiescent current. It provides a power-supply solution for products powered by an alkaline battery, a NiMH rechargeable battery, or a one-cell Li-ion battery. The boost converter is based on a hysteretic control topology using synchronous rectification to obtain maximum efficiency at minimal quiescent current. The TPS61322 also allows the use of a small external inductor and capacitors. Higher than **90% efficiency** is achieved at a **10 mA** load from **1.5 V input** to **2.2 V output** conversion.
