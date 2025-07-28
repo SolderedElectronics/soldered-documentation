@@ -4,7 +4,6 @@ title: Inkplate 6 - Quick start guide
 sidebar_label: Quick start guide
 id: quick-start-guide  
 hide_title: True  
-pagination_prev: null  
 ---  
 <SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
 
