@@ -1,5 +1,5 @@
 ---
-slug: /inkplate-4-tempera/overview
+slug: /inkplate/4tempera/overview
 title: Inkplate 4TEMPERA - Overview
 sidebar_label: Overview
 id: 4tempera-overview

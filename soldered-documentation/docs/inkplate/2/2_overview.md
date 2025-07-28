@@ -1,5 +1,5 @@
 ---  
-slug: /inkplate-2/overview  
+slug: /inkplate/2/overview  
 title: Inkplate 2 - Overview  
 sidebar_label: Overview  
 id: 2-overview  
