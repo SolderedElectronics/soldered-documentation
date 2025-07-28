@@ -20,21 +20,21 @@ The board is powered by a dual-core architecture: a **STM32H743 main processor**
 <QuickLink 
   title=" Inkplate 6MOTION" 
   description="333321"
-  url="https://soldered.com/product/inkplate-10-9-7-e-paper-board-copy/"
+  url="https://soldered.com/product/inkplate-6-motion/"
   image="/img/inkplate_6_motion/333321.png" 
 />
 
 <QuickLink 
   title=" Inkplate 6MOTION with e-paper & enclosure" 
   description="333322"
-  url="https://soldered.com/product/inkplate-10-9-7-e-paper-board-copy/"
+  url="https://soldered.com/product/inkplate-6-motion/"
   image="/img/inkplate_6_motion/enclosure.png" 
 />
 
 <QuickLink 
   title=" Inkplate 6MOTION with e-paper, Enclosure & Battery" 
   description="333324"
-  url="https://soldered.com/product/inkplate-10-9-7-e-paper-board-copy/"
+  url="https://soldered.com/product/inkplate-6-motion/"
   image="/img/inkplate_6_motion/ennbat.png" 
 />
 
