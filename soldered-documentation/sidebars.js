@@ -99,6 +99,7 @@ const sidebars = {
           "type": "category",
           "label": "Inkplate 2",
           "items": [
+            "inkplate/2/2-overview",
             "inkplate/2/2-quick-start-guide",
             {
               "type": "category",
@@ -152,6 +153,7 @@ const sidebars = {
           "type": "category",
           "label": "Inkplate 4TEMPERA",
           "items": [
+            "inkplate/4tempera/4tempera-overview",
             "inkplate/4tempera/4tempera-quick-start-guide",
             {
               "type": "category",
@@ -238,6 +240,7 @@ const sidebars = {
           "type": "category",
           "label": "Inkplate 5V2",
           "items": [
+            "inkplate/5v2/5v2-overview",
             "inkplate/5v2/quick-start-guide",
             {
               "type": "category",
