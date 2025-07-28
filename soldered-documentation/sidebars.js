@@ -94,6 +94,20 @@ const sidebars = {
             },
           ]
         },
+        {
+          type: 'category',
+          label: 'LED dice Solder kit',
+          items:[
+            {
+              type: 'doc',
+              id: 'solder-kits/led-dice/led-dice-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/led-dice/led-dice-assembly-guide',
+            },
+          ]
+        },
       ],
     },
   ],

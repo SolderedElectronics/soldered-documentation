@@ -6,7 +6,10 @@ hide_title: False
 ---
 
 ## Step 1: Solder the resistors to the PCB.
-Solder the resistors to the PCB on pins marked **R1** to **R4**. their orientation doesn't matter.
+Solder the **330 Ohm** resistors to the PCB on pins marked **R1** to **R4**. their orientation doesn't matter.
+
+<CenteredImage src="/img/simon-says-game/330ohm-resistor.jpg" alt="Markings for the 330 Ohm resistor" caption="Markings for the 330 Ohm resistor" width="400px"/>
+
 <CenteredImage src="/img/simon-says-game/resistors_highlighted.jpg" alt="Highlighted pins for resistors R1 to R4" caption="Highlighted pins for resistors R1 to R4" width="600px"/>
 ---
 

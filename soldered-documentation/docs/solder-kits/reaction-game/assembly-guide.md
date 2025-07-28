@@ -8,7 +8,10 @@ hide_title: False
 On this page, we will guide step by step on how to assemble this kit.
 
 ## Step 1: Solder the resistors to the PCB.
-Solder the resistors to the PCB on pins marked **R1** to **R4**. their orientation doesn't matter.
+Solder the **330 Ohm** resistors to the PCB on pins marked **R1** to **R4**. their orientation doesn't matter.
+
+<CenteredImage src="/img/reaction-game/330ohm-resistor.jpg" alt="Markings for the 330 Ohm resistor" caption="Markings for the 330 Ohm resistor" width="400px"/>
+
 <CenteredImage src="/img/reaction-game/resistors_highlighted.jpg" alt="Highlighted pins for resistors R1 to R6" caption="Highlighted pins for resistors R1 to R6" width="600px"/>
 
 ---
