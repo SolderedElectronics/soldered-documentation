@@ -9,40 +9,40 @@ pagination_prev: null
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
 
-**Inkplate 5 Gen2** is a versatile, low-power **5.2-inch e-paper development board** designed for makers, educators, and product developers. Built on the reliable **ESP32 microcontroller**, it offers **Wi-Fi** and **Bluetooth 4.0 (BLE)** connectivity, fast screen refresh rates, and excellent sunlight readability. This fully open-source device is ready to go out of the box and programmable using both **Arduino** and **MicroPython**.
+**Inkplate 5 Gen2** is a versatile, low-power **5.2-inch e-paper development board** designed for makers, educators, and product developers. Built on the reliable **ESP32 microcontroller**, it offers **Wi-Fi** and **Bluetooth 4.0 (BLE)** connectivity, fast screen refresh rates, and excellent sunlight readability. This fully open-source device is ready to use right out of the box and can be programmed using both **Arduino** and **MicroPython**.
 
-Its **ultra-low power consumption**—just 18 µA in deep sleep—makes it ideal for long-term, battery-powered applications. With a **microSD card slot**, **RTC**, and **GPIO expansion** via EasyC/Qwiic, it's the perfect foundation for custom display projects.
+Its **ultra-low power consumption**, at just 18 µA in deep sleep, makes it ideal for long-term, battery-powered applications. With a **microSD card slot**, **RTC**, and **GPIO expansion** via EasyC/Qwiic, it's the perfect foundation for custom display projects.
 
-<CenteredImage src="/img/inkplate_2/333166.png" alt="Inkplate 2" caption="Inkplate 2 e-paper display board"/>
+<CenteredImage src="/img/5v2/333333.png" alt="Inkplate 5v2" caption="Inkplate 5v2 e-paper display board"/>
 
 ## Which product is this documentation for?
 
 <QuickLink 
-  title="Inkplate 2" 
-  description="333166"
-  url="https://soldered.com/product/inkplate-2/"
-  image="/img/inkplate_2/333166.png" 
+  title="Inkplate 5v2" 
+  description="333333"
+  url="https://soldered.com/product/inkplate-5-gen2/"
+  image="/img/5v2/333333.png" 
 />
 
 <QuickLink 
-  title="Inkplate 2 without e-paper Display" 
-  description="333227"
-  url="https://soldered.com/product/inkplate-2/"
-  image="/img/inkplate_2/withoutboard.png" 
+  title="Inkplate 5v2 without e-paper Display" 
+  description="333335"
+  url="https://soldered.com/product/inkplate-5-gen2/"
+  image="/img/5v2/boardonly.png" 
 />
 
 <QuickLink 
-  title="Inkplate 2 with e-paper & enclosure" 
-  description="333167"
-  url="https://soldered.com/product/inkplate-2/"
-  image="/img/inkplate_2/enclosure.png" 
+  title="Inkplate 5v2 with e-paper & enclosure" 
+  description="333334"
+  url="https://soldered.com/product/inkplate-5-gen2/"
+  image="/img/5v2/enclosure.png" 
 />
 
 <QuickLink 
-  title="Inkplate 2 with e-paper, Enclosure & Battery" 
-  description="333228"
-  url="https://soldered.com/product/inkplate-2/"
-  image="/img/inkplate_2/ennbat.png" 
+  title="Inkplate 5v2 with e-paper, Enclosure & Battery" 
+  description="333336"
+  url="https://soldered.com/product/inkplate-5-gen2/"
+  image="/img/5v2/ennbat.png" 
 />
 
 ## Key Features
@@ -60,4 +60,3 @@ Its **ultra-low power consumption**—just 18 µA in deep sleep—makes it ideal
   - With e-paper screen & 3D-printed casing
   - With screen, casing, and 1200mAh battery
   - Without screen (for custom integrations)
-- **Open Source:** Hardware and software

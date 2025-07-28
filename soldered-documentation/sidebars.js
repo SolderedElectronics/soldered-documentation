@@ -305,6 +305,7 @@ const sidebars = {
           "type": "category",
           "label": "Inkplate 6",
           "items": [
+            "inkplate/6/6-overview",
             "inkplate/6/quick-start-guide",
             {
               "type": "category",
@@ -369,6 +370,7 @@ const sidebars = {
           "type": "category",
           "label": "Inkplate 6COLOR",
           "items": [
+            "inkplate/6color/6color-overview",
             "inkplate/6color/quick-start-guide",
             {
               "type": "category",
@@ -431,6 +433,7 @@ const sidebars = {
           "type": "category",
           "label": "Inkplate 6FLICK",
           "items": [
+            "inkplate/6flick/6flick-overview",
             "inkplate/6flick/6flick-quick-start-guide",
             {
               "type": "category",
@@ -506,6 +509,7 @@ const sidebars = {
           "type": "category",
           "label": "Inkplate 10",
           "items": [
+            "inkplate/10/10-overview",
             "inkplate/10/10-quick-start-guide",
             {
               "type": "category",
@@ -570,6 +574,7 @@ const sidebars = {
           "type": "category",
           "label": "Inkplate 6MOTION",
           "items": [
+            "inkplate/6motion/6motion-overview",
             "inkplate/6motion/6motion-quick-start-guide",
             "inkplate/6motion/6motion-uploading-code",
             {
