@@ -1,6 +1,6 @@
 ---
 slug: /sonar/hardware/servo
-title: Sonar Project Kit - Components
+title: Sonar Project - Servo SG90
 sidebar_label: Servo Motor
 id: servo-motor
 hide_title: false
@@ -16,11 +16,11 @@ We control servo motors by sending out **PWM (Pulse Width Modulation)** signal t
 
 ---
 
-## Explore the product on our store
+## Full product details
 
 <QuickLink 
   title="Servo motor TowerPro SG90" description="101246"
-  url="https://soldered.com/product/servo-motor-towerpro-sg90/"
+  url="https://solde.red/101246"
   image="/img/sonar-project/microservo.png" 
 />
 

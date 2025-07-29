@@ -1,6 +1,6 @@
 ---
 slug: /sonar/hardware/tft
-title: Sonar Project Kit - Components
+title: Sonar Project - TFT LCD Display
 sidebar_label: TFT LCD Display
 id: tft-lcd
 hide_title: false
@@ -12,11 +12,11 @@ This is a **2.4'' vibrant full-color TFT display** with **capacitive touchscreen
 <CenteredImage src="/img/tft-lcd/tftlcd.png" alt="Image of TFT LCD Breakout" caption="2.4 inch TFT LCD Touch Breakout" width="600px"/>
 
 ---
-## Explore the product on our store
+## Full product details
 
 <QuickLink 
   title="2.4'' TFT LCD Breakout with Touchscreen" description="333211"
-  url="https://soldered.com/product/tft-lcd-breakout-2-4-with-touch/"
+  url="https://solde.red/333211"
   image="/img/tft-lcd/tftlcd.png" 
 />
 

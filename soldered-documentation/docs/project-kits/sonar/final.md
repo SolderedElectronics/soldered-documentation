@@ -1,6 +1,6 @@
 ---
 slug: /sonar/final-build
-title: Full system integration
+title: Full system build
 sidebar_label: Final build
 id: final-system-build
 hide_title: false
@@ -17,7 +17,7 @@ Two interactive buttons are displayed on the bottom of touchscreen:
 - **START/STOP Button** - allows the user to start or pause the system. When stopped, servo stops rotating and distance readings are no longer updated.
 - **Display Button** - toggles between radar-like display and distance meter. When distance meter display is active the servo doesn't rotate, it provides measured distance directly in front of the sensor. 
 
-For easire visual understanding, detected objects are displayed as colored *triangles*. Objects that are closer appear in `red`, more distant objects are shown in `yellow` while objects that surpass `MAX_DISTANCE` are drawn in `green`. This same color logic is used in both radar graph and distance meter display, with only minor differences in how they are shown.
+For easire visual understanding, detected objects are displayed as colored *triangles*. Objects that are closer appear in `red`, more distant objects are shown in `yellow`. This same color logic is used in both radar graph and distance meter display, with only minor differences in how they are shown.
 
 
 <CenteredImage src="/img/under_construction.png" alt="Working system example" caption="Full demo of working system" width="600px"/>
@@ -90,7 +90,7 @@ void loop() {
 }
 ```
 
-### Full code on our GitHub
+### View full code on GitHub
 <QuickLink 
   title="Sonar Project" description=""
   url=""

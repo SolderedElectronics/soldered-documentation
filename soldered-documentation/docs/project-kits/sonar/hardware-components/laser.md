@@ -1,6 +1,6 @@
 ---
 slug: /sonar/hardware/laser
-title: Sonar Project Kit - Components
+title: Sonar Project - VL53L1X
 sidebar_label: Laser sensor
 id: laser
 hide_title: false
@@ -10,6 +10,18 @@ hide_title: false
 This is a **time-of-flight (ToF)** laser sensor, it works by emitting a tiny infrared laser which is invisible to human eye and measures how long it takes for the light to bounce back to a matching onboard sensor ("flight" time). It uses a very focued laser beam to measure distance directly in front of it with LIDAR-grade precision, avoiding the common angle issues that occur in ultrasonic and IR sensors.
 
 <CenteredImage src="/img/sonar-project/laser-vl53l1x.jpg" alt="Image of laser disance sensor" width="600px"/>
+
+---
+
+## Full product details
+
+<QuickLink 
+  title="VL53L1X Laser Sensor" description="Nema"
+  url="https://solde.red/LASERPROIZVOD"
+  image="/img/sonar-project/laser-vl53l1x.jpg" 
+/>
+
+---
 
 ### Key specs
 - **Range:** approximately 0.03 - 4m (30mm to 4000mm) 
@@ -51,6 +63,7 @@ This is a **time-of-flight (ToF)** laser sensor, it works by emitting a tiny inf
 ---
 
 ### Example code
+Example code that outputs continous distance measurement to serial monitor.
 
 ```cpp
 #include "VL53L1X-SOLDERED.h"
@@ -88,3 +101,5 @@ void loop()
     Serial.println();
 }
 ```
+
+<CenteredImage src="/img/sonar-project/laser-sensor-serial.png" alt="Example code output" width="100%"/>
