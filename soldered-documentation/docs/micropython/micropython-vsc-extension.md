@@ -23,38 +23,31 @@ Writing **MicroPython** code in **Visual Studio Code (VS Code)** provides a much
 
 Before using the extension, make sure the following tools are installed **and working** correctly. These tools are **essential** for communication with your MicroPython board.
 
-<InfoBox title="Why do I need all this?">To upload files, flash firmware, and access serial output from your MicroPython board, your system must have the right tools installed and available globally via your terminal.</InfoBox>
+<InfoBox title="Why do I need this?">To upload files, flash firmware, and access serial output from your MicroPython board, your system must have Python installed along with a few key command-line tools.</InfoBox>
 
 ### Required Tools
 
 - **[Visual Studio Code](https://code.visualstudio.com/)** – main development environment  
-- **[Python 3.7+](https://www.python.org/downloads/)** – used to run `esptool` and `mpremote`  
-- **[Node.js + npm](https://nodejs.org/)** – used by the extension to access serial ports (via the `serialport` library)
+- **[Python 3.7+](https://www.python.org/downloads/)** – required to run `esptool` and `mpremote`  
 
-<WarningBox title="Important">You must be able to run the commands `python`, `node`, and `npm` in your terminal. If these commands fail, your environment is not set up correctly.</WarningBox>
+<WarningBox title="Important">You must be able to run the command `python` in your terminal. If this command fails, your environment is not set up correctly.</WarningBox>
 
 Verify installation:
 
 ```bash
 python --version   # Expected: Python 3.7 or higher
-node -v            # Expected: Node.js 14+ or higher
-npm -v             # Confirms npm is available
 ```
 
 ## Quick Setup: Install Required Tools
 
 - **[`esptool`](https://github.com/espressif/esptool)** – used to flash MicroPython firmware to ESP32/ESP8266 boards  
 - **[`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html)** – used to run code, upload files, and interact with your board over USB  
-- **[`serialport`](https://www.npmjs.com/package/serialport)** – a Node.js library the extension uses to read/write serial data
 
 Run the following commands **in your terminal** to install everything:
 
 ```bash
 # Install Python tools for firmware flashing and file communication
 pip install esptool mpremote
-
-# Install Node.js package for serial communication
-npm install serialport
 ```
 
 If these commands succeed without errors, you're ready to use the extension.
