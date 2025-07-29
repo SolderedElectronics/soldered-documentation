@@ -41,7 +41,10 @@ hide_title: False
 
 ## Dimensions
 
-- **Board Dimensions:**
+- **Board Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)  
+- **Header Pin Holes:** 1.5 mm  
+- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
+- Soldered boards are LEGO compatible! 🧱 
 
 ---
 
