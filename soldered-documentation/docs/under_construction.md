@@ -1,6 +1,6 @@
 ---
 slug: /under-construction
-title: Under construction
+title: Under Construction - Under construction
 id: under-construction
 hide_title: true
 pagination_next: null

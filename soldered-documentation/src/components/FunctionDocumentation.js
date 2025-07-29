@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./functionDocumentation.module.css";
 
-const FunctionDocumentation = ({ functionName, description, returnDescription, parameters }) => (
+const FunctionDocumentation = ({ functionName, description, returnDescription, returnType, parameters }) => (
   <div className={styles.functionDocumentation}>
     {/* Header Section */}
     <div className={styles.headerSection}>
@@ -17,11 +17,20 @@ const FunctionDocumentation = ({ functionName, description, returnDescription, p
       <p>{description}</p>
 
       {/* Return Type and Description */}
-      <div className={styles.returnSection}>
-        <p>
-          <strong>Returns:</strong> {returnDescription}
-        </p>
-      </div>
+      {(returnType || returnDescription) && (
+        <div className={styles.returnSection}>
+          {returnType && (
+            <p>
+              <strong>Returns type:</strong> <code>{returnType}</code>
+            </p>
+          )}
+          {returnDescription && (
+            <p>
+              <strong>Returns value:</strong> {returnDescription}
+            </p>
+          )}
+        </div>
+      )}
 
       {/* Parameters Table (Only Render if Parameters Exist) */}
       {parameters && parameters.length > 0 && (

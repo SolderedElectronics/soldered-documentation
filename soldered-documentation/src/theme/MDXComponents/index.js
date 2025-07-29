@@ -10,6 +10,7 @@ import MDXLi from '@theme/MDXComponents/Li';
 import MDXImg from '@theme/MDXComponents/Img';
 import Admonition from '@theme/Admonition';
 import Mermaid from '@theme/Mermaid';
+import ReactPlayer from 'react-player';
 
 import ErrorBox from '@site/src/components/error_box';
 import InfoBox from '@site/src/components/info_box';
@@ -23,6 +24,7 @@ import QuickLink from '@site/src/components/QuickLink';
 import SectionTitle from '@site/src/components/SectionTitle';
 import FunctionDocumentation from '@site/src/components/FunctionDocumentation';
 import FlickityCarousel from '@site/src/components/FlickityCarousel';
+import WebmVideo from '@site/src/components/WebmVideo';
 
 const MDXComponents = {
   // Built-in Docusaurus components
@@ -57,6 +59,8 @@ const MDXComponents = {
   SectionTitle,
   FunctionDocumentation,
   FlickityCarousel,
+  WebmVideo,
+  ReactPlayer
 };
 
 export default MDXComponents;

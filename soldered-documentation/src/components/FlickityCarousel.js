@@ -13,9 +13,9 @@ const FlickityCarouselInner = ({ images, options = { wrapAround: true }, jumpers
     if (typeof window !== 'undefined') {
       const Flickity = require('flickity');
       const imagesLoaded = require('imagesloaded');
-      
+
       if (carouselRef.current && !flickityInstance.current) {
-        imagesLoaded(carouselRef.current, function() {
+        imagesLoaded(carouselRef.current, function () {
           console.log('Images loaded, initializing Flickity');
           flickityInstance.current = new Flickity(carouselRef.current, {
             wrapAround: true,
@@ -26,7 +26,7 @@ const FlickityCarouselInner = ({ images, options = { wrapAround: true }, jumpers
         });
       }
     }
-    
+
     return () => {
       if (flickityInstance.current) {
         flickityInstance.current.destroy();
@@ -41,20 +41,27 @@ const FlickityCarouselInner = ({ images, options = { wrapAround: true }, jumpers
         className={`${styles.carousel} ${jumpers ? styles.jumpersBackground : ''}`}
         ref={carouselRef}
       >
-        {images && images.map((image, index) => (
-          <div key={index} className={styles.carouselCell}>
-            <div className={styles.imageWrapper}>
-              <img 
-                src={useBaseUrl(image.src)} 
-                alt={image.alt || 'Carousel image'} 
-                className={styles.image} 
-                onLoad={() => console.log(`Image ${index} loaded:`, image.src)}
-                onError={() => console.error(`Failed to load image ${index}:`, image.src)}
-              />
-            </div>
-            {image.caption && <div className={styles.caption}>{image.caption}</div>}
+      {images && images.map((image, index) => (
+        <div
+          key={index}
+          className={`${styles.carouselCell} ${images.length === 2 ? styles.fullWidthCellFix : ''}`}
+        >
+          <div className={styles.imageWrapper}>
+            <img 
+              src={useBaseUrl(image.src)} 
+              alt={image.alt || 'Carousel image'} 
+              className={styles.image} 
+              onLoad={() => console.log(`Image ${index} loaded:`, image.src)}
+              onError={() => console.error(`Failed to load image ${index}:`, image.src)}
+            />
           </div>
-        ))}
+          {image.caption && (
+            <div className={`${styles.captionFix}`}>
+              {image.caption}
+            </div>
+          )}
+        </div>
+      ))}
       </div>
       {!isLoaded && (
         <div className={styles.loadingIndicator}>Loading carousel...</div>

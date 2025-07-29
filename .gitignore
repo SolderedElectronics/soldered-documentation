@@ -1,2 +1,4 @@
 node_modules/
 /documentation-buddy/static/uploads
+.env
+soldered-documentation/docs/process_titles.py

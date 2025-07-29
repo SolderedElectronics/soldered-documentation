@@ -212,3 +212,22 @@ div[role=banner] {
 [data-theme='dark'] div[role=banner] {
   background-color: #393e4a !important;
 }
+
+.menu__list-item {
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) * var(--docusaurus-sidebar-level));
+}
+
+.menu__link {
+  font-weight: normal;
+}
+
+.menu__list-item--collapsed>.menu__link {
+  font-weight: bold;
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Negative margin to counteract card margins for alignment, if cards have margins */
+  margin: -10px; /* This should match the margin set on .inkplateTileCard */
+}

@@ -1,8 +1,9 @@
 ---
-slug: /qwiic 
-title: Qwiic (formerly easyC)
+slug: /qwiic
+title: Qwiic - Qwiic (formerly easyC)
+sidebar_label: Qwiic (formerly easyC)
 id: qwiic
-hide_title: False
+hide_title: false
 pagination_next: null
 pagination_prev: null
 ---
@@ -75,5 +76,4 @@ The **4-pin Qwiic cable** follows this **standard color coding**:
   url="https://soldered.com/product/raspberry-pi-easyc-adapter/"
   image="/img/333019.jpg" 
 />  
-
 

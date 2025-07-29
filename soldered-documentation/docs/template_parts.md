@@ -1,6 +1,6 @@
 ---
 slug: /template-parts
-title: Template parts
+title: Template Parts - Template parts
 id: template-parts
 hide_title: false
 ---
@@ -130,6 +130,19 @@ void loop() {
 
 ---
 
+## Centered Image with attribution
+
+<CenteredImage
+  src="/img/soldered_docs_social_card.jpg"
+  alt="Descriptive alt text"
+  caption="This is a cool image"
+  attribution_name="Unsplash Author"
+  attribution_link="https://unsplash.com/@author"
+/>
+
+
+---
+
 ## QuickLink
 
 <QuickLink 
@@ -169,10 +182,23 @@ void loop() {
   functionName="inkplate.connectWiFi()"
   description="This function attempts to connect to WiFi."
   returnDescription="Number"
+  returnType="int"
   parameters={[
     { type: 'Number', name: 'a', description: 'The first number to add.' },
     { type: 'Number', name: 'b', description: 'The second number to add.' },
   ]}
 />
 
+---
 
+import WebmPlayer from '@site/src/components/WebmPlayer';
+
+# My Page with a WebM Video
+
+Here's a cool WebM video:
+
+<WebmPlayer src="/videos/test2.webm" width={600} />
+
+Another video, full width:
+
+<WebmPlayer src="/videos/test2.webm" />

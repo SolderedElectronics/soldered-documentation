@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Select Time Range - Webm Maker{% endblock %}
+
+{% block content %}
+<h1>Trim WebM</h1>
+
+<div class="form-container">
+    <video width="100%" controls style="margin-bottom: 1rem;">
+        <source src="{{ url_for('static', filename='uploads/' + filename) }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <form method="POST" action="/webm-maker/export">
+        <input type="hidden" name="filename" value="{{ filename }}">
+
+        <div class="form-group">
+            <label for="start_time">Start Time (mm:ss):</label>
+            <input type="text" id="start_time" name="start_time" placeholder="e.g. 00:30" required class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="end_time">End Time (mm:ss):</label>
+            <input type="text" id="end_time" name="end_time" placeholder="e.g. 02:00" required class="form-control">
+        </div>
+
+        <button type="submit" class="submit-btn">EXPORT AS WEBM</button>
+    </form>
+</div>
+
+{% if message %}
+<div class="result-message {% if success %}success{% else %}error{% endif %}">
+    {{ message }}
+</div>
+{% endif %}
+{% endblock %}

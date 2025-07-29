@@ -1,16 +1,8 @@
-/* src/components/centered_image.module.css */
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers content horizontally */
+.caption,
+.attribution {
   text-align: center;
-  margin: 2rem 0;
-}
-
-.image {
-  height: auto;
-  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .caption {
@@ -21,4 +13,36 @@
 
 [data-theme='dark'] .caption {
   color: rgb(227, 227, 227);
+}
+
+.attribution {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: rgb(130, 130, 130);
+}
+
+.attribution a {
+  color: rgb(90, 90, 160);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+[data-theme='dark'] .attribution {
+  color: rgb(190, 190, 190);
+}
+
+[data-theme='dark'] .attribution a {
+  color: rgb(180, 180, 255);
+}
+
+.image {
+  height: auto;
+  border-radius: 8px;
+  display: block;               /* makes it centerable */
+  margin-left: auto;            /* center horizontally */
+  margin-right: auto;
+  max-width: 100%;              /* stay within container */
 }

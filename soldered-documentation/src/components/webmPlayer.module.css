@@ -1,0 +1,12 @@
+.webmPlayerContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Add some vertical spacing */
+}
+
+.webmPlayerContainer video {
+  max-width: 100%; /* Ensure video doesn't overflow its container */
+  height: auto;
+  border-radius: 8px; /* Optional: subtle rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}

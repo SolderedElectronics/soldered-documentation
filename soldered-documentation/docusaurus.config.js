@@ -6,6 +6,8 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
+require('dotenv').config();
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -27,6 +29,7 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: true,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -50,6 +53,12 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: process.env.GOOGLE_GTAG
+        ? {
+            trackingID: process.env.GOOGLE_GTAG,
+            anonymizeIP: true,
+          }
+        : undefined,
       }),
     ],
   ],
@@ -74,7 +83,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'Welcome to the new and improved documentation page for Soldered products! • <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://soldered.com/contact/">here</a></b>.',
+          'This documentation is a work in progress! <b>Please leave your feedback <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfrMbqVxULcbCoIPQa1QBy6WXbjvJDai8psRWJbCaa6lGO9lw/viewform?usp=header">here</a></b>.',
         backgroundColor: '#6F3B8B',
         textColor: '#ffffff',
         isCloseable: false,
@@ -82,7 +91,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: false,
-          autoCollapseCategories: false,
+          autoCollapseCategories: true,
         },
       },
       image: 'img/soldered_docs_social_card.jpg',
@@ -102,12 +111,14 @@ const config = {
           },
         ],
       },
-      algolia: {
-        // TODO when docs are published, request API key so it can be implemented
-        apiKey: 'YOUR_API_KEY',
-        indexName: 'YOUR_INDEX_NAME',
-        appId: 'YOUR_APP_ID',
-      },
+      algolia: process.env.ALGOLIA_APP_ID
+        ? {
+          apiKey: process.env.ALGOLIA_API_KEY,
+          indexName: process.env.ALGOLIA_INDEX_NAME,
+          appId: process.env.ALGOLIA_APP_ID,
+          contextualSearch: false, // Important!
+        }
+        : undefined,
       footer: {
         links: [
           {
@@ -149,6 +160,10 @@ const config = {
             items: [
               {
                 label: 'Getting started with Inkplate',
+                href: 'https://inkplate.readthedocs.io/',
+              },
+              {
+                label: 'Getting started with Inkplate 6MOTION',
                 href: 'https://docs.inkplate.com/',
               },
               {

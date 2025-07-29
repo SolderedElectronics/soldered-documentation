@@ -102,3 +102,26 @@
     width: 100%;
   }
 }
+
+/* Add at the bottom of the file */
+
+.fullWidthCellFix {
+  min-width: 100% !important;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+.captionFix {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: rgb(61, 63, 66);
+  margin: 0;
+}
+
+[data-theme='dark'] .captionFix {
+  background-color: rgb(27, 27, 29);
+  color: white;
+}
