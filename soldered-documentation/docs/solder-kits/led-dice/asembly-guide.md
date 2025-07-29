@@ -15,17 +15,20 @@ Use a multimeter to differentiate resistor based on their resistance value. Star
 Solder the 330Ohm resistors to the bpc on pins marked **R2-R8**. Their orientation doesn't matter.
 
 Find the resistors with markings as shown below:
-<CenteredImage src="/img/dasduinoCORE-solder-kit/100ohm-resistor.jpg" alt="Markings for the 100 Ohm resistor" caption="Markings for the 100 Ohm resistor" width="400px"/>
-<CenteredImage src="/img/led-dice/330ohm.jpg" alt="Highlighted pins for 330Ohm resistors" caption="Highlighted pins for 330Ohm resistors" width="400px"/>
+<CenteredImage src="/img/dasduinoCORE-solder-kit/100ohm-resistor.jpg" alt="Markings for the 100 Ohm resistor" caption="Markings for the 100 Ohm resistor" width="600px"/>
+<CenteredImage src="/img/led-dice/330ohm.jpg" alt="Highlighted pins for 330Ohm resistors" caption="Highlighted pins for 330Ohm resistors" width="600px"/>
+<ReactPlayer  src='../../img/led-dice/100-r-video.mp4' height='auto' width="600px" muted='true' autoPlay='true' loop='true' style={{ margin: '0 auto', display: 'block' }} />
 
 
 ### Solder the 10kOhm resistors
 Solder the 10kOhm resistors to the pcb on pins marked **R1**. Their orientation doesn't matter. 
 
 Find the resistors with markings as shown below:
-<CenteredImage src="/img/dasduinoCORE-solder-kit/10kohm-resistor.jpg" alt="Markings for the 10k Ohm resistor" caption="Markings for the 10k Ohm resistor" width="400px"/>
+<CenteredImage src="/img/dasduinoCORE-solder-kit/10kohm-resistor.jpg" alt="Markings for the 10k Ohm resistor" caption="Markings for the 10k Ohm resistor" width="600px"/>
 
-<CenteredImage src="/img/led-dice/10kohm.jpg" alt="Highlighted pins for 10k Ohm resistors" caption="Highlighted pins for 10k Ohm resistors" width="400px" />
+<CenteredImage src="/img/led-dice/10kohm.jpg" alt="Highlighted pins for 10k Ohm resistors" caption="Highlighted pins for 10k Ohm resistors" width="600px" />
+
+<ReactPlayer  src='../../img/led-dice/10k-r-video.mp4' height='auto' width="600px" muted='true' autoPlay='true' loop='true' style={{ margin: '0 auto', display: 'block' }} />
 
 
 ---
@@ -33,7 +36,8 @@ Find the resistors with markings as shown below:
 ## Step 2: Solder the LEDs
 Solder the LEDs to the pcb on pins marked **L1-L7**
 <CenteredImage src="/img/dasduinoCORE-solder-kit/led.jpg" alt="Marked pins on LED" caption="Marked pins on LED" width="600px"/>
-<CenteredImage src="/img/led-dice/leds.jpg" alt="Highlighted pins for LEDs" caption="Highlighted pins for LEDs" width="400px" />
+<CenteredImage src="/img/led-dice/leds.jpg" alt="Highlighted pins for LEDs" caption="Highlighted pins for LEDs" width="600px" />
+<ReactPlayer  src='../../img/led-dice/led-video.mp4' height='auto' width="600px" muted='true' autoPlay='true' loop='true' style={{ margin: '0 auto', display: 'block' }} />
 
 ---
 
@@ -41,16 +45,19 @@ Solder the LEDs to the pcb on pins marked **L1-L7**
 
 Solder the SW-18020P on the pins marked **S2**
 
-<CenteredImage src="/img/led-dice/sw18020p.jpg" alt="Highlighted pins for Vibration sensor" caption="Highlighted pins for Vibration sensor" width="400px"/>
+<CenteredImage src="/img/led-dice/sw18020p.jpg" alt="Highlighted pins for Vibration sensor" caption="Highlighted pins for Vibration sensor" width="600px"/>
+<ReactPlayer  src='../../img/led-dice/SW-video.mp4' height='auto' width="600px" muted='true' autoPlay='true' loop='true' style={{ margin: '0 auto', display: 'block' }} />
 
 ---
 
 ## Step 4: Solder the switch
 Solder the switch on pins marked **S1**, orientation doesn't matter.
 <CenteredImage src="/img/led-dice/switch.jpg" alt="Highlighted pins for switch" caption="Highlighted pins for switch" width="600px"/>
+<ReactPlayer  src='../../img/led-dice/switch-video.mp4' height='auto' width="600px" muted='true' autoPlay='true' loop='true' style={{ margin: '0 auto', display: 'block' }} />
 
 ---
 
 ## Step 5: Solder the CR2032 battery holder
 Rotate the pcb on its back side up and align the holder with drawn topology on pins marked **BAT**.
 <CenteredImage src="/img/led-dice/battery-holder.jpg" alt="Highlighted pins for pushbutton" caption="Highlighted pins for pushbutton" width="600px"/>
+<ReactPlayer  src='../../img/led-dice/bat-video.mp4' height='auto' width="600px" muted='true' autoPlay='true' loop='true' style={{ margin: '0 auto', display: 'block' }} />
