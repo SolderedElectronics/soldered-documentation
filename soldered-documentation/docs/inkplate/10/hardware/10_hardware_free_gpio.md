@@ -1,21 +1,20 @@
 ---
 slug: /inkplate/10/hardware/free-gpio  
 title: Inkplate 10 – Free GPIO pins
-sidebar_label: Hardware Free GPIO pins
+sidebar_label: Free GPIO pins
 id: 10-hardware-free-gpio
-hide_title: true
 ---
 
 Inkplate 10's onboard **ESP32 WROVER-E** has some pins reserved for internal use (for example, the connection to the e-paper display) and cannot be used for end-user applications. This page contains a list of the available GPIO pins that can be used for external applications.
 
 If you don't need pin details and are just interested in the pins, here are the Inkplate 10 pins that are **not connected to any external component**:
-``GPIO EXPANDER 1: P1-3 to P1-7 IO26 GPIO EXPANDER: P0-0 to P1-7``
+`` IO26``, ``GPIO EXPANDER 1: P1-3 to P1-7``, ``GPIO EXPANDER: P0-0 to P1-7``
 
 <CenteredImage src="/img/inkplate10/free_gpio.webp" alt="Inkplate 10 free pins" caption="Inkplate 10 free pins" />
 
 See the table below for pin functions and what each pin is connected to:
 
-## Free GPIO pins
+## Free pin table
 
 
 

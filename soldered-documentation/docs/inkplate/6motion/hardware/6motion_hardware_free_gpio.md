@@ -1,9 +1,8 @@
 ---
 slug: /inkplate/6motion/hardware/free-gpio
 title: 6Motion - Free GPIO pins
-sidebar_label: Hardware Free GPIO pins
+sidebar_label: Free GPIO pins
 id: 6motion-hardware-free-gpio
-hide_title: true
 ---
 
 Inkplate 6MOTION's onboard **STM32H743** has some pins reserved for internal use (for example, the connection to the e-paper display) and cannot be used for end-user applications. This page contains a list of the available GPIO pins that can be used for external applications.
@@ -16,7 +15,7 @@ If you don't need pin details and are just interested in the pins, here are the 
 
 See the table below for pin functions and what each pin is connected to:
 
-## Free GPIO pins
+## Free pin table
 
 
 

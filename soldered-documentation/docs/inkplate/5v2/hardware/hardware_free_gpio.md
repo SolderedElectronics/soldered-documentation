@@ -1,21 +1,20 @@
 ---  
 slug: /inkplate/5v2/hardware/free-gpio  
 title: Inkplate 5v2 – Free GPIO pins  
-sidebar_label: Hardware Free GPIO pins  
-id: hardware-free-gpio  
-hide_title: true 
+sidebar_label: Free GPIO pins  
+id: hardware-free-gpio      
 ---
 
 Inkplate 5v2's onboard **ESP32 WROVER-E** has some pins reserved for internal use (for example, the connection to the e-paper display) and cannot be used for end-user applications. This page contains a list of the available GPIO pins that can be used for external applications.
 
 If you don't need pin details and are just interested in the pins, here are the Inkplate 5v2 pins that are **not connected to any external component**:
-``P1-3, P1-4, P1-5, P1-6, P1-7``
+``P1-3, P1-4, P1-5, P1-6, P1-7``. These are all on the GPIO expander peripheral.
 
 <CenteredImage src="/img/5v2/free_pins.webp" alt="Inkplate 5v2 free pins" caption="Inkplate 5v2 free pins" />
 
 See the table below for pin functions and what each pin is connected to:
 
-## Free GPIO pins
+## Free pin table
 
 | **PIN** | **CONNECTED TO** | **FUNCTION**                                                          |
 |---------|------------------|-----------------------------------------------------------------------|

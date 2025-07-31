@@ -1,21 +1,20 @@
 ---
 slug: /inkplate/6flick/hardware/free-gpio  
 title: Inkplate 6FLICK – Free GPIO pins
-sidebar_label: Hardware Free GPIO pins
+sidebar_label: Free GPIO pins
 id: hardware-free-gpio
-hide_title: true
 ---
 
 Inkplate 6FLICK's onboard **ESP32 WROVER-E** has some pins reserved for internal use (for example, the connection to the e-paper display) and cannot be used for end-user applications. This page contains a list of the available GPIO pins that can be used for external applications.
 
 If you don't need pin details and are just interested in the pins, here are the Inkplate 6FLICK pins that are **not connected to any external component**:
-``ESP32: IO36, IO39, GPIO EXPANDER 1: P1-7, P1-7,  GPIO EXPANDER 2: P0-0 to P1-7``
+``ESP32: IO36, IO39``, ``GPIO EXPANDER 1: P1-7, P1-7``,  ``GPIO EXPANDER 2: P0-0 to P1-7``
 
 <CenteredImage src="/img/inkplate_6_flick/free_gpio.jpg" alt="Inkplate 6FLICK free pins" caption="Inkplate 6FLICK free pins" />
 
 See the table below for pin functions and what each pin is connected to:
 
-## Free GPIO pins
+## Free pin table
 
 
 

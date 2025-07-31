@@ -1,21 +1,20 @@
 ---  
 slug: /inkplate/6color/hardware/free-gpio  
 title: Inkplate 6COLOR – Free GPIO pins  
-sidebar_label: Hardware Free GPIO pins  
+sidebar_label: Free GPIO pins  
 id: hardware-free-gpio  
-hide_title: true 
 ---
 
 Inkplate 6COLOR's onboard **ESP32 WROVER-E** has some pins reserved for internal use (for example, the connection to the e-paper display) and cannot be used for end-user applications. This page contains a list of the available GPIO pins that can be used for external applications.
 
 If you don't need pin details and are just interested in the pins, here are the Inkplate 6COLOR pins that are **not connected to any external component**:
-``ESP32: IO2, IO4, IO5,IO25, IO26 GPIO EXPANDER: P0-0 to P1-7``
+``ESP32: IO2, IO4, IO5, IO25, IO26``, ``GPIO EXPANDER: P0-0 to P1-7``
 
 <CenteredImage src="/img/6color/free-gpio.webp" alt="Inkplate 6color free pins" caption="Inkplate 6color free pins" />
 
 See the table below for pin functions and what each pin is connected to:
 
-## Free GPIO pins
+## Free pin table
 
 
 

@@ -1,9 +1,8 @@
 ---  
 slug: /inkplate/2/hardware/free-gpio  
 title: Inkplate 2 – Free GPIO pins  
-sidebar_label: Hardware Free GPIO pins  
+sidebar_label: Free GPIO pins  
 id: 2-hardware-free-gpio  
-hide_title: true 
 ---
 
 Inkplate 2's onboard **ESP32 WROVER-E** has some pins reserved for internal use (for example, the connection to the e-paper display) and cannot be used for end-user applications. This page contains a list of the available GPIO pins that can be used for external applications.
@@ -15,7 +14,7 @@ If you don't need pin details and are just interested in the pins, here are the 
 
 See the table below for pin functions and what each pin is connected to:
 
-## Free GPIO pins
+## Free pin table
 
 | **PIN** 	| **CONNECTED TO** 	| **FUNCTION** 	|
 |---	|---	|---	|
