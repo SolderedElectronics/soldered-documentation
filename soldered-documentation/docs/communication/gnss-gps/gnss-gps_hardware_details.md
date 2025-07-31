@@ -8,11 +8,12 @@ hide_title: false
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board has not been generated yet! We're working on it!</ErrorBox>
+### Native version
 
----
+<CenteredImage src="/img/gnss-gps/gnss-gps-native-pinout.png" alt="GNSS GPS native pinout image" />
 
-## Pin Details
+Click [**here**](/img/gnss-gps/gnss-gps-native-pinout.png) for a high resolution image of the pinout.
+
 
 | Pin Marking | Pin Name        | Description                          |
 | ----------- | --------------- | ------------------------------------ |
@@ -40,9 +41,11 @@ The board also features an **IPX connector** with SMA for an **external antenna*
 
 <CenteredImage src="/img/gnss-gps/antennaC.png" alt="antenna on board" caption="IPX Antenna connector on easyC board" width="600px" />
 
----
+### Qwiic version
 
-## Pin Details (Qwiic version)
+<CenteredImage src="/img/gnss-gps/gnss-gps-easyc-pinout.png" alt="GNSS GPS easyc pinout image" />
+
+Click [**here**](/img/gnss-gps/gnss-gps-easyc-pinout.png) for a high resolution image of the pinout.
 
 | Pin Marking | Pin Name                 | Description                                                                                                             |
 | ----------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
