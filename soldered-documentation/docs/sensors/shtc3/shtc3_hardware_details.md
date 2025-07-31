@@ -8,7 +8,9 @@ hide_title: false
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/shtc3/SHTC3-pinout.png" alt="SHTC3 pinout image" />
+
+Click [**here**](/img/shtc3/SHTC3-pinout.img) for a high-resolution image of the pinout.
 
 ## Pin details
 

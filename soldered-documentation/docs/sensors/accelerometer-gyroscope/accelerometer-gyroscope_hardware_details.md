@@ -8,7 +8,9 @@ hide_title: False
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/accelerometer-gyroscope/lsm6ds-pinout.png" alt="LSM6DS pinout image" />
+
+Click [**here**](/img/accelerometer-gyroscope/lsm6ds-pinout.png) for a high-resolution image of the pinout.
 
 ## Pin details
 

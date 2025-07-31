@@ -10,9 +10,9 @@ hide_title: False
 ## Pinout
 
 
-<ErrorBox>The pinout image hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/capacitive-soil-sensor/capacitive-soil-sensor-pinout.png" alt="Capacitvie soil sensor pinout image" />
 
----
+Click [**here**](/img/capacitive-soil-sensor/capacitive-soil-sensor-pinout.png) for a high resolution image of the pinout.
 
 ## Pin Details
 

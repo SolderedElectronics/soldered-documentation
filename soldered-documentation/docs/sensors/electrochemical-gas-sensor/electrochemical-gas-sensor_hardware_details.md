@@ -7,9 +7,10 @@ hide_title: False
 ---
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/electrochemical-gas-sensor/electrochemical-sensor-pinout.png" alt="Gas sensor pinout" />
 
----
+Click [**here**](/img/electrochemical-gas-sensor/electrochemical-sensor-pinout.png) for a high-resolution image of the pinout.
+
 
 ## Pin details
 

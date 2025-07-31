@@ -8,7 +8,9 @@ hide_title: false
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/tft-lcd/tft-lcd-pinout.png" alt="TFT-LCD pinout image" />
+
+Click [**here**](/img/tft-lcd/tft-lcd-pinout.png) for a high-resolution image of the pinout.
 
 ---
 
