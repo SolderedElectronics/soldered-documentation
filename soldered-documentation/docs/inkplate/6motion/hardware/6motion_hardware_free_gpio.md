@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/hardware/free-gpio
-title: 6Motion - Free GPIO pins
+title: Inkplate 6MOTION - Free GPIO pins
 sidebar_label: Free GPIO pins
 id: 6motion-hardware-free-gpio
 ---
