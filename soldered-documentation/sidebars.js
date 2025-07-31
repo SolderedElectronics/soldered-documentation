@@ -229,7 +229,8 @@ const sidebars = {
                     "inkplate/4tempera/peripherals/4tempera-periph-apds9960",
                     "inkplate/4tempera/peripherals/4tempera-periph-bme688",
                     "inkplate/4tempera/peripherals/4tempera-periph-accelerometer",
-                    "inkplate/4tempera/peripherals/4tempera-periph-buzzer"
+                    "inkplate/4tempera/peripherals/4tempera-periph-buzzer",
+                    "inkplate/4tempera/peripherals/4tempera-periph-fuel-gauge"
                   ]
                 }
               ]
