@@ -1,9 +1,8 @@
 ---
 slug: /stop-me-game/overview
-title: Stop Me Game - Overview
-sidebar_label: Overview
-id: stop-me-game-overview
-hide_title: false
+title: Overview
+id: stop-me-game-overview 
+hide_title: False
 pagination_prev: null
 ---
 

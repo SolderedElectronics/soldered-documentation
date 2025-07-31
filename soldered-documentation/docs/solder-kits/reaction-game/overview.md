@@ -1,9 +1,8 @@
 ---
 slug: /reaction-game/overview
-title: Reaction Game - Overview
-sidebar_label: Overview
-id: reaction-game-overview
-hide_title: false
+title: Overview
+id: reaction-game-overview 
+hide_title: False
 pagination_prev: null
 ---
 
