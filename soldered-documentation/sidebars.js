@@ -2927,6 +2927,20 @@ const sidebars = {
             },
           ]
         },
+        {
+          type:'category',
+          label: 'EEA Airplane Lights',
+          items:[
+            {
+              type: 'doc',
+              id: 'solder-kits/eea-airplane-lights/eea-airplane-lights-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/eea-airplane-lights/eea-airplane-lights-assembly-guide',
+            },
+          ]
+        }
       ],
     },
   ],
