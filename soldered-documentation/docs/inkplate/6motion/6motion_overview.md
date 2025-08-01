@@ -5,6 +5,13 @@ sidebar_label: Overview
 id: 6motion-overview
 hide_title: True  
 pagination_prev: null  
+tags:
+  - 333321
+  - 333322
+  - 333324
+  - Inkplate 6MOTION
+  - Inkplate 6 MOTION
+  - Inkplate6MOTION
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />

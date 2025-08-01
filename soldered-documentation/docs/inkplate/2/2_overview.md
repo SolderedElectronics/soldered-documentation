@@ -4,7 +4,14 @@ title: Inkplate 2 - Overview
 sidebar_label: Overview  
 id: 2-overview  
 hide_title: True  
-pagination_prev: null  
+pagination_prev: null
+tags:
+  - 333166
+  - 333227
+  - 333167
+  - 333228
+  - Inkplate 2
+  - Inkplate2
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />

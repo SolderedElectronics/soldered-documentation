@@ -5,6 +5,14 @@ sidebar_label: Overview
 id: 6flick-overview
 hide_title: True  
 pagination_prev: null  
+tags:
+  - 333317
+  - 333319
+  - 333318
+  - 333320
+  - Inkplate 6FLICK
+  - Inkplate 6 FLICK
+  - Inkplate6FLICk
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />

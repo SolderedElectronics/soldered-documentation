@@ -4,7 +4,17 @@ title: Inkplate 5V2 - Overview
 sidebar_label: Overview  
 id: 5v2-overview
 hide_title: True  
-pagination_prev: null  
+pagination_prev: null
+tags:
+  - 333333
+  - 333335
+  - 333334
+  - 333336
+  - Inkplate 5V2
+  - Inkplate5V2
+  - Inkplate 5 Gen2
+  - Inkplate 5Gen2
+  - Inkplate5Gen2
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />

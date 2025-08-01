@@ -5,6 +5,13 @@ sidebar_label: Overview
 id: 6-overview
 hide_title: True  
 pagination_prev: null  
+tags:
+  - 333232
+  - 333234
+  - 333233
+  - 333229
+  - Inkplate 6
+  - Inkplate6
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
@@ -26,21 +33,21 @@ With support for Arduino (Adafruit GFX-compatible) and MicroPython, plus easy ex
 
 <QuickLink 
   title="Inkplate 6 without e-paper Display" 
-  description="333335"
+  description="333234"
   url="https://soldered.com/product/inkplate-6-6-e-paper-board/"
   image="/img/6/boardonly.png" 
 />
 
 <QuickLink 
   title="Inkplate 6 with e-paper & enclosure" 
-  description="333334"
+  description="333233"
   url="https://soldered.com/product/inkplate-6-6-e-paper-board/"
   image="/img/6/enclosure.png" 
 />
 
 <QuickLink 
   title="Inkplate 6 with e-paper, Enclosure & Battery" 
-  description="333336"
+  description="333229"
   url="https://soldered.com/product/inkplate-6-6-e-paper-board/"
   image="/img/6/ennbat.png" 
 />

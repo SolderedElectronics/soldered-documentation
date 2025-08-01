@@ -5,6 +5,14 @@ sidebar_label: Overview
 id: 6color-overview
 hide_title: True  
 pagination_prev: null  
+tags:
+  - 333238
+  - 333240
+  - 333239
+  - 333231
+  - Inkplate 6COLOR
+  - Inkplate 6 COLOR
+  - Inkplate6COLOR
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />

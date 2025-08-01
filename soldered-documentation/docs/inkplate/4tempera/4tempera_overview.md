@@ -5,6 +5,11 @@ sidebar_label: Overview
 id: 4tempera-overview
 hide_title: True
 pagination_prev: null
+tags:
+  - 333308
+  - 333307
+  - Inkplate 4
+  - Inkplate 4Tempera
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />

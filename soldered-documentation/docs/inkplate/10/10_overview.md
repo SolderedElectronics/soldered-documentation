@@ -5,6 +5,13 @@ sidebar_label: Overview
 id: 10-overview
 hide_title: True  
 pagination_prev: null  
+tags:
+  - 333241
+  - 333243
+  - 333242
+  - 333247
+  - Inkplate 10
+  - Inkplate10
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
