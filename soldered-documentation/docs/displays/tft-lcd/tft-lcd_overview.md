@@ -5,6 +5,12 @@ sidebar_label: Overview
 id: tft-lcd-overview
 hide_title: false
 pagination_prev: null
+tags:
+  - 333113
+  - 2.4 TFT LCD
+  - TFT LCD
+  - TFT
+  - LCD with touch
 ---
 
 ## 2.4" TFT LCD Breakout with Touch

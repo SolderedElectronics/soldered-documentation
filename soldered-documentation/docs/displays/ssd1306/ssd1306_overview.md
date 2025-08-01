@@ -5,6 +5,10 @@ sidebar_label: Overview
 id: ssd1306-overview
 hide_title: false
 pagination_prev: null
+tags:
+  - 333100
+  - 333099
+  - SSD1306
 ---
 
 ## SSD1306 0.96" I2C OLED Display

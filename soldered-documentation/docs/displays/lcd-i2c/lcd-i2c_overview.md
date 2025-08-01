@@ -5,6 +5,12 @@ sidebar_label: Overview
 id: lcd-i2c-overview
 hide_title: false
 pagination_prev: null
+tags:
+  - 333003
+  - 333171
+  - LCD
+  - LCD I2C
+  - LCDI2C
 ---
 
 ## LCD I2C adapter
