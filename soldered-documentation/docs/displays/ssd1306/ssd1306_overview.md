@@ -9,6 +9,7 @@ tags:
   - 333100
   - 333099
   - SSD1306
+  - OLED
 ---
 
 ## SSD1306 0.96" I2C OLED Display
