@@ -1,7 +1,8 @@
 ---
 slug: /vl53l1x laser sensor/overview
-title: Overview
-id: vl53l1x laser sensor-overview 
+title: VL53L1X - Overview
+id: vl53l1x laser sensor-overview
+sidebar_label: Overview
 hide_title: False
 pagination_prev: null
 ---
@@ -11,7 +12,6 @@ The **VL53L1X** is a high-performance **Time-of-Flight (ToF)** laser-ranging sen
 
 <CenteredImage src="/img/under_construction.png" alt="Laser sensor VL53L1X" caption="VL53L1X Laser Sensor" />
 
----
 
 ## Which product is this documentation for?
 
@@ -22,7 +22,6 @@ The **VL53L1X** is a high-performance **Time-of-Flight (ToF)** laser-ranging sen
   image="/img/under_construction.png" 
 />
 
----
 
 ## Key Features
 - **Measuring range:** approximately 0.03 - 4m (30mm to 4000mm)
@@ -30,10 +29,9 @@ The **VL53L1X** is a high-performance **Time-of-Flight (ToF)** laser-ranging sen
 - **Ranging frequency:** Up to 50Hz (50 measurements per second)
 - **Communication:** I²C (standard address: 0x29)
 - **Connectivity:** 2 x **Qwiic (formerly easyC) ports**
-- **Operating voltage:** 3.3V (onboard regulator for 5V compatibility???????)
+- **Operating voltage:** 3.3V (onboard regulator for 5V compatibility)
 - **Mounting**: **Two mounting holes** for secure attachment
 
----
 
 ## You may also need
 

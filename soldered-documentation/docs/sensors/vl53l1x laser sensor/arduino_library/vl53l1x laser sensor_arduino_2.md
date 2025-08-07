@@ -1,19 +1,17 @@
 ---
 slug: /vl53l1x laser sensor/arduino/examples 
-title: Measuring distance example
+title: VL53L1X - Measuring distance example
 id: vl53l1x laser sensor-arduino-2 
+sidebar_label: Measuring distance example
 hide_title: False
 ---
 
-This page provides a simple **continous distance readings** example.
-
----
+This page provides simple **continuous distance readings** from a laser distance sensor, with dynamic control of LED brightness based on measured distance.
 
 ## Working example
 
-<ReactPlayer src='../../../videos/vl53l1x-laser-demo.mp4' width='100%' height='auto' muted='true' autoPlay='true' loop='true'/>
+<ReactPlayer src='../../../videos/vl53l1x-laser-led-demo.mp4' width='100%' height='auto' muted='true' autoPlay='true' loop='true'/>
 
----
 
 ## Initialization
 
@@ -23,28 +21,26 @@ To use the VL53L1X sensor, include the required library, create the sensor objec
 // Include the library
 #include "VL53L1X-SOLDERED.h"
 
-// Create an instance of the sensor
+#define LED_PIN 15
 VL53_L1X sensor;
 
-void setup()
-{
-    Serial.begin(115200);
-    Serial.println("Serial Initialised");
+void setup() {
+  Serial.begin(115200);
+  Serial.println("Serial Initialised");
 
-    sensor.setTimeout(500);
-    sensor.begin();
+  sensor.setTimeout(500);
+  sensor.begin();
 
-    // Use long distance mode and allow up to 50000 us (50 ms) for a measurement.
-    // You can change these settings to adjust the performance of the sensor, but
-    // the minimum timing budget is 20 ms for short distance mode and 33 ms for
-    // medium and long distance modes.
-    sensor.setDistanceMode(VL53L1X::Long);
-    sensor.setMeasurementTimingBudget(50000);
+  // You can change these settings to adjust the performance of the sensor, but
+  // the minimum timing budget is 20 ms for short distance mode and 33 ms for
+  // medium and long distance modes.
+  sensor.setDistanceMode(VL53L1X::Short); // We use SHORT distance mode for LED visualization purposes
+  sensor.setMeasurementTimingBudget(50000); // We use 50000 us (50 ms) for a measurement.
 
-    // Start continuous readings at a rate of one measurement every 50 ms (the
-    // inter-measurement period). This period should be at least as long as the
-    // timing budget.
-    sensor.startContinuous(50);
+  // Start continuous readings at a rate of one measurement every 50 ms (the
+  // inter-measurement period). This period should be at least as long as the
+  // timing budget.
+  sensor.startContinuous(50);
 }
 // ...
 ```
@@ -66,7 +62,8 @@ void setup()
 <FunctionDocumentation
   functionName="sensor.setDistanceMode()"
   description="Sets the distance mode of the sensor."
-  returnDescription="Boolean value; indicating whether the requested mode was valid."
+  returnType="Boolean"
+  returnDescription="Indicates whether the requested mode was valid."
   parameters={[{ type: 'DistanceMode', name: 'mode', description: 'Sets the distance mode of the sensor.'}]}
 />
 
@@ -85,11 +82,11 @@ Short distance mode is more immune to ambient light, but its maximum ranging dis
 <FunctionDocumentation
   functionName="sensor.setMeasurementTimingBudget()"
   description="Time allowed for one range measurement; a longer timing budget allows for more accurate measurements. "
-  returnDescription="Boolean value; indicating whether the requested budget was valid."
+  returnType="Boolean"
+  returnDescription="Indicates whether the requested budget was valid."
   parameters={[{ type: 'uint32_t', name: 'budget_us', description: 'Sets the measurement timing budget to the given value in microseconds.'}]}
 />
 
----
 
 ## Measuring distance
 
@@ -98,20 +95,29 @@ In the loop function `sensor.read()` is called to get object distance in millime
 ```cpp
 void loop()
 {
-    Serial.print(String(sensor.read()) + "mm");  // Print reading
-    if (sensor.timeoutOccurred()) // Check if sensor has been measuring longer than timeout period
-    {
-        Serial.print(" TIMEOUT");
-    }
+  // Get distance reading in 'mm'
+  int distance = sensor.read();
+  Serial.println(distance);
+  
+  // Map distance (0 - 2260) to PWM (0 - 255) 
+  // Max distance in short mode ~ 2260mm
+  int pwmValue = map(distance, 0, 2260, 0, 255);
 
-    Serial.println();
+  // Output PWM to LED
+  analogWrite(LED_PIN, pwmValue);
+
+  if (sensor.timeoutOccurred()) // Check if sensor has been measuring longer than timeout period
+  {
+      Serial.print(" TIMEOUT");
+  }
 }
 ```
 
 <FunctionDocumentation
   functionName="sensor.read()"
   description="Returns a range reading and updates the ranging data struct with details about the last measurement."
-  returnDescription="Integer value, returns distance from objects in millimeters."
+  returnType="Integer"
+  returnDescription="Returns distance from objects in millimeters."
   parameters={[{ type: 'boolean', name: 'blocking', description: 'Optional argument, if True: wait until data from a new measurement is available before returning.'}]}
 />
 
@@ -120,5 +126,3 @@ void loop()
   description="Full sketch example of continous distance reading"  
   url="https://github.com/SolderedElectronics/Soldered-VL53L1X-Laser-Distance-Sensor-Arduino-Library/blob/main/examples/ReadDistanceContinous/ReadDistanceContinous.ino"  
 />  
-
----

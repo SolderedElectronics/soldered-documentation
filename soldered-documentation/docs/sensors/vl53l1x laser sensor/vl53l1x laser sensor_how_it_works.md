@@ -2,6 +2,7 @@
 slug: /vl53l1x laser sensor/how-it-works 
 title: VL53L1X - How it works
 id: vl53l1x laser sensor-how-it-works 
+sidebar_label: How it works
 hide_title: False
 ---  
 
@@ -15,7 +16,6 @@ For an in-depth look at technical specifications visit the official **VL53L1X Do
   url="https://www.st.com/resource/en/datasheet/vl53l1x.pdf"  
 />  
 
----
 
 ## How the sensor works
 The VL53L1X is an advanced and compact **Time-of-Flight (ToF)** distance sensor, meaning it measures how long the light has taken to bounce back to sensor unlike IR sensors that measure amount of light reflected back to them. It uses a very narrow light source, which makes it very precise at determining the distance of the surface in front of it.
@@ -44,7 +44,6 @@ The VL53L1X is an advanced and compact **Time-of-Flight (ToF)** distance sensor,
 - **GPIO Interrupt**
   - Digital output that acts as an interrupt line from the sensor to your microcontroller
   - It can signal new distance measurement, a threshold condition has been met
----
 
 ## Qwiic I²C communication
 

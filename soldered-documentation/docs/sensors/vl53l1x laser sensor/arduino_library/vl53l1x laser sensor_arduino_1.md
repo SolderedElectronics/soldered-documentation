@@ -1,6 +1,7 @@
 ---
 slug: /vl53l1x laser sensor/arduino/geting-started 
-title: Getting started
+title: VL53L1X - Getting started
+sidebar_label: Getting started
 id: vl53l1x laser sensor-arduino-1 
 hide_title: False
 ---
@@ -26,7 +27,6 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 </InfoBox>
 
----
 
 ## Connections
 

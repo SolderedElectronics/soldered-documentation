@@ -1,13 +1,16 @@
 ---
 slug: /vl53l1x laser sensor/hardware 
-title: Hardware details
+title: VL53L1X - Hardware details
 id: vl53l1x laser sensor-hardware 
+sidebar_label: Hardware details
 hide_title: False
 ---
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/vl53l1x_laser_sensor/vl53l1x-laser-sensor.png" alt="VL53L1X Laser Sensor pinout image"/>
+
+Click [**here**](/img/vl53l1x_laser_sensor/vl53l1x-laser-sensor.png) for a high resolution image of the pinout.
 
 ## Pin details
 
@@ -23,7 +26,6 @@ hide_title: False
 
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
 
----
 
 ## Qwiic (formerly easyC)  
 
@@ -37,7 +39,6 @@ hide_title: False
   url="/qwiic" 
 />
 
----
 
 ## Dimensions
 
@@ -46,7 +47,6 @@ hide_title: False
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO compatible! 🧱 
 
----
 
 ## Jumper Details
 
@@ -58,20 +58,19 @@ This board contains hardware jumpers; see below for their locations and function
     { src: '/img/under_construction.png', alt: 'VL53L1X jumper 2', caption: 'JP2' },
     { src: '/img/under_construction.png', alt: 'VL53L1X jumper 3', caption: 'JP3' },
     { src: '/img/under_construction.png', alt: 'VL53L1X jumper 4', caption: 'JP4' },
-    { src: '/img/under_construction.png', alt: 'VL53L1X jumper 5', caption: 'JP5' },   
   ]}
   jumpers={true}
 />
 
-| Jumper  | Default State            | Function                                                                                                                                    |
-|---------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Jumper  | Default State            | Function                                                                                                      |
+| ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 5V** for I2C communication.                                           |
+| **JP2** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to 3.3V** for I2C communication.                                         |
+| **JP3** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.          |
+| **JP4** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP3 is disconnected if JP4 is connected.** |
 
----
 
 ## Address jumper
-
-
----
 
 ## Hardware repository
 

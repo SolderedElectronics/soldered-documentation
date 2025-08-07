@@ -1,7 +1,8 @@
 ---
 slug: /vl53l1x laser sensor/arduino/troubleshooting 
-title: Troubleshooting
+title: VL53L1X - Troubleshooting
 id: vl53l1x laser sensor-arduino-3 
+sidebar_label: Troubleshooting
 hide_title: False
 pagination_next: null
 ---
