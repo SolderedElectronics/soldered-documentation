@@ -20,6 +20,8 @@ For an in-depth look at technical specifications visit the official **VL53L1X Do
 ## How the sensor works
 The VL53L1X is an advanced and compact **Time-of-Flight (ToF)** distance sensor, meaning it measures how long the light has taken to bounce back to sensor unlike IR sensors that measure amount of light reflected back to them. It uses a very narrow light source, which makes it very precise at determining the distance of the surface in front of it.
 
+<CenteredImage src="/img/vl53l1x_laser_sensor/vl53l1x-principle.png" alt="VL53L1X Laser Sensor image"/>
+
 ### Measurement process
 
 **1. Laser Pulse emmission**
