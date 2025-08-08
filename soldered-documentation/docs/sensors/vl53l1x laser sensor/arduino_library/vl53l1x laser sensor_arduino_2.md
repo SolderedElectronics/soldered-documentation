@@ -62,7 +62,7 @@ void setup() {
 <FunctionDocumentation
   functionName="sensor.setDistanceMode()"
   description="Sets the distance mode of the sensor."
-  returnType="Boolean"
+  returnType="bool"
   returnDescription="Indicates whether the requested mode was valid."
   parameters={[{ type: 'DistanceMode', name: 'mode', description: 'Sets the distance mode of the sensor.'}]}
 />
@@ -82,7 +82,7 @@ Short distance mode is more immune to ambient light, but its maximum ranging dis
 <FunctionDocumentation
   functionName="sensor.setMeasurementTimingBudget()"
   description="Time allowed for one range measurement; a longer timing budget allows for more accurate measurements. "
-  returnType="Boolean"
+  returnType="bool"
   returnDescription="Indicates whether the requested budget was valid."
   parameters={[{ type: 'uint32_t', name: 'budget_us', description: 'Sets the measurement timing budget to the given value in microseconds.'}]}
 />
@@ -116,7 +116,7 @@ void loop()
 <FunctionDocumentation
   functionName="sensor.read()"
   description="Returns a range reading and updates the ranging data struct with details about the last measurement."
-  returnType="Integer"
+  returnType="int"
   returnDescription="Returns distance from objects in millimeters."
   parameters={[{ type: 'boolean', name: 'blocking', description: 'Optional argument, if True: wait until data from a new measurement is available before returning.'}]}
 />
