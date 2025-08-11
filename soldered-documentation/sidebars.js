@@ -671,7 +671,8 @@ const sidebars = {
           "inkplate/projects/open-meteo",
           "inkplate/projects/openai-text-prompt",
           "inkplate/projects/openai-image-slideshow",
-          "inkplate/projects/image-uploader"
+          "inkplate/projects/image-uploader",
+          "inkplate/projects/epub-reader"
       ]
     }
       ]
