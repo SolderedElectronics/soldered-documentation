@@ -672,7 +672,7 @@ const sidebars = {
           "inkplate/projects/openai-text-prompt",
           "inkplate/projects/openai-image-slideshow",
           "inkplate/projects/image-uploader",
-          "inkplate/projects/epub-reader"
+          "inkplate/projects/e-reader"
       ]
     }
       ]
