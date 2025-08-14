@@ -253,7 +253,8 @@ const sidebars = {
                 "inkplate/5v2/hardware/hardware-files",
                 "inkplate/5v2/hardware/hardware-jumpers",
                 "inkplate/5v2/hardware/hardware-battery",
-                "inkplate/5v2/hardware/hardware-free-gpio"
+                "inkplate/5v2/hardware/hardware-free-gpio",
+                "inkplate/5v2/hardware/hardware-power-switch"
               ]
             },
             {
@@ -319,7 +320,8 @@ const sidebars = {
                 "inkplate/6/hardware/hardware-files",
                 "inkplate/6/hardware/hardware-jumpers",
                 "inkplate/6/hardware/hardware-battery",
-                "inkplate/6/hardware/hardware-free-gpio"
+                "inkplate/6/hardware/hardware-free-gpio",
+                "inkplate/6/hardware/hardware-power-switch"
               ]
             },
             {
@@ -385,7 +387,8 @@ const sidebars = {
                 "inkplate/6color/hardware/hardware-files",
                 "inkplate/6color/hardware/hardware-jumpers",
                 "inkplate/6color/hardware/hardware-battery",
-                "inkplate/6color/hardware/hardware-free-gpio"
+                "inkplate/6color/hardware/hardware-free-gpio",
+                "inkplate/6color/hardware/hardware-power-switch"
               ]
             },
             {
@@ -451,7 +454,8 @@ const sidebars = {
                 "inkplate/6flick/hardware/6flick-hardware-frontlight",
                 "inkplate/6flick/hardware/6flick-hardware-jumpers",
                 "inkplate/6flick/hardware/6flick-hardware-battery",
-                "inkplate/6flick/hardware/hardware-free-gpio"
+                "inkplate/6flick/hardware/hardware-free-gpio",
+                "inkplate/6flick/hardware/6flick-hardware-power-switch"
               ]
             },
             {
@@ -526,7 +530,8 @@ const sidebars = {
                 "inkplate/10/hardware/10-hardware-files",
                 "inkplate/10/hardware/10-hardware-jumpers",
                 "inkplate/10/hardware/10-hardware-battery",
-                "inkplate/10/hardware/10-hardware-free-gpio"
+                "inkplate/10/hardware/10-hardware-free-gpio",
+                "inkplate/10/hardware/10-hardware-power-switch",
               ]
             },
             {
@@ -594,7 +599,8 @@ const sidebars = {
                 "inkplate/6motion/hardware/6motion-hardware-jumpers",
                 "inkplate/6motion/hardware/6motion-hardware-esp32",
                 "inkplate/6motion/hardware/6motion-hardware-battery",
-                "inkplate/6motion/hardware/6motion-hardware-free-gpio"
+                "inkplate/6motion/hardware/6motion-hardware-free-gpio",
+                "inkplate/6motion/hardware/6motion-hardware-power-switch"
               ]
             },
             {
@@ -667,6 +673,7 @@ const sidebars = {
       "type": "category",
       "label": "Inkplate Projects",
       "items": [
+          //"inkplate/projects/e-reader",
           "inkplate/projects/google-calendar",
           "inkplate/projects/open-meteo",
           "inkplate/projects/openai-text-prompt",
