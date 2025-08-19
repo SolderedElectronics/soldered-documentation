@@ -2958,6 +2958,10 @@ const sidebars = {
                 {
                   type:'doc',
                   id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-led-blinking'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-serial-print-hello-world'
                 }
               ]
             },
