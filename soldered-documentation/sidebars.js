@@ -2943,6 +2943,28 @@ const sidebars = {
         }
       ],
     },
+    {
+      type: 'category',
+      label : 'Beginner kits',
+      items: [
+        {
+          type: 'category',
+          label: 'Soldered NULA Beginner kit Arduino',
+          items: [
+            {
+              type:'category',
+              label: '1. Basic Skills',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-led-blinking'
+                }
+              ]
+            },
+          ]
+        }
+      ]
+    },
   ],
 };
 
