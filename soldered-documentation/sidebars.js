@@ -2965,6 +2965,20 @@ const sidebars = {
                 }
               ]
             },
+            {
+              type:'category',
+              label: '2. Inputs and Basic Interactions',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-button-toggle-led'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-slider-potentiometer-led-fade'
+                },
+              ]
+            },
           ]
         }
       ]
