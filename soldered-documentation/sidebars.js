@@ -673,12 +673,12 @@ const sidebars = {
       "type": "category",
       "label": "Inkplate Projects",
       "items": [
-          //"inkplate/projects/e-reader",
-          "inkplate/projects/google-calendar",
-          "inkplate/projects/open-meteo",
-          "inkplate/projects/openai-text-prompt",
-          "inkplate/projects/openai-image-slideshow",
-          "inkplate/projects/image-uploader"
+        "inkplate/projects/google-calendar",
+        "inkplate/projects/open-meteo",
+        "inkplate/projects/openai-text-prompt",
+        "inkplate/projects/openai-image-slideshow",
+        "inkplate/projects/image-uploader",
+        "inkplate/projects/e-reader"
       ]
     }
       ]

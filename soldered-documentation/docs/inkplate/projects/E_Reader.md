@@ -9,8 +9,6 @@ pagination_prev: null
 
 ## Overview
 
-<CenteredImage src="/img/e-reader/product.png" alt="Completed"  /> 
-
 <ReactPlayer src='../../../videos/e-reader-page-next.mp4' width='100%' height='auto' muted='true' autoPlay='true' loop='true' style={{transform: 'rotate(180deg)'}} />
 
 The **Inkplate 6FLICK e Reader** transforms your e-paper display into an open source e-reader (e-book reader). By using the provided Python script that converts the EPUB file into an easier-to-manage and usable format on the ESP32, the device allows you to read your e-books on the **Inkplate 6FLICK** itself.
