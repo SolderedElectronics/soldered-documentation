@@ -7,8 +7,6 @@ hide_title: False
 pagination_next: null
 ---  
 
-The Li-ion batteries observed for this documentation are made by [**FULLEST ENERGY CO.,LTD**](http://www.fullyenergy.com/index.php) and are designed for use in portable electronic equipment where their size and weight are extremly compatible with regular need of portable devices.
-
 <CenteredImage src="/img/li-ion-battery/333275.jpg" alt="Li-ion battery 40mAh 3.7V" caption="Li-ion battery 40mAh 3.7V" width="400px" />
 
 ---

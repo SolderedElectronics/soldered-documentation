@@ -30,6 +30,8 @@ hide_title: false
 
 <InfoBox>These boards are designed for 3.7V Li-ion or Li-Po single-cell batteries.</InfoBox>
 
+<WarningBox>For older Li-ion charger with protection boards, connect the TEMP pin to GND to initiate charging. The onboard CHRG LED will indicate the charging status. </WarningBox>
+
 ---
 
 ## Dimensions

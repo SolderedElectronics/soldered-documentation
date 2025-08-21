@@ -31,7 +31,7 @@ The **Breadboard power supply** is a simple and stable power source for your bre
 - **Input:** USB-C or DC jack
 - **Voltage on DC jack:** 12V DC
 - **Voltage on USB-C:** 5V
-- **Output current:** 3V3 @ 500mA, 5V @ 1A
+- **Output current:** 3V3 @ 500mA, 5V @ 500mA
 - **Dimensions:** 54 x 30mm (2.1 x 1.2 inches)
   
 ---

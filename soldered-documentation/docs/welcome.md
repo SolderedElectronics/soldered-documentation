@@ -20,5 +20,3 @@ Here, you'll find all the useful resources for using Soldered products. To find 
 We understand how important it is to quickly locate the right information—whether you're a beginner or an experienced maker—so we’ve worked hard to refine and expand our documentation.
 
 Thank you for choosing Soldered Electronics. Happy making!
-
-<WarningBox>This documentation is a **work in progress**! Good things take time, so please be patient with us as we finish adding all our existing products (including all **Inkplate** boards) to this documentation. Thank you!</WarningBox>
