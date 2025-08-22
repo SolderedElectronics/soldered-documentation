@@ -2979,6 +2979,30 @@ const sidebars = {
                 },
               ]
             },
+            {
+              type:'category',
+              label: '4. Displaying information',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-lcd-button-message'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-lcd-multiple-buttons'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '6. Environmental Measurement',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-shtc3-lcd-display'
+                }
+              ]
+            },
           ]
         }
       ]
