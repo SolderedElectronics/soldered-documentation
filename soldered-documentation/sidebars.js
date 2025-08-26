@@ -3003,6 +3003,31 @@ const sidebars = {
                 }
               ]
             },
+            {
+              type:'category',
+              label: '7. More outputs and media',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-speaker-basics'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-speaker-alarm'
+                }
+              ]
+            },
+            {
+              type:'category',
+              label: '8. Complex projects',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-speaker-basics'
+                },
+                
+              ]
+            },
           ]
         }
       ]
