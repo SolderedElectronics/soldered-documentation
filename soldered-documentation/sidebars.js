@@ -434,6 +434,37 @@ const sidebars = {
                 }
               ]
             },
+            {
+              "type": "category",
+              "label": "MicroPython",
+              "items": [
+                "inkplate/6color/init",
+                {
+                  "type": "category",
+                  "label": "Basics",
+                  "items": [
+                    "inkplate/6color/micropython/basics/print-text",
+                    "inkplate/6color/micropython/basics/drawing-objects"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "WiFi",
+                  "items": [
+                    "inkplate/6color/micropython/wifi/wifi-init",
+                    "inkplate/6color/micropython/wifi/drawing-img-web"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "RTC",
+                  "items": [
+                    "inkplate/6color/micropython/rtc/rtc-measure-time"
+                  ]
+                },
+                "inkplate/6color/micropython/deep-sleep"
+              ]
+            },
             "inkplate/6color/faq-troubleshooting"
           ]
         },
