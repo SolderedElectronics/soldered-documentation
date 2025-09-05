@@ -680,6 +680,13 @@ const sidebars = {
     },
     {
       "type": "category",
+      "label": "Touchpads on Inkplate",
+      "items": [
+        "inkplate/touchpads/overview",
+      ]
+    },
+    {
+      "type": "category",
       "label": "Inkplate Projects",
       "items": [
         "inkplate/projects/google-calendar",
