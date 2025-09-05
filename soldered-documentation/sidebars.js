@@ -299,7 +299,8 @@ const sidebars = {
                     "inkplate/5v2/rtc/rtc-basics",
                     "inkplate/5v2/rtc/rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/5v2/readtemperature/read-temp"
               ]
             },
             "inkplate/5v2/faq-troubleshooting"
@@ -366,7 +367,8 @@ const sidebars = {
                     "inkplate/6/rtc/rtc-basics",
                     "inkplate/6/rtc/rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/6/readtemperature/read-temp"
               ]
             },
             "inkplate/6/faq-troubleshooting"
@@ -509,7 +511,8 @@ const sidebars = {
                     "inkplate/6flick/rtc/6flick-rtc-basics",
                     "inkplate/6flick/rtc/6flick-rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/6flick/readtemperature/read-temp"
               ]
             },
             "inkplate/6flick/6flick-faq-troubleshooting"
@@ -576,7 +579,8 @@ const sidebars = {
                     "inkplate/10/rtc/10-rtc-basics",
                     "inkplate/10/rtc/10-rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/10/readtemperature/read-temp"
               ]
             },
             "inkplate/10/10-faq-troubleshooting"
