@@ -91,6 +91,7 @@ const sidebars = {
           type: 'doc',
           id: 'inkplate/inkplate-features-comparison'
         },
+        "inkplate/touchpads/overview",
         {
           "type": "category",
           "label": "Inkplate Models",
@@ -676,13 +677,6 @@ const sidebars = {
             "inkplate/6motion/6motion-additional-resources"
           ]
         }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Touchpads on Inkplate",
-      "items": [
-        "inkplate/touchpads/overview",
       ]
     },
     {
