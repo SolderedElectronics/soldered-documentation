@@ -86,12 +86,12 @@ inkplate.display()
 <InfoBox>
 Available options for **dithering** algorithm:
 
-| **Algorithm**  | **Set Value** |
+| **Algorithm**  | **Value** |
 | --------------------- | ------------------------ |
-| Inkplate.KERNEL_FLOYD_STEINBERG | 0 |
-| Inkplate.KERNEL_JJN | 1 |
-| Inkplate.KERNEL_STUCKI | 2 |
-| Inkplate.KERNEL_BURKES | 3 |
+| `Inkplate.KERNEL_FLOYD_STEINBERG` | 0 |
+| `Inkplate.KERNEL_JJN` | 1 |
+| `Inkplate.KERNEL_STUCKI` | 2 |
+| `Inkplate.KERNEL_BURKES `| 3 |
 
 **Performance Notes**
 - JPG: ~3 seconds (or ~14s with dithering)

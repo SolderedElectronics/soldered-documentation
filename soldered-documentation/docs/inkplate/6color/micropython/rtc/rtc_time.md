@@ -19,18 +19,33 @@ inkplate = Inkplate()
 inkplate.begin()
 
 # Set the RTC's time
-inkplate.rtcSetTime(9,39,10)
+inkplate.rtcSetTime(9, 39, 10)
 # Set the RTC's date
-inkplate.rtcSetDate(5,9,2,2024)
+inkplate.rtcSetDate(5, 9, 2, 2024)
 
 # Infinite loop
 while True:
+  # Get RTC time data (returns dictionary)
+  rtc_data = inkplate.rtcGetData()
 
-    # Show the set time
-    print(inkplate.rtcGetData())
+  # Clear the display buffer
+  inkplate.clearDisplay()
+  inkplate.setCursor(5, 5)
 
-    # Wait 10 seconds
-    time.sleep(10)
+  # Print every RTC time parameter
+  inkplate.println("RTC Date & Time:")
+  inkplate.println(f"  Year    : {rtc_data['year']}")
+  inkplate.println(f"  Month   : {rtc_data['month']}")
+  inkplate.println(f"  Day     : {rtc_data['day']}")
+  inkplate.println(f"  Weekday : {rtc_data['weekday']}")
+  inkplate.println(f"  Hour    : {rtc_data['hour']}")
+  inkplate.println(f"  Minute  : {rtc_data['minute']}")
+  inkplate.print(f"  Second  : {rtc_data['second']}")
+  inkplate.display()
+
+  # Pause for  10 seconds before updating the display
+  # Note: displayed time may not differ by exactly 10 seconds due to screen refresh time.
+  time.sleep(10)
 ```
 
 <FunctionDocumentation
@@ -52,4 +67,11 @@ while True:
     { type: 'int', name: 'rtc_month', description: 'Set month' },
     { type: 'int', name: 'rtc_yr', description: 'Set year' }
   ]}
+/>
+
+<FunctionDocumentation
+  functionName="inkplate.rtcGetData()"
+  description="Returns current RTC time values"
+  returnType="Dictionary"
+  returnDescription="Return dictionary with RTC time values as integers"
 />

@@ -29,7 +29,7 @@ After you uploaded main **.py** file, go back to starting directory and from *De
 Now we can start writing programs in Python to control our Inkplate. Here is a basic Inkplate object creation and display initialization which we will use in every example in following tutorials.
 
 ```python
-# Include all the required libraries
+# Include inkplate library
 from inkplate6COLOR import Inkplate
 
 # Create Inkplate object

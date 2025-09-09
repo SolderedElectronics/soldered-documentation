@@ -10,7 +10,18 @@ Printing text on Inkplate is simple and requires only a few functions. The libra
 
 ## Simple Colored Text
 
-<InfoBox>There are a total of 7 colors to choose from: INKPLATE_BLACK, INKPLATE_WHITE, INKPLATE_GREEN, INKPLATE_BLUE, INKPLATE_RED, INKPLATE_YELLOW, INKPLATE_ORANGE</InfoBox>
+<InfoBox>
+There are a total of **7 colors** to choose from:
+| Color | Value | Int Value
+|-------|-------|----------|
+| BLACK | INKPLATE_BLACK | 0 |
+| WHITE | INKPLATE_WHITE | 1 |
+| GREEN | INKPLATE_GREEN | 2 |
+| BLUE  | INKPLATE_BLUE  | 3 |
+| RED   | INKPLATE_RED   | 4 |
+| YELLOW | INKPLATE_YELLOW | 5 |
+| ORANGE | INKPLATE_ORANGE | 6 |
+</InfoBox>
 
 To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size
 
@@ -71,7 +82,7 @@ inkplate.display() # Display what is drawn to the buffer
   description="Sets the color of the text. Must be called before printing."
   returnDescription="None"
   parameters={[ 
-    { type: 'string', name: 'color', description: 'Text color.' }
+    { type: 'int', name: 'color', description: 'Text color.' }
   ]}
 />
 <FunctionDocumentation
@@ -79,6 +90,8 @@ inkplate.display() # Display what is drawn to the buffer
   description="This function refreshes the display and draws what is currently in the frame buffer, this function must be called to update the display. This is a full refresh that completely wipes the e-Paper and then draws everything from the frame buffer."
   returnType="none"
 />
+
+<InfoBox> Screen refresh time takes about **12 seconds** which is expected for this kind of display. You may also see it flicker in multiple colors during refresh but that is normal behaviour. </InfoBox>
 
 ## Different fonts example
 Here we will print text using different fonts on our Inkplate board. All of the fonts are available on [Inkplate-MicroPython GitHub](https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/Fonts), just upload **.py** file to your board and import it in your code.
@@ -128,17 +141,17 @@ inkplate.display() # Display what is drawn in the buffer
 <CenteredImage src="/img/6color/custom-fonts.jpg" alt="Expected output on Inkplate display" caption="Custom Fonts Example" />
 
 ## Custom Fonts
-Alternatively, if you want to create your own custom font to use on your board you just take and **.ttf** or **otf** font and turn it into a Python bytearray using the following command:
+Alternatively, if you want to create your own custom font to use on your board you just take and **.ttf** or **.otf** font and turn it into a Python bytearray using the following command:
 
 ```
-python font_to_py.py SourceSans3-Regular.ttf 20 output.py            
+python font_to_py.py SourceSans3-Regular.ttf 20 output.py
 ```
 
 where number 20 represents maximum font size.
 
 This external python script can be found on this [GitHub repo](https://github.com/peterhinch/micropython-font-to-py).
 
-### Example of Custom Font
+## Example of Custom Font
 
 ```python
 from inkplate6COLOR import Inkplate

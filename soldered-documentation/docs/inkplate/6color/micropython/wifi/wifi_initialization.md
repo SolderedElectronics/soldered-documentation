@@ -12,7 +12,10 @@ Inkplate 6COLOR uses ESP32 to handle WiFi connections. This page demonstrates ho
 
 ---
 
+## WiFi Connection Example
+
 ```python
+from inkplate6COLOR import Inkplate
 import network
 import time
 
@@ -20,27 +23,41 @@ import time
 SSID = "YOUR_SSID_HERE"
 PASSWORD = "YOUR_PASSWORD_HERE"
 
-# Connects to a WiFi network using given SSID and PASSWORD.
-#
-# Returns:
-# - True if successfully connected
-# - False if connection fails within the timeout period
-def do_connect():
-    sta_if = network.WLAN(network.STA_IF)
-    if not sta_if.isconnected():
-        print("Connecting to network...")
-        sta_if.active(True)
-        sta_if.connect(SSID, PASSWORD)
+inkplate = Inkplate()
 
+inkplate.begin()
+
+# Connect to a WiFi network using given SSID and PASSWORD.
+sta_if = network.WLAN(network.STA_IF)
+
+connected = False
+
+if not sta_if.isconnected():
+    inkplate.println("Connecting to network...")
+    sta_if.active(True)
+    try:
+        sta_if.connect(SSID, PASSWORD)
+    except Exception as e:
+        inkplate.println(f"Wi-Fi connect error: {e}")
+        inkplate.print("Check your credentials!")
+    else:
         timeout = 30  # seconds
         start = time.ticks_ms()
+
         while not sta_if.isconnected():
             if time.ticks_diff(time.ticks_ms(), start) > timeout * 1000:
                 print("Failed to connect within timeout")
-                return False
+                break
             time.sleep(0.5)
-    print("Network config:", sta_if.ifconfig())
-    return True
+        else:
+            connected = True
+else:
+    connected = True
+
+if connected:
+    inkplate.print(f"CONNECTED: \n{sta_if.ifconfig()}")
+    
+inkplate.display()
 ```
 
 <FunctionDocumentation
