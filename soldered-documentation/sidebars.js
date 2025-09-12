@@ -438,7 +438,14 @@ const sidebars = {
               "type": "category",
               "label": "MicroPython",
               "items": [
-                "inkplate/6color/init",
+                {
+                  "type": "category",
+                  "label": "Setup",
+                  "items": [
+                    "inkplate/6color/micropython/setup/init",
+                    "inkplate/6color/micropython/setup/upload-code"
+                  ]
+                },
                 {
                   "type": "category",
                   "label": "Basics",

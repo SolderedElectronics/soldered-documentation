@@ -6,7 +6,7 @@ id: wifi-init
 hide_title: true
 ---
 
-<SectionTitle title="WiFi Basics" backgroundImage="img/arduino_bg.jpg" />
+<SectionTitle title="WiFi Initialization" backgroundImage="img/arduino_bg.jpg" />
 
 Inkplate 6COLOR uses ESP32 to handle WiFi connections. This page demonstrates how to connect your Inkplate board to existing WiFi network.
 
