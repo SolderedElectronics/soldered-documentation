@@ -685,6 +685,28 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Inkplate MicroPython',
+      items:[
+        {
+          type:'category',
+          label: 'Inkplate 10',
+          items:[
+            {
+              type: 'category',
+              label: 'Examples',
+              items:[
+                  "inkplate_micropython/inkplate10/examples/bw-drawing-mode",
+                  "inkplate_micropython/inkplate10/examples/basic-grayscale",
+                  "inkplate_micropython/inkplate10/examples/drawing-shapes",
+                  "inkplate_micropython/inkplate10/examples/drawing-images-sdcard",
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: 'category',
       label: 'Sensors',
       items: [
         {
