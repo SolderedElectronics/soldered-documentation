@@ -32,7 +32,6 @@ inkplate.display()
   functionName="inkplate = Inkplate(Inkplate.INKPLATE_1BIT)"
   description="Creating Inkplate object in 1-bit mode, black and white colors only."
   returnDescription="Nothing"
-  returnType="nothing"
   parameters={[
     { type: 'Number', name: 'mode', description: 'Value that sets the display mode as either Black-White (INKPLATE_1BIT) or 2bit Grayscale (INKPLATE_2bit) ' }
   ]}
@@ -42,21 +41,18 @@ inkplate.display()
   functionName="inkplate.begin()"
   description="Initializing the display, this must be called only once after creating the Inkplate object."
   returnDescription="Nothing"
-  returnType="nothing"
 />
 
 <FunctionDocumentation
   functionName="inkplate.clearDisplay()"
   description="Clears the internal frame buffer (does not change the panel until you update)."
   returnDescription="Nothing"
-  returnType="nothing"
 />
 
 <FunctionDocumentation
   functionName="inkplate.display()"
   description="Performs a full-screen refresh, sending the current frame buffer to the panel."
   returnDescription="Nothing"
-  returnType="nothing"
 />
 
 ---
