@@ -31,7 +31,7 @@ inkplate.drawTriangle(300, 100, 400, 150, 400, 100, inkplate.BLACK)
 <FunctionDocumentation
 functionName="inkplate.drawPixel(x, y, color)"
 description="Set a single pixel in the frame buffer."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'X coordinate.' },
 { type: 'Number', name: 'y', description: 'Y coordinate.' },
@@ -42,7 +42,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.drawRect(x, y, w, h, color)"
 description="Draw an unfilled rectangle outline."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
@@ -55,7 +55,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.drawCircle(x0, y0, r, color)"
 description="Draw an unfilled circle."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x0', description: 'Center X.' },
 { type: 'Number', name: 'y0', description: 'Center Y.' },
@@ -67,7 +67,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.fillCircle(x0, y0, r, color)"
 description="Draw a filled circle."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x0', description: 'Center X.' },
 { type: 'Number', name: 'y0', description: 'Center Y.' },
@@ -79,7 +79,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.drawFastHLine(x, y, w, color)"
 description="Draw a horizontal line quickly."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'Start X.' },
 { type: 'Number', name: 'y', description: 'Y position.' },
@@ -91,7 +91,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.drawFastVLine(x, y, h, color)"
 description="Draw a vertical line quickly."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'X position.' },
 { type: 'Number', name: 'y', description: 'Start Y.' },
@@ -103,7 +103,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.drawLine(x0, y0, x1, y1, color)"
 description="Draw a line from one point to another."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x0', description: 'Start X.' },
 { type: 'Number', name: 'y0', description: 'Start Y.' },
@@ -116,7 +116,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.drawRoundRect(x, y, w, h, radius, color)"
 description="Draw an unfilled rectangle with rounded corners."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
@@ -130,7 +130,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.fillRoundRect(x, y, w, h, radius, color)"
 description="Draw a filled rectangle with rounded corners."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
@@ -144,7 +144,7 @@ parameters={[
 <FunctionDocumentation
 functionName="inkplate.drawTriangle(x0, y0, x1, y1, x2, y2, color)"
 description="Draw a triangle outline using three vertices."
-returnDescription="NAN"
+returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x0', description: 'Vertex A X.' },
 { type: 'Number', name: 'y0', description: 'Vertex A Y.' },

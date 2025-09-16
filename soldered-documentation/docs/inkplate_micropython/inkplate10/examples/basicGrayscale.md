@@ -43,7 +43,7 @@ inkplate.display()
 <FunctionDocumentation
   functionName="inkplate = Inkplate(Inkplate.INKPLATE_2BIT)"
   description="Create an Inkplate object in 2-bit grayscale mode."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'Number', name: 'mode', description: 'Display mode: INKPLATE_1BIT (BW) or INKPLATE_2BIT (2-bit grayscale).' }
   ]}
@@ -52,25 +52,25 @@ inkplate.display()
 <FunctionDocumentation
   functionName="inkplate.begin()"
   description="Initialize the display hardware and internal state. Call once after creating the object."
-  returnDescription="NAN"
+  returnDescription="Nothing"
 />
 
 <FunctionDocumentation
   functionName="inkplate.clearDisplay()"
   description="Clear the internal frame buffer (the panel won’t change until you refresh)."
-  returnDescription="NAN"
+  returnDescription="Nothing"
 />
 
 <FunctionDocumentation
   functionName="inkplate.display()"
   description="Perform a full refresh, sending the current frame buffer to the e-paper panel."
-  returnDescription="NAN"
+  returnDescription="Nothing"
 />
 
 <FunctionDocumentation
   functionName="inkplate.setTextSize(size)"
   description="Set the text size scaling factor for subsequent printed text."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'Number', name: 'size', description: 'Scale factor (1 = default, 2 = double size, 3 = triple, …).' }
   ]}
@@ -79,7 +79,7 @@ inkplate.display()
 <FunctionDocumentation
   functionName="inkplate.setTextColor(color)"
   description="Set the text color (grayscale level) used by subsequent text rendering."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'Number', name: 'color', description: 'Grayscale value for text (0 = white to 3 = black in 2-bit mode).' }
   ]}
@@ -88,7 +88,7 @@ inkplate.display()
 <FunctionDocumentation
   functionName="inkplate.print(text)"
   description="Write text to the display buffer at the current cursor position."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'String', name: 'text', description: 'String to render.' }
   ]}

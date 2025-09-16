@@ -56,7 +56,7 @@ inkplate.print(long_text)
 <FunctionDocumentation
   functionName="inkplate.setCursor(x, y)"
   description="Set the cursor position for the next text to be rendered."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'Number', name: 'x', description: 'X coordinate for the text start.' },
     { type: 'Number', name: 'y', description: 'Y coordinate for the text baseline.' }
@@ -66,7 +66,7 @@ inkplate.print(long_text)
 <FunctionDocumentation
   functionName="inkplate.setTextSize(size)"
   description="Set the text size scaling factor."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'Number', name: 'size', description: 'Scale factor (1 = normal, 2 = double, 3 = triple, …).' }
   ]}
@@ -75,7 +75,7 @@ inkplate.print(long_text)
 <FunctionDocumentation
   functionName="inkplate.setTextColor(color)"
   description="Set the text foreground color (grayscale level)."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'Number', name: 'color', description: 'Text color, grayscale value (0 = white to 3 = black in 2-bit mode).' }
   ]}
@@ -84,7 +84,7 @@ inkplate.print(long_text)
 <FunctionDocumentation
   functionName="inkplate.setTextWrapping(wrap)"
   description="Enable or disable automatic text wrapping when reaching the display edge."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'Boolean', name: 'wrap', description: 'True to wrap text, False to let it continue off-screen.' }
   ]}
@@ -93,7 +93,7 @@ inkplate.print(long_text)
 <FunctionDocumentation
   functionName="inkplate.print(text)"
   description="Write text to the display buffer at the current cursor position."
-  returnDescription="NAN"
+  returnDescription="Nothing"
   parameters={[
     { type: 'String', name: 'text', description: 'The text string to render.' }
   ]}
