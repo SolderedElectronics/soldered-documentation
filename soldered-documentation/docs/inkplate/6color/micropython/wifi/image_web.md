@@ -8,7 +8,7 @@ hide_title: false
 
 Example showing how to connect to WiFi and render an image fetched from URL using `drawImage`.
 
-<InfoBox>Supported formats: JPG, BMP, and PNG.</InfoBox>
+<InfoBox>Supported image formats: JPG, BMP, and PNG.</InfoBox>
 
 <WarningBox>JPG files **without** progressive encoding are supported.</WarningBox>
 
@@ -67,7 +67,9 @@ inkplate.drawImage(
 inkplate.display()
 ```
 
-<CenteredImage src="/img/6color/web-img.jpg" alt="Expected output on Inkplate display" caption="Example image displayed on Inkplate" />
+<CenteredImage src="/img/6color/dithering-example.jpg" alt="Expected output on Inkplate display" caption="Example image displayed on Inkplate with Dithering enabled" />
+
+<CenteredImage src="/img/6color/no-dithering-example.jpg" alt="Expected output on Inkplate display" caption="Example image displayed on Inkplate without Dithering" />
 
 <FunctionDocumentation
     functionName="inkplate.drawImage()"

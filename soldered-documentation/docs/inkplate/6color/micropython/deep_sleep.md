@@ -8,7 +8,7 @@ hide_title: false
 
 Using deep sleep on Inkplate 6COLOR is crucial for writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the displayed image, Inkplate 6COLOR can consume little or no current while in deep sleep mode, enabling a sketch to run for months on battery.
 
-<InfoBox> If all peripherals are in sleep mode, the deep sleep current will be around **20-30µA** </InfoBox>
+PROVJERI CURRENT CONSUMPTION ZA DEEP SLEEP SA MICROPYTHONOM
 
 ---
 

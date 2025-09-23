@@ -8,7 +8,7 @@ hide_title: false
 
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts of different sizes.
 
-## Simple Colored Text
+## Simple Colored Text Example
 
 <InfoBox>
 There are a total of **7 colors** to choose from:

@@ -6,7 +6,11 @@ id: rtc-measure-time
 hide_title: false
 ---
 
-Now we will explore how to use onboard RTC to measure time and preserve it even during reboots.
+This page shows how to use the **onboard PCF85063A RTC** to measure and keep track of time.
+
+---
+
+## RTC Set Time/Date
 
 ```python
 from inkplate6COLOR import Inkplate
@@ -43,7 +47,7 @@ while True:
   inkplate.print(f"  Second  : {rtc_data['second']}")
   inkplate.display()
 
-  # Pause for  10 seconds before updating the display
+  # Pause for 10 seconds before updating the display
   # Note: displayed time may not differ by exactly 10 seconds due to screen refresh time.
   time.sleep(10)
 ```

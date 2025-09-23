@@ -469,7 +469,9 @@ const sidebars = {
                     "inkplate/6color/micropython/rtc/rtc-measure-time"
                   ]
                 },
-                "inkplate/6color/micropython/deep-sleep"
+                "inkplate/6color/micropython/deep-sleep",
+                "inkplate/6color/micropython/microsd/image-display",
+                "inkplate/6color/micropython/read-battery"
               ]
             },
             "inkplate/6color/faq-troubleshooting"
