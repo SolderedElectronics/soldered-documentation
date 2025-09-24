@@ -23,7 +23,7 @@ There are a total of **7 colors** to choose from:
 | ORANGE | INKPLATE_ORANGE | 6 |
 </InfoBox>
 
-To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size
+To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size:
 
 ```python
 inkplate.setTextSize(2) # Scale up the font size
@@ -85,6 +85,9 @@ inkplate.display() # Display what is drawn to the buffer
     { type: 'int', name: 'color', description: 'Text color.' }
   ]}
 />
+
+<InfoBox> See all available colors [here](#simple-colored-text-example). </InfoBox>
+
 <FunctionDocumentation
   functionName="inkplate.display()"
   description="This function refreshes the display and draws what is currently in the frame buffer, this function must be called to update the display. This is a full refresh that completely wipes the e-Paper and then draws everything from the frame buffer."
@@ -93,8 +96,8 @@ inkplate.display() # Display what is drawn to the buffer
 
 <InfoBox> Screen refresh time takes about **12 seconds** which is expected for this kind of display. You may also see it flicker in multiple colors during refresh but that is normal behaviour. </InfoBox>
 
-## Different fonts example
-Here we will print text using different fonts on our Inkplate board. All of the fonts are available on [Inkplate-MicroPython GitHub](https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/Fonts), just upload **.py** file to your board and import it in your code.
+## Alternative fonts example
+Here we will print text using different fonts on our Inkplate board. All of the fonts are available on [Inkplate-MicroPython GitHub](https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/Fonts), just upload **.py** file to your board and import it in your code:
 
 ```python
 from inkplate6COLOR import Inkplate

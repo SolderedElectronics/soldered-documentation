@@ -438,14 +438,7 @@ const sidebars = {
               "type": "category",
               "label": "MicroPython",
               "items": [
-                {
-                  "type": "category",
-                  "label": "Setup",
-                  "items": [
-                    "inkplate/6color/micropython/setup/init",
-                    "inkplate/6color/micropython/setup/upload-code"
-                  ]
-                },
+                "inkplate/6color/micropython/setup/init",
                 {
                   "type": "category",
                   "label": "Basics",
@@ -470,7 +463,15 @@ const sidebars = {
                   ]
                 },
                 "inkplate/6color/micropython/deep-sleep",
-                "inkplate/6color/micropython/microsd/image-display",
+                {
+                  "type": "category",
+                  "label": "MicroSD",
+                  "items": [
+                    "inkplate/6color/micropython/microsd/microsd-formatting",
+                    "inkplate/6color/micropython/microsd/image-display",
+                    "inkplate/6color/micropython/microsd/read-write-files"
+                  ]
+                },
                 "inkplate/6color/micropython/read-battery"
               ]
             },

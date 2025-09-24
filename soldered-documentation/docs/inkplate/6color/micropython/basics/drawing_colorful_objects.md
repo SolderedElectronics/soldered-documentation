@@ -19,19 +19,21 @@ for r in range(4):
     # Sets the screen rotation
     display.setRotation(r)
 
-    # All drawing functions
-    # Available colors are:
-    # Black, white, green, blue, red, yellow, orange
-    display.drawPixel(100, 100, display.BLACK)
-    display.drawRect(50, 50, 75, 75, display.GREEN)
-    display.drawCircle(200, 200, 30, display.BLUE)
-    display.fillCircle(300, 300, 30, display.RED)
-    display.drawFastHLine(20, 100, 50, display.BLACK)
-    display.drawFastVLine(100, 20, 50, display.ORANGE)
-    display.drawLine(100, 100, 400, 400, display.ORANGE)
-    display.drawRoundRect(100, 10, 100, 100, 10, display.BLACK)
-    display.fillRoundRect(10, 100, 100, 100, 10, display.YELLOW)
-    display.drawTriangle(300, 100, 400, 150, 400, 100, display.BLACK)
+    # Drawing objects
+    inkplate.drawPixel(100, 100, inkplate.BLACK)
+    inkplate.drawRect(50, 50, 75, 75, inkplate.GREEN)
+    inkplate.fillRect(50, 50, 50, 60, inkplate.GREEN)
+    inkplate.drawCircle(200, 200, 30, inkplate.BLUE)
+    inkplate.fillCircle(200, 200, 15, inkplate.BLUE)
+    inkplate.fillCircle(300, 300, 30, inkplate.RED)
+    inkplate.drawFastHLine(20, 100, 50, inkplate.BLACK)
+    inkplate.drawFastVLine(100, 20, 50, inkplate.ORANGE)
+    inkplate.drawLine(100, 100, 400, 400, inkplate.ORANGE)
+    inkplate.drawRoundRect(100, 10, 100, 100, 10, inkplate.BLACK)
+    inkplate.fillRoundRect(10, 100, 100, 100, 10, inkplate.ORANGE)
+    inkplate.fillRoundRect(35, 125, 50, 50, 10, inkplate.BLACK)
+    inkplate.drawTriangle(300, 100, 400, 150, 400, 100, inkplate.BLACK)
+    inkplate.fillTriangle(350, 100, 400, 175, 400, 100, inkplate.YELLOW)
 
 # Reset the rotation
 display.setRotation(0)
@@ -40,7 +42,7 @@ display.setRotation(0)
 display.display()
 ```
 
-## Drawing Functions Definitions
+<InfoBox> See all available colors [here](/documentation/inkplate/6color/micropython/basics/print_text#simple-colored-text-example). </InfoBox>
 
 <FunctionDocumentation
   functionName="inkplate.setRotation()"
@@ -121,10 +123,10 @@ display.display()
   description="Function to draw a line from start to end"
   returnDescription="None"
   parameters={[ 
-    { type: 'int', name: 'x0', description: 'X coordinate' },
-    { type: 'int', name: 'y0', description: 'Y coordinate' },
-    { type: 'int', name: 'x1', description: 'X coordinate' },
-    { type: 'int', name: 'y1', description: 'Y coordinate' },
+    { type: 'int', name: 'x0', description: 'X coordinate for first point' },
+    { type: 'int', name: 'y0', description: 'Y coordinate for first point' },
+    { type: 'int', name: 'x1', description: 'X coordinate for second point' },
+    { type: 'int', name: 'y1', description: 'Y coordinate for second point' },
     { type: 'int', name: 'width', description: 'Line width' },
     { type: 'int', name: 'c', description: 'Line color' }
   ]}
@@ -160,12 +162,26 @@ display.display()
   description="Function to draw a triangle"
   returnDescription="None"
   parameters={[ 
-    { type: 'int', name: 'x0', description: 'X0 coordinate for first point' },
-    { type: 'int', name: 'y0', description: 'Y0 coordinate for first point' },
-    { type: 'int', name: 'x1', description: 'X1 coordinate for second point' },
-    { type: 'int', name: 'y1', description: 'Y1 coordinate for second point' },
-    { type: 'int', name: 'x2', description: 'X2 coordinate for third point' },
+    { type: 'int', name: 'x0', description: 'X coordinate for first point' },
+    { type: 'int', name: 'y0', description: 'Y coordinate for first point' },
+    { type: 'int', name: 'x1', description: 'X coordinate for second point' },
+    { type: 'int', name: 'y1', description: 'Y coordinate for second point' },
+    { type: 'int', name: 'x2', description: 'X coordinate for third point' },
     { type: 'int', name: 'y2', description: 'Y coordinate for third point' },
     { type: 'int', name: 'c', description: 'Triangle color' }
+  ]}
+/>
+<FunctionDocumentation
+  functionName="inkplate.fillTriangle()"
+  description="Function to draw a triangle filled with specified color"
+  returnDescription="None"
+  parameters={[ 
+    { type: 'int', name: 'x0', description: 'X coordinate for first point' },
+    { type: 'int', name: 'y0', description: 'Y coordinate for first point' },
+    { type: 'int', name: 'x1', description: 'X coordinate for second point' },
+    { type: 'int', name: 'y1', description: 'Y coordinate for second point' },
+    { type: 'int', name: 'x2', description: 'X coordinate for third point' },
+    { type: 'int', name: 'y2', description: 'Y coordinate for third point' },
+    { type: 'int', name: 'c', description: 'Triangle fill color' }
   ]}
 />

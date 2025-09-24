@@ -10,7 +10,9 @@ hide_title: true
 
 When running your Inkplate 6COLOR board on a Li-ion battery, it's helpful to know the battery's condition. Inkplate 6COLOR lets you measure the battery voltage directly, giving you an estimate of remaining capacity and help you decide if it's time to recharge.
 
-<WarningBox>Connecting and using the battery correctly is important! Please refer to the battery usage page for guidance before use. </WarningBox>
+<CenteredImage src="/img/6color/battery-connection.jpg" alt="Battery connection" caption="Battery connection" />
+
+<WarningBox>Connecting and using the battery correctly is important! Please refer to the **Inkplate battery page** for detailed info. </WarningBox>
 
 ## Reading battery voltage
 
@@ -32,6 +34,10 @@ inkplate.print(f"Battery capacity: {bat_capacity:.2f} V")
 # Update the display
 inkplate.display()
 ```
+
+<CenteredImage src="/img/6color/read-battery-voltage.jpg" alt="Battery info" caption="Fully charged battery example" />
+
+<InfoBox> Expected values are around 4.2V when full and 3.7V when empty. </InfoBox>
 
 <FunctionDocumentation
   functionName="inkplate.readBattery()"

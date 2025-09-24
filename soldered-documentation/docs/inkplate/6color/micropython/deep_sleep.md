@@ -8,15 +8,13 @@ hide_title: false
 
 Using deep sleep on Inkplate 6COLOR is crucial for writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the displayed image, Inkplate 6COLOR can consume little or no current while in deep sleep mode, enabling a sketch to run for months on battery.
 
-PROVJERI CURRENT CONSUMPTION ZA DEEP SLEEP SA MICROPYTHONOM
-
 ---
 
 ## Simple Deep Sleep
 
 <InfoBox> When your ESP32 wakes up from deep sleep, it performs a reset and runs **main.py** again. That means your main script is executed on every every wake-up. </InfoBox>
 
-<InfoBox> Make sure you’ve uploaded a **main.py** file to the ESP32. Place in it main logic you want to run after each wake-up.</InfoBox>
+<WarningBox> Make sure you’ve uploaded a **main.py** file to the ESP32. Put the code you want to run after each wake-up inside it.</WarningBox>
 
 Basic example keeping a counter in **RTC memory** using **raw bytes.**
 
@@ -44,8 +42,8 @@ inkplate.clearDisplay()
 # Check for reset reason and print message accordingly
 if machine.reset_cause() == machine.DEEPSLEEP_RESET:
     inkplate.println("Woke up from sleep")
-    # Increment to counter 0...255 (Same as count = (count + 1) % 256
-    count = (count + 1) & 0xFF
+    # Increment counter
+    count = count + 1
 else:
     count = 1
     inkplate.println("Cold boot / soft reset")
@@ -70,7 +68,7 @@ machine.deepsleep(10000)
     returnType="machine.CONSTANT"
 />
 
-See [constants](https://docs.micropython.org/en/latest/library/machine.html#machine-constants) for possible return values.
+<InfoBox> See [constants](https://docs.micropython.org/en/latest/library/machine.html#machine-constants) for possible return values. </InfoBox>
 
 <FunctionDocumentation
     functionName="machine.deepsleep()"

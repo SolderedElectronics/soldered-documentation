@@ -25,7 +25,7 @@ inkplate.begin()
 # Set the RTC's time
 inkplate.rtcSetTime(9, 39, 10)
 # Set the RTC's date
-inkplate.rtcSetDate(5, 9, 2, 2024)
+inkplate.rtcSetDate(4, 24, 9, 2025)
 
 # Infinite loop
 while True:
@@ -34,7 +34,7 @@ while True:
 
   # Clear the display buffer
   inkplate.clearDisplay()
-  inkplate.setCursor(5, 5)
+  inkplate.setCursor(5, 5) 
 
   # Print every RTC time parameter
   inkplate.println("RTC Date & Time:")
@@ -51,6 +51,8 @@ while True:
   # Note: displayed time may not differ by exactly 10 seconds due to screen refresh time.
   time.sleep(10)
 ```
+
+<CenteredImage src="/img/6color/rtc-date-time.jpg" alt="Time date display on Inkplate" caption="Time/Date display on Inkpalte"/>
 
 <FunctionDocumentation
   functionName="inkplate.rtcSetTime()"

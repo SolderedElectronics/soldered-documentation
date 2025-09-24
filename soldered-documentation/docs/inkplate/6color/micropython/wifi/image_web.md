@@ -28,29 +28,11 @@ from inkplate6COLOR import Inkplate
 SSID = "YOUR_SSID_HERE"
 PASSWORD = "YOUR_PASSWORD_HERE"
 
-# Connects to a WiFi network using given SSID and PASSWORD
-def do_connect():
-    sta_if = network.WLAN(network.STA_IF)
-    if not sta_if.isconnected():
-        print("Connecting to network...")
-        sta_if.active(True)
-        sta_if.connect(SSID, PASSWORD)
-
-        timeout = 30  # seconds
-        start = time.ticks_ms()
-        while not sta_if.isconnected():
-            if time.ticks_diff(time.ticks_ms(), start) > timeout * 1000:
-                print("Failed to connect within timeout")
-                return False
-            time.sleep(0.5)
-    print("Network config:", sta_if.ifconfig())
-    return True
-
 inkplate = Inkplate()
 
 inkplate.begin()
 
-# Connect to WiFi
+# Connect to WiFi (connection process explained on previous page)
 if not do_connect():
     raise SystemExit("WiFi connection failed")
 

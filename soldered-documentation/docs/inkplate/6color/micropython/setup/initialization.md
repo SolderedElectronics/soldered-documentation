@@ -20,11 +20,11 @@ In order to get started with running your code on Inkplate, connect the device t
 
 1. Download the `Inkplate-firmware.bin` file onto your computer
    
-2. Flash the **.bin** file onto the Inkplate device, this can be done via our [MicroPython VS Code Extension](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper) or the [Thonny IDE](https://thonny.org)
+2. Flash the **.bin** file onto the Inkplate device, this can be done via [Soldered MicroPython Helper VS Code Extension](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper) or the [Thonny IDE](https://thonny.org)
 
-### Flashing with the VS Code Extension
+### Flashing with the Micropython Helper extension
 
-After [setting up the VSCode extension](https://soldered.com/documentation/micropython/getting-started-with-vscode), go to `Install Micropython on your board` and pick `Upload Binary file from PC`, pick the **Inkplate-firmware.bin** file and wait for it to flash on the device.
+After [setting up the MicroPython Helper extension](https://soldered.com/documentation/micropython/getting-started-with-vscode), go to `Install Micropython on your board` and pick `Upload Binary file from PC`, choose the **Inkplate-firmware.bin** file and wait for it to flash on the device.
 
 <CenteredImage src="/img/6color/vscode_upload_file.png" alt="Inkplate 6 color Thonny" caption="Upload .bin file to device" width="500px"/>
 
@@ -34,7 +34,7 @@ In the Thonny IDE, go to `Run -> Configure interpreter` and on the bottom of the
 
 <CenteredImage src="/img/6color/thonny_cfg_install.png" alt="Inkplate 6 color Thonny" caption="Install or update Micropython" width="500px"/>
 
-On the bottom of that window click on the `≡` button and pick `Select local MicroPython image`, pick the Inkplate-firmware.bin file on your computer and press `Install`.
+On the bottom of that window click on the `≡` button and pick `Select local MicroPython image`, choose the Inkplate-firmware.bin file on your computer and press `Install`.
 
 <CenteredImage src="/img/6color/thonny_cfg_install_select_img.png" alt="Inkplate 6 color Thonny" caption="Select Micropython image" width="500px"/>
 
@@ -52,14 +52,42 @@ or if you're running a Windows OS:
   python -m mpremote mip install github:SolderedElectronics/Inkplate-micropython/YOUR_DEVICE
 ```
 
-Installing drivers for Inkplate 6COLOR, use the following command:
+Use the following command to install the MicroPython library for INKPLATE 6COLOR:
 
 ```
   mpremote mip install github:SolderedElectronics/Inkplate-micropython/Inkplate6COLOR
 ```
 
-**You only have to do steps 1-4 once when writing MicroPython firmware on your Inkplate!** If you have already done this, proceed from step 5 onwards.
+**You only have to do steps 1-4 once when writing MicroPython firmware on your Inkplate!**
 
-5. Now you can flash examples and write code with the IDE of your choosing!
+<SuccessBox> Now you can upload examples and write code with the IDE of your choosing! </SuccessBox>
 
-On the next page we'll explain how to start writing code for your Inkplate!
+---
+
+## Initializing Inkplate
+
+Here is a basic Inkplate object creation and display initialization which we will use in every example in following tutorials:
+
+```python
+# Include inkplate library
+from inkplate6COLOR import Inkplate
+
+# Create Inkplate object
+inkplate = Inkplate()
+
+# Initialize the display, needs to be called only once
+inkplate.begin()
+```
+
+<FunctionDocumentation
+  functionName="inkplate.Inkplate()"
+  description="Creates an Inkplate object from the Inkplate class."
+  returnType="none"
+/>
+<FunctionDocumentation
+  functionName="inkplate.begin()"
+  description="In short, this function initializes the Inkplate object. It starts I2C, allocates the required memory for the frame buffer, and initializes the onboard peripherals."
+  returnType="none"
+/>
+
+Now, let's explore some basic examples!
