@@ -1,5 +1,5 @@
 ---  
-slug: /inkplate/6color/micropython/basics/print_text
+slug: /inkplate/6color/micropython/basics/print-text
 title: Inkplate 6COLOR – Printing text
 sidebar_label: Printing text
 id: print-text
@@ -82,22 +82,12 @@ inkplate.display() # Display what is drawn to the buffer
   description="Sets the color of the text. Must be called before printing."
   returnDescription="None"
   parameters={[ 
-    { type: 'int', name: 'color', description: 'Text color.' }
+    { type: 'int', name: 'color', description: 'Set text color.' }
   ]}
 />
 
-<InfoBox> See all available colors [here](#simple-colored-text-example). </InfoBox>
-
-<FunctionDocumentation
-  functionName="inkplate.display()"
-  description="This function refreshes the display and draws what is currently in the frame buffer, this function must be called to update the display. This is a full refresh that completely wipes the e-Paper and then draws everything from the frame buffer."
-  returnType="none"
-/>
-
-<InfoBox> Screen refresh time takes about **12 seconds** which is expected for this kind of display. You may also see it flicker in multiple colors during refresh but that is normal behaviour. </InfoBox>
-
 ## Alternative fonts example
-Here we will print text using different fonts on our Inkplate board. All of the fonts are available on [Inkplate-MicroPython GitHub](https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/Fonts), just upload **.py** file to your board and import it in your code:
+Here we will print text using different fonts on our Inkplate board. All of the fonts are available on **[Inkplate-MicroPython GitHub](https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/Fonts)**, just upload **.py** file to your board and import it in your code:
 
 ```python
 from inkplate6COLOR import Inkplate

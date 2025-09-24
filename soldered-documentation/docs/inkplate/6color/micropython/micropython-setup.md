@@ -1,12 +1,12 @@
 ---  
-slug: /inkplate/6color/micropython/setup/initialization
-title: Inkplate 6COLOR – Micropython
-sidebar_label: Setting up Inkplate
-id: init
+slug: /inkplate/6color/micropython/setup
+title: Inkplate 6COLOR – Setting up Inkplate with MicroPython
+sidebar_label: Setting up MicroPython
+id: setup
 hide_title: true  
 ---
 
-<SectionTitle title="Setting up Inkplate" backgroundImage="img/arduino_bg.jpg" />
+<SectionTitle title="Setting up MicroPython" backgroundImage="img/arduino_bg.jpg" />
 
 To get started with MicroPython on your Inkplate 6COLOR, follow these next few steps. If you are new to MicroPython, check out our official [MicroPython Guide](https://soldered.com/documentation/micropython/overview) for a full setup and overview on how it works.
 
@@ -62,32 +62,8 @@ Use the following command to install the MicroPython library for INKPLATE 6COLOR
 
 <SuccessBox> Now you can upload examples and write code with the IDE of your choosing! </SuccessBox>
 
----
-
-## Initializing Inkplate
-
-Here is a basic Inkplate object creation and display initialization which we will use in every example in following tutorials:
-
-```python
-# Include inkplate library
-from inkplate6COLOR import Inkplate
-
-# Create Inkplate object
-inkplate = Inkplate()
-
-# Initialize the display, needs to be called only once
-inkplate.begin()
-```
-
-<FunctionDocumentation
-  functionName="inkplate.Inkplate()"
-  description="Creates an Inkplate object from the Inkplate class."
-  returnType="none"
+<QuickLink
+  title="Inkplate MicroPython Library"
+  description="GitHub repo for Inkplate MicroPython library"
+  url="https://github.com/SolderedElectronics/Inkplate-micropython"
 />
-<FunctionDocumentation
-  functionName="inkplate.begin()"
-  description="In short, this function initializes the Inkplate object. It starts I2C, allocates the required memory for the frame buffer, and initializes the onboard peripherals."
-  returnType="none"
-/>
-
-Now, let's explore some basic examples!

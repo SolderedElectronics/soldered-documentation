@@ -1,12 +1,12 @@
 ---
-slug: /inkplate/6color/micropython/wifi/wifi_initialization
+slug: /inkplate/6color/micropython/wifi/initialization
 title: Inkplate 6COLOR – WiFi Initialization
-sidebar_label: WiFi Initialization
+sidebar_label: Initialization and Connection
 id: wifi-init
 hide_title: true
 ---
 
-<SectionTitle title="WiFi Initialization" backgroundImage="img/arduino_bg.jpg" />
+<SectionTitle title="Initialization and Connection" backgroundImage="img/arduino_bg.jpg" />
 
 Inkplate 6COLOR uses ESP32 to handle WiFi connections. This page demonstrates how to connect your Inkplate board to an existing WiFi network.
 
@@ -38,8 +38,8 @@ if not sta_if.isconnected():
     try:
         sta_if.connect(SSID, PASSWORD)
     except Exception as e:
-        inkplate.println(f"Wi-Fi connect error: {e}")
-        inkplate.print("Check your credentials!")
+        print(f"Wi-Fi connect error: {e}\n")
+        print("Check your credentials!")
     else:
         timeout = 30  # seconds
         start = time.ticks_ms()

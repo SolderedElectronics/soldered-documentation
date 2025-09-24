@@ -438,13 +438,14 @@ const sidebars = {
               "type": "category",
               "label": "MicroPython",
               "items": [
-                "inkplate/6color/micropython/setup/init",
+                "inkplate/6color/micropython/setup",
                 {
                   "type": "category",
                   "label": "Basics",
                   "items": [
+                    "inkplate/6color/micropython/basics/display-initialization",
                     "inkplate/6color/micropython/basics/print-text",
-                    "inkplate/6color/micropython/basics/drawing-objects"
+                    "inkplate/6color/micropython/basics/drawing-shapes"
                   ]
                 },
                 {
@@ -452,6 +453,7 @@ const sidebars = {
                   "label": "WiFi",
                   "items": [
                     "inkplate/6color/micropython/wifi/wifi-init",
+                    "inkplate/6color/micropython/wifi/get-post-request",
                     "inkplate/6color/micropython/wifi/drawing-img-web"
                   ]
                 },

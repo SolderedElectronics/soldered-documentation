@@ -1,12 +1,14 @@
 ---  
-slug: /inkplate/6color/micropython/basics/drawing_objects
-title: Inkplate 6COLOR – Draw colorful objects
-sidebar_label: Draw colorful objects
-id: drawing-objects  
+slug: /inkplate/6color/micropython/basics/drawing-shapes
+title: Inkplate 6COLOR – Drawing colorful shapes
+sidebar_label: Drawing colorful shapes
+id: drawing-shapes  
 hide_title: false  
 ---
 
-## Drawing Geometric Shapes
+## Colorful Shapes Example
+
+<InfoBox> See all available colors and their values [here](/documentation/inkplate/6color/micropython/basics/print-text#simple-colored-text-example). </InfoBox>
 
 <CenteredImage src="/img/6color/basic-color.jpg" alt="Expected output on Inkplate display" caption="Geometric Shapes output on display" />
 
@@ -41,8 +43,6 @@ display.setRotation(0)
 # Show on the display
 display.display()
 ```
-
-<InfoBox> See all available colors [here](/documentation/inkplate/6color/micropython/basics/print_text#simple-colored-text-example). </InfoBox>
 
 <FunctionDocumentation
   functionName="inkplate.setRotation()"
