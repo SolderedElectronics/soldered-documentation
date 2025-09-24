@@ -693,14 +693,43 @@ const sidebars = {
           items:[
             {
               type: 'category',
-              label: 'Examples',
+              label: 'Basics',
               items:[
-                  "inkplate_micropython/inkplate10/examples/bw-drawing-mode",
-                  "inkplate_micropython/inkplate10/examples/basic-grayscale",
-                  "inkplate_micropython/inkplate10/examples/drawing-shapes",
-                  "inkplate_micropython/inkplate10/examples/drawing-images-sdcard",
+                  "inkplate_micropython/inkplate10/basic/bw-drawing-mode",
+                  "inkplate_micropython/inkplate10/basic/basic-grayscale",
+                  "inkplate_micropython/inkplate10/basic/printing-text",
+                  "inkplate_micropython/inkplate10/basic/drawing-shapes",
               ]
-            }
+            },
+            {
+              type:'category',
+              label: 'MicroSD',
+              items:[
+                "inkplate_micropython/inkplate10/microsd/drawing-images-sdcard",
+              ]
+            },
+            {
+              type:'category',
+              label:'RTC',
+              items:[
+                "inkplate_micropython/inkplate10/rtc/basic-rtc",
+              ]
+            },
+            {
+              type:'category',
+              label:'Hardware',
+              items:[
+                "inkplate_micropython/inkplate10/hardware/battery-and-temperature",
+              ]
+            },
+            {
+              type:'category',
+              label:'WiFi',
+              items:[
+                "inkplate_micropython/inkplate10/wifi/display-image-wifi",
+                "inkplate_micropython/inkplate10/wifi/network-example",
+              ]
+            },
           ]
         }
       ]

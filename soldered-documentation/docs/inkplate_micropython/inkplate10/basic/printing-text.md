@@ -1,36 +1,49 @@
 ---
-slug: /inkplate_micropython/inkplate10/examples/printing-text
-title: Printing Text
+slug: /inkplate_micropython/inkplate10/basic/printing-text
+title: Inkplate 10 MicroPython - Printing Text
 id: printing-text
 ---
 
 inkplate 10 allows you to modify different text parameters, such as: text color, text size and more.
+
+<CenteredImage src="/img/inkplate10-micropython/text.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
+---
 
 ## Printing text
 
 Below is a simple example showcasing some of the basic text manipulation capabilities:
 
 ```python
-# ----------------------------
-# Example 1: Basic text size
-# ----------------------------
-inkplate.setCursor(50, 50)       # set cursor position
-inkplate.setTextSize(1)          # smallest size
-inkplate.setTextColor(3)         # lightest text (white)
+from inkplate10 import Inkplate
+import time
+
+# Create Inkplate object in 1-bit mode, black and white colors only
+inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
+
+# Initialize the display, needs to be called only once
+inkplate.begin()
+
+# Clear the frame buffer
+inkplate.clearDisplay()
+inkplate.display()
+
+
+inkplate.setCursor(50, 50)       
+inkplate.setTextSize(1)          
+inkplate.setTextColor(0)         # lightest text (white)
 inkplate.print("Size 1")
 
 inkplate.setCursor(50, 100)
-inkplate.setTextSize(2)          # double size
-inkplate.setTextColor(2)         # light gray
+inkplate.setTextSize(2)          
+inkplate.setTextColor(1)         # light gray
 inkplate.print("Size 2")
 
 inkplate.setCursor(50, 180)
-inkplate.setTextSize(3)          # triple size
-inkplate.setTextColor(1)         # dark gray
+inkplate.setTextSize(3)          
+inkplate.setTextColor(2)         # dark gray
 inkplate.print("Size 3")
 
-# Example 3: Wrap text
-inkplate.setTextColor(0)        # darkest text (black)
+inkplate.setTextColor(3)         # darkest text (black)
 long_text = (
     "This is a very long line of text intended to demonstrate how wrapping works. "
     "When wrap mode is enabled, the text will continue onto the next line once it "
@@ -40,15 +53,15 @@ long_text = (
 )
 inkplate.setCursor(50, 340)
 inkplate.setTextSize(1)
-inkplate.setTextWrapping(True)       # allow wrapping at display edge
+inkplate.setTextWrapping(True)       
 inkplate.print(long_text)
 
-# Example 4: Disable wrap text
 inkplate.setCursor(50, 460)
 inkplate.setTextSize(1)
-inkplate.setTextWrapping(False)      # text will continue off screen
+inkplate.setTextWrapping(False)      
 inkplate.print(long_text)
 
+inkplate.display()
 ```
 
 ---

@@ -1,10 +1,12 @@
 ---
-slug: /inkplate_micropython/inkplate10/examples/drawing-shapes
-title: Drawing shapes
+slug: /inkplate_micropython/inkplate10/basic/drawing-shapes
+title: Inkplate 10 MicroPython - Drawing shapes
 id: drawing-shapes
 ---
 
 Inkplate 10 allows you to draw different geometric shapes anywhere on it's **1200 x 825 px canvas**. The shapes can be **filled** or **hollow**.
+
+<CenteredImage src="/img/inkplate10-micropython/shapes.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
 
 ---
 
@@ -14,6 +16,20 @@ Below is an example showing how to draw basic shapes in **BW display mode**:
 <InfoBox> If you want to use the grayscale mode, simply change the constructor value and instead of using `inkplate.BLACK` use a numeric value: 0-3</InfoBox>
 
 ```python
+from inkplate10 import Inkplate
+import time
+
+# Create Inkplate object in 1-bit mode, black and white colors only
+inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
+
+# Initialize the display, needs to be called only once
+inkplate.begin()
+
+# Clear the frame buffer
+inkplate.clearDisplay()
+inkplate.display()
+
+
 inkplate.drawPixel(100, 100, inkplate.BLACK)
 inkplate.drawRect(50, 50, 75, 75, inkplate.BLACK)
 inkplate.drawCircle(200, 200, 30, inkplate.BLACK)
@@ -24,6 +40,8 @@ inkplate.drawLine(100, 100, 400, 400, inkplate.BLACK)
 inkplate.drawRoundRect(100, 10, 100, 100, 10, inkplate.BLACK)
 inkplate.fillRoundRect(10, 100, 100, 100, 10, inkplate.BLACK)
 inkplate.drawTriangle(300, 100, 400, 150, 400, 100, inkplate.BLACK)
+
+inkplate.display()
 ```
 
 ---

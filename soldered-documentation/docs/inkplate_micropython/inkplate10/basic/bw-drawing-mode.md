@@ -1,11 +1,13 @@
 ---
-slug: /inkplate_micropython/inkplate10/examples/bw-drawing-mode
-title: Black & White
+slug: /inkplate_micropython/inkplate10/basic/bw-drawing-mode
+title: Inkplate 10 MicroPython - Hello World B&W
 id: bw-drawing-mode
 pagination_prev: NULL
 ---
 
 Inkplate 10 allows you to draw graphics on a **1200 x 825px canvas.**
+
+<CenteredImage src="/img/inkplate10-micropython/imgweb.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
 
 ---
 
@@ -31,9 +33,9 @@ inkplate.display()
 <FunctionDocumentation
   functionName="inkplate = Inkplate(Inkplate.INKPLATE_1BIT)"
   description="Creating Inkplate object in 1-bit mode, black and white colors only."
-  returnDescription="Nothing"
+  returnDescription= 'Nothing'
   parameters={[
-    { type: 'Number', name: 'mode', description: 'Value that sets the display mode as either Black-White (INKPLATE_1BIT) or 2bit Grayscale (INKPLATE_2bit) ' }
+    { type: 'Number', name: 'mode', description: 'Value that sets the display mode as either Black-White INKPLATE_1BIT or 2bit Grayscale INKPLATE_2bit ' }
   ]}
 />
 

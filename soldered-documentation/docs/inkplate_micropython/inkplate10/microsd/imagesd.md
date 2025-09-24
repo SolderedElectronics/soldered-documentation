@@ -1,6 +1,6 @@
 ---
-slug: /inkplate_micropython/inkplate10/examples/drawing-images-sdcard
-title: Drawing images from a MicroSD Card
+slug: /inkplate_micropython/inkplate10/microsd/drawing-images-sdcard
+title: Inkplate 10 MicroPython - Drawing images from a MicroSD Card
 id: drawing-images-sdcard
 ---
 
@@ -13,6 +13,8 @@ Inkplate 10 allows you to display an image from your MicroSD Card in just a few 
 First we need to initialize the onboard SD Card module by calling `inkplate.initSDCard(fastBoot=True)`, before we can access the contents of the MicroSD card. By calling `inkplate.drawImage(path,x0,y0,invert,dither, kernel_type)` you can put the image in the buffer, and by calling `inkplate.display()` you actually display the image from buffer to the display.
 
 <InfoBox>It is recommended to use grayscale mode for bigger color range</InfoBox>
+
+<CenteredImage src="/img/inkplate10-micropython/imgweb.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
 
 ```py
 inkplate=Inkplate(Inkplate.INKPLATE_2BIT)

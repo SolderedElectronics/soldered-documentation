@@ -1,12 +1,14 @@
 ---
-slug: /inkplate_micropython/inkplate10/examples/basic-grayscale
-title: Grayscale
+slug: /inkplate_micropython/inkplate10/basic/basic-grayscale
+title: Inkplate 10 MicroPython - Grayscale
 id: basic-grayscale
 pagination_prev: NULL
 
 ---
 
 Inkplate 10 lets you render 2-bit grayscale graphics (0–7) on a 1200 × 825 px canvas.
+
+<CenteredImage src="/img/inkplate10-micropython/grayscale.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
 
 ---
 
