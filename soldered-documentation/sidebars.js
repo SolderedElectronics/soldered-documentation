@@ -579,6 +579,47 @@ const sidebars = {
                 }
               ]
             },
+            {
+              "type":"category",
+              "label":"MicroPython",
+              "items":[
+                {
+                  "type":"category",
+                  "label":"Basics",
+                  "items": [
+                      "inkplate/10/micropython/basics/init-and-display-update",
+                      "inkplate/10/micropython/basics/printing-text",
+                      "inkplate/10/micropython/basics/drawing-graphics",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"WiFi",
+                  "items":[
+                    "inkplate/10/micropython/wifi/init-and-connection",
+                    "inkplate/10/micropython/wifi/get-and-post-requests",
+                    "inkplate/10/micropython/wifi/draw-image-from-wifi",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"MicroSD",
+                  "items":[
+                    "inkplate/10/micropython/microsd/formatting-the-microsd-card",
+                    "inkplate/10/micropython/microsd/read-and-write",
+                    "inkplate/10/micropython/microsd/draw-image-from-microsd-card",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"RTC",
+                  "items":[
+                    "inkplate/10/micropython/rtc/basic-rtc-usage",
+                  ]
+                },
+                "inkplate/10/micropython/battery-temperature",
+              ]
+            },
             "inkplate/10/10-faq-troubleshooting"
           ]
         },
@@ -681,57 +722,6 @@ const sidebars = {
         "inkplate/projects/e-reader"
       ]
     }
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Inkplate MicroPython',
-      items:[
-        {
-          type:'category',
-          label: 'Inkplate 10',
-          items:[
-            {
-              type: 'category',
-              label: 'Basics',
-              items:[
-                  "inkplate_micropython/inkplate10/basic/bw-drawing-mode",
-                  "inkplate_micropython/inkplate10/basic/basic-grayscale",
-                  "inkplate_micropython/inkplate10/basic/printing-text",
-                  "inkplate_micropython/inkplate10/basic/drawing-shapes",
-              ]
-            },
-            {
-              type:'category',
-              label: 'MicroSD',
-              items:[
-                "inkplate_micropython/inkplate10/microsd/drawing-images-sdcard",
-              ]
-            },
-            {
-              type:'category',
-              label:'RTC',
-              items:[
-                "inkplate_micropython/inkplate10/rtc/basic-rtc",
-              ]
-            },
-            {
-              type:'category',
-              label:'Hardware',
-              items:[
-                "inkplate_micropython/inkplate10/hardware/battery-and-temperature",
-              ]
-            },
-            {
-              type:'category',
-              label:'WiFi',
-              items:[
-                "inkplate_micropython/inkplate10/wifi/display-image-wifi",
-                "inkplate_micropython/inkplate10/wifi/network-example",
-              ]
-            },
-          ]
-        }
       ]
     },
     {

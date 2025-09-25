@@ -1,7 +1,8 @@
 ---
-slug: /inkplate_micropython/inkplate10/rtc/basic-rtc
+slug: /inkplate/10/micropython/rtc/basic-rtc-usage
 title: Inkplate 10 MicroPython - Basic RTC usage
-id: basic-rtc
+sidebar_label: Basic RTC usage
+id: basic-rtc-usage
 ---
 
 Inkplate 10 comes with an onboard **RTC (Real-Time Clock)**, which allows the board to keep track of the time and date even across reboots **(as long as the backup battery is present)**.
@@ -12,7 +13,7 @@ To preserve time while the Inkplate is powered off, make sure a **coin cell batt
 
 This example shows how to set the RTC time and date, and then continuously display the current time on the screen.
 
-<CenteredImage src="/img/inkplate10-micropython/rtc.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
+
 ---
 
 ## Basic RTC Example
@@ -67,9 +68,8 @@ while True:
 ```
 
 <FunctionDocumentation
-functionName="inkplate.rtcSetTime(hour, minute, second)"
+functionName="inkplate.rtcSetTime()"
 description="Set the RTC's current time."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'hour', description: 'Hour (0–23).' },
 { type: 'Number', name: 'minute', description: 'Minute (0–59).' },
@@ -78,9 +78,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.rtcSetDate(weekday, day, month, year)"
+functionName="inkplate.rtcSetDate()"
 description="Set the RTC's current date."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'weekday', description: 'Day of the week (1 = Monday … 7 = Sunday).' },
 { type: 'Number', name: 'day', description: 'Day of the month (1–31).' },
@@ -89,7 +88,13 @@ parameters={[
 ]}
 />
 
-<FunctionDocumentation functionName="inkplate.rtcGetData()" description="Read the current RTC date and time." returnDescription="Dictionary containing keys: `hour`, `minute`, `second`, `weekday`, `day`, `month`, `year`." parameters={[]} />
+<FunctionDocumentation 
+functionName="inkplate.rtcGetData()" 
+description="Read the current RTC date and time." 
+returnDescription="Dictionary containing keys: `hour`, `minute`, `second`, `weekday`, `day`, `month`, `year`." 
+parameters={[]} />
+
+<CenteredImage src="/img/inkplate10-micropython/rtc.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
 
 ---
 

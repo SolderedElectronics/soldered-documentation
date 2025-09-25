@@ -1,17 +1,16 @@
 ---
-slug: /inkplate_micropython/inkplate10/basic/drawing-shapes
-title: Inkplate 10 MicroPython - Drawing shapes
-id: drawing-shapes
+slug: /inkplate/10/micropython/basics/drawing-graphics
+title: Inkplate 10 MicroPython - Drawing Graphics
+sidebar_label: Drawing Graphics
+id: drawing-graphics
 ---
 
-Inkplate 10 allows you to draw different geometric shapes anywhere on it's **1200 x 825 px canvas**. The shapes can be **filled** or **hollow**.
-
-<CenteredImage src="/img/inkplate10-micropython/shapes.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
+Inkplate 10 allows you to draw different geometric shapes anywhere on its **1200 x 825px canvas**. The shapes can be **filled** or **hollow**
 
 ---
 
 ## Drawing Shapes
-Below is an example showing how to draw basic shapes in **BW display mode**:
+Below is a example that demonstrates how to draw basic shapes in **Black-White display mode**.
 
 <InfoBox> If you want to use the grayscale mode, simply change the constructor value and instead of using `inkplate.BLACK` use a numeric value: 0-3</InfoBox>
 
@@ -19,16 +18,10 @@ Below is an example showing how to draw basic shapes in **BW display mode**:
 from inkplate10 import Inkplate
 import time
 
-# Create Inkplate object in 1-bit mode, black and white colors only
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
-
-# Initialize the display, needs to be called only once
 inkplate.begin()
-
-# Clear the frame buffer
 inkplate.clearDisplay()
 inkplate.display()
-
 
 inkplate.drawPixel(100, 100, inkplate.BLACK)
 inkplate.drawRect(50, 50, 75, 75, inkplate.BLACK)
@@ -44,12 +37,9 @@ inkplate.drawTriangle(300, 100, 400, 150, 400, 100, inkplate.BLACK)
 inkplate.display()
 ```
 
----
-
 <FunctionDocumentation
-functionName="inkplate.drawPixel(x, y, color)"
+functionName="inkplate.drawPixel()"
 description="Set a single pixel in the frame buffer."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'X coordinate.' },
 { type: 'Number', name: 'y', description: 'Y coordinate.' },
@@ -58,9 +48,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawRect(x, y, w, h, color)"
+functionName="inkplate.drawRect()"
 description="Draw an unfilled rectangle outline."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
@@ -71,9 +60,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawCircle(x0, y0, r, color)"
+functionName="inkplate.drawCircle()"
 description="Draw an unfilled circle."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x0', description: 'Center X.' },
 { type: 'Number', name: 'y0', description: 'Center Y.' },
@@ -83,9 +71,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.fillCircle(x0, y0, r, color)"
+functionName="inkplate.fillCircle()"
 description="Draw a filled circle."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x0', description: 'Center X.' },
 { type: 'Number', name: 'y0', description: 'Center Y.' },
@@ -95,9 +82,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawFastHLine(x, y, w, color)"
+functionName="inkplate.drawFastHLine()"
 description="Draw a horizontal line quickly."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'Start X.' },
 { type: 'Number', name: 'y', description: 'Y position.' },
@@ -107,9 +93,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawFastVLine(x, y, h, color)"
+functionName="inkplate.drawFastVLine()"
 description="Draw a vertical line quickly."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'X position.' },
 { type: 'Number', name: 'y', description: 'Start Y.' },
@@ -119,9 +104,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawLine(x0, y0, x1, y1, color)"
+functionName="inkplate.drawLine()"
 description="Draw a line from one point to another."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x0', description: 'Start X.' },
 { type: 'Number', name: 'y0', description: 'Start Y.' },
@@ -132,9 +116,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawRoundRect(x, y, w, h, radius, color)"
+functionName="inkplate.drawRoundRect()"
 description="Draw an unfilled rectangle with rounded corners."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
@@ -146,9 +129,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.fillRoundRect(x, y, w, h, radius, color)"
+functionName="inkplate.fillRoundRect()"
 description="Draw a filled rectangle with rounded corners."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
@@ -160,9 +142,8 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawTriangle(x0, y0, x1, y1, x2, y2, color)"
+functionName="inkplate.drawTriangle()"
 description="Draw a triangle outline using three vertices."
-returnDescription="Nothing"
 parameters={[
 { type: 'Number', name: 'x0', description: 'Vertex A X.' },
 { type: 'Number', name: 'y0', description: 'Vertex A Y.' },
@@ -172,14 +153,4 @@ parameters={[
 { type: 'Number', name: 'y2', description: 'Vertex C Y.' },
 { type: 'Const', name: 'color', description: 'Outline color.' }
 ]}
-/>
-
----
-
-## Full example
-
-<QuickLink 
-  title="Inkplate10 basicBW.py" 
-  description="An example showing how to draw basic black and white shapes also, it will draw a bitmap of the Soldered logo in the middle"
-  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/micropython-library-revamp/Examples/Inkplate10/basicBW.py" 
 />

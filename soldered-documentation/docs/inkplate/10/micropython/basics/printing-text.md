@@ -1,17 +1,58 @@
 ---
-slug: /inkplate_micropython/inkplate10/basic/printing-text
-title: Inkplate 10 MicroPython - Printing Text
+slug: /inkplate/10/micropython/basics/printing-text
+title: Inkplate 10 MicroPython - Printing text
+sidebar_label: Printing text
 id: printing-text
 ---
 
-inkplate 10 allows you to modify different text parameters, such as: text color, text size and more.
+Inkplate 10 allows you to draw graphics on a **1200 x 825 px canvas**.
 
-<CenteredImage src="/img/inkplate10-micropython/text.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
+## Displaying basic information
+
+Below is a simple example demonstrating the simple way of displaying the information on the Inkplate display.
+
+```python
+from inkplate10 import Inkplate
+import time
+
+inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
+inkplate.begin()
+inkplate.clearDisplay()
+inkplate.display()
+
+#Putting the text in display buffer
+inkplate.print("Hello World!")
+inkplate.display()
+
+```
+
+<FunctionDocumentation
+  functionName="inkplate.print()"
+  description="Puts the text in display buffer at the current position on display"
+  parameters={[
+    { type: 'String', name: 'text', description: 'String to render.' }
+  ]}
+/>
+
+<CenteredImage src="/img/inkplate10-micropython/helloworld.jpg" alt="Inkplate 10 running the example code" caption="Displaying basic information" width="800px" />
+
 ---
 
-## Printing text
+## Displaying text in Grayscale and more text parameters
 
-Below is a simple example showcasing some of the basic text manipulation capabilities:
+Inkplate 10 also lets you render 2-bit grayscale graphics (0-3) on its canvas. You can also modify different text parameters, such as: text color, text size and text wrapping. Below is a simple example demonstrating different text colors using grayscale and different text styles:
+
+
+<InfoBox>
+Color parameter in 'setTextColor()' changes text color as per table below:
+
+| **VALUE** 	| **COLOR** 	|
+|---	|---	|
+| 0 	| Black 	|
+| 1 	| Dark grey 	|
+| 2 	| Light grey 	|
+| 3 	| White 	|
+</InfoBox>
 
 ```python
 from inkplate10 import Inkplate
@@ -65,11 +106,9 @@ inkplate.display()
 ```
 
 ---
-
 <FunctionDocumentation
-  functionName="inkplate.setCursor(x, y)"
+  functionName="inkplate.setCursor()"
   description="Set the cursor position for the next text to be rendered."
-  returnDescription="Nothing"
   parameters={[
     { type: 'Number', name: 'x', description: 'X coordinate for the text start.' },
     { type: 'Number', name: 'y', description: 'Y coordinate for the text baseline.' }
@@ -77,25 +116,23 @@ inkplate.display()
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextSize(size)"
+  functionName="inkplate.setTextSize()"
   description="Set the text size scaling factor."
-  returnDescription="Nothing"
   parameters={[
     { type: 'Number', name: 'size', description: 'Scale factor (1 = normal, 2 = double, 3 = triple, …).' }
   ]}
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextColor(color)"
-  description="Set the text foreground color (grayscale level)."
-  returnDescription="Nothing"
+  functionName="inkplate.setTextColor"
+  description="Set the text color (grayscale level) used for text rendering."
   parameters={[
-    { type: 'Number', name: 'color', description: 'Text color, grayscale value (0 = white to 3 = black in 2-bit mode).' }
+    { type: 'Number', name: 'color', description: 'Grayscale value for text (0 = white to 3 = black in 2-bit mode).' }
   ]}
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextWrapping(wrap)"
+  functionName="inkplate.setTextWrapping()"
   description="Enable or disable automatic text wrapping when reaching the display edge."
   returnDescription="Nothing"
   parameters={[
@@ -103,13 +140,4 @@ inkplate.display()
   ]}
 />
 
-<FunctionDocumentation
-  functionName="inkplate.print(text)"
-  description="Write text to the display buffer at the current cursor position."
-  returnDescription="Nothing"
-  parameters={[
-    { type: 'String', name: 'text', description: 'The text string to render.' }
-  ]}
-/>
-
----
+<CenteredImage src="/img/inkplate10-micropython/text.jpg" alt="Inkplate 10 running the example code" caption="Simple grayscale example with different text styles." width="800px" />
