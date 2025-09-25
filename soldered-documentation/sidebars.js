@@ -147,6 +147,31 @@ const sidebars = {
                 }
               ]
             },
+            {
+              "type": "category",
+              "label": "MicroPython",
+              "items": [
+                "inkplate/2/micropython/setup",
+                {
+                  "type": "category",
+                  "label": "Basics",
+                  "items": [
+                    "inkplate/2/micropython/basics/display-initialization",
+                    "inkplate/2/micropython/basics/print-text",
+                    "inkplate/2/micropython/basics/graphics"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "WiFi",
+                  "items": [
+                    "inkplate/2/micropython/wifi/wifi-init",
+                    "inkplate/2/micropython/wifi/get-post-request",
+                    "inkplate/2/micropython/wifi/drawing-img-web"
+                  ]
+                }
+              ]
+            },
             "inkplate/2/2-faq-troubleshooting"
           ]
         },

@@ -1,9 +1,9 @@
----
-slug: /inkplate/6color/micropython/wifi/requests
-title: Inkplate 6COLOR – GET & POST Request
+---  
+slug: /inkplate/2/micropython/wifi/requests
+title: Inkplate 2 – Get & Post Request
 sidebar_label: GET & POST Request
 id: get-post-request
-hide_title: false
+hide_title: false  
 ---
 
 Now that your Inkplate has internet access, you can use it to exchange information/data with sensors, custom services or your APIs. Below are examples showing how to receive and send data over the internet with Inkplate.
@@ -14,7 +14,7 @@ Use `HTTP GET` request to easily download and handle data on your Inkplate. This
 
 ```python
 # Include needed libraries
-from inkplate6COLOR import Inkplate
+from inkplate2 import Inkplate
 import network
 import socket
 import time
@@ -29,7 +29,7 @@ def do_connect():
     if not sta_if.isconnected():
         print("connecting to network...")
         sta_if.active(True)
-        sta_if.connect(SSID, PASSWORD)
+        sta_if.connect(ssid, password)
         while not sta_if.isconnected():
             pass
     print("network config:", sta_if.ifconfig())
@@ -87,7 +87,7 @@ inkplate.display()
 To send data from Inkplate to a web server we'll use **[ThingSpeak.com](https://thingspeak.mathworks.com)**, which is a great free online IoT platform. To send data to ThingSpeak with a **POST request**, you need your channel's **Write API Key**. You can find this key under **Channels** tab in your account, opening the channel you created, and checking under the **API Keys** section. This key is used in your request when sending data.
 
 ```python
-from inkplate6COLOR import Inkplate
+from inkplate2 import Inkplate
 import network
 import socket
 
