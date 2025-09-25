@@ -461,7 +461,7 @@ const sidebars = {
                   "type": "category",
                   "label": "RTC",
                   "items": [
-                    "inkplate/6color/micropython/rtc/rtc-measure-time"
+                    "inkplate/6color/micropython/rtc/basic-usage"
                   ]
                 },
                 "inkplate/6color/micropython/deep-sleep",

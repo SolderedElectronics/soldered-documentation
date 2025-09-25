@@ -8,7 +8,7 @@ hide_title: false
 
 ## Colorful Shapes Example
 
-<InfoBox> See all available colors and their values [here](/documentation/inkplate/6color/micropython/basics/print-text#simple-colored-text-example). </InfoBox>
+<InfoBox> See all available colors and their values **[here](/documentation/inkplate/6color/micropython/basics/print-text#simple-colored-text-example)**. </InfoBox>
 
 <CenteredImage src="/img/6color/basic-color.jpg" alt="Expected output on Inkplate display" caption="Geometric Shapes output on display" />
 

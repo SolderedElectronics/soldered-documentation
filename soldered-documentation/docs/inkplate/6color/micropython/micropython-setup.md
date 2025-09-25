@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="Setting up MicroPython" backgroundImage="img/arduino_bg.jpg" />
 
-To get started with MicroPython on your Inkplate 6COLOR, follow these next few steps. If you are new to MicroPython, check out our official [MicroPython Guide](https://soldered.com/documentation/micropython/overview) for a full setup and overview on how it works.
+To get started with MicroPython on your Inkplate 6COLOR, follow these next few steps. If you are new to MicroPython, check out our official **[MicroPython Guide](https://soldered.com/documentation/micropython/overview)** for a full setup and overview on how it works.
 
 ---
 
@@ -20,11 +20,11 @@ In order to get started with running your code on Inkplate, connect the device t
 
 1. Download the `Inkplate-firmware.bin` file onto your computer
    
-2. Flash the **.bin** file onto the Inkplate device, this can be done via [Soldered MicroPython Helper VS Code Extension](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper) or the [Thonny IDE](https://thonny.org)
+2. Flash the **.bin** file onto the Inkplate device, this can be done via **[Soldered MicroPython Helper VS Code Extension](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper)** or the **[Thonny IDE](https://thonny.org)**
 
 ### Flashing with the Micropython Helper extension
 
-After [setting up the MicroPython Helper extension](https://soldered.com/documentation/micropython/getting-started-with-vscode), go to `Install Micropython on your board` and pick `Upload Binary file from PC`, choose the **Inkplate-firmware.bin** file and wait for it to flash on the device.
+After **[setting up the MicroPython Helper extension](https://soldered.com/documentation/micropython/getting-started-with-vscode)**, go to `Install Micropython on your board` and pick `Upload Binary file from PC`, choose the **Inkplate-firmware.bin** file and wait for it to flash on the device.
 
 <CenteredImage src="/img/6color/vscode_upload_file.png" alt="Inkplate 6 color Thonny" caption="Upload .bin file to device" width="500px"/>
 
@@ -40,7 +40,9 @@ On the bottom of that window click on the `≡` button and pick `Select local Mi
 
 3. [Install the mpremote package](https://docs.micropython.org/en/latest/reference/mpremote.html)
 
-4. With the mpremote package, we can **flash the Inkplate modules** onto the device with the following command:
+
+
+4. With the mpremote package, we can **upload the Inkplate modules** onto the device with the following command:
 
 ```
   mpremote mip install github:SolderedElectronics/Inkplate-micropython/YOUR_DEVICE
@@ -51,6 +53,12 @@ or if you're running a Windows OS:
 ```
   python -m mpremote mip install github:SolderedElectronics/Inkplate-micropython/YOUR_DEVICE
 ```
+
+<QuickLink
+  title="Installing MicroPython on Inkplate"
+  description="Guide that walks you through MicroPython setup on your Inkplate"
+  url="#"
+/>
 
 Use the following command to install the MicroPython library for INKPLATE 6COLOR:
 

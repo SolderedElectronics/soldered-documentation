@@ -68,7 +68,7 @@ machine.deepsleep(10000)
     returnType="machine.CONSTANT"
 />
 
-<InfoBox> See [constants](https://docs.micropython.org/en/latest/library/machine.html#machine-constants) for possible return values. </InfoBox>
+<InfoBox> See **[constants](https://docs.micropython.org/en/latest/library/machine.html#machine-constants)** for possible return values. </InfoBox>
 
 <FunctionDocumentation
     functionName="machine.deepsleep()"

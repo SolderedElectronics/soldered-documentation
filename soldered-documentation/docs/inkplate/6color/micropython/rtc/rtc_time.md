@@ -1,8 +1,8 @@
 ---
-slug: /inkplate/6color/micropython/rtc/rtc_measure_time
-title: Inkplate 6COLOR – Measure Time
-sidebar_label: Measure Time
-id: rtc-measure-time
+slug: /inkplate/6color/micropython/rtc/basic
+title: Inkplate 6COLOR – Basic RTC usage
+sidebar_label: Basic RTC usage
+id: basic-usage
 hide_title: false
 ---
 

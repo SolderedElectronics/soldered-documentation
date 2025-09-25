@@ -83,3 +83,74 @@ inkplate.display()
 <CenteredImage src="/img/6color/get-request.jpg" alt="GET Request example" caption="Expected HTML output on display"/> 
 
 ## POST Request
+
+To send data from Inkplate to a web server we'll use **[ThingSpeak.com](https://thingspeak.mathworks.com)**, which is a great free online IoT platform. To send data to ThingSpeak with a **POST request**, you need your channel's **Write API Key**. You can find this key under **Channels** tab in your account, opening the channel you created, and checking under the **API Keys** section. This key is used in your request when sending data.
+
+```python
+from inkplate6COLOR import Inkplate
+import network
+import socket
+
+# Replace with your credentials
+ssid = ""
+password = ""
+
+# ThingSpeak Write API key
+API_KEY = ""
+
+# Initialize Inkplate
+inkplate = Inkplate()
+inkplate.begin()
+
+# Connect to WiFi network
+def do_connect():
+    sta_if = network.WLAN(network.STA_IF)
+    if not sta_if.isconnected():
+        print("Connecting to network...")
+        sta_if.active(True)
+        sta_if.connect(ssid, password)
+        while not sta_if.isconnected():
+            pass
+    print("Network config:", sta_if.ifconfig())
+
+# Function to sent HTTP Post request
+def http_post(url, data, host):
+    addr = socket.getaddrinfo(host, 80)[0][-1] # 
+    s = socket.socket()                        # Create a TCP socket
+    s.connect(addr)                            # Connect to server (ThingSpeak)
+
+    # Build HTTP POST request
+    request = (
+        "POST /update HTTP/1.1\r\n"                            # Method (POST), path (/update), protocol (HTTP/1.1)
+        "Host: " + host + "\r\n"                               # Specify host
+        "Content-Type: application/x-www-form-urlencoded\r\n"  # Data format to send
+        "Content-Length: " + str(len(data)) + "\r\n"           # Content lenght
+        "Connection: close\r\n\r\n" +                          # Close connection after response + end of header
+        data                                                   # The actual data
+    )
+
+    s.send(bytes(request, "utf8")) # Send full HTTP request
+    res = ""
+    while True:
+        buf = s.recv(100) # Read server response
+        if not buf:
+            break
+        res += str(buf, "utf8")
+
+    s.close() # Close the socket
+    return res # Return server Response
+
+# Connect to WiFi
+do_connect()
+
+# Example: update field1 with value 125
+payload = "api_key={}&field1={}".format(API_KEY, 125)
+
+response = http_post("http://api.thingspeak.com/update", payload, "api.thingspeak.com")
+
+# Display HTTP response data
+inkplate.print(response)
+inkplate.display()
+```
+
+<CenteredImage src="/img/6color/post-request.jpg" alt="POST example" caption="Expected HTTP response output on display" />
