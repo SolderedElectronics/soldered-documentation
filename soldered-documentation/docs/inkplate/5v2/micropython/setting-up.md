@@ -1,11 +1,11 @@
 ---
-slug: /inkplate/10/micropython/setting-up
-title: Inkplate 10 MicroPython - Setting up Inkplate with MicroPython
+slug: /inkplate/5v2/micropython/setting-up
+title: Inkplate 5v2 MicroPython - Setting up Inkplate with MicroPython
 sidebar_label: Setting up Inkplate with MicroPython
 id: setting-up
 ---
 
-To get started with MicroPython on your Inkplate 10, follow these next few steps. If you are new to MicroPython, check out our official **[MicroPython Guide](https://soldered.com/documentation/micropython/overview)** for a full setup and overview on how it works.
+To get started with MicroPython on your Inkplate 5v2, follow these next few steps. If you are new to MicroPython, check out our official **[MicroPython Guide](https://soldered.com/documentation/micropython/overview)** for a full setup and overview on how it works.
 
 ---
 
@@ -23,17 +23,17 @@ In order to get started with running your code on Inkplate, connect the device t
 
 After **[setting up the MicroPython Helper extension](https://soldered.com/documentation/micropython/getting-started-with-vscode)**, go to `Install Micropython on your board` and pick `Upload Binary file from PC`, choose the **Inkplate-firmware.bin** file and wait for it to flash on the device.
 
-<CenteredImage src="/img/inkplate10-micropython/vscode_upload_file.png" alt="Inkplate 10 Thonny" caption="Upload .bin file to device" width="500px"/>
+<CenteredImage src="/img/inkplate10-micropython/vscode_upload_file.png" alt="Inkplate 5v2 color Thonny" caption="Upload .bin file to device" width="500px"/>
 
 ### Flashing via Thonny IDE
 
 In the Thonny IDE, go to `Run -> Configure interpreter` and on the bottom of the window go to `Install or update Micropython`. 
 
-<CenteredImage src="/img/inkplate10-micropython/thonny_cfg_install.png" alt="Inkplate 10 Thonny" caption="Install or update Micropython" width="500px"/>
+<CenteredImage src="/img/inkplate10-micropython/thonny_cfg_install.png" alt="Inkplate 5v2 color Thonny" caption="Install or update Micropython" width="500px"/>
 
 On the bottom of that window click on the `≡` button and pick `Select local MicroPython image`, choose the Inkplate-firmware.bin file on your computer and press `Install`.
 
-<CenteredImage src="/img/inkplate10-micropython/thonny_cfg_install_select_img.png" alt="Inkplate 10 Thonny" caption="Select Micropython image" width="500px"/>
+<CenteredImage src="/img/inkplate10-micropython/thonny_cfg_install_select_img.png" alt="Inkplate 5v2 color Thonny" caption="Select Micropython image" width="500px"/>
 
 3. [Install the mpremote package](https://docs.micropython.org/en/latest/reference/mpremote.html)
 
@@ -57,10 +57,10 @@ or if you're running a Windows OS:
   url="#"
 />
 
-Use the following command to install the MicroPython library for INKPLATE 10:
+Use the following command to install the MicroPython library for INKPLATE 5v2:
 
 ```
-  mpremote mip install github:SolderedElectronics/Inkplate-micropython/Inkplate10
+  mpremote mip install github:SolderedElectronics/Inkplate-micropython/Inkplate5v2
 ```
 
 **You only have to do steps 1-4 once when writing MicroPython firmware on your Inkplate!**

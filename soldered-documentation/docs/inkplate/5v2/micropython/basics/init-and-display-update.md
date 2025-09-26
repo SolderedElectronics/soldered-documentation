@@ -1,6 +1,6 @@
 ---
-slug: /inkplate/10/micropython/basics/init-and-display-update
-title: Inkplate 10 MicroPython - Initialization and display update
+slug: /inkplate/5v2/micropython/basics/init-and-display-update
+title: Inkplate 5v2 MicroPython - Initialization and display update
 sidebar_label: Initialization and display update
 id: init-and-display-update
 ---
@@ -10,7 +10,7 @@ id: init-and-display-update
 Here is a basic Inkplate object creation and display initialization which we will use in every example in following tutorials:
 
 ```python
-from inkplate10 import Inkplate
+from inkplate5v2 import Inkplate
 
 # Create Inkplate object
 inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
@@ -33,7 +33,7 @@ inkplate.display()
     ]}
 />
 
-<InfoBox> To learn more about Grayscale mode, check [this documentation](/documentation/inkplate/10/micropython/basics/printing-text/#displaying-text-in-grayscale-and-more-text-parameters)</InfoBox>
+<InfoBox> To learn more about Grayscale mode, check [this documentation](/documentation/inkplate/5v2/micropython/basics/printing-text/#displaying-text-in-grayscale-and-more-text-parameters)</InfoBox>
 
 <InfoBox>
 | **VALUE** 	| **ENUM** 	|
