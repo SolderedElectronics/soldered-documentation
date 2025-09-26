@@ -20,6 +20,8 @@ Using deep sleep on Inkplate 2 is crucial for writing a sketch that maximizes ba
 
 Basic example of using deep sleep on ESP32 and printing current RTC time.
 
+<InfoBox> The RTC can drift a little each day, so in order to keep time accurate it's best to resync with NTP once a day. </InfoBox>
+
 ```python
 from inkplate2 import Inkplate
 import machine

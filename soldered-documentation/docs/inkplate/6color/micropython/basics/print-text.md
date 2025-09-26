@@ -142,7 +142,7 @@ python font_to_py.py SourceSans3-Regular.ttf 20 output.py
 
 where number 20 represents maximum font size.
 
-This external python script can be found on this [GitHub repo](https://github.com/peterhinch/micropython-font-to-py).
+<InfoBox> This external python script can be found on this **[GitHub repo](https://github.com/peterhinch/micropython-font-to-py)**. </InfoBox>
 
 ## Example of Custom Font
 

@@ -149,6 +149,8 @@ if __name__ == "__main__":
     url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate2/basicBWR.py"
 />
 
+---
+
 ## Drawing colored bitmap example
 
 <CenteredImage src="/img/inkplate_2/bitmap-colored.jpg" alt="Colored bitmap example" caption="Colored Bitmap image example" />

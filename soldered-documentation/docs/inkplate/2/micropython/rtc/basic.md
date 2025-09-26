@@ -10,6 +10,8 @@ hide_title: true
 
 This page shows how to get time from NTP server and keep track using RTC.
 
+<InfoBox> The RTC can drift a little each day, so in order to keep time accurate it's best to resync with NTP once a day. </InfoBox>
+
 ---
 
 ## Example fetching time from the Internet
