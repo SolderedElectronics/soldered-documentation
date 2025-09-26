@@ -583,6 +583,7 @@ const sidebars = {
               "type":"category",
               "label":"MicroPython",
               "items":[
+                "inkplate/10/micropython/setting-up",
                 {
                   "type":"category",
                   "label":"Basics",
