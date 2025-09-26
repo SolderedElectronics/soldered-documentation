@@ -16,7 +16,7 @@ Example showing how to connect to WiFi and render an image fetched from URL usin
 
 ## Drawing an Image 
 
-<CenteredImage src="/img/inkplate_2/inkplate2-example-img.jpg" alt="Example image" caption="Example image to display on Inkplate" width="750px"/>
+<CenteredImage src="/img/inkplate_2/inkplate2-example-img.jpg" alt="Example image" caption="Example image to display on Inkplate" width="212px"/>
 
 ```python
 from inkplate2 import Inkplate

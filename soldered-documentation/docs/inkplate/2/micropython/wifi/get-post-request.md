@@ -104,29 +104,30 @@ inkplate.display()
 
 ## POST Request
 
-To send data from Inkplate to a web server we'll use **[ThingSpeak.com](https://thingspeak.mathworks.com)**, which is a great free online IoT platform. To send data to ThingSpeak with a **POST request**, you need your channel's **Write API Key**. You can find this key under **Channels** tab in your account, opening the channel you created, and checking under the **API Keys** section. This key is used in your request when sending data.
+This example shows how to **JSON** data through  `POST` requets to Webhook server.
 
 ```python
 from inkplate2 import Inkplate
 import network
-import socket
+import time
+import urequests
+import ujson
 
 # Replace with your credentials
-SSID = ""
-PASSWORD = ""
-
-# ThingSpeak Write API key
-API_KEY = ""
+SSID = "YOUR_SSID_HERE"
+PASSWORD = "YOU_PASSWORD_HERE"
 
 # Initialize Inkplate
 inkplate = Inkplate()
 inkplate.begin()
 
+sta_if = network.WLAN(network.STA_IF)
+
 # Connect to WiFi network
 def do_connect():
     connected = False
     if not sta_if.isconnected():
-        println("Connecting to network...")
+        print("Connecting to network...")
         sta_if.active(True)
         try:
             sta_if.connect(SSID, PASSWORD)
@@ -153,45 +154,22 @@ def do_connect():
     else:
         return False
 
-# Function to sent HTTP Post request
-def http_post(url, data, host):
-    addr = socket.getaddrinfo(host, 80)[0][-1] # 
-    s = socket.socket()                        # Create a TCP socket
-    s.connect(addr)                            # Connect to server (ThingSpeak)
-
-    # Build HTTP POST request
-    request = (
-        "POST /update HTTP/1.1\r\n"                            # Method (POST), path (/update), protocol (HTTP/1.1)
-        "Host: " + host + "\r\n"                               # Specify host
-        "Content-Type: application/x-www-form-urlencoded\r\n"  # Data format to send
-        "Content-Length: " + str(len(data)) + "\r\n"           # Content lenght
-        "Connection: close\r\n\r\n" +                          # Close connection after response + end of header
-        data                                                   # The actual data
-    )
-
-    s.send(bytes(request, "utf8")) # Send full HTTP request
-    res = ""
-    while True:
-        buf = s.recv(100) # Read server response
-        if not buf:
-            break
-        res += str(buf, "utf8")
-
-    s.close() # Close the socket
-    return res # Return server Response
+def http_post(url, text_data):
+    response = urequests.post(url, json=data)
+    print("Status code:", response.status_code)
+    inkplate.print(f"Body: {response.text}")
 
 # Connect to WiFi
 if not do_connect():
     raise SystemExit("WiFi connection failed")
 
-# Example: update field1 with value 125
-payload = "api_key={}&field1={}".format(API_KEY, 125)
+WEBHOOK_URL = "https://webhook.site/YOUR_UNIQUE_ID"
 
-response = http_post("http://api.thingspeak.com/update", payload, "api.thingspeak.com")
+# Data you want to send
+data = {"message": "Hello from Inkplate2!"}
 
-# Display HTTP response data
-inkplate.print(response)
+http_post(WEBHOOK_URL, data)
+
+# Display HTTP response 
 inkplate.display()
 ```
-
-<CenteredImage src="/img/inkplate_2/post.jpg" alt="POST example" caption="Expected HTTP response output on display" />
