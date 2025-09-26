@@ -169,7 +169,15 @@ const sidebars = {
                     "inkplate/2/micropython/wifi/get-post-request",
                     "inkplate/2/micropython/wifi/drawing-img-web"
                   ]
-                }
+                },
+                {
+                  "type": "category",
+                  "label": "Real Time Clock",
+                  "items": [
+                    "inkplate/2/micropython/rtc/basic"
+                  ]
+                },
+                "inkplate/2/micropython/deep-sleep",
               ]
             },
             "inkplate/2/2-faq-troubleshooting"

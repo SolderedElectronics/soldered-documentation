@@ -40,4 +40,11 @@ inkplate.display()
   returnType="none"
 />
 
+## Clear display
+
+<FunctionDocumentation
+  functionName="inkplate.clearDisplay()"
+  description="This function clears everything stored in display buffer."
+  returnType="none"
+/>
 <InfoBox> Screen refresh time takes about **12 seconds** which is expected for this kind of display. You may also see it flicker in multiple colors during refresh but that is normal behaviour. </InfoBox>

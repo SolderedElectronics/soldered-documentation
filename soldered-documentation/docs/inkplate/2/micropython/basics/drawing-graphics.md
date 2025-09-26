@@ -6,7 +6,9 @@ id: graphics
 hide_title: false  
 ---
 
-An example showing how to draw shapes and text in black, white with a bitmap of the Soldered logo in the middle.
+This page demonstrates and explains some basic shape drawing functions and text display all in different colors.
+
+## Basic Black-White-Red example
 
 <InfoBox>
 Inkplate2 supports **3 colors** to display:
@@ -16,8 +18,6 @@ Inkplate2 supports **3 colors** to display:
 | WHITE | INKPLATE_BLACK | 1 |
 | RED   | INKPLATE_RED   | 2 |
 </InfoBox>
-
-## Basic Black-White-Red example
 
 ```python
 from inkplate2 import Inkplate
@@ -71,6 +71,8 @@ if __name__ == "__main__":
     # The display flickers when it updates and it takes a while, this is normal
     display.display()
 ```
+
+<CenteredImage src="/img/inkplate_2/graphics.jpg" alt="Colored bitmap example" caption="Simple graphics example" />
 
 <FunctionDocumentation
   functionName="inkplate.setTextColor()"
@@ -145,4 +147,14 @@ if __name__ == "__main__":
     title="Code Example on GitHub"
     description="Basic Black-White-Red example on GitHub"
     url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate2/basicBWR.py"
+/>
+
+## Drawing colored bitmap example
+
+<CenteredImage src="/img/inkplate_2/bitmap-colored.jpg" alt="Colored bitmap example" caption="Colored Bitmap image example" />
+
+<QuickLink
+    title="drawColoredBitmap"
+    description="Example showing how to draw a colored bitmap stored in flash memory."
+    url="https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/Examples/Inkplate2/drawColoredBitmap"
 />

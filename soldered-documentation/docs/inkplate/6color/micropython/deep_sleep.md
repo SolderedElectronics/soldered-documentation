@@ -16,7 +16,7 @@ Using deep sleep on Inkplate 6COLOR is crucial for writing a sketch that maximiz
 
 <WarningBox> Make sure you’ve uploaded a **main.py** file to the ESP32. Put the code you want to run after each wake-up inside it.</WarningBox>
 
-Basic example keeping a counter in **RTC memory** using **raw bytes.**
+Basic example of keeping a counter in **RTC memory** using **raw bytes** while ESP32 is in deep sleep.
 
 ```python
 from inkplate6COLOR import Inkplate

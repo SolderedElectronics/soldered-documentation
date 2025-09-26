@@ -26,7 +26,7 @@ inkplate.print("Hello world") # Print text to frame buffer
 inkplate.display() # Display what is drawn to the buffer
 ```
 
-<CenteredImage src="/img/6color/hello-world.jpg" alt="Expected output on Inkplate display" caption="Hello world output on display" />
+<CenteredImage src="/img/inkplate_2/hello-world.jpg" alt="Expected output on Inkplate display" caption="Hello world output on display" />
 
 <FunctionDocumentation
   functionName="inkplate.setTextSize()"
@@ -79,7 +79,7 @@ inkplate.print("Sans Bold Oblique")
 inkplate.display()
 ```
 
-<CenteredImage src="/img/6color/custom-fonts.jpg" alt="Expected output on Inkplate display" caption="Custom Fonts Example" />
+<CenteredImage src="/img/inkplate_2/fonts.jpg" alt="Expected output on Inkplate display" caption="Custom Fonts Example" />
 
 ## Custom Fonts
 Alternatively, if you want to create your own custom font to use on your board you just take and **.ttf** or **.otf** font and turn it into a Python bytearray using the following command:
@@ -102,11 +102,13 @@ import drippy as drippy
 inkplate = Inkplate()
 inkplate.begin()
 
+# Set custom font and print text
 inkplate.setFont(drippy)
 inkplate.setTextSize(2)
 inkplate.println("Drippy")
 
+# Update the display
 inkplate.display()
 ```
 
-<CenteredImage src="/img/6color/drippy.jpg" alt="Expected output on Inkplate display" caption="Drippy Custom Font Example" />
+<CenteredImage src="/img/inkplate_2/drippy-font.jpg" alt="Expected output on Inkplate display" caption="Drippy Custom Font Example" />

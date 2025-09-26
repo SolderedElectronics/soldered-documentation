@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="Setting up MicroPython" backgroundImage="img/arduino_bg.jpg" />
 
-To get started with MicroPython on your Inkplate 6COLOR, follow these next few steps. If you are new to MicroPython, check out our official **[MicroPython Guide](https://soldered.com/documentation/micropython/overview)** for a full setup and overview on how it works.
+To get started with MicroPython on your Inkplate 6COLOR, follow the instructions on this page. If you are new to MicroPython, check out our official **[MicroPython Guide](https://soldered.com/documentation/micropython/overview)** for a full setup and overview on how it works.
 
 ---
 

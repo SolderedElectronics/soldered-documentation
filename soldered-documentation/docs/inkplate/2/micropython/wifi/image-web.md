@@ -33,7 +33,7 @@ inkplate = Inkplate()
 # Initialize the display, needs to be called only once
 inkplate.begin()
 
-# Connect to WiFi
+# Connect to WiFi (process explained on previous pages)
 if not do_connect():
     raise SystemExit("WiFi connection failed")
 
@@ -49,9 +49,9 @@ inkplate.drawImage(
 inkplate.display()
 ```
 
-<CenteredImage src="/img/6color/dithering-example.jpg" alt="Expected output on Inkplate display" caption="Example image displayed on Inkplate with Dithering enabled" />
+<CenteredImage src="/img/inkplate_2/img-web.jpg" alt="Expected output on Inkplate display" caption="Example image displayed on Inkplate with Dithering enabled" />
 
-<CenteredImage src="/img/6color/no-dithering-example.jpg" alt="Expected output on Inkplate display" caption="Example image displayed on Inkplate without Dithering" />
+<CenteredImage src="/img/inkplate_2/img-web-no-dither.jpg" alt="Expected output on Inkplate display" caption="Example image displayed on Inkplate without Dithering" />
 
 <FunctionDocumentation
     functionName="inkplate.drawImage()"
