@@ -25,14 +25,34 @@ PASSWORD = "YOU_PASSWORD_HERE"
 
 # Connect to WiFi network
 def do_connect():
-    sta_if = network.WLAN(network.STA_IF)
+    connected = False
     if not sta_if.isconnected():
-        print("connecting to network...")
+        println("Connecting to network...")
         sta_if.active(True)
-        sta_if.connect(SSID, PASSWORD)
-        while not sta_if.isconnected():
-            pass
-    print("network config:", sta_if.ifconfig())
+        try:
+            sta_if.connect(SSID, PASSWORD)
+        except Exception as e:
+            print(f"Wi-Fi connect error: {e}\n")
+            print("Check your credentials!")
+        else:
+            timeout = 30  # seconds
+            start = time.ticks_ms()
+
+            while not sta_if.isconnected():
+                if time.ticks_diff(time.ticks_ms(), start) > timeout * 1000:
+                    print("Failed to connect within timeout")
+                    break
+                time.sleep(0.5)
+            else:
+                connected = True
+    else:
+        connected = True
+
+    if connected:
+        print(f"CONNECTED: \n{sta_if.ifconfig()}")
+        return True
+    else:
+        return False
 
 # This function does a HTTP GET request
 # More info here: https://docs.micropython.org/en/latest/esp8266/tutorial/network_tcp.html
@@ -52,8 +72,9 @@ def http_get(url):
     s.close()
     return res
 
-# First, connect
-do_connect()
+# Connect to WiFi
+if not do_connect():
+    raise SystemExit("WiFi connection failed")
 
 # Do a GET request to the webhook platform
 # Change the url to do GET request to a different page
@@ -102,16 +123,35 @@ API_KEY = ""
 inkplate = Inkplate()
 inkplate.begin()
 
-# Connect to WiFi network
 def do_connect():
-    sta_if = network.WLAN(network.STA_IF)
+    connected = False
     if not sta_if.isconnected():
-        print("Connecting to network...")
+        println("Connecting to network...")
         sta_if.active(True)
-        sta_if.connect(SSID, PASSWORD)
-        while not sta_if.isconnected():
-            pass
-    print("Network config:", sta_if.ifconfig())
+        try:
+            sta_if.connect(SSID, PASSWORD)
+        except Exception as e:
+            print(f"Wi-Fi connect error: {e}\n")
+            print("Check your credentials!")
+        else:
+            timeout = 30  # seconds
+            start = time.ticks_ms()
+
+            while not sta_if.isconnected():
+                if time.ticks_diff(time.ticks_ms(), start) > timeout * 1000:
+                    print("Failed to connect within timeout")
+                    break
+                time.sleep(0.5)
+            else:
+                connected = True
+    else:
+        connected = True
+
+    if connected:
+        print(f"CONNECTED: \n{sta_if.ifconfig()}")
+        return True
+    else:
+        return False
 
 # Function to sent HTTP Post request
 def http_post(url, data, host):
@@ -141,7 +181,8 @@ def http_post(url, data, host):
     return res # Return server Response
 
 # Connect to WiFi
-do_connect()
+if not do_connect():
+    raise SystemExit("WiFi connection failed")
 
 # Example: update field1 with value 125
 payload = "api_key={}&field1={}".format(API_KEY, 125)
