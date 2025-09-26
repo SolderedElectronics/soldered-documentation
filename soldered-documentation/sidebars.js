@@ -411,6 +411,48 @@ const sidebars = {
                 }
               ]
             },
+            {
+              "type":"category",
+              "label":"MicroPython",
+              "items":[
+                "inkplate/6/micropython/setting-up",
+                {
+                  "type":"category",
+                  "label":"Basics",
+                  "items": [
+                      "inkplate/5v2/micropython/basics/init-and-display-update",
+                      "inkplate/5v2/micropython/basics/printing-text",
+                      "inkplate/5v2/micropython/basics/drawing-graphics",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"WiFi",
+                  "items":[
+                    "inkplate/5v2/micropython/wifi/init-and-connection",
+                    "inkplate/5v2/micropython/wifi/get-and-post-requests",
+                    "inkplate/5v2/micropython/wifi/draw-image-from-wifi",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"MicroSD",
+                  "items":[
+                    "inkplate/5v2/micropython/microsd/formatting-the-microsd-card",
+                    "inkplate/5v2/micropython/microsd/read-and-write",
+                    "inkplate/5v2/micropython/microsd/draw-image-from-microsd-card",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"RTC",
+                  "items":[
+                    "inkplate/5v2/micropython/rtc/basic-rtc-usage",
+                  ]
+                },
+                "inkplate/5v2/micropython/battery-temperature",
+              ]
+            },
             "inkplate/6/faq-troubleshooting"
           ]
         },
