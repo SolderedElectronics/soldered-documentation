@@ -447,7 +447,7 @@ const sidebars = {
                   "type":"category",
                   "label":"RTC",
                   "items":[
-                    "/inkplate/6/micropython/rtc/basic-rtc-usage",
+                    "inkplate/6/micropython/rtc/basic-rtc-usage",
                   ]
                 },
                 "inkplate/6/micropython/battery-temperature",
@@ -594,6 +594,49 @@ const sidebars = {
                     "inkplate/6flick/rtc/6flick-rtc-alarm"
                   ]
                 }
+              ]
+            },
+            {
+              "type":"category",
+              "label":"MicroPython",
+              "items":[
+                "inkplate/6flick/micropython/setting-up",
+                {
+                  "type":"category",
+                  "label":"Basics",
+                  "items": [
+                      "inkplate/6flick/micropython/basics/init-and-display-update",
+                      "inkplate/6flick/micropython/basics/printing-text",
+                      "inkplate/6flick/micropython/basics/drawing-graphics",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"WiFi",
+                  "items":[
+                    "inkplate/6flick/micropython/wifi/init-and-connection",
+                    "inkplate/6flick/micropython/wifi/get-and-post-requests",
+                    "inkplate/6flick/micropython/wifi/draw-image-from-wifi",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"MicroSD",
+                  "items":[
+                    "inkplate/6flick/micropython/microsd/formatting-the-microsd-card",
+                    "inkplate/6flick/micropython/microsd/read-and-write",
+                    "inkplate/6flick/micropython/microsd/draw-image-from-microsd-card",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"RTC",
+                  "items":[
+                    "inkplate/6flick/micropython/rtc/basic-rtc-usage",
+                  ]
+                },
+                "inkplate/6flick/micropython/battery-temperature",
+                "inkplate/6flick/micropython/frontlight",
               ]
             },
             "inkplate/6flick/6flick-faq-troubleshooting"

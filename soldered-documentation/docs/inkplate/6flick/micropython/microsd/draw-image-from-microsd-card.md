@@ -1,11 +1,11 @@
 ---
-slug: /inkplate/6/micropython/microsd/draw-image-from-microsd-card
-title: Inkplate 6 MicroPython - Draw Image from microSD card
+slug: /inkplate/6flick/micropython/microsd/draw-image-from-microsd-card
+title: Inkplate 6FLICK MicroPython - Draw Image from microSD card
 sidebar_label: Draw Image from microSD card
 id: draw-image-from-microsd-card
 ---
 
-Inkpalte 6 can load and render images directly from the onboard microSD card. This example shows how to initialize the SD card, list its contents and display a JPEG, PNG or BMP image on screen.
+Inkpalte 6FLICK can load and render images directly from the onboard microSD card. This example shows how to initialize the SD card, list its contents and display a JPEG, PNG or BMP image on screen.
 
 ---
 
@@ -17,7 +17,7 @@ To learn how to format the microSD card click [**here**](/documentation/inkplate
 The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate10/displayImageSd/mountain.jpg).
 
 ```python
-from inkplate6 import Inkplate
+from inkplate6FLICK import Inkplate
 import time
 from os import listdir
 
@@ -76,4 +76,4 @@ Available options for **dithering** algorithm:
 </InfoBox>
 
 
-<CenteredImage src="/img/inkplate6-micropython/imgsd.jpg" alt="Inkplate 6 running the example code" caption="Displaying an image from SD card." width="1000px" />
+<CenteredImage src="/img/inkplate6flick-micropython/imgsd.jpg" alt="Inkplate 6flick running the example code" caption="Displaying an image from SD card." width="1000px" />

@@ -1,11 +1,11 @@
 ---
-slug: /inkplate/6/micropython/basics/drawing-graphics
-title: Inkplate 6 MicroPython - Drawing Graphics
+slug: /inkplate/6flick/micropython/basics/drawing-graphics
+title: Inkplate 6FLICK MicroPython - Drawing Graphics
 sidebar_label: Drawing Graphics
 id: drawing-graphics
 ---
 
-Inkplate 6 allows you to draw different geometric shapes anywhere on its **800 x 600 px canvas**. The shapes can be **filled** or **hollow**
+Inkplate 6FLICK allows you to draw different geometric shapes anywhere on its **1024 x 758 px canvas**. The shapes can be **filled** or **hollow**
 
 ---
 
@@ -15,7 +15,7 @@ Below is a example that demonstrates how to draw basic shapes in **Black-White d
 <InfoBox> If you want to use the grayscale mode, simply change the constructor value and instead of using `inkplate.BLACK` use a numeric value: 0-3</InfoBox>
 
 ```python
-from inkplate6 import Inkplate
+from inkplate6FLICK import Inkplate
 import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
@@ -155,4 +155,4 @@ parameters={[
 ]}
 />
 
-<CenteredImage src="/img/inkplate10-micropython/shapes.jpg" alt="Inkplate 10 running the example code" caption="Simple predefined shapes." width="800px" />
+<CenteredImage src="/img/inkplate6flick-micropython/shapes.jpg" alt="Inkplate 6flick running the example code" caption="Simple predefined shapes." width="800px" />

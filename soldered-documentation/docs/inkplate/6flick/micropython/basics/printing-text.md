@@ -1,18 +1,18 @@
 ---
-slug: /inkplate/6/micropython/basics/printing-text
-title: Inkplate 6 MicroPython - Printing text
+slug: /inkplate/6flick/micropython/basics/printing-text
+title: Inkplate 6FLICK MicroPython - Printing text
 sidebar_label: Printing text
 id: printing-text
 ---
 
-Inkplate 6 allows you to print text on a **800 x 600 px canvas**.
+Inkplate 6 FLICK allows you to print text on a **1024 x 758 px canvas**.
 
 ## Displaying basic information
 
 Below is a simple example demonstrating the simple way of displaying the information on the Inkplate display.
 
 ```python
-from inkplate6 import Inkplate
+from inkplate6FLICK import Inkplate
 import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
@@ -34,13 +34,13 @@ inkplate.display()
   ]}
 />
 
-<CenteredImage src="/img/inkplate6-micropython/helloworld.jpg" alt="Inkplate 6 running the example code" caption="Displaying basic information" width="800px" />
+<CenteredImage src="/img/inkplate6flick-micropython/helloworld.jpg" alt="Inkplate 6FLICK running the example code" caption="Displaying basic information" width="800px" />
 
 ---
 
 ## Displaying text in Grayscale and more text parameters
 
-Inkplate 6 also lets you render 2-bit grayscale graphics (0-3) on its canvas. You can also modify different text parameters, such as: text color, text size and text wrapping. Below is a simple example demonstrating different text colors using grayscale and different text styles:
+Inkplate 6 FLICK also lets you render 2-bit grayscale graphics (0-3) on its canvas. You can also modify different text parameters, such as: text color, text size and text wrapping. Below is a simple example demonstrating different text colors using grayscale and different text styles:
 
 
 <InfoBox>
@@ -55,7 +55,7 @@ Color parameter in 'setTextColor()' changes text color as per table below:
 </InfoBox>
 
 ```python
-from inkplate6 import Inkplate
+from inkplate6FLICK import Inkplate
 import time
 
 # Create Inkplate object in 2-bit grayscale mode
@@ -140,4 +140,4 @@ inkplate.display()
   ]}
 />
 
-<CenteredImage src="/img/inkplate6-micropython/text.jpg" alt="Inkplate 10 running the example code" caption="Simple grayscale example with different text styles." width="800px" />
+<CenteredImage src="/img/inkplate6flick-micropython/text.jpg" alt="Inkplate 6flick running the example code" caption="Simple grayscale example with different text styles." width="800px" />

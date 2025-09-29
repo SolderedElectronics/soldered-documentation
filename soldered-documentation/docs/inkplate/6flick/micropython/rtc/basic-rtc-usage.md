@@ -20,7 +20,7 @@ This example shows how to set the RTC time and date, and then continuously displ
 
 ```python
 # Include all the required libraries
-from inkplate6 import Inkplate
+from inkplate6FLICK import Inkplate
 import time
 
 # Create Inkplate object in 1-bit mode, black and white colors only
@@ -94,12 +94,12 @@ description="Read the current RTC date and time."
 returnDescription="Dictionary containing keys: `hour`, `minute`, `second`, `weekday`, `day`, `month`, `year`." 
 parameters={[]} />
 
-<CenteredImage src="/img/inkplate6-micropython/rtc.jpg" alt="Inkplate 6 running the example code" caption="Inkplate 6 running the example code" width="800px" />
+<CenteredImage src="/img/inkplate6flick-micropython/rtc.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
 
 ---
 
 ## Full example
 
-<QuickLink title="Inkplate6-RTC.py" 
+<QuickLink title="Inkplate6FLICK-RTC.py" 
 description="An example showing how to set and read time/date using the onboard RTC, and display it continuously on the screen." 
-url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate6/RTC.py" />
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate6FLICK/RTC.py" />

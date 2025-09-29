@@ -1,22 +1,22 @@
 ---
-slug: /inkplate/6/micropython/battery-temperature
-title: Inkplate 6 MicroPython - Battery and temperature
+slug: /inkplate/6flick/micropython/battery-temperature
+title: Inkplate 6FLICK MicroPython - Battery and temperature
 sidebar_label: Battery and temperature
 id: battery-temperature
 ---
 
-Inkplate 6 includes built-in functions for measuring **battery voltage** and **board temperature**. This example shows how to read these values and display them on screen.
+Inkplate 6FLICK includes built-in functions for measuring **battery voltage** and **board temperature**. This example shows how to read these values and display them on screen.
 
-<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**battery docs page**](/documentation/inkplate/6/hardware/battery/). </WarningBox>
+<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**battery docs page**](/documentation/inkplate/6flick/hardware/battery/). </WarningBox>
 
 Battery should be connected like this:
-<CenteredImage src="/img/inkplate6-micropython/batt-connection.jpg" alt="Inkplate 6 running the example code" caption="Battery connected to Inkplate 6." width="1000px" />
+<CenteredImage src="/img/inkplate6flick-micropython/batt-connection.jpg" alt="Inkplate 6flick running the example code" caption="Battery connected to Inkplate 6FLICK." width="1000px" />
 ---
 
 ## Reading battery voltage and temperature
 
 ```python
-from inkplate6 import Inkplate
+from inkplate6FLICK import Inkplate
 import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
@@ -48,4 +48,4 @@ description="Measure the temperature of the Inkplate board’s internal sensor."
 returnType="float" 
 returnDescription="Temperature in degrees Celsius." />
 
-<CenteredImage src="/img/inkplate6-micropython/battery-volt-temp.jpg" alt="Inkplate 6 running the example code" caption="Displaying battery and temperature data on Inkplate display." width="1000px" />
+<CenteredImage src="/img/inkplate6flick-micropython/battery-volt-temp.jpg" alt="Inkplate 6flick running the example code" caption="Displaying battery and temperature data on Inkplate display." width="1000px" />
