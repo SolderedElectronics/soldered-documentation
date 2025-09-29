@@ -1,11 +1,11 @@
 ---
-slug: /inkplate/10/micropython/microsd/formatting-the-microsd-card
-title: Inkplate 10 MicroPython - Formatting the microSD card
+slug: /inkplate/6/micropython/microsd/formatting-the-microsd-card
+title: Inkplate 6 MicroPython - Formatting the microSD card
 sidebar_label: Formatting the microSD card
 id: formatting-the-microsd-card
 ---
 
-The bulit-in microSD card slot on the back of Inkplate 10 can be a great asset for your projects, either for storing a very large number of high-quality images which can be displayed or reading and writing data between deep sleep cycles.
+The bulit-in microSD card slot on the back of Inkplate 6 can be a great asset for your projects, either for storing a very large number of high-quality images which can be displayed or reading and writing data between deep sleep cycles.
 
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 
@@ -26,7 +26,7 @@ For best results, use the [**official SD card formatter**](https://www.sdcard.or
 Before the microSD card can be used, it must first be initialized. This powers on the microSD card circuitry and performs all the necessary memory allocations:
 
 ```python
-from inkplate10 import Inkplate
+from inkplate6 import Inkplate
 import time
 from os import listdir
 

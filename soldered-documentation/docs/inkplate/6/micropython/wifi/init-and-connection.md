@@ -1,11 +1,11 @@
 ---
-slug: /inkplate/10/micropython/wifi/init-and-connection
-title: Inkplate 10 MicroPython - Initialization and connection
+slug: /inkplate/6/micropython/wifi/init-and-connection
+title: Inkplate 6 MicroPython - Initialization and connection
 sidebar_label: Initialization and connection
 id: init-and-connection
 ---
 
-Inkplate 10 can use its built-in ESP32 WiFi capabilities to connect to the internet. This page demonstrates a simple way to connect to a WiFi network.
+Inkplate 6 can use its built-in ESP32 WiFi capabilities to connect to the internet. This page demonstrates a simple way to connect to a WiFi network.
 
 ## Connecting to WiFi
 
@@ -16,7 +16,7 @@ Below is a simple example demonstrating how to connect to a WiFi network.
 ```python
 import network
 import time
-from inklate10 import Inkplate
+from inkplate6 import Inkplate
 
 #Enter your WiFi credentials here
 SSID="YOUR SSID"

@@ -19,7 +19,7 @@ inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
 
 # Clear the display buffer
-inkplte.clearDisplay()
+inkplate.clearDisplay()
 
 # Draw what is currently stored in frame buffer, needs to be called to update the display
 inkplate.display()

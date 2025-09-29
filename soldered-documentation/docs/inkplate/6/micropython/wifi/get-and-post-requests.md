@@ -1,11 +1,11 @@
 ---
-slug: /inkplate/10/micropython/wifi/get-and-post-requests
-title: Inkplate 10 MicroPython - GET and POST requests
+slug: /inkplate/6/micropython/wifi/get-and-post-requests
+title: Inkplate 6 MicroPython - GET and POST requests
 sidebar_label: GET and POST requests
 id: get-and-post-requests
 ---
 
-Inkplate 10 can connect to the internet and make HTTP requests.
+Inkplate 6 can connect to the internet and make HTTP requests.
 This example demonstrates how to perform a simple **GET** and **POST** request using the 'urequests' library, with [webhook.site](http://webhook.site) as the test server.
 
 ---
@@ -22,7 +22,7 @@ Webhook.site will generate a unique URL for your personal use. Use `http://` ins
 import network
 import time
 import urequests
-from inkplate10 import Inkplate
+from inkplate6 import Inkplate
 
 # Your WiFi credentials
 SSID = "YourNetwork"
@@ -78,7 +78,7 @@ import network
 import time
 import urequests
 import ujson
-from inkplate10 import Inkplate
+from inkplate6 import Inkplate
 
 # Your WiFi credentials
 SSID = "YourNetwork"

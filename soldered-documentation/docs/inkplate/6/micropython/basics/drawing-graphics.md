@@ -1,11 +1,11 @@
 ---
-slug: /inkplate/10/micropython/basics/drawing-graphics
-title: Inkplate 10 MicroPython - Drawing Graphics
+slug: /inkplate/6/micropython/basics/drawing-graphics
+title: Inkplate 6 MicroPython - Drawing Graphics
 sidebar_label: Drawing Graphics
 id: drawing-graphics
 ---
 
-Inkplate 10 allows you to draw different geometric shapes anywhere on its **1200 x 825px canvas**. The shapes can be **filled** or **hollow**
+Inkplate 6 allows you to draw different geometric shapes anywhere on its **800 x 600 px canvas**. The shapes can be **filled** or **hollow**
 
 ---
 

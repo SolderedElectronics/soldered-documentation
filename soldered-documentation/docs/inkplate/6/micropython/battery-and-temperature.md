@@ -1,13 +1,13 @@
 ---
-slug: /inkplate/10/micropython/battery-temperature
-title: Inkplate 10 MicroPython - Battery and temperature
+slug: /inkplate/6/micropython/battery-temperature
+title: Inkplate 6 MicroPython - Battery and temperature
 sidebar_label: Battery and temperature
 id: battery-temperature
 ---
 
-Inkplate 10 includes built-in functions for measuring **battery voltage** and **board temperature**. This example shows how to read these values and display them on screen.
+Inkplate 6 includes built-in functions for measuring **battery voltage** and **board temperature**. This example shows how to read these values and display them on screen.
 
-<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**battery docs page**](/documentation/inkplate/10/hardware/battery/). </WarningBox>
+<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**battery docs page**](/documentation/inkplate/6/hardware/battery/). </WarningBox>
 
 Battery should be connected like this:
 <CenteredImage src="/img/inkplate10-micropython/batt-connection.jpg" alt="Inkplate 10 running the example code" caption="Battery connected to Inkplate 10." width="1000px" />
@@ -16,7 +16,7 @@ Battery should be connected like this:
 ## Reading battery voltage and temperature
 
 ```python
-from inkplate10 import Inkplate
+from inkplate6 import Inkplate
 import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
@@ -27,12 +27,12 @@ inkplate.display()
 # Get battery voltage as a string
 battery = str(inkplate.readBattery())
 inkplate.setTextSize(2)
-inkplate.printText(350, 350, "Battery voltage: " + battery + "V")
+inkplate.printText(100,100, "Battery voltage: " + battery + "V")
 inkplate.partialUpdate()
 
 # Get temperature reading as a string
 temperature = str(inkplate.readTemperature())
-inkplate.printText(350, 400, "Temperature: " + temperature + "C")
+inkplate.printText(100,150, "Temperature: " + temperature + "C")
 inkplate.partialUpdate()
 ```
 

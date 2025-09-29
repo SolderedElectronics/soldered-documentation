@@ -1,18 +1,18 @@
 ---
-slug: /inkplate/10/micropython/basics/printing-text
-title: Inkplate 10 MicroPython - Printing text
+slug: /inkplate/6/micropython/basics/printing-text
+title: Inkplate 6 MicroPython - Printing text
 sidebar_label: Printing text
 id: printing-text
 ---
 
-Inkplate 10 allows you to print text on a **1200 x 825 px canvas**.
+Inkplate 6 allows you to print text on a **800 x 600 px canvas**.
 
 ## Displaying basic information
 
 Below is a simple example demonstrating the simple way of displaying the information on the Inkplate display.
 
 ```python
-from inkplate10 import Inkplate
+from inkplate6 import Inkplate
 import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
@@ -40,7 +40,7 @@ inkplate.display()
 
 ## Displaying text in Grayscale and more text parameters
 
-Inkplate 10 also lets you render 2-bit grayscale graphics (0-3) on its canvas. You can also modify different text parameters, such as: text color, text size and text wrapping. Below is a simple example demonstrating different text colors using grayscale and different text styles:
+Inkplate 6 also lets you render 2-bit grayscale graphics (0-3) on its canvas. You can also modify different text parameters, such as: text color, text size and text wrapping. Below is a simple example demonstrating different text colors using grayscale and different text styles:
 
 
 <InfoBox>
@@ -50,12 +50,12 @@ Color parameter in 'setTextColor()' changes text color as per table below:
 |---	|---	|
 | 0 	| Black 	|
 | 1 	| Dark grey 	|
-| 2 	| Light grey 	|
+| 2 	| Dark grey 	|
 | 3 	| White 	|
 </InfoBox>
 
 ```python
-from inkplate10 import Inkplate
+from inkplate6 import Inkplate
 import time
 
 # Create Inkplate object in 2-bit grayscale mode
@@ -71,20 +71,20 @@ inkplate.display()
 
 inkplate.setCursor(50, 50)       
 inkplate.setTextSize(1)          
-inkplate.setTextColor(0)         # lightest text (white)
+inkplate.setTextColor(0)         # black
 inkplate.print("Size 1")
 
 inkplate.setCursor(50, 100)
 inkplate.setTextSize(2)          
-inkplate.setTextColor(1)         # light gray
+inkplate.setTextColor(1)         # dark gray
 inkplate.print("Size 2")
 
 inkplate.setCursor(50, 180)
 inkplate.setTextSize(3)          
-inkplate.setTextColor(2)         # dark gray
+inkplate.setTextColor(2)         # light gray
 inkplate.print("Size 3")
 
-inkplate.setTextColor(3)         # darkest text (black)
+inkplate.setTextColor(0)         # black
 long_text = (
     "This is a very long line of text intended to demonstrate how wrapping works. "
     "When wrap mode is enabled, the text will continue onto the next line once it "
@@ -97,7 +97,7 @@ inkplate.setTextSize(1)
 inkplate.setTextWrapping(True)       
 inkplate.print(long_text)
 
-inkplate.setCursor(50, 460)
+inkplate.setCursor(50, 480)
 inkplate.setTextSize(1)
 inkplate.setTextWrapping(False)      
 inkplate.print(long_text)

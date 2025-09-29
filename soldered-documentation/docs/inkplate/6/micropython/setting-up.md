@@ -1,6 +1,6 @@
 ---
-slug: /inkplate/10/micropython/setting-up
-title: Inkplate 10 MicroPython - Setting up Inkplate with MicroPython
+slug: /inkplate/6/micropython/setting-up
+title: Inkplate 6 MicroPython - Setting up Inkplate with MicroPython
 sidebar_label: Setting up Inkplate with MicroPython
 id: setting-up
 ---

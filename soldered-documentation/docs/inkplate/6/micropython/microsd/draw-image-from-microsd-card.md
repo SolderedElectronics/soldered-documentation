@@ -1,23 +1,23 @@
 ---
-slug: /inkplate/10/micropython/microsd/draw-image-from-microsd-card
+slug: /inkplate/6/micropython/microsd/draw-image-from-microsd-card
 title: Inkplate 10 MicroPython - Draw Image from microSD card
 sidebar_label: Draw Image from microSD card
 id: draw-image-from-microsd-card
 ---
 
-Inkpalte 10 can load and render images directly from the onboard microSD card. This example shows how to initialize the SD card, list its contents and display a JPEG, PNG or BMP image on screen.
+Inkpalte 6 can load and render images directly from the onboard microSD card. This example shows how to initialize the SD card, list its contents and display a JPEG, PNG or BMP image on screen.
 
 ---
 
 ## Displaying an image from the SD card
 
-Before running this example, make sure your SD card is formatted as **FAT16, FAT32 or exFAT** and inserted into Inkplate 10.
+Before running this example, make sure your SD card is formatted as **FAT16, FAT32 or exFAT** and inserted into Inkplate 6.
 To learn how to format the microSD card click [**here**](/documentation/inkplate/10/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
 
 The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate10/displayImageSd/mountain.jpg).
 
 ```python
-from inkplate10 import Inkplate
+from inkplate6 import Inkplate
 import time
 from os import listdir
 
@@ -29,7 +29,7 @@ print(listdir("/sd"))
 # Draw image onto the buffer
 drawLength = time.ticks_ms()
 inkplate.drawImage(
-    "sd/mountain.jpg",
+    "sd/coastal.jpg",
     0, 0,
     invert=False,
     dither=True,
