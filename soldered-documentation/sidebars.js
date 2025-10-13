@@ -2880,6 +2880,20 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Piano Solder Kit',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/piano-kit/piano-kit-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/piano-kit/piano-solder-kit-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
           label: 'Stop me game',
           items: [
             {
