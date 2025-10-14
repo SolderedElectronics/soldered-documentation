@@ -1,8 +1,8 @@
 ---
 slug: /ad8495/troubleshooting 
-title: Arduino - Troubleshooting
+title: Thermocouple sensor AD8495 - Troubleshooting
 sidebar_label: Troubleshooting
-id: ad8495-arduino-3 
+id: ad8495-troubleshooting
 hide_title: False
 pagination_next: null
 ---
@@ -16,6 +16,13 @@ Ensure that your cables are properly connected and in good condition. If the iss
 
 #### Check thermocouple polarity
 If the MCU shows temperature rising when it should drop or reverse, ensure that the thermocouple polarity is correct.
+
+</ExpandableSection>
+
+<ExpandableSection title="My sensor readings are incorrect">
+
+#### Thermocouple type
+Please ensure the thermocouple is **K-Type**, using a wrong type thermocuple will give wrong readings!
 
 </ExpandableSection>
 

@@ -735,6 +735,56 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Thermocouple sensor AD8495',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/arduino_library/ad8495-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/arduino_library/ad8495-arduino-2',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython module',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/micropython/ad8495-micropython-1'
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/micropython/ad8495-micropython-2'
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-troubleshooting',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {

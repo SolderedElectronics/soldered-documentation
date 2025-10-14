@@ -1,6 +1,6 @@
 ---
 slug: /ad8495/micropython/getting-started
-title: MicroPython - Getting started
+title: Thermocouple sensor AD8495 - Getting started (MicroPython)
 sidebar_label: Getting started
 id: ad8495-micropython-1
 hide_title: False
@@ -32,8 +32,8 @@ To install the MicroPython module, download it from the GitHub repository:
 ## Connections 
 Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
 
-| **Dasduino CORE** | **Breakout Board** |
-| ----------------- | ------------------ |
-| 3v3               | VCC                |
-| GND               | GND                |
-| 32                | OUT                |
+| **Dasduino CONNECTPLUS** | **Breakout Board** |
+| ------------------------ | ------------------ |
+| 3v3                      | VCC                |
+| GND                      | GND                |
+| 32                       | OUT                |

@@ -1,6 +1,6 @@
 ---  
 slug: /ad8495/arduino/geting-started  
-title: Arduino - Getting started  
+title: Thermocouple sensor AD8495 - Getting started (Arduino)
 sidebar_label: Getting started
 id: ad8495-arduino-1  
 hide_title: False  

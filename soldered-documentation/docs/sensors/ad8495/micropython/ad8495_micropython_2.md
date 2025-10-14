@@ -8,13 +8,6 @@ hide_title: False
 
 This page contains some simple examples with function documentation on how to take measurements using the AD8495 Thermocouple sensor.
 
----
-
-## Connections for this example
-
-<CenteredImage src="/img/ad8495/connections-micropython.jpg" alt="Connections" width="1000px" />
----
-
 ## Initialization
 
 To use the AD8459 sensor, first include the required module and create the sensor object.

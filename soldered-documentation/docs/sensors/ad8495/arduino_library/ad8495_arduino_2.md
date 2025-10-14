@@ -1,20 +1,12 @@
 ---
 slug: /ad8495/arduino/examples 
-title: Arduino - Measuring temperature
+title: Thermocouple sensor AD8495 - Measuring temperature (Arduino)
 sidebar_label: Measuring temperature
 id: ad8495-arduino-2 
 hide_title: False
 ---
 
 This page contains some simple examples with function documentation on how to take measurements using the AD8495 Thermocouple sensor.
-
----
-
-## Connections for this example
-
-<CenteredImage src="/img/ad8495/connections.png" alt="Connections"  />
-
----
 
 ## Initialization
 

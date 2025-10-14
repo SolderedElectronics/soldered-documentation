@@ -1,6 +1,6 @@
 ---
 slug: /ad8495/how-it-works 
-title: AD8495 - How it works
+title: Thermocouple sensor AD8495 - How it works
 sidebar_label: How it works
 id: ad8495-how-it-works 
 hide_title: False
@@ -8,7 +8,7 @@ hide_title: False
 
 The AD8495 is an instrumentation amplifier with thermocouple cold junction compensation built on an integrated circuit by **Analog Devices**. 
 
-<CenteredImage src="/img/ad8495/333053_highlighted.png" alt="AD8495 sensor on board" caption="AD8495 sensor on board" width="400px" />
+<CenteredImage src="/img/ad8495/333053_highlighted.jpg" alt="AD8495 sensor on board" caption="AD8495 sensor on board" />
 
 ---
 
@@ -19,7 +19,7 @@ For an in-depth look at technical specifications, refer to the official AD8495 D
 <QuickLink  
   title="AD8495 Datasheet"  
   description="Detailed technical documentation for the AD8495 sensor"  
-  url="#"  
+  url="https://soldered.com/productdata/2025/10/ad8495_datasheet_soldered.pdf"  
 />  
 
 ---
