@@ -2890,6 +2890,10 @@ const sidebars = {
               type: 'doc',
               id: 'solder-kits/piano-kit/piano-solder-kit-assembly-guide',
             },
+            {
+              type: 'doc',
+              id: 'solder-kits/piano-kit/piano-kit-playing',
+            },
           ]
         },
         {

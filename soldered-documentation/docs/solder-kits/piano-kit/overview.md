@@ -4,7 +4,6 @@ title: Piano Solder Kit - Overview
 sidebar_label: Overview
 id: piano-kit-overview 
 hide_title: False
-pagination_prev: null
 ---
 
 ## Introduction

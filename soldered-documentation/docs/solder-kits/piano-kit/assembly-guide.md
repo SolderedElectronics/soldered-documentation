@@ -46,7 +46,7 @@ You can identify the 1 MΩ resistor by this color code:
 
 <CenteredImage src="/img/piano-solder-kit/tutorial/1mohm.jpg" alt="1MΩ resistor" width="250px" caption="1 MΩ resistor color code"/>
 
-These should come connected in a pack of 12:
+These will come connected in a pack of 12:
 
 <CenteredImage src="/img/piano-solder-kit/tutorial/tutorial_05.jpg" alt="1 MΩ resistors" width="450px"/>
 <br></br>
