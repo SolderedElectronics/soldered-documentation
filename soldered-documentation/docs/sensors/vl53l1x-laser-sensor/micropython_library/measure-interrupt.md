@@ -1,7 +1,7 @@
 ---
 slug: /vl53l1x-laser-sensor/micropython/interrupt
-title: VL53L1X - Measure on Interrupt
-id: sensor-micropython-interrupt
+title: VL53L1X ToF Laser Distance Sensor - Measure on Interrupt (MicroPython)
+id: laser-distance-sensor-micropython-interrupt
 sidebar_label: Measure on Interrupt
 hide_title: False
 ---

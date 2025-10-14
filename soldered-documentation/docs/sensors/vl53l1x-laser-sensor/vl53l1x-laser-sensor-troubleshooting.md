@@ -1,7 +1,7 @@
 ---
-slug: /vl53l1x-laser-sensor/arduino/troubleshooting 
-title: VL53L1X - Troubleshooting
-id: sensor-arduino-3 
+slug: /vl53l1x-laser-sensor/troubleshooting 
+title: VL53L1X ToF Laser Distance Sensor - Troubleshooting
+id: laser-distance-sensor-troubleshooting
 sidebar_label: Troubleshooting
 hide_title: False
 pagination_next: null
@@ -25,5 +25,13 @@ If you have multiple I2C devices connected to the same bus, ensure that none of 
 
 #### Try reinitializing
 If the sensor fails to initialize on the first attempt, try calling `sensor.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
+
+</ExpandableSection>
+
+<ExpandableSection title="My sensor is giving incorrect/inconsistent readings!">
+
+Before starting to work with the sensor, the orange protective sticker needs to be peeled off for the laser to emit and be detected properly! Make sure you've removed this sticker.
+
+<CenteredImage src="/img/vl53l1x_laser_sensor/remove_sticker.jpg" alt="VL53L1X ToF Laser Distance Sensor remove sticker"/>
 
 </ExpandableSection>

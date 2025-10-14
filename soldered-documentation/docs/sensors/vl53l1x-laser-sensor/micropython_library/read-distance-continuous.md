@@ -1,16 +1,16 @@
 ---
 slug: /vl53l1x-laser-sensor/micropython/read-distance
-title: VL53L1X - Read Distance
-id: sensor-micropython-read-continuous
+title: VL53L1X ToF Laser Distance Sensor - Read Distance (MicroPython)
+id: laser-distance-sensor-micropython-read-continuous
 sidebar_label: Read Distance
 hide_title: False
 ---
 
-## Initialization
+<WarningBox>**Important**: Before starting to work with the sensor, the orange protective sticker needs to be peeled off for the laser to emit and be detected properly!</WarningBox>
 
-To start using VL53L1X sensor, first import the required sensor library and other libraries for communication and timing. After importing, initialize the sensor by creating a sensor object.
+<CenteredImage src="/img/vl53l1x_laser_sensor/remove_sticker.jpg" caption="Remove the protective orange sticker before use" alt="VL53L1X ToF Laser Distance Sensor remove sticker"/>
 
-## Read Continuous Distance Example
+## Read Continuous Distance
 
 ```python
 from machine import I2C, Pin
@@ -38,6 +38,8 @@ while True:
   returnType="int"
   returnDescription="Returns distance from objects in millimeters."
 />
+
+## Full example
 
 <QuickLink 
   title="ContinuousMeasurement.py"

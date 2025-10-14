@@ -1,7 +1,7 @@
 ---
 slug: /vl53l1x-laser-sensor/micropython/detailed-measurement
-title: VL53L1X - Detailed Measurement
-id: sensor-micropython-detailed
+title: VL53L1X ToF Laser Distance Sensor - Detailed Measurement (MicroPython)
+id: laser-distance-sensor-micropython-detailed
 sidebar_label: Detailed Measurement
 hide_title: False
 ---

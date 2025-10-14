@@ -1,7 +1,7 @@
 ---
 slug: /vl53l1x-laser-sensor/micropython/getting-started
-title: VL53L1X - Getting Started
-id: sensor-micropython
+title: VL53L1X ToF Laser Distance Sensor - Getting Started (MicroPython)
+id: laser-distance-sensor-micropython
 sidebar_label: Getting Started
 hide_title: False
 ---

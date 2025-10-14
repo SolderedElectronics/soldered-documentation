@@ -1,17 +1,18 @@
 ---
 slug: /vl53l1x-laser-sensor/arduino/measuring-distance
-title: VL53L1X - Measuring distance example
-id: sensor-arduino-2
+title: VL53L1X ToF Laser Distance Sensor - Measuring distance example (Arduino)
+id: laser-distance-sensor-arduino-2
 sidebar_label: Measuring distance example
 hide_title: False
 ---
 
-This page provides simple **continuous distance readings** from a laser distance sensor, with dynamic control of LED brightness based on measured distance.
-
-## Working example
+This page provides simple **continuous distance readings** from the sensor, with dynamic control of LED brightness based on measured distance.
 
 <ReactPlayer src='../../../videos/vl53l1x-laser-led-demo.mp4' width='100%' height='auto' muted='true' autoPlay='true' loop='true'/>
 
+<WarningBox>**Important**: Before starting to work with the sensor, the orange protective sticker needs to be peeled off for the laser to emit and be detected properly!</WarningBox>
+
+<CenteredImage src="/img/vl53l1x_laser_sensor/remove_sticker.jpg" caption="Remove the protective orange sticker before use" alt="VL53L1X ToF Laser Distance Sensor remove sticker"/>
 
 ## Initialization
 
@@ -61,7 +62,7 @@ void setup() {
 
 <FunctionDocumentation
   functionName="sensor.setDistanceMode()"
-  description="Sets the distance mode of the sensor."
+  description="Sets the distance mode of the sensor (see table below)."
   returnType="bool"
   returnDescription="Indicates whether the requested mode was valid."
   parameters={[{ type: 'DistanceMode', name: 'mode', description: 'Sets the distance mode of the sensor.'}]}
@@ -72,11 +73,11 @@ The VL53L1X has three distance modes: `short`, `medium` and `long`.
 Long distance mode allows the longest possible ranging distance of 4 m to be reached. However, this maximum ranging distance is impacted by ambient light.
 Short distance mode is more immune to ambient light, but its maximum ranging distance is typically limited to 1.3m
 
-| Distance Mode | Mode | Max. distance under strong ambient light (cm) | Max. distance in the dark (cm) |
+| Distance Mode | Enum | Max. distance under strong ambient light (cm) | Max. distance in the dark (cm) |
 |---|---|-----------------------|--------------------------------------------------------|
-| Short | VL53L1X::Short | 135 | 136 |
-| Medium | VL53L1X::Medium | 76 | 290 |
-| Long | VL53L1X::Long | 73 | 360 |
+| Short | `VL53L1X::Short` | 135 | 136 |
+| Medium | `VL53L1X::Medium` | 76 | 290 |
+| Long | `VL53L1X::Long` | 73 | 360 |
 
 
 <FunctionDocumentation
@@ -120,6 +121,8 @@ void loop()
   returnDescription="Returns distance from objects in millimeters."
   parameters={[{ type: 'boolean', name: 'blocking', description: 'Optional argument, if True: wait until data from a new measurement is available before returning.'}]}
 />
+
+## Full example in Arduino library
 
 <QuickLink  
   title="ReadDistanceContinous.ino"  

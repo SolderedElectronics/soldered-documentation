@@ -1,8 +1,8 @@
 ---
 slug: /vl53l1x-laser-sensor/arduino/getting-started 
-title: VL53L1X - Getting started
+title: VL53L1X ToF Laser Distance Sensor - Getting started (Arduino)
 sidebar_label: Getting started
-id: sensor-arduino-1 
+id: laser-distance-sensor-arduino-1 
 hide_title: False
 ---
 

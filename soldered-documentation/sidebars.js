@@ -94,599 +94,645 @@ const sidebars = {
         {
           "type": "category",
           "label": "Inkplate Models",
-          "items":[
-        {
-          "type": "category",
-          "label": "Inkplate 2",
           "items": [
-            "inkplate/2/2-overview",
-            "inkplate/2/2-quick-start-guide",
             {
               "type": "category",
-              "label": "Hardware",
+              "label": "Inkplate 2",
               "items": [
-                "inkplate/2/hardware/2-hardware-design",
-                "inkplate/2/hardware/2-hardware-open-source",
-                "inkplate/2/hardware/2-hardware-files",
-                "inkplate/2/hardware/2-hardware-battery",
-                "inkplate/2/hardware/2-hardware-free-gpio"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Arduino Library",
-              "items": [
+                "inkplate/2/2-overview",
+                "inkplate/2/2-quick-start-guide",
                 {
                   "type": "category",
-                  "label": "Basics",
+                  "label": "Hardware",
                   "items": [
-                    "inkplate/2/basics/2-init",
-                    "inkplate/2/basics/2-display-modes",
-                    "inkplate/2/basics/2-graphics",
-                    "inkplate/2/basics/2-text",
-                    "inkplate/2/basics/2-image-converter"
+                    "inkplate/2/hardware/2-hardware-design",
+                    "inkplate/2/hardware/2-hardware-open-source",
+                    "inkplate/2/hardware/2-hardware-files",
+                    "inkplate/2/hardware/2-hardware-battery",
+                    "inkplate/2/hardware/2-hardware-free-gpio"
                   ]
                 },
                 {
                   "type": "category",
-                  "label": "WiFi",
+                  "label": "Arduino Library",
                   "items": [
-                    "inkplate/2/wifi/2-wifi-basics",
-                    "inkplate/2/wifi/2-wifi-image-from-web",
-                    "inkplate/2/wifi/2-wifi-get-post",
-                    "inkplate/2/wifi/2-wifi-https-certificate"
+                    {
+                      "type": "category",
+                      "label": "Basics",
+                      "items": [
+                        "inkplate/2/basics/2-init",
+                        "inkplate/2/basics/2-display-modes",
+                        "inkplate/2/basics/2-graphics",
+                        "inkplate/2/basics/2-text",
+                        "inkplate/2/basics/2-image-converter"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "WiFi",
+                      "items": [
+                        "inkplate/2/wifi/2-wifi-basics",
+                        "inkplate/2/wifi/2-wifi-image-from-web",
+                        "inkplate/2/wifi/2-wifi-get-post",
+                        "inkplate/2/wifi/2-wifi-https-certificate"
+                      ]
+                    },
+                    "inkplate/2/deepsleep/2-deep-sleep",
+                    {
+                      "type": "category",
+                      "label": "Real Time Clock",
+                      "items": [
+                        "inkplate/2/rtc/2-rtc-alarm"
+                      ]
+                    }
                   ]
                 },
-                "inkplate/2/deepsleep/2-deep-sleep",
-                {
-                  "type": "category",
-                  "label": "Real Time Clock",
-                  "items": [
-                    "inkplate/2/rtc/2-rtc-alarm"
-                  ]
-                }
+                "inkplate/2/2-faq-troubleshooting"
               ]
             },
-            "inkplate/2/2-faq-troubleshooting"
+            {
+              "type": "category",
+              "label": "Inkplate 4TEMPERA",
+              "items": [
+                "inkplate/4tempera/4tempera-overview",
+                "inkplate/4tempera/4tempera-quick-start-guide",
+                {
+                  "type": "category",
+                  "label": "Hardware",
+                  "items": [
+                    "inkplate/4tempera/hardware/4tempera-hardware-design",
+                    "inkplate/4tempera/hardware/4tempera-hardware-open-source",
+                    "inkplate/4tempera/hardware/4tempera-hardware-files",
+                    "inkplate/4tempera/hardware/4tempera-hardware-touchscreen",
+                    "inkplate/4tempera/hardware/4tempera-hardware-frontlight",
+                    "inkplate/4tempera/hardware/4tempera-hardware-jumpers",
+                    "inkplate/4tempera/hardware/4tempera-hardware-battery"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Arduino Library",
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Basics",
+                      "items": [
+                        "inkplate/4tempera/basics/4tempera-init",
+                        "inkplate/4tempera/basics/4tempera-display-modes",
+                        "inkplate/4tempera/basics/4tempera-graphics",
+                        "inkplate/4tempera/basics/4tempera-text",
+                        "inkplate/4tempera/basics/4tempera-partial-update",
+                        "inkplate/4tempera/basics/4tempera-image-converter"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "WiFi",
+                      "items": [
+                        "inkplate/4tempera/wifi/4tempera-wifi-basics",
+                        "inkplate/4tempera/wifi/4tempera-wifi-image-from-web",
+                        "inkplate/4tempera/wifi/4tempera-wifi-get-post",
+                        "inkplate/4tempera/wifi/4tempera-wifi-https-certificate"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Touchscreen",
+                      "items": [
+                        "inkplate/4tempera/touchscreen/4tempera-touch-in-area",
+                        "inkplate/4tempera/touchscreen/4tempera-touchscreen-draw"
+                      ]
+                    },
+                    "inkplate/4tempera/frontlight/4tempera-frontlight",
+                    "inkplate/4tempera/deepsleep/4tempera-deep-sleep",
+                    {
+                      "type": "category",
+                      "label": "MicroSD",
+                      "items": [
+                        "inkplate/4tempera/microsd/4tempera-microsd-basics",
+                        "inkplate/4tempera/microsd/4tempera-microsd-image"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Real Time Clock",
+                      "items": [
+                        "inkplate/4tempera/rtc/4tempera-rtc-basics",
+                        "inkplate/4tempera/rtc/4tempera-rtc-alarm"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Peripherals",
+                      "items": [
+                        "inkplate/4tempera/peripherals/4tempera-periph-intro",
+                        "inkplate/4tempera/peripherals/4tempera-periph-apds9960",
+                        "inkplate/4tempera/peripherals/4tempera-periph-bme688",
+                        "inkplate/4tempera/peripherals/4tempera-periph-accelerometer",
+                        "inkplate/4tempera/peripherals/4tempera-periph-buzzer",
+                        "inkplate/4tempera/peripherals/4tempera-periph-fuel-gauge"
+                      ]
+                    }
+                  ]
+                },
+                "inkplate/4tempera/4tempera-faq-troubleshooting"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Inkplate 5V2",
+              "items": [
+                "inkplate/5v2/5v2-overview",
+                "inkplate/5v2/quick-start-guide",
+                {
+                  "type": "category",
+                  "label": "Hardware",
+                  "items": [
+                    "inkplate/5v2/hardware/hardware-design",
+                    "inkplate/5v2/hardware/hardware-open-source",
+                    "inkplate/5v2/hardware/hardware-files",
+                    "inkplate/5v2/hardware/hardware-jumpers",
+                    "inkplate/5v2/hardware/hardware-battery",
+                    "inkplate/5v2/hardware/hardware-free-gpio",
+                    "inkplate/5v2/hardware/hardware-power-switch"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Arduino Library",
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Basics",
+                      "items": [
+                        "inkplate/5v2/basics/init",
+                        "inkplate/5v2/basics/display-modes",
+                        "inkplate/5v2/basics/graphics",
+                        "inkplate/5v2/basics/text",
+                        "inkplate/5v2/basics/partial-update",
+                        "inkplate/5v2/basics/image-converter"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "WiFi",
+                      "items": [
+                        "inkplate/5v2/wifi/wifi-basics",
+                        "inkplate/5v2/wifi/wifi-image-from-web",
+                        "inkplate/5v2/wifi/wifi-get-post",
+                        "inkplate/5v2/wifi/wifi-https-certificate"
+                      ]
+                    },
+                    "inkplate/5v2/deepsleep/deep-sleep",
+                    {
+                      "type": "category",
+                      "label": "MicroSD",
+                      "items": [
+                        "inkplate/5v2/microsd/microsd-basics",
+                        "inkplate/5v2/microsd/microsd-image"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Real Time Clock",
+                      "items": [
+                        "inkplate/5v2/rtc/rtc-basics",
+                        "inkplate/5v2/rtc/rtc-alarm"
+                      ]
+                    }
+                  ]
+                },
+                "inkplate/5v2/faq-troubleshooting"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Inkplate 6",
+              "items": [
+                "inkplate/6/6-overview",
+                "inkplate/6/quick-start-guide",
+                {
+                  "type": "category",
+                  "label": "Hardware",
+                  "items": [
+                    "inkplate/6/hardware/hardware-design",
+                    "inkplate/6/hardware/hardware-open-source",
+                    "inkplate/6/hardware/hardware-files",
+                    "inkplate/6/hardware/hardware-jumpers",
+                    "inkplate/6/hardware/hardware-battery",
+                    "inkplate/6/hardware/hardware-free-gpio",
+                    "inkplate/6/hardware/hardware-power-switch"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Arduino Library",
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Basics",
+                      "items": [
+                        "inkplate/6/basics/init",
+                        "inkplate/6/basics/display-modes",
+                        "inkplate/6/basics/graphics",
+                        "inkplate/6/basics/text",
+                        "inkplate/6/basics/partial-update",
+                        "inkplate/6/basics/image-converter"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "WiFi",
+                      "items": [
+                        "inkplate/6/wifi/wifi-basics",
+                        "inkplate/6/wifi/wifi-image-from-web",
+                        "inkplate/6/wifi/wifi-get-post",
+                        "inkplate/6/wifi/wifi-https-certificate"
+                      ]
+                    },
+                    "inkplate/6/deepsleep/deep-sleep",
+                    {
+                      "type": "category",
+                      "label": "MicroSD",
+                      "items": [
+                        "inkplate/6/microsd/microsd-basics",
+                        "inkplate/6/microsd/microsd-image"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Real Time Clock",
+                      "items": [
+                        "inkplate/6/rtc/rtc-basics",
+                        "inkplate/6/rtc/rtc-alarm"
+                      ]
+                    }
+                  ]
+                },
+                "inkplate/6/faq-troubleshooting"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Inkplate 6COLOR",
+              "items": [
+                "inkplate/6color/6color-overview",
+                "inkplate/6color/quick-start-guide",
+                {
+                  "type": "category",
+                  "label": "Hardware",
+                  "items": [
+                    "inkplate/6color/hardware/hardware-design",
+                    "inkplate/6color/hardware/hardware-open-source",
+                    "inkplate/6color/hardware/hardware-files",
+                    "inkplate/6color/hardware/hardware-jumpers",
+                    "inkplate/6color/hardware/hardware-battery",
+                    "inkplate/6color/hardware/hardware-free-gpio",
+                    "inkplate/6color/hardware/hardware-power-switch"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Arduino Library",
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Basics",
+                      "items": [
+                        "inkplate/6color/basics/init",
+                        "inkplate/6color/basics/graphics",
+                        "inkplate/6color/basics/text",
+                        "inkplate/6color/basics/image-converter"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "WiFi",
+                      "items": [
+                        "inkplate/6color/wifi/wifi-basics",
+                        "inkplate/6color/wifi/wifi-image-from-web",
+                        "inkplate/6color/wifi/wifi-get-post",
+                        "inkplate/6color/wifi/wifi-https-certificate"
+                      ]
+                    },
+                    "inkplate/6color/deepsleep/deep-sleep",
+                    {
+                      "type": "category",
+                      "label": "MicroSD",
+                      "items": [
+                        "inkplate/6color/microsd/microsd-basics",
+                        "inkplate/6color/microsd/microsd-image"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Real Time Clock",
+                      "items": [
+                        "inkplate/6color/rtc/rtc-basics",
+                        "inkplate/6color/rtc/rtc-alarm"
+                      ]
+                    }
+                  ]
+                },
+                "inkplate/6color/faq-troubleshooting"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Inkplate 6FLICK",
+              "items": [
+                "inkplate/6flick/6flick-overview",
+                "inkplate/6flick/6flick-quick-start-guide",
+                {
+                  "type": "category",
+                  "label": "Hardware",
+                  "items": [
+                    "inkplate/6flick/hardware/6flick-hardware-design",
+                    "inkplate/6flick/hardware/6flick-hardware-open-source",
+                    "inkplate/6flick/hardware/6flick-hardware-files",
+                    "inkplate/6flick/hardware/6flick-hardware-touchscreen",
+                    "inkplate/6flick/hardware/6flick-hardware-frontlight",
+                    "inkplate/6flick/hardware/6flick-hardware-jumpers",
+                    "inkplate/6flick/hardware/6flick-hardware-battery",
+                    "inkplate/6flick/hardware/hardware-free-gpio",
+                    "inkplate/6flick/hardware/6flick-hardware-power-switch"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Arduino Library",
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Basics",
+                      "items": [
+                        "inkplate/6flick/basics/6flick-init",
+                        "inkplate/6flick/basics/6flick-display-modes",
+                        "inkplate/6flick/basics/6flick-graphics",
+                        "inkplate/6flick/basics/6flick-text",
+                        "inkplate/6flick/basics/6flick-partial-update",
+                        "inkplate/6flick/basics/6flick-image-converter"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "WiFi",
+                      "items": [
+                        "inkplate/6flick/wifi/6flick-wifi-basics",
+                        "inkplate/6flick/wifi/6flick-wifi-image-from-web",
+                        "inkplate/6flick/wifi/6flick-wifi-get-post",
+                        "inkplate/6flick/wifi/6flick-wifi-https-certificate"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Touchscreen",
+                      "items": [
+                        "inkplate/6flick/touchscreen/6flick-touch-in-area",
+                        "inkplate/6flick/touchscreen/6flick-touchscreen-draw"
+                      ]
+                    },
+                    "inkplate/6flick/frontlight/6flick-frontlight",
+                    "inkplate/6flick/deepsleep/6flick-deep-sleep",
+                    {
+                      "type": "category",
+                      "label": "MicroSD",
+                      "items": [
+                        "inkplate/6flick/microsd/6flick-microsd-basics",
+                        "inkplate/6flick/microsd/6flick-microsd-image"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Real Time Clock",
+                      "items": [
+                        "inkplate/6flick/rtc/6flick-rtc-basics",
+                        "inkplate/6flick/rtc/6flick-rtc-alarm"
+                      ]
+                    }
+                  ]
+                },
+                "inkplate/6flick/6flick-faq-troubleshooting"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Inkplate 10",
+              "items": [
+                "inkplate/10/10-overview",
+                "inkplate/10/10-quick-start-guide",
+                {
+                  "type": "category",
+                  "label": "Hardware",
+                  "items": [
+                    "inkplate/10/hardware/10-hardware-design",
+                    "inkplate/10/hardware/10-hardware-open-source",
+                    "inkplate/10/hardware/10-hardware-files",
+                    "inkplate/10/hardware/10-hardware-jumpers",
+                    "inkplate/10/hardware/10-hardware-battery",
+                    "inkplate/10/hardware/10-hardware-free-gpio",
+                    "inkplate/10/hardware/10-hardware-power-switch",
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Arduino Library",
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Basics",
+                      "items": [
+                        "inkplate/10/basics/10-init",
+                        "inkplate/10/basics/10-display-modes",
+                        "inkplate/10/basics/10-graphics",
+                        "inkplate/10/basics/10-text",
+                        "inkplate/10/basics/10-partial-update",
+                        "inkplate/10/basics/10-image-converter"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "WiFi",
+                      "items": [
+                        "inkplate/10/wifi/10-wifi-basics",
+                        "inkplate/10/wifi/10-wifi-image-from-web",
+                        "inkplate/10/wifi/10-wifi-get-post",
+                        "inkplate/10/wifi/10-wifi-https-certificate"
+                      ]
+                    },
+                    "inkplate/10/deepsleep/10-deep-sleep",
+                    {
+                      "type": "category",
+                      "label": "MicroSD",
+                      "items": [
+                        "inkplate/10/microsd/10-microsd-basics",
+                        "inkplate/10/microsd/10-microsd-image"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Real Time Clock",
+                      "items": [
+                        "inkplate/10/rtc/10-rtc-basics",
+                        "inkplate/10/rtc/10-rtc-alarm"
+                      ]
+                    }
+                  ]
+                },
+                "inkplate/10/10-faq-troubleshooting"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Inkplate 6MOTION",
+              "items": [
+                "inkplate/6motion/6motion-overview",
+                "inkplate/6motion/6motion-quick-start-guide",
+                "inkplate/6motion/6motion-uploading-code",
+                {
+                  "type": "category",
+                  "label": "Hardware",
+                  "items": [
+                    "inkplate/6motion/hardware/6motion-hardware-design",
+                    "inkplate/6motion/hardware/6motion-hardware-open-source",
+                    "inkplate/6motion/hardware/6motion-hardware-files",
+                    "inkplate/6motion/hardware/6motion-hardware-jumpers",
+                    "inkplate/6motion/hardware/6motion-hardware-esp32",
+                    "inkplate/6motion/hardware/6motion-hardware-battery",
+                    "inkplate/6motion/hardware/6motion-hardware-free-gpio",
+                    "inkplate/6motion/hardware/6motion-hardware-power-switch"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Arduino Library",
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Basics",
+                      "items": [
+                        "inkplate/6motion/basics/6motion-init",
+                        "inkplate/6motion/basics/6motion-display-modes",
+                        "inkplate/6motion/basics/6motion-graphics",
+                        "inkplate/6motion/basics/6motion-text",
+                        "inkplate/6motion/basics/6motion-partial-update",
+                        "inkplate/6motion/basics/6motion-image-converter"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "WiFi",
+                      "items": [
+                        "inkplate/6motion/wifi/6motion-wifi-basics",
+                        "inkplate/6motion/wifi/6motion-wifi-image-from-web",
+                        "inkplate/6motion/wifi/6motion-wifi-get-post",
+                        "inkplate/6motion/wifi/6motion-wifi-mqtt",
+                        "inkplate/6motion/wifi/6motion-wifi-udp"
+                      ]
+                    },
+                    "inkplate/6motion/deepsleep/6motion-deep-sleep",
+                    {
+                      "type": "category",
+                      "label": "MicroSD",
+                      "items": [
+                        "inkplate/6motion/microsd/6motion-microsd-basics",
+                        "inkplate/6motion/microsd/6motion-microsd-image"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Real Time Clock",
+                      "items": [
+                        "inkplate/6motion/rtc/6motion-rtc-basics",
+                        "inkplate/6motion/rtc/6motion-rtc-alarm",
+                        "inkplate/6motion/rtc/6motion-rtc-wakeup"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Peripherals",
+                      "items": [
+                        "inkplate/6motion/peripherals/6motion-periph-intro",
+                        "inkplate/6motion/peripherals/6motion-periph-apds9960",
+                        "inkplate/6motion/peripherals/6motion-periph-shtc3",
+                        "inkplate/6motion/peripherals/6motion-periph-accelerometer",
+                        "inkplate/6motion/peripherals/6motion-periph-buttons",
+                        "inkplate/6motion/peripherals/6motion-periph-wsled",
+                        "inkplate/6motion/peripherals/6motion-periph-rotary"
+                      ]
+                    }
+                  ]
+                },
+                "inkplate/6motion/6motion-faq-troubleshooting",
+                "inkplate/6motion/6motion-additional-resources"
+              ]
+            }
           ]
         },
         {
           "type": "category",
-          "label": "Inkplate 4TEMPERA",
+          "label": "Inkplate Projects",
           "items": [
-            "inkplate/4tempera/4tempera-overview",
-            "inkplate/4tempera/4tempera-quick-start-guide",
-            {
-              "type": "category",
-              "label": "Hardware",
-              "items": [
-                "inkplate/4tempera/hardware/4tempera-hardware-design",
-                "inkplate/4tempera/hardware/4tempera-hardware-open-source",
-                "inkplate/4tempera/hardware/4tempera-hardware-files",
-                "inkplate/4tempera/hardware/4tempera-hardware-touchscreen",
-                "inkplate/4tempera/hardware/4tempera-hardware-frontlight",
-                "inkplate/4tempera/hardware/4tempera-hardware-jumpers",
-                "inkplate/4tempera/hardware/4tempera-hardware-battery"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Arduino Library",
-              "items": [
-                {
-                  "type": "category",
-                  "label": "Basics",
-                  "items": [
-                    "inkplate/4tempera/basics/4tempera-init",
-                    "inkplate/4tempera/basics/4tempera-display-modes",
-                    "inkplate/4tempera/basics/4tempera-graphics",
-                    "inkplate/4tempera/basics/4tempera-text",
-                    "inkplate/4tempera/basics/4tempera-partial-update",
-                    "inkplate/4tempera/basics/4tempera-image-converter"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "WiFi",
-                  "items": [
-                    "inkplate/4tempera/wifi/4tempera-wifi-basics",
-                    "inkplate/4tempera/wifi/4tempera-wifi-image-from-web",
-                    "inkplate/4tempera/wifi/4tempera-wifi-get-post",
-                    "inkplate/4tempera/wifi/4tempera-wifi-https-certificate"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Touchscreen",
-                  "items": [
-                    "inkplate/4tempera/touchscreen/4tempera-touch-in-area",
-                    "inkplate/4tempera/touchscreen/4tempera-touchscreen-draw"
-                  ]
-                },
-                "inkplate/4tempera/frontlight/4tempera-frontlight",
-                "inkplate/4tempera/deepsleep/4tempera-deep-sleep",
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/4tempera/microsd/4tempera-microsd-basics",
-                    "inkplate/4tempera/microsd/4tempera-microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Real Time Clock",
-                  "items": [
-                    "inkplate/4tempera/rtc/4tempera-rtc-basics",
-                    "inkplate/4tempera/rtc/4tempera-rtc-alarm"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Peripherals",
-                  "items": [
-                    "inkplate/4tempera/peripherals/4tempera-periph-intro",
-                    "inkplate/4tempera/peripherals/4tempera-periph-apds9960",
-                    "inkplate/4tempera/peripherals/4tempera-periph-bme688",
-                    "inkplate/4tempera/peripherals/4tempera-periph-accelerometer",
-                    "inkplate/4tempera/peripherals/4tempera-periph-buzzer",
-                    "inkplate/4tempera/peripherals/4tempera-periph-fuel-gauge"
-                  ]
-                }
-              ]
-            },
-            "inkplate/4tempera/4tempera-faq-troubleshooting"
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Inkplate 5V2",
-          "items": [
-            "inkplate/5v2/5v2-overview",
-            "inkplate/5v2/quick-start-guide",
-            {
-              "type": "category",
-              "label": "Hardware",
-              "items": [
-                "inkplate/5v2/hardware/hardware-design",
-                "inkplate/5v2/hardware/hardware-open-source",
-                "inkplate/5v2/hardware/hardware-files",
-                "inkplate/5v2/hardware/hardware-jumpers",
-                "inkplate/5v2/hardware/hardware-battery",
-                "inkplate/5v2/hardware/hardware-free-gpio",
-                "inkplate/5v2/hardware/hardware-power-switch"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Arduino Library",
-              "items": [
-                {
-                  "type": "category",
-                  "label": "Basics",
-                  "items": [
-                    "inkplate/5v2/basics/init",
-                    "inkplate/5v2/basics/display-modes",
-                    "inkplate/5v2/basics/graphics",
-                    "inkplate/5v2/basics/text",
-                    "inkplate/5v2/basics/partial-update",
-                    "inkplate/5v2/basics/image-converter"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "WiFi",
-                  "items": [
-                    "inkplate/5v2/wifi/wifi-basics",
-                    "inkplate/5v2/wifi/wifi-image-from-web",
-                    "inkplate/5v2/wifi/wifi-get-post",
-                    "inkplate/5v2/wifi/wifi-https-certificate"
-                  ]
-                },
-                "inkplate/5v2/deepsleep/deep-sleep",
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/5v2/microsd/microsd-basics",
-                    "inkplate/5v2/microsd/microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Real Time Clock",
-                  "items": [
-                    "inkplate/5v2/rtc/rtc-basics",
-                    "inkplate/5v2/rtc/rtc-alarm"
-                  ]
-                }
-              ]
-            },
-            "inkplate/5v2/faq-troubleshooting"
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Inkplate 6",
-          "items": [
-            "inkplate/6/6-overview",
-            "inkplate/6/quick-start-guide",
-            {
-              "type": "category",
-              "label": "Hardware",
-              "items": [
-                "inkplate/6/hardware/hardware-design",
-                "inkplate/6/hardware/hardware-open-source",
-                "inkplate/6/hardware/hardware-files",
-                "inkplate/6/hardware/hardware-jumpers",
-                "inkplate/6/hardware/hardware-battery",
-                "inkplate/6/hardware/hardware-free-gpio",
-                "inkplate/6/hardware/hardware-power-switch"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Arduino Library",
-              "items": [
-                {
-                  "type": "category",
-                  "label": "Basics",
-                  "items": [
-                    "inkplate/6/basics/init",
-                    "inkplate/6/basics/display-modes",
-                    "inkplate/6/basics/graphics",
-                    "inkplate/6/basics/text",
-                    "inkplate/6/basics/partial-update",
-                    "inkplate/6/basics/image-converter"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "WiFi",
-                  "items": [
-                    "inkplate/6/wifi/wifi-basics",
-                    "inkplate/6/wifi/wifi-image-from-web",
-                    "inkplate/6/wifi/wifi-get-post",
-                    "inkplate/6/wifi/wifi-https-certificate"
-                  ]
-                },
-                "inkplate/6/deepsleep/deep-sleep",
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/6/microsd/microsd-basics",
-                    "inkplate/6/microsd/microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Real Time Clock",
-                  "items": [
-                    "inkplate/6/rtc/rtc-basics",
-                    "inkplate/6/rtc/rtc-alarm"
-                  ]
-                }
-              ]
-            },
-            "inkplate/6/faq-troubleshooting"
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Inkplate 6COLOR",
-          "items": [
-            "inkplate/6color/6color-overview",
-            "inkplate/6color/quick-start-guide",
-            {
-              "type": "category",
-              "label": "Hardware",
-              "items": [
-                "inkplate/6color/hardware/hardware-design",
-                "inkplate/6color/hardware/hardware-open-source",
-                "inkplate/6color/hardware/hardware-files",
-                "inkplate/6color/hardware/hardware-jumpers",
-                "inkplate/6color/hardware/hardware-battery",
-                "inkplate/6color/hardware/hardware-free-gpio",
-                "inkplate/6color/hardware/hardware-power-switch"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Arduino Library",
-              "items": [
-                {
-                  "type": "category",
-                  "label": "Basics",
-                  "items": [
-                    "inkplate/6color/basics/init",
-                    "inkplate/6color/basics/graphics",
-                    "inkplate/6color/basics/text",
-                    "inkplate/6color/basics/image-converter"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "WiFi",
-                  "items": [
-                    "inkplate/6color/wifi/wifi-basics",
-                    "inkplate/6color/wifi/wifi-image-from-web",
-                    "inkplate/6color/wifi/wifi-get-post",
-                    "inkplate/6color/wifi/wifi-https-certificate"
-                  ]
-                },
-                "inkplate/6color/deepsleep/deep-sleep",
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/6color/microsd/microsd-basics",
-                    "inkplate/6color/microsd/microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Real Time Clock",
-                  "items": [
-                    "inkplate/6color/rtc/rtc-basics",
-                    "inkplate/6color/rtc/rtc-alarm"
-                  ]
-                }
-              ]
-            },
-            "inkplate/6color/faq-troubleshooting"
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Inkplate 6FLICK",
-          "items": [
-            "inkplate/6flick/6flick-overview",
-            "inkplate/6flick/6flick-quick-start-guide",
-            {
-              "type": "category",
-              "label": "Hardware",
-              "items": [
-                "inkplate/6flick/hardware/6flick-hardware-design",
-                "inkplate/6flick/hardware/6flick-hardware-open-source",
-                "inkplate/6flick/hardware/6flick-hardware-files",
-                "inkplate/6flick/hardware/6flick-hardware-touchscreen",
-                "inkplate/6flick/hardware/6flick-hardware-frontlight",
-                "inkplate/6flick/hardware/6flick-hardware-jumpers",
-                "inkplate/6flick/hardware/6flick-hardware-battery",
-                "inkplate/6flick/hardware/hardware-free-gpio",
-                "inkplate/6flick/hardware/6flick-hardware-power-switch"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Arduino Library",
-              "items": [
-                {
-                  "type": "category",
-                  "label": "Basics",
-                  "items": [
-                    "inkplate/6flick/basics/6flick-init",
-                    "inkplate/6flick/basics/6flick-display-modes",
-                    "inkplate/6flick/basics/6flick-graphics",
-                    "inkplate/6flick/basics/6flick-text",
-                    "inkplate/6flick/basics/6flick-partial-update",
-                    "inkplate/6flick/basics/6flick-image-converter"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "WiFi",
-                  "items": [
-                    "inkplate/6flick/wifi/6flick-wifi-basics",
-                    "inkplate/6flick/wifi/6flick-wifi-image-from-web",
-                    "inkplate/6flick/wifi/6flick-wifi-get-post",
-                    "inkplate/6flick/wifi/6flick-wifi-https-certificate"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Touchscreen",
-                  "items": [
-                    "inkplate/6flick/touchscreen/6flick-touch-in-area",
-                    "inkplate/6flick/touchscreen/6flick-touchscreen-draw"
-                  ]
-                },
-                "inkplate/6flick/frontlight/6flick-frontlight",
-                "inkplate/6flick/deepsleep/6flick-deep-sleep",
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/6flick/microsd/6flick-microsd-basics",
-                    "inkplate/6flick/microsd/6flick-microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Real Time Clock",
-                  "items": [
-                    "inkplate/6flick/rtc/6flick-rtc-basics",
-                    "inkplate/6flick/rtc/6flick-rtc-alarm"
-                  ]
-                }
-              ]
-            },
-            "inkplate/6flick/6flick-faq-troubleshooting"
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Inkplate 10",
-          "items": [
-            "inkplate/10/10-overview",
-            "inkplate/10/10-quick-start-guide",
-            {
-              "type": "category",
-              "label": "Hardware",
-              "items": [
-                "inkplate/10/hardware/10-hardware-design",
-                "inkplate/10/hardware/10-hardware-open-source",
-                "inkplate/10/hardware/10-hardware-files",
-                "inkplate/10/hardware/10-hardware-jumpers",
-                "inkplate/10/hardware/10-hardware-battery",
-                "inkplate/10/hardware/10-hardware-free-gpio",
-                "inkplate/10/hardware/10-hardware-power-switch",
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Arduino Library",
-              "items": [
-                {
-                  "type": "category",
-                  "label": "Basics",
-                  "items": [
-                    "inkplate/10/basics/10-init",
-                    "inkplate/10/basics/10-display-modes",
-                    "inkplate/10/basics/10-graphics",
-                    "inkplate/10/basics/10-text",
-                    "inkplate/10/basics/10-partial-update",
-                    "inkplate/10/basics/10-image-converter"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "WiFi",
-                  "items": [
-                    "inkplate/10/wifi/10-wifi-basics",
-                    "inkplate/10/wifi/10-wifi-image-from-web",
-                    "inkplate/10/wifi/10-wifi-get-post",
-                    "inkplate/10/wifi/10-wifi-https-certificate"
-                  ]
-                },
-                "inkplate/10/deepsleep/10-deep-sleep",
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/10/microsd/10-microsd-basics",
-                    "inkplate/10/microsd/10-microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Real Time Clock",
-                  "items": [
-                    "inkplate/10/rtc/10-rtc-basics",
-                    "inkplate/10/rtc/10-rtc-alarm"
-                  ]
-                }
-              ]
-            },
-            "inkplate/10/10-faq-troubleshooting"
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Inkplate 6MOTION",
-          "items": [
-            "inkplate/6motion/6motion-overview",
-            "inkplate/6motion/6motion-quick-start-guide",
-            "inkplate/6motion/6motion-uploading-code",
-            {
-              "type": "category",
-              "label": "Hardware",
-              "items": [
-                "inkplate/6motion/hardware/6motion-hardware-design",
-                "inkplate/6motion/hardware/6motion-hardware-open-source",
-                "inkplate/6motion/hardware/6motion-hardware-files",
-                "inkplate/6motion/hardware/6motion-hardware-jumpers",
-                "inkplate/6motion/hardware/6motion-hardware-esp32",
-                "inkplate/6motion/hardware/6motion-hardware-battery",
-                "inkplate/6motion/hardware/6motion-hardware-free-gpio",
-                "inkplate/6motion/hardware/6motion-hardware-power-switch"
-              ]
-            },
-            {
-              "type": "category",
-              "label": "Arduino Library",
-              "items": [
-                {
-                  "type": "category",
-                  "label": "Basics",
-                  "items": [
-                    "inkplate/6motion/basics/6motion-init",
-                    "inkplate/6motion/basics/6motion-display-modes",
-                    "inkplate/6motion/basics/6motion-graphics",
-                    "inkplate/6motion/basics/6motion-text",
-                    "inkplate/6motion/basics/6motion-partial-update",
-                    "inkplate/6motion/basics/6motion-image-converter"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "WiFi",
-                  "items": [
-                    "inkplate/6motion/wifi/6motion-wifi-basics",
-                    "inkplate/6motion/wifi/6motion-wifi-image-from-web",
-                    "inkplate/6motion/wifi/6motion-wifi-get-post",
-                    "inkplate/6motion/wifi/6motion-wifi-mqtt",
-                    "inkplate/6motion/wifi/6motion-wifi-udp"
-                  ]
-                },
-                "inkplate/6motion/deepsleep/6motion-deep-sleep",
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/6motion/microsd/6motion-microsd-basics",
-                    "inkplate/6motion/microsd/6motion-microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Real Time Clock",
-                  "items": [
-                    "inkplate/6motion/rtc/6motion-rtc-basics",
-                    "inkplate/6motion/rtc/6motion-rtc-alarm",
-                    "inkplate/6motion/rtc/6motion-rtc-wakeup"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "Peripherals",
-                  "items": [
-                    "inkplate/6motion/peripherals/6motion-periph-intro",
-                    "inkplate/6motion/peripherals/6motion-periph-apds9960",
-                    "inkplate/6motion/peripherals/6motion-periph-shtc3",
-                    "inkplate/6motion/peripherals/6motion-periph-accelerometer",
-                    "inkplate/6motion/peripherals/6motion-periph-buttons",
-                    "inkplate/6motion/peripherals/6motion-periph-wsled",
-                    "inkplate/6motion/peripherals/6motion-periph-rotary"
-                  ]
-                }
-              ]
-            },
-            "inkplate/6motion/6motion-faq-troubleshooting",
-            "inkplate/6motion/6motion-additional-resources"
+            "inkplate/projects/google-calendar",
+            "inkplate/projects/open-meteo",
+            "inkplate/projects/openai-text-prompt",
+            "inkplate/projects/openai-image-slideshow",
+            "inkplate/projects/image-uploader",
+            "inkplate/projects/e-reader"
           ]
         }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Inkplate Projects",
-      "items": [
-        "inkplate/projects/google-calendar",
-        "inkplate/projects/open-meteo",
-        "inkplate/projects/openai-text-prompt",
-        "inkplate/projects/openai-image-slideshow",
-        "inkplate/projects/image-uploader",
-        "inkplate/projects/e-reader"
-      ]
-    }
       ]
     },
     {
       type: 'category',
       label: 'Sensors',
       items: [
+        {
+          type: 'category',
+          label: 'VL53L1X ToF Laser Distance Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x-laser-sensor/laser-distance-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x-laser-sensor/laser-distance-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x-laser-sensor/laser-distance-sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/vl53l1x-laser-sensor/arduino_library/laser-distance-sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/vl53l1x-laser-sensor/arduino_library/laser-distance-sensor-arduino-2',
+                },
+              ],
+            },
+            {
+              type: "category",
+              label: "MicroPython library",
+              items: [
+                "sensors/vl53l1x-laser-sensor/micropython_library/laser-distance-sensor-micropython",
+                "sensors/vl53l1x-laser-sensor/micropython_library/laser-distance-sensor-micropython-read-continuous",
+                "sensors/vl53l1x-laser-sensor/micropython_library/laser-distance-sensor-micropython-detailed",
+                "sensors/vl53l1x-laser-sensor/micropython_library/laser-distance-sensor-micropython-interrupt"
+              ]
+            },
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x-laser-sensor/laser-distance-sensor-troubleshooting',
+            },
+          ],
+        },
         {
           type: 'category',
           label: 'INA219 Voltage & current sensor',
@@ -2069,18 +2115,18 @@ const sidebars = {
         {
           type: 'category',
           label: 'TPS613222A boost converter',
-          items:[
+          items: [
             {
-              type:'doc',
-              id:'actuators/tps613222a/tps613222a-overview',
+              type: 'doc',
+              id: 'actuators/tps613222a/tps613222a-overview',
             },
             {
-              type:'doc',
-              id:'actuators/tps613222a/tps613222a-hardware',
+              type: 'doc',
+              id: 'actuators/tps613222a/tps613222a-hardware',
             },
             {
-              type:'doc',
-              id:'actuators/tps613222a/tps613222a-how-it-works',
+              type: 'doc',
+              id: 'actuators/tps613222a/tps613222a-how-it-works',
             },
           ],
         },
@@ -2953,9 +2999,9 @@ const sidebars = {
           ]
         },
         {
-          type:'category',
+          type: 'category',
           label: 'EEA Airplane Lights',
-          items:[
+          items: [
             {
               type: 'doc',
               id: 'solder-kits/eea-airplane-lights/eea-airplane-lights-overview',

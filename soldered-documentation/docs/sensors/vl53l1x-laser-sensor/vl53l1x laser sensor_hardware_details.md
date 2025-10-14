@@ -1,7 +1,7 @@
 ---
 slug: /vl53l1x-laser-sensor/hardware 
-title: VL53L1X - Hardware details
-id: sensor-hardware 
+title: VL53L1X ToF Laser Distance Sensor - Hardware details
+id: laser-distance-sensor-hardware 
 sidebar_label: Hardware details
 hide_title: False
 ---
@@ -54,10 +54,10 @@ This board contains hardware jumpers; see below for their locations and function
 
 <FlickityCarousel
   images={[
-    { src: '/img/under_construction.png', alt: 'VL53L1X jumper 1', caption: 'JP1' },
-    { src: '/img/under_construction.png', alt: 'VL53L1X jumper 2', caption: 'JP2' },
-    { src: '/img/under_construction.png', alt: 'VL53L1X jumper 3', caption: 'JP3' },
-    { src: '/img/under_construction.png', alt: 'VL53L1X jumper 4', caption: 'JP4' },
+    { src: '/img/vl53l1x_laser_sensor/vl53l1x_jp1.jpg', alt: 'VL53L1X jumper 1', caption: 'JP1' },
+    { src: '/img/vl53l1x_laser_sensor/vl53l1x_jp2.jpg', alt: 'VL53L1X jumper 2', caption: 'JP2' },
+    { src: '/img/vl53l1x_laser_sensor/vl53l1x_jp3.jpg', alt: 'VL53L1X jumper 3', caption: 'JP3' },
+    { src: '/img/vl53l1x_laser_sensor/vl53l1x_jp4.jpg', alt: 'VL53L1X jumper 4', caption: 'JP4' },
   ]}
   jumpers={true}
 />
@@ -69,18 +69,11 @@ This board contains hardware jumpers; see below for their locations and function
 | **JP3** | **NC** (Normally closed) | When connected, the **voltage regulator is powered by 5V**, stepping it down to **3.3V for the IC**.          |
 | **JP4** | **NO** (Normally open)   | When shorted, it **bypasses the voltage regulator**, allowing the board to be powered **directly from 3.3V** via headers. **Ensure JP3 is disconnected if JP4 is connected.** |
 
-
-## Address jumper
-
 ## Hardware repository
 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
-<QuickLink 
-  title="VL53L1X sensor with easyC Hardware design" 
-  description="GitHub hardware repository for this product"
-  url="https://github.com/SolderedElectronics/NAZIVPROIZVODA" 
-/> 
+<WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to recieve the hardware files.</WarningBox>
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can determine your board version by checking the version mark on the PCB.
 

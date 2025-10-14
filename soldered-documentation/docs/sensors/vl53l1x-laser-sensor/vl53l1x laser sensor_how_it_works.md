@@ -1,19 +1,29 @@
 ---
 slug: /vl53l1x-laser-sensor/how-it-works 
-title: VL53L1X - How it works
-id: sensor-how-it-works 
+title: VL53L1X ToF Laser Distance Sensor - How it works
+id: laser-distance-sensor-how-it-works 
 sidebar_label: How it works
 hide_title: False
 ---  
 
+The **VL53L1X ToF Laser Distance Sensor** is a high-performance **Time-of-Flight (ToF)** laser-ranging sensor by [STMicroelectronics](https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html).
+
+<CenteredImage src="/img/vl53l1x_laser_sensor/laser_distance_sensor_on_board.jpg" caption="VL53L1X ToF Laser Distance Sensor on the board" alt="VL53L1X ToF Laser Distance Sensor on the board" width="400px"/>
+
+## Important note
+
+<WarningBox>**Important**: Before starting to work with the sensor, the orange protective sticker needs to be peeled off for the laser to emit and be detected properly!</WarningBox>
+
+<CenteredImage src="/img/vl53l1x_laser_sensor/remove_sticker.jpg" caption="Remove the protective orange sticker before use" alt="VL53L1X ToF Laser Distance Sensor remove sticker"/>
+
 ## Datasheet
 
-For an in-depth look at technical specifications visit the official **VL53L1X Documentation** 
+For an in-depth look at technical specifications, have a look at the **datasheet**: 
 
 <QuickLink  
-  title="VL53L1X Datasheet"  
-  description="View full VL53L1X Laser Sensor specfications"  
-  url="https://www.st.com/resource/en/datasheet/vl53l1x.pdf"  
+  title="VL53L1X ToF Laser Distance Sensor Datasheet"  
+  description="View full VL53L1X ToF Laser Distance Sensor datasheet"  
+  url="https://soldered.com/productdata/2025/10/vl53l1x_datasheet_soldered.pdf"  
 />  
 
 
@@ -25,7 +35,7 @@ The VL53L1X is an advanced and compact **Time-of-Flight (ToF)** distance sensor,
 ### Measurement process
 
 **1. Laser Pulse emmission**
-- The sensor emits a quick pulse of **invisible infrared light** using a tiny laser (VCSEL - vertical-cavity surface-emitting laser) at 940nm.
+- The sensor emits a quick pulse of **invisible infrared light** using a tiny laser (VCSEL - vertical-cavity surface-emitting laser) at 940nm wavelength.
 
 **2. Bounce Back**
 - The emitted light pulse travles through the air, **hits an object**, and reflects back to the onboard sensor.
@@ -49,4 +59,4 @@ The VL53L1X is an advanced and compact **Time-of-Flight (ToF)** distance sensor,
 
 ## Qwiic I²C communication
 
-This product uses I²C communication. The breakout board operates with a default I²C address of **0x29** but can be changed with onboard jumpers. To change the breakout board's address, check out the [**Address selection**](/vl53l1x%20laser%20sensor/hardware/#jumper-details).
+This product uses I²C communication. The breakout board operates with a default I²C address of **0x29**.
