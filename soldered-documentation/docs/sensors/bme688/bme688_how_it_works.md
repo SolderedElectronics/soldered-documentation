@@ -1,6 +1,6 @@
 ---
 slug: /bme688/how-it-works 
-title: BME688 - How it works
+title: BME688 Environmental Sensor - How it works
 sidebar_label: How it works
 id: bme688-how-it-works 
 hide_title: False
@@ -19,7 +19,7 @@ For an in-depth look at technical specifications, refer to the official BME688 D
 <QuickLink
     title="BME688 Datasheet"
     description="Detailed technical documentation for the BME688 sensor"
-    url="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf"
+    url="https://soldered.com/productdata/2025/10/soldered_bme688_datasheet.pdf"
 />
 
 ---
@@ -34,5 +34,5 @@ The Bosch BME688 is a compact enviromental sensor that combines gas, pressure, t
 
 ## I2C communication
 
-The BME688 breakout board uses the I2C protocol to communicate with the microcontroller. It operates with a default I2C addres of **0x76** (or 0x77 if the **SDO** pin is pulled high). Upon request, the sensor responds with pressure and tepmerature values in a 20-bit format and the humidity value as a 16-bit ADC value.
+The BME688 breakout board uses the I2C protocol to communicate with the microcontroller. It operates with a default I2C addres of **0x76** (or 0x77 if the **SDO** pin is pulled high). Upon request, the sensor responds with pressure and tepmerature values in a 20-bit format and the humidity value as a 16-bit ADC value, but you can use our library to interface with it in more detail.
 

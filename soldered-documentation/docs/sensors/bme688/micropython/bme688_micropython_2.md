@@ -1,6 +1,6 @@
 ---
 slug: /bme688/micropython/examples 
-title: MicroPython - Taking measurements
+title: BME688 Environmental Sensor - Taking measurements (MicroPython) 
 sidebar_label: Taking measurements
 id: bme688-micropython-2 
 hide_title: False

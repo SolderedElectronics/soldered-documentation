@@ -1,8 +1,8 @@
 ---
-slug: /bme688/micropython/troubleshooting 
-title: MicroPython - Troubleshooting
+slug: /bme688/arduino/troubleshooting 
+title: BME688 Environmental Sensor - Troubleshooting
 sidebar_label: Troubleshooting
-id: bme688-micropython-3 
+id: bme688-troubleshooting
 hide_title: False
 pagination_next: null
 ---

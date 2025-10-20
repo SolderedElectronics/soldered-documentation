@@ -1,13 +1,16 @@
 ---
 slug: /bme688/hardware 
-title: BME688 - Hardware details
+title: BME688 Environmental Sensor - Hardware details
 sidebar_label: Hardware details
 id: bme688-hardware 
 hide_title: False
 ---
 
 ## Pinout 
-<CenteredImage src="/img/under_construction.png"/>
+
+<CenteredImage src="/img/bme688/bme688_pinout.png"/>
+
+Click [**here**](/img/bme688/bme688_pinout.png) for a high-resolution image of the pinout.
 
 ## Pin details
 
@@ -50,11 +53,11 @@ This board contains hardware jumpers. See below for their locations and function
 
 <FlickityCarousel
     images={[
-        { src: '/img/bme688/jp1.jpg', alt: 'BME688 jumper 1', caption: 'JP1'},
-        { src: '/img/bme688/jp2.jpg', alt:'BME688 jumper 2', caption: 'JP2'},
-        { src: '/img/bme688/jp3.jpg', alt:'BME688 jumper 3', caption: 'JP3'},
-        { src: '/img/bme688/jp4.jpg', alt:'BME688 jumper 4', caption: 'JP4'},
-        { src:'/img/bme688/jp5.jpg', alt:'BME688 jumper 5', caption: 'JP5'}
+        { src: '/img/bme688/bme688_jp1.jpg', alt: 'BME688 jumper 1', caption: 'JP1'},
+        { src: '/img/bme688/bme688_jp2.jpg', alt:'BME688 jumper 2', caption: 'JP2'},
+        { src: '/img/bme688/bme688_jp3.jpg', alt:'BME688 jumper 3', caption: 'JP3'},
+        { src: '/img/bme688/bme688_jp4.jpg', alt:'BME688 jumper 4', caption: 'JP4'},
+        { src: '/img/bme688/bme688_jp5.jpg', alt:'BME688 jumper 5', caption: 'JP5'}
     ]}
 />
 

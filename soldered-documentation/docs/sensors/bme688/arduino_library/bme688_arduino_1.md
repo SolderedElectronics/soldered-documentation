@@ -1,6 +1,6 @@
 ---
 slug: /bme688/arduino/geting-started 
-title: Arduino -  Getting started
+title: BME688 Environmental Sensor - Getting started (Arduino)
 sidebar_label: Getting started
 id: bme688-arduino-1 
 hide_title: False
@@ -24,8 +24,6 @@ To install the Arduino library, you can use the **Arduino library manager** or d
     url="/documentation/arduino/quick-start-guide"
 />
 </InfoBox>
-
---
 
 ## Connections
 

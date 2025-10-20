@@ -1,47 +1,47 @@
 ---
 slug: /bme688/overview
-title: BME688 - Overview
+title: BME688 Environmental Sensor - Overview
 sidebar_label: Overview
 id: bme688-overview 
 hide_title: False
 pagination_prev: null
 ---
 
-## BME688 Enviromental and air quality sensor breakout
+## BME688 Environmental Sensor
 
-The **BME688** is a digital environmental sensor that integrates temperature, humidity, pressure and AI-based gas classification capabilities. It's the first sensor that has built-in Artificial Intelligence, allowing developers to customize gas detection for specific applications. This board uses **I2C communication protocol** with a default address of **0x76**. It has 2 onboard **Qwiic ports** so it is suitable for a I2C daisychained connection with multiple devices.
+The **BME688** is a digital environmental sensor that combines precise environmental monitoring with gas analysis capabilities, measuring organic compounds (VOCs), volatile sulfur compounds (VSCs), carbon monoxide, and hydrogen in the parts-per-billion (ppb) range alongside temperature, humidity, and barometric pressure. It's the first sensor that has built-in Artificial Intelligence, allowing developers to customize gas detection for specific applications. This board uses the **I2C communication protocol** with a default address of **0x76**. It has 2 onboard **Qwiic ports** for easy integration.
 
-<CenteredImage src="/img/bme688/333203.jpg" alt="Enviromental & Air sensor BME688" caption="Enviromental & Air sensor sensor BME688" />
+<CenteredImage src="/img/bme688/333203.jpg" alt="BME688 Environmental Sensor" caption="BME688 Environmental Sensor" width="500px" />
 
 ---
 
 ## Which products is this documentation for?
 
 <QuickLink
-  title="Enviromental & air quality sensor BME688 breakout"
+  title="BME688 Environmental Sensor"
   description="333203"
-  url="#"
-  image=""
+  url="https://soldered.com/product/bme688-environmental-sensor/"
+  image="/img/bme688/333203.jpg"
 />
 
 ---
 
 ## Key Features
 
-- **Digital interface:** I2C (up to 3.4MHz) and SPI (3 and 4 wire, up to 10 MHz)
-- **Supply voltage:**
-  - 2.1 μA at 1 Hz humidity and temperature
-  - 3.1 μA at 1 Hz pressure and temperature
-  - 3.7 μA at 1 Hz humidity, presure and temperature
-  - 90 μA at ULP mode for p/h/T and air quality
-  - 0,9 mA at LP mode for p/h/T and air quality
-  - 3,9 mA in standard gas scan mode
-  - 0.09 -12 mA for p/h/T/gas in customized operation modes
-  - 0.15 μA in sleep mode
-- **Operating range**
-  - 40 -* 85 °C
-  - 0-100% r.H.
-  - 300 - 1100 hPa
+- **Multi-Gas Detection:** VOCs, VSCs, CO, H₂ in ppb range  
+- **AI Gas Classification:** Compatible with Bosch BME AI-Studio software  
+- **Air Quality Index (AQI):** Real-time air quality assessment  
+- **CO₂-equivalent & bVOC-equivalent:** Output in ppm for easy interpretation  
+- **Temperature:** -40°C to +85°C with ±1.0°C accuracy  
+- **Humidity:** 0–100% RH with ±3% accuracy  
+- **Pressure:** 300–1100 hPa with ±1 hPa accuracy  
+- **Altitude Calculation:** Derived from pressure measurements  
+- **I2C Interface:** Up to 3.4 MHz communication speed  
+- **Dual Qwiic Connectors:** Solderless, plug-and-play connectivity  
+- **3.3V Supply Voltage:** Compatible with modern microcontroller platforms  
+- **Ultra-Low Power:** 0.15 µA sleep mode, 2.1 µA humidity/temperature mode  
+- **Arduino & MicroPython Libraries:** Easy integration and quick prototyping  
+
 ---
 
 ## You may also need

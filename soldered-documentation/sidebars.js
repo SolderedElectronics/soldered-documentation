@@ -735,6 +735,56 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'BME688 Environmental Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bme688/bme688-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme688/bme688-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme688/bme688-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bme688/arduino_library/bme688-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme688/arduino_library/bme688-arduino-2',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bme688/micropython/bme688-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme688/micropython/bme688-micropython-2',
+                },
+              ]
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme688/bme688-troubleshooting',
+            }
+          ],
+        },
+        {
+          type: 'category',
           label: 'Thermocouple sensor AD8495',
           items: [
             {

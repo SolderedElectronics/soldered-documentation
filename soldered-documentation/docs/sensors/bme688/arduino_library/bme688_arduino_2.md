@@ -1,6 +1,6 @@
 ---
 slug: /bme688/arduino/examples 
-title: Arduino - Taking measurements
+title: BME688 Environmental Sensor - Taking measurements (Arduino)
 sidebar_label: Taking measurements
 id: bme688-arduino-2 
 hide_title: False

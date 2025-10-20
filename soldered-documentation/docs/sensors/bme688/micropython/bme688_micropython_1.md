@@ -1,6 +1,6 @@
 ---
 slug: /bme688/micropython/geting-started 
-title: MicroPython -  Getting started
+title: BME688 Environmental Sensor -  Getting started (MicroPython)
 sidebar_label: Getting started
 id: bme688-micropython-1 
 hide_title: False
