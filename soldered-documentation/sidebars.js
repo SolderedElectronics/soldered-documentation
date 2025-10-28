@@ -3038,6 +3038,48 @@ const sidebars = {
               },
             ],
           },
+          {
+            type: 'category',
+            label: '2. Inputs and Basic Interaction',
+            items: [
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/button-toggle-led'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/slider-fade-led'
+              },
+            ],
+          },
+          {
+            type: 'category',
+            label: '3. Sensors and Outputs',
+            items: [
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/ultrasonic-led'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/ultrasonic-buzz'
+              },
+            ]
+          },
+          {
+            type: 'category',
+            label: '4. Information Display',
+            items: [
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/lcd-message'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/lcd-autoscroll'
+              }
+            ]
+          }
           ]
         },
       ],
