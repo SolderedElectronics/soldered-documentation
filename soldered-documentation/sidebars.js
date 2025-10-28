@@ -2981,6 +2981,20 @@ const sidebars = {
             },
             {
               type:'category',
+              label: '3. Sensors and outputs',
+              items:[
+                {
+                  type:'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-ultrasonic-sensor-led-fade'
+                },
+                {
+                  type:'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-ultrasonic-sensor-buzzer'
+                },
+              ]
+            },
+            {
+              type:'category',
               label: '4. Displaying information',
               items:[
                 {
