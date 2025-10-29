@@ -3009,12 +3009,30 @@ const sidebars = {
             },
             {
               type:'category',
+              label: '5. Connections',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-wifi-connection-lcd-time'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-web-led-control'
+                },
+              ]
+            },
+            {
+              type:'category',
               label: '6. Environmental Measurement',
               items:[
                 {
                   type:'doc',
                   id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-shtc3-lcd-display'
-                }
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-shtc3-webserver'
+                },
               ]
             },
             {
