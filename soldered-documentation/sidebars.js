@@ -3079,6 +3079,44 @@ const sidebars = {
                 id: 'beginner kits/soldered-nula-beginner-kit-micropython/lcd-autoscroll'
               }
             ]
+          },
+          {
+            type: 'category',
+            label: '5. Network connection',
+            items: [
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/display-time'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/web-server'
+              }
+            ]
+          },
+          {
+            type: 'category',
+            label: '6. Environmental Measurements',
+            items: [
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/sending-measured-data'
+              }
+            ]
+          },
+          {
+            type: 'category',
+            label: '7. Media outputs',
+            items: [
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/speaker-basics'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/speaker-temp-warning'
+              }
+            ]
           }
           ]
         },
