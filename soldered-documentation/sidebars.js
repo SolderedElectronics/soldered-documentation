@@ -689,6 +689,94 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'TMP117 Temperature Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/tmp117/tmp117-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tmp117/tmp117-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tmp117/tmp117-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SPK0641HT Microphone',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/spk0641ht/spk0641ht-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/spk0641ht/spk0641ht-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/spk0641ht/spk0641ht-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-5',
+                },
+              ],
+            }
+          ],
+        },
+        {
+          type: 'category',
           label: 'VL53L1X ToF Laser Distance Sensor',
           items: [
             {
