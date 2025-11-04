@@ -1944,6 +1944,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Stereo I2S Audio Amplifier',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/i2s-audio-amplifier/i2s-audio-amplifier-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/i2s-audio-amplifier/i2s-audio-amplifier-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/i2s-audio-amplifier/i2s-audio-amplifier-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Smart LED WS2812B',
           items: [
             {
