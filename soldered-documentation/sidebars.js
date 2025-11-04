@@ -2580,6 +2580,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'MakerICE Adapter AVR',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-avr/makerice-adapter-avr-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-avr/makerice-adapter-avr-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-avr/makerice-adapter-avr-how-it-works',
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MakerICE Adapter SAM',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-sam/makerice-adapter-sam-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-sam/makerice-adapter-sam-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-sam/makerice-adapter-sam-how-it-works',
+            }
+          ],
+        },
+        {
+          type: 'category',
           label: 'CAN Transciever MCP2518',
           items: [
             {

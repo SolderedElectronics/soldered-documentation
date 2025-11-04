@@ -10,11 +10,11 @@ hide_title: False
 
 Connect one side of the **10-pin IDC flat cable** to the programmer in the port marked **AVR** as shown in the picture below:
 
-<CenteredImage src="/img/makerice-adapter-sam/step1.jpg" alt="Flat cable connected to Atmel-ICE" caption="Flat cable connected to Atmel-ICE" width="500px"/>
+<CenteredImage src="/img/makerice-adapter-sam/step1.jpg" alt="Flat cable connected to MakerICE" caption="Flat cable connected to Atmel-ICE" width="500px"/>
 
 After that, connect the other side to the adapter breakout as shown in the picture below:
 
-<CenteredImage src="/img/makerice-adapter-sam/step2.jpg" alt="MakerICE SAM adapter" caption="Atmel ICE AVR adapter" width="500px"/>
+<CenteredImage src="/img/makerice-adapter-sam/step2.jpg" alt="MakerICE SAM adapter" caption="MakerICE SAMs adapter" width="500px"/>
 
 Connect the adapter a **supported** board:
 
