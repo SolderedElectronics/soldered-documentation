@@ -685,6 +685,36 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'NULA Boards',
+      items: [
+        {
+          type: 'category',
+          label: 'NULA Mini ESP32-C6',
+          items: [
+            {
+              type: 'doc',
+              id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-overview'
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-hardware'
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'nula-boards/mini-esp32-c6/arduino_library/mini-esp32-c6-arduino-1'
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: 'category',
       label: 'Sensors',
       items: [
         {
