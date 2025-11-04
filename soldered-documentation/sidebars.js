@@ -3117,6 +3117,16 @@ const sidebars = {
                 id: 'beginner kits/soldered-nula-beginner-kit-micropython/speaker-temp-warning'
               }
             ]
+          },
+          {
+            type: 'category',
+            label: '8. Projects',
+            items: [
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/piano-project'
+              }
+            ]
           }
           ]
         },
