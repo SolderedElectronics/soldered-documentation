@@ -38,6 +38,8 @@ This board contains hardware gain selection jumpers for optimizing output levels
 
 <CenteredImage src="/img/i2s-audio-amp/i2s-audio-amp-gain-selection.png" alt="Gain selection jumpers" />
 
+---
+
 ## Hardware repository
 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:

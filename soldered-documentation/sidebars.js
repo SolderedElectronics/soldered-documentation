@@ -1974,6 +1974,14 @@ const sidebars = {
                   type: 'doc',
                   id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-5',
+                }
               ],
             },
           ],
