@@ -2961,7 +2961,7 @@ const sidebars = {
                 },
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-serial-print-hello-world'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-hello-world'
                 }
               ]
             },
@@ -3041,11 +3041,11 @@ const sidebars = {
               items:[
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-speaker-basics'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-buzzer-basics'
                 },
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-speaker-alarm'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-buzzer-alarm'
                 }
               ]
             },
@@ -3053,10 +3053,6 @@ const sidebars = {
               type:'category',
               label: '8. Complex projects',
               items:[
-                {
-                  type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-speaker-basics'
-                },
                 
               ]
             },
