@@ -700,14 +700,8 @@ const sidebars = {
               id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-hardware'
             },
             {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'nula-boards/mini-esp32-c6/arduino_library/mini-esp32-c6-arduino-1'
-                }
-              ]
+              type: 'doc',
+              id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-arduino-1'
             }
           ]
         }

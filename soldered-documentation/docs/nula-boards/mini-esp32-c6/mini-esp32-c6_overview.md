@@ -2,19 +2,24 @@
 slug: /nula-mini-esp32-c6/overview
 title: NULA Mini ESP32-C6 - Overview
 sidebar_label: Overview
-id: nula-mini-esp32-c6-overview
+id: mini-esp32-c6-overview
 pagination_prev: null
+hide_title: True
 ---
 
 # Overview
 
 ## NULA Mini ESP32-C6
 
+<div style={{ textAlign: 'justify' }}>
+
 Start building your next **IoT** or **wearable project** using the **tiny yet powerful** **NULA Mini ESP32-C6**, combining **Wi-Fi 6**, **Bluetooth 5.3**, and **Thread/Zigbee** connectivity in a breadboard-ready 25.50 × 25.50 mm form factor.  
 
 Built around Espressif’s **ESP32-C6-MINI-1-N4** module with **dual RISC-V cores** (a 160 MHz high-performance core and a 20 MHz low-power core), this board delivers **next-generation wireless performance** with exceptional **power efficiency**.
 
 The NULA Mini is designed for **smart home nodes**, **IoT sensors**, and **battery-powered devices** that demand reliable wireless connectivity and low consumption. It combines modern connectivity standards with maker-friendly features like a **Qwiic/STEMMA QT connector**, **JST battery port**, and full support for **Arduino**, **MicroPython**, and **ESP-IDF** environments.
+
+</div>
 
 <CenteredImage src="/img/nula-mini-esp32-c6/NulaMini.png" alt="NULA Mini ESP32-C6" caption="NULA Mini ESP32-C6 Development Board" width="800px"/>
 
