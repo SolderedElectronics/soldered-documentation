@@ -11,8 +11,6 @@ hide_title: True
 
 ## Arduino board definition
 
-<div style={{ textAlign: 'justify' }}>
-
 To program your **NULA Mini ESP32-C6**, install the **Soldered ESP32-C6 board definition** for Arduino IDE. This custom definition ensures that all onboard features (such as Qwiic connector, battery management, and power configuration) work optimally.  
 
 <QuickLink  
@@ -20,8 +18,6 @@ To program your **NULA Mini ESP32-C6**, install the **Soldered ESP32-C6 board de
   description="Official Arduino board definition by Soldered for NULA Mini ESP32-C6."  
   url="https://github.com/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE"  
 />  
-
-</div>
 
 Alternatively, you can also use the **official Espressif ESP32 board package**, which supports ESP32-C6 devices.
 

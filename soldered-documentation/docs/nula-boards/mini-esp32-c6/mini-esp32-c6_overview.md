@@ -11,15 +11,11 @@ hide_title: True
 
 ## NULA Mini ESP32-C6
 
-<div style={{ textAlign: 'justify' }}>
-
-Start building your next **IoT** or **wearable project** using the **tiny yet powerful** **NULA Mini ESP32-C6**, combining **Wi-Fi 6**, **Bluetooth 5.3**, and **Thread/Zigbee** connectivity in a breadboard-ready 25.50 × 25.50 mm form factor.  
+Start building your next **IoT** or **wearable project** using the **tiny yet powerful** **NULA Mini ESP32-C6**, combining **Wi-Fi 6**, **Bluetooth 5.3**, and **Thread/Zigbee** connectivity in a breadboard-ready 25.33 × 25.33 mm form factor.  
 
 Built around Espressif’s **ESP32-C6-MINI-1-N4** module with **dual RISC-V cores** (a 160 MHz high-performance core and a 20 MHz low-power core), this board delivers **next-generation wireless performance** with exceptional **power efficiency**.
 
 The NULA Mini is designed for **smart home nodes**, **IoT sensors**, and **battery-powered devices** that demand reliable wireless connectivity and low consumption. It combines modern connectivity standards with maker-friendly features like a **Qwiic/STEMMA QT connector**, **JST battery port**, and full support for **Arduino**, **MicroPython**, and **ESP-IDF** environments.
-
-</div>
 
 <CenteredImage src="/img/nula-mini-esp32-c6/NulaMini.png" alt="NULA Mini ESP32-C6" caption="NULA Mini ESP32-C6 Development Board" width="800px"/>
 
@@ -43,8 +39,7 @@ image="/img/nula-mini-esp32-c6/NulaMini.png"
 * **Dual RISC-V CPU:** 160 MHz high-performance core plus 20 MHz low-power core  
 * **Ultra-Low Power:** Deep-sleep mode down to 7 µA for extended battery life  
 * **Integrated Battery Management:** On-board charger and JST connector for 3.7 V Li-Ion batteries  
-* **Qwiic/STEMMA QT Connector:** Plug-and-play connectivity for sensors and peripherals  
-* **Hardware Security:** Secure Boot, Flash Encryption, and hardware-accelerated AES, ECC, RSA, and HMAC  
+* **Qwiic Connector:** Plug-and-play connectivity for sensors and peripherals   
 * **Compact Form Factor:** Breadboard-friendly design measuring only 25.33 × 25.33 mm  
 * **Multi-Protocol Operation:** Concurrent Wi-Fi, Bluetooth, and Thread/Zigbee communication  
 * **Memory:** 512 KB SRAM and 4 MB Flash for complex applications  
