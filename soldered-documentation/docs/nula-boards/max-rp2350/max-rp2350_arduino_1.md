@@ -4,6 +4,7 @@ title: NULA Max RP2350 - Getting started with Arduino
 sidebar_label: Getting started with Arduino
 id: max-rp2350_arduino_1
 hide_title: True
+pagination_next: null
 ---
 
 # Getting started with Arduino
@@ -14,7 +15,7 @@ To program your **NULA Max RP2350**, use the **official Raspberry Pi core for Ar
 This package already includes the **Soldered Electronics NULA RP2350** as a defined board variant, so you can select it directly from the Arduino board list after installation.
 
 <QuickLink  
-  title="Earle Philhower RP Arduino core"  
+  title="RP2350 Arduino core"  
   description="Official Arduino core for Raspberry Pi RP2040 and RP2350 chips, including the Soldered Electronics NULA RP2350 board definition."  
   url="https://github.com/earlephilhower/arduino-pico"  
 />
@@ -30,6 +31,8 @@ If this is your first time setting up Arduino, follow our beginner’s guide for
   url="/documentation/arduino/quick-start-guide"  
 />
 </InfoBox>
+
+---
 
 ## Installing the RP2040/RP2350 board package
 
@@ -53,6 +56,8 @@ Once installed, select your board from the menu:
 <InfoBox>If the **Soldered Electronics NULA RP2350** does not appear in the list, you can alternatively select:  
 **Tools → Board → Generic RP2350**  
 Both options are compatible for uploading and testing basic sketches.</InfoBox>
+
+---
 
 ## Example sketch
 

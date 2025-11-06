@@ -4,6 +4,7 @@ title: NULA DeepSleep ESP32-S3 - Getting started with Arduino
 sidebar_label: Getting started with Arduino
 id: deepsleep-esp32-s3_arduino_1
 hide_title: True
+pagination_next: null
 ---
 
 # Getting started with Arduino
@@ -30,6 +31,8 @@ For a step-by-step guide on installing Arduino, connecting your board, and uploa
 />
 </InfoBox>
 
+---
+
 ## Installing the ESP32 board package
 
 You can install the **Espressif ESP32 boards** directly from the **Arduino Boards Manager**:
@@ -45,6 +48,8 @@ Once installed, select your board from the menu:
 <InfoBox>If the **Soldered NULA DeepSleep ESP32-S3** does not appear in the list, you can alternatively select:  
 **Tools → Board → esp32 → ESP32S3 Dev Module**  
 Both options are compatible for uploading and testing sketches.</InfoBox>
+
+---
 
 ## Example sketch
 

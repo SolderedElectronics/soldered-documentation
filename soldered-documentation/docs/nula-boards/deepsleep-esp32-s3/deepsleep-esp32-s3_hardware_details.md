@@ -29,6 +29,8 @@ Click [**here**](/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.web
 
 <InfoBox>Some GPIOs have dual or special functions such as ADC, DAC, touch sensing, or RTC wake-up. Refer to the ESP32-S3 datasheet for a full pin capabilities list.</InfoBox>
 
+---
+
 ## Qwiic / easyC Connector
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic/easyC connector" width="550px" />
@@ -40,6 +42,8 @@ Click [**here**](/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.web
   description="Learn more about Qwiic hardware compatibility and connector pinout."
   url="/qwiic"
 />
+
+---
 
 ## Power Supply and Battery
 
@@ -62,6 +66,8 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 
 <InfoBox>These values are approximate and refer only to the ESP32-S3 chip’s consumption. Actual current may vary depending on peripherals, sensors, and LED status.</InfoBox>
 
+---
+
 ## Achieving the lowest deep-sleep current
 
 The **NULA DeepSleep ESP32-S3** has been engineered to minimize power consumption during sleep modes, making it ideal for long-term battery-powered applications such as remote sensors and data loggers.  
@@ -74,13 +80,18 @@ To achieve the lowest possible consumption:
 - Disconnect any I²C sensors or modules that lack dedicated power management.  
 - **Open the JP1 solder jumper** to physically disconnect the onboard WS2812B RGB LED, which can otherwise introduce a small but measurable leakage current.  
 
+---
+
 ## Dimensions
 
 - **Board size**: 69 × 26 mm (2.72 × 1.02 inch)  
 - **Mounting**: Breadboard compatible  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱  
+
+Soldered boards are LEGO compatible! 🧱  
+
+---
 
 ## Jumper Details
 
@@ -93,6 +104,8 @@ This board includes one hardware jumper that can be modified to optimize power u
 | **JP1**  | **NC** (Normally closed) | Disconnects the WS2812B RGB LED to minimize standby current in deep-sleep mode. |
 
 <InfoBox>For ultra-low-power battery projects, open **JP1** to completely disable the onboard WS2812B LED.</InfoBox>
+
+---
 
 ## Hardware repository
 

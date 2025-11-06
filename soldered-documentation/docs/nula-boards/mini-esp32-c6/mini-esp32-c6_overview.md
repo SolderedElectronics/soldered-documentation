@@ -19,7 +19,7 @@ The NULA Mini is designed for **smart home nodes**, **IoT sensors**, and **batte
 
 <CenteredImage src="/img/nula-mini-esp32-c6/NulaMini.png" alt="NULA Mini ESP32-C6" caption="NULA Mini ESP32-C6 Development Board" width="800px"/>
 
-<br></br>
+---
 
 ## Which products is this documentation for?
 
@@ -30,6 +30,8 @@ url="https://soldered.com/product/nula-mini-esp32-c6/"
 image="/img/nula-mini-esp32-c6/NulaMini.png"
 />
 
+---
+
 ## Key Features
 
 * **Easy to Program:** Fully supported in Arduino, MicroPython, and ESP-IDF environments  
@@ -39,7 +41,7 @@ image="/img/nula-mini-esp32-c6/NulaMini.png"
 * **Dual RISC-V CPU:** 160 MHz high-performance core plus 20 MHz low-power core  
 * **Ultra-Low Power:** Deep-sleep mode down to 7 µA for extended battery life  
 * **Integrated Battery Management:** On-board charger and JST connector for 3.7 V Li-Ion batteries  
-* **Qwiic Connector:** Plug-and-play connectivity for sensors and peripherals   
+* **Qwiic Connector:** Plug-and-play connectivity for sensors and peripherals  
 * **Compact Form Factor:** Breadboard-friendly design measuring only 25.33 × 25.33 mm  
 * **Multi-Protocol Operation:** Concurrent Wi-Fi, Bluetooth, and Thread/Zigbee communication  
 * **Memory:** 512 KB SRAM and 4 MB Flash for complex applications  
@@ -47,10 +49,12 @@ image="/img/nula-mini-esp32-c6/NulaMini.png"
 
 <InfoBox>Comes with a USB-C to USB-C cable included!</InfoBox>
 
+---
+
 ## You may also need
 
 <QuickLink 
-  title="Qwiic cable" 
+  title="Qwiic Cable" 
   description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 

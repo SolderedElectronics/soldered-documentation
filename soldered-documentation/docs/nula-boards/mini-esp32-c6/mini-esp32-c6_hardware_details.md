@@ -31,6 +31,8 @@ Click [**here**](/img/nula-mini-esp32-c6/NULA-MINI-ESP32-C6-Pinout.webp) for a h
 | **TX**      | TX       | UART0 transmit pin used for serial communication.                         |
 | **RX**      | RX       | UART0 receive pin used for serial communication.                          |
 
+---
+
 ## Breadboard mounting recommendation
 
 When using the **NULA Mini ESP32-C6** on a breadboard, we recommend soldering **male header pins** so that the **ESP32-C6 module (chip)** faces **downwards** toward the breadboard.  
@@ -48,6 +50,10 @@ This provides better mechanical stability and makes the USB-C port easier to acc
 />
 
 <br></br>
+
+---
+
+
 ## Qwiic / easyC Connector
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic/easyC connector" width="550px" />
@@ -60,6 +66,8 @@ This provides better mechanical stability and makes the USB-C port easier to acc
   url="/qwiic"
 />
 
+---
+
 ## Power Supply and Battery
 
 - USB-C Port is used for both programming and powering the board  
@@ -69,6 +77,8 @@ This provides better mechanical stability and makes the USB-C port easier to acc
 
 <InfoBox>When powered using a battery, the onboard charger automatically handles charging and discharging.  
 For 5 V input, always power the board through the USB-C port.</InfoBox>
+
+---
 
 ## Power Consumption
 
@@ -81,6 +91,8 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 
 <InfoBox>These values are approximate and refer only to the power consumption of the ESP32-C6 chip.</InfoBox>
 
+---
+
 ## Dimensions
 
 - **Board size**: 25.33 × 25.33 x 10.0 mm (1.00 x 1.00 x 0.39 inch)
@@ -89,6 +101,8 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 
 Soldered boards are LEGO compatible! 🧱 
+
+---
 
 ## Jumper Details
 
@@ -109,6 +123,8 @@ This board includes two hardware jumpers that can be modified to adjust behavior
 
 <InfoBox>For ultra-low-power battery projects, it is recommended to open **JP1** to disable the power LED.  
 Use **JP2** when connecting I²C sensors or peripherals that do not include onboard pull-up resistors.</InfoBox>
+
+---
 
 ## Hardware repository
 

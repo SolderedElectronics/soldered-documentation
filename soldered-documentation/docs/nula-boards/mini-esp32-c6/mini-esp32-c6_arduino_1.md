@@ -30,6 +30,8 @@ For a step-by-step introduction to installing Arduino, connecting your board, an
 />
 </InfoBox>
 
+---
+
 ## Installing the ESP32 board package
 
 You can install the **Espressif ESP32 boards** directly from the **Arduino Boards Manager**:
@@ -41,6 +43,8 @@ You can install the **Espressif ESP32 boards** directly from the **Arduino Board
 
 Once installed, select your board from the menu:  
 **Tools → Board → esp32 → Soldered NULA Mini ESP32-C6**
+
+---
 
 ## Example sketch
 

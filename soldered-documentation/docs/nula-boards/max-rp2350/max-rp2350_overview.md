@@ -24,6 +24,8 @@ Whether you’re building an HDMI weather dashboard, a robot controller, or an I
 
 <br></br>
 
+---
+
 ## Which products is this documentation for?
 
 <QuickLink
@@ -32,6 +34,8 @@ description="High-performance dual Cortex-M33 development board with HDMI, Wi-Fi
 url="https://soldered.com/product/nula-max-rp2350/"
 image="/img/nula-max-rp2350/NulaMax.png"
 />
+
+---
 
 ## Key Features
 
@@ -52,6 +56,8 @@ image="/img/nula-max-rp2350/NulaMax.png"
 * **Development Support:** Arduino IDE, MicroPython, C++, Rust compatible  
 * **Form Factor:** Arduino-style footprint with extended GPIO access  
 * **Dimensions:** 69 × 58.5 mm (2.72 × 2.30 inch)
+
+---
 
 ## You may also need
 

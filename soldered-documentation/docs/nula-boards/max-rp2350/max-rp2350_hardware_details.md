@@ -28,6 +28,8 @@ Click [**here**](/img/nula-max-rp2350/Nula-Max-RP2350-Pinout.png) for a high-res
 
 <InfoBox>The **front side** of the board, which features the female connectors on solder pads, exposes all GPIO pins, power rails, and control interfaces. This view is typically used when soldering or connecting to the top of the board.<br></br><br></br>The **back side** markings describe the header pin holes. Only a few pins differ between the two sides, and these are clearly marked in the pinout diagram.</InfoBox>
 
+---
+
 ## Qwiic / easyC Connector
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic/easyC connector" width="550px" />
@@ -41,6 +43,8 @@ This allows fast prototyping with sensors, displays, and other modules without s
   url="/qwiic"
 />
 
+---
+
 ## Power Supply and Battery
 
 - **USB-C port** used for programming and power input (5 V).  
@@ -50,6 +54,8 @@ This allows fast prototyping with sensors, displays, and other modules without s
 
 <InfoBox>When using a battery, the onboard charging circuit handles charging automatically via USB.  
 For 5 V supply, always power the board through the **USB-C port**.</InfoBox>
+
+---
 
 ## Jumper Details
 
@@ -76,6 +82,8 @@ This board includes **five hardware jumpers** for power management and periphera
 | **JP4** | NO (Normally Open)   | Keeps the microSD card powered at all times when closed. |
 | **JP5** | NC (Normally Closed) | Enables Qwiic I²C interface.                             |
 
+---
+
 ### Dimensions
 
 - **Board size:** 69 × 58.5 mm (2.72 × 2.30 inch)  
@@ -84,6 +92,8 @@ This board includes **five hardware jumpers** for power management and periphera
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 
 Soldered boards are LEGO compatible! 🧱 
+
+---
 
 ## Hardware repository
 

@@ -19,7 +19,7 @@ It features onboard **battery charging and protection**, a **Qwiic/STEMMA QT con
 
 <CenteredImage src="/img/nula-deepsleep-esp32-s3/NulaDeepsleep.png" alt="NULA Deepsleep ESP32-S3" caption="NULA DeepSleep ESP32-S3 Development Board"/>
 
-<br></br>
+---
 
 ## Which products is this documentation for?
 
@@ -29,6 +29,8 @@ description="Low-power ESP32-S3 development board with Wi-Fi, Bluetooth 5 LE, an
 url="https://soldered.com/product/nula-deepsleep-esp32-s3-board/"
 image="/img/nula-deepsleep-esp32-s3/NulaDeepsleep.png"
 />
+
+---
 
 ## Key Features
 
@@ -46,6 +48,8 @@ image="/img/nula-deepsleep-esp32-s3/NulaDeepsleep.png"
 * **USB-C Connector:** Power and programming through a single modern port  
 
 <InfoBox>Includes a USB-C to USB-C cable for immediate use!</InfoBox>
+
+---
 
 ## You may also need
 
