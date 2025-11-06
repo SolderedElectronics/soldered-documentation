@@ -9,22 +9,22 @@ hide_title: True
 
 # Overview
 
-## NULA Deepsleep ESP32-S3
+## NULA DeepSleep ESP32-S3
 
-The **NULA Deepsleep ESP32-S3** is a **low-power IoT development board** built for efficiency, connectivity, and performance.  
+The **NULA DeepSleep ESP32-S3** is a **low-power IoT development board** built for efficiency, connectivity, and performance.  
 Designed around the **ESP32-S3FN8** dual-core SoC, it delivers powerful computing with **Wi-Fi** and **Bluetooth 5 (LE)** connectivity while maintaining **ultra-low power consumption** in deep sleep.
 
 This board is ideal for **battery-powered projects**, **remote sensors**, and **IoT edge nodes** that require reliable connectivity and long battery life.  
 It features onboard **battery charging and protection**, a **Qwiic/STEMMA QT connector**, and a compact, **breadboard-friendly design**.
 
-<CenteredImage src="/img/nula-deepsleep-esp32-s3/NulaDeepsleep.png" alt="NULA Deepsleep ESP32-S3" caption="NULA Deepsleep ESP32-S3 Development Board"/>
+<CenteredImage src="/img/nula-deepsleep-esp32-s3/NulaDeepsleep.png" alt="NULA Deepsleep ESP32-S3" caption="NULA DeepSleep ESP32-S3 Development Board"/>
 
 <br></br>
 
 ## Which products is this documentation for?
 
 <QuickLink
-title="NULA Deepsleep ESP32-S3"
+title="NULA DeepSleep ESP32-S3"
 description="Low-power ESP32-S3 development board with Wi-Fi, Bluetooth 5 LE, and onboard battery management."
 url="https://soldered.com/product/nula-deepsleep-esp32-s3-board/"
 image="/img/nula-deepsleep-esp32-s3/NulaDeepsleep.png"
@@ -58,7 +58,7 @@ image="/img/nula-deepsleep-esp32-s3/NulaDeepsleep.png"
 
 <QuickLink 
   title="Li-Ion Battery 3.7 V" 
-  description="Rechargeable 3.7 V Li-Ion battery compatible with the NULA Deepsleep’s JST connector."
+  description="Rechargeable 3.7 V Li-Ion battery compatible with the NULA DeepSleep’s JST connector."
   url="https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/"
   image="/img/li-ion-battery/333284.jpg"
 />

@@ -10,7 +10,7 @@ hide_title: True
 
 ## Pinout
 
-<CenteredImage src="/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.webp" alt="NULA Deepsleep ESP32-S3 pinout" caption="NULA Deepsleep ESP32-S3 Pinout Diagram"/>
+<CenteredImage src="/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.webp" alt="NULA Deepsleep ESP32-S3 pinout" caption="NULA DeepSleep ESP32-S3 Pinout Diagram"/>
 
 Click [**here**](/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.webp) for a high-resolution image of the pinout.
 
@@ -33,7 +33,7 @@ Click [**here**](/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.web
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic/easyC connector" width="550px" />
 
-<InfoBox>The **NULA Deepsleep ESP32-S3** includes a **Qwiic/easyC/STEMMA QT connector** for quick plug-and-play I²C connections with sensors and peripherals.</InfoBox>
+<InfoBox>The **NULA DeepSleep ESP32-S3** includes a **Qwiic/easyC/STEMMA QT connector** for quick plug-and-play I²C connections with sensors and peripherals.</InfoBox>
 
 <QuickLink
   title="Qwiic (formerly easyC) details and specifications"
@@ -58,13 +58,25 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 | Active (Wi-Fi TX) | around 240 mA   |
 | Modem-sleep       | around 20 mA    |
 | Light-sleep       | around 1.5 mA   |
-| Deep-sleep        | around 6 µA     |
+| Deep-sleep        | around 7 µA     |
 
 <InfoBox>These values are approximate and refer only to the ESP32-S3 chip’s consumption. Actual current may vary depending on peripherals, sensors, and LED status.</InfoBox>
 
+## Achieving the lowest deep-sleep current
+
+The **NULA DeepSleep ESP32-S3** has been engineered to minimize power consumption during sleep modes, making it ideal for long-term battery-powered applications such as remote sensors and data loggers.  
+
+When properly configured, the board can achieve a **deep-sleep current as low as 7 µA**, consistent with the values specified in the **ESP32-S3 datasheet**.  
+This level of performance assumes that all peripheral components are powered down and that the RGB status LED (WS2812B) is electrically isolated.
+
+To achieve the lowest possible consumption:
+- Ensure that no external devices are drawing power from the 3V3 or VCC rails during sleep.  
+- Disconnect any I²C sensors or modules that lack dedicated power management.  
+- **Open the JP1 solder jumper** to physically disconnect the onboard WS2812B RGB LED, which can otherwise introduce a small but measurable leakage current.  
+
 ## Dimensions
 
-- **Board size**: 48 × 25.5 × 10.0 mm (1.89 × 1.00 × 0.39 inch)  
+- **Board size**: 69 × 26 mm (2.72 × 1.02 inch)  
 - **Mounting**: Breadboard compatible  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
@@ -88,14 +100,50 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
 
 <WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
 
-The hardware repository contains all resources for understanding, modifying, or manufacturing the board.  
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
-#### Available files
+Below is an overview of the available files.  
 
-- **Schematic (.pdf)** – Electrical connections and circuit design  
-- **KiCad project (.kicad_pro)** – Editable schematic and PCB layout  
-- **BOM (.csv, .html)** – Complete component list with references  
-- **3D Model (.step)** – For visualization and enclosure design  
-- **Gerber files (.zip)** – Ready for PCB fabrication  
-- **Compliance documents** – CE, UKCA, safety, and product info
+#### CAD files
 
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+
+The `PANEL` files are used internally for production.  
+
+#### Schematic
+
+The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from KiCad.
+
+#### BOM (Bill of Materials)
+
+The bill of materials (BOM) is provided in two formats:  
+
+- A **standard `.csv` table**, listing all components, part numbers, and values.  
+- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
+
+#### 3D files
+
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
+
+#### Gerber files 
+
+Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
+
+- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
+- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
+- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
+- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
+- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
+- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+
+These files are ready for fabrication and can be used in PCB manufacturing.
+
+#### Compliance  
+
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+
+- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
+- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
+- **Safety Instructions** – Safety guidelines and precautions in English and in German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
