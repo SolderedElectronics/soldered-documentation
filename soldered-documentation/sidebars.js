@@ -2957,81 +2957,89 @@ const sidebars = {
               items:[
                 {
                   type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-serial-print-hello-world'
+                },
+                {
+                  type:'doc',
                   id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-led-blinking'
                 },
-                {
-                  type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-hello-world'
-                }
               ]
             },
             {
               type:'category',
-              label: '2. Inputs and Basic Interactions',
+              label: '2. Inputs and Outputs',
               items:[
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-button-toggle-led'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-button-counter'
                 },
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-slider-potentiometer-led-fade'
-                },
-              ]
-            },
-            {
-              type:'category',
-              label: '3. Sensors and outputs',
-              items:[
-                {
-                  type:'doc',
-                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-ultrasonic-sensor-led-fade'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-button-debounce'
                 },
                 {
                   type:'doc',
-                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-ultrasonic-sensor-buzzer'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-photoresistor-analog-read'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-buzzer-beep'
                 },
               ]
             },
             {
               type:'category',
-              label: '4. Displaying information',
+              label: '3. Ultrasonic Distance Sensor',
               items:[
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-lcd-button-message'
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-measuring-distance'
                 },
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-lcd-multiple-buttons'
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-distance-fade-led'
                 },
               ]
             },
             {
               type:'category',
-              label: '5. Connections',
+              label: '4. LCD Display',
               items:[
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-wifi-connection-lcd-time'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-print-message'
                 },
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-web-led-control'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-auto-scroll-text'
                 },
               ]
             },
             {
               type:'category',
-              label: '6. Environmental Measurement',
+              label: '5. Temperature Sensor SHTC3',
               items:[
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-shtc3-lcd-display'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-reading-temperature-and-humidity'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '6. Wi-Fi',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-connecting-and-getting-data'
                 },
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-shtc3-webserver'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-wifi-led-control'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-sending-data'
                 },
               ]
             },
@@ -3047,13 +3055,6 @@ const sidebars = {
                   type:'doc',
                   id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-buzzer-alarm'
                 }
-              ]
-            },
-            {
-              type:'category',
-              label: '8. Complex projects',
-              items:[
-                
               ]
             },
           ]
