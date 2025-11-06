@@ -45,6 +45,8 @@ image="/img/nula-mini-esp32-c6/NulaMini.png"
 * **Memory:** 512 KB SRAM and 4 MB Flash for complex applications  
 * **USB-C Connector:** Single modern port for both power and programming
 
+<InfoBox>Comes with a USB-C to USB-C cable included!</InfoBox>
+
 ## You may also need
 
 <QuickLink 

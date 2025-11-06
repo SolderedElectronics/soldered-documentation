@@ -3,7 +3,6 @@ slug: /nula-mini-esp32-c6/arduino
 title: Nula Mini ESP32-C6 - Getting started with Arduino
 sidebar_label: Getting started with Arduino
 id: mini-esp32-c6-arduino-1
-pagination_next: null
 hide_title: True
 ---
 
@@ -11,21 +10,13 @@ hide_title: True
 
 ## Arduino board definition
 
-To program your **NULA Mini ESP32-C6**, install the **Soldered ESP32-C6 board definition** for Arduino IDE. This custom definition ensures that all onboard features (such as Qwiic connector, battery management, and power configuration) work optimally.  
-
-<QuickLink  
-  title="NULA Mini ESP32-C6 Arduino board definition"  
-  description="Official Arduino board definition by Soldered for NULA Mini ESP32-C6."  
-  url="https://github.com/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE"  
-/>  
-
-Alternatively, you can also use the **official Espressif ESP32 board package**, which supports ESP32-C6 devices.
+To program your **NULA Mini ESP32-C6**, use the **official Espressif Arduino core for ESP32**. This package already includes full support for the **Soldered NULA Mini ESP32-C6**, so you can select it directly from the board list after installation.
 
 <QuickLink  
   title="Espressif Arduino core for ESP32"  
-  description="Official Arduino core for ESP32, ESP32-C3, ESP32-S3, and ESP32-C6 boards."  
+  description="Official Arduino core by Espressif, supporting ESP32, ESP32-C3, ESP32-S3, and ESP32-C6 boards including the Soldered NULA Mini ESP32-C6."  
   url="https://github.com/espressif/arduino-esp32"  
-/>
+/>  
 
 <InfoBox>
 
@@ -36,42 +27,20 @@ For a step-by-step introduction to installing Arduino, connecting your board, an
   title="Getting started with Arduino"  
   description="A comprehensive beginner’s guide to setting up Arduino and uploading your first program."  
   url="/documentation/arduino/quick-start-guide"  
-/>  
-
+/>
 </InfoBox>
 
-## Installing the Soldered board definition
+## Installing the ESP32 board package
 
-You can install the **Soldered ESP32-C6 boards** directly through the **Arduino Boards Manager**:
+You can install the **Espressif ESP32 boards** directly from the **Arduino Boards Manager**:
 
-1. Open Arduino IDE  
-2. Go to **File → Preferences**  
-3. In the field **Additional Boards Manager URLs**, add this line:
+1. Open **Arduino IDE**  
+2. Go to **Tools → Board → Boards Manager**  
+3. In the search bar, type **ESP32**  
+4. Find the entry **ESP32 by Espressif Systems** and click **Install**
 
-```https://raw.githubusercontent.com/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE/master/package_Dasduino_Boards_index.json```
-
-4. Click **OK** and open **Tools → Board → Boards Manager**  
-5. Search for **Soldered ESP32 Boards** and click **Install**
-
-After installation, select:  
-**Tools → Board → Soldered ESP32 Boards → NULA Mini ESP32-C6**
-
-## Using the Espressif definition (alternative)
-
-If you prefer to use the official Espressif package, follow these steps instead:
-
-1. Open **File → Preferences**  
-2. Add this URL:
-
-```
-https://espressif.github.io/arduino-esp32/package_esp32_index.json
-```
-
-3. Go to **Tools → Board → Boards Manager**, search for **ESP32**, and install the package  
-4. Select **ESP32C6 Dev Module** under **Tools → Board → esp32**
-
-Both definitions are compatible, but we recommend the **Soldered version** for the best hardware support.
-
+Once installed, select your board from the menu:  
+**Tools → Board → esp32 → Soldered NULA Mini ESP32-C6**
 
 ## Example sketch
 
@@ -88,6 +57,7 @@ void loop() {
   Serial.println("Running...");
 }
 ```
+
 
 <InfoBox>If uploading fails, double-check that the correct board and port are selected.  
 The NULA Mini ESP32-C6 uses **native USB**, so no external driver is required.</InfoBox>

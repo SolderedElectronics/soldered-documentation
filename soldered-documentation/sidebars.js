@@ -702,6 +702,10 @@ const sidebars = {
             {
               type: 'doc',
               id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-arduino-1'
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/mini-esp32-c6/mini-esp32-c6_mac_linux'
             }
           ]
         }

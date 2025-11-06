@@ -31,6 +31,23 @@ Click [**here**](/img/nula-mini-esp32-c6/NULA-MINI-ESP32-C6-Pinout.webp) for a h
 | **TX**      | TX       | UART0 transmit pin used for serial communication.                         |
 | **RX**      | RX       | UART0 receive pin used for serial communication.                          |
 
+## Breadboard mounting recommendation
+
+When using the **NULA Mini ESP32-C6** on a breadboard, we recommend soldering **male header pins** so that the **ESP32-C6 module (chip)** faces **downwards** toward the breadboard.  
+
+This orientation keeps the board level and stable because the **JST battery connector** on the opposite side is taller and can prevent a flat fit on the breadboard.
+
+<InfoBox>Solder the **male headers on the same side as the Qwiic connector**, with the chip facing down when plugged into the breadboard.  
+This provides better mechanical stability and makes the USB-C port easier to access.</InfoBox>
+
+<CenteredImage  
+  src="/img/nula-mini-esp32-c6/nula-mini-breadboard-orientation.png"  
+  alt="Recommended breadboard orientation for NULA Mini ESP32-C6"  
+  caption="Recommended orientation when mounting the NULA Mini ESP32-C6 on a breadboard"  
+  width="800px"  
+/>
+
+<br></br>
 ## Qwiic / easyC Connector
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic/easyC connector" width="550px" />
@@ -61,6 +78,8 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 | Modem-sleep       | around 25 mA    |
 | Light-sleep       | around 1 mA     |
 | Deep-sleep        | around 7 µA     |
+
+<InfoBox>These values are approximate and refer only to the power consumption of the ESP32-C6 chip.</InfoBox>
 
 ## Dimensions
 
