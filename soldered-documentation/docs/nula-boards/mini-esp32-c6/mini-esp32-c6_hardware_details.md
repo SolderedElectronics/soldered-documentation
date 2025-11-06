@@ -22,7 +22,6 @@ Click [**here**](/img/nula-mini-esp32-c6/NULA-MINI-ESP32-C6-Pinout.webp) for a h
 | **VCC**     | Power    | Main power input (5 V via USB-C or external 5 V supply).                  |
 | **3V3**     | Power    | Regulated 3.3 V output from the onboard regulator.                        |
 | **GND**     | Ground   | Common ground for power and signals.                                      |
-| **RESET**   | Control  | Active-low reset input.                                                   |
 | **IO2**     | GPIO     | General-purpose I/O pin, supports PWM.                                    |
 | **IO3**     | GPIO     | General-purpose I/O pin, SPI MOSI function available.                     |
 | **IO4**     | GPIO     | General-purpose I/O pin, SPI MISO function available.                     |

@@ -18,13 +18,14 @@ Click [**here**](/img/nula-max-rp2350/Nula-Max-RP2350-Pinout.png) for a high-res
 
 ## Pin Details
 
-| Pin Marking    | Type   | Description                                                                   |
-| -------------- | ------ | ----------------------------------------------------------------------------- |
-| **3V3**        | Power  | Regulated 3.3 V output from onboard regulator.                                |
-| **VCC**        | Power  | Main power input (5 V via USB-C or external 5 V supply).                      |
-| **VBAT**       | Power  | JST battery connector input for 3.7 V Li-Ion/Li-Poly cells.                   |
-| **GND**        | Ground | Common ground reference.                                                      |
-| **IO0 - IO47** | GPIO   | General-purpose I/O pins with peripheral support (PWM, SPI, I²C, UART, etc.). |
+| Pin Marking    | Type    | Description                                                                   |
+| -------------- | ------- | ----------------------------------------------------------------------------- |
+| **3V3**        | Power   | Regulated 3.3 V output from onboard regulator.                                |
+| **VCC**        | Power   | Main power input (5 V via USB-C or external 5 V supply).                      |
+| **VBAT**       | Power   | JST battery connector input for 3.7 V Li-Ion/Li-Poly cells.                   |
+| **GND**        | Ground  | Common ground reference.                                                      |
+| **RESET**      | Control | Active-low reset input.                                                       |
+| **IO0 - IO47** | GPIO    | General-purpose I/O pins with peripheral support (PWM, SPI, I²C, UART, etc.). |
 
 <InfoBox>The **front side** of the board, which features the female connectors on solder pads, exposes all GPIO pins, power rails, and control interfaces. This view is typically used when soldering or connecting to the top of the board.<br></br><br></br>The **back side** markings describe the header pin holes. Only a few pins differ between the two sides, and these are clearly marked in the pinout diagram.</InfoBox>
 
