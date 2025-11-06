@@ -708,6 +708,20 @@ const sidebars = {
               id: 'nula-boards/mini-esp32-c6/mini-esp32-c6_mac_linux'
             }
           ]
+        },
+        {
+          type: 'category',
+          label: 'NULA DeepSleep ESP32-S3',
+          items: [
+            {
+              type: 'doc',
+              id: 'nula-boards/deepsleep-esp32-s3/deepsleep-esp32-s3_overview'
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/deepsleep-esp32-s3/deepsleep-esp32-s3_hardware_details'
+            },
+          ]
         }
       ]
     },
