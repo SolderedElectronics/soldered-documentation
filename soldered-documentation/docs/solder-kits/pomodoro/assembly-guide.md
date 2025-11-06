@@ -4,18 +4,13 @@ title: Pomodoro Solder Kit - Assembly Guide
 sidebar_label: Assembly Guide
 id: pomodoro-solder-kit-assembly-guide 
 hide_title: False
-pagination_next: null
 ---
 
 On this page, we'll guide you step-by-step on how to assemble your Pomodoro Solder Kit. Let's go!
 
-<WarningBox>
-Please read the instructions carefully and take all the usual safety precautions when soldering. If you're a beginner, be cautious! You’re holding a 300 °C tool after all — but we know you can do it. 🙂
-</WarningBox>
+<WarningBox>Please read the instructions carefully and take all the usual safety precautions when soldering. If you're a beginner, be cautious! You’re holding a 300 °C tool after all — but we know you can do it. 🙂</WarningBox>
 
-<InfoBox>
-Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/documentation/piano-solder-kit/overview/#contents-of-the-kit).
-</InfoBox>
+<InfoBox>Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/documentation/piano-solder-kit/overview/#contents-of-the-kit).</InfoBox>
 
 ## 10k Ohm Resistors
 
@@ -57,13 +52,15 @@ The 220 ohm resistors are connected in series to anodes on the 7 segment display
 
 Here's where they need to go: R9, R10, R11, R12, R13, R14, R15, R16:
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_02.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_02.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="220 ohm resistor locations"/>
 
 We will use the same soldering technique as with the 10k ohm resistors: bend, insert, bend, solder, cut:
 
 <CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_05.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Soldering the 220 ohm resistors"/>
 
 ## Pushbuttons
+
+<CenteredImage src="/img/pushbutton.webp" alt="Pushbutton" width="300px" caption="Pushbutton"/>
 
 The buttons are here to provide user interaction, here's where they are located on the PCB:
 
@@ -79,29 +76,31 @@ Now you can solder them:
 
 ## Buzzer
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_04.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/buzzer.webp" alt="Buzzer" width="300px" caption="Buzzer"/>
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_09.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_04.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Buzzer location"/>
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_10.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_09.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Inserting the buzzer"/>
+
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_10.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Soldering the buzzer"/>
 
 ## WS2812B RGB LED
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_05.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_05.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="WS2812B RGB LED location"/>
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/tht_diode_alignment.png" alt="Pomodoro Solder Kit Tutorial Components" width="150px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/tht_diode_alignment.png" alt="Pomodoro Solder Kit Tutorial Components" width="150px" caption="Making sure to orient the LED according to the onboard marking"/>
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_11.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_11.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Inserting the LED"/>
 
 ## 7 Segment Display
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_06.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_06.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="7 segment display location"/>
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_12.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_12.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Removing the protective cover from the 7 segment display"/>
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_13.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_13.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Inserting the 7 segment display"/>
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_14.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_14.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Soldering the 7 segment display"/>
 
 ## All done!
 
@@ -110,6 +109,8 @@ Now, simply plug in via USB-C and give your new Pomodoro Timer a try! It should 
 - A Beep
 - Settings menu where you can set the time interval
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_15.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Pomodoro Solder Kit - ready to assemble"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_15.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="The build is done!"/>
+
+<br></br>
 
 Check out the next page for details on how to use the pomodoro timer! 

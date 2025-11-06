@@ -3154,7 +3154,15 @@ const sidebars = {
           items: [
             {
               type: 'doc',
+              id: 'solder-kits/pomodoro/pomodoro-solder-kit-overview',
+            },
+            {
+              type: 'doc',
               id: 'solder-kits/pomodoro/pomodoro-solder-kit-assembly-guide',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/pomodoro/pomodoro-solder-kit-how-to-use',
             }
           ]
         },
