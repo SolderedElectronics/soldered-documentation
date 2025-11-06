@@ -24,8 +24,8 @@ Click [**here**](/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.web
 | **GND**      | Ground   | Common ground for power and signals.                                      |
 | **RESET**    | Control  | Hardware reset pin.                                                       |
 | **IO0–IO48** | GPIO     | General-purpose I/O pins, supporting PWM, I²C, SPI, UART, ADC, and touch. |
-| **RX**       | UART RX  | UART0 receive pin for serial communication.                               |
-| **TX**       | UART TX  | UART0 transmit pin for serial communication.                              |
+| **RX**       | RX  | UART0 receive pin for serial communication.                               |
+| **TX**       | TX  | UART0 transmit pin for serial communication.                              |
 
 <InfoBox>Some GPIOs have dual or special functions such as ADC, DAC, touch sensing, or RTC wake-up. Refer to the ESP32-S3 datasheet for a full pin capabilities list.</InfoBox>
 
@@ -64,8 +64,8 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 
 ## Dimensions
 
-- Board size: 48 × 25.5 × 10.0 mm (1.89 × 1.00 × 0.39 inch)  
-- Mounting: Breadboard compatible  
+- **Board size**: 48 × 25.5 × 10.0 mm (1.89 × 1.00 × 0.39 inch)  
+- **Mounting**: Breadboard compatible  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO compatible! 🧱  
@@ -74,12 +74,7 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 
 This board includes one hardware jumper that can be modified to optimize power usage.
 
-<FlickityCarousel
-  images={[
-    { src: '/img/nula-deepsleep-esp32-s3/jp1.png', alt: 'nula-deepsleep-jumper1', caption: 'JP1' }
-  ]}
-  jumpers={true}
-/>
+<CenteredImage src="/img/nula-deepsleep-esp32-s3/jp1.png" alt="Qwiic/easyC connector" width="800px" />
 
 | Jumper  | Default State            | Function                                                                         |
 | -------- | ------------------------ | -------------------------------------------------------------------------------- |

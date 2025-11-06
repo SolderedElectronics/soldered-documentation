@@ -83,8 +83,8 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 
 ## Dimensions
 
-- Board size: 25.33 × 25.33 x 10.0 mm (1.00 x 1.00 x 0.39 inch)
-- Mounting: Breadboard compatible  
+- **Board size**: 25.33 × 25.33 x 10.0 mm (1.00 x 1.00 x 0.39 inch)
+- **Mounting**: Breadboard compatible  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO compatible! 🧱 

@@ -721,6 +721,10 @@ const sidebars = {
               type: 'doc',
               id: 'nula-boards/deepsleep-esp32-s3/deepsleep-esp32-s3_hardware_details'
             },
+            {
+              type: 'doc',
+              id: 'nula-boards/deepsleep-esp32-s3/deepsleep-esp32-s3_arduino_1'
+            },
           ]
         }
       ]
