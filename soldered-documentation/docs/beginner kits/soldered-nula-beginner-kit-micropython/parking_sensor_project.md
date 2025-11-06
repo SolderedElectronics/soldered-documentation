@@ -1,11 +1,13 @@
 ---
-slug: /soldered-nula-beginner-kit-micropython/ultrasonic-buzz
-title: 3.2. Ultrasonic sensor buzzer
-id: ultrasonic-buzz
+slug: /soldered-nula-beginner-kit-micropython/parking-sensor-project
+title: Parking Sensor Project
+id: parking-sensor-project
 hide_title: true
 ---
 
-<SectionTitle title="3.2. Ultrasonic sensor buzzer" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Parking Sensor Project" backgroundImage="/img/arduino_bg.jpg" />
+
+<CenteredImage src="/img/under_construction.png" alt="Under construction" caption="Short example demonstration video" width="700px" />
 
 In this example we will use **HC-SR04 ultrasonic distance sensor** combined with a **buzzer** to simulate a car parking sensor system where the buzzer's beeping rate increases as objects get closer and closer.
 
@@ -25,11 +27,13 @@ In this example we will use **HC-SR04 ultrasonic distance sensor** combined with
 
 ## Putting the components together
 
-<CenteredImage src="/img/under_construction.png" alt="Under construction" width="400px" />
+<CenteredImage src="/img/under_construction.png" alt="Under construction" caption="Required components" width="400px" />
 
 - Place the buzzer on the breadboard, connect the positive pin on GPIO 5, and other pin to GND.
 - Connecting the Ultrasonic sensor is pretty simple and straightforward, just plug in one end of **Qwiic** cable in the NULA Mini board, and the other end in the sensor itself.
 - If you have the **native** version (no Qwiic connector), follow the table below for connections:
+
+<CenteredImage src="/img/under_construction.png" alt="Under construction" caption="Components connected together" width="400px" />
 
 | **Ultrasonic sensor** | **NULA Mini** |
 |---|---|

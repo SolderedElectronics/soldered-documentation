@@ -3034,8 +3034,12 @@ const sidebars = {
             items: [
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/led-blinking'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/hello-world'
               },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/led-blinking'
+              }
             ],
           },
           {
@@ -3044,31 +3048,39 @@ const sidebars = {
             items: [
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/button-toggle-led'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/button-counter'
               },
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/slider-fade-led'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/button-debounce'
               },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/photoresistor-analog-read'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/buzzer-beep'
+              }
             ],
           },
           {
             type: 'category',
-            label: '3. Sensors and Outputs',
+            label: '3. Ultrasonic Distance Sensor',
             items: [
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/ultrasonic-led'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/measuring-distance'
               },
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/ultrasonic-buzz'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/distance-fade-led'
               },
             ]
           },
           {
             type: 'category',
-            label: '4. Information Display',
+            label: '4. LCD Display',
             items: [
               {
                 type: 'doc',
@@ -3082,52 +3094,42 @@ const sidebars = {
           },
           {
             type: 'category',
-            label: '5. Network connection',
+            label: '5. Temperature sensor SHTC3',
             items: [
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/display-time'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/reading-temperature-and-humidity'
+              }
+            ]
+          },
+          {
+            type: 'category',
+            label: '6. WiFi',
+            items: [
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/connection-getting-data'
               },
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/web-server'
-              }
-            ]
-          },
-          {
-            type: 'category',
-            label: '6. Environmental Measurements',
-            items: [
-              {
-                type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/sending-measured-data'
-              }
-            ]
-          },
-          {
-            type: 'category',
-            label: '7. Media outputs',
-            items: [
-              {
-                type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/speaker-basics'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/wifi-led-control'
               },
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/speaker-temp-warning'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/sending-data'
               }
             ]
           },
           {
             type: 'category',
-            label: '8. Projects',
+            label: '7. Projects',
             items: [
               {
                 type: 'doc',
-                id: 'beginner kits/soldered-nula-beginner-kit-micropython/piano-project'
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/parking-sensor-project'
               }
             ]
-          }
+          },
           ]
         },
       ],
