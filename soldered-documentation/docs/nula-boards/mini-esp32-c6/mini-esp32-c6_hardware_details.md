@@ -87,7 +87,8 @@ For 5 V input, always power the board through the USB-C port.</InfoBox>
 - **Mounting**: Breadboard compatible  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO compatible! 🧱 
+
+Soldered boards are LEGO compatible! 🧱 
 
 ## Jumper Details
 

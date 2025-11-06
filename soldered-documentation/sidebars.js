@@ -726,6 +726,24 @@ const sidebars = {
               id: 'nula-boards/deepsleep-esp32-s3/deepsleep-esp32-s3_arduino_1'
             },
           ]
+        },
+        {
+          type: 'category',
+          label: 'NULA MAX RP2350',
+          items: [
+            {
+              type: 'doc',
+              id: 'nula-boards/max-rp2350/max-rp2350_overview'
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/max-rp2350/max-rp2350_hardware_details'
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/max-rp2350/max-rp2350_arduino_1'
+            },
+          ]
         }
       ]
     },
