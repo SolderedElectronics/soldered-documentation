@@ -10,9 +10,9 @@ hide_title: True
 
 ## Pinout
 
-<CenteredImage src="/img/nula-max-rp2350/Nula Max RP2350 Pinout.png" alt="NULA Max RP2350 pinout" caption="NULA Max RP2350 Pinout Diagram"/>
+<CenteredImage src="/img/nula-max-rp2350/nula_max_rp2350_pinout.png" alt="NULA Max RP2350 pinout" caption="NULA Max RP2350 Pinout Diagram"/>
 
-Click [**here**](/img/nula-max-rp2350/Nula-Max-RP2350-Pinout.png) for a high-resolution version of the pinout.
+Click [**here**](/img/nula-max-rp2350/nula_max_rp2350_pinout.png) for a high-resolution version of the pinout.
 
 ---
 
