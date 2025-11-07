@@ -4,6 +4,7 @@ title: Pomodoro Timer Solder Kit - How to Use
 sidebar_label: How to Use
 id: pomodoro-solder-kit-how-to-use
 hide_title: False
+pagination_next: null
 ---
 
 ## Introduction

@@ -4,6 +4,7 @@ title: Pomodoro Timer Solder Kit - Overview
 sidebar_label: Overview
 id: pomodoro-solder-kit-overview
 hide_title: true
+pagination_prev: null
 ---
 
 # Overview
@@ -34,10 +35,10 @@ Designed as a **Level 2 soldering challenge**, it helps intermediate makers refi
 <CenteredImage src="/img/pomodoro-solder-kit/pomodoro-contents.png" alt="Pomodoro Timer Solder Kit Contents"/>
 
 - **PCB:** 7×7 cm Pomodoro Timer circuit board with through-hole components and clear silkscreen markings  
-- **Microcontroller:** RP2040 dual-core ARM Cortex-M0+ (133 MHz, 264 KB SRAM), fully reprogrammable via USB-C  
+- **Microcontroller:** RP2040 dual-core ARM Cortex-M0+ (133 MHz, 264 KB SRAM), fully reprogrammable via USB-C, comes pre-programmed  
 - **Display:** 4-digit 7-segment LED display for clear time visualization  
 - **RGB LED:** WS2812B addressable LED providing instant visual feedback (work, rest, or transition)  
-- **Buzzer:** Onboard piezo buzzer with 4 jumper-selectable melodies for work/rest notifications  
+- **Buzzer:** Piezo buzzer with 4 jumper-selectable melodies for work/rest notifications  
 - **Buttons (4x):**  
   - Start / Pause  
   - Reset  
@@ -45,7 +46,7 @@ Designed as a **Level 2 soldering challenge**, it helps intermediate makers refi
   - Decrease time  
 - **Resistors and capacitors:** For timing, signal conditioning, and display operation  
 - **USB-C connector:** For power and programming  
-- **Headers and jumpers:** For melody selection and optional configuration  
+- **Headers and jumpers:** For melody selection and debug pins
 - **Miscellaneous components:** Diodes, transistors, IC sockets, and supporting components  
 - **Comprehensive documentation:** Step-by-step illustrated guide covering both assembly and electronics theory  
 - **Open-source files:**  
@@ -57,7 +58,7 @@ Designed as a **Level 2 soldering challenge**, it helps intermediate makers refi
 
 ## Key features
 
-- **RP2040 Processor:** Dual-core ARM Cortex-M0+ at 133 MHz with 264 KB SRAM  
+- **RP2040 Microcontroller:** Dual-core ARM Cortex-M0+ at 133 MHz with 264 KB SRAM, pre-programmed
 - **MicroPython Programmable:** Fully customizable timing logic, RGB LED behavior, and buzzer melodies  
 - **4-Digit 7-Segment Display:** Bright and easy-to-read time indication  
 - **Intuitive Controls:** Dedicated buttons for start, pause, reset, and time adjustment  

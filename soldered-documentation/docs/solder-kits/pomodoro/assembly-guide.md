@@ -76,7 +76,11 @@ Now you can solder them:
 
 ## Buzzer
 
+The buzzer is here to beep when it's time to rest or work! You'll easily spot it in the kit:
+
 <CenteredImage src="/img/buzzer.webp" alt="Buzzer" width="300px" caption="Buzzer"/>
+
+Insert the buzzer here, making sure to match the + sign with the + side marked on the PCB:
 
 <CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_04.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Buzzer location"/>
 
@@ -86,13 +90,19 @@ Now you can solder them:
 
 ## WS2812B RGB LED
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_05.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="WS2812B RGB LED location"/>
+To insert the RGB LED correctly, pay attention to the symbol on the front and the lenghts of the leads of the LED, they should match up like this:
 
-<CenteredImage src="/img/pomodoro-solder-kit/tutorial/tht_diode_alignment.png" alt="Pomodoro Solder Kit Tutorial Components" width="150px" caption="Making sure to orient the LED according to the onboard marking"/>
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/tht_diode_alignment.png" alt="Pomodoro Solder Kit Tutorial Components" width="150px" caption="WS2812B LED Orientation"/>
+
+<WarningBox>This component is a bit more difficult to solder due to the smaller size pads. Use **very little** solder and make sure there's **no short between the LED leads**.</WarningBox>
+
+<CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_05.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="WS2812B RGB LED location"/>
 
 <CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_11.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Inserting the LED"/>
 
 ## 7 Segment Display
+
+Finally, the star of the show, the red 4 digit 7 segment display. Take off the protective cover and insert the 7 segment display, for orientation, pay attention the the decimal dots on the display, they should face down. 
 
 <CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_06.jpeg" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="7 segment display location"/>
 
@@ -100,7 +110,11 @@ Now you can solder them:
 
 <CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_13.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Inserting the 7 segment display"/>
 
+Now solder away! 
+
 <CenteredImage src="/img/pomodoro-solder-kit/tutorial/pomodoro_14.webp" alt="Pomodoro Solder Kit Tutorial Components" width="700px" caption="Soldering the 7 segment display"/>
+
+<InfoBox>You can also trim the ends like the resistor leads</InfoBox>
 
 ## All done!
 
