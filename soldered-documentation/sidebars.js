@@ -3045,16 +3045,16 @@ const sidebars = {
             },
             {
               type:'category',
-              label: '7. More outputs and media',
+              label: '7. Projects',
               items:[
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-buzzer-basics'
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-smart-weather-station'
                 },
                 {
                   type:'doc',
-                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-buzzer-alarm'
-                }
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-mini-piano'
+                },
               ]
             },
           ]
