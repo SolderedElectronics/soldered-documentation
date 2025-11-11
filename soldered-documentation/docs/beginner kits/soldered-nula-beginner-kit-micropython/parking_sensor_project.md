@@ -11,12 +11,14 @@ hide_title: true
 
 In this example we will use **HC-SR04 ultrasonic distance sensor** combined with a **buzzer** to simulate a car parking sensor system where the buzzer's beeping rate increases as objects get closer and closer.
 
+<SuccessBox>
 **At the end of this example you will learn:**
 - How to play sound through a buzzer
-- How to use `time` library to measure / compare time
+- How to map values from one range to another
+- How to use `time` module to control beeping duration
+</SuccessBox>
 
----
-
+<InfoBox>
 **Parts required:**
 - **Soldered NULA Mini Board**
 - **Breadboard**
@@ -24,10 +26,11 @@ In this example we will use **HC-SR04 ultrasonic distance sensor** combined with
 - **Buzzer**
 - **1 x Qwiic cable**
 - **Some jumper wires**
-
-## Putting the components together
+</InfoBox>
 
 <CenteredImage src="/img/under_construction.png" alt="Under construction" caption="Required components" width="400px" />
+
+## Putting the components together
 
 - Place the buzzer on the breadboard, connect the positive pin on GPIO 5, and other pin to GND.
 - Connecting the Ultrasonic sensor is pretty simple and straightforward, just plug in one end of **Qwiic** cable in the NULA Mini board, and the other end in the sensor itself.

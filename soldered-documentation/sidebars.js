@@ -3126,6 +3126,22 @@ const sidebars = {
             items: [
               {
                 type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/piano-project'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/traffic-light-project'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/rgb-led-controller-project'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/alarm-clock-project'
+              },
+              {
+                type: 'doc',
                 id: 'beginner kits/soldered-nula-beginner-kit-micropython/parking-sensor-project'
               }
             ]
