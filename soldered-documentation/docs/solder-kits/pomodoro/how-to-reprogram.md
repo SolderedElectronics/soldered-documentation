@@ -110,7 +110,7 @@ mpremote connect list
 Then connect to your board:
 
 ```bash
-mpremote connect COM14          # Windows
+mpremote connect COM4          # Windows
 mpremote connect /dev/ttyACM0   # Linux
 mpremote connect /dev/tty.usbmodemXXXX   # macOS
 ```
@@ -132,7 +132,7 @@ mpremote cp main.py seven_segment.py buzzer_music.py music_options.py :
 If you want to include the connection inline:
 
 ```bash
-mpremote connect COM14 cp main.py seven_segment.py buzzer_music.py music_options.py :
+mpremote connect COM4 cp main.py seven_segment.py buzzer_music.py music_options.py :
 ```
 
 ### Listing files
