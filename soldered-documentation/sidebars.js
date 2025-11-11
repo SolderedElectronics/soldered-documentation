@@ -3055,6 +3055,30 @@ const sidebars = {
                   type:'doc',
                   id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-mini-piano'
                 },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-parking-sensor'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-rgb-led-controller'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-shift-register-binary-counter'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-morse-code-transmitter'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-alarm-clock'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-led-traffic-light'
+                }
               ]
             },
           ]
