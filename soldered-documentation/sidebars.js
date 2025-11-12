@@ -3142,6 +3142,14 @@ const sidebars = {
               },
               {
                 type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/morse-code-project'
+              },
+              {
+                type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/smart-weather-station'
+              },
+              {
+                type: 'doc',
                 id: 'beginner kits/soldered-nula-beginner-kit-micropython/parking-sensor-project'
               }
             ]
