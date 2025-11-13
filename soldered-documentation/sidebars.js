@@ -3142,6 +3142,10 @@ const sidebars = {
               },
               {
                 type: 'doc',
+                id: 'beginner kits/soldered-nula-beginner-kit-micropython/shift-register-project'
+              },
+              {
+                type: 'doc',
                 id: 'beginner kits/soldered-nula-beginner-kit-micropython/morse-code-project'
               },
               {
