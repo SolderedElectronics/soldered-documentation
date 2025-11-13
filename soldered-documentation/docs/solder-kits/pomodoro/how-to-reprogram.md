@@ -17,6 +17,33 @@ On this page, we'll show you how to reprogram your Pomodoro Solder Kit and uploa
 
 <InfoBox>This tutorial assumes your Pomodoro Kit is already assembled. If not, check the [**Assembly Guide**](/documentation/pomodoro-solder-kit/assembly-guide) first.</InfoBox>
 
+<QuickLink 
+  title="Pomodoro Timer Solder Kit Firmware Repository" 
+  description="Source code and official MicroPython firmware files"
+  url="https://github.com/SolderedElectronics/pomodoro-timer-firmware"
+/>
+
+<CenteredImage src="/img/pomodoro-solder-kit/github_repo_overview.png" alt="Pomodoro Timer firmware GitHub repository overview"  caption="Official Pomodoro Timer firmware repository on GitHub"/>
+
+---
+
+## MicroPython Firmware (RP2040)
+
+The Pomodoro Timer Solder Kit uses a specific and tested version of the MicroPython firmware for the RP2040 chip.  
+This exact firmware binary is included in the official repository and should be used whenever reinstalling or reflashing MicroPython on the board.
+
+<QuickLink 
+  title="RP2040 MicroPython firmware"
+  description="Source code and official MicroPython firmware files"
+  url="https://github.com/SolderedElectronics/pomodoro-timer-firmware/blob/main/pomodoro_timer_firmware.uf2"
+/>
+
+This UF2 contains the correct MicroPython interpreter version used during development and testing of the Pomodoro Timer firmware.  
+Using other or newer MicroPython builds may lead to unexpected behavior or incompatibilities with board drivers, file handling or timing.
+
+<WarningBox>Do not replace the UF2 with unofficial or third-party RP2040 MicroPython builds unless you fully understand the consequences.  
+Only the provided binary is guaranteed to work with this project.</WarningBox>
+
 ---
 
 ## 1. What You’ll Need
@@ -52,132 +79,240 @@ mode
 
 ## 3. Recommended Method: Soldered MicroPython Helper (VS Code Extension)
 
-This is the easiest way to manage and program your Pomodoro Kit.
+This is the easiest and most beginner-friendly way to upload and manage firmware on your Pomodoro Timer.
 
-<CenteredImage src="/img/pomodoro-solder-kit/vscode_helper.png" alt="VS Code MicroPython Helper" width="500px" caption="Soldered MicroPython Helper inside VS Code"/>
+<CenteredImage 
+  src="/img/pomodoro-solder-kit/vscode_helper.png" 
+  alt="VS Code MicroPython Helper" 
+  width="500px" 
+  caption="Soldered MicroPython Helper inside VS Code"
+/>
 
-1. Install the [**Soldered MicroPython Helper**](https://soldered.com/documentation/micropython/getting-started-with-vscode/).  
-2. Open **Visual Studio Code** and click the **MicroPython** icon on the left sidebar.  
-3. Connect to your board (choose the correct COM or serial port).  
-4. In the **File Explorer**, open the folder where you downloaded the Pomodoro firmware repository:
-   ```
-   https://github.com/SolderedElectronics/pomodoro-timer-firmware
-   ```
-5. Upload the following files to your board:
-   - `main.py`
-   - `seven_segment.py`
-   - `buzzer_music.py`
-   - `music_options.py`
-6. Press the **Reset Board** button or unplug and replug the kit.
+<QuickLink 
+  title="Soldered MicroPython Helper extension" 
+  description="Recommended way to upload firmware and manage files"
+  url="https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper"
+/>
 
-Your Pomodoro Timer will now boot with the uploaded firmware.
+### 3.1 Install the Extension
+
+1. Install the Soldered MicroPython Helper extension from the VS Code Marketplace
+
+2. Open Visual Studio Code.
+
+3. Click on the Soldered MicroPython Helper icon in the left sidebar.
+
+<CenteredImage 
+  src="/img/pomodoro-solder-kit/mpext.png"
+  alt="MP Helper in the left sidebar."
+  width="300px"
+  caption="Location of the Soldered MicroPython Helper in the left sidebar."
+/>
+
+### 3.2 Connect to Your Pomodoro Timer
+
+Find "COM port selection" right below "Info & Instructions" and select the correct COM port.
+
+<CenteredImage 
+  src="/img/pomodoro-solder-kit/vscode_connect_board.png"
+  alt="Connecting to Pomodoro Timer in VS Code"
+  width="300px"
+  caption="Selecting the correct serial port for the Pomodoro Timer"
+/>
+
+<WarningBox>If the board does not appear:  
+• Try another USB cable (must support data)  
+• Close applications that may be using the serial port  
+• Reconnect the board</WarningBox>
+
+### 3.3 Open the Firmware Repository
+
+Inside VS Code, open the project folder you downloaded or cloned:
+
+```
+https://github.com/SolderedElectronics/pomodoro-timer-firmware
+```
+
+
+<InfoBox>Ensure the folder contains: <code>main.py</code>, <code>seven_segment.py</code>, <code>buzzer_music.py</code> and <code>music_options.py</code>.</InfoBox>
+
+### 3.4 Manage Files (Upload & Edit)
+
+Open the tab **Upload & Manage Python Scripts**
+
+<CenteredImage 
+  src="/img/pomodoro-solder-kit/vscode_file_management.png"
+  alt="Upload & Manage Python Scripts tab in VS Code"
+  width="300px"
+  caption="File management interface for uploading and editing Pomodoro firmware files"
+/>
+
+In this tab you can:
+
+#### Download files from the board
+Double-click any file to download it locally and open it for editing.
+
+#### Upload individual files
+Upload modified Python files back to the RP2040.
+
+#### Upload the entire firmware repository
+Choose **Upload Python File(s) From PC**, then select the top-level firmware folder you downloaded.  
+The extension will automatically scan that folder and all of its subfolders, detect every `.py` file, and upload them to the board.
+
+<InfoBox>Uploading the entire repository is the simplest way to restore original firmware or upload a customized version.</InfoBox>
+
+### 3.5 Upload Required Firmware Files
+
+Make sure these files are uploaded:
+
+- main.py  
+- seven_segment.py  
+- buzzer_music.py  
+- music_options.py
+
+### 3.6 Apply the Firmware (Reset the Board)
+
+After uploading the files:
+
+- Press "RESET MCU" in the extension  
+  or  
+- Unplug and reconnect your Pomodoro Timer
+
+The board will restart and run the newly uploaded firmware.
+
+<InfoBox>If the display does not show expected behavior, verify that all required files were uploaded correctly.</InfoBox>
 
 ---
 
-## 4. Alternative: Flashing with mpremote (CLI Method)
+## 4. Alternative Method: mpremote (CLI)
 
-[`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html) is the official command-line tool for interacting with MicroPython devices, such as the RP2040 (Raspberry Pi Pico and Pico W).
-It allows you to connect to your board, upload code, manage files, and run scripts directly.
+<QuickLink 
+  title="mpremote (CLI Tool)" 
+  description="Official MicroPython command-line interface for RP2040 boards"
+  url="https://docs.micropython.org/en/latest/reference/mpremote.html"
+/>
 
-First, make sure `mpremote` is installed:
+`mpremote` is the official command-line tool for communicating with MicroPython devices, including the RP2040 used in the Pomodoro Timer.  
+It provides access to the file system, allows uploading `.py` files, running scripts, and performing board resets.
+
+<InfoBox>The CLI method provides the same functionality as the VS Code extension, but all steps are performed manually through the terminal.</InfoBox>
+
+### 4.1 Install mpremote
 
 ```bash
 pip install mpremote
 ```
 
-Check the version to confirm:
-
 ```bash
 mpremote --version
 ```
 
----
+### 4.2 Detect and Connect to Your Board
 
-## Connecting to Your Board
-
-To see which devices are available:
+#### List available MicroPython-compatible devices
+This command scans all connected serial ports and shows devices that respond as MicroPython boards:
 
 ```bash
 mpremote devs
 ```
 
-or equivalently:
+Use this to confirm that your computer detects the Pomodoro Timer and to identify which serial port it uses.
+
+#### Show detailed list of connectable ports
+This gives a more explicit view of all ports and their identifiers:
 
 ```bash
 mpremote connect list
 ```
 
-Then connect to your board:
+Helpful if you have multiple USB devices connected and need to distinguish which one is the RP2040.
+
+#### Connect to the board manually
+Once you know the correct port, connect using:
 
 ```bash
-mpremote connect COM4          # Windows
-mpremote connect /dev/ttyACM0   # Linux
-mpremote connect /dev/tty.usbmodemXXXX   # macOS
+mpremote connect COM4
+mpremote connect /dev/ttyACM0
+mpremote connect /dev/tty.usbmodemXXXX
 ```
 
-Running just `mpremote` without arguments will auto-connect to the first available device and open a REPL prompt.
+After a successful connection, you can run mpremote commands directly on the device.
 
----
+<WarningBox>If the board does not appear, check your USB cable (must support data), close any application that may be using the serial port, and reconnect the device.</WarningBox>
 
-## Managing Files
 
-### Uploading files
-The `cp` command (copy) is the correct way to transfer files to your board.
-You can upload multiple files at once by listing them before the colon (`:`), which represents the device’s filesystem root:
+### 4.3 Managing Files on the Board
+
+#### Upload files to the device
+This command copies one or more Python files from your computer to the root of the RP2040 filesystem:
 
 ```bash
 mpremote cp main.py seven_segment.py buzzer_music.py music_options.py :
 ```
 
-If you want to include the connection inline:
+The colon (`:`) represents the device filesystem.
+
+You can also specify the connection inline:
 
 ```bash
 mpremote connect COM4 cp main.py seven_segment.py buzzer_music.py music_options.py :
 ```
 
-### Listing files
-To check what’s on your board:
+Use this when you want to upload updated firmware files or replace existing files on the device.
+
+#### List files stored on the device
+Shows all files currently present on the RP2040 filesystem:
 
 ```bash
 mpremote ls
 ```
 
-This is shorthand for `mpremote fs ls`.
+This is equivalent to:
 
-### Removing files
-To delete files from the board:
+```bash
+mpremote fs ls
+```
+
+Use this to verify that the correct firmware files are present after uploading.
+
+#### Remove a file from the device
+Deletes a file from board storage:
 
 ```bash
 mpremote rm old_script.py
 ```
 
-or explicitly:
+Explicit path variant:
 
 ```bash
 mpremote rm :old_script.py
 ```
 
----
+<WarningBox>Only delete files you are sure you no longer need. Avoid removing critical firmware files unless replacing them immediately.</WarningBox>
 
-## Running and Controlling Your Board
 
-### Run a script directly (without uploading)
-Execute a local file on the board:
+### 4.4 Running and Resetting Your Board
+
+#### Run a script directly (without saving it)
+Executes a Python script from your computer on the RP2040:
 
 ```bash
 mpremote run main.py
 ```
 
-This runs from RAM — it doesn’t store the file on the board.
+The script runs in RAM and is not stored on the device.  
+Useful for quick testing or debugging without overwriting your firmware.
 
-### Reset the board
-Perform a hardware reset (same as `machine.reset()`):
+#### Reset the board
+Performs a soft hardware reset, like pressing the reset button:
 
 ```bash
 mpremote reset
 ```
 
-If your device has a `main.py` on its filesystem, it will run automatically after reset.
+After a reset, the board automatically runs `main.py` if it exists on the device.
+
+<InfoBox>If your device does not behave as expected after uploading files, run a reset to ensure the firmware restarts cleanly and loads the latest versions of your scripts.</InfoBox>
 
 ---
 
@@ -260,5 +395,9 @@ Then re-upload your firmware as before. Upon startup, your new melody will play.
 ---
 
 You can modify a lot more. For example, you can change how the buttons behave, create new LED patterns, or even write your own timer logic.  
+
 Feel free to experiment and explore the code. If something stops working, you can always follow this guide again to restore the original firmware.  
+
 Everything is open-source, so have fun and make it your own!
+
+
