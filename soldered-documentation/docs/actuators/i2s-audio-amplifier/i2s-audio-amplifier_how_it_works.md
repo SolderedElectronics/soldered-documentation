@@ -27,6 +27,13 @@ For an in-depth look at technical specifications, refer to the official MAX98357
 
 ## How It Works
 
-<CenteredImage src="/img/i2s-audio-amp/i2s-audio-amp-diagram.png" alt="MAX98367A diagram" caption="Simplified block diagram by Analog Devices" width="700px"/>
+<CenteredImage
+  src="/img/i2s-audio-amp/i2s-audio-amp-diagram.png"
+  alt="MAX98357 block diagram"
+  caption="Simplified block diagram"
+  attribution_name="Analog Devices"
+  attribution_link="https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf"
+  width="700px"
+/>
 
 **MAX98357A** takes a digital audio signal in I2S format, that incoming signal is then processed by a built-in **DAC (digital-to-analog converter)** inside the chip and further amplified by a **Class D** output stage. The filterless (output connects straight to the speaker without external filters) Class D amplifier offers much higher efficiency than Class AB amplifier due to the switching operation of the output stage transistors, delivering power efficiently with little heat. The amplifier automatically detects the audio format and sample rate. Additionaly, the IC offers custom **gain selection** to modify full-scale output of the DAC.
