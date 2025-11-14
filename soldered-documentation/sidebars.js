@@ -739,6 +739,10 @@ const sidebars = {
               type: 'doc',
               id: 'nula-boards/max-rp2350/max-rp2350_arduino_1'
             },
+            {
+              type: 'doc',
+              id: 'nula-boards/max-rp2350/max-rp2350_hdmi_output'
+            },
           ]
         }
       ]
