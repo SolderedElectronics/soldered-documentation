@@ -92,6 +92,10 @@ const sidebars = {
           id: 'inkplate/inkplate-features-comparison'
         },
         {
+          type: 'doc',
+          id: 'inkplate/inkplate-lvgl-library'
+        },
+        {
           "type": "category",
           "label": "Inkplate Models",
           "items": [
