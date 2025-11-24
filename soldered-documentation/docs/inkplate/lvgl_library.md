@@ -28,7 +28,7 @@ Add this URL:
 https://github.com/SolderedElectronics/Inkplate-Board-Definitions-for-Arduino-IDE/raw/refs/heads/main/package_Inkplate_Boards_index.json
 ```
 
-to `Additional Boards Manager` in your Arduino IDE Preferences.
+to `File -> Preferences -> Additional Boards Manager URLs` in your Arduino IDE Preferences.
 
 <InfoBox> **NOTE: Inkplate board definitions used for LVGL library are different (updated) than the current version used in [Inkplate-Arduino-library](https://github.com/SolderedElectronics/Inkplate-Arduino-library)!** </InfoBox>
 
