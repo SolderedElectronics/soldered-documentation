@@ -55,7 +55,7 @@ Inkplate 6FLICK setup is complete. Now, try out some examples from the Arduino l
 
 ## Light and Versatile Graphics Library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for more customization options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/documentation/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/documentation/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 
