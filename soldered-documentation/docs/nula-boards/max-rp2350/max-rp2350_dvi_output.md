@@ -1,17 +1,17 @@
 ---
-slug: /nula-max-rp2350/hdmi-output
-title: NULA Max RP2350 - HDMI Output
-sidebar_label: HDMI Output
-id: max-rp2350_hdmi_output
+slug: /nula-max-rp2350/dvi-output
+title: NULA Max RP2350 - dvi Output
+sidebar_label: DVI Output
+id: max-rp2350_dvi_output
 pagination_prev: null
 hide_title: True
 ---
 
-# HDMI Output
+# DVI Output
 
-The **Soldered NULA Max RP2350** board features built-in **HDMI output capability**, enabling it to display images, graphics, and animations directly on any HDMI-compatible display. This is achieved through the **PicoDVI library**, which uses the RP2350’s PIO (Programmable I/O) system to **bit-bang a DVI/HDMI signal entirely in software**—no dedicated video hardware required. The implementation supports **framebuffer-based rendering**, allowing smooth animation and static image output in various color modes. Despite being a software-driven approach, PicoDVI efficiently leverages the RP2350’s dual-core performance and fast I/O to deliver surprisingly fluid HDMI visuals, making the NULA Max ideal for compact embedded projects, UI displays, and creative graphics demos.
+The **Soldered NULA Max RP2350** board features built-in **DVI output capability**, enabling it to display images, graphics, and animations directly on any DVI-compatible display. This is achieved through the **PicoDVI library**, which uses the RP2350’s PIO (Programmable I/O) system to **bit-bang a DVI/DVI signal entirely in software**—no dedicated video hardware required. The implementation supports **framebuffer-based rendering**, allowing smooth animation and static image output in various color modes. Despite being a software-driven approach, PicoDVI efficiently leverages the RP2350’s dual-core performance and fast I/O to deliver surprisingly fluid DVI visuals, making the NULA Max ideal for compact embedded projects, UI displays, and creative graphics demos.
 
-<CenteredImage src="/img/nula-max-rp2350/hdmi_showcase.jpg" alt="Showcase of the HDMI capabilities of the RP2350 board" caption="Showcase of a screensaver on the NULA Max board"/>
+<CenteredImage src="/img/nula-max-rp2350/hdmi_showcase.jpg" alt="Showcase of the DVI capabilities of the RP2350 board" caption="Showcase of a screensaver on the NULA Max board"/>
 
 We have made a fork of the original PicoDVI library, which makes it and the examples plug-and-play with our NULA Max RP2350 board. The library can be found below:
 
@@ -144,7 +144,7 @@ void loop() {
   ]}
 />
 
-<CenteredImage src="/img/nula-max-rp2350/draw_example.jpg" alt="HDMI output" caption="Output on an HDMI monitor"/>
+<CenteredImage src="/img/nula-max-rp2350/draw_example.jpg" alt="DVI output" caption="Output on an DVI monitor"/>
 
 ## Text Example
 
@@ -211,13 +211,13 @@ void loop() {
   ]}
 />
 
-<CenteredImage src="/img/nula-max-rp2350/text_example.jpg" alt="HDMI output" caption="Output on an HDMI monitor"/>
+<CenteredImage src="/img/nula-max-rp2350/text_example.jpg" alt="DVI output" caption="Output on an DVI monitor"/>
 
 ## Animation example
 
 The following is an animation showing the speed at which the display can refresh.
 
-<CenteredImage src="/img/nula-max-rp2350/animation.webp" alt="HDMI output" caption="Output on an HDMI monitor"/>
+<CenteredImage src="/img/nula-max-rp2350/animation.webp" alt="DVI output" caption="Output on an DVI monitor"/>
 
 <InfoBox>If you are experiencing horizontal red lines, in the Arduino IDE, go to Tools->Optimise->Optimise Even More (-O3)</InfoBox>
 
