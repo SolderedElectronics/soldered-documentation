@@ -2953,6 +2953,16 @@ const sidebars = {
           items: [
             {
               type:'category',
+              label:'0. Getting Started',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-breadboard-fundementals'
+                }
+              ]
+            },
+            {
+              type:'category',
               label: '1. Basic Skills',
               items:[
                 {
