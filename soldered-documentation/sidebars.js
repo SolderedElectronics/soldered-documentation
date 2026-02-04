@@ -2958,7 +2958,11 @@ const sidebars = {
                 {
                   type:'doc',
                   id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-breadboard-fundementals'
-                }
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-setting-arduino-enviroment'
+                },
               ]
             },
             {
