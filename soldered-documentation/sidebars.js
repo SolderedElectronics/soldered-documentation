@@ -666,6 +666,42 @@ const sidebars = {
                 "inkplate/6motion/6motion-faq-troubleshooting",
                 "inkplate/6motion/6motion-additional-resources"
               ]
+            },
+            {
+              "type": "category",
+              "label": "Inkplate 13SPECTRA",
+              "items": [
+                "inkplate/13spectra/13spectra-overview",
+                "inkplate/13spectra/13spectra-quick-start-guide",
+                {
+                  "type": "category",
+                  "label": "Hardware",
+                  "items": [
+                    "inkplate/13spectra/hardware/13spectra-hardware-design",
+                    "inkplate/13spectra/hardware/13spectra-hardware-open-source",
+                    "inkplate/13spectra/hardware/13spectra-hardware-files",
+                    "inkplate/13spectra/hardware/13spectra-hardware-battery",
+                    "inkplate/13spectra/hardware/13spectra-hardware-jumpers",
+                    "inkplate/13spectra/hardware/13spectra-hardware-free-gpio",
+                    "inkplate/13spectra/hardware/13spectra-hardware-power-switch",
+                  ]
+                },
+                {
+                  "type":"category", 
+                  "label": "Arduino Library",
+                  "items": [
+                    {
+                      "type":"category",
+                      "label":"Basics",
+                      "items": [
+                        "inkplate/13spectra/basics/13spectra-init",
+                        "inkplate/13spectra/basics/13spectra-printing-text",
+                      ]
+                    }
+                  ]
+                },
+                "inkplate/13spectra/13spectra-faq-troubleshooting",
+              ]
             }
           ]
         },
