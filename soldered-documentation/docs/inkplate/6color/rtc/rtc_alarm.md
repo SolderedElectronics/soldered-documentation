@@ -38,34 +38,34 @@ uint8_t alarmDay = 20;
 void setup()
 {
     display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    display.rtcReset();     // Reset RTC if there is some data in it
+    display.rtc.Reset();     // Reset RTC if there is some data in it
     display.clearDisplay(); // Clear frame buffer of display
     display.setTextSize(3); // Set text to be 3 times bigger than classic 5x7 px text
 
-    display.rtcSetTime(hour, minutes, seconds);    // Send time to RTC
-    display.rtcSetDate(weekday, day, month, year);   // Send date to RTC
-    display.rtcSetAlarm(alarmSeconds, alarmMinutes, alarmHour, alarmDay, alarmWeekday); // Set alarm
+    display.rtc.SetTime(hour, minutes, seconds);    // Send time to RTC
+    display.rtc.SetDate(weekday, day, month, year);   // Send date to RTC
+    display.rtc.SetAlarm(alarmSeconds, alarmMinutes, alarmHour, alarmDay, alarmWeekday); // Set alarm
 }
 
 void loop()
 {
-    display.rtcGetRtcData();              // Get the time and date from RTC
-    seconds = display.rtcGetSecond();     // Store seconds in a variable
-    minutes = display.rtcGetMinute();     // Store minutes in a variable
-    hour = display.rtcGetHour();          // Store hours in a variable
-    day = display.rtcGetDay();            // Store day of month in a variable
-    weekday = display.rtcGetWeekday();    // Store day of week in a variable
-    month = display.rtcGetMonth();        // Store month in a variable
-    year = display.rtcGetYear();          // Store year in a variable
+    display.rtc.GetRtcData();              // Get the time and date from RTC
+    seconds = display.rtc.GetSecond();     // Store seconds in a variable
+    minutes = display.rtc.GetMinute();     // Store minutes in a variable
+    hour = display.rtc.GetHour();          // Store hours in a variable
+    day = display.rtc.GetDay();            // Store day of month in a variable
+    weekday = display.rtc.GetWeekday();    // Store day of week in a variable
+    month = display.rtc.GetMonth();        // Store month in a variable
+    year = display.rtc.GetYear();          // Store year in a variable
 
     display.clearDisplay();                                       // Clear content in frame buffer
     display.setCursor(100, 300);                                  // Set position of the text
     display.setTextColor(INKPLATE_GREEN, INKPLATE_WHITE);         // Set text color and background
     printTime(hour, minutes, seconds, day, weekday, month, year);  // Print the time on screen
 
-    if (display.rtcCheckAlarmFlag())  // Check if alarm has occurred
+    if (display.rtc.CheckAlarmFlag())  // Check if alarm has occurred
     {
-      display.rtcClearAlarmFlag();    // It's recommended to clear alarm flag after alarm has occurred
+      display.rtc.ClearAlarmFlag();    // It's recommended to clear alarm flag after alarm has occurred
       display.setCursor(400, 400);      // Set new position for cursor
       display.print("ALARM!");
     }
@@ -107,7 +107,7 @@ void print2Digits(uint8_t _d)
 ```
 
 <FunctionDocumentation
-    functionName="inkplate.rtcSetAlarm()"
+    functionName="inkplate.rtc.SetAlarm()"
     description="Sets the alarm to all the parameters."
     returnType="void"
     parameters={[ 
@@ -120,7 +120,7 @@ void print2Digits(uint8_t _d)
 />
 
 <FunctionDocumentation
-  functionName="inkplate.rtcCheckAlarmFlag()"
+  functionName="inkplate.rtc.CheckAlarmFlag()"
   description="Checks if the alarm flag is on"
   returnDescription="Returns true if the alarm flag is on"
   returnType="bool"
@@ -147,17 +147,17 @@ void setup()
     pinMode(39, INPUT_PULLUP);      // Set RTC INT pin on ESP32 GPIO39 as input with pullup resistor enabled
 
     display.begin();            // Init Inkplate library (you should call this function ONLY ONCE)
-    display.rtcReset();         // Reset RTC if there is some data in it
+    display.rtc.Reset();         // Reset RTC if there is some data in it
     display.clearDisplay();     // Clear frame buffer of display
     display.display();          // Put clear image on display
     display.setTextSize(3);     // Set text to be 4 times bigger than classic 5x7 px text
   
-    display.rtcSetEpoch(1650000000);
-    display.rtcSetAlarmEpoch(display.rtcGetEpoch() + 60, RTC_ALARM_MATCH_DHHMMSS);
+    display.rtc.SetEpoch(1650000000);
+    display.rtc.SetAlarmEpoch(display.rtc.GetEpoch() + 60, RTC_ALARM_MATCH_DHHMMSS);
 
-    // display.rtcSetTime(6, 25, 0);        // Or you can use another way to set the time and date
-    // display.rtcSetDate(6, 16, 5, 2020);
-    // display.rtcSetAlarm(10, 25, 6, 16, 6); // Set alarm 10 seconds from now
+    // display.rtc.SetTime(6, 25, 0);        // Or you can use another way to set the time and date
+    // display.rtc.SetDate(6, 16, 5, 2020);
+    // display.rtc.SetAlarm(10, 25, 6, 16, 6); // Set alarm 10 seconds from now
   
     attachInterrupt(39, alarmISR, FALLING); // Set interrupt function and interrupt mode
 }
@@ -167,15 +167,15 @@ void loop()
     display.clearDisplay();         // Clear frame buffer of display
     display.setCursor(60, 100);       // Set position of the text
     display.setTextColor(INKPLATE_RED, INKPLATE_WHITE);         // Set text color and background
-    display.rtcGetRtcData();          // Get the time and date from RTC
+    display.rtc.GetRtcData();          // Get the time and date from RTC
 
     // Print the time on screen
-    printTime(display.rtcGetHour(), display.rtcGetMinute(), display.rtcGetSecond(), display.rtcGetDay(), display.rtcGetWeekday(), display.rtcGetMonth(), display.rtcGetYear());
+    printTime(display.rtc.GetHour(), display.rtc.GetMinute(), display.rtc.GetSecond(), display.rtc.GetDay(), display.rtc.GetWeekday(), display.rtc.GetMonth(), display.rtc.GetYear());
     
     if (_alarmFlag)     // Check alarm flag
     {
         // _alarmFlag = 0;              // Uncomment if you want to clear this flag
-        display.rtcClearAlarmFlag();    // It's recommended to clear the alarm flag after the alarm has occurred
+        display.rtc.ClearAlarmFlag();    // It's recommended to clear the alarm flag after the alarm has occurred
         display.setCursor(200, 200);      // Set position of the text
         display.print("ALARM");           // Print text
     }

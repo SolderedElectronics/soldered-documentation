@@ -696,6 +696,24 @@ const sidebars = {
                       "items": [
                         "inkplate/13spectra/basics/13spectra-init",
                         "inkplate/13spectra/basics/13spectra-printing-text",
+                        "inkplate/13spectra/basics/13spectra-graphics",
+                      ]
+                    },
+                    "inkplate/13spectra/deepsleep/13spectra-deepsleep",
+                    {
+                      "type":"category",
+                      "label":"MicroSD",
+                      "items":[
+                        "inkplate/13spectra/microsd/13spectra-microsd-basics",
+                        "inkplate/13spectra/microsd/13spectra-microsd-image",
+                      ]
+                    },
+                    {
+                      "type":"category",
+                      "label":"RTC",
+                      "items":[
+                        "inkplate/13spectra/rtc/13spectra-rtc-basics",
+                        "inkplate/13spectra/rtc/13spectra-rtc-alarm"
                       ]
                     }
                   ]
