@@ -715,7 +715,17 @@ const sidebars = {
                         "inkplate/13spectra/rtc/13spectra-rtc-basics",
                         "inkplate/13spectra/rtc/13spectra-rtc-alarm"
                       ]
-                    }
+                    },
+                    {
+                      "type":"category",
+                      "label":"WiFi",
+                      "items":[
+                        "inkplate/13spectra/wifi/13spectra-wifi-basics",
+                        "inkplate/13spectra/wifi/13-spectra-wifi-get-post",
+                        "inkplate/13spectra/wifi/13spectra-wifi-https-certificate",
+                        "inkplate/13spectra/wifi/13spectra-wifi-image-from-webs",
+                      ]
+                    },
                   ]
                 },
                 "inkplate/13spectra/13spectra-faq-troubleshooting",

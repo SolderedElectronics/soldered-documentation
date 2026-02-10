@@ -2,7 +2,7 @@
 slug: /inkplate/13spectra/wifi/get-post
 title: Inkplate 13SPECTRA – GET & POST requests
 sidebar_label: GET & POST requests
-id: wifi-get-post
+id: 13-spectra-wifi-get-post
 ---
 
 Now that Inkplate is connected to the internet, you will likely want to send and receive data from sensors, messages, or your custom APIs, etc. This page contains examples of how to send and receive data on Inkplate via the internet

@@ -2,7 +2,7 @@
 slug: /inkplate/13spectra/wifi/wifi-basics
 title: Inkplate 13SPECTRA – WiFi basics
 sidebar_label: WiFi basics
-id: wifi-basics
+id: 13spectra-wifi-basics
 hide_title: true
 ---
 

@@ -2,7 +2,7 @@
 slug: /inkplate/6color/wifi/image-from-web
 title: Inkplate 13SPECTRA – Draw Image from Web
 sidebar_label: Draw Image from Web
-id: wifi-image-from-web
+id: 13spectra-wifi-image-from-web
 ---
 
 Drawing an image from the web on Inkplate 6COLOR is simple using the `draw` function, which supports multiple image formats.
