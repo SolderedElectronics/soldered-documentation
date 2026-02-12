@@ -2644,6 +2644,72 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Inputronic Keyboard',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/inputronic-keyboard/inputronic-keyboard-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/inputronic-keyboard/inputronic-keyboard-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/inputronic-keyboard/inputronic-keyboard-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/arduino_library/inputronic-keyboard-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/arduino_library/inputronic-keyboard-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/arduino_library/inputronic-keyboard-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/arduino_library/inputronic-keyboard-arduino-4',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/micropython/inputronic-keyboard-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/micropython/inputronic-keyboard-micropython-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/micropython/inputronic-keyboard-micropython-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/micropython/inputronic-keyboard-micropython-4',
+                },
+              ]
+            },
+            {
+              type: 'doc',
+              id: 'communication/inputronic-keyboard/inputronic-keyboard-troubleshooting',
+            }
+          ],
+        },
+        {
+          type: 'category',
           label: 'MakerICE Adapter AVR',
           items: [
             {
