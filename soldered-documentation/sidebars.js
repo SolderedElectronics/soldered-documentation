@@ -723,9 +723,53 @@ const sidebars = {
                         "inkplate/13spectra/wifi/13spectra-wifi-basics",
                         "inkplate/13spectra/wifi/13-spectra-wifi-get-post",
                         "inkplate/13spectra/wifi/13spectra-wifi-https-certificate",
-                        "inkplate/13spectra/wifi/13spectra-wifi-image-from-webs",
+                        "inkplate/13spectra/wifi/13spectra-wifi-image-from-web",
                       ]
                     },
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"MicroPython",
+                  "items":[
+                    {
+                      "type":"category",
+                      "label":"Basics",
+                      "items": [
+                        "inkplate/13spectra/micropython/basics/13spectra-init-and-display-update",
+                        "inkplate/13spectra/micropython/basics/13spectra-printing-text",
+                        "inkplate/13spectra/micropython/basics/13spectra-drawing-graphics",
+                      ]
+                    },
+                    {
+                    
+                      "type":"category",
+                      "label":"MicroSD",
+                      "items": [
+                        "inkplate/13spectra/micropython/microsd/13spectra-microsd-basics",
+                        "inkplate/13spectra/micropython/microsd/13spectra-read-and-write",
+                        "inkplate/13spectra/micropython/microsd/13spectra-draw-image-from-microsd-card",
+                      ]
+                    },
+                    {
+                    
+                      "type":"category",
+                      "label":"RTC",
+                      "items": [
+                        "inkplate/13spectra/micropython/rtc/13spectra-basic-rtc-usage",
+                      ]
+                    },
+                    {
+                    
+                      "type":"category",
+                      "label":"WiFi",
+                      "items": [
+                        "inkplate/13spectra/micropython/wifi/13spectra-init-and-connection",
+                        "inkplate/13spectra/micropython/wifi/13spectra-get-and-post-requests",
+                        "inkplate/13spectra/micropython/wifi/13spectra-draw-image-from-wifi",
+                      ]
+                    },
+                    "inkplate/13spectra/micropython/13spectra-battery-voltage"
                   ]
                 },
                 "inkplate/13spectra/13spectra-faq-troubleshooting",
