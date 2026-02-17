@@ -10,9 +10,9 @@ id: 13spectra-hardware-battery
 
 Inkplate 13SPECTRA includes a **2-pin 2mm JST connector**, allowing you to connect a **3.7V Li-ion battery**. The onboard charging IC, **MCP73831**, **automatically charges the battery** when Inkplate is plugged into **USB-C** and switches to battery power when unplugged. A **charging indicator LED** provides real-time charging status.
 
-[IMAGE PLACEHOLDER - jst battery connector highlighted]
+<CenteredImage src="/img/13spectra/jst_highlighted.jpg" alt="JST battery connector" caption="JST battery connector" width="1200px" />
 
-[IMAGE PLACEHOLDER - onboard charging indicator led highlighted]
+<CenteredImage src="/img/13spectra/chrg_led_highlighted.jpg" alt="Onboard charging indicator LED" caption="Onboard charging indicator LED" width="1200px" />
 
 ---
 

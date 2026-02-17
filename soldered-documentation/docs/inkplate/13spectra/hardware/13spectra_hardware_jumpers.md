@@ -20,4 +20,13 @@ See the table below for detailed explanation of each jumper's function:
 | **JP5** 	| **NO** (not connected) 	| When shorted, it connect the pin P1_1 to battery voltage measurement circuit. 	|
 | **JP6** 	| **NC** (connected) 	| When shorted, it provides a connection (on pin P1_2) to onboard MOSFET that powers the microSD card. 	|
 
-[FLICKITY CAROUSEL PLACEHOLDER - all jumpers highlighted]
+<FlickityCarousel
+images={[
+{src:'/img/13spectra/jp1_highlighted.jpg', alt: 'Jumper JP1', caption:'JP1'},
+{src:'/img/13spectra/jp2_highlighted.jpg', alt: 'Jumper JP2', caption:'JP2'},
+{src:'/img/13spectra/jp3_highlighted.jpg', alt: 'Jumper JP3', caption:'JP3'},
+{src:'/img/13spectra/jp4_highlighted.jpg', alt: 'Jumper JP4', caption:'JP4'},
+{src:'/img/13spectra/jp5_highlighted.jpg', alt: 'Jumper JP5', caption:'JP5'},
+{src:'/img/13spectra/jp6_highlighted.jpg', alt: 'Jumper JP6', caption:'JP6'},
+]}
+/>
