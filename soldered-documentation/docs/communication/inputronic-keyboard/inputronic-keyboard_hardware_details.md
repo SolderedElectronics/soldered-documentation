@@ -8,12 +8,9 @@ hide_title: False
 
 ## Pinout 
 
-<!-- 
-<CenteredImage src="/img/tca8418/tca8418_pinout.png"/>
+<CenteredImage src="/img/inputronic-keyboard/pinout.png"/>
 
-
-Click [**here**](/img/tca8418/tca8418_pinout.png) for a high-resolution image of the pinout.
--->
+Click [**here**](/img/inputronic-keyboard/pinout.png) for a high-resolution image of the pinout.
 
 ## Pin details
 

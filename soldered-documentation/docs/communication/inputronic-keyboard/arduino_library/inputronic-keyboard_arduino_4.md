@@ -1,8 +1,8 @@
 ---
-slug: /inputronic-keyboard/arduino/oled-type 
+slug: /inputronic-keyboard/arduino/oled-type
 title: Inputronic Keyboard - Live typing to OLED
 sidebar_label: Typing to OLED
-id: inputronic-keyboard-arduino-4 
+id: inputronic-keyboard-arduino-4
 hide_title: False
 ---
 
@@ -18,22 +18,13 @@ This example demonstrates live typing using the Inputronic Keyboard with output 
 - **SSD1306 OLED Display** (I²C address: 0x3C)
 - Both devices connected via Qwiic/easyC or I²C
 
-<InfoBox>
-This example uses the **Soldered OLED Display library**. You can install it from the Arduino Library Manager or GitHub.
-</InfoBox>
+<InfoBox>This example uses the [**Soldered OLED Display library**](https://github.com/SolderedElectronics/Soldered-OLED-Display-Arduino-Library). You can install it from the Arduino Library Manager or GitHub.</InfoBox>
 
 ---
 
-## Key Features
+## Initialization
 
-- **Real-time rendering**: Text updates immediately on the OLED
-- **Newline support**: ENTER key inserts line breaks
-- **Backspace**: Removes the last character from the buffer
-- **SHIFT and CAPS**: Handled automatically by the library
-
----
-
-## Complete Example
+Both the OLED display and the keyboard are initialized over I²C. A `String` buffer is reserved to hold the typed text.
 
 ```cpp
 #include <Arduino.h>
@@ -50,56 +41,72 @@ InputronicKeyboard kbd;
 
 String typedText;
 
+void setup(){
+    Serial.begin(115200);
+
+    if(!display.begin()){
+        Serial.println("OLED not found!");
+        while(1);
+    }
+
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
+    display.display();
+
+    typedText.reserve(256);
+
+    if(!kbd.begin()){
+        Serial.println("Keyboard not found!");
+        while(1);
+    }
+
+    redrawOled();
+}
+```
+
+---
+
+## Redrawing the Display
+
+A helper function clears the OLED and reprints the entire text buffer. This is called whenever the buffer changes.
+
+```cpp
 void redrawOled(){
     display.clearDisplay();
     display.setCursor(0, 0);
     display.print(typedText);
     display.display();
 }
+```
 
-void setup(){
-    Serial.begin(115200);
-    
-    if(!display.begin()){
-        Serial.println("OLED not found!");
-        while(1);
-    }
-    
-    display.clearDisplay();
-    display.setTextSize(1);
-    display.setTextColor(SSD1306_WHITE);
-    display.display();
-    
-    typedText.reserve(256);
-    
-    if(!kbd.begin()){
-        Serial.println("Keyboard not found!");
-        while(1);
-    }
-    
-    redrawOled();
-}
+---
 
+## Handling Key Events
+
+The main loop reads key events and appends characters to the `typedText` buffer. Special keys (SPACE, BACK, ENTER) are handled individually, and the display is only redrawn when the buffer actually changes.
+
+```cpp
 void loop(){
     bool changed = false;
-    
+
     while(kbd.eventsAvailable() > 0){
         bool isRelease = false;
         uint8_t row = 0, col = 0;
         const char *label = nullptr;
-        
+
         if(!kbd.readMappedEvent(isRelease, row, col, label))
             break;
-            
+
         if(!label || isRelease)
             continue;
-        
+
         if(!strcmp(label, "SPACE")){
             typedText += ' ';
             changed = true;
             continue;
         }
-        
+
         if(!strcmp(label, "BACK")){
             if(typedText.length() > 0){
                 typedText.remove(typedText.length() - 1);
@@ -107,66 +114,51 @@ void loop(){
             }
             continue;
         }
-        
+
         if(!strcmp(label, "ENTER")){
             typedText += '\n';
             changed = true;
             continue;
         }
-        
+
         if(!strcmp(label, "CAPS") || !strcmp(label, "SHIFT"))
             continue;
-        
+
         char ch;
         if(kbd.labelToChar(label, ch, true)){
             typedText += ch;
             changed = true;
         }
     }
-    
+
     if(changed){
         redrawOled();
     }
-    
+
     delay(1);
 }
 ```
 
-<!--
-<CenteredImage src="/img/tca8418/oled-type-example.jpg" alt="OLED live typing" caption="Live typing displayed on SSD1306 OLED" width="500px"/>
--->
+<InfoBox>
+The display is only redrawn when `changed` is true. This avoids unnecessary I²C traffic and display flicker.
+</InfoBox>
 
----
+<CenteredImage src="/img/inputronic-keyboard/oledtype.png" alt="OLED live typing" caption="Live typing displayed on SSD1306 OLED" width="800px"/>
 
-## Additional Examples
+## Full Example
 
 <QuickLink
-    title="Inkplate E-paper Example"
-    description="For e-paper displays like Inkplate, see the InkplateType.ino example in the library. It demonstrates how to minimize refresh cycles for e-paper longevity."
-    url="https://github.com/SolderedElectronics/Soldered-Inputronic-Keyboard-Arduino-Library"
+    title="OledType"
+    description="Demonstrates live typing on an SSD1306 OLED display using the Inputronic Keyboard, with real-time rendering, backspace, and newline support."
+    url="https://github.com/SolderedElectronics/SOLDERED-Inputronic-KEYBOARD-Arduino-Library/tree/main/examples/OledType"
 />
 
----
+## Additional Example
 
-## Key Functions Reference
+For e-paper displays like Inkplate, see the **InkplateType** example in the library. It follows the same approach but minimizes refresh cycles for e-paper longevity.
 
-### Text Buffer Management
-
-```cpp
-String typedText;              // Store all typed characters
-typedText += ch;               // Append character
-typedText.remove(length - 1);  // Remove last character (backspace)
-```
-
-### Display Update
-
-```cpp
-display.clearDisplay();        // Clear framebuffer
-display.setCursor(0, 0);       // Reset cursor position
-display.print(typedText);      // Draw text
-display.display();             // Update screen
-```
-
-<WarningBox>
-Only call `display.display()` when the text changes to reduce unnecessary screen updates and I²C traffic!
-</WarningBox>
+<QuickLink
+    title="InkplateType"
+    description="Live typing example adapted for Inkplate e-paper displays with optimized partial refresh."
+    url="https://github.com/SolderedElectronics/SOLDERED-Inputronic-KEYBOARD-Arduino-Library/tree/main/examples/InkplateType"
+/>

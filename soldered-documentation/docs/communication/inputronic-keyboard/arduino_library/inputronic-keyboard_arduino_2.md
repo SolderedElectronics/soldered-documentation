@@ -126,6 +126,12 @@ void loop(){
     ]}
 />
 
-<!--
-<CenteredImage src="/img/tca8418/serial-keyboard-poll.png" alt="Serial Monitor output" caption="Serial Monitor output showing key events" width="400px"/>
--->
+<CenteredImage src="/img/inputronic-keyboard/keyboardpoll.png" alt="Serial Monitor output" caption="Serial Monitor output showing key events" width="800px"/>
+
+## Full Example
+
+<QuickLink
+    title="KeyboardPoll"
+    description="Polls the keyboard for key events and prints each key press with its label, row, and column to the Serial Monitor."
+    url="https://github.com/SolderedElectronics/SOLDERED-Inputronic-KEYBOARD-Arduino-Library/tree/main/examples/KeyboardPoll"
+/>
