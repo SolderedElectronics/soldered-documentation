@@ -1,17 +1,14 @@
 ---
-slug: /inputronic-keyboard/micropython/reading-keys 
+slug: /inputronic-keyboard/micropython/reading-keys
 title: Inputronic Keyboard - Reading key events
 sidebar_label: Reading key events
-id: inputronic-keyboard-micropython-2 
+id: inputronic-keyboard-micropython-2
 hide_title: False
 ---
-
-This page contains simple examples with function documentation on how to read key events using the Inputronic Keyboard.
 
 ## Connections for this example
 
 <!-- TODO: Add connection image -->
-<!-- <CenteredImage src="/img/tca8418/mp-connections.jpg" alt="Connections" /> -->
 
 Connect the Inputronic Keyboard to your microcontroller via Qwiic/easyC cable or I²C pins as shown in the Getting Started guide.
 
@@ -19,30 +16,23 @@ Connect the Inputronic Keyboard to your microcontroller via Qwiic/easyC cable or
 
 ## Initialization
 
-To use the Inputronic Keyboard, first import the required module and create the keyboard object:
+To use the Inputronic Keyboard, first import the required module, create the keyboard object, and initialize it:
 
 ```python
 from inputronic_keyboard import InputronicKeyboard
 
 kbd = InputronicKeyboard()
-```
 
----
-
-## Checking for Events
-
-Before reading keys, check if any events are available in the FIFO buffer:
-
-```python
-if kbd.eventsAvailable() > 0:
-    # Events are ready to be read
-    pass
+if not kbd.begin():
+    print("Keyboard not found! Check connection.")
+else:
+    print("Keyboard initialized successfully!")
 ```
 
 <FunctionDocumentation
-    functionName="kbd.eventsAvailable()"
-    description="Returns the number of pending key events in the FIFO buffer"
-    returnDescription="Integer value representing the number of events (0-15)"
+    functionName="kbd.begin()"
+    description="Initializes the TCA8418 keypad controller, configuring the 8×10 matrix and I²C communication"
+    returnDescription="Boolean value. True if the keyboard was successfully initialized, False otherwise."
     parameters={[]}
 />
 
@@ -50,14 +40,22 @@ if kbd.eventsAvailable() > 0:
 
 ## Reading Key Events
 
-To read a key event, use the `readMappedEvent()` function. It returns a tuple containing the event information:
+The keyboard uses a **10-event FIFO** to store key presses and releases. To read events, first check if any are available, then read and decode them.
 
 ```python
-isRelease, row, col, label = kbd.readMappedEvent()
+while kbd.eventsAvailable() > 0:
+    isRelease, row, col, label = kbd.readMappedEvent()
 
-if not isRelease and label:  # Only process key presses
-    print("Key pressed: {} at row {}, col {}".format(label, row, col))
+    if not isRelease and label:  # Only process key presses
+        print("Key pressed: {} (Row: {}, Col: {})".format(label, row, col))
 ```
+
+<FunctionDocumentation
+    functionName="kbd.eventsAvailable()"
+    description="Returns the number of pending events in the FIFO"
+    returnDescription="Integer value representing the number of events (0-15)"
+    parameters={[]}
+/>
 
 <FunctionDocumentation
     functionName="kbd.readMappedEvent()"
@@ -70,7 +68,7 @@ if not isRelease and label:  # Only process key presses
 
 ## Converting Labels to Characters
 
-For printable keys, convert the label to a character. The library handles **SHIFT** and **CAPS** automatically:
+For printable keys, you can convert the label to a character. The module automatically handles **SHIFT** and **CAPS** behavior.
 
 ```python
 isRelease, row, col, label = kbd.readMappedEvent()
@@ -83,7 +81,7 @@ if not isRelease and label:
 
 <FunctionDocumentation
     functionName="kbd.labelToChar(label, applyShift)"
-    description="Converts a single-character label to a printable character with SHIFT and CAPS logic applied"
+    description="Converts a single-character label to a printable character. Automatically applies SHIFT and CAPS logic."
     returnDescription="String containing a single character, or None if the label is not a printable character"
     parameters={[
         { type: 'str', name:'label', description: "Key label from the keymap" },
@@ -114,49 +112,13 @@ if kbd.isKeyPressed("A"):
     ]}
 />
 
----
+<!-- TODO: Add screenshot of serial output -->
+<!-- <CenteredImage src="/img/inputronic-keyboard/keyboardpoll.png" alt="Serial output for keyboard polling" caption="Serial output showing key events" width="800px"/> -->
 
 ## Full Example
 
-This example continuously polls the keyboard and prints information about each key press:
-
-```python
-# FILE: keyboard-poll.py
-# AUTHOR: Soldered
-# BRIEF: An example showing how to read and display key events from the Inputronic Keyboard
-# WORKS WITH: Inputronic Keyboard: www.solde.red/333360
-
-from inputronic_keyboard import InputronicKeyboard
-from time import sleep
-
-# Create keyboard instance
-kbd = InputronicKeyboard()
-
-# Initialize keyboard
-if not kbd.begin():
-    print("Keyboard not found! Check connection.")
-else:
-    print("Keyboard initialized successfully!")
-    print("Press any key...\n")
-    
-    # Main polling loop
-    while True:
-        # Process all pending events
-        while kbd.eventsAvailable() > 0:
-            isRelease, row, col, label = kbd.readMappedEvent()
-            
-            # Only process key presses (ignore releases)
-            if not isRelease and label:
-                print("PRESS\tRow: {}\tCol: {}\tLabel: {}".format(row, col, label))
-                
-                # Try to convert to printable character
-                char = kbd.labelToChar(label, applyShift=True)
-                if char:
-                    print("\tChar: '{}'".format(char))
-        
-        sleep(0.001)  # Small delay to prevent tight polling
-```
-
-<!-- TODO: Add screenshot of serial output -->
-<!-- <CenteredImage src="/img/tca8418/mp-keyboard-poll.png" alt="Serial output for keyboard polling" caption="Serial output showing key events" width="400px"/> -->
-
+<QuickLink
+    title="keyboard_poll.py"
+    description="Polls the keyboard for key events and prints each key press with its label, row, and column to the console."
+    url="https://github.com/SolderedElectronics/Soldered-MicroPython-Modules/tree/main/Communication/Inputronic-KEYBOARD/Inputronic-KEYBOARD/Examples/keyboard_poll.py"
+/>
