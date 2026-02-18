@@ -53,7 +53,7 @@ The TCA8418 has a fixed 7-bit I²C address:
 ---
 
 ## Dimensions 
-- **Board Dimensions:** TBD
+- **Board Dimensions:** 136 x 60 mm
 - **Header Pin Holes:** 1.5 mm
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
 - Soldered boards are LEGO compatible! 🧱
