@@ -689,6 +689,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'NULA Core',
+          items: [
+            {
+              type: 'doc',
+              id: 'nula-boards/nula-core/core_overview'
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/nula-core/core_hardware_details'
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/nula-core/core_arduino_1'
+            }
+          ]
+        },
+        {
+          type: 'category',
           label: 'NULA Mini ESP32-C6',
           items: [
             {
