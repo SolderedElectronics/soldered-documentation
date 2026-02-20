@@ -23,7 +23,7 @@ display.begin()
 display.clearDisplay()
 
 # Draw what is currently in frame buffer, needs to be called to update the display
-inkplate.display()
+display.display()
 ```
 
 <FunctionDocumentation

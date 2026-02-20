@@ -27,7 +27,7 @@ void setup(){
     inkplate.begin();   // Init INkplate library (you should call this function ONLY ONCE)
     inkplate.clearDisplay();    // Clear frame buffer of display
     inkplate.setTextColor(INKPLATE_BLACK); //Set the text color to black
-    WiFi.begin(ssid, pass);
+    WiFi.begin(ssid, password);
     inkplate.print("Connecting to WiFi...");
     while(WiFi.status()!=WL_CONNECTED){
         delay(500);
@@ -39,7 +39,7 @@ void loop(){}
 
 ```
 
-[IMAGE PLACEHOLDER - 13spectra display output]
+<CenteredImage src="/img/13spectra/DSC00705.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
     functionName="WiFi.begin()"

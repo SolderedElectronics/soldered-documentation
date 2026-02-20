@@ -21,7 +21,7 @@ inkplate.clearDisplay()
 inkplate.display()
 
 # Putting the text in display buffer
-inkplate.printText("Hello World!")
+inkplate.print("Hello World!")
 inkplate.display()
 ```
 
@@ -33,7 +33,7 @@ inkplate.display()
   ]}
 />
 
-[IMAGE PLACEHOLDER]
+[IMAGE PLACEHOLDER] done 
 
 ---
 

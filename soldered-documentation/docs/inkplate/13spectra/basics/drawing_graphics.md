@@ -50,7 +50,7 @@ void loop(){
 }
 ```
 
-[IMAGE PLACEHOLDER - example output]
+<CenteredImage src="/img/13spectra/DSC00700.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 
 elow are the detailed references for these functions:
@@ -133,7 +133,7 @@ void setup(){
 
 ```
 
-[IMAGE PLACEHOLDER - inkplate13 shapes example]
+[IMAGE PLACEHOLDER - inkplate13 shapes example] 
 
 Below are the detailed references to these functions:
 

@@ -41,7 +41,7 @@ void setup()
         // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter
         // to true will flip all colors on the image, making black white and white black. This may be necessary when
         // exporting bitmaps from certain software.
-        if (display.drawImage("image1.bmp", 0, 0, 1))
+        if (display.image.draw("picture1.jpg", 0, 0, 1))
         {
             display.display();
             delay(5000);
@@ -56,9 +56,9 @@ void setup()
 
         // Now try to load the image using the SdFat library class (for more advanced users) and display the image on the e-paper.
         display.clearDisplay();
-        if (file.open("image2.bmp", O_RDONLY))
+        if (file.open("picture2.jpg", O_RDONLY))
         {
-            display.drawBitmapFromSd(&file, 0, 0);
+            display.image.drawJpegFromSd(&file, 0, 0);
             display.display();
             delay(5000);
         }
@@ -83,9 +83,8 @@ void loop()
 }
 ```
 
-[IMAGE PLACEHOLDER - image 1]
+<CenteredImage src="/img/13spectra/DSC00702.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
-[IMAGE PLACEHOLDER - image 2]
 
 <FunctionDocumentation
     functionName="inkplate.image.draw()"

@@ -107,6 +107,8 @@ void print2Digits(uint8_t _d)
 }
 ```
 
+<CenteredImage src="/img/13spectra/DSC00704.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
 <FunctionDocumentation
     functionName="inkplate.rtc.SetAlarm()"
     description="Sets the alarm to all the parameters."

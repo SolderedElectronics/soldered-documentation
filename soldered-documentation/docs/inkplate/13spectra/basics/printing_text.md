@@ -22,30 +22,39 @@ Inkplate display;
 void setup()
 {
     display.begin();
-    display.clearDisplay();
-    display.setCursor(0,100);
-    display.setTextSize(4);
-    display.setTextColor(INKPLATE_RED);
-    display.print("Hi inkplate (in size 4)!");
-    display.setCursor(0,150);
-    display.setTextSize(3);
-    display.setTextColor(INKPLATE_YELLOW);
-    display.print("Hi inkplate (in size 3)!");
-    display.setCursor(0,200);
-    display.setTextSize(2);
-    display.setTextColor(INKPLATE_ORANGE);
-    display.print("Hi inkplate (in size 2)!");
-    display.setCursor(0,250);
-    display.setTextSize(1);
-    display.setTextColor(INKPLATE_BLACK);
-    display.print("Hi inkplate (in size 1)!");
-    display.display();
+display.clearDisplay();
+
+// ---- Line 1 ----
+display.setCursor(100, 250);
+display.setTextSize(6);
+display.setTextColor(INKPLATE_RED);
+display.print("Hi inkplate (in size 6)!");
+
+// ---- Line 2 ----
+display.setCursor(100, 450);
+display.setTextSize(5);
+display.setTextColor(INKPLATE_YELLOW);
+display.print("Hi inkplate (in size 5)!");
+
+// ---- Line 3 ----
+display.setCursor(100, 650);
+display.setTextSize(4);
+display.setTextColor(INKPLATE_GREEN - 1);
+display.print("Hi inkplate (in size 4)!");
+
+// ---- Line 4 ----
+display.setCursor(100, 820);
+display.setTextSize(3);
+display.setTextColor(INKPLATE_BLACK);
+display.print("Hi inkplate (in size 3)!");
+
+display.display();
 }
 
 void loop(){}
 ```
 
-[IMAGE PLACEHOLDER - expected output on spectra's display]
+<CenteredImage src="/img/13spectra/DSC00696.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
   functionName="display.setTextSize()"
@@ -103,7 +112,7 @@ void loop() {
 }
 ```
 
-[IMAGE PLACEHOLDER - Expected output on inkplate display]
+<CenteredImage src="/img/13spectra/DSC00698.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
   functionName="display.setFont()"
@@ -125,7 +134,7 @@ You can manually define the area in which text will appear by using the `drawTex
 #include "FreeMono24pt7b.h"
 
 // Create an Inkplate object and set the library to 1 Bit mode (BW)
-Inkplate inkplate;
+Inkplate display;
 
 const char* text = "This is an example of a text written in a textbox. When a word doesn't fit into the current row, it goes to the next one." \
 " If the text reaches the lower bound, it ends with three dots (...) to mark that the text isn't displayed fully";
@@ -143,7 +152,7 @@ void setup()
     // x1 - x coordinate of the bottom right corner
     // y1 - y coordinate of the bottom right corner
     // text - text we want to display
-    display.drawTextBox(50,100,250,300,text);
+    display.drawTextBox(200,300,700,650,text);
 
     // Create a text box with all parameters
     // x0 - x coordinate of the upper left corner
@@ -156,8 +165,8 @@ void setup()
     // verticalSpacing - number of pixels between each row of text
     // showBorder - create a visible rectangle around the box
     // fontSize - size of the used font in pt
-    int offset = 32; // Note: some custom fonts are drawn from bottom-to-top, which requires an offset. Use an offset that best suits the font you use.
-    display.drawTextBox(300,100 + offset,488,300,text,1,&FreeMono24pt7b,27,false,24);
+    int offset = 48; // Note: some custom fonts are drawn from bottom-to-top, which requires an offset. Use an offset that best suits the font you use.
+    display.drawTextBox(800,300 + offset,1400,700,text,1,&FreeMono24pt7b,36,false,32);
 
     // Display both text boxes
     display.display();
@@ -169,7 +178,7 @@ void loop()
 }
 ```
 
-[IMAGE PLACEHOLDER - expacted output on spectra's display]
+<CenteredImage src="/img/13spectra/DSC00699.webp" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
   functionName="inkplate.drawTextBox()"

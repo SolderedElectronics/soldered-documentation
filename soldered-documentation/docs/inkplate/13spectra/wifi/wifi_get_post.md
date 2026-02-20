@@ -27,7 +27,7 @@ void setup()
     display.begin();                                 // Initialize Inkplate library (you should call this function ONLY ONCE)
     display.clearDisplay();                          // Clear frame buffer of display
     display.display();                               // Put clear image on display
-    display.setTextSize(2);                          // Set text scaling to two (text will be two times bigger)
+    display.setTextSize(4);                          // Set text scaling to two (text will be two times bigger)
     display.setCursor(0, 0);                         // Set print position
     display.setTextColor(INKPLATE_BLACK);            // Set text color to black and background color to white
     Serial.println("Scanning for WiFi networks..."); // Write text
@@ -88,7 +88,7 @@ void loop()
 }
 ```
 
-[IMAGE PLACEHOLDER - expected display output]
+<CenteredImage src="/img/13spectra/DSC00706.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
