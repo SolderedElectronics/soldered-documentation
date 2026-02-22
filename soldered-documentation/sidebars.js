@@ -753,6 +753,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'BMV080 Particulate Matter Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bmv080/bmv080-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmv080/bmv080-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmv080/bmv080-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bmv080/arduino_library/bmv080-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmv080/arduino_library/bmv080-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmv080/arduino_library/bmv080-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'TMP117 Temperature Sensor',
           items: [
             {
