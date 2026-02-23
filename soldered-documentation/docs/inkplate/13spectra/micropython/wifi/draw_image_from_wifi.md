@@ -98,7 +98,7 @@ inkplate.display()
 
 ```
 
-[IMAGE PLACEHOLDER]
+<CenteredImage src="/img/13spectra/DSC00715.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
 functionName="inkplate.drawImage()"

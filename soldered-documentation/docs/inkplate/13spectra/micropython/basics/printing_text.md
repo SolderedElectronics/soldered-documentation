@@ -33,7 +33,7 @@ inkplate.display()
   ]}
 />
 
-[IMAGE PLACEHOLDER] done 
+<CenteredImage src="/img/13spectra/DSC00711.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 ---
 
@@ -55,7 +55,7 @@ Color parameter in 'setTextColor()' changes text color as per table below:
 </InfoBox>
 
 ```python
-from inkplate13SPECTRA import inkplate
+from inkplate13SPECTRA import Inkplate
 import time
 
 inkplate=Inkplate()
@@ -103,7 +103,7 @@ inkplate.print(long_text)
 inkplate.display()
 ```
 
-[IMAGE PLACEHOLDER - display output]
+<CenteredImage src="/img/13spectra/DSC00712.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
   functionName="inkplate.setCursor()"

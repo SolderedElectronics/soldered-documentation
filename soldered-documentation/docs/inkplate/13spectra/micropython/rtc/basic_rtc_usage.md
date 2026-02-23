@@ -44,7 +44,7 @@ while True:
     # Let's wait 10 seconds
     time.sleep(10)
 ```
-[IMAGE PLACEHOLDER]
+<CenteredImage src="/img/13spectra/micropython_rtc_example.png" alt="Example output printed in console" caption="Example output printed in console" width="1200px" />
 
 <FunctionDocumentation
 functionName="inkplate.rtcSetTime()"

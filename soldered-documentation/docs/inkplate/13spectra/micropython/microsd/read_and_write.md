@@ -22,7 +22,7 @@ inkplate=Inkplate()
 inkplate.begin()
 inkplate.initSDCard(fastBoot=True)
 
-List files on the SD card
+#List files on the SD card
 print("FIles on SD:",os.listdir("sd"))
 
 #Writing to a file
@@ -34,11 +34,11 @@ print("Data written to sd/example.txt")
 #Reading from the same file
 with open("sd/example.txt","r") as f:
     content=f.read()
-print("File contents:")
+inkplate.print("File contents:")
 print(content)
 ```
 
-[IMAGE PLACEHOLDER]
+<CenteredImage src="/img/13spectra/DSC00714.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
 functionName="open()"

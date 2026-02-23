@@ -36,7 +36,7 @@ inkplate.printText(100, 100, "Battery voltage: " + battery + "V")
 inkplate.display()
 ```
 
-[IMAGE PLACEHOLDER - display output]
+<CenteredImage src="/img/13spectra/DSC00719.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation 
 functionName="inkplate.readBattery()" 

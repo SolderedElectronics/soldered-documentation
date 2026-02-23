@@ -24,11 +24,11 @@ import urequests
 from inkplate13SPECTRA import Inkplate
 
 # Enter your WiFi credentials here
-ssid = "Soldered Electronics"
-password = "dasduino"
+ssid = "your ssid"
+password = "your password"
 
 #Your personal webhook.site URL (use http://, no leading spaces!)
-WEBHOOK_URL ="https://webhook.site/3405e577-9c4f-4943-9e7c-410272ac07b2"
+WEBHOOK_URL ="yout webhook id"
 # Function which connects to WiFi
 # More info here: https://docs.micropython.org/en/latest/esp8266/tutorial/network_basics.html
 def do_connect():
@@ -60,7 +60,7 @@ else:
 inkplate.display()
 ```
 
-[IMAGE PLACEHOLDER]
+<CenteredImage src="/img/13spectra/micropython_get_example.png" alt="Example output displayed in console" caption="Example output displayed in console" width="1200px" />
 
 <FunctionDocumentation
 functionName="urequests.get()"
@@ -133,6 +133,10 @@ else:
     inkplate.display()
 ```
 
+<CenteredImage src="/img/13spectra/micropython_post_example.png" alt="POST request logged on webhook.site" caption="POST request logged on webhook.site" width="1200px" />
+
+<CenteredImage src="/img/13spectra/DSC00717.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
 <FunctionDocumentation
 functionName="urequests.post()"
 description="Perform an HTTP POST request to the given URL."
@@ -144,4 +148,3 @@ returnType="Response"
 returnDescription="Response object with .status_code and .text."
 />
 
-[IMAGE PLACEHOLDER]
