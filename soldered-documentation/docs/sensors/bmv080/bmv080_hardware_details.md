@@ -6,13 +6,13 @@ id: bmv080-hardware
 hide_title: False
 ---
 
-# Hardware details
+# BMV080 - Hardware details
 
 ## Pinout
 
-<CenteredImage src="/img/under_construction.png" alt="BMV080 pinout" />
+<CenteredImage src="/img/bmv080/bmv080-pinout.png" alt="BMV080 pinout" />
 
-Click [**here**](/img/under_construction.png) for a high resolution image of the pinout.
+Click [**here**](/img/bmv080/bmv080-pinout.png) for a high resolution image of the pinout.
 
 ## Pin details
 
@@ -54,12 +54,6 @@ This board contains hardware jumpers; see below for their locations and function
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
-
-<QuickLink 
-  title="BMV080 Particulate Matter Sensor Hardware Design" 
-  description="GitHub hardware repository for this product"
-  url="https://github.com/SolderedElectronics"
-/>
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 

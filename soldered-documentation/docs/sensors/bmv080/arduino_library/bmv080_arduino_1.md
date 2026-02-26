@@ -3,10 +3,10 @@ slug: /bmv080/arduino/geting-started
 title: BMV080 Particulate Matter Sensor - Getting Started
 sidebar_label: Getting Started
 id: bmv080-arduino-1 
-hide_title: False
+hide_title: true
 ---
 
-<SectionTitle title="Getting Started" backgroundImage="/img/faq.webp" />
+<SectionTitle title="BMV080 - Getting Started" backgroundImage="/img/faq.webp" />
 
 ## Arduino library
 

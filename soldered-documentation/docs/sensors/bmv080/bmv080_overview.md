@@ -7,7 +7,7 @@ hide_title: False
 pagination_prev: null
 ---
 
-# Overview
+# BMV080 - Overview
 
 ## BMV080 Particulate Matter Sensor
 
@@ -24,12 +24,11 @@ BMV080 measures mass concentration of airborne particles in the following size c
 title="BMV080 Particulate Matter Sensor"
 description="333175"
 url="https://soldered.com/"
-image="/img/tmp117/tmp117.webp"
+image="/img/under_construction.png"
 />
 
 ## Key Features
 - **Accuracy:**
-    - 
 - **Power consumption:**
 - **Interface:**
 - **Dimensions:**
