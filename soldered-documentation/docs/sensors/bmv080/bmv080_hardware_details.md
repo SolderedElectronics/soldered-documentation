@@ -18,11 +18,26 @@ Click [**here**](/img/bmv080/bmv080-pinout.png) for a high resolution image of t
 
 | Pin Marking |  Pin Name | Description                                                                 |
 | ----------- | --------- | --------------------------------------------------------------------------- |
-| **VCC**     | Power     | Power supply input                                                          |
+| **VCC**     | Power     | Power supply input.                                                         |
 | **GND**     | GND       | Ground reference for power and signals.                                     |
-| **IRQ**     | Interrupt | Hardware interrupt, active **low**                                          |
+| **IRQ**     | Interrupt | Interrupt line, digital out, active **low.**                                         |
+| **AB1**     | Address bit 1 | This pin functions as **I²C Address Bit 1**, or as as not Slave Select (nSS) in **SPI mode**. |
+| **AB0**     | Address bit 0 | This pin functions as **I²C Address Bit 0**, or as Master In Slave Out (MISO) in **SPI mode**. |
+| **SDA**     | Serial Data line | Pin acts as Serial data line in I²C mode, or as Master Out Slave In (MOSI) in **SPI mode**. |
+| **SCL**     | Serial Clock line | Pin acts as serial input for **both serial interface protocols** (SPI and I²C). |
 
-FINISH THE PINS
+<InfoBox> 
+
+Address pins 1 and 0 (AB1 and AB0) allow the BMV080 to have four possible I²C addresses (0x54–0x57) by adjusting the **address bits 0 and 1** of the slave. **Both are active low.** Below is a table for address selection (per datasheet):
+
+| AB1   | AB0   | Address  |
+| :---: | :---: | :-----:  |
+| 0     | 0     | 0x54     |
+| 0     | 1     | 0x55     |
+| 1     | 0     | 0x56     |
+| 1     | 1     | 0x57     |
+
+</InfoBox>
 
 
 ## Dimensions
@@ -39,14 +54,22 @@ This board contains hardware jumpers; see below for their locations and function
 
 <FlickityCarousel
   images={[
-    { src: '/img/under_construction.png', alt: 'bmv080-jumper-1', caption: 'JP1' }
+    { src: '/img/under_construction.png', alt: 'bmv080-jumper-1', caption: 'JP1' },
+    { src: '/img/under_construction.png', alt: 'bmv080-jumper-2', caption: 'JP2' },
+    { src: '/img/under_construction.png', alt: 'bmv080-jumper-3', caption: 'JP3' },
+    { src: '/img/under_construction.png', alt: 'bmv080-jumper-4', caption: 'JP4' }
   ]}
   jumpers={true}
 />
 
 ## Jumpers
 
-| Jumper  | Default State            | Function |                                                               
+| Jumper    |  Default State | Function |   
+| :-------: | :------------: | --------- |
+| **JP1** 	|  Pulled up | Connect low for selecting SPI mode.  | 
+| **JP2** 	|  Pulled up | Connect low for setting the address bit 0 state to HIGH. |
+| **JP3** 	|  Pulled up | Connect low for setting the address bit 1 state to HIGH. |
+| **JP4** 	|  Normally connected (NC) | Connects **SDA/SCL pull-up ressitors to 3.3V** for I2C communication. |                                                 
 
 
 ## Hardware repository

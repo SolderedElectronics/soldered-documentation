@@ -47,9 +47,9 @@ Alternatively, you can **manually connect** the sensor using I²C pins:
 
 | **Dasduino CONNECTPLUS**     | **BMV080 Breakout Board** |
 | ---------------------------- | ------------------------- |
-| IO21 (Default SDA pin)       | FIX THIS PIN NAME******   |
-| IO22 (Default SCL pin)       | FIX THIS PIN NAME******   |
-| 3V3                          | FIX THIS PIN NAME******   |
+| IO21 (Default SDA pin)       | SDA                       |
+| IO22 (Default SCL pin)       | SCL                       |
+| 3V3                          | 3V3                       |
 | GND                          | GND                       |
 | IO13 (any digital pin works) | IRQ (optional)            |
 

@@ -785,6 +785,10 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: 'doc',
+              id: 'sensors/bmv080/bmv080-troubleshooting'
+            }
           ],
         },
         {

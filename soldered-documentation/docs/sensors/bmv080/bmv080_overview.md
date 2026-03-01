@@ -28,7 +28,15 @@ image="/img/under_construction.png"
 />
 
 ## Key Features
-- **Accuracy:**
-- **Power consumption:**
-- **Interface:**
-- **Dimensions:**
+- **Ultra-small form factor**
+- **Fan-less design:** no moving parts, uses natural ambient airflow
+- **Real-time particulate measurements:** ≈1 reading per second
+- **Two measurements modes:** continuous measuremetn and duty-cycling mode
+- **Multiple measurement algorithms:**
+  - High precision
+  - Balanced
+  - Fast response
+- **Multi-size particle detection:** measures PM1, PM2.5 and PM10 particle concentration
+- **Accuracy:** with ±10 µg/m³ precision up to 100 µg/m³
+- **Interface:** simple communication via standard I2C protocol
+- **Low-power operation:** configurable duty cycling for battery powered systems

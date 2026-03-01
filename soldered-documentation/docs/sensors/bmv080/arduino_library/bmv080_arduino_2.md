@@ -1,12 +1,12 @@
 ---
 slug: /bmv080/arduino/setup
 title: BMV080 Particulate Matter Sensor - Setup
-sidebar_label: Setup
+sidebar_label: Setup and simple readings
 id: bmv080-arduino-2 
 hide_title: true
 ---
 
-<SectionTitle title="BMV080 - Setup" backgroundImage="/img/faq.webp" />
+<SectionTitle title="BMV080 - Setup and simple readings" backgroundImage="/img/faq.webp" />
 
 This Arduino library provides an easy-to-use interface for the BMV080 sensor, allowing you to read air quality data, configure sensor parameters, and monitor sensor status with just a few simple function calls.
 
@@ -169,3 +169,11 @@ void loop()
   returnDescription="PM10 concentration in micrograms per cubic meter (µg/m³)"
   returnType="float"
 />
+
+## Full example on GitHub
+
+<QuickLink  
+  title="BMV080-Simple-Readings"  
+  description="Simple readings example on GitHub repository"  
+  url="https://github.com/SolderedElectronics/Soldered-BMV080-Arduino-Library/blob/main/examples/simpleReading/simpleReading.ino"  
+/>  
