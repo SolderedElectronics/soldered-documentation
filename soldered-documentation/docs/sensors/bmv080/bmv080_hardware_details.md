@@ -21,7 +21,7 @@ Click [**here**](/img/bmv080/bmv080-pinout.png) for a high resolution image of t
 | **VCC**     | Power     | Power supply input.                                                         |
 | **GND**     | GND       | Ground reference for power and signals.                                     |
 | **IRQ**     | Interrupt | Interrupt line, digital out, active **low.**                                         |
-| **AB1**     | Address bit 1 | This pin functions as **I²C Address Bit 1**, or as as not Slave Select (nSS) in **SPI mode**. |
+| **AB1**     | Address bit 1 | This pin functions as **I²C Address Bit 1**, or as not Slave Select (nSS) in **SPI mode**. |
 | **AB0**     | Address bit 0 | This pin functions as **I²C Address Bit 0**, or as Master In Slave Out (MISO) in **SPI mode**. |
 | **SDA**     | Serial Data line | Pin acts as Serial data line in I²C mode, or as Master Out Slave In (MOSI) in **SPI mode**. |
 | **SCL**     | Serial Clock line | Pin acts as serial input for **both serial interface protocols** (SPI and I²C). |
@@ -42,7 +42,7 @@ Address pins 1 and 0 (AB1 and AB0) allow the BMV080 to have four possible I²C a
 
 ## Dimensions
 
-- **Board Dimensions:** ================= **ADD BOARD DIMENSIONS HERE**
+- **Board Dimensions:**  38 x 22mm (1.5 x 0.9 inches)
 - **Header Pin Holes:** 1.5 mm
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
 - Soldered boards are LEGO compatible! 🧱

@@ -31,7 +31,7 @@ image="/img/under_construction.png"
 - **Ultra-small form factor**
 - **Fan-less design:** no moving parts, uses natural ambient airflow
 - **Real-time particulate measurements:** ≈1 reading per second
-- **Two measurements modes:** continuous measuremetn and duty-cycling mode
+- **Two measurements modes:** continuous measurement and duty-cycling mode
 - **Multiple measurement algorithms:**
   - High precision
   - Balanced
@@ -40,3 +40,4 @@ image="/img/under_construction.png"
 - **Accuracy:** with ±10 µg/m³ precision up to 100 µg/m³
 - **Interface:** simple communication via standard I2C protocol
 - **Low-power operation:** configurable duty cycling for battery powered systems
+- **Board Dimensions:**  38 x 22mm (1.5 x 0.9 inches)
