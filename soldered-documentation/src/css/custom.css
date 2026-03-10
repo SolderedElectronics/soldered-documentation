@@ -184,7 +184,6 @@ table {
   --docsearch-hit-active-color: var(--ifm-color-white);
   --docsearch-hit-background: var(--ifm-color-white);
   --docsearch-footer-background: var(--ifm-color-white);
-  padding: 0.5rem 0.5rem;
   font-family: 'Source Code Pro', sans-serif;
 }
 
@@ -198,7 +197,6 @@ table {
   --docsearch-hit-background: var(--ifm-color-emphasis-100);
   --docsearch-footer-background: var(--ifm-background-surface-color);
   --docsearch-key-gradient: linear-gradient(-26.5deg, var(--ifm-color-emphasis-200) 0%, var(--ifm-color-emphasis-100) 100%);
-  padding: 0.5rem 0.5rem;
   font-family: 'Source Code Pro', sans-serif;
 }
 

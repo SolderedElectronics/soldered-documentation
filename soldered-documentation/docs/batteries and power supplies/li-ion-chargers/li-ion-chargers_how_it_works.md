@@ -46,6 +46,8 @@ The version with protection includes a **battery protection circuit**, which pre
 
 This makes it suitable for **standalone battery packs** where no additional BMS is used.
 
+<WarningBox>For older Li-ion charger with protection boards, connect the TEMP pin to GND to initiate charging. The onboard CHRG LED will indicate the charging status. </WarningBox>
+
 ---
 
 ## TP4056 Charging IC
