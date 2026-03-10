@@ -95,4 +95,4 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having trouble uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/10/faq-troubleshooting/):
+Having trouble uploading your first code? Check out our [troubleshooting page](/inkplate/10/faq-troubleshooting/):
