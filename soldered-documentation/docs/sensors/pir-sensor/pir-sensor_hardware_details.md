@@ -10,9 +10,7 @@ hide_title: false
 
 ### Standard version
 
-<CenteredImage src="/img/pir-sensor/pir-sensor-native.png" alt="PIR native sensor pinout image" />
-
-Click [**here**](/img/pir-sensor/pir-sensor-native.png) for a high resolution image of the pinout.
+<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |
@@ -23,9 +21,7 @@ Click [**here**](/img/pir-sensor/pir-sensor-native.png) for a high resolution im
 
 ### Qwiic version
 
-<CenteredImage src="/img/pir-sensor/pir-sensor-easyc.png" alt="PIR easyc sensor pinout image" />
-
-Click [**here**](/img/pir-sensor/pir-sensor-easyc.png) for a high resolution image of the pinout.
+<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |
