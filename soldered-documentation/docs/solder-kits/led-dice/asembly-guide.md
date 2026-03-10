@@ -11,7 +11,7 @@ On this page, we will guide step by step on how to assemble this kit.
 
 <WarningBox> Please read the instructions carefully and take all the usual safety precautions when soldering. If you're a beginner, be cautious! You’re holding a 300 °C tool after all — but we know you can do it. 🙂 </WarningBox>
 
-<InfoBox> Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/documentation/LED-dice/overview/#contents-of-the-kit). </InfoBox>
+<InfoBox> Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/LED-dice/overview/#contents-of-the-kit). </InfoBox>
 
 ## Step 1: Solder the resistors to the PCB.
 Use a multimeter to differentiate resistor based on their resistance value. Start by putting the multimeter in resistance measuring mode and connect the multimeter's probes to the ends of the resistor, separate them based on the resistance value.

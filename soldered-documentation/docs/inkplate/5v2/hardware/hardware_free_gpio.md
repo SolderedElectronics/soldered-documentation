@@ -21,13 +21,13 @@ See the table below for pin functions and what each pin is connected to:
 | IO12    | SDCARD           | ADC, TOUCH5, RTC_GPIO15, MTDI, HSPIQ, HS2_DATA2, SD_DATA2, EMAC_TXD3  |
 | IO13    | SDCARD           | ADC, TOUCH4, RTC_GPIO14, MTCK, HSPID, HS2_DATA3, SD_DATA3, EMAC_RX_ER |
 | IO14    | SDCARD           | DC, TOUCH6, RTC_GPIO16, MTMS, HSPICLK, HS2_CLK, SD_CLK, EMAC_TXD2     |
-| IO15    | JP3 [**Check jumper details**](/documentation/inkplate/5v2/hardware/jumpers/#board-jumpers)             | ADC, TOUCH3, MTDO, HSPICSO, RTC_GPIO13, HS2_CMD, SD_CMD, EMAC_RXD3    |
-| IO34    | JP6 [**Check jumper details**](/documentation/inkplate/5v2/hardware/jumpers/#board-jumpers)             | ADC, RTC_GPIO4                                                        |
+| IO15    | JP3 [**Check jumper details**](/inkplate/5v2/hardware/jumpers/#board-jumpers)             | ADC, TOUCH3, MTDO, HSPICSO, RTC_GPIO13, HS2_CMD, SD_CMD, EMAC_RXD3    |
+| IO34    | JP6 [**Check jumper details**](/inkplate/5v2/hardware/jumpers/#board-jumpers)             | ADC, RTC_GPIO4                                                        |
 | IO35    | BATTERY          | ADC, RTC_GPIO4                                                        |
 | IO36    | WAKEUP BUTTON    | ADC, RTC_GPIO0                                                        |
-| IO39    | JP2 [**Check jumper details**](/documentation/inkplate/5v2/hardware/jumpers/#board-jumpers)             | ADC, RTC_GPIO0                                                        |
-| P1-1    | JP8 [**Check jumper details**](/documentation/inkplate/5v2/hardware/jumpers/#board-jumpers)             | I/O                                                                   |
-| P1-2    | JP7 [**Check jumper details**](/documentation/inkplate/5v2/hardware/jumpers/#board-jumpers)             | I/O                                                                   |
+| IO39    | JP2 [**Check jumper details**](/inkplate/5v2/hardware/jumpers/#board-jumpers)             | ADC, RTC_GPIO0                                                        |
+| P1-1    | JP8 [**Check jumper details**](/inkplate/5v2/hardware/jumpers/#board-jumpers)             | I/O                                                                   |
+| P1-2    | JP7 [**Check jumper details**](/inkplate/5v2/hardware/jumpers/#board-jumpers)             | I/O                                                                   |
 | P1-3    | **FREE**         | I/O                                                                   |
 | P1-4    | **FREE**         | I/O                                                                   |
 | P1-5    | **FREE**         | I/O                                                                   |

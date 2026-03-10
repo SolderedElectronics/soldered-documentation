@@ -21,7 +21,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 <QuickLink  
   title="Getting started with Arduino"  
   description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
-  url="/documentation/arduino/quick-start-guide"  
+  url="/arduino/quick-start-guide"  
 />  
 
 </InfoBox>
@@ -42,7 +42,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 ---
 
 ## Connections (Qwiic)
-Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change the breakout board's address, check the [**Address selection**](/documentation/hall-effect-sensor/hardware/#address-selection-for-qwiic-version).
+Below is an example **Qwiic (I2C)** connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change the breakout board's address, check the [**Address selection**](/hall-effect-sensor/hardware/#address-selection-for-qwiic-version).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |

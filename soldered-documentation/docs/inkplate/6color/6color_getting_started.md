@@ -87,4 +87,4 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having problems uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/6color/faq-troubleshooting/):
+Having problems uploading your first code? Check out our [troubleshooting page](/inkplate/6color/faq-troubleshooting/):

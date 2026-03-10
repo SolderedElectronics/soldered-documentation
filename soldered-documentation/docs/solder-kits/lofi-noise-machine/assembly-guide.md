@@ -11,7 +11,7 @@ On this page, we will guide you step by step on how to assemble this kit.
 
 <WarningBox> Please read the instructions carefully and take all the usual safety precautions when soldering. If you're a beginner, be cautious! You’re holding a 300 °C tool after all — but we know you can do it. 🙂 </WarningBox>
 
-<InfoBox> Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/documentation/macro-pad/overview/#contents-of-the-kit). </InfoBox>
+<InfoBox> Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/macro-pad/overview/#contents-of-the-kit). </InfoBox>
 
 ## Step 1: Solder the IC sockets
 
