@@ -75,7 +75,7 @@ If you are having trouble uploading the code, check out our in-depth upload tuto
 <QuickLink  
   title="Quick start guide"  
   description="A full, comprehensive tutorial on how to fully set up and upload code to the Inkplate for the first time"  
-  url="/documentation/inkplate/5v2/quick-start-guide"  
+  url="/inkplate/5v2/quick-start-guide"  
 />
 
 ## Result

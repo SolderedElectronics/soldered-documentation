@@ -22,7 +22,7 @@ To install the MicroPython module, download it from the GitHub repository:
 <QuickLink
     title="Getting started with MicroPython"
     description="A comprehensive tutorial on how to set up and upload code for the first time on an MicroPython board from scratch!"
-    url="/documentation/micropython/getting-started-with-vscode/"
+    url="/micropython/getting-started-with-vscode/"
 />
 
 </InfoBox>

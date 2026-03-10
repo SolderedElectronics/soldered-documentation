@@ -25,7 +25,7 @@ To install the Arduino library, you can use the **Arduino Library Manager** or d
 <QuickLink  
   title="Getting started with Arduino"  
   description="A comprehensive tutorial on how to set up and upload code to an Arduino board for the first time, from scratch!"  
-  url="/documentation/arduino/quick-start-guide"  
+  url="/arduino/quick-start-guide"  
 />  
 
 </InfoBox>
