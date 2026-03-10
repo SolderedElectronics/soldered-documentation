@@ -113,7 +113,7 @@ That's how you know you did everything correctly!
 
 ## Troubleshooting
 
-Having problems with uploading your first code? Check out our [troubleshooting page](/inkplate/10/faq-troubleshooting/):
+Having problems with uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/10/faq-troubleshooting/):
 
 
 
