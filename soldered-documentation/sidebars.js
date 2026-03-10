@@ -2928,6 +2928,48 @@ const sidebars = {
           ]
         },
         {
+          type: 'category',
+          label: 'LED Dice Solder kit',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/led-dice/led-dice-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/led-dice/led-dice-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Macro Pad Solder Kit',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/macro-pad/macro-pad-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/macro-pad/macro-pad-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Lo-Fi Noise Machine Solder Kit',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/lofi-noise-machine/lofi-noise-machine-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/lofi-noise-machine/lofi-noise-machine-assembly-guide',
+            },
+          ]
+        },
+        {
           type:'category',
           label: 'EEA Airplane Lights',
           items:[

@@ -20,7 +20,7 @@ sidebar_label: Overview
 <QuickLink 
   title="Lo-Fi Noise Machine Solder Kit" 
   description="333349"
-  url="https://soldered.com/collections/solder-kits"
+  url="https://soldered.com/collections/solder-kits/products/lo-fi-noise-machine-solder-kit"
   image="/img/lofi-noise-kit/lo-fi-noise-kit-assembled.webp" 
 />
 

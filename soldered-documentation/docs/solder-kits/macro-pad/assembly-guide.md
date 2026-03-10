@@ -77,13 +77,7 @@ Solder the LED on pin **D1**. Keep in mind that the LED's **cathode (-)** is on 
 
 <CenteredImage src="/img/macro_pad/led_placement.png" alt="LED placement" caption="LED placement on PCB" width="500px"/>
 
-## Step 5 (Optional): Solder the male header pins
-
-These male header pins are used for debbuging purposes, the board will work normally even if you don't solder them. They are marked as DBG on the right side of PCB.
-
-<CenteredImage src="/img/macro_pad/dbg_pins.png" alt="Male header pins" caption="Male header pins" width="500px"/>
-
-## Step 6: Solder the switches and rotary encoder
+## Step 5: Solder the switches and rotary encoder
 
 And for the final step, we'll solder the main mechanical components: **five MX switches** and **one rotary encoder**.
 
