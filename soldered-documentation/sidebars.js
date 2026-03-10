@@ -2088,6 +2088,120 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'BMP388 Pressure & Temperature Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bmp388/bmp388-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmp388/bmp388-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmp388/bmp388-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/arduino_library/bmp388-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/arduino_library/bmp388-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/arduino_library/bmp388-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/arduino_library/bmp388-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/arduino_library/bmp388-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/arduino_library/bmp388-arduino-3',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Micropython',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/micropython/bmp388-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/micropython/bmp388-micropython-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/micropython/bmp388-micropython-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/micropython/bmp388-micropython-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp388/micropython/bmp388-micropython-5',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'BMP280 Pressure & Altitude Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bmp280/bmp280-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmp280/bmp280-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bmp280/bmp280-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp280/arduino_library/bmp280-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp280/arduino_library/bmp280-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp280/arduino_library/bmp280-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bmp280/arduino_library/bmp280-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -2493,6 +2607,50 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'actuators/pcf85063a/arduino_library/pcf85063a-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Stereo I2S Audio Amplifier',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/i2s-audio-amplifier/i2s-audio-amplifier-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/i2s-audio-amplifier/i2s-audio-amplifier-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/i2s-audio-amplifier/i2s-audio-amplifier-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/i2s-audio-amplifier/arduino_library/i2s-audio-amplifier-arduino-5',
                 },
               ],
             },
