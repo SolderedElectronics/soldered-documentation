@@ -682,6 +682,46 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'BHI385 Smart IMU',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bhi385/bhi385-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bhi385/bhi385-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bhi385/bhi385-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bhi385/arduino_library/bhi385-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bhi385/arduino_library/bhi385-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bhi385/arduino_library/bhi385-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bhi385/arduino_library/bhi385-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {
