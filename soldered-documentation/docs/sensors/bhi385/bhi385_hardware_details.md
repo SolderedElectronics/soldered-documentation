@@ -91,11 +91,11 @@ This board contains hardware jumpers; see below for their locations and function
 
 | Jumper  | Default State            | Function                                                                                                          |
 | ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed, pins 1–2) | Connects **SDA pull-up resistor to 3.3V**. Bridge pins 2–3 instead to use **1.8V pull-up** (for 1.8V hosts). |
-| **JP2** | **NC** (Normally closed, pins 1–2) | Connects **SCL pull-up resistor to 3.3V**. Bridge pins 2–3 instead to use **1.8V pull-up** (for 1.8V hosts). |
-| **JP3** | **NC** (Normally closed) | Connects 3.3V supply to the onboard **1.8V LDO regulator** (SE5218DLG). Keep closed for normal operation.       |
-| **JP4** | **NC** (Normally closed) | LDO ground path. Part of the voltage regulation circuit. Keep closed for normal operation.                        |
-| **JP5** | **NO** (Normally open)   | **I2C address jumper**. Open = address **0x29** (default). Bridge to connect HSDO to GND = address **0x28**.     |
+| **JP1** | **NC** (Normally closed) | Connects **both SDA and SCL pull-up resistors to 3.3V** for standard I2C/Qwiic operation. Open when using a 1.8V logic host (close JP2 instead). |
+| **JP2** | **NC** (Normally closed) | Connects **both SDA and SCL pull-up resistors to 1.8V** for the 1.8V side of the level shifter.               |
+| **JP3** | **NO** (Normally open)   | **Bypass voltage regulator.** When closed (and JP4 open): powers the 1.8V rail directly from an external 1.8V supply, bypassing the onboard LDO. **Do not close JP3 while JP4 is also closed.** |
+| **JP4** | **NC** (Normally closed) | Connects 3.3V supply to the onboard **1.8V LDO regulator** (SE5218DLG) VIN. Keep closed for normal operation.   |
+| **JP5** | **NC** (Normally closed, 0x29 side) | **I2C address jumper**. Default bridge on **0x29** pad = address **0x29**. Move bridge to **0x28** pad to switch to address **0x28**. |
 
 ---
 
@@ -103,12 +103,12 @@ This board contains hardware jumpers; see below for their locations and function
 
 The **JP5** jumper controls the BHI385 I2C address by connecting the **HSDO** (host SDO) pin either to the onboard 1.8V pull-up resistor or to GND:
 
-- **JP5 open** (default): HSDO is pulled to 1.8V → I2C address **0x29** (`BHI385_I2C_ADDR_HIGH`)
-- **JP5 bridged**: HSDO is connected to GND → I2C address **0x28** (`BHI385_I2C_ADDR_LOW`)
+- **JP5 bridged to 0x29** (default): I2C address **0x29** (`BHI385_I2C_ADDR_HIGH`) — address printed on the board
+- **JP5 bridged to 0x28**: I2C address **0x28** (`BHI385_I2C_ADDR_LOW`) — move the solder bridge to the opposite pad
 
 <InfoBox>
 
-The default address is **0x29**. When using the Soldered Arduino library, always call `imu.begin(BHI385_I2C_ADDR_HIGH)` unless you have bridged JP5.
+By default, the board uses I2C address **0x29**. To switch to address **0x28**, remove the solder bridge on JP5 from the **0x29** pad and resolder it to the **0x28** pad. When using the Soldered Arduino library, call `imu.begin(BHI385_I2C_ADDR_HIGH)` for the default address, or `imu.begin(BHI385_I2C_ADDR_LOW)` after moving the bridge.
 
 </InfoBox>
 

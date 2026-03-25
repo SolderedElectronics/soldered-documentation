@@ -18,11 +18,11 @@ Ensure that your Qwiic cable is properly connected and in good condition. Try us
 If you are connecting over bare I2C pins (not Qwiic), double-check that SDA and SCL are correctly wired. Different microcontrollers have different default I2C pins.
 
 #### Verify the I2C address
-The Soldered BHI385 board ships with **JP5 open**, which sets the I2C address to **0x29** (`BHI385_I2C_ADDR_HIGH`). Make sure you are calling:
+The Soldered BHI385 board ships with **JP5 bridged to the 0x29 pad** (default address **0x29**). Make sure you are calling:
 ```cpp
 imu.begin(BHI385_I2C_ADDR_HIGH);
 ```
-If you have bridged JP5, use `BHI385_I2C_ADDR_LOW` (0x28) instead.
+If you have moved the JP5 bridge to the **0x28** pad, use `BHI385_I2C_ADDR_LOW` instead.
 
 #### Scan for I2C devices
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to check whether the sensor is visible on the bus. The BHI385 should appear at **0x28** or **0x29** depending on JP5.

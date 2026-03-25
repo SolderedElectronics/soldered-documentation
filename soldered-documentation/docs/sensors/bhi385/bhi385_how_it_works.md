@@ -70,8 +70,8 @@ The BHI385 communicates with the host microcontroller over **I2C**. On the Solde
 The BHI385 uses a **channel-based FIFO protocol** rather than simple register reads. The host writes commands to channel 0 and reads sensor data from channels 1–3 (FIFO buffers). The Soldered Arduino library handles all FIFO management internally.
 
 **I2C address:**
-- **0x29** — default (JP5 open, HSDO pulled to 1.8V by onboard resistor)
-- **0x28** — alternate (bridge JP5 to connect HSDO to GND)
+- **0x29** — default (JP5 bridged to 0x29 pad, default from factory)
+- **0x28** — alternate (move JP5 solder bridge to the 0x28 pad)
 
 **I2C speed:**
 - Standard: 100 kHz
