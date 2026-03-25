@@ -64,6 +64,8 @@ void loop()
   ]}
 />
 
+<CenteredImage src="/img/bhi385/game.png" alt="GameRotationVector serial monitor output" caption="GameRotationVector serial monitor output" width="800px" />
+
 ---
 
 ## Step Counter
@@ -117,6 +119,8 @@ void loop()
     { type: "float", name: "rateHz", description: "Update rate in Hz. Default: 100.0." },
   ]}
 />
+
+<CenteredImage src="/img/bhi385/steps.png" alt="StepCounter serial monitor output" caption="StepCounter serial monitor output" width="800px" />
 
 ---
 
@@ -183,6 +187,8 @@ void loop()
   ]}
 />
 
+<CenteredImage src="/img/bhi385/singletap.png" alt="SingleTap serial monitor output" caption="SingleTap serial monitor output" width="600px" />
+
 ---
 
 ## Wrist gesture detection
@@ -248,3 +254,5 @@ void loop()
     { type: "bhi385WristHand", name: "hand", description: "BHI385_WRIST_LEFT (0) for left wrist, BHI385_WRIST_RIGHT (1) for right wrist. Default: BHI385_WRIST_LEFT." },
   ]}
 />
+
+<CenteredImage src="/img/bhi385/gesture.png" alt="WristGestureDetect serial monitor output" caption="WristGestureDetect serial monitor output" width="800px" />

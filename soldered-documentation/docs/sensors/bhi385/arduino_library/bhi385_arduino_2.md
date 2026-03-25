@@ -140,8 +140,6 @@ void loop()
   parameters={[]}
 />
 
-{/* TODO: add serial monitor screenshot for accelerometer example */}
-
 ---
 
 ## Gyroscope
@@ -185,8 +183,6 @@ if (imu.gyroUpdated())
   returnDescription="Returns a float in units of degrees per second (dps). Valid after gyroUpdated() returns true."
   parameters={[]}
 />
-
-{/* TODO: add serial monitor screenshot for gyroscope example */}
 
 ---
 
@@ -262,3 +258,4 @@ void loop()
 }
 ```
 
+<CenteredImage src="/img/bhi385/read.png" alt="ReadAccelGyro serial monitor output" caption="ReadAccelGyro serial monitor output" width="800px" />
