@@ -64,7 +64,7 @@ void setup()
   description="Initializes I2C communication, verifies the BHI385 chip ID, and checks that the host interface is ready. Call this before loadFirmware(). Passing the address is required because the Soldered board default (JP5 open) is 0x29, while the library default parameter is 0x28."
   returnDescription="Returns `true` if the BHI385 is found and the host interface is ready. Returns `false` on wiring error, wrong address, or missing 1.8V supply."
   parameters={[
-    { type: "uint8_t", name: "addr", description: "I2C address: BHI385_I2C_ADDR_HIGH (0x29) or BHI385_I2C_ADDR_HIGH (0x28). Default: BHI385_I2C_ADDR_HIGH." },
+    { type: "uint8_t", name: "addr", description: "I2C address: BHI385_I2C_ADDR_HIGH (0x29) or BHI385_I2C_ADDR_LOW (0x28). Default: BHI385_I2C_ADDR_HIGH." },
     { type: "TwoWire&", name: "wire", description: "Wire instance to use. Default: Wire." },
   ]}
 />

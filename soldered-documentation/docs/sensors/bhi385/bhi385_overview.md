@@ -13,9 +13,7 @@ pagination_prev: null
 
 The board includes an **onboard 1.8V LDO** so it runs from a standard 3.3V supply, a built-in **I2C level shifter** for 3.3V host compatibility, and **two Qwiic (formerly easyC) connectors** for solderless plug-and-play integration.
 
-{/* TODO: add product photo once available
 <CenteredImage src="/img/bhi385/333375.jpg" alt="BHI385 Smart IMU Breakout" caption="BHI385 Smart IMU Breakout" />
-*/}
 
 ---
 

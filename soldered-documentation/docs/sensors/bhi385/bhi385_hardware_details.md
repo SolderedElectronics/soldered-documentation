@@ -70,7 +70,7 @@ The values below are chip-level measurements from the Bosch BHI385 datasheet. Ac
 
 This board contains hardware jumpers; see below for their locations and functions:
 
-{/* TODO: add jumper photos once available
+<!--
 <FlickityCarousel
   images={[
     { src: '/img/bhi385/bhi385_jp1.png', alt: 'BHI385 jumper JP1', caption: 'JP1' },
@@ -81,7 +81,7 @@ This board contains hardware jumpers; see below for their locations and function
   ]}
   jumpers={true}
 />
-*/}
+-->
 
 | Jumper  | Default State            | Function                                                                                                          |
 | ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------- |
