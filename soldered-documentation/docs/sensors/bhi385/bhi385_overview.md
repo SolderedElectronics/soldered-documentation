@@ -46,7 +46,7 @@ The board includes an **onboard 1.8V LDO** so it runs from a standard 3.3V suppl
 - **I2C addresses:** 0x29 (default) / 0x28 (selectable via JP5 jumper)
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)
 - **Mounting:** Two mounting holes for secure attachment (M3, 3.2 mm diameter)
-- **Dimensions:** {/* TODO: measure and fill in board dimensions */}
+- **Dimensions:** 23 × 23 mm (0.9 × 0.9 inch)
 
 ---
 

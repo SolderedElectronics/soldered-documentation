@@ -8,11 +8,7 @@ hide_title: False
 
 ## Pinout
 
-{/* TODO: add pinout image once available
 <CenteredImage src="/img/bhi385/bhi385_pinout.png" alt="BHI385 Smart IMU Breakout pinout" caption="BHI385 Smart IMU Breakout pinout" />
-*/}
-
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
 ---
 
@@ -63,9 +59,7 @@ The values below are chip-level measurements from the Bosch BHI385 datasheet. Ac
 
 ## Dimensions
 
-{/* TODO: measure board and fill in dimensions */}
-
-- **Board Dimensions:** (to be measured)
+- **Board Dimensions:** 23 × 23 mm (0.9 × 0.9 inch)
 - **Header Pin Holes:** 1.5 mm
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
 - Soldered boards are LEGO-compatible! 🧱
