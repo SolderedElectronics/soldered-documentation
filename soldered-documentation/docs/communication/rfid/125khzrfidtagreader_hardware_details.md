@@ -8,9 +8,17 @@ hide_title: False
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+### I2C Version
 
-## Pin details
+<CenteredImage src="/img/rfid/rfid-i2c-pinout.png" alt="RFID I2C pinout image" />
+
+Click [**here**](/img/rfid/rfid-i2c-pinout.png) for a high resolution image of the pinout.
+
+### UART Version
+
+<CenteredImage src="/img/rfid/rfid-uart-pinout.png" alt="RFID UART pinout image" />
+
+Click [**here**](/img/rfid/rfid-uart-pinout.png) for a high resolution image of the pinout.
 
 ### Pin Details
 

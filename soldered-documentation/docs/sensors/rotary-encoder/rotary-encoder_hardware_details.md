@@ -8,7 +8,9 @@ hide_title: false
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/rotary-encoder/rotary-encoder-easyc.png" alt="Rotary encoder pinout image" />
+
+Click [**here**](/img/rotary-encoder/rotary-encoder-easyc.png) for a high resolution image of the pinout.
 
 ---
 

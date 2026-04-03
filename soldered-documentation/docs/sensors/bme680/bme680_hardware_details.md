@@ -8,7 +8,9 @@ hide_title: False
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/bme680/BME680-pinout.png" alt="BME680 pinout image" />
+
+Click [**here**](/img/bme680/BME680-pinout.png) for a high resolution image of the pinout.
 
 ## Pin details
 

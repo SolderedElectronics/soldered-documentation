@@ -91,7 +91,7 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having problems with uploading your first code? Check out our [troubleshooting page](/inkplate/2/faq-troubleshooting/):
+Having problems with uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/2/faq-troubleshooting/):
 
 
 

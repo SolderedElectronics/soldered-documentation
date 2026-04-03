@@ -14,7 +14,7 @@ Please read the instructions carefully and take all the usual safety precautions
 </WarningBox>
 
 <InfoBox>
-Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/piano-solder-kit/overview/#contents-of-the-kit).
+Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/documentation/piano-solder-kit/overview/#contents-of-the-kit).
 </InfoBox>
 
 <CenteredImage src="/img/piano-solder-kit/tutorial/tutorial_00.jpg" alt="Piano Solder Kit Tutorial Components" width="450px" caption="Piano Solder Kit - ready to assemble"/>

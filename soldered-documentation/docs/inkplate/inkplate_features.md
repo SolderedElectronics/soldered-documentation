@@ -62,7 +62,7 @@ import FeatureComparison from '@site/src/components/FeatureComparison';
       "RTC": "Yes (PCF85063A)",
       "Qwiic (ex. easyC) connector": "Yes",
       "MicroSD": "Yes",
-      "Additional sensors and actuators": "Yes, more info [here](https://soldered.com/inkplate/4tempera/hardware/design/)",
+      "Additional sensors and actuators": "Yes, more info [here](https://soldered.com/documentation/inkplate/4tempera/hardware/design/)",
       "All-In-One": "Yes",
       "Backlight": "Yes",
       "Made in EU": "Yes",

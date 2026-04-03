@@ -8,7 +8,11 @@ hide_title: false
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/bmp180/BMP180-pinout.png" alt="BMP180 pinout image" />
+
+Click [**here**](/img/bmp180/BMP180-pinout.png) for a high-resolution image of the pinout.
+
+## Pin Details
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |

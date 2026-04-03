@@ -6,7 +6,7 @@ Welcome to the **Soldered Documentation** repository! This repository hosts all 
 
 ### This documentation is a work in progress!
 
-Some features of this documentation like **search** and all the supporting pages are still a work in progress! We're working on adding all our products to this new documentation, including our sensors, actuators, Inkplate and Dasduino boards and batteries. So, please be patient with us as we continue to work on it!
+**Search** now works and our current priority is making it more precise and useful! We're working on adding all our products to this new documentation, including our sensors, actuators, Inkplate and Dasduino boards and batteries. So, please be patient with us as we continue to work on it! If you're looking for any info you aren't able to find in the documentation, please [contact us](https://soldered.com/contact/).
 
 ---
 
@@ -68,9 +68,7 @@ Once you're satisfied with your edits, commit your changes and create a pull req
 
 ## Soldered Documentation Buddy
 
-We're currently developing **Soldered Documentation Buddy**, an intuitive app designed to assist you in writing, formatting, and managing documentation files seamlessly. This tool will simplify creating markdown files, managing images, and optimizing your documentation workflow.
-
-**Coming soon! Stay tuned for updates.**
+**Soldered Documentation Buddy** is a basic companion app written in Flask, which made it easy to get started with editing the documentation. It's meant to help you in writing, formatting, and managing documentation files seamlessly. This tool will simplify creating markdown files, managing images, and optimizing your documentation workflow. You can run it by running `documentation-buddy.py` in the `documentation-buddy` folder.
 
 ---
 

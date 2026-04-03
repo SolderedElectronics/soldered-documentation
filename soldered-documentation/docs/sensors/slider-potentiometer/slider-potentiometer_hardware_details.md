@@ -8,7 +8,11 @@ hide_title: false
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+### Native version
+
+<CenteredImage src="/img/slider-potentiometer/slider-poten-pinout.png" alt="Native slider pinout image" />
+
+Click [**here**](/img/slider-potentiometer/slider-poten-pinout.png) for a high-resolution image of the pinout.
 
 ## Pin details
 
@@ -20,6 +24,18 @@ hide_title: false
 | OUTB     | Analog Output B   | Outputs analog signal (side B). |
 | VCCB     | Power Supply B    | Connect to 5V for side B.       |
 
+
+### Qwiic version
+
+<CenteredImage src="/img/slider-potentiometer/slider-poten-easyc-pinout.png" alt="EasyC slider pinout image" />
+
+Click [**here**](/img/slider-potentiometer/slider-poten-easyc-pinout.png) for a high-resolution image of the pinout.
+
+## Pin details for Qwiic version
+
+For the Qwiic version, connection is achieved with the Qwiic connector.
+
+<InfoBox>Qwiic versions also contain UPDI headers for onboard ATTINY404 programming. They will not be used in the following examples.</InfoBox>
 
 ---
 
@@ -36,12 +52,6 @@ hide_title: false
 />
 
 ---
-
-## Pin details for Qwiic version
-
-For the Qwiic version, connection is achieved with the Qwiic connector.
-
-<InfoBox>Qwiic versions also contain UPDI headers for onboard ATTINY404 programming. They will not be used in the following examples.</InfoBox>
 
 <a id="addressSelection"></a>
 ## Address selection for Qwiic version 

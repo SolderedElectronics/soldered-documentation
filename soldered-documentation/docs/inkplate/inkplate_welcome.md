@@ -23,10 +23,11 @@ Find your model here and get started quickly:
     title="Inkplate 2"
     picture="/img/inkplate_models/ip2.jpg"
     links={[
-      { title: 'Quick start guide', url: '/inkplate/2/quick-start-guide/' },
-      { title: 'Hardware info', url: '/inkplate/2/hardware/design/' },
-      { title: 'Arduino library', url: '/inkplate/2/basics/initialization/' },
-      { title: 'FAQ', url: '/inkplate/2/faq-troubleshooting/' },
+      { title: 'Overview', url: '/documentation/inkplate/2/overview/' },
+      { title: 'Quick start guide', url: '/documentation/inkplate/2/quick-start-guide/' },
+      { title: 'Hardware info', url: '/documentation/inkplate/2/hardware/design/' },
+      { title: 'Arduino library', url: '/documentation/inkplate/2/basics/initialization/' },
+      { title: 'FAQ', url: '/documentation/inkplate/2/faq-troubleshooting/' },
     ]}
   />
   
@@ -34,70 +35,77 @@ Find your model here and get started quickly:
     title="Inkplate 4TEMPERA"
     picture="/img/inkplate_models/ip4tempera.jpg"
     links={[
-      { title: 'Quick start guide', url: '/inkplate/4tempera/quick-start-guide/' },
-      { title: 'Hardware info', url: '/inkplate/4tempera/hardware/design/' },
-      { title: 'Arduino library', url: '/inkplate/4tempera/basics/initialization/' },
-      { title: 'FAQ', url: '/inkplate/4tempera/faq-troubleshooting/' },
+      { title: 'Overview', url: '/documentation/inkplate/4tempera/overview/' },
+      { title: 'Quick start guide', url: '/documentation/inkplate/4tempera/quick-start-guide/' },
+      { title: 'Hardware info', url: '/documentation/inkplate/4tempera/hardware/design/' },
+      { title: 'Arduino library', url: '/documentation/inkplate/4tempera/basics/initialization/' },
+      { title: 'FAQ', url: '/documentation/inkplate/4tempera/faq-troubleshooting/' },
     ]}
   />
   <InkplateTile
     title="Inkplate 5V2"
     picture="/img/inkplate_models/ip5v2.webp"
     links={[
-      { title: 'Quick start guide', url: '/inkplate/5v2/quick-start-guide/' },
-      { title: 'Hardware info', url: '/inkplate/5v2/hardware/design/' },
-      { title: 'Arduino library', url: '/inkplate/5v2/basics/initialization/' },
-      { title: 'FAQ', url: '/inkplate/5v2/faq-troubleshooting/' },
+      { title: 'Overview', url: '/documentation/inkplate/5v2/overview/' },
+      { title: 'Quick start guide', url: '/documentation/inkplate/5v2/quick-start-guide/' },
+      { title: 'Hardware info', url: '/documentation/inkplate/5v2/hardware/design/' },
+      { title: 'Arduino library', url: '/documentation/inkplate/5v2/basics/initialization/' },
+      { title: 'FAQ', url: '/documentation/inkplate/5v2/faq-troubleshooting/' },
     ]}
   />
   <InkplateTile
     title="Inkplate 6"
     picture="/img/inkplate_models/ip6.webp"
     links={[
-      { title: 'Quick start guide', url: '/inkplate/6/quick-start-guide/' },
-      { title: 'Hardware info', url: '/inkplate/6/hardware/design/' },
-      { title: 'Arduino library', url: '/inkplate/6/basics/initialization/' },
-      { title: 'FAQ', url: '/inkplate/6/faq-troubleshooting/' },
+      { title: 'Overview', url: '/documentation/inkplate/6/overview/' },
+      { title: 'Quick start guide', url: '/documentation/inkplate/6/quick-start-guide/' },
+      { title: 'Hardware info', url: '/documentation/inkplate/6/hardware/design/' },
+      { title: 'Arduino library', url: '/documentation/inkplate/6/basics/initialization/' },
+      { title: 'FAQ', url: '/documentation/inkplate/6/faq-troubleshooting/' },
     ]}
   />
   <InkplateTile
     title="Inkplate 6COLOR"
     picture="/img/inkplate_models/6color.webp"
     links={[
-      { title: 'Quick start guide', url: '/inkplate/6color/quick-start-guide/' },
-      { title: 'Hardware info', url: '/inkplate/6color/hardware/design/' },
-      { title: 'Arduino library', url: '/inkplate/6color/basics/initialization/' },
-      { title: 'FAQ', url: '/inkplate/6color/faq-troubleshooting/' },
+      { title: 'Overview', url: '/documentation/inkplate/6color/overview/' },
+      { title: 'Quick start guide', url: '/documentation/inkplate/6color/quick-start-guide/' },
+      { title: 'Hardware info', url: '/documentation/inkplate/6color/hardware/design/' },
+      { title: 'Arduino library', url: '/documentation/inkplate/6color/basics/initialization/' },
+      { title: 'FAQ', url: '/documentation/inkplate/6color/faq-troubleshooting/' },
     ]}
   />
   <InkplateTile
     title="Inkplate 6FLICK"
     picture="/img/inkplate_models/6flick.webp"
     links={[
-      { title: 'Quick start guide', url: '/inkplate/6flick/quick-start-guide/' },
-      { title: 'Hardware info', url: '/inkplate/6flick/hardware/design/' },
-      { title: 'Arduino library', url: '/inkplate/6flick/basics/initialization/' },
-      { title: 'FAQ', url: '/inkplate/6flick/faq-troubleshooting/' },
+      { title: 'Overview', url: '/documentation/inkplate/6flick/overview/' },
+      { title: 'Quick start guide', url: '/documentation/inkplate/6flick/quick-start-guide/' },
+      { title: 'Hardware info', url: '/documentation/inkplate/6flick/hardware/design/' },
+      { title: 'Arduino library', url: '/documentation/inkplate/6flick/basics/initialization/' },
+      { title: 'FAQ', url: '/documentation/inkplate/6flick/faq-troubleshooting/' },
     ]}
   />
   <InkplateTile
     title="Inkplate 10"
     picture="/img/inkplate_models/ip10.webp"
     links={[
-      { title: 'Quick start guide', url: '/inkplate/10/quick-start-guide/' },
-      { title: 'Hardware info', url: '/inkplate/10/hardware/design/' },
-      { title: 'Arduino library', url: '/inkplate/10/basics/initialization/' },
-      { title: 'FAQ', url: '/inkplate/10/faq-troubleshooting/' },
+      { title: 'Overview', url: '/documentation/inkplate/10/overview/' },
+      { title: 'Quick start guide', url: '/documentation/inkplate/10/quick-start-guide/' },
+      { title: 'Hardware info', url: '/documentation/inkplate/10/hardware/design/' },
+      { title: 'Arduino library', url: '/documentation/inkplate/10/basics/initialization/' },
+      { title: 'FAQ', url: '/documentation/inkplate/10/faq-troubleshooting/' },
     ]}
   />
   <InkplateTile
     title="Inkplate 6MOTION"
     picture="/img/inkplate_models/6motion.webp"
     links={[
-      { title: 'Quick start guide', url: '/inkplate/6motion/quick-start-guide/' },
-      { title: 'Hardware info', url: '/inkplate/6motion/hardware/design/' },
-      { title: 'Arduino library', url: '/inkplate/6motion/basics/initialization/' },
-      { title: 'FAQ', url: '/inkplate/6motion/faq-troubleshooting/' },
+      { title: 'Overview', url: '/documentation/inkplate/6motion/overview/' },
+      { title: 'Quick start guide', url: '/documentation/inkplate/6motion/quick-start-guide/' },
+      { title: 'Hardware info', url: '/documentation/inkplate/6motion/hardware/design/' },
+      { title: 'Arduino library', url: '/documentation/inkplate/6motion/basics/initialization/' },
+      { title: 'FAQ', url: '/documentation/inkplate/6motion/faq-troubleshooting/' },
     ]}
   />
 
