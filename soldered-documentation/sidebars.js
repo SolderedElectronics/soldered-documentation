@@ -2531,6 +2531,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'ST67W611M1 EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/st67w611m1/st67w611m1-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/st67w611m1/st67w611m1-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/st67w611m1/st67w611m1-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/st67w611m1/arduino_library/st67w611m1-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/st67w611m1/arduino_library/st67w611m1-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/st67w611m1/arduino_library/st67w611m1-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'CAN Transciever MCP2518',
           items: [
             {
