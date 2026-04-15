@@ -19,6 +19,8 @@ The board integrates:
 -   Data interface through SPI
 -   32768 Hz interlan oscillator
 
+<InfoBox>This board comes pre-flashed with the **X-CUBE-ST67W61 Expansion Software package**, so you can start developing immediately out of the box.</InfoBox>
+
 <CenteredImage src="/img/st67w611m1/333353.jpg" alt="ST67 Wireless Breakout for STM32" caption="ST67 Wireless Breakout for STM32" width="1200px"/>
 
 ## Which product is this documentation for?

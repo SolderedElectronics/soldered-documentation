@@ -2531,7 +2531,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'ST67W611M1 EDIT THIS NAME',
+          label: 'ST67 Wireless Breakout',
           items: [
             {
               type: 'doc',
@@ -2547,19 +2547,19 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Arduino library',
+              label: 'Example Usage',
               items: [
                 {
                   type: 'doc',
-                  id: 'communication/st67w611m1/arduino_library/st67w611m1-arduino-1',
+                  id: 'communication/st67w611m1/example_usage/st67w611m1-usage-1',
                 },
                 {
                   type: 'doc',
-                  id: 'communication/st67w611m1/arduino_library/st67w611m1-arduino-2',
+                  id: 'communication/st67w611m1/example_usage/st67w611m1-usage-2',
                 },
                 {
                   type: 'doc',
-                  id: 'communication/st67w611m1/arduino_library/st67w611m1-arduino-3',
+                  id: 'communication/st67w611m1/example_usage/st67w611m1-usage-3',
                 },
               ],
             },
