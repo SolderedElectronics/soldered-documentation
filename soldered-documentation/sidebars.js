@@ -3121,6 +3121,20 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Make your own NULA',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/solder-kit-nula/solder-kit-nula-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/solder-kit-nula/solder-kit-nula-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
           label: 'LED Dice Solder kit',
           items: [
             {
