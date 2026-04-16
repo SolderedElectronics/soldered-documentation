@@ -37,6 +37,9 @@ This package contains all the necessary drivers for the ST67W611 Wi-Fi module **
 
 Below is an connection diagram for **STM32 NUCLEO-U5A5ZJ-Q**  which will be used in the next chapter's project example.
 
+<WarningBox>
+Due to the highly sensitive nature of the ST67W611M1 chip, we recommend you to instead of using header pins, solder your wires directly to the onboard pins.
+</WarningBox>
 | **STM32 NUCLEO-U5A5ZJ-Q** 	| **ST67W611M1** 	|
 |---	|---	|
 |3V3|3V3|
