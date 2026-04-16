@@ -32,6 +32,20 @@ const sidebars = {
           type: 'doc',
           id: 'misc/qwiic',
         },
+        {
+          type: 'category',
+          label: 'Protoboard',
+          items: [
+            {
+              type: 'doc',
+              id: 'misc/protoboard/protoboard-overview'
+            },
+            {
+              type: 'doc',
+              id: 'misc/protoboard/protoboard-example'
+            },
+          ],
+        }
       ],
     },
     {

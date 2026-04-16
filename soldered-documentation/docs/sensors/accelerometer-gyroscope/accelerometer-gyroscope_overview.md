@@ -15,7 +15,7 @@ It also includes **2 Qwiic (formerly easyC) connectors**, making it easy to conn
 
 ---
 
-## Which products is this documentation for?
+## Which product is this documentation for?
 
 <QuickLink 
   title="Accelerometer & Gyroscope LSM6DS3 6-DOF breakout" 
