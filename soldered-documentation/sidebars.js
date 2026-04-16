@@ -2585,6 +2585,24 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'ESPFlash programmer',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/espflash-programmer/espflash-programmer-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/espflash-programmer/espflash-programmer-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/espflash-programmer/espflash-programmer-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'W5500 Ethernet controller',
           items: [
             {
