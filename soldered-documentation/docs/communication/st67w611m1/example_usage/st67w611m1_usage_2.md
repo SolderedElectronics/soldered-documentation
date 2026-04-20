@@ -23,6 +23,7 @@ In the Import window, Select the root directory and locate the project file by n
 ### Download the modified project.
 Download the modified project folder from our [GitHub](https://github.com/SolderedElectronics/st67w6x_https_client_modified) page.
 
+<CenteredImage src="/img/st67w611m1/nav_6.png" alt="" caption="Downloading modified project from GitHub Repository" width="800px"/>
 ---
 
 ### Replacing the flies
@@ -33,8 +34,21 @@ Delete the existing `ST67W6X_HTTPS_Client.ioc` file in the **original** project 
 ### Modifying required variables
 In order for this example to work, you need to modify the wifi ssid and password variables in the code. The easiest way to do that is by navigating to: `Application -> User -> Appli -> App -> main_app.c` inside the project file and clicking on `app_config.h` while pressing `ctrl+c`. Locate defines `WIFI_SSID` and `WIFI_PASSWORD` and replace them to the values that your network uses.
 
+<CenteredImage src="/img/st67w611m1/nav_7.png" alt="" caption="Modifying SSID and password variables" width="1200px"/>
+
 ---
 
 ## Run the project
 
-Click on the root directory of the project and press the run button
+Click on the root directory of the project and press the run button:
+<CenteredImage src="/img/st67w611m1/nav_8.png" alt="" caption="Run the program" width="1200px"/>
+
+
+
+---
+
+## Program output
+
+If everything was done correctly, you can open any tool that lets you read Serial Communication, the easiest way is to open **Arduino's Serial Monitor**:
+
+<CenteredImage src="/img/st67w611m1/nav_9.png" alt="" caption="Example program output" width="600px"/>

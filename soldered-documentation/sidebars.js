@@ -2557,10 +2557,6 @@ const sidebars = {
                   type: 'doc',
                   id: 'communication/st67w611m1/example_usage/st67w611m1-usage-2',
                 },
-                {
-                  type: 'doc',
-                  id: 'communication/st67w611m1/example_usage/st67w611m1-usage-3',
-                },
               ],
             },
           ],

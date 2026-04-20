@@ -52,3 +52,5 @@ Due to the highly sensitive nature of the ST67W611M1 chip, we recommend you to i
 |BOOT|PE9|
 |CHIP_EN|PE11|
 
+
+<CenteredImage src="/img/st67w611m1/DSC00944.jpg" alt="Connection Example" caption="Connection Example" width="2000px"/>
