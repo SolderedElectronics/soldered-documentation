@@ -151,6 +151,39 @@ const sidebars = {
                 }
               ]
             },
+            {
+              "type": "category",
+              "label": "MicroPython",
+              "items": [
+                "inkplate/2/micropython/setup",
+                {
+                  "type": "category",
+                  "label": "Basics",
+                  "items": [
+                    "inkplate/2/micropython/basics/display-initialization",
+                    "inkplate/2/micropython/basics/print-text",
+                    "inkplate/2/micropython/basics/graphics"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "WiFi",
+                  "items": [
+                    "inkplate/2/micropython/wifi/wifi-init",
+                    "inkplate/2/micropython/wifi/get-post-request",
+                    "inkplate/2/micropython/wifi/drawing-img-web"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Real Time Clock",
+                  "items": [
+                    "inkplate/2/micropython/rtc/basic"
+                  ]
+                },
+                "inkplate/2/micropython/deep-sleep",
+              ]
+            },
             "inkplate/2/2-faq-troubleshooting"
           ]
         },
@@ -517,6 +550,49 @@ const sidebars = {
                     "inkplate/6color/rtc/rtc-alarm"
                   ]
                 }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "MicroPython",
+              "items": [
+                "inkplate/6color/micropython/setup",
+                {
+                  "type": "category",
+                  "label": "Basics",
+                  "items": [
+                    "inkplate/6color/micropython/basics/display-initialization",
+                    "inkplate/6color/micropython/basics/print-text",
+                    "inkplate/6color/micropython/basics/drawing-shapes"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "WiFi",
+                  "items": [
+                    "inkplate/6color/micropython/wifi/wifi-init",
+                    "inkplate/6color/micropython/wifi/get-post-request",
+                    "inkplate/6color/micropython/wifi/drawing-img-web"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "RTC",
+                  "items": [
+                    "inkplate/6color/micropython/rtc/basic-usage"
+                  ]
+                },
+                "inkplate/6color/micropython/deep-sleep",
+                {
+                  "type": "category",
+                  "label": "MicroSD",
+                  "items": [
+                    "inkplate/6color/micropython/microsd/microsd-formatting",
+                    "inkplate/6color/micropython/microsd/image-display",
+                    "inkplate/6color/micropython/microsd/read-write-files"
+                  ]
+                },
+                "inkplate/6color/micropython/read-battery"
               ]
             },
             "inkplate/6color/faq-troubleshooting"
