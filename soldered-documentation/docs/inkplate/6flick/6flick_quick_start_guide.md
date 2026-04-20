@@ -53,6 +53,10 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 Inkplate 6FLICK setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! See the next page in the documentation for details on how to upload code:
 
+## Light and Versatile Graphics Library (LVGL)
+
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/documentation/inkplate/lvgl-library)** to get started! </InfoBox>
+
 ---
 
 ## Uploading code
