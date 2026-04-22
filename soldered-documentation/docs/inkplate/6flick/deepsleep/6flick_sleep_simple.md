@@ -82,5 +82,5 @@ Check out the full examples on this page and many more usage options below:
 <QuickLink 
   title="Inkplate6FLICK_DeepSleep" 
   description="This example will show you how you can use the low power functionality of the Inkplate board."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/DeepSleep" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/DeepSleep" 
 />

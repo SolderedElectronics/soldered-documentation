@@ -64,7 +64,7 @@ returnType="Response"
 returnDescription="Response object with .status_code and .text."
 />
 
-<CenteredImage src="/img/inkplate10-micropython/get-output.png" alt="Inkplate 10 running the example code" caption="Example code output." width="1000px" />
+<CenteredImage src="/img/inkplate10-micropython/get-output.png" alt="Inkplate 6FLICK running the example code" caption="Example code output." width="1000px" />
 
 ---
 
@@ -78,7 +78,7 @@ import network
 import time
 import urequests
 import ujson
-from inkplate6 import Inkplate
+from inkplate6FLICK import Inkplate
 
 # Your WiFi credentials
 SSID = "YourNetwork"
@@ -112,7 +112,7 @@ inkplate.setCursor(50, 100)
 
 if connect_wifi():
     # Data to send
-    data = {"message": "Hello from Inkplate 10!"}
+    data = {"message": "Hello from Inkplate 6FLICK!"}
 
     # Perform POST request
     try:
@@ -145,4 +145,4 @@ returnType="Response"
 returnDescription="Response object with .status_code and .text."
 />
 
-<CenteredImage src="/img/inkplate10-micropython/post-output.png" alt="Inkplate 10 running the example code" caption="POST request message on webhook.site." width="800px" />
+<CenteredImage src="/img/inkplate10-micropython/post-output.png" alt="Inkplate 6FLICK running the example code" caption="POST request message on webhook.site." width="800px" />

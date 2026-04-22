@@ -24,7 +24,7 @@ If you haven’t installed it yet, download and install the Arduino IDE from the
 Copy the following URL:
 
 ```
-https://github.com/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE/raw/master/package_Dasduino_Boards_index.json
+https://github.com/SolderedElectronics/Inkplate-Board-Definitions-for-Arduino-IDE/raw/refs/heads/main/package_Inkplate_Boards_index.json
 ```
 
 And add it to the `Additional boards manager URLs` in Arduino settings:
@@ -46,16 +46,18 @@ In the Arduino Library Manager, search for the Inkplate library and click `Insta
 
 <InfoBox>Mac and Linux users can skip this step because the CH340 driver is already installed.</InfoBox>
 
-The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions:  
+The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/blogs/learn/ch340-driver-installation)**. Start the installation and follow the instructions:  
 <CenteredImage src="/img/inkplate10/ch340.png" alt="Install CH340 Driver" caption="Installing the CH340 Driver on Windows" width="350px" />
 
 ### Done!
 
 Inkplate 10 setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! If you need some help with uploading code, check out the section below.
 
+---
+
 ## Light and Versatile Graphics Library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/documentation/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 
@@ -77,7 +79,7 @@ Let's create the most basic Inkplate code which writes `Hello World!` to the e-P
 ```cpp
 
 #include "Inkplate.h" // Include the Inkplate library
-Inkplate display(INKPLATE_1BIT); // Create an Inkplate object for Inkplate6 FLICK
+Inkplate display(INKPLATE_1BIT); // Create an Inkplate object for Inkplate 10
 
 void setup() {
     display.begin();             // Initialize the display hardware

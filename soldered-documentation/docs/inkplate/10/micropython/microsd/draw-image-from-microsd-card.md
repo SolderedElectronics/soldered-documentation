@@ -12,7 +12,7 @@ Inkpalte 10 can load and render images directly from the onboard microSD card. T
 ## Displaying an image from the SD card
 
 Before running this example, make sure your SD card is formatted as **FAT16, FAT32 or exFAT** and inserted into Inkplate 10.
-To learn how to format the microSD card click [**here**](/documentation/inkplate/10/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
+To learn how to format the microSD card click [**here**](/inkplate/10/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
 
 The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate10/displayImageSd/mountain.jpg).
 

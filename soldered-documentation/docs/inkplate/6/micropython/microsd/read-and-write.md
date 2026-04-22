@@ -12,7 +12,7 @@ The onboard microSD card can be used for reading and writing to data files. This
 ## Writing and reading a file
 
 Before running this example, make sure your SD card is formatted as **FAT16, FAT32 or exFAT** and inserted into Inkplate 6.
-To learn how to format the microSD card click [**here**](/documentation/inkplate/6/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
+To learn how to format the microSD card click [**here**](/inkplate/6/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
 
 ```python
 from inkplate6 import Inkplate
@@ -62,4 +62,4 @@ All available `mode` options:
 </InfoBox>
 
 
-<CenteredImage src="/img/inkplate10-micropython/read-write-output.png" alt="Inkplate 10 running the example code" caption="Example output" width="800px" />
+<CenteredImage src="/img/inkplate10-micropython/read-write-output.png" alt="Inkplate 6 running the example code" caption="Example output" width="800px" />

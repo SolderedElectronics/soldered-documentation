@@ -7,7 +7,7 @@ id: battery-temperature
 
 Inkplate 6FLICK includes built-in functions for measuring **battery voltage** and **board temperature**. This example shows how to read these values and display them on screen.
 
-<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**battery docs page**](/documentation/inkplate/6flick/hardware/battery/). </WarningBox>
+<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**battery docs page**](/inkplate/6flick/hardware/battery/). </WarningBox>
 
 Battery should be connected like this:
 <CenteredImage src="/img/inkplate6flick-micropython/batt-connection.jpg" alt="Inkplate 6flick running the example code" caption="Battery connected to Inkplate 6FLICK." width="1000px" />

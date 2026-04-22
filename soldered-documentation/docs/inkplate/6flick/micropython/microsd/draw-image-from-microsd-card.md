@@ -5,16 +5,16 @@ sidebar_label: Draw Image from microSD card
 id: draw-image-from-microsd-card
 ---
 
-Inkpalte 6FLICK can load and render images directly from the onboard microSD card. This example shows how to initialize the SD card, list its contents and display a JPEG, PNG or BMP image on screen.
+Inkplate 6FLICK can load and render images directly from the onboard microSD card. This example shows how to initialize the SD card, list its contents and display a JPEG, PNG or BMP image on screen.
 
 ---
 
 ## Displaying an image from the SD card
 
-Before running this example, make sure your SD card is formatted as **FAT16, FAT32 or exFAT** and inserted into Inkplate 6.
-To learn how to format the microSD card click [**here**](/documentation/inkplate/10/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
+Before running this example, make sure your SD card is formatted as **FAT16, FAT32 or exFAT** and inserted into Inkplate 6FLICK.
+To learn how to format the microSD card click [**here**](/inkplate/6flick/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
 
-The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate10/displayImageSd/mountain.jpg).
+The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate6FLICK/displayImageSd/coastal.jpg).
 
 ```python
 from inkplate6FLICK import Inkplate

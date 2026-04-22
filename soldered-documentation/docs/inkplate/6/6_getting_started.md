@@ -46,16 +46,18 @@ In the Arduino Library Manager, search for the Inkplate Motion library and click
 
 <InfoBox>Mac and Linux users can skip this step because the CH340 driver is already installed.</InfoBox>
 
-The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions:  
+The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/blogs/learn/ch340-driver-installation)**. Start the installation and follow the instructions:  
 <CenteredImage src="/img/inkplate10/ch340.png" alt="Install CH340 Driver" caption="Installing the CH340 Driver on Windows" width="350px" />
 
 ### Done!
 
 Inkplate 6 setup is complete. Now try out some examples from the Arduino library—upload them and see the results for yourself!
 
+---
+
 ## Light and Versatile Graphics Library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/documentation/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 

@@ -60,6 +60,6 @@ In case you want to use Inkplate in portrait mode, or in any 90 degree rotation,
   description="Set the cardinal rotation of the display, this adjusts the (0, 0) x-y coordinate origin point automatically as well."
   returnDescription="none"
   parameters={[
-    { type: 'uint8_t ', name: '_rotation', description: "Ranges from 0-. 0 is the default rotation, 1 is rotated by 90, 2 by 180 and 3 by 270 degrees." },
+    { type: 'uint8_t ', name: '_rotation', description: "Ranges from 0–3. 0 is the default rotation, 1 is rotated by 90, 2 by 180 and 3 by 270 degrees." },
   ]}
 />

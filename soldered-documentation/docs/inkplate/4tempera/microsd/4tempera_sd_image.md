@@ -42,7 +42,7 @@ void setup()
         // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter
         // to true will invert all colors in the image, making black white and white black. This may be necessary when
         // exporting bitmaps from certain software.
-        if (!display.drawImage("image1.bmp", 0, 0, 1))
+        if (!display.image.draw("image1.bmp", 0, 0, 1))
         {
             // If something fails (wrong filename or incorrect bitmap format), write an error message on the screen.
             // REMEMBER! You can only use Windows Bitmap files with color depths of 1, 4, 8, or 24 bits with no
@@ -57,7 +57,7 @@ void setup()
         display.clearDisplay();
         if (file.open("image2.bmp", O_RDONLY))
         {
-            display.drawBitmapFromSd(&file, 0, 0);
+            display.image.drawBitmapFromSd(&file, 0, 0);
         }
         else
         {
@@ -68,7 +68,7 @@ void setup()
     
         // Now draw a JPEG.
         display.clearDisplay();
-        if (!display.drawImage("pyramid.jpg", 100, 0, true, false))
+        if (!display.image.draw("pyramid.jpg", 100, 0, true, false))
         {
             // If something fails (wrong filename or incorrect format), write an error message on the screen.
             // You can turn off dithering for somewhat faster image loading by changing the fifth parameter to false, or
@@ -95,7 +95,7 @@ void loop()
 ```
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="This function draws an image from a char path."
     returnDescription="Returns true if the image was successfully drawn, otherwise false."
     parameters={[ 
@@ -114,5 +114,5 @@ void loop()
 <QuickLink 
   title="Inkplate4TEMPERA_SD_Pictures.ino" 
   description="This example shows you how to read .bmp and .jpeg files (pictures) from an SD card and display the image on an e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_Pictures" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/microSD/Inkplate4TEMPERA_microSD_Pictures" 
 />

@@ -253,11 +253,11 @@ For full working code examples, which provide a great overview, a real-world use
 <QuickLink 
   title="Inkplate6FLICK_RTC_Alarm.ino" 
   description="This example will show how to set time and date, how to set up an alarm, how to read time, how to print time on Inkplate using partial updates and how to handle interrupt."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Alarm/Inkplate6FLICK_RTC_Alarm.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Alarm/Inkplate6FLICK_RTC_Alarm.ino" 
 />
 
 <QuickLink 
   title="Inkplate6FLICK_RTC_Interrupt_Alarm.ino" 
   description="This example will show how to set time and date, how to set up an alarm, how to read time, how to print time on Inkplate using partial updates and how to handle interrupt."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Interrupt_Alarm/Inkplate6FLICK_RTC_Interrupt_Alarm.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Interrupt_Alarm/Inkplate6FLICK_RTC_Interrupt_Alarm.ino" 
 />

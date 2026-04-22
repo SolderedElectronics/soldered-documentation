@@ -94,7 +94,7 @@ description="Read the current RTC date and time."
 returnDescription="Dictionary containing keys: `hour`, `minute`, `second`, `weekday`, `day`, `month`, `year`." 
 parameters={[]} />
 
-<CenteredImage src="/img/inkplate6flick-micropython/rtc.jpg" alt="Inkplate 10 running the example code" caption="Inkplate 10 running the example code" width="800px" />
+<CenteredImage src="/img/inkplate6flick-micropython/rtc.jpg" alt="Inkplate 6FLICK running the example code" caption="Inkplate 6FLICK running the example code" width="800px" />
 
 ---
 

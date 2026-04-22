@@ -200,13 +200,13 @@ void loop()
 <InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
 
 <QuickLink 
-  title="Inkplate10_SD_TXT_Read.ino" 
+  title="Inkplate2_SD_TXT_Read.ino" 
   description="This example will show you how to open .txt files and display the content of that file on the Inkplate e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/7694c2963e95560dfc71d0b26bd8bf1960e08b6e/examples/Inkplate10/Advanced/SD/Inkplate10_SD_TXT_Read/Inkplate10_SD_TXT_Read.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Advanced/microSD/Inkplate2_SD_TXT_Read/Inkplate2_SD_TXT_Read.ino" 
 />
 
 <QuickLink 
-  title="Inkplate10_SD_TXT_Write.ino" 
+  title="Inkplate2_SD_TXT_Write.ino" 
   description="This example will show you how to write in a .txt file."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/7694c2963e95560dfc71d0b26bd8bf1960e08b6e/examples/Inkplate10/Advanced/SD/Inkplate10_SD_TXT_Write/Inkplate10_SD_TXT_Write.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Advanced/microSD/Inkplate2_SD_TXT_Write/Inkplate2_SD_TXT_Write.ino" 
 />

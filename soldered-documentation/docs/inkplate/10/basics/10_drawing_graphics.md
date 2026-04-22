@@ -1,5 +1,5 @@
 ---
-slug: /inkplate/10s/basics/drawing-graphics
+slug: /inkplate/10/basics/drawing-graphics
 title: Inkplate 10 – Drawing graphics
 sidebar_label: Drawing graphics
 id: 10-graphics

@@ -33,7 +33,7 @@ inkplate.display()
     ]}
 />
 
-<InfoBox> To learn more about Grayscale mode, check [this documentation](/documentation/inkplate/6/micropython/basics/printing-text/#displaying-text-in-grayscale-and-more-text-parameters)</InfoBox>
+<InfoBox> To learn more about Grayscale mode, check [this documentation](/inkplate/6/micropython/basics/printing-text/#displaying-text-in-grayscale-and-more-text-parameters)</InfoBox>
 
 <InfoBox>
 | **VALUE** 	| **ENUM** 	|

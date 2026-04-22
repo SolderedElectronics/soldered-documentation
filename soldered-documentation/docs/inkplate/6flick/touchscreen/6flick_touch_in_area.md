@@ -99,4 +99,4 @@ parameters={[
 ## Full examples
 Check out the full examples:
 
-<QuickLink title="Inkplate6FLICK_Touch_In_Area.ino" description="Example showing how to detect if a touch event occurs within a rectangular area on the Inkplate 6Flick." url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Touch_In_Area/Inkplate6FLICK_Touch_In_Area.ino" />
+<QuickLink title="Inkplate6FLICK_Touch_In_Area.ino" description="Example showing how to detect if a touch event occurs within a rectangular area on the Inkplate 6Flick." url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Touch_In_Area/Inkplate6FLICK_Touch_In_Area.ino" />

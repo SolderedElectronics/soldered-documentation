@@ -155,4 +155,4 @@ parameters={[
 ]}
 />
 
-<CenteredImage src="/img/inkplate10-micropython/shapes.jpg" alt="Inkplate 10 running the example code" caption="Simple predefined shapes." width="800px" />
+<CenteredImage src="/img/inkplate10-micropython/shapes.jpg" alt="Inkplate 6 running the example code" caption="Simple predefined shapes." width="800px" />

@@ -59,7 +59,7 @@ If uploading fails, try using the BOOT switch. This is a switch on the back of t
 
 Also, verify you are using Arduino IDE 2.0. Inkplate 6 MOTION requires **Arduino IDE 2.0** or later for proper **board and library support**. If you are using an older version, update to **Arduino 2.0+** for the best compatibility.
 
-If you are having problems with uploading a sketch where it uploads to a certain perecntage, please [**contact us via support**](https://soldered.com/contact/).
+If you are having problems with uploading a sketch where it uploads to a certain percentage, please [**contact us via support**](https://soldered.com/contact/).
 
 ---
 

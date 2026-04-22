@@ -7,7 +7,7 @@ id: battery-temperature
 
 Inkplate 5v2 includes built-in functions for measuring **battery voltage** and **board temperature**. This example shows how to read these values and display them on screen.
 
-<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**battery docs page**](/documentation/inkplate/5v2/hardware/battery/). </WarningBox>
+<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**battery docs page**](/inkplate/5v2/hardware/battery/). </WarningBox>
 
 Battery should be connected like this:
 <CenteredImage src="/img/inkplate5v2-micropython/batt-connection.jpg" alt="Inkplate 5v2 running the example code" caption="Battery connected to Inkplate 5v2." width="1000px" />

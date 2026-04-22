@@ -7,7 +7,7 @@ hide_title: true
 ---
 
 
-<SectionTitle title="FAQ and troublesohoting" backgroundImage="/img/faq.webp" />
+<SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />
 
 Here, we've gathered the most frequently asked questions along with detailed answers to help you get the most out of your device. We know that working with maker hardware and software can sometimes be challenging, so we created this resource to make things easier. Browse through the questions below—you might find the solution you're looking for.
 

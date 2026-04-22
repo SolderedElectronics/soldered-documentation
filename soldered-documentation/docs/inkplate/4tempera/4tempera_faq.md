@@ -44,7 +44,7 @@ Start with an unmodified example sketch from the official Inkplate 4 TEMPERA exa
 <QuickLink 
   title="Inkplate4TEMPERA_Black_And_White.ino" 
   description="Basic black-and-white display example for Inkplate 4 TEMPERA." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Black_And_White/Inkplate4TEMPERA_Black_And_White.ino"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Black_And_White/Inkplate4TEMPERA_Black_And_White.ino"
 />
 
 #### 3. Inspect the power source
@@ -91,7 +91,7 @@ Use this sketch to verify the touchscreen is functional:
 <QuickLink 
   title="Inkplate4TEMPERA_Touch_In_Area.ino" 
   description="Test touch input in defined screen regions." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Touch_In_Area/Inkplate4TEMPERA_Touch_In_Area.ino"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Touch_In_Area/Inkplate4TEMPERA_Touch_In_Area.ino"
 />
 
 #### 4. Check the panel surface
@@ -115,7 +115,7 @@ This sketch demonstrates software control of the frontlight:
 <QuickLink 
   title="Inkplate4TEMPERA_Simple_Frontlight.ino" 
   description="Basic frontlight control example for TEMPERA." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Simple_Frontlight/Inkplate4TEMPERA_Simple_Frontlight.ino"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Simple_Frontlight/Inkplate4TEMPERA_Simple_Frontlight.ino"
 />
 </ExpandableSection>
 

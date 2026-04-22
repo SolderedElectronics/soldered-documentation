@@ -10,7 +10,7 @@ pagination_next: null
 
 **[Light and Versatile Graphics Library (LVGL)](https://lvgl.io)** is a free and open-source embedded graphics library used to create awesome looking **graphical user interfaces (GUIs)** for embedded systems that use microcontrollers and microprocessors. It provides a wide range of built-in widgets, animations, and styling options for many different kinds of displays, all designed to be lightweight and efficient since it's targeted for resource-constrained devices. Inkplate LVGL Library brings **full LVGL support** to the Soldered Inkplate family of e-paper displays.
 
-<CenteredImage src="/img/bme688-dashboard-example.jpg" alt="BME688 Dashboard example" caption="BME688 Dashboard example project on Inkplate 10 using LVGL" width="700px" />
+<CenteredImage src="/img/bme688-dashboard-example.jpg" alt="BME688 Dashboard example" caption="BME688 Dashboard example project on Inkplate 10 using LVGL" width="1000px" />
 
 <QuickLink 
   title="Inkplate BME688 LVGL Dashboard Project"
@@ -29,8 +29,6 @@ https://github.com/SolderedElectronics/Inkplate-Board-Definitions-for-Arduino-ID
 ```
 
 to `File -> Preferences -> Additional Boards Manager URLs` in your Arduino IDE Preferences.
-
-<InfoBox> **NOTE: Inkplate board definitions used for LVGL library are different (updated) than the current version used in [Inkplate-Arduino-library](https://github.com/SolderedElectronics/Inkplate-Arduino-library)!** </InfoBox>
 
 ### 2. Install Inkplate LVGL Library
 

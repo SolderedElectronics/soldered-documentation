@@ -33,7 +33,7 @@ In the Thonny IDE, go to `Run -> Configure interpreter` and on the bottom of the
 
 On the bottom of that window click on the `≡` button and pick `Select local MicroPython image`, choose the Inkplate-firmware.bin file on your computer and press `Install`.
 
-<CenteredImage src="/img/inkplate10-micropython/thonny_cfg_install_select_img.png" alt="Inkplate 10 Thonny" caption="Select Micropython image" width="500px"/>
+<CenteredImage src="/img/inkplate10-micropython/thonny_cfg_install_select_img.png" alt="Inkplate 6 Thonny" caption="Select Micropython image" width="500px"/>
 
 3. [Install the mpremote package](https://docs.micropython.org/en/latest/reference/mpremote.html)
 

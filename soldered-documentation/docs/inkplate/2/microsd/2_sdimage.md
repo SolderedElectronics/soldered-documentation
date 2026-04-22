@@ -5,9 +5,9 @@ sidebar_label: Image from microSD
 id: 2-microsd-image
 ---
 
-To draw images form the microSD card, use the `drawImage()` function.
+To draw images form the microSD card, use the `display.image.draw()` function.
 
-<InfoBox>Supported formats are: JPG, BMP and BMP.</InfoBox>
+<InfoBox>Supported formats are: JPG, BMP and PNG.</InfoBox>
 
 <WarningBox>JPG files **without** progressive encoding are supported.</WarningBox>
 
@@ -15,13 +15,13 @@ To draw images form the microSD card, use the `drawImage()` function.
 
 ## Drawing PNG, JPG and BMP files from the microSD card
 
-Let's draw the example images of different formats on Inkplate, download them from the [**Inkplate library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/7694c2963e95560dfc71d0b26bd8bf1960e08b6e/examples/Inkplate10/Advanced/SD/Inkplate10_SD_Pictures) and place them in the root folder of the microSD card:
+Let's draw the example images of different formats on Inkplate, download them from the [**Inkplate library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate2/Advanced/microSD/Inkplate2_microSD_Pictures) and place them in the root folder of the microSD card:
 
-Let's draw `image1.png` at coordinates 0, 0 and using the `display.drawImage()` function:
+Let's draw `image1.bmp` at coordinates 0, 0 using the `display.image.draw()` function:
 
 ```cpp
 // Make sure Inkplate and then the microSD card are initialized before this
-if (!display.drawImage("image1.bmp", 0, 0, 1))
+if (!display.image.draw("image1.bmp", 0, 0, 1))
     {
         // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
         // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no
@@ -36,7 +36,7 @@ Now, lets draw `image2.bmp` by frst loading it using SdFat library class and the
 ```cpp
 if (file.open("image2.bmp", O_RDONLY))
         {
-            display.drawBitmapFromSd(&file, 0, 0);
+            display.image.drawBitmapFromSd(&file, 0, 0);
         }
         else
         {
@@ -47,7 +47,7 @@ if (file.open("image2.bmp", O_RDONLY))
 
 Lets try another file format, for example, jpg:
 ```cpp
-if (!display.drawImage("pyramid.jpg", 100, 0, true, false))
+if (!display.image.draw("pyramid.jpg", 100, 0, true, false))
         {
             // If is something failed (wrong filename or wrong format), write error message on the screen.
             // You can turn off dithering for somewhat faster image load by changing the fifth parameter to false, or
@@ -57,7 +57,7 @@ if (!display.drawImage("pyramid.jpg", 100, 0, true, false))
         display.display();
 ```
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="Function draws image from char path."
     returnDescription="Returns true if image was successfully drawn, otherwise false."
     parameters={[
@@ -74,7 +74,7 @@ if (!display.drawImage("pyramid.jpg", 100, 0, true, false))
 ## Full example
 
 <QuickLink 
-  title="Inkplate10_SD_Pictures.ino" 
+  title="Inkplate2_microSD_Pictures.ino" 
   description="This example will show you how you can read .bmp and .jpeg files (pictures) from SD card and display that image on e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/7694c2963e95560dfc71d0b26bd8bf1960e08b6e/examples/Inkplate10/Advanced/SD/Inkplate10_SD_Pictures/Inkplate10_SD_Pictures.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Advanced/microSD/Inkplate2_microSD_Pictures/Inkplate2_microSD_Pictures.ino" 
 />

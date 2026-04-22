@@ -140,4 +140,4 @@ inkplate.display()
   ]}
 />
 
-<CenteredImage src="/img/inkplate6-micropython/text.jpg" alt="Inkplate 10 running the example code" caption="Simple grayscale example with different text styles." width="800px" />
+<CenteredImage src="/img/inkplate6-micropython/text.jpg" alt="Inkplate 6 running the example code" caption="Simple grayscale example with different text styles." width="800px" />
