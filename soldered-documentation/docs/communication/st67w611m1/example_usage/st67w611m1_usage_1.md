@@ -6,7 +6,7 @@ hide_title: False
 ---
 
 <WarningBox>
-The following guide is speciffically made for the **STM32 NUCLEO-U5A5ZJ-Q** development board that uses **STM32U5A5** microcontroller and will not work on other STM boards without additional modifications.
+The following guide is speciffically made for the STM32 NUCLEO-U5A5ZJ-Q development board that uses the STM32U5A5 microcontroller. This breakout will work with other STM32 boards but the configuration process might differ in some steps.
 </WarningBox>
 
 ## Installing Required Packages

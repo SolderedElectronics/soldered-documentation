@@ -3,6 +3,7 @@ slug: /st67w611m1/example_usage/examples
 title: HTTPS Client example
 id: st67w611m1-usage-2 
 hide_title: False
+pagination_next: null
 ---
 
 This page contains a **modified**, pre-existing **HTTPS Client** example from X-CUBE-ST67W61 Expansion Software Package. The project file which will be used is based on **SMT32-U575ZI** board.

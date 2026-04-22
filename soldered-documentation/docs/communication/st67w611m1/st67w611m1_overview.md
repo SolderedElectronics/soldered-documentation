@@ -17,7 +17,7 @@ The board integrates:
 -   4MB NOR flash
 -   40 MHz high-precision quartz for optimal RF performance
 -   Data interface through SPI
--   32768 Hz interlan oscillator
+-   32768 Hz internal oscillator
 
 <InfoBox>This board comes pre-flashed with the **X-CUBE-ST67W61 Expansion Software package**, so you can start developing immediately out of the box.</InfoBox>
 
