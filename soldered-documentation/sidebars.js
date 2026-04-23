@@ -91,6 +91,7 @@ const sidebars = {
           type: 'doc',
           id: 'inkplate/inkplate-features-comparison'
         },
+        "inkplate/touchpads/overview",
         {
           type: 'doc',
           id: 'inkplate/inkplate-lvgl-library'
@@ -335,7 +336,9 @@ const sidebars = {
                     "inkplate/5v2/rtc/rtc-basics",
                     "inkplate/5v2/rtc/rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/5v2/readbattery/read-bat",
+                "inkplate/5v2/readtemperature/read-temp"
               ]
             },
             {
@@ -443,7 +446,9 @@ const sidebars = {
                     "inkplate/6/rtc/rtc-basics",
                     "inkplate/6/rtc/rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/6/readbattery/read-bat",
+                "inkplate/6/readtemperature/read-temp"
               ]
             },
             {
@@ -549,7 +554,8 @@ const sidebars = {
                     "inkplate/6color/rtc/rtc-basics",
                     "inkplate/6color/rtc/rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/6color/readbattery/read-bat",
               ]
             },
             {
@@ -669,7 +675,9 @@ const sidebars = {
                     "inkplate/6flick/rtc/6flick-rtc-basics",
                     "inkplate/6flick/rtc/6flick-rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/6flick/readbattery/read-bat",
+                "inkplate/6flick/readtemperature/read-temp"
               ]
             },
             {
@@ -778,7 +786,9 @@ const sidebars = {
                     "inkplate/10/rtc/10-rtc-basics",
                     "inkplate/10/rtc/10-rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/10/readbattery/read-bat",
+                "inkplate/10/readtemperature/read-temp"
               ]
             },
             {
