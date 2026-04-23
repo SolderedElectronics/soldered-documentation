@@ -10,7 +10,7 @@ hide_title: true
 
 When running your **Inkplate 6COLOR board** on a **Li-ion battery**, it's helpful to know the battery's condition. Inkplate 6COLOR lets you measure the battery voltage directly, giving you an estimate of remaining capacity and help you decide if it's time to recharge.
 
-<WarningBox>Connecting and using the battery correctly is important! Please refer to the battery usage page for guidance before use. </WarningBox> 
+<WarningBox>Connecting and using the battery correctly is important! Please refer to the <a href="/inkplate/6color/hardware/battery">battery usage page</a> for guidance before use. </WarningBox> 
 
 ---
 
