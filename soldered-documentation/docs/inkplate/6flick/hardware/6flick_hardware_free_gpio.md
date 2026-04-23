@@ -25,13 +25,13 @@ See the table below for pin functions and what each pin is connected to:
 | IO12         | SDCARD           | ADC2_CH5, TOUCH5, RTC_GPIO15, MTDI, HSPIQ, HS2_DATA2, SD_DATA2, EMAC_TXD3 |
 | IO13         | SDCARD           | ADC2_CH4, TOUCH4, RTC_GPIO14, MTCK, HSPID, HS2_DATA3, SD_DATA3, EMAC_RX_ER |
 | IO14         | SDCARD           | ADC2_CH6, TOUCH6, RTC_GPIO16, MTMS, HSPICLK, HS2_CLK, SD_CLK, EMAC_TXD2    |
-| IO15         | JP3 [**Check jumper details**](/documentation/inkplate/6flick/hardware/jumpers/#board-jumpers)             | ADC2_CH3, TOUCH3, MTDO, HSPICS0, RTC_GPIO13, HS2_CMD, SD_CMD, EMAC_RXD3    |
-| IO34         | JP6 [**Check jumper details**](/documentation/inkplate/6flick/hardware/jumpers/#board-jumpers)             | ADC1_CH6, RTC_GPIO4                                                        |
+| IO15         | JP3 [**Check jumper details**](/inkplate/6flick/hardware/jumpers/#board-jumpers)             | ADC2_CH3, TOUCH3, MTDO, HSPICS0, RTC_GPIO13, HS2_CMD, SD_CMD, EMAC_RXD3    |
+| IO34         | JP6 [**Check jumper details**](/inkplate/6flick/hardware/jumpers/#board-jumpers)             | ADC1_CH6, RTC_GPIO4                                                        |
 | IO35         | V_BAT            | ADC1_CH7, RTC_GPIO5                                                        |
 | IO36         | **FREE**    | ADC1_CH0, RTC_GPIO0                                                        |
 | IO39         | **FREE** | ADC1_CH3, RTC_GPIO3                                                        |
-|P1-1| JP7 [**Check jumper details**](/documentation/inkplate/6flick/hardware/jumpers/#board-jumpers)| SD_DATA1, EMAC_TX_ER |
-|P1-5| JP8 [**Check jumper details**](/documentation/inkplate/6flick/hardware/jumpers/#board-jumpers)| SD_DATA1, EMAC_TX_ER |
+|P1-1| JP7 [**Check jumper details**](/inkplate/6flick/hardware/jumpers/#board-jumpers)| SD_DATA1, EMAC_TX_ER |
+|P1-5| JP8 [**Check jumper details**](/inkplate/6flick/hardware/jumpers/#board-jumpers)| SD_DATA1, EMAC_TX_ER |
 |P1-6| **FREE** | SD_DATA1, EMAC_TX_ER |
 |P1-7| **FREE** | SD_DATA1, EMAC_TX_ER |
 | GPIO Expander 2: P0-0 - P1-7| **FREE** |SD_DATA1, EMAC_TX_ER |
