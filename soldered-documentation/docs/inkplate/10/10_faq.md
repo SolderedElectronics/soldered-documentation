@@ -7,7 +7,7 @@ hide_title: true
 ---
 
 
-<SectionTitle title="FAQ and troublesohoting" backgroundImage="/img/faq.webp" />
+<SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />
 
 Here, we've gathered the most frequently asked questions along with detailed answers to help you get the most out of your device. We know that working with maker hardware and software can sometimes be challenging, so we created this resource to make things easier. Browse through the questions below—you might find the solution you're looking for.
 
@@ -18,8 +18,8 @@ If you're having trouble uploading code, try the following troubleshooting steps
 - Disconnect the device and power it off completely.
 - Reconnect via USB.  
 
-#### Make shure that the device is turned ON
-This is a very crucial step that is often forgoten about. make Sure that the **ON** LED is turned on.
+#### Make sure that the device is turned ON
+This is a very crucial step that is often forgotten about. Make sure that the **ON** LED is turned on.
 
 #### Verify Arduino IDE version
 Inkplate 10 requires Arduino IDE 2.0+ for proper board and library support.  
@@ -51,13 +51,13 @@ Try uploading these tested examples:
 <QuickLink 
   title="Inkplate10_Black_And_White.ino" 
   description="Full example using black and white display mode on Inkplate 10." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate10/Basic/Inkplate10_Black_And_White/Inkplate10_Black_And_White.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Basic/Inkplate10_Black_And_White/Inkplate10_Black_And_White.ino" 
 />
 
 <QuickLink 
   title="Inkplate10_Grayscale.ino" 
   description="Full example using grayscale display mode on Inkplate 10." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate10/Basic/Inkplate10_Grayscale/Inkplate10_Grayscale.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Basic/Inkplate10_Grayscale/Inkplate10_Grayscale.ino" 
 />
 
 #### 3. Check your power source

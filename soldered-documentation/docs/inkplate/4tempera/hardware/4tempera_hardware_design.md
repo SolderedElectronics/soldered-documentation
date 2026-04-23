@@ -63,7 +63,3 @@ Inkplate 4 TEMPERA uses the **ED038TH2** e-paper panel — a compact 3.8″ disp
 | **Storage Temperature**   | -25°C to 70°C                           |
 
 <InfoBox>The ED038TH2 is a compact high-resolution panel with a fast refresh rate and robust grayscale support — ideal for small-format devices like Inkplate 4 TEMPERA.</InfoBox>
-
----
-
-Let me know if you'd like additional documentation on jumpers, pinout diagrams, or firmware configuration pages.

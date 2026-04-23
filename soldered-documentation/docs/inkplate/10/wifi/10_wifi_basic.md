@@ -12,8 +12,8 @@ On Inkplate 10, WiFi is handled by the onboard ESP32 processor, these pages cont
 
 ---
 
-## Connectiong to WiFi
-these are the basic steps to connectiong to WiFi, followed by the key function explanations:
+## Connecting to WiFi
+these are the basic steps to connecting to WiFi, followed by the key function explanations:
 ```cpp
 #include "Inkplate.h"
 #include <WiFi.h>

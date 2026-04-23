@@ -10,7 +10,7 @@ hide_title: true
 
 Inkplate 6Flick is an **open-source** product, and we’re happy to share its complete hardware design with the community. In this section, you’ll find KiCad design files, schematics, component lists, and technical notes that help you better understand or build upon the hardware. Whether you're modifying, repairing, or just exploring, this page gives you a solid foundation.
 
-<InfoBox>All design files and assets are licensed under an [**open-source license**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design/blob/0552552410c75d7dd4bcbb29ad8a3da2e37524c3/LICENSE.md), so feel free to explore, improve, or repurpose them.</InfoBox>
+<InfoBox>All design files and assets are licensed under an [**open-source license**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design/blob/main/LICENSE.md), so feel free to explore, improve, or repurpose them.</InfoBox>
 
 ---
 

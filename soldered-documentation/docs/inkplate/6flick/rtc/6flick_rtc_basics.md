@@ -7,7 +7,7 @@ hide_title: true
 ---
 <SectionTitle title="RTC basics" backgroundImage="/img/rtc.png" />
 
-The real time clock on Inkplate 10 is the **onboard PCF85063 RTC**. The RTC uses an external clock source, an external XTAL of 32.768kHz.
+The real time clock on Inkplate 6FLICK is the **onboard PCF85063 RTC**. The RTC uses an external clock source, an external XTAL of 32.768kHz.
 
 ---
 
@@ -144,5 +144,5 @@ For full working code examples, which provide a great overview, a real-world use
 <QuickLink 
   title="Inkplate6FLICK_RTC_Simple.ino" 
   description="This example will show how to set time and date, how to read time, and how to print time on Inkplate using partial updates."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Simple/Inkplate6FLICK_RTC_Simple.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/RTC/Inkplate6FLICK_RTC_Simple/Inkplate6FLICK_RTC_Simple.ino" 
 />

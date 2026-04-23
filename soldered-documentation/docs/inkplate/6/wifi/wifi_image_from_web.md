@@ -48,7 +48,7 @@ void setup()
     }
     display.println("\nWiFi OK! Downloading...");
     display.display();
-    if (!display.drawImage("https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png", 0, 0, false, false))
+    if (!display.image.draw("https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png", 0, 0, false, false))
     {
         // If something fails (for example, a wrong filename or incorrect bitmap format), write an error message on the screen.
         // REMEMBER! You can only use Windows Bitmap files with a color depth of 1, 4, 8, or 24 bits with no compression!
@@ -69,7 +69,7 @@ void loop()
 
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="This function draws an image from a char pointer."
     returnDescription="Returns true if the image was successfully drawn; otherwise, false."
     parameters={[ 

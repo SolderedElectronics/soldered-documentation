@@ -48,7 +48,7 @@ void setup()
     }
     display.println("\nWiFi OK! Downloading...");
     display.partialUpdate();
-    if (!display.drawImage("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
+    if (!display.image.draw("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
     {
         // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
         // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
@@ -66,7 +66,7 @@ void loop()
 ```
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="Function draws image from char path."
     returnDescription="Returns true if image was successfully drawn, otherwise false."
     parameters={[
