@@ -2198,6 +2198,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'WS2812-GRID EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/ws2812-grid/ws2812-grid-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/ws2812-grid/ws2812-grid-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/ws2812-grid/ws2812-grid-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Smart LED WS2812B',
           items: [
             {
