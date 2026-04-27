@@ -975,6 +975,56 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Accelerometer IIS2DULPX',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/iis2dulpx/iis2dulpx-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/iis2dulpx/iis2dulpx-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/iis2dulpx/iis2dulpx-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-3',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/micropython/iis2dulpx-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/micropython/iis2dulpx-micropython-2',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {
