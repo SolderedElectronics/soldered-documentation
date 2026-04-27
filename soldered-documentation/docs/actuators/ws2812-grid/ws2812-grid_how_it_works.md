@@ -33,3 +33,14 @@ The microcontroller sends a stream od **24-bit color data** for each LED:
 - 8 bits for blue
 
 <InfoBox>This is commonly refered to as **GRB format** </InfoBox>
+
+The first LED reads the first 24 bits meant for it, stores that data internally, and forwards the remaining data to the next LED in the chain.
+
+---
+
+## Communication Protocol
+
+The Ws2812B uses a **single-wire serial communication protocol** with strict timing requirements.
+
+Unilke SPI or I2C, communication is based on **Pulse Width Timing**, where a **logic 1** is represented by a longer HIGH pulse and **logic 0** is represented by a shorter **HIGH** pulse. Each bit is transmitter in approximately **1.25 us**.
+

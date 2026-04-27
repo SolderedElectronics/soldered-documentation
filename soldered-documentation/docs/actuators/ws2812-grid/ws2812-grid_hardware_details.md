@@ -28,3 +28,10 @@ Click [**here**](/img/ws2812-grid/333383_pinout.png) for a high resolution image
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO compatible! 🧱 
+
+---
+
+## Hardware repository
+
+Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
+
