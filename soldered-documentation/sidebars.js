@@ -1001,10 +1001,6 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-2',
                 },
-                {
-                  type: 'doc',
-                  id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-3',
-                },
               ],
             },
             {
@@ -1020,6 +1016,10 @@ const sidebars = {
                   id: 'sensors/iis2dulpx/micropython/iis2dulpx-micropython-2',
                 },
               ],
+            },
+            {
+              type: 'doc',
+              id: 'sensors/iis2dulpx/iis2dulpx-troubleshooting',
             },
           ],
         },
