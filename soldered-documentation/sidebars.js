@@ -1001,10 +1001,6 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-2',
                 },
-                {
-                  type: 'doc',
-                  id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-3',
-                },
               ],
             },
             {
@@ -1019,11 +1015,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-2',
                 },
-                {
-                  type: 'doc',
-                  id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-3',
-                },
               ],
+            },
+            {
+              type: 'doc',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-troubleshooting',
             },
           ],
         },

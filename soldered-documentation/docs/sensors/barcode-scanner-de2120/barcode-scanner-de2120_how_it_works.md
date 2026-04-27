@@ -10,15 +10,12 @@ hide_title: true
 
 The **DE2120** is a compact embedded barcode scan engine manufactured by **DYScan**. Unlike laser-based scanners that sweep a single line across a barcode, the DE2120 uses a **CMOS image sensor** to capture a full 640×480 pixel frame and applies onboard image processing and decoding algorithms — enabling it to read both 1D and 2D barcodes from a single snapshot.
 
-{/*
-TODO: Add board photo once available
 <CenteredImage
-  src="/img/barcode-scanner-de2120/barcode-scanner-de2120_onboard.jpg"
+  src="/img/barcode-scanner-de2120/onboard.JPG"
   alt="DE2120 barcode scanner on breakout board"
   caption="DE2120 barcode scanner on breakout board"
   width="500px"
 />
-*/}
 
 ## Datasheet
 

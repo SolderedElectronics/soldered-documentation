@@ -58,8 +58,3 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 You can use any two free GPIO pins as the UART TX/RX pair. Pass them as `tx` and `rx` arguments when creating the scanner object. Remember: connect the MCU **TX** pin to the scanner **RX** pin, and the MCU **RX** pin to the scanner **TX** pin.
 
 </InfoBox>
-
-{/*
-TODO: Add wiring photo once available
-<CenteredImage src="/img/barcode-scanner-de2120/micropython_connection.jpg" alt="DE2120 wiring to Dasduino CONNECTPLUS (MicroPython)" caption="Dasduino CONNECTPLUS connected to the DE2120 barcode scanner breakout board." width="800px"/>
-*/}

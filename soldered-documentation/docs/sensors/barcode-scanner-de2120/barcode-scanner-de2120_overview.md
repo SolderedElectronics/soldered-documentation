@@ -11,14 +11,9 @@ pagination_prev: null
 
 ## DE2120 2D Barcode Scanner
 
-The **DE2120** is a compact, high-performance **CMOS 2D barcode scanner module** capable of reading **20+ barcode symbologies** — including all major 1D formats (UPC, EAN, Code 128, Code 39) and 2D formats (QR Code, Data Matrix, PDF417, Aztec). It communicates with a microcontroller over **UART (TTL serial)** and is controlled through a simple command protocol.
+The **DE2120** is a compact barcode scanner module that reads **20+ symbologies** — covering all common 1D formats (UPC, EAN, Code 128, Code 39) as well as 2D formats (QR Code, Data Matrix, PDF417, Aztec). It communicates over **UART (TTL serial)**, supports three scanning modes (manual, continuous, and motion sense), and is straightforward to integrate using the provided Arduino library or MicroPython module.
 
-The Soldered breakout board exposes the scanner's UART interface along with power, trigger, and status pins, making it straightforward to integrate into Arduino-based projects using the provided library.
-
-{/*
-TODO: Add product image once available
-<CenteredImage src="/img/barcode-scanner-de2120/barcode-scanner-de2120.webp" alt="Barcode Scanner DE2120" caption="DE2120 2D Barcode Scanner Breakout Board" width="500px"/>
-*/}
+<CenteredImage src="/img/barcode-scanner-de2120/DSC01004.JPG" alt="Barcode Scanner DE2120" caption="DE2120 2D Barcode Scanner Breakout Board" width="500px"/>
 
 ## Which products is this documentation for?
 
@@ -26,7 +21,7 @@ TODO: Add product image once available
   title="Barcode Scanner DE2120"
   description="333384"
   url="https://soldered.com/product/barcode-scanner-de2120/"
-  image="/img/barcode-scanner-de2120/barcode-scanner-de2120.webp"
+  image="/img/barcode-scanner-de2120/DSC01004.JPG"
 />
 
 ## Key Features
@@ -42,4 +37,3 @@ TODO: Add product image once available
 * **Scan Angles:** Pitch ±45°, Skew ±40°, Roll ±360°
 * **Operating Temperature:** –20 °C to 50 °C
 * **Scanning Modes:** Manual (trigger), Continuous, Motion Sense
-{/* TODO: Add breakout board dimensions once the hardware design is finalized — uncomment and fill in: * **Dimensions:** XX x XX mm */}

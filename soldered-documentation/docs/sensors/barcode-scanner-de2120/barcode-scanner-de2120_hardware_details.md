@@ -10,12 +10,9 @@ hide_title: true
 
 ## Pinout
 
-{/*
-TODO: Add pinout image once available
-<CenteredImage src="/img/barcode-scanner-de2120/pinout.png" alt="DE2120 Barcode Scanner Pinout" />
+<CenteredImage src="/img/barcode-scanner-de2120/Barcode Scanner DE2120 Pinout.png" alt="DE2120 Barcode Scanner Pinout" />
 
 Click here for a high resolution image of the pinout.
-*/}
 
 ## Pin details
 
@@ -39,18 +36,14 @@ The DE2120 scan engine module itself measures **16.0 × 21.2 × 12.0 mm** and we
 
 ## Jumper Details
 
-{/*
-TODO: Add jumper photos to /img/barcode-scanner-de2120/ and uncomment the carousel below.
-
 <FlickityCarousel
   images={[
-    { src: '/img/barcode-scanner-de2120/barcode-scanner-de2120_jp1.jpg', alt: 'barcode-scanner-jp1', caption: 'JP1' },
-    { src: '/img/barcode-scanner-de2120/barcode-scanner-de2120_jp2.jpg', alt: 'barcode-scanner-jp2', caption: 'JP2' },
-    { src: '/img/barcode-scanner-de2120/barcode-scanner-de2120_jp3.jpg', alt: 'barcode-scanner-jp3', caption: 'JP3' },
+    { src: '/img/barcode-scanner-de2120/jp1.JPG', alt: 'barcode-scanner-jp1', caption: 'JP1' },
+    { src: '/img/barcode-scanner-de2120/jp2.JPG', alt: 'barcode-scanner-jp2', caption: 'JP2' },
+    { src: '/img/barcode-scanner-de2120/jp3.JPG', alt: 'barcode-scanner-jp3', caption: 'JP3' },
   ]}
   jumpers={true}
 />
-*/}
 
 | Jumper | Default State | Function |
 |--------|--------------|----------|

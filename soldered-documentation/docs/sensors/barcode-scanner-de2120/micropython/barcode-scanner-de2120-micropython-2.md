@@ -56,11 +56,6 @@ while True:
     returnDescription="str — The decoded barcode string, or None if no scan is ready."
 />
 
-{/*
-TODO: Add Serial Monitor screenshot once available
-<CenteredImage src="/img/barcode-scanner-de2120/micropython_scan_output.png" alt="MicroPython REPL showing scanned barcode" caption="REPL output showing a successfully decoded barcode." width="700px"/>
-*/}
-
 ## Full example
 
 <QuickLink

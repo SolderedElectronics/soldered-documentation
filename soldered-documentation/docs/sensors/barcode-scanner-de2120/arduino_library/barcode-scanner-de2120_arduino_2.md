@@ -73,16 +73,6 @@ void loop()
   returnDescription="bool, true when a complete barcode has been received"
 />
 
-{/*
-TODO: Add wiring photo once available
-<CenteredImage src="/img/barcode-scanner-de2120/connection.jpg" alt="DE2120 wiring to Dasduino CONNECTPLUS" caption="Dasduino CONNECTPLUS connected to the DE2120 barcode scanner." width="800px"/>
-*/}
-
-{/*
-TODO: Add Serial Monitor screenshot once available
-<CenteredImage src="/img/barcode-scanner-de2120/scan_output.png" alt="Serial Monitor showing scanned barcode" caption="Serial Monitor output showing a successfully decoded barcode." width="700px"/>
-*/}
-
 ## Full example
 
 <QuickLink

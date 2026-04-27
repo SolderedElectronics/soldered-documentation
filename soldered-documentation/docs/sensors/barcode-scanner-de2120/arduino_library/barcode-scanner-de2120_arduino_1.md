@@ -58,8 +58,3 @@ The examples in this library use **UART2** on the **NULA Mini** (ESP32):
 You can also use **SoftwareSerial** on any two GPIO pins if UART2 is unavailable. See the `SoftwareScan` example in the library for details. Note that SoftwareSerial is less reliable at higher baud rates.
 
 </InfoBox>
-
-{/*
-TODO: Add wiring photo once available
-<CenteredImage src="/img/barcode-scanner-de2120/connection.jpg" alt="DE2120 wiring to Dasduino CONNECTPLUS" caption="Dasduino CONNECTPLUS connected to the DE2120 barcode scanner breakout board." width="800px"/>
-*/}
