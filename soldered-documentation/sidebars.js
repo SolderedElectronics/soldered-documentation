@@ -975,6 +975,60 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Barcode Scanner DE2120',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-3',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {
