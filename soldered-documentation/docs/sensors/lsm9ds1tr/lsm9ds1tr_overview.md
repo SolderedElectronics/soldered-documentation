@@ -17,7 +17,7 @@ It also includes **2 Qwiic (formerly easyC)** connectors, making it easy to conn
 
 ---
 
-## Which products is this documentation for?
+## Which product is this documentation for?
 
 <QuickLink 
   title="Accelerometer & Gyroscope & Magnetometer LSM9DS1TR 9-DOF breakout" 

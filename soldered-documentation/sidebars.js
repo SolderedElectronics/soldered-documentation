@@ -975,6 +975,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'DIGITAL-COMPASS EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/digital-compass/digital-compass-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/digital-compass/digital-compass-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/digital-compass/digital-compass-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/digital-compass/arduino_library/digital-compass-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/digital-compass/arduino_library/digital-compass-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/digital-compass/arduino_library/digital-compass-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {
