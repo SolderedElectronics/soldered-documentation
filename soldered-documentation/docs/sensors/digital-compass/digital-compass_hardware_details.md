@@ -1,6 +1,7 @@
 ---
 slug: /digital-compass/hardware 
-title: Hardware details
+title: Digital Compass - Hardware details
+sidebar_label: Hardware details
 id: digital-compass-hardware 
 hide_title: False
 ---
