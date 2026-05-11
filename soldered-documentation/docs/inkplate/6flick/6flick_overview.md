@@ -12,7 +12,7 @@ tags:
   - 333320
   - Inkplate 6FLICK
   - Inkplate 6 FLICK
-  - Inkplate6FLICK
+  - Inkplate6FLICk
 ---
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />

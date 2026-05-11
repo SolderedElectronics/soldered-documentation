@@ -17,10 +17,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs.soldered.com',
+  url: 'https://soldered.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -29,7 +29,7 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  trailingSlash: false,
+  trailingSlash: true,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -116,7 +116,6 @@ const config = {
           apiKey: process.env.ALGOLIA_API_KEY,
           indexName: process.env.ALGOLIA_INDEX_NAME,
           appId: process.env.ALGOLIA_APP_ID,
-          contextualSearch: false, // Important!
         }
         : undefined,
       footer: {

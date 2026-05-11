@@ -37,7 +37,7 @@ Click `Install` here:
 
 ### 3. Install Inkplate library
 
-In the Arduino Library Manager, search for the Inkplate Motion library and click `Install`:  
+In the Arduino Library Manager, search for the Inkplate library and click `Install`:  
 <CenteredImage src="/img/inkplate10/install_lib.png" alt="Install Inkplate library" caption="Installing Inkplate library" width="400px" />
 
 <InfoBox>It's also possible to install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
@@ -46,18 +46,12 @@ In the Arduino Library Manager, search for the Inkplate Motion library and click
 
 <InfoBox>Mac and Linux users can skip this step because the CH340 driver is already installed.</InfoBox>
 
-The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/blogs/learn/ch340-driver-installation)**. Start the installation and follow the instructions:  
+The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions:  
 <CenteredImage src="/img/inkplate10/ch340.png" alt="Install CH340 Driver" caption="Installing the CH340 Driver on Windows" width="350px" />
 
 ### Done!
 
 Inkplate 6COLOR setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself!
-
----
-
-## Light and Versatile Graphics Library (LVGL)
-
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 
@@ -93,4 +87,4 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having problems uploading your first code? Check out our [troubleshooting page](/inkplate/6color/faq-troubleshooting/):
+Having problems uploading your first code? Check out our [troubleshooting page](/documentation/inkplate/6color/faq-troubleshooting/):
