@@ -975,19 +975,19 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Accelerometer IIS2DULPX',
+          label: 'Barcode Scanner DE2120',
           items: [
             {
               type: 'doc',
-              id: 'sensors/iis2dulpx/iis2dulpx-overview',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-overview',
             },
             {
               type: 'doc',
-              id: 'sensors/iis2dulpx/iis2dulpx-hardware',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-hardware',
             },
             {
               type: 'doc',
-              id: 'sensors/iis2dulpx/iis2dulpx-how-it-works',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-how-it-works',
             },
             {
               type: 'category',
@@ -995,11 +995,11 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-1',
+                  id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-1',
                 },
                 {
                   type: 'doc',
-                  id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-2',
+                  id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-2',
                 },
               ],
             },
@@ -1009,17 +1009,17 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'sensors/iis2dulpx/micropython/iis2dulpx-micropython-1',
+                  id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-1',
                 },
                 {
                   type: 'doc',
-                  id: 'sensors/iis2dulpx/micropython/iis2dulpx-micropython-2',
+                  id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-2',
                 },
               ],
             },
             {
               type: 'doc',
-              id: 'sensors/iis2dulpx/iis2dulpx-troubleshooting',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-troubleshooting',
             },
           ],
         },
