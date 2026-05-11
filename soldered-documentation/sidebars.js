@@ -54,6 +54,10 @@ const sidebars = {
           type: 'doc',
           id: 'arduino/arduino-bootloader',
         },
+        {
+          type: 'doc',
+          id: 'arduino/arduino-GitHub',
+        },
       ]
     },
     {
