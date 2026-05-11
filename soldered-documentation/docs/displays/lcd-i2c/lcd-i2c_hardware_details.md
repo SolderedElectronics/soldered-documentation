@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/lcd-i2c/lcd-i2c_pinout.png" alt="lcd-i2c pinout diagram" caption="LCD-I2C pinout diagram"/>
 
-Click [**here**](\img\lcd-i2c\lcd-i2c_pinout.png) for a high-resolution image of the pinout.
+Click [**here**](/img/lcd-i2c/lcd-i2c_pinout.png) for a high-resolution image of the pinout.
 
 ---
 
