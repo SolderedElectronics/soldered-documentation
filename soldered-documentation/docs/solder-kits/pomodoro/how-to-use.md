@@ -3,9 +3,10 @@ slug: /pomodoro-timer-solder-kit/how-to-use
 title: Pomodoro Timer Solder Kit - How to Use
 sidebar_label: How to Use
 id: pomodoro-solder-kit-how-to-use
-hide_title: False
-pagination_next: null
+hide_title: True
 ---
+
+# How to Use
 
 ## Introduction
 

@@ -3293,6 +3293,10 @@ const sidebars = {
             {
               type: 'doc',
               id: 'solder-kits/pomodoro/pomodoro-solder-kit-how-to-use',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/pomodoro/pomodoro-solder-kit-how-to-reprogram',
             }
           ]
         },
