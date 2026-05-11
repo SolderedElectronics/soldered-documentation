@@ -135,7 +135,7 @@ This board contains hardware jumpers. See below for their locations and function
 
 This board contains hardware address switches. See below for how to change the breakout board's address:
 
-<CenteredImage src="/img/hx711/address_selection.png" alt="Pinout" width="500px" />
+<CenteredImage src="/img/gnss-gps/onboard_address_selector.jpg" alt="Pinout" width="500px" />
 
 | Address |  SW3  |  SW2  |  SW1  |
 | :-----: | :---: | :---: | :---: |
