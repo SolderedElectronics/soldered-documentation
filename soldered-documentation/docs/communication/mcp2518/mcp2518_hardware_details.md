@@ -12,7 +12,7 @@ sidebar_label: Hardware details
 
 ## Pin Details
 
-| PIn Marking 	| Pin Name 	| Description 	|
+| Pin Marking 	| Pin Name 	| Description 	|
 |---	|---	|---	|
 | **NCS** 	| Chip Select 	| SPI chip select input 	|
 | **SDI** 	| Data input 	| SPI data input 	|

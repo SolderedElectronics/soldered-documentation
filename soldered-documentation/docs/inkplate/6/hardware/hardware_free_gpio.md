@@ -24,8 +24,8 @@ See the table below for pin functions and what each pin is connected to:
 | IO13         | SDCARD           | ADC2_CH4, TOUCH4, RTC_GPIO14, MTCK, HSPID, HS2_DATA3, SD_DATA3, EMAC_RX_ER |
 | IO14         | SDCARD           | ADC2_CH6, TOUCH6, RTC_GPIO16, MTMS, HSPICLK, HS2_CLK, SD_CLK, EMAC_TXD2    |
 | IO15         | SDCARD           | ADC2_CH3, TOUCH3, MTDO, HSPICS0, RTC_GPIO13, HS2_CMD, SD_CMD, EMAC_RXD3    |
-| IO34         | JP2 [**Check jumper details**](/documentation/inkplate/6/hardware/jumpers/#board-jumpers)             | ADC1_CH6, RTC_GPIO4                                                        |
+| IO34         | JP2 [**Check jumper details**](/inkplate/6/hardware/jumpers/#board-jumpers)             | ADC1_CH6, RTC_GPIO4                                                        |
 | IO35         | V_BAT            | ADC1_CH7, RTC_GPIO5                                                        |
 | IO36         | WAKEUP BUTTON    | ADC1_CH0, RTC_GPIO0                                                        |
-| IO39         | JP5 [**Check jumper details**](/documentation/inkplate/6/hardware/jumpers/#board-jumpers)             | ADC1_CH3, RTC_GPIO3                                                        |
+| IO39         | JP5 [**Check jumper details**](/inkplate/6/hardware/jumpers/#board-jumpers)             | ADC1_CH3, RTC_GPIO3                                                        |
 | P0-0 TO P1-7 **both expander 1 and expander 2** | **FREE**         | I/O                                                                        |

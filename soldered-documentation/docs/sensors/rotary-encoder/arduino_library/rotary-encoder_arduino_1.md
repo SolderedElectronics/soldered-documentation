@@ -23,7 +23,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 <QuickLink  
   title="Getting started with Arduino"  
   description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
-  url="/documentation/arduino/quick-start-guide"  
+  url="/arduino/quick-start-guide"  
 />  
 
 </InfoBox>
@@ -32,7 +32,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ## Connections
 
-Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit boards address, check the [**Address selection**](/documentation/rotary-encoder/hardware#address-selection).
+Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation. To change circuit boards address, check the [**Address selection**](/rotary-encoder/hardware#address-selection).
 
 | **Dasduino CONNECTPLUS** | **Breakout Board** |
 | ------------------------ | ------------------ |

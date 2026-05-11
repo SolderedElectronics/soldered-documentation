@@ -8,9 +8,7 @@ hide_title: False
 
 ## Pinout
 
-<CenteredImage src="/img/w5500/w5500-pinout.png" alt="W5500 pinout image" />
-
-Click [**here**](/img/w5500/w5500-pinout.png) for a high resolution image of the pinout.
+<ErrorBox>The pinout image for this board has not been generated yet. We are working on it!</ErrorBox>
 
 ---
 

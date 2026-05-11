@@ -19,7 +19,7 @@ To install the Arduino library, you can search for `Ethernet` in the library man
 <QuickLink  
   title="Getting started with Arduino"  
   description="A full, comprehensive tutorial on how to fully set up and upload code for the first time on an Arduino board, from scratch!"  
-  url="/documentation/arduino/quick-start-guide"  
+  url="/arduino/quick-start-guide"  
 />  
 
 </InfoBox>

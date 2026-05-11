@@ -39,7 +39,7 @@ Any of **[Soldered’s 3.7V Li-ion batteries](https://soldered.com/categories/po
 
 <InfoBox>Due to shipping restrictions, **we cannot ship Li-ion batteries outside the EU**. If you're in the US, we recommend checking out [Adafruit's Li-ion battery stock](https://www.adafruit.com/category/574).</InfoBox>  
 
-Check out our [battery documentation](/documentation/li-ion-battery/overview/) page.
+Check out our [battery documentation](/li-ion-battery/overview/) page.
 
 ---
 

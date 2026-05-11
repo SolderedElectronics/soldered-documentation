@@ -27,7 +27,7 @@ For a step-by-step guide on installing Arduino, connecting your board, and uploa
 <QuickLink  
   title="Getting started with Arduino"  
   description="A comprehensive beginner’s guide to setting up Arduino and uploading your first program."  
-  url="/documentation/arduino/quick-start-guide"  
+  url="/arduino/quick-start-guide"  
 />
 </InfoBox>
 

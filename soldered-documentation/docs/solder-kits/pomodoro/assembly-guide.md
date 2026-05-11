@@ -10,7 +10,7 @@ On this page, we'll guide you step-by-step on how to assemble your Pomodoro Sold
 
 <WarningBox>Please read the instructions carefully and take all the usual safety precautions when soldering. If you're a beginner, be cautious! You’re holding a 300 °C tool after all — but we know you can do it. 🙂</WarningBox>
 
-<InfoBox>Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/documentation/piano-solder-kit/overview/#contents-of-the-kit).</InfoBox>
+<InfoBox>Before starting, make sure you have all the components at hand. You can find the complete components list in the [**Contents section on the Overview page**](/piano-solder-kit/overview/#contents-of-the-kit).</InfoBox>
 
 ## 10k Ohm Resistors
 

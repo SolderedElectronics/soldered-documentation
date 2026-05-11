@@ -8,9 +8,7 @@ hide_title: False
 
 ## Pinout
 
-<CenteredImage src="/img/lsm9ds1tr/LSM9DS1TR-pinout.png" alt="LSM9DS1TR pinout image" />
-
-Click [**here**](/img/lsm9ds1tr/LSM9DS1TR-pinout.png) for a high-resolution image of the pinout.
+<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
 ## Pin details
 

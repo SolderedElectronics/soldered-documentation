@@ -27,7 +27,7 @@ If you have multiple sensors connected, you must ensure that each ADS1115 has a 
 <ExpandableSection title="The readings from the sensor are off!">
 
 #### Create a custom configuration
-Depending on your environment, you may need a different configuration than the predefined one. Check out the [**How it works**](/documentation/electrochemical-gas-sensor/how-it-works/) section as well as the [**Custom configuration example**](/documentation/electrochemical-gas-sensor/arduino/custom-config-example/).
+Depending on your environment, you may need a different configuration than the predefined one. Check out the [**How it works**](/electrochemical-gas-sensor/how-it-works/) section as well as the [**Custom configuration example**](/electrochemical-gas-sensor/arduino/custom-config-example/).
 
 </ExpandableSection>
 

@@ -51,7 +51,7 @@ New to MicroPython? Check out our **MicroPython overview** to get started:
 <QuickLink  
   title="MicroPython Overview"  
   description="Getting started with MicroPython guide"  
-  url="https://soldered.com/documentation/micropython/overview"  
+  url="https://soldered.com/micropython/overview"  
 />
 
 </InfoBox>

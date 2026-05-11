@@ -8,9 +8,7 @@ hide_title: false
 
 ## Pinout
 
-<CenteredImage src="/img/cn3791/mppt-charger-board-pinout.png" alt="MPPT Charger Board pinout image" />
-
-Click [**here**](/img/cn3791/mppt-charger-board-pinout.png) for a high resolution image of the pinout.
+<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
 ## Pin Details
 

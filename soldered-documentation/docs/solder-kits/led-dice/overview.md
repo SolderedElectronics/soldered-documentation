@@ -1,9 +1,10 @@
 ---
 slug: /LED-dice/overview
-title: Overview
+title: LED Dice Solder Kit - Overview
 id: led-dice-overview 
 hide_title: False
 pagination_prev: null
+sidebar_label: Overview
 ---
 
 ## Introduction
@@ -17,6 +18,19 @@ By shaking the dice, the onboard **SW-18020P Vibration sensor** activates the At
 <CenteredImage src="/img/led-dice/how-it-works.webp" alt="How the game works" caption="How the game works" />
 
 ---
+
+## Which product is this documentation for?
+
+<QuickLink 
+  title="LED Dice Soldering kit" 
+  description="333140"
+  url="https://soldered.com/collections/solder-kits/products/led-dice-solder-kit"
+  image="img/led-dice/assembled-img.jpg" 
+/>
+
+---
+
+<CenteredImage src="/img/led-dice/kit-content.webp" alt="Contents of the kit" />
 
 ## Contents of the kit
 
