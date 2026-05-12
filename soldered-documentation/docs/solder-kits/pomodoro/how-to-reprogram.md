@@ -15,7 +15,7 @@ On this page, we'll show you how to reprogram your Pomodoro Solder Kit and uploa
 
 <WarningBox>Be careful while working with firmware! Always make sure you upload valid `.py` files and don’t remove essential system files from your board.</WarningBox>
 
-<InfoBox>This tutorial assumes your Pomodoro Kit is already assembled. If not, check the [**Assembly Guide**](/documentation/pomodoro-solder-kit/assembly-guide) first.</InfoBox>
+<InfoBox>This tutorial assumes your Pomodoro Kit is already assembled. If not, check the [**Assembly Guide**](/pomodoro-solder-kit/assembly-guide) first.</InfoBox>
 
 <QuickLink 
   title="Pomodoro Timer Solder Kit Firmware Repository" 
