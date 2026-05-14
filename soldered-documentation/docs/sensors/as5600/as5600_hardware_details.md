@@ -92,7 +92,7 @@ This board contains hardware jumpers; see below for their locations and function
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
 [link placeholder - webstore link]
-
+{/*github link za hardware*/}
 
 {/*
 <QuickLink 

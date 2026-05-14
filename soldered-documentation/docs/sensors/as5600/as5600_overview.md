@@ -16,6 +16,7 @@ The **AS5600 breakout postition sensor** is a compact and highly accurate magnet
 ## Which product is this documentation for?
 
 [link placeholder - webstore link]
+{/*link ya webstranicu*/}
 
 ---
 
