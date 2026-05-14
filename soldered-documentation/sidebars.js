@@ -716,7 +716,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'AS5600',
+          label: 'AS5600 Position Sensor',
           items: [
             {
               type: 'doc',
@@ -2573,6 +2573,42 @@ const sidebars = {
       type: 'category',
       label: 'Communication',
       items: [
+        {
+          type: 'category',
+          label: 'GPIO EXPANDER PCAL6416A BREAKOUT EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/gpio expander pcal6416a breakout/gpio expander pcal6416a breakout-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/gpio expander pcal6416a breakout/gpio expander pcal6416a breakout-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/gpio expander pcal6416a breakout/gpio expander pcal6416a breakout-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/gpio expander pcal6416a breakout/arduino_library/gpio expander pcal6416a breakout-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/gpio expander pcal6416a breakout/arduino_library/gpio expander pcal6416a breakout-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/gpio expander pcal6416a breakout/arduino_library/gpio expander pcal6416a breakout-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
         {
           type: 'category',
           label: 'ST67 Wireless Breakout',
