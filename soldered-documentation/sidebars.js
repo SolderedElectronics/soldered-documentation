@@ -2531,6 +2531,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'Inptronic Bridge',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/inputronic-bridge/inputronic-bridge-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/inputronic-bridge/inputronic-bridge-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/inputronic-bridge/inputronic-bridge-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-bridge/arduino_library/inputronic-bridge-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-bridge/arduino_library/inputronic-bridge-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-bridge/arduino_library/inputronic-bridge-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'ST67 Wireless Breakout',
           items: [
             {
