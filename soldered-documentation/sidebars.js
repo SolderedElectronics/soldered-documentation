@@ -2531,6 +2531,46 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'ZED-F9P',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/zed-f9p/zed-f9p-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/zed-f9p/zed-f9p-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/zed-f9p/zed-f9p-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/zed-f9p/arduino_library/zed-f9p-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/zed-f9p/arduino_library/zed-f9p-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/zed-f9p/arduino_library/zed-f9p-arduino-3',
+                },
+                {
+                  type:'doc',
+                  id: 'communication/zed-f9p/arduino_library/zed-f9p-arduino-4',
+                }
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'CAN Transciever MCP2518',
           items: [
             {
