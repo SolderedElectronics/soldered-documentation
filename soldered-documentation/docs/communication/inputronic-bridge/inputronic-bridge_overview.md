@@ -9,7 +9,7 @@ The **Inputronic BRIDGE** is a highly versatile interface board powered by the *
 
 The board features a comprehensive pinout, easy-to-use **Qwiic connectors** for plug-and-play I2C communication, and a protected **Female USB-A** port. With built-in selectable protocols via onboard jumpers, it ensures seamless integration for makers and engineers.
 
-<CenteredImage src="/img/under_construction.png"  alt="Inputronic BRIDGE" caption="Inputronic BRIDGE" width="500px"/>
+<CenteredImage src="/img/inputronic-bridge/DSC00998.JPG"  alt="Inputronic BRIDGE" caption="Inputronic BRIDGE" width="500px"/>
 
 ---
 
@@ -19,7 +19,7 @@ The board features a comprehensive pinout, easy-to-use **Qwiic connectors** for 
   title="Inputronic BRIDGE" 
   description="333359"
   url="https://soldered.com/product/inputronic-bridge/"
-  image="/img/under_construction.png" 
+  image="/img/inputronic-bridge/DSC00998.JPG" 
 />
 
 ---

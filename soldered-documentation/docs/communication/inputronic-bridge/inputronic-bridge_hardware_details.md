@@ -36,11 +36,10 @@ This board contains hardware jumpers, see below for their locations and function
 
 <FlickityCarousel
 images={[
-{ src: '/img/under_construction.png', alt: 'Jumper JP0', caption: 'JP0' },
-{ src: '/img/under_construction.png', alt: 'Jumper JP1', caption: 'JP1' },
-{ src: '/img/under_construction.png', alt: 'Jumper JP2', caption: 'JP2' },
-{ src: '/img/under_construction.png', alt: 'Jumper JP3', caption: 'JP3' },
-{ src: '/img/under_construction.png', alt: 'Jumper JP4', caption: 'JP4' },
+{ src: '/img/inputronic-bridge/JP1.jpg', alt: 'Jumper JP1', caption: 'JP1' },
+{ src: '/img/inputronic-bridge/JP2.jpg', alt: 'Jumper JP2', caption: 'JP2' },
+{ src: '/img/inputronic-bridge/JP3.jpg', alt: 'Jumper JP3', caption: 'JP3' },
+{ src: '/img/inputronic-bridge/JP4.jpg', alt: 'Jumper JP4', caption: 'JP4' },
 ]}
 jumpers={true}
 />
@@ -66,9 +65,9 @@ jumpers={true}
 
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
-<QuickLink title="I2C multiplexer TCA9548A breakout Hardware Design" 
+<QuickLink title="Inputronic Hardware Design" 
 description="GitHub hardware repository for this product" 
-url="https://github.com/SolderedElectronics/I2C-multiplexer-TCA9548A-breakout-hardware-design" />
+url="https://github.com/SolderedElectronics/Inputronic-BRIDGE-hardware-design" />
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 

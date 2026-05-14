@@ -2531,7 +2531,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Inptronic Bridge',
+          label: 'Inputronic Bridge',
           items: [
             {
               type: 'doc',
