@@ -48,7 +48,19 @@ jumpers={true}
 | -------------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
 | **JP1**        | **NC** (Normally closed) | Cut the trace to disconnect the power LED and reduce overall current consumption.                 |
 | **JP2**        | **NO** (Normally open)   | Connects onboard 3.3V pull-up resistors for the I2C bus (SDA and SCL).                            |
-| **JP3 & JP4**  | **NO** (Normally open)   | Configures the output protocol. Leave open for default I2C, or solder to select UART/SPI modes.   |
+| **JP3**        | **NO** (Normally open)   | Configures the output protocol. Leave open for default I2C, or solder to select UART/SPI modes.   |
+| **JP4**        | **NO** (Normally open)   | Configures the output protocol. Leave open for default I2C, or solder to select UART/SPI modes.   |
+
+
+<InfoBox>
+The table below shows how JP3 and JP4 configure the module's communication protocol.
+| JP3               | JP4               | Active Protocol |
+| ----------------- | ----------------- | --------------- |
+| Not connected     | Not connected     | **I2C**         |
+| Connected         | Not connected     | **UART**        |
+| Not connected     | Connected         | **UART**        |
+| Connected         | Connected         | **SPI**         |
+</InfoBox>
 
 ---
 

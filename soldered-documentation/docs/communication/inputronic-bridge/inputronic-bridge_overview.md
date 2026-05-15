@@ -17,7 +17,7 @@ The board features a comprehensive pinout, easy-to-use **Qwiic connectors** for 
 
 <QuickLink 
   title="Inputronic BRIDGE" 
-  description="333359"
+  description="333390"
   url="https://soldered.com/product/inputronic-bridge/"
   image="/img/inputronic-bridge/DSC00998.JPG" 
 />
