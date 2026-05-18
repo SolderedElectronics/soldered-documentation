@@ -2563,6 +2563,47 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'PCAL6416AHF I/O Expander',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/pcal6416a/gpio expander pcal6416a breakout-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/pcal6416a/gpio expander pcal6416a breakout-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/pcal6416a/gpio expander pcal6416a breakout-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/gpio expander pcal6416a breakout-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/gpio expander pcal6416a breakout-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/gpio expander pcal6416a breakout-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/gpio expander pcal6416a breakout-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
+        
+        {
+          type: 'category',
           label: 'CAN Transciever MCP2518',
           items: [
             {

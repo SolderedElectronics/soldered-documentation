@@ -1,0 +1,158 @@
+---
+slug: /pcal6416a/hardware 
+title: PCAL6416AHF - Hardware details
+sidebar_label: Hardware details
+id: gpio expander pcal6416a breakout-hardware 
+hide_title: False
+---
+
+## Pinout
+
+<CenteredImage src="/img/pcal6416a/PCAL6416A_Pinout.png" alt="PCAL6416A pinout diagram" caption="PCAL6416A pinout diagram"/>
+
+Click [**here**](/img/pcal6416a/PCAL6416A_Pinout.png) for a high resolution image of the pinout.
+
+---
+
+## Pin Details
+
+| **Pin Marking** | **Pin Name**         | **Description**                                                                 |
+|-----------------|----------------------|---------------------------------------------------------------------------------|
+| **INT**         | Interrupt Output     | Active-low interrupt output from the PCAL6416A used to notify the MCU of input changes. |
+| **RES**         | Reset                | Hardware reset pin for the PCAL6416A. Pull low to reset the device.            |
+| **B7**          | GPIO Port B7         | General-purpose input/output pin from Port B.                                  |
+| **B6**          | GPIO Port B6         | General-purpose input/output pin from Port B.                                  |
+| **B5**          | GPIO Port B5         | General-purpose input/output pin from Port B.                                  |
+| **B4**          | GPIO Port B4         | General-purpose input/output pin from Port B.                                  |
+| **B3**          | GPIO Port B3         | General-purpose input/output pin from Port B.                                  |
+| **B2**          | GPIO Port B2         | General-purpose input/output pin from Port B.                                  |
+| **B1**          | GPIO Port B1         | General-purpose input/output pin from Port B.                                  |
+| **B0**          | GPIO Port B0         | General-purpose input/output pin from Port B.                                  |
+| **A0**          | GPIO Port A0         | General-purpose input/output pin from Port A.                                  |
+| **A1**          | GPIO Port A1         | General-purpose input/output pin from Port A.                                  |
+| **A2**          | GPIO Port A2         | General-purpose input/output pin from Port A.                                  |
+| **A3**          | GPIO Port A3         | General-purpose input/output pin from Port A.                                  |
+| **A4**          | GPIO Port A4         | General-purpose input/output pin from Port A.                                  |
+| **A5**          | GPIO Port A5         | General-purpose input/output pin from Port A.                                  |
+| **A6**          | GPIO Port A6         | General-purpose input/output pin from Port A.                                  |
+| **A7**          | GPIO Port A7         | General-purpose input/output pin from Port A.                                  |
+| **SCL**         | I2C Clock            | Clock line for I2C communication.                                              |
+| **SDA**         | I2C Data             | Data line for I2C communication.                                               |
+| **5V**          | Supply Voltage       | Main power input for the board.                                                |
+| **GND**         | Ground               | Common ground reference for the board and connected devices.                   |
+
+<InfoBox>
+
+- **GPIO Channels**: 16 total GPIO pins (Port A and Port B)
+- **Communication Interface**: I2C
+- **Operating Voltage**: 3.3V logic compatible
+- **Interrupt Support**: Active-low interrupt output available on INT pin
+
+</InfoBox>
+
+<WarningBox>
+
+Ensure that the supply voltage and I2C logic levels are compatible with your microcontroller before connecting the board. Always connect GND between devices to establish a common signal reference.
+
+</WarningBox>
+
+
+
+
+---
+
+## Jumper Details
+
+This board contains hardware jumpers; see below for their locations and functions:
+
+<FlickityCarousel
+  images={[
+    { src: '/img/pcal6416a/jp1.jpg', alt: 'pcal6416ajumper1', caption: 'JP1' },
+    { src: '/img/pcal6416a/jp2.jpg', alt: 'pcal6416ajumper2', caption: 'JP2' },
+    { src: '/img/pcal6416a/jp3.jpg', alt: 'pcal6416ajumper3', caption: 'JP3' },
+    { src: '/img/pcal6416a/jp4.jpg', alt: 'pcal6416ajumper4', caption: 'JP4' },
+    { src: '/img/pcal6416a/jp5.jpg', alt: 'pcal6416ajumper5', caption: 'JP5' },
+  ]}
+  jumpers={true}
+/>
+
+| **Jumper** | **Default State** | **Function** |
+|------------|-------------------|--------------|
+| **JP1** | NO | Enables the 5V I2C pull-up resistors for the SDA5 and SCL5 signal lines. |
+| **JP2** | NO | Enables the 3.3V I2C pull-up resistors for the SDA_PULL3.3 and SCL_PULL3.3 signal lines. |
+| **JP3** | NC | Connects the ADDR pin to GND by default, configuring the default I2C address of the PCAL6416A GPIO expander. |
+| **JP4** | NC | Connects the output of the onboard SE5218 voltage regulator to the 3.3V power rail. |
+| **JP5** | NO | Bypasses the onboard voltage regulator by directly connecting the 5V rail to the 3.3V rail. |
+
+
+<InfoBox>
+
+- **NO (Normally Open)** means the jumper pads are disconnected by default.
+- **NC (Normally Closed)** means the jumper pads are connected by default.
+- Changing jumper states allows configuration of the board power routing and I2C pull-up behavior.
+
+</InfoBox>
+
+## Dimensions
+
+- **Board Dimensions:** 22 × 38 mm (0.9 × 1.5 inch)  
+- **Header Pin Holes:** 1.5 mm  
+- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
+- Soldered boards are LEGO-compatible! 🧱 
+
+---
+
+## Hardware repository
+
+Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
+
+[link placeholder]
+{/*github link za hardware*/}
+
+The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
+
+Below is an overview of the available files.  
+
+#### CAD files
+
+We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
+
+The `PANEL` files are used internally for production.  
+
+#### Schematic
+
+The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from KiCad.
+
+#### BOM (Bill of Materials)
+
+The bill of materials (BOM) is provided in two formats:  
+
+- A **standard `.csv` table**, listing all components, part numbers, and values.  
+- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
+
+#### 3D files
+
+A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.  
+
+#### Gerber files 
+
+Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
+
+- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
+- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
+- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
+- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
+- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
+- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+
+These files are ready for fabrication and can be used in PCB manufacturing.
+
+#### Compliance
+
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.  
+
+- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
+- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
+- **Safety Instructions** – Safety guidelines and precautions in English and German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
