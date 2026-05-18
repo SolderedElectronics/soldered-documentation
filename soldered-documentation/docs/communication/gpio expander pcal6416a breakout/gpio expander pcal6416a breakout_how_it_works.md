@@ -27,16 +27,16 @@ For an in-depth look at technical specifications, refer to the official PCAL6416
 
 ## How it works
 
-The **PCAL6416A GPIO Expander Breakout Board** acts like an extension for your microcontroller’s GPIO pins. Instead of directly connecting peripherals to the microcontroller, communication is handled through the **I2C interface** using the onboard **PCAL6416A chip**. The chip manages all GPIO operations internally and allows each pin to be individually configured as an input or output. :contentReference{index=1}
+The **PCAL6416A GPIO Expander Breakout Board** acts like an extension for your microcontroller’s GPIO pins. Instead of directly connecting peripherals to the microcontroller, communication is handled through the **I2C interface** using the onboard **PCAL6416A chip**. The chip manages all GPIO operations internally and allows each pin to be individually configured as an input or output. 
 
 Main points:
 
-*   The **I2C-bus interface** uses only the **SDA** and **SCL** lines for communication with the host microcontroller. :contentReference{index=2}  
-*   It provides **16 programmable GPIO pins** divided into two 8-bit ports (**P0_0 to P0_7** and **P1_0 to P1_7**). :contentReference{index=3}  
-*   Built-in **voltage-level translation** allows communication between devices operating at different voltages such as **1.8V, 2.5V, 3.3V, and 5V**. :contentReference{index=4}  
-*   Each GPIO pin can independently function as either an **input** or an **output** using the configuration registers. :contentReference{index=5}  
-*   The board includes an **interrupt output (INT)** that alerts the microcontroller whenever an input state changes. :contentReference{index=6}  
-*   Supports programmable **pull-up/pull-down resistors**, **input latching**, **interrupt masking**, and configurable **push-pull or open-drain outputs**. :contentReference{index=7}
+*   The **I2C-bus interface** uses only the **SDA** and **SCL** lines for communication with the host microcontroller.  
+*   It provides **16 programmable GPIO pins** divided into two 8-bit ports (**P0_0 to P0_7** and **P1_0 to P1_7**).  
+*   Built-in **voltage-level translation** allows communication between devices operating at different voltages such as **1.8V, 2.5V, 3.3V, and 5V**.  
+*   Each GPIO pin can independently function as either an **input** or an **output** using the configuration registers. 
+*   The board includes an **interrupt output (INT)** that alerts the microcontroller whenever an input state changes.  
+*   Supports programmable **pull-up/pull-down resistors**, **input latching**, **interrupt masking**, and configurable **push-pull or open-drain outputs**. 
   
 <InfoBox>Plus, the PCAL6416A features ESD protection, programmable drive strength, and 25mA output sink capability for directly driving LEDs.</InfoBox>
 
@@ -51,9 +51,9 @@ The PCAL6416A operates whenever stable supply voltages are applied. The chip use
 *   **VDD(I2C-bus)** powers the I2C communication interface.  
 *   **VDD(P)** powers the GPIO port circuitry.  
 
-This dual-supply design enables automatic voltage-level translation between the I2C bus and GPIO pins. :contentReference{index=8}
+This dual-supply design enables automatic voltage-level translation between the I2C bus and GPIO pins. 
 
-At power-on, all GPIO pins are automatically configured as **inputs** for safe startup operation. :contentReference{index=9}
+At power-on, all GPIO pins are automatically configured as **inputs** for safe startup operation. 
 
 ---
 
@@ -67,12 +67,12 @@ At power-on, all GPIO pins are automatically configured as **inputs** for safe s
 *   **Connect the I2C Bus**:  
     *   Connect the **SDA** pin to the SDA line of your microcontroller.  
     *   Connect the **SCL** pin to the SCL line of your microcontroller.  
-    *   Add pull-up resistors to SDA and SCL if they are not already present on the bus. :contentReference{index=10}
+    *   Add pull-up resistors to SDA and SCL if they are not already present on the bus. 
         
 *   **Optional Pins**:
     *   Connect the **INT** pin to a microcontroller interrupt input if interrupt functionality is required.  
     *   Connect the **RESET** pin to your microcontroller or pull it up to VDD(I2C-bus) for normal operation.  
-    *   Configure the **ADDR** pin to set the I2C address and allow multiple devices on the same bus. :contentReference{index=11}
+    *   Configure the **ADDR** pin to set the I2C address and allow multiple devices on the same bus. 
         
 
 This breakout board is ideal for adding extra GPIO pins to embedded systems, controlling LEDs, reading buttons and sensors, handling interrupts, and interfacing devices operating at different voltage levels.
