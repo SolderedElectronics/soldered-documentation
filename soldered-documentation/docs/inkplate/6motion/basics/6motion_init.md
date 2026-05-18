@@ -10,6 +10,10 @@ hide_title: true
 
 Let's get started with writing our first Inkplate sketch! Before doing anything with Inkplate in Arduino code, it needs to be initialized in the `setup()` function of your sketch. This page contains details on how to do that.
 
+<WarningBox>
+The onboard RAM chip can become corrupted at supply voltages below 3.25V. To prevent this, the board is software-limited and will not initialize when the supply voltage is below 3.25V. While the board may continue operating at lower voltages after initialization, a minimum voltage of 3.25V is required during startup and display refresh operations. Operating below this threshold during these stages may result in display artifacts or corrupted image rendering.
+</WarningBox>
+
 ---
 
 ## Initializing Inkplate and updating the display

@@ -76,7 +76,12 @@ Try uploading these tested examples:
 - Check the **edges of the e-paper panel** for any visible damage or cracks.
 <CenteredImage src="/img/inkplate_6_motion/flat_cable.jpg" alt="Inkplate 6 MOTION e-Paper flat cable" caption="E-paper flat cable connector" width="500px"/>
 
-#### 5. Still having issues?
+#### 5. Check battery voltage
+<WarningBox>
+The onboard RAM chip can become corrupted at supply voltages below 3.25V. To prevent this, the board is software-limited and will not initialize when the supply voltage is below 3.25V. While the board may continue operating at lower voltages after initialization, a minimum voltage of 3.25V is required during startup and display refresh operations. Operating below this threshold during these stages may result in display artifacts or corrupted image rendering.
+</WarningBox>
+
+#### 6. Still having issues?
 If none of these steps resolve the issue, **contact our support team** [**here**](https://soldered.com/contact/) with details of your setup and troubleshooting steps taken.
 </ExpandableSection>
 

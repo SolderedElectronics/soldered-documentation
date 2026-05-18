@@ -11,6 +11,10 @@ Inkplate 6 MOTION includes a **2-pin 2mm JST connector**, allowing you to connec
 
 <CenteredImage src="/img/inkplate_6_motion/6motion_charge.jpg" alt="Inkplate 6 MOTION Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
 
+
+<WarningBox>
+The onboard RAM chip can become corrupted at supply voltages below 3.25V. To prevent this, the board is software-limited and will not initialize when the supply voltage is below 3.25V. While the board may continue operating at lower voltages after initialization, a minimum voltage of 3.25V is required during startup and display refresh operations. Operating below this threshold during these stages may result in display artifacts or corrupted image rendering.
+</WarningBox>
 ---
 
 ## Connector and polarity
