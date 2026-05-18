@@ -15,6 +15,8 @@ The **GPS-GNSS BREAKOUT ZED-F9P** determines its position by receiving signals f
 ### Multi-band GNSS Reception
 Unlike standard GPS modules, the ZED-F9P uses **multi-band reception**, meaning it listens to multiple frequency bands from each satellite. This improves accuracy and reliability, especially in challenging environments like urban areas or near obstacles.
 
+<CenteredImage src="/img/zed-f9p/multiband_gnss_visualized.jpg" alt="ZED F9P" caption="ZED F9P High precision GNSS GPS module credit: support.garmin.com" width="800px"/>
+
 ### High-Precision Positioning (RTK & PPP-RTK)
 For centimeter-level accuracy, the module supports:
 - **RTK (Real-Time Kinematic)**: Uses correction data from a nearby base station to eliminate positioning errors.

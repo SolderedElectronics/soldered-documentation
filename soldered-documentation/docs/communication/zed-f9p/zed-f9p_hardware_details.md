@@ -38,7 +38,7 @@ Click [**here**](/img/zed-f9p/pinout.png) for a high-resolution image of the pin
 **SDA/SCL** pins are multiplexed with **SPI** depending on configuration of D_SEL pin.
 </InfoBox>
 
---
+---
 
 ## Dimensions
 - **Board Dimensions:** **55mm x 39mm** (2.2 x 1.55 inch)
@@ -53,7 +53,18 @@ Click [**here**](/img/zed-f9p/pinout.png) for a high-resolution image of the pin
 
 This board contains hardware jumpers. See below for their locations and functions:
 
-[Flickity Carousel placeholder]
+<FlickityCarousel
+  images={[
+    { src: '/img/zed-f9p/jp1_highlighted.jpg', alt: 'jp1', caption: 'JP1' },
+    { src: '/img/zed-f9p/jp2_highlighted.jpg', alt: 'jp2', caption: 'JP2' },
+    { src: '/img/zed-f9p/jp3_highlighted.jpg', alt: 'jp3', caption: 'JP3' },
+    { src: '/img/zed-f9p/jp4_highlighted.jpg', alt: 'jp4', caption: 'JP4' },
+    { src: '/img/zed-f9p/jp5_highlighted.jpg', alt: 'jp5', caption: 'JP5' },
+    { src: '/img/zed-f9p/jp6_highlighted.jpg', alt: 'jp6', caption: 'JP6' },
+    { src: '/img/zed-f9p/jp7_highlighted.jpg', alt: 'jp7', caption: 'JP7' },
+  ]}
+  jumpers={true}
+/>
 
 | Jumper  | Default State | Function |
 |--------|--------------|----------|

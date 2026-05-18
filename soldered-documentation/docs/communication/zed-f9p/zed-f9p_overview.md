@@ -14,7 +14,7 @@ It also supports **moving base functionality**, allowing both the base and rover
 
 This makes the module a strong choice for outdoor navigation and positioning projects where a high level of precision is required.
 
-[Image placeholder]
+<CenteredImage src="/img/zed-f9p/DSC01026.JPG" alt="ZED F9P" caption="ZED F9P High precision GNSS GPS module"/>
 
 ## Which product is this documentation for?
 
