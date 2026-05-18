@@ -39,3 +39,7 @@ Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins 
 
 
 
+[placeholder title]
+{/*pin connectioni za nulu*/}
+
+

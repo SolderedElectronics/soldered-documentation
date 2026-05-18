@@ -2575,7 +2575,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'GPIO EXPANDER PCAL6416A BREAKOUT EDIT THIS NAME',
+          label: 'PCAL6416A GPIO EXPANDER',
           items: [
             {
               type: 'doc',
