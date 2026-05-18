@@ -6,6 +6,9 @@ hide_title: False
 ---  
 The **Inputronic GRID** is an interactive module featuring a 4x4 matrix of capacitive touch pads layered over 16 individually addressable RGB LEDs. It is designed to act as a complete human-machine interface, driven by its onboard **ATtiny404 microcontroller**.
 
+<CenteredImage src="/img/inputronic-grid/grid_controller.JPG" alt="ATtiny404 microcontroller" caption="ATtiny404 microcontroller"/>
+
+
 ---
 
 ## How the Inputronic GRID works
@@ -15,11 +18,19 @@ Rather than requiring your main microcontroller to constantly read 16 separate t
 ### Capacitive Touch Scanning
 The board features 16 capacitive touch pads arranged in a 4x4 grid. The ATtiny404 continuously scans these pads using a column-scanning method to detect touches. It stores the current state of all 16 buttons (pressed or released) in its memory. When your main microcontroller requests the button states via I2C, the ATtiny instantly replies with the pre-read data.
 
-<CenteredImage src="/img/inputronic-grid/capacitive_touch.webp" alt="Capacitive touch sensing" caption="Capacitive touch sensing." />
+<CenteredImage
+  src="/img/inputronic-grid/capacitive_touch.webp"
+  alt="Capacitive touch sensing"
+  caption="Capacitive touch sensing."
+  attribution_name="PRTronic"
+  attribution_link="https://www.prtronic.at/Touch_screens/Surface_capacitive/"
+/>
 
 ### Smart LED Control
 Underneath the touch matrix are 16 **WS2812B-2020** RGB LEDs. These LEDs require strict timing to function, which can interrupt other processes on standard microcontrollers. 
 The ATtiny404 manages this LED strip internally. You simply send an I2C command telling the ATtiny which LED to light up and in what color (using standard RGB values). The firmware automatically translates grid coordinates (row, column) into the correct physical LED index (which follows a serpentine layout on the board) and updates the colors seamlessly.
+
+<CenteredImage src="/img/inputronic-grid/grid_LED.JPG" alt="WS2812B-2020" caption="WS2812B-2020 LED diode"/>
 
 ---
 
