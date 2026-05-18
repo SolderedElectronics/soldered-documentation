@@ -7,7 +7,10 @@ hide_title: False
 ## Pinout
 
 
-<ErrorBox>The pinout image for this board has not been generated yet! We're working on it!</ErrorBox>
+<CenteredImage
+  src="/img/inputronic-grid/pinout.png"
+  alt="Pinout"
+/>
 
 
 ---
