@@ -76,6 +76,9 @@ void loop()
     delay(10);
 }
 ```
+
+<CenteredImage src="/img/inputronic-bridge/bridge_example_serial_monitor.png" alt="Output from Serial Monitor" caption="Output from Serial Monitor" width="400px"/>
+
 ---
 ## Handling Keyboard and Mouse Events
 
