@@ -2997,6 +2997,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'USB-C PD Breadboard Power Supply',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/usb-c-pd-breadboard-power-supply/usb-c-pd-breadboard-power-supply-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/usb-c-pd-breadboard-power-supply/usb-c-pd-breadboard-power-supply-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/usb-c-pd-breadboard-power-supply/usb-c-pd-breadboard-power-supply-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Li-Ion Batteries',
           items: [
             {
