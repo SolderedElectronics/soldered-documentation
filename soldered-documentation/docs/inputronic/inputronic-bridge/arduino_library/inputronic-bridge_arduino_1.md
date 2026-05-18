@@ -54,7 +54,7 @@ If you prefer, you can use the standard header pins to manually connect via I2C:
 
 </InfoBox>
 
-<ErrorBox>The connection image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/inputronic-bridge/bridge_qwiic.JPG" alt="Module connection using qwiic cable" caption="Module connection using qwiic cable" />
 
 ---
 
@@ -69,7 +69,6 @@ If you have selected the UART protocol via the onboard jumpers (**JP3 & JP4**), 
 | RX                       | RX                    |
 | TX                       | TX                    |
 
-<ErrorBox>The connection image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
 ---
 
@@ -86,7 +85,6 @@ If you have selected the SPI protocol via the onboard jumpers (**JP3 & JP4**), u
 | IO12 (Standard SCK pin)  | CLK                   |
 | IO10 (Standard CS pin)   | CS                    |
 
-<ErrorBox>The connection image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
 ---
 

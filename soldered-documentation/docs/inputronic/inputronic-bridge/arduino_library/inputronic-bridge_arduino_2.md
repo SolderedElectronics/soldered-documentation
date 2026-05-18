@@ -8,7 +8,7 @@ hide_title: False
 
 This page contains a simple example of how to poll and read standard USB events (like Keyboard and Mouse inputs) from the **Inputronic BRIDGE** using the I2C protocol.
 
-<ErrorBox>The connection image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/inputronic-bridge/bridge_example.JPG" alt="Module connection using qwiic cable" caption="Module connection using qwiic cable" />
 
 ---
 

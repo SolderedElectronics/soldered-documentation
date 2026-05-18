@@ -32,7 +32,13 @@ The board is designed to adapt to your project's needs by supporting three diffe
 To optimize the performance of your main microcontroller, the Inputronic BRIDGE features an **Interrupt (INT)** output pin. 
 Instead of continuously polling the bus for new data (which wastes CPU cycles and bus bandwidth), your microcontroller can wait for the `INT` pin to trigger. The BRIDGE firmware automatically signals this pin whenever a new HID event (like a key press, mouse movement, or MIDI command) is parsed and ready to be read.
 
-<CenteredImage src="/img/inputronic-bridge/interrupt_diagram.png" alt="Interrupt driven data reading diagram" caption="Interrupt driven data reading diagram"/>
+<CenteredImage 
+    src="/img/inputronic-bridge/interrupt_diagram.png" 
+    alt="Interrupt driven data reading diagram" 
+    caption="Interrupt driven data reading diagram"  
+    attribution_name="GeeksForGeeks"
+    attribution_link="https://www.geeksforgeeks.org/operating-systems/i-o-hardware-in-operating-system/"
+/>
 
 ### Advanced Data Modes & Event Parsing
 
