@@ -20,42 +20,21 @@ Click [**here**](/img/pcal6416a/PCAL6416A_Pinout.png) for a high resolution imag
 |-----------------|----------------------|---------------------------------------------------------------------------------|
 | **INT**         | Interrupt Output     | Active-low interrupt output from the PCAL6416A used to notify the MCU of input changes. |
 | **RES**         | Reset                | Hardware reset pin for the PCAL6416A. Pull low to reset the device.            |
-| **B7**          | GPIO Port B7         | General-purpose input/output pin from Port B.                                  |
-| **B6**          | GPIO Port B6         | General-purpose input/output pin from Port B.                                  |
-| **B5**          | GPIO Port B5         | General-purpose input/output pin from Port B.                                  |
-| **B4**          | GPIO Port B4         | General-purpose input/output pin from Port B.                                  |
-| **B3**          | GPIO Port B3         | General-purpose input/output pin from Port B.                                  |
-| **B2**          | GPIO Port B2         | General-purpose input/output pin from Port B.                                  |
-| **B1**          | GPIO Port B1         | General-purpose input/output pin from Port B.                                  |
-| **B0**          | GPIO Port B0         | General-purpose input/output pin from Port B.                                  |
-| **A0**          | GPIO Port A0         | General-purpose input/output pin from Port A.                                  |
-| **A1**          | GPIO Port A1         | General-purpose input/output pin from Port A.                                  |
-| **A2**          | GPIO Port A2         | General-purpose input/output pin from Port A.                                  |
-| **A3**          | GPIO Port A3         | General-purpose input/output pin from Port A.                                  |
-| **A4**          | GPIO Port A4         | General-purpose input/output pin from Port A.                                  |
-| **A5**          | GPIO Port A5         | General-purpose input/output pin from Port A.                                  |
-| **A6**          | GPIO Port A6         | General-purpose input/output pin from Port A.                                  |
-| **A7**          | GPIO Port A7         | General-purpose input/output pin from Port A.                                  |
+| **B0 - B7**          | GPIO Port B7         | General-purpose input/output pin from Port B.                                  |
+| **A0 - A7**          | GPIO Port A0         | General-purpose input/output pin from Port A.                                  |
 | **SCL**         | I2C Clock            | Clock line for I2C communication.                                              |
 | **SDA**         | I2C Data             | Data line for I2C communication.                                               |
 | **5V**          | Supply Voltage       | Main power input for the board.                                                |
 | **GND**         | Ground               | Common ground reference for the board and connected devices.                   |
 
 <InfoBox>
-
 - **GPIO Channels**: 16 total GPIO pins (Port A and Port B)
 - **Communication Interface**: I2C
 - **Operating Voltage**: 3.3V logic compatible
 - **Interrupt Support**: Active-low interrupt output available on INT pin
-
 </InfoBox>
 
-<WarningBox>
-
-Ensure that the supply voltage and I2C logic levels are compatible with your microcontroller before connecting the board. Always connect GND between devices to establish a common signal reference.
-
-</WarningBox>
-
+<WarningBox>Ensure that the supply voltage and I2C logic levels are compatible with your microcontroller before connecting the board. Always connect GND between devices to establish a common signal reference.</WarningBox>
 
 
 
@@ -106,8 +85,7 @@ This board contains hardware jumpers; see below for their locations and function
 
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
-[link placeholder]
-{/*github link za hardware*/}
+<WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
