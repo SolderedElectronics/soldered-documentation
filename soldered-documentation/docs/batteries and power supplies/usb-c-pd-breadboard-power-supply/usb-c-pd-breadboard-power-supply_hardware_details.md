@@ -63,6 +63,18 @@ The board features the **HUSB238** integrated circuit as its core USB Power Deli
 
 ---
 
+## Datasheet
+
+For an in-depth look at technical specifications, refer to the official HUSB238 Datasheet:
+
+<QuickLink  
+  title="HUSB238 Datasheet"  
+  description="Detailed technical documentation for the HUSB238"  
+  url="https://www.hynetek.com/uploadfiles/site/219/news/c16af076-8c40-4e8d-b126-b4f9b83e86ea.pdf"  
+/>
+
+---
+
 ## Hardware repository
 
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:

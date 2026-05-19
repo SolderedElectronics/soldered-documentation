@@ -36,15 +36,3 @@ Using I2C overrides the hardware switch configurations, allowing you to read all
 ## Protection Features
 
 The controller integrates several safety mechanisms to protect your connected breadboard circuits. It includes Over-Voltage Protection and Under-Voltage Protection on the VBUS line. It also features Over-Temperature Protection to prevent overheating. The voltage rating goes up to 30V on VIN and GATE pins, ensuring safety even with 20V delivery.
-
----
-
-## Datasheet
-
-For an in-depth look at technical specifications, refer to the official HUSB238 Datasheet:
-
-<QuickLink  
-  title="HUSB238 Datasheet"  
-  description="Detailed technical documentation for the HUSB238"  
-  url="https://www.hynetek.com/uploadfiles/site/219/news/c16af076-8c40-4e8d-b126-b4f9b83e86ea.pdf"  
-/>
