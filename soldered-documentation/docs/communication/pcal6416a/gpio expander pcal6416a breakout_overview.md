@@ -26,9 +26,10 @@ The PCAL6416A communicates over the **I²C interface** and is ideal for applicat
 
 * **16 GPIO Pins**: Provides 16 programmable input/output pins divided into two 8-bit ports. 
 * **I²C Communication**: Uses a standard **I²C-bus/SMBus interface** with support for Fast-mode operation up to **400 kHz**. 
+* **Default I²C Address**: Base address is **0x20** (A0, A1, A2 all tied low), configurable up to **0x27** via address pins A0–A2.
 * **Wide Operating Voltage Range**: Operates from **1.65V to 5.5V**, compatible with both low-voltage and 5V systems. 
 * **Voltage-Level Translation**: Allows communication between devices operating at different logic voltages. 
 * **Interrupt Output (INT)**: Open-drain interrupt pin notifies the microcontroller when an input changes state. 
 * **Configurable Pull-Up/Pull-Down Resistors**: Internal 100 kΩ pull-up or pull-down resistors can be enabled individually for each pin. 
 * **Low Power Consumption**: Typical standby current as low as **1 µA to 1.5 µA**. 
-* **LED Driving Capability**: Each output pin can sink up to **25 mA**, making it suitable for directly driving LEDs. 
+* **LED Driving Capability**: Each output pin can sink up to **25 mA**, making it suitable for directly driving LEDs.

@@ -19,7 +19,7 @@ For an in-depth look at technical specifications, refer to the official PCAL6416
 <QuickLink  
   title="PCAL6416A Datasheet"  
   description="Detailed technical documentation for the PCAL6416A"  
-  url="https://look.ams-osram.com/m/7059eac7531a86fd/original/AS5600-DS000365.pdf"  
+  url="https://www.nxp.com/docs/en/data-sheet/PCAL6416A.pdf"  
 />  
  
 ---
@@ -50,28 +50,10 @@ The PCAL6416A operates whenever stable supply voltages are applied. The chip use
 *   **VDD(I2C-bus)** powers the I2C communication interface.  
 *   **VDD(P)** powers the GPIO port circuitry.  
 
-This dual-supply design enables automatic voltage-level translation between the I2C bus and GPIO pins. 
+This dual-supply design enables automatic voltage-level translation between the I2C bus and GPIO pins.
 
-At power-on, all GPIO pins are automatically configured as **inputs** for safe startup operation. 
+<WarningBox>At power-on, all GPIO pins are automatically configured as **inputs** for safe startup operation. This prevents accidental output signals during initialization. Make sure to configure each pin direction explicitly in your code before use, as relying on the default state without proper initialization may lead to unexpected behavior.</WarningBox>
 
 ---
-
-## How to Connect It?
-
-*   **Connect Power**:  
-    *   Connect the **VDD(I2C-bus)** pin to the logic voltage of your microcontroller’s I2C bus.  
-    *   Connect the **VDD(P)** pin to the voltage required by the GPIO peripherals.  
-    *   Connect the **VSS/GND** pin to the common ground.
-        
-*   **Connect the I2C Bus**:  
-    *   Connect the **SDA** pin to the SDA line of your microcontroller.  
-    *   Connect the **SCL** pin to the SCL line of your microcontroller.  
-    *   Add pull-up resistors to SDA and SCL if they are not already present on the bus. 
-        
-*   **Optional Pins**:
-    *   Connect the **INT** pin to a microcontroller interrupt input if interrupt functionality is required.  
-    *   Connect the **RESET** pin to your microcontroller or pull it up to VDD(I2C-bus) for normal operation.  
-    *   Configure the **ADDR** pin to set the I2C address and allow multiple devices on the same bus. 
-        
 
 This breakout board is ideal for adding extra GPIO pins to embedded systems, controlling LEDs, reading buttons and sensors, handling interrupts, and interfacing devices operating at different voltage levels.
