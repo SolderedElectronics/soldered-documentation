@@ -1,6 +1,6 @@
 ---
 slug: /neo-m9n-00b/how-it-works 
-title:NEO-M9N-00B - How it works
+title: NEO-M9N-00B - How it works
 sidebar_label: How it works
 id: neo-m9n-00b-how-it-works 
 hide_title: False

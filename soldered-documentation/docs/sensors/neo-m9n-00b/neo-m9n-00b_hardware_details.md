@@ -1,6 +1,7 @@
 ---
 slug: /neo-m9n-00b/hardware 
-title: Hardware details
+title: NEO-M9N-00B - Hardware details
+sidebar_label: Hardware details
 id: neo-m9n-00b-hardware 
 hide_title: False
 ---
