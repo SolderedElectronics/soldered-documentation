@@ -84,7 +84,7 @@ This board contains hardware jumpers; see below for their locations and function
 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
-
+<WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
