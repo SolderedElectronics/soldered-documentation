@@ -21,7 +21,7 @@ Click [**here**](/img/ws2812-grid/333383_pinout.png) for a high resolution image
 | **VCC** | Power | 5V Supply voltage. |
 | **DOUT** | Data Output | Serial-Data output. |
 
---
+---
 
 ## Dimensions
 - **Board Dimensions:** 80 x 80 mm (3.15 x 3.15 inch)  
