@@ -746,6 +746,10 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'sensors/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-4',
+                },
               ],
             },
           ],
