@@ -28,6 +28,8 @@ The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board desig
 />
 */}
 
+<WarningBox>The product page for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) for more information.</WarningBox>
+
 ---
 
 ## Key Features
