@@ -102,7 +102,7 @@ void loop()
 
 ## Serial Monitor output
 
-<CenteredImage src="/img/scd43/reading.png" alt="SCD43 Serial Monitor output" caption="SCD43 Serial Monitor output showing CO2, temperature, and humidity readings" width="750px" />
+<CenteredImage src="/img/scd43/reading.png" alt="SCD43 Serial Monitor output" caption="SCD43 Serial Monitor output showing CO2, temperature, and humidity readings" width="1000px" />
 
 ---
 
