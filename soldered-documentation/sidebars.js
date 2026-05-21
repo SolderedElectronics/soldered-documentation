@@ -716,7 +716,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'SCD43 EDIT THIS NAME',
+          label: 'CO2 Sensor SCD43',
           items: [
             {
               type: 'doc',
@@ -745,42 +745,6 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'sensors/scd43/arduino_library/scd43-arduino-3',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'BUTTON, LED & BUZZERBOAR',
-          items: [
-            {
-              type: 'doc',
-              id: 'sensors/button,led&buzzerboar/button,led&buzzerboar-overview',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/button,led&buzzerboar/button,led&buzzerboar-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/button,led&buzzerboar/button,led&buzzerboar-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/button,led&buzzerboar/arduino_library/button,led&buzzerboar-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/button,led&buzzerboar/arduino_library/button,led&buzzerboar-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/button,led&buzzerboar/arduino_library/button,led&buzzerboar-arduino-3',
                 },
               ],
             },
