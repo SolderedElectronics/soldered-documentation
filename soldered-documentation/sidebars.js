@@ -708,6 +708,28 @@ const sidebars = {
             { type: 'doc', id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-arduino-1' },
           ],
         },
+        {
+          type: 'category',
+          label: 'NULA W55RP20',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/nula w55rp20/nula_w55rp20-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/nula w55rp20/nula_w55rp20-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/nula w55rp20/nula_w55rp20-how-it-works',
+            },
+            {
+              type: 'doc',
+              id: 'communication/nula w55rp20/nula_w55rp20-arduino-1',
+            },
+          ],
+        },
       ],
     },
     {

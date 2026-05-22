@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\\" -Recurse -Filter \"*how_it_works*\" -ErrorAction SilentlyContinue)",
+      "Bash(Test-Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\w5500\\\\arduino_library\\\\w5500_arduino_1.md\" -PathType Leaf)",
+      "Bash(Test-Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\nula-boards\\\\max-rp2350\\\\max-rp2350_arduino_1.md\" -PathType Leaf)",
+      "Bash(powershell.exe -Command 'Rename-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp2\" -NewName \"nula w55rp20\"')",
+      "Bash(powershell.exe -Command 'Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp20\" -Recurse -Force && Write-Output \"Copy done\"')",
+      "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp20\" -Recurse -Force)",
+      "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\nula w55rp20\" -Recurse -Force)"
+    ]
+  }
+}
