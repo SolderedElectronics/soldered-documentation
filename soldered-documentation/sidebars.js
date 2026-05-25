@@ -710,7 +710,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'NULA W55RP20',
+          label: 'NULA Ether W55RP20',
           items: [
             {
               type: 'doc',
@@ -719,10 +719,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'communication/nula w55rp20/nula_w55rp20-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'communication/nula w55rp20/nula_w55rp20-how-it-works',
             },
             {
               type: 'doc',

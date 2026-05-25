@@ -7,7 +7,15 @@
       "Bash(powershell.exe -Command 'Rename-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp2\" -NewName \"nula w55rp20\"')",
       "Bash(powershell.exe -Command 'Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp20\" -Recurse -Force && Write-Output \"Copy done\"')",
       "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp20\" -Recurse -Force)",
-      "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\nula w55rp20\" -Recurse -Force)"
+      "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\nula w55rp20\" -Recurse -Force)",
+      "WebFetch(domain:developer.espressif.com)",
+      "WebFetch(domain:github.com)",
+      "Read(//c/Users/borna/Documents/espressif/developer-portal/tools/**)",
+      "Read(//c/Users/borna/Documents/espressif/developer-portal/data/authors/**)",
+      "Read(//c/Users/borna/Documents/espressif/developer-portal/content/blog/2026/05/inkplate-esp32-epaper-development-boards/**)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\borna\\Documents\\espressif\\developer-portal\\content\\blog\\2026\\05\\inkplate-esp32-epaper-development-boards"
     ]
   }
 }

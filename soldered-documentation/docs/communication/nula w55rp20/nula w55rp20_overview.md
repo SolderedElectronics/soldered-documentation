@@ -1,6 +1,6 @@
 ---
 slug: /nula_w55rp20/overview
-title: NULA W55RP20 - Overview
+title: NULA Ether W55RP20 - Overview
 sidebar_label: Overview
 id: nula_w55rp20-overview
 hide_title: True
@@ -9,15 +9,15 @@ pagination_prev: null
 
 # Overview
 
-## NULA W55RP20
+## NULA Ether W55RP20
 
-The **Soldered NULA W55RP20** is a compact development board built around the **WIZnet W55RP20** — a System-in-Package (SiP) that combines the **Raspberry Pi RP2040** dual-core microcontroller with a **hardwired W5500 TCP/IP Ethernet controller** in a single chip.
+The **Soldered NULA Ether W55RP20** is a compact development board built around the **WIZnet W55RP20** — a System-in-Package (SiP) that combines the **Raspberry Pi RP2040** dual-core microcontroller with a **hardwired W5500 TCP/IP Ethernet controller** in a single chip.
 
-This integration makes the NULA W55RP20 an ideal platform for **wired Ethernet-connected embedded systems** without the overhead of a software TCP/IP stack. The board exposes the RP2040's GPIO pins alongside a built-in **RJ45 Ethernet port**, **USB-C** for programming and power, and an **easyC (Qwiic) connector** for quick sensor integration.
+This integration makes the NULA Ether W55RP20 an ideal platform for **wired Ethernet-connected embedded systems** without the overhead of a software TCP/IP stack. The board exposes the RP2040's GPIO pins alongside a built-in **RJ45 Ethernet port**, **USB-C** for programming and power, and an **easyC (Qwiic) connector** for quick sensor integration.
 
-Whether you're building an **IoT gateway**, a **network data logger**, or an **Ethernet-enabled controller**, the NULA W55RP20 delivers reliable, deterministic networking with the familiar RP2040 ecosystem.
+Whether you're building an **IoT gateway**, a **network data logger**, or an **Ethernet-enabled controller**, the NULA Ether W55RP20 delivers reliable, deterministic networking with the familiar RP2040 ecosystem.
 
-{/* <CenteredImage src="/img/nula w55rp20/NULA_W55RP20.png" alt="NULA W55RP20" caption="NULA W55RP20 Development Board"/> */}
+{/* <CenteredImage src="/img/nula w55rp20/NULA_W55RP20.png" alt="NULA Ether W55RP20" caption="NULA Ether W55RP20 Development Board"/> */}
 
 <br></br>
 
@@ -26,7 +26,7 @@ Whether you're building an **IoT gateway**, a **network data logger**, or an **E
 ## Which product is this documentation for?
 
 {/* <QuickLink
-  title="NULA W55RP20"
+  title="NULA Ether W55RP20"
   description="RP2040 + W5500 hardwired TCP/IP Ethernet development board"
   url="https://soldered.com/product/nula-w55rp20/"
   image="/img/nula w55rp20/NULA_W55RP20.png"

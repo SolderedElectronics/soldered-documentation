@@ -1,6 +1,6 @@
 ---
 slug: /nula_w55rp20/hardware
-title: NULA W55RP20 - Hardware details
+title: NULA Ether W55RP20 - Hardware details
 sidebar_label: Hardware details
 id: nula_w55rp20-hardware
 hide_title: True
@@ -10,7 +10,7 @@ hide_title: True
 
 ## Pinout
 
-<CenteredImage src="/img/nula w55rp20/Pinout.png" alt="NULA W55RP20 pinout" caption="NULA W55RP20 Pinout Diagram"/>
+<CenteredImage src="/img/nula w55rp20/Pinout.png" alt="NULA Ether W55RP20 pinout" caption="NULA Ether W55RP20 Pinout Diagram"/>
 
 Click [**here**](/img/nula w55rp20/Pinout.png) for a high-resolution version of the pinout.
 
@@ -46,7 +46,7 @@ Click [**here**](/img/nula w55rp20/Pinout.png) for a high-resolution version of 
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic/easyC connector" width="550px" />
 
-<InfoBox>The **NULA W55RP20** includes a **Qwiic/easyC connector** for plug-and-play I²C peripherals. This allows fast prototyping with sensors, displays, and other modules without soldering.</InfoBox>
+<InfoBox>The **NULA Ether W55RP20** includes a **Qwiic/easyC connector** for plug-and-play I²C peripherals. This allows fast prototyping with sensors, displays, and other modules without soldering.</InfoBox>
 
 <QuickLink
   title="Qwiic (formerly easyC) details and specifications"
@@ -140,7 +140,7 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
 {/* Once the repo is live, replace the WarningBox above with:
 
 <QuickLink
-  title="NULA W55RP20 Hardware Design"
+  title="NULA Ether W55RP20 Hardware Design"
   description="GitHub hardware repository for this product"
   url="https://github.com/SolderedElectronics/..."
 />

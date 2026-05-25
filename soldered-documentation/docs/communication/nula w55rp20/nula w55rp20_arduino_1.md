@@ -1,6 +1,6 @@
 ---
 slug: /nula_w55rp20/arduino/getting-started
-title: NULA W55RP20 - Getting started with Arduino
+title: NULA Ether W55RP20 - Getting started with Arduino
 sidebar_label: Getting started with Arduino
 id: nula_w55rp20-arduino-1
 hide_title: True
@@ -11,8 +11,8 @@ pagination_next: null
 
 ## Arduino board definition
 
-To program your **NULA W55RP20**, use the **official Raspberry Pi core for Arduino** maintained by **Earle Philhower**.  
-This package includes support for all RP2040-based boards and can be configured to work with the NULA W55RP20.
+To program your **NULA Ether W55RP20**, use the **official Raspberry Pi core for Arduino** maintained by **Earle Philhower**.  
+This package includes support for all RP2040-based boards and can be configured to work with the NULA Ether W55RP20.
 
 <QuickLink
   title="RP2040 Arduino core"
@@ -58,7 +58,7 @@ Once installed, select your board from the menu:
 
 ## Installing the Ethernet library
 
-The NULA W55RP20 uses the **W55RP20lwIP** library. Install it from the Arduino Library Manager:
+The NULA Ether W55RP20 uses the **W55RP20lwIP** library. Install it from the Arduino Library Manager:
 
 1. Go to **Tools → Manage Libraries**
 2. Search for **W55RP20**
