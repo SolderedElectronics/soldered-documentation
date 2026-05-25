@@ -8,7 +8,7 @@ hide_title: false
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/bhi-385-smart-imu-breakout/BHI385 Smart IMU Breakout Pinout.png" alt="BHI385 Smart IMU Breakout Pinout"/>
 
 ## Pin details
 
