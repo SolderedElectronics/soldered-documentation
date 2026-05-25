@@ -65,7 +65,7 @@ This board contains hardware jumpers; see below for their locations and function
 
 ## BHI385 Smart IMU
 
-The BHI385 is a programmable Smart IMU from Bosch Sensortec that combines a 6-DOF inertial measurement unit with an internal Cortex-M3 processor. On this breakout, it is powered from the onboard 1.8V LDO and communicates with the host over a level-shifted I2C bus. Because the BHI385 has no persistent flash storage, the host must upload a firmware binary to the chip's program RAM on every power-on before any virtual sensors can be activated.
+The BHI385 is a programmable Smart IMU from Bosch Sensortec that combines a high-dynamic 6-DoF inertial measurement unit with an internal 32-bit Fuser2 microcontroller core (based on the Synopsys ARC EM4 architecture). On this breakout, it is powered from the onboard 1.8V LDO regulator and communicates with the host over a level-shifted I2C bus. Because the BHI385 features a volatile, RAM-based memory architecture with no persistent internal flash storage, the host microcontroller must upload the firmware binary to the chip's program RAM on every power-on before any virtual sensors or edge AI features can be activated.
 
 ---
 
