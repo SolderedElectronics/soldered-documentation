@@ -38,7 +38,7 @@ The BHI385 has no internal flash — the sensor firmware must be uploaded from y
 
 To get it:
 
-1. Download the **BHI385 SensorAPI** from [Bosch Sensortec's GitHub](https://github.com/boschsensortec/BHY2_SensorAPI).
+1. Download the **BHI385 SensorAPI** from [Bosch Sensortec's GitHub](https://github.com/boschsensortec/BHI385_SensorAPI).
 2. Inside the package, locate the firmware header file (e.g. `BHI385_firmware.h` or a `.fw.h` variant from the `firmware/` folder).
 3. Copy that header file into your Arduino sketch folder alongside your `.ino` file.
 4. Include it in your sketch with `#include "BHI385_firmware.h"`.

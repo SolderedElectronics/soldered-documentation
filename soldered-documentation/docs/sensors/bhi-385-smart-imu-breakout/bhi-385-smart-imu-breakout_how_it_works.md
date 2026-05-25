@@ -6,7 +6,7 @@ id: bhi-385-smart-imu-breakout-how-it-works
 hide_title: false
 ---
 
-The BHI385 is a **Smart IMU** from [**Bosch Sensortec**](https://www.bosch-sensortec.com/products/smart-sensors/bhi385/) that goes well beyond a conventional MEMS sensor. While talking to a typical accelerometer or gyroscope means reading a pair of registers, communicating with the BHI385 means uploading a firmware binary into the chip's program RAM, enabling virtual sensors by name, and reading processed motion data from a pair of hardware FIFOs. Every meaningful motion output — rotation quaternion, step count, tap event, wrist gesture — is a product of algorithms running on the chip's **internal Fuser2 processor**, not your host microcontroller.
+The BHI385 is a **Smart IMU** from [**Bosch Sensortec**](https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi385/) that goes well beyond a conventional MEMS sensor. While talking to a typical accelerometer or gyroscope means reading a pair of registers, communicating with the BHI385 means uploading a firmware binary into the chip's program RAM, enabling virtual sensors by name, and reading processed motion data from a pair of hardware FIFOs. Every meaningful motion output — rotation quaternion, step count, tap event, wrist gesture — is a product of algorithms running on the chip's **internal Fuser2 processor**, not your host microcontroller.
 
 <!-- <CenteredImage src="/img/bhi-385-smart-imu-breakout/bhi-385-smart-imu-breakout_onboard.webp" alt="BHI385 on board" caption="BHI385 Smart IMU on the breakout board" width="400px" /> -->
 
