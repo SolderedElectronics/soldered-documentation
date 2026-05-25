@@ -716,6 +716,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'BHI-385-SMART-IMU-BREAKOUT EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bhi-385-smart-imu-breakout/bhi-385-smart-imu-breakout-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bhi-385-smart-imu-breakout/bhi-385-smart-imu-breakout-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bhi-385-smart-imu-breakout/bhi-385-smart-imu-breakout-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bhi-385-smart-imu-breakout/arduino_library/bhi-385-smart-imu-breakout-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bhi-385-smart-imu-breakout/arduino_library/bhi-385-smart-imu-breakout-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bhi-385-smart-imu-breakout/arduino_library/bhi-385-smart-imu-breakout-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {
