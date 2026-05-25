@@ -716,7 +716,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'BHI-385-SMART-IMU-BREAKOUT EDIT THIS NAME',
+          label: 'BHI385 smart IMU breakout',
           items: [
             {
               type: 'doc',
