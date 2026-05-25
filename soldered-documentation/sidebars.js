@@ -708,6 +708,24 @@ const sidebars = {
             { type: 'doc', id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-arduino-1' },
           ],
         },
+        {
+          type: 'category',
+          label: 'NULA Dual ESP32-C5',
+          items: [
+            {
+              type: 'doc',
+              id: 'nula-boards/nula_dual_esp32-c5/nula_dual_esp32-c5-overview',
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/nula_dual_esp32-c5/nula_dual_esp32-c5-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/nula_dual_esp32-c5/nula_dual_esp32-c5-arduino-1',
+            },
+          ],
+        },
       ],
     },
     {
