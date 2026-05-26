@@ -1,6 +1,6 @@
 ---
 slug: /ads1219/hardware 
-title: ADS1219 - Hardware details
+title: ADS1219 24-bit ADC - Hardware details
 sidebar_label: Hardware details
 id: ads1219-hardware 
 hide_title: False
@@ -29,6 +29,7 @@ Click [**here**](/img/ads1219/pinout.png) for a high-resolution image of the pin
 | **DRDY**     | Data Ready       | Active-low interrupt output; asserts when a conversion result is ready.  |
 | **REFP**     | Reference +      | Positive terminal for external voltage reference input (optional).       |
 | **REFN**     | Reference −      | Negative terminal for external voltage reference input (optional).       |
+| **RESET**    | Reset            | Active-low reset input; pull low to reset the device.                    |
 
 <InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
 
@@ -93,12 +94,38 @@ This board contains hardware jumpers; see below for their locations and function
 
 Depending on how you configure the A0 and A1 jumpers, you can define different I2C addresses for the ADS1219:
 
-| Address | A1           | A0           |
-| :-----: | :----------: | :----------: |
-| 0x40    | Not shorted  | Not shorted  |
-| 0x41    | Not shorted  | Shorted      |
-| 0x42    | Shorted      | Not shorted  |
-| 0x43    | Shorted      | Shorted      |
+<FlickityCarousel
+  images={[
+    { src: '/img/ads1219/A0G.JPG', alt: 'A0 connected to DGND', caption: 'A0 → DGND' },
+    { src: '/img/ads1219/A0V.JPG', alt: 'A0 connected to VCC', caption: 'A0 → VCC' },
+    { src: '/img/ads1219/A0D.JPG', alt: 'A0 connected to SDA', caption: 'A0 → SDA' },
+    { src: '/img/ads1219/A0C.JPG', alt: 'A0 connected to SCL', caption: 'A0 → SCL' },
+    { src: '/img/ads1219/A1G.JPG', alt: 'A1 connected to DGND', caption: 'A1 → DGND' },
+    { src: '/img/ads1219/A1V.JPG', alt: 'A1 connected to VCC', caption: 'A1 → VCC' },
+    { src: '/img/ads1219/A1D.JPG', alt: 'A1 connected to SDA', caption: 'A1 → SDA' },
+    { src: '/img/ads1219/A1C.JPG', alt: 'A1 connected to SCL', caption: 'A1 → SCL' },
+  ]}
+  jumpers={true}
+/>
+
+| Address       | A1   | A0   |
+| :-----------: | :--: | :--: |
+| **0x40** (default) | DGND | DGND |
+| 0x41          | DGND | VCC  |
+| 0x42          | DGND | SDA  |
+| 0x43          | DGND | SCL  |
+| 0x44          | VCC  | DGND |
+| 0x45          | VCC  | VCC  |
+| 0x46          | VCC  | SDA  |
+| 0x47          | VCC  | SCL  |
+| 0x48          | SDA  | DGND |
+| 0x49          | SDA  | VCC  |
+| 0x4A          | SDA  | SDA  |
+| 0x4B          | SDA  | SCL  |
+| 0x4C          | SCL  | DGND |
+| 0x4D          | SCL  | VCC  |
+| 0x4E          | SCL  | SDA  |
+| 0x4F          | SCL  | SCL  |
 
 ---
 

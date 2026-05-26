@@ -1,6 +1,6 @@
 ---
 slug: /ads1219/overview
-title: ADS1219 - Overview
+title: ADS1219 24-bit ADC - Overview
 sidebar_label: Overview
 id: ads1219-overview 
 hide_title: False
@@ -19,7 +19,14 @@ The onboard PGA supports gains of **1, 2, 4, and 8**, and the data rate is confi
 
 ## Which product is this documentation for?
 
-<WarningBox>The product link for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) for more information.</WarningBox>
+{/* <QuickLink 
+  title="ADS1219 24-bit ADC 4-channel with PGA"
+  description="333380"
+  url="https://solde.red/333380"
+  image="/img/ads1219/ads1219.JPG" 
+/> */}
+
+<WarningBox>The product page for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) for more information.</WarningBox>
 
 ---
 
@@ -30,11 +37,11 @@ The onboard PGA supports gains of **1, 2, 4, and 8**, and the data rate is confi
 - **Programmable gain:** 1, 2, 4, 8  
 - **Data rates:** 20, 90, 330, 1000 SPS  
 - **Internal voltage reference:** 2.048 V (external reference also supported)  
-- **Communication:** I2C (address selectable via jumpers: 0x40, 0x41, 0x42, 0x43)  
+- **Communication:** I2C (16 selectable addresses via jumpers: 0x40–0x4F, default 0x40)  
 - **Operating voltage:** 3.3V (onboard regulator for 5V compatibility)  
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
 - **Mounting:** **Two mounting holes** for secure attachment  
-- **Dimensions:** **38 × 22 mm** (1.5 × 0.9 inch)  
+- **Dimensions:** **22 × 22 mm** (0.9 × 0.9 inch)  
 
 ---
 

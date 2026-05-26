@@ -1,6 +1,6 @@
 ---
 slug: /ads1219/how-it-works 
-title: ADS1219 - How it works
+title: ADS1219 24-bit ADC - How it works
 sidebar_label: How it works
 id: ads1219-how-it-works 
 hide_title: False
@@ -28,7 +28,7 @@ For an in-depth look at technical specifications, refer to the official ADS1219 
 
 The **ADS1219** is a **delta-sigma (ΔΣ) analog-to-digital converter** designed for high-resolution, low-noise measurements of small analog signals. It is especially well-suited for applications such as **load cells, bridge sensors, temperature sensing**, and any use case where signal accuracy matters more than speed.
 
-<CenteredImage src="/img/ads1219/diagram.png" alt="ADS1219 functional block diagram" caption="ADS1219 Functional Block Diagram" width="600px" />
+<CenteredImage src="/img/ads1219/flowchart.png" alt="ADS1219 Operating Flow Chart" caption="ADS1219 Operating Flow Chart (Figure 33)" width="600px" />
 
 The device accepts up to **four input channels (AIN0–AIN3)** that can be routed to the internal multiplexer in various **differential or single-ended configurations**. The selected input signal passes through a **programmable gain amplifier (PGA)**, which supports gains of **1, 2, 4, and 8**, effectively scaling the input range to make the best use of the ADC's full dynamic range.
 
@@ -47,7 +47,7 @@ The device includes a built-in **2.048 V internal voltage reference**, which eli
 
 The ADS1219 communicates with the microcontroller over the **I2C bus**. Key aspects of the protocol implementation:
 
-- **Addressing:** The device supports [**four selectable I2C addresses**](/ads1219/hardware#address-selection) (0x40–0x43), set via onboard jumpers, enabling multiple ADS1219 boards on a single bus.
+- **Addressing:** The device supports [**16 selectable I2C addresses**](/ads1219/hardware#address-selection) (0x40–0x4F), set via onboard jumpers, enabling multiple ADS1219 boards on a single bus.
 - **Commands:** The host sends single-byte command words to start a conversion, reset the device, power it down, or read the internal registers.
 - **Register access:** Configuration (gain, data rate, input channel, reference source, operating mode) is written to the **CONFIG register**. Conversion results are read from the **DATA register** as a signed 24-bit value.
 - **Data ready:** The **DRDY** pin provides a hardware interrupt signal that goes low when a fresh conversion result is available, avoiding the need to poll the bus.

@@ -746,6 +746,10 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/ads1219/arduino_library/ads1219-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'sensors/ads1219/arduino_library/ads1219-arduino-4',
+                },
               ],
             },
           ],
