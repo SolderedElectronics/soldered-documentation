@@ -740,10 +740,6 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  id: 'sensors/as5600/arduino_library/as5600-arduino-2',
-                },
-                {
-                  type: 'doc',
                   id: 'sensors/as5600/arduino_library/as5600-arduino-3',
                 },
                 {

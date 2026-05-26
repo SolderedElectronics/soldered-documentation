@@ -91,16 +91,7 @@ This board contains hardware jumpers; see below for their locations and function
 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
-[link placeholder]
-{/*github link za hardware*/}
-
-{/*
-<QuickLink 
-  title="AS5600 Hardware design" 
-  description="GitHub hardware repository for this product"
-  url="https://github.com/SolderedElectronics/Color---gesture-sensor-APDS-9960-breakout-hardware-design" 
-/> 
-*/}
+<WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 
 Below is an overview of the available files.  

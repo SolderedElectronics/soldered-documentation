@@ -1,6 +1,6 @@
 ---
 slug: /as5600/arduino/geting-started 
-title: As5600 - Getting started
+title: AS5600 - Getting started
 sidebar_label: Getting started
 id: as5600-arduino-1 
 hide_title: False
@@ -33,13 +33,9 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
 
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| Qwiic                    | Qwiic              |
+| **Dasduino CONNECTPLUS** | **AS5600** |
+| ------------------------ | ---------- |
+| Qwiic                    | Qwiic      |
 
-
-
-[placeholder title]
-{/*pin connectioni za nulu*/}
-
+<WarningBox>The connections for this board are not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the files.</WarningBox>
 

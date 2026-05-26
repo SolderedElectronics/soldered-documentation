@@ -4,7 +4,7 @@ title: AS5600 - Read Angle
 sidebar_label: Read Angle
 id: as5600-arduino-4 
 hide_title: False
-pagination_next: null
+
 ---
 
 This page contains simple examples demonstrating sensor initialization and angle measurement using the AS5600 magnetic position sensor.
@@ -39,11 +39,6 @@ void loop()
   returnDescription="A raw integer value representing the sensor measurement."
   parameters={[]}
 />
-
-| Function            | Description                           |
-| ------------------- | ------------------------------------- |
-| sensor.readAngle()  | Returns the processed angle value     |
-| sensor.rawAngle()   | Returns the raw sensor measurement    |
 
 ---
 

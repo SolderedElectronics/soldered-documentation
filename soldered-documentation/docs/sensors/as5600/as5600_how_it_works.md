@@ -1,6 +1,6 @@
 ---
 slug: /as5600/how-it-works 
-title: As5600 - How it works
+title: AS5600 - How it works
 sidebar_label: How it works
 id: as5600-how-it-works 
 hide_title: False
@@ -12,7 +12,7 @@ The AS5600 is a magnetic rotary position sensor that provides high-resolution an
 
 ## Datasheet
 
-For an in-depth look at technical specifications, refer to the official APDS-9960 Datasheet:  
+For an in-depth look at technical specifications, refer to the official AS5600 Datasheet:  
 
 <QuickLink  
   title="AS-5600 Datasheet"  
@@ -43,4 +43,3 @@ The AS5600 sensor uses **I2C** (Inter-Integrated Circuit) communication to excha
 
 As a follower device (a device that accepts or provides a digital message carrying measurement or other data, but only when specifically requested), the AS5600 has a fixed I2C address that allows a master device to read precise **rotational position and angle measurements**.
 
-The sensor continuously monitors the orientation of a nearby magnet and converts it into digital position data, enabling applications such as **motor control, rotary encoders, robotics**, and **position tracking systems**.
