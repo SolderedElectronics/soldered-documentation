@@ -30,6 +30,8 @@ The two modules can operate **independently** or work in tandem — one handling
   image="/img/nula_dual_esp32-c5/NULA_Dual_ESP32-C5.png"
 /> */}
 
+<WarningBox>The product page for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) for more information.</WarningBox>
+
 ---
 
 ## Key Features
@@ -53,4 +55,11 @@ The two modules can operate **independently** or work in tandem — one handling
   description="easyC (Qwiic) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp"
+/>
+
+<QuickLink 
+  title="Li-Ion Battery 3.7 V" 
+  description="Rechargeable 3.7 V Li-Ion battery compatible with the NULA Dual ESP32-C5's JST connector."
+  url="https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/"
+  image="/img/li-ion-battery/333284.jpg"
 />

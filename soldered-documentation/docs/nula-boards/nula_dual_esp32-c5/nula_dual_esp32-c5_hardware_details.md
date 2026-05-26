@@ -37,7 +37,7 @@ Click [**here**](/img/nula_dual_esp32-c5/Pinout.png) for a high-resolution versi
 | **IO7**     | GPIO      | General-purpose I/O, SPI/I²C/UART capable.                        |
 | **IO28**    | GPIO      | General-purpose I/O.                                               |
 
-<InfoBox>All GPIO pins operate at **3.3 V logic** — pins are **not 5 V tolerant**. Always verify signal levels before connecting external peripherals.</InfoBox>
+<InfoBox>All GPIO pins operate at **3.3 V logic** — **do not connect 5 V signals directly to GPIO pins**. Always verify signal levels before connecting external peripherals.</InfoBox>
 
 ---
 
@@ -55,12 +55,27 @@ Click [**here**](/img/nula_dual_esp32-c5/Pinout.png) for a high-resolution versi
 
 ---
 
+## JST Battery Connector
+
+The **NULA Dual ESP32-C5** includes a **JST connector** for connecting a **3.7 V Li-Ion or Li-Poly battery**, enabling fully wireless, battery-powered operation.
+
+<InfoBox>Connect a **3.7 V Li-Ion or Li-Poly battery** via the onboard JST connector. The board includes an integrated battery charging circuit — when powered via USB-C, the battery will charge automatically.</InfoBox>
+
+<QuickLink
+  title="Li-Ion Battery 3.7 V"
+  description="Rechargeable 3.7 V Li-Ion battery compatible with the NULA Dual ESP32-C5's JST connector."
+  url="https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/"
+  image="/img/li-ion-battery/333284.jpg"
+/>
+
+---
+
 ## Power Supply
 
 - **USB-C port** used for programming and power input (5 V).
 - **VBUS** exposes the raw 5 V USB supply on the pin header.
 - Onboard regulator provides a stable **3.3 V** rail for both modules and all peripherals.
-- Logic level is **3.3 V** — GPIO pins are **not 5 V tolerant**.
+- Logic level is **3.3 V** — **do not connect 5 V signals directly to GPIO pins**.
 
 ---
 

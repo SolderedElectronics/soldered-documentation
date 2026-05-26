@@ -51,7 +51,7 @@ image="/img/nula-max-rp2350/NulaMax.png"
 * **USB-C:** For programming, power, and serial communication  
 * **External 16 MHz Crystal:** Ensures accurate timing and clock stability  
 * **User Interface:** WS2812 RGB LED, RESET, BOOTSEL, and USER buttons  
-* **Logic Level:** 3.3 V GPIO (not 5 V tolerant)  
+* **Logic Level:** 3.3 V GPIO — do not connect 5 V signals directly to GPIO pins  
 * **ADC Resolution:** 12-bit ADC (0 – 3.3 V range)  
 * **Development Support:** Arduino IDE, MicroPython, C++, Rust compatible  
 * **Form Factor:** Arduino-style footprint with extended GPIO access  
