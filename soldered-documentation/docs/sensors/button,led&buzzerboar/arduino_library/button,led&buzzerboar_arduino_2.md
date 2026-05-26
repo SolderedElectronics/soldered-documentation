@@ -1,12 +1,12 @@
 ---
 slug: /button,led&buzzerboar/arduino/examples
-title: Button, LED & Buzzer Board - Button Interaction
-sidebar_label: Button Interaction
+title: Button, LED & Buzzer Board - Basic Usage
+sidebar_label: Basic Usage
 id: button,led&buzzerboar-arduino-2
 hide_title: false
 ---
 
-This page contains a simple example with function documentation on how to interact with the buttons, LEDs, and buzzer on the board.
+This page contains a simple example with function documentation on how to use the buttons, LEDs, and buzzer on the board.
 
 ---
 
@@ -38,7 +38,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="board.setAllLEDs(r, g, b)"
+  functionName="board.setAllLEDs()"
   description="Sets all onboard LEDs to the specified RGB color at once."
   returnDescription="None."
   parameters={[
@@ -49,7 +49,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="board.setBuzzer(frequency)"
+  functionName="board.setBuzzer()"
   description="Drives the buzzer at the specified frequency in Hz. Pass 0 to turn the buzzer off."
   returnDescription="None."
   parameters={[
@@ -91,7 +91,7 @@ board.setLED(2, 0, 0, 255); // LED 2 → blue
 ```
 
 <FunctionDocumentation
-  functionName="board.setLED(index, r, g, b)"
+  functionName="board.setLED()"
   description="Sets the RGB color of a single onboard LED."
   returnDescription="None."
   parameters={[
@@ -99,6 +99,27 @@ board.setLED(2, 0, 0, 255); // LED 2 → blue
     { type: 'uint8_t', name: 'r', description: 'Red channel value (0–255).' },
     { type: 'uint8_t', name: 'g', description: 'Green channel value (0–255).' },
     { type: 'uint8_t', name: 'b', description: 'Blue channel value (0–255).' },
+  ]}
+/>
+
+---
+
+## Controlling the buzzer
+
+Use `setBuzzer()` to drive the buzzer at a specific frequency in Hz. Pass `0` to turn it off:
+
+```cpp
+board.setBuzzer(1000); // Play a 1 kHz tone
+delay(500);
+board.setBuzzer(0);    // Turn the buzzer off
+```
+
+<FunctionDocumentation
+  functionName="board.setBuzzer()"
+  description="Drives the buzzer at the specified frequency in Hz. Pass 0 to turn the buzzer off."
+  returnDescription="None."
+  parameters={[
+    { type: 'uint16_t', name: 'frequency', description: 'Frequency in Hz (e.g. 1000 for 1 kHz). 0 turns the buzzer off.' },
   ]}
 />
 
@@ -146,6 +167,6 @@ void loop()
 
 <QuickLink
   title="ButtonInteraction.ino"
-  description="Full button interaction example for the Soldered Button, LED & Buzzer Board"
+  description="Full basic usage example for the Soldered Button, LED & Buzzer Board"
   url="https://github.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/blob/main/examples/ButtonInteraction/ButtonInteraction.ino"
 />

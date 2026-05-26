@@ -9,7 +9,7 @@ pagination_prev: null
 
 ## Button, LED & Buzzer Board
 
-The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board designed for quick prototyping and learning. It combines three essential components on a single board: a **tactile push button** for digital input, an **LED** for visual feedback, and a **buzzer** for audio output. This board is an ideal starting point for beginners exploring digital I/O, and a handy utility board for any project that needs simple user interaction without extra wiring.
+The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board designed for quick prototyping and learning. It combines three essential components on a single board: a **tactile push button** for digital input, an **LED** for visual feedback, and a **buzzer** for audio output. The board is **Qwiic compatible**, making it easy to connect to any Qwiic-enabled microcontroller without soldering. This board is an ideal starting point for beginners exploring digital I/O, and a handy utility board for any project that needs simple user interaction without extra wiring.
 
 {/* PLACEHOLDER: Add product image here. Place the image at /static/img/button-led-buzzerboard/333182.jpg and replace this comment with:
 <CenteredImage src="/img/button-led-buzzerboard/333182.jpg" alt="Button, LED & Buzzer Board" caption="Button, LED & Buzzer Board" />
@@ -39,6 +39,8 @@ The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board desig
 - **Button:** Tactile push button with digital output
 - **LED:** Onboard LED for visual feedback
 - **Buzzer:** Passive buzzer for audio output
+- **Microcontroller:** ATtiny404
+- **Communication:** I2C (Qwiic compatible), default I2C address: **0x30**
 - **Mounting:** **Two mounting holes** for secure attachment
 - **Dimensions:** 38 × 22 mm (1.5 × 0.9 inch)
 
