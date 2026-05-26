@@ -10,12 +10,6 @@ This page contains an example of reading GPS position alongside date and time da
 
 ---
 
-## Connections for this example
-
-<!--
-<CenteredImage src="/img/neo-m9n-00b/connections.png" alt="Connections" />
--->
-
 ---
 
 ## Initialization

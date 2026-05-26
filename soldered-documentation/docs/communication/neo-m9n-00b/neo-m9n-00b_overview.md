@@ -13,30 +13,16 @@ The **GPS Breakout NEO-M9N-00B** is a high-performance GNSS positioning module d
 The breakout communicates using **UART and I2C interfaces** and is designed for seamless **Qwiic (formerly easyC) connectivity**, allowing quick plug-and-play integration without soldering. It is suitable for applications such as robotics, navigation systems, drones, asset tracking, and IoT projects requiring precise global positioning data.
 
 ## Key Features
-- **Multi-Constellation GNSS**
-  - GPS, GLONASS, Galileo, BeiDou support
-  - Fast and reliable positioning
 
-- **High Accuracy Navigation**
-  - Real-time position and timing data
-  - Configurable update rates
-
-- **Communication Interfaces**
-  - UART and I2C support
-  - I2C address: **0x42**
-
-- **Operating Voltage**
-  - 3.3V logic level
-  - 5V compatible onboard circuitry
-
-- **Connector**
-  - 2 × **Qwiic (formerly easyC) ports**
-
-- **Applications**
-  - Robotics
-  - Drones
-  - Tracking systems
-  - IoT projects
+- **GNSS constellations:** GPS, GLONASS, Galileo, BeiDou (concurrent reception)
+- **Position accuracy:** 2.5 m CEP horizontal accuracy
+- **Data output:** NMEA 0183 and UBX binary protocols
+- **Timepulse:** Configurable 1PPS output synchronized to GNSS time
+- **Communication:** UART and I2C (default I2C address: **0x42**)
+- **Operating voltage:** 3.3V (onboard regulator for 5V compatibility)
+- **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)
+- **Mounting:** **Two mounting holes** for secure attachment
+- **Dimensions:** **38 × 54 mm** (1.5 × 2.1 inch)
 
 ---
 

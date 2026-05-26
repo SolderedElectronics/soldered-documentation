@@ -76,8 +76,8 @@ This board contains hardware jumpers; see below for their locations and function
 | **JP1** | **NO** (Normally open) | Enables the onboard power LED when shorted. |
 | **JP2** | **NC** (Normally closed) | Connects SDA/SCL pull-up resistors to 3.3V for I2C communication. |
 | **JP3** | **NO** (Normally open) | Enables the PPS status LED when shorted. |
-| **JP4** | **NC** (Normally closed) | Sets the D_SEL pin to its default configuration state. |
-| **JP5** | **NC** (Normally closed) | Connects the backup battery circuit to the GNSS module. |
+| **JP4** | **NC** (Normally closed) | Communication mode selection. |
+| **JP5** | **NO** (Normally open) | Antenna RF filter connection. |
 
 ---
 

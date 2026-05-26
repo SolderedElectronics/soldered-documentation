@@ -20,7 +20,7 @@ For an in-depth look at technical specifications, refer to the official NEO-M9N-
 <QuickLink
   title="NEO-M9N-00B Datasheet"
   description="Detailed technical documentation for the NEO-M9N-00B GNSS module"
-  url="https://www.u-blox.com/sites/default/files/NEO-M9N_DataSheet_UBX-19014285.pdf"
+  url="https://www.u-blox.com/sites/default/files/NEO-M9N-00B_DataSheet_UBX-19014285.pdf"
 />
 
 ---

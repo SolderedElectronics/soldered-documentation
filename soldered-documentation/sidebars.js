@@ -716,46 +716,6 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'NEO-M9N-00B',
-          items: [
-            {
-              type: 'doc',
-              id: 'sensors/neo-m9n-00b/neo-m9n-00b-overview',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/neo-m9n-00b/neo-m9n-00b-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'sensors/neo-m9n-00b/neo-m9n-00b-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'sensors/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-3',
-                },
-                {
-                  type: 'doc',
-                  id: 'sensors/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-4',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
           label: 'INA219 Voltage & current sensor',
           items: [
             {
@@ -2840,6 +2800,46 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'communication/gnss-gps/arduino_library/gnss-gps-arduino-4',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'NEO-M9N-00B GNSS Module',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/neo-m9n-00b/neo-m9n-00b-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/neo-m9n-00b/neo-m9n-00b-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/neo-m9n-00b/neo-m9n-00b-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-4',
                 },
               ],
             },

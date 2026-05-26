@@ -10,10 +10,6 @@ This page contains a simple example of reading GPS position data (latitude, long
 
 ---
 
-## Connections for this example
-<!--
-<CenteredImage src="/img/neo-m9n-00b/connections.png" alt="Connections" />
--->
 ---
 
 ## Initialization
