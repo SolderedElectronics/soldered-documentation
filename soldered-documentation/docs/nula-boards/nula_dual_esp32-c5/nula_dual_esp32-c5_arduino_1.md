@@ -73,6 +73,6 @@ void loop() {
 }
 ```
 
-Open the **Serial Monitor** at **115200 baud** — you should see the hello message printed once per second.
+Open the **Serial Monitor** at **115200 baud** - you should see the hello message printed once per second.
 
 <InfoBox>Upload this sketch to each module separately to verify both are working. Each module has its own USB port selection in **Tools → Port**.</InfoBox>

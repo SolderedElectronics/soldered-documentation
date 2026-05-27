@@ -37,7 +37,7 @@ Click [**here**](/img/nula_dual_esp32-c5/Pinout.png) for a high-resolution versi
 | **IO7**     | GPIO      | General-purpose I/O, SPI/I²C/UART capable.                        |
 | **IO28**    | GPIO      | General-purpose I/O.                                               |
 
-<InfoBox>All GPIO pins operate at **3.3 V logic** — **do not connect 5 V signals directly to GPIO pins**. Always verify signal levels before connecting external peripherals.</InfoBox>
+<InfoBox>All GPIO pins operate at **3.3 V logic** - **do not connect 5 V signals directly to GPIO pins**. Always verify signal levels before connecting external peripherals.</InfoBox>
 
 ---
 
@@ -59,7 +59,7 @@ Click [**here**](/img/nula_dual_esp32-c5/Pinout.png) for a high-resolution versi
 
 The **NULA Dual ESP32-C5** includes a **JST connector** for connecting a **3.7 V Li-Ion or Li-Poly battery**, enabling fully wireless, battery-powered operation.
 
-<InfoBox>Connect a **3.7 V Li-Ion or Li-Poly battery** via the onboard JST connector. The board includes an integrated battery charging circuit — when powered via USB-C, the battery will charge automatically.</InfoBox>
+<InfoBox>Connect a **3.7 V Li-Ion or Li-Poly battery** via the onboard JST connector. The board includes an integrated battery charging circuit - when powered via USB-C, the battery will charge automatically.</InfoBox>
 
 <QuickLink
   title="Li-Ion Battery 3.7 V"
@@ -75,7 +75,7 @@ The **NULA Dual ESP32-C5** includes a **JST connector** for connecting a **3.7 V
 - **USB-C port** used for programming and power input (5 V).
 - **VBUS** exposes the raw 5 V USB supply on the pin header.
 - Onboard regulator provides a stable **3.3 V** rail for both modules and all peripherals.
-- Logic level is **3.3 V** — **do not connect 5 V signals directly to GPIO pins**.
+- Logic level is **3.3 V** - **do not connect 5 V signals directly to GPIO pins**.
 
 ---
 
@@ -157,13 +157,13 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.
-- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.
+- **Copper layers** (`.Cu.gbr`) - Defines the traces and pads on the board.
+- **Solder mask layers** (`.Mask.gbr`) - Specifies the protective solder mask.
+- **Silkscreen layers** (`.Silkscreen.gbr`) - Contains text and component markings.
+- **Paste layers** (`.Paste.gbr`) - Used for stencil fabrication in SMD assembly.
+- **Drill files** (`.drl`) - Provides drilling coordinates for vias and holes.
+- **Board outline** (`.Edge_Cuts.gbr`) - Defines the shape of the PCB.
+- **Gerber job file** (`.gbrjob`) - Describes the set of Gerber files used for production.
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
@@ -171,7 +171,8 @@ These files are ready for fabrication and can be used in PCB manufacturing.
 
 The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
-- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.
-- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+- **CE** - Certification document confirming compliance with EU safety, health, and environmental requirements.
+- **UKCA** - UKCA (UK Conformity Assessed) certification for the UK market.
+- **Safety Instructions** - Safety guidelines and precautions in English and in German.
+- **Info.txt** - Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+
