@@ -21,7 +21,7 @@ If you are connecting the sensor using standard I2C pins on your microcontroller
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the ADS1219 is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller's I2C bus.
 
 #### Check for conflicting I2C addresses
-If you have multiple I2C devices on the same bus, ensure none share the same address. The ADS1219 default address is **0x40** — verify no other device is using this address, or reconfigure the address via the onboard jumpers.
+If you have multiple I2C devices on the same bus, ensure none share the same address. The ADS1219 default address is **0x40** - verify no other device is using this address, or reconfigure the address via the onboard jumpers.
 
 #### Try reinitializing
 If the sensor fails to initialize on the first attempt, try calling `adc.begin()` again or resetting your microcontroller. Some initialization issues are resolved by a simple reboot.
@@ -31,7 +31,7 @@ If the sensor fails to initialize on the first attempt, try calling `adc.begin()
 <ExpandableSection title="My readings are always 0 or incorrect!">
 
 #### Check the input wiring
-Verify that your signal source is correctly connected to the AIN pins. For single-ended measurements, ensure the signal is connected to the correct channel (AIN0–AIN3) and that GND is shared between the signal source and the board.
+Verify that your signal source is correctly connected to the AIN pins. For single-ended measurements, ensure the signal is connected to the correct channel (AIN0-AIN3) and that GND is shared between the signal source and the board.
 
 #### Check the gain setting
 If the input signal is larger than the selected gain range allows, the ADC will saturate and return the maximum or minimum value. For example, with `ADS1219_GAIN_1` and the internal 2.048 V reference, the input must stay within ±2.048 V. Reduce the gain or use a lower reference voltage accordingly.
@@ -50,7 +50,7 @@ If you are using an external voltage reference (`ADS1219_VREF_EXTERNAL`), make s
 <ExpandableSection title="My continuous mode stops producing new results!">
 
 #### Check the data rate and polling speed
-In continuous mode, new results are produced at the configured data rate (e.g. 90 SPS = one result every ~11 ms). If your loop is faster than the data rate, `isDataReady()` will return false until the next sample is ready — this is normal behaviour.
+In continuous mode, new results are produced at the configured data rate (e.g. 90 SPS = one result every ~11 ms). If your loop is faster than the data rate, `isDataReady()` will return false until the next sample is ready - this is normal behaviour.
 
 #### Verify the DRDY pin connection
 If you are using the DRDY interrupt pin instead of polling, ensure it is connected to a valid digital input on your microcontroller and that the pin is configured as `INPUT` or `INPUT_PULLUP` in your code.
@@ -58,3 +58,15 @@ If you are using the DRDY interrupt pin instead of polling, ensure it is connect
 </ExpandableSection>
 
 <InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+
+
+
+
+
+
+
+
+
+
+
+

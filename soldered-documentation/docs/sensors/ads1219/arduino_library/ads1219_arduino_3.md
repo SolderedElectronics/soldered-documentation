@@ -87,7 +87,7 @@ void setup()
   description="Selects which input channel or differential pair is routed to the ADC"
   returnDescription="None"
   parameters={[
-  { type: 'uint8_t', name: 'mux', description: "Input selection: ADS1219_MUX_SINGLE_0–3 for single-ended channels, ADS1219_MUX_DIFF_0_1 / ADS1219_MUX_DIFF_2_3 for differential pairs" },
+  { type: 'uint8_t', name: 'mux', description: "Input selection: ADS1219_MUX_SINGLE_0-3 for single-ended channels, ADS1219_MUX_DIFF_0_1 / ADS1219_MUX_DIFF_2_3 for differential pairs" },
   ]}
 />
 
@@ -176,3 +176,14 @@ You can find the full sketch below:
   description="An example of reading ADC values using the interrupt (DRDY) pin with the ADS1219"  
   url="https://github.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/blob/main/examples/Interrupt/Interrupt.ino"  
 />
+
+
+
+
+
+
+
+
+
+
+

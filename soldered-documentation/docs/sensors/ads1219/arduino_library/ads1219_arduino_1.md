@@ -32,10 +32,6 @@ To install the Arduino library, use the **Arduino library manager** or download 
 
 ## Connections
 
-Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
-
-| **Dasduino CONNECTPLUS** | **ADS1219 Board** |
-| ------------------------ | ----------------- |
-| Qwiic                    | Qwiic             |
-
-<WarningBox>The connections for this board are not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the files.</WarningBox>
+| **NULA Deepsleep** | **ADS1219 Board** |
+| ------------------ | ----------------- |
+| Qwiic              | Qwiic             |

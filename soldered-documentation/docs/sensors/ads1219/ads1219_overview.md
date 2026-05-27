@@ -37,7 +37,7 @@ The onboard PGA supports gains of **1, 2, 4, and 8**, and the data rate is confi
 - **Programmable gain:** 1, 2, 4, 8  
 - **Data rates:** 20, 90, 330, 1000 SPS  
 - **Internal voltage reference:** 2.048 V (external reference also supported)  
-- **Communication:** I2C (16 selectable addresses via jumpers: 0x40–0x4F, default 0x40)  
+- **Communication:** I2C (16 selectable addresses via jumpers: 0x40-0x4F, default 0x40)  
 - **Operating voltage:** 3.3V (onboard regulator for 5V compatibility)  
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
 - **Mounting:** **Two mounting holes** for secure attachment  
@@ -53,3 +53,9 @@ The onboard PGA supports gains of **1, 2, 4, and 8**, and the data rate is confi
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
 />
+
+
+
+
+
+

@@ -30,14 +30,14 @@ The **ADS1219** is a **delta-sigma (ΔΣ) analog-to-digital converter** designed
 
 <CenteredImage src="/img/ads1219/flowchart.png" alt="ADS1219 Operating Flow Chart" caption="ADS1219 Operating Flow Chart (Figure 33)" width="600px" />
 
-The device accepts up to **four input channels (AIN0–AIN3)** that can be routed to the internal multiplexer in various **differential or single-ended configurations**. The selected input signal passes through a **programmable gain amplifier (PGA)**, which supports gains of **1, 2, 4, and 8**, effectively scaling the input range to make the best use of the ADC's full dynamic range.
+The device accepts up to **four input channels (AIN0-AIN3)** that can be routed to the internal multiplexer in various **differential or single-ended configurations**. The selected input signal passes through a **programmable gain amplifier (PGA)**, which supports gains of **1, 2, 4, and 8**, effectively scaling the input range to make the best use of the ADC's full dynamic range.
 
 After amplification, the signal enters the **delta-sigma modulator**, which oversamples the input at a high internal clock rate and produces a 1-bit data stream. A **digital decimation filter** processes this stream and outputs a final 24-bit result at the selected data rate (**20, 90, 330, or 1000 SPS**). This oversampling and filtering approach is what gives the ADS1219 its exceptional noise rejection and resolution.
 
 The ADS1219 supports two operating modes:
 
-- **Single-shot mode** — performs one conversion when triggered, then enters a low-power state. Ideal for battery-powered devices with infrequent measurements.
-- **Continuous-conversion mode** — performs conversions back-to-back at the programmed data rate. The **DRDY** pin asserts low when each new result is ready, allowing the microcontroller to respond via interrupt instead of polling.
+- **Single-shot mode** - performs one conversion when triggered, then enters a low-power state. Ideal for battery-powered devices with infrequent measurements.
+- **Continuous-conversion mode** - performs conversions back-to-back at the programmed data rate. The **DRDY** pin asserts low when each new result is ready, allowing the microcontroller to respond via interrupt instead of polling.
 
 The device includes a built-in **2.048 V internal voltage reference**, which eliminates the need for external components in most applications. An **external reference** can also be applied via the REFP and REFN pins for use cases that require a custom reference voltage.
 
@@ -47,8 +47,14 @@ The device includes a built-in **2.048 V internal voltage reference**, which eli
 
 The ADS1219 communicates with the microcontroller over the **I2C bus**. Key aspects of the protocol implementation:
 
-- **Addressing:** The device supports [**16 selectable I2C addresses**](/ads1219/hardware#address-selection) (0x40–0x4F), set via onboard jumpers, enabling multiple ADS1219 boards on a single bus.
+- **Addressing:** The device supports [**16 selectable I2C addresses**](/ads1219/hardware#address-selection) (0x40-0x4F), set via onboard jumpers, enabling multiple ADS1219 boards on a single bus.
 - **Commands:** The host sends single-byte command words to start a conversion, reset the device, power it down, or read the internal registers.
 - **Register access:** Configuration (gain, data rate, input channel, reference source, operating mode) is written to the **CONFIG register**. Conversion results are read from the **DATA register** as a signed 24-bit value.
 - **Data ready:** The **DRDY** pin provides a hardware interrupt signal that goes low when a fresh conversion result is available, avoiding the need to poll the bus.
 - **Clock speed:** The device supports standard (100 kHz) and fast (400 kHz) I2C clock speeds.
+
+
+
+
+
+
