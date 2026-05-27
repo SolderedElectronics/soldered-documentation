@@ -42,9 +42,9 @@ void setup()
   description="Sets all onboard LEDs to the specified RGB color at once."
   returnDescription="None."
   parameters={[
-    { type: 'uint8_t', name: 'r', description: 'Red channel value (0–255).' },
-    { type: 'uint8_t', name: 'g', description: 'Green channel value (0–255).' },
-    { type: 'uint8_t', name: 'b', description: 'Blue channel value (0–255).' },
+    { type: 'uint8_t', name: 'r', description: 'Red channel value (0-255).' },
+    { type: 'uint8_t', name: 'g', description: 'Green channel value (0-255).' },
+    { type: 'uint8_t', name: 'b', description: 'Blue channel value (0-255).' },
   ]}
 />
 
@@ -96,9 +96,9 @@ board.setLED(2, 0, 0, 255); // LED 2 → blue
   returnDescription="None."
   parameters={[
     { type: 'uint8_t', name: 'index', description: 'LED index: 0, 1, or 2.' },
-    { type: 'uint8_t', name: 'r', description: 'Red channel value (0–255).' },
-    { type: 'uint8_t', name: 'g', description: 'Green channel value (0–255).' },
-    { type: 'uint8_t', name: 'b', description: 'Blue channel value (0–255).' },
+    { type: 'uint8_t', name: 'r', description: 'Red channel value (0-255).' },
+    { type: 'uint8_t', name: 'g', description: 'Green channel value (0-255).' },
+    { type: 'uint8_t', name: 'b', description: 'Blue channel value (0-255).' },
   ]}
 />
 
@@ -127,7 +127,7 @@ board.setBuzzer(0);    // Turn the buzzer off
 
 ## Full example
 
-Press any button to light its corresponding LED and sound the buzzer at a unique frequency. Multiple buttons can be pressed simultaneously — the buzzer plays the highest button's frequency.
+Press any button to light its corresponding LED and sound the buzzer at a unique frequency. Multiple buttons can be pressed simultaneously - the buzzer plays the highest button's frequency.
 
 ```cpp
 #include "ButtonLedBuzzerBoard-SOLDERED.h"
@@ -170,3 +170,7 @@ void loop()
   description="Full basic usage example for the Soldered Button, LED & Buzzer Board"
   url="https://github.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/blob/main/examples/ButtonInteraction/ButtonInteraction.ino"
 />
+
+
+
+

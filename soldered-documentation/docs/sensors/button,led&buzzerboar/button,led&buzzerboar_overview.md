@@ -34,7 +34,7 @@ The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board desig
 
 ## Key Features
 
-{/* PLACEHOLDER: Verify and update the specs below from the datasheet/schematic — voltage, exact buzzer type (active/passive), LED color, board dimensions. */}
+{/* PLACEHOLDER: Verify and update the specs below from the datasheet/schematic - voltage, exact buzzer type (active/passive), LED color, board dimensions. */}
 - **Voltage:** 3.3V / 5V
 - **Button:** Tactile push button with digital output
 - **LED:** Onboard LED for visual feedback
@@ -54,3 +54,4 @@ The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board desig
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
 />
+

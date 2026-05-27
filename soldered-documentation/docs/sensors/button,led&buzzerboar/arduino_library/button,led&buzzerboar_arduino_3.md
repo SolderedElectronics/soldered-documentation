@@ -44,7 +44,7 @@ Verify that the button is not stuck or damaged. Press it firmly and check if the
 <ExpandableSection title="LEDs are not lighting up!">
 
 #### Check RGB values
-Ensure you are passing non-zero values to `setLED()` or `setAllLEDs()`. A call like `board.setLED(0, 0, 0, 0)` turns the LED off — double-check that at least one channel value is greater than 0.
+Ensure you are passing non-zero values to `setLED()` or `setAllLEDs()`. A call like `board.setLED(0, 0, 0, 0)` turns the LED off - double-check that at least one channel value is greater than 0.
 
 #### Check the LED index
 `setLED()` accepts an index of 0, 1, or 2. Passing an out-of-range index will have no effect. Verify that you are targeting the correct LED.
@@ -68,3 +68,8 @@ The buzzer is controlled through the onboard ATTiny404. If `board.begin()` did n
 </ExpandableSection>
 
 <InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+
+
+
+
+

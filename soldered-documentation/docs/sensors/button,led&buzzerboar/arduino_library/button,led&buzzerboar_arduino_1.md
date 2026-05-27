@@ -32,9 +32,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ## Connections
 
-Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
-
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| Qwiic                    | Qwiic              |
+| **NULA Deepsleep** | **Button, LED & Buzzer Board** |
+| ------------------ | ------------------------------ |
+| Qwiic              | Qwiic                          |
 

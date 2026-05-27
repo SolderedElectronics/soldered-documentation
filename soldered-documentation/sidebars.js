@@ -716,7 +716,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'BUTTON, LED & BUZZERBOAR',
+          label: 'Button, LED & Buzzer Board',
           items: [
             {
               type: 'doc',
