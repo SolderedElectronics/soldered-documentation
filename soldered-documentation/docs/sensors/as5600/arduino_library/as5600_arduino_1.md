@@ -31,7 +31,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ## Connections
 
-| **NULA Mini** | **AS5600** |
-| ------------- | ---------- |
-| Qwiic         | Qwiic      |
+| **NULA Deepsleep** | **AS5600** |
+| ------------------ | ---------- |
+| Qwiic              | Qwiic      |
 
