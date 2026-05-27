@@ -32,4 +32,6 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ## Connections
 
-<WarningBox>Connection diagrams for this board are not yet available. We're working on it — check back soon!</WarningBox>
+| **NULA Deepsleep** | **SCD43** |
+| ------------------ | --------- |
+| Qwiic              | Qwiic     |
