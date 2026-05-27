@@ -164,35 +164,35 @@ void loop()
 <FunctionDocumentation
   functionName="myGNSS.getMonth()"
   description="Reads the current month from the GNSS module's UTC time"
-  returnDescription="uint8_t value, the current month (1–12)"
+  returnDescription="uint8_t value, the current month (1-12)"
   parameters={[]}
 />
 
 <FunctionDocumentation
   functionName="myGNSS.getDay()"
   description="Reads the current day from the GNSS module's UTC time"
-  returnDescription="uint8_t value, the current day of the month (1–31)"
+  returnDescription="uint8_t value, the current day of the month (1-31)"
   parameters={[]}
 />
 
 <FunctionDocumentation
   functionName="myGNSS.getHour()"
   description="Reads the current hour from the GNSS module's UTC time"
-  returnDescription="uint8_t value, the current hour (0–23)"
+  returnDescription="uint8_t value, the current hour (0-23)"
   parameters={[]}
 />
 
 <FunctionDocumentation
   functionName="myGNSS.getMinute()"
   description="Reads the current minute from the GNSS module's UTC time"
-  returnDescription="uint8_t value, the current minute (0–59)"
+  returnDescription="uint8_t value, the current minute (0-59)"
   parameters={[]}
 />
 
 <FunctionDocumentation
   functionName="myGNSS.getSecond()"
   description="Reads the current second from the GNSS module's UTC time"
-  returnDescription="uint8_t value, the current second (0–59)"
+  returnDescription="uint8_t value, the current second (0-59)"
   parameters={[]}
 />
 
