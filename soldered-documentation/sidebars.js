@@ -714,15 +714,15 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'communication/nula w55rp20/nula_w55rp20-overview',
+              id: 'nula-boards/nula w55rp20/nula_w55rp20-overview',
             },
             {
               type: 'doc',
-              id: 'communication/nula w55rp20/nula_w55rp20-hardware',
+              id: 'nula-boards/nula w55rp20/nula_w55rp20-hardware',
             },
             {
               type: 'doc',
-              id: 'communication/nula w55rp20/nula_w55rp20-arduino-1',
+              id: 'nula-boards/nula w55rp20/nula_w55rp20-arduino-1',
             },
           ],
         },

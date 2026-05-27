@@ -24,32 +24,32 @@ Click [**here**](/img/nula w55rp20/Pinout.png) for a high-resolution version of 
 | **VBUS**    | Power   | 5 V from USB-C connector.                                                   |
 | **GND**     | Ground  | Common ground reference.                                                    |
 | **RUN**     | Control | Active-low reset input.                                                     |
-| **GP0–GP15**| GPIO    | General-purpose I/O with peripheral support (UART, SPI, I²C, PWM).         |
-| **GP16**    | SPI/INT | Internally connected to W5500 — **MISO** (do not use as general GPIO).      |
-| **GP17**    | SPI/CS  | Internally connected to W5500 — **CS** (do not use as general GPIO).        |
-| **GP18**    | SPI/CLK | Internally connected to W5500 — **SCLK** (do not use as general GPIO).      |
-| **GP19**    | SPI/TX  | Internally connected to W5500 — **MOSI** (do not use as general GPIO).      |
-| **GP20**    | Control | Internally connected to W5500 — **RST**.                                    |
-| **GP21**    | Control | Internally connected to W5500 — **INT**.                                    |
+| **GP0-GP15**| GPIO    | General-purpose I/O with peripheral support (UART, SPI, I²C, PWM).         |
+| **GP16**    | SPI/INT | Internally connected to W5500 - **MISO** (do not use as general GPIO).      |
+| **GP17**    | SPI/CS  | Internally connected to W5500 - **CS** (do not use as general GPIO).        |
+| **GP18**    | SPI/CLK | Internally connected to W5500 - **SCLK** (do not use as general GPIO).      |
+| **GP19**    | SPI/TX  | Internally connected to W5500 - **MOSI** (do not use as general GPIO).      |
+| **GP20**    | Control | Internally connected to W5500 - **RST**.                                    |
+| **GP21**    | Control | Internally connected to W5500 - **INT**.                                    |
 | **GP22**    | GPIO    | General-purpose I/O with peripheral support.                                |
 | **GP26**    | ADC/GPIO| ADC channel 0 / General-purpose I/O.                                       |
 | **GP27**    | ADC/GPIO| ADC channel 1 / General-purpose I/O.                                       |
 | **GP28**    | ADC/GPIO| ADC channel 2 / General-purpose I/O.                                       |
 
-<InfoBox>**GP16–GP21** are internally routed to the W5500 Ethernet controller inside the W55RP20 SiP. Avoid using them for other purposes — doing so will interfere with Ethernet communication.</InfoBox>
+<InfoBox>**GP16-GP21** are internally routed to the W5500 Ethernet controller inside the W55RP20 SiP. Avoid using them for other purposes - doing so will interfere with Ethernet communication.</InfoBox>
 
 <InfoBox>The board uses a **dual-row pin header layout**: the **inner rows** have **female (socket) pins** and the **outer rows** have **male (pin) headers**. This allows the board to be used standalone with jumper wires on the outer male pins, or stacked/connected via the inner female pins.</InfoBox>
 
 ---
 
-## Qwiic / easyC Connector
+## Qwiic Connector
 
-<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic/easyC connector" width="550px" />
+<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic connector" width="550px" />
 
-<InfoBox>The **NULA Ether W55RP20** includes a **Qwiic/easyC connector** for plug-and-play I²C peripherals. This allows fast prototyping with sensors, displays, and other modules without soldering.</InfoBox>
+<InfoBox>The **NULA Ether W55RP20** includes a **Qwiic connector** for plug-and-play I²C peripherals. This allows fast prototyping with sensors, displays, and other modules without soldering.</InfoBox>
 
 <QuickLink
-  title="Qwiic (formerly easyC) details and specifications"
+  title="Qwiic details and specifications"
   description="Learn more about Qwiic hardware compatibility and connector pinout."
   url="/qwiic"
 />
@@ -61,7 +61,7 @@ Click [**here**](/img/nula w55rp20/Pinout.png) for a high-resolution version of 
 - **USB-C port** used for programming and power input (5 V).
 - **VBUS** exposes the raw 5 V USB supply on the pin header.
 - Onboard regulator provides a stable **3.3 V** rail for logic and peripherals.
-- Logic level is **3.3 V** — GPIO pins are **not 5 V tolerant**.
+- Logic level is **3.3 V** - GPIO pins are **not 5 V tolerant**.
 
 ---
 
@@ -106,7 +106,7 @@ This board contains hardware jumpers. See below for their locations and function
 | **JP11** | NO (Normally Open) | PHY operation mode bit 1 (PMODE1). Pull-down to GND via 10 kΩ. Close to set HIGH. |
 | **JP12** | NO (Normally Open) | PHY operation mode bit 2 (PMODE2). Pull-down to GND via 10 kΩ. Close to set HIGH. |
 
-**JP10–JP12** determine the Ethernet PHY operation mode of the W5500. By default (all open), all bits are LOW (mode `000`):
+**JP10-JP12** determine the Ethernet PHY operation mode of the W5500. By default (all open), all bits are LOW (mode `000`):
 
 | JP12 (PMODE2) | JP11 (PMODE1) | JP10 (PMODE0) | Description                              |
 | ------ | ------ | ------ | ---------------------------------------- |
@@ -176,13 +176,13 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.
-- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.
+- **Copper layers** (`.Cu.gbr`) - Defines the traces and pads on the board.
+- **Solder mask layers** (`.Mask.gbr`) - Specifies the protective solder mask.
+- **Silkscreen layers** (`.Silkscreen.gbr`) - Contains text and component markings.
+- **Paste layers** (`.Paste.gbr`) - Used for stencil fabrication in SMD assembly.
+- **Drill files** (`.drl`) - Provides drilling coordinates for vias and holes.
+- **Board outline** (`.Edge_Cuts.gbr`) - Defines the shape of the PCB.
+- **Gerber job file** (`.gbrjob`) - Describes the set of Gerber files used for production.
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
@@ -190,7 +190,7 @@ These files are ready for fabrication and can be used in PCB manufacturing.
 
 The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
-- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.
-- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+- **CE** - Certification document confirming compliance with EU safety, health, and environmental requirements.
+- **UKCA** - UKCA (UK Conformity Assessed) certification for the UK market.
+- **Safety Instructions** - Safety guidelines and precautions in English and in German.
+- **Info.txt** - Contains product details such as SKU, country of origin, HS tariff code, and barcode.
