@@ -61,7 +61,7 @@ PositionSensor sensor; // Create sensor object
  * SCL------------------------->A5/IO5/IO22
  * SDA------------------------->A4/IO4/IO21
  * 
- * Or, simply use an easyC cable!
+ * Or, simply use a Qwiic cable!
  * 
  */
 
@@ -103,6 +103,6 @@ void loop()
 
 <QuickLink 
   title="Read_Angle.ino" 
-  description="Example file for using the AS5600 sensor with easyC/Qwiic/I2C"
+  description="Example file for using the AS5600 sensor with Qwiic/I2C"
   url="https://github.com/SolderedElectronics/Soldered-Position-sensor-AS5600-breakout-Arduino-Library/blob/main/examples/Read_Angle/Read_Angle.ino" 
 />

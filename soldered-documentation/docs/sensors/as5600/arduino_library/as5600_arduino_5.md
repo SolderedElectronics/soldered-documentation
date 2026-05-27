@@ -12,7 +12,7 @@ This page contains some tips if you are experiencing problems with this product.
 <ExpandableSection title="My sensor won't initialize!">
 
 #### Check wiring
-Ensure that your Qwiic/easyC cable is properly connected and in good condition. Try using the same cable with another easyC-compatible device to verify that it works. If the issue persists, replace the cable to rule out any possible damage or defects.
+Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works. If the issue persists, replace the cable to rule out any possible damage or defects.
 
 #### Check I2C pins
 If you are connecting the AS5600 using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers use different default I2C pins. Refer to your board documentation to confirm the correct SDA and SCL pin assignments.
