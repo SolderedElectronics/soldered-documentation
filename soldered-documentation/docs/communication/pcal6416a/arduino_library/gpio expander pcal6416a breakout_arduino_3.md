@@ -3,7 +3,7 @@ slug: /gpio expander pcal6416a breakout/arduino/readwrite
 title: PCAL6416AHF - ReadWrite
 sidebar_label: ReadWrite
 id: gpio expander pcal6416a breakout-arduino-3
-hide_title: False
+hide_title: false
 ---
 
 This page contains a simple example demonstrating digital input and output control using the PCAL6416A GPIO expander.
@@ -44,17 +44,52 @@ void loop()
 ```
 
 <FunctionDocumentation
-  functionName="expander.digitalReadPCAL()"
+  functionName="expander.digitalReadPCAL(pin)"
   description="Reads the current logic state of a selected GPIO pin on the PCAL6416A expander."
   returnDescription="Returns HIGH or LOW depending on the state of the selected input pin."
-  parameters={[]}
+  parameters={[
+    {
+      name: "pin",
+      type: "uint8_t",
+      description: "The GPIO pin to read. Use a constant such as PCAL6416A_A0-PCAL6416A_A7 or PCAL6416A_B0-PCAL6416A_B7."
+    }
+  ]}
 />
 
 <FunctionDocumentation
-  functionName="expander.digitalWritePCAL()"
+  functionName="expander.digitalWritePCAL(pin, value)"
   description="Sets the output state of a selected GPIO pin on the PCAL6416A expander."
-  returnDescription="Sets the selected pin to HIGH or LOW."
-  parameters={[]}
+  returnDescription="None."
+  parameters={[
+    {
+      name: "pin",
+      type: "uint8_t",
+      description: "The GPIO pin to write. Use a constant such as PCAL6416A_A0-PCAL6416A_A7 or PCAL6416A_B0-PCAL6416A_B7."
+    },
+    {
+      name: "value",
+      type: "uint8_t",
+      description: "Output level: HIGH or LOW."
+    }
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="expander.pinModePCAL(pin, mode)"
+  description="Configures a GPIO pin on the PCAL6416A expander as an input or output."
+  returnDescription="None."
+  parameters={[
+    {
+      name: "pin",
+      type: "uint8_t",
+      description: "The GPIO pin to configure. Use a constant such as PCAL6416A_A0-PCAL6416A_A7 or PCAL6416A_B0-PCAL6416A_B7."
+    },
+    {
+      name: "mode",
+      type: "uint8_t",
+      description: "Pin mode: INPUT, OUTPUT, or INPUT_PULLUP."
+    }
+  ]}
 />
 
 | Input pin A0 state | Button state | Output pin A1 state | LED state |
@@ -80,7 +115,7 @@ void setup()
 {
     Serial.begin(115200); // Start serial communication with PC
 
-    // Required for ESP32-C6 easyC board
+    // Required for ESP32-C6 Qwiic board
     Wire.begin(6, 7);
 
     // Initialize PCAL6416A GPIO Expander
@@ -126,5 +161,8 @@ void loop()
 <CenteredImage src="/img/pcal6416a/ReadWrite_test.png" alt="Serial Monitor" caption="Read and Write Serial Monitor output"/>
 
 
-[link placeholder]
-{/*github link za example*/}
+<QuickLink 
+  title="PCAL6416A examples" 
+  description="Arduino examples for the PCAL6416A GPIO expander"
+  url="https://github.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/tree/main/examples" 
+/>

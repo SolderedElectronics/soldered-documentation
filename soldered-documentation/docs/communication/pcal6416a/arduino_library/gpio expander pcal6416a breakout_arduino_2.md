@@ -3,7 +3,7 @@ slug: /gpio expander pcal6416a breakout/arduino/initialization
 title: PCAL6416AHF - Initialization
 sidebar_label: Initialization
 id: gpio expander pcal6416a breakout-arduino-2 
-hide_title: False
+hide_title: false
 ---
 
 
@@ -28,7 +28,7 @@ void setup()
 {
     Serial.begin(115200); // Begin serial communication with PC
 
-    // Required for ESP32-C6 easyC board
+    // Required for ESP32-C6 Qwiic board
     Wire.begin(6, 7);
 
     // Initialize communication with PCAL6416A
