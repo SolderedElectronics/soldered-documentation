@@ -35,7 +35,6 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 | ------------- | ------------------- |
 | Qwiic         | Qwiic               |
 
-<WarningBox>The connections for this board are not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the files.</WarningBox>
 
 
 
