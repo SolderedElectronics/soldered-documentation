@@ -2198,7 +2198,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'WS2812-GRID EDIT THIS NAME',
+          label: 'Smart LED WS2812B Grid 8x8',
           items: [
             {
               type: 'doc',
