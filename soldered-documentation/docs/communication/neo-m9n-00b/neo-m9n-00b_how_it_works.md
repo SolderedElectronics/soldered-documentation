@@ -6,7 +6,7 @@ id: neo-m9n-00b-how-it-works
 hide_title: False
 ---  
 
-NEO-M9N-00B is a high-performance GNSS module that provides precise positioning data using GPS, GLONASS, Galileo, and BeiDou satellite systems in a compact package, manufactured by [**u-blox**](https://www.u-blox.com/en/product/neo-m9n-module).
+The NEO-M9N-00B is a GNSS module from [**u-blox**](https://www.u-blox.com/en/product/neo-m9n-module) that simultaneously receives signals from GPS, GLONASS, Galileo, and BeiDou constellations.
 
 <!--  
 <CenteredImage src="/img/neo-m9n-00b/neo-m9n-00b_onboard.png" alt="NEO-M9N-00B module on board" caption="NEO-M9N-00B module on board" width="500px" />
@@ -14,8 +14,6 @@ NEO-M9N-00B is a high-performance GNSS module that provides precise positioning 
 ---
 
 ## Datasheet
-
-For an in-depth look at technical specifications, refer to the official NEO-M9N-00B Datasheet:
 
 <QuickLink
   title="NEO-M9N-00B Datasheet"
@@ -27,28 +25,24 @@ For an in-depth look at technical specifications, refer to the official NEO-M9N-
 
 ## How the module works
 
-The NEO-M9N-00B is a versatile GNSS module that provides **precise positioning, velocity, and time data**. It integrates a **GNSS receiver, signal processing unit, and serial communication interface** into a compact module, offering reliable positioning across a wide range of applications.
+The NEO-M9N-00B integrates a **GNSS receiver and signal processing unit** that tracks signals from multiple satellite constellations at the same time.
 
-The NEO-M9N-00B operates with **low power consumption** and **high accuracy**, making it ideal for **navigation systems**, **asset tracking**, and **timing applications**.
+- **Multi-constellation reception** - The module simultaneously receives signals from **GPS, GLONASS, Galileo, and BeiDou**, which improves fix reliability and availability, especially in environments with obstructions.
 
-- **Multi-Band GNSS Reception** - The module simultaneously receives signals from **GPS, GLONASS, Galileo, and BeiDou** satellite constellations, maximizing positioning accuracy and availability even in challenging environments.
+- **Position fixing** - Using signals from multiple satellites, the module calculates **latitude, longitude, and altitude** through trilateration, achieving a horizontal accuracy of up to **2.0 meters CEP**.
 
-- **Position Fixing** - Using signals from multiple satellites, the module calculates the precise **latitude, longitude, and altitude** of the device through trilateration, achieving a horizontal accuracy of up to **2.5 meters CEP**.
+- **Velocity and heading** - Beyond position, the module computes **speed and direction of movement**.
 
-- **Velocity and Heading** - Beyond position, the module also computes **speed and direction of movement**, making it suitable for vehicle tracking and navigation applications.
+- **Timepulse output** - The module provides a configurable **1PPS signal** synchronized to GNSS time, useful for precise timing applications.
 
-- **Timepulse Output** - The module provides a configurable **timepulse signal (1PPS)** synchronized to GNSS time, enabling precise timing and synchronization in time-critical applications.
-
-- **Signal Processing and Output** - The module processes satellite data internally and delivers positioning results via **UART and I2C** interfaces using the standard **NMEA 0183** protocol or the proprietary **UBX binary protocol** for easy integration with microcontrollers.
+- **Protocol output** - Positioning results are delivered via **UART and I2C** using the standard **NMEA 0183** protocol or the proprietary **UBX binary protocol**.
 
 ---
 
 ## I2C & UART Communication
 
-The NEO-M9N-00B module supports both **I2C** (Inter-Integrated Circuit) and **UART** (Universal Asynchronous Receiver-Transmitter) communication to exchange data with a microcontroller.
+The NEO-M9N-00B supports both **I2C** and **UART** communication.
 
-- **I2C** uses two lines: **SDA** for **data transfer** and **SCL** for **clock synchronization**, allowing the module to coexist with other I2C devices on the same bus using its default address of **0x42**.
+- **I2C** uses two lines: **SDA** for data and **SCL** for clock, with a default address of **0x42**. Multiple I2C devices can share the same bus.
 
-- **UART** uses **TX** and **RX** lines for serial communication, commonly used when higher data throughput or simpler wiring is preferred.
-
-As a follower device, the NEO-M9N-00B responds only when addressed by a master device, delivering positioning data such as **latitude, longitude, altitude, speed**, and **satellite count** on demand.
+- **UART** uses **TX** and **RX** lines for serial communication, useful when higher data throughput or simpler wiring is preferred.

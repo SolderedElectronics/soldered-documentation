@@ -10,8 +10,6 @@ This page contains a simple example of reading GPS position data (latitude, long
 
 ---
 
----
-
 ## Initialization
 
 To read position data from the NEO-M9N-00B, first include the required libraries and create the module object:
@@ -56,7 +54,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="myGNSS.setI2COutput(uint8_t comSettings)"
+  functionName="myGNSS.setI2COutput()"
   description="Sets the communication protocol output over I2C. Using COM_TYPE_UBX disables NMEA output and reduces I2C traffic"
   returnDescription="Boolean value, true if successful, false for error"
   parameters={[
@@ -65,7 +63,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="myGNSS.saveConfigSelective(uint32_t configMask)"
+  functionName="myGNSS.saveConfigSelective()"
   description="Saves a selective subset of the current configuration to the module's flash memory"
   returnDescription="Boolean value, true if successful, false for error"
   parameters={[

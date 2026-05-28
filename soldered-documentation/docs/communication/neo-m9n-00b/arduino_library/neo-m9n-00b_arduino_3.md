@@ -10,8 +10,6 @@ This page contains an example of reading GPS position alongside date and time da
 
 ---
 
----
-
 ## Initialization
 
 Include the required libraries and create the module object:
@@ -55,7 +53,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="myGNSS.setI2COutput(uint8_t comSettings)"
+  functionName="myGNSS.setI2COutput()"
   description="Sets the communication protocol output over I2C. Using COM_TYPE_UBX disables NMEA output and reduces I2C traffic"
   returnDescription="Boolean value, true if successful, false for error"
   parameters={[

@@ -36,9 +36,9 @@ Click [**here**](/img/neo-m9n-00b/NEO-M9N-00_Pinout.png) for a high resolution i
 
 ## Qwiic (formerly easyC)
 
-<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
+<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic (formerly easyC) cable" width="550px" />
 
-<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic (formerly easyC) cable** and start coding!</InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 
@@ -76,7 +76,7 @@ This board contains hardware jumpers; see below for their locations and function
 | **JP1** | **NO** (Normally open) | Enables the onboard power LED when shorted. |
 | **JP2** | **NC** (Normally closed) | Connects SDA/SCL pull-up resistors to 3.3V for I2C communication. |
 | **JP3** | **NO** (Normally open) | Enables the PPS status LED when shorted. |
-| **JP4** | **NC** (Normally closed) | Communication mode selection. |
+| **JP4** | **NC** (Normally closed) | Selects the active communication interface. Closed = I2C, open = UART. |
 | **JP5** | **NO** (Normally open) | Antenna RF filter connection. |
 
 ---
