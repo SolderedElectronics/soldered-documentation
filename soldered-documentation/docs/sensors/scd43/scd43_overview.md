@@ -9,7 +9,7 @@ pagination_prev: null
 
 ## CO2, Temperature & Humidity Sensor SCD43
 
-The **SCD43** is a compact CO2, temperature, and humidity sensor based on Sensirion's NDIR (Non-Dispersive Infrared) photoacoustic sensing principle. It provides accurate CO2 concentration measurements alongside temperature and humidity readings — all over **I2C**. With its small footprint and **Qwiic (formerly easyC) connectivity**, it is ideal for indoor air quality monitoring, HVAC systems, ventilation control, and smart home projects. This board comes with two easyC connectors, providing easy daisy-chaining without soldering.
+The **SCD43** is a compact CO2, temperature, and humidity sensor based on Sensirion's NDIR (Non-Dispersive Infrared) photoacoustic sensing principle. It provides accurate CO2 concentration measurements alongside temperature and humidity readings — all over **I2C**. With its small footprint and **Qwiic (formerly easyC) connectivity**, it is ideal for indoor air quality monitoring, HVAC systems, ventilation control, and smart home projects. This board comes with two Qwiic (formerly easyC) connectors, providing easy daisy-chaining without soldering.
 
 {/* TODO: Add product image once available */}
 
@@ -35,12 +35,12 @@ Product store link and image are not yet available. The QuickLink below will be 
 
 ## Key Features
 
-- **CO2 measurement range:** 400 – 40,000 ppm  
-- **CO2 accuracy:** ±(50 ppm + 5% of reading) for 400 – 2,000 ppm  
+- **CO2 measurement range:** 400 – 5,000 ppm  
+- **CO2 accuracy:** ±(30 ppm + 3% of reading)  
 - **Temperature range:** -10°C to 60°C  
-- **Humidity range:** 0% – 100% RH (non-condensing)  
+- **Humidity range:** 0% – 95% RH  
 - **Logic voltage level:** 3.3V  
-- **Operating voltage:** 3.3V (onboard regulator for 5V compatibility)  
+- **Operating voltage:** 3.3V  
 - **Communication:** I2C (address: 0x62)  
 - **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
 - **Mounting:** **Two mounting holes** for secure attachment  

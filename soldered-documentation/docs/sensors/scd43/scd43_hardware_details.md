@@ -21,15 +21,15 @@ Click [**here**](/img/scd43/pinout.png) for a high-resolution image of the pinou
 | **SDA**     | Data     | I2C data line for communication.                 |
 | **SCL**     | Clock    | I2C clock line for communication.                |
 
-<InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
+<InfoBox>This breakout board operates at **3.3V logic level**. It is not 5V tolerant — use a level shifter if connecting to a 5V logic board.</InfoBox>
 
 ---
 
 ## Qwiic (formerly easyC)
 
-<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
+<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic (formerly easyC) cable" width="550px" />
 
-<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic (formerly easyC) cable** and start coding!</InfoBox>
 
 <QuickLink
   title="Qwiic (formerly easyC) details and specifications"
