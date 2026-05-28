@@ -34,7 +34,7 @@ void setup()
 ```
 
 <FunctionDocumentation
-  functionName="WS2812Grid(uint8_t pin, uint8_t width, uint8_t height)"
+  functionName="WS2812Grid()"
   description="Constructs a WS2812Grid driver for an LED matrix connected to the given data pin. Width and height default to 8 if not specified, matching the standard 8×8 breakout board."
   returnDescription="None (constructor)"
   parameters={[
@@ -75,26 +75,26 @@ void loop()
 
 
 <FunctionDocumentation
-  functionName="grid.setPixel(uint8_t x, uint8_t y, uint8_t r, uint8_t g, uint8_t b)"
-  description="Sets the color of a single LED at column x, row y using separate red, green, and blue components. The change is buffered until show() is called. Out-of-range coordinates are silently ignored."
+  functionName="grid.setPixel()"
+  description="Sets the color of a single LED at column x, row y using separate green, red, and blue components. The change is buffered until show() is called. Out-of-range coordinates are silently ignored."
   returnDescription="None"
   parameters={[
     { type: 'uint8_t', name: 'x', description: 'Column index, 0 = leftmost column.' },
     { type: 'uint8_t', name: 'y', description: 'Row index, 0 = top row.' },
-    { type: 'uint8_t', name: 'r', description: 'Red component (0–255).' },
     { type: 'uint8_t', name: 'g', description: 'Green component (0–255).' },
+    { type: 'uint8_t', name: 'r', description: 'Red component (0–255).' },
     { type: 'uint8_t', name: 'b', description: 'Blue component (0–255).' },
   ]}
 />
 
 <FunctionDocumentation
-  functionName="grid.setPixel(uint8_t x, uint8_t y, uint32_t color)"
-  description="Sets the color of a single LED at column x, row y using a packed 32-bit color value (0x00RRGGBB). Use WS2812Grid::Color(r, g, b) to construct the value. The change is buffered until show() is called."
+  functionName="grid.setPixel()"
+  description="Sets the color of a single LED at column x, row y using a packed 32-bit color value. Use WS2812Grid::Color(g, r, b) to construct the value. The change is buffered until show() is called."
   returnDescription="None"
   parameters={[
     { type: 'uint8_t', name: 'x', description: 'Column index, 0 = leftmost column.' },
     { type: 'uint8_t', name: 'y', description: 'Row index, 0 = top row.' },
-    { type: 'uint32_t', name: 'color', description: 'Packed color value (0x00RRGGBB). Build it with WS2812Grid::Color(r, g, b).' },
+    { type: 'uint32_t', name: 'color', description: 'Packed color value. Build it with WS2812Grid::Color(g, r, b).' },
   ]}
 />
 
@@ -126,19 +126,19 @@ void loop()
 ```
 
 <FunctionDocumentation
-  functionName="grid.fill(uint8_t r, uint8_t g, uint8_t b)"
-  description="Sets every LED on the grid to the same color specified by individual red, green, and blue components. The change is buffered until show() is called."
+  functionName="grid.fill()"
+  description="Sets every LED on the grid to the same color specified by individual green, red, and blue components. The change is buffered until show() is called."
   returnDescription="None"
   parameters={[
-    { type: 'uint8_t', name: 'r', description: 'Red component (0–255).' },
     { type: 'uint8_t', name: 'g', description: 'Green component (0–255).' },
+    { type: 'uint8_t', name: 'r', description: 'Red component (0–255).' },
     { type: 'uint8_t', name: 'b', description: 'Blue component (0–255).' },
   ]}
 />
 
 <FunctionDocumentation
-  functionName="grid.fill(uint32_t color)"
-  description="Sets every LED on the grid to the same packed 32-bit color. Use WS2812Grid::Color(r, g, b) to construct the value. The change is buffered until show() is called."
+  functionName="grid.fill()"
+  description="Sets every LED on the grid to the same packed 32-bit color. Use WS2812Grid::Color(g, r, b) to construct the value. The change is buffered until show() is called."
   returnDescription="None"
   parameters={[
     { type: 'uint32_t', name: 'color', description: 'Packed color value (0x00RRGGBB).' },
@@ -160,7 +160,7 @@ uint8_t blue  =  c        & 0xFF;
 ```
 
 <FunctionDocumentation
-  functionName="grid.getPixel(uint8_t x, uint8_t y)"
+  functionName="grid.getPixel()"
   description="Returns the buffered packed color (0x00RRGGBB) stored for the LED at column x, row y. Returns 0 if the coordinates are out of range. Reflects the last value written by setPixel() or fill(), not necessarily what is currently displayed on hardware."
   returnDescription="uint32_t packed color (0x00RRGGBB), or 0 if out of range."
   parameters={[

@@ -10,9 +10,9 @@ hide_title: False
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
 
 <QuickLink
-  title="[LIBRARY_NAME]"
+  title="Soldered WS2812B Grid Arduino Library"
   description="Arduino library for the Soldered Smart LED WS2812B Grid 8×8."
-  url="[LIBRARY_URL]"
+  url="https://github.com/SolderedElectronics/Soldered-WS2812B-Grid-Arduino-Library"
 />
 
 <InfoBox>
