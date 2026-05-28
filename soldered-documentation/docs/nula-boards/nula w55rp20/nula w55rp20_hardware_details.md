@@ -24,7 +24,7 @@ Click [**here**](/img/nula w55rp20/Pinout.png) for a high-resolution version of 
 | **VBUS**     | Power    | 5 V from the USB-C connector.                                             |
 | **GND**      | Ground   | Ground.                                                                   |
 | **RUN**      | Control  | Active-low reset.                                                         |
-| **GP0-GP15** | GPIO     | General-purpose I/O with peripheral support (UART, SPI, I²C, PWM).       |
+| **GP0-GP15** | GPIO     | General-purpose I/O with peripheral support (UART, SPI, I2C, PWM).       |
 | **GP16**     | SPI/MISO | Internally connected to W5500 - do not use as general GPIO.               |
 | **GP17**     | SPI/CS   | Internally connected to W5500 - do not use as general GPIO.               |
 | **GP18**     | SPI/CLK  | Internally connected to W5500 - do not use as general GPIO.               |
@@ -46,7 +46,7 @@ Click [**here**](/img/nula w55rp20/Pinout.png) for a high-resolution version of 
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic connector" width="550px" />
 
-<InfoBox>The board includes a **Qwiic connector** for I²C peripherals - sensors, displays, and other Qwiic-compatible modules connect without soldering.</InfoBox>
+<InfoBox>The board includes a **Qwiic connector** for I2C peripherals - sensors, displays, and other Qwiic-compatible modules connect without soldering.</InfoBox>
 
 <QuickLink
   title="Qwiic details and specifications"
@@ -94,7 +94,7 @@ This board contains hardware jumpers. See below for their locations and function
 | Jumper   | Default state        | Function                                                                   |
 | -------- | -------------------- | -------------------------------------------------------------------------- |
 | **JP1**  | NC (Normally closed) | Connects GPIO13 to the microSD card CS line. Open to disable SD SPI.      |
-| **JP2**  | NC (Normally closed) | Enables onboard 10 kΩ I²C pull-up resistors on the Qwiic SCL/SDA lines.  |
+| **JP2**  | NC (Normally closed) | Enables onboard 10 kΩ I2C pull-up resistors on the Qwiic SCL/SDA lines.  |
 | **JP3**  | NC (Normally closed) | Connects GPIO09 to the PMOS gate for software-controlled microSD power.   |
 | **JP4**  | NO (Normally open)   | When closed, keeps 3V3_MICROSD always powered, bypassing GPIO09 control.  |
 | **JP5**  | NC (Normally closed) | Enables the purple power LED (D4). Open to disable it.                    |

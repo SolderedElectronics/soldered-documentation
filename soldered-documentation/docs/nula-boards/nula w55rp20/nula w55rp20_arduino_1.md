@@ -146,3 +146,85 @@ void loop() {
 ```
 
 Open the **Serial Monitor** at **115200 baud**. The board will print its IP address, connect to the server, and print the response.
+
+---
+
+## Function reference
+
+<FunctionDocumentation
+  functionName="Wiznet55rp20lwIP eth(cs)"
+  description="Creates the Ethernet object. The argument is the GPIO pin connected to the W5500 chip select."
+  returnDescription="None."
+  parameters={[
+    { type: 'int', name: 'cs', description: 'Chip select pin number. Use 20 for the NULA Ether W55RP20.' },
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="eth.begin()"
+  description="Initializes the W55RP20 Ethernet hardware and waits for a DHCP lease. Must be called before any network operations."
+  returnDescription="bool - true if initialization succeeded, false if the hardware was not detected."
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="eth.connected()"
+  description="Checks whether the board has an active Ethernet link and a valid IP address."
+  returnDescription="bool - true if the link is up and DHCP has assigned an IP."
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="eth.localIP()"
+  description="Returns the IP address assigned to the board by DHCP."
+  returnDescription="IPAddress - the board's current IP address."
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="client.connect(host, port)"
+  description="Opens a TCP connection to the specified host and port."
+  returnDescription="bool - true if the connection was established, false otherwise."
+  parameters={[
+    { type: 'const char*', name: 'host', description: 'Hostname or IP address of the remote server.' },
+    { type: 'uint16_t', name: 'port', description: 'TCP port number to connect to.' },
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="client.connected()"
+  description="Checks whether the TCP connection to the remote server is still active."
+  returnDescription="bool - true if the connection is open."
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="client.println(data)"
+  description="Sends a string followed by a carriage return and newline over the TCP connection."
+  returnDescription="None."
+  parameters={[
+    { type: 'String', name: 'data', description: 'The string to send.' },
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="client.available()"
+  description="Returns the number of bytes received from the server that are ready to be read."
+  returnDescription="int - number of bytes available."
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="client.read()"
+  description="Reads one byte from the receive buffer."
+  returnDescription="int - the next byte, or -1 if no data is available."
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="client.stop()"
+  description="Closes the TCP connection and releases the socket."
+  returnDescription="None."
+  parameters={[]}
+/>
+

@@ -48,7 +48,9 @@ This product is not yet available in our store. Please check back soon!
 - **USB-C:** Programming, power, and serial communication
 - **Qwiic:** Plug-and-play I2C sensor integration
 - **GPIO:** Full access to RP2040 I/O pins (UART, SPI, I2C, PWM, ADC)
-- **Logic level:** 3.3 V (not 5 V tolerant)
+- **Logic level:** 3.3 V
+
+<WarningBox>GPIO pins are **not 5 V tolerant**. Connecting 5 V signals directly will damage the board.</WarningBox>
 - **ADC:** 12-bit, 0-3.3 V range
 - **Development support:** Arduino IDE, MicroPython, C/C++ SDK
 
@@ -58,7 +60,7 @@ This product is not yet available in our store. Please check back soon!
 
 <QuickLink
   title="Qwiic cable"
-  description="Qwiic compatible cables with connectors on both ends, available in various lengths."
+  description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp"
 />
