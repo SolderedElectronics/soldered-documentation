@@ -5,13 +5,13 @@ sidebar_label: GET & POST requests
 id: 10-wifi-get-post
 ---
 
-Now that Inkplate is connected to the internet, you will likely want to send and recieve data on it form sensors, messages, from your custom API's etc. This page contains examples on how to send and recieve data on Inkplate via the internet:
+Now that Inkplate is connected to the internet, you will likely want to send and receive data on it from sensors, messages, from your custom API's etc. This page contains examples on how to send and receive data on Inkplate via the internet:
 
 ---
 
 ## GET request
 
-Using `client.GET()` will enable you to easily download and handle data on Inkplate however you want. Here is an example on how to GET a .html flie and print it on Inkplate:
+Using `client.GET()` will enable you to easily download and handle data on Inkplate however you want. Here is an example on how to GET a .html file and print it on Inkplate:
 
 ```cpp
 #include "Inkplate.h"   //Include Inkplate library to the sketch
@@ -54,7 +54,7 @@ void setup()
             inkplate.print('\n');
             inkplate.print(WiFi.RSSI(i), DEC);
         }
-        inkplate.partialUpdate(); //(Partial) refresh thescreen
+        inkplate.partialUpdate(); //(Partial) refresh the screen
     }
 
     inkplate.clearDisplay();          // Clear everything in frame buffer
@@ -156,7 +156,7 @@ Inkplate display(INKPLATE_1BIT);
 WiFiClient client;
 
 // Here you can change the interval of sending POST requests (minimum 15 seconds with a free license)
-#define POSTING_INTERVAL_IN_SESCS 20
+#define POSTING_INTERVAL_IN_SECS 20
 
 // Enter your WiFi credentials
 const char *ssid = "";

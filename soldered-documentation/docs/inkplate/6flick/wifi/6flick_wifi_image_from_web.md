@@ -51,7 +51,7 @@ void setup()
     }
     display.println("\nWiFi OK! Downloading...");
     display.partialUpdate();
-    if (!display.drawImage("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
+    if (!display.image.draw("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
     {
         // If something failed (wrong filename or unsupported bitmap format), write an error message on the screen.
         // REMEMBER! You can only use Windows Bitmap files with a color depth of 1, 4, 8, or 24 bits with no compression!
@@ -71,7 +71,7 @@ void loop()
 <CenteredImage src="/img/inkplate_6_flick/img_from_web.png" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="Function draws image from char path."
     returnDescription="Returns true if image was successfully drawn, otherwise false."
     parameters={[
@@ -90,5 +90,5 @@ void loop()
 <QuickLink 
   title="Inkplate6FLICK_Image_From_Web.ino" 
   description="Connect to WiFi and draw an image from the web."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_Show_Pictures_From_Web" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_Show_Pictures_From_Web" 
 />

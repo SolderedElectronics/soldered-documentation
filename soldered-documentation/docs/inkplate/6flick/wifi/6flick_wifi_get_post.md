@@ -291,11 +291,11 @@ To see more details, check out our full examples:
 <QuickLink 
   title="Inkplate6FLICK_HTTP_GET_Request.ino" 
   description="Inkplate 6FLICK WiFi GET request example from the Inkplate library"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTP_Request/Inkplate6FLICK_HTTP_Request.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTP_Request/Inkplate6FLICK_HTTP_Request.ino" 
 />
 
 <QuickLink 
   title="Inkplate6FLICK_HTTP_POST_Request.ino" 
   description="Inkplate 6FLICK WiFi POST request example from the Inkplate library"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTP_POST_Request/Inkplate6FLICK_HTTP_POST_Request.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTP_POST_Request/Inkplate6FLICK_HTTP_POST_Request.ino" 
 />

@@ -22,7 +22,7 @@ inkplate.rtc.begin(RTC_HOURFORMAT_24);
 <FunctionDocumentation
   functionName="inkplate.rtc.begin()"
   description="Initializes the RTC inside the STM32."
-  returnDescription="Returns an instance of RTC_HandleTypeDef, the STM32duino RTC object. This is not nescessary to use as the RTC can be interfaced with using our library, but it's returned in case you need it."
+  returnDescription="Returns an instance of RTC_HandleTypeDef, the STM32duino RTC object. This is not necessary to use as the RTC can be interfaced with using our library, but it's returned in case you need it."
   parameters={[
     { type: 'uint8_t', name: '_format', description: "Clock format - RTC_HOURFORMAT_24 for 24-hour format or RTC_HOURFORMAT_12 for 12-hour format." },
     { type: 'bool', name: '_resetRtc', description: "Optional. If set to true, forces RTC reset, overriding the previously set RTC." },
@@ -33,7 +33,7 @@ inkplate.rtc.begin(RTC_HOURFORMAT_24);
 
 ## Setting time and date
 
-Setting the current time and date is the most basic RTC usage. Once you set the time, it will keep 'ticking' and you will be able to get the current time later and it will be accurate. Of course, the RTC isn't perfect so during one day it will drift off a couple seconds early or late. If you're using the RTC, **it's reccomended to set it approx. once per day**.
+Setting the current time and date is the most basic RTC usage. Once you set the time, it will keep 'ticking' and you will be able to get the current time later and it will be accurate. Of course, the RTC isn't perfect so during one day it will drift off a couple seconds early or late. If you're using the RTC, **it's recommended to set it approx. once per day**.
 
 ```cpp
 

@@ -28,7 +28,7 @@ For best results, use the [**official SD card formatter**](https://www.sdcard.or
 
 ## Initializing
 
-Before the microSD card can be used in code, it must first be initialized, this powers on the microSD card circuitry and does all the nescessary memory allocations. In this code snippet, the microSD card is initialized and the result of the initialization is checked:
+Before the microSD card can be used in code, it must first be initialized, this powers on the microSD card circuitry and does all the necessary memory allocations. In this code snippet, the microSD card is initialized and the result of the initialization is checked:
 ```cpp
 #include "Inkplate.h"            //Include Inkplate library to the sketch
 #include "SdFat.h"               //Include library for SD card
@@ -42,7 +42,7 @@ void setup()
     inkplate.display();      // Put clear image on display
     inkplate.setTextSize(5);
 
-    // Init SD card. Display if SD card is init propery or not.
+    // Init SD card. Display if SD card is init properly or not.
     if (inkplate.sdCardInit())
     {
         inkplate.println("SD Card ok! Reading data...");
@@ -63,7 +63,7 @@ void loop()
 }
 ```
 <FunctionDocumentation
-    functionname="inkplate.sdCardInit()"
+    functionName="inkplate.sdCardInit()"
     description="Initializes sd card trough SPI."
     returnDescription="Returns true if the initialization was successful, otherwise returns false."
 />
@@ -73,34 +73,7 @@ void loop()
 ## Reading and writing
 Place a sample `text.txt` file on the microSD card and write something in it, this code snippet will read it and print it to the e-Paper:
 ```cpp
-/*
-   Inkplate10_SD_TXT_Read example for Soldered Inkplate 10
-   For this example you will need only a micro USB cable, Inkplate 10 and a SD card
-   loaded with text.txt file that can be found inside folder of this example.
-   Select "e-radionica Inkplate10" or "Soldered Inkplate10" from Tools -> Board menu.
-   Don't have "e-radionica Inkplate10" or "Soldered Inkplate10" option? Follow our tutorial and add it:
-   https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
-
-   To work with SD card on Inkplate, you will need to add one extra library.
-   Download and install it from here: https://github.com/e-radionicacom/Inkplate-6-SDFat-Arduino-Library
-
-   You can open your own .txt file, but in order to this example works properly it should
-   not have more than 200 chars and you should name it text.txt
-
-   This example will show you how to open .txt files and display the content of that file on Inkplate epaper display.
-
-   Want to learn more about Inkplate? Visit www.inkplate.io
-   Looking to get support? Write on our forums: https://forum.soldered.com/
-   11 February 2021 by Soldered
-*/
-
-// Next 3 lines are a precaution, you can ignore those, and the example would also work without them
-#if !defined(ARDUINO_INKPLATE10) && !defined(ARDUINO_INKPLATE10V2)
-#error "Wrong board selection for this example, please select e-radionica Inkplate10 or Soldered Inkplate10 in the boards menu."
-#endif
-
-#include "Inkplate.h"            //Include Inkplate library to the sketch
-#include "SdFat.h"               //Include library for SD card
+#include "Inkplate.h"            // Include Inkplate library to the sketch
 Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
 SdFile file;                     // Create SdFile object used for accessing files on SD card
 
@@ -111,7 +84,7 @@ void setup()
     display.display();      // Put clear image on display
     display.setTextSize(5);
 
-    // Init SD card. Display if SD card is init propery or not.
+    // Init SD card. Display if SD card is init properly or not.
     if (display.sdCardInit())
     {
         display.println("SD Card ok! Reading data...");
@@ -201,11 +174,11 @@ void loop()
 <QuickLink 
   title="Inkplate10_SD_TXT_Read.ino" 
   description="This example will show you how to open .txt files and display the content of that file on Inkplate epaper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/7694c2963e95560dfc71d0b26bd8bf1960e08b6e/examples/Inkplate10/Advanced/SD/Inkplate10_SD_TXT_Read/Inkplate10_SD_TXT_Read.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/microSD/Inkplate10_microSD_TXT_Read/Inkplate10_microSD_TXT_Read.ino" 
 />
 
 <QuickLink 
   title="Inkplate10_SD_TXT_Write.ino" 
   description="This example will show you how to write in .txt file."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/7694c2963e95560dfc71d0b26bd8bf1960e08b6e/examples/Inkplate10/Advanced/SD/Inkplate10_SD_TXT_Write/Inkplate10_SD_TXT_Write.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/microSD/Inkplate10_microSD_TXT_Write/Inkplate10_microSD_TXT_Write.ino" 
 />

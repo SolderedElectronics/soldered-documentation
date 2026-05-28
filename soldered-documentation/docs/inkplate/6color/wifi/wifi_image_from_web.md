@@ -46,7 +46,7 @@ void setup()
         Serial.print(".");
     }
     Serial.println("\nWiFi OK! Downloading...");
-    if (!display.drawImage("https://i.imgur.com/EjIOxx7.jpeg", 0, 0, false, false))
+    if (!display.image.draw("https://i.imgur.com/EjIOxx7.jpeg", 0, 0, false, false))
     {
         // If something fails (wrong filename or incorrect bitmap format), write an error message on the screen.
         // REMEMBER! You can only use a Windows Bitmap file with a color depth of 1, 4, 8, or 24 bits with no compression!
@@ -66,7 +66,7 @@ void loop()
 <CenteredImage src="/img/6color/example_image.jpg" alt="Example Image" width="500px" caption="Example image" />
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="This function draws an image from the specified char path."
     returnDescription="Returns true if the image was successfully drawn, otherwise false."
     parameters={[ 

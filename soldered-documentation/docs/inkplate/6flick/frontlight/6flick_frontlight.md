@@ -87,5 +87,5 @@ You can find the complete example in the Inkplate Arduino library repository:
 <QuickLink 
   title="Inkplate6FLICK_Simple_Frontlight" 
   description="Basic usage example of the frontlight on Inkplate 6Flick." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Simple_Frontlight/Inkplate6FLICK_Simple_Frontlight.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Simple_Frontlight/Inkplate6FLICK_Simple_Frontlight.ino" 
 />

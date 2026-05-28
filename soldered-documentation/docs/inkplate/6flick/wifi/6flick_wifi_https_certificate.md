@@ -40,5 +40,5 @@ Check out all the above-mentioned functions in this example:
 <QuickLink 
   title="Inkplate6FLICK_HTTPS_With_Certificate.ino" 
   description="This example will show you how you can download a .bmp file (picture) from the web securely by providing a certificate for the website that will be validated upon connection and display that image on the e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTPS_With_Certificate/Inkplate6FLICK_HTTPS_With_Certificate.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/WEB_WiFi/Inkplate6FLICK_HTTPS_With_Certificate/Inkplate6FLICK_HTTPS_With_Certificate.ino" 
 />

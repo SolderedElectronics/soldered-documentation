@@ -208,7 +208,7 @@ Below are the detailed references for these functions:
 <QuickLink 
   title="Inkplate2_Black_White_Red.ino" 
   description="Example drawing graphics using all three Inkplate 2 colors."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate2/Basic/Inkplate2_Black_White_Red/Inkplate2_Black_White_Red.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Basic/Inkplate2_Black_White_Red/Inkplate2_Black_White_Red.ino" 
 />
 
-<InfoBox>For more advanced usage, visit the [Inkplate 2 examples directory](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate2).</InfoBox>
+<InfoBox>For more advanced usage, visit the [Inkplate 2 examples directory](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate2).</InfoBox>

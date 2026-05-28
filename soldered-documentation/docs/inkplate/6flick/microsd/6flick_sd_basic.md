@@ -202,11 +202,11 @@ void loop()
 <QuickLink 
   title="Inkplate6FLICK_SD_TXT_Read.ino" 
   description="This example will show you how to open .txt files and display the content of that file on Inkplate epaper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_TXT_Read" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_TXT_Read" 
 />
 
 <QuickLink 
   title="Inkplate6FLICK_SD_TXT_Write.ino" 
   description="This example will show you how to write to a .txt file."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_TXT_Write/Inkplate6FLICK_SD_TXT_Write.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_TXT_Write/Inkplate6FLICK_SD_TXT_Write.ino" 
 />

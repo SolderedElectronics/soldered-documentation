@@ -49,7 +49,7 @@ Try uploading this tested example:
 <QuickLink 
   title="Inkplate2_Black_And_White.ino" 
   description="Full example using black and white display mode on Inkplate 2." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate2/Basic/Inkplate2_Black_And_White/Inkplate2_Black_And_White.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Basic/Inkplate2_Black_And_White/Inkplate2_Black_And_White.ino" 
 />
 
 #### 3. Check your power source

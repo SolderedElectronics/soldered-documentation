@@ -12,7 +12,7 @@ Inkplate 6 MOTION has some useful peripherals, including **sensors**, **LEDs** a
 
 ## Powering on
 
-<WarningBox>To use any peripheral, it **needs to be powered on**. This is important, as trying to communicate with a peripheral which wasn't powered on before results faliure to initialize.</WarningBox>
+<WarningBox>To use any peripheral, it **needs to be powered on**. This is important, as trying to communicate with a peripheral which wasn't powered on before results in failure to initialize.</WarningBox>
 
 To power on any peripheral, use `peripheralState`:
 

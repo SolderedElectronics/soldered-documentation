@@ -80,11 +80,11 @@ Check out the full examples on this page, along with many more usage options bel
 <QuickLink 
   title="Inkplate2_Simple_Deep_Sleep.ino" 
   description="This example shows you how to use the low power functionality of the Inkplate board."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate2/Advanced/DeepSleep/Inkplate2_Simple_Deep_Sleep" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate2/Advanced/DeepSleep/Inkplate2_Simple_Deep_Sleep" 
 />
 
 <QuickLink 
   title="Inkplate2_RTC_Alarm_With_Deep_Sleep.ino" 
   description="This example demonstrates how to use the RTC alarm interrupt with deep sleep."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate2/Advanced/DeepSleep/Inkplate2_RTC_Alarm_With_Deep_Sleep" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate2/Advanced/DeepSleep/Inkplate2_RTC_Alarm_With_Deep_Sleep" 
 />

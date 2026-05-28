@@ -5,7 +5,7 @@ sidebar_label: Image from microSD
 id: microsd-image
 ---
 
-To draw images from the microSD card, use the `drawImage()` function.
+To draw images from the microSD card, use the `display.image.draw()` function.
 
 <InfoBox>Supported formats are: JPG, BMP and PNG.</InfoBox>
 
@@ -41,7 +41,7 @@ void setup()
         // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter
         // to true will flip all colors on the image, making black white and white black. This may be necessary when
         // exporting bitmaps from certain software.
-        if (display.drawImage("image1.bmp", 0, 0, 1))
+        if (display.image.draw("image1.bmp", 0, 0, 1))
         {
             display.display();
             delay(5000);
@@ -58,7 +58,7 @@ void setup()
         display.clearDisplay();
         if (file.open("image2.bmp", O_RDONLY))
         {
-            display.drawBitmapFromSd(&file, 0, 0);
+            display.image.drawBitmapFromSd(&file, 0, 0);
             display.display();
             delay(5000);
         }
@@ -88,7 +88,7 @@ void loop()
 <CenteredImage src="/img/6color/image2.png" alt="Expected output on Inkplate display" caption="Example image 2" width="1000px" />
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="The function draws an image from the given path."
     returnDescription="Returns true if the image was successfully drawn, otherwise false."
     parameters={[
@@ -105,7 +105,7 @@ void loop()
 ## Full example
 
 <QuickLink 
-  title="Inkplate10_SD_Pictures.ino" 
+  title="Inkplate6COLOR_microSD_Pictures.ino" 
   description="This example shows you how to read .bmp and .jpeg files (pictures) from the SD card and display them on the e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/7694c2963e95560dfc71d0b26bd8bf1960e08b6e/examples/Inkplate10/Advanced/SD/Inkplate10_SD_Pictures/Inkplate10_SD_Pictures.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6COLOR/Advanced/microSD/Inkplate6COLOR_microSD_Pictures/Inkplate6COLOR_microSD_Pictures.ino" 
 />

@@ -29,7 +29,7 @@ For best results, use the [**official SD card formatter**](https://www.sdcard.or
 
 ## Initializing
 
-Before the microSD card can be used in code, it must first be initialized, this powers on the microSD card circuitry and does all the nescessary memory allocations. In this code snippet, the microSD card is initialized and the result of the initialization is checked:
+Before the microSD card can be used in code, it must first be initialized, this powers on the microSD card circuitry and does all the necessary memory allocations. In this code snippet, the microSD card is initialized and the result of the initialization is checked:
 ```cpp
 // Inkplate must be initialized before this
 

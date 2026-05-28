@@ -27,7 +27,7 @@ You can download and display images directly from the internet on your Inkplate 
 Below is a working example of how to:  
 - Connect to WiFi  
 - Load images from the web (via URL)  
-- Display them using Inkplate’s `drawImage()` or `drawBitmapFromWeb()` functions
+- Display them using Inkplate’s `display.image.draw()` or `display.image.drawBitmapFromWeb()` functions
 
 ```cpp
 #include "HTTPClient.h" // Include library for HTTPClient
@@ -70,7 +70,7 @@ void setup()
     // so it is not needed to dither it again while drawing.
     display.clearDisplay();
 
-    if (!display.drawImage("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
+    if (!display.image.draw("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
                            "master/examples/Inkplate2/Advanced/WEB_WiFi/"
                            "Inkplate2_Show_Pictures_From_Web/cat_dithered.jpg",
                            0, 0, false, false))
@@ -101,7 +101,7 @@ void setup()
         int32_t len = http.getSize();
         if (len > 0)
         {
-            if (!display.drawBitmapFromWeb(http.getStreamPtr(), 0, 0, len, true, false))
+            if (!display.image.drawBitmapFromWeb(http.getStreamPtr(), 0, 0, len, true, false))
             {
                 // If something fails (e.g., wrong filename or unsupported bitmap format), write an error message on the screen.
                 // REMEMBER! You can only use Windows Bitmap files with color depths of 1, 4, 8, or 24 bits with no
@@ -131,7 +131,7 @@ void setup()
     // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter to
     // true will flip all colors on the image, making black white and white black. The fourth parameter dithers the
     // image.
-    if (!display.drawImage("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
+    if (!display.image.draw("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
                            "master/examples/Inkplate2/Advanced/WEB_WiFi/"
                            "Inkplate2_Show_Pictures_From_Web/mountain.png",
                            0, 0, true, false))
@@ -163,7 +163,7 @@ void loop()
 ## Key functions
 
 <FunctionDocumentation
-  functionName="inkplate.drawImage()"
+  functionName="display.image.draw()"
   description="Downloads and displays an image from the web (JPG, BMP, PNG)."
   returnDescription="Returns true if the image was successfully drawn, false otherwise."
   parameters={[
@@ -176,7 +176,7 @@ void loop()
 />
 
 <FunctionDocumentation
-  functionName="inkplate.drawBitmapFromWeb()"
+  functionName="display.image.drawBitmapFromWeb()"
   description="Displays a bitmap image streamed from an HTTPClient stream."
   returnDescription="Returns true if successful, false if an error occurs."
   parameters={[

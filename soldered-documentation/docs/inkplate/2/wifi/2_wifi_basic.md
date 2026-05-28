@@ -64,5 +64,5 @@ To see more details, check out our full examples:
 <QuickLink 
   title="Inkplate_2_WiFi_examples" 
   description="Inkpate 10 WiFi examples from Inkplate library"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate2/Advanced/WEB_WiFi" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate2/Advanced/WEB_WiFi" 
 />

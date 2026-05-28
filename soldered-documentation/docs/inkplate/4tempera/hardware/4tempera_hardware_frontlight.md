@@ -47,5 +47,5 @@ The Inkplate 4 TEMPERA includes a built-in **frontlight system** designed to pro
 <QuickLink 
   title="Frontlight Brightness Example" 
   description="Basic sketch to control frontlight brightness on Inkplate 4 TEMPERA."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Simple_Frontlight/Inkplate4TEMPERA_Simple_Frontlight.ino"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Simple_Frontlight/Inkplate4TEMPERA_Simple_Frontlight.ino"
 />

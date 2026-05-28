@@ -16,7 +16,7 @@ As a company, **Soldered** designs and manufactures a wide range of electronic p
 
 <InfoBox>Need help? Our team offers **free technical support**, so if you have any issues with your Inkplate or electronics project, don’t hesitate to [**reach out**](https://soldered.com/contact/).</InfoBox>
 
-All designs in the Inkplate 4TEMPERA repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. For details, please refer to the [**LICENSE**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design/blob/0552552410c75d7dd4bcbb29ad8a3da2e37524c3/LICENSE.md) files in our repositories.
+All designs in the Inkplate 4TEMPERA repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. For details, please refer to the [**LICENSE**](https://github.com/SolderedElectronics/Soldered-Inkplate-4TEMPERA-hardware-design/blob/main/LICENSE.md) files in our repositories.
 
 ---
 

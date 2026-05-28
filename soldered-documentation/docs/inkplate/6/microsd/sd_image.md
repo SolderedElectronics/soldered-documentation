@@ -5,7 +5,7 @@ sidebar_label: Image from microSD
 id: microsd-image  
 ---  
 
-To draw images from the microSD card, use the `drawImage()` function.
+To draw images from the microSD card, use the `display.image.draw()` function.
 
 <InfoBox>Supported formats are: JPG, BMP and PNG.</InfoBox>
 
@@ -64,7 +64,7 @@ void setup()
         // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter
         // to true will flip all colors on the image, making black white and white black. This may be necessary when
         // exporting bitmaps from certain software.
-        if (!display.drawImage("image1.bmp", 0, 0, 1))
+        if (!display.image.draw("image1.bmp", 0, 0, 1))
         {
             // If something failed (wrong filename or wrong bitmap format), write an error message on the screen.
             // REMEMBER! You can only use Windows Bitmap files with a color depth of 1, 4, 8, or 24 bits with no
@@ -79,7 +79,7 @@ void setup()
         display.clearDisplay();
         if (file.open("image2.bmp", O_RDONLY))
         {
-            display.drawBitmapFromSd(&file, 0, 0);
+            display.image.drawBitmapFromSd(&file, 0, 0);
         }
         else
         {
@@ -90,7 +90,7 @@ void setup()
     
         // Now draw a JPEG
         display.clearDisplay();
-        if (!display.drawImage("pyramid.jpg", 100, 0, true, false))
+        if (!display.image.draw("pyramid.jpg", 100, 0, true, false))
         {
             // If something fails (wrong filename or wrong format), write an error message on the screen.
             // You can turn off dithering for a somewhat faster image load by changing the fifth parameter to false, or
@@ -123,7 +123,7 @@ void loop()
 <CenteredImage src="/img/6/image3.jpg" alt="Expected output on Inkplate display" caption="Example image 3" width="1000px" />
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="The function draws an image from the given path."
     returnDescription="Returns true if the image was successfully drawn, otherwise false."
     parameters={[  
@@ -142,5 +142,5 @@ void loop()
 <QuickLink 
   title="Inkplate6_SD_Pictures.ino" 
   description="This example shows you how to read .bmp and .jpeg files (pictures) from the SD card and display them on the e-paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6/Advanced/SD/Inkplate6_SD_Pictures/Inkplate6_SD_Pictures.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6/Advanced/microSD/Inkplate6_microSD_Pictures/Inkplate6_microSD_Pictures.ino" 
 />

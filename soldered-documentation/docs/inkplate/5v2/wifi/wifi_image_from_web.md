@@ -48,7 +48,7 @@ void setup()
     }
     display.println("\nWiFi OK! Downloading...");
     display.display();
-    if (!display.drawImage("https://i.imgur.com/ssqBZP9.jpeg", 0, 0, false, false))
+    if (!display.image.draw("https://i.imgur.com/ssqBZP9.jpeg", 0, 0, false, false))
     {
         // If something fails (for example, a wrong filename or incorrect bitmap format), write an error message on the screen.
         // REMEMBER! You can only use Windows Bitmap files with a color depth of 1, 4, 8, or 24 bits with no compression!
@@ -67,7 +67,7 @@ void loop()
 <CenteredImage src="/img/5v2/webimage.jpg" alt="Example Image" width="500px" caption="Example image" />
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="display.image.draw()"
     description="Function draws an image from a char path."
     returnDescription="Returns true if the image was successfully drawn, otherwise false."
     parameters={[ 

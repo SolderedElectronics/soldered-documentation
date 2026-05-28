@@ -47,5 +47,5 @@ The Inkplate 6FLICK features a built-in **frontlight system** designed to evenly
 <QuickLink 
   title="Frontlight Brightness Example" 
   description="Simple sketch demonstrating how to control frontlight brightness using software."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Simple_Frontlight/Inkplate6FLICK_Simple_Frontlight.ino"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Simple_Frontlight/Inkplate6FLICK_Simple_Frontlight.ino"
 />

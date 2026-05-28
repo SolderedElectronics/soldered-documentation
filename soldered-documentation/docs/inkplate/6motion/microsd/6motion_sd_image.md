@@ -8,7 +8,7 @@ id: 6motion-microsd-image
 
 To draw images from the microSD card, use the `draw` function. 
 
-<InfoBox>Supported formats are: JPG, BMP and BMP.</InfoBox>
+<InfoBox>Supported formats are: JPG, BMP and PNG.</InfoBox>
 
 <WarningBox>JPG files **without** progressive encoding are supported.</WarningBox>
 

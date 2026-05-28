@@ -108,5 +108,5 @@ You can find the complete example in the Inkplate Arduino library here:
 <QuickLink 
   title="Inkplate6FLICK_Touchscreen_Draw" 
   description="Touchscreen drawing demo for Inkplate 6Flick." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Touchscreen_Draw/Inkplate6FLICK_Touchscreen_Draw.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Touchscreen_Draw/Inkplate6FLICK_Touchscreen_Draw.ino" 
 />

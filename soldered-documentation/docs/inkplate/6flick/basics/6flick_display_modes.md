@@ -70,11 +70,11 @@ void loop() {
 <QuickLink 
   title="Inkplate6FLICK_Black_And_White.ino" 
   description="Full example using black and white display mode on Inkplate 6FLICK." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Black_And_White/Inkplate6FLICK_Black_And_White.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Black_And_White/Inkplate6FLICK_Black_And_White.ino" 
 />
 
 <QuickLink 
   title="Inkplate6FLICK_Grayscale.ino" 
   description="Full example using grayscale display mode on Inkplate 6FLICK." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Grayscale" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Grayscale" 
 />

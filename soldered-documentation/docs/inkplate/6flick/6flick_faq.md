@@ -44,7 +44,7 @@ Try uploading unmodified Inkplate 6Flick examples to verify that the hardware is
 <QuickLink 
   title="Inkplate6FLICK_Black_And_White.ino" 
   description="Example using black-and-white display mode." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Black_And_White/Inkplate6FLICK_Black_And_White.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Black_And_White/Inkplate6FLICK_Black_And_White.ino" 
 />
 
 #### 3. Check power supply
@@ -91,7 +91,7 @@ Test using the official example below to rule out code issues:
 <QuickLink 
   title="Inkplate6FLICK_Touch_In_Area.ino" 
   description="Example detecting touches in a defined screen area." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Touch_In_Area/Inkplate6FLICK_Touch_In_Area.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Touch_In_Area/Inkplate6FLICK_Touch_In_Area.ino" 
 />
 
 #### 4. Check for damage
@@ -113,7 +113,7 @@ Use the official brightness control example to confirm hardware functionality:
 <QuickLink 
   title="Inkplate6FLICK_Frontlight.ino" 
   description="Adjust frontlight brightness in real time." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/dev/examples/Inkplate6FLICK/Advanced/Frontlight/Inkplate6FLICK_Frontlight/Inkplate6FLICK_Frontlight.ino"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/Frontlight/Inkplate6FLICK_Frontlight/Inkplate6FLICK_Frontlight.ino"
 />
 </ExpandableSection>
 

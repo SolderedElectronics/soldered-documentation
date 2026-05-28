@@ -62,5 +62,5 @@ To see more details, check out our full examples:
 <QuickLink 
   title="Inkplate_6FLICK_WiFi_examples" 
   description="Inkpate 6FLICK WiFi examples from Inkplate library"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/dev/examples/Inkplate6FLICK/Advanced/WEB_WiFi" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/WEB_WiFi" 
 />
