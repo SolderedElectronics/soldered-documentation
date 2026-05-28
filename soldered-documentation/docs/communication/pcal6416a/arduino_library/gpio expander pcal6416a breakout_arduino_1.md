@@ -31,9 +31,9 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ## Connections
 
-| **NULA Mini** | **PCAL6416A Board** |
-| ------------- | ------------------- |
-| Qwiic         | Qwiic               |
+| **NULA DeepSleep** | **PCAL6416A Board** |
+| ------------------ | ------------------- |
+| Qwiic              | Qwiic               |
 
 
 

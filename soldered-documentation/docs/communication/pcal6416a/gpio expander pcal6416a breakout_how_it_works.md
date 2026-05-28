@@ -6,7 +6,7 @@ id: gpio expander pcal6416a breakout-how-it-works
 hide_title: false
 ---  
 
-The **PCAL6416A** is a low-voltage translating 16-bit I²C-bus/SMBus I/O expander that provides flexible GPIO expansion and voltage-level translation for microcontroller systems in a compact package, manufactured by [**NXP Semiconductors**](https://www.nxp.com/products/PCAL6416A).  
+The **PCAL6416A** is a 16-bit I²C GPIO expander from [**NXP Semiconductors**](https://www.nxp.com/products/PCAL6416A). It adds 16 programmable I/O pins over I²C and handles voltage-level translation between the I²C bus and the GPIO ports.
 
 <CenteredImage src="/img/pcal6416a/PCAL6416A_chip.jpg" alt="PCAL6416HF chip on board" caption="PCAL6416HF chip on board" width="500px" />
 
@@ -56,4 +56,3 @@ This dual-supply design enables automatic voltage-level translation between the 
 
 ---
 
-This breakout board is ideal for adding extra GPIO pins to embedded systems, controlling LEDs, reading buttons and sensors, handling interrupts, and interfacing devices operating at different voltage levels.

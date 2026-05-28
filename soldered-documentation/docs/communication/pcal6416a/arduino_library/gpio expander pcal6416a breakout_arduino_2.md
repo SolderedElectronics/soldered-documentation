@@ -28,8 +28,8 @@ void setup()
 {
     Serial.begin(115200); // Begin serial communication with PC
 
-    // Required for ESP32-C6 Qwiic board
-    Wire.begin(6, 7);
+    // Required for NULA DeepSleep Qwiic board
+    Wire.begin(8, 9);
 
     // Initialize communication with PCAL6416A
     expander.begin(0x20);
