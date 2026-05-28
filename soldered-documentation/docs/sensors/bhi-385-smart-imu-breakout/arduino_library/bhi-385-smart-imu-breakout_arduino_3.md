@@ -6,7 +6,7 @@ id: bhi-385-smart-imu-breakout-arduino-3
 hide_title: false
 ---
 
-This page covers reading linear acceleration and angular velocity from the BHI385's corrected accelerometer and gyroscope virtual sensors.
+The corrected accelerometer and gyroscope virtual sensors deliver bias-corrected acceleration (in g) and angular velocity (in deg/s).
 
 ---
 
@@ -51,7 +51,7 @@ void loop()
   returnDescription="true if the sensor was configured successfully"
   parameters={[
     { type: 'float', name: 'rateHz', description: 'Output data rate in Hz (e.g. 100.0f). Default: 100.0f' },
-    { type: 'bhi385AccelRange', name: 'range', description: 'Dynamic range — BHI385_ACCEL_4G, BHI385_ACCEL_8G (default), BHI385_ACCEL_16G, or BHI385_ACCEL_32G' },
+    { type: 'bhi385AccelRange', name: 'range', description: 'Dynamic range - BHI385_ACCEL_4G, BHI385_ACCEL_8G (default), BHI385_ACCEL_16G, or BHI385_ACCEL_32G' },
   ]}
 />
 
@@ -61,7 +61,7 @@ void loop()
   returnDescription="true if the sensor was configured successfully"
   parameters={[
     { type: 'float', name: 'rateHz', description: 'Output data rate in Hz. Default: 100.0f' },
-    { type: 'bhi385GyroRange', name: 'range', description: 'Full-scale range — BHI385_GYRO_125DPS, BHI385_GYRO_250DPS, BHI385_GYRO_500DPS, BHI385_GYRO_1000DPS, or BHI385_GYRO_2000DPS (default)' },
+    { type: 'bhi385GyroRange', name: 'range', description: 'Full-scale range - BHI385_GYRO_125DPS, BHI385_GYRO_250DPS, BHI385_GYRO_500DPS, BHI385_GYRO_1000DPS, or BHI385_GYRO_2000DPS (default)' },
   ]}
 />
 

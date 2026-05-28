@@ -9,7 +9,7 @@ pagination_prev: null
 
 ## BHI385 Smart IMU Breakout
 
-The **BHI385 Smart IMU Breakout** is built around Bosch Sensortec's BHI385 — a programmable Smart IMU that combines a 6-DOF inertial measurement unit (3-axis accelerometer + 3-axis gyroscope) with an internal Fuser2 processor (Synopsys ARC EM4) that runs sensor-fusion firmware. Instead of delivering only raw sensor counts, the BHI385 runs multiple **virtual sensor algorithms** simultaneously: a Game Rotation Vector (quaternion orientation), a low-power step counter, multi-tap detection (single, double, and triple), and wrist gesture recognition — all computed on-chip, freeing up your microcontroller for other work. The board communicates over **I2C** at an address of **0x29** by default (or **0x28** via jumper), manages its own 1.8V power domain with an onboard LDO regulator, and includes a bidirectional I2C level-shifter so it is directly compatible with 3.3V systems. Two **Qwiic (formerly easyC) connectors** let you connect it to a Dasduino without soldering a wire.
+The **BHI385 Smart IMU Breakout** is built around Bosch Sensortec's BHI385 - a programmable Smart IMU that combines a 6-DOF inertial measurement unit (3-axis accelerometer + 3-axis gyroscope) with an internal Fuser2 processor (Synopsys ARC EM4) that runs sensor-fusion firmware. Instead of delivering only raw sensor counts, the BHI385 runs multiple **virtual sensor algorithms** simultaneously: a Game Rotation Vector (quaternion orientation), a low-power step counter, multi-tap detection (single, double, and triple), and wrist gesture recognition - all computed on-chip, freeing up your microcontroller for other work. The board communicates over **I2C** at an address of **0x29** by default (or **0x28** via jumper), manages its own 1.8V power domain with an onboard LDO regulator, and includes a bidirectional I2C level-shifter so it is directly compatible with 3.3V systems. Two **Qwiic (formerly easyC) connectors** let you connect it to a Dasduino without soldering a wire.
 
 <ErrorBox>The main product image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
@@ -36,7 +36,7 @@ The **BHI385 Smart IMU Breakout** is built around Bosch Sensortec's BHI385 — a
 - **Communication:** I2C (default address **0x29**, selectable to **0x28** via JP5 jumper)  
 - **Supply voltage:** **3.3V** (onboard 3.3V regulator generates 1.8V for the BHI385)  
 - **Logic level:** 3.3V (onboard NMOS-dual level-shifter bridges the 1.8V I2C bus)  
-- **Connectors:** 2 × **Qwiic (formerly easyC) ports** — plug-and-play, no soldering needed  
+- **Connectors:** 2 × **Qwiic (formerly easyC) ports** - plug-and-play, no soldering needed  
 - **Interrupt output:** HIRQ pin exposed on a dedicated 2-pin header  
 - **Mounting:** Two M3 screw holes  
 - **Dimensions:** 22 × 22 mm (0.87 × 0.87 in)

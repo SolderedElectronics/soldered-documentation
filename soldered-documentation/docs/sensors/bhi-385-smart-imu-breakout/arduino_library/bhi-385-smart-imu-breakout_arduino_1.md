@@ -13,7 +13,7 @@ the GitHub repository:
 
 <QuickLink
   title="Soldered BHI385 IMU Arduino Library"
-  description="Arduino library for the Bosch BHI385 Smart IMU — firmware upload, virtual sensor enable/disable, and FIFO-based data readout."
+  description="Arduino library for the Bosch BHI385 Smart IMU: firmware upload, virtual sensor enable/disable, and FIFO-based data readout."
   url="https://github.com/SolderedElectronics/Soldered-BHI385-Arduino-Library"
 />
 
@@ -34,7 +34,7 @@ section of our docs:
 
 ## Getting the firmware binary
 
-The BHI385 has no internal flash — the sensor firmware must be uploaded from your sketch on every power-on. The firmware binary is distributed by Bosch Sensortec as part of their SensorAPI package and is **not** bundled with this library due to licensing.
+The BHI385 has no internal flash. The sensor firmware must be uploaded from your sketch on every power-on. The firmware binary is distributed by Bosch Sensortec as part of their SensorAPI package and is **not** bundled with this library due to licensing.
 
 To get it:
 
@@ -49,24 +49,10 @@ To get it:
 
 ## Connections
 
-Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in
+Below is an example connection diagram for **NULA DeepSleep**. These pins will be used in
 the examples throughout this documentation.
 
-| **Dasduino CONNECTPLUS** | **BHI385 Breakout** |
+| **NULA DeepSleep** | **BHI385 Breakout** |
 | ------------------------ | ------------------- |
 | Qwiic                    | Qwiic               |
 
-<InfoBox>
-
-If you prefer, you can connect manually using I2C pins:
-
-| **Dasduino CONNECTPLUS** | **BHI385 Breakout** |
-| ------------------------ | ------------------- |
-| 3V3                      | 3V3                 |
-| GND                      | GND                 |
-| SDA                      | SDA                 |
-| SCL                      | SCL                 |
-
-The INT pin on the 2-pin header can optionally be connected to any GPIO on your Dasduino for interrupt-driven operation.
-
-</InfoBox>

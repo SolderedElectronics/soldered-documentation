@@ -6,7 +6,7 @@ id: bhi-385-smart-imu-breakout-arduino-2
 hide_title: false
 ---
 
-This page covers how to initialize the BHI385 and upload its firmware — both required before any virtual sensor will produce data.
+Before any virtual sensor produces data, two steps must complete: `begin()` to verify the chip is reachable, then `loadFirmware()` to upload firmware into program RAM.
 
 ---
 
@@ -48,18 +48,18 @@ void setup()
   description="Initializes the I2C bus, issues a soft reset to the BHI385, waits for the ROM bootloader to become ready, and verifies the chip ID (expected 0x7C). Must be called before loadFirmware()."
   returnDescription="true if the bootloader is ready and chip identity matches; false on I2C error or wrong chip ID"
   parameters={[
-    { type: 'uint8_t', name: 'addr', description: 'I2C address — BHI385_I2C_ADDR_HIGH (0x29, default) or BHI385_I2C_ADDR_LOW (0x28)' },
+    { type: 'uint8_t', name: 'addr', description: 'I2C address - BHI385_I2C_ADDR_HIGH (0x29, default) or BHI385_I2C_ADDR_LOW (0x28)' },
     { type: 'TwoWire&', name: 'wire', description: 'Wire instance to use; defaults to the global Wire object' },
   ]}
 />
 
 <FunctionDocumentation
   functionName="imu.loadFirmware()"
-  description="Uploads a firmware binary to the BHI385 program RAM in 28-byte I2C chunks, waits for the chip to verify the CRC, sends the boot command, and waits for the firmware to finish booting. This typically takes about 1–5 seconds depending on the I2C clock speed. Must be called after begin() and before enabling any virtual sensors."
+  description="Uploads a firmware binary to the BHI385 program RAM in 28-byte I2C chunks, waits for the chip to verify the CRC, sends the boot command, and waits for the firmware to finish booting. This typically takes about 1-5 seconds depending on the I2C clock speed. Must be called after begin() and before enabling any virtual sensors."
   returnDescription="true if the firmware was uploaded, CRC-verified, and booted successfully; false on upload error, CRC mismatch, or timeout"
   parameters={[
     { type: 'const uint8_t*', name: 'firmware', description: 'Pointer to the firmware binary array (from the BHI385_firmware.h header)' },
-    { type: 'uint32_t', name: 'fwLen', description: 'Size of the firmware binary in bytes — pass sizeof(bhi385Firmware)' },
+    { type: 'uint32_t', name: 'fwLen', description: 'Size of the firmware binary in bytes - pass sizeof(bhi385Firmware)' },
   ]}
 />
 

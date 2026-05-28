@@ -7,14 +7,12 @@ hide_title: false
 pagination_next: null
 ---
 
-This page contains tips for the most common problems you may encounter when using the BHI385 Smart IMU breakout.
-
-<ExpandableSection title="begin() returns false — sensor not found">
+<ExpandableSection title="begin() returns false - sensor not found">
 
 The most common reason `begin()` fails is that the BHI385 is not reachable on the I2C bus.
 
 #### Check your wiring
-Make sure the Qwiic/easyC cable is fully seated on both ends. Try a different cable, or wiggle the connector gently — a loose fit is a frequent culprit. If you are wiring manually, confirm that SDA and SCL are not swapped.
+Make sure the Qwiic/easyC cable is fully seated on both ends. Try a different cable, or wiggle the connector gently. A loose fit is a frequent culprit. If you are wiring manually, confirm that SDA and SCL are not swapped.
 
 #### Check the I2C pins on your board
 Different microcontrollers assign I2C to different pin numbers. Consult your board's pinout diagram and make sure you are using the correct SDA and SCL pins. On Dasduino boards, the Qwiic port handles this automatically.
@@ -36,7 +34,7 @@ The BHI385 operates at 3.3 V. Driving it from a 5 V supply without level shiftin
 
 <ExpandableSection title="loadFirmware() fails or hangs">
 
-The BHI385 has no internal flash — firmware must be uploaded into program RAM on every power-on. Several things can cause this step to fail.
+The BHI385 has no internal flash. Firmware must be uploaded into program RAM on every power-on. Several things can cause this step to fail.
 
 #### Make sure the firmware header is in your sketch folder
 The firmware binary is distributed by Bosch Sensortec as part of their **BHI385 SensorAPI** package and is **not** included in the Soldered library. Download it from [Bosch Sensortec's GitHub](https://github.com/boschsensortec/BHI385_SensorAPI), locate the `BHI385_firmware.h` file inside the `firmware/` folder, and copy it into the same folder as your `.ino` file. Include it with:
@@ -48,7 +46,7 @@ The firmware binary is distributed by Bosch Sensortec as part of their **BHI385 
 Without this file, `loadFirmware()` cannot be called at all and will not compile.
 
 #### Enable debug output to see what fails
-Call `imu.enableDebug()` before `loadFirmware()` and open the Serial Monitor at 115200 baud. The library will print every stage of the upload — byte count, CRC check result, and boot status — so you can pinpoint exactly where it stops.
+Call `imu.enableDebug()` before `loadFirmware()` and open the Serial Monitor at 115200 baud. The library will print every stage of the upload (byte count, CRC check result, and boot status) so you can pinpoint exactly where it stops.
 
 #### Increase the I2C clock speed
 The firmware binary is large and is sent over I2C in 28-byte chunks. At the default 100 kHz clock speed this can take many seconds and occasionally causes a timeout. Setting the clock to 400 kHz before calling `begin()` speeds up the upload significantly and reduces the chance of a timeout:
@@ -59,7 +57,7 @@ imu.begin(BHI385_I2C_ADDR_HIGH);
 ```
 
 #### Note on ESP32-based boards and RAM
-On ESP32-based boards (including Dasduino CONNECTPLUS), the library copies the firmware to a RAM staging buffer before uploading it over I2C, because the ESP32's Wire DMA cannot read directly from flash. This means the firmware binary must fit in available heap. If you see a crash immediately after calling `loadFirmware()` on an ESP32, check your heap with `ESP.getFreeHeap()` before the call — you need enough free heap for the firmware array plus the rest of your sketch.
+On ESP32-based boards (including NULA DeepSleep), the library copies the firmware to a RAM staging buffer before uploading it over I2C, because the ESP32's Wire DMA cannot read directly from flash. This means the firmware binary must fit in available heap. If you see a crash immediately after calling `loadFirmware()` on an ESP32, check your heap with `ESP.getFreeHeap()` before the call. You need enough free heap for the firmware array plus the rest of your sketch.
 
 </ExpandableSection>
 
@@ -126,7 +124,7 @@ Double-check that the `enable*()` call in `setup()` matches the getter you are c
 Some variation in raw readings is expected, but unusually high drift or offset usually has a physical or configuration cause.
 
 #### Keep the board still during the first few seconds after power-on
-The BHI385 firmware runs an automatic bias-calibration routine when it first boots. Moving the board during this window can corrupt the initial calibration and cause persistent drift. Let the board sit flat and motionless for 2–3 seconds after `loadFirmware()` returns before collecting data.
+The BHI385 firmware runs an automatic bias-calibration routine when it first boots. Moving the board during this window can corrupt the initial calibration and cause persistent drift. Let the board sit flat and motionless for 2-3 seconds after `loadFirmware()` returns before collecting data.
 
 #### Reduce the full-scale range if your application does not need the maximum
 Choosing a wider range (e.g. `BHI385_GYRO_2000DPS`) reduces resolution at low angular velocities. If your project measures gentle motion, switch to a narrower range:
