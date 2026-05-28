@@ -1,8 +1,8 @@
 ---
-slug: /nula_dual_esp32-c5/overview
-title: NULA Dual ESP32-C5 - Overview
+slug: /nula_w55rp20/overview
+title: NULA Ether W55RP20 - Overview
 sidebar_label: Overview
-id: nula_dual_esp32-c5-overview
+id: nula_w55rp20-overview
 hide_title: True
 pagination_prev: null
 ---
