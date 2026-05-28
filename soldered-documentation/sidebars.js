@@ -54,6 +54,10 @@ const sidebars = {
           type: 'doc',
           id: 'arduino/arduino-bootloader',
         },
+        {
+          type: 'doc',
+          id: 'arduino/arduino-GitHub',
+        },
       ]
     },
     {
@@ -91,6 +95,11 @@ const sidebars = {
           type: 'doc',
           id: 'inkplate/inkplate-features-comparison'
         },
+        "inkplate/touchpads/overview",
+        {
+          type: 'doc',
+          id: 'inkplate/inkplate-lvgl-library'
+        },
         {
           "type": "category",
           "label": "Inkplate Models",
@@ -108,6 +117,7 @@ const sidebars = {
                 "inkplate/2/hardware/2-hardware-design",
                 "inkplate/2/hardware/2-hardware-open-source",
                 "inkplate/2/hardware/2-hardware-files",
+                "inkplate/2/hardware/2-hardware-jumpers",
                 "inkplate/2/hardware/2-hardware-battery",
                 "inkplate/2/hardware/2-hardware-free-gpio"
               ]
@@ -140,11 +150,62 @@ const sidebars = {
                 "inkplate/2/deepsleep/2-deep-sleep",
                 {
                   "type": "category",
+                  "label": "MicroSD",
+                  "items": [
+                    "inkplate/2/microsd/2-microsd-basics",
+                    "inkplate/2/microsd/2-microsd-image"
+                  ]
+                },
+                {
+                  "type": "category",
                   "label": "Real Time Clock",
                   "items": [
+                    "inkplate/2/rtc/2-rtc-basics",
                     "inkplate/2/rtc/2-rtc-alarm"
                   ]
                 }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "MicroPython",
+              "items": [
+                "inkplate/2/micropython/setup",
+                {
+                  "type": "category",
+                  "label": "Basics",
+                  "items": [
+                    "inkplate/2/micropython/basics/display-initialization",
+                    "inkplate/2/micropython/basics/print-text",
+                    "inkplate/2/micropython/basics/graphics"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "WiFi",
+                  "items": [
+                    "inkplate/2/micropython/wifi/wifi-init",
+                    "inkplate/2/micropython/wifi/get-post-request",
+                    "inkplate/2/micropython/wifi/drawing-img-web"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "MicroSD",
+                  "items": [
+                    "inkplate/2/micropython/microsd/formatting",
+                    "inkplate/2/micropython/microsd/read-write",
+                    "inkplate/2/micropython/microsd/display-img"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Real Time Clock",
+                  "items": [
+                    "inkplate/2/micropython/rtc/basic"
+                  ]
+                },
+                "inkplate/2/micropython/deep-sleep",
               ]
             },
             "inkplate/2/2-faq-troubleshooting"
@@ -253,7 +314,8 @@ const sidebars = {
                 "inkplate/5v2/hardware/hardware-files",
                 "inkplate/5v2/hardware/hardware-jumpers",
                 "inkplate/5v2/hardware/hardware-battery",
-                "inkplate/5v2/hardware/hardware-free-gpio"
+                "inkplate/5v2/hardware/hardware-free-gpio",
+                "inkplate/5v2/hardware/hardware-power-switch"
               ]
             },
             {
@@ -298,7 +360,51 @@ const sidebars = {
                     "inkplate/5v2/rtc/rtc-basics",
                     "inkplate/5v2/rtc/rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/5v2/readbattery/read-bat",
+                "inkplate/5v2/readtemperature/read-temp"
+              ]
+            },
+            {
+              "type":"category",
+              "label":"MicroPython",
+              "items":[
+                "inkplate/5v2/micropython/setting-up",
+                {
+                  "type":"category",
+                  "label":"Basics",
+                  "items": [
+                      "inkplate/5v2/micropython/basics/init-and-display-update",
+                      "inkplate/5v2/micropython/basics/printing-text",
+                      "inkplate/5v2/micropython/basics/drawing-graphics",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"WiFi",
+                  "items":[
+                    "inkplate/5v2/micropython/wifi/init-and-connection",
+                    "inkplate/5v2/micropython/wifi/get-and-post-requests",
+                    "inkplate/5v2/micropython/wifi/draw-image-from-wifi",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"MicroSD",
+                  "items":[
+                    "inkplate/5v2/micropython/microsd/formatting-the-microsd-card",
+                    "inkplate/5v2/micropython/microsd/read-and-write",
+                    "inkplate/5v2/micropython/microsd/draw-image-from-microsd-card",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"RTC",
+                  "items":[
+                    "inkplate/5v2/micropython/rtc/basic-rtc-usage",
+                  ]
+                },
+                "inkplate/5v2/micropython/battery-temperature",
               ]
             },
             "inkplate/5v2/faq-troubleshooting"
@@ -319,7 +425,8 @@ const sidebars = {
                 "inkplate/6/hardware/hardware-files",
                 "inkplate/6/hardware/hardware-jumpers",
                 "inkplate/6/hardware/hardware-battery",
-                "inkplate/6/hardware/hardware-free-gpio"
+                "inkplate/6/hardware/hardware-free-gpio",
+                "inkplate/6/hardware/hardware-power-switch"
               ]
             },
             {
@@ -364,7 +471,51 @@ const sidebars = {
                     "inkplate/6/rtc/rtc-basics",
                     "inkplate/6/rtc/rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/6/readbattery/read-bat",
+                "inkplate/6/readtemperature/read-temp"
+              ]
+            },
+            {
+              "type":"category",
+              "label":"MicroPython",
+              "items":[
+                "inkplate/6/micropython/setting-up",
+                {
+                  "type":"category",
+                  "label":"Basics",
+                  "items": [
+                      "inkplate/6/micropython/basics/init-and-display-update",
+                      "inkplate/6/micropython/basics/printing-text",
+                      "inkplate/6/micropython/basics/drawing-graphics",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"WiFi",
+                  "items":[
+                    "inkplate/6/micropython/wifi/init-and-connection",
+                    "inkplate/6/micropython/wifi/get-and-post-requests",
+                    "inkplate/6/micropython/wifi/draw-image-from-wifi",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"MicroSD",
+                  "items":[
+                    "inkplate/6/micropython/microsd/formatting-the-microsd-card",
+                    "inkplate/6/micropython/microsd/read-and-write",
+                    "inkplate/6/micropython/microsd/draw-image-from-microsd-card",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"RTC",
+                  "items":[
+                    "inkplate/6/micropython/rtc/basic-rtc-usage",
+                  ]
+                },
+                "inkplate/6/micropython/battery-temperature",
               ]
             },
             "inkplate/6/faq-troubleshooting"
@@ -385,7 +536,8 @@ const sidebars = {
                 "inkplate/6color/hardware/hardware-files",
                 "inkplate/6color/hardware/hardware-jumpers",
                 "inkplate/6color/hardware/hardware-battery",
-                "inkplate/6color/hardware/hardware-free-gpio"
+                "inkplate/6color/hardware/hardware-free-gpio",
+                "inkplate/6color/hardware/hardware-power-switch"
               ]
             },
             {
@@ -428,7 +580,51 @@ const sidebars = {
                     "inkplate/6color/rtc/rtc-basics",
                     "inkplate/6color/rtc/rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/6color/readbattery/read-bat",
+              ]
+            },
+            {
+              "type": "category",
+              "label": "MicroPython",
+              "items": [
+                "inkplate/6color/micropython/setup",
+                {
+                  "type": "category",
+                  "label": "Basics",
+                  "items": [
+                    "inkplate/6color/micropython/basics/display-initialization",
+                    "inkplate/6color/micropython/basics/print-text",
+                    "inkplate/6color/micropython/basics/drawing-shapes"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "WiFi",
+                  "items": [
+                    "inkplate/6color/micropython/wifi/wifi-init",
+                    "inkplate/6color/micropython/wifi/get-post-request",
+                    "inkplate/6color/micropython/wifi/drawing-img-web"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "RTC",
+                  "items": [
+                    "inkplate/6color/micropython/rtc/basic-usage"
+                  ]
+                },
+                "inkplate/6color/micropython/deep-sleep",
+                {
+                  "type": "category",
+                  "label": "MicroSD",
+                  "items": [
+                    "inkplate/6color/micropython/microsd/microsd-formatting",
+                    "inkplate/6color/micropython/microsd/image-display",
+                    "inkplate/6color/micropython/microsd/read-write-files"
+                  ]
+                },
+                "inkplate/6color/micropython/read-battery"
               ]
             },
             "inkplate/6color/faq-troubleshooting"
@@ -451,7 +647,8 @@ const sidebars = {
                 "inkplate/6flick/hardware/6flick-hardware-frontlight",
                 "inkplate/6flick/hardware/6flick-hardware-jumpers",
                 "inkplate/6flick/hardware/6flick-hardware-battery",
-                "inkplate/6flick/hardware/hardware-free-gpio"
+                "inkplate/6flick/hardware/hardware-free-gpio",
+                "inkplate/6flick/hardware/6flick-hardware-power-switch"
               ]
             },
             {
@@ -505,7 +702,52 @@ const sidebars = {
                     "inkplate/6flick/rtc/6flick-rtc-basics",
                     "inkplate/6flick/rtc/6flick-rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/6flick/readbattery/read-bat",
+                "inkplate/6flick/readtemperature/read-temp"
+              ]
+            },
+            {
+              "type":"category",
+              "label":"MicroPython",
+              "items":[
+                "inkplate/6flick/micropython/setting-up",
+                {
+                  "type":"category",
+                  "label":"Basics",
+                  "items": [
+                      "inkplate/6flick/micropython/basics/init-and-display-update",
+                      "inkplate/6flick/micropython/basics/printing-text",
+                      "inkplate/6flick/micropython/basics/drawing-graphics",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"WiFi",
+                  "items":[
+                    "inkplate/6flick/micropython/wifi/init-and-connection",
+                    "inkplate/6flick/micropython/wifi/get-and-post-requests",
+                    "inkplate/6flick/micropython/wifi/draw-image-from-wifi",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"MicroSD",
+                  "items":[
+                    "inkplate/6flick/micropython/microsd/formatting-the-microsd-card",
+                    "inkplate/6flick/micropython/microsd/read-and-write",
+                    "inkplate/6flick/micropython/microsd/draw-image-from-microsd-card",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"RTC",
+                  "items":[
+                    "inkplate/6flick/micropython/rtc/basic-rtc-usage",
+                  ]
+                },
+                "inkplate/6flick/micropython/battery-temperature",
+                "inkplate/6flick/micropython/frontlight",
               ]
             },
             "inkplate/6flick/6flick-faq-troubleshooting"
@@ -526,7 +768,8 @@ const sidebars = {
                 "inkplate/10/hardware/10-hardware-files",
                 "inkplate/10/hardware/10-hardware-jumpers",
                 "inkplate/10/hardware/10-hardware-battery",
-                "inkplate/10/hardware/10-hardware-free-gpio"
+                "inkplate/10/hardware/10-hardware-free-gpio",
+                "inkplate/10/hardware/10-hardware-power-switch"
               ]
             },
             {
@@ -571,7 +814,51 @@ const sidebars = {
                     "inkplate/10/rtc/10-rtc-basics",
                     "inkplate/10/rtc/10-rtc-alarm"
                   ]
-                }
+                },
+                "inkplate/10/readbattery/read-bat",
+                "inkplate/10/readtemperature/read-temp"
+              ]
+            },
+            {
+              "type":"category",
+              "label":"MicroPython",
+              "items":[
+                "inkplate/10/micropython/setting-up",
+                {
+                  "type":"category",
+                  "label":"Basics",
+                  "items": [
+                      "inkplate/10/micropython/basics/init-and-display-update",
+                      "inkplate/10/micropython/basics/printing-text",
+                      "inkplate/10/micropython/basics/drawing-graphics",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"WiFi",
+                  "items":[
+                    "inkplate/10/micropython/wifi/init-and-connection",
+                    "inkplate/10/micropython/wifi/get-and-post-requests",
+                    "inkplate/10/micropython/wifi/draw-image-from-wifi",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"MicroSD",
+                  "items":[
+                    "inkplate/10/micropython/microsd/formatting-the-microsd-card",
+                    "inkplate/10/micropython/microsd/read-and-write",
+                    "inkplate/10/micropython/microsd/draw-image-from-microsd-card",
+                  ]
+                },
+                {
+                  "type":"category",
+                  "label":"RTC",
+                  "items":[
+                    "inkplate/10/micropython/rtc/basic-rtc-usage",
+                  ]
+                },
+                "inkplate/10/micropython/battery-temperature",
               ]
             },
             "inkplate/10/10-faq-troubleshooting"
@@ -594,7 +881,9 @@ const sidebars = {
                 "inkplate/6motion/hardware/6motion-hardware-jumpers",
                 "inkplate/6motion/hardware/6motion-hardware-esp32",
                 "inkplate/6motion/hardware/6motion-hardware-battery",
-                "inkplate/6motion/hardware/6motion-hardware-free-gpio"
+                "inkplate/6motion/hardware/6motion-hardware-free-gpio",
+                "inkplate/6motion/hardware/6motion-hardware-power-switch",
+                "inkplate/6motion/hardware/6motion-hardware-enclosure"
               ]
             },
             {
@@ -621,7 +910,8 @@ const sidebars = {
                     "inkplate/6motion/wifi/6motion-wifi-image-from-web",
                     "inkplate/6motion/wifi/6motion-wifi-get-post",
                     "inkplate/6motion/wifi/6motion-wifi-mqtt",
-                    "inkplate/6motion/wifi/6motion-wifi-udp"
+                    "inkplate/6motion/wifi/6motion-wifi-udp",
+                    "inkplate/6motion/wifi/6motion-esp32-modem"
                   ]
                 },
                 "inkplate/6motion/deepsleep/6motion-deep-sleep",
@@ -671,7 +961,8 @@ const sidebars = {
           "inkplate/projects/open-meteo",
           "inkplate/projects/openai-text-prompt",
           "inkplate/projects/openai-image-slideshow",
-          "inkplate/projects/image-uploader"
+          "inkplate/projects/image-uploader",
+          "inkplate/projects/e-reader"
       ]
     }
       ]
@@ -706,6 +997,7 @@ const sidebars = {
             { type: 'doc', id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-overview' },
             { type: 'doc', id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-hardware' },
             { type: 'doc', id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-arduino-1' },
+            { type: 'doc', id: 'nula-boards/mini-esp32-c6/mini-esp32-c6_mac_linux' },
           ],
         },
       ],
@@ -714,6 +1006,340 @@ const sidebars = {
       type: 'category',
       label: 'Sensors',
       items: [
+        {
+          type: 'category',
+          label: 'TMP117 Temperature Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/tmp117/tmp117-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tmp117/tmp117-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/tmp117/tmp117-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/tmp117/arduino_library/tmp117-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SPK0641HT Microphone',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/spk0641ht/spk0641ht-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/spk0641ht/spk0641ht-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/spk0641ht/spk0641ht-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/spk0641ht/arduino_library/spk0641ht-arduino-5',
+                },
+              ],
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'VL53L1X ToF Laser Distance Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x-laser-sensor/laser-distance-sensor-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x-laser-sensor/laser-distance-sensor-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x-laser-sensor/laser-distance-sensor-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/vl53l1x-laser-sensor/arduino_library/laser-distance-sensor-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/vl53l1x-laser-sensor/arduino_library/laser-distance-sensor-arduino-2',
+                },
+              ],
+            },
+            {
+              type: "category",
+              label: "MicroPython library",
+              items: [
+                "sensors/vl53l1x-laser-sensor/micropython_library/laser-distance-sensor-micropython",
+                "sensors/vl53l1x-laser-sensor/micropython_library/laser-distance-sensor-micropython-read-continuous",
+                "sensors/vl53l1x-laser-sensor/micropython_library/laser-distance-sensor-micropython-detailed",
+                "sensors/vl53l1x-laser-sensor/micropython_library/laser-distance-sensor-micropython-interrupt"
+              ]
+            },
+            {
+              type: 'doc',
+              id: 'sensors/vl53l1x-laser-sensor/laser-distance-sensor-troubleshooting',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'BME688 Environmental Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/bme688/bme688-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme688/bme688-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme688/bme688-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bme688/arduino_library/bme688-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme688/arduino_library/bme688-arduino-2',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/bme688/micropython/bme688-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/bme688/micropython/bme688-micropython-2',
+                },
+              ]
+            },
+            {
+              type: 'doc',
+              id: 'sensors/bme688/bme688-troubleshooting',
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Thermocouple sensor AD8495',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/arduino_library/ad8495-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/arduino_library/ad8495-arduino-2',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython module',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/micropython/ad8495-micropython-1'
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ad8495/micropython/ad8495-micropython-2'
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ad8495/ad8495-troubleshooting',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Accelerometer IIS2DULPX',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/iis2dulpx/iis2dulpx-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/iis2dulpx/iis2dulpx-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/iis2dulpx/iis2dulpx-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/arduino_library/iis2dulpx-arduino-2',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/micropython/iis2dulpx-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/iis2dulpx/micropython/iis2dulpx-micropython-2',
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              id: 'sensors/iis2dulpx/iis2dulpx-troubleshooting',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Barcode Scanner DE2120',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/arduino_library/barcode-scanner-de2120-arduino-2',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/barcode-scanner-de2120/micropython/barcode-scanner-de2120-micropython-2',
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              id: 'sensors/barcode-scanner-de2120/barcode-scanner-de2120-troubleshooting',
+            },
+          ],
+        },
         {
           type: 'category',
           label: 'INA219 Voltage & current sensor',
@@ -2563,6 +3189,108 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Inputronic Keyboard',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/inputronic-keyboard/inputronic-keyboard-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/inputronic-keyboard/inputronic-keyboard-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/inputronic-keyboard/inputronic-keyboard-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/arduino_library/inputronic-keyboard-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/arduino_library/inputronic-keyboard-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/arduino_library/inputronic-keyboard-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/arduino_library/inputronic-keyboard-arduino-4',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/micropython/inputronic-keyboard-micropython-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/micropython/inputronic-keyboard-micropython-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/micropython/inputronic-keyboard-micropython-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/inputronic-keyboard/micropython/inputronic-keyboard-micropython-4',
+                },
+              ],
+            },
+            {
+              type: 'doc',
+              id: 'communication/inputronic-keyboard/inputronic-keyboard-troubleshooting',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MakerICE Adapter AVR',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-avr/makerice-adapter-avr-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-avr/makerice-adapter-avr-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-avr/makerice-adapter-avr-how-it-works',
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MakerICE Adapter SAM',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-sam/makerice-adapter-sam-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-sam/makerice-adapter-sam-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/makerice-adapter-sam/makerice-adapter-sam-how-it-works',
+            }
+          ],
+        },
+        {
+          type: 'category',
           label: 'CAN Transciever MCP2518',
           items: [
             {
@@ -2592,6 +3320,10 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'communication/mcp2518/arduino_library/mcp2518-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/mcp2518/arduino_library/mcp2518-arduino-4',
                 },
               ],
             },
@@ -3093,6 +3825,298 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Beginner kits',
+      items: [
+        {
+          type: 'category',
+          label: 'Soldered NULA Beginner kit Arduino',
+          items: [
+            {
+              type:'category',
+              label:'0. Getting Started',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-breadboard-fundementals'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-setting-arduino-enviroment'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '1. Basic Skills',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-serial-print-hello-world'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-led-blinking'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '2. Inputs and Outputs',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-button-counter'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-button-debounce'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-photoresistor-analog-read'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-buzzer-beep'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '3. Ultrasonic Distance Sensor',
+              items:[
+                {
+                  type:'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-measuring-distance'
+                },
+                {
+                  type:'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-distance-fade-led'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '4. LCD Display',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-print-message'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-auto-scroll-text'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '5. Temperature Sensor SHTC3',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-reading-temperature-and-humidity'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '6. Wi-Fi',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-connecting-and-getting-data'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-wifi-led-control'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-sending-data'
+                },
+              ]
+            },
+            {
+              type:'category',
+              label: '7. Projects',
+              items:[
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-smart-weather-station'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-mini-piano'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-parking-sensor'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-rgb-led-controller'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-shift-register-binary-counter'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-morse-code-transmitter'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-alarm-clock'
+                },
+                {
+                  type:'doc',
+                  id:'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-led-traffic-light'
+                }
+              ]
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Soldered NULA Beginner Kit MicroPython',
+          items: [
+            {
+              type: 'category',
+              label: '1. Basic Skills',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/hello-world'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/led-blinking'
+                }
+              ],
+            },
+            {
+              type: 'category',
+              label: '2. Inputs and Basic Interaction',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/button-counter'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/button-debounce'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/photoresistor-analog-read'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/buzzer-beep'
+                }
+              ],
+            },
+            {
+              type: 'category',
+              label: '3. Ultrasonic Distance Sensor',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/measuring-distance'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/distance-fade-led'
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: '4. LCD Display',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/lcd-message'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/lcd-autoscroll'
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '5. Temperature sensor SHTC3',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/reading-temperature-and-humidity'
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '6. WiFi',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/connection-getting-data'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/wifi-led-control'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/sending-data'
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '7. Projects',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/piano-project'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/traffic-light-project'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/rgb-led-controller-project'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/alarm-clock-project'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/shift-register-project'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/morse-code-project'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/smart-weather-station'
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/parking-sensor-project'
+                }
+              ]
+            },
+          ]
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Solder Kits',
       items: [
         {
@@ -3204,6 +4228,46 @@ const sidebars = {
             {
               type: 'doc',
               id: 'solder-kits/eea-airplane-lights/eea-airplane-lights-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Piano Solder Kit',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/piano-kit/piano-kit-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/piano-kit/piano-solder-kit-assembly-guide',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/piano-kit/piano-kit-playing',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Pomodoro Solder Kit',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/pomodoro/pomodoro-solder-kit-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/pomodoro/pomodoro-solder-kit-assembly-guide',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/pomodoro/pomodoro-solder-kit-how-to-use',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/pomodoro/pomodoro-solder-kit-how-to-reprogram',
             },
           ]
         }
