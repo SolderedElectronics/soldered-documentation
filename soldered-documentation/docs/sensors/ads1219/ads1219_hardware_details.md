@@ -37,9 +37,9 @@ Click [**here**](/img/ads1219/pinout.png) for a high-resolution image of the pin
 
 ## Qwiic (formerly easyC)
 
-<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
+<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic (formerly easyC) cable" width="550px" />
 
-<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic (formerly easyC) cable** and start coding!</InfoBox>
 
 <QuickLink 
   title="Qwiic (formerly easyC) details and specifications" 

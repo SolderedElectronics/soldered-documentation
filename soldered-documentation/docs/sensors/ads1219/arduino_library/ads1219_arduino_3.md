@@ -1,7 +1,7 @@
 ---
 slug: /ads1219/arduino/interrupt
-title: ADS1219 24-bit ADC - Interrupt
-sidebar_label: Interrupt 
+title: ADS1219 24-bit ADC - Reading with Interrupt
+sidebar_label: ADS1219 24-bit ADC
 id: ads1219-arduino-3 
 hide_title: False
 ---
@@ -24,11 +24,7 @@ Include the library and create the ADC object:
 #include "ADS1219-SOLDERED.h"
 
 ADS1219 adc;
-```
 
-In the `setup()` function, initialize and configure the sensor:
-
-```cpp
 void setup()
 {
     Serial.begin(115200);
@@ -65,7 +61,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="adc.setGain(uint8_t gain)"
+  functionName="adc.setGain()"
   description="Sets the programmable gain amplifier (PGA). Higher gain narrows the input range but increases resolution for small signals"
   returnDescription="None"
   parameters={[
@@ -74,7 +70,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="adc.setDataRate(uint8_t rate)"
+  functionName="adc.setDataRate()"
   description="Sets the output data rate (samples per second). Lower rates give less noise; higher rates give faster updates"
   returnDescription="None"
   parameters={[
@@ -83,7 +79,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="adc.setInputMultiplexer(uint8_t mux)"
+  functionName="adc.setInputMultiplexer()"
   description="Selects which input channel or differential pair is routed to the ADC"
   returnDescription="None"
   parameters={[
@@ -92,7 +88,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="adc.setVoltageReference(uint8_t ref)"
+  functionName="adc.setVoltageReference()"
   description="Selects the voltage reference source used for conversion"
   returnDescription="None"
   parameters={[
@@ -101,7 +97,7 @@ void setup()
 />
 
 <FunctionDocumentation
-  functionName="adc.setConversionMode(uint8_t mode)"
+  functionName="adc.setConversionMode()"
   description="Sets the conversion mode. In continuous mode the ADC converts back-to-back without needing a new trigger for each sample"
   returnDescription="None"
   parameters={[
@@ -157,7 +153,7 @@ void loop()
 />
 
 <FunctionDocumentation
-  functionName="adc.toVoltage(long raw)"
+  functionName="adc.toVoltage()"
   description="Converts a raw 24-bit ADC result to a voltage in volts, based on the configured gain and voltage reference"
   returnDescription="Float value, the measured voltage in Volts"
   parameters={[

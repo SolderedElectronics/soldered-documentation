@@ -26,13 +26,13 @@ For an in-depth look at technical specifications, refer to the official ADS1219 
 
 ## How It Works
 
-The **ADS1219** is a **delta-sigma (ΔΣ) analog-to-digital converter** designed for high-resolution, low-noise measurements of small analog signals. It is especially well-suited for applications such as **load cells, bridge sensors, temperature sensing**, and any use case where signal accuracy matters more than speed.
+The **ADS1219** is a **delta-sigma (ΔΣ) analog-to-digital converter** that achieves high resolution and low noise by oversampling and filtering the input signal. It works well for slow-changing signals like those from **load cells, bridge sensors, and thermocouples**, where accuracy matters more than sampling speed.
 
 <CenteredImage src="/img/ads1219/flowchart.png" alt="ADS1219 Operating Flow Chart" caption="ADS1219 Operating Flow Chart (Figure 33)" width="600px" />
 
 The device accepts up to **four input channels (AIN0-AIN3)** that can be routed to the internal multiplexer in various **differential or single-ended configurations**. The selected input signal passes through a **programmable gain amplifier (PGA)**, which supports gains of **1, 2, 4, and 8**, effectively scaling the input range to make the best use of the ADC's full dynamic range.
 
-After amplification, the signal enters the **delta-sigma modulator**, which oversamples the input at a high internal clock rate and produces a 1-bit data stream. A **digital decimation filter** processes this stream and outputs a final 24-bit result at the selected data rate (**20, 90, 330, or 1000 SPS**). This oversampling and filtering approach is what gives the ADS1219 its exceptional noise rejection and resolution.
+After amplification, the signal enters the **delta-sigma modulator**, which oversamples the input at a high internal clock rate and produces a 1-bit data stream. A **digital decimation filter** processes this stream and outputs a final 24-bit result at the selected data rate (**20, 90, 330, or 1000 SPS**). This oversampling and filtering is what gives the ADS1219 its low noise and high resolution.
 
 The ADS1219 supports two operating modes:
 
