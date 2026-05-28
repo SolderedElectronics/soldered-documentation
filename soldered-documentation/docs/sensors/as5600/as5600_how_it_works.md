@@ -6,17 +6,17 @@ id: as5600-how-it-works
 hide_title: False
 ---  
 
-The AS5600 is a magnetic rotary position sensor that provides high-resolution angle measurement and contactless rotational sensing in a compact package, manufactured by [**AMS OSRAM**](https://ams-osram.com/products/sensor-solutions/position-sensors/ams-as5600-position-sensor).
+The AS5600 is a magnetic rotary position sensor from [**AMS OSRAM**](https://ams-osram.com/products/sensor-solutions/position-sensors/ams-as5600-position-sensor) that measures the angular position of a rotating magnet without physical contact.
 
-<CenteredImage src="/img/as5600/as5600_onboard.JPG" alt="AS-5600 sensor on board" caption="AS-5600 sensor on board" width="500px" />
+<CenteredImage src="/img/as5600/as5600_onboard.JPG" alt="AS5600 sensor on board" caption="AS5600 sensor on board" width="500px" />
 
 ## Datasheet
 
 For an in-depth look at technical specifications, refer to the official AS5600 Datasheet:  
 
 <QuickLink  
-  title="AS-5600 Datasheet"  
-  description="Detailed technical documentation for the AS-5600 sensor"  
+  title="AS5600 Datasheet"  
+  description="Detailed technical documentation for the AS5600 sensor"  
   url="https://look.ams-osram.com/m/7059eac7531a86fd/original/AS5600-DS000365.pdf"  
 />  
 
@@ -24,22 +24,20 @@ For an in-depth look at technical specifications, refer to the official AS5600 D
 
 ## How the sensor works
 
-The AS5600 is a magnetic rotary position sensor designed for **accurate contactless angle measurement**. It integrates a **Hall-effect magnetic sensor, analog-to-digital converter (ADC), and digital signal processing** into a compact module, enabling precise rotational position tracking in various applications.
+The AS5600 uses a **Hall-effect magnetic sensor**, an internal **ADC**, and **digital signal processing** to detect the orientation of a nearby diametric magnet and convert it to an angle value.
 
-The AS5600 operates with **low power consumption** and **high measurement accuracy**, making it ideal for **motor control, robotics, rotary knobs, and position sensing systems**.
+- **Magnetic angle sensing** - The sensor reads the magnetic field of a diametrically magnetised magnet placed above it and outputs its angular position with **360° tracking**.
 
-- **Magnetic Angle Sensing** - The sensor detects the magnetic field orientation of a nearby diametric magnet and converts it into precise angular position data with **360° rotational tracking**.
+- **12-bit resolution** - The internal ADC provides up to **4096 positions per revolution**, giving smooth and precise readings.
 
-- **High-Resolution Measurement** - The integrated **12-bit ADC** provides up to **4096 positions per revolution**, enabling smooth and accurate angle measurements.
+- **Contactless operation** - No physical contact means no mechanical wear over time.
 
-- **Contactless Operation** - Using Hall-effect sensing technology, the AS5600 measures rotation without physical contact, reducing **mechanical wear** and improving long-term reliability.
+- **Multiple output options** - Angle data is available via **I2C**, **analog voltage output**, or **PWM**, depending on what your application needs.
 
-- **Signal Processing and Output** - The sensor processes position data internally and provides output through **I2C, analog voltage, or PWM interfaces**, allowing **easy integration with microcontrollers and embedded systems**.
 ---
 
 ## I2C Communication
 
-The AS5600 sensor uses **I2C** (Inter-Integrated Circuit) communication to exchange data with a microcontroller. I2C uses two lines: **SDA** for **data transfer** and **SCL** for **clock synchronization**.
+The AS5600 communicates over I2C with a **fixed address of 0x36**. A host microcontroller can request the current angle, raw angle value, and sensor status over the SDA and SCL lines.
 
-As a follower device (a device that accepts or provides a digital message carrying measurement or other data, but only when specifically requested), the AS5600 has a fixed I2C address that allows a master device to read precise **rotational position and angle measurements**.
 

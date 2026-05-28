@@ -24,7 +24,7 @@ Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-
 If you have multiple I2C devices connected to the same bus, ensure that none of them use the same address. The AS5600 typically uses the fixed I2C address **0x36**.
 
 #### Verify power supply
-Make sure the sensor is receiving proper voltage. Most AS5600 breakout boards support both 3.3V and 5V operation through an onboard voltage regulator.
+Make sure the sensor is receiving proper voltage. This board supports both 3.3V and 5V operation through an onboard voltage regulator.
 
 #### Try reinitializing
 If the sensor fails to initialize on the first attempt, try calling `sensor.begin()` again or reset your microcontroller.
@@ -37,7 +37,7 @@ If the sensor fails to initialize on the first attempt, try calling `sensor.begi
 The magnet must be positioned directly above the center of the AS5600 chip. Improper alignment can prevent the sensor from detecting the magnetic field correctly.
 
 #### Check magnet distance
-Place the magnet approximately **1mm to 3mm** above the sensor. If the magnet is too far away or too close, the sensor may not detect it properly.
+Place the magnet approximately **0.5mm to 3mm** above the sensor. If the magnet is too far away or too close, the sensor may not detect it properly.
 
 #### Use the correct type of magnet
 The AS5600 works best with a **diametric magnet**. Standard fridge magnets or weak magnets may not produce reliable readings.

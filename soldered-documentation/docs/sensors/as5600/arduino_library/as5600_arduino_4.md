@@ -55,11 +55,11 @@ PositionSensor sensor; // Create sensor object
 /**
  * Connecting diagram:
  *
- * AS5600                       Dasduino Core / Connect / ConnectPlus
- * VCC------------------------->VCC
+ * AS5600                       NULA DeepSleep
+ * VCC------------------------->3.3V
  * GND------------------------->GND
- * SCL------------------------->A5/IO5/IO22
- * SDA------------------------->A4/IO4/IO21
+ * SCL------------------------->IO9
+ * SDA------------------------->IO8
  * 
  * Or, simply use a Qwiic cable!
  * 
@@ -69,7 +69,7 @@ void setup()
 {
     Serial.begin(115200); // Begin serial communication
 
-    Wire.begin(6, 7);
+    Wire.begin(8, 9); // SDA, SCL for NULA DeepSleep
 
     if (!sensor.begin()) // Initialize sensor
     {
