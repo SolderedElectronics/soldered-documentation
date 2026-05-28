@@ -7,7 +7,7 @@ pagination_prev: null
 ---
 ## USB-C PD Breadboard power supply
 
-The **USB-C PD Breadboard power supply** is a versatile and powerful power source for your breadboard projects. Powered via a USB-C connector, it utilizes an onboard USB-PD controller to negotiate voltages directly from your USB-C Power Delivery adapter. Output voltages and currents are selectable, supporting up to 20V and 3.25A. It includes an ON/OFF switch, a purple power LED, pin headers, and a secure terminal block for easy connections.
+The **USB-C PD Breadboard Power Supply** plugs into any USB-C PD adapter and uses the onboard HUSB238 controller to negotiate the output voltage and current you select with the hardware switches. Supported voltages run from 5V to 20V, with current limits up to 3.25A. Output is available on pin headers and a terminal block, with an ON/OFF switch and a power LED on board.
 
 <ErrorBox>The module images for the USB-C PD Breadboard Power Supply haven't been generated yet! We're working on it!</ErrorBox>
 
@@ -19,13 +19,12 @@ The **USB-C PD Breadboard power supply** is a versatile and powerful power sourc
 
 ---
 
-## Key Features
+## Key features
 
-- **Input:** USB-C Connector with ON/OFF switch
-- **Controller:** USB-PD Controller (HUSB238)
-- **Selectable Output Voltages:** 5V, 9V, 12V, 15V, 18V, and 20V
-- **Selectable Current Limits:** 1.25A, 1.5A, 2A, 2.5A, 3A, and 3.25A
-- **Output Connectors:** Standard pin headers and Terminal connector (KF235-5.0-2P)
-- **Indicators:** Purple output LED
-- **Extras:** SDA and SCL I2C pins broken out
-  
+- USB-C input with ON/OFF switch
+- HUSB238 USB-PD sink controller
+- Output voltage: 5V, 9V, 12V, 15V, 18V, or 20V (switch selectable)
+- Current limit: 1.25A, 1.5A, 2A, 2.5A, 3A, or 3.25A (switch selectable)
+- Output via pin headers and terminal block (KF235-5.0-2P)
+- Power LED indicator
+- SDA and SCL pins broken out for I2C access

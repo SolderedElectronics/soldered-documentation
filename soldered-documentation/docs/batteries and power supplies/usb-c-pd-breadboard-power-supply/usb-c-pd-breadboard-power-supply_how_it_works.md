@@ -4,35 +4,28 @@ title: How it works
 id: usb-c-pd-breadboard-power-supply-how-it-works 
 hide_title: False
 ---  
-The **USB-C PD Breadboard Power Supply** is designed to provide configurable power delivery directly to your breadboard. It relies on the **HUSB238**, a highly integrated USB Power Delivery sink controller, to negotiate standard voltages and currents from any compatible USB-C adapter.
-    
+The **USB-C PD Breadboard Power Supply** uses the **HUSB238** USB Power Delivery sink controller to negotiate output voltage and current from any USB-C PD adapter.
 
 ---
 
-## How Power Negotiation Works
+## How power negotiation works
 
-The **HUSB238** acts as a sink role controller. When you connect a USB-C Power Delivery source, the IC communicates over the Configuration Channel lines to read the capabilities of the power adapter. 
-
-It then requests a specific voltage and current based on the configuration of the hardware switches on the board. The voltage and current are set by altering the resistance values connected to the **VSET** and **ISET** pins of the HUSB238.
-
-If the requested voltage and current match what the adapter can provide, the negotiation is successful, and the power is output to the terminal blocks and header pins.
+The HUSB238 is the sink controller in the USB-PD negotiation. On connection, it reads the adapter's available power profiles over the CC (Configuration Channel) lines. It then requests a voltage and current level based on the hardware switch positions, which set resistance values on the VSET and ISET pins. If the adapter supports the requested profile, the negotiated voltage appears on the output headers and terminal block.
 
 ---
 
-## Handling Mismatches
+## Handling mismatches
 
-If you request a power profile that the adapter cannot provide, the HUSB238 incorporates mismatch rules. It will automatically fallback to a lower, safe voltage or request the next available lower voltage that meets the current requirements. 
-
----
-
-## I2C Advanced Configuration
-
-While the board functions perfectly as a standalone hardware-configured device via the onboard switches, the **SDA** and **SCL** pins are broken out. By connecting a microcontroller, you can interface with the HUSB238 over I2C. 
-
-Using I2C overrides the hardware switch configurations, allowing you to read all available power profiles from the connected adapter, dynamically request voltage changes, and monitor the connection status.
+If the adapter cannot supply the requested profile, the HUSB238 falls back to the next available lower voltage that still meets the current requirement.
 
 ---
 
-## Protection Features
+## I2C advanced configuration
 
-The controller integrates several safety mechanisms to protect your connected breadboard circuits. It includes Over-Voltage Protection and Under-Voltage Protection on the VBUS line. It also features Over-Temperature Protection to prevent overheating. The voltage rating goes up to 30V on VIN and GATE pins, ensuring safety even with 20V delivery.
+The SDA and SCL pins are broken out for direct I2C access to the HUSB238. Connecting a microcontroller lets you read available adapter profiles, request specific voltages, and monitor connection status. When I2C is used, it overrides the hardware switch configuration.
+
+---
+
+## Protection features
+
+The HUSB238 has over-voltage, under-voltage, and over-temperature protection on the VBUS line. The VIN and GATE pins are rated to 30V, giving clearance when running at 20V PD profiles.
