@@ -9,42 +9,39 @@ pagination_prev: null
 
 ## CO2, Temperature & Humidity Sensor SCD43
 
-The **SCD43** is a compact CO2, temperature, and humidity sensor based on Sensirion's NDIR (Non-Dispersive Infrared) photoacoustic sensing principle. It provides accurate CO2 concentration measurements alongside temperature and humidity readings — all over **I2C**. With its small footprint and **Qwiic (formerly easyC) connectivity**, it is ideal for indoor air quality monitoring, HVAC systems, ventilation control, and smart home projects. This board comes with two Qwiic (formerly easyC) connectors, providing easy daisy-chaining without soldering.
+The **SCD43** is a CO2, temperature, and humidity sensor by Sensirion, based on photoacoustic NDIR (Non-Dispersive Infrared) sensing. It measures all three values over **I2C** and comes on a breakout board with two **Qwiic (formerly easyC)** connectors for easy daisy-chaining.
 
-{/* TODO: Add product image once available */}
+{/* <CenteredImage src="/img/scd43/scd43.jpg" alt="SCD43 CO2 Sensor Breakout" caption="SCD43 CO2 Sensor Breakout" /> */}
 
 ---
 
 ## Which products is this documentation for?
 
-{/* TODO: Verify product title, SKU, URL, and image path once product page is live */}
-:::warning
-Product store link and image are not yet available. The QuickLink below will be updated once the product is listed.
-:::
+<WarningBox>
 
-{/* 
-<QuickLink 
+This product is not yet available in our store. Please check back soon!
+
+{/* <QuickLink 
   title="CO2 sensor SCD43 breakout"
-  description="XXXXXX"
-  url="https://soldered.com/product/co2-sensor-scd43-breakout/"
-  image="/img/scd43/XXXXXX.webp"
-/>
-*/}
+  description="333414"
+  url="https://solde.red/333414"
+  image="/img/scd43/scd43.jpg"
+/> */}
+
+</WarningBox>
 
 ---
 
-## Key Features
+## Key features
 
-- **CO2 measurement range:** 400 – 5,000 ppm  
-- **CO2 accuracy:** ±(30 ppm + 3% of reading)  
-- **Temperature range:** -10°C to 60°C  
-- **Humidity range:** 0% – 95% RH  
-- **Logic voltage level:** 3.3V  
-- **Operating voltage:** 3.3V  
-- **Communication:** I2C (address: 0x62)  
-- **Connector:** 2 × **Qwiic (formerly easyC) ports** (plug-and-play, no soldering needed)  
-- **Mounting:** **Two mounting holes** for secure attachment  
-- **Dimensions:** **22 × 22 mm** (0.9 × 0.9 inch)  
+- **CO2 measurement range:** 400 - 5,000 ppm
+- **CO2 accuracy:** ±(30 ppm + 3% of reading)
+- **Temperature range:** -10°C to 60°C
+- **Humidity range:** 0% - 95% RH
+- **Operating voltage:** 3.3V
+- **Communication:** I2C (address: **0x62**)
+- **Connector:** 2 × Qwiic (formerly easyC)
+- **Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)
 
 ---
 

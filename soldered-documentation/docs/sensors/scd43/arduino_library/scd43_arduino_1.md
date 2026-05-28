@@ -35,3 +35,5 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 | **NULA Deepsleep** | **SCD43** |
 | ------------------ | --------- |
 | Qwiic              | Qwiic     |
+
+<InfoBox>The SCD43 communicates over I2C with a **fixed address of 0x62**. This address cannot be changed.</InfoBox>

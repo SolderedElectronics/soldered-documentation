@@ -46,7 +46,7 @@ void setup()
 
 ## Reading measurements
 
-The SCD43 produces a new measurement every 5 seconds. Call `readMeasurement()` in a loop — it returns `true` when fresh data is ready. Then use the individual getter functions to retrieve each value:
+The SCD43 produces a new measurement every 5 seconds. Call `readMeasurement()` in a loop - it returns `true` when fresh data is ready. Then use the individual getter functions to retrieve each value:
 
 ```cpp
 void loop()

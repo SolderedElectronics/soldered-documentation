@@ -21,7 +21,7 @@ Click [**here**](/img/scd43/pinout.png) for a high-resolution image of the pinou
 | **SDA**     | Data     | I2C data line for communication.                 |
 | **SCL**     | Clock    | I2C clock line for communication.                |
 
-<InfoBox>This breakout board operates at **3.3V logic level**. It is not 5V tolerant — use a level shifter if connecting to a 5V logic board.</InfoBox>
+<InfoBox>This breakout board operates at **3.3V logic level**. It is not 5V tolerant - use a level shifter if connecting to a 5V logic board.</InfoBox>
 
 ---
 
@@ -29,7 +29,7 @@ Click [**here**](/img/scd43/pinout.png) for a high-resolution image of the pinou
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic (formerly easyC) cable" width="550px" />
 
-<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic (formerly easyC) cable** and start coding!</InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic (formerly easyC) cable** and start coding! The SCD43 communicates over I2C with a **fixed address of 0x62**.</InfoBox>
 
 <QuickLink
   title="Qwiic (formerly easyC) details and specifications"
@@ -100,13 +100,13 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.
-- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.
+- **Copper layers** (`.Cu.gbr`) - Defines the traces and pads on the board.
+- **Solder mask layers** (`.Mask.gbr`) - Specifies the protective solder mask.
+- **Silkscreen layers** (`.Silkscreen.gbr`) - Contains text and component markings.
+- **Paste layers** (`.Paste.gbr`) - Used for stencil fabrication in SMD assembly.
+- **Drill files** (`.drl`) - Provides drilling coordinates for vias and holes.
+- **Board outline** (`.Edge_Cuts.gbr`) - Defines the shape of the PCB.
+- **Gerber job file** (`.gbrjob`) - Describes the set of Gerber files used for production.
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
@@ -114,7 +114,7 @@ These files are ready for fabrication and can be used in PCB manufacturing.
 
 The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
-- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.
-- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+- **CE** - Certification document confirming compliance with EU safety, health, and environmental requirements.
+- **UKCA** - UKCA (UK Conformity Assessed) certification for the UK market.
+- **Safety Instructions** - Safety guidelines and precautions in English and in German.
+- **Info.txt** - Contains product details such as SKU, country of origin, HS tariff code, and barcode.
