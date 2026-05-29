@@ -48,7 +48,7 @@ void setup()
   description="Initializes the I2C bus, issues a soft reset to the BHI385, waits for the ROM bootloader to become ready, and verifies the chip ID (expected 0x7C). Must be called before loadFirmware()."
   returnDescription="true if the bootloader is ready and chip identity matches; false on I2C error or wrong chip ID"
   parameters={[
-    { type: 'uint8_t', name: 'addr', description: 'I2C address - BHI385_I2C_ADDR_HIGH (0x29, default) or BHI385_I2C_ADDR_LOW (0x28)' },
+    { type: 'uint8_t', name: 'addr', description: 'I2C address - BHI385_I2C_ADDR_HIGH (0x29) or BHI385_I2C_ADDR_LOW (0x28). The board JP5 jumper defaults to 0x29.' },
     { type: 'TwoWire&', name: 'wire', description: 'Wire instance to use; defaults to the global Wire object' },
   ]}
 />
