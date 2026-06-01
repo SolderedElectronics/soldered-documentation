@@ -3789,6 +3789,24 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'MPPT Li-Ion CN3791 charger board',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/MPPT Li-Ion CN3791/mppt-li-ion-cn3791-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/MPPT Li-Ion CN3791/mppt-li-ion-cn3791-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/MPPT Li-Ion CN3791/mppt-li-ion-cn3791-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Breadboard power supply board',
           items: [
             {
