@@ -7,7 +7,7 @@ pagination_prev: null
 ---
 The **Inputronic BRIDGE** is a highly versatile interface board powered by the **ESP32-S3** microcontroller. It is designed to act as a bridge for various communication protocols, making it an ideal tool for debugging, testing, and connecting different hardware ecosystems.
 
-The board features a comprehensive pinout, easy-to-use **Qwiic connectors** for plug-and-play I2C communication, and a protected **Female USB-A** port. With built-in selectable protocols via onboard jumpers, it ensures seamless integration for makers and engineers.
+The board features a comprehensive pinout, easy-to-use **Qwiic (formerly easyC) connectors** for plug-and-play I2C communication, and a protected **Female USB-A** port. With built-in selectable protocols via onboard jumpers, it ensures seamless integration for makers and engineers.
 
 <CenteredImage src="/img/inputronic-bridge/DSC00998.JPG"  alt="Inputronic BRIDGE" caption="Inputronic BRIDGE" width="500px"/>
 
@@ -34,4 +34,4 @@ The board features a comprehensive pinout, easy-to-use **Qwiic connectors** for 
 - **Efficiency:** Supports standard polling or an interrupt-driven mode (via the INT pin) to save host MCU CPU cycles.
 - **USB Interface:** Female USB-A connector with overcurrent protection (Max 260mA).
 - **Power Supply:** 3.3V logic, equipped with an onboard 3.3V to 5V boost converter.
-- **Qwiic Ecosystem:** Qwiic connectors (SMD) for fast I2C device integration.
+- **Qwiic (formerly easyC) Ecosystem:** Qwiic connectors (SMD) for fast I2C device integration.

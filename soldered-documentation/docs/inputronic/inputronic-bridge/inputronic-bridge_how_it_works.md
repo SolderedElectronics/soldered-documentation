@@ -23,7 +23,7 @@ The Inputronic BRIDGE simplifies the complex task of interfacing with USB device
 ### Multi-Protocol Output
 
 The board is designed to adapt to your project's needs by supporting three different communication protocols. The active protocol is selected using the onboard hardware jumpers (**JP3 & JP4**):
-- **I2C (Default):** Communicates over the standard `SDA` and `SCL` pins. The default I2C slave address is `0x50`. This mode is perfect for chaining multiple devices and is readily accessible via the onboard Qwiic connectors.
+- **I2C (Default):** Communicates over the standard `SDA` and `SCL` pins. The default I2C slave address is `0x50`. This mode is perfect for chaining multiple devices and is readily accessible via the onboard Qwiic (formerly easyC) connectors.
 - **UART:** Transmits and receives data using standard serial communication via the `RX` and `TX` pins.
 - **SPI:** Offers high-speed communication using the `MISO`, `MOSI`, `CLK`, and `CS` pins.
 

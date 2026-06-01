@@ -35,7 +35,7 @@ Below are example connection diagrams for **Nula DeepSleep**. These pins will be
 
 ### I2C Connection (Default)
 
-The easiest way to connect the Inputronic BRIDGE to the Nula DeepSleep is using the onboard Qwiic system.
+The easiest way to connect the Inputronic BRIDGE to the Nula DeepSleep is using the onboard Qwiic (formerly easyC) system.
 
 | **Nula DeepSleep** | **Inputronic BRIDGE** |
 | ------------------------ | --------------------- |

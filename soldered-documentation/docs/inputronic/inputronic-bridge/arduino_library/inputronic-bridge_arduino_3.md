@@ -11,7 +11,7 @@ This page contains some tips in case you are having problems using this product.
 
 #### Check your wiring
 Ensure that the Inputronic BRIDGE is correctly wired to your microcontroller:
-* For **I2C**: Ensure the Qwiic cable is properly seated or SDA/SCL pins are correctly connected. 
+* For **I2C**: Ensure the Qwiic (formerly easyC) cable is properly seated or SDA/SCL pins are correctly connected. 
 * For **UART**: Ensure RX is connected to TX, and TX is connected to RX.
 * For **SPI**: Verify MOSI, MISO, CLK, and CS pin connections.
 * Verify that **GND** and **3V3** are securely connected to a stable power source.

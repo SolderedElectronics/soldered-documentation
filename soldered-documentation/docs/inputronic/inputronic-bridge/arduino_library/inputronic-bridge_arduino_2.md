@@ -14,7 +14,7 @@ This page contains a simple example of how to poll and read standard USB events 
 
 ## Connections for this example
 
-For this example, we will use the easiest connection method: connecting the board via the Qwiic system to the **Nula DeepSleep**. 
+For this example, we will use the easiest connection method: connecting the board via the Qwiic (formerly easyC) system to the **Nula DeepSleep**. 
 <WarningBox>Make sure the onboard protocol jumpers (**JP3 & JP4**) are left open, as this defaults the board to I2C communication.</WarningBox>
 
 ---
