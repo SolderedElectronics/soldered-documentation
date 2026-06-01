@@ -6,6 +6,14 @@ hide_title: False
 ---  
 The **USB-C PD Breadboard Power Supply** uses the **HUSB238** USB Power Delivery sink controller to negotiate output voltage and current from any USB-C PD adapter.
 
+## Datasheet
+For an in-depth look at technical specifications, refer to the official HUSB238  Datasheet:
+<QuickLink  
+  title="HUSB238  Datasheet"  
+  description="Detailed technical documentation for the HUSB238"  
+  url="https://www.hynetek.com/uploadfiles/site/219/news/aabbbbdb-48c9-4a44-a6dc-2c15f53282e6.pdf"  
+/>  
+
 ---
 
 ## How power negotiation works

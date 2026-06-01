@@ -22,9 +22,8 @@ The **USB-C PD Breadboard Power Supply** plugs into any USB-C PD adapter and use
 ## Key features
 
 - USB-C input with ON/OFF switch
-- HUSB238 USB-PD sink controller
-- Output voltage: 5V, 9V, 12V, 15V, 18V, or 20V (switch selectable)
-- Current limit: 1.25A, 1.5A, 2A, 2.5A, 3A, or 3.25A (switch selectable)
-- Output via pin headers and terminal block (KF235-5.0-2P)
+- **HUSB238** USB-PD sink controller
+- **Output voltage:** 5V, 9V, 12V, 15V, 18V, or 20V (switch selectable)
+- **Current limit:** 1.25A, 1.5A, 2A, 2.5A, 3A, or 3.25A (switch selectable)
 - Power LED indicator
-- SDA and SCL pins broken out for I2C access
+- **SDA** and **SCL** pins broken out for I2C access
