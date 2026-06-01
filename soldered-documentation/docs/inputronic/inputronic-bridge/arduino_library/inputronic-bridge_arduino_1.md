@@ -66,8 +66,8 @@ If you have selected the UART protocol via the onboard jumpers (**JP3 & JP4**), 
 | ------------------------ | --------------------- |
 | 3V3                      | 3V3                   |
 | GND                      | GND                   |
-| RX                       | RX                    |
-| TX                       | TX                    |
+| RX                       | TX                    |
+| TX                       | RX                    |
 
 
 ---
