@@ -3793,19 +3793,19 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'batteries and power supplies/breadboard-power/breadboard-power-overview',
+              id: 'batteries and power supplies/breadboard power supply board/breadboard-power-supply-board-overview',
             },
             {
               type: 'doc',
-              id: 'batteries and power supplies/breadboard-power/breadboard-power-hardware',
+              id: 'batteries and power supplies/breadboard power supply board/breadboard-power-supply-board-hardware',
             },
             {
               type: 'doc',
-              id: 'batteries and power supplies/breadboard-power/breadboard-power-how-it-works',
+              id: 'batteries and power supplies/breadboard power supply board/breadboard-power-supply-board-how-it-works',
             },
             {
               type: 'doc',
-              id: 'batteries and power supplies/breadboard-power/breadboard-power-connecting',
+              id: 'batteries and power supplies/breadboard power supply board/breadboard-power-supply-board-connecting',
             },
           ],
         },
