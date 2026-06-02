@@ -2,12 +2,13 @@
 slug: /st67w611m1/hardware 
 title: Hardware details
 id: st67w611m1-hardware 
-hide_title: False
+hide_title: false
+sidebar_label: Hardware details
 ---
 
 ## Pinout
 
-<CenteredImage src="/img/st67w611m1/ST67W611M1_pinout.png" alt="LIN Transceiver NCV7329 Breakout pinout diagram" caption="LIN Transceiver NCV7329 Breakout pinout diagram"/>
+<CenteredImage src="/img/st67w611m1/ST67W611M1_pinout.png" alt="ST67 Wireless Breakout for STM32 pinout" caption="ST67 Wireless Breakout for STM32 pinout"/>
 
 ## Pin Details
 
@@ -28,8 +29,8 @@ hide_title: False
 <InfoBox>
 The UART interface uses two pins (RX and TX) and is configured as follows:
 - Full-duplex asynchronous communication
-- Data bit lenght: 8 bits
-- Stop bit lenght: 1 bit
+- Data bit length: 8 bits
+- Stop bit length: 1 bit
 - Parity: None
 - Hardware flow control (RTS/CTS): None
 - Baud rate: 2000000 bauds
@@ -37,8 +38,8 @@ The UART interface uses two pins (RX and TX) and is configured as follows:
 
 <InfoBox>
 - The SPI bus is configured in **full-duplex slave mode** with three signals: **SPI_CLK**, **SPI_MOSI**, **SPI_MISO**.
--The **SPI_RDY** pin is present adns used by the **ST67W611M1** as an **interrupt** towards the host processor.
-- The **SPI_CS** can also be use as a **wake-up signal** from the host processor.
+- The **SPI_RDY** pin is present and used by the **ST67W611M1** as an **interrupt** towards the host processor.
+- The **SPI_CS** can also be used as a **wake-up signal** from the host processor.
 - **Maximum SPI frequency**: 40 MHz
 </InfoBox>
 ---
@@ -48,8 +49,8 @@ The UART interface uses two pins (RX and TX) and is configured as follows:
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
 <QuickLink 
-  title="CAN Transceiver MCP2518 board Hardware Design" 
-  description="Hardware design, BOM, gerbers and 3D files for CAN-Transceiver-MCP2518-board designed by Soldered Electronics."
+  title="ST67 Wireless Breakout for STM32 Hardware Design" 
+  description="Hardware design, BOM, gerbers and 3D files for ST67W611M1 Breakout designed by Soldered Electronics."
   url="https://github.com/SolderedElectronics/ST67W611M1-brakeout-hardware-design" 
 /> 
 
@@ -82,13 +83,13 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
-- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+- **Copper layers** (`.Cu.gbr`) - Defines the traces and pads on the board.  
+- **Solder mask layers** (`.Mask.gbr`) - Specifies the protective solder mask.  
+- **Silkscreen layers** (`.Silkscreen.gbr`) - Contains text and component markings.  
+- **Paste layers** (`.Paste.gbr`) - Used for stencil fabrication in SMD assembly.  
+- **Drill files** (`.drl`) - Provides drilling coordinates for vias and holes.  
+- **Board outline** (`.Edge_Cuts.gbr`) - Defines the shape of the PCB.  
+- **Gerber job file** (`.gbrjob`) - Describes the set of Gerber files used for production.  
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
@@ -96,7 +97,7 @@ These files are ready for fabrication and can be used in PCB manufacturing.
 
 The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
-- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
-- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.  
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+- **CE** - Certification document confirming compliance with EU safety, health, and environmental requirements.  
+- **UKCA** - UKCA (UK Conformity Assessed) certification for the UK market.  
+- **Safety Instructions** - Safety guidelines and precautions in English and in German.  
+- **Info.txt** - Contains product details such as SKU, country of origin, HS tariff code, and barcode.

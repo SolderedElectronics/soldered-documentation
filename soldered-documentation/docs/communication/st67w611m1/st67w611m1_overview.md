@@ -2,15 +2,16 @@
 slug: /st67w611m1/overview
 title: Overview
 id: st67w611m1-overview 
-hide_title: False
+hide_title: false
+sidebar_label: Overview
 pagination_prev: null
 ---
 
 ## ST67 Wireless breakout for STM32
 
-The **ST67W611M1 Wireless breakout** is a high-performance 1x1 **2.4GHz Wi-Fi 6** and  **Bluetooth 5.4** modem by **Qualcomm**.
+The **ST67W611M1 Wireless breakout** is a high-performance 1x1 **2.4GHz Wi-Fi 6** and **Bluetooth 5.4** modem by **STMicroelectronics**.
 
-ST67W611M1 operates as an IoT connectivitly transciever, with an external STM32 host MCU running applications. 
+ST67W611M1 operates as an IoT connectivity transceiver, with an external STM32 host MCU running applications. 
 
 The board integrates:
 -   A PCB antenna, a RF connector for external antenna
@@ -48,7 +49,7 @@ The board integrates:
 - **Supply voltage:** 3.3 V
 - **IO voltage:** 1.8 V or 3.3 V
 - **Deep sleep current:** 90 µA
-- **Operating temperature:** −40 °C to +85 °C
+- **Operating temperature:** -40 °C to +85 °C
 - **Onboard crystal:** 32.768 kHz oscillator
 - **Power stability:** Decoupling capacitor bank for clean 3.3 V supply
 - **Antenna:** Built-in PCB antenna, all RF components on-module

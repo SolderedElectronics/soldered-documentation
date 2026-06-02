@@ -2,11 +2,12 @@
 slug: /st67w611m1/example_usage/examples 
 title: HTTPS Client example
 id: st67w611m1-usage-2 
-hide_title: False
+hide_title: false
+sidebar_label: HTTPS Client example
 pagination_next: null
 ---
 
-This page contains a **modified**, pre-existing **HTTPS Client** example from X-CUBE-ST67W61 Expansion Software Package. The project file which will be used is based on **SMT32-U575ZI** board.
+This page contains a **modified**, pre-existing **HTTPS Client** example from X-CUBE-ST67W61 Expansion Software Package. The project file which will be used is based on **STM32-U575ZI** board.
 
 ## Setting up the project
 
@@ -27,13 +28,13 @@ Download the modified project folder from our [GitHub](https://github.com/Solder
 <CenteredImage src="/img/st67w611m1/nav_6.png" alt="" caption="Downloading modified project from GitHub Repository" width="800px"/>
 ---
 
-### Replacing the flies
+### Replacing the files
 Delete the existing `ST67W6X_HTTPS_Client.ioc` file in the **original** project and replace it with the same file from the **modified** project.
 
 ---
 
 ### Modifying required variables
-In order for this example to work, you need to modify the wifi ssid and password variables in the code. The easiest way to do that is by navigating to: `Application -> User -> Appli -> App -> main_app.c` inside the project file and clicking on `app_config.h` while pressing `ctrl+c`. Locate defines `WIFI_SSID` and `WIFI_PASSWORD` and replace them to the values that your network uses.
+In order for this example to work, you need to modify the wifi ssid and password variables in the code. The easiest way to do that is by navigating to: `Application -> User -> Appli -> App -> main_app.c` inside the project file and Ctrl+clicking on `app_config.h`. Locate defines `WIFI_SSID` and `WIFI_PASSWORD` and replace them to the values that your network uses.
 
 <CenteredImage src="/img/st67w611m1/nav_7.png" alt="" caption="Modifying SSID and password variables" width="1200px"/>
 
