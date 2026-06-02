@@ -1,16 +1,16 @@
 ---
 slug: /mcp2518/arduino/can20examples 
-title: CAN Transciever MCP2518 - CAN2.0 Communication example
+title: CAN Transceiver MCP2518 - CAN2.0 Communication example
 id: mcp2518-arduino-2 
 sidebar_label: CAN2.0 Communication example
-hide_title: False
+hide_title: false
 ---
 
 This page contains a full communication example between two **Dasduino COREs** using the **MCP2518** modules and **CAN2.0** protocol.
 
 ## Sending frames through CAN network using CAN 2.0
 
-To start sending frames through CAN, first initialize the class instance, to check how to to that, visit the page before this one. To send a frame through CAN, call the `sendMsgBuf()` function. check the example below:
+To start sending frames through CAN, first initialize the class instance - see the previous page for details. To send a frame, call the `sendMsgBuf()` function as shown in the example below:
 
 ```cpp
 
@@ -66,7 +66,7 @@ void loop()
 
 ## Receiving data through CAN network using CAN 2.0
 
-To start receiving data from CAN netwrk, first check if there is data coming by using the `checkReceive()` function. After that, call the `readMsgBuf()` function to save received data into a buffer. To check the ID of transmitter call the `getCanId()` function. Check the example below:
+To receive data from the CAN network, first check whether a message is available using `checkReceive()`. Then call `readMsgBuf()` to copy the data into a buffer, and `getCanId()` to read the sender's CAN ID:
 
 ```cpp
 #include "CANBus-SOLDERED.h"
@@ -104,7 +104,7 @@ void loop()
     // This function saves incoming data into buffer buf
     // It saves len number of bytes
     unsigned long id = CAN.getCanId(); // Get ID of transmitter
-    Serial.print("Get Data From id: "); // Print ifnormatio message
+    Serial.print("Get Data From id: "); // Print information message
     Serial.println(id); // Print ID of transmitter
     Serial.print("Len = ");
     Serial.println(len);// Print length of the data
@@ -120,7 +120,8 @@ void loop()
 
 <FunctionDocumentation
   functionName="CAN.checkReceive()"
-  description="This function checks if data is comming."
+  description="Checks whether a CAN message is waiting in the receive buffer."
+  returnDescription="CAN_MSGAVAIL if a message is available, CAN_NOMSG otherwise."
   returnType="byte"
 />
 
@@ -141,7 +142,7 @@ void loop()
   returnType="unsigned long"
 />
 
-After all is connected properlly,you can open two separate Serial monitors on different ports by opening two different sketches. If all the steps were done correctly, Serial monitor output should look like this:
+Once both boards are connected and their sketches are running, open two separate Serial monitors (one per COM port). The output should look like this:
 
 
 <CenteredImage src="/img/mcp2518/CAN_send_20.png" alt="Serial monitor on sending part of communication" caption="Serial monitor on sending part of communication." />

@@ -1,12 +1,12 @@
 ---
 slug: /mcp2518/how-it-works 
-title: CAN Transciever MCP2518 - How it works
+title: CAN Transceiver MCP2518 - How it works
 id: mcp2518-how-it-works 
 sidebar_label: How it works
-hide_title: False
+hide_title: false
 ---  
 
-The **MCP2518FD** module is a cost-effective and small-footprint CAN FD controller that can be easily added to a microcontroller with an available SPI interface. MCP2518FD supports both CAN frames in the Classical format (CAN2.0B) and CAN Flexible Data Rate (CAN FD) format.
+The **MCP2518FD** is a CAN FD controller made by Microchip Technology. It acts as a bridge between a microcontroller's SPI bus and a CAN network, handling the full CAN protocol stack in hardware so the microcontroller only needs to read and write messages over SPI.
 
 <CenteredImage src="/img/mcp2518/onboard.png" alt="MCP2518FD onboard" caption="MCP2518FD onboard" width="500px" />
 
@@ -26,4 +26,10 @@ For detailed technical specifications, please refer to the official MCP2518FD Da
 
 ## How the MCP2518FD works
 
-The chip connects to the main microcontroller through a standard **SPI** (Serial Peripheral Interface), allowing it to send and receive data on a CAN network. It supports both the older **CAN 2.0B** standard and the newer **CAN FD**, which allows faster data transmission and larger data payloads. Internally, it handles message filtering, prioritization, and error checking to ensure reliable communication. It's commonly used in automotive, industrial, and embedded systems where multiple devices need to communicate efficiently over a robust, high-speed network
+CAN bus uses **differential signaling** on two wires — CANH and CANL — which are driven to a voltage difference of about 2 V for a dominant bit and left floating (same voltage) for a recessive bit. This differential approach makes CAN highly resistant to electrical noise, which is why it is the standard in automotive and industrial environments. All nodes on the bus share the same two wires; any node can transmit and all others receive simultaneously.
+
+The MCP2518FD sits between the microcontroller's SPI bus and the CAN physical layer (handled by a separate CAN transceiver IC, also on this board). When the microcontroller wants to send a message, it writes the CAN ID, data length, and payload into the chip over SPI. The MCP2518FD then serializes that data into CAN frames, arbitrates for bus access using the CAN protocol, and transmits. On the receive side, the chip monitors the bus, filters incoming frames by ID using its 32 configurable hardware filters, and notifies the microcontroller via the INT pin when a matching message arrives.
+
+CAN 2.0B supports payloads of up to 8 bytes at bit rates up to 1 Mbps. CAN FD (Flexible Data-Rate) extends this to 64-byte payloads and allows the data phase to run at a different (typically higher) bit rate than the arbitration phase — for example, 125 kbps arbitration with 500 kbps or 2 Mbps data, selected at initialization time.
+
+The Arduino library wraps all SPI transactions and frame formatting. You call `CAN.begin()` with the desired bit rate, then `CAN.sendMsgBuf()` to transmit or `CAN.readMsgBuf()` to receive — the chip handles arbitration, error detection, retransmission, and CRC checking automatically.

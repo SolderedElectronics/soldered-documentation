@@ -1,17 +1,16 @@
 ---
 slug: /mcp2518/arduino/canfdexamples 
-title: CAN Transciever MCP2518 -  CANFD Communication example
+title: CAN Transceiver MCP2518 - CANFD Communication example
 id: mcp2518-arduino-3 
 sidebar_label: CANFD Communication example
-hide_title: False
-pagination_next: null
+hide_title: false
 ---
 
-This page contains a full communication example between two **Dasduino COREs** using the **MCP2518** modules and **CANFD** protocol.
+This page contains a full communication example between two **Dasduino COREs** using the **MCP2518** modules and **CAN FD** protocol.
 
-## Sending frames through CAN network using CANFD
+## Sending frames through CAN network using CAN FD
 
-To start sending frames through CAN, first initialize the class instance, to check how to to that, visit the page before this one. To send a frame through CAN, call the `sendMsgBuf()` function. check the example below:
+To start sending frames through CAN FD, first initialize the class instance - see the previous page for details. Use `CAN_125K_500K` (or another FD speed constant) in `begin()` to enable FD mode. CAN FD frames support payloads of up to 64 bytes; use `CANFD::len2dlc()` to convert the byte count to the DLC field:
 ```cpp
 #include "CANBus-SOLDERED.h"
 #include <SPI.h>
@@ -60,10 +59,21 @@ void loop()
 }
 ```
 
+<FunctionDocumentation
+  functionName="CANFD::len2dlc()"
+  description="Converts a payload byte count (0-64) to the DLC (Data Length Code) field value required by CAN FD frames."
+  returnDescription="DLC field value for the given byte length."
+  returnType="uint8_t"
+  parameters={[
+    { type: 'uint8_t', name: 'len', description: 'Number of bytes in the payload (0-64).' },
+  ]}
+/>
 
-## Receiving data through CAN network using CAN 2.0
+---
 
-To start receiving data from CAN netwrk, first check if there is data coming by using the `checkReceive()` function. After that, call the `readMsgBuf()` function to save received data into a buffer. To check the ID of transmitter call the `getCanId()` function. Check the example below:
+## Receiving data through CAN network using CAN FD
+
+To receive CAN FD frames, use the same `checkReceive()`, `readMsgBuf()`, and `getCanId()` functions as for CAN 2.0B - the library handles the larger payload automatically:
 
 ```cpp
 #include "CANBus-SOLDERED.h"
@@ -99,7 +109,7 @@ void loop()
     // This function saves incoming data into buffer buf
     // It saves len number of bytes
     unsigned long id = CAN.getCanId(); // Get ID of transmitter
-    Serial.print("Get Data From id: "); // Print ifnormatio message
+    Serial.print("Get Data From id: "); // Print information message
     Serial.println(id); // Print ID of transmitter
     Serial.print("Len = ");
     Serial.println(len);// Print length of the data
@@ -114,9 +124,34 @@ void loop()
 
 ```
 
-After all is connected properlly,you can open two separate Serial monitors on different ports by opening two different sketches. If all the steps were done correctly, Serial monitor output should look like this:
+Once both boards are connected and their CAN FD sketches are running, open two Serial monitors. The output should look like this:
 
 
 <CenteredImage src="/img/mcp2518/CAN_send_fd.png" alt="Serial monitor on sending part of communication" caption="Serial monitor on sending part of communication." />
 
 <CenteredImage src="/img/mcp2518/CAN_receive_fd.png" alt="Serial monitor on receiving part of communication" caption="Serial monitor on receiving part of communication." />
+
+<FunctionDocumentation
+  functionName="CAN.checkReceive()"
+  description="Checks whether a CAN message is waiting in the receive buffer."
+  returnDescription="CAN_MSGAVAIL if a message is available, CAN_NOMSG otherwise."
+  returnType="byte"
+/>
+
+<FunctionDocumentation
+  functionName="CAN.readMsgBuf()"
+  description="Reads the next available CAN message into the provided buffer. Call this after checkReceive() returns CAN_MSGAVAIL."
+  returnDescription="CAN_OK on success."
+  returnType="int"
+  parameters={[
+    { type: 'byte*', name: 'len', description: 'Pointer to a variable that receives the payload length in bytes.' },
+    { type: 'byte*', name: 'buf', description: 'Pointer to a buffer that receives the payload data.' },
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="CAN.getCanId()"
+  description="Returns the CAN ID of the most recently received message. Call after readMsgBuf()."
+  returnDescription="11-bit (standard) or 29-bit (extended) CAN ID of the sender."
+  returnType="unsigned long"
+/>
