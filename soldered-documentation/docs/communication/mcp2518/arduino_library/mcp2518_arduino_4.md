@@ -14,7 +14,7 @@ This page covers the most common issues when getting started with the MCP2518 CA
 The most common cause is an SPI wiring problem. Check the following:
 
 - Verify that NCS is connected to the correct pin and matches the pin number passed to the `CANBus` constructor.
-- Confirm MOSI, MISO, and SCK are connected to the correct hardware SPI pins for your board (D11, D12, D13 on Dasduino CORE).
+- Confirm MOSI, MISO, and SCK are connected to the correct hardware SPI pins for your board (IO3, IO4, IO5 on NULA Mini).
 - Make sure VCC and GND are connected and the board is receiving the correct supply voltage (2.7 V to 5 V).
 - The MCP2518FD requires several milliseconds to start up after power-on. The `while (0 != CAN.begin(...))` retry loop in the examples handles this - do not replace it with a single call.
 

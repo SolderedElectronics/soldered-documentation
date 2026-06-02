@@ -31,14 +31,14 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ## Connections
 
-Below is an example connection diagram for **NULA CORE**. These pins will be used in the examples throughout this documentation.
+Below is an example connection diagram for **NULA Mini**. These pins will be used in the examples throughout this documentation.
 
-| **NULA CORE** 	| **Breakout Board** 	|
+| **NULA Mini** 	| **Breakout Board** 	|
 |---	|---	|
-| D10 (or any GPIO pin) 	| NCS 	|
-| D11 (MOSI pin) 	| SDI 	|
-| D12 (MISO pin) 	| SDO 	|
-| D13 (SPI CLK pin) 	| SCK 	|
+| IO2 (SS pin) 	| NCS 	|
+| IO3 (MOSI pin) 	| SDI 	|
+| IO4 (MISO pin) 	| SDO 	|
+| IO5 (SCK pin) 	| SCK 	|
 | GND 	| GND 	|
 | VCC 	| VCC 	|
 
@@ -60,7 +60,7 @@ To start using the **MCP2518 CAN**, you need to include the approperiate librari
 #include "CANBus-SOLDERED.h"
 #include <SPI.h>
 
-const int SPI_CS_PIN =10;
+const int SPI_CS_PIN = 2;
 
 CANBus CAN(SPI_CS_PIN);
 

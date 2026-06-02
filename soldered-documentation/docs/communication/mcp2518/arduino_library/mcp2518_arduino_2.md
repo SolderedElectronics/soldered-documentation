@@ -6,7 +6,7 @@ sidebar_label: CAN2.0 Communication example
 hide_title: false
 ---
 
-This page contains a full communication example between two **Dasduino COREs** using the **MCP2518** modules and **CAN2.0** protocol.
+This page contains a full communication example between two **NULA Mini** boards using the **MCP2518** modules and **CAN2.0** protocol.
 
 ## Sending frames through CAN network using CAN 2.0
 

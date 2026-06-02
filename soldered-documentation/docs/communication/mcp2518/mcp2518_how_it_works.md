@@ -19,7 +19,7 @@ For detailed technical specifications, please refer to the official MCP2518FD Da
 <QuickLink  
   title="MCP2518FD Datasheet"  
   description="Complete technical documentation for the MCP2518FD IC"  
-  url="https://soldered.com/productdata/2022/03/Soldered_MCP2518FD_datasheet.pdf"  
+  url="https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf"  
 />  
 
 ---

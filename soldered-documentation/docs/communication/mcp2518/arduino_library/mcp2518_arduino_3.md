@@ -6,7 +6,7 @@ sidebar_label: CANFD Communication example
 hide_title: false
 ---
 
-This page contains a full communication example between two **Dasduino COREs** using the **MCP2518** modules and **CAN FD** protocol.
+This page contains a full communication example between two **NULA Mini** boards using the **MCP2518** modules and **CAN FD** protocol.
 
 ## Sending frames through CAN network using CAN FD
 
