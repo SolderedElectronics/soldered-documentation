@@ -8,7 +8,7 @@ hide_title: false
 
 ## Pinout
 
-<ErrorBox>The pinout image for this board has not been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/gnss-gps/pinout.png" alt="GNSS GPS breakout pinout" caption="GNSS GPS breakout pinout"/>
 
 ---
 
@@ -21,12 +21,12 @@ hide_title: false
 | **RX**      | Receive (UART)  | UART receive pin for communication.  |
 | **TX**      | Transmit (UART) | UART transmit pin for communication. |
 
-<WarningBox>**RST, F-ON, PPS and ANT-D are optional**.</WarningBox>
+<InfoBox>**RST, F-ON, PPS and ANT-D are optional** and can be left unconnected if not used.</InfoBox>
 
 | Pin Marking | Pin Name         | Description                                            |
 | ----------- | ---------------- | ------------------------------------------------------ |
 | **RST**     | Reset            | Resets the module when pulled low.                     |
-| **F-ON**    | Function On      | Enables or disables the module’s function.             |
+| **F-ON**    | Function On      | Enables or disables the module's function.             |
 | **PPS**     | Pulse Per Second | Outputs a timing pulse per second for synchronization. |
 | **ANT-D**   | Antenna Data     | Used for an external antenna connection.               |
 
@@ -37,30 +37,6 @@ hide_title: false
 The board also features an **IPX connector** with SMA for an **external antenna**.
 
 <CenteredImage src="/img/gnss-gps/antenna.png" alt="antenna on board" caption="IPX Antenna connector on board" width="600px" />
-
-<CenteredImage src="/img/gnss-gps/antennaC.png" alt="antenna on board" caption="IPX Antenna connector on easyC board" width="600px" />
-
----
-
-## Pin Details (Qwiic version)
-
-| Pin Marking | Pin Name                 | Description                                                                                                             |
-| ----------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| **GND**     | Debug Ground             | Ground pin for debugging purposes.                                                                                      |
-| **UPDI**    | Debug Interface          | Used for debugging and programming the onboard ATTiny404 microcontroller.                                               |
-| **3V3**     | Debug Power              | 3.3V power supply for debugging purposes.                                                                               |
-
-<WarningBox>The **GND, UPDI, and 3V3 pins** are **for debugging and programming purposes only**. They are **not required** for normal operation and should only be used by advanced users.</WarningBox>
-
-<CenteredImage src="/img/easyc_transparent.png" alt="EasyC/qwiic cable" width="550px" />
- 
-<InfoBox>This board comes in a **Qwiic-compatible** version! Just plug it into your board using a **Qwiic/easyC/STEMMA QT cable** and start coding!</InfoBox>
-
-<QuickLink 
-  title="Qwiic (formerly easyC) details and specifications" 
-  description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
-  url="/qwiic" 
-/>
 
 ---
 
@@ -73,7 +49,7 @@ The board also features an **IPX connector** with SMA for an **external antenna*
   - **Backup Mode**: Consumes only **7 µA**, preserving system data for quick restarts.  
   - **Standby Mode**: Uses around **1 mA**, allowing for faster wake-ups with minimal power draw.  
 
-<InfoBox>Lower power modes help extend battery life in energy-sensitive applications, making the module ideal for IoT and wearable devices.</InfoBox>
+<InfoBox>Lower power modes reduce current draw significantly. AlwaysLocate™ mode dynamically adjusts activity, while backup mode retains system data for quick restarts.</InfoBox>
 
 ---
 
@@ -109,44 +85,6 @@ This board contains hardware jumpers. See below for their locations and function
 
 ---
 
-## Jumper Details (Qwiic version)
-
-This board contains hardware jumpers. See below for their locations and functions:
-
-<FlickityCarousel
-  images={[
-    { src: '/img/gnss-gps/jp1c.png', alt: 'gnss-gps-jp1', caption: 'JP1' },
-    { src: '/img/gnss-gps/jp2c.png', alt: 'gnss-gps-jp2', caption: 'JP2' },
-  ]}
-  jumpers={true}
-/>
-
-| Jumper  | Default State            | Function                                                                                     |
-| ------- | ------------------------ | -------------------------------------------------------------------------------------------- |
-| **JP1** | **NC** (Normally closed) | When closed, enables the **PWR LED**.                                                        |
-| **JP2** | **NC** (Normally closed) | When closed, enables the **PPS LED**.                                                        |
-
----
-
-## Address selection (Qwiic version)
-
-This board contains hardware address switches. See below for how to change the breakout board's address:
-
-<CenteredImage src="/img/hx711/address_selection.png" alt="Pinout" width="500px" />
-
-| Address |  SW3  |  SW2  |  SW1  |
-| :-----: | :---: | :---: | :---: |
-|  0x30   |   0   |   0   |   0   |
-|  0x31   |   0   |   0   |   1   |
-|  0x32   |   0   |   1   |   0   |
-|  0x33   |   0   |   1   |   1   |
-|  0x34   |   1   |   0   |   0   |
-|  0x35   |   1   |   0   |   1   |
-|  0x36   |   1   |   1   |   0   |
-|  0x37   |   1   |   1   |   1   |
-
----
-
 ## Hardware repository
 
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
@@ -157,11 +95,6 @@ Schematics, KiCad files, Gerber files, and more can be found in the GitHub repos
   url="https://github.com/SolderedElectronics/GNSS-GPS-L86-M33-breakout-hardware-design/tree/main" 
 /> 
 
-<QuickLink 
-  title="GNSS GPS L86-M33 breakout with easyC hardware design" 
-  description="GitHub hardware repository for this product"
-  url="https://github.com/SolderedElectronics/GNSS-GPS-L86-M33-breakout-with-easyC-hardware-design/tree/main" 
-/> 
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have by finding the version mark on the PCB.
 
@@ -192,13 +125,13 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
-- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.  
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+- **Copper layers** (`.Cu.gbr`) - Defines the traces and pads on the board.  
+- **Solder mask layers** (`.Mask.gbr`) - Specifies the protective solder mask.  
+- **Silkscreen layers** (`.Silkscreen.gbr`) - Contains text and component markings.  
+- **Paste layers** (`.Paste.gbr`) - Used for stencil fabrication in SMD assembly.  
+- **Drill files** (`.drl`) - Provides drilling coordinates for vias and holes.  
+- **Board outline** (`.Edge_Cuts.gbr`) - Defines the shape of the PCB.  
+- **Gerber job file** (`.gbrjob`) - Describes the set of Gerber files used for production.  
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
@@ -206,7 +139,7 @@ These files are ready for fabrication and can be used in PCB manufacturing.
 
 The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
-- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.  
-- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.  
-- **Safety Instructions** – Safety guidelines and precautions in English and in German.  
-- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+- **CE** - Certification document confirming compliance with EU safety, health, and environmental requirements.  
+- **UKCA** - UKCA (UK Conformity Assessed) certification for the UK market.  
+- **Safety Instructions** - Safety guidelines and precautions in English and in German.  
+- **Info.txt** - Contains product details such as SKU, country of origin, HS tariff code, and barcode.

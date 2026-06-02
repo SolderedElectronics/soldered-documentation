@@ -12,7 +12,7 @@ This page contains some helpful tips if you are having problems using your L86-M
 <ExpandableSection title="My GPS module won't initialize!">
 
 #### Check wiring  
-Ensure that your GPS module is properly connected to your microcontroller. Double-check the wiring for the VCC, GND, TX, and RX pins. If you’re using a UART interface, make sure the TX from the GPS goes to the RX on the microcontroller and vice versa.  
+Ensure that your GPS module is properly connected to your microcontroller. Double-check the wiring for the VCC, GND, TX, and RX pins. If you're using a UART interface, make sure the TX from the GPS goes to the RX on the microcontroller and vice versa.  
 
 #### Power supply  
 Make sure your GPS module is receiving sufficient power. The L86-M33 typically operates at 3.3V to 5V. If using a 3.3V supply, ensure that the regulator can handle the current requirements.
@@ -34,7 +34,7 @@ Ensure that the GPS module has a clear line of sight to the sky. GPS signals are
 When using the GPS module for the first time, it might take longer to acquire a fix, especially if it has not been used in the vicinity before. Allow the module 5-10 minutes to acquire satellite signals during a cold start.
 
 #### Improve antenna placement  
-If you’re using an external antenna, ensure that it’s placed properly and connected securely. The antenna should have a clear view of the sky to get optimal signal reception.  
+If you're using an external antenna, ensure that it's placed properly and connected securely. The antenna should have a clear view of the sky to get optimal signal reception.  
 
 #### Test in a different environment  
 GPS performance can be affected by environmental factors like heavy cloud cover or high interference. Try testing the GPS module in a different location, preferably outdoors with clear skies.
@@ -61,7 +61,7 @@ Inconsistent or fluctuating power can lead to erratic readings from the GPS modu
 
 #### My GPS module is not responding to commands  
 Check wiring and serial communication  
-Ensure that your GPS module’s TX and RX pins are properly connected and that you are using the correct baud rate. Incorrect wiring or serial settings can cause the GPS to appear unresponsive.
+Ensure that your GPS module's TX and RX pins are properly connected and that you are using the correct baud rate. Incorrect wiring or serial settings can cause the GPS to appear unresponsive.
 
 #### GPS signal loss after a few minutes  
 Check power and heat  

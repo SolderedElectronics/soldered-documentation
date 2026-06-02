@@ -11,7 +11,7 @@ hide_title: false
 To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:
 <QuickLink  
   title="GNSS GPS L86-M33 board Arduino library"  
-  description="GNSS L860-M33 Arduino library by Soldered"  
+  description="GNSS L86-M33 Arduino library by Soldered"  
   url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/tree/main"  
 />  
 
@@ -31,29 +31,21 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 ## Connections
 
-Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins will be used in the examples throughout this documentation.
+Below is an example connection diagram for **Nula Mini**. These pins will be used in the examples throughout this documentation.
 
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| Qwiic                    | Qwiic              |
-
-<InfoBox>
-
-If you're using the **regular version**, use these pins to manually connect:
-
-| **Dasduino CONNECTPLUS** | **L86-M33 Board** |
-| ------------------------ | ----------------- |
-| VCC                      | 5V                |
-| GND                      | GND               |
-| IO22 (any digital pin)   | TX                |
-| IO21 (any digital pin)   | RX                |
+| **Nula Mini**         | **L86-M33 Board** |
+| --------------------- | ----------------- |
+| VCC                   | 5V                |
+| GND                   | GND               |
+| IO4 (any digital pin) | TX                |
+| IO3 (any digital pin) | RX                |
 
 For the **optional pins**:
 
-| **Dasduino CONNECTPLUS** | **L86-M33 Board** |
-| ------------------------ | ----------------- |
-| RESET                    | RST               |
-| IO18 (any digital pin)   | F-ON              |
-| IO19 (any digital pin)   | PPS               |
-| Antenna connector        | ANT-D             |
-</InfoBox>
+| **Nula Mini**         | **L86-M33 Board** |
+| --------------------- | ----------------- |
+| IO18 (any digital pin) | F-ON             |
+| IO19 (any digital pin) | PPS              |
+| Antenna connector      | ANT-D            |
+
+<InfoBox>Nula Mini does not expose a dedicated RST pin. Leave the module RST pin unconnected unless you need hardware reset - the module can be reset via software commands instead.</InfoBox>

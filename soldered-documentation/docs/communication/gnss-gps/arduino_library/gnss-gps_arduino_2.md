@@ -6,7 +6,7 @@ id: gnss-gps-arduino-2
 hide_title: false
 ---
 
-This page provides a simple example of how to initialize and use the GNSS L86-M33 sensor with a Dasduino CONNECTPLUS.
+This page provides a simple example of how to initialize and use the GNSS L86-M33 module with a Nula Mini.
 
 <CenteredImage src="/img/gnss-gps/simple_read_build.png" alt="Serial Monitor" width="700px"/>
 
@@ -18,7 +18,7 @@ This page provides a simple example of how to initialize and use the GNSS L86-M3
 
 To use the GNSS L86-M33 sensor with an Arduino, you need to include the appropriate library, define the communication pins, create an instance of the GNSS object, and initialize it within the `setup()` function. This ensures proper communication between the Arduino and the GNSS module. The `begin()` function is used to set up the sensor, allowing it to start receiving satellite data.
 
-Here’s an example of how to initialize the GNSS L86-M33 sensor:
+Here's an example of how to initialize the GNSS L86-M33 sensor:
 
 ```cpp
 // Include the GNSS L86-M33 library
@@ -40,25 +40,6 @@ void setup()
 // ...
 ```
 
-<InfoBox>
-
-If you're using the Qwiic (easyC) version, you don't need to define RX and TX pins, so the initialization looks like this:
-
-```cpp
-// Include the GNSS L86-M33 library
-#include "GNSS-L86-M33-SOLDERED.h"
-
-// Create the GNSS object
-GNSS gnss;
-
-void setup()
-{
-    Serial.begin(9600); // Initialize serial communication with the PC
-    gps.begin();        // Initialize the GNSS module
-}
-// ...
-```
-</InfoBox>
 
 
 
@@ -154,13 +135,13 @@ void displayInfo()
 ## Advanced Features
 If you wish to activate AlwaysLocate™ Mode, Multi-tone AIC, and NMEA Message Filtering, you can send the appropriate commands after initializing the sensor. These features improve the accuracy and reliability of the GPS data, especially in challenging environments.
 
-Here’s how to activate these advanced features:
+Here's how to activate these advanced features:
 ```cpp
 // AlwaysLocate™ Mode Command
 char alwaysLocateCmd[] = {"$PMTK225,8"};
 
 // Multi-tone AIC Command
-char multitoneAICCmd[] = {"$PMTK 286,1"};
+char multitoneAICCmd[] = {"$PMTK286,1"};
 
 // NMEA Message Filter Command
 char nmeaMessageFilterCmd[] = {"$PMTK314,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0"};
@@ -228,7 +209,7 @@ void loop()
         }
     }
 
-    // No data within the first 5 seconds after startup? Something might be wrong—please check the wiring!
+    // No data within the first 5 seconds after startup? Something might be wrong-please check the wiring!
     if (millis() > 5000 && gps.charsProcessed() < 10)
     {
         Serial.println(F("No GPS detected: check wiring."));
@@ -309,19 +290,7 @@ void displayInfo()
 />
 
 <QuickLink 
-  title="L86_M33_easyC_Basic_Readings.ino" 
-  description="Example file for using the GNSS-GPS L86-M33 with easyC"
-  url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/easyC/L86_M33_easyC_Basic_Readings/L86_M33_easyC_Basic_Readings.ino" 
-/>
-
-<QuickLink 
   title="L86_M33_Advanced_Example.ino" 
   description="Example file for using the GNSS-GPS L86-M33 with advanced features"
   url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/native/L86_M33_Advanced_Example/L86_M33_Advanced_Example.ino" 
-/>
-
-<QuickLink 
-  title="L86_M33_easyC_Advanced_Example.ino" 
-  description="Example file for using the GNSS-GPS L86-M33 easyC with advanced features"
-  url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/easyC/L86_M33_easyC_Advanced_Example/L86_M33_easyC_Advanced_Example.ino" 
 />

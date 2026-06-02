@@ -226,8 +226,3 @@ static void printStr(const char *str, int len)
   url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/native/L86_M33_Full_Example/L86_M33_Full_Example.ino" 
 />
 
-<QuickLink 
-  title="L86_M33_easyC_A_Example.ino" 
-  description="Example file for using the GNSS-GPS L86-M33 easyC"
-  url="https://github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library/blob/main/examples/easyC/L86_M33_easyC_Full_Example/L86_M33_easyC_Full_Example.ino"
-/>
