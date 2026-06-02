@@ -1008,6 +1008,78 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'LI-ION_CHARGER EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/li-ion_charger/li-ion_charger-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/li-ion_charger/li-ion_charger-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/li-ion_charger/li-ion_charger-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/li-ion_charger/arduino_library/li-ion_charger-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/li-ion_charger/arduino_library/li-ion_charger-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/li-ion_charger/arduino_library/li-ion_charger-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'LI-ION_CHARGER EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/li-ion_charger/li-ion_charger-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/li-ion_charger/li-ion_charger-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/li-ion_charger/li-ion_charger-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/li-ion_charger/arduino_library/li-ion_charger-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/li-ion_charger/arduino_library/li-ion_charger-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/li-ion_charger/arduino_library/li-ion_charger-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'TMP117 Temperature Sensor',
           items: [
             {
@@ -3766,6 +3838,24 @@ const sidebars = {
             {
               type: 'doc',
               id: 'batteries and power supplies/li-ion-chargers/li-ion-chargers-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Li-Ion battery charger board',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/Li-Ion battery charger board/li-ion-battery-charger-board-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/Li-Ion battery charger board/li-ion-battery-charger-board-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/Li-Ion battery charger board/li-ion-battery-charger-board-how-it-works',
             },
           ],
         },
