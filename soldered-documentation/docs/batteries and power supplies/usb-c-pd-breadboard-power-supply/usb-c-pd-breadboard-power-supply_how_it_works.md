@@ -2,12 +2,15 @@
 slug: /usb-c-pd-breadboard-power-supply/how-it-works 
 title: How it works
 id: usb-c-pd-breadboard-power-supply-how-it-works 
-hide_title: False
+hide_title: false
 ---  
 The **USB-C PD Breadboard Power Supply** uses the **HUSB238** USB Power Delivery sink controller to negotiate output voltage and current from any USB-C PD adapter.
 
+---
+
 ## Datasheet
-For an in-depth look at technical specifications, refer to the official HUSB238  Datasheet:
+
+The official HUSB238 datasheet:
 <QuickLink  
   title="HUSB238  Datasheet"  
   description="Detailed technical documentation for the HUSB238"  
@@ -30,7 +33,7 @@ If the adapter cannot supply the requested profile, the HUSB238 falls back to th
 
 ## I2C advanced configuration
 
-The SDA and SCL pins are broken out for direct I2C access to the HUSB238. Connecting a microcontroller lets you read available adapter profiles, request specific voltages, and monitor connection status. When I2C is used, it overrides the hardware switch configuration.
+The SDA and SCL pins are broken out for direct I2C access to the HUSB238 at address **0x08**. Connecting a microcontroller lets you read available adapter profiles, request specific voltages, and monitor connection status. When I2C is used, it overrides the hardware switch configuration.
 
 ---
 

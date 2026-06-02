@@ -2,15 +2,18 @@
 slug: /usb-c-pd-breadboard-power-supply/hardware 
 title: Hardware details
 id: usb-c-pd-breadboard-power-supply-hardware 
-hide_title: False
+hide_title: false
 ---
 
 ## Pinout
+
 <CenteredImage src="/img/usb-c-pd-breadboard-power-supply/pinout.png" alt="Pinout"/>
 
 Click [**here**](/img/usb-c-pd-breadboard-power-supply/pinout.png) for a high-resolution image of the pinout.
 
-## Pin Details
+---
+
+## Pin details
 
 | Pin Marking | Pin Name | Description                                                                 |
 | ----------- | -------- | --------------------------------------------------------------------------- |
@@ -22,11 +25,11 @@ Click [**here**](/img/usb-c-pd-breadboard-power-supply/pinout.png) for a high-re
 ---
 
 
-## Jumper Details
+## Jumper details
 
-This board contains a hardware jumper; see below for its location and function:
+JP1 controls the onboard power LED:
 
-<ErrorBox>The jumper images for the USB-C PD Breadboard Power Supply haven't been generated yet! We're working on it!</ErrorBox>
+<InfoBox>Image coming soon.</InfoBox>
 
 | Jumper  | Default State            | Function                                                                                          |
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
@@ -35,15 +38,16 @@ This board contains a hardware jumper; see below for its location and function:
 ---
 
 
-## Switch Details
+## Switch details
 
-This board contains switches that control the voltage output, current limits, and power state.
-<ErrorBox>The swtich images for the USB-C PD Breadboard Power Supply haven't been generated yet! We're working on it!</ErrorBox>
+S1, the voltage selection, and current selection switches control power and output:
+
+<InfoBox>Images coming soon.</InfoBox>
 
 | Switch                 | Function                                                                                         |
 | ---------------------- | ------------------------------------------------------------------------------------------------ |
 | **ON/OFF Switch**      | Switches power to the board on or off.                                                           |
-| **Voltage Selection**  | Hardware switches used to request standard USB-PD voltage levels (5V, 9V, 12V, 15V, 18V, 20V).   |
+| **Voltage Selection**  | Hardware switches used to request standard USB-PD voltage levels (5V, 9V, 12V, 15V, 20V).   |
 | **Current Selection**  | Hardware switches used to set the current limit (1.25A, 1.5A, 2A, 2.5A, 3A, 3.25A).              |
 
 ---
@@ -59,19 +63,7 @@ This board contains switches that control the voltage output, current limits, an
 
 ## HUSB238 USB-PD Controller
 
-The board features the **HUSB238** integrated circuit as its core USB Power Delivery sink controller. It is designed to automatically negotiate standard PD voltage steps and predefined current limits from a USB-C source without the need for external software or microcontrollers.
-
----
-
-## Datasheet
-
-For an in-depth look at technical specifications, refer to the official HUSB238 Datasheet:
-
-<QuickLink  
-  title="HUSB238 Datasheet"  
-  description="Detailed technical documentation for the HUSB238"  
-  url="https://www.hynetek.com/uploadfiles/site/219/news/c16af076-8c40-4e8d-b126-b4f9b83e86ea.pdf"  
-/>
+The **HUSB238** is the USB Power Delivery sink controller on this board. It negotiates standard PD voltage steps and current limits from a USB-C source using hardware switch inputs, no external software or microcontroller needed.
 
 ---
 
@@ -79,30 +71,29 @@ For an in-depth look at technical specifications, refer to the official HUSB238 
 
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
-<ErrorBox>The repository link for the USB-C PD Breadboard Power Supply haven't been generated yet! We're working on it!</ErrorBox>
+<InfoBox>Hardware repository link coming soon.</InfoBox>
 
-The hardware repository contains everything you need to understand, modify, or manufacture the board. The various output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB. Below is an overview of the available files.
+The output folders are versioned. You can find which board version you have by checking the version mark on the PCB.
 
 #### CAD files
 We use KiCad, an open-source PCB design tool. You can open and edit the `.kicad_pcb` and `.kicad_sch` files to inspect the board design in CAD software.
 
 #### Gerber files
-Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
+The repository includes standard Gerber outputs in a .zip file:
 
-- **Copper layers** (`.Cu.gbr`) - Defines the traces and pads on the board.
-- **Solder mask layers** (`.Mask.gbr`) - Specifies the protective solder mask.
-- **Silkscreen layers** (`.Silkscreen.gbr`) - Contains text and component markings.
-- **Paste layers** (`.Paste.gbr`) - Used for stencil fabrication in SMD assembly.
-- **Drill files** (`.drl`) - Provides drilling coordinates for vias and holes.
-- **Board outline** (`.Edge_Cuts.gbr`) - Defines the shape of the PCB.
-- **Gerber job file** (`.gbrjob`) - Describes the set of Gerber files used for production.
+- **Copper layers** (`.Cu.gbr`): Defines the traces and pads on the board.
+- **Solder mask layers** (`.Mask.gbr`): Specifies the protective solder mask.
+- **Silkscreen layers** (`.Silkscreen.gbr`): Contains text and component markings.
+- **Paste layers** (`.Paste.gbr`): Used for stencil fabrication in SMD assembly.
+- **Drill files** (`.drl`): Provides drilling coordinates for vias and holes.
+- **Board outline** (`.Edge_Cuts.gbr`): Defines the shape of the PCB.
+- **Gerber job file** (`.gbrjob`): Describes the set of Gerber files used for production.
 
-These files are ready for fabrication and can be used in PCB manufacturing.
 
 #### Compliance
-The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
+Regulatory and safety documents for this product:
 
-- **CE** - Certification document confirming compliance with EU safety, health, and environmental requirements.
-- **UKCA** - UKCA (UK Conformity Assessed) certification for the UK market.
-- **Safety Instructions** - Safety guidelines and precautions provided in English and German.
-- **Info.txt** - Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+- **CE**: Certification document confirming compliance with EU safety, health, and environmental requirements.
+- **UKCA**: UKCA (UK Conformity Assessed) certification for the UK market.
+- **Safety Instructions**: Safety guidelines and precautions provided in English and German.
+- **Info.txt**: Contains product details such as SKU, country of origin, HS tariff code, and barcode.
