@@ -43,7 +43,7 @@ The Inputronic Keyboard uses the I²C protocol to communicate with the microcont
 ### Event FIFO
 
 The 10-byte FIFO stores key press and release events. Each event contains:
-- **Key value** (7 bits): Which key was pressed (1–80 for matrix keys, 97–114 for GPIO)
+- **Key value** (7 bits): Which key was pressed (1-80 for matrix keys, 97-114 for GPIO)
 - **Press/Release flag** (1 bit): Indicates whether the key was pressed (1) or released (0)
 
 The FIFO shifts as you read, so multiple events can be processed one at a time.
@@ -56,13 +56,13 @@ Mechanical switches naturally "bounce" when pressed, creating multiple electrica
 
 The chip includes a programmable security feature that requires a two-key sequence to unlock:
 - Program two specific unlock keys
-- Set the time window between key presses (0–7 seconds)
+- Set the time window between key presses (0-7 seconds)
 - Optionally configure an interrupt mask timer for LCD backlight control
 
 ### Power consumption
 
 - **Idle mode**: 10 µA
-- **Active scan**: 50–90 µA
+- **Active scan**: 50-90 µA
 - **Sleep mode**: 3 µA
 
 The internal oscillator shuts off when no keys are pressed. Operating temperature: -40°C to 85°C.

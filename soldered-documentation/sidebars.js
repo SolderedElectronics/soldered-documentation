@@ -3093,6 +3093,7 @@ const sidebars = {
             },
           ],
         },
+        },
         {
           type: 'category',
           label: 'SSD1306 0.96" I2C OLED Display',
@@ -3137,6 +3138,27 @@ const sidebars = {
                   type: 'doc',
                   id: 'displays/ssd1306/arduino_library/ssd1306-arduino-3',
                 },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SSD1306 OLED',
+          items: [
+            { type: 'doc', id: 'displays/SSD1306 OLED/ssd1306-new-overview' },
+            { type: 'doc', id: 'displays/SSD1306 OLED/ssd1306-new-hardware' },
+            { type: 'doc', id: 'displays/SSD1306 OLED/ssd1306-new-how-it-works' },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                { type: 'doc', id: 'displays/SSD1306 OLED/arduino_library/ssd1306-new-arduino-1' },
+                { type: 'doc', id: 'displays/SSD1306 OLED/arduino_library/ssd1306-new-arduino-2' },
+                { type: 'doc', id: 'displays/SSD1306 OLED/arduino_library/ssd1306-new-arduino-3' },
+                { type: 'doc', id: 'displays/SSD1306 OLED/arduino_library/ssd1306-new-arduino-4' },
+                { type: 'doc', id: 'displays/SSD1306 OLED/arduino_library/ssd1306-new-arduino-5' },
+                { type: 'doc', id: 'displays/SSD1306 OLED/arduino_library/ssd1306-new-arduino-6' },
               ],
             },
           ],
