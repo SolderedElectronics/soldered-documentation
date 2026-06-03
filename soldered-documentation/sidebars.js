@@ -3753,6 +3753,24 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Li-Ion battery',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/Li-Ion battery/li-ion-battery-new-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/Li-Ion battery/li-ion-battery-new-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/Li-Ion battery/li-ion-battery-new-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Li-ion chargers',
           items: [
             {
