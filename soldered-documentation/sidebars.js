@@ -1008,6 +1008,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'INPUTRONIC_KEYBOARD EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/inputronic_keyboard/inputronic_keyboard-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/inputronic_keyboard/inputronic_keyboard-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/inputronic_keyboard/inputronic_keyboard-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/inputronic_keyboard/arduino_library/inputronic_keyboard-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/inputronic_keyboard/arduino_library/inputronic_keyboard-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/inputronic_keyboard/arduino_library/inputronic_keyboard-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'TMP117 Temperature Sensor',
           items: [
             {
@@ -3661,6 +3697,36 @@ const sidebars = {
       type: 'category',
       label: 'Inputronic',
       items: [
+        {
+          type: 'category',
+          label: 'Inputronic keyboard',
+          items: [
+            { type: 'doc', id: 'Inputronic keyboard/inputronic-keyboard-new-overview' },
+            { type: 'doc', id: 'Inputronic keyboard/inputronic-keyboard-new-hardware' },
+            { type: 'doc', id: 'Inputronic keyboard/inputronic-keyboard-new-how-it-works' },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                { type: 'doc', id: 'Inputronic keyboard/arduino_library/inputronic-keyboard-new-arduino-1' },
+                // { type: 'doc', id: 'Inputronic keyboard/arduino_library/inputronic-keyboard-new-arduino-2' },
+                // { type: 'doc', id: 'Inputronic keyboard/arduino_library/inputronic-keyboard-new-arduino-3' },
+                // { type: 'doc', id: 'Inputronic keyboard/arduino_library/inputronic-keyboard-new-arduino-4' },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'MicroPython library',
+              items: [
+                { type: 'doc', id: 'Inputronic keyboard/micropython/inputronic-keyboard-new-micropython-1' },
+                // { type: 'doc', id: 'Inputronic keyboard/micropython/inputronic-keyboard-new-micropython-2' },
+                // { type: 'doc', id: 'Inputronic keyboard/micropython/inputronic-keyboard-new-micropython-3' },
+                // { type: 'doc', id: 'Inputronic keyboard/micropython/inputronic-keyboard-new-micropython-4' },
+              ],
+            },
+            { type: 'doc', id: 'Inputronic keyboard/inputronic-keyboard-new-troubleshooting' },
+          ],
+        },
         {
           type: 'category',
           label: 'Inputronic Keyboard',
