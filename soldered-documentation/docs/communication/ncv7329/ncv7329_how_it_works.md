@@ -6,7 +6,7 @@ id: ncv7329-how-it-works
 hide_title: False
 ---  
 
-The LIN Transceiver NCV7329 Breakout, manufactured by [**Onsemi**](https://www.onsemi.com/products/interfaces/wired-transceivers-modems/NCV7329), enables reliable LIN bus communication between microcontrollers and automotive networks. Operating as an interface between the digital logic and the LIN bus, it ensures signal conversion, low power consumption, and protection features. Designed for master-slave communication, it facilitates seamless data exchange in automotive and industrial applications.
+The LIN Transceiver NCV7329 Breakout, manufactured by [**Onsemi**](https://www.onsemi.com/products/interfaces/wired-transceivers-modems/NCV7329), interfaces a microcontroller's digital logic with the LIN bus. It handles signal conversion between the UART-compatible TXD/RXD pins and the single-wire LIN bus, while providing bus protection and three selectable power states.
 
 <CenteredImage src="/img/ncv7329/ncvonboard.png" alt="jp1" caption="NCV7329 on the board"/>
 
@@ -44,8 +44,8 @@ The **NCV7329 LIN Transceiver** operates in three primary states: **Normal Mode,
 
 In **Normal Mode**, the transceiver is fully active, allowing data transmission and reception on the LIN bus. The TXD (Transmit Data) and RXD (Receive Data) pins function normally, relaying information between the microcontroller and the LIN bus. The **EN pin must be set HIGH** to keep the transceiver in this state.
 
-**Sleep Mode** is a low-power state designed to minimize energy consumption when the LIN bus is inactive. In this mode, communication is disabled, but the transceiver can still wake up if it detects activity on the LIN bus or if the **EN pin is set HIGH**.
+**Sleep Mode** is a low-power state for when the LIN bus is inactive. Communication is disabled, but the transceiver continues to watch the LIN bus. A dominant wake-up event on the bus transitions the device to Standby Mode; asserting the **EN pin HIGH** transitions it directly to Normal Mode.
 
-**Standby Mode** is an intermediate state in which the transceiver monitors the LIN bus for wake-up signals while consuming less power than in Normal Mode. When a valid wake-up event occurs, the transceiver quickly transitions back to Normal Mode for full operation.
+**Standby Mode** is the intermediate state the transceiver enters after a LIN bus wake-up event triggers it from Sleep. The transceiver waits in Standby until the microcontroller asserts the **EN pin HIGH**, at which point it transitions to Normal Mode for full operation.
 
 <CenteredImage src="/img/ncv7329/opstates.png" alt="op" caption="NCV7329 operating state diagram"/>

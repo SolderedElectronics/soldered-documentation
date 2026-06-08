@@ -17,13 +17,19 @@ Click [**here**](/img/ncv7329/pinout.png) for a high-resolution image of the pin
 | Pin Marking | Pin Name       | Description                                                                 |
 | ----------- | -------------- | --------------------------------------------------------------------------- |
 | **GND**     | Ground         | Common ground for the module.                                               |
-| **VCC**     | Supply Voltage | Operating voltage input (typically 5V to 18V).                              |
+| **VCC**     | Supply Voltage | Logic supply voltage for the NCV7329 (3.3 V or 5 V).                       |
 | **LIN**     | LIN Bus I/O    | Connection to the LIN bus for data transmission and reception.              |
 | **EN**      | Enable         | Controls the transceiver's operating mode; high to enable normal operation. |
 | **TXD**     | Transmit Data  | Input for data to be transmitted over the LIN bus.                          |
 | **RXD**     | Receive Data   | Output for data received from the LIN bus.                                  |
 
-<WarningBox>Ensure that **GND** is connected to the common ground of your system to establish a proper reference for signals.</WarningBox>
+<InfoBox>
+The NCV7329 chip requires two separate supply voltages: **VCC** (3.3 V or 5 V) for the logic interface and **VBB** (up to 18 V) for the LIN bus driver. Check the hardware repository schematic to see how VBB is supplied on your board version.
+</InfoBox>
+
+<WarningBox>
+Do not apply a voltage above 18 V to the VBB supply, or above 5.25 V to the VCC pin. Exceeding these limits will permanently damage the IC.
+</WarningBox>
 
 ---
 
