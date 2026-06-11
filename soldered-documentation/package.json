@@ -22,6 +22,7 @@
     "@docusaurus/preset-classic": "^3.8.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "dotenv": "^17.4.2",
     "flickity": "^3.0.0",
     "image-size": "2.0.2",
     "imagesloaded": "^5.0.0",
@@ -48,5 +49,11 @@
   },
   "engines": {
     "node": ">=18.0"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.0.5",
+    "sockjs": {
+      "uuid": "^11.1.1"
+    }
   }
 }
