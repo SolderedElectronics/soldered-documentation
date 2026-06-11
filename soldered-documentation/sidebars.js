@@ -3019,6 +3019,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'SSD1306 0.96" I2C OLED Display',
+          items: [
+            {
+              type: 'doc',
+              id: 'displays/ssd1306_new/ssd1306_new-overview',
+            },
+            {
+              type: 'doc',
+              id: 'displays/ssd1306_new/ssd1306_new-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'displays/ssd1306_new/ssd1306_new-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306_new/arduino_library/ssd1306_new-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306_new/arduino_library/ssd1306_new-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'displays/ssd1306_new/arduino_library/ssd1306_new-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: '2.4" TFT LCD Breakout with Touch',
           items: [
             {
