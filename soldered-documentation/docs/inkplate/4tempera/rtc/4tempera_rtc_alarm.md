@@ -48,9 +48,9 @@ void setup()
     inkplate.display();      // Display the cleared image on Inkplate
     inkplate.setTextSize(5); // Set text to be 5 times larger than the classic 5x7 px text
 
-    inkplate.rtcSetTime(hour, minutes, seconds);                                         // Send time to RTC
-    inkplate.rtcSetDate(weekday, day, month, year);                                      // Send date to RTC
-    inkplate.rtcSetAlarm(alarmSeconds, alarmMinutes, alarmHour, alarmDay, alarmWeekday); // Set alarm
+    inkplate.rtc.setTime(hour, minutes, seconds);                                         // Send time to RTC
+    inkplate.rtc.setDate(weekday, day, month, year);                                      // Send date to RTC
+    inkplate.rtc.setAlarm(alarmSeconds, alarmMinutes, alarmHour, alarmDay, alarmWeekday); // Set alarm
 }
 
 // Variable that keeps count of how many times the screen has been partially updated
@@ -59,22 +59,22 @@ void loop()
 {
     if ((unsigned long)(millis() - time1) > REFRESH_DELAY)
     {
-        inkplate.rtcGetRtcData();           // Get the time and date from RTC
-        seconds = inkplate.rtcGetSecond();  // Store seconds in a variable
-        minutes = inkplate.rtcGetMinute();  // Store minutes in a variable
-        hour = inkplate.rtcGetHour();       // Store hours in a variable
-        day = inkplate.rtcGetDay();         // Store the day of the month in a variable
-        weekday = inkplate.rtcGetWeekday(); // Store the day of the week in a variable
-        month = inkplate.rtcGetMonth();     // Store month in a variable
-        year = inkplate.rtcGetYear();       // Store year in a variable
+        inkplate.rtc.getRtcData();           // Get the time and date from RTC
+        seconds = inkplate.rtc.getSecond();  // Store seconds in a variable
+        minutes = inkplate.rtc.getMinute();  // Store minutes in a variable
+        hour = inkplate.rtc.getHour();       // Store hours in a variable
+        day = inkplate.rtc.getDay();         // Store the day of the month in a variable
+        weekday = inkplate.rtc.getWeekday(); // Store the day of the week in a variable
+        month = inkplate.rtc.getMonth();     // Store month in a variable
+        year = inkplate.rtc.getYear();       // Store year in a variable
 
         inkplate.clearDisplay();                                       // Clear content in the frame buffer
         inkplate.setCursor(100, 300);                                  // Set the position of the text
         printTime(hour, minutes, seconds, day, weekday, month, year); // Print the time on the screen
 
-        if (inkplate.rtcCheckAlarmFlag()) // Check if the alarm has occurred
+        if (inkplate.rtc.checkAlarmFlag()) // Check if the alarm has occurred
         {
-            inkplate.rtcClearAlarmFlag(); // It is recommended to clear the alarm flag after the alarm occurs
+            inkplate.rtc.clearAlarmFlag(); // It is recommended to clear the alarm flag after the alarm occurs
             inkplate.setCursor(400, 400); // Set a new cursor position
             inkplate.print("ALARM!");
         }
@@ -126,7 +126,7 @@ void print2Digits(uint8_t _d)
 ```
 
 <FunctionDocumentation
-    functionName="inkplate.rtcSetAlarm()"
+    functionName="inkplate.rtc.setAlarm()"
     description="Sets the alarm with all the provided parameters."
     returnType="void"
     parameters={[ 
@@ -139,7 +139,7 @@ void print2Digits(uint8_t _d)
  />
 
 <FunctionDocumentation
-  functionName="inkplate.rtcCheckAlarmFlag()"
+  functionName="inkplate.rtc.checkAlarmFlag()"
   description="Checks if the alarm flag is set"
   returnDescription="Returns true if the alarm flag is set"
   returnType="bool"
@@ -170,12 +170,12 @@ void setup()
     inkplate.display();      // Display the cleared image on Inkplate
     inkplate.setTextSize(5); // Set text to be 5 times larger than the classic 5x7 px text
   
-    inkplate.rtcSetEpoch(1589610300);
-    inkplate.rtcSetAlarmEpoch(inkplate.rtcGetEpoch() + 10, RTC_ALARM_MATCH_DHHMMSS);
+    inkplate.rtc.setEpoch(1589610300);
+    inkplate.rtc.setAlarmEpoch(inkplate.rtc.getEpoch() + 10, RTC_ALARM_MATCH_DHHMMSS);
 
-    // inkplate.rtcSetTime(6, 25, 0);        // Alternatively, you can set the time and date in another way
-    // inkplate.rtcSetDate(6, 16, 5, 2020);
-    // inkplate.rtcSetAlarm(10, 25, 6, 16, 6); // Set an alarm 10 seconds from now
+    // inkplate.rtc.setTime(6, 25, 0);        // Alternatively, you can set the time and date in another way
+    // inkplate.rtc.setDate(6, 16, 5, 2020);
+    // inkplate.rtc.setAlarm(10, 25, 6, 16, 6); // Set an alarm 10 seconds from now
   
     attachInterrupt(39, alarmISR, FALLING); // Set the interrupt function and mode
 }
@@ -186,15 +186,15 @@ void loop()
 {
     inkplate.clearDisplay();         // Clear the frame buffer of Inkplate
     inkplate.setCursor(100, 100);    // Set the position of the text
-    inkplate.rtcGetRtcData();          // Get the time and date from the RTC
+    inkplate.rtc.getRtcData();          // Get the time and date from the RTC
 
     // Print the time on the screen
-    printTime(inkplate.rtcGetHour(), inkplate.rtcGetMinute(), inkplate.rtcGetSecond(), inkplate.rtcGetDay(), inkplate.rtcGetWeekday(), inkplate.rtcGetMonth(), inkplate.rtcGetYear());
+    printTime(inkplate.rtc.getHour(), inkplate.rtc.getMinute(), inkplate.rtc.getSecond(), inkplate.rtc.getDay(), inkplate.rtc.getWeekday(), inkplate.rtc.getMonth(), inkplate.rtc.getYear());
     
     if (_alarmFlag)     // Check the alarm flag
     {
         // _alarmFlag = 0;              // Uncomment this line if you want to clear the flag
-        inkplate.rtcClearAlarmFlag();    // It is recommended to clear the alarm flag after the alarm occurs
+        inkplate.rtc.clearAlarmFlag();    // It is recommended to clear the alarm flag after the alarm occurs
         inkplate.setCursor(200, 200);    // Set the position of the text
         inkplate.print("ALARM");         // Print the "ALARM" text
     }
