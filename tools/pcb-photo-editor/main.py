@@ -337,7 +337,7 @@ class PhotoEditorApp:
                    command=self._save_stacked).pack(side=tk.LEFT, padx=6)
         ttk.Button(top, text="How it works",
                    command=self._show_stack_info).pack(side=tk.LEFT, padx=6)
-        self._preview_fix_btn = ttk.Button(top, text="Fix Artifact",
+        self._preview_fix_btn = ttk.Button(top, text="Fix Tool",
                                            command=self._preview_toggle_fix)
         self._preview_fix_btn.pack(side=tk.LEFT, padx=6)
         self._preview_zoom_lbl = tk.Label(top, text="", bg=BG,
@@ -870,13 +870,13 @@ class PhotoEditorApp:
     def _preview_toggle_fix(self):
         self._preview_fix_mode = not self._preview_fix_mode
         if self._preview_fix_mode:
-            self._preview_fix_btn.configure(text="Cancel Fix")
+            self._preview_fix_btn.configure(text="Cancel Fix Tool")
             self._preview_canvas.configure(cursor="crosshair")
             self._preview_canvas.bind("<ButtonPress-1>", self._preview_fix_click)
             self._preview_canvas.bind("<B1-Motion>", lambda e: None)
-            self.set_status("Fix Artifact: click directly on the white blob to fill it")
+            self.set_status("Fix Tool: click directly on the white blob to fill it")
         else:
-            self._preview_fix_btn.configure(text="Fix Artifact")
+            self._preview_fix_btn.configure(text="Fix Tool")
             self._preview_canvas.configure(cursor="fleur")
             self._preview_canvas.bind("<ButtonPress-1>",
                 lambda e: self._preview_canvas.scan_mark(e.x, e.y))
@@ -905,7 +905,7 @@ class PhotoEditorApp:
         grey = cv2.cvtColor(arr, cv2.COLOR_RGB2GRAY)
 
         if int(grey[img_y, img_x]) < 100:
-            self.set_status("Fix Artifact: clicked pixel is too dark — click on the white/bright blob")
+            self.set_status("Fix Tool: clicked pixel is too dark — click on the white/bright blob")
             return
 
         # Flood-fill from the seed point to find the connected bright region.
@@ -918,7 +918,7 @@ class PhotoEditorApp:
         region = flood_mask[1:-1, 1:-1]             # strip the 1-px border padding
 
         if not region.any():
-            self.set_status("Fix Artifact: flood fill found nothing — try clicking the centre of the blob")
+            self.set_status("Fix Tool: flood fill found nothing — try clicking the centre of the blob")
             return
 
         # Dilate slightly so inpainting has a border to sample from
@@ -938,7 +938,7 @@ class PhotoEditorApp:
                 self._last_result = np.where(mask3, fixed16, self._last_result)
 
         px = int(region.sum())
-        self.set_status(f"Fix Artifact: filled {px:,} px — click another artifact or 'Cancel Fix' when done")
+        self.set_status(f"Fix Tool: filled {px:,} px — click another artifact or 'Cancel Fix Tool' when done")
         self._preview_render()
 
     # ═══════════════════════════════════════════ Step 2 — Auto Edit ═══════════
@@ -1006,9 +1006,14 @@ class PhotoEditorApp:
         if self._edit_picking and self._edit_wb_drag_start is not None:
             sx_c, sy_c = self._edit_wb_drag_start[0], self._edit_wb_drag_start[1]
             ex_c, ey_c = self._edit_wb_drag_end if self._edit_wb_drag_end else (sx_c, sy_c)
+            # Outer dark border for contrast on any background
+            self._edit_canvas.create_rectangle(sx_c - 1, sy_c - 1, ex_c + 1, ey_c + 1,
+                                                outline="#000000", width=2, tags="edit_ov")
+            # Semi-transparent green fill so the selected area is obvious
             self._edit_canvas.create_rectangle(sx_c, sy_c, ex_c, ey_c,
-                                                outline="#00ff00", width=1,
-                                                dash=(4, 4), tags="edit_ov")
+                                                outline="#00ff44", width=2,
+                                                fill="#00ff44", stipple="gray25",
+                                                tags="edit_ov")
 
         self._edit_canvas.configure(
             scrollregion=(0, 0, max(cw, nw + x_off), max(ch, nh + y_off)))
@@ -1041,14 +1046,16 @@ class PhotoEditorApp:
     def _edit_canvas_press(self, e):
         if not self._edit_picking:
             return
+        cx, cy = self._edit_canvas.canvasx(e.x), self._edit_canvas.canvasy(e.y)
         ix, iy = self._edit_canvas_to_image(e.x, e.y)
-        self._edit_wb_drag_start = (e.x, e.y, float(ix), float(iy))
-        self._edit_wb_drag_end   = (e.x, e.y)
+        self._edit_wb_drag_start = (cx, cy, float(ix), float(iy))
+        self._edit_wb_drag_end   = (cx, cy)
 
     def _edit_canvas_drag_wb(self, e):
         if not self._edit_picking or self._edit_wb_drag_start is None:
             return
-        self._edit_wb_drag_end = (e.x, e.y)
+        self._edit_wb_drag_end = (self._edit_canvas.canvasx(e.x),
+                                   self._edit_canvas.canvasy(e.y))
         self._edit_refresh_canvas()
 
     def _edit_canvas_release_wb(self, e):
