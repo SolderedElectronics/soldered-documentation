@@ -9,9 +9,6 @@ Inkplate 13SPECTRA includes built-in functions for measuring **battery voltage**
 
 <WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [LINK PLACEHOLDER - 13 spectra batteries]. </WarningBox>
 
-Battery should be connected like this:
-[IMAGE PLACEHOLDER - battery connection]
-
 ---
 
 ```python

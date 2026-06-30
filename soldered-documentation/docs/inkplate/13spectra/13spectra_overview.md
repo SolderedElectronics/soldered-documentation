@@ -24,8 +24,6 @@ Like all Inkplate boards, Inkplate 13SPECTRA is **fully open-source** and compat
 Designed for long-temr, low.maintenance use, Inkplate 13SPECTRA can run for weeks or even months on **battery power**, or operate continuouslly over USB. With support for optional battery solutions, Inkplate 13SPECTRA is ready to go wherever your project takes it.
 
 
-[IMAGE PLACEHOLDER - inkplate 13spectra display board]
-
 ## Which product is this documentation for?
 
 [LINK PLACEHOLDER - inkplate 13spectra product page]

@@ -966,7 +966,6 @@ const sidebars = {
                 "inkplate/13spectra/hardware/13spectra-hardware-files",
                 "inkplate/13spectra/hardware/13spectra-hardware-battery",
                 "inkplate/13spectra/hardware/13spectra-hardware-jumpers",
-                "inkplate/13spectra/hardware/13spectra-hardware-free-gpio",
                 "inkplate/13spectra/hardware/13spectra-hardware-power-switch",
               ]
             },
@@ -1055,8 +1054,7 @@ const sidebars = {
                 },
                 "inkplate/13spectra/micropython/13spectra-battery-voltage"
               ]
-            },
-            "inkplate/13spectra/13spectra-faq-troubleshooting",
+            }
           ]
         }
       ]

@@ -19,18 +19,11 @@ We use [**KiCad**](https://www.kicad.org/), an open-source PCB design tool. You 
 
 The `PANEL` files are used internally for production.  
 
-
-[IMAGE PLACEHOLDER - spectra kicad project]
-
 ---
 
 ### Schematic
 
 The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from Kicad. The schematic is divided into sections based on functionality, making it easy to navigate.
-
-
-
-[IMAGE PLACEHOLDER - spectra shematic]        
 
 ---
 
@@ -40,9 +33,6 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
-
-
-[IMAGE PLACEHOLDER - spectra BOM]  
 
 ---
 

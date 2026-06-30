@@ -23,7 +23,6 @@ The Inkplate 13SPECTRA features a 13.3" e-paper display, USB-C connectivity for 
 ## Components
 
 Here is an overview of on-board components with their locations:
-[IMAGE PLACEHOLDER - spectra front side with marked components]
 
 <CenteredImage src="/img/13spectra/inkplate-13-spectra-technical-hw-overview.jpg" alt="Inkplate 13SPECTRA backside" caption="Inkplate 13SPECTRA backside" width="1200px" />
 

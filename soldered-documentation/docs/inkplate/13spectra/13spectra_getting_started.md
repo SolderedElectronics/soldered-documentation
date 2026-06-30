@@ -62,10 +62,6 @@ To upload your own sketch or an Arduino example to **Inkplate 13SPECTRA**, follo
 
 Use the provided **USB-C cable** to connect Inkplate 13SPECTRA to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
 
-[IMAGE PLACEHOLDER - inkplate 13spectra onboard USB connector highlighted]
-
-[IMAGE PLACEHOLDER - inkplate 13spectra onboard power switch highlighted]
-
 ### 2. Create a sketch
 
 Let's create the most basic Inkplate code which writes `Hello World!` to the e-Paper display. Go to `File->New Sketch` and paste this code in:

@@ -8,9 +8,7 @@ hide_title: true
 
 <SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
 
-The built-in microSD card slot on Inkplate 13SPECTRA can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSDs card slot.
-
-[IMAGE PLACEHOLDER - sdcard slot on 13spectra highlighted]
+The built-in microSD card slot on Inkplate 13SPECTRA can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSD card slot.
 
 <InfoBox>Inkplate 13SPECTRA  uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>

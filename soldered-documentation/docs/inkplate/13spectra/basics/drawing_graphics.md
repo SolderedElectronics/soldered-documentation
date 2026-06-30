@@ -133,8 +133,6 @@ void setup(){
 
 ```
 
-[IMAGE PLACEHOLDER - inkplate13 shapes example] 
-
 Below are the detailed references to these functions:
 
 <FunctionDocumentation
