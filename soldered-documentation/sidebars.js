@@ -882,8 +882,7 @@ const sidebars = {
                 "inkplate/6motion/hardware/6motion-hardware-esp32",
                 "inkplate/6motion/hardware/6motion-hardware-battery",
                 "inkplate/6motion/hardware/6motion-hardware-free-gpio",
-                "inkplate/6motion/hardware/6motion-hardware-power-switch",
-                "inkplate/6motion/hardware/6motion-hardware-enclosure"
+                "inkplate/6motion/hardware/6motion-hardware-power-switch"
               ]
             },
             {
