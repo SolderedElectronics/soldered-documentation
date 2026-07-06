@@ -3832,6 +3832,42 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'Inputronic Bridge',
+          items: [
+            {
+              type: 'doc',
+              id: 'Inputronic/inputronic_bridge/inputronic_bridge-overview',
+            },
+            {
+              type: 'doc',
+              id: 'Inputronic/inputronic_bridge/inputronic_bridge-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'Inputronic/inputronic_bridge/inputronic_bridge-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'Inputronic/inputronic_bridge/arduino_library/inputronic_bridge-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'Inputronic/inputronic_bridge/arduino_library/inputronic_bridge-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'Inputronic/inputronic_bridge/arduino_library/inputronic_bridge-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
