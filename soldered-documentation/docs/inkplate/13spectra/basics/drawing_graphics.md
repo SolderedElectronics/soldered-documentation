@@ -21,6 +21,19 @@ Below is an example demonstrating drawing in all available colors on the Inkplat
 <InfoBox>There are total of 6 colors to choose from:
 `INKPLATE_BLACK`, `INKPLATE_WHITE`, `INKPLATE_YELLOW`, `INKPLATE_RED`, `INKPLATE_BLUE`, `INKPLATE_GREEN`</InfoBox>
 
+<WarningBox>The color definitions in `Inkplate.h` are currently **incorrect for Inkplate 13SPECTRA**: `INKPLATE_BLUE` and `INKPLATE_GREEN` need to be **decremented by 1** to actually get those colors. Use `INKPLATE_BLUE - 1` for blue and `INKPLATE_GREEN - 1` for green, as shown in the examples below.</WarningBox>
+
+The actual color order on Inkplate 13SPECTRA differs from the 6-color (6COLOR) Inkplate displays. This also affects the **online image converter tool**, which currently uses the 6COLOR palette indices for 13SPECTRA. The correct mapping is:
+
+| Index | 13SPECTRA color | 6COLOR color |
+|-------|-----------------|--------------|
+| 0     | Black           | Black        |
+| 1     | White           | White        |
+| 2     | Yellow          | Green        |
+| 3     | Red             | Blue         |
+| 4     | Blue            | Red          |
+| 5     | Green           | Yellow       |
+
 ```cpp
 
 #include "Inkplate.h"
@@ -88,8 +101,8 @@ void setup(){
     display.drawRoundRect(290, 60, 240, 80, 16, INKPLATE_BLACK);
 
     // Circles
-    display.drawCircle(160, 220, 60, INKPLATE_BLUE);
-    display.fillCircle(380, 220, 60, INKPLATE_GREEN);
+    display.drawCircle(160, 220, 60, INKPLATE_BLUE - 1);
+    display.fillCircle(380, 220, 60, INKPLATE_GREEN - 1);
     display.drawCircle(380, 220, 60, INKPLATE_BLACK);
 
     // Triangle
@@ -100,8 +113,8 @@ void setup(){
     display.drawLine(40, 360, 760, 520, INKPLATE_BLACK);
     display.drawLine(40, 390, 760, 550, INKPLATE_RED);
     display.drawLine(40, 420, 760, 580, INKPLATE_YELLOW);
-    display.drawLine(40, 450, 760, 610, INKPLATE_BLUE);
-    display.drawLine(40, 480, 760, 640, INKPLATE_GREEN);
+    display.drawLine(40, 450, 760, 610, INKPLATE_BLUE - 1);
+    display.drawLine(40, 480, 760, 640, INKPLATE_GREEN - 1);
 
     for (int x = 40; x < 760; x += 8) {
     uint16_t color = INKPLATE_BLACK;
@@ -111,9 +124,9 @@ void setup(){
     } else if (x % 40 == 0) {
       color = INKPLATE_YELLOW;
     } else if (x % 32 == 0) {
-      color = INKPLATE_GREEN;
+      color = INKPLATE_GREEN - 1;
     } else if (x % 24 == 0) {
-      color = INKPLATE_BLUE;
+      color = INKPLATE_BLUE - 1;
     }
 
     // Simple text

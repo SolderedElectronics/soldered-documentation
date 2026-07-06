@@ -41,7 +41,7 @@ image="/img/nula-deepsleep-esp32-s3/NulaDeepsleep.png"
 * **Qwiic Connector:** Plug-and-play expansion for I²C sensors and peripherals  
 * **Compact Size:** Breadboard-friendly layout for rapid prototyping  
 * **Multiple Programming Options:** Compatible with Arduino, ESP-IDF, and MicroPython  
-* **Native USB:** Full-speed USB for programming, serial, and HID interface  
+* **USB-Serial via CH340:** Onboard CH340 chip for programming and serial communication over USB  
 * **Ample Memory:** 8 MB Flash and 512 KB SRAM  
 * **Security Features:** Secure boot, flash encryption, and hardware crypto accelerators  
 * **Wide Operating Voltage:** 3.3 V logic with onboard 5 V regulator via USB-C  

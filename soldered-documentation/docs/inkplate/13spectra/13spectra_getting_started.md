@@ -24,7 +24,7 @@ If you haven’t installed it yet, download and install the Arduino IDE from the
 Copy the following URL:
 
 ```
-https://github.com/SolderedElectronics/Inkplate-Board-Definitions-for-Arduino-IDE/blob/main/package_Inkplate_Boards_index.json
+https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Board-Definitions-for-Arduino-IDE/refs/heads/main/package_Inkplate_Boards_index.json
 ```
 
 And add it to the `Additional boards manager URLs` in Arduino settings:
@@ -44,10 +44,28 @@ In the Arduino Library Manager, search for the Inkplate library and click `Insta
 
 ### 4. Install CH340 driver
 
-<InfoBox>Mac and Linux users can skip this step because the CH340 driver is already installed.</InfoBox>
+The CH340 is an onboard chip that enables serial communication over USB.
 
-The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions:  
+<InfoBox>Linux users can skip this step because the CH340 driver is already installed.</InfoBox>
+
+#### Windows
+
+If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions:  
 <CenteredImage src="/img/inkplate10/ch340.png" alt="Install CH340 Driver" caption="Installing the CH340 Driver on Windows" width="350px" />
+
+#### Mac
+
+On macOS, the CH340 driver needs to be installed manually. Download it from the official WCH website, open the `.dmg` file, and follow the installation instructions:
+
+<QuickLink 
+  title="CH340 driver for macOS" 
+  description="Official WCH CH34x serial driver download for macOS"
+  url="https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html" 
+/>
+
+<WarningBox>After installing the driver, you also have to **enable it manually** in macOS security settings:  
+**System Settings → Login Items & Extensions → CH34xVPCDriver → ⓘ (info) button → enable the driver**.  
+The board will not show up as a serial port until the driver is enabled.</WarningBox>
 
 ### Done!
 

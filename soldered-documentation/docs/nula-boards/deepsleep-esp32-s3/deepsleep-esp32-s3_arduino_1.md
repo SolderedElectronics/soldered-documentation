@@ -51,6 +51,30 @@ Both options are compatible for uploading and testing sketches.</InfoBox>
 
 ---
 
+## Install CH340 driver
+
+The CH340 is an onboard chip that enables serial communication over USB. Without the driver, the board may not show up as a serial port on your computer.
+
+<InfoBox>Linux users can skip this step because the CH340 driver is already installed.</InfoBox>
+
+### Windows
+
+If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions.
+
+### Mac
+
+On macOS, the CH340 driver needs to be installed manually. Download it from the official WCH website, open the `.dmg` file, and follow the installation instructions:
+
+<QuickLink 
+  title="CH340 driver for macOS" 
+  description="Official WCH CH34x serial driver download for macOS"
+  url="https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html" 
+/>
+
+<InfoBox>After installing, macOS may ask you to allow the driver in **System Settings → Privacy & Security**. Restart your Mac if the board is not detected after installation.</InfoBox>
+
+---
+
 ## Example sketch
 
 Once your board is selected and connected via USB-C, try uploading this simple example to verify everything is working:
@@ -67,5 +91,4 @@ void loop() {
 }
 ```
 
-<InfoBox>If uploading fails, double-check that the correct board and port are selected.
-The NULA DeepSleep ESP32-S3 uses native USB, so no external driver is required.</InfoBox>
+<InfoBox>If uploading fails, double-check that the correct board and port are selected, and make sure the **CH340 driver** is installed (see the section above).</InfoBox>
