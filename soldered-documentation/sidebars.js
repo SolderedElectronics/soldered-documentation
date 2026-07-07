@@ -3864,6 +3864,18 @@ const sidebars = {
                   type: 'doc',
                   id: 'Inputronic/inputronic_bridge/arduino_library/inputronic_bridge-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'Inputronic/inputronic_bridge/arduino_library/inputronic_bridge-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'Inputronic/inputronic_bridge/arduino_library/inputronic_bridge-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'Inputronic/inputronic_bridge/arduino_library/inputronic_bridge-arduino-6',
+                },
               ],
             },
           ],

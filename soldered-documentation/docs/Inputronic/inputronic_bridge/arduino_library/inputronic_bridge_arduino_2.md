@@ -1,12 +1,12 @@
 ---
-slug: /inputronic_bridge/arduino/examples 
-title: Inputronic BRIDGE - Reading HID events
+slug: /inputronic_bridge/arduino/polling-events 
+title: Inputronic BRIDGE - Reading keyboard, mouse, and MIDI events
 sidebar_label: Reading HID events
 id: inputronic_bridge-arduino-2 
 hide_title: False
 ---
 
-This page covers initializing the `InputronicParser` library, reading keyboard, mouse, and MIDI events, falling back to raw HID data, using interrupts instead of polling, and changing the BRIDGE's I²C address.
+This page walks through the `pollingEvents` example: initializing the `InputronicParser` library and reading keyboard, mouse, and MIDI events by polling.
 
 ---
 
@@ -109,132 +109,7 @@ A `KeyboardEvent` holds up to 8 simultaneously pressed keys in its `keys[]` arra
 
 ---
 
-## Reading raw HID data
-
-If you plug in a device the BRIDGE doesn't recognize as a keyboard, mouse, or MIDI controller, or you just want the unprocessed report bytes, switch on raw HID polling. Every call to `pollEvents()` will then also return the latest report as a hex string.
-
-```cpp
-void setup()
-{
-    // ... same initialization as above ...
-
-    parser.setHidRawPolling(true);
-}
-
-void loop()
-{
-    auto events = parser.pollEvents();
-
-    if (events.hidRaw.valid)
-    {
-        Serial.print("HID RAW HEX: ");
-        Serial.println(events.hidRaw.hex);
-    }
-
-    delay(30);
-}
-```
-
-<FunctionDocumentation
-  functionName="parser.setHidRawPolling()"
-  description="Turns raw HID report polling on or off. While enabled, pollEvents() also fills in the hidRaw event with the latest report as a hex string, regardless of whether it was decoded as a keyboard, mouse, or MIDI event."
-  returnDescription="None"
-  parameters={[
-    { type: 'bool', name: 'enabled', description: 'True to start including raw HID reports in pollEvents(), false to stop' },
-  ]}
-/>
-
----
-
-## Interrupt-driven reading
-
-Instead of calling `pollEvents()` on a fixed interval, you can wire the BRIDGE's **INT** pin to your microcontroller and have it tell you exactly when new data has arrived. Pass the interrupt pin to `begin()` and, optionally, register a callback that fires the moment data is ready.
-
-```cpp
-static const int8_t INTERRUPT_PIN = 5;
-volatile bool newDataFlag = false;
-
-void onBridgeDataReady()
-{
-    newDataFlag = true;
-}
-
-void setup()
-{
-    Serial.begin(115200);
-
-    Wire.begin(8, 9);
-    parser.configureI2c(0x50);
-    if (!parser.begin(InputronicParser::PROTOCOL_I2C, Wire,
-                      true, INTERRUPT_PIN, false)) // interrupt on FALLING edge
-    {
-        Serial.println("Could not connect to BRIDGE over I2C!");
-        while (true);
-    }
-
-    parser.onDataReady(onBridgeDataReady);
-    Serial.println("BRIDGE connected, interrupt mode active.");
-}
-```
-
-<FunctionDocumentation
-  functionName="parser.onDataReady()"
-  description="Registers a callback that runs from interrupt context the moment the BRIDGE signals new data on the INT pin. Keep the callback short: no Serial prints or blocking calls, just set a flag and handle it in loop()."
-  returnDescription="None"
-  parameters={[
-    { type: 'void (*)()', name: 'callback', description: 'Function pointer to call when new data arrives' },
-  ]}
-/>
-
-<InfoBox>
-`pollEvents()` still works the same way in interrupt mode. It just returns immediately without touching the bus unless the interrupt flag has actually been set, so calling it on every loop iteration is still the normal pattern.
-</InfoBox>
-
----
-
-## Changing the I²C address
-
-The default address of **0x50** can be changed to anything in the **0x08–0x77** range with `changeI2CAddress()`. The new address is written to the BRIDGE's non-volatile storage immediately, no power cycle required, and survives reboots.
-
-```cpp
-#define CURRENT_I2C_ADDR 0x50
-#define NEW_I2C_ADDR 0x30
-
-void setup()
-{
-    Serial.begin(115200);
-    Wire.begin(21, 22);
-
-    parser.configureI2c(CURRENT_I2C_ADDR);
-    if (!parser.begin(InputronicParser::PROTOCOL_I2C, Wire))
-    {
-        Serial.println("Could not connect to BRIDGE at the current address.");
-        while (true);
-    }
-
-    if (!parser.changeI2CAddress(NEW_I2C_ADDR))
-    {
-        Serial.println("changeI2CAddress() failed.");
-        while (true);
-    }
-
-    // Reconnect at the new address to confirm it worked
-    parser.begin(InputronicParser::PROTOCOL_I2C, Wire);
-}
-```
-
-<FunctionDocumentation
-  functionName="parser.changeI2CAddress()"
-  description="Sends a command that tells the BRIDGE to store a new I2C address in its non-volatile memory and reinitialize its I2C slave driver immediately. Also updates the address the library itself uses for subsequent calls."
-  returnDescription="True if the command was sent successfully, false if the protocol wasn't initialized as I2C or the port is unavailable"
-  parameters={[
-    { type: 'uint8_t', name: 'newAddr', description: 'New 7-bit I2C address, valid range 0x08–0x77' },
-  ]}
-/>
-
----
-
-## Using UART or SPI
+## Using UART or SPI instead
 
 If you've bridged JP3 or JP4 to switch the BRIDGE's output protocol, initialize the library with the matching overload instead.
 
@@ -278,28 +153,10 @@ parser.begin(InputronicParser::PROTOCOL_SPI, SPI, 5);
 
 ---
 
-## Full examples
+## Full example
 
 <QuickLink
     title="pollingEvents"
     description="Polls the BRIDGE for keyboard, mouse, and MIDI events and prints them over Serial."
     url="https://github.com/SolderedElectronics/Soldered-Inputronic-BRIDGE-Library/tree/main/examples/pollingEvents"
-/>
-
-<QuickLink
-    title="interruptEvents"
-    description="Same as pollingEvents, but reads are triggered by the BRIDGE's interrupt pin instead of continuous polling."
-    url="https://github.com/SolderedElectronics/Soldered-Inputronic-BRIDGE-Library/tree/main/examples/interruptEvents"
-/>
-
-<QuickLink
-    title="rawHIDReadings"
-    description="Shows how to read raw, undecoded HID reports for devices the BRIDGE doesn't recognize."
-    url="https://github.com/SolderedElectronics/Soldered-Inputronic-BRIDGE-Library/tree/main/examples/rawHIDReadings"
-/>
-
-<QuickLink
-    title="changeI2CAddress"
-    description="Shows how to change and verify the BRIDGE's I2C address."
-    url="https://github.com/SolderedElectronics/Soldered-Inputronic-BRIDGE-Library/tree/main/examples/changeI2CAddress"
 />

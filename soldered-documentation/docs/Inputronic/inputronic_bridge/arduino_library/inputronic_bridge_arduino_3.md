@@ -1,77 +1,108 @@
 ---
-slug: /inputronic_bridge/arduino/troubleshooting 
-title: Inputronic BRIDGE - Troubleshooting
-sidebar_label: Troubleshooting
-id: inputronic_bridge-arduino-3
+slug: /inputronic_bridge/arduino/interrupt-events 
+title: Inputronic BRIDGE - Interrupt-driven reading
+sidebar_label: Interrupt-driven reading
+id: inputronic_bridge-arduino-3 
 hide_title: False
-pagination_next: null
 ---
 
-This page contains some tips in case you are having problems using this product.
+This page walks through the `interruptEvents` example: reading keyboard, mouse, and MIDI events without polling on a fixed interval.
 
-<ExpandableSection title="begin() keeps returning false!">
+---
 
-#### Check that a USB device is actually plugged in
-`begin()` works by pinging the BRIDGE and waiting for a response. On UART, the BRIDGE won't answer if no USB device has been attached yet, so plug in your keyboard, mouse, or MIDI device before calling `begin()`.
+## Connections for this example
 
-#### Check the protocol jumpers match your begin() call
-The BRIDGE only listens on one protocol at a time, whichever JP3/JP4 state it's in. If you call `begin(InputronicParser::PROTOCOL_SPI, ...)` while the board is still in its default I²C mode, it will never respond. Bridge JP3 for UART or JP4 for SPI, and leave both open for I²C.
+<ErrorBox>The connection diagram for this example hasn't been generated yet! We're working on it!</ErrorBox>
 
-#### Verify the bus was started first
-`Wire.begin()`, `Serial1.begin()`, or `SPI.begin()` all need to run before you call the parser's `begin()`. Double-check the pins you passed match how the BRIDGE is actually wired.
+Wire the BRIDGE's **INT** pin to a digital input on your microcontroller, in addition to the usual Qwiic or I²C header connection from the Getting Started guide.
 
-#### Scan for the I²C device
-If you're using I²C, run an [**I²C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to confirm the BRIDGE shows up. It should appear at **0x50** unless you've changed the address.
+---
 
-</ExpandableSection>
+## Interrupt-driven reading
 
-<ExpandableSection title="No keyboard, mouse, or MIDI events show up!">
+Instead of calling `pollEvents()` on a fixed interval, you can wire the BRIDGE's **INT** pin to your microcontroller and have it tell you exactly when new data has arrived. Pass the interrupt pin to `begin()` and, optionally, register a callback that fires the moment data is ready.
 
-#### Confirm the device class
-The BRIDGE recognizes standard USB keyboards, mice, and MIDI controllers. Composite or vendor-specific devices may not map cleanly to any of the three event types. Try `setHidRawPolling(true)` and check `events.hidRaw.hex` to confirm the BRIDGE is receiving reports at all before assuming it's a wiring issue.
+```cpp
+#include "Inputronic-BRIDGE.h"
 
-#### Make sure pollEvents() is called often enough
-Events reflect only the latest report from the connected device. If `loop()` is blocked by a long `delay()` or another slow operation, you can miss short key presses or fast mouse movement.
+InputronicParser parser;
 
-#### Try a different USB device
-Some USB HID devices, especially ones with unusual power requirements or nonstandard descriptors, may not enumerate correctly. Testing with a simple wired USB keyboard is a good way to confirm the BRIDGE itself is working.
+// Pin on the receiving MCU connected to the BRIDGE interrupt output.
+static const int8_t INTERRUPT_PIN = 5;
+volatile bool newDataFlag = false;
 
-</ExpandableSection>
+void onBridgeDataReady()
+{
+    newDataFlag = true;
+}
 
-<ExpandableSection title="The FAULT LED is on and my USB device won't power up!">
+void setup()
+{
+    Serial.begin(115200);
 
-#### Check the device's current draw
-The onboard USB-A port is current-limited to **260 mA**. Devices that draw more, such as RGB keyboards or ones with backlighting, will trip the overcurrent protection and light the red FAULT LED. Try the device on a powered USB hub instead of drawing power directly from the BRIDGE.
+    Wire.begin(8, 9);
+    parser.configureI2c(0x50);
+    if (!parser.begin(InputronicParser::PROTOCOL_I2C, Wire,
+                      true, INTERRUPT_PIN, false)) // interrupt on FALLING edge
+    {
+        Serial.println("Could not connect to BRIDGE over I2C!");
+        while (true);
+    }
 
-#### Power cycle the board
-Once the overcurrent condition clears, unplug and reconnect the BRIDGE's power to reset the FAULT state.
+    parser.onDataReady(onBridgeDataReady);
+    Serial.println("BRIDGE connected, interrupt mode active.");
+}
 
-#### Read the FAULT pin in your own code
-If you want your microcontroller to detect this condition too, wire the header's **FAULT** pin to a digital input. It mirrors the same overcurrent signal driving the onboard LED.
+void loop()
+{
+    auto events = parser.pollEvents();
 
-</ExpandableSection>
+    if (events.keyboard.valid)
+    {
+        Serial.print("Keyboard: ");
+        for (uint8_t i = 0; i < events.keyboard.keyCount; i++)
+        {
+            Serial.print(events.keyboard.keys[i]);
+        }
+        Serial.println();
+    }
 
-<ExpandableSection title="I forgot the I²C address I changed it to!">
+    if (events.mouse.valid)
+    {
+        Serial.printf("Mouse X:%d Y:%d L:%d R:%d M:%d Scroll:%d\n",
+                      events.mouse.x, events.mouse.y,
+                      events.mouse.btnLeft, events.mouse.btnRight,
+                      events.mouse.btnMiddle, events.mouse.scroll);
+    }
 
-#### Run an I²C scanner
-`changeI2CAddress()` stores the new address in non-volatile memory, so it survives power cycles. If you didn't note it down, run an [**I²C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to find whatever address the BRIDGE is currently answering on.
+    if (newDataFlag)
+    {
+        newDataFlag = false;
+        // events above already contain the latest data; this flag
+        // can be used to trigger additional work on data arrival.
+    }
+}
+```
 
-#### Try the default address first
-If the BRIDGE is a fresh, unmodified board, it will still be on **0x50**.
+<FunctionDocumentation
+  functionName="parser.onDataReady()"
+  description="Registers a callback that runs from interrupt context the moment the BRIDGE signals new data on the INT pin. Keep the callback short: no Serial prints or blocking calls, just set a flag and handle it in loop()."
+  returnDescription="None"
+  parameters={[
+    { type: 'void (*)()', name: 'callback', description: 'Function pointer to call when new data arrives' },
+  ]}
+/>
 
-</ExpandableSection>
+<InfoBox>
+`pollEvents()` still works the same way in interrupt mode. It just returns immediately without touching the bus unless the interrupt flag has actually been set, so calling it on every loop iteration is still the normal pattern.
+</InfoBox>
 
-<ExpandableSection title="The interrupt pin never fires!">
+---
 
-#### Confirm the wiring matches activeHigh
-If you set `activeHigh` to `false` in `begin()` but wired the interrupt pin expecting a rising edge (or vice versa), the interrupt will never trigger. Double-check which edge you configured against how the pin is actually wired.
+## Full example
 
-#### Make sure enableInterruptParam was set to true
-The interrupt pin argument is ignored unless `enableInterruptParam` is `true` in the `begin()` call you used.
-
-#### Fall back to polling to isolate the issue
-Comment out the interrupt setup and call `pollEvents()` on a fixed interval instead. If events show up fine without interrupts, the issue is isolated to the INT pin wiring or configuration rather than the BRIDGE itself.
-
-</ExpandableSection>
-
-<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+<QuickLink
+    title="interruptEvents"
+    description="Same as pollingEvents, but reads are triggered by the BRIDGE's interrupt pin instead of continuous polling."
+    url="https://github.com/SolderedElectronics/Soldered-Inputronic-BRIDGE-Library/tree/main/examples/interruptEvents"
+/>
