@@ -1,108 +1,64 @@
 ---
-slug: /inputronic_bridge/arduino/change-i2c-address 
-title: Inputronic BRIDGE - Changing the I²C address
-sidebar_label: Changing the I²C address
-id: inputronic_bridge-arduino-5 
+slug: /inputronic_bridge/arduino/troubleshooting 
+title: Inputronic BRIDGE - Troubleshooting
+sidebar_label: Troubleshooting
+id: inputronic_bridge-arduino-5
 hide_title: False
+pagination_next: null
 ---
 
-This page walks through the `changeI2CAddress` example: changing the BRIDGE's I²C address and verifying it took effect.
+This page contains some tips in case you are having problems using this product.
 
----
+<ExpandableSection title="begin() keeps returning false!">
 
-## Connections for this example
+#### Check that a USB device is actually plugged in
+`begin()` works by pinging the BRIDGE and waiting for a response. On UART, the BRIDGE won't answer if no USB device has been attached yet, so plug in your keyboard, mouse, or MIDI device before calling `begin()`.
 
-<ErrorBox>The connection diagram for this example hasn't been generated yet! We're working on it!</ErrorBox>
+#### Check the protocol jumpers match your begin() call
+The BRIDGE only listens on one protocol at a time, whichever JP3/JP4 state it's in. If you call `begin(InputronicParser::PROTOCOL_SPI, ...)` while the board is still in its default I²C mode, it will never respond. Bridge JP3 for UART or JP4 for SPI, and leave both open for I²C.
 
-Connect the BRIDGE to your microcontroller via Qwiic or the I²C header pins as shown in the Getting Started guide.
+#### Verify the bus was started first
+`Wire.begin()`, `Serial1.begin()`, or `SPI.begin()` all need to run before you call the parser's `begin()`. Double-check the pins you passed match how the BRIDGE is actually wired.
 
----
+#### Scan for the I²C device
+If you're using I²C, run an [**I²C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to confirm the BRIDGE shows up. It should appear at **0x50** unless you've changed the address.
 
-## Changing the I²C address
+</ExpandableSection>
 
-The default address of **0x50** can be changed to anything in the **0x08–0x77** range with `changeI2CAddress()`. The library writes the new address to the BRIDGE's non-volatile storage immediately. You don't need to power cycle the board, and the address survives reboots.
+<ExpandableSection title="No keyboard, mouse, or MIDI events show up!">
 
-```cpp
-#include "Inputronic-BRIDGE.h"
+#### Confirm the device class
+The BRIDGE recognizes standard USB keyboards, mice, and MIDI controllers. Composite or vendor-specific devices may not map cleanly to any of the three event types. Try `setHidRawPolling(true)` and check `events.hidRaw.hex` to confirm the BRIDGE is receiving reports at all before assuming it's a wiring issue.
 
-// Current address the device is responding on.
-#define CURRENT_I2C_ADDR 0x50
+#### Make sure pollEvents() is called often enough
+Events reflect only the latest report from the connected device. If `loop()` is blocked by a long `delay()` or another slow operation, you can miss short key presses or fast mouse movement.
 
-// Address to change to. Modify this to your desired address (0x08–0x77).
-#define NEW_I2C_ADDR 0x30
+#### Try a different USB device
+Some USB HID devices, especially ones with unusual power requirements or nonstandard descriptors, may not enumerate correctly. Testing with a simple wired USB keyboard is a good way to confirm the BRIDGE itself is working.
 
-InputronicParser parser;
+</ExpandableSection>
 
-void setup()
-{
-    Serial.begin(115200);
-    delay(500);
+<ExpandableSection title="The FAULT LED is on and my USB device won't power up!">
 
-    Wire.begin(21, 22); // Adjust SDA/SCL pins for your board.
+#### Check the device's current draw
+The onboard USB-A port is current-limited to **260 mA**. Devices that draw more, such as RGB keyboards or ones with backlighting, will trip the overcurrent protection and light the red FAULT LED. Try the device on a powered USB hub instead of drawing power directly from the BRIDGE.
 
-    // --- Connect at the current address ---
-    parser.configureI2c(CURRENT_I2C_ADDR);
-    if (!parser.begin(InputronicParser::PROTOCOL_I2C, Wire))
-    {
-        Serial.println("Could not connect to BRIDGE at address 0x" + String(CURRENT_I2C_ADDR, HEX));
-        Serial.println("Check wiring and that CURRENT_I2C_ADDR matches the device.");
-        while (true);
-    }
-    Serial.println("Connected at address 0x" + String(CURRENT_I2C_ADDR, HEX));
+#### Power cycle the board
+Once the overcurrent condition clears, unplug and reconnect the BRIDGE's power to reset the FAULT state.
 
-    // --- Send the address change command ---
-    Serial.println("Changing address to 0x" + String(NEW_I2C_ADDR, HEX) + "...");
-    if (!parser.changeI2CAddress(NEW_I2C_ADDR))
-    {
-        Serial.println("changeI2CAddress() failed — check protocol.");
-        while (true);
-    }
+#### Read the FAULT pin in your own code
+If you want your microcontroller to detect this condition too, wire the header's **FAULT** pin to a digital input. It mirrors the same overcurrent signal driving the onboard LED.
 
-    // --- Reconnect at the new address to verify ---
-    if (!parser.begin(InputronicParser::PROTOCOL_I2C, Wire))
-    {
-        Serial.println("Could not reconnect at new address 0x" + String(NEW_I2C_ADDR, HEX));
-        Serial.println("Address change may have failed.");
-        while (true);
-    }
-    Serial.println("Success! BRIDGE now responds at address 0x" + String(NEW_I2C_ADDR, HEX));
-}
+</ExpandableSection>
 
-void loop()
-{
-    // Normal event polling works as usual after the address change.
-    auto events = parser.pollEvents();
+<ExpandableSection title="I forgot the I²C address I changed it to!">
 
-    if (events.keyboard.valid)
-    {
-        for (uint8_t i = 0; i < events.keyboard.keyCount; i++)
-        {
-            Serial.print(events.keyboard.keys[i]);
-        }
-        Serial.println();
-    }
-}
-```
+#### Run an I²C scanner
+`changeI2CAddress()` stores the new address in non-volatile memory, so it survives power cycles. If you didn't note it down, run an [**I²C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to find whatever address the BRIDGE is currently answering on.
 
-<FunctionDocumentation
-  functionName="parser.changeI2CAddress()"
-  description="Sends a command that tells the BRIDGE to store a new I2C address in its non-volatile memory and reinitialize its I2C slave driver immediately. Also updates the address the library itself uses for subsequent calls."
-  returnDescription="True if the command was sent successfully, false if the protocol wasn't initialized as I2C or the port is unavailable"
-  parameters={[
-    { type: 'uint8_t', name: 'newAddr', description: 'New 7-bit I2C address, valid range 0x08–0x77' },
-  ]}
-/>
+#### Try the default address first
+If the BRIDGE is a fresh, unmodified board, it will still be on **0x50**.
 
-<InfoBox>
-If you forget which address you changed the BRIDGE to, run an [**I²C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to find it, or check the [troubleshooting](/inputronic_bridge/arduino/troubleshooting) page.
-</InfoBox>
+</ExpandableSection>
 
----
-
-## Full example
-
-<QuickLink
-    title="changeI2CAddress"
-    description="Shows how to change and verify the BRIDGE's I2C address."
-    url="https://github.com/SolderedElectronics/Soldered-Inputronic-BRIDGE-Library/tree/main/examples/changeI2CAddress"
-/>
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>

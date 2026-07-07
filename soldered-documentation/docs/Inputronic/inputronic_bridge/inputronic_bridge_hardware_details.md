@@ -57,7 +57,7 @@ The BRIDGE ships with a default 7-bit I²C address of **0x50**. Unlike sensors w
 ---
 
 ## Dimensions 
-- **Board Dimensions:** [BOARD_DIMENSIONS]
+- **Board Dimensions:** 26 × 63 mm (1.02 × 2.48 in)
 - **Header Pin Holes:** 1.5 mm
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
 - Soldered boards are LEGO compatible! 🧱
@@ -68,7 +68,15 @@ The BRIDGE ships with a default 7-bit I²C address of **0x50**. Unlike sensors w
 
 This board contains four hardware jumpers. See below for their locations and functions:
 
-<ErrorBox>The jumper images for Inputronic BRIDGE haven't been generated yet! We're working on it!</ErrorBox>
+<FlickityCarousel
+    images={[
+        { src: '/img/inputronic_bridge/JP1.png', alt: 'Inputronic BRIDGE jumper 1', caption: 'JP1'},
+        { src: '/img/inputronic_bridge/JP2.png', alt: 'Inputronic BRIDGE jumper 2', caption: 'JP2'},
+        { src: '/img/inputronic_bridge/JP3.png', alt: 'Inputronic BRIDGE jumper 3', caption: 'JP3'},
+        { src: '/img/inputronic_bridge/JP4.png', alt: 'Inputronic BRIDGE jumper 4', caption: 'JP4'}
+    ]}
+    jumpers={true}
+/>
 
 | Jumper | Default State | Function |
 |--------|---------------|----------|
@@ -85,9 +93,9 @@ Leave both JP3 and JP4 open for the default I²C mode. Bridge only one of the tw
 
 ## ESP32-S3FH4R2
 
-The **ESP32-S3FH4R2** is the microcontroller running the show on this board. It handles the USB host stack that talks to the connected HID device, parses the incoming reports, and drives whichever output protocol you've selected. This particular variant packs a dual-core processor running at up to 240 MHz alongside 4 MB of flash and 2 MB of PSRAM, both integrated into the chip package.
+The **ESP32-S3FH4R2** is the microcontroller that runs this board. It handles the USB host stack that talks to the connected HID device, parses the incoming reports, and drives whichever output protocol you've selected. This variant has a dual-core processor clocked at up to 240 MHz, with 4 MB of flash and 2 MB of PSRAM integrated into the chip package.
 
-<ErrorBox>The image of the ESP32-S3FH4R2 on the board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/inputronic_bridge/chip.png" alt="ESP32-S3FH4R2 on the board" caption="ESP32-S3FH4R2 on the board" width="400px" />
 
 ---
 

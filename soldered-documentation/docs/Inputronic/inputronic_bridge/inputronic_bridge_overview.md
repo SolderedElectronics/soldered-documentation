@@ -9,9 +9,9 @@ pagination_prev: null
 
 ## Inputronic BRIDGE
 
-The **Inputronic BRIDGE** lets a microcontroller that has no USB host capability read input from a regular USB-A HID device, such as a keyboard, mouse, or MIDI controller. Plug the device into the onboard USB-A port and the board's **ESP32-S3** decodes its HID reports, then hands the parsed key presses, mouse movement, or MIDI bytes to your project over **I²C, UART, or SPI**, selectable with a jumper. The default protocol is I²C at address **0x50**, which is changeable in software, and the board has two onboard **Qwiic connectors** for daisy-chaining.
+The **Inputronic BRIDGE** lets a microcontroller without USB host capability read input from a regular USB-A HID device, such as a keyboard, mouse, or MIDI controller. Plug the device into the onboard USB-A port, and the board's **ESP32-S3** decodes its HID reports. It then sends the parsed key presses, mouse movement, or MIDI bytes to your project over **I²C, UART, or SPI**, selected with a jumper. The default protocol is I²C at address **0x50**, which you can change in software, and the board has two onboard **Qwiic connectors** for daisy-chaining.
 
-<ErrorBox>The product photo for this board hasn't been generated yet! We're working on it!</ErrorBox>
+<ErrorBox>The product photo for this board hasn't been generated yet. We're working on it!</ErrorBox>
 
 ---
 
@@ -20,7 +20,7 @@ The **Inputronic BRIDGE** lets a microcontroller that has no USB host capability
 <QuickLink
   title="Inputronic BRIDGE"
   description="333390"
-  url="https://www.solde.red/333390"
+  url="https://soldered.com/products/soldered-inputronic-bridge"
 />
 
 ---
@@ -32,7 +32,7 @@ The **Inputronic BRIDGE** lets a microcontroller that has no USB host capability
 - **Raw HID Fallback:** Unrecognized devices can still be read as raw HID reports
 - **Selectable Protocol:** I²C (default), UART, or SPI, chosen with a jumper
 - **Configurable I²C Address:** Default 0x50, changeable to any value from 0x08 to 0x77
-- **Interrupt Output:** Signals your MCU when new data is ready, so you don't have to poll
+- **Interrupt Output:** Signals your MCU when new data is ready, so you do not have to poll
 - **Dual Qwiic Connectors:** Solderless daisy-chaining for I²C setups
 - **14-Pin Breakout Header:** Direct access to I²C, SPI, UART, IO0, and RESET
 - **USB Overcurrent Protection:** Output capped at 260 mA with a FAULT indicator

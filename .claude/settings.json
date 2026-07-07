@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:commons.wikimedia.org)",
+      "Bash(curl -sL -o usb_pipes_endpoints.svg \"https://upload.wikimedia.org/wikipedia/commons/1/1b/USB_pipes_and_endpoints_%28en%29.svg\")",
+      "Bash(curl -sL -o i2c_bus_diagram.svg \"https://upload.wikimedia.org/wikipedia/commons/3/3e/I2C.svg\")",
+      "WebFetch(domain:www.espressif.com)",
+      "WebFetch(domain:documentation.espressif.com)",
+      "Bash(curl -sL -o i2c_data_transfer.svg \"https://upload.wikimedia.org/wikipedia/commons/6/64/I2C_data_transfer.svg\")"
+    ]
+  }
+}

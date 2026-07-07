@@ -1,108 +1,79 @@
 ---
-slug: /inputronic_bridge/arduino/interrupt-events 
-title: Inputronic BRIDGE - Interrupt-driven reading
-sidebar_label: Interrupt-driven reading
+slug: /inputronic_bridge/arduino/raw-hid-readings 
+title: Inputronic BRIDGE - Reading raw HID data
+sidebar_label: Reading raw HID data
 id: inputronic_bridge-arduino-3 
 hide_title: False
 ---
 
-This page walks through the `interruptEvents` example: reading keyboard, mouse, and MIDI events without polling on a fixed interval.
+This page walks through the `rawHIDReadings` example: reading undecoded HID report bytes for devices the BRIDGE doesn't recognize as a keyboard, mouse, or MIDI controller.
 
 ---
 
-## Connections for this example
+## Reading raw HID data
 
-<ErrorBox>The connection diagram for this example hasn't been generated yet! We're working on it!</ErrorBox>
-
-Wire the BRIDGE's **INT** pin to a digital input on your microcontroller, in addition to the usual Qwiic or I²C header connection from the Getting Started guide.
-
----
-
-## Interrupt-driven reading
-
-Instead of calling `pollEvents()` on a fixed interval, you can wire the BRIDGE's **INT** pin to your microcontroller and have it tell you exactly when new data has arrived. Pass the interrupt pin to `begin()` and, optionally, register a callback that fires the moment data is ready.
+If you plug in a device the BRIDGE doesn't recognize as a keyboard, mouse, or MIDI controller, or you just want the unprocessed report bytes, switch on raw HID polling. Every call to `pollEvents()` will then also return the latest report as a hex string.
 
 ```cpp
 #include "Inputronic-BRIDGE.h"
 
 InputronicParser parser;
 
-// Pin on the receiving MCU connected to the BRIDGE interrupt output.
-static const int8_t INTERRUPT_PIN = 5;
-volatile bool newDataFlag = false;
-
-void onBridgeDataReady()
-{
-    newDataFlag = true;
-}
-
 void setup()
 {
     Serial.begin(115200);
 
-    Wire.begin(8, 9);
+    Wire.begin(21, 22);
     parser.configureI2c(0x50);
-    if (!parser.begin(InputronicParser::PROTOCOL_I2C, Wire,
-                      true, INTERRUPT_PIN, false)) // interrupt on FALLING edge
+    if (!parser.begin(InputronicParser::PROTOCOL_I2C, Wire))
     {
         Serial.println("Could not connect to BRIDGE over I2C!");
         while (true);
     }
 
-    parser.onDataReady(onBridgeDataReady);
-    Serial.println("BRIDGE connected, interrupt mode active.");
+    Serial.println("BRIDGE connected.");
+
+    // Push raw HID bytes on every poll.
+    parser.setHidRawPolling(true);
 }
 
 void loop()
 {
     auto events = parser.pollEvents();
 
-    if (events.keyboard.valid)
+    if (events.hidRaw.valid)
     {
-        Serial.print("Keyboard: ");
-        for (uint8_t i = 0; i < events.keyboard.keyCount; i++)
-        {
-            Serial.print(events.keyboard.keys[i]);
-        }
-        Serial.println();
+        Serial.print("HID RAW HEX: ");
+        Serial.println(events.hidRaw.hex);
     }
 
-    if (events.mouse.valid)
-    {
-        Serial.printf("Mouse X:%d Y:%d L:%d R:%d M:%d Scroll:%d\n",
-                      events.mouse.x, events.mouse.y,
-                      events.mouse.btnLeft, events.mouse.btnRight,
-                      events.mouse.btnMiddle, events.mouse.scroll);
-    }
-
-    if (newDataFlag)
-    {
-        newDataFlag = false;
-        // events above already contain the latest data; this flag
-        // can be used to trigger additional work on data arrival.
-    }
+    delay(30);
 }
 ```
 
 <FunctionDocumentation
-  functionName="parser.onDataReady()"
-  description="Registers a callback that runs from interrupt context the moment the BRIDGE signals new data on the INT pin. Keep the callback short: no Serial prints or blocking calls, just set a flag and handle it in loop()."
+  functionName="parser.setHidRawPolling()"
+  description="Turns raw HID report polling on or off. While enabled, pollEvents() also fills in the hidRaw event with the latest report as a hex string, regardless of whether it was decoded as a keyboard, mouse, or MIDI event."
   returnDescription="None"
   parameters={[
-    { type: 'void (*)()', name: 'callback', description: 'Function pointer to call when new data arrives' },
+    { type: 'bool', name: 'enabled', description: 'True to start including raw HID reports in pollEvents(), false to stop' },
   ]}
 />
 
 <InfoBox>
-`pollEvents()` still works the same way in interrupt mode. It just returns immediately without touching the bus unless the interrupt flag has actually been set, so calling it on every loop iteration is still the normal pattern.
+Raw HID polling runs alongside normal event decoding. If the connected device is a recognized keyboard, mouse, or MIDI controller, `pollEvents()` still fills in those events too, the raw report is just extra data on top.
 </InfoBox>
+
+Running the sketch above produces this output on the Serial Monitor:
+
+<CenteredImage src="/img/inputronic_bridge/raw_hid.png" alt="Serial Monitor output from the rawHIDReadings example" caption="Serial Monitor output showing raw HID report bytes" width="900px" />
 
 ---
 
 ## Full example
 
 <QuickLink
-    title="interruptEvents"
-    description="Same as pollingEvents, but reads are triggered by the BRIDGE's interrupt pin instead of continuous polling."
-    url="https://github.com/SolderedElectronics/Soldered-Inputronic-BRIDGE-Library/tree/main/examples/interruptEvents"
+    title="rawHIDReadings"
+    description="Shows how to read raw, undecoded HID reports for devices the BRIDGE doesn't recognize."
+    url="https://github.com/SolderedElectronics/Soldered-Inputronic-BRIDGE-Library/tree/main/examples/rawHIDReadings"
 />

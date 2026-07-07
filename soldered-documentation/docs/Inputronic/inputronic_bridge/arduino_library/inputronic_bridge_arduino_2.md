@@ -6,15 +6,7 @@ id: inputronic_bridge-arduino-2
 hide_title: False
 ---
 
-This page walks through the `pollingEvents` example: initializing the `InputronicParser` library and reading keyboard, mouse, and MIDI events by polling.
-
----
-
-## Connections for this example
-
-<ErrorBox>The connection diagram for this example hasn't been generated yet! We're working on it!</ErrorBox>
-
-Connect the BRIDGE to your microcontroller via Qwiic or the I²C header pins as shown in the Getting Started guide, then plug a USB keyboard, mouse, or MIDI device into its USB-A port.
+This page walks through the `pollingEvents` example: initializing the `InputronicParser` library and reading keyboard, mouse, and MIDI events by polling. The example below was tested with a USB keyboard plugged into the BRIDGE's USB-A port.
 
 ---
 
@@ -54,7 +46,7 @@ void setup()
 
 <FunctionDocumentation
   functionName="parser.begin()"
-  description="Initializes I2C mode and pings the BRIDGE to confirm it responds. This is the I2C overload of begin(); SPI and UART have their own overloads shown further down this page."
+  description="Initializes I2C mode and pings the BRIDGE to confirm it responds. begin() also has SPI and UART overloads for when the BRIDGE is set to those protocols."
   returnDescription="True if the BRIDGE answered the ping, false if it didn't respond within the timeout"
   parameters={[
     { type: 'CommProtocol', name: 'p', description: 'Must be PROTOCOL_I2C for this overload' },
@@ -107,49 +99,9 @@ void loop()
 A `KeyboardEvent` holds up to 8 simultaneously pressed keys in its `keys[]` array with `keyCount` telling you how many are populated. A `MouseEvent` carries signed `x`/`y` deltas, a `scroll` value, and five button flags: `btnLeft`, `btnRight`, `btnMiddle`, `btnBackward`, and `btnForward`.
 </InfoBox>
 
----
+With a USB keyboard plugged into the BRIDGE and each key press printed over Serial, the output looks like this:
 
-## Using UART or SPI instead
-
-If you've bridged JP3 or JP4 to switch the BRIDGE's output protocol, initialize the library with the matching overload instead.
-
-```cpp
-// UART: call serial.begin() with your baud rate and RX/TX pins first
-Serial1.begin(115200, SERIAL_8N1, 14, 15);
-parser.begin(InputronicParser::PROTOCOL_UART, Serial1);
-
-// SPI: call spi.begin() first, then pass the CS pin
-SPI.begin();
-parser.begin(InputronicParser::PROTOCOL_SPI, SPI, 5);
-```
-
-<FunctionDocumentation
-  functionName="parser.begin()"
-  description="UART overload of begin(). Pings the BRIDGE over the given serial port to confirm it responds."
-  returnDescription="True if the BRIDGE answered the ping within 500 ms, false if there was no USB device attached yet or the BRIDGE isn't connected"
-  parameters={[
-    { type: 'CommProtocol', name: 'p', description: 'Must be PROTOCOL_UART for this overload' },
-    { type: 'HardwareSerial&', name: 'serial', description: 'The serial port to use, already started with serial.begin()' },
-    { type: 'bool', name: 'enableInterruptParam', description: 'Set true to enable interrupt-driven polling, defaults to false' },
-    { type: 'int8_t', name: 'interruptPinParam', description: 'MCU pin wired to the BRIDGE INT output, defaults to -1 (unused)' },
-    { type: 'bool', name: 'activeHigh', description: 'True fires the interrupt on a RISING edge, false on FALLING, defaults to true' },
-  ]}
-/>
-
-<FunctionDocumentation
-  functionName="parser.begin()"
-  description="SPI overload of begin(). Pings the BRIDGE over the given SPI port and chip-select pin to confirm it responds."
-  returnDescription="True if the BRIDGE answered the ping, false if it didn't respond within the timeout"
-  parameters={[
-    { type: 'CommProtocol', name: 'p', description: 'Must be PROTOCOL_SPI for this overload' },
-    { type: 'SPIClass&', name: 'spi', description: 'The SPI port to use, already started with spi.begin()' },
-    { type: 'uint8_t', name: 'spiCs', description: 'Chip-select pin driven by the library' },
-    { type: 'uint32_t', name: 'spiHz', description: 'SPI clock frequency in Hz, defaults to 1000000' },
-    { type: 'bool', name: 'enableInterruptParam', description: 'Set true to enable interrupt-driven polling, defaults to false' },
-    { type: 'int8_t', name: 'interruptPinParam', description: 'MCU pin wired to the BRIDGE INT output, defaults to -1 (unused)' },
-    { type: 'bool', name: 'activeHigh', description: 'True fires the interrupt on a RISING edge, false on FALLING, defaults to true' },
-  ]}
-/>
+<CenteredImage src="/img/inputronic_bridge/polling_events.png" alt="Serial Monitor output from the pollingEvents example" caption="Serial Monitor output after connecting a USB keyboard" width="900px" />
 
 ---
 

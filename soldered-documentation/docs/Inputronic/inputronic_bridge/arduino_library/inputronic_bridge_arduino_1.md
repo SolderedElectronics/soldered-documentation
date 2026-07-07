@@ -32,26 +32,9 @@ To install the Arduino library, you can use the **Arduino Library Manager** or d
 
 ## Connections
 
-The BRIDGE leaves the factory in **I²C mode**, so the simplest way to connect it to your microcontroller is over Qwiic. Below is an example connection diagram for **Dasduino CONNECTPLUS**. These pins are used in the examples throughout this documentation.
-
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| Qwiic                    | Qwiic               |
-
-<InfoBox>
-
-If you prefer, you can connect manually using the I²C pins on the 14-pin header instead of Qwiic:
-
-| **Dasduino CONNECTPLUS** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| IO21 (Default SDA pin)   | SDA                 |
-| IO22 (Default SCL pin)   | SCL                 |
-| 3V3                      | 3V3                 |
-| GND                      | GND                 |
-
-</InfoBox>
-
-<WarningBox>The **IO21** and **IO22** pins can differ for your personally used board, so **make sure to validate** the information before you start working!</WarningBox>
+| **NULA DeepSleep ESP32-S3** | **Breakout Board** |
+| ---------------------------- | ------------------- |
+| Qwiic                         | Qwiic               |
 
 ---
 

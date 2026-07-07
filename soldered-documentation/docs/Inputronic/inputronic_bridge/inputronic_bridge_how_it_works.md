@@ -6,9 +6,9 @@ id: inputronic_bridge-how-it-works
 hide_title: False
 ---  
 
-The Inputronic BRIDGE is built around Espressif's **ESP32-S3**, wired here to a female USB-A port through its native USB peripheral. When you plug in a keyboard, mouse, or MIDI device, the ESP32-S3 acts as a USB host: it enumerates the device, reads its HID report descriptor, and figures out how to interpret the raw bytes it sends. From there, the firmware translates those bytes into the event structures the Arduino library hands back to your own microcontroller.
+The Inputronic BRIDGE is built around [**Espressif**](https://www.espressif.com/en/products/socs/esp32-s3)'s **ESP32-S3**, wired here to a female USB-A port through its native USB peripheral. When you plug in a keyboard, mouse, or MIDI device, the ESP32-S3 acts as a USB host: it enumerates the device, reads its HID report descriptor, and figures out how to interpret the raw bytes it sends. From there, the firmware translates those bytes into the event structures the Arduino library hands back to your own microcontroller.
 
-<ErrorBox>The image of the ESP32-S3FH4R2 on the board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/inputronic_bridge/chip.png" alt="ESP32-S3FH4R2 on the board" caption="ESP32-S3FH4R2 on the board" width="400px" />
 
 ---
 
@@ -39,6 +39,8 @@ Keyboard events track up to 8 keys held down at once, matching typical USB keybo
 ## Protocol communication
 
 Once an event is decoded, the BRIDGE needs to hand it to your microcontroller, and this is where the selectable protocol comes in. In the default I²C mode, the BRIDGE acts as a slave device at address **0x50**, and your microcontroller reads out the latest event data by calling the library's `pollEvents()` function. UART and SPI modes work the same way from the sketch's point of view. Only the transport underneath changes, selected by which of JP3 or JP4 you bridge on the board and which protocol constant you pass to `begin()`.
+
+<CenteredImage src="/img/inputronic_bridge/i2c_data_transfer.svg" alt="I2C SDA and SCL signal timing during a data transfer" caption="SDA and SCL signal timing during an I2C data transfer, the same protocol the BRIDGE uses by default" width="600px" />
 
 For time-sensitive applications, the BRIDGE can also signal your microcontroller the moment new data is available through its **INT** pin, instead of making you poll continuously. This is configured through the same `begin()` call and is entirely optional.
 
