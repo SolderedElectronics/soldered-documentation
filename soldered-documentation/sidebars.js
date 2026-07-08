@@ -4092,6 +4092,16 @@ const sidebars = {
         }
       ],
     },
+    {
+      type: 'category',
+      label: 'Prototyping',
+      items: [
+        {
+          type: 'doc',
+          id: 'prototyping/protoboards',
+        },
+      ],
+    },
   ],
 };
 
