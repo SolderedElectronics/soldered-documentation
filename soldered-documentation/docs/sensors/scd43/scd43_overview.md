@@ -7,9 +7,17 @@ hide_title: false
 pagination_prev: null
 ---
 
+{/*
+  TODO - pending items before this product page can go fully live:
+  - Product photo (scd43.jpg) for overview, and onboard chip photo (scd43_onboard.jpg) for how-it-works
+  - Jumper photo (scd43_jp1.webp) for hardware details
+  - Store product link once the product is published (SKU 333414 confirmed correct, but solde.red/333414 still 404s - not live yet)
+  - Hardware repository link (KiCad/Gerbers/BOM) once available
+*/}
+
 ## CO2, Temperature & Humidity Sensor SCD43
 
-The **SCD43** is a CO2, temperature, and humidity sensor by Sensirion, based on photoacoustic NDIR (Non-Dispersive Infrared) sensing. It measures all three values over **I2C** and comes on a breakout board with two **Qwiic (formerly easyC)** connectors for easy daisy-chaining.
+The **SCD43** is a CO2, temperature, and humidity sensor by Sensirion, based on photoacoustic NDIR (Non-Dispersive Infrared) sensing. It measures all three values over **I2C** (fixed address **0x62**) and comes on a breakout board with two **Qwiic (formerly easyC)** connectors for easy daisy-chaining.
 
 {/* <CenteredImage src="/img/scd43/scd43.jpg" alt="SCD43 CO2 Sensor Breakout" caption="SCD43 CO2 Sensor Breakout" /> */}
 
@@ -38,7 +46,7 @@ This product is not yet available in our store. Please check back soon!
 - **CO2 accuracy:** ±(30 ppm + 3% of reading)
 - **Temperature range:** -10°C to 60°C
 - **Humidity range:** 0% - 95% RH
-- **Operating voltage:** 3.3V
+- **Operating voltage:** 2.4V - 5.5V (works directly with 3.3V or 5V boards)
 - **Communication:** I2C (address: **0x62**)
 - **Connector:** 2 × Qwiic (formerly easyC)
 - **Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)

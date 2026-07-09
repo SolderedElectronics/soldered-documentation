@@ -746,6 +746,22 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/scd43/arduino_library/scd43-arduino-3',
                 },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-7',
+                },
               ],
             },
           ],

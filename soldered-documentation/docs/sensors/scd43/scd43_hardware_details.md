@@ -21,7 +21,7 @@ Click [**here**](/img/scd43/pinout.png) for a high-resolution image of the pinou
 | **SDA**     | Data     | I2C data line for communication.                 |
 | **SCL**     | Clock    | I2C clock line for communication.                |
 
-<InfoBox>This breakout board operates at **3.3V logic level**. It is not 5V tolerant - use a level shifter if connecting to a 5V logic board.</InfoBox>
+<InfoBox>The onboard SCD43 chip accepts a supply voltage from **2.4V to 5.5V** directly, so it doesn't need an onboard regulator. It works natively with both 3.3V and 5V microcontrollers without a level shifter, since the I2C logic level follows whatever voltage you power the board with.</InfoBox>
 
 ---
 

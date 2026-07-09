@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL -o capacitive_sensor_scheme.svg \"https://upload.wikimedia.org/wikipedia/commons/d/df/Capacitive_sensor_scheme.svg\")",
+      "Bash(curl -sL -o i2c_data_transfer.svg \"https://upload.wikimedia.org/wikipedia/commons/6/64/I2C_data_transfer.svg\")",
+      "Bash(mv scd43_arduino_5.md scd43_arduino_6.md)",
+      "Bash(mv scd43_arduino_4.md scd43_arduino_5.md)",
+      "Bash(mv scd43_arduino_3.md scd43_arduino_4.md)"
+    ]
+  }
+}

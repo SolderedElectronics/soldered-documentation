@@ -32,11 +32,13 @@ The SCD43 measures CO2 using **photoacoustic NDIR** (Non-Dispersive Infrared) se
 
 The SCD43 includes a **capacitive humidity sensor**: a polymer film between two electrodes absorbs or releases water molecules from the surrounding air, changing the capacitance between the plates. That change is converted into a relative humidity reading. Temperature is measured at the same time and used to compensate both the humidity and CO2 readings.
 
+<CenteredImage src="/img/scd43/capacitive_sensor_scheme.svg" alt="Capacitive sensor scheme with two electrode plates" caption="General scheme of a capacitive sensor: two electrode plates forming a capacitor, the same structure the humidity sensor uses with a moisture-absorbing dielectric" width="300px" />
+
 ---
 
 ## Automatic Self-Calibration (ASC)
 
-The SCD43 has an **Automatic Self-Calibration (ASC)** algorithm that corrects long-term CO2 drift. It assumes the sensor is exposed to fresh outdoor air (~420 ppm CO2) periodically and uses those readings to recalibrate over time. ASC is on by default and works well for most indoor installations. It can be turned off when the sensor is never exposed to fresh air - for example in sealed enclosures or industrial setups.
+The SCD43 has an **Automatic Self-Calibration (ASC)** algorithm that corrects long-term CO2 drift. It assumes the sensor is periodically exposed to fresh outdoor air and recalibrates against a target baseline, which defaults to **400 ppm** and can be changed with `setAutomaticSelfCalibrationTarget()`. ASC is on by default and works well for most indoor installations. It can be turned off when the sensor is never exposed to fresh air - for example in sealed enclosures or industrial setups.
 
 ---
 
@@ -48,5 +50,7 @@ Two operating modes are available:
 
 - **Periodic measurement mode** - The sensor takes measurements every 5 seconds and stores the latest result. The microcontroller reads CO2, temperature, and humidity with a single command.
 - **Single-shot mode** - The sensor takes one measurement on demand, then idles. Useful for low-power applications.
+
+<CenteredImage src="/img/scd43/i2c_data_transfer.svg" alt="I2C SDA and SCL signal timing during a data transfer" caption="SDA and SCL signal timing during an I2C data transfer, the same protocol the SCD43 uses to send its readings" width="600px" />
 
 Each measurement returns three values: **CO2 (ppm)**, **temperature (°C)**, and **relative humidity (%)**, packed into a single I2C transaction with CRC checksums.

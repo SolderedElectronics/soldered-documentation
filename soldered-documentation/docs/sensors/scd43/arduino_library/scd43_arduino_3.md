@@ -1,68 +1,118 @@
 ---
-slug: /scd43/arduino/troubleshooting
-title: SCD43 - Troubleshooting
-sidebar_label: Troubleshooting
+slug: /scd43/arduino/low-power-readings
+title: SCD43 - Low power readings
+sidebar_label: Low power readings
 id: scd43-arduino-3
 hide_title: false
-pagination_next: null
 ---
 
-<ExpandableSection title="My sensor won't initialize!">
+This page walks through the `LowPowerReadings` example: reading CO2, temperature, and humidity using the SCD43's low-power periodic measurement mode.
 
-#### Check wiring
-Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify it works. If the issue persists, swap it out for a different cable to rule out damage or defects.
+---
 
-#### Check I2C pins
-If you are connecting the sensor using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Refer to your microcontroller's documentation to confirm the correct pin assignments.
+## Low-power periodic mode
 
-#### Scan for I2C devices
-Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected. The SCD43 uses the **fixed I2C address 0x62** - if the scanner does not find it, there is likely a wiring issue or a problem with the I2C bus.
+`begin()` starts the sensor in normal periodic measurement mode by default, taking a new reading every 5 seconds. Low-power mode is a slower variant of the same idea: the sensor still measures continuously and stores the latest result on its own, just roughly every 30 seconds instead of 5, which cuts average current draw considerably. It's a good fit for battery-powered projects that don't need CO2 updates every few seconds.
 
-#### Check for conflicting devices
-If you have multiple I2C devices on the same bus, ensure none of them share the address **0x62**. The SCD43's address is fixed and cannot be changed.
+Switching to it means stopping normal periodic measurement first, then starting the low-power variant instead:
 
-#### Try reinitializing
-If the sensor fails to initialize on the first attempt, try calling `sensor.begin()` again or resetting your microcontroller. Some initialization issues can be resolved by a simple reboot.
+```cpp
+#include "SCD43-SOLDERED.h"
 
-</ExpandableSection>
+SCD43 sensor;
 
-<ExpandableSection title="readMeasurement() always returns false!">
+void setup()
+{
+    Serial.begin(115200);
+    Serial.println("SCD43 - Low Power Readings");
 
-#### Wait for the first measurement
-The SCD43 needs up to **5 seconds** after `begin()` before it produces its first measurement. Make sure your code is not expecting data immediately after initialization.
+    Wire.begin();
 
-#### Don't block with long delays
-If you are using `delay()` values longer than the sensor's measurement interval (5 seconds), you may miss the data-ready window. Use short polling delays (500 ms or less) and check `readMeasurement()` frequently, as shown in the example.
+    if (!sensor.begin())
+    {
+        Serial.println("Sensor not found. Check wiring. Halting.");
+        while (1)
+            ;
+    }
 
-#### Check that periodic measurement mode started
-`sensor.begin()` starts periodic measurement mode automatically. If `begin()` returned `false`, the sensor did not initialize correctly and will never produce readings - fix the initialization issue first.
+    if (!sensor.stopPeriodicMeasurement())
+    {
+        Serial.println("Could not stop periodic measurement. Halting.");
+        while (1)
+            ;
+    }
 
-</ExpandableSection>
+    if (!sensor.startLowPowerPeriodicMeasurement())
+    {
+        Serial.println("Could not start low-power measurement. Halting.");
+        while (1)
+            ;
+    }
 
-<ExpandableSection title="CO2 readings seem inaccurate or unstable!">
+    Serial.println("Low-power mode active. New reading every ~30 seconds.");
+}
+```
 
-#### Allow warmup time
-The SCD43 requires a **warmup period** of at least one minute after power-on before CO2 readings stabilize. Discard the first few readings after startup.
+<FunctionDocumentation
+  functionName="sensor.startLowPowerPeriodicMeasurement()"
+  description="Starts low-power periodic measurements, updating roughly every 30 seconds instead of the normal 5-second interval. Only available in idle mode."
+  returnDescription="Returns true on success, false otherwise."
+  parameters={[]}
+/>
 
-#### Allow ASC to calibrate
-The Automatic Self-Calibration (ASC) algorithm needs the sensor to be exposed to **fresh outdoor air (~420 ppm)** regularly - typically over several days of operation - to establish an accurate baseline. Indoor-only use without any ventilation will slow down calibration.
+<InfoBox>
+Reading measurements works exactly the same way in low-power mode as in normal periodic mode, still `readMeasurement()` and the getter functions. The only difference is how often fresh data actually shows up.
+</InfoBox>
 
-#### Check sensor placement
-Keep the sensor away from direct breath, vents, or CO2 sources that would give artificially high readings. Also avoid enclosing the sensor in an airtight case - it needs free airflow to measure the surrounding environment accurately.
+---
 
-#### Avoid rapid temperature changes
-Sudden temperature changes can temporarily affect CO2 readings due to the photoacoustic sensing principle. Allow the sensor to settle in its operating environment before relying on measurements.
+## Reading measurements
 
-</ExpandableSection>
+Since fresh data now only arrives roughly every 30 seconds instead of every 5, `readMeasurement()` returns `false` far more often between readings. That's expected, not a sign anything is wrong:
 
-<ExpandableSection title="Temperature or humidity readings seem wrong!">
+```cpp
+void loop()
+{
+    if (sensor.readMeasurement()) // returns true when fresh data is available
+    {
+        Serial.println();
+        Serial.print("CO2 (ppm):       ");
+        Serial.println(sensor.getCO2());
+        Serial.print("Temperature (C): ");
+        Serial.println(sensor.getTemperature(), 1);
+        Serial.print("Humidity (%RH):  ");
+        Serial.println(sensor.getHumidity(), 1);
+    }
+    else
+    {
+        Serial.print(".");
+    }
 
-#### Account for self-heating
-The SCD43 generates a small amount of heat during operation, which can cause the reported temperature to read slightly higher than the actual ambient temperature. This is normal behavior - Sensirion provides a temperature offset compensation feature in the library if more accurate temperature readings are needed.
+    delay(1000);
+}
+```
 
-#### Check sensor placement
-Do not mount the sensor directly against a heat source (e.g. a voltage regulator or processor). Give the board adequate airflow so the sensor measures ambient air rather than heat trapped around the PCB.
+<FunctionDocumentation
+  functionName="sensor.readMeasurement()"
+  description="Checks whether a fresh measurement is available and, if so, reads and caches the CO2, temperature, and humidity values. Behaves identically in low-power and normal periodic mode."
+  returnDescription="Returns true if new data was available and successfully read, false if the sensor is still processing."
+  parameters={[]}
+/>
 
-</ExpandableSection>
+<InfoBox>
+This example polls every 1 second instead of every 500 ms, since there's no benefit to checking faster when new data only shows up roughly every 30 seconds anyway.
+</InfoBox>
 
-<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+Running the sketch above produces long runs of dots between readings, much longer than in normal periodic mode, since each one now represents a 1-second poll while waiting for the ~30-second update:
+
+<CenteredImage src="/img/scd43/low_power.png" alt="SCD43 Serial Monitor output in low-power mode" caption="Serial Monitor output in low-power mode, showing long gaps between readings" width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink
+  title="LowPowerReadings.ino"
+  description="Full example sketch for reading CO2, temperature, and humidity in low-power periodic measurement mode."
+  url="https://github.com/SolderedElectronics/Soldered-SCD43-Arduino-Library/blob/main/examples/LowPowerReadings/LowPowerReadings.ino"
+/>
