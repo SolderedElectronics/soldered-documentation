@@ -51,6 +51,8 @@ Two operating modes are available:
 - **Periodic measurement mode** - The sensor takes measurements every 5 seconds and stores the latest result. The microcontroller reads CO2, temperature, and humidity with a single command.
 - **Single-shot mode** - The sensor takes one measurement on demand, then idles. Useful for low-power applications.
 
+Every I2C transaction follows the same pattern shown below: the host pulls SDA low while SCL is high to signal a **start condition (S)**, then SCL toggles once per bit as data (the command being sent, or the measurement bytes coming back) shifts out one bit at a time over SDA, and the transaction ends with a **stop condition (P)**, SDA going high while SCL is high. The Arduino library handles all of this internally, `readMeasurement()` runs this exact exchange, checks the CRC on each value, and hands you back the CO2, temperature, and humidity readings ready to use.
+
 <CenteredImage src="/img/scd43/i2c_data_transfer.svg" alt="I2C SDA and SCL signal timing during a data transfer" caption="SDA and SCL signal timing during an I2C data transfer, the same protocol the SCD43 uses to send its readings" width="600px" />
 
 Each measurement returns three values: **CO2 (ppm)**, **temperature (°C)**, and **relative humidity (%)**, packed into a single I2C transaction with CRC checksums.
