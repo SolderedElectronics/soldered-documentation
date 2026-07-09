@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git check-ignore *)",
+      "Bash(mkdir -p \"c:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad\")",
+      "Bash(curl -sL -o hall_effect_preview.png \"https://upload.wikimedia.org/wikipedia/commons/1/19/Hall_Effect_Measurement_Setup_for_Electrons.png\")",
+      "Bash(curl -sL -o i2c_data_transfer.svg \"https://upload.wikimedia.org/wikipedia/commons/6/64/I2C_data_transfer.svg\")"
+    ]
+  }
+}

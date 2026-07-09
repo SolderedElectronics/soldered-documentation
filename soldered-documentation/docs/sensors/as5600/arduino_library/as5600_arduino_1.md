@@ -1,5 +1,5 @@
 ---
-slug: /as5600/arduino/geting-started 
+slug: /as5600/arduino/getting-started 
 title: AS5600 - Getting started
 sidebar_label: Getting started
 id: as5600-arduino-1 
@@ -17,7 +17,7 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 
 <InfoBox>
 
-**Are you a first-time Arduino user?** For a detailed tutorial on getting started with Arduino, refer to this section of our docs:
+**Are you a first-time Arduino user?** For a detailed tutorial on getting started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  

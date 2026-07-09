@@ -1,115 +1,169 @@
 ---
-slug: /as5600/arduino/Troubleshooting
-title: AS5600 - Troubleshooting
-sidebar_label: Troubleshooting
+slug: /as5600/arduino/offset
+title: AS5600 - Offset
+sidebar_label: Offset
 id: as5600-arduino-5 
 hide_title: False
-pagination_next: null
 ---
 
-This page contains some tips if you are experiencing problems with this product.
+This page contains an example demonstrating how to apply a software offset to the AS5600's angle readings, useful for defining your own zero point instead of relying on the magnet's physical mounting angle.
 
-<ExpandableSection title="My sensor won't initialize!">
+---
 
-#### Check wiring
-Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works. If the issue persists, replace the cable to rule out any possible damage or defects.
+## Why use an offset
 
-#### Check I2C pins
-If you are connecting the AS5600 using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers use different default I2C pins. Refer to your board documentation to confirm the correct SDA and SCL pin assignments.
+The angle the AS5600 reports is relative to however the magnet happens to be oriented when you mount it, there's no guarantee 0 degrees lines up with anything meaningful in your project. Rather than physically rotating the magnet to fix this, `setOffset()` shifts the reported angle in software, letting you define whatever direction should read as zero.
 
-#### Scan for I2C devices
-Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the sensor is detected. If no device is found, there may be a wiring issue or a problem with the I2C bus.
-
-#### Check for conflicting devices
-If you have multiple I2C devices connected to the same bus, ensure that none of them use the same address. The AS5600 typically uses the fixed I2C address **0x36**.
-
-#### Verify power supply
-Make sure the sensor is receiving proper voltage. This board supports both 3.3V and 5V operation through an onboard voltage regulator.
-
-#### Try reinitializing
-If the sensor fails to initialize on the first attempt, try calling `sensor.begin()` again or reset your microcontroller.
-
-</ExpandableSection>
-
-<ExpandableSection title="My sensor is not detecting the magnet properly!">
-
-#### Check magnet placement
-The magnet must be positioned directly above the center of the AS5600 chip. Improper alignment can prevent the sensor from detecting the magnetic field correctly.
-
-#### Check magnet distance
-Place the magnet approximately **0.5mm to 3mm** above the sensor. If the magnet is too far away or too close, the sensor may not detect it properly.
-
-#### Use the correct type of magnet
-The AS5600 works best with a **diametric magnet**. Standard fridge magnets or weak magnets may not produce reliable readings.
-
-#### Rotate the magnet, not the board
-To measure angles correctly, rotate the magnet itself while keeping the sensor stationary.
-
-#### Verify proper I2C connection
-Double-check your SDA and SCL wiring if the sensor reports `AS5600 not found!`. Incorrect wiring is one of the most common issues.
-
-#### Scan for I2C devices
-Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to verify that the AS5600 appears on the I2C bus.
-
-#### Test another magnet
-If the sensor still fails to detect the magnetic field, try another magnet. Some magnets are too weak or incorrectly polarized for proper operation.
-
-</ExpandableSection>
-
-<ExpandableSection title="Other common issues">
-
-#### Angle values jump or fluctuate
-Check Magnet Stability  
-Loose magnets or unstable mounting can cause rapidly changing angle values. Ensure that the magnet is firmly attached and centered.
-
-#### Angle direction is reversed
-Change Direction Configuration  
-Use `sensor.setDirection()` to configure the direction of angle increment:
+Initialization is the same as every other example:
 
 ```cpp
-sensor.setDirection(AS5600_COUNTERCLOCK_WISE);
+#include "Position-sensor-AS5600-breakout-SOLDERED.h"
+
+PositionSensor sensor;
+
+void setup()
+{
+    Serial.begin(115200);
+
+    Wire.begin();
+
+    if (!sensor.begin())
+    {
+        Serial.println("AS5600 not found! Check wiring. Freezing.");
+        while (true)
+        {
+            delay(1000);
+        }
+    }
+
+    Serial.println("AS5600 found!");
+
+    while (!sensor.magnetDetected())
+    {
+        Serial.println("Magnet not detected!");
+        delay(1000);
+    }
+
+    Serial.println("Magnet detected!");
+}
 ```
 
-or
+---
+
+## Applying an offset
 
 ```cpp
-sensor.setDirection(AS5600_CLOCK_WISE);
+void loop()
+{
+    sensor.setOffset(0);
+    Serial.print("Measurement without offset:\t");
+    Serial.println(sensor.rawAngle() * AS5600_RAW_TO_DEGREES);
+
+    sensor.setOffset(45);
+    Serial.print("Measurement with offset:\t");
+    Serial.println(sensor.rawAngle() * AS5600_RAW_TO_DEGREES);
+
+    Serial.println();
+    delay(1000);
+}
 ```
 
-#### PWM output is not working
-Check OUT pin connection  
-If you are using PWM mode, ensure that the `OUT` pin on the AS5600 is connected to the correct GPIO pin on your microcontroller.
+<FunctionDocumentation
+  functionName="sensor.setOffset()"
+  description="Sets a software offset that's added to every subsequent angle reading. This doesn't touch the sensor's internal configuration, it's applied by the library on each read."
+  returnDescription="Returns false if the offset magnitude is unreasonably large (over 36000 degrees), true otherwise."
+  parameters={[
+    { type: 'float', name: 'degrees', description: 'Offset in degrees, -359.99 to 359.99 recommended' },
+  ]}
+/>
 
-#### Sensor not detected on ESP32 boards
-Verify I2C pin configuration  
-Some ESP32 boards require manually setting I2C pins using:
+<FunctionDocumentation
+  functionName="sensor.getOffset()"
+  description="Returns the offset currently applied to angle readings."
+  returnDescription="The current offset in degrees, as a float."
+  parameters={[]}
+/>
+
+<InfoBox>
+This example resets the offset to 0 and sets it to 45 on every single pass through `loop()`, just to print both values side by side for comparison. In a real project you'd normally set the offset once during setup, right after you've physically mounted the magnet, and leave it alone.
+</InfoBox>
+
+Running the sketch above produces output like this, with the offset consistently adding 45 degrees (wrapping around past 360 when needed):
+
+<CenteredImage src="/img/as5600/offset.png" alt="Serial Monitor output showing angle readings with and without offset" caption="Serial Monitor output comparing angle readings with and without the 45 degree offset" width="100%" />
+
+---
+
+## Adding to an existing offset
+
+If you want to nudge the current offset rather than replace it outright, `increaseOffset()` adds to whatever offset is already set instead of overwriting it:
 
 ```cpp
-Wire.begin(SDA_PIN, SCL_PIN);
+sensor.increaseOffset(10); // shifts the current offset by another 10 degrees
 ```
 
-For example on some ESP32-C6 boards:
+<FunctionDocumentation
+  functionName="sensor.increaseOffset()"
+  description="Adds the given number of degrees to the existing offset, instead of replacing it like setOffset() does."
+  returnDescription="Returns false if the resulting offset magnitude is unreasonably large, true otherwise."
+  parameters={[
+    { type: 'float', name: 'degrees', description: 'Degrees to add to the current offset' },
+  ]}
+/>
+
+---
+
+## Full example
 
 ```cpp
-Wire.begin(6, 7);
+#include <Wire.h>
+#include "Position-sensor-AS5600-breakout-SOLDERED.h"
+
+PositionSensor sensor;
+
+void setup()
+{
+    Serial.begin(115200);
+
+    Wire.begin();
+
+    if (!sensor.begin())
+    {
+        Serial.println("AS5600 not found! Check wiring. Freezing.");
+        while (true)
+        {
+            delay(1000);
+        }
+    }
+
+    Serial.println("AS5600 found!");
+
+    while (!sensor.magnetDetected())
+    {
+        Serial.println("Magnet not detected!");
+        delay(1000);
+    }
+
+    Serial.println("Magnet detected!");
+}
+
+void loop()
+{
+    sensor.setOffset(0);
+    Serial.print("Measurement without offset:\t");
+    Serial.println(sensor.rawAngle() * AS5600_RAW_TO_DEGREES);
+
+    sensor.setOffset(45);
+    Serial.print("Measurement with offset:\t");
+    Serial.println(sensor.rawAngle() * AS5600_RAW_TO_DEGREES);
+
+    Serial.println();
+    delay(1000);
+}
 ```
 
-#### Serial Monitor shows strange symbols
-Check baud rate  
-Ensure that the Serial Monitor baud rate matches the baud rate configured in code:
-
-```cpp
-Serial.begin(115200);
-```
-
-#### Sensor readings are slow
-Optimize loop timing  
-Avoid using very large delays in your loop if you need faster updates.
-
-#### Sensor gets warm
-Check power supply  
-Make sure the sensor is powered with the correct voltage and that there are no short circuits or incorrect wiring connections.
-
-</ExpandableSection>
-
-<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+<QuickLink 
+  title="Offset.ino" 
+  description="Full example for applying a software angle offset using the AS5600 sensor"
+  url="https://github.com/SolderedElectronics/Soldered-Position-sensor-AS5600-breakout-Arduino-Library/blob/main/examples/Offset/Offset.ino" 
+/>

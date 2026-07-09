@@ -724,7 +724,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'sensors/as5600/as5600_hardware_details',
+              id: 'sensors/as5600/as5600-hardware',
             },
             {
               type: 'doc',
@@ -740,6 +740,10 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'sensors/as5600/arduino_library/as5600-arduino-2',
+                },
+                {
+                  type: 'doc',
                   id: 'sensors/as5600/arduino_library/as5600-arduino-3',
                 },
                 {
@@ -749,6 +753,10 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'sensors/as5600/arduino_library/as5600-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/as5600/arduino_library/as5600-arduino-6',
                 },
               ],
             },

@@ -2,7 +2,7 @@
 slug: /as5600/hardware
 title: "AS5600 - Hardware details"
 sidebar_label: "Hardware details"
-id: as5600_hardware_details
+id: as5600-hardware
 hide_title: false
 ---
 
@@ -65,12 +65,12 @@ This board contains hardware jumpers; see below for their locations and function
 
 <FlickityCarousel
   images={[
-    { src: '/img/as5600/jp1.jpg', alt: 'as5600jumper1', caption: 'JP1' },
-    { src: '/img/as5600/jp2.jpg', alt: 'as5600jumper2', caption: 'JP2' },
-    { src: '/img/as5600/jp3.jpg', alt: 'as5600jumper3', caption: 'JP3' },
-    { src: '/img/as5600/jp4.jpg', alt: 'as5600jumper4', caption: 'JP4' },
-    { src: '/img/as5600/jp5.jpg', alt: 'as5600jumper5', caption: 'JP5' },
-    { src: '/img/as5600/jp6.jpg', alt: 'as5600jumper6', caption: 'JP6' },
+    { src: '/img/as5600/jp1.JPG', alt: 'as5600jumper1', caption: 'JP1' },
+    { src: '/img/as5600/jp2.JPG', alt: 'as5600jumper2', caption: 'JP2' },
+    { src: '/img/as5600/jp3.JPG', alt: 'as5600jumper3', caption: 'JP3' },
+    { src: '/img/as5600/jp4.JPG', alt: 'as5600jumper4', caption: 'JP4' },
+    { src: '/img/as5600/jp5.JPG', alt: 'as5600jumper5', caption: 'JP5' },
+    { src: '/img/as5600/jp6.JPG', alt: 'as5600jumper6', caption: 'JP6' },
   ]}
   jumpers={true}
 />
