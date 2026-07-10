@@ -47,19 +47,23 @@ Or add the URL manually in **File → Preferences → Additional Boards Manager 
 https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 ```
 
-After installing, select the board: **Tools → Board → Raspberry Pi Pico**
+After installing, go to **Tools → Board** and select **Soldered NULA Ethernet W55RP20** (internally identified as `soldered_nula_ethernet_w55rp20`), not the generic "Raspberry Pi Pico" entry. This board-specific variant configures the correct pin mapping for this board, including the onboard NeoPixel status LED and the microSD/SPI1 assignment.
+
+<WarningBox>Selecting a generic "Raspberry Pi Pico" board instead of the Soldered-specific one is a common mistake and can lead to misconfigured pins or a status LED that doesn't behave as expected.</WarningBox>
 
 <InfoBox>Hold the **BOOT** button while connecting the USB-C cable to enter BOOTSEL mode if the board is not detected automatically.</InfoBox>
 
 ---
 
-## Installing the Ethernet library
+## The Ethernet library is already installed
 
-The board uses the **W55RP20lwIP** library. Install it from the Arduino Library Manager:
+Unlike most Arduino libraries, **you don't need to install anything separately for Ethernet**. The `W55RP20lwIP` library ships bundled with the RP2040 board package you just installed. Once the board package is in place, it's available directly:
 
-1. Go to **Tools → Manage Libraries**
-2. Search for **W55RP20**
-3. Install **W55RP20lwIP**
+1. Go to **File → Examples**
+2. Scroll down to the **lwIP_w55rp20** section
+3. Open the **WiFiClient-W55RP20** example to see it working, or just `#include <W55RP20lwIP.h>` in your own sketch as shown below
+
+<InfoBox>Searching the Arduino Library Manager for "W55RP20" won't find anything; it's not a separately listed library. If you don't see it under File → Examples, double-check you actually selected the Soldered NULA Ethernet W55RP20 board entry and not a generic one. Some example menus only show entries relevant to the currently selected board.</InfoBox>
 
 ---
 
@@ -152,7 +156,7 @@ Open the **Serial Monitor** at **115200 baud**. The board will print its IP addr
 ## Function reference
 
 <FunctionDocumentation
-  functionName="Wiznet55rp20lwIP eth(cs)"
+  functionName="Wiznet55rp20lwIP eth()"
   description="Creates the Ethernet object. The argument is the GPIO pin connected to the W5500 chip select."
   returnDescription="None."
   parameters={[
@@ -182,7 +186,7 @@ Open the **Serial Monitor** at **115200 baud**. The board will print its IP addr
 />
 
 <FunctionDocumentation
-  functionName="client.connect(host, port)"
+  functionName="client.connect()"
   description="Opens a TCP connection to the specified host and port."
   returnDescription="bool - true if the connection was established, false otherwise."
   parameters={[
@@ -199,7 +203,7 @@ Open the **Serial Monitor** at **115200 baud**. The board will print its IP addr
 />
 
 <FunctionDocumentation
-  functionName="client.println(data)"
+  functionName="client.println()"
   description="Sends a string followed by a carriage return and newline over the TCP connection."
   returnDescription="None."
   parameters={[
