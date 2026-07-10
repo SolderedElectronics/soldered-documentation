@@ -1,8 +1,8 @@
 ---
-slug: /button,led&buzzerboar/arduino/troubleshooting 
+slug: /button_led_buzzer_board/arduino/troubleshooting 
 title: Button, LED & Buzzer Board - Troubleshooting
 sidebar_label: Troubleshooting
-id: button,led&buzzerboar-arduino-3 
+id: button_led_buzzer_board-arduino-5 
 hide_title: false
 pagination_next: null
 ---
@@ -12,16 +12,16 @@ This page contains some tips in case you are having problems using this product.
 <ExpandableSection title="The board won't initialize!">
 
 #### Check wiring
-Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
+Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
 
 #### Check I2C pins
-If you are connecting the board using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Refer to your microcontroller's documentation to confirm the correct pin assignments.
+If you are connecting the board using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Check your microcontroller's documentation to confirm the correct pin assignments.
 
 #### Scan for I2C devices
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the board is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller's I2C bus.
 
 #### Check for conflicting devices
-If you have multiple I2C devices connected to the same bus, ensure that none of them have conflicting addresses. Verify that no other device on the bus shares the same I2C address as the Button, LED & Buzzer Board.
+If you have multiple I2C devices connected to the same bus, make sure none of them have conflicting addresses. Verify that no other device on the bus shares the same I2C address as the Button, LED & Buzzer Board.
 
 #### Try reinitializing
 If the board fails to initialize on the first attempt, try calling `board.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
@@ -34,7 +34,7 @@ If the board fails to initialize on the first attempt, try calling `board.begin(
 Make sure you are correctly masking the return value of `readButtons()`. Each button corresponds to a specific bit: `0x01` for BTN1, `0x02` for BTN2, and `0x04` for BTN3. Using the wrong mask will result in missed presses.
 
 #### Add a small delay in the loop
-If button presses seem to be missed or unreliable, ensure your `loop()` is not running too fast. A small `delay(20)` at the end of the loop gives the board enough time to process and report button states correctly.
+If button presses seem to be missed or unreliable, make sure your `loop()` is not running too fast. A small `delay(20)` at the end of the loop gives the board enough time to process and report button states correctly.
 
 #### Check physical button contact
 Verify that the button is not stuck or damaged. Press it firmly and check if the reading changes. If a button appears to always read as pressed, inspect the board for any debris or solder bridges around the button.
@@ -44,7 +44,7 @@ Verify that the button is not stuck or damaged. Press it firmly and check if the
 <ExpandableSection title="LEDs are not lighting up!">
 
 #### Check RGB values
-Ensure you are passing non-zero values to `setLED()` or `setAllLEDs()`. A call like `board.setLED(0, 0, 0, 0)` turns the LED off - double-check that at least one channel value is greater than 0.
+Make sure you are passing non-zero values to `setLED()` or `setAllLEDs()`. A call like `board.setLED(0, 0, 0, 0)` turns the LED off - double-check that at least one channel value is greater than 0.
 
 #### Check the LED index
 `setLED()` accepts an index of 0, 1, or 2. Passing an out-of-range index will have no effect. Verify that you are targeting the correct LED.

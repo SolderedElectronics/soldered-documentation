@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.arduinolibraries.info)",
+      "Bash(tasklist)",
+      "WebFetch(domain:solde.red)",
+      "WebFetch(domain:downloads.arduino.cc)",
+      "Bash(mkdir -p \"/c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad\")",
+      "Bash(curl -sL -o \"/c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/silikon.png\" \"https://upload.wikimedia.org/wikipedia/commons/9/92/Silikonschaltmatte_prinzip.png\")",
+      "Bash(curl -sL -o \"/c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/folientastatur.png\" \"https://upload.wikimedia.org/wikipedia/commons/4/4d/Folientastatur.PNG\")",
+      "Read(//c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad//**)",
+      "Bash(curl -sL -o /c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/folientastatur.png https://commons.wikimedia.org/wiki/Special:FilePath/Folientastatur.PNG)",
+      "Bash(curl -sL -o /c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/pushbutton_diagram.svg https://commons.wikimedia.org/wiki/Special:FilePath/Push_button_diagram.svg)",
+      "Read(//c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/**)",
+      "Bash(curl -sL -o /c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/switch1psf.png 'https://commons.wikimedia.org/wiki/Special:FilePath/Switch_1_\\(PSF\\).png')",
+      "Bash(curl -sL \"https://upload.wikimedia.org/wikipedia/commons/9/92/Silikonschaltmatte_prinzip.png\" -o \"C:\\\\Users\\\\borna\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-borna-Documents-GitHub-soldered-documentation\\\\0a4db316-4461-4ee2-940d-f5c0227ad864\\\\scratchpad\\\\silikon_original.png\")",
+      "Bash(python -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python -c ' *)",
+      "Bash(ls /c/Windows/Fonts/ | grep -i \"arial\\\\|segoe\\\\|verdana\\\\|comic\" | head -20)",
+      "Read(//c/Windows/Fonts//**)",
+      "Bash(python make_button_diagram.py)",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\borna\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-borna-Documents-GitHub-soldered-documentation\\\\0a4db316-4461-4ee2-940d-f5c0227ad864\\\\scratchpad\\\\button_diagram_kids.png\" \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\button_led_buzzer_board\\\\pushbutton_mechanism.png\")",
+      "Bash(curl -sL \"https://api.github.com/repos/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library\")",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/main/examples/Buttons/Buttons.ino\" -o Buttons.ino)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/main/examples/Buzzer/Buzzer.ino\" -o Buzzer.ino)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/main/examples/LEDs/LEDs.ino\" -o LEDs.ino)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/main/src/ButtonLedBuzzerBoard-SOLDERED.h\" -o header.h)",
+      "Bash(curl -sL \"https://api.github.com/repos/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/contents/examples\")",
+      "Bash(curl -sL \"https://api.github.com/repos/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/contents/src\")",
+      "Bash(find \"C:\\\\Users\\\\borna\\\\AppData\\\\Local\\\\Temp\" -iname \"*.png\" -newermt \"-10 minutes\" 2>/dev/null | head -20)",
+      "Read(//c/Users/borna/AppData/Local/Temp/**)",
+      "Bash(find \"C:\\\\Users\\\\borna\\\\AppData\\\\Local\\\\Temp\" -iname \"*.png\" -mmin -15 2>/dev/null | head -30; echo \"---\"; find \"C:\\\\Users\\\\borna\\\\AppData\\\\Roaming\" -iname \"*paste*\" -mmin -15 2>/dev/null | head -10)",
+      "Read(//c/Users/borna/AppData/Roaming/**)"
+    ]
+  }
+}

@@ -720,15 +720,15 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'sensors/button,led&buzzerboar/button,led&buzzerboar-overview',
+              id: 'sensors/button,led&buzzerboar/button_led_buzzer_board-overview',
             },
             {
               type: 'doc',
-              id: 'sensors/button,led&buzzerboar/button,led&buzzerboar-hardware',
+              id: 'sensors/button,led&buzzerboar/button_led_buzzer_board-hardware',
             },
             {
               type: 'doc',
-              id: 'sensors/button,led&buzzerboar/button,led&buzzerboar-how-it-works',
+              id: 'sensors/button,led&buzzerboar/button_led_buzzer_board-how-it-works',
             },
             {
               type: 'category',
@@ -736,15 +736,23 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'sensors/button,led&buzzerboar/arduino_library/button,led&buzzerboar-arduino-1',
+                  id: 'sensors/button,led&buzzerboar/arduino_library/button_led_buzzer_board-arduino-1',
                 },
                 {
                   type: 'doc',
-                  id: 'sensors/button,led&buzzerboar/arduino_library/button,led&buzzerboar-arduino-2',
+                  id: 'sensors/button,led&buzzerboar/arduino_library/button_led_buzzer_board-arduino-2',
                 },
                 {
                   type: 'doc',
-                  id: 'sensors/button,led&buzzerboar/arduino_library/button,led&buzzerboar-arduino-3',
+                  id: 'sensors/button,led&buzzerboar/arduino_library/button_led_buzzer_board-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/button,led&buzzerboar/arduino_library/button_led_buzzer_board-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/button,led&buzzerboar/arduino_library/button_led_buzzer_board-arduino-5',
                 },
               ],
             },

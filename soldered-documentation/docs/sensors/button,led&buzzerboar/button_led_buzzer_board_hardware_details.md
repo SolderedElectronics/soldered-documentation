@@ -1,15 +1,15 @@
 ---
-slug: /button,led&buzzerboar/hardware 
+slug: /button_led_buzzer_board/hardware 
 title: Button, LED & Buzzer Board - Hardware details
 sidebar_label: Hardware details
-id: button,led&buzzerboar-hardware 
+id: button_led_buzzer_board-hardware 
 hide_title: false
 ---
 
 ## Pinout
 
-<CenteredImage src="/img/button,led&buzzerboar/pinout.png" alt="Pinout" />
-Click [**here**](/img/button,led&buzzerboar/pinout.png) for a high resolution image of the pinout.
+<CenteredImage src="/img/button_led_buzzer_board/pinout.png" alt="Pinout" />
+Click [**here**](/img/button_led_buzzer_board/pinout.png) for a high resolution image of the pinout.
 
 ---
 
@@ -22,6 +22,16 @@ Click [**here**](/img/button,led&buzzerboar/pinout.png) for a high resolution im
 | **GND** | Ground | Common ground for power and signals |
 | **SCL** | I2C Clock | I2C clock line |
 | **SDA** | I2C Data | I2C data line |
+
+<InfoBox>The board has two identical **Qwiic connectors** wired in parallel, so you can daisy-chain other Qwiic devices from it.</InfoBox>
+
+---
+
+## Onboard components
+
+- **3 tactile push buttons**, numbered 1-3 on the silkscreen. Each is read as one bit over I2C.
+- **3 addressable RGB LEDs (WS2812B)**, one next to each button, individually controllable.
+- **1 passive piezo buzzer**, driven with a PWM signal to produce a tone.
 
 ---
 
