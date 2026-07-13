@@ -18,7 +18,7 @@ Click [**here**](/img/nula_w55rp20/Pinout.png) for a high-resolution version of 
 
 ## Pin details
 
-The board labels its GPIO pins **IO0-IO29** on the silkscreen (matching Soldered's other NULA boards), rather than the RP2040's raw "GPn" numbering. Several RP2040 GPIOs are consumed internally by the W55RP20 package and aren't exposed on the header at all, IO17 and IO20-IO25 don't appear anywhere on the board for this reason.
+The board labels its GPIO pins **IO0-IO29** on the silkscreen, the same convention used on Soldered's other NULA boards, instead of the RP2040's raw "GPn" numbering. Several RP2040 GPIOs are consumed internally by the W55RP20 package and aren't exposed on the header at all, IO17 and IO20-IO25 don't appear anywhere on the board for this reason.
 
 | Pin Marking | Peripheral options       | Description                                                    |
 | ----------- | ------------------------ | ---------------------------------------------------------------|
@@ -31,11 +31,11 @@ The board labels its GPIO pins **IO0-IO29** on the silkscreen (matching Soldered
 | **IO6**     | SPI0 SCK, PWM3A           | Digital I/O.                                                    |
 | **IO7**     | SPI0 MOSI, PWM3B          | Digital I/O.                                                    |
 | **IO8**     | PWM4A                     | Digital I/O.                                                    |
-| **IO9**     | SD Enable, PWM4B              | Digital I/O. Also reads the microSD card detect signal.         |
-| **IO10**    | SPI1 SCK, PWM5A           | Digital I/O. Shared with the onboard microSD reader, see [jumper details](#jumper-details). |
-| **IO11**    | SPI1 MOSI, PWM5B          | Digital I/O. Shared with the onboard microSD reader.             |
-| **IO12**    | SPI1 MISO, PWM6A          | Digital I/O. Shared with the onboard microSD reader.             |
-| **IO13**    | SPI1 CS, PWM6B            | Digital I/O. Shared with the onboard microSD reader.             |
+| **IO9**     | SD Enable, PWM4B              | Digital I/O. Controls power to the onboard microSD card through a switch, see [jumper details](#jumper-details). |
+| **IO10**    | SPI1 SCK, PWM5A           | Digital I/O. Hardwired to the onboard microSD reader.             |
+| **IO11**    | SPI1 MOSI, PWM5B          | Digital I/O. Hardwired to the onboard microSD reader.             |
+| **IO12**    | SPI1 MISO, PWM6A          | Digital I/O. Hardwired to the onboard microSD reader.             |
+| **IO13**    | SPI1 CS, PWM6B            | Digital I/O. Connects to the onboard microSD reader's CS line only if JP1 is bridged, see [jumper details](#jumper-details). |
 | **IO14**    | PWM7A                     | Digital I/O.                                                    |
 | **IO15**    | PWM7B                     | Digital I/O.                                                    |
 | **IO16**    | PWM0A                     | Digital I/O.                                                    |
@@ -51,8 +51,6 @@ The board labels its GPIO pins **IO0-IO29** on the silkscreen (matching Soldered
 | **GND**     | -                         | Ground.                                                          |
 | **VCC**     | -                         | 5 V input from USB-C.                                            |
 | **VBAT**    | -                         | Battery input, see [battery support](#battery-support).         |
-
-<WarningBox>**IO17 and IO20-IO25** are consumed internally by the W55RP20 chip package, confirmed against WIZnet's own pinout diagram for the chip, and don't appear on this board's header at all. There's nothing to connect to on those numbers.</WarningBox>
 
 <InfoBox>The board also has a dedicated 3-pin **SWD debug header** (SWD, GND, CLK) near the reset button, for programming or debugging directly over SWD instead of USB.</InfoBox>
 
@@ -83,7 +81,7 @@ The board labels its GPIO pins **IO0-IO29** on the silkscreen (matching Soldered
 
 ## MicroSD card reader
 
-The board has an onboard microSD card slot, connected over SPI1 (**IO10-IO13**), with **IO9** reading the card-detect signal. JP5-JP7 and JP9 let you disconnect those four pins from the card reader if you need them as general-purpose header pins instead.
+The board has an onboard microSD card slot, connected over SPI1 (**IO10-IO13**). **IO9** controls power to the card through an onboard switch (see **JP3** and **JP4** in [jumper details](#jumper-details)), and **IO13** only reaches the card's CS line if **JP1** is bridged.
 
 <CenteredImage src="/img/nula_w55rp20/Pinout.png" alt="NULA Ether W55RP20 microSD reader location" caption="The microSD card slot sits near the top of the board, next to the SWD debug header" width="700px" />
 
@@ -91,7 +89,7 @@ The board has an onboard microSD card slot, connected over SPI1 (**IO10-IO13**),
 
 ## Battery support
 
-The board has a **JST battery connector** and a **VBAT** pin, alongside a charge status indicator, so it can run from a single-cell Li-Ion/Li-Po battery instead of USB-C power. JP12 controls how the battery connector is routed onto the board.
+The board has a **JST battery connector** and a **VBAT** pin, alongside a charge status indicator, so it can run from a single-cell Li-Ion/Li-Po battery instead of USB-C power.
 
 ---
 
@@ -123,26 +121,18 @@ This board contains hardware jumpers. See below for their locations and function
 
 | Jumper   | Default state         | Function                              |
 | -------- | ---------------------- | -------------------------------------- |
-| **JP1**  | NC (Normally closed)   | 5 V I2C pull-up resistors.             |
-| **JP2**  | NC (Normally closed)   | 3.3 V I2C pull-up resistors.           |
-| **JP3**  | NC (Normally closed)   | MicroSD card power control.            |
-| **JP4**  | NO (Normally open)     | Voltage regulator bypass.              |
-| **JP5**  | NC (Normally closed)   | IO12 header connection.                |
-| **JP6**  | NC (Normally closed)   | IO13 header connection.                |
-| **JP7**  | NC (Normally closed)   | IO11 header connection.                |
-| **JP8**  | NC (Normally closed)   | IO5 header connection.                 |
-| **JP9**  | NC (Normally closed)   | IO10 header connection.                |
-| **JP10** | NC (Normally closed)   | IO4 header connection.                 |
-| **JP11** | NC (Normally closed)   | Qwiic/I2C connector routing.           |
-| **JP12** | NC (Normally closed)   | Battery connector routing.             |
-
-<InfoBox>
-JP1 and JP2 are mutually exclusive, they select whether the onboard I2C pull-ups reference 5 V or 3.3 V. Don't close both at once.
-</InfoBox>
-
-<InfoBox>
-JP5-JP7 and JP9 each disconnect one of IO10-IO13 from the onboard microSD reader's SPI1 bus, freeing that pin for use on the header instead. Cutting all four fully frees up the microSD reader's SPI1 bus for other uses.
-</InfoBox>
+| **JP1**  | NO (Normally open)     | Connects **IO13** to the onboard microSD reader's CS line. |
+| **JP2**  | NC (Normally closed)   | 3.3 V I2C pull-up resistors for the Qwiic connector's SDA/SCL lines. |
+| **JP3**  | NC (Normally closed)   | Connects **IO9** to the microSD power switch's control gate. |
+| **JP4**  | NO (Normally open)     | Bypasses the microSD power switch, tying the card's power rail directly to 3.3 V. |
+| **JP5**  | NC (Normally closed)   | Power LED (purple).                    |
+| **JP6**  | NC (Normally closed)   | Ethernet duplex status LED (yellow).   |
+| **JP7**  | NC (Normally closed)   | Ethernet speed status LED (green).     |
+| **JP8**  | NC (Normally closed)   | Ethernet link status LED (blue).       |
+| **JP9**  | NC (Normally closed)   | Ethernet activity status LED (red).    |
+| **JP10** | Selectable              | Selects the W5500's **PMODE0** pin: pull-up (3.3 V, default) or pull-down (GND). |
+| **JP11** | Selectable              | Selects the W5500's **PMODE1** pin: pull-up (3.3 V, default) or pull-down (GND). |
+| **JP12** | Selectable              | Selects the W5500's **PMODE2** pin: pull-up (3.3 V, default) or pull-down (GND). |
 
 ---
 

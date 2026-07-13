@@ -34,12 +34,12 @@ To program the **NULA Ether W55RP20**, use the **RP2040 Arduino core** by Earle 
 
 ## Installing the board package
 
-Install the **Raspberry Pi RP2040 boards** package from the Arduino Boards Manager:
+Install the **Raspberry Pi RP2040 boards** package directly from the **Arduino Boards Manager**:
 
 1. Open **Arduino IDE**
 2. Go to **Tools → Board → Boards Manager**
-3. Search for **rp2040** or **Earle**
-4. Find **Raspberry Pi Pico/RP2040/RP2350 by Earle Philhower** and click **Install**
+3. In the search bar, type **rp2040**
+4. Find the entry **Raspberry Pi Pico/RP2040/RP2350 by Earle Philhower** and click **Install**
 
 Or add the URL manually in **File → Preferences → Additional Boards Manager URLs**:
 
@@ -47,23 +47,9 @@ Or add the URL manually in **File → Preferences → Additional Boards Manager 
 https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 ```
 
-After installing, go to **Tools → Board** and select **Soldered NULA Ethernet W55RP20** (internally identified as `soldered_nula_ethernet_w55rp20`), not the generic "Raspberry Pi Pico" entry. This board-specific variant configures the correct pin mapping for this board, including the onboard NeoPixel status LED and the microSD/SPI1 assignment.
+Once installed, select your board from the menu:
 
-<WarningBox>Selecting a generic "Raspberry Pi Pico" board instead of the Soldered-specific one is a common mistake and can lead to misconfigured pins or a status LED that doesn't behave as expected.</WarningBox>
-
-<InfoBox>Hold the **BOOT** button while connecting the USB-C cable to enter BOOTSEL mode if the board is not detected automatically.</InfoBox>
-
----
-
-## The Ethernet library is already installed
-
-Unlike most Arduino libraries, **you don't need to install anything separately for Ethernet**. The `W55RP20lwIP` library ships bundled with the RP2040 board package you just installed. Once the board package is in place, it's available directly:
-
-1. Go to **File → Examples**
-2. Scroll down to the **lwIP_w55rp20** section
-3. Open the **WiFiClient-W55RP20** example to see it working, or just `#include <W55RP20lwIP.h>` in your own sketch as shown below
-
-<InfoBox>Searching the Arduino Library Manager for "W55RP20" won't find anything; it's not a separately listed library. If you don't see it under File → Examples, double-check you actually selected the Soldered NULA Ethernet W55RP20 board entry and not a generic one. Some example menus only show entries relevant to the currently selected board.</InfoBox>
+**Tools → Board → Raspberry Pi RP2040 Boards → Soldered NULA Ethernet W55RP20**
 
 ---
 
