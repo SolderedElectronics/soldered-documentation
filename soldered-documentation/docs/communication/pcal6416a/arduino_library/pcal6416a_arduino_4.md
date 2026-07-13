@@ -1,68 +1,112 @@
 ---
-slug: /pcal6416a/arduino/troubleshooting
-title: PCAL6416A - Troubleshooting
-sidebar_label: Troubleshooting
+slug: /pcal6416a/arduino/interrupts
+title: PCAL6416A - Interrupts
+sidebar_label: Interrupts
 id: pcal6416a-arduino-4
 hide_title: false
-pagination_next: null
 ---
 
-This page contains some tips if you are experiencing problems with the PCAL6416A GPIO expander.
+This page covers using the PCAL6416A's interrupt output to detect pin changes without polling every pin over I2C.
 
-<ExpandableSection title="My expander won't initialize!">
+---
 
-#### Check wiring
-Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works.
+## Interrupts
 
-#### Check I2C pins
-If you are connecting the board using standard I2C pins, double-check that SDA and SCL are connected to the correct pins on your microcontroller.
+The PCAL6416A's **INT** pin pulls low whenever an enabled input pin changes state. Instead of continuously reading every pin over I2C, connect **INT** to a microcontroller pin and let it tell you when something changed.
 
-#### Scan for I2C devices
-Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to check if the PCAL6416A is detected on the I2C bus.
-
-#### Check I2C address
-Make sure the address used in code matches the detected address. For example:
+Connect a pushbutton between **A0** and GND, and another between **A1** and GND. Connect the PCAL6416A's **INT** pin to pin **IO4** on your development board.
 
 ```cpp
-expander.begin(0x20);
+#include "PCAL6416A-SOLDERED.h"
+
+PCAL6416A expander;
+
+#define INT_PIN 4
+
+bool intFlag = 0;
+
+void myISR()
+{
+    intFlag = 1;
+}
+
+void setup()
+{
+    Serial.begin(115200);
+
+    expander.begin();
+
+    expander.pinModePCAL(PCAL6416A_A0, INPUT_PULLUP);
+    expander.pinModePCAL(PCAL6416A_A1, INPUT_PULLUP);
+
+    pinMode(INT_PIN, INPUT_PULLUP);
+
+    expander.setInterruptPCAL(PCAL6416A_A0, true);
+    expander.setInterruptPCAL(PCAL6416A_A1, true);
+
+    // Enabling interrupts above can immediately latch one against the pins'
+    // power-on state, so clear it before arming the falling-edge interrupt -
+    // otherwise INT can start out already low, with no edge left to catch.
+    expander.getInterruptsPCAL();
+    expander.digitalReadPCAL(PCAL6416A_A0);
+    expander.digitalReadPCAL(PCAL6416A_A1);
+
+    attachInterrupt(digitalPinToInterrupt(INT_PIN), myISR, FALLING);
+}
+
+void loop()
+{
+    if (intFlag)
+    {
+        intFlag = 0;
+        uint16_t intReg = expander.getInterruptsPCAL();
+
+        if (intReg & 1 << PCAL6416A_A0)
+        {
+            Serial.print("Interrupt detected on pin A0! Pin state is now: ");
+            expander.digitalReadPCAL(PCAL6416A_A0) ? Serial.println("HIGH") : Serial.println("LOW");
+        }
+
+        if (intReg & 1 << PCAL6416A_A1)
+        {
+            Serial.print("Interrupt detected on pin A1! Pin state is now: ");
+            expander.digitalReadPCAL(PCAL6416A_A1) ? Serial.println("HIGH") : Serial.println("LOW");
+        }
+    }
+}
 ```
 
-</ExpandableSection>
+<FunctionDocumentation
+  functionName="expander.setInterruptPCAL()"
+  description="Enables or disables the interrupt for a single GPIO pin on the PCAL6416A expander."
+  returnDescription="None."
+  parameters={[
+    {
+      name: "pin",
+      type: "uint8_t",
+      description: "The GPIO pin to configure. Use a constant such as PCAL6416A_A0-PCAL6416A_A7 or PCAL6416A_B0-PCAL6416A_B7."
+    },
+    {
+      name: "enable",
+      type: "bool",
+      description: "true to enable interrupts on this pin, false to disable."
+    }
+  ]}
+/>
 
-<ExpandableSection title="My input or output pin is not working!">
+<FunctionDocumentation
+  functionName="expander.getInterruptsPCAL()"
+  description="Reads the interrupt status register, which pin triggered the last interrupt."
+  returnDescription="uint16_t bitmask - bit N set means pin N (PCAL6416A_A0-A7 = bits 0-7, PCAL6416A_B0-B7 = bits 8-15) triggered an interrupt."
+  parameters={[]}
+/>
 
-#### Check pin mode
-Make sure the pin is configured correctly before reading or writing:
+Open the **Serial Monitor** at **115200 baud** and press either button. The callback (`myISR`) just sets a flag, since interrupt callbacks should stay as short as possible - the actual work of checking which pin changed happens in `loop()`.
 
-```cpp
-expander.pinModePCAL(PCAL6416A_A0, INPUT_PULLUP);
-expander.pinModePCAL(PCAL6416A_A1, OUTPUT);
-```
+<CenteredImage src="/img/pcal6416a/interrupt.png" alt="Serial Monitor output of the interrupts example" caption="Serial Monitor output showing interrupts firing on A0 and A1" />
 
-#### Check your wiring
-For button examples, connect the pushbutton between the input pin and GND.  
-For LED examples, connect the LED with a resistor to the output pin and GND.
-
-#### Check pull-up settings
-If using a button, enable `INPUT_PULLUP` so the input has a stable state when the button is not pressed.
-
-</ExpandableSection>
-
-<ExpandableSection title="Other common issues">
-
-#### The button always reads HIGH or LOW
-Check that the button is connected to the correct GPIO pin and GND. If using `INPUT_PULLUP`, the pin should read `HIGH` when released and `LOW` when pressed.
-
-#### The LED does not turn on
-Check LED polarity, the resistor connection, and whether the selected pin is configured as `OUTPUT`.
-
-#### I2C communication is unstable
-Check cable length, loose connections, and whether the I2C pull-up jumpers are configured correctly.
-
-#### The wrong device is responding
-If multiple I2C devices are connected, make sure no other device uses the same I2C address.
-
-</ExpandableSection>
-
-<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
-
+<QuickLink
+  title="interrupts.ino"
+  description="Full interrupts example for the PCAL6416A GPIO expander"
+  url="https://github.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/blob/main/examples/interrupts/interrupts.ino"
+/>

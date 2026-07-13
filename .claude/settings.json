@@ -23,7 +23,18 @@
       "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/driveStrength/driveStrength.ino\")",
       "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/src/PCAL6416A-SOLDERED.h\")",
       "Bash(node -e \"require\\('./sidebars.js'\\); console.log\\('sidebars OK'\\)\")",
-      "Read(//c/Users/borna/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.10/variants/soldered_nula_dual_esp32c5/**)"
+      "Read(//c/Users/borna/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.10/variants/soldered_nula_dual_esp32c5/**)",
+      "Bash(curl -s https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/interrupts/interrupts.ino)",
+      "Bash(mv \"docs/communication/pcal6416a/arduino_library/pcal6416a_arduino_4.md\" \"docs/communication/pcal6416a/arduino_library/pcal6416a_arduino_3.md\")",
+      "Bash(mv \"docs/communication/pcal6416a/arduino_library/pcal6416a_arduino_5.md\" \"docs/communication/pcal6416a/arduino_library/pcal6416a_arduino_4.md\")",
+      "Bash(curl -s -o \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/Iicrp.png\" \"https://upload.wikimedia.org/wikipedia/commons/2/27/Iicrp.png\")",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE/git/trees/master?recursive=true\")",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE\")",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE/git/trees/master?recursive=true\" -o /tmp/tree.json)",
+      "WebFetch(domain:solde.red)",
+      "Bash(curl -sL -o \"/tmp/dasduino_connectplus.pdf\" \"https://www.mouser.com/datasheet/2/1398/Soldered_333169-3395105.pdf\")",
+      "Bash(curl -sL -w \"HTTP_CODE:%{http_code} SIZE:%{size_download}\\\\n\" -o \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/dasduino_cp.pdf\" \"https://www.mouser.com/datasheet/2/1398/Soldered_333169-3395105.pdf\" --max-time 30)",
+      "WebFetch(domain:templates.blakadder.com)"
     ]
   }
 }

@@ -8,9 +8,9 @@ hide_title: false
 
 ## Pinout
 
-<CenteredImage src="/img/pcal6416a/PCAL6416A_Pinout.png" alt="PCAL6416A pinout diagram" caption="PCAL6416A pinout diagram"/>
+<CenteredImage src="/img/pcal6416a/Pinout.png" alt="PCAL6416A pinout diagram" caption="PCAL6416A pinout diagram"/>
 
-Click [**here**](/img/pcal6416a/PCAL6416A_Pinout.png) for a high resolution image of the pinout.
+Click [**here**](/img/pcal6416a/Pinout.png) for a high resolution image of the pinout.
 
 ---
 
@@ -18,20 +18,21 @@ Click [**here**](/img/pcal6416a/PCAL6416A_Pinout.png) for a high resolution imag
 
 | **Pin Marking** | **Pin Name**         | **Description**                                                                 |
 |-----------------|----------------------|---------------------------------------------------------------------------------|
-| **INT**         | Interrupt Output     | Active-low interrupt output from the PCAL6416A used to notify the MCU of input changes. |
-| **RES**         | Reset                | Hardware reset pin for the PCAL6416A. Pull low to reset the device.            |
+| **INT**         | Interrupt Output     | Active-low, open-drain interrupt output. Needs a pull-up to function - either the host's own internal pull-up on the pin it's wired to, or an external resistor. |
+| **RES**         | Reset                | Hardware reset pin for the PCAL6416A. Pull low to reset the device. Already pulled up to 3.3V on the board through a 10 kΩ resistor, so it can be left unconnected. |
 | **B0 - B7**          | GPIO Port B          | General-purpose input/output pins from Port B.                                 |
 | **A0 - A7**          | GPIO Port A          | General-purpose input/output pins from Port A.                                 |
 | **SCL**         | I2C Clock            | Clock line for I2C communication.                                              |
 | **SDA**         | I2C Data             | Data line for I2C communication.                                               |
-| **5V**          | Supply Voltage       | Main power input for the board.                                                |
+| **VCC**         | Supply Voltage       | Main power input for the board, nominally 5V. An onboard regulator steps this down to 3.3V for the PCAL6416A by default; closing jumper **JP5** bypasses the regulator and runs the chip directly at the supplied voltage instead. |
 | **GND**         | Ground               | Common ground reference for the board and connected devices.                   |
 
 <InfoBox>
 - **GPIO Channels**: 16 total GPIO pins (Port A and Port B)
 - **Communication Interface**: I2C
-- **Operating Voltage**: 3.3V logic compatible
+- **Operating Voltage**: Regulated to 3.3V on the board by default; 5V is possible by bypassing the regulator with jumper JP5
 - **Interrupt Support**: Active-low interrupt output available on INT pin
+- **Internal Pull-Up/Pull-Down**: 100 kΩ, enabled individually per pin
 </InfoBox>
 
 <WarningBox>Make sure the supply voltage and I2C logic levels are compatible with your microcontroller before connecting the board. Always connect GND between devices to establish a common signal reference.</WarningBox>
@@ -69,9 +70,9 @@ This board contains hardware jumpers; see below for their locations and function
 
 | **Jumper** | **Default State** | **Function** |
 |------------|-------------------|--------------|
-| **JP1** | NO | Enables the 5V I2C pull-up resistors for the SDA5 and SCL5 signal lines. |
-| **JP2** | NO | Enables the 3.3V I2C pull-up resistors for the SDA_PULL3.3 and SCL_PULL3.3 signal lines. |
-| **JP3** | NC | Connects the ADDR pin to GND, setting the I2C address to **0x20**. Cut this jumper and bridge it to VDD to change the address to **0x21**. |
+| **JP1** | NC | Enables the 5V I2C pull-up resistors for the SDA5 and SCL5 signal lines. |
+| **JP2** | NC | Enables the 3.3V I2C pull-up resistors for the SDA_PULL3.3 and SCL_PULL3.3 signal lines. |
+| **JP3** | Selectable | Connects the ADDR pin to GND, setting the I2C address to **0x20**. Cut this jumper and bridge it to VDD to change the address to **0x21**. |
 | **JP4** | NC | Connects the output of the onboard voltage regulator to the 3.3V power rail. |
 | **JP5** | NO | Bypasses the onboard voltage regulator by directly connecting the 5V rail to the 3.3V rail. |
 

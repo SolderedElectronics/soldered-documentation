@@ -9,7 +9,7 @@ pagination_prev: null
 
 ## PCAL6416A I/O Expander
 
-The **PCAL6416A** is a **16-bit I²C GPIO expander** from **NXP Semiconductors**. It adds 16 programmable input/output pins to a microcontroller over two I²C wires, with built-in **interrupt support**, **programmable pull-up/pull-down resistors**, **input latching**, and **voltage-level translation** between different logic levels.
+The **PCAL6416A** is a **16-bit I²C GPIO expander** from **NXP Semiconductors**. It adds 16 programmable input/output pins to a microcontroller over two I²C wires, with built-in **interrupt support**, **programmable pull-up/pull-down resistors**, **input latching**, and **voltage-level translation** between different logic levels. The board is **Qwiic compatible**, so it plugs straight into any Qwiic-enabled microcontroller without soldering, or you can wire it up over standard I2C pins instead.
 
 <CenteredImage src="/img/pcal6416a/PCAL6416A_base.jpg" alt="PCAL6416A I/O Expander" caption="PCAL6416A I/O Expander" width="600px"/>
 
@@ -24,13 +24,12 @@ The **PCAL6416A** is a **16-bit I²C GPIO expander** from **NXP Semiconductors**
 ## Key Features
 
 - **16 GPIO Pins**: Provides 16 programmable input/output pins divided into two 8-bit ports.
-- **I²C Communication**: Supports **Standard-mode (100 kHz)** and **Fast-mode (400 kHz)**.
-- **Default I²C Address**: Base address is **0x20**, configurable to **0x21** by cutting jumper **JP3** and bridging it to VDD.
-- **Wide Operating Voltage Range**: Operates from **1.65V to 5.5V**, compatible with both low-voltage and 5V systems.
+- **I²C Communication**: Supports **Standard-mode (100 kHz)** and **Fast-mode (400 kHz)**, default address **0x20**.
+- **3.3V or 5V Operation**: Runs the PCAL6416A at 3.3V by default through an onboard regulator, or at 5V instead if you bypass the regulator with a jumper.
 - **Voltage-Level Translation**: Allows communication between devices operating at different logic voltages.
 - **Interrupt Output (INT)**: Open-drain interrupt pin notifies the microcontroller when an input changes state.
-- **Configurable Pull-Up/Pull-Down Resistors**: Internal 100 kΩ pull-up or pull-down resistors can be enabled individually for each pin.
-- **Low Power Consumption**: Typical supply current **1.1 mA**, maximum **1.5 mA**.
+- **Configurable Pull-Up/Pull-Down Resistors**: Can be enabled individually for each pin.
+- **Low Power Consumption**: Standby current as low as **0.5 µA** typical (rising to **1.5 µA** typical at higher supply voltages); enabling internal pull-ups on every pin raises this to about **1.1 mA** typical.
 - **LED Driving Capability**: Each output pin can sink up to **25 mA**, enough to drive LEDs directly.
 
 ---

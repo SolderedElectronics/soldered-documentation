@@ -2597,6 +2597,10 @@ const sidebars = {
                   type: 'doc',
                   id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-4',
                 },
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-5',
+                },
               ],
             },
           ],
