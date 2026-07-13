@@ -52,7 +52,7 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
 Once installed, select your board from the menu:  
 **Tools → Board → ESP32C5 Dev Module**
 
-<InfoBox>Each ESP32-C5 module on the board is programmed independently. Connect the USB-C cable and select the correct **Tools → Port** for the module you want to flash. To enter **download mode**, hold the **BOOT** button while pressing **RESET**, then release both.</InfoBox>
+<InfoBox>The board has an automatic reset/download circuit, so uploading normally just works from a single click of **Upload**. If that ever fails, you can enter download mode manually: hold the **USER** button while pressing **RESET**, then release both.</InfoBox>
 
 ---
 
@@ -74,5 +74,3 @@ void loop() {
 ```
 
 Open the **Serial Monitor** at **115200 baud** - you should see the hello message printed once per second.
-
-<InfoBox>Upload this sketch to each module separately to verify both are working. Each module has its own USB port selection in **Tools → Port**.</InfoBox>

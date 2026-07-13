@@ -11,9 +11,9 @@ pagination_prev: null
 
 ## NULA Dual ESP32-C5
 
-The **Soldered NULA Dual ESP32-C5** is a development board featuring **two Espressif ESP32-C5 modules**, enabling a wide range of dual-radio and multi-role embedded applications. Each ESP32-C5 integrates a **32-bit RISC-V core**, **Wi-Fi 6 (2.4 GHz & 5 GHz)**, and **Bluetooth 5 (LE)**, making this board ideal for projects that require simultaneous multi-network connectivity, protocol bridging, or independent parallel processing.
+The **Soldered NULA Dual ESP32-C5** is a development board built around a single **Espressif ESP32-C5** module. The "Dual" in its name refers to the chip's **dual-band Wi-Fi 6** radio, which runs on **2.4 GHz and 5 GHz** at the same time, alongside **Bluetooth 5 (LE)** and a dual-core RISC-V design (a high-performance core plus a low-power core for background tasks).
 
-The two modules can operate **independently** or work in tandem - one handling the main application while the other manages communication, or each connected to a different network. The board follows the familiar **Soldered NULA form factor**, with an **easyC (Qwiic) connector** for sensor integration and a **USB-C** port for programming and power.
+The board follows the familiar **Soldered NULA form factor**, with an **easyC (Qwiic) connector** for sensor integration, a battery connector with onboard charging, and a **USB-C** port for programming and power.
 
 {/* <CenteredImage src="/img/nula_dual_esp32-c5/NULA_Dual_ESP32-C5.png" alt="NULA Dual ESP32-C5" caption="NULA Dual ESP32-C5 Development Board"/> */}
 
@@ -36,13 +36,14 @@ The two modules can operate **independently** or work in tandem - one handling t
 
 ## Key Features
 
-- **Modules:** Two independent **ESP32-C5** modules
-- **Processor:** 32-bit RISC-V single-core @ up to **240 MHz** (per module)
-- **Wi-Fi:** Wi-Fi 6 (802.11ax) - **2.4 GHz and 5 GHz** dual-band (per module)
-- **Bluetooth:** Bluetooth 5 (LE) (per module)
+- **Module:** Espressif **ESP32-C5**
+- **Processor:** Dual-core RISC-V - a high-performance core @ up to **240 MHz**, plus a low-power core for background tasks
+- **Wi-Fi:** Wi-Fi 6 (802.11ax) - **2.4 GHz and 5 GHz** dual-band
+- **Bluetooth:** Bluetooth 5 (LE)
 - **USB-C:** Programming, power, and serial communication
 - **easyC / Qwiic:** Plug-and-play I²C sensor integration
-- **GPIO:** Full access to both modules' I/O pins (UART, SPI, I²C, PWM, ADC)
+- **Battery support:** Onboard connector and charging circuit for a 3.7 V Li-Ion/Li-Poly battery
+- **GPIO:** Broad access to the module's I/O pins (UART, SPI, I²C, PWM, ADC)
 - **Logic level:** 3.3 V
 - **Development support:** Arduino IDE, ESP-IDF, MicroPython compatible
 

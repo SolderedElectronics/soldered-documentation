@@ -8,7 +8,24 @@
       "Bash(powershell.exe -Command 'Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp20\" -Recurse -Force && Write-Output \"Copy done\"')",
       "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\communication\\\\nula w55rp20\" -Recurse -Force)",
       "PowerShell(Copy-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\nula w55rp2\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\static\\\\img\\\\nula w55rp20\" -Recurse -Force)",
-      "PowerShell(Move-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\sensors\\\\nula_dual_esp32-c5\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\nula-boards\\\\nula_dual_esp32-c5\")"
+      "PowerShell(Move-Item -Path \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\sensors\\\\nula_dual_esp32-c5\" -Destination \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\\\\soldered-documentation\\\\docs\\\\nula-boards\\\\nula_dual_esp32-c5\")",
+      "Bash(git -C \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\" branch --show-current)",
+      "Bash(git -C \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\" status --short)",
+      "WebFetch(domain:documentation.espressif.com)",
+      "WebFetch(domain:www.espressif.com)",
+      "Bash(awk 'NR>=3100 && NR<=3260 && /Reference|Value/' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=3100 && NR<=3260' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=3050 && NR<=3260' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=3060 && NR<=3300' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=15286 && NR<=15420' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=8410 && NR<=8480' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=5600 && NR<=5715' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=17130 && NR<=17215' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=17080 && NR<=17215' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk 'NR>=5560 && NR<=5715' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Bash(awk -F: '$1 < 17208')",
+      "Bash(awk 'NR>=17068 && NR<=17215' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
+      "Read(//c/Users/borna/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.10/variants/soldered_nula_dual_esp32c5/**)"
     ]
   }
 }

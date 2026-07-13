@@ -20,22 +20,30 @@ Click [**here**](/img/nula_dual_esp32-c5/Pinout.png) for a high-resolution versi
 
 | Pin Marking | Type      | Description                                                        |
 | ----------- | --------- | ------------------------------------------------------------------ |
-| **VBAT**    | Power     | Battery voltage input.                                             |
-| **VCC**     | Power     | 5 V power input.                                                   |
-| **3V3**     | Power     | Regulated 3.3 V output from onboard regulator.                     |
+| **VBAT**    | Power     | Same net as the JST battery connector - an alternate connection point for a 3.7 V Li-Ion/Li-Poly battery. |
+| **VCC**     | Power     | Output of the onboard power-source selection circuit. Follows USB 5 V when USB-C is connected, or the battery voltage otherwise - not a fixed, stable voltage. |
+| **3V3**     | Power     | Regulated 3.3 V output from the onboard regulator.                 |
 | **GND**     | Ground    | Common ground reference.                                           |
-| **RESET**   | Control   | Active-low reset input.                                            |
+| **RESET**   | Control   | Active-low reset input, also wired to the onboard reset button.    |
 | **RXD**     | UART      | UART receive pin.                                                  |
 | **TXD**     | UART      | UART transmit pin.                                                 |
-| **IO0**     | GPIO      | General-purpose I/O, boot mode select.                             |
-| **IO1**     | GPIO/ADC  | General-purpose I/O, ADC capable.                                  |
-| **IO2**     | GPIO/ADC  | General-purpose I/O, ADC capable.                                  |
-| **IO3**     | GPIO/ADC  | General-purpose I/O, ADC capable.                                  |
-| **IO4**     | GPIO/ADC  | General-purpose I/O, ADC capable.                                  |
-| **IO5**     | GPIO/ADC  | General-purpose I/O, ADC capable.                                  |
-| **IO6**     | GPIO      | General-purpose I/O, SPI/I²C/UART capable.                        |
-| **IO7**     | GPIO      | General-purpose I/O, SPI/I²C/UART capable.                        |
-| **IO28**    | GPIO      | General-purpose I/O.                                               |
+| **IO0**     | GPIO/ADC  | General-purpose I/O, ADC capable (A0).                             |
+| **IO1**     | GPIO/ADC  | General-purpose I/O, ADC capable (A1).                             |
+| **IO2**     | GPIO/ADC/SPI | ADC capable (A2). Default SPI **MISO**. Also the LP core's dedicated I2C data pin (LP_SDA). |
+| **IO3**     | GPIO/ADC  | ADC capable (A3). Also the LP core's dedicated I2C clock pin (LP_SCL). |
+| **IO4**     | GPIO/ADC/I2C | ADC capable (A4). Default I2C **SDA** pin (used by `Wire.begin()` with no arguments) - also feeds the Qwiic connector. Also the LP core's dedicated UART RX pin (LP_RX). |
+| **IO5**     | GPIO/ADC/I2C | ADC capable (A5). Default I2C **SCL** pin - also feeds the Qwiic connector. Also the LP core's dedicated UART TX pin (LP_TX). |
+| **IO6**     | GPIO/ADC/SPI | ADC capable (A6). Default SPI **SCK**.                          |
+| **IO7**     | GPIO/ADC/SPI | ADC capable (A7). Default SPI **MOSI**.                         |
+| **IO8**     | GPIO/ADC  | ADC capable (A8). Also drives the onboard WS2812B status LED, so anything you connect here interacts with that LED too. |
+| **IO9**     | GPIO/ADC  | General-purpose I/O, ADC capable (A9).                             |
+| **IO10**    | GPIO/ADC/SPI | ADC capable (A10). Default SPI **CS**.                          |
+| **IO13**    | GPIO/ADC  | General-purpose I/O, ADC capable (A13).                            |
+| **IO14**    | GPIO/ADC  | General-purpose I/O, ADC capable (A14).                            |
+| **IO23**    | GPIO/ADC  | General-purpose I/O, ADC capable (A23).                            |
+| **IO24**    | GPIO/ADC  | General-purpose I/O, ADC capable (A24).                            |
+| **IO25**    | GPIO/ADC  | General-purpose I/O, ADC capable (A25).                            |
+| **IO28**    | GPIO/ADC  | ADC capable (A28). Also wired to the onboard USER/boot-select button. |
 
 <InfoBox>All GPIO pins operate at **3.3 V logic** - **do not connect 5 V signals directly to GPIO pins**. Always verify signal levels before connecting external peripherals.</InfoBox>
 
@@ -73,8 +81,9 @@ The **NULA Dual ESP32-C5** includes a **JST connector** for connecting a **3.7 V
 ## Power Supply
 
 - **USB-C port** used for programming and power input (5 V).
-- **VBUS** exposes the raw 5 V USB supply on the pin header.
-- Onboard regulator provides a stable **3.3 V** rail for both modules and all peripherals.
+- **JST battery connector** (also mirrored on the **VBAT** header pin) for a 3.7 V Li-Ion/Li-Poly battery, with an onboard charging circuit that charges the battery whenever USB-C is connected.
+- An automatic power-source-selection circuit picks USB 5 V over the battery whenever both are present, exposed on the **VCC** header pin.
+- An onboard regulator steps that supply down to a stable **3.3 V** rail for the module and all peripherals.
 - Logic level is **3.3 V** - **do not connect 5 V signals directly to GPIO pins**.
 
 ---
@@ -98,7 +107,7 @@ This board contains hardware jumpers. See below for their locations and function
 | Jumper  | Default State        | Function                                              |
 | ------- | -------------------- | ----------------------------------------------------- |
 | **JP1** | NC (Normally Closed) | Enables onboard 3.3 V I²C pull-up resistors.          |
-| **JP2** | NO (Normally Open)   | When closed, enables the power LED.                   |
+| **JP2** | NC (Normally Closed) | Enables the power LED.                                |
 
 ---
 
