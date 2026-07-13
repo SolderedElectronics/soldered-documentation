@@ -1,8 +1,8 @@
 ---
-slug: /gpio expander pcal6416a breakout/arduino/readwrite
-title: PCAL6416AHF - ReadWrite
+slug: /pcal6416a/arduino/readwrite
+title: PCAL6416A - ReadWrite
 sidebar_label: ReadWrite
-id: gpio expander pcal6416a breakout-arduino-3
+id: pcal6416a-arduino-3
 hide_title: false
 ---
 
@@ -44,7 +44,7 @@ void loop()
 ```
 
 <FunctionDocumentation
-  functionName="expander.digitalReadPCAL(pin)"
+  functionName="expander.digitalReadPCAL()"
   description="Reads the current logic state of a selected GPIO pin on the PCAL6416A expander."
   returnDescription="Returns HIGH or LOW depending on the state of the selected input pin."
   parameters={[
@@ -57,7 +57,7 @@ void loop()
 />
 
 <FunctionDocumentation
-  functionName="expander.digitalWritePCAL(pin, value)"
+  functionName="expander.digitalWritePCAL()"
   description="Sets the output state of a selected GPIO pin on the PCAL6416A expander."
   returnDescription="None."
   parameters={[
@@ -75,7 +75,7 @@ void loop()
 />
 
 <FunctionDocumentation
-  functionName="expander.pinModePCAL(pin, mode)"
+  functionName="expander.pinModePCAL()"
   description="Configures a GPIO pin on the PCAL6416A expander as an input or output."
   returnDescription="None."
   parameters={[
@@ -87,10 +87,12 @@ void loop()
     {
       name: "mode",
       type: "uint8_t",
-      description: "Pin mode: INPUT, OUTPUT, or INPUT_PULLUP."
+      description: "Pin mode: INPUT, OUTPUT, INPUT_PULLUP, or INPUT_PULLDOWN."
     }
   ]}
 />
+
+<InfoBox>Besides `INPUT`, `OUTPUT`, and `INPUT_PULLUP`, the library also defines `INPUT_PULLDOWN` for `pinModePCAL()`, using the PCAL6416A's internal pull-down resistors instead of pull-up.</InfoBox>
 
 | Input pin A0 state | Button state | Output pin A1 state | LED state |
 | :----------------: | :----------: | :-----------------: | :-------: |
@@ -104,8 +106,7 @@ void loop()
 Connect a pushbutton between A0 and GND, and connect an LED with a resistor to A1 and GND. Open the Serial Monitor at 115200 baud to observe the input state.
 
 ```cpp
-// Include required libraries
-#include <Wire.h>
+// Include required library
 #include "PCAL6416A-SOLDERED.h"
 
 // Create PCAL6416A object
@@ -115,11 +116,8 @@ void setup()
 {
     Serial.begin(115200); // Start serial communication with PC
 
-    // Required for ESP32-C6 Qwiic board
-    Wire.begin(6, 7);
-
     // Initialize PCAL6416A GPIO Expander
-    expander.begin(0x20);
+    expander.begin();
 
     // Set A0 as input with internal pull-up resistor
     expander.pinModePCAL(PCAL6416A_A0, INPUT_PULLUP);

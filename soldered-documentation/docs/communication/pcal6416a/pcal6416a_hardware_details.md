@@ -1,8 +1,8 @@
 ---
 slug: /pcal6416a/hardware 
-title: PCAL6416AHF - Hardware details
+title: PCAL6416A - Hardware details
 sidebar_label: Hardware details
-id: gpio expander pcal6416a breakout-hardware 
+id: pcal6416a-hardware 
 hide_title: false
 ---
 
@@ -34,7 +34,7 @@ Click [**here**](/img/pcal6416a/PCAL6416A_Pinout.png) for a high resolution imag
 - **Interrupt Support**: Active-low interrupt output available on INT pin
 </InfoBox>
 
-<WarningBox>Ensure that the supply voltage and I2C logic levels are compatible with your microcontroller before connecting the board. Always connect GND between devices to establish a common signal reference.</WarningBox>
+<WarningBox>Make sure the supply voltage and I2C logic levels are compatible with your microcontroller before connecting the board. Always connect GND between devices to establish a common signal reference.</WarningBox>
 
 ---
 
@@ -72,7 +72,7 @@ This board contains hardware jumpers; see below for their locations and function
 | **JP1** | NO | Enables the 5V I2C pull-up resistors for the SDA5 and SCL5 signal lines. |
 | **JP2** | NO | Enables the 3.3V I2C pull-up resistors for the SDA_PULL3.3 and SCL_PULL3.3 signal lines. |
 | **JP3** | NC | Connects the ADDR pin to GND, setting the I2C address to **0x20**. Cut this jumper and bridge it to VDD to change the address to **0x21**. |
-| **JP4** | NC | Connects the output of the onboard SE5218 voltage regulator to the 3.3V power rail. |
+| **JP4** | NC | Connects the output of the onboard voltage regulator to the 3.3V power rail. |
 | **JP5** | NO | Bypasses the onboard voltage regulator by directly connecting the 5V rail to the 3.3V rail. |
 
 
@@ -84,12 +84,14 @@ This board contains hardware jumpers; see below for their locations and function
 
 </InfoBox>
 
+---
+
 ## Dimensions
 
 - **Board Dimensions:** 22 × 38 mm (0.9 × 1.5 inch)  
 - **Header Pin Holes:** 1.5 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
-- Soldered boards are LEGO-compatible! 🧱 
+- Soldered boards are LEGO compatible! 🧱
 
 ---
 

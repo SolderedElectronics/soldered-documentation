@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/src/PCAL6416A-SOLDERED.h)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/digitalRead/digitalRead.ino)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/digitalWrite/digitalWrite.ino)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/driveStrength/driveStrength.ino)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/interrupts/interrupts.ino)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/src/PCAL6416A-SOLDERED.cpp)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/library.properties)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/README.md)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/src/libs/Generic-easyC/easyC.hpp)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/src/libs/Generic-easyC/easyC.cpp)",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/git/trees/master?recursive=1\")",
+      "Bash(curl -s -w \"\\\\nHTTP_STATUS:%{http_code}\\\\n\" \"https://api.github.com/repos/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/git/trees/master?recursive=1\" -o /tmp_tree_master.json)",
+      "Bash(wc -c /tmp_tree_master.json)",
+      "Bash(tail -c 300 /tmp_tree_master.json)",
+      "Bash(curl -sI \"https://github.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library\")",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/git/trees/main?recursive=1\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/digitalRead/digitalRead.ino\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/digitalWrite/digitalWrite.ino\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/interrupts/interrupts.ino\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/examples/driveStrength/driveStrength.ino\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library/main/src/PCAL6416A-SOLDERED.h\")",
+      "Bash(node -e \"require\\('./sidebars.js'\\); console.log\\('sidebars OK'\\)\")",
+      "Read(//c/Users/borna/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.10/variants/soldered_nula_dual_esp32c5/**)"
+    ]
+  }
+}

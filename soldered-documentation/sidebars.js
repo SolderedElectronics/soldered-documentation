@@ -2563,19 +2563,19 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'PCAL6416AHF I/O Expander',
+          label: 'PCAL6416A I/O Expander',
           items: [
             {
               type: 'doc',
-              id: 'communication/pcal6416a/gpio expander pcal6416a breakout-overview',
+              id: 'communication/pcal6416a/pcal6416a-overview',
             },
             {
               type: 'doc',
-              id: 'communication/pcal6416a/gpio expander pcal6416a breakout-hardware',
+              id: 'communication/pcal6416a/pcal6416a-hardware',
             },
             {
               type: 'doc',
-              id: 'communication/pcal6416a/gpio expander pcal6416a breakout-how-it-works',
+              id: 'communication/pcal6416a/pcal6416a-how-it-works',
             },
             {
               type: 'category',
@@ -2583,19 +2583,19 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'communication/pcal6416a/arduino_library/gpio expander pcal6416a breakout-arduino-1',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-1',
                 },
                 {
                   type: 'doc',
-                  id: 'communication/pcal6416a/arduino_library/gpio expander pcal6416a breakout-arduino-2',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-2',
                 },
                 {
                   type: 'doc',
-                  id: 'communication/pcal6416a/arduino_library/gpio expander pcal6416a breakout-arduino-3',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-3',
                 },
                 {
                   type: 'doc',
-                  id: 'communication/pcal6416a/arduino_library/gpio expander pcal6416a breakout-arduino-4',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-4',
                 },
               ],
             },

@@ -1,23 +1,25 @@
 ---
-slug: /gpio expander pcal6416a breakout/arduino/geting-started 
-title: PCAL6416AHF - Getting started
+slug: /pcal6416a/arduino/getting-started 
+title: PCAL6416A - Getting started
 sidebar_label: Getting started
-id: gpio expander pcal6416a breakout-arduino-1 
+id: pcal6416a-arduino-1 
 hide_title: false
 ---
 
 ## Arduino library
 
-To install the Arduino library, you can use the **Arduino library manager** or download it from the GitHub repository:  
+This library isn't in the Arduino Library Manager yet, so download it directly from the GitHub repository:  
 <QuickLink  
   title="PCAL6416A GPIO Expander Breakout Arduino library"  
   description="PCAL6416A Arduino library by Soldered"  
   url="https://github.com/SolderedElectronics/Soldered-PCAL6416A-IO-Expander-Arduino-Library"  
 />  
 
+Click **Code → Download ZIP** on the repository page, then in the Arduino IDE go to **Sketch → Include Library → Add .ZIP Library...** and select the downloaded file.
+
 <InfoBox>
 
-**Are you a first-time Arduino user?** For a detailed tutorial on getting started with Arduino, refer to this section of our docs:
+**Are you a first-time Arduino user?** For a detailed tutorial on getting started with Arduino, see this section of our docs:
 
 <QuickLink  
   title="Getting started with Arduino"  

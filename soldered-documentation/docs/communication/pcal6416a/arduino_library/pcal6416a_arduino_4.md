@@ -1,17 +1,18 @@
 ---
-slug: /gpio expander pcal6416a breakout/arduino/troubleshooting
-title: PCAL6416AHF - Troubleshooting
+slug: /pcal6416a/arduino/troubleshooting
+title: PCAL6416A - Troubleshooting
 sidebar_label: Troubleshooting
-id: gpio expander pcal6416a breakout-arduino-4
+id: pcal6416a-arduino-4
 hide_title: false
 pagination_next: null
 ---
+
 This page contains some tips if you are experiencing problems with the PCAL6416A GPIO expander.
 
 <ExpandableSection title="My expander won't initialize!">
 
 #### Check wiring
-Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works.
+Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works.
 
 #### Check I2C pins
 If you are connecting the board using standard I2C pins, double-check that SDA and SCL are connected to the correct pins on your microcontroller.
