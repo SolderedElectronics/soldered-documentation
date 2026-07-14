@@ -1,185 +1,89 @@
 ---
-slug: /ads1219/arduino/interrupt
-title: ADS1219 24-bit ADC - Reading with Interrupt
-sidebar_label: ADS1219 24-bit ADC
+slug: /ads1219/arduino/continuous 
+title: ADS1219 24-bit ADC - Continuous Reading
+sidebar_label: Continuous Reading
 id: ads1219-arduino-3 
 hide_title: False
 ---
 
-This page contains an example of reading ADC values from the ADS1219 using the **DRDY interrupt pin**, where the microcontroller is notified by the sensor when a new conversion result is ready.
+This page covers continuous conversion mode, where the ADS1219 converts back-to-back on its own at the configured data rate, instead of waiting for a `startSync()` call before each result.
 
 ---
 
-## Connections for this example
+## Connections
 
-<CenteredImage src="/img/ads1219/interrupt.JPG" alt="Connections" />
+Connect the ADS1219 board via Qwiic, and wire REFP/REFN to your chosen reference (see the [previous page](/ads1219/arduino/single-shot) for reference-voltage options).
+
+Connect a signal source to **AIN0** and **AIN1** - this example reads the voltage difference between them.
 
 ---
 
-## Initialization
-
-Include the library and create the ADC object:
+## Continuous reading
 
 ```cpp
+#include <Wire.h>
 #include "ADS1219-SOLDERED.h"
 
-ADS1219 adc;
+ADS1219_Soldered adc;
 
 void setup()
 {
     Serial.begin(115200);
+    Wire.begin();
 
-    if (adc.begin() == false)
+    while (!adc.begin())
     {
-        Serial.println("ADS1219 not detected. Please check wiring. Freezing.");
-        while (1);
+        Serial.println("ADS1219 not found. Check wiring! Retrying...");
+        delay(1000);
     }
 
-    // Set gain to 1 (full-scale range ±2.048 V with internal reference)
-    adc.setGain(ADS1219_GAIN_1);
+    // Use REFP/REFN as the reference (tie them to VCC/GND, or a precision source)
+    adc.setVoltageReference(ADS1219_VREF_EXTERNAL);
 
-    // Set data rate to 90 SPS
-    adc.setDataRate(ADS1219_DR_90);
+    adc.setConversionMode(ADS1219_MODE_CONTINUOUS);
 
-    // Select single-ended input on channel 0
-    adc.setInputMultiplexer(ADS1219_MUX_SINGLE_0);
+    // In continuous mode, this single call starts the ongoing sequence
+    adc.startSync();
+}
 
-    // Use internal 2.048 V reference
-    adc.setVoltageReference(ADS1219_VREF_INTERNAL);
+void loop()
+{
+    while (!adc.dataReady())
+        delay(10);
 
-    // Enable interrupt-driven mode and start conversions
-    adc.setConversionMode(ADS1219_CM_CONTINUOUS);
-    adc.start();
+    adc.readConversion();
+
+    // 3300.0f is the reference voltage in millivolts (3.3V here) - change this
+    // to match whatever you actually wired to REFP/REFN
+    float mV = adc.getConversionMillivolts(3300.0f);
+
+    Serial.print("Voltage (mV): ");
+    Serial.println(mV, 3);
 }
 ```
-
-<FunctionDocumentation
-  functionName="adc.begin()"
-  description="Initializes the ADS1219 and establishes I2C communication"
-  returnDescription="Boolean value, true if the device is detected and communication succeeds, false otherwise"
-  parameters={[]}
-/>
-
-<FunctionDocumentation
-  functionName="adc.setGain()"
-  description="Sets the programmable gain amplifier (PGA). Higher gain narrows the input range but increases resolution for small signals"
-  returnDescription="None"
-  parameters={[
-  { type: 'uint8_t', name: 'gain', description: "Gain setting: ADS1219_GAIN_1 (±2.048 V), ADS1219_GAIN_2 (±1.024 V), ADS1219_GAIN_4 (±0.512 V), ADS1219_GAIN_8 (±0.256 V)" },
-  ]}
-/>
-
-<FunctionDocumentation
-  functionName="adc.setDataRate()"
-  description="Sets the output data rate (samples per second). Lower rates give less noise; higher rates give faster updates"
-  returnDescription="None"
-  parameters={[
-  { type: 'uint8_t', name: 'rate', description: "Data rate: ADS1219_DR_20 (20 SPS), ADS1219_DR_90 (90 SPS), ADS1219_DR_330 (330 SPS), ADS1219_DR_1000 (1000 SPS)" },
-  ]}
-/>
-
-<FunctionDocumentation
-  functionName="adc.setInputMultiplexer()"
-  description="Selects which input channel or differential pair is routed to the ADC"
-  returnDescription="None"
-  parameters={[
-  { type: 'uint8_t', name: 'mux', description: "Input selection: ADS1219_MUX_SINGLE_0-3 for single-ended channels, ADS1219_MUX_DIFF_0_1 / ADS1219_MUX_DIFF_2_3 for differential pairs" },
-  ]}
-/>
-
-<FunctionDocumentation
-  functionName="adc.setVoltageReference()"
-  description="Selects the voltage reference source used for conversion"
-  returnDescription="None"
-  parameters={[
-  { type: 'uint8_t', name: 'ref', description: "ADS1219_VREF_INTERNAL for the built-in 2.048 V reference, ADS1219_VREF_EXTERNAL to use REFP/REFN pins" },
-  ]}
-/>
 
 <FunctionDocumentation
   functionName="adc.setConversionMode()"
-  description="Sets the conversion mode. In continuous mode the ADC converts back-to-back without needing a new trigger for each sample"
-  returnDescription="None"
+  description="Sets the conversion mode. In continuous mode, the ADC converts back-to-back at the configured data rate without needing startSync() called again for each sample."
+  returnDescription="Boolean value, true on success."
   parameters={[
-  { type: 'uint8_t', name: 'mode', description: "ADS1219_CM_SINGLE for single-shot mode, ADS1219_CM_CONTINUOUS for continuous mode" },
+  { type: 'ads1219_conv_mode_t', name: 'mode', description: "ADS1219_MODE_SINGLE_SHOT for one conversion per startSync() call, ADS1219_MODE_CONTINUOUS for back-to-back conversions." },
   ]}
 />
 
 <FunctionDocumentation
-  functionName="adc.start()"
-  description="Sends the START/SYNC command to begin conversions. In continuous mode, conversions run automatically after this call"
-  returnDescription="None"
+  functionName="adc.startSync()"
+  description="Starts or restarts conversions. In continuous mode, one call is enough to start the ongoing sequence - it doesn't need to be called again before each result."
+  returnDescription="Boolean value, true on success."
   parameters={[]}
 />
 
----
+<InfoBox>Since the default data rate is **20 SPS**, results come in relatively slowly out of the box (once every 50 ms). Combine this with `setDataRate()` from the next page if you need faster updates.</InfoBox>
 
-## Reading Data
+Open the **Serial Monitor** at **115200 baud** to see a steady stream of readings, without needing to trigger each one yourself.
 
-In the `loop()` function, wait for the DRDY flag and read each new result:
-
-```cpp
-void loop()
-{
-    // Wait until a new conversion result is ready
-    if (adc.isDataReady())
-    {
-        long raw = adc.readData();
-        float voltage = adc.toVoltage(raw);
-
-        Serial.print("Raw: ");
-        Serial.print(raw);
-        Serial.print("  Voltage: ");
-        Serial.print(voltage, 6);
-        Serial.println(" V");
-    }
-}
-```
-
-<CenteredImage src="/img/ads1219/readings.png" alt="Serial monitor output" caption="Serial monitor" width="100%" />
-
-<FunctionDocumentation
-  functionName="adc.isDataReady()"
-  description="Checks whether a new conversion result is available by reading the DRDY status"
-  returnDescription="Boolean value, true if a new result is ready to be read"
-  parameters={[]}
+<QuickLink
+  title="Continuous.ino"
+  description="Full continuous-conversion example for the ADS1219 24-bit ADC"
+  url="https://github.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/blob/main/examples/Continuous/Continuous.ino"
 />
-
-<FunctionDocumentation
-  functionName="adc.readData()"
-  description="Reads the latest 24-bit conversion result from the DATA register"
-  returnDescription="Long (int32_t) value, the signed raw ADC result"
-  parameters={[]}
-/>
-
-<FunctionDocumentation
-  functionName="adc.toVoltage()"
-  description="Converts a raw 24-bit ADC result to a voltage in volts, based on the configured gain and voltage reference"
-  returnDescription="Float value, the measured voltage in Volts"
-  parameters={[
-  { type: 'long', name: 'raw', description: "The signed raw ADC value returned by readData()" },
-  ]}
-/>
-
----
-
-## Full example
-
-You can find the full sketch below:
-
-<QuickLink  
-  title="Interrupt.ino"  
-  description="An example of reading ADC values using the interrupt (DRDY) pin with the ADS1219"  
-  url="https://github.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/blob/main/examples/Interrupt/Interrupt.ino"  
-/>
-
-
-
-
-
-
-
-
-
-
-

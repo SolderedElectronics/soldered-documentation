@@ -14,7 +14,7 @@ The ADS1219 is a precision **24-bit delta-sigma analog-to-digital converter (ADC
 
 ## Datasheet
 
-For an in-depth look at technical specifications, refer to the official ADS1219 Datasheet:
+For an in-depth look at technical specifications, see the official ADS1219 Datasheet:
 
 <QuickLink  
   title="ADS1219 Datasheet"  
@@ -30,7 +30,7 @@ The **ADS1219** is a **delta-sigma (ΔΣ) analog-to-digital converter** that ach
 
 <CenteredImage src="/img/ads1219/flowchart.png" alt="ADS1219 Operating Flow Chart" caption="ADS1219 Operating Flow Chart (Figure 33)" width="600px" />
 
-The device accepts up to **four input channels (AIN0-AIN3)** that can be routed to the internal multiplexer in various **differential or single-ended configurations**. The selected input signal passes through a **programmable gain amplifier (PGA)**, which supports gains of **1, 2, 4, and 8**, effectively scaling the input range to make the best use of the ADC's full dynamic range.
+The device accepts up to **four input channels (AIN0-AIN3)** that can be routed to the internal multiplexer in various **differential or single-ended configurations**. The selected input signal passes through a **programmable gain amplifier (PGA)**, which supports gains of **1 and 4**, effectively scaling the input range to make the best use of the ADC's full dynamic range.
 
 After amplification, the signal enters the **delta-sigma modulator**, which oversamples the input at a high internal clock rate and produces a 1-bit data stream. A **digital decimation filter** processes this stream and outputs a final 24-bit result at the selected data rate (**20, 90, 330, or 1000 SPS**). This oversampling and filtering is what gives the ADS1219 its low noise and high resolution.
 

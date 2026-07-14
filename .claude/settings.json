@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\" branch --show-current)",
+      "Bash(git -C \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\" status --short)",
+      "WebFetch(domain:www.ti.com)",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Soldered-ADS1219-Arduino-Library/git/trees/main?recursive=true\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/main/src/ADS1219-SOLDERED.h\")"
+    ]
+  }
+}

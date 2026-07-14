@@ -19,7 +19,8 @@ Click [**here**](/img/ads1219/pinout.png) for a high-resolution image of the pin
 | Pin Marking  | Pin Name         | Description                                                              |
 | ------------ | ---------------- | ------------------------------------------------------------------------ |
 | **GND**      | Ground           | Common ground for power and signals.                                     |
-| **VCC**      | Power            | Supply voltage (both 5V and 3V3 are supported).                          |
+| **VCC**      | Power            | Supply voltage, 2.3V to 5.5V (both 5V and 3V3 systems are supported directly).  |
+| **AVDD**     | Power            | Analog supply for the ADS1219. Tied to VCC by default through jumper **JP2** - cut it to feed a separate, cleaner analog supply instead. |
 | **SDA**      | Data             | I2C data line for communication.                                         |
 | **SCL**      | Clock            | I2C clock line for communication.                                        |
 | **AIN0**     | Analog Input 0   | Analog input channel 0.                                                  |
@@ -31,7 +32,7 @@ Click [**here**](/img/ads1219/pinout.png) for a high-resolution image of the pin
 | **REFN**     | Reference -      | Negative terminal for external voltage reference input (optional).       |
 | **RESET**    | Reset            | Active-low reset input; pull low to reset the device.                    |
 
-<InfoBox>This breakout board operates at **3.3V logic level**, but includes an onboard regulator for **5V compatibility** so it can be connected to both 3V3 and 5V logic boards!</InfoBox>
+<InfoBox>The ADS1219 accepts a supply voltage anywhere from **2.3V to 5.5V** directly, no onboard regulator needed - so it works the same whether you power it at 3.3V or 5V.</InfoBox>
 
 ---
 
@@ -80,6 +81,7 @@ This board contains hardware jumpers; see below for their locations and function
 <FlickityCarousel
   images={[
     { src: '/img/ads1219/jp1.JPG', alt: 'ads1219 jumper 1', caption: 'JP1' },
+    { src: '/img/ads1219/JP2.JPG', alt: 'ads1219 jumper 2', caption: 'JP2' },
   ]}
   jumpers={true}
 />
@@ -87,6 +89,9 @@ This board contains hardware jumpers; see below for their locations and function
 | Jumper  | Default State            | Function                                                                        |
 | ------- | ------------------------ | ------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to VCC** for I2C communication.           |
+| **JP2** | **NC** (Normally closed) | Connects **AVDD to VCC**. Cut to supply AVDD separately for a cleaner analog reference. |
+
+<InfoBox>The board also has eight additional jumper pads (JP3-JP10) dedicated to I2C address selection - see [**Address Selection**](#address-selection) below.</InfoBox>
 
 ---
 
