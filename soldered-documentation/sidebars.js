@@ -758,6 +758,10 @@ const sidebars = {
                   type: 'doc',
                   id: 'sensors/bhi-385-smart-imu-breakout/arduino_library/bhi-385-smart-imu-breakout-arduino-6',
                 },
+                {
+                  type: 'doc',
+                  id: 'sensors/bhi-385-smart-imu-breakout/arduino_library/bhi-385-smart-imu-breakout-arduino-7',
+                },
               ],
             },
           ],

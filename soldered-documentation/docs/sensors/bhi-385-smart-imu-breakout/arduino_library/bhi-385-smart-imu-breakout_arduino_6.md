@@ -1,143 +1,102 @@
 ---
-slug: /bhi-385-smart-imu-breakout/arduino/troubleshooting
-title: BHI385 Smart IMU - Troubleshooting
-sidebar_label: Troubleshooting
+slug: /bhi-385-smart-imu-breakout/arduino/step-counter-tap-detection
+title: BHI385 Smart IMU - Step Counter and Multi-Tap Detection
+sidebar_label: Step Counter and Multi-Tap
 id: bhi-385-smart-imu-breakout-arduino-6
 hide_title: false
-pagination_next: null
 ---
 
-<ExpandableSection title="begin() returns false - sensor not found">
+This page covers the BHI385's activity recognition sensors: the cumulative step counter and the multi-tap gesture detector.
 
-The most common reason `begin()` fails is that the BHI385 is not reachable on the I2C bus.
+---
 
-#### Check your wiring
-Make sure the Qwiic/easyC cable is fully seated on both ends. Try a different cable, or wiggle the connector gently. A loose fit is a frequent culprit. If you are wiring manually, confirm that SDA and SCL are not swapped.
+## Step counter
 
-#### Check the I2C pins on your board
-Different microcontrollers assign I2C to different pin numbers. Consult your board's pinout diagram and make sure you are using the correct SDA and SCL pins. On Dasduino boards, the Qwiic port handles this automatically.
-
-#### Scan the I2C bus
-Upload the [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) to confirm the BHI385 appears on the bus. It will show up at **0x28** or **0x29** depending on the state of the ADDR solder jumper on the breakout.
-
-#### Verify the I2C address in your code
-The library defaults to **0x29** (`BHI385_I2C_ADDR_HIGH`). If the ADDR jumper on your breakout is set to the low position, pass `BHI385_I2C_ADDR_LOW` (0x28) as the first argument to `begin()`:
+The step counter virtual sensor uses an adaptive pedometer algorithm in the firmware to count footsteps cumulatively. The count increments automatically as the sensor detects walking or running patterns; it resets to zero on power-off.
 
 ```cpp
-imu.begin(BHI385_I2C_ADDR_LOW);
-```
-
-#### Power the board at 3.3 V
-The BHI385 operates at 3.3 V. Driving it from a 5 V supply without level shifting may prevent the chip from responding or damage it. The on-board regulator handles conversion when powered through the Qwiic connector.
-
-</ExpandableSection>
-
-<ExpandableSection title="loadFirmware() fails or hangs">
-
-The BHI385 has no internal flash. Firmware must be uploaded into program RAM on every power-on. Several things can cause this step to fail.
-
-#### Make sure the firmware header is in your sketch folder
-The firmware binary is distributed by Bosch Sensortec as part of their **BHI385 SensorAPI** package and is **not** included in the Soldered library. Download it from [Bosch Sensortec's GitHub](https://github.com/boschsensortec/BHI385_SensorAPI), locate the `BHI385_firmware.h` file inside the `firmware/` folder, and copy it into the same folder as your `.ino` file. Include it with:
-
-```cpp
-#include "BHI385_firmware.h"
-```
-
-Without this file, `loadFirmware()` cannot be called at all and will not compile.
-
-#### Enable debug output to see what fails
-Call `imu.enableDebug()` before `loadFirmware()` and open the Serial Monitor at 115200 baud. The library will print every stage of the upload (byte count, CRC check result, and boot status) so you can pinpoint exactly where it stops.
-
-#### Increase the I2C clock speed
-The firmware binary is large and is sent over I2C in 28-byte chunks. At the default 100 kHz clock speed this can take many seconds and occasionally causes a timeout. Setting the clock to 400 kHz before calling `begin()` speeds up the upload significantly and reduces the chance of a timeout:
-
-```cpp
-Wire.setClock(400000);
-imu.begin(BHI385_I2C_ADDR_HIGH);
-```
-
-#### Note on ESP32-based boards and RAM
-On ESP32-based boards (including NULA DeepSleep), the library copies the firmware to a RAM staging buffer before uploading it over I2C, because the ESP32's Wire DMA cannot read directly from flash. This means the firmware binary must fit in available heap. If you see a crash immediately after calling `loadFirmware()` on an ESP32, check your heap with `ESP.getFreeHeap()` before the call. You need enough free heap for the firmware array plus the rest of your sketch.
-
-</ExpandableSection>
-
-<ExpandableSection title="Virtual sensors enabled but update() never delivers new data">
-
-If `begin()` and `loadFirmware()` both succeed, but your loop never gets new readings, the issue is usually in how sensors are enabled or how `update()` results are checked.
-
-#### Make sure you call the correct enable function before loop()
-Each virtual sensor must be explicitly enabled in `setup()` after firmware is loaded. If you skip this step, the FIFO will never carry events for that sensor type:
-
-```cpp
-imu.enableAccelerometer(100.0f, BHI385_ACCEL_8G);
-imu.enableGyroscope(100.0f, BHI385_GYRO_2000DPS);
-```
-
-#### Check *Updated() flags after every update() call
-`update()` returns `true` even when the FIFO contained no new events for a particular sensor. Always gate your reads behind the corresponding flag:
-
-```cpp
-if (imu.update())
+void setup()
 {
-    if (imu.accelUpdated())
-    {
-        // safe to call getAccelX() etc. here
-    }
+    // ... begin() and loadFirmware() as above ...
+
+    imu.enableStepCounter(100.0f);
 }
-```
 
-If you call `getAccelX()` without checking `accelUpdated()`, you will read the last known value, which may be zero if no data has arrived yet.
-
-#### Do not block between update() calls
-Any `delay()` longer than one FIFO drain interval can cause the FIFO to overflow and drop events. Keep the main loop tight, or reduce the sensor output data rate to match your loop timing.
-
-</ExpandableSection>
-
-<ExpandableSection title="Readings are always zero or repeat the same value">
-
-If you get readings, but they never change or are always exactly zero, the likely cause is stale flags.
-
-#### Call clearUpdatedFlags() at the end of each loop iteration
-After processing data from a single `update()` cycle, call `imu.clearUpdatedFlags()`. Without this, the `*Updated` flags from the previous cycle remain set, and your code will act on stale data instead of waiting for fresh events:
-
-```cpp
 void loop()
 {
     if (imu.update())
     {
-        if (imu.accelUpdated())
+        if (imu.stepUpdated())
         {
-            Serial.println(imu.getAccelX());
+            Serial.print("Steps: ");
+            Serial.println(imu.getStepCount());
         }
-        imu.clearUpdatedFlags(); // must be here
+        imu.clearUpdatedFlags();
+    }
+    delay(100);
+}
+```
+<CenteredImage src="/img/bhi-385-smart-imu-breakout/step-counter-serial.png" alt="Serial monitor Step Counter readings" caption="Serial monitor Step Counter output" width="80%" />
+
+<FunctionDocumentation
+  functionName="imu.enableStepCounter()"
+  description="Enables the low-power step counter virtual sensor. The firmware increments the cumulative step count each time a footstep-like acceleration signature is detected. The count persists across enable/disable cycles but resets on power-off."
+  returnDescription="true if the sensor was configured successfully"
+  parameters={[
+    { type: 'float', name: 'rateHz', description: 'Sensor update rate in Hz. Default: 100.0f' },
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="imu.getStepCount()"
+  description="Returns the current cumulative step count as reported by the firmware step counter. Valid after update() returns with stepUpdated() true."
+  returnDescription="Cumulative step count as uint32_t"
+  parameters={[]}
+/>
+
+---
+
+## Multi-tap detection
+
+The multi-tap sensor detects sharp, brief acceleration impulses and classifies them as single, double, or triple taps. You configure which tap types to detect via a bitmask before enabling the sensor.
+
+```cpp
+void setup()
+{
+    // ... begin() and loadFirmware() as above ...
+
+    // Detect double taps only
+    imu.enableMultiTapDetect(BHI385_TAP_DOUBLE, 100.0f);
+}
+
+void loop()
+{
+    if (imu.update())
+    {
+        if (imu.tapUpdated())
+        {
+            if (imu.getTapType() == BHI385_TAP_SINGLE)  Serial.println("Single tap!");
+            if (imu.getTapType() == BHI385_TAP_DOUBLE)  Serial.println("Double tap!");
+            if (imu.getTapType() == BHI385_TAP_TRIPLE)  Serial.println("Triple tap!");
+        }
+        imu.clearUpdatedFlags();
     }
 }
 ```
 
-#### Verify that the correct sensor is enabled
-Double-check that the `enable*()` call in `setup()` matches the getter you are calling in `loop()`. For example, enabling only `enableStepCounter()` and then calling `getAccelX()` will always return zero because the accelerometer virtual sensor was never started.
+<FunctionDocumentation
+  functionName="imu.enableMultiTapDetect()"
+  description="Enables the multi-tap detection virtual sensor. Writes the tap-type bitmask to the firmware parameter page before activating the sensor, so only the requested tap types generate events. Use BHI385_TAP_ALL to detect single, double, and triple taps simultaneously."
+  returnDescription="true if the parameter write and sensor configuration both succeeded"
+  parameters={[
+    { type: 'uint8_t', name: 'tapMask', description: 'OR-combined bitmask of tap types to detect: BHI385_TAP_SINGLE (1), BHI385_TAP_DOUBLE (2), BHI385_TAP_TRIPLE (4), or BHI385_TAP_ALL (7). Default: BHI385_TAP_ALL' },
+    { type: 'float', name: 'rateHz', description: 'Sensor update rate in Hz. Default: 100.0f' },
+  ]}
+/>
 
-</ExpandableSection>
-
-<ExpandableSection title="Gyroscope drifts or accelerometer readings are inaccurate">
-
-Some variation in raw readings is expected, but unusually high drift or offset usually has a physical or configuration cause.
-
-#### Keep the board still during the first few seconds after power-on
-The BHI385 firmware runs an automatic bias-calibration routine when it first boots. Moving the board during this window can corrupt the initial calibration and cause persistent drift. Let the board sit flat and motionless for 2-3 seconds after `loadFirmware()` returns before collecting data.
-
-#### Reduce the full-scale range if your application does not need the maximum
-Choosing a wider range (e.g. `BHI385_GYRO_2000DPS`) reduces resolution at low angular velocities. If your project measures gentle motion, switch to a narrower range:
-
-```cpp
-imu.enableGyroscope(100.0f, BHI385_GYRO_125DPS);
-```
-
-Similarly for the accelerometer, prefer `BHI385_ACCEL_4G` over `BHI385_ACCEL_32G` if you do not expect large accelerations.
-
-#### Check for mechanical vibration from nearby components
-The BHI385 is sensitive to vibration. If the breakout is mounted near a motor, fan, or buzzer, structural vibration will appear as noise on both the accelerometer and gyroscope. Mount the board on a vibration-isolated surface or add low-pass filtering in software.
-
-</ExpandableSection>
-
-<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+<FunctionDocumentation
+  functionName="imu.getTapType()"
+  description="Returns the tap type reported in the most recent multi-tap event. Matches one of the bhi385TapType enum values: BHI385_TAP_SINGLE, BHI385_TAP_DOUBLE, or BHI385_TAP_TRIPLE. Valid after update() returns with tapUpdated() true."
+  returnDescription="Tap type as uint8_t (bhi385TapType enum value)"
+  parameters={[]}
+/>

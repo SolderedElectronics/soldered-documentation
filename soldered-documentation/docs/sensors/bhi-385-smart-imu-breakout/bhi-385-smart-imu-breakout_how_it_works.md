@@ -26,7 +26,7 @@ For full electrical specifications, register maps, and firmware protocol details
 
 ## How the Smart IMU works
 
-The BHI385 integrates a **6-DOF MEMS inertial unit** (a 3-axis capacitive accelerometer and a 3-axis MEMS gyroscope) alongside a **Fuser2 processor (Synopsys ARC EM4)** inside a single 2.5 × 3.0 mm LGA package. The accelerometer converts physical acceleration into a differential capacitance signal: a proof mass suspended by spring structures shifts position when the chip accelerates, and the capacitance between that mass and fixed electrodes changes in proportion. The gyroscope uses the Coriolis effect: a vibrating structure deflects perpendicular to its oscillation axis when the chip rotates, and that deflection is sensed capacitively. Both signals are digitised by internal ADCs and passed to the Fuser2 core for processing.
+While traditional IMUs rely entirely on a host processor to crunch sensor data, the BHI385 handles everything locally on the chip itself hence Smart in the name. It has accelerometer that converts physical acceleration into a differential capacitance signal: a proof mass suspended by spring structures shifts position when the chip accelerates, and the capacitance between that mass and fixed electrodes changes in proportion. The gyroscope uses the Coriolis effect: a vibrating structure deflects perpendicular to its oscillation axis when the chip rotates, and that deflection is sensed capacitively. Both signals are digitised by internal ADCs and passed to the Fuser2 core for processing.
 
 <CenteredImage
   src="/img/bhi-385-smart-imu-breakout/coriolis.webp"
@@ -50,4 +50,4 @@ The BHI385 uses **I2C** at a default address of **0x29** (HSDO tied high) or **0
 
 Unlike most I2C sensors, the BHI385 does not use a register map for sensor data. All readings and events are delivered through an internal FIFO system. The library's `update()` call drains the FIFOs and dispatches each event to the appropriate data field, so you never need to manage the underlying communication yourself.
 
-<InfoBox>The BHI385 also has an interrupt output (**HIRQ**) that asserts when new FIFO data is available. This board exposes the HIRQ signal on the **INT** pin of the 2-pin header, making it straightforward to wire a hardware interrupt to your Dasduino and avoid polling entirely.</InfoBox>
+<InfoBox>The BHI385 also has an interrupt output (**HIRQ**) that asserts when new FIFO data is available. This board exposes the HIRQ signal on the **INT** pin of the 2-pin header, making it straightforward to wire a hardware interrupt to your Nula board and avoid polling entirely.</InfoBox>

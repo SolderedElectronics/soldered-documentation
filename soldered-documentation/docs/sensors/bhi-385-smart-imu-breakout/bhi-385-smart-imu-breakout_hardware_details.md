@@ -38,6 +38,15 @@ hide_title: false
 
 ---
 
+## Dimensions
+
+- **Board Dimensions:** 22 × 22 mm (0.87 × 0.87 in)
+- **Header Pin Holes:** 1.5 mm
+- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
+- Soldered boards are LEGO compatible! 🧱
+
+---
+
 ## Jumper Details
 
 This board contains hardware jumpers; see below for their locations and functions:
@@ -51,23 +60,6 @@ This board contains hardware jumpers; see below for their locations and function
 | **JP3** | **NO** (Normally open)   | Connects the **3.3V rail to the input of the onboard LDO regulator**. Bridge to power the LDO from 3V3; leave open to isolate the regulator input.   |
 | **JP4** | **NC** (Normally closed) | Connects the **EN pin** of the onboard regulator to the 3.3V rail, enabling the regulator.                                                    |
 | **JP5** | **0x29**                 | Selects the **I2C address**: bridge towards **0x29** (HSDO = VDDIO, default) or **0x28** (HSDO = GND).                                               |
-
----
-
-## Dimensions
-
-- **Board Dimensions:** 22 × 22 mm (0.87 × 0.87 in)
-- **Header Pin Holes:** 1.5 mm
-- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
-- Soldered boards are LEGO compatible! 🧱
-
----
-
-## BHI385 Smart IMU
-
-The BHI385 is a programmable Smart IMU from Bosch Sensortec that integrates a 6-DoF MEMS inertial measurement unit with an internal 32-bit Fuser2 microcontroller core (based on the Synopsys ARC EM4 architecture). On this breakout, it is powered from the onboard 1.8V LDO regulator and communicates with the host over a level-shifted I2C bus. Because the BHI385 has no persistent internal flash, the host microcontroller must upload the firmware binary to the chip's program RAM on every power-on before any virtual sensors can be activated.
-
-<ErrorBox>The image of BHI385 on the board hasn't been generated yet! We're working on it!</ErrorBox>
 
 ---
 

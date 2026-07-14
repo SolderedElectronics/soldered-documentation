@@ -1,94 +1,54 @@
 ---
-slug: /bhi-385-smart-imu-breakout/arduino/accelerometer-gyroscope
-title: BHI385 Smart IMU - Accelerometer and Gyroscope
-sidebar_label: Accelerometer and Gyroscope
+slug: /bhi-385-smart-imu-breakout/arduino/firmware-types
+title: Firmware variants
+sidebar_label: Firmware variants
 id: bhi-385-smart-imu-breakout-arduino-3
 hide_title: false
+pagination_next: null
 ---
 
-The corrected accelerometer and gyroscope virtual sensors deliver bias-corrected acceleration (in g) and angular velocity (in deg/s).
+The BHI385 IMU chip can handle processing directly on-board, which is why Bosch Sensortec offers several firmware variants tailored for different projects. You can find the full list of firmware versions in their [**GitHub repository**](https://github.com/boschsensortec/BHI385_SensorAPI/tree/master/firmware/bhi385).
 
 ---
 
-## Reading accelerometer and gyroscope
+## Understanding the Firmware Names
 
-After initialization, enable the accelerometer and gyroscope, then call `update()` in your loop. Check `accelUpdated()` or `gyroUpdated()` before reading to confirm that new data arrived in the latest FIFO drain.
+Here is how to read a firmware file name, using `Bosch_Shuttle3_BHI385_BMM350C_bsxsam_ndof.fw.h` as an example:
 
-```cpp
-void setup()
-{
-    // ... begin() and loadFirmware() as above ...
+- `Bosch_Shuttle3_BHI385`: Designed for the Bosch Shuttle Board 3.0 with the BHI385 as the primary sensor.
+- `_BMM350C` (or BMP58X, BME688): Supports external slave sensors connected directly to the BHI385.
+- `_bsxsam` (or `*_lite`, `*_turbo`, `*_lite_Klio`): Includes the full Bosch BSX Sensor Fusion library. It does all the math to turn raw sensor data into clean, usable physical orientation tracking.
+  <InfoBox>`*_Klio` offers the Klio machine learning engine to learn repetitive motions and recognize activities, like gym exercises.</InfoBox>
+- `_ndof`: N-degrees of Freedom. This usually means 9-DoF absolute orientation fusion if you connect the BMM350 magnetometer.
+- `.fw.h` (.fw): A C/C++ header version of the binary file, wrapped in a `const unsigned char` array so you can include it directly in your Arduino or embedded projects.
 
-    imu.enableAccelerometer(100.0f, BHI385_ACCEL_8G);  // 100 Hz, ±8 g
-    imu.enableGyroscope(100.0f, BHI385_GYRO_2000DPS);  // 100 Hz, ±2000 deg/s
-}
+---
 
-void loop()
-{
-    if (imu.update())
-    {
-        if (imu.accelUpdated())
-        {
-            Serial.print("Accel X: "); Serial.print(imu.getAccelX(), 4); Serial.print(" g  ");
-            Serial.print("Y: ");       Serial.print(imu.getAccelY(), 4); Serial.print(" g  ");
-            Serial.print("Z: ");       Serial.println(imu.getAccelZ(), 4);
-        }
-        if (imu.gyroUpdated())
-        {
-            Serial.print("Gyro  X: "); Serial.print(imu.getGyroX(), 2); Serial.print(" dps  ");
-            Serial.print("Y: ");       Serial.print(imu.getGyroY(), 2); Serial.print(" dps  ");
-            Serial.print("Z: ");       Serial.println(imu.getGyroZ(), 2);
-        }
-        imu.clearUpdatedFlags();
-    }
-    delay(20);
-}
-```
+## Choosing the Right Firmware
 
-<FunctionDocumentation
-  functionName="imu.enableAccelerometer()"
-  description="Enables the corrected accelerometer virtual sensor at the specified output data rate and dynamic range. The firmware applies bias removal and calibration to the raw accelerometer counts before delivering them to the FIFO."
-  returnDescription="true if the sensor was configured successfully"
-  parameters={[
-    { type: 'float', name: 'rateHz', description: 'Output data rate in Hz (e.g. 100.0f). Default: 100.0f' },
-    { type: 'bhi385AccelRange', name: 'range', description: 'Dynamic range - BHI385_ACCEL_4G, BHI385_ACCEL_8G (default), BHI385_ACCEL_16G, or BHI385_ACCEL_32G' },
-  ]}
-/>
+You can change the BHI385's firmware depending on what your project needs.
 
-<FunctionDocumentation
-  functionName="imu.enableGyroscope()"
-  description="Enables the corrected gyroscope virtual sensor at the specified output data rate and full-scale range. The firmware applies bias correction before outputting angular velocity."
-  returnDescription="true if the sensor was configured successfully"
-  parameters={[
-    { type: 'float', name: 'rateHz', description: 'Output data rate in Hz. Default: 100.0f' },
-    { type: 'bhi385GyroRange', name: 'range', description: 'Full-scale range - BHI385_GYRO_125DPS, BHI385_GYRO_250DPS, BHI385_GYRO_500DPS, BHI385_GYRO_1000DPS, or BHI385_GYRO_2000DPS (default)' },
-  ]}
-/>
+| Firmware variant | Use when...                                                                               |
+| ---------------- | :---------------------------------------------------------------------------------------- |
+| bsxsam_lite      | You only need accelerometer and gyroscope. It saves the most memory (smallest footprint). |
+| bsxsam           | You want accelerometer and gyroscope data combined with full BSX sensor fusion.           |
+| bsxsam_turbo     | You need a high output data rate (up to 800 Hz) with BSX fusion.                          |
+| bsxsam_lite_Klio | You need accelerometer, gyroscope, and Klio motion pattern recognition.                   |
 
-<FunctionDocumentation
-  functionName="imu.update()"
-  description="Reads and parses all pending data from both the wake-up and non-wake-up FIFOs, updating internal accelerometer, gyroscope, quaternion, step, gesture, and tap fields. Sets the corresponding *Updated flags for any sensor events found. Also drains the STATUS FIFO to prevent overflow. Call this regularly in loop()."
-  returnDescription="true if the FIFO read completed (even if no sensor events were present)"
-  parameters={[]}
-/>
+---
 
-<FunctionDocumentation
-  functionName="imu.getAccelX() / getAccelY() / getAccelZ()"
-  description="Returns the most recently parsed accelerometer reading for the given axis, in units of g (gravitational acceleration). Values are only valid after update() has returned with accelUpdated() true."
-  returnDescription="Acceleration in g as a float"
-  parameters={[]}
-/>
+## Writing Your Own Firmware
 
-<FunctionDocumentation
-  functionName="imu.getGyroX() / getGyroY() / getGyroZ()"
-  description="Returns the most recently parsed gyroscope reading for the given axis, in degrees per second (dps). Values are only valid after update() has returned with gyroUpdated() true."
-  returnDescription="Angular velocity in deg/s as a float"
-  parameters={[]}
-/>
+Why write custom firmware? You might want to create your own firmware if you need to:
 
-<FunctionDocumentation
-  functionName="imu.clearUpdatedFlags()"
-  description="Clears all *Updated flags (accelUpdated, gyroUpdated, quatUpdated, stepUpdated, wristGestureUpdated, tapUpdated). Call after processing data from a single update() cycle to avoid acting on stale flags in the next iteration."
-  returnDescription="None"
-  parameters={[]}
-/>
+- **Create a virtual sensor**: Calculate specific metrics directly on the chip, like golf swing angles or precise vibration patterns.
+- **Connect unsupported hardware**: Write custom drivers for new external sensors connected to the BHI385's master I2C or SPI pins.
+- **Free up your main microcontroller**: Move heavy math and filtering from your ESP32 or STM32 to run entirely inside the low-power BHI385.
+
+To build your own firmware, you will need Bosch's official development tools:
+
+1. **Bosch BHI3xx SDK (Software Development Kit)**: A C-based development kit with the framework, RTOS headers, and drivers.
+2. **ARC GNU Toolchain**: Required because the BHI385 runs on a Synopsys ARC EM4 architecture. You can download it [**here**](https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases).
+3. **Bosch Motion AI Studio**: Use this to design, train, and run custom machine learning models (like gesture recognition) directly on the sensor.
+
+For a step-by-step guide, check out the [**BHI3xx SDK Quick Start Guide**](https://www.bosch-sensortec.com/media/boschsensortec/downloads/application_notes_1/bst-bhi3xx-an000.pdf).
