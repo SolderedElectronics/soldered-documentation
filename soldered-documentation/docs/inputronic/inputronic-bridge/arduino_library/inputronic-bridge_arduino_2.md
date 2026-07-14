@@ -1,12 +1,12 @@
 ---
 slug: /inputronic-bridge/arduino/examples 
-title: Inputronic BRIDGE - Example usage with Arduino
-sidebar_label: Example usage with Arduino
+title: Inputronic BRIDGE - Basic example
+sidebar_label: Basic example
 id: inputronic-bridge-arduino-2 
 hide_title: False
 ---
 
-This page contains a simple example of how to poll and read standard USB events (like Keyboard and Mouse inputs) from the **Inputronic BRIDGE** using the I2C protocol.
+This page shows a basic example of how to poll and read standard USB events (like Keyboard and Mouse inputs) from the **Inputronic BRIDGE** using the I2C protocol.
 
 <CenteredImage src="/img/inputronic-bridge/bridge_example.JPG" alt="Module connection using qwiic cable" caption="Module connection using qwiic cable" />
 
@@ -192,7 +192,7 @@ void loop()
 }
 ```
 <FunctionDocumentation
-functionName="parser.begin(CommProtocol p, TwoWire &wire)"
+functionName="parser.begin()"
 description="Initializes the Inputronic BRIDGE parser and establishes communication."
 returnDescription="Returns true if initialization is successful, false otherwise."
 parameters={[
@@ -202,7 +202,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="parser.configureI2c(uint8_t address)"
+functionName="parser.configureI2c()"
 description="Sets the I2C address for the BRIDGE module. Should be called before begin()."
 returnDescription="None"
 parameters={[

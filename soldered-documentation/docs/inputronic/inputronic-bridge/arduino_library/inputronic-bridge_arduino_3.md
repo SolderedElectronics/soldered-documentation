@@ -1,49 +1,122 @@
 ---
-slug: /inputronic-bridge/arduino/troubleshooting 
-title: Troubleshooting
-id: inputronic-bridge-arduino-3 
+slug: /inputronic-bridge/arduino/interrupt-events
+title: Inputronic BRIDGE - Interrupt-driven reading
+sidebar_label: Interrupt-driven reading
+id: inputronic-bridge-arduino-3
 hide_title: False
-pagination_next: null
 ---
-This page contains some tips in case you are having problems using this product.
 
-<ExpandableSection title="The communication won't initialize!">
+The basic example calls `pollEvents()` on every `loop()` iteration, which runs a bus transaction even when no new input has arrived. The BRIDGE can instead notify the host only when data is ready. When you enable interrupt mode, the BRIDGE pulses its `INT` pin as soon as a new HID event is parsed, and `pollEvents()` returns immediately without any bus traffic until that pin fires.
 
-#### Check your wiring
-Ensure that the Inputronic BRIDGE is correctly wired to your microcontroller:
-* For **I2C**: Ensure the Qwiic (formerly easyC) cable is properly seated or SDA/SCL pins are correctly connected. 
-* For **UART**: Ensure RX is connected to TX, and TX is connected to RX.
-* For **SPI**: Verify MOSI, MISO, CLK, and CS pin connections.
-* Verify that **GND** and **3V3** are securely connected to a stable power source.
+---
 
-#### Check protocol jumpers (JP3 & JP4)
-The active communication protocol is determined by the onboard hardware jumpers. If you are initializing the library in SPI mode but the jumpers are left open (defaulting to I2C), the board will not respond.
-* **I2C:** Leave JP3 and JP4 open.
-* **UART / SPI:** Solder the respective jumpers as marked on the back of the board.
+## Connections for this example
 
-#### Verify I2C Address
-If using I2C, the default address is `0x50`. Ensure your code uses `parser.configureI2c(0x50)` before calling the `begin()` function.
+This example uses the same I2C connection as the basic example, with one addition: the `INT` pin of the BRIDGE is wired to a digital pin on the host.
 
-</ExpandableSection>
+| **Nula DeepSleep** | **Inputronic BRIDGE** |
+| ------------------ | --------------------- |
+| IO8                | SDA                   |
+| IO9                | SCL                   |
+| IO4                | INT                   |
 
-<ExpandableSection title="The board initializes, but I am not receiving any input data!">
+<InfoBox>Interrupt mode requires the `INT` pin of the BRIDGE to be wired to a digital pin on the host. In this example the `INT` pin is connected to `IO4` on the Nula DeepSleep. For the full connection tables, see the [Getting started](/inputronic-bridge/arduino/geting-started) page.</InfoBox>
 
-#### Check the FAULT LED
-The board features a Female USB-A connector with overcurrent protection. The maximum allowed current draw is **260mA**. If you plug in a high-power device (like a mechanical keyboard with bright RGB lighting), the protection circuit might trip. If the **FAULT LED** turns on, your USB device is drawing too much power. Try turning off the device's RGB lighting or use a simpler device.
+---
 
-#### Non-standard USB HID devices
-The Inputronic BRIDGE automatically parses standard Keyboard, Mouse, and MIDI devices. If you plugged in a proprietary device or a specialized controller, standard event parsing might not work. In this case, use the library's raw HID polling functions to receive raw USB descriptors and raw HID reports to parse them manually.
+## Enabling interrupt mode
 
-#### Check the INT pin (if using interrupt mode)
-If you are using the interrupt-driven mode instead of constant polling, verify that the **INT** pin is physically connected to your microcontroller and that you configured the correct pin in the software.
+You enable interrupt mode through the extra parameters of `begin()`. Set the enable flag to `true`, pass the host pin connected to `INT`, and set the edge: `false` for a FALLING edge, `true` for a RISING edge. Optionally, register a callback with `onDataReady()` that runs inside the interrupt service routine when the BRIDGE signals new data.
 
-</ExpandableSection>
+```cpp
+#include "Inputronic-BRIDGE.h"
 
-<ExpandableSection title="The communication bus is slow or freezing!">
+InputronicParser parser;
 
-#### Implement a delay or use interrupts
-If you are continuously polling events in a tight loop without any delays, you might be spamming the I2C or SPI bus, causing it to lock up. Try adding a small delay (e.g., 10ms) in your main loop. 
+// Host pin connected to the BRIDGE INT output.
+static const int8_t INTERRUPT_PIN = 4;
 
-For the most efficient setup, connect the **INT** pin to your host microcontroller and configure the library to use interrupt-driven event reading. This way, the host only requests data when the BRIDGE signals that new HID data is parsed and ready.
+// Flag set by the ISR callback and checked in loop().
+volatile bool newDataFlag = false;
 
-</ExpandableSection>
+// Runs inside the ISR when the BRIDGE signals new data.
+// Keep it short: no Serial or blocking calls here.
+void onBridgeDataReady()
+{
+    newDataFlag = true;
+}
+
+void setup()
+{
+    Serial.begin(115200);
+
+    Wire.begin(8, 9);
+    parser.configureI2c(0x50);
+
+    // Enable interrupt mode: enable = true, INT pin = INTERRUPT_PIN,
+    // trigger on FALLING edge (activeHigh = false).
+    if (!parser.begin(InputronicParser::PROTOCOL_I2C, Wire, true, INTERRUPT_PIN, false))
+    {
+        Serial.println("Could not connect to BRIDGE over I2C!");
+        while (true);
+    }
+
+    parser.onDataReady(onBridgeDataReady);
+
+    Serial.println("BRIDGE connected. Interrupt mode active.");
+}
+
+void loop()
+{
+    // Returns immediately without bus traffic unless the INT pin has fired.
+    auto events = parser.pollEvents();
+
+    if (events.keyboard.valid)
+    {
+        Serial.print("Keyboard: ");
+        for (uint8_t i = 0; i < events.keyboard.keyCount; i++)
+        {
+            Serial.print(events.keyboard.keys[i]);
+        }
+        Serial.println();
+    }
+
+    if (events.mouse.valid)
+    {
+        Serial.printf("Mouse X:%d Y:%d L:%d R:%d\n",
+                      events.mouse.x, events.mouse.y,
+                      events.mouse.btnLeft, events.mouse.btnRight);
+    }
+
+    if (newDataFlag)
+    {
+        newDataFlag = false;
+        // The events above already hold the latest data. Use this flag
+        // to trigger extra work when data arrives.
+    }
+}
+```
+
+<CenteredImage src="/img/inputronic-bridge/interrupt-serial-monitor.png" alt="Interrupt example output from Serial Monitor" caption="Interrupt example output from Serial Monitor" width="500px"/>
+
+<FunctionDocumentation
+functionName="parser.begin()"
+description="Initializes the parser and enables interrupt-driven polling. pollEvents() then only runs a bus transaction after the INT pin fires."
+returnDescription="Returns true if the BRIDGE responds to the connection check, false otherwise."
+parameters={[
+{ type: 'CommProtocol', name: 'p', description: "The communication protocol to use (e.g., PROTOCOL_I2C, PROTOCOL_UART, PROTOCOL_SPI)." },
+{ type: 'TwoWire &', name: 'wire', description: "Reference to the communication bus object (e.g., Wire)." },
+{ type: 'bool', name: 'enableInterrupt', description: "Set to true to enable interrupt-driven polling." },
+{ type: 'int8_t', name: 'interruptPin', description: "Host pin connected to the BRIDGE INT output." },
+{ type: 'bool', name: 'activeHigh', description: "Interrupt edge: true fires on RISING, false fires on FALLING." }
+]}
+/>
+
+<FunctionDocumentation
+functionName="parser.onDataReady()"
+description="Registers a user callback that runs inside the interrupt service routine when the BRIDGE signals new data. The callback must be short and must not call Serial or any blocking function."
+returnDescription="None"
+parameters={[
+{ type: 'void (*)()', name: 'callback', description: "Pointer to the function to call from the ISR when data is ready." }
+]}
+/>

@@ -38,19 +38,19 @@ Below are example connection diagrams for **Nula DeepSleep**. These pins will be
 The easiest way to connect the Inputronic BRIDGE to the Nula DeepSleep is using the onboard Qwiic (formerly easyC) system.
 
 | **Nula DeepSleep** | **Inputronic BRIDGE** |
-| ------------------------ | --------------------- |
-| Qwiic Connector          | Qwiic Connector       |
+| ------------------ | --------------------- |
+| Qwiic Connector    | Qwiic Connector       |
 
 <InfoBox>
 
 If you prefer, you can use the standard header pins to manually connect via I2C:
 
-| **Nula DeepSleep** | **Inputronic BRIDGE** |
-| ------------------------ | --------------------- |
-| 3V3                      | 3V3                   |
-| GND                      | GND                   |
-| IO8 (Standard SDA pin)   | SDA                   |
-| IO9 (Standard SCL pin)   | SCL                   |
+| **Nula DeepSleep**     | **Inputronic BRIDGE** |
+| ---------------------- | --------------------- |
+| 3V3                    | 3V3                   |
+| GND                    | GND                   |
+| IO8 (Standard SDA pin) | SDA                   |
+| IO9 (Standard SCL pin) | SCL                   |
 
 </InfoBox>
 
@@ -63,11 +63,11 @@ If you prefer, you can use the standard header pins to manually connect via I2C:
 If you have selected the UART protocol via the onboard jumpers (**JP3 & JP4**), use the following connections:
 
 | **Nula DeepSleep** | **Inputronic BRIDGE** |
-| ------------------------ | --------------------- |
-| 3V3                      | 3V3                   |
-| GND                      | GND                   |
-| RX                       | TX                    |
-| TX                       | RX                    |
+| ------------------ | --------------------- |
+| 3V3                | 3V3                   |
+| GND                | GND                   |
+| RX                 | TX                    |
+| TX                 | RX                    |
 
 
 ---
@@ -76,7 +76,7 @@ If you have selected the UART protocol via the onboard jumpers (**JP3 & JP4**), 
 
 If you have selected the SPI protocol via the onboard jumpers (**JP3 & JP4**), use the following connections (using standard ESP32-S3 FSPI pins):
 
-| **Nula DeepSleep** | **Inputronic BRIDGE** |
+| **Nula DeepSleep**       | **Inputronic BRIDGE** |
 | ------------------------ | --------------------- |
 | 3V3                      | 3V3                   |
 | GND                      | GND                   |
@@ -90,6 +90,6 @@ If you have selected the SPI protocol via the onboard jumpers (**JP3 & JP4**), u
 
 ### Optional Pins
 
-| **Nula DeepSleep** | **Inputronic BRIDGE** | **Description** |
-| ------------------------ | --------------------- | --------------- |
-| Any Digital Pin (e.g., IO4) | INT                | Connect for interrupt-driven event reading to save host CPU cycles. |
+| **Nula DeepSleep**          | **Inputronic BRIDGE** | **Description**                                                     |
+| --------------------------- | --------------------- | ------------------------------------------------------------------- |
+| Any Digital Pin (e.g., IO4) | INT                   | Connect for interrupt-driven event reading to save host CPU cycles. |

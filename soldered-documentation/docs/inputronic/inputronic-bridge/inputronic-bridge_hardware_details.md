@@ -12,22 +12,22 @@ Click [**here**](/img/inputronic-bridge/pinout.png) for a high-resolution image 
 
 ## Pin details
 
-| Pin Marking | Pin Name              | Description                                                                 |
-| ----------- | --------------------- | --------------------------------------------------------------------------- |
-| **3V3** | 3.3V Power            | 3.3V power supply input for logic.                                          |
-| **GND** | Ground                | Common ground for the module.                                               |
-| **SDA** | I2C Data              | I2C data line for the default communication protocol.                       |
-| **SCL** | I2C Clock             | I2C clock line for the default communication protocol.                      |
-| **RX** | UART Receive          | UART receive pin (used when UART protocol is selected).                     |
-| **TX** | UART Transmit         | UART transmit pin (used when UART protocol is selected).                    |
-| **MISO** | SPI MISO              | SPI Master In Slave Out pin (used when SPI protocol is selected).           |
-| **MOSI** | SPI MOSI              | SPI Master Out Slave In pin (used when SPI protocol is selected).           |
-| **CLK** | SPI Clock             | SPI Clock pin (used when SPI protocol is selected).                         |
-| **CS** | SPI Chip Select       | SPI Chip Select pin (used when SPI protocol is selected).                   |
-| **INT** | Interrupt Output      | Signals the host MCU when new data is ready (avoids continuous polling).    |
-| **IO0** | GPIO 0                | ESP32-S3 boot/strap pin, also available as general I/O.                     |
-| **FAULT** | Fault Indicator       | Overcurrent fault output from the USB protection switch.                    |
-| **RST** | Reset                 | Active-low reset pin for the onboard ESP32-S3.                              |
+| Pin Marking | Pin Name         | Description                                                              |
+| ----------- | ---------------- | ------------------------------------------------------------------------ |
+| **3V3**     | 3.3V Power       | 3.3V power supply input for logic.                                       |
+| **GND**     | Ground           | Common ground for the module.                                            |
+| **SDA**     | I2C Data         | I2C data line for the default communication protocol.                    |
+| **SCL**     | I2C Clock        | I2C clock line for the default communication protocol.                   |
+| **RX**      | UART Receive     | UART receive pin (used when UART protocol is selected).                  |
+| **TX**      | UART Transmit    | UART transmit pin (used when UART protocol is selected).                 |
+| **MISO**    | SPI MISO         | SPI Master In Slave Out pin (used when SPI protocol is selected).        |
+| **MOSI**    | SPI MOSI         | SPI Master Out Slave In pin (used when SPI protocol is selected).        |
+| **CLK**     | SPI Clock        | SPI Clock pin (used when SPI protocol is selected).                      |
+| **CS**      | SPI Chip Select  | SPI Chip Select pin (used when SPI protocol is selected).                |
+| **INT**     | Interrupt Output | Signals the host MCU when new data is ready (avoids continuous polling). |
+| **IO0**     | GPIO 0           | ESP32-S3 boot/strap pin, also available as general I/O.                  |
+| **FAULT**   | Fault Indicator  | Overcurrent fault output from the USB protection switch.                 |
+| **RST**     | Reset            | Active-low reset pin for the onboard ESP32-S3.                           |
 
 ---
 
@@ -44,22 +44,22 @@ images={[
 jumpers={true}
 />
 
-| Jumper Marking | Default State            | Description                                                                                       |
-| -------------- | ------------------------ | ------------------------------------------------------------------------------------------------- |
-| **JP1**        | **NC** (Normally closed) | Cut the trace to disconnect the power LED and reduce overall current consumption.                 |
-| **JP2**        | **NO** (Normally open)   | Connects onboard 3.3V pull-up resistors for the I2C bus (SDA and SCL).                            |
-| **JP3**        | **NO** (Normally open)   | Configures the output protocol. Leave open for default I2C, or solder to select UART/SPI modes.   |
-| **JP4**        | **NO** (Normally open)   | Configures the output protocol. Leave open for default I2C, or solder to select UART/SPI modes.   |
+| Jumper Marking | Default State            | Description                                                                                                                          |
+| -------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **JP1**        | **NC** (Normally closed) | Cut the trace to disconnect the power LED and reduce overall current consumption.                                                    |
+| **JP2**        | **NC** (Normally open)   | Connects the onboard 3.3V pull-up resistors for the I2C bus (SDA and SCL) by default. Cut this trace if you want to disconnect them. |
+| **JP3**        | **NO** (Normally open)   | Configures the output protocol. Leave open for default I2C, or solder to select UART/SPI modes.                                      |
+| **JP4**        | **NO** (Normally open)   | Configures the output protocol. Leave open for default I2C, or solder to select UART/SPI modes.                                      |
 
 
 <InfoBox>
 The table below shows how JP3 and JP4 configure the module's communication protocol.
-| JP3               | JP4               | Active Protocol |
-| ----------------- | ----------------- | --------------- |
-| Not connected     | Not connected     | **I2C**         |
-| Connected         | Not connected     | **UART**        |
-| Not connected     | Connected         | **UART**        |
-| Connected         | Connected         | **SPI**         |
+| JP3           | JP4           | Active Protocol |
+| ------------- | ------------- | --------------- |
+| Not connected | Not connected | **I2C**         |
+| Connected     | Not connected | **UART**        |
+| Not connected | Connected     | **UART**        |
+| Connected     | Connected     | **SPI**         |
 </InfoBox>
 
 ---
