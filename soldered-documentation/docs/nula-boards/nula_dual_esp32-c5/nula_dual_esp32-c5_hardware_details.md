@@ -47,13 +47,15 @@ Click [**here**](/img/nula_dual_esp32-c5/Pinout.png) for a high-resolution versi
 
 <InfoBox>All GPIO pins operate at **3.3 V logic** - **do not connect 5 V signals directly to GPIO pins**. Always verify signal levels before connecting external peripherals.</InfoBox>
 
+<InfoBox>**What are the LP pins?** The ESP32-C5 module on this board has two cores: the main high-performance (HP) core, which runs your Arduino sketch, and a separate low-power (LP) core that can keep running simple tasks (like watching a sensor over I2C) while the HP core sleeps to save power. The LP core has its own fixed I2C and UART peripherals, but they're not extra pins - they share the same physical pins as the HP core's default I2C and UART: **LP_SDA/LP_SCL** on IO2/IO3, and **LP_RX/LP_TX** on IO4/IO5. You only need to think about these if you're programming the LP core directly (e.g. via ESP-IDF's ULP/LP-core APIs); for normal Arduino sketches running on the HP core, these pins just behave as regular GPIO/I2C/UART pins.</InfoBox>
+
 ---
 
-## Qwiic / easyC Connector
+## Qwiic (formerly easyC) Connector
 
-<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic/easyC connector" width="550px" />
+<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic connector" width="550px" />
 
-<InfoBox>The **NULA Dual ESP32-C5** includes a **Qwiic/easyC connector** for plug-and-play I²C peripherals. This allows fast prototyping with sensors, displays, and other modules without soldering.</InfoBox>
+<InfoBox>The **NULA Dual ESP32-C5** includes a **Qwiic (formerly easyC) connector** for plug-and-play I²C peripherals. This allows fast prototyping with sensors, displays, and other modules without soldering.</InfoBox>
 
 <QuickLink
   title="Qwiic (formerly easyC) details and specifications"

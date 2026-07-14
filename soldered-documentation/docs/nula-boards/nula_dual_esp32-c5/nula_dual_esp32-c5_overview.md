@@ -11,9 +11,9 @@ pagination_prev: null
 
 ## NULA Dual ESP32-C5
 
-The **Soldered NULA Dual ESP32-C5** is a development board built around a single **Espressif ESP32-C5** module. The "Dual" in its name refers to the chip's **dual-band Wi-Fi 6** radio, which runs on **2.4 GHz and 5 GHz** at the same time, alongside **Bluetooth 5 (LE)** and a dual-core RISC-V design (a high-performance core plus a low-power core for background tasks).
+The **Soldered NULA Dual ESP32-C5** is a development board built around a single **Espressif ESP32-C5** module. The "Dual" in its name refers to the chip's **dual-band Wi-Fi 6** radio, running **2.4 GHz and 5 GHz** at the same time. The ESP32-C5 also brings **Bluetooth 5 (LE)** and a dual-core RISC-V design - a high-performance core for your code, plus a low-power core that handles background tasks on its own.
 
-The board follows the familiar **Soldered NULA form factor**, with an **easyC (Qwiic) connector** for sensor integration, a battery connector with onboard charging, and a **USB-C** port for programming and power.
+The board follows the familiar **Soldered NULA form factor**, with a **Qwiic (formerly easyC) connector** for sensor integration, a battery connector with onboard charging, and a **USB-C** port for programming and power.
 
 {/* <CenteredImage src="/img/nula_dual_esp32-c5/NULA_Dual_ESP32-C5.png" alt="NULA Dual ESP32-C5" caption="NULA Dual ESP32-C5 Development Board"/> */}
 
@@ -41,7 +41,7 @@ The board follows the familiar **Soldered NULA form factor**, with an **easyC (Q
 - **Wi-Fi:** Wi-Fi 6 (802.11ax) - **2.4 GHz and 5 GHz** dual-band
 - **Bluetooth:** Bluetooth 5 (LE)
 - **USB-C:** Programming, power, and serial communication
-- **easyC / Qwiic:** Plug-and-play I²C sensor integration
+- **Qwiic / easyC:** Plug-and-play I²C sensor integration
 - **Battery support:** Onboard connector and charging circuit for a 3.7 V Li-Ion/Li-Poly battery
 - **GPIO:** Broad access to the module's I/O pins (UART, SPI, I²C, PWM, ADC)
 - **Logic level:** 3.3 V
@@ -52,8 +52,8 @@ The board follows the familiar **Soldered NULA form factor**, with an **easyC (Q
 ## You may also need
 
 <QuickLink
-  title="easyC cable"
-  description="easyC (Qwiic) compatible cables with connectors on both ends, available in various lengths."
+  title="Qwiic cable"
+  description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp"
 />

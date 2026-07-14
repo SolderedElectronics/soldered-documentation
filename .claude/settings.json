@@ -25,7 +25,9 @@
       "Bash(awk 'NR>=5560 && NR<=5715' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
       "Bash(awk -F: '$1 < 17208')",
       "Bash(awk 'NR>=17068 && NR<=17215' \"C:/Users/borna/Desktop/Soldered-Pinout-Generator-main/uploads/Nula_Dual_ESP32-C5.kicad_pcb\")",
-      "Read(//c/Users/borna/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.10/variants/soldered_nula_dual_esp32c5/**)"
+      "Read(//c/Users/borna/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.10/variants/soldered_nula_dual_esp32c5/**)",
+      "Bash(grep -i \"nula_dual\\\\|nula dual\" \"C:\\\\Users\\\\borna\\\\AppData\\\\Local\\\\Arduino15\\\\packages\\\\esp32\\\\hardware\\\\esp32\\\\3.3.10\\\\boards.txt\" | head -20)",
+      "Read(//c/Users/borna/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.10/**)"
     ]
   }
 }

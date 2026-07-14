@@ -12,7 +12,7 @@ pagination_next: null
 ## Arduino board definition
 
 To program your **NULA Dual ESP32-C5**, use the **official Espressif Arduino core for ESP32**.  
-This package includes support for all ESP32-C5 based boards.
+This package now includes a dedicated **Soldered NULA Dual ESP32C5** board definition, so there's no need to configure a generic ESP32-C5 target.
 
 <QuickLink
   title="Arduino ESP32 core"
@@ -50,7 +50,7 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
 5. Find **esp32 by Espressif Systems** and click **Install**
 
 Once installed, select your board from the menu:  
-**Tools → Board → ESP32C5 Dev Module**
+**Tools → Board → esp32 → Soldered NULA Dual ESP32C5**
 
 <InfoBox>The board has an automatic reset/download circuit, so uploading normally just works from a single click of **Upload**. If that ever fails, you can enter download mode manually: hold the **USER** button while pressing **RESET**, then release both.</InfoBox>
 
