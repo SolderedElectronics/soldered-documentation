@@ -80,6 +80,14 @@ void loop()
 
 Open the **Serial Monitor** at **115200 baud** to see the reading for whichever channel you selected.
 
+Below are the Serial Monitor outputs from swapping in `ADS1219_MUX_SINGLE_1`, `ADS1219_MUX_SINGLE_2`, and `ADS1219_MUX_SINGLE_3` in turn - reading AIN1, AIN2, and AIN3 the same way, with nothing else in the sketch changed.
+
+<CenteredImage src="/img/ads1219/an1.png" alt="Serial Monitor output reading AIN1" caption="ADS1219_MUX_SINGLE_1 - reading AIN1 vs GND" />
+
+<CenteredImage src="/img/ads1219/an2.png" alt="Serial Monitor output reading AIN2" caption="ADS1219_MUX_SINGLE_2 - reading AIN2 vs GND" />
+
+<CenteredImage src="/img/ads1219/an3.png" alt="Serial Monitor output reading AIN3" caption="ADS1219_MUX_SINGLE_3 - reading AIN3 vs GND" />
+
 <QuickLink
   title="Multiplexer.ino"
   description="Full input-multiplexer example for the ADS1219 24-bit ADC"

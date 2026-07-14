@@ -5,7 +5,9 @@
       "Bash(git -C \"c:\\\\Users\\\\borna\\\\Documents\\\\GitHub\\\\soldered-documentation\" status --short)",
       "WebFetch(domain:www.ti.com)",
       "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Soldered-ADS1219-Arduino-Library/git/trees/main?recursive=true\")",
-      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/main/src/ADS1219-SOLDERED.h\")"
+      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/main/src/ADS1219-SOLDERED.h\")",
+      "Bash(curl -sL -o \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/deltasigma1.svg\" \"https://upload.wikimedia.org/wikipedia/commons/1/15/This_is_a_block_diagram_of_a_simplified_Delta_Sigma_ADC.svg\" -w \"1: %{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -sL -o \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/deltasigma2.svg\" \"https://upload.wikimedia.org/wikipedia/commons/7/72/Block_Diagram_Delta-Sigma_ADC.svg\" -w \"2: %{http_code} %{size_download}\\\\n\")"
     ]
   }
 }

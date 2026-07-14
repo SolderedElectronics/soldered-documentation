@@ -109,7 +109,7 @@ void setup()
 
 ---
 
-## Reading Data
+## Reading data
 
 In the `loop()` function, wait for the interrupt flag and read the new result:
 
@@ -133,7 +133,7 @@ void loop()
 
 Open the **Serial Plotter** or **Serial Monitor** at **115200 baud** to see the readings. The interrupt callback (`dataReadyISR`) just sets a flag, since interrupt service routines should stay as short as possible - the actual I2C read happens in `loop()`.
 
-<CenteredImage src="/img/ads1219/readings.png" alt="Serial monitor output" caption="Serial monitor" width="100%" />
+<CenteredImage src="/img/ads1219/interupt.png" alt="Serial monitor output of the interrupt example" caption="Serial monitor output - a fresh voltage reading printed every time DRDY fires" width="100%" />
 
 <QuickLink
   title="Interrupt.ino"

@@ -27,10 +27,10 @@ Click [**here**](/img/ads1219/pinout.png) for a high-resolution image of the pin
 | **AIN1**     | Analog Input 1   | Analog input channel 1.                                                  |
 | **AIN2**     | Analog Input 2   | Analog input channel 2.                                                  |
 | **AIN3**     | Analog Input 3   | Analog input channel 3.                                                  |
-| **DRDY**     | Data Ready       | Active-low interrupt output; asserts when a conversion result is ready.  |
+| **DRDY**     | Data Ready       | Active-low, open-drain interrupt output; asserts when a conversion result is ready. Already pulled up to VCC on the board through a 10 kΩ resistor, so no external pull-up is needed. |
 | **REFP**     | Reference +      | Positive terminal for external voltage reference input (optional).       |
 | **REFN**     | Reference -      | Negative terminal for external voltage reference input (optional).       |
-| **RESET**    | Reset            | Active-low reset input; pull low to reset the device.                    |
+| **RESET**    | Reset            | Active-low reset input; pull low to reset the device. Already pulled up to VCC on the board through a 10 kΩ resistor, so it can be left unconnected. |
 
 <InfoBox>The ADS1219 accepts a supply voltage anywhere from **2.3V to 5.5V** directly, no onboard regulator needed - so it works the same whether you power it at 3.3V or 5V.</InfoBox>
 
@@ -134,7 +134,7 @@ Depending on how you configure the A0 and A1 jumpers, you can define different I
 
 ---
 
-## Hardware Repository
+## Hardware repository
 
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
