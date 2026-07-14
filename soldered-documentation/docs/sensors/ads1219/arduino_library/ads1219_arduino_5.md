@@ -1,124 +1,72 @@
 ---
-slug: /ads1219/arduino/interrupt
-title: ADS1219 24-bit ADC - Reading with Interrupt
-sidebar_label: Reading with Interrupt
+slug: /ads1219/arduino/troubleshooting 
+title: ADS1219 24-bit ADC - Troubleshooting
+sidebar_label: Troubleshooting
 id: ads1219-arduino-5 
 hide_title: False
+pagination_next: null
 ---
 
-This page contains an example of reading ADC values from the ADS1219 using the **DRDY interrupt pin**, where the microcontroller is notified by the sensor when a new conversion result is ready, instead of polling over I2C. This is especially useful at the ADS1219's higher data rates, like the **1000 SPS** used in this example.
+This page contains some tips if you are having problems using this product.
 
----
+<ExpandableSection title="My ADS1219 won't initialize!">
 
-## Connections for this example
+#### Check wiring
+Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic (formerly easyC)-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
 
-<CenteredImage src="/img/ads1219/interrupt.JPG" alt="Connections" />
+#### Check I2C pins
+If you are connecting the sensor using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Check your microcontroller's documentation to confirm the correct pin assignments.
 
-Connect the ADS1219 board via Qwiic, wire REFP/REFN to your chosen reference (see [Single-Shot Reading](/ads1219/arduino/single-shot) for reference-voltage options), and connect a signal source to **AIN0**.
+#### Scan for I2C devices
+Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the ADS1219 is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller's I2C bus.
 
-Connect the ADS1219's **DRDY** pin to pin **IO4** on your development board.
+#### Check for conflicting I2C addresses
+If you have multiple I2C devices on the same bus, make sure none share the same address. The ADS1219 default address is **0x40** - verify no other device is using this address, or reconfigure the address via the onboard jumpers.
 
----
+#### Try reinitializing
+If the sensor fails to initialize on the first attempt, try calling `adc.begin()` again or resetting your microcontroller. Some initialization issues are resolved by a simple reboot.
 
-## Initialization
+</ExpandableSection>
 
-Include the library and create the ADC object:
+<ExpandableSection title="My readings are always 0 or incorrect!">
 
-```cpp
-#include <Wire.h>
-#include "ADS1219-SOLDERED.h"
+#### Check the input wiring
+Verify that your signal source is correctly connected to the AIN pins. For single-ended measurements, make sure the signal is connected to the correct channel (AIN0-AIN3) and that GND is shared between the signal source and the board.
 
-ADS1219_Soldered adc;
+#### Check the gain setting
+If the input signal is larger than the selected gain range allows, the ADC will saturate and return the maximum or minimum value. For example, with `ADS1219_GAIN_1` and the internal 2.048 V reference, the input must stay within ±2.048 V. Reduce the gain or use a lower reference voltage accordingly.
 
-const int interruptPin = 4; // Change to match your wiring
+#### Make sure you call start()
+In both single-shot and continuous modes, `adc.startSync()` must be called to begin conversions. Without it, `readConversion()` will return stale or zero data.
 
-volatile bool interruptSeen = false;
+#### Wait for data to be ready
+Always check `adc.dataReady()` before calling `adc.readConversion()`. Reading before a conversion completes will return the previous result or invalid data.
 
-void dataReadyISR()
-{
-    interruptSeen = true;
-}
+#### Check the voltage reference
+If you are using an external voltage reference (`ADS1219_VREF_EXTERNAL`), make sure a valid reference voltage is applied to the REFP and REFN pins. An unconnected or incorrect reference will produce inaccurate results.
 
-void setup()
-{
-    Serial.begin(115200);
-    Wire.begin();
+</ExpandableSection>
 
-    while (!adc.begin())
-    {
-        Serial.println("ADS1219 not found. Check wiring! Retrying...");
-        delay(1000);
-    }
+<ExpandableSection title="My continuous mode stops producing new results!">
 
-    // Use REFP/REFN as the reference (tie them to VCC/GND, or a precision source)
-    adc.setVoltageReference(ADS1219_VREF_EXTERNAL);
+#### Check the data rate and polling speed
+In continuous mode, new results are produced at the configured data rate (e.g. 90 SPS = one result every ~11 ms). If your loop is faster than the data rate, `dataReady()` will return false until the next sample is ready - this is normal behaviour.
 
-    // Single-ended input on channel 0
-    adc.setMux(ADS1219_MUX_SINGLE_0);
+#### Verify the DRDY pin connection
+If you are using the DRDY interrupt pin instead of polling, make sure it is connected to a valid digital input on your microcontroller and that the pin is configured as `INPUT` or `INPUT_PULLUP` in your code.
 
-    // Gain of 1 (full-scale range = the reference voltage)
-    adc.setGain(ADS1219_GAIN_1);
+</ExpandableSection>
 
-    // 1000 SPS - the interrupt avoids wasting I2C bus time polling this fast
-    adc.setDataRate(ADS1219_DR_1000SPS);
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
 
-    adc.setConversionMode(ADS1219_MODE_CONTINUOUS);
 
-    interruptSeen = false;
-    attachInterrupt(digitalPinToInterrupt(interruptPin), dataReadyISR, FALLING);
 
-    adc.startSync();
-}
-```
 
-<FunctionDocumentation
-  functionName="adc.setGain()"
-  description="Sets the programmable gain amplifier (PGA). Gain 4 narrows the input range to the reference voltage divided by 4, increasing resolution for small signals."
-  returnDescription="Boolean value, true on success."
-  parameters={[
-  { type: 'ads1219_gain_t', name: 'gain', description: "ADS1219_GAIN_1 (full-scale = the reference voltage) or ADS1219_GAIN_4 (full-scale = reference voltage / 4)." },
-  ]}
-/>
 
-<FunctionDocumentation
-  functionName="adc.setDataRate()"
-  description="Sets the output data rate (samples per second). Lower rates give less noise; higher rates give faster updates."
-  returnDescription="Boolean value, true on success."
-  parameters={[
-  { type: 'ads1219_data_rate_t', name: 'rate', description: "ADS1219_DR_20SPS, ADS1219_DR_90SPS, ADS1219_DR_330SPS, or ADS1219_DR_1000SPS." },
-  ]}
-/>
 
----
 
-## Reading Data
 
-In the `loop()` function, wait for the interrupt flag and read the new result:
 
-```cpp
-void loop()
-{
-    if (interruptSeen)
-    {
-        interruptSeen = false;
 
-        adc.readConversion();
 
-        // 3300.0f is the reference voltage in millivolts (3.3V here) - change this
-        // to match whatever you actually wired to REFP/REFN
-        float mV = adc.getConversionMillivolts(3300.0f);
 
-        Serial.println(mV, 3);
-    }
-}
-```
-
-Open the **Serial Plotter** or **Serial Monitor** at **115200 baud** to see the readings. The interrupt callback (`dataReadyISR`) just sets a flag, since interrupt service routines should stay as short as possible - the actual I2C read happens in `loop()`.
-
-<CenteredImage src="/img/ads1219/readings.png" alt="Serial monitor output" caption="Serial monitor" width="100%" />
-
-<QuickLink
-  title="Interrupt.ino"
-  description="An example of reading ADC values using the interrupt (DRDY) pin with the ADS1219"
-  url="https://github.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/blob/main/examples/Interrupt/Interrupt.ino"
-/>

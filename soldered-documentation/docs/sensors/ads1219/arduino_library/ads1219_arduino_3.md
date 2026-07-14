@@ -1,24 +1,24 @@
 ---
-slug: /ads1219/arduino/continuous 
-title: ADS1219 24-bit ADC - Continuous Reading
-sidebar_label: Continuous Reading
+slug: /ads1219/arduino/multiplexer 
+title: ADS1219 24-bit ADC - Channel Selection
+sidebar_label: Channel Selection
 id: ads1219-arduino-3 
 hide_title: False
 ---
 
-This page covers continuous conversion mode, where the ADS1219 converts back-to-back on its own at the configured data rate, instead of waiting for a `startSync()` call before each result.
+This page covers selecting which of the ADS1219's four input channels (or which differential pair) actually gets converted, using the input multiplexer.
 
 ---
 
 ## Connections
 
-Connect the ADS1219 board via Qwiic, and wire REFP/REFN to your chosen reference (see the [previous page](/ads1219/arduino/single-shot) for reference-voltage options).
+Connect the ADS1219 board via Qwiic, and wire REFP/REFN to your chosen reference (see [Single-Shot Reading](/ads1219/arduino/single-shot) for reference-voltage options).
 
-Connect a signal source to **AIN0** and **AIN1** - this example reads the voltage difference between them.
+Connect a signal source to **AIN0** and GND - this example reads AIN0 single-ended, but any of the mux options below can be swapped in instead.
 
 ---
 
-## Continuous reading
+## Selecting a channel
 
 ```cpp
 #include <Wire.h>
@@ -40,14 +40,19 @@ void setup()
     // Use REFP/REFN as the reference (tie them to VCC/GND, or a precision source)
     adc.setVoltageReference(ADS1219_VREF_EXTERNAL);
 
-    adc.setConversionMode(ADS1219_MODE_CONTINUOUS);
-
-    // In continuous mode, this single call starts the ongoing sequence
-    adc.startSync();
+    // AIN0 vs GND (single-ended)
+    adc.setMux(ADS1219_MUX_SINGLE_0);
 }
 
 void loop()
 {
+    if (!adc.startSync())
+    {
+        Serial.println("Failed to start conversion. Check wiring! Retrying...");
+        delay(1000);
+        return;
+    }
+
     while (!adc.dataReady())
         delay(10);
 
@@ -63,27 +68,20 @@ void loop()
 ```
 
 <FunctionDocumentation
-  functionName="adc.setConversionMode()"
-  description="Sets the conversion mode. In continuous mode, the ADC converts back-to-back at the configured data rate without needing startSync() called again for each sample."
+  functionName="adc.setMux()"
+  description="Selects which input channel or differential pair is routed to the ADC."
   returnDescription="Boolean value, true on success."
   parameters={[
-  { type: 'ads1219_conv_mode_t', name: 'mode', description: "ADS1219_MODE_SINGLE_SHOT for one conversion per startSync() call, ADS1219_MODE_CONTINUOUS for back-to-back conversions." },
+  { type: 'ads1219_mux_t', name: 'mux', description: "ADS1219_MUX_SINGLE_0 through _3 for single-ended channels (each measured against GND), ADS1219_MUX_DIFF_P0_N1 / _P1_N2 / _P2_N3 for differential pairs, or ADS1219_MUX_SHORTED to measure the internal offset (AVDD/2 vs itself)." },
   ]}
 />
 
-<FunctionDocumentation
-  functionName="adc.startSync()"
-  description="Starts or restarts conversions. In continuous mode, one call is enough to start the ongoing sequence - it doesn't need to be called again before each result."
-  returnDescription="Boolean value, true on success."
-  parameters={[]}
-/>
+<InfoBox>Swap `ADS1219_MUX_SINGLE_0` for any of the other mux constants to read a different channel or pair - everything else in the sketch stays the same. `ADS1219_MUX_DIFF_P0_N1` (AIN0 vs AIN1) is the default at power-on.</InfoBox>
 
-<InfoBox>Since the default data rate is **20 SPS**, results come in relatively slowly out of the box (once every 50 ms). Combine this with `setDataRate()` from the next page if you need faster updates.</InfoBox>
-
-Open the **Serial Monitor** at **115200 baud** to see a steady stream of readings, without needing to trigger each one yourself.
+Open the **Serial Monitor** at **115200 baud** to see the reading for whichever channel you selected.
 
 <QuickLink
-  title="Continuous.ino"
-  description="Full continuous-conversion example for the ADS1219 24-bit ADC"
-  url="https://github.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/blob/main/examples/Continuous/Continuous.ino"
+  title="Multiplexer.ino"
+  description="Full input-multiplexer example for the ADS1219 24-bit ADC"
+  url="https://github.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/blob/main/examples/Multiplexer/Multiplexer.ino"
 />

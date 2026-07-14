@@ -125,6 +125,8 @@ void loop()
 
 Open the **Serial Monitor** at **115200 baud** to see the voltage reading, printed once per conversion.
 
+<CenteredImage src="/img/ads1219/single_shot.png" alt="Serial Monitor output of the single-shot reading example" caption="Serial Monitor output while turning the potentiometer" />
+
 <QuickLink
   title="Single_Shot.ino"
   description="Full single-shot reading example for the ADS1219 24-bit ADC"

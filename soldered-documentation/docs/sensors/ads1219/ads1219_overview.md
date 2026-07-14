@@ -54,8 +54,12 @@ The onboard PGA supports gains of **1 and 4**, and the data rate is configurable
   image="/img/333311.webp" 
 />
 
-
-
-
+{/*
+TODO - outstanding items for this module:
+- Connections/wiring photo needed for the Single-Shot Reading example (arduino_2)
+- Connections/wiring photo needed for the Multiplexer/Channel Selection example (arduino_3)
+- Dedicated example still needed showing a distinct external reference voltage (voltage generator/precision reference at a value other than VCC) - deferred, not yet started
+- Product page link still commented out above, pending the real product page going live
+*/}
 
 
