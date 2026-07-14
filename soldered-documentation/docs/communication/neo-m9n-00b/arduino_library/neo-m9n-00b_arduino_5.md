@@ -138,6 +138,8 @@ void loop()
 }
 ```
 
+<CenteredImage src="/img/neo-m9n-00b/circle.png" alt="Serial monitor great circle distance readings" caption="Serial monitor" width="100%" />
+
 <FunctionDocumentation
   functionName="myGNSS.getLatitude()"
   description="Reads the current latitude from the GNSS module"

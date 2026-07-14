@@ -136,6 +136,8 @@ void loop()
 }
 ```
 
+<CenteredImage src="/img/neo-m9n-00b/geofence.png" alt="Serial monitor geofence readings" caption="Serial monitor" width="100%" />
+
 <FunctionDocumentation
   functionName="myGNSS.getGeofenceState()"
   description="Reads the current state of all configured geofences into the provided struct"

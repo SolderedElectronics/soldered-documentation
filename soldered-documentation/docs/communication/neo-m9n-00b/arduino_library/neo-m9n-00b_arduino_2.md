@@ -106,7 +106,7 @@ void loop()
 }
 ```
 
-<CenteredImage src="/img/neo-m9n-00b/readings.png" alt="Serial monitor sensor readings" caption="Serial monitor" width="100%" />
+<CenteredImage src="/img/neo-m9n-00b/get_position.png" alt="Serial monitor sensor readings" caption="Serial monitor" width="100%" />
 
 <FunctionDocumentation
   functionName="myGNSS.getLatitude()"

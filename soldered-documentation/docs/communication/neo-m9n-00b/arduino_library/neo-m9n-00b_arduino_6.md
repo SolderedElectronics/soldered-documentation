@@ -1,151 +1,60 @@
 ---
-slug: /neo-m9n-00b/arduino/power-save-mode
-title: NEO-M9N-00B - Power Save Mode
-sidebar_label: Power Save Mode
+slug: /neo-m9n-00b/arduino/troubleshooting
+title: NEO-M9N-00B - Troubleshooting
+sidebar_label: Troubleshooting
 id: neo-m9n-00b-arduino-6
 hide_title: False
+pagination_next: null
 ---
 
-This page contains an example of toggling the module's power save mode from the Serial Monitor. Power save mode trades off fix rate and responsiveness for lower average current draw, useful for battery-powered projects.
+This page contains some tips if you are having problems using this product.
 
----
+<ExpandableSection title="My GNSS module won't initialize!">
 
-## Initialization
+#### Check wiring
+Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic (formerly easyC)-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
 
-Include the required libraries and create the module object:
+#### Check I2C pins
+If you are connecting the module using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Check your microcontroller's documentation to confirm the correct pin assignments.
 
-```cpp
-#include <Wire.h>
-#include <Soldered-GNSS.h>
+#### Scan for I2C devices
+Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the module is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller's I2C bus.
 
-Soldered_GNSS myGNSS;
+#### Try reinitializing
+If the module fails to initialize on the first attempt, try calling `myGNSS.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
 
-long lastTime = 0;
-```
+</ExpandableSection>
 
-In the `setup()` function, initialize the module:
+<ExpandableSection title="I'm not getting a GPS fix!">
 
-```cpp
-void setup()
-{
-    Serial.begin(115200);
-    while (!Serial);
-    Serial.println("Soldered u-blox GNSS Example - Power Save Mode");
+#### Move to an open outdoor area
+The NEO-M9N-00B requires a clear view of the sky to receive satellite signals. Walls, roofs, and dense foliage can block or weaken signals. Make sure you are outdoors with an unobstructed view above you.
 
-    Wire.begin();
+#### Wait for a cold start to complete
+On first power-up or after a long period without power, the module performs a cold start and may take several minutes to acquire a fix. Once a fix has been obtained at least once, subsequent warm starts are significantly faster.
 
-    if (myGNSS.begin() == false)
-    {
-        Serial.println(F("u-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
-        while (1);
-    }
+#### Check the antenna connection
+Make sure the GNSS antenna is securely connected to the module's antenna port. A loose or missing antenna will prevent satellite acquisition entirely.
 
-    myGNSS.setI2COutput(COM_TYPE_UBX);
+#### Check the SIV count
+Use `myGNSS.getSIV()` to read the number of satellites in view. A value of 0 indicates no satellites are being received. A fix typically requires at least 4 satellites.
 
-    Serial.println("Power save example.");
-    Serial.println("Send '1' to enable power saving, '2' to disable it.");
-}
-```
+#### Verify time and date validity
+Use `myGNSS.getTimeValid()` and `myGNSS.getDateValid()` to check whether the module has a confirmed time and date lock. If these return false, the fix is not yet complete.
 
-<FunctionDocumentation
-  functionName="myGNSS.begin()"
-  description="Initializes the GNSS module and establishes I2C communication"
-  returnDescription="Boolean value, true if the module is detected and communication succeeds, false otherwise"
-  parameters={[]}
-/>
+</ExpandableSection>
 
----
+<ExpandableSection title="SPI isn't working!">
 
-## Toggling power save mode
+#### Check the JP4 jumper
+SPI only works when the **JP4** jumper on the board is closed. With JP4 open (the default), the module stays in I2C + UART mode and won't respond to any SPI traffic.
 
-In the `loop()` function, sending `1` or `2` over Serial enables or disables power save mode. Position and fix type are also printed every 10 seconds so you can observe the effect on fix behavior:
+#### Check the CS pin
+Make sure the chip select pin defined in your sketch matches the one physically wired to the module's SDA/SPI CS pin.
 
-```cpp
-void loop()
-{
-    if (Serial.available())
-    {
-        byte incoming = Serial.read();
+#### Set the SPI protocol with u-center
+Some modules don't respond to UBX commands over SPI with their factory settings. Connect the module over UART or I2C once, open it in **u-center**, and set the SPI port's input and output protocol to **UBX only**. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center) for the exact steps.
 
-        if (incoming == '1')
-        {
-            if (myGNSS.powerSaveMode())
-                Serial.println(F("Power Save Mode enabled."));
-            else
-                Serial.println(F("*** Power Save Mode FAILED ***"));
-        }
-        else if (incoming == '2')
-        {
-            if (myGNSS.powerSaveMode(false))
-                Serial.println(F("Power Save Mode disabled."));
-            else
-                Serial.println(F("*** Power Save Disable FAILED ***"));
-        }
+</ExpandableSection>
 
-        uint8_t lowPowerMode = myGNSS.getPowerSaveMode();
-        Serial.print(F("The low power mode is: "));
-        Serial.println(lowPowerMode); // 0 or 4 = Continuous, 1 = Power Save
-    }
-
-    // Query the module every 10 seconds so it's easier to observe the current draw
-    if (millis() - lastTime > 10000)
-    {
-        lastTime = millis();
-
-        byte fixType = myGNSS.getFixType();
-        Serial.print(F("Fix: "));
-        Serial.print(fixType);
-
-        long latitude = myGNSS.getLatitude();
-        Serial.print(F(" Lat: "));
-        Serial.print(latitude);
-
-        long longitude = myGNSS.getLongitude();
-        Serial.print(F(" Long: "));
-        Serial.print(longitude);
-        Serial.print(F(" (degrees * 10^-7)"));
-
-        long altitude = myGNSS.getAltitude();
-        Serial.print(F(" Alt: "));
-        Serial.print(altitude);
-        Serial.println(F(" (mm)"));
-    }
-}
-```
-
-<FunctionDocumentation
-  functionName="myGNSS.powerSaveMode()"
-  description="Enables or disables the module's power save mode"
-  returnDescription="Boolean value, true if successful, false for error"
-  parameters={[
-  { type: 'bool', name: 'power_save', description: "Optional. True enables power save mode, false switches back to continuous mode. Defaults to true" },
-  ]}
-/>
-
-<FunctionDocumentation
-  functionName="myGNSS.getPowerSaveMode()"
-  description="Reads back the module's current low power mode setting"
-  returnDescription="Byte value: 0 or 4 = Continuous mode, 1 = Power save mode, 255 = error reading the setting"
-  parameters={[]}
-/>
-
-<FunctionDocumentation
-  functionName="myGNSS.getFixType()"
-  description="Reads the current GNSS fix type"
-  returnDescription="Byte value: 0 = no fix, 1 = dead reckoning, 2 = 2D, 3 = 3D, 4 = GNSS + dead reckoning, 5 = time only"
-  parameters={[]}
-/>
-
-<InfoBox>In power save mode, the module fixes less frequently to save power, so expect slower position updates and a longer time to first fix compared to continuous mode.</InfoBox>
-
----
-
-## Full example
-
-You can find the full sketch below:
-
-<QuickLink
-  title="PowerSaveMode.ino"
-  description="An example of toggling power save mode with the NEO-M9N-00B module"
-  url="https://github.com/SolderedElectronics/Soldered-u-blox-GPS-GNSS-Arduino-Library/blob/main/examples/PowerSaveMode/PowerSaveMode.ino"
-/>
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
