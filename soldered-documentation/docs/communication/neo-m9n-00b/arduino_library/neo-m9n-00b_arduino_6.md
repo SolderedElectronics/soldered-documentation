@@ -12,7 +12,7 @@ This page contains some tips if you are having problems using this product.
 <ExpandableSection title="My GNSS module won't initialize!">
 
 #### Check wiring
-Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic (formerly easyC)-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
+Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
 
 #### Check I2C pins
 If you are connecting the module using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Check your microcontroller's documentation to confirm the correct pin assignments.
@@ -53,7 +53,7 @@ SPI only works when the **JP4** jumper on the board is closed. With JP4 open (th
 Make sure the chip select pin defined in your sketch matches the one physically wired to the module's SDA/SPI CS pin.
 
 #### Set the SPI protocol with u-center
-Some modules don't respond to UBX commands over SPI with their factory settings. Connect the module over UART or I2C once, open it in **u-center**, and set the SPI port's input and output protocol to **UBX only**. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center) for the exact steps.
+Some modules don't respond to UBX commands over SPI with their factory settings. Connect the module over UART or I2C once, open it in [**u-center**](https://www.u-blox.com/en/product/u-center), and set the SPI port's input and output protocol to **UBX only**.
 
 </ExpandableSection>
 

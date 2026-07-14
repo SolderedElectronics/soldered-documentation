@@ -8,9 +8,8 @@ hide_title: False
 
 The NEO-M9N-00B is a GNSS module from [**u-blox**](https://www.u-blox.com/en/product/neo-m9n-module) that simultaneously receives signals from GPS, GLONASS, Galileo, and BeiDou constellations.
 
-<!--  
-<CenteredImage src="/img/neo-m9n-00b/neo-m9n-00b_onboard.png" alt="NEO-M9N-00B module on board" caption="NEO-M9N-00B module on board" width="500px" />
--->
+<CenteredImage src="/img/neo-m9n-00b/chip.png" alt="u-blox NEO-M9N chip on the board" caption="u-blox NEO-M9N" width="500px" />
+
 ---
 
 ## Datasheet
@@ -77,9 +76,3 @@ The same four pins used for I2C and UART (**SDA, SCL, TX, RX**) double as an **S
 - **JP4 closed** - **D_SEL** is pulled to ground, so the module switches to **SPI-only** mode. I2C is disabled entirely while SPI is active.
 
 The module only exposes one interface pair at a time on these shared pins, so you need to decide upfront which one you'll use and set the jumper accordingly. SPI runs in **mode 1** (CPHA = 0) at up to **5.5 MHz**, with a maximum transfer rate of **125 kB/s**, which is slower than what the interface itself can theoretically reach but still fast enough for GNSS data.
-
----
-
-## What the Arduino library handles for you
-
-Underneath all this, the module talks in **UBX binary messages** and **NMEA sentences**, both need parsing, checksum validation, and message-specific field decoding to turn into a latitude or a satellite count. The Arduino library takes care of all of that: it builds and sends the UBX polling commands, validates incoming packets, and exposes the result as plain values through calls like `getLatitude()` or `getSIV()`. You never have to construct a UBX frame or parse NMEA text by hand.

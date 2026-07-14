@@ -36,14 +36,14 @@ Click [**here**](/img/neo-m9n-00b/NEO-M9N-00_Pinout.png) for a high resolution i
 
 ---
 
-## Qwiic (formerly easyC)
+## Qwiic
 
-<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic (formerly easyC) cable" width="550px" />
+<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic cable" width="550px" />
 
-<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic (formerly easyC) cable** and start coding!</InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic cable** and start coding!</InfoBox>
 
 <QuickLink 
-  title="Qwiic (formerly easyC) details and specifications" 
+  title="Qwiic details and specifications" 
   description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
   url="/qwiic" 
 />
@@ -80,6 +80,17 @@ The board has an onboard holder for a **CR1220 coin-cell battery**, which keeps 
 ## Jumper Details
 
 This board contains hardware jumpers; see below for their locations and functions:
+
+<FlickityCarousel
+  images={[
+    { src: '/img/neo-m9n-00b/JP1.png', alt: 'neo-m9n-00b-jp1', caption: 'JP1' },
+    { src: '/img/neo-m9n-00b/JP2.png', alt: 'neo-m9n-00b-jp2', caption: 'JP2' },
+    { src: '/img/neo-m9n-00b/JP3.png', alt: 'neo-m9n-00b-jp3', caption: 'JP3' },
+    { src: '/img/neo-m9n-00b/JP4.png', alt: 'neo-m9n-00b-jp4', caption: 'JP4' },
+    { src: '/img/neo-m9n-00b/JP5.png', alt: 'neo-m9n-00b-jp5', caption: 'JP5' },
+  ]}
+  jumpers={true}
+/>
 
 | Jumper | Default State | Function |
 | ------- | ------------------------ | -------- |
