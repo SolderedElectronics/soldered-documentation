@@ -53,7 +53,7 @@ SPI only works when the **JP4** jumper on the board is closed. With JP4 open (th
 Make sure the chip select pin defined in your sketch matches the one physically wired to the module's SDA/SPI CS pin.
 
 #### Set the SPI protocol with u-center
-Some modules don't respond to UBX commands over SPI with their factory settings. Connect the module over UART or I2C once, open it in [**u-center**](https://www.u-blox.com/en/product/u-center), and set the SPI port's input and output protocol to **UBX only**.
+Some modules don't respond to UBX commands over SPI with their factory settings. Connect the module over UART or I2C once, open it in **u-center**, and set the SPI port's input and output protocol to **UBX only**. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center) for the exact steps.
 
 </ExpandableSection>
 

@@ -83,3 +83,27 @@ SPI is disabled by default. The module ships in **I2C + UART** mode, and the SDA
 SPI communication won't work until **JP4** is closed. With JP4 left open (the default), the module stays in I2C + UART mode and ignores anything sent over these pins as SPI.
 
 </WarningBox>
+
+<WarningBox>
+
+Some NEO-M9N units don't respond to UBX commands over SPI with their factory settings, even with JP4 closed and the wiring correct. If that happens, connect the module via UART or I2C first, open it in **u-center** (u-blox's free configuration and monitoring tool for Windows), and set the SPI port's input/output protocol to **UBX only**. See the [u-center configuration](#configuring-the-module-with-u-center) section below.
+
+</WarningBox>
+
+---
+
+## Configuring the module with u-center
+
+<QuickLink
+  title="u-center"
+  description="u-blox's free desktop application for configuring, monitoring, and debugging u-blox GNSS receivers"
+  url="https://www.u-blox.com/en/product/u-center"
+/>
+
+u-center connects to the module over UART or a USB-to-serial adapter and shows you live satellite data, message traffic, and every configuration option the module supports. You don't need it for normal I2C or UART use since the library configures everything from your sketch, but it's useful for:
+
+- **Getting SPI working** - as mentioned above, some units need their SPI port's protocol set explicitly. In u-center, open **View → Messages View**, go to **UBX → CFG → PRT**, select the **SPI** target port, and set both **In Protocol** and **Out Protocol** to **UBX** only, then click **Send**. Use **CFG → CFG** to save the setting to the module's flash so it persists after a power cycle.
+- **Watching raw satellite data** - the **Messages View** shows UBX and NMEA messages as they arrive, which is useful for confirming the module is actually receiving data before you start debugging your own code.
+- **Changing constellation or update-rate settings** - anything you'd otherwise set with library calls like `myGNSS.setNavigationFrequency()` can be tested interactively first.
+
+<InfoBox>u-center only runs on Windows and needs a serial connection (UART or USB-to-serial), so connect over one of those interfaces for configuration even if you plan to use SPI or I2C in your actual project.</InfoBox>
