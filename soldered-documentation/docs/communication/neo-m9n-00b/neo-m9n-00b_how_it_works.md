@@ -35,14 +35,25 @@ The NEO-M9N-00B integrates a **GNSS receiver and signal processing unit** that t
 
 - **Timepulse output** - The module provides a configurable **1PPS signal** synchronized to GNSS time, useful for precise timing applications.
 
-- **Protocol output** - Positioning results are delivered via **UART and I2C** using the standard **NMEA 0183** protocol or the proprietary **UBX binary protocol**.
+- **Protocol output** - Positioning results are delivered via **UART, I2C, or SPI** using the standard **NMEA 0183** protocol or the proprietary **UBX binary protocol**.
 
 ---
 
 ## I2C & UART Communication
 
-The NEO-M9N-00B supports both **I2C** and **UART** communication.
+The NEO-M9N-00B supports both **I2C** and **UART** communication at the same time, which is the module's default configuration.
 
 - **I2C** uses two lines: **SDA** for data and **SCL** for clock, with a default address of **0x42**. Multiple I2C devices can share the same bus.
 
 - **UART** uses **TX** and **RX** lines for serial communication, useful when higher data throughput or simpler wiring is preferred.
+
+---
+
+## SPI communication
+
+The same four pins used for I2C and UART (**SDA, SCL, TX, RX**) double as an **SPI** interface: **SPI_CS_N, SPI_SCK, SPI_MISO, and SPI_MOSI** respectively. Which function they serve depends on the **D_SEL** pin, broken out on this board as the **JP4** jumper:
+
+- **JP4 open (default)** - **D_SEL** is pulled high, so the module runs in **I2C + UART** mode and the SPI functions are inactive.
+- **JP4 closed** - **D_SEL** is pulled to ground, so the module switches to **SPI-only** mode. I2C is disabled entirely while SPI is active.
+
+The module only exposes one interface pair at a time on these shared pins, so you need to decide upfront which one you'll use and set the jumper accordingly. SPI runs in **mode 1** (CPHA = 0) at up to **5.5 MHz**, with a maximum transfer rate of **125 kB/s**, which is slower than what the interface itself can theoretically reach but still fast enough for GNSS data.

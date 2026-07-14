@@ -31,6 +31,79 @@ To install the Arduino library, use the **Arduino library manager** or download 
 
 ## Connections
 
+The NEO-M9N-00B can be wired for **I2C, UART, or SPI**. Pick the interface that fits your project. All three share the same physical pins on the module (SDA/SCL/TX/RX double as SPI signals), so you only need to wire up the one you're actually using.
+
+### I2C (recommended, default)
+
+The simplest way to connect is over **Qwiic**, since I2C and UART are both active out of the box, no jumper changes needed:
+
 | **NULA Deepsleep** | **NEO-M9N-00B** |
-| ------------------ | --------------- |
-| Qwiic              | Qwiic           |
+| ------------------- | ---------------- |
+| Qwiic                | Qwiic             |
+
+<InfoBox>
+
+If you prefer, you can wire the I2C pins manually instead:
+
+| **NULA Deepsleep** | **NEO-M9N-00B** |
+| ------------------- | ---------------- |
+| IO8 (Default SDA pin) | SDA               |
+| IO9 (Default SCL pin) | SCL               |
+| 3V3                   | 3V3               |
+| GND                   | GND               |
+
+</InfoBox>
+
+### UART
+
+UART is also enabled by default, alongside I2C, no jumper changes needed. Cross-connect the TX and RX lines:
+
+| **NULA Deepsleep** | **NEO-M9N-00B** |
+| ------------------- | ---------------- |
+| IO43 (TX)             | RX                |
+| IO44 (RX)             | TX                |
+| 3V3                   | 3V3               |
+| GND                   | GND               |
+
+### SPI
+
+SPI is disabled by default. The module ships in **I2C + UART** mode, and the SDA/SCL/TX/RX pins only switch to SPI functions once you close the **JP4** jumper on the board (see [Hardware details](/neo-m9n-00b/hardware) for more on this jumper). With JP4 closed:
+
+| **NULA Deepsleep**      | **NEO-M9N-00B** |
+| ------------------------- | ---------------- |
+| IO10 (Default CS pin)     | SDA / SPI CS      |
+| IO11 (Default MOSI pin)   | RX / SPI MOSI     |
+| IO13 (Default MISO pin)   | TX / SPI MISO     |
+| IO12 (Default SCK pin)    | SCL / SPI SCK     |
+| 3V3                       | 3V3               |
+| GND                       | GND               |
+
+<WarningBox>
+
+SPI communication won't work until **JP4** is closed. With JP4 left open (the default), the module stays in I2C + UART mode and ignores anything sent over these pins as SPI.
+
+</WarningBox>
+
+<WarningBox>
+
+Some NEO-M9N units don't respond to UBX commands over SPI with their factory settings, even with JP4 closed and the wiring correct. If that happens, connect the module via UART or I2C first, open it in **u-center** (u-blox's free configuration and monitoring tool for Windows), and set the SPI port's input/output protocol to **UBX only**. See the [u-center configuration](#configuring-the-module-with-u-center) section below.
+
+</WarningBox>
+
+---
+
+## Configuring the module with u-center
+
+<QuickLink
+  title="u-center"
+  description="u-blox's free desktop application for configuring, monitoring, and debugging u-blox GNSS receivers"
+  url="https://www.u-blox.com/en/product/u-center"
+/>
+
+u-center connects to the module over UART or a USB-to-serial adapter and shows you live satellite data, message traffic, and every configuration option the module supports. You don't need it for normal I2C or UART use since the library configures everything from your sketch, but it's useful for:
+
+- **Getting SPI working** - as mentioned above, some units need their SPI port's protocol set explicitly. In u-center, open **View → Messages View**, go to **UBX → CFG → PRT**, select the **SPI** target port, and set both **In Protocol** and **Out Protocol** to **UBX** only, then click **Send**. Use **CFG → CFG** to save the setting to the module's flash so it persists after a power cycle.
+- **Watching raw satellite data** - the **Messages View** shows UBX and NMEA messages as they arrive, which is useful for confirming the module is actually receiving data before you start debugging your own code.
+- **Changing constellation or update-rate settings** - anything you'd otherwise set with library calls like `myGNSS.setNavigationFrequency()` can be tested interactively first.
+
+<InfoBox>u-center only runs on Windows and needs a serial connection (UART or USB-to-serial), so connect over one of those interfaces for configuration even if you plan to use SPI or I2C in your actual project.</InfoBox>

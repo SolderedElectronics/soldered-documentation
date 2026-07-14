@@ -1,47 +1,160 @@
 ---
-slug: /neo-m9n-00b/arduino/troubleshooting
-title: NEO-M9N-00B - Troubleshooting
-sidebar_label: Troubleshooting
+slug: /neo-m9n-00b/arduino/geofence
+title: NEO-M9N-00B - Geofence
+sidebar_label: Geofence
 id: neo-m9n-00b-arduino-4
 hide_title: False
-pagination_next: null
 ---
 
-This page contains some tips if you are having problems using this product.
+This page contains an example of setting up geofences around the module's current position and monitoring whether it's still inside them. The module supports up to **4 concentric geofences**, each with its own radius and confidence level.
 
-<ExpandableSection title="My GNSS module won't initialize!">
+---
 
-#### Check wiring
-Ensure that your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic (formerly easyC)-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
+## Initialization
 
-#### Check I2C pins
-If you are connecting the module using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Refer to your microcontroller's documentation to confirm the correct pin assignments.
+Include the required libraries, create the module object, and define which pin drives an LED to show the geofence state:
 
-#### Scan for I2C devices
-Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the module is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller's I2C bus.
+```cpp
+#define LED LED_BUILTIN // Change this if your board's LED is on a different pin
 
-#### Try reinitializing
-If the module fails to initialize on the first attempt, try calling `myGNSS.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
+#include <Wire.h>
+#include <Soldered-GNSS.h>
 
-</ExpandableSection>
+Soldered_GNSS myGNSS;
+```
 
-<ExpandableSection title="I'm not getting a GPS fix!">
+In the `setup()` function, wait for a 3D fix, then define four geofences (5 m, 10 m, 15 m, and 20 m radius) centered on the current position:
 
-#### Move to an open outdoor area
-The NEO-M9N-00B requires a clear view of the sky to receive satellite signals. Walls, roofs, and dense foliage can block or weaken signals. Make sure you are outdoors with an unobstructed view above you.
+```cpp
+void setup()
+{
+    pinMode(LED, OUTPUT);
 
-#### Wait for a cold start to complete
-On first power-up or after a long period without power, the module performs a cold start and may take several minutes to acquire a fix. Once a fix has been obtained at least once, subsequent warm starts are significantly faster.
+    Wire.begin();
 
-#### Check the antenna connection
-Ensure the GNSS antenna is securely connected to the module's antenna port. A loose or missing antenna will prevent satellite acquisition entirely.
+    Serial.begin(115200);
+    while (!Serial);
+    Serial.println(F("NEO-M9N-00B geofence example"));
 
-#### Check the SIV count
-Use `myGNSS.getSIV()` to read the number of satellites in view. A value of 0 indicates no satellites are being received. A fix typically requires at least 4 satellites.
+    if (myGNSS.begin() == false)
+    {
+        Serial.println(F("u-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
+        while (1);
+    }
 
-#### Verify time and date validity
-Use `myGNSS.getTimeValid()` and `myGNSS.getDateValid()` to check whether the module has a confirmed time and date lock. If these return false, the fix is not yet complete.
+    myGNSS.setI2COutput(COM_TYPE_UBX);
 
-</ExpandableSection>
+    Serial.println(F("Waiting for a 3D fix..."));
 
-<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+    byte fixType = 0;
+    while (fixType < 3)
+    {
+        fixType = myGNSS.getFixType();
+        Serial.print(F("Fix: "));
+        Serial.println(fixType);
+        delay(1000);
+    }
+
+    Serial.println(F("3D fix found!"));
+
+    long latitude = myGNSS.getLatitude();
+    long longitude = myGNSS.getLongitude();
+
+    myGNSS.clearGeofences(); // Clear any existing geofences first
+
+    byte confidence = 2; // 0 = none, 1 = 68%, 2 = 95%, 3 = 99.7%, 4 = 99.99%
+
+    myGNSS.addGeofence(latitude, longitude, 500, confidence);  // 5 m radius (radius is in cm)
+    myGNSS.addGeofence(latitude, longitude, 1000, confidence); // 10 m radius
+    myGNSS.addGeofence(latitude, longitude, 1500, confidence); // 15 m radius
+    myGNSS.addGeofence(latitude, longitude, 2000, confidence); // 20 m radius
+}
+```
+
+<FunctionDocumentation
+  functionName="myGNSS.getFixType()"
+  description="Reads the current GNSS fix type"
+  returnDescription="Byte value: 0 = no fix, 1 = dead reckoning, 2 = 2D, 3 = 3D, 4 = GNSS + dead reckoning, 5 = time only"
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="myGNSS.clearGeofences()"
+  description="Removes all currently configured geofences from the module"
+  returnDescription="Boolean value, true if successful, false for error"
+  parameters={[]}
+/>
+
+<FunctionDocumentation
+  functionName="myGNSS.addGeofence()"
+  description="Adds a circular geofence around a given coordinate. Up to 4 geofences can be active at once"
+  returnDescription="Boolean value, true if successful, false for error"
+  parameters={[
+  { type: 'int32_t', name: 'latitude', description: "Latitude of the geofence center, in degrees * 10^-7" },
+  { type: 'int32_t', name: 'longitude', description: "Longitude of the geofence center, in degrees * 10^-7" },
+  { type: 'uint32_t', name: 'radius', description: "Radius of the geofence, in centimeters" },
+  { type: 'byte', name: 'confidence', description: "Confidence level: 0 = none, 1 = 68%, 2 = 95%, 3 = 99.7%, 4 = 99.99%" },
+  ]}
+/>
+
+---
+
+## Monitoring the geofence state
+
+In the `loop()` function, the combined geofence state is checked once per second. The LED lights up while the module is inside the outermost (combined) geofence:
+
+```cpp
+void loop()
+{
+    geofenceState currentGeofenceState;
+
+    if (myGNSS.getGeofenceState(currentGeofenceState) == false)
+    {
+        return;
+    }
+
+    Serial.print(F("Combined state: "));
+    Serial.print(currentGeofenceState.combState);
+
+    if (currentGeofenceState.combState == 1)
+    {
+        Serial.println(F(" (Inside)"));
+        digitalWrite(LED, HIGH);
+    }
+    else if (currentGeofenceState.combState == 2)
+    {
+        Serial.println(F(" (Outside)"));
+        digitalWrite(LED, LOW);
+    }
+    else
+    {
+        Serial.println(F(" (Unknown)"));
+        digitalWrite(LED, LOW);
+    }
+
+    delay(1000);
+}
+```
+
+<FunctionDocumentation
+  functionName="myGNSS.getGeofenceState()"
+  description="Reads the current state of all configured geofences into the provided struct"
+  returnDescription="Boolean value, true if successful, false for error"
+  parameters={[
+  { type: 'geofenceState &', name: 'currentGeofenceState', description: "Struct that receives the combined state and the individual state of each configured geofence" },
+  ]}
+/>
+
+<InfoBox>The combined state is **0 = Unknown**, **1 = Inside**, or **2 = Outside**, and reflects the outermost of the configured geofences. Each individual geofence's state is also available in `currentGeofenceState.states[]`.</InfoBox>
+
+---
+
+## Full example
+
+You can find the full sketch below:
+
+<QuickLink
+  title="Geofence.ino"
+  description="An example of setting up and monitoring geofences with the NEO-M9N-00B module"
+  url="https://github.com/SolderedElectronics/Soldered-u-blox-GPS-GNSS-Arduino-Library/blob/main/examples/Geofence/Geofence.ino"
+/>

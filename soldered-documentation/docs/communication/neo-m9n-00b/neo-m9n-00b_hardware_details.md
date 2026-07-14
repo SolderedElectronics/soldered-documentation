@@ -21,16 +21,18 @@ Click [**here**](/img/neo-m9n-00b/NEO-M9N-00_Pinout.png) for a high resolution i
 | **GND** | Ground | Common ground reference for the module. |
 | **VCC** | Power | Main power input for the board. |
 | **3V3** | Power | 3.3V regulated power output/input. |
-| **SDA** | Data | I2C serial data line. |
-| **SCL** | Clock | I2C serial clock line. |
-| **TX** | UART TX | UART transmit pin for sending serial data. |
-| **RX** | UART RX | UART receive pin for receiving serial data. |
+| **SDA** | Data / SPI CS | I2C serial data line, or SPI chip select when the module is switched to SPI mode (see **JP4** below). |
+| **SCL** | Clock / SPI SCK | I2C serial clock line, or SPI clock when the module is switched to SPI mode. |
+| **TX** | UART TX / SPI MISO | UART transmit pin, or SPI MISO when the module is switched to SPI mode. |
+| **RX** | UART RX / SPI MOSI | UART receive pin, or SPI MOSI when the module is switched to SPI mode. |
 | **RESET** | Control | Resets the GNSS module. |
 | **INT** | Interrupt | Interrupt output pin for event notifications. |
 | **PPS** | Timing | Pulse-per-second timing output for precise synchronization applications. |
-| **SAFEBOOT** | Control | Forces the module into safe boot mode for firmware recovery or updates. |
+| **SAFEBOOT** | Control | Forces the module into safe boot mode for firmware recovery or updates. Leave open for normal operation. |
 
 <InfoBox>This breakout board operates at **3.3V logic level** and includes onboard power regulation for compatibility with both **3.3V and 5V systems**.</InfoBox>
+
+<InfoBox>The **SDA/SCL/TX/RX** pins are shared between I2C, UART, and SPI. Which function is active depends on the **JP4** jumper, see the [Jumper Details](#jumper-details) section below.</InfoBox>
 
 ---
 
@@ -57,6 +59,14 @@ Click [**here**](/img/neo-m9n-00b/NEO-M9N-00_Pinout.png) for a high resolution i
 
 ---
 
+## Backup battery
+
+The board has an onboard holder for a **CR1220 coin-cell battery**, which keeps the module's real-time clock and almanac data alive whenever main power is removed. With a backup battery installed, the module can perform a much faster **hot** or **warm start** the next time it's powered up, instead of a full cold start that has to re-download almanac data from scratch.
+
+<InfoBox>The backup battery is optional. Without one, the module still works normally, it just takes longer to get its first fix after a power cycle.</InfoBox>
+
+---
+
 
 ## Dimensions
 
@@ -76,8 +86,8 @@ This board contains hardware jumpers; see below for their locations and function
 | **JP1** | **NO** (Normally open) | Enables the onboard power LED when shorted. |
 | **JP2** | **NC** (Normally closed) | Connects SDA/SCL pull-up resistors to 3.3V for I2C communication. |
 | **JP3** | **NO** (Normally open) | Enables the PPS status LED when shorted. |
-| **JP4** | **NC** (Normally closed) | Selects the active communication interface. Closed = I2C, open = UART. |
-| **JP5** | **NO** (Normally open) | Antenna RF filter connection. |
+| **JP4** | **NO** (Normally open) | Selects the active communication interface via **D_SEL**. Open (default) = I2C + UART simultaneously, closed = SPI only (disables I2C). |
+| **JP5** | **NO** (Normally open) | Supplies antenna bias voltage to the center pin of the antenna connector, for powering an active (amplified) GPS antenna. Leave open for a passive antenna. |
 
 ---
 

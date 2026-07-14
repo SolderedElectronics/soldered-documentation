@@ -2841,6 +2841,18 @@ const sidebars = {
                   type: 'doc',
                   id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-4',
                 },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-7',
+                },
               ],
             },
           ],
