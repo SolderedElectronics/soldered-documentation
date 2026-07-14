@@ -32,7 +32,12 @@
       "Bash(curl -s http://127.0.0.1:5001/editor -o /c/Users/borna/AppData/Local/Temp/claude/served_editor.html)",
       "Bash(grep -n \"label-row\\\\|-labels\\\\`\\\\|querySelector.*labels\\\\|getElementById.*labels\" /c/Users/borna/AppData/Local/Temp/claude/served_editor.html | head -40)",
       "Bash(\"/c/Users/borna/AppData/Local/Python/pythoncore-3.14-64/python.exe\" --version)",
-      "Bash(/c/Users/borna/AppData/Local/Python/pythoncore-3.14-64/python.exe -c ' *)"
+      "Bash(/c/Users/borna/AppData/Local/Python/pythoncore-3.14-64/python.exe -c ' *)",
+      "Bash(curl -sL -o \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/w5500_datasheet.pdf\" \"https://cdn.sparkfun.com/datasheets/Dev/Arduino/Shields/W5500_datasheet_v1.0.2_1.pdf\" -w \"HTTP_CODE:%{http_code} SIZE:%{size_download}\\\\n\")",
+      "Bash(python3 -c \"import fitz\")",
+      "Bash(python3 -c \"import PyPDF2\")",
+      "Bash(python3 -c \"import pdfplumber\")",
+      "Bash(pdftotext -layout \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/w5500_datasheet.pdf\" \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/w5500_datasheet.txt\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\borna\\Documents\\espressif\\developer-portal\\content\\blog\\2026\\05\\inkplate-esp32-epaper-development-boards"

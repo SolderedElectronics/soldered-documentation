@@ -134,6 +134,21 @@ This board contains hardware jumpers. See below for their locations and function
 | **JP11** | Selectable              | Selects the W5500's **PMODE1** pin: pull-up (3.3 V, default) or pull-down (GND). |
 | **JP12** | Selectable              | Selects the W5500's **PMODE2** pin: pull-up (3.3 V, default) or pull-down (GND). |
 
+Together, JP10-JP12 set the W5500's PHY operation mode at power-up. Each jumper is independently selectable, so all eight combinations below are possible:
+
+| JP10 (PMODE0) | JP11 (PMODE1) | JP12 (PMODE2) | Resulting mode |
+| ------------- | ------------- | ------------- | --------------- |
+| Pull-down     | Pull-down     | Pull-down     | 10BT half-duplex, auto-negotiation disabled |
+| Pull-up       | Pull-down     | Pull-down     | 10BT full-duplex, auto-negotiation disabled |
+| Pull-down     | Pull-up       | Pull-down     | 100BT half-duplex, auto-negotiation disabled |
+| Pull-up       | Pull-up       | Pull-down     | 100BT full-duplex, auto-negotiation disabled |
+| Pull-down     | Pull-down     | Pull-up       | 100BT half-duplex, auto-negotiation enabled |
+| Pull-up       | Pull-down     | Pull-up       | Not used |
+| Pull-down     | Pull-up       | Pull-up       | Not used |
+| **Pull-up (default)** | **Pull-up (default)** | **Pull-up (default)** | **All modes capable, auto-negotiation enabled** |
+
+<InfoBox>The factory default (all three jumpers pulled up) lets the W5500 auto-negotiate speed and duplex with whatever it's plugged into - the right choice for almost everyone. The other combinations force a fixed speed/duplex, useful mainly for troubleshooting a link that won't auto-negotiate correctly with older or unusual network hardware.</InfoBox>
+
 ---
 
 ## Dimensions

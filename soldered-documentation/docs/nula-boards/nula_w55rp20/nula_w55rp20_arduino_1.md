@@ -37,15 +37,15 @@ To program the **NULA Ether W55RP20**, use the **RP2040 Arduino core** by Earle 
 Install the **Raspberry Pi RP2040 boards** package directly from the **Arduino Boards Manager**:
 
 1. Open **Arduino IDE**
-2. Go to **Tools → Board → Boards Manager**
-3. In the search bar, type **rp2040**
-4. Find the entry **Raspberry Pi Pico/RP2040/RP2350 by Earle Philhower** and click **Install**
-
-Or add the URL manually in **File → Preferences → Additional Boards Manager URLs**:
+2. Go to **File → Preferences → Additional Boards Manager URLs** and add:
 
 ```
 https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 ```
+
+3. Go to **Tools → Board → Boards Manager**
+4. In the search bar, type **rp2040**
+5. Find the entry **Raspberry Pi Pico/RP2040/RP2350 by Earle Philhower** and click **Install**
 
 Once installed, select your board from the menu:
 
