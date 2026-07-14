@@ -8,7 +8,7 @@ hide_title: false
 
 The BHI385 is a **Smart IMU** from [**Bosch Sensortec**](https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi385/). Unlike a typical accelerometer or gyroscope where you read a pair of registers, using the BHI385 involves uploading a firmware binary into the chip's program RAM, enabling virtual sensors by name, and reading processed motion data from a pair of hardware FIFOs. Every output (rotation quaternion, step count, tap event, wrist gesture) comes from algorithms running on the chip's **internal Fuser2 processor**, not your microcontroller.
 
-<ErrorBox>The image of BHI385 on the board hasn't been generated yet! We're working on it!</ErrorBox>
+<CenteredImage src="/img/bhi-385-smart-imu-breakout/bhi385_highlight.webp" alt="BHI385" caption="BHI385" width="50%"/>
 
 ---
 

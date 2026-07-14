@@ -51,7 +51,16 @@ hide_title: false
 
 This board contains hardware jumpers; see below for their locations and functions:
 
-<ErrorBox>The jumper images for BHI385 Smart IMU Breakout haven't been generated yet! We're working on it!</ErrorBox>
+<FlickityCarousel
+  images={[
+    { src: '/img/bhi-385-smart-imu-breakout/JP1.webp', alt: 'BHI385 Smart IMU jumper 1', caption: 'JP1' },
+    { src: '/img/bhi-385-smart-imu-breakout/JP2.webp', alt: 'BHI385 Smart IMU jumper 2', caption: 'JP2' },
+    { src: '/img/bhi-385-smart-imu-breakout/JP3.webp', alt: 'BHI385 Smart IMU jumper 3', caption: 'JP3' },
+    { src: '/img/bhi-385-smart-imu-breakout/JP4.webp', alt: 'BHI385 Smart IMU jumper 4', caption: 'JP4' },
+    { src: '/img/bhi-385-smart-imu-breakout/JP5.webp', alt: 'BHI385 Smart IMU jumper 5', caption: 'JP5' },
+  ]}
+  jumpers={true}
+/>
 
 | Jumper  | Default State            | Function                                                                                                                                             |
 | ------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
