@@ -7,7 +7,27 @@
       "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Soldered-ADS1219-Arduino-Library/git/trees/main?recursive=true\")",
       "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/main/src/ADS1219-SOLDERED.h\")",
       "Bash(curl -sL -o \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/deltasigma1.svg\" \"https://upload.wikimedia.org/wikipedia/commons/1/15/This_is_a_block_diagram_of_a_simplified_Delta_Sigma_ADC.svg\" -w \"1: %{http_code} %{size_download}\\\\n\")",
-      "Bash(curl -sL -o \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/deltasigma2.svg\" \"https://upload.wikimedia.org/wikipedia/commons/7/72/Block_Diagram_Delta-Sigma_ADC.svg\" -w \"2: %{http_code} %{size_download}\\\\n\")"
+      "Bash(curl -sL -o \"C:/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/deltasigma2.svg\" \"https://upload.wikimedia.org/wikipedia/commons/7/72/Block_Diagram_Delta-Sigma_ADC.svg\" -w \"2: %{http_code} %{size_download}\\\\n\")",
+      "Bash(grep -rn \"sidebar_label: ADS1219$\" soldered-documentation/docs/sensors/ads1219/)",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Soldered-ADS1219-Arduino-Library/contents/examples\")",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Soldered-ADS1219-Arduino-Library/contents/src\")",
+      "Bash(curl -s \"https://api.github.com/repos/SolderedElectronics/Soldered-ADS1219-Arduino-Library/contents/examples/Continuous\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/main/examples/Continuous/Continuous.ino\")",
+      "Bash(curl -s \"https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=delta-sigma%20modulator%20pulse%20density&srnamespace=6&format=json&srlimit=15\")",
+      "Bash(curl -s \"https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=filetype:svg%20oversampling%20ADC&srnamespace=6&format=json&srlimit=15\")",
+      "Bash(curl -s \"https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=Sigma-Delta%20Modulation.svg&srnamespace=6&format=json&srlimit=15\")",
+      "Bash(curl -s \"https://commons.wikimedia.org/w/api.php?action=query&titles=File:Sigma-delta%20PWM.svg&prop=imageinfo&iiprop=url|extmetadata&format=json\")",
+      "Bash(curl -s -o \"/c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/sigma-delta-pwm.svg\" \"https://upload.wikimedia.org/wikipedia/commons/5/53/Sigma-delta_PWM.svg\")",
+      "Read(//c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/**)",
+      "Bash(curl -s -L -o \"/c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/sigma-delta-pwm.png\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sigma-delta_PWM.svg/800px-Sigma-delta_PWM.svg.png\")",
+      "Bash(head -c 300 \"/c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/sigma-delta-pwm.png\")",
+      "Bash(curl -s \"https://en.wikipedia.org/w/api.php?action=query&titles=Delta-sigma_modulation&prop=pageimages|images&format=json&piprop=original\")",
+      "Bash(curl -s \"https://commons.wikimedia.org/w/api.php?action=query&titles=File:Pulse-density%20modulation%201%20period.gif&prop=imageinfo&iiprop=url|extmetadata&format=json\")",
+      "Bash(curl -s -L -o \"/c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/pdm.gif\" \"https://upload.wikimedia.org/wikipedia/commons/2/20/Pulse-density_modulation_1_period.gif\")",
+      "Bash(cp \"/c/Users/borna/AppData/Local/Temp/claude/c--Users-borna-Documents-GitHub-soldered-documentation/0a4db316-4461-4ee2-940d-f5c0227ad864/scratchpad/pdm.gif\" \"soldered-documentation/static/img/ads1219/pulse_density_modulation.gif\" *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\borna\\AppData\\Local\\Temp\\claude\\c--Users-borna-Documents-GitHub-soldered-documentation\\0a4db316-4461-4ee2-940d-f5c0227ad864\\scratchpad"
     ]
   }
 }

@@ -123,6 +123,15 @@ void loop()
   ]}
 />
 
+<InfoBox>If you need the raw ADC code instead of a millivolt value, for example to do your own ratiometric math against a reference resistor, use `adc.getConversionRaw()` instead. It returns the signed 24-bit result exactly as the ADC produced it, with no gain or reference scaling applied.</InfoBox>
+
+<FunctionDocumentation
+  functionName="adc.getConversionRaw()"
+  description="Returns the last stored conversion result as a raw signed value, without any gain or reference scaling applied."
+  returnDescription="Signed 32-bit value (the ADC's 24-bit two's complement result, sign-extended)."
+  parameters={[]}
+/>
+
 Open the **Serial Monitor** at **115200 baud** to see the voltage reading, printed once per conversion.
 
 <CenteredImage src="/img/ads1219/single_shot.png" alt="Serial Monitor output of the single-shot reading example" caption="Serial Monitor output while turning the potentiometer" />
@@ -131,4 +140,37 @@ Open the **Serial Monitor** at **115200 baud** to see the voltage reading, print
   title="Single_Shot.ino"
   description="Full single-shot reading example for the ADS1219 24-bit ADC"
   url="https://github.com/SolderedElectronics/Soldered-ADS1219-Arduino-Library/blob/main/examples/Single_Shot/Single_Shot.ino"
+/>
+
+---
+
+## Powering down between readings
+
+Single-shot mode is described above as ideal for battery-powered projects, but that's only true if you actually power the ADC down between readings instead of leaving it idle. Call `powerDown()` after reading a result, and `startSync()` again to wake it up for the next one:
+
+```cpp
+void loop()
+{
+    adc.startSync(); // Also wakes the ADC up if it was powered down
+
+    while (!adc.dataReady())
+        delay(10);
+
+    adc.readConversion();
+    float mV = adc.getConversionMillivolts(3300.0f);
+
+    Serial.print("Voltage (mV): ");
+    Serial.println(mV, 3);
+
+    adc.powerDown(); // Shut down the analog front-end until the next reading
+
+    delay(5000); // Wait between readings, e.g. once every 5 seconds
+}
+```
+
+<FunctionDocumentation
+  functionName="adc.powerDown()"
+  description="Puts the ADC into power-down mode, stopping conversions and powering down the analog front-end. The device still responds to I2C commands, and a subsequent startSync() call wakes it back up."
+  returnDescription="Boolean value, true on success."
+  parameters={[]}
 />

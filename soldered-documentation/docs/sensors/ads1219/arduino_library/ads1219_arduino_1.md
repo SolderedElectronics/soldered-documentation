@@ -52,3 +52,29 @@ If you prefer, you can use I2C pins to manually connect:
 | GND                   | GND                 |
 
 </InfoBox>
+
+---
+
+## Using a custom I2C address
+
+All the examples in this documentation assume the default address (**0x40**). If you've configured the [**address jumpers**](/ads1219/hardware#address-selection) for a different address, pass it into the constructor instead of using the default one:
+
+```cpp
+#include <Wire.h>
+#include "ADS1219-SOLDERED.h"
+
+// Replace 0x44 with whichever address your jumpers are set to
+ADS1219_Soldered adc(0x44);
+```
+
+<FunctionDocumentation
+  functionName="ADS1219_Soldered()"
+  description="Constructs the ADC object for a given I2C address and Wire instance."
+  returnDescription="None (constructor)."
+  parameters={[
+  { type: 'uint8_t', name: 'addr', description: "I2C address to use, matching your A0/A1 jumper configuration. Defaults to 0x40 if not given." },
+  { type: 'TwoWire &', name: 'wire', description: "Optional. The Wire instance to use, for boards with multiple I2C buses. Defaults to Wire." },
+  ]}
+/>
+
+<InfoBox>This is most useful when running **multiple ADS1219 boards on the same I2C bus**, each one needs its own object constructed with its own address.</InfoBox>

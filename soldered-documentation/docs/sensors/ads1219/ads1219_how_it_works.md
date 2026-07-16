@@ -8,7 +8,7 @@ hide_title: False
 
 The ADS1219 is a precision **24-bit delta-sigma analog-to-digital converter (ADC)** manufactured by [**Texas Instruments**](https://www.ti.com/product/ADS1219). When using our board, you are communicating directly with the onboard ADS1219 via **I2C communication**.
 
-<CenteredImage src="/img/ads1219/onboard.JPG" alt="ADS1219 on board" caption="ADS1219 on the board" width="400px" />
+<ErrorBox>A photo of the ADS1219 chip on the board is not available yet! We're working on it.</ErrorBox>
 
 ---
 
@@ -29,16 +29,16 @@ For an in-depth look at technical specifications, see the official ADS1219 Datas
 The **ADS1219** is a **delta-sigma (ΔΣ) analog-to-digital converter** that achieves high resolution and low noise by oversampling and filtering the input signal. It works well for slow-changing signals like those from **load cells, bridge sensors, and thermocouples**, where accuracy matters more than sampling speed.
 
 <div align="center">
-  <a title="Puffingbilly at English Wikipedia, CC BY-SA 3.0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Block_Diagram_Delta-Sigma_ADC.svg">
-    <img width="800" alt="Block diagram of a first-order delta-sigma ADC" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Block_Diagram_Delta-Sigma_ADC.svg"/>
+  <a title="Kaldosh at English Wikipedia, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Pulse-density_modulation_1_period.gif">
+    <img width="500" alt="A sine wave encoded as a stream of dense and sparse pulses, denser where the wave is higher" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Pulse-density_modulation_1_period.gif"/>
   </a>
 </div>
 
-This is the core trick behind every delta-sigma ADC, including the ADS1219: instead of measuring the input voltage directly in one shot, an **integrator** continuously accumulates the difference between the input and a feedback signal, and a **1-bit comparator** (the "threshold") checks whether that running total is above or below zero many times per second. That single bit feeds straight back into the integrator, nudging it the other way - so the stream of 1s and 0s coming out ends up spending more time high when the input is large, and more time low when it's small. A **counter** then simply tallies how many of those bits were 1 over a fixed window, and that tally *is* the measurement - more 1s means a higher input voltage. Averaging many single-bit decisions this way is what "oversampling" means in practice, and it's how a comparator that only outputs 1 bit at a time ends up producing a 24-bit result.
+Instead of measuring the input voltage directly in one shot, the ADS1219 samples it extremely fast and turns it into a stream of 1s and 0s like the one above: **more 1s when the signal is high, more 0s when it's low**. Averaging thousands of these single-bit samples together is what "oversampling" means in practice, and it's how a signal that's only ever 1 or 0 at any instant ends up producing a precise 24-bit result.
 
-The device accepts up to **four input channels (AIN0-AIN3)** that can be routed to the internal multiplexer in various **differential or single-ended configurations**. The selected input signal passes through a **programmable gain amplifier (PGA)**, which supports gains of **1 and 4**, effectively scaling the input range to make the best use of the ADC's full dynamic range.
+The output is always 24 bits, but the noise floor is what actually limits how much of that is useful. At the lowest data rate (20 SPS, gain 1), the effective resolution is about **19.6 bits**, close to the datasheet's headline "up to 20 bits effective resolution". Push the data rate up to 1000 SPS and that drops to around **16.8 bits**, since there's less time to average out noise between readings, faster conversions trade resolution for speed.
 
-After amplification, the signal enters the delta-sigma modulator described above, running at a high internal oversampling rate. A **digital decimation filter** processes that 1-bit stream and outputs a final 24-bit result at the selected data rate (**20, 90, 330, or 1000 SPS**). This oversampling and filtering is what gives the ADS1219 its low noise and high resolution.
+The device accepts up to **four input channels (AIN0-AIN3)**, routed through an internal multiplexer in **differential or single-ended** configurations, then through a **programmable gain amplifier (PGA)** (gain of **1 or 4**) before conversion. A **digital decimation filter** turns the oversampled bitstream into a final 24-bit result at whichever **data rate** you've selected (**20, 90, 330, or 1000 SPS**), trading speed for noise performance.
 
 The ADS1219 supports two operating modes:
 
@@ -51,13 +51,15 @@ The device includes a built-in **2.048 V internal voltage reference**, which eli
 
 ## I2C Communication
 
-The ADS1219 communicates with the microcontroller over the **I2C bus**. Key aspects of the protocol implementation:
+The ADS1219 talks over I2C at Standard-mode (100 kHz), Fast-mode (400 kHz), or Fast-mode Plus (1 Mbps), and never stretches the clock.
 
-- **Addressing:** The device supports [**16 selectable I2C addresses**](/ads1219/hardware#address-selection) (0x40-0x4F), set via onboard jumpers, enabling multiple ADS1219 boards on a single bus.
-- **Commands:** The host sends single-byte command words to start a conversion, reset the device, power it down, or read/write the internal registers.
-- **Register access:** Configuration (gain, data rate, input channel, reference source, operating mode) is written to the **configuration register**. Conversion results are retrieved with a dedicated read command (RDATA), returned as a signed 24-bit value.
-- **Data ready:** The **DRDY** pin provides a hardware interrupt signal that goes low when a fresh conversion result is available, avoiding the need to poll the bus.
-- **Clock speed:** The device supports Standard-mode (100 kHz), Fast-mode (400 kHz), and Fast-mode Plus (1 Mbps) I2C clock speeds.
+Its address comes from how the **A0** and **A1** pins are wired, each tied to GND, VCC, SDA, or SCL gives one of 16 addresses (0x40-0x4F), letting multiple boards share a bus. See [Address Selection](/ads1219/hardware#address-selection) for the full table.
+
+Six commands control the device: reset, start/restart a conversion, power down, read the latest result, or read/write the configuration register, which holds gain, data rate, input channel, reference source, and operating mode all in one place.
+
+The **DRDY** pin goes low when a result is ready, so you can use an interrupt instead of polling. A built-in ~55 ms timeout also resets the interface automatically if a transaction stalls.
+
+The Arduino library builds these commands and register writes for you, converts the raw 24-bit two's complement result to millivolts, and tracks the current gain setting internally so that conversion stays correct after you change it. You just call functions like `setMux()` or `getConversionMillivolts()`.
 
 
 

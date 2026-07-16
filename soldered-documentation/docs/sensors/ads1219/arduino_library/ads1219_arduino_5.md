@@ -12,7 +12,7 @@ This page contains some tips if you are having problems using this product.
 <ExpandableSection title="My ADS1219 won't initialize!">
 
 #### Check wiring
-Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic (formerly easyC)-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
+Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
 
 #### Check I2C pins
 If you are connecting the sensor using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Check your microcontroller's documentation to confirm the correct pin assignments.
@@ -25,6 +25,8 @@ If you have multiple I2C devices on the same bus, make sure none share the same 
 
 #### Try reinitializing
 If the sensor fails to initialize on the first attempt, try calling `adc.begin()` again or resetting your microcontroller. Some initialization issues are resolved by a simple reboot.
+
+If the ADC's configuration ends up in an unexpected state after some experimentation (wrong mux, gain, or data rate still set from earlier in your sketch), call `adc.reset()` first. This is a lighter touch than a full re-`begin()` or reboot, it just returns the configuration register to its defaults without re-checking the I2C connection.
 
 </ExpandableSection>
 

@@ -716,7 +716,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'ADS1219',
+          label: 'ADS1219 24-bit ADC',
           items: [
             {
               type: 'doc',

@@ -14,7 +14,7 @@ This example also runs the ADC in **continuous mode**: instead of triggering one
 
 ## Connections for this example
 
-<CenteredImage src="/img/ads1219/interrupt.JPG" alt="Connections" />
+<ErrorBox>A connections photo for this example is not available yet! We're working on it.</ErrorBox>
 
 Connect the ADS1219 board via Qwiic, wire REFP/REFN to your chosen reference (see [Single-Shot Reading](/ads1219/arduino/single-shot) for reference-voltage options), and connect a signal source to **AIN0**.
 

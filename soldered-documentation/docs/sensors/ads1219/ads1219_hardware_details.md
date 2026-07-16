@@ -8,9 +8,9 @@ hide_title: False
 
 ## Pinout
 
-<CenteredImage src="/img/ads1219/pinout.png" alt="ADS1219 pinout" caption="ADS1219 pinout diagram" />
+<CenteredImage src="/img/ads1219/Pinout.png" alt="ADS1219 pinout" caption="ADS1219 pinout diagram" />
 
-Click [**here**](/img/ads1219/pinout.png) for a high-resolution image of the pinout.
+Click [**here**](/img/ads1219/Pinout.svg) for a high-resolution image of the pinout.
 
 ---
 
@@ -36,14 +36,14 @@ Click [**here**](/img/ads1219/pinout.png) for a high-resolution image of the pin
 
 ---
 
-## Qwiic (formerly easyC)
+## Qwiic
 
-<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic (formerly easyC) cable" width="550px" />
+<CenteredImage src="/img/easyc_transparent.png" alt="Qwiic cable" width="550px" />
 
-<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic (formerly easyC) cable** and start coding!</InfoBox>
+<InfoBox>This board is fully **Qwiic-compatible**! Just plug it into your board using a **Qwiic cable** and start coding!</InfoBox>
 
 <QuickLink 
-  title="Qwiic (formerly easyC) details and specifications" 
+  title="Qwiic details and specifications" 
   description="Learn about hardware specifications, compatibility, and usage of the Qwiic connector." 
   url="/qwiic" 
 />
@@ -78,18 +78,12 @@ The ADS1219 supports four programmable data rates, which directly determine conv
 
 This board contains hardware jumpers; see below for their locations and functions:
 
-<FlickityCarousel
-  images={[
-    { src: '/img/ads1219/jp1.JPG', alt: 'ads1219 jumper 1', caption: 'JP1' },
-    { src: '/img/ads1219/JP2.JPG', alt: 'ads1219 jumper 2', caption: 'JP2' },
-  ]}
-  jumpers={true}
-/>
+<ErrorBox>Photos of the JP1 and JP2 jumpers are not available yet! We're working on it.</ErrorBox>
 
 | Jumper  | Default State            | Function                                                                        |
 | ------- | ------------------------ | ------------------------------------------------------------------------------- |
 | **JP1** | **NC** (Normally closed) | Connects **SDA/SCL pull-up resistors to VCC** for I2C communication.           |
-| **JP2** | **NC** (Normally closed) | Connects **AVDD to VCC**. Cut to supply AVDD separately for a cleaner analog reference. |
+| **JP2** | **NC** (Normally closed) | Connects **AVDD to VCC**. Cut for a separate, low-noise analog supply. |
 
 <InfoBox>The board also has eight additional jumper pads (JP3-JP10) dedicated to I2C address selection - see [**Address Selection**](#address-selection) below.</InfoBox>
 
@@ -99,19 +93,7 @@ This board contains hardware jumpers; see below for their locations and function
 
 Depending on how you configure the A0 and A1 jumpers, you can define different I2C addresses for the ADS1219:
 
-<FlickityCarousel
-  images={[
-    { src: '/img/ads1219/A0G.JPG', alt: 'A0 connected to DGND', caption: 'A0 → DGND' },
-    { src: '/img/ads1219/A0V.JPG', alt: 'A0 connected to VCC', caption: 'A0 → VCC' },
-    { src: '/img/ads1219/A0D.JPG', alt: 'A0 connected to SDA', caption: 'A0 → SDA' },
-    { src: '/img/ads1219/A0C.JPG', alt: 'A0 connected to SCL', caption: 'A0 → SCL' },
-    { src: '/img/ads1219/A1G.JPG', alt: 'A1 connected to DGND', caption: 'A1 → DGND' },
-    { src: '/img/ads1219/A1V.JPG', alt: 'A1 connected to VCC', caption: 'A1 → VCC' },
-    { src: '/img/ads1219/A1D.JPG', alt: 'A1 connected to SDA', caption: 'A1 → SDA' },
-    { src: '/img/ads1219/A1C.JPG', alt: 'A1 connected to SCL', caption: 'A1 → SCL' },
-  ]}
-  jumpers={true}
-/>
+<ErrorBox>Photos of the A0/A1 address jumper configurations are not available yet! We're working on it.</ErrorBox>
 
 | Address       | A1   | A0   |
 | :-----------: | :--: | :--: |
