@@ -67,7 +67,7 @@ UART is also enabled by default, alongside I2C, no jumper changes needed. Cross-
 
 ### SPI
 
-SPI is disabled by default. The module ships in **I2C + UART** mode, and the SDA/SCL/TX/RX pins only switch to SPI functions once you close the **JP4** jumper on the board (see [Hardware details](/neo-m9n-00b/hardware) for more on this jumper). With JP4 closed:
+SPI is disabled by default. The module ships in **I2C + UART** mode, and the SDA/SCL/TX/RX pins only switch to SPI functions once you re-bridge the selectable **JP4** jumper on the board to its other position (see [Hardware details](/neo-m9n-00b/hardware) for more on this jumper). With JP4 re-bridged:
 
 | **NULA Deepsleep**      | **NEO-M9N-00B** |
 | ------------------------- | ---------------- |
@@ -80,13 +80,7 @@ SPI is disabled by default. The module ships in **I2C + UART** mode, and the SDA
 
 <WarningBox>
 
-SPI communication won't work until **JP4** is closed. With JP4 left open (the default), the module stays in I2C + UART mode and ignores anything sent over these pins as SPI.
-
-</WarningBox>
-
-<WarningBox>
-
-Some NEO-M9N units don't respond to UBX commands over SPI with their factory settings, even with JP4 closed and the wiring correct. If that happens, connect the module via UART or I2C first, open it in **u-center** (u-blox's free configuration and monitoring tool for Windows), and set the SPI port's input/output protocol to **UBX only**. See the [u-center configuration](#configuring-the-module-with-u-center) section below.
+SPI communication won't work until **JP4** is re-bridged to its SPI position. Left at its default position, the module stays in I2C + UART mode and ignores anything sent over these pins as SPI.
 
 </WarningBox>
 

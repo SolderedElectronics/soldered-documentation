@@ -47,13 +47,26 @@ Use `myGNSS.getTimeValid()` and `myGNSS.getDateValid()` to check whether the mod
 <ExpandableSection title="SPI isn't working!">
 
 #### Check the JP4 jumper
-SPI only works when the **JP4** jumper on the board is closed. With JP4 open (the default), the module stays in I2C + UART mode and won't respond to any SPI traffic.
+SPI only works when the **JP4** jumper is re-bridged to its SPI position. Left at its default position, the module stays in I2C + UART mode and won't respond to any SPI traffic.
 
 #### Check the CS pin
 Make sure the chip select pin defined in your sketch matches the one physically wired to the module's SDA/SPI CS pin.
 
 #### Set the SPI protocol with u-center
 Some modules don't respond to UBX commands over SPI with their factory settings. Connect the module over UART or I2C once, open it in **u-center**, and set the SPI port's input and output protocol to **UBX only**. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center) for the exact steps.
+
+</ExpandableSection>
+
+<ExpandableSection title="Other common issues">
+
+#### My coordinates are inaccurate
+Check the SIV count with `myGNSS.getSIV()`. A fix based on only 4-5 satellites is much less accurate than one based on 10 or more. Moving to a more open area, or waiting longer for additional satellites to be acquired, usually improves accuracy.
+
+#### My fix is intermittent or keeps dropping
+This is usually an antenna or environment issue rather than a wiring one. Check that the antenna connector is fully seated, and make sure nothing (a metal enclosure, a nearby wall) is intermittently blocking the sky view.
+
+#### The module isn't responding to library commands
+Double-check that the module is actually initialized successfully, that is, that `myGNSS.begin()` returned `true`, before calling any other function. Commands sent before a successful `begin()` will silently fail.
 
 </ExpandableSection>
 

@@ -36,6 +36,10 @@ The NEO-M9N-00B integrates a **GNSS receiver and signal processing unit** that t
 
 - **Protocol output** - Positioning results are delivered via **UART, I2C, or SPI** using the standard **NMEA 0183** protocol or the proprietary **UBX binary protocol**.
 
+- **Update rate** - The module can output a new position up to **25 times per second**, far more often than most GNSS receivers need, useful for tracking fast-moving objects.
+
+- **Time to first fix** - A cold start (first power-up, or after a long time unpowered) takes around **24-29 seconds** depending on which constellations are enabled. A hot or aided start, with recent almanac data still available (for example from the CR1220 backup battery), takes around **2 seconds**.
+
 Each of the four constellations the module can track sits in its own set of medium-Earth orbits, all far higher up than something like the International Space Station:
 
 <div align="center">
@@ -70,9 +74,21 @@ The NEO-M9N-00B supports both **I2C** and **UART** communication at the same tim
 
 ## SPI communication
 
-The same four pins used for I2C and UART (**SDA, SCL, TX, RX**) double as an **SPI** interface: **SPI_CS_N, SPI_SCK, SPI_MISO, and SPI_MOSI** respectively. Which function they serve depends on the **D_SEL** pin, broken out on this board as the **JP4** jumper:
+The same four pins used for I2C and UART (**SDA, SCL, TX, RX**) double as an **SPI** interface: **SPI_CS_N, SPI_SCK, SPI_MISO, and SPI_MOSI** respectively. Which function they serve depends on the **D_SEL** pin, broken out on this board as the **JP4** selectable jumper:
 
-- **JP4 open (default)** - **D_SEL** is pulled high, so the module runs in **I2C + UART** mode and the SPI functions are inactive.
-- **JP4 closed** - **D_SEL** is pulled to ground, so the module switches to **SPI-only** mode. I2C is disabled entirely while SPI is active.
+- **JP4 default position** - **D_SEL** is pulled high, so the module runs in **I2C + UART** mode and the SPI functions are inactive.
+- **JP4 re-bridged to the other position** - **D_SEL** is pulled to ground, so the module switches to **SPI-only** mode. I2C is disabled entirely while SPI is active.
 
 The module only exposes one interface pair at a time on these shared pins, so you need to decide upfront which one you'll use and set the jumper accordingly. SPI runs in **mode 1** (CPHA = 0) at up to **5.5 MHz**, with a maximum transfer rate of **125 kB/s**, which is slower than what the interface itself can theoretically reach but still fast enough for GNSS data.
+
+---
+
+## Additional capabilities
+
+Beyond basic positioning, the NEO-M9N supports a couple of features worth knowing about:
+
+- **SBAS augmentation** - The module can use satellite-based augmentation systems (SBAS) like WAAS or EGNOS, regional networks of ground stations and geostationary satellites that broadcast correction data, to improve position accuracy further.
+
+- **Jamming and interference monitoring** - The receiver can detect RF jamming or interference on the GNSS frequency bands and report it, which is useful for diagnosing why a fix is suddenly unreliable in an otherwise clear-sky environment.
+
+Both are configured through UBX messages rather than dedicated pins, so they don't require any extra wiring, only the corresponding library or u-center commands to enable.

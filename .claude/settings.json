@@ -60,7 +60,18 @@
       "Bash(curl -s -o /dev/null -w \"orbits: %{http_code}\\\\n\" \"https://upload.wikimedia.org/wikipedia/commons/b/b4/Comparison_satellite_navigation_orbits.svg\")",
       "Bash(git commit *)",
       "Bash(curl -s -L \"https://soldered.com/products/gps-breakout-neo-m9n-00b-qwiic\" -o /tmp/neo-product.html)",
-      "Bash(identify soldered-documentation/static/img/neo-m9n-00b/top.png soldered-documentation/static/img/neo-m9n-00b/izo.png)"
+      "Bash(identify soldered-documentation/static/img/neo-m9n-00b/top.png soldered-documentation/static/img/neo-m9n-00b/izo.png)",
+      "WebFetch(domain:learntosolderkits.com)",
+      "WebFetch(domain:www.globalwellpcba.com)",
+      "WebFetch(domain:www.bestfpc.com)",
+      "WebFetch(domain:learn.soldered.com)",
+      "Bash(netstat -ano)",
+      "Bash(FLASK_APP=app.py python -m flask run --port 5001)",
+      "Bash(python3 -c \"from PIL import Image; im = Image.open\\('soldered-documentation/static/img/neo-m9n-00b/Pinout.png'\\); print\\(im.size\\)\")",
+      "PowerShell(Get-Command yarn -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npm -ErrorAction SilentlyContinue)",
+      "Bash(curl -s \"http://localhost:3000/neo-m9n-00b/hardware\" -o /tmp/hardware_page.html)",
+      "Bash(tasklist //FI \"IMAGENAME eq node.exe\")"
     ],
     "additionalDirectories": [
       "\\tmp"

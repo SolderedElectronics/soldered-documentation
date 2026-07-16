@@ -8,9 +8,9 @@ hide_title: False
 
 ## Pinout
 
-<CenteredImage src="/img/neo-m9n-00b/NEO-M9N-00_Pinout.png" alt="NEO-M9N-00B pinout diagram" caption="NEO-M9N-00B pinout diagram"/>
+<CenteredImage src="/img/neo-m9n-00b/Pinout.png" alt="NEO-M9N-00B pinout diagram" caption="NEO-M9N-00B pinout diagram"/>
 
-Click [**here**](/img/neo-m9n-00b/NEO-M9N-00_Pinout.png) for a high resolution image of the pinout.
+Click [**here**](/img/neo-m9n-00b/Pinout.svg) for a high resolution image of the pinout.
 
 ---
 
@@ -36,6 +36,16 @@ Click [**here**](/img/neo-m9n-00b/NEO-M9N-00_Pinout.png) for a high resolution i
 
 ---
 
+## Antenna connector
+
+The board also features a connector for an external GNSS antenna.
+
+<CenteredImage src="/img/neo-m9n-00b/antenna.png" alt="Antenna connector on board" caption="Antenna connector on board" width="600px" />
+
+<InfoBox>**JP5** is closed by default, supplying bias voltage to the antenna's center pin for an active (amplified) antenna. If you're using a passive antenna, open **JP5** instead, see [Jumper Details](#jumper-details) below.</InfoBox>
+
+---
+
 ## Qwiic
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic cable" width="550px" />
@@ -52,8 +62,14 @@ Click [**here**](/img/neo-m9n-00b/NEO-M9N-00_Pinout.png) for a high resolution i
 
 ## Power Consumption
 
-- **Backup mode:** Ultra-low power operation for maintaining GNSS data and RTC functionality.
-- **Active tracking mode:** Power consumption depends on enabled GNSS constellations and update rate settings.
+Current draw depends on how many constellations are enabled at once and whether power save mode is active:
+
+| Mode | GPS+GLONASS+Galileo+BeiDou | GPS+GLONASS | GPS only |
+| ---- | -------------------------- | ----------- | -------- |
+| Peak (acquisition) | 100 mA | 100 mA | 100 mA |
+| Acquisition | 50 mA | 43 mA | 36 mA |
+| Tracking (continuous mode) | 36 mA | 32 mA | 28 mA |
+| Tracking (power save mode) | 21 mA | 20 mA | 19 mA |
 
 <InfoBox>For lower power consumption, reduce the navigation update rate and disable unused GNSS constellations when possible.</InfoBox>
 
@@ -94,11 +110,11 @@ This board contains hardware jumpers; see below for their locations and function
 
 | Jumper | Default State | Function |
 | ------- | ------------------------ | -------- |
-| **JP1** | **NO** (Normally open) | Enables the onboard power LED when shorted. |
-| **JP2** | **NC** (Normally closed) | Connects SDA/SCL pull-up resistors to 3.3V for I2C communication. |
-| **JP3** | **NO** (Normally open) | Enables the PPS status LED when shorted. |
-| **JP4** | **NO** (Normally open) | Selects the active communication interface via **D_SEL**. Open (default) = I2C + UART simultaneously, closed = SPI only (disables I2C). |
-| **JP5** | **NO** (Normally open) | Supplies antenna bias voltage to the center pin of the antenna connector, for powering an active (amplified) GPS antenna. Leave open for a passive antenna. |
+| **JP1** | **NC** (Normally closed) | Enables the power LED. |
+| **JP2** | **NC** (Normally closed) | Connects SDA/SCL pull-ups to 3.3V. |
+| **JP3** | **NC** (Normally closed) | Enables the PPS LED. |
+| **JP4** | **Selectable** | Selects **D_SEL**: default = I2C + UART, re-bridged = SPI only. |
+| **JP5** | **NC** (Normally closed) | Supplies antenna bias voltage for an active antenna. |
 
 ---
 

@@ -10,9 +10,9 @@ pagination_prev: null
 
 The **GPS Breakout NEO-M9N-00B** is a GNSS positioning module based on the **u-blox NEO-M9N** receiver. It concurrently receives **GPS, GLONASS, Galileo, and BeiDou** signals, reaching up to **2.0 m CEP** horizontal accuracy, and connects over **I2C, UART, or SPI** via two **Qwiic** connectors or a standard pin header.
 
-<CenteredImage src="/img/neo-m9n-00b/izo.png" alt="GPS Breakout NEO-M9N-00B" caption="GPS Breakout NEO-M9N-00B" width="600px"/>
-
 Beyond position output, the module includes a configurable **1PPS timepulse**, a jumper-selectable **antenna bias voltage** for active antennas, and an onboard **CR1220 backup battery holder** for faster fixes after a power cycle. It can be configured and monitored with u-blox's free **u-center** desktop software.
+
+<CenteredImage src="/img/neo-m9n-00b/izo.png" alt="GPS Breakout NEO-M9N-00B" caption="GPS Breakout NEO-M9N-00B" width="600px"/>
 
 ---
 
@@ -31,6 +31,8 @@ Beyond position output, the module includes a configurable **1PPS timepulse**, a
 
 - **GNSS constellations:** GPS, GLONASS, Galileo, BeiDou (concurrent reception)
 - **Position accuracy:** 2.0 m CEP horizontal accuracy
+- **Update rate:** Up to 25 Hz
+- **Time to first fix:** ~24-29 s cold start, ~2 s hot/aided start
 - **Data output:** NMEA 0183 and UBX binary protocols
 - **Timepulse:** Configurable 1PPS output synchronized to GNSS time
 - **Communication:** I2C and UART simultaneously by default (default I2C address: **0x42**), or SPI when switched over with the D_SEL jumper
