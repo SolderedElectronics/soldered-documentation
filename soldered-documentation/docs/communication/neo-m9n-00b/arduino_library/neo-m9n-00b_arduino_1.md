@@ -78,11 +78,17 @@ SPI is disabled by default. The module ships in **I2C + UART** mode, and the SDA
 | 3V3                       | 3V3               |
 | GND                       | GND               |
 
-<WarningBox>
+<InfoBox>
 
 SPI communication won't work until **JP4** is re-bridged to its SPI position. Left at its default position, the module stays in I2C + UART mode and ignores anything sent over these pins as SPI.
 
-</WarningBox>
+</InfoBox>
+
+<InfoBox>
+
+Re-bridging JP4 is not enough by itself. You must also open the module in **u-center** and set the SPI port's input/output protocol to **UBX only**, otherwise it will not respond to commands over SPI, even with the jumper and wiring correct. See [Configuring the module with u-center](#configuring-the-module-with-u-center) below.
+
+</InfoBox>
 
 ---
 
@@ -94,9 +100,9 @@ SPI communication won't work until **JP4** is re-bridged to its SPI position. Le
   url="https://www.u-blox.com/en/product/u-center"
 />
 
-u-center connects to the module over UART or a USB-to-serial adapter and shows you live satellite data, message traffic, and every configuration option the module supports. You don't need it for normal I2C or UART use since the library configures everything from your sketch, but it's useful for:
+u-center connects to the module over UART or a USB-to-serial adapter and shows you live satellite data, message traffic, and every configuration option the module supports. You don't need it for normal I2C or UART use since the library configures everything from your sketch, but it's required to get SPI working, and useful for a few other things too:
 
-- **Getting SPI working** - as mentioned above, some units need their SPI port's protocol set explicitly. In u-center, open **View → Messages View**, go to **UBX → CFG → PRT**, select the **SPI** target port, and set both **In Protocol** and **Out Protocol** to **UBX** only, then click **Send**. Use **CFG → CFG** to save the setting to the module's flash so it persists after a power cycle.
+- **Getting SPI working (required)** - the SPI port's protocol must be set explicitly to UBX, or the module will not respond over SPI. In u-center, open **View → Messages View**, go to **UBX → CFG → PRT**, select the **SPI** target port, and set both **In Protocol** and **Out Protocol** to **UBX** only, then click **Send**. Use **CFG → CFG** to save the setting to the module's flash so it persists after a power cycle.
 - **Watching raw satellite data** - the **Messages View** shows UBX and NMEA messages as they arrive, which is useful for confirming the module is actually receiving data before you start debugging your own code.
 - **Changing constellation or update-rate settings** - anything you'd otherwise set with library calls like `myGNSS.setNavigationFrequency()` can be tested interactively first.
 

@@ -81,6 +81,8 @@ The same four pins used for I2C and UART (**SDA, SCL, TX, RX**) double as an **S
 
 The module only exposes one interface pair at a time on these shared pins, so you need to decide upfront which one you'll use and set the jumper accordingly. SPI runs in **mode 1** (CPHA = 0) at up to **5.5 MHz**, with a maximum transfer rate of **125 kB/s**, which is slower than what the interface itself can theoretically reach but still fast enough for GNSS data.
 
+<InfoBox>Switching JP4 to SPI mode is not enough by itself. You must also open the module in **u-center** and set the SPI port's input/output protocol to **UBX only**, otherwise it will not respond to commands over SPI. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center) for the exact steps.</InfoBox>
+
 ---
 
 ## Additional capabilities

@@ -46,14 +46,14 @@ Use `myGNSS.getTimeValid()` and `myGNSS.getDateValid()` to check whether the mod
 
 <ExpandableSection title="SPI isn't working!">
 
+#### Set the SPI protocol with u-center (required)
+The module will not respond to commands over SPI until its SPI port's protocol is set to UBX. This step is required, not optional, JP4 and correct wiring alone are not enough. Connect the module over UART or I2C once, open it in **u-center**, and set the SPI port's input and output protocol to **UBX only**. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center) for the exact steps.
+
 #### Check the JP4 jumper
 SPI only works when the **JP4** jumper is re-bridged to its SPI position. Left at its default position, the module stays in I2C + UART mode and won't respond to any SPI traffic.
 
 #### Check the CS pin
 Make sure the chip select pin defined in your sketch matches the one physically wired to the module's SDA/SPI CS pin.
-
-#### Set the SPI protocol with u-center
-Some modules don't respond to UBX commands over SPI with their factory settings. Connect the module over UART or I2C once, open it in **u-center**, and set the SPI port's input and output protocol to **UBX only**. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center) for the exact steps.
 
 </ExpandableSection>
 

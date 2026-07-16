@@ -60,21 +60,6 @@ The board also features a connector for an external GNSS antenna.
 
 ---
 
-## Power Consumption
-
-Current draw depends on how many constellations are enabled at once and whether power save mode is active:
-
-| Mode | GPS+GLONASS+Galileo+BeiDou | GPS+GLONASS | GPS only |
-| ---- | -------------------------- | ----------- | -------- |
-| Peak (acquisition) | 100 mA | 100 mA | 100 mA |
-| Acquisition | 50 mA | 43 mA | 36 mA |
-| Tracking (continuous mode) | 36 mA | 32 mA | 28 mA |
-| Tracking (power save mode) | 21 mA | 20 mA | 19 mA |
-
-<InfoBox>For lower power consumption, reduce the navigation update rate and disable unused GNSS constellations when possible.</InfoBox>
-
----
-
 ## Backup battery
 
 The board has an onboard holder for a **CR1220 coin-cell battery**, which keeps the module's real-time clock and almanac data alive whenever main power is removed. With a backup battery installed, the module can perform a much faster **hot** or **warm start** the next time it's powered up, instead of a full cold start that has to re-download almanac data from scratch.
@@ -115,6 +100,8 @@ This board contains hardware jumpers; see below for their locations and function
 | **JP3** | **NC** (Normally closed) | Enables the PPS LED. |
 | **JP4** | **Selectable** | Selects **D_SEL**: default = I2C + UART, re-bridged = SPI only. |
 | **JP5** | **NC** (Normally closed) | Supplies antenna bias voltage for an active antenna. |
+
+<InfoBox>Re-bridging **JP4** alone does not guarantee SPI will work. You must also open the module in **u-center** and set the SPI port's input/output protocol to **UBX only**, otherwise it will not respond to commands over SPI. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center).</InfoBox>
 
 ---
 
