@@ -2669,6 +2669,42 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'PAM8406 EDIT THIS NAME',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/pam8406/pam8406-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/pam8406/pam8406-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/pam8406/pam8406-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/pam8406/arduino_library/pam8406-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/pam8406/arduino_library/pam8406-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/pam8406/arduino_library/pam8406-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Smart LED WS2812B',
           items: [
             {
