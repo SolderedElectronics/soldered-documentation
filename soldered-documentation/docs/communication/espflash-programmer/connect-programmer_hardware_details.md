@@ -16,8 +16,8 @@ Click [**here**](/img/espflash-programmer/pinout.png) for a high-resolution imag
 
 | Pin Marking | Pin Name   | Description                                             |
 | ----------- | ---------- | ------------------------------------------------------- |
-| **IO0**     | Output     | Pin used to set the ESP into bootloader mode           |
-| **RESET**   | Output     | Resets the ESP when set to HIGH                          |
+| **IO0**     | Output     | Pin used to set the ESP into bootloader mode. Held low during reset to enter it |
+| **RESET**   | Output     | Resets the ESP when pulled low                         |
 | **TXD**     | Transceiver| Transceiver pin for UART communication                |
 | **RXD**     | Receiver   | Receiver pin for UART communication                   |
 | **3V3**     | Power      | Provides 3V3 to the ESP                                |
@@ -38,7 +38,7 @@ Click [**here**](/img/espflash-programmer/pinout.png) for a high-resolution imag
 
 This board contains hardware jumpers; see below for their locations and functions:
 
-[image placeholder - jumper highlighted]
+<CenteredImage src="/img/espflash-programmer/JP1.png" alt="JP1 jumper highlighted" caption="JP1 jumper location" />
 
 | Jumper  | Default State            | Function                                                                                                      |
 | ------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
@@ -50,11 +50,8 @@ This board contains hardware jumpers; see below for their locations and function
 
 Schematics, KiCad files, Gerber files, and more can be found in the GitHub repository:
 
-<QuickLink 
-  title="ESPFlash Programmer Hardware Design" 
-  description="GitHub hardware repository for this product"
-  url="https://github.com/SolderedElectronics/CONNECT-programmer-hardware-design/tree/main" 
-/> 
+<WarningBox>The hardware repository for this board is not available yet! We're working on it.
+In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have by looking for the version mark on the PCB.
 
