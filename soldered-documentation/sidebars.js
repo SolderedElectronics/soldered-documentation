@@ -2669,7 +2669,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'PAM8406 EDIT THIS NAME',
+          label: '5W Audio Amplifier PAM8406',
           items: [
             {
               type: 'doc',
@@ -2682,24 +2682,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'actuators/pam8406/pam8406-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'actuators/pam8406/arduino_library/pam8406-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/pam8406/arduino_library/pam8406-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'actuators/pam8406/arduino_library/pam8406-arduino-3',
-                },
-              ],
             },
           ],
         },

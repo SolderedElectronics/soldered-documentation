@@ -1,11 +1,11 @@
 ---
-slug: /inkplate/6/micropython/rtc/basic-rtc-usage
-title: Inkplate 6 MicroPython - Basic RTC usage
+slug: /inkplate/6flick/micropython/rtc/basic-rtc-usage
+title: Inkplate 6FLICK MicroPython - Basic RTC usage
 sidebar_label: Basic RTC usage
 id: basic-rtc-usage
 ---
 
-Inkplate 6 comes with an onboard **RTC (Real-Time Clock)**, which allows the board to keep track of the time and date even across reboots **(as long as the backup battery is present)**.
+Inkplate 6FLICK comes with an onboard **RTC (Real-Time Clock)**, which allows the board to keep track of the time and date even across reboots **(as long as the backup battery is present)**.
 
 <InfoBox>  
 To preserve time while the Inkplate is powered off, make sure a **coin cell battery (CR2032)** is installed in the RTC holder. Without it, the clock will reset when power is lost.  

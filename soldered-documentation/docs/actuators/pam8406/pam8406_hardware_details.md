@@ -6,15 +6,21 @@ id: pam8406-hardware
 hide_title: False
 ---
 
+## Pinout
+
+<CenteredImage src="/img/pam8406/Pinout.png" alt="5W Stereo Audio Amplifier PAM8406 pinout" caption="5W Stereo Audio Amplifier PAM8406 pinout" />
+
+Click [**here**](/img/pam8406/Pinout.png) for a high-resolution image of the pinout.
+
 ## Pin details
 
 ### K1 - Audio input jack (3.5mm)
 
 | Pin Marking | Pin Name | Description |
 | ----------- | -------- | ----------- |
-| **TIP** | Left channel in | Left channel audio input |
-| **RING** | Right channel in | Right channel audio input |
-| **SLEEVE** | GND | Analog ground |
+| **TIP** | INL | Left channel audio input |
+| **RING** | INR | Right channel audio input |
+| **SLEEVE** | AGND | Audio ground |
 
 ### K2 - Audio input header
 
@@ -22,33 +28,37 @@ An alternate way to feed the same stereo signal, useful when you'd rather wire a
 
 | Pin Marking | Pin Name | Description |
 | ----------- | -------- | ----------- |
-| **1** | Right channel in | Right channel audio input |
-| **2** | GND | Analog ground |
-| **3** | Left channel in | Left channel audio input |
+| **INR** | Right channel in | Right channel audio input |
+| **AGND** | Audio ground | Audio ground |
+| **INL** | Left channel in | Left channel audio input |
 
 ### K3 - Power and control header
 
 | Pin Marking | Pin Name | Description |
 | ----------- | -------- | ----------- |
-| **1** | MODE | Class-D / Class-AB select. High = Class-D (default), low = Class-AB |
-| **2** | SHND | Shutdown, active low. Must be driven high for the amplifier to run |
-| **3** | MUTE | Mute, active low. Must be driven high for audio output to pass through |
-| **4** | GND | Ground |
-| **5** | VCC | Supply voltage, 2.5V to 6V |
+| **VCC** | Supply voltage | 2.5V to 5.5V |
+| **GND** | Ground | Ground |
+| **MUTE** | Mute | Active low. Internal pull-up keeps this high by default; pull low to mute |
+| **SHDN** | Shutdown | Active low. Internal pull-up keeps this high by default; pull low to shut down |
+| **MODE** | Mode select | Class-D / Class-AB select. High = Class-D (default), low = Class-AB |
 
 ### K4 / K5 - Speaker outputs
 
 | Pin Marking | Pin Name | Description |
 | ----------- | -------- | ----------- |
-| **K4** | Right channel out | Right channel speaker output (screw terminal) |
-| **K5** | Left channel out | Left channel speaker output (screw terminal) |
+| **R+ / R-** | Right channel out | Right channel speaker output (screw terminal, K4) |
+| **L+ / L-** | Left channel out | Left channel speaker output (screw terminal, K5) |
 
 <InfoBox>
-This board has no onboard voltage regulator. VCC is fed straight to the PAM8406, so the board runs at whatever voltage you supply it, anywhere from **2.5V to 6V**.
+This board has no onboard voltage regulator. VCC is fed straight to the PAM8406, so the board runs at whatever voltage you supply it, anywhere from **2.5V to 5.5V**.
 </InfoBox>
 
+<WarningBox>
+Do not exceed **6V** on VCC. This is the PAM8406's absolute maximum supply voltage, and going above it can permanently damage the chip.
+</WarningBox>
+
 <InfoBox>
-**SHND** and **MUTE** don't have onboard pull-ups, so they float if left unconnected. Tie both to VCC (or drive them high from a microcontroller) to bring the amplifier out of shutdown and hear audio. **MODE** does have an onboard pull-up, so it defaults to Class-D if you don't connect anything to it.
+**SHDN** and **MUTE** have internal pull-ups inside the PAM8406 itself, so both default high (amplifier active, unmuted) if left unconnected. This board's footprints for external pull-ups on these pins (R5/R6) aren't populated since they'd be redundant. **MODE** is different: the PAM8406 doesn't allow MODE to float, so this board adds its own external pull-up (R7) to hold it high, defaulting to Class-D.
 </InfoBox>
 
 ---
@@ -70,12 +80,6 @@ This board contains two hardware jumpers; see below for their locations and func
 - **Header Pin Holes:** 1.5 mm
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
 - Soldered boards are LEGO compatible! 🧱
-
----
-
-## PAM8406DR
-
-The board is built around the **PAM8406**, a Diodes Incorporated Class-D/AB switchable stereo amplifier in an SOP-16 package. It's the only active IC on the board: all output filtering, muting, and mode switching happens around it, and the control header exposes its MODE, SHND, and MUTE pins directly.
 
 ---
 
@@ -111,8 +115,23 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 #### Gerber files
 
-Gerber files are essential for PCB manufacturing. The repository includes copper layers, solder mask, silkscreen, paste layers, drill files, board outline, and the Gerber job file.
+Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
+
+- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.
+- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.
+- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.
+- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.
+- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.
+- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.
+- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.
+
+These files are ready for fabrication and can be used in PCB manufacturing.
 
 #### Compliance
 
-The **Compliance** section includes CE, UKCA, Safety Instructions, and an Info.txt file.
+The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
+
+- **CE** – Certification document confirming compliance with EU safety, health, and environmental requirements.
+- **UKCA** – UKCA (UK Conformity Assessed) certification for the UK market.
+- **Safety Instructions** – Safety guidelines and precautions in English and in German.
+- **Info.txt** – Contains product details such as SKU, country of origin, HS tariff code, and barcode.

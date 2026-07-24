@@ -4,9 +4,10 @@ title: 5W Stereo Audio Amplifier PAM8406 – How it works
 sidebar_label: How it works
 id: pam8406-how-it-works 
 hide_title: False
+pagination_next: null
 ---
 
-The PAM8406 is a Class-D stereo audio amplifier made by Diodes Incorporated. Instead of amplifying an analog waveform directly the way a Class-AB amplifier does, it converts the incoming audio signal into a high-frequency switching pattern and uses that to drive the speaker. This board wraps the PAM8406 with input coupling, an output filter, and a control header, so you can feed it line-level stereo audio and get amplified sound out the other side.
+The PAM8406 is a Class-D stereo audio amplifier made by [**Diodes Incorporated**](https://www.diodes.com/part/view/PAM8406). Instead of amplifying an analog waveform directly the way a Class-AB amplifier does, it converts the incoming audio signal into a high-frequency switching pattern and uses that to drive the speaker. This board wraps the PAM8406 with input coupling, an output filter, and a control header, so you can feed it line-level stereo audio and get amplified sound out the other side.
 
 ---
 
@@ -24,16 +25,20 @@ For the full electrical characteristics, absolute maximum ratings, and recommend
 
 ## How the amplifier works
 
-Each channel's audio input passes through a coupling capacitor into the PAM8406, where it modulates a high-frequency PWM carrier. That PWM signal drives a pair of output transistors per channel in a full-bridge (BTL) configuration, switching the speaker terminals between the supply rails rather than sweeping them through a continuous range like a linear amplifier would. Because the output transistors are mostly either fully on or fully off, very little power is wasted as heat, which is why Class-D amplifiers reach efficiencies that Class-AB designs can't match.
+The picture below shows the trick: the audio signal (green) is compared against a fast carrier wave (blue). Wherever the audio is above the carrier, the output pulses on; wherever it's below, the output pulses off. That's the pink PWM signal at the bottom, and its pulses get wider or narrower as the audio signal rises and falls.
 
-The PAM8406 is rated for **5W output into a 2Ω load at 10% THD with a 5V supply**, or 3W into 4Ω under the same conditions, and reaches **up to 90% efficiency** in Class-D mode. Its output stage is "filterless", meaning the chip's own switching scheme is designed to keep enough energy out of the audio band that a speaker can be driven directly without a bulky LC low-pass filter. This board still adds a small output filter, a 4.7µH inductor and a shunt capacitor per channel, on top of that to cut down further on radiated EMI before the signal reaches the speaker terminals.
+<div align="center">
+  <a title="Cyril BUTTAY, CC BY-SA 3.0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Pwm.png">
+    <img width="500" alt="An audio signal compared against a carrier wave to produce a PWM signal: wider pulses when the audio is high, narrower pulses when it's low" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pwm.png"/>
+  </a>
+</div>
 
-The MODE pin lets you fall back to Class-AB operation if the switching noise of Class-D ever causes problems in a particular circuit, at the cost of the efficiency advantage. On this board MODE has an onboard pull-up, so it defaults to Class-D unless you pull it low yourself.
+The PAM8406 drives the speaker with that pulse train directly, switching fully on or fully off rather than sweeping through a continuous voltage range. Since the transistors spend almost no time in between, very little energy turns into heat, which is why Class-D amplifiers like this one are so efficient. A low-pass filter downstream (either inside the amplifier's switching scheme or added on the board) then smooths those pulses back into a clean audio waveform the speaker can reproduce. The PAM8406 is "filterless", meaning its switching scheme is clean enough to skip an external filter and drive a speaker directly, but this board adds a small LC filter per channel anyway to cut down EMI further.
 
-The PAM8406 also includes short-circuit protection with automatic recovery and a thermal shutdown at 150°C (with 30°C of hysteresis before it re-enables), so a shorted speaker wire or an overheating board won't take out the chip.
+The PAM8406 delivers **5W into a 2Ω load** or **3.14W into 4Ω**, both at 5V and 10% THD, and its efficiency depends on the load: around 80% into 2Ω, up to **90%** into 8Ω. Short-circuit protection and a 150°C thermal shutdown (with 30°C of hysteresis) keep the chip safe if something goes wrong, and the MODE pin lets you fall back to Class-AB if Class-D's switching noise ever causes problems, at the cost of efficiency. This board's onboard pull-up on MODE defaults to Class-D.
 
 ---
 
 ## Control pins
 
-The PAM8406 doesn't use a data bus like I2C or SPI. Instead, three digital pins on the K3 header control its behavior directly: MODE selects Class-D or Class-AB operation, SHND puts the whole chip into a low-power shutdown state when pulled low, and MUTE silences the output without powering anything down when pulled low. Driving these from a microcontroller is as simple as three `digitalWrite()` calls, no library needed. SHND and MUTE have no onboard pull-up, so both need to be actively driven high (tied to VCC or set high from a GPIO pin) before the amplifier will produce any sound.
+The PAM8406 doesn't use a data bus like I2C or SPI. Three digital pins on the K3 header control it directly: MODE picks Class-D or Class-AB, SHDN shuts the whole chip down when pulled low, and MUTE silences the output when pulled low. All three work with a plain `digitalWrite()`, no library needed. SHDN and MUTE both have internal pull-ups inside the PAM8406, so the amplifier runs normally even with nothing connected to them.
