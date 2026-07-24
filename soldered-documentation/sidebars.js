@@ -1104,6 +1104,24 @@ const sidebars = {
             { type: 'doc', id: 'nula-boards/mini-esp32-c6/mini-esp32-c6-arduino-1' },
           ],
         },
+        {
+          type: 'category',
+          label: 'NULA Ether W55RP20',
+          items: [
+            {
+              type: 'doc',
+              id: 'nula-boards/nula_w55rp20/nula_w55rp20-overview',
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/nula_w55rp20/nula_w55rp20-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'nula-boards/nula_w55rp20/nula_w55rp20-arduino-1',
+            },
+          ],
+        },
       ],
     },
     {
@@ -3831,6 +3849,50 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'Inputronic Bridge',
+          items: [
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-bridge/inputronic-bridge-overview',
+            },
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-bridge/inputronic-bridge-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-bridge/inputronic-bridge-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-bridge/arduino_library/inputronic-bridge-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-bridge/arduino_library/inputronic-bridge-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-bridge/arduino_library/inputronic-bridge-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-bridge/arduino_library/inputronic-bridge-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-bridge/arduino_library/inputronic-bridge-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -3990,6 +4052,20 @@ const sidebars = {
             {
               type: 'doc',
               id: 'solder-kits/solder-kit-dasduino/solder-kit-dasduino-assembly-guide',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Make Your Own NULA',
+          items: [
+            {
+              type: 'doc',
+              id: 'solder-kits/solder-kit-nula/solder-kit-nula-overview',
+            },
+            {
+              type: 'doc',
+              id: 'solder-kits/solder-kit-nula/solder-kit-nula-assembly-guide',
             },
           ]
         },
