@@ -2,7 +2,7 @@
 slug: /inkplate/13spectra/wifi/get-post
 title: Inkplate 13SPECTRA – GET & POST requests
 sidebar_label: GET & POST requests
-id: 13-spectra-wifi-get-post
+id: 13spectra-wifi-get-post
 ---
 
 Now that Inkplate is connected to the internet, you will likely want to send and receive data from sensors, messages, or your custom APIs, etc. This page contains examples of how to send and receive data on Inkplate via the internet
@@ -19,7 +19,7 @@ Using `http.GET()` enables you to easily download and handle data on Inkplate ho
 #define ssid "" // Name of the WiFi network (SSID) that you want to connect Inkplate to
 #define pass "" // Password of that WiFi network
 
-Inkplate display; // Create an object from the Inkplate library and set the library into 1 Bit mode (BW)
+Inkplate display; // Create an object from the Inkplate library
 
 void setup()
 {

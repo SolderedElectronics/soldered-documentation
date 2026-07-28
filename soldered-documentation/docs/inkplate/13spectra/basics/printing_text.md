@@ -11,7 +11,7 @@ Printing text on Inkplate is simple and requires only a few functions. The libra
 
 ## Simple Text Printing
 
-To print text, use `setCursor` followed by `print`. If you're using the default forn, you may want to use `setTextSize` to increase the font size:
+To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size:
 
 ```cpp
 //Declare Inkplate object
@@ -92,7 +92,7 @@ After downloading a font, place it in your sketch folder, include it, and use `s
 #include "Inkplate.h"
 #include "FreeMono9pt7b.h"
 
-Inkplate inkplate;
+Inkplate display;
 
 void setup() {
   display.begin();
@@ -100,7 +100,7 @@ void setup() {
   display.display();
   display.setFont(&FreeMono9pt7b);
   display.setCursor(100,100);
-  display.setTextColor(BLACK);
+  display.setTextColor(INKPLATE_BLACK);
   display.setTextSize(3);
   display.print("Hello World!");
   display.display();
@@ -131,7 +131,7 @@ You can manually define the area in which text will appear by using the `drawTex
 #include "Inkplate.h"            // Include the Inkplate library in the sketch
 #include "FreeMono24pt7b.h"
 
-// Create an Inkplate object and set the library to 1 Bit mode (BW)
+// Create an Inkplate object
 Inkplate display;
 
 const char* text = "This is an example of a text written in a textbox. When a word doesn't fit into the current row, it goes to the next one." \

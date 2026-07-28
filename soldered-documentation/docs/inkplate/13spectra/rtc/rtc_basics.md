@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/13spectra/rtc/basics 
-title: Inkplate 13SPECTRA – RTC blasics
+title: Inkplate 13SPECTRA – RTC basics
 sidebar_label: RTC basics
 id: 13spectra-rtc-basics 
 ---  

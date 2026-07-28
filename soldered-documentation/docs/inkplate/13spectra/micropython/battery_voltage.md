@@ -1,5 +1,5 @@
 ---
-slug: /inkplate/13spactra/micropython/battery-temperature
+slug: /inkplate/13spectra/micropython/battery-voltage
 title: Inkplate 13SPECTRA MicroPython - Battery voltage
 sidebar_label: Battery voltage
 id: 13spectra-battery-voltage

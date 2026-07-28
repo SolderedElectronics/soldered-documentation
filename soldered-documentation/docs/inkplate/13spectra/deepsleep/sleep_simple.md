@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
 
-Using deep sleep on Inkplate 13SPECTRA is crucial for writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the displayed image, Inkplate 13SPECTRA can consume little or no current while in deep sleep mode, enabling a sketch to run for months on battery.
+Using deep sleep matters if you want your Inkplate 13SPECTRA sketch to get the most out of a battery. E-paper doesn't need power to hold the image on screen, so Inkplate 13SPECTRA draws little to no current in deep sleep mode, and a sketch can run for months on battery.
 
 ---
 

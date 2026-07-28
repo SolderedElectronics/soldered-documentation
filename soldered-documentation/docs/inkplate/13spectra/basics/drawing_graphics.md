@@ -66,7 +66,7 @@ void loop(){
 <CenteredImage src="/img/13spectra/DSC00700.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 
-elow are the detailed references for these functions:
+Below are the detailed references for these functions:
 
 <FunctionDocumentation
   functionName="inkplate.fillRect()"

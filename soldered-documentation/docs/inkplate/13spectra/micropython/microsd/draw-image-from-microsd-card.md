@@ -14,7 +14,7 @@ Inkplate 13SPECTRA can load and render images directly from the onboard microSD 
 Before running this example, make sure your SD card is formatted as **FAT16, FAT32 or exFAT** and inserted into Inkplate 13SPECTRA.
 To learn how to format the microSD card click [**here**](/inkplate/13spectra/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
 
-The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate10/displayImageSd/mountain.jpg).
+The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/displayimagesd/image.jpg).
 
 ```python
 from inkplate13SPECTRA import Inkplate
@@ -33,7 +33,7 @@ inkplate.begin()
 # - fastboot (bool, default=False): 
 #     If True, performs a soft reboot immediately after SD card initialization 
 #     (only on cold start or hard reset). This significantly improves SD card 
-#     read speeds—typically doubling performance.
+#     read speeds, typically doubling performance.
 #
 # Note:
 # - This function must be called before accessing files on the SD card.
@@ -69,7 +69,7 @@ print(listdir("/sd"))
 # - JPG: ~52 seconds (or ~90s with dithering)
 #
 # Example usage:
-inkplate.drawImage("sd/coast.jpg", 0, 0, invert=False, dither=True, kernel_type=Inkplate.KERNEL_FLOYD_STEINBERG )
+inkplate.drawImage("sd/image.jpg", 0, 0, invert=False, dither=True, kernel_type=Inkplate.KERNEL_FLOYD_STEINBERG )
 
 # Show the image from the buffer
 inkplate.display()
@@ -85,7 +85,7 @@ inkplate.SDCardSleep()
 functionName="inkplate.drawImage()"
 description="Draw an image from a file path or URL into the display buffer."
 parameters={[
-{ type: 'String', name: 'path', description: 'Path to image (e.g. "sd/mountain.jpg") or URL.' },
+{ type: 'String', name: 'path', description: 'Path to image (e.g. "sd/image.jpg") or URL.' },
 { type: 'Number', name: 'x0', description: 'X coordinate of the top-left corner.' },
 { type: 'Number', name: 'y0', description: 'Y coordinate of the top-left corner.' },
 { type: 'Boolean', name: 'invert', description: 'If True, invert image colors.' },

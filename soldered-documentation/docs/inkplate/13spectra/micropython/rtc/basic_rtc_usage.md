@@ -8,7 +8,7 @@ id: 13spectra-basic-rtc-usage
 Inkplate 13SPECTRA comes with an onboard **RTC (Real-Time Clock)**, which allows the board to keep track of the time and date even across reboots **(as long as the backup battery is present)**
 
 <InfoBox>
-To preserve time while the Inkplate is powered off, make sure a **coin cell battery (CR2032)** is installed in the RTC holder. Without it, the clck will reset when power is lost.
+To preserve time while the Inkplate is powered off, make sure a **coin cell battery (CR2032)** is installed in the RTC holder. Without it, the clock will reset when power is lost.
 </InfoBox>
 
 This example shows how to set the RTC time and date, and then continuously display the current time on the screen.

@@ -1004,7 +1004,7 @@ const sidebars = {
                   "label":"WiFi",
                   "items":[
                     "inkplate/13spectra/wifi/13spectra-wifi-basics",
-                    "inkplate/13spectra/wifi/13-spectra-wifi-get-post",
+                    "inkplate/13spectra/wifi/13spectra-wifi-get-post",
                     "inkplate/13spectra/wifi/13spectra-wifi-https-certificate",
                     "inkplate/13spectra/wifi/13spectra-wifi-image-from-web",
                   ]

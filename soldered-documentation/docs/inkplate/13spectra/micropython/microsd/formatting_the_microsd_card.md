@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
 
-The built-in microSD card slot on Inkplate 13SPECTRA can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSD card slot.
+The built-in microSD card slot on Inkplate 13SPECTRA is useful for storing large numbers of quality images to display, and for reading and writing data between deep sleeps. This page covers basic examples to get you started.
 
 <CenteredImage src="/img/13spectra/microsd.jpg" alt="MicroSD card slot highlighted on Inkplate 13SPECTRA" caption="MicroSD card slot" width="700px" />
 
@@ -50,7 +50,7 @@ inkplate.SDCardSleep()
 <FunctionDocumentation
   functionName="inkplate.initSDCard()"
   description="Initialize the onboard microSD card interface, allowing images, fonts, and data files to be loaded from the SD card."
-  returnDescription="Boolean — True if the SD card was successfully initialized, otherwise False."
+  returnDescription="Boolean, True if the SD card was successfully initialized, otherwise False."
   parameters={[
     { type: 'Boolean', name: 'fastBoot', description: 'Optional. If True (default), use faster initialization to reduce startup time.' }
   ]}

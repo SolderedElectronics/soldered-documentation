@@ -19,7 +19,7 @@ Let's draw example images of different formats on Inkplate. Download them from [
 
 ```cpp
 #include "Inkplate.h" // Include the Inkplate library in the sketch
-Inkplate display;     // Create an Inkplate object and set the library to 3-bit mode
+Inkplate display;     // Create an Inkplate object
 SdFile file;          // Create an SdFile object used for accessing files on the SD card
 
 void setup()
@@ -29,7 +29,7 @@ void setup()
 
     display.begin();             // Initialize the Inkplate library (you should call this function only once)
     display.clearDisplay();      // Clear the display's frame buffer
-    display.setTextColor(BLACK); // Set text color to black
+    display.setTextColor(INKPLATE_BLACK); // Set text color to black
     display.setTextSize(3);      // Set the font size to 3
 
     // Initialize the SD card. Display whether the SD card is properly initialized or not.

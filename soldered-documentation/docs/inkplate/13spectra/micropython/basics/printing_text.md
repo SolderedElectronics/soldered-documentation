@@ -5,7 +5,7 @@ sidebar_label: Printing text
 id: 13spectra-printing-text
 ---
 
-Inkplate 13SPECTRA allows you to print text on a **1600 x 1200px canvass**.
+Inkplate 13SPECTRA allows you to print text on a **1600 x 1200px canvas**.
 
 ## Displaying basic information
 
@@ -69,20 +69,20 @@ inkplate.display()
 
 inkplate.setCursor(50, 50)       
 inkplate.setTextSize(1)          
-inkplate.setTextColor(0)         # lightest text (white)
+inkplate.setTextColor(3)         # red
 inkplate.print("Size 1")
 
 inkplate.setCursor(50, 100)
 inkplate.setTextSize(2)          
-inkplate.setTextColor(1)         # light gray
+inkplate.setTextColor(4)         # blue
 inkplate.print("Size 2")
 
 inkplate.setCursor(50, 180)
 inkplate.setTextSize(3)          
-inkplate.setTextColor(2)         # dark gray
+inkplate.setTextColor(5)         # green
 inkplate.print("Size 3")
 
-inkplate.setTextColor(3)         # darkest text (black)
+inkplate.setTextColor(0)         # black
 long_text = (
     "This is a very long line of text intended to demonstrate how wrapping works. "
     "When wrap mode is enabled, the text will continue onto the next line once it "
@@ -124,9 +124,9 @@ inkplate.display()
 
 <FunctionDocumentation
   functionName="inkplate.setTextColor"
-  description="Set the text color (grayscale level) used for text rendering."
+  description="Set the text color used for text rendering."
   parameters={[
-    { type: 'Number', name: 'color', description: 'Grayscale value for text (0 = white to 3 = black in 2-bit mode).' }
+    { type: 'Number', name: 'color', description: 'Color value for text, see the color table above (0 = Black, 1 = White, 2 = Yellow, 3 = Red, 4 = Blue, 5 = Green).' }
   ]}
 />
 

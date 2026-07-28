@@ -110,7 +110,7 @@ inkplate.begin()
 inkplate.setTextSize(2)
 
 if do_connect():
-    data = {"message": "Hello from Inkplate 13Spectra!"}
+    data = {"message": "Hello from Inkplate 13SPECTRA!"}
 
     # Perform POST request
     try:

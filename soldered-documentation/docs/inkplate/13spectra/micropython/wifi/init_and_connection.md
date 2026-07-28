@@ -48,7 +48,7 @@ if do_connect():
 else:
     inkplate.print("Wifi failed")
 
-inplate.display()
+inkplate.display()
 
 ```
 

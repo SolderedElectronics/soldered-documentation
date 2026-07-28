@@ -11,7 +11,7 @@ Inkplate 13SPECTRA can connect to WiFi and fetch images directly from the intern
 
 ## Downloading and displaying an image
 
-Below is a complere example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
+Below is a complete example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
 
 ```python
 # Include needed libraries

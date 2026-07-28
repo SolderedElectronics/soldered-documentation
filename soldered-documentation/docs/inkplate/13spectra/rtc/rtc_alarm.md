@@ -137,7 +137,7 @@ The RTC alarm can also generate an **interrupt** instead of requiring polling. T
 ```cpp
 #include "Inkplate.h"             // Include Inkplate library to the sketch
 
-Inkplate inkplate;                // Create an object on Inkplate library and also set library into 1-bit mode (BW)
+Inkplate inkplate;                // Create an object on Inkplate library
 
 volatile int _alarmFlag = 0;      // Variable to store alarm flag
 

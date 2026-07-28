@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
 
-The built-in microSD card slot on Inkplate 13SPECTRA can be a great asset for your project. It can store a very large number of high-quality image files to be displayed, and it can also read and write data between deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
+The built-in microSD card slot on Inkplate 13SPECTRA is useful for storing large numbers of high-quality images to display, and for reading and writing data between deep sleep cycles. This page covers basic examples to get you started.
 
 <CenteredImage src="/img/13spectra/microsd.jpg" alt="MicroSD card slot highlighted on Inkplate 13SPECTRA" caption="MicroSD card slot" width="700px" />
 
@@ -96,7 +96,7 @@ void setup()
         else
         {
             display.clearDisplay();    // Clear everything that is stored in frame buffer of epaper
-            display.setCursor(0, 0);   // Set print position at the begining of the screen
+            display.setCursor(0, 0);   // Set print position at the beginning of the screen
             char text[3001];           // Array where data from SD card is stored (max 200 chars here)
             int len = file.fileSize(); // Read how big is file that we are opening
             if (len > 3000)

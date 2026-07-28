@@ -15,13 +15,13 @@ tags:
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
 
-**Inkplate 13SPECTRA** takes large-format e-paper projects to the next level with a stunning **13.3-inch color E-Ink display** designed for bold, eye-catching visuals. Built around a **6-color Spectra panel**, it's perfect for signage, informatin boards, posters and data displays where color clarity and size trully matter.
+**Inkplate 13SPECTRA** is a 13.3-inch color e-paper board built around a 6-color E Ink Spectra panel. The bigger canvas and real color make it a good fit for signage, information boards, posters, and data displays.
 
-Powered by an **ESP32-S3 microcontroller** with built-in **WiFi and Bluetooth** Inkplate 13SPECTRA makes it easy to create connected, always-on displays that update wirelessly while consuming extremenly little power. Although the display **doesn't support partial updates or grayscale**, full-screen refreshes deliver rich, vivid colors that remain clearly visible even in bright ambient light.
+An onboard ESP32-S3 gives it WiFi and Bluetooth, so it's easy to build a display that updates wirelessly and runs on very little power. It doesn't support partial updates or grayscale, but full-screen refreshes show colors that stay readable even in bright light.
 
-Like all Inkplate boards, Inkplate 13SPECTRA is **fully open-source** and compatible with both **Arduino** and **MicroPython**, giving you complete freedom to prototype, customize and deploy your ideas. Onboard features include a **microSD card slot**, **real-time clock (RTC)**, and flexible **GPIO expansion** via **I2C trough Qwiic adapter**, **SPI** making integratino with sensors and peripherals straightforward.
+Like every Inkplate board, it's fully open-source and works with both Arduino and MicroPython. Onboard extras include a microSD card slot, a real-time clock, and GPIO expansion over I2C (through a Qwiic adapter) and SPI, so hooking up sensors and other peripherals is straightforward.
 
-Designed for long-temr, low.maintenance use, Inkplate 13SPECTRA can run for weeks or even months on **battery power**, or operate continuouslly over USB. With support for optional battery solutions, Inkplate 13SPECTRA is ready to go wherever your project takes it.
+It's built for long-term, low-power use. Run it for weeks or months on battery, or keep it plugged into USB for continuous operation. Battery support is optional, so the board works whether or not your project needs one.
 
 <CenteredImage src="/img/13spectra/hero.webp" alt="Inkplate 13SPECTRA" caption="Inkplate 13SPECTRA e-paper display board"/>
 
@@ -35,7 +35,7 @@ Designed for long-temr, low.maintenance use, Inkplate 13SPECTRA can run for week
 />
 
 
-## Key Features
+## Key features
 
 - **Display Size:** 13.3" color e-paper (black, white, red, blue, green, yellow)
 - **Resolution:** 1600 x 1200 pixels

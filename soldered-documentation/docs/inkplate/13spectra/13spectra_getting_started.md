@@ -14,7 +14,7 @@ To get started with Arduino on Inkplate 13SPECTRA, a few simple steps need to be
 
 ### 1. Install Arduino IDE
 
-If you haven’t installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
+If you haven't installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
 <WarningBox>Arduino IDE 2.0 or newer is required for Inkplate 13SPECTRA.</WarningBox>
 
 <CenteredImage src="/img/inkplate10/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
@@ -69,7 +69,7 @@ The board will not show up as a serial port until the driver is enabled.</Warnin
 
 ### Done!
 
-Inkplate 13SPECTRA setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! If you need some help with uploading code, check out the section below.
+Inkplate 13SPECTRA setup is complete. Now try uploading some examples from the Arduino library and see the results for yourself. If you need help uploading code, check out the section below.
 
 ---
 

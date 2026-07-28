@@ -23,7 +23,7 @@ Let's draw this image on Inkplate 13SPECTRA:
 #include "HTTPClient.h" //Include library for HTTPClient
 #include "Inkplate.h"   //Include Inkplate library to the sketch
 #include "WiFi.h"       //Include library for WiFi
-Inkplate inkplate;       // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+Inkplate inkplate;       // Create an object on Inkplate library
 
 const char ssid[] = "Soldered Electronics"; // Your WiFi SSID
 const char *password = "dasduino";     // Your WiFi password

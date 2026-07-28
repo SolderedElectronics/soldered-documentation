@@ -10,7 +10,7 @@ Inkplate 13SPECTRA allows you to draw different geometric shapes anywhere on its
 ---
 
 ## Drawing shapes
-Below is a example that demonstates how to draw basic shapes in **different colors**.
+Below is an example that demonstrates how to draw basic shapes in **different colors**.
 
 ```python
 from inkplate13SPECTRA import Inkplate
@@ -79,7 +79,7 @@ description="Set a single pixel in the frame buffer."
 parameters={[
 { type: 'Number', name: 'x', description: 'X coordinate.' },
 { type: 'Number', name: 'y', description: 'Y coordinate.' },
-{ type: 'Const', name: 'color', description: 'Color constant (BLACK or WHITE in BW mode).' }
+{ type: 'Const', name: 'color', description: 'Color constant (inkplate.BLACK, inkplate.WHITE, inkplate.YELLOW, inkplate.RED, inkplate.BLUE, or inkplate.GREEN).' }
 ]}
 />
 

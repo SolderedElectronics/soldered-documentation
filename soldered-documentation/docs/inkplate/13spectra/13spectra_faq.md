@@ -10,7 +10,7 @@ pagination_next: null
 
 <SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />
 
-Here, we've gathered the most frequently asked questions along with detailed answers to help you get the most out of your device. We know that working with maker hardware and software can sometimes be challenging, so we created this resource to make things easier. Browse through the questions below—you might find the solution you're looking for.
+Here, we've gathered the most frequently asked questions along with detailed answers. Maker hardware and software can be tricky sometimes, so browse through the questions below. You might find the solution you're looking for.
 
 <ExpandableSection title="My computer doesn't detect Inkplate 13SPECTRA / wrong COM port">
 If your computer isn't showing Inkplate 13SPECTRA as a serial port, try the following troubleshooting steps.
