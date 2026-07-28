@@ -42,3 +42,11 @@ The PAM8406 delivers **5W into a 2Ω load** or **3.14W into 4Ω**, both at 5V an
 ## Control pins
 
 The PAM8406 doesn't use a data bus like I2C or SPI. Three digital pins on the K3 header control it directly: MODE picks Class-D or Class-AB, SHDN shuts the whole chip down when pulled low, and MUTE silences the output when pulled low. All three work with a plain `digitalWrite()`, no library needed. SHDN and MUTE both have internal pull-ups inside the PAM8406, so the amplifier runs normally even with nothing connected to them.
+
+---
+
+## Connection example
+
+A typical setup feeds a line-level audio source (a phone, computer, or media player) into K1 via the 3.5mm jack, powers the board from a 2.5–5.5V supply through K3, and wires a speaker to the K4/K5 screw terminals.
+
+<WarningBox>A photo of this connection is coming soon.</WarningBox>
