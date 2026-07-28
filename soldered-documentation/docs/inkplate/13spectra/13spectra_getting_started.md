@@ -124,4 +124,4 @@ That's how you know you did everything correctly!
 
 ## Troubleshooting
 
-Having problems with uploading your first code? Check out our [LINK PLACEHOLDER - troubleshooting page]
+Having problems with uploading your first code? Check out our [**FAQ and troubleshooting page**](/inkplate/13spectra/faq-troubleshooting)

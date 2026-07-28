@@ -10,6 +10,8 @@ Now that Inkplate is connected to the internet, you will likely want to securely
 ## HTTPS example
 This example will show you how to download a .bmp file from the web securely by providing a certificate for the website that will be validated upon connection. Using `applyHttpsCertificate()` you can store the certificate for your connection:
 
+<InfoBox>The `certificate` string below is intentionally left empty, it's a placeholder for **your own** website's certificate. Paste your certificate's contents (in PEM format) between the quotes before uploading.</InfoBox>
+
 ```cpp
 Inkplate inkplate;
 const char* certificate =""; // insert your certificate
@@ -34,4 +36,8 @@ void setup(){
 ## Full example
 Check out all of the above mentioned functions in this example:
 
-[LINK PLACEHOLDER - 13spectra https certificate github link]
+<QuickLink
+  title="Inkplate13SPECTRA_HTTPS_With_Certificate.ino"
+  description="Full example of downloading a file securely using an HTTPS certificate."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_HTTPS_With_Certificate/Inkplate13SPECTRA_HTTPS_With_Certificate.ino"
+/>

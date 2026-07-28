@@ -166,6 +166,20 @@ void loop()
 
 <InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
 
-[LINK PLACEHOLDER - 13spectra txt read example]
+---
 
-[LINK PLACEHOLDER - 13spectra txt write example]
+## Full examples
+
+For full working code examples of reading and writing text files, see the links below:
+
+<QuickLink
+  title="Inkplate13SPECTRA_SD_TXT_Read.ino"
+  description="Full example of reading a text file from the microSD card."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/SD/Inkplate13SPECTRA_SD_TXT_Read/Inkplate13SPECTRA_SD_TXT_Read.ino"
+/>
+
+<QuickLink
+  title="Inkplate13SPECTRA_SD_TXT_Write.ino"
+  description="Full example of writing a text file to the microSD card."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/SD/Inkplate13SPECTRA_SD_TXT_Write/Inkplate13SPECTRA_SD_TXT_Write.ino"
+/>

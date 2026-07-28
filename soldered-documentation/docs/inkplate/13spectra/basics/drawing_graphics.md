@@ -146,6 +146,8 @@ void setup(){
 
 ```
 
+<CenteredImage src="/img/13spectra/shapes_w.png" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
 Below are the detailed references to these functions:
 
 <FunctionDocumentation

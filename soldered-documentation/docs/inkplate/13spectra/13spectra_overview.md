@@ -23,10 +23,16 @@ Like all Inkplate boards, Inkplate 13SPECTRA is **fully open-source** and compat
 
 Designed for long-temr, low.maintenance use, Inkplate 13SPECTRA can run for weeks or even months on **battery power**, or operate continuouslly over USB. With support for optional battery solutions, Inkplate 13SPECTRA is ready to go wherever your project takes it.
 
+<CenteredImage src="/img/13spectra/hero.webp" alt="Inkplate 13SPECTRA" caption="Inkplate 13SPECTRA e-paper display board"/>
 
 ## Which product is this documentation for?
 
-[LINK PLACEHOLDER - inkplate 13spectra product page]
+<QuickLink 
+  title=" Inkplate 13SPECTRA" 
+  description="333365"
+  url="https://soldered.com/products/inkplate-13spectra"
+  image="/img/13spectra/hero.webp" 
+/>
 
 
 ## Key Features
@@ -38,7 +44,7 @@ Designed for long-temr, low.maintenance use, Inkplate 13SPECTRA can run for week
 - **Programming Support:** Arduino (Adafruit GFX compatible), MicroPython
 - **Storage:** microSD card slot for image/data loading
 - **Clock:** Real-Time Clock (RTC) with battery holder
-- **Expansion:** GPIO, I²C, SPI, EasyC/Qwiic-compatible
+- **Expansion:** GPIO, I²C, SPI, Qwiic-compatible
 - **Sustainability:** Recycled e-paper display (minor scratches possible)
 - **Open Source:** Hardware and software
 

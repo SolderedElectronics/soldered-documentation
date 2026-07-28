@@ -72,4 +72,8 @@ esp_deep_sleep_start();
 ## Full example
 Check out the full examples from this page, along with many more usage options below:
 
-[LINK PLACEHOLDER - inkplate13 wake up button example github]
+<QuickLink
+  title="Inkpate13SPECTRA_Wake_Up_Button.ino"
+  description="Full example of waking Inkplate 13SPECTRA from deep sleep using the onboard wake button."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/DeepSleep/Inkpate13SPECTRA_Wake_Up_Button/Inkpate13SPECTRA_Wake_Up_Button.ino"
+/>

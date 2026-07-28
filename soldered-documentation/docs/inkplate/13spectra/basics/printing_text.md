@@ -7,8 +7,6 @@ id: 13spectra-printing-text
 
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts.
 
-<InfoBox>For complete examples of text printing, most Arduino projects in the [LINK PLACEHOLDER - link to spectra examples on github] include some form of text output.</InfoBox>
-
 ---
 
 ## Simple Text Printing
@@ -196,4 +194,16 @@ void loop()
     { type: 'bool', name: 'showBorder', description: 'Create a visible rectangle around the box.' },
     { type: 'uint16_t', name: 'fontSize', description: 'Size of the used font in pt.' },
   ]}
+/>
+
+---
+
+## Full examples
+
+For complete examples of text printing, check out the library:
+
+<QuickLink
+  title="Inkplate13SPECTRA examples"
+  description="Most Arduino projects in the library include some form of text output."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate13SPECTRA"
 />

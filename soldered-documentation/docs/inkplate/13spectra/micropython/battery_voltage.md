@@ -7,7 +7,7 @@ id: 13spectra-battery-voltage
 
 Inkplate 13SPECTRA includes built-in functions for measuring **battery voltage**. This example shows how to read this value and display it on screen.
 
-<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [LINK PLACEHOLDER - 13 spectra batteries]. </WarningBox>
+<WarningBox>You need a Li-ion battery for this example to work, to learn more, check out [**this page**](/inkplate/13spectra/hardware/battery). </WarningBox>
 
 ---
 

@@ -13,7 +13,7 @@ As a company, **Soldered** designs and manufactures a wide range of electronic p
 
 <InfoBox>Need help? Our team offers **free technical support**, so if you have any issues with your Inkplate or electronics project, don’t hesitate to [**reach out**](https://soldered.com/contact/).</InfoBox>  
 
-All designs in the Inkplate 13SPECTRA repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. For details, check the [LINK PLACEHOLDER - inkplate13 license] files in our repositories.
+All designs in the Inkplate 13SPECTRA repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. Once the hardware repository is published, license details will be available in the LICENSE files there.
 
 ---
 

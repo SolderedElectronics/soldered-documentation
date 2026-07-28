@@ -15,7 +15,7 @@ To draw images from the microSD card, use the `image.draw()` function.
 
 ## Drawing PNG, JPG and BMP files from the microSD card
 
-Let's draw example images of different formats on Inkplate. Download them from the [LINK PLACEHOLDER - images for sd_image example] and place them in the root folder of the microSD card:
+Let's draw example images of different formats on Inkplate. Download them from [**this example's GitHub folder**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate13SPECTRA/Advanced/SD/Inkplate13SPECTRA_SD_Pictures) and place them in the root folder of the microSD card:
 
 ```cpp
 #include "Inkplate.h" // Include the Inkplate library in the sketch
@@ -103,4 +103,8 @@ void loop()
 
 ## Full example
 
-[LINK PLACEHOLDER - 13spectra example github]
+<QuickLink
+  title="Inkplate13SPECTRA_SD_Pictures.ino"
+  description="Full example of drawing JPG, BMP, and PNG images from the microSD card."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/SD/Inkplate13SPECTRA_SD_Pictures/Inkplate13SPECTRA_SD_Pictures.ino"
+/>

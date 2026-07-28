@@ -77,4 +77,8 @@ parameters={[]} />
 
 ## Full example
 
-[LINK PLACEHOLDER - link to 13spectra rtc example]
+<QuickLink
+  title="rtc.py"
+  description="Full example of setting and reading time/date using the onboard RTC."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/rtc.py"
+/>

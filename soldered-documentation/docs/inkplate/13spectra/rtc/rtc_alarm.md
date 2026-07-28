@@ -228,4 +228,14 @@ void print2Digits(uint8_t _d)
 
 For full working code examples, which provide a great overview, a real-world use scenario, and **code comments**, see the links below:
 
-[LINK PLACEHOLDER - links for all rtc examples on github]
+<QuickLink
+  title="Inkplate13SPECTRA_RTC_Alarm.ino"
+  description="Full example of setting a simple RTC alarm."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/RTC/Inkplate13SPECTRA_RTC_Alarm/Inkplate13SPECTRA_RTC_Alarm.ino"
+/>
+
+<QuickLink
+  title="Inkplate13SPECTRA_RTC_Interrupt_Alarm.ino"
+  description="Full example of triggering an RTC alarm using a hardware interrupt."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/RTC/Inkplate13SPECTRA_RTC_Interrupt_Alarm/Inkplate13SPECTRA_RTC_Interrupt_Alarm.ino"
+/>

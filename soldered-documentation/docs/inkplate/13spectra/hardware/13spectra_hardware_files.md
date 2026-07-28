@@ -7,7 +7,7 @@ id: 13spectra-hardware-files
 
 The **hardware repositories** for Inkplate 13SPECTRA hardware files can be found on these links:
 
-[LINK PLACEHOLDER - inkplate 13spectra github hw repo link]
+<WarningBox>The hardware repository for Inkplate 13SPECTRA is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
 
 ## Repository contents
 

@@ -63,4 +63,8 @@ void loop(){}
 
 To see more details, check out our full examples:
 
-[LINK PLACEHOLDER - 13spectra wifi examples github link]
+<QuickLink
+  title="Inkplate13SPECTRA_HTTP_Request.ino"
+  description="Full example of connecting to WiFi and making an HTTP request."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_HTTP_Request/Inkplate13SPECTRA_HTTP_Request.ino"
+/>

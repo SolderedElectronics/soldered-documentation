@@ -1053,7 +1053,8 @@ const sidebars = {
                 },
                 "inkplate/13spectra/micropython/13spectra-battery-voltage"
               ]
-            }
+            },
+            "inkplate/13spectra/13spectra-faq-troubleshooting"
           ]
         }
       ]
