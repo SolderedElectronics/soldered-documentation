@@ -133,7 +133,7 @@ void setup(){
     display.setTextSize(3);
     display.setTextColor(INKPLATE_BLACK);
     display.setCursor(40, 760);
-    display.print("Inkplate 13 Spectra");
+    display.print("Inkplate 13SPECTRA");
 
     display.setTextSize(2);
     display.setCursor(40, 800);
@@ -256,4 +256,16 @@ Below are the detailed references to these functions:
     { type: 'int', name: 'y', description: 'The y-coordinate of the pixel.' },
     { type: 'uint16_t', name: 'color', description: 'The pixel color.' },
   ]}
+/>
+
+---
+
+## Full examples
+
+For the full working code example of the color spectrum demo above, see the link below:
+
+<QuickLink
+  title="Inkplate13SPECTRA_Full_Screen_Colors.ino"
+  description="Full example of drawing a full screen of all available colors on Inkplate 13SPECTRA."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Basic/Inkplate13SPECTRA_Full_Screen_Colors/Inkplate13SPECTRA_Full_Screen_Colors.ino"
 />

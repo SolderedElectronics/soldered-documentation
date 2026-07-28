@@ -50,7 +50,7 @@ The CH340 is an onboard chip that enables serial communication over USB.
 
 #### Windows
 
-If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions:  
+If the driver is not installed, download it from **[this link](https://soldered.com/blogs/learn/ch340-driver-installation)**. Start the installation and follow the instructions:  
 <CenteredImage src="/img/inkplate10/ch340.png" alt="Install CH340 Driver" caption="Installing the CH340 Driver on Windows" width="350px" />
 
 #### Mac
@@ -78,7 +78,13 @@ To upload your own sketch or an Arduino example to **Inkplate 13SPECTRA**, follo
 
 ### 1. Connect Inkplate via USB and power it on
 
-Use the provided **USB-C cable** to connect Inkplate 13SPECTRA to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
+Use the provided **USB-C cable** to connect Inkplate 13SPECTRA to your computer.
+
+<CenteredImage src="/img/13spectra/usb-c.jpg" alt="USB-C connector highlighted on Inkplate 13SPECTRA" caption="USB-C connector" width="600px" />
+
+Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
+
+<CenteredImage src="/img/13spectra/power_sw.jpg" alt="Power switch highlighted on Inkplate 13SPECTRA" caption="Power switch" width="600px" />
 
 ### 2. Create a sketch
 
@@ -92,7 +98,8 @@ Inkplate display;   // Create an Inkplate object for Inkplate 13SPECTRA
 void setup(){
     display.begin(); // Initialize the display hardware
     display.clearDisplay(); // Clear the frame buffer (does NOT clear the physical screen)
-    display.setCursor(10,10) // Set the text position to (10,10) pixels
+    display.setCursor(10,10); // Set the text position to (10,10) pixels
+    display.setTextColor(INKPLATE_BLACK); // Set text color to black (default color is white on Inkplate 13SPECTRA)
     display.setTextSize(6); // Set text size to 6 (default is 1)
     display.print("Hello World!"); // Print "Hello World!" at the set position
     display.display(); // Refresh the e-paper display to show changes

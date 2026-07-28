@@ -10,6 +10,8 @@ hide_title: true
 
 The built-in microSD card slot on Inkplate 13SPECTRA can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSD card slot.
 
+<CenteredImage src="/img/13spectra/microsd.jpg" alt="MicroSD card slot highlighted on Inkplate 13SPECTRA" caption="MicroSD card slot" width="700px" />
+
 <InfoBox>Inkplate 13SPECTRA  uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 <WarningBox>All supported card types are: **SD, SDHC and SDXC**</WarningBox>

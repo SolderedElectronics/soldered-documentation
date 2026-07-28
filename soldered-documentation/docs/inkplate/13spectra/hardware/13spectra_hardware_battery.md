@@ -16,7 +16,7 @@ Inkplate 13SPECTRA includes a **2-pin 2mm JST connector**, allowing you to conne
 
 ---
 
-<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**. </InfoBox>  
+<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the right**, and the **negative (-) terminal is on the left**. </InfoBox>  
 
 <WarningBox>**Battery polarity can vary!** Some Li-ion batteries have reversed polarity. **Connecting a battery with the wrong polarity may permanently damage your Inkplate!** Double-check before plugging it in.</WarningBox>  
 

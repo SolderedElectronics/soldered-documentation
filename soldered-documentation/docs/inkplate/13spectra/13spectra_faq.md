@@ -18,7 +18,7 @@ If your computer isn't showing Inkplate 13SPECTRA as a serial port, try the foll
 #### 1. Install the CH340 driver
 Inkplate 13SPECTRA uses an onboard **CH340** chip for USB-to-serial communication. If the driver isn't installed, your operating system won't recognize the board as a COM port.
 
-- **Windows:** download and install the driver from [**this link**](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip).
+- **Windows:** download and install the driver from [**this link**](https://soldered.com/blogs/learn/ch340-driver-installation).
 - **macOS:** the driver must be installed manually from the [**official WCH website**](https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html), then enabled under **System Settings → Login Items & Extensions → CH34xVPCDriver**.
 - **Linux:** no driver installation is needed, the CH340 is supported out of the box.
 

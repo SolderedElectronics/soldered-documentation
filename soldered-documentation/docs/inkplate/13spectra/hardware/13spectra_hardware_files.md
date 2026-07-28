@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/13spectra/hardware/open-source-files
-title: Inkplate 13 SPECTRA – Hardware files
+title: Inkplate 13SPECTRA – Hardware files
 sidebar_label: Hardware files
 id: 13spectra-hardware-files
 ---
@@ -17,6 +17,8 @@ The Inkplate 13SPECTRA hardware repository contains everything you need to under
 
 We use [**KiCad**](https://www.kicad.org/), an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.  
 
+<CenteredImage src="/img/13spectra/kicad.png" alt="Inkplate 13SPECTRA KiCad project open in PCB Editor" caption="Inkplate 13SPECTRA PCB layout open in KiCad" width="700px" />
+
 The `PANEL` files are used internally for production.  
 
 ---
@@ -24,6 +26,8 @@ The `PANEL` files are used internally for production.
 ### Schematic
 
 The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from Kicad. The schematic is divided into sections based on functionality, making it easy to navigate.
+
+<CenteredImage src="/img/13spectra/sch.png" alt="Inkplate 13SPECTRA schematic PDF cover page" caption="Inkplate 13SPECTRA schematic" width="600px" />
 
 ---
 
@@ -33,6 +37,8 @@ The bill of materials (BOM) is provided in two formats:
 
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
+
+<CenteredImage src="/img/13spectra/BOM.png" alt="Inkplate 13SPECTRA interactive BOM table" caption="Interactive BOM" width="700px" />
 
 ---
 
