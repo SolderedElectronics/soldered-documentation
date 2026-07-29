@@ -32,8 +32,8 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 Below is an example connection diagram for **NULA DeepSleep**. These pins will be used in the examples throughout this documentation.
 
 | **NULA DeepSleep** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| Qwiic                    | Qwiic              |
+| ------------------ | ------------------ |
+| Qwiic              | Qwiic              |
 
 <ErrorBox>The connection image for this board hasn't been generated yet! We're working on it!</ErrorBox>
 
@@ -41,11 +41,11 @@ Below is an example connection diagram for **NULA DeepSleep**. These pins will b
 
 If you prefer, you can use the soldering pads on the back of the module to manually connect:
 
-| **NULA DeepSleep** | **Breakout Board** |
-| ------------------------ | ------------------ |
-| IO21 (Default SDA pin)   | SDA                |
-| IO22 (Default SCL pin)   | SCL                |
-| 3.3V                     | 3V3                |
-| GND                      | GND                |
+| **NULA DeepSleep**    | **Breakout Board** |
+| --------------------- | ------------------ |
+| IO8 (Default SDA pin) | SDA                |
+| IO9 (Default SCL pin) | SCL                |
+| 3.3V                  | 3V3                |
+| GND                   | GND                |
 
 </InfoBox>
