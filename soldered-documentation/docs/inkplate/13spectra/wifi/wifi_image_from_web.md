@@ -30,6 +30,7 @@ const char *password = "dasduino";     // Your WiFi password
 
 void setup()
 {
+    Serial.begin(115200);    // Init serial communication so we can see debug messages
     inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
     inkplate.clearDisplay(); // Clear frame buffer of display
     inkplate.display();      // Put clear image on display
@@ -52,7 +53,7 @@ void setup()
     // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter to true
     // will flip all colors on the image, making black white and white black. This may be necessary when exporting
     // bitmaps from certain softwares. Forth parameter will dither the image.
-    if (!inkplate.image.draw("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_Show_JPG_With_HTTPClient/image.jpg", 0, 0, true, false))
+    if (!inkplate.image.draw("https://i.imgur.com/ESkX8xU.jpeg", 0, 0, true, false))
     {
         // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
         // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
@@ -69,7 +70,7 @@ void loop()
 }
 ```
 
-<CenteredImage src="/img/13spectra/DSC00708.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+<CenteredImage src="/img/13spectra/web_image_w.png" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
     functionName="inkplate.image.draw()"
