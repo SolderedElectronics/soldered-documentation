@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/vl53l1x_laser_sensor/vl53l1x-laser-sensor.png" alt="VL53L1X Laser Sensor pinout image"/>
 
-Click [**here**](/img/vl53l1x_laser_sensor/vl53l1x-laser-sensor.png) for a high resolution image of the pinout.
+Click <a href="/img/vl53l1x_laser_sensor/vl53l1x-laser-sensor.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ## Pin details
 

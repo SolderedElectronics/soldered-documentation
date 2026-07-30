@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/makerice-adapter-avr/makerice_avr_pinout.png" alt="MakerICE AVR pinout" />
 
-Click [**here**](/img/makerice-adapter-avr/makerice_avr_pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/makerice-adapter-avr/makerice_avr_pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin details
 

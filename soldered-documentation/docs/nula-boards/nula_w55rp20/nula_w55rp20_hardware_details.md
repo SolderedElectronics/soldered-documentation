@@ -12,7 +12,7 @@ hide_title: True
 
 <CenteredImage src="/img/nula_w55rp20/Pinout.png" alt="NULA Ether W55RP20 pinout" caption="NULA Ether W55RP20 Pinout Diagram"/>
 
-Click [**here**](/img/nula_w55rp20/Pinout.png) for a high-resolution version of the pinout.
+Click <a href="/img/nula_w55rp20/Pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution version of the pinout.
 
 ---
 

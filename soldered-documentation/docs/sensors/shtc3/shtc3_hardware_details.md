@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/shtc3/SHTC3-pinout.png" alt="SHTC3 pinout image" />
 
-Click [**here**](/img/shtc3/SHTC3-pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/shtc3/SHTC3-pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin details
 

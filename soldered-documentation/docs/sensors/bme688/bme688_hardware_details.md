@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/bme688/bme688_pinout.png"/>
 
-Click [**here**](/img/bme688/bme688_pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/bme688/bme688_pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin details
 

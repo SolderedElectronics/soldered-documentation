@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/ncv7329/pinout.png" alt="LIN Transceiver NCV7329 Breakout pinout diagram" caption="LIN Transceiver NCV7329 Breakout pinout diagram"/>
 
-Click [**here**](/img/ncv7329/pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/ncv7329/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin Details
 

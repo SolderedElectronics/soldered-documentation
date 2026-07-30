@@ -12,7 +12,7 @@ hide_title: True
 
 <CenteredImage src="/img/tmp117/pinout.png" alt="TMP117 Pinout" />
 
-Click [**here**](/img/tmp117/pinout.png) for a high resolution image of the pinout.
+Click <a href="/img/tmp117/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ## Pin details
 

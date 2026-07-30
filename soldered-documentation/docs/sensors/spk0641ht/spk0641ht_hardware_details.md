@@ -12,7 +12,7 @@ hide_title: True
 
 <CenteredImage src="/img/spk0641ht/pinout.png" alt="SPK0641HT4H-1 Pinout" />
 
-Click [**here**](/img/spk0641ht/pinout.png) for a high resolution image of the pinout.
+Click <a href="/img/spk0641ht/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ## Pin details
 

@@ -9,7 +9,7 @@ hide_title: False
 ## Pinout
 
 <CenteredImage src="/img/i2s-audio-amp/stereo-i2s-amp-pinout.png" alt="Pinout image" />
-Click [**here**](/img/i2s-audio-amp/stereo-i2s-amp-pinout.png) for a high reoslution image of the pinout.
+Click <a href="/img/i2s-audio-amp/stereo-i2s-amp-pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high reoslution image of the pinout.
 
 ### Pin details
 

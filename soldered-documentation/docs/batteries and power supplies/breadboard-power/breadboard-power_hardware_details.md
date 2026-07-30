@@ -8,7 +8,7 @@ hide_title: false
 
 <CenteredImage src="/img/breadboard-power/pinout.png" alt="Pinout" />
 
-Click [**here**](/img/breadboard-power/pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/breadboard-power/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |

@@ -12,7 +12,7 @@ hide_title: True
 
 <CenteredImage src="/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.webp" alt="NULA Deepsleep ESP32-S3 pinout" caption="NULA DeepSleep ESP32-S3 Pinout Diagram"/>
 
-Click [**here**](/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.webp) for a high-resolution image of the pinout.
+Click <a href="/img/nula-deepsleep-esp32-s3/NULA-DEEPSLEEP-ESP32-S3-Pinout.webp" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin Details
 

@@ -9,13 +9,13 @@ hide_title: false
 ## Pinout
 
 <CenteredImage src="/img/relay/333021_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/relay/333021_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/relay/333021_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 <CenteredImage src="/img/relay/333022_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/relay/333022_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/relay/333022_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 <CenteredImage src="/img/relay/333023_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/relay/333023_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/relay/333023_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 <CenteredImage src="/img/relay/333024_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/relay/333024_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/relay/333024_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ---
 

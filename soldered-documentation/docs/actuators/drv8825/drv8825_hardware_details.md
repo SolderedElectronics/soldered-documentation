@@ -9,7 +9,7 @@ hide_title: False
 ## Pinout
 
 <CenteredImage src="/img/drv8825/333000_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/drv8825/333000_pinout.jpg) for a high reoslution image of the pinout.
+Click <a href="/img/drv8825/333000_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high reoslution image of the pinout.
 
 ### Pin details
 

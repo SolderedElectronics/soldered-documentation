@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/stepper-motor-driver/333134_pinout.jpg" alt="Pinout" />
 
-Click [**here**](/img/stepper-motor-driver/333134_pinout.jpg) for a high reoslution image of the pinout.
+Click <a href="/img/stepper-motor-driver/333134_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high reoslution image of the pinout.
 
 ### Pin details
 

@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/pcf85063a/pinout.jpg" alt="Pinout" />
 
-Click [**here**](/img/pcf85063a/pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/pcf85063a/pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ---
 

@@ -9,13 +9,13 @@ hide_title: false
 ## Pinout
 
 <CenteredImage src="/img/hall-effect-sensor/333079_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333079_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/hall-effect-sensor/333079_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 <CenteredImage src="/img/hall-effect-sensor/333080_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333080_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/hall-effect-sensor/333080_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 <CenteredImage src="/img/hall-effect-sensor/333081_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333081_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/hall-effect-sensor/333081_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 <CenteredImage src="/img/hall-effect-sensor/333082_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/hall-effect-sensor/333082_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/hall-effect-sensor/333082_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ---
 

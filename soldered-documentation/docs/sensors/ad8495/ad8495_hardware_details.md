@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/ad8495/pinout.svg" alt="AD8495 pinout" />
 
-Click [**here**](/img/ad8495/pinout.svg) for a high-resolution image of the pinout.
+Click <a href="/img/ad8495/pinout.svg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 | Pin Marking | Pin Name | Description                             |
 | ----------- | -------- | --------------------------------------- |

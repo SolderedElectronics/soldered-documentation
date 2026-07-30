@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/microsd-reader/pinout.webp" alt="Pinout" />
 
-Click [**here**](/img/microsd-reader/pinout.webp) for a high resolution image of the pinout.
+Click <a href="/img/microsd-reader/pinout.webp" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ### Pin details
 

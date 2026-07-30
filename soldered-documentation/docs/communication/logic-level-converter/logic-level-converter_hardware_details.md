@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/logic-level-converter/llc_pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter pinout diagram"/>
 
-Click [**here**](/img/logic-level-converter/llc_pinout.png) for a high resolution image of the pinout.
+Click <a href="/img/logic-level-converter/llc_pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ---
 

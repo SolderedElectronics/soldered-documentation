@@ -12,7 +12,7 @@ hide_title: True
 
 <CenteredImage src="/img/nula-mini-esp32-c6/NULA-MINI-ESP32-C6-Pinout.webp" alt="NULA Mini ESP32-C6 pinout" caption="NULA Mini ESP32-C6 Pinout Diagram"/>
 
-Click [**here**](/img/nula-mini-esp32-c6/NULA-MINI-ESP32-C6-Pinout.webp) for a high-resolution image of the pinout.
+Click <a href="/img/nula-mini-esp32-c6/NULA-MINI-ESP32-C6-Pinout.webp" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin Details
 

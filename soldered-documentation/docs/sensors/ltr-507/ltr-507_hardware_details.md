@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/ltr-507/pinout.jpg" alt="APDS-9960 pinout diagram" caption="LTR-507 pinout diagram"/>
 
-Click [**here**](/img/ltr-507/pinout.jpg) for a high-resolution image of the pinout.
+Click <a href="/img/ltr-507/pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ---
 

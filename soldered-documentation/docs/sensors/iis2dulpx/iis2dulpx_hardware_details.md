@@ -9,7 +9,7 @@ hide_title: False
 
 <CenteredImage src="/img/iis2dulpx/iis2dulpx-pinout.png" alt="IIS2DULPX Accelerometer breakout pinout" caption="IIS2DULPX Accelerometer breakout pinout" />
 
-Click [**here**](/img/iis2dulpx/iis2dulpx-pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/iis2dulpx/iis2dulpx-pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin details
 

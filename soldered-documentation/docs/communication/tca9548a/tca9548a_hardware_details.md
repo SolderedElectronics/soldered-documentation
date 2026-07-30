@@ -8,7 +8,7 @@ hide_title: false
 
 <CenteredImage src="/img/tca9548a/pinout.png" alt="Pinout" />
 
-Click [**here**](/img/tca9548a/pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/tca9548a/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 | Pin Marking   | Pin Name       | Description                                     |
 | ------------- | -------------- | ----------------------------------------------- |

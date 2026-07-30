@@ -8,7 +8,7 @@ hide_title: False
 
 <CenteredImage src="/img/inputronic-bridge/pinout.png" alt="Inputronic BRIDGE pinout diagram" caption="Inputronic BRIDGE pinout diagram"/>
 
-Click [**here**](/img/inputronic-bridge/pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/inputronic-bridge/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin details
 

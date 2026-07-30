@@ -11,13 +11,13 @@ hide_title: false
 <CenteredImage src="/img/simple-sensor/simple-fire-sensor/333042_pinout.jpg" alt="Pinout" />
 
 
-Click [**here**](/img/simple-sensor/simple-fire-sensor/333042_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/simple-sensor/simple-fire-sensor/333042_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 
 <CenteredImage src="/img/simple-sensor/simple-fire-sensor/333047_pinout.jpg" alt="Pinout" />
 
 
-Click [**here**](/img/simple-sensor/simple-fire-sensor/333047_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/simple-sensor/simple-fire-sensor/333047_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 
 ---

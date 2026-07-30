@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/txb0104/pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter TXB0104 pinout diagram"/>
 
-Click [**here**](/img/txb0104/pinout.png) for a high resolution image of the pinout.
+Click <a href="/img/txb0104/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ---
 

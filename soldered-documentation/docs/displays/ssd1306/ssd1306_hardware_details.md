@@ -8,7 +8,7 @@ hide_title: false
 
 <CenteredImage src="/img/ssd1306/333100_pinout.jpg" alt="Pinout" />
 
-Click [**here**](/img/ssd1306/333100_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/ssd1306/333100_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 | Pin Marking | Pin Name | Description                                     |
 | ----------- | -------- | ----------------------------------------------- |

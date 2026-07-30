@@ -12,7 +12,7 @@ hide_title: False
 
 <CenteredImage src="/img/mq/pinout_native.webp" alt="MQ Native pinout" />
 
-Click [**here**](/img/mq/pinout_native.webp) for a high-resolution image of the pinout.
+Click <a href="/img/mq/pinout_native.webp" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 <InfoBox>While the pinout shown is for the MQ135, it is exactly the same for any Native MQ sensor</InfoBox>
 
@@ -28,7 +28,7 @@ Click [**here**](/img/mq/pinout_native.webp) for a high-resolution image of the 
 
 <CenteredImage src="/img/mq/pinout_qwiic.png" alt="MQ Qwiic pinout" />
 
-Click [**here**](/img/mq/pinout_qwiic.png) for a high-resolution image of the pinout.
+Click <a href="/img/mq/pinout_qwiic.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 <InfoBox>While the pinout shown is for the MQ8, it is exactly the same for any Qwiic MQ sensor</InfoBox>
 

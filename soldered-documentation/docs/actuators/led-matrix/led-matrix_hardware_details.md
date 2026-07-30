@@ -9,7 +9,7 @@ hide_title: false
 ## Pinout
 
 <CenteredImage src="/img/led-matrix/led-matrix_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/led-matrix/led-matrix_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/led-matrix/led-matrix_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ---
 

@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/ina219/pinout.webp" alt="ina219 pinout" />
 
-Click [**here**](/img/ina219/pinout.webp) for a high-resolution image of the pinout.
+Click <a href="/img/ina219/pinout.webp" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin details
 

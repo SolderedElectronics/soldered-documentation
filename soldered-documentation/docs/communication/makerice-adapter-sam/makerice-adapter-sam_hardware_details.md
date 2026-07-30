@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/makerice-adapter-sam/maker_ice_sam_pinout.png" alt="Pinout" />
 
-Click [**here**](/img/makerice-adapter-sam/maker_ice_sam_pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/makerice-adapter-sam/maker_ice_sam_pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin details
 

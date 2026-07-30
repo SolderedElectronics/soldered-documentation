@@ -10,7 +10,7 @@ hide_title: False
 
 <CenteredImage src="/img/espflash-programmer/pinout.png" alt="ESPFlash Programmer pinout" />
 
-Click [**here**](/img/espflash-programmer/pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/espflash-programmer/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ## Pin details
 

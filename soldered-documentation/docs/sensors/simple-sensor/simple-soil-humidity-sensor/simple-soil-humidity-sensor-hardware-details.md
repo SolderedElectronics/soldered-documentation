@@ -9,7 +9,7 @@ hide_title: false
 ## Pinout
 
 <CenteredImage src="/img/simple-sensor/simple-soil-humidity-sensor/333040_pinout.jpg" alt="Pinout" />
-Click [**here**](/img/simple-sensor/simple-soil-humidity-sensor/333040_pinout.jpg) for a high resolution image of the pinout.
+Click <a href="/img/simple-sensor/simple-soil-humidity-sensor/333040_pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 <ErrorBox>The pinout image for the regular board hasn't been generated yet! We're working on it!</ErrorBox>
 

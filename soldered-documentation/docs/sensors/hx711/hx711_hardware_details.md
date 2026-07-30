@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/hx711/hx711_standard_pinout.png" alt="hx711_standard_pinout" caption="HX711 regular pinout diagram"/>
 
-Click [**here**](/img/hx711/hx711_standard_pinout.png) for a high resolution image of the pinout.
+Click <a href="/img/hx711/hx711_standard_pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ---
 
@@ -18,7 +18,7 @@ Click [**here**](/img/hx711/hx711_standard_pinout.png) for a high resolution ima
 
 <CenteredImage src="/img/hx711/hx711_easyc_pinout.png" alt="hx711_easyc_pinout" caption="HX711 qwiic (easyC) pinout diagram"/>
 
-Click [**here**](/img/hx711/hx711_easyC_pinout.png) for a high resolution image of the pinout.
+Click <a href="/img/hx711/hx711_easyC_pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high resolution image of the pinout.
 
 ---
 

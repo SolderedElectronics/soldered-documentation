@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/rs-485/RS-485-breakout.png" alt="RS-485 transceiver pinout diagram" caption="RS-485 transceiver pinout diagram"/>
 
-Click [**here**](/img/rs-485/RS-485-breakout.png) for a high-resolution image of the pinout.
+Click <a href="/img/rs-485/RS-485-breakout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ---
 

@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/rs-232/pinout.jpg" alt="RS-232 transceiver pinout diagram" caption="RS-232 transceiver pinout diagram"/>
 
-Click [**here**](/img/rs-232/pinout.jpg) for a high-resolution image of the pinout.
+Click <a href="/img/rs-232/pinout.jpg" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ---
 

@@ -10,7 +10,7 @@ hide_title: false
 
 <CenteredImage src="/img/txs0104/pinout.png" alt="Logic Level Converter pinout diagram" caption="Logic Level Converter I2C TXS0104 pinout diagram"/>
 
-Click [**here**](/img/txs0104/pinout.png) for a high-resolution image of the pinout.
+Click <a href="/img/txs0104/pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution image of the pinout.
 
 ---
 
