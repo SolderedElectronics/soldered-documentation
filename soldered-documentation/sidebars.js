@@ -2226,6 +2226,10 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-4',
+                },
+                {
+                  type: 'doc',
                   id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-3',
                 },
               ],

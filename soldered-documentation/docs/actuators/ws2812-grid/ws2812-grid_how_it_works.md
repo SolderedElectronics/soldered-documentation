@@ -44,3 +44,12 @@ The Ws2812B uses a **single-wire serial communication protocol** with strict tim
 
 Unilke SPI or I2C, communication is based on **Pulse Width Timing**, where a **logic 1** is represented by a longer HIGH pulse and **logic 0** is represented by a shorter **HIGH** pulse. Each bit is transmitter in approximately **1.25 us**.
 
+<CenteredImage   
+    src="/img/ws2812-grid/A-typical-1-Wire-communication-sequence.webp"
+    alt="Single-wire communication sequence"
+    caption="Single-wire communication sequence"
+    attribution_name="ENVIRONMENTAL DATA ACQUISITION BASED ON 1-WIRE INTERFACE. "
+    attribution_link="https://www.researchgate.net/figure/A-typical-1-Wire-communication-sequence_fig2_266046602"
+    width="700px"
+  />
+

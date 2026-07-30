@@ -32,6 +32,5 @@ It is possible to connect several modules with just a few wires and control seve
 - **Chainable** - connect multiple grids in series using the DIN/DOUT headers
 - **5V operation** with one 100nF decoupling capacitor per LED for stable switching
 - **100Ω series resistor** on the data input line for signal integrity
-- **8 solder jumpers** (JP1-JP8) on the back for configuring the data chain routing
 - **Compact 80 × 80 mm board** with four 3.2mm mounting holes for panel mounting
 - **Compatible with Arduino, ESP32, Raspberry Pi**, and any 5V-tolerant digital output
