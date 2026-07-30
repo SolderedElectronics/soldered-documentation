@@ -10,62 +10,61 @@ Inkplate 13SPECTRA allows you to draw different geometric shapes anywhere on its
 ---
 
 ## Drawing shapes
-Below is a example that demonstates how to draw basic shapes in **different colors**.
+Below is an example that demonstrates how to draw basic shapes in **different colors**.
 
 ```python
-from inkplate13SPECTRA import Inkplate
-import time
+from inkplate13_spectra import Inkplate
 
 inkplate = Inkplate()
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
 
-inkplate.drawPixel(800, 600, inkplate.BLACK);
+inkplate.draw_pixel(800, 600, inkplate.BLACK)
 
-inkplate.drawRect(60, 60, 1480, 1080, inkplate.BLACK);
-inkplate.drawRect(80, 80, 1440, 1040, inkplate.BLUE);
-inkplate.drawRoundRect(110, 110, 1380, 980, 40, inkplate.YELLOW);
+inkplate.draw_rect(60, 60, 1480, 1080, inkplate.BLACK)
+inkplate.draw_rect(80, 80, 1440, 1040, inkplate.BLUE)
+inkplate.draw_round_rect(110, 110, 1380, 980, 40, inkplate.YELLOW)
 
-inkplate.drawLine(60, 60, 1540, 1140, inkplate.BLACK);
-inkplate.drawLine(1540, 60, 60, 1140, inkplate.BLACK);
+inkplate.draw_line(60, 60, 1540, 1140, inkplate.BLACK)
+inkplate.draw_line(1540, 60, 60, 1140, inkplate.BLACK)
 
-inkplate.drawFastHLine(60, 600, 1480, inkplate.RED);
-inkplate.drawFastVLine(800, 60, 1080, inkplate.GREEN);
+inkplate.draw_fast_hline(60, 600, 1480, inkplate.RED)
+inkplate.draw_fast_vline(800, 60, 1080, inkplate.GREEN)
 
-inkplate.drawCircle(400, 300, 120, inkplate.BLUE);
-inkplate.fillCircle(1200, 300, 120, inkplate.GREEN);
-inkplate.drawCircle(1200, 300, 120, inkplate.BLACK);
+inkplate.draw_circle(400, 300, 120, inkplate.BLUE)
+inkplate.fill_circle(1200, 300, 120, inkplate.GREEN)
+inkplate.draw_circle(1200, 300, 120, inkplate.BLACK)
 
-inkplate.fillRoundRect(220, 760, 420, 300, 35, inkplate.YELLOW);
-inkplate.drawRoundRect(220, 760, 420, 300, 35, inkplate.BLACK);
+inkplate.fill_round_rect(220, 760, 420, 300, 35, inkplate.YELLOW)
+inkplate.draw_round_rect(220, 760, 420, 300, 35, inkplate.BLACK)
 
-inkplate.fillRect(980, 760, 420, 300, inkplate.WHITE);
-inkplate.drawRect(980, 760, 420, 300, inkplate.BLACK);
+inkplate.fill_rect(980, 760, 420, 300, inkplate.WHITE)
+inkplate.draw_rect(980, 760, 420, 300, inkplate.BLACK)
 
-inkplate.drawTriangle(800, 140, 680, 360, 920, 360, inkplate.RED);
-inkplate.fillTriangle(800, 520, 650, 720, 950, 720, inkplate.BLUE);
-inkplate.drawTriangle(800, 520, 650, 720, 950, 720, inkplate.BLACK);
+inkplate.draw_triangle(800, 140, 680, 360, 920, 360, inkplate.RED)
+inkplate.fill_triangle(800, 520, 650, 720, 950, 720, inkplate.BLUE)
+inkplate.draw_triangle(800, 520, 650, 720, 950, 720, inkplate.BLACK)
 
-inkplate.drawFastHLine(200, 180, 1200, inkplate.YELLOW);
-inkplate.drawFastHLine(200, 1020, 1200, inkplate.YELLOW);
-inkplate.drawFastVLine(220, 200, 800, inkplate.BLUE);
-inkplate.drawFastVLine(1380, 200, 800, inkplate.BLUE);
+inkplate.draw_fast_hline(200, 180, 1200, inkplate.YELLOW)
+inkplate.draw_fast_hline(200, 1020, 1200, inkplate.YELLOW)
+inkplate.draw_fast_vline(220, 200, 800, inkplate.BLUE)
+inkplate.draw_fast_vline(1380, 200, 800, inkplate.BLUE)
 
-inkplate.fillCircle(100, 100, 18, inkplate.RED);
-inkplate.fillCircle(1500, 100, 18, inkplate.GREEN);
-inkplate.fillCircle(100, 1100, 18, inkplate.BLUE);
-inkplate.fillCircle(1500, 1100, 18, inkplate.BLACK);
+inkplate.fill_circle(100, 100, 18, inkplate.RED)
+inkplate.fill_circle(1500, 100, 18, inkplate.GREEN)
+inkplate.fill_circle(100, 1100, 18, inkplate.BLUE)
+inkplate.fill_circle(1500, 1100, 18, inkplate.BLACK)
 
-inkplate.drawRect(50, 50, 75, 75, inkplate.BLUE);
-inkplate.drawCircle(200, 200, 30, inkplate.GREEN);
-inkplate.fillCircle(300, 300, 30, inkplate.BLACK);
-inkplate.drawFastHLine(20, 100, 50, inkplate.RED);
-inkplate.drawFastVLine(100, 20, 50, inkplate.BLACK);
-inkplate.drawLine(100, 100, 400, 400, inkplate.BLACK);
-inkplate.drawRoundRect(100, 10, 100, 100, 10, inkplate.YELLOW);
-inkplate.fillRoundRect(10, 100, 100, 100, 10, inkplate.BLACK);
-inkplate.drawTriangle(300, 100, 400, 150, 400, 100, inkplate.BLACK);
+inkplate.draw_rect(50, 50, 75, 75, inkplate.BLUE)
+inkplate.draw_circle(200, 200, 30, inkplate.GREEN)
+inkplate.fill_circle(300, 300, 30, inkplate.BLACK)
+inkplate.draw_fast_hline(20, 100, 50, inkplate.RED)
+inkplate.draw_fast_vline(100, 20, 50, inkplate.BLACK)
+inkplate.draw_line(100, 100, 400, 400, inkplate.BLACK)
+inkplate.draw_round_rect(100, 10, 100, 100, 10, inkplate.YELLOW)
+inkplate.fill_round_rect(10, 100, 100, 100, 10, inkplate.BLACK)
+inkplate.draw_triangle(300, 100, 400, 150, 400, 100, inkplate.BLACK)
 
 
 inkplate.display()
@@ -73,112 +72,118 @@ inkplate.display()
 
 <CenteredImage src="/img/13spectra/DSC00713.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
+<QuickLink
+  title="drawing_graphics.py"
+  description="Full example showing how to draw various shapes in different colors across the full canvas."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/drawing_graphics.py"
+/>
+
 <FunctionDocumentation
-functionName="inkplate.drawPixel()"
+functionName="inkplate.draw_pixel()"
 description="Set a single pixel in the frame buffer."
 parameters={[
 { type: 'Number', name: 'x', description: 'X coordinate.' },
 { type: 'Number', name: 'y', description: 'Y coordinate.' },
-{ type: 'Const', name: 'color', description: 'Color constant (BLACK or WHITE in BW mode).' }
+{ type: 'Const', name: 'c', description: 'Color constant (inkplate.BLACK, inkplate.WHITE, inkplate.YELLOW, inkplate.RED, inkplate.BLUE, or inkplate.GREEN).' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawRect()"
+functionName="inkplate.draw_rect()"
 description="Draw an unfilled rectangle outline."
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
 { type: 'Number', name: 'w', description: 'Width in pixels.' },
 { type: 'Number', name: 'h', description: 'Height in pixels.' },
-{ type: 'Const', name: 'color', description: 'Outline color.' }
+{ type: 'Const', name: 'c', description: 'Outline color.' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawCircle()"
+functionName="inkplate.draw_circle()"
 description="Draw an unfilled circle."
 parameters={[
-{ type: 'Number', name: 'x0', description: 'Center X.' },
-{ type: 'Number', name: 'y0', description: 'Center Y.' },
+{ type: 'Number', name: 'x', description: 'Center X.' },
+{ type: 'Number', name: 'y', description: 'Center Y.' },
 { type: 'Number', name: 'r', description: 'Radius in pixels.' },
-{ type: 'Const', name: 'color', description: 'Outline color.' }
+{ type: 'Const', name: 'c', description: 'Outline color.' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.fillCircle()"
+functionName="inkplate.fill_circle()"
 description="Draw a filled circle."
 parameters={[
-{ type: 'Number', name: 'x0', description: 'Center X.' },
-{ type: 'Number', name: 'y0', description: 'Center Y.' },
+{ type: 'Number', name: 'x', description: 'Center X.' },
+{ type: 'Number', name: 'y', description: 'Center Y.' },
 { type: 'Number', name: 'r', description: 'Radius in pixels.' },
-{ type: 'Const', name: 'color', description: 'Fill color.' }
+{ type: 'Const', name: 'c', description: 'Fill color.' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawFastHLine()"
+functionName="inkplate.draw_fast_hline()"
 description="Draw a horizontal line quickly."
 parameters={[
 { type: 'Number', name: 'x', description: 'Start X.' },
 { type: 'Number', name: 'y', description: 'Y position.' },
 { type: 'Number', name: 'w', description: 'Line width in pixels.' },
-{ type: 'Const', name: 'color', description: 'Line color.' }
+{ type: 'Const', name: 'c', description: 'Line color.' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawFastVLine()"
+functionName="inkplate.draw_fast_vline()"
 description="Draw a vertical line quickly."
 parameters={[
 { type: 'Number', name: 'x', description: 'X position.' },
 { type: 'Number', name: 'y', description: 'Start Y.' },
 { type: 'Number', name: 'h', description: 'Line height in pixels.' },
-{ type: 'Const', name: 'color', description: 'Line color.' }
+{ type: 'Const', name: 'c', description: 'Line color.' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawLine()"
+functionName="inkplate.draw_line()"
 description="Draw a line from one point to another."
 parameters={[
 { type: 'Number', name: 'x0', description: 'Start X.' },
 { type: 'Number', name: 'y0', description: 'Start Y.' },
 { type: 'Number', name: 'x1', description: 'End X.' },
 { type: 'Number', name: 'y1', description: 'End Y.' },
-{ type: 'Const', name: 'color', description: 'Line color.' }
+{ type: 'Const', name: 'c', description: 'Line color.' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawRoundRect()"
+functionName="inkplate.draw_round_rect()"
 description="Draw an unfilled rectangle with rounded corners."
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
 { type: 'Number', name: 'w', description: 'Width in pixels.' },
 { type: 'Number', name: 'h', description: 'Height in pixels.' },
-{ type: 'Number', name: 'radius', description: 'Corner radius in pixels.' },
-{ type: 'Const', name: 'color', description: 'Outline color.' }
+{ type: 'Number', name: 'r', description: 'Corner radius in pixels.' },
+{ type: 'Const', name: 'c', description: 'Outline color.' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.fillRoundRect()"
+functionName="inkplate.fill_round_rect()"
 description="Draw a filled rectangle with rounded corners."
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
 { type: 'Number', name: 'y', description: 'Top Y.' },
 { type: 'Number', name: 'w', description: 'Width in pixels.' },
 { type: 'Number', name: 'h', description: 'Height in pixels.' },
-{ type: 'Number', name: 'radius', description: 'Corner radius in pixels.' },
-{ type: 'Const', name: 'color', description: 'Fill color.' }
+{ type: 'Number', name: 'r', description: 'Corner radius in pixels.' },
+{ type: 'Const', name: 'c', description: 'Fill color.' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawTriangle()"
+functionName="inkplate.draw_triangle()"
 description="Draw a triangle outline using three vertices."
 parameters={[
 { type: 'Number', name: 'x0', description: 'Vertex A X.' },
@@ -187,6 +192,6 @@ parameters={[
 { type: 'Number', name: 'y1', description: 'Vertex B Y.' },
 { type: 'Number', name: 'x2', description: 'Vertex C X.' },
 { type: 'Number', name: 'y2', description: 'Vertex C Y.' },
-{ type: 'Const', name: 'color', description: 'Outline color.' }
+{ type: 'Const', name: 'c', description: 'Outline color.' }
 ]}
 />

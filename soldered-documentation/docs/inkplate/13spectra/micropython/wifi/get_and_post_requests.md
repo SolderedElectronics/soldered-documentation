@@ -21,7 +21,7 @@ This example below fetches data from a webhook.site endpoint and prints the resp
 import network
 import time
 import urequests
-from inkplate13SPECTRA import Inkplate
+from inkplate13_spectra import Inkplate
 
 # Enter your WiFi credentials here
 ssid = "your ssid"
@@ -45,7 +45,7 @@ def do_connect():
 
 inkplate=Inkplate()
 inkplate.begin()
-inkplate.setTextSize(2)
+inkplate.set_text_size(2)
 
 if do_connect():
     inkplate.print("Wifi connected")
@@ -61,6 +61,12 @@ inkplate.display()
 ```
 
 <CenteredImage src="/img/13spectra/micropython_get_example.png" alt="Example output displayed in console" caption="Example output displayed in console" width="1200px" />
+
+<QuickLink
+  title="get_request.py"
+  description="Full example showing how to connect to WiFi and perform an HTTP GET request using urequests."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/get_request.py"
+/>
 
 <FunctionDocumentation
 functionName="urequests.get()"
@@ -83,7 +89,7 @@ import network
 import time
 import urequests
 import ujson
-from inkplate13SPECTRA import Inkplate
+from inkplate13_spectra import Inkplate
 
 # Enter your WiFi credentials here
 ssid = ""
@@ -107,10 +113,10 @@ def do_connect():
 
 inkplate=Inkplate()
 inkplate.begin()
-inkplate.setTextSize(2)
+inkplate.set_text_size(2)
 
 if do_connect():
-    data = {"message": "Hello from Inkplate 13Spectra!"}
+    data = {"message": "Hello from Inkplate 13SPECTRA!"}
 
     # Perform POST request
     try:
@@ -136,6 +142,12 @@ else:
 <CenteredImage src="/img/13spectra/micropython_post_example.png" alt="POST request logged on webhook.site" caption="POST request logged on webhook.site" width="1200px" />
 
 <CenteredImage src="/img/13spectra/DSC00717.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="post_request.py"
+  description="Full example showing how to connect to WiFi and perform an HTTP POST request with a JSON payload using urequests."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/post_request.py"
+/>
 
 <FunctionDocumentation
 functionName="urequests.post()"

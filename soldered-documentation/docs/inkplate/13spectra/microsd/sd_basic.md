@@ -8,7 +8,9 @@ hide_title: true
 
 <SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
 
-The built-in microSD card slot on Inkplate 13SPECTRA can be a great asset for your project. It can store a very large number of high-quality image files to be displayed, and it can also read and write data between deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
+The built-in microSD card slot on Inkplate 13SPECTRA is useful for storing large numbers of high-quality images to display, and for reading and writing data between deep sleep cycles. This page covers basic examples to get you started.
+
+<CenteredImage src="/img/13spectra/microsd.jpg" alt="MicroSD card slot highlighted on Inkplate 13SPECTRA" caption="MicroSD card slot" width="700px" />
 
 <InfoBox>Inkplate 13SPECTRA uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
@@ -94,7 +96,7 @@ void setup()
         else
         {
             display.clearDisplay();    // Clear everything that is stored in frame buffer of epaper
-            display.setCursor(0, 0);   // Set print position at the begining of the screen
+            display.setCursor(0, 0);   // Set print position at the beginning of the screen
             char text[3001];           // Array where data from SD card is stored (max 200 chars here)
             int len = file.fileSize(); // Read how big is file that we are opening
             if (len > 3000)
@@ -166,6 +168,20 @@ void loop()
 
 <InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
 
-[LINK PLACEHOLDER - 13spectra txt read example]
+---
 
-[LINK PLACEHOLDER - 13spectra txt write example]
+## Full examples
+
+For full working code examples of reading and writing text files, see the links below:
+
+<QuickLink
+  title="Inkplate13SPECTRA_SD_TXT_Read.ino"
+  description="Full example of reading a text file from the microSD card."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/SD/Inkplate13SPECTRA_SD_TXT_Read/Inkplate13SPECTRA_SD_TXT_Read.ino"
+/>
+
+<QuickLink
+  title="Inkplate13SPECTRA_SD_TXT_Write.ino"
+  description="Full example of writing a text file to the microSD card."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/SD/Inkplate13SPECTRA_SD_TXT_Write/Inkplate13SPECTRA_SD_TXT_Write.ino"
+/>

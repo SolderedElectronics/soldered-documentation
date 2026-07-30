@@ -19,7 +19,7 @@ Below is a simple example demonstrating how to connect to a WiFi network.
 # Include needed libraries
 import network
 import time
-from inkplate13SPECTRA import Inkplate
+from inkplate13_spectra import Inkplate
 
 # Enter your WiFi credentials here
 ssid = "YOUR_SSID_HERE"
@@ -39,20 +39,26 @@ def do_connect():
     print("network config:", sta_if.ifconfig())
     return True
 
-inkplate=Inkplate()
+inkplate = Inkplate()
 inkplate.begin()
-inkplate.setTextSize(2)
+inkplate.set_text_size(2)
 
 if do_connect():
     inkplate.print("Wifi connected")
 else:
     inkplate.print("Wifi failed")
 
-inplate.display()
+inkplate.display()
 
 ```
 
 <CenteredImage src="/img/13spectra/DSC00716.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="wifi_connect.py"
+  description="Full example showing how to connect to a WiFi network and show the connection status on the display."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/wifi_connect.py"
+/>
 
 <FunctionDocumentation
 functionName="network.WLAN()"

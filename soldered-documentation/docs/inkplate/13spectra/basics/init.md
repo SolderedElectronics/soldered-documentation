@@ -14,7 +14,7 @@ Let's get started writing our first Inkplate sketch! Before using Inkplate in Ar
 
 ## Initializing Inkplate and updating the display
 
-The most basic sketch on Inkplate 13SPECRA is as follows. It initializes Inkplate in memory and lears the e-paper display:
+The most basic sketch on Inkplate 13SPECTRA is as follows. It initializes Inkplate in memory and clears the e-paper display:
 
 ```cpp
 #include <Inkplate.h>
@@ -24,7 +24,7 @@ void setup(){
     // Initialize Inkplate
     display.begin();    
     // Update the display
-    display.display()
+    display.display();
     // As the frame buffer is empty upon initialization, this will display a blank screen
 }
 void loop(){
@@ -33,7 +33,7 @@ void loop(){
 ```
 
 <FunctionDocumentation
-    functionName="Inkpate display"
+    functionName="Inkplate display"
     description="Creates an Inkplate object from the Inkplate class."
     returnType="none"
 />
@@ -48,13 +48,13 @@ void loop(){
 
 ## Display rotation
 
-In case you want to use Inkplate in portrait mpde or in any 90-degree rotation, use `inkplate.setRotation()`:
+In case you want to use Inkplate in portrait mode or in any 90-degree rotation, use `inkplate.setRotation()`:
 
 <FunctionDocumentation
     functionName="display.setRotation()"
     description="Sets the cardinal rotation of the display. This automatically adjusts the (0, 0) x-y coordinate origin point."
     returnDescription="none"
     parameters={[
-    { type: 'uint8_t', name: '_rotation', decription:"Ranges from 0 to 270. 0 is the default rotation; 1 rotates by 90 degrees, 2 by 180 degrees, and 3 by 270 degrees." },
+    { type: 'uint8_t', name: '_rotation', description:"Ranges from 0 to 270. 0 is the default rotation; 1 rotates by 90 degrees, 2 by 180 degrees, and 3 by 270 degrees." },
     ]}
 />

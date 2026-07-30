@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
 
-Using deep sleep on Inkplate 13SPECTRA is crucial for writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the displayed image, Inkplate 13SPECTRA can consume little or no current while in deep sleep mode, enabling a sketch to run for months on battery.
+Using deep sleep matters if you want your Inkplate 13SPECTRA sketch to get the most out of a battery. E-paper doesn't need power to hold the image on screen, so Inkplate 13SPECTRA draws little to no current in deep sleep mode, and a sketch can run for months on battery.
 
 ---
 
@@ -72,4 +72,8 @@ esp_deep_sleep_start();
 ## Full example
 Check out the full examples from this page, along with many more usage options below:
 
-[LINK PLACEHOLDER - inkplate13 wake up button example github]
+<QuickLink
+  title="Inkpate13SPECTRA_Wake_Up_Button.ino"
+  description="Full example of waking Inkplate 13SPECTRA from deep sleep using the onboard wake button."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/DeepSleep/Inkpate13SPECTRA_Wake_Up_Button/Inkpate13SPECTRA_Wake_Up_Button.ino"
+/>

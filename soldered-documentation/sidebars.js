@@ -965,6 +965,7 @@ const sidebars = {
                 "inkplate/13spectra/hardware/13spectra-hardware-files",
                 "inkplate/13spectra/hardware/13spectra-hardware-battery",
                 "inkplate/13spectra/hardware/13spectra-hardware-jumpers",
+                "inkplate/13spectra/hardware/13spectra-hardware-free-gpio",
                 "inkplate/13spectra/hardware/13spectra-hardware-power-switch",
               ]
             },
@@ -1003,7 +1004,7 @@ const sidebars = {
                   "label":"WiFi",
                   "items":[
                     "inkplate/13spectra/wifi/13spectra-wifi-basics",
-                    "inkplate/13spectra/wifi/13-spectra-wifi-get-post",
+                    "inkplate/13spectra/wifi/13spectra-wifi-get-post",
                     "inkplate/13spectra/wifi/13spectra-wifi-https-certificate",
                     "inkplate/13spectra/wifi/13spectra-wifi-image-from-web",
                   ]
@@ -1053,7 +1054,8 @@ const sidebars = {
                 },
                 "inkplate/13spectra/micropython/13spectra-battery-voltage"
               ]
-            }
+            },
+            "inkplate/13spectra/13spectra-faq-troubleshooting"
           ]
         }
       ]

@@ -66,7 +66,7 @@ void loop(){
 <CenteredImage src="/img/13spectra/DSC00700.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 
-elow are the detailed references for these functions:
+Below are the detailed references for these functions:
 
 <FunctionDocumentation
   functionName="inkplate.fillRect()"
@@ -89,7 +89,6 @@ Below is an example demonstrating functions for drawing graphics on the Inkplate
 
 ```cpp
 void setup(){
-    display.clear();
     display.clearDisplay();
     display.fillScreen(INKPLATE_WHITE);
 
@@ -116,24 +115,11 @@ void setup(){
     display.drawLine(40, 450, 760, 610, INKPLATE_BLUE - 1);
     display.drawLine(40, 480, 760, 640, INKPLATE_GREEN - 1);
 
-    for (int x = 40; x < 760; x += 8) {
-    uint16_t color = INKPLATE_BLACK;
-
-    if (x % 48 == 0) {
-      color = INKPLATE_RED;
-    } else if (x % 40 == 0) {
-      color = INKPLATE_YELLOW;
-    } else if (x % 32 == 0) {
-      color = INKPLATE_GREEN - 1;
-    } else if (x % 24 == 0) {
-      color = INKPLATE_BLUE - 1;
-    }
-
     // Simple text
     display.setTextSize(3);
     display.setTextColor(INKPLATE_BLACK);
     display.setCursor(40, 760);
-    display.print("Inkplate 13 Spectra");
+    display.print("Inkplate 13SPECTRA");
 
     display.setTextSize(2);
     display.setCursor(40, 800);
@@ -142,9 +128,16 @@ void setup(){
     // Update e-paper
     display.display();
 }
-}
 
 ```
+
+<CenteredImage src="/img/13spectra/shapes_w.png" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="Inkplate13SPECTRA_Drawing_Graphics.ino"
+  description="Full example showing how to draw shapes, lines and text using the Adafruit GFX functions."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Basic/Inkplate13SPECTRA_Drawing_Graphics/Inkplate13SPECTRA_Drawing_Graphics.ino"
+/>
 
 Below are the detailed references to these functions:
 
@@ -254,4 +247,16 @@ Below are the detailed references to these functions:
     { type: 'int', name: 'y', description: 'The y-coordinate of the pixel.' },
     { type: 'uint16_t', name: 'color', description: 'The pixel color.' },
   ]}
+/>
+
+---
+
+## Full examples
+
+For the full working code example of the color spectrum demo above, see the link below:
+
+<QuickLink
+  title="Inkplate13SPECTRA_Full_Screen_Colors.ino"
+  description="Full example of drawing a full screen of all available colors on Inkplate 13SPECTRA."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Basic/Inkplate13SPECTRA_Full_Screen_Colors/Inkplate13SPECTRA_Full_Screen_Colors.ino"
 />

@@ -23,13 +23,14 @@ Let's draw this image on Inkplate 13SPECTRA:
 #include "HTTPClient.h" //Include library for HTTPClient
 #include "Inkplate.h"   //Include Inkplate library to the sketch
 #include "WiFi.h"       //Include library for WiFi
-Inkplate inkplate;       // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+Inkplate inkplate;       // Create an object on Inkplate library
 
 const char ssid[] = "Soldered Electronics"; // Your WiFi SSID
 const char *password = "dasduino";     // Your WiFi password
 
 void setup()
 {
+    Serial.begin(115200);    // Init serial communication so we can see debug messages
     inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
     inkplate.clearDisplay(); // Clear frame buffer of display
     inkplate.display();      // Put clear image on display
@@ -47,11 +48,12 @@ void setup()
     Serial.println("\nWiFi OK! Downloading...");
 
     // Draw the first image from web.
-    // Monochromatic bitmap with 1 bit depth. Images like this load quickest.
+    // This image is 1600x1200px, matching Inkplate 13SPECTRA's native resolution exactly,
+    // so drawing it at (0, 0) fills the entire screen.
     // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter to true
     // will flip all colors on the image, making black white and white black. This may be necessary when exporting
-    // bitmaps from certain softwares. Forth parameter will dither the image. Photo taken by: Roberto Fernandez
-    if (!inkplate.image.draw("https://varipass.org/neowise_mono.bmp", 0, 0, true, false))
+    // bitmaps from certain softwares. Forth parameter will dither the image.
+    if (!inkplate.image.draw("https://i.imgur.com/ESkX8xU.jpeg", 0, 0, true, false))
     {
         // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
         // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
@@ -68,7 +70,13 @@ void loop()
 }
 ```
 
-<CenteredImage src="/img/13spectra/DSC00708.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+<CenteredImage src="/img/13spectra/web_image_w.png" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="Inkplate13SPECTRA_Show_Pictures_From_Web.ino"
+  description="Full example showing how to download an image from the web and display it on Inkplate 13SPECTRA."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_Show_Pictures_From_Web/Inkplate13SPECTRA_Show_Pictures_From_Web.ino"
+/>
 
 <FunctionDocumentation
     functionName="inkplate.image.draw()"

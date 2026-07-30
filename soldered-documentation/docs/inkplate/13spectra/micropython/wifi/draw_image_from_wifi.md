@@ -11,17 +11,20 @@ Inkplate 13SPECTRA can connect to WiFi and fetch images directly from the intern
 
 ## Downloading and displaying an image
 
-Below is a complere example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
+Below is a complete example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
 
 ```python
+"""Connect to WiFi and render an image from a URL."""
+
 # Include needed libraries
 import network
 import time
-from inkplate13SPECTRA import Inkplate
+from inkplate13_spectra import Inkplate
 
 # WiFi credentials (replace with your own)
 SSID = "YOUR_SSID_HERE"
 PASSWORD = "YOUR_PASSWORD_HERE"
+
 
 # Connects to a WiFi network using given SSID and PASSWORD.
 #
@@ -72,7 +75,8 @@ if not do_connect():
 #
 # - invert (bool, default=False): If True, inverts the image colors.
 #
-# - dither (bool, default=False): If True, applies a dithering algorithm to the image for better grayscale rendering.
+# - dither (bool, default=False): If True, applies a dithering algorithm to
+#   the image for better grayscale rendering.
 #
 # - kernel_type (int): Specifies the dithering algorithm to use.
 #     Available options:
@@ -81,27 +85,30 @@ if not do_connect():
 #       Inkplate.KERNEL_STUCKI          = 2
 #       Inkplate.KERNEL_BURKES          = 3
 #
-# Performance Notes:
-# - JPG: ~52 seconds (or ~90s with dithering)
-#
 # Example usage:
-inkplate.drawImage(
-    "https://i.imgur.com/ESkX8xU.jpeg",  # URL to image
-    0, 0,                                # X, Y position
-    invert=False,                       # Do not invert colors
-    dither=True,                        # Enable dithering
-    kernel_type=Inkplate.KERNEL_FLOYD_STEINBERG  # Dithering algorithm
+inkplate.draw_image(
+    "https://varipass.org/neowise_mono.bmp",  # URL to image
+    0,
+    0,  # X, Y position
+    invert=False,  # Do not invert colors
+    dither=True,  # Enable dithering
+    kernel_type=Inkplate.KERNEL_FLOYD_STEINBERG,  # Dithering algorithm
 )
 
 # Show the image from the internal buffer
 inkplate.display()
-
 ```
 
-<CenteredImage src="/img/13spectra/DSC00715.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+<CenteredImage src="/img/13spectra/DSC00708.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="display_image_web.py"
+  description="Full example connecting to WiFi and rendering an image from a URL."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/display_image_web.py"
+/>
 
 <FunctionDocumentation
-functionName="inkplate.drawImage()"
+functionName="inkplate.draw_image()"
 description="Download and draw an image from a URL or local file path onto the display buffer."
 parameters={[
 { type: 'String', name: 'path', description: 'Image URL or local file path.' },

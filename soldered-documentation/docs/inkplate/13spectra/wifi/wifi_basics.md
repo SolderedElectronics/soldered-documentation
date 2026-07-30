@@ -20,19 +20,22 @@ These are the basic steps to connecting to WiFi, followed by the key function ex
 #include "WiFi.h"       //Include library for WiFi
 
 Inkplate inkplate;
-const char ssid[]="your password";  // Your WiFi SSID
-const char *password="your password";   // Your WiFi password
+const char ssid[]="YOUR_SSID_HERE";  // Your WiFi SSID
+const char *password="YOUR_PASSWORD_HERE";   // Your WiFi password
 
 void setup(){
-    inkplate.begin();   // Init INkplate library (you should call this function ONLY ONCE)
+    inkplate.begin();   // Init Inkplate library (you should call this function ONLY ONCE)
     inkplate.clearDisplay();    // Clear frame buffer of display
     inkplate.setTextColor(INKPLATE_BLACK); //Set the text color to black
+    inkplate.setTextSize(5);    // Set text to be 5 times bigger than classic 5x7 px text
+    inkplate.setCursor(80, 500); // Set position of the text
     WiFi.begin(ssid, password);
     inkplate.print("Connecting to WiFi...");
     while(WiFi.status()!=WL_CONNECTED){
         delay(500);
     }
-    inkplate.println("\nSuccessfully connected to WiFi");
+    inkplate.setCursor(80, 600);
+    inkplate.println("Successfully connected to WiFi");
     inkplate.display();
 }
 void loop(){}
@@ -40,6 +43,12 @@ void loop(){}
 ```
 
 <CenteredImage src="/img/13spectra/DSC00705.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="Inkplate13SPECTRA_WiFi_Connect.ino"
+  description="Full example showing how to connect the Inkplate 13SPECTRA to a WiFi network."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_WiFi_Connect/Inkplate13SPECTRA_WiFi_Connect.ino"
+/>
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
@@ -56,11 +65,3 @@ void loop(){}
   description="Checks the connection status of the ESP32 WiFi module. Returns whether the module is connected to an access point."
   returnDescription="Returns true if the ESP32 is connected to the AP, otherwise returns false."
 />
-
----
-
-## Full example
-
-To see more details, check out our full examples:
-
-[LINK PLACEHOLDER - 13spectra wifi examples github link]

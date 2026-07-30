@@ -14,7 +14,7 @@ To get started with Arduino on Inkplate 13SPECTRA, a few simple steps need to be
 
 ### 1. Install Arduino IDE
 
-If you haven’t installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
+If you haven't installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
 <WarningBox>Arduino IDE 2.0 or newer is required for Inkplate 13SPECTRA.</WarningBox>
 
 <CenteredImage src="/img/inkplate10/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
@@ -50,7 +50,7 @@ The CH340 is an onboard chip that enables serial communication over USB.
 
 #### Windows
 
-If the driver is not installed, download it from **[this link](https://soldered.com/productdata/2023/02/CH34x_Install_Windows_v3_4.zip)**. Start the installation and follow the instructions:  
+If the driver is not installed, download it from **[this link](https://soldered.com/blogs/learn/ch340-driver-installation)**. Start the installation and follow the instructions:  
 <CenteredImage src="/img/inkplate10/ch340.png" alt="Install CH340 Driver" caption="Installing the CH340 Driver on Windows" width="350px" />
 
 #### Mac
@@ -69,7 +69,7 @@ The board will not show up as a serial port until the driver is enabled.</Warnin
 
 ### Done!
 
-Inkplate 13SPECTRA setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! If you need some help with uploading code, check out the section below.
+Inkplate 13SPECTRA setup is complete. Now try uploading some examples from the Arduino library and see the results for yourself. If you need help uploading code, check out the section below.
 
 ---
 
@@ -78,7 +78,13 @@ To upload your own sketch or an Arduino example to **Inkplate 13SPECTRA**, follo
 
 ### 1. Connect Inkplate via USB and power it on
 
-Use the provided **USB-C cable** to connect Inkplate 13SPECTRA to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
+Use the provided **USB-C cable** to connect Inkplate 13SPECTRA to your computer.
+
+<CenteredImage src="/img/13spectra/usb-c.jpg" alt="USB-C connector highlighted on Inkplate 13SPECTRA" caption="USB-C connector" width="600px" />
+
+Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
+
+<CenteredImage src="/img/13spectra/power_sw.jpg" alt="Power switch highlighted on Inkplate 13SPECTRA" caption="Power switch" width="600px" />
 
 ### 2. Create a sketch
 
@@ -92,7 +98,8 @@ Inkplate display;   // Create an Inkplate object for Inkplate 13SPECTRA
 void setup(){
     display.begin(); // Initialize the display hardware
     display.clearDisplay(); // Clear the frame buffer (does NOT clear the physical screen)
-    display.setCursor(10,10) // Set the text position to (10,10) pixels
+    display.setCursor(10,10); // Set the text position to (10,10) pixels
+    display.setTextColor(INKPLATE_BLACK); // Set text color to black (default color is white on Inkplate 13SPECTRA)
     display.setTextSize(6); // Set text size to 6 (default is 1)
     display.print("Hello World!"); // Print "Hello World!" at the set position
     display.display(); // Refresh the e-paper display to show changes
@@ -124,4 +131,4 @@ That's how you know you did everything correctly!
 
 ## Troubleshooting
 
-Having problems with uploading your first code? Check out our [LINK PLACEHOLDER - troubleshooting page]
+Having problems with uploading your first code? Check out our [**FAQ and troubleshooting page**](/inkplate/13spectra/faq-troubleshooting)

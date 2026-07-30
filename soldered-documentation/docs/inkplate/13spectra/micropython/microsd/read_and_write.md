@@ -23,7 +23,7 @@ inkplate.begin()
 inkplate.initSDCard(fastBoot=True)
 
 #List files on the SD card
-print("FIles on SD:",os.listdir("sd"))
+print("Files on SD:",os.listdir("sd"))
 
 #Writing to a file
 with open("sd/example.txt","w")as f:
