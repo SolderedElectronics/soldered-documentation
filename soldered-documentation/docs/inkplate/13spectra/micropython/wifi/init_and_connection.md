@@ -54,6 +54,12 @@ inkplate.display()
 
 <CenteredImage src="/img/13spectra/DSC00716.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
+<QuickLink
+  title="wifi_connect.py"
+  description="Full example showing how to connect to a WiFi network and show the connection status on the display."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/wifi_connect.py"
+/>
+
 <FunctionDocumentation
 functionName="network.WLAN()"
 description="Create or access a WiFi network interface object."

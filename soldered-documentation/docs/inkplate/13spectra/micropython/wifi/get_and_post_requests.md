@@ -62,6 +62,12 @@ inkplate.display()
 
 <CenteredImage src="/img/13spectra/micropython_get_example.png" alt="Example output displayed in console" caption="Example output displayed in console" width="1200px" />
 
+<QuickLink
+  title="get_request.py"
+  description="Full example showing how to connect to WiFi and perform an HTTP GET request using urequests."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/get_request.py"
+/>
+
 <FunctionDocumentation
 functionName="urequests.get()"
 description="Perform an HTTP GET request to the given URL."
@@ -136,6 +142,12 @@ else:
 <CenteredImage src="/img/13spectra/micropython_post_example.png" alt="POST request logged on webhook.site" caption="POST request logged on webhook.site" width="1200px" />
 
 <CenteredImage src="/img/13spectra/DSC00717.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="post_request.py"
+  description="Full example showing how to connect to WiFi and perform an HTTP POST request with a JSON payload using urequests."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/post_request.py"
+/>
 
 <FunctionDocumentation
 functionName="urequests.post()"

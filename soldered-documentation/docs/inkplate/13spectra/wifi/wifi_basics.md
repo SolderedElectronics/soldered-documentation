@@ -44,6 +44,12 @@ void loop(){}
 
 <CenteredImage src="/img/13spectra/DSC00705.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
+<QuickLink
+  title="Inkplate13SPECTRA_WiFi_Connect.ino"
+  description="Full example showing how to connect the Inkplate 13SPECTRA to a WiFi network."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_WiFi_Connect/Inkplate13SPECTRA_WiFi_Connect.ino"
+/>
+
 <FunctionDocumentation
     functionName="WiFi.begin()"
     description="Connects to a WiFi access point using the specified SSID and password. Sends an AT command to establish the connection. Avoid using the following characters in SSID and password: , {, }, \\"

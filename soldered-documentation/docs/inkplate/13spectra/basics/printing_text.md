@@ -122,6 +122,12 @@ void loop()
 
 <CenteredImage src="/img/13spectra/simple_w.png" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
+<QuickLink
+  title="Inkplate13SPECTRA_Simple.ino"
+  description="Full example showing shapes, colored text, and a bitmap logo on Inkplate 13SPECTRA."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Basic/Inkplate13SPECTRA_Simple/Inkplate13SPECTRA_Simple.ino"
+/>
+
 <FunctionDocumentation
   functionName="display.setTextSize()"
   description="Increases the text size by a given factor."
@@ -179,6 +185,12 @@ void loop() {
 ```
 
 <CenteredImage src="/img/13spectra/DSC00698.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="Inkplate13SPECTRA_Custom_Font.ino"
+  description="Full example showing how to print text using a custom font instead of the default one."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Basic/Inkplate13SPECTRA_Custom_Font/Inkplate13SPECTRA_Custom_Font.ino"
+/>
 
 <FunctionDocumentation
   functionName="display.setFont()"
@@ -246,6 +258,12 @@ void loop()
 <InfoBox>This example uses a custom font (`Roboto_Light_36.h`) alongside the main `.ino` file. Get both files from the [**example folder on GitHub**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate13SPECTRA/Advanced/Other/Inkplate13SPECTRA_TextBox) and keep them in the same sketch folder.</InfoBox>
 
 <CenteredImage src="/img/13spectra/DSC00699.webp" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+
+<QuickLink
+  title="Inkplate13SPECTRA_TextBox.ino"
+  description="Full example showing how to use the drawTextBox function with and without special parameters."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/Other/Inkplate13SPECTRA_TextBox/Inkplate13SPECTRA_TextBox.ino"
+/>
 
 <FunctionDocumentation
   functionName="inkplate.drawTextBox()"

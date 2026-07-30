@@ -72,6 +72,12 @@ void loop()
 
 <CenteredImage src="/img/13spectra/web_image_w.png" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
+<QuickLink
+  title="Inkplate13SPECTRA_Show_Pictures_From_Web.ino"
+  description="Full example showing how to download an image from the web and display it on Inkplate 13SPECTRA."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_Show_Pictures_From_Web/Inkplate13SPECTRA_Show_Pictures_From_Web.ino"
+/>
+
 <FunctionDocumentation
     functionName="inkplate.image.draw()"
     description="This function draws an image from the specified char path."

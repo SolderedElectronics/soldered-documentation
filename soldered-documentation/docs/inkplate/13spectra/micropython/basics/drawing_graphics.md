@@ -72,6 +72,12 @@ inkplate.display()
 
 <CenteredImage src="/img/13spectra/DSC00713.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
+<QuickLink
+  title="drawing_graphics.py"
+  description="Full example showing how to draw various shapes in different colors across the full canvas."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/drawing_graphics.py"
+/>
+
 <FunctionDocumentation
 functionName="inkplate.draw_pixel()"
 description="Set a single pixel in the frame buffer."

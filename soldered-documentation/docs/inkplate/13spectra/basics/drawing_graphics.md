@@ -133,6 +133,12 @@ void setup(){
 
 <CenteredImage src="/img/13spectra/shapes_w.png" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
+<QuickLink
+  title="Inkplate13SPECTRA_Drawing_Graphics.ino"
+  description="Full example showing how to draw shapes, lines and text using the Adafruit GFX functions."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Basic/Inkplate13SPECTRA_Drawing_Graphics/Inkplate13SPECTRA_Drawing_Graphics.ino"
+/>
+
 Below are the detailed references to these functions:
 
 <FunctionDocumentation

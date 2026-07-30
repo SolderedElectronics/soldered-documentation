@@ -128,6 +128,12 @@ inkplate.display()
 
 <CenteredImage src="/img/13spectra/DSC00712.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
+<QuickLink
+  title="text_colors.py"
+  description="Full example showing how to display text in different colors, sizes, and with wrapping enabled/disabled."
+  url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate13spectra/text_colors.py"
+/>
+
 <FunctionDocumentation
   functionName="inkplate.set_cursor()"
   description="Set the cursor position for the next text to be rendered."
