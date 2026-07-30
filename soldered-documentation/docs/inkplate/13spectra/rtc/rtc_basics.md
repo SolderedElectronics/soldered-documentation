@@ -37,13 +37,13 @@ uint8_t year = 26;
 void setup()
 {
   inkplate.begin();          // Init Inkplate library (you should call this function ONLY ONCE)
-  inkplate.rtc.Reset();      // Reset RTC if there is some data in it
+  inkplate.rtc.reset();      // Reset RTC if there is some data in it
   inkplate.clearDisplay();   // Clear frame buffer of display
   inkplate.setTextSize(4);   // Set text to be 4 times bigger than classic 5x7 px text
   inkplate.setTextColor(INKPLATE_BLACK, INKPLATE_WHITE); // Set text color and background
 
-  inkplate.rtc.SetTime(hour, minutes, seconds);    // Send time to RTC
-  inkplate.rtc.SetDate(weekday, day, month, year); // Send date to RTC
+  inkplate.rtc.setTime(hour, minutes, seconds);    // Send time to RTC
+  inkplate.rtc.setDate(weekday, day, month, year); // Send date to RTC
   getAndDisplayTime();                            // Display time on the screen
 }
 
@@ -62,15 +62,15 @@ void loop()
 
 void getAndDisplayTime()
 {
-  inkplate.rtc.GetRtcData(); // Get the time and date from RTC
+  inkplate.rtc.getRtcData(); // Get the time and date from RTC
 
-  seconds = inkplate.rtc.GetSecond();  // Store senconds in a variable
-  minutes = inkplate.rtc.GetMinute();  // Store minutes in a variable
-  hour = inkplate.rtc.GetHour();       // Store hours in a variable
-  day = inkplate.rtc.GetDay();         // Store day of month in a variable
-  weekday = inkplate.rtc.GetWeekday(); // Store day of week in a variable
-  month = inkplate.rtc.GetMonth();     // Store month in a variable
-  year = inkplate.rtc.GetYear();       // Store year in a variable
+  seconds = inkplate.rtc.getSecond();  // Store senconds in a variable
+  minutes = inkplate.rtc.getMinute();  // Store minutes in a variable
+  hour = inkplate.rtc.getHour();       // Store hours in a variable
+  day = inkplate.rtc.getDay();         // Store day of month in a variable
+  weekday = inkplate.rtc.getWeekday(); // Store day of week in a variable
+  month = inkplate.rtc.getMonth();     // Store month in a variable
+  year = inkplate.rtc.getYear();       // Store year in a variable
 
   inkplate.clearDisplay();                                       // Clear content in frame buffer
   inkplate.setCursor(80, 300);                                   // Set position of the text
@@ -112,7 +112,7 @@ void print2Digits(uint8_t _d)
 <CenteredImage src="/img/13spectra/DSC00703.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
-  functionName="inkplate.rtc.SetTime()"
+  functionName="inkplate.rtc.setTime()"
   description="Method for setting time."
   returnType="void"
   parameters={[  
@@ -123,7 +123,7 @@ void print2Digits(uint8_t _d)
 />
 
 <FunctionDocumentation
-  functionName="inkplate.rtc.SetDate()"
+  functionName="inkplate.rtc.setDate()"
   description="Method for setting date."
   returnDescription="void"
   parameters={[  
@@ -135,8 +135,17 @@ void print2Digits(uint8_t _d)
 />
 
 <FunctionDocumentation
-  functionName="inkplate.rtc.GetRtcData()"
+  functionName="inkplate.rtc.getRtcData()"
   description="Reads time and date from the RTC and stores them in their corresponding variables."
   returnDescription="void"
 />
 
+---
+
+## Full example
+
+<QuickLink
+  title="Inkplate13SPECTRA_RTC_Simple.ino"
+  description="Full example of setting the RTC time and date and displaying it on screen."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/RTC/Inkplate13SPECTRA_RTC_Simple/Inkplate13SPECTRA_RTC_Simple.ino"
+/>

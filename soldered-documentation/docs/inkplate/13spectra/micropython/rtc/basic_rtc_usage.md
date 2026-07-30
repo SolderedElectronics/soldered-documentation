@@ -19,7 +19,7 @@ This example shows how to set the RTC time and date, and then continuously displ
 
 ```python
 # Include all the required libraries
-from inkplate13SPECTRA import Inkplate
+from inkplate13_spectra import Inkplate
 import time
 
 # Create Inkplate object
@@ -30,16 +30,16 @@ inkplate.begin()
 
 # This is how to set the RTC's time
 # Arguments are hour, minute, seconds
-inkplate.rtcSetTime(9,39,10)
+inkplate.rtc_set_time(9,39,10)
 # And this is the date
 # Arguments are weekday, day in month, month and year
-inkplate.rtcSetDate(2,9,2,2026)
+inkplate.rtc_set_date(2,9,2,2026)
 
 # Infinite loop
 while True:
 
     # Show the set time
-    print(inkplate.rtcGetData())
+    print(inkplate.rtc_get_data())
 
     # Let's wait 10 seconds
     time.sleep(10)
@@ -47,7 +47,7 @@ while True:
 <CenteredImage src="/img/13spectra/micropython_rtc_example.png" alt="Example output printed in console" caption="Example output printed in console" width="1200px" />
 
 <FunctionDocumentation
-functionName="inkplate.rtcSetTime()"
+functionName="inkplate.rtc_set_time()"
 description="Set the RTC's current time."
 parameters={[
 { type: 'Number', name: 'hour', description: 'Hour (0–23).' },
@@ -57,7 +57,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.rtcSetDate()"
+functionName="inkplate.rtc_set_date()"
 description="Set the RTC's current date."
 parameters={[
 { type: 'Number', name: 'weekday', description: 'Day of the week (1 = Monday … 7 = Sunday).' },
@@ -68,7 +68,7 @@ parameters={[
 />
 
 <FunctionDocumentation 
-functionName="inkplate.rtcGetData()" 
+functionName="inkplate.rtc_get_data()" 
 description="Read the current RTC date and time." 
 returnDescription="Dictionary containing keys: `hour`, `minute`, `second`, `weekday`, `day`, `month`, `year`." 
 parameters={[]} />

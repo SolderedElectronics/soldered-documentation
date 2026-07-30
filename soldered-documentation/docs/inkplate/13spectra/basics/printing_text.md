@@ -14,45 +14,113 @@ Printing text on Inkplate is simple and requires only a few functions. The libra
 To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size:
 
 ```cpp
-//Declare Inkplate object
+#include "Inkplate.h"
+#include "logoImg.h"
+
 Inkplate display;
 
 void setup()
 {
     display.begin();
-display.clearDisplay();
+    display.clearDisplay();
+    display.display();
 
-// ---- Line 1 ----
-display.setCursor(100, 250);
-display.setTextSize(6);
-display.setTextColor(INKPLATE_RED);
-display.print("Hi inkplate (in size 6)!");
+    display.fillScreen(INKPLATE_WHITE);
 
-// ---- Line 2 ----
-display.setCursor(100, 450);
-display.setTextSize(5);
-display.setTextColor(INKPLATE_YELLOW);
-display.print("Hi inkplate (in size 5)!");
+    // Draw many rectangles
+    display.fillRect(0, 40, 150, 150, INKPLATE_BLACK);
+    display.fillRect(0, 190, 150, 150, INKPLATE_WHITE);
+    display.fillRect(0, 340, 150, 150, INKPLATE_GREEN-1);
+    display.fillRect(0, 490, 150, 150, INKPLATE_BLUE-1);
+    display.fillRect(0, 640, 150, 150, INKPLATE_RED);
+    display.fillRect(0, 790, 150, 150, INKPLATE_YELLOW);
 
-// ---- Line 3 ----
-display.setCursor(100, 650);
-display.setTextSize(4);
-display.setTextColor(INKPLATE_GREEN - 1);
-display.print("Hi inkplate (in size 4)!");
+    display.drawRect(165, 40, 150, 150, INKPLATE_BLACK);
+    display.drawRect(165, 190, 150, 150, INKPLATE_WHITE);
+    display.drawRect(165, 340, 150, 150, INKPLATE_GREEN-1);
+    display.drawRect(165, 490, 150, 150, INKPLATE_BLUE-1);
+    display.drawRect(165, 640, 150, 150, INKPLATE_RED);
+    display.drawRect(165, 790, 150, 150, INKPLATE_YELLOW);
 
-// ---- Line 4 ----
-display.setCursor(100, 820);
-display.setTextSize(3);
-display.setTextColor(INKPLATE_BLACK);
-display.print("Hi inkplate (in size 3)!");
+    // Draw many circles
+    display.fillCircle(405, 115, 72, INKPLATE_BLACK);
+    display.fillCircle(405, 265, 72, INKPLATE_WHITE);
+    display.fillCircle(405, 415, 72, INKPLATE_GREEN-1);
+    display.fillCircle(405, 565, 72, INKPLATE_BLUE-1);
+    display.fillCircle(405, 715, 72, INKPLATE_RED);
+    display.fillCircle(405, 865, 72, INKPLATE_YELLOW);
 
-display.display();
+    display.drawCircle(570, 115, 72, INKPLATE_BLACK);
+    display.drawCircle(570, 265, 72, INKPLATE_WHITE);
+    display.drawCircle(570, 415, 72, INKPLATE_GREEN-1);
+    display.drawCircle(570, 565, 72, INKPLATE_BLUE-1);
+    display.drawCircle(570, 715, 72, INKPLATE_RED);
+    display.drawCircle(570, 865, 72, INKPLATE_YELLOW);
+
+    // Draw many triangles
+    display.fillTriangle(630, 190, 780, 190, 705, 40, INKPLATE_BLACK);
+    display.fillTriangle(630, 340, 780, 340, 705, 190, INKPLATE_WHITE);
+    display.fillTriangle(630, 490, 780, 490, 705, 340, INKPLATE_GREEN-1);
+    display.fillTriangle(630, 640, 780, 640, 705, 490, INKPLATE_BLUE-1);
+    display.fillTriangle(630, 790, 780, 790, 705, 640, INKPLATE_RED);
+    display.fillTriangle(630, 940, 780, 940, 705, 790, INKPLATE_YELLOW);
+
+    display.drawTriangle(630, 190, 780, 190, 705, 40, INKPLATE_BLACK);
+    display.drawTriangle(630, 340, 780, 340, 705, 190, INKPLATE_WHITE);
+    display.drawTriangle(630, 490, 780, 490, 705, 340, INKPLATE_GREEN-1);
+    display.drawTriangle(630, 640, 780, 640, 705, 490, INKPLATE_BLUE-1);
+    display.drawTriangle(630, 790, 780, 790, 705, 640, INKPLATE_RED);
+    display.drawTriangle(630, 940, 780, 940, 705, 790, INKPLATE_YELLOW);
+
+    // Show some pretty text
+    display.setTextColor(INKPLATE_BLACK);
+    display.setCursor(795, 40);
+    display.setTextSize(4);
+    display.print("Welcome to Inkplate 13SPECTRA!");
+
+    display.setTextColor(INKPLATE_WHITE);
+    display.setCursor(795, 190);
+    display.setTextSize(4);
+    display.print("Welcome to Inkplate 13SPECTRA!");
+
+    display.setTextColor(INKPLATE_GREEN-1);
+    display.setCursor(795, 340);
+    display.setTextSize(4);
+    display.print("Welcome to Inkplate 13SPECTRA!");
+
+    display.setTextColor(INKPLATE_BLUE-1);
+    display.setCursor(795, 490);
+    display.setTextSize(4);
+    display.print("Welcome to Inkplate 13SPECTRA!");
+
+    display.setTextColor(INKPLATE_RED);
+    display.setCursor(795, 640);
+    display.setTextSize(4);
+    display.print("Welcome to Inkplate 13SPECTRA!");
+
+    display.setTextColor(INKPLATE_YELLOW);
+    display.setCursor(795, 790);
+    display.setTextSize(4);
+    display.print("Welcome to Inkplate 13SPECTRA!");
+
+    // Draw logo
+    display.drawBitmap(0, 1090, logo, logo_w, logo_h, INKPLATE_BLACK);
+    display.drawBitmap(380, 1090, logo, logo_w, logo_h, INKPLATE_GREEN-1);
+    display.drawBitmap(760, 1090, logo, logo_w, logo_h, INKPLATE_BLUE-1);
+    display.drawBitmap(1140, 1090, logo, logo_w, logo_h, INKPLATE_RED);
+    display.drawBitmap(1520, 1090, logo, logo_w, logo_h, INKPLATE_YELLOW);
+
+    display.display();
 }
 
-void loop(){}
+void loop()
+{
+}
 ```
 
-<CenteredImage src="/img/13spectra/DSC00696.jpg" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
+<InfoBox>This example uses a custom logo bitmap (`logoImg.h`) alongside the main `.ino` file. Get both files from the [**example folder on GitHub**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate13SPECTRA/Basic/Inkplate13SPECTRA_Simple) and keep them in the same sketch folder.</InfoBox>
+
+<CenteredImage src="/img/13spectra/simple_w.png" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 
 <FunctionDocumentation
   functionName="display.setTextSize()"
@@ -128,43 +196,42 @@ void loop() {
 You can manually define the area in which text will appear by using the `drawTextBox()` function.
 
 ```cpp
-#include "Inkplate.h"            // Include the Inkplate library in the sketch
-#include "FreeMono24pt7b.h"
+#include "Inkplate.h"            // Include Inkplate library to the sketch
+#include "Roboto_Light_36.h"
+Inkplate display; // Create an object on Inkplate library
 
-// Create an Inkplate object
-Inkplate display;
-
-const char* text = "This is an example of a text written in a textbox. When a word doesn't fit into the current row, it goes to the next one." \
+// Define the text you will show in the text box
+const char* text="This is an example of a text written in a textbox. When a word doesn't fit into the current row, it goes to the next one."\
 " If the text reaches the lower bound, it ends with three dots (...) to mark that the text isn't displayed fully";
 
 void setup()
 {
-    display.begin();        // Initialize Inkplate library (you should call this function ONLY ONCE)
-    display.clearDisplay(); // Clear the display's frame buffer
-    display.display();      // Put a clear image on the display
-    display.setTextColor(INKPLATE_BLACK);
+    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    display.clearDisplay(); // Clear frame buffer of display
+    display.display();      // Put clear image on display
+    display.setTextColor(INKPLATE_BLACK); //Set the text color to black
 
     // Create a text box without any optional parameters
-    // x0 - x coordinate of the upper left corner
-    // y0 - y coordinate of the upper left corner
-    // x1 - x coordinate of the bottom right corner
-    // y1 - y coordinate of the bottom right corner
+    // x0- x coordinate of upper left corner
+    // y0- y coordinate of upper left corner
+    // x1- x coordinate of bottom right corner
+    // y1- y coordinate of bottom right corner
     // text - text we want to display
-    display.drawTextBox(200,300,700,650,text);
+    display.drawTextBox(40,100,770,1150,text,2);
 
     // Create a text box with all parameters
-    // x0 - x coordinate of the upper left corner
-    // y0 - y coordinate of the upper left corner
-    // x1 - x coordinate of the bottom right corner
-    // y1 - y coordinate of the bottom right corner
+    // x0- x coordinate of upper left corner
+    // y0- y coordinate of upper left corner
+    // x1- x coordinate of bottom right corner
+    // y1- y coordinate of bottom right corner
     // text - text we want to display
-    // textSizeMultiplier - factor by which we want to enlarge the font size
-    // font - address of the selected custom font
-    // verticalSpacing - number of pixels between each row of text
-    // showBorder - create a visible rectangle around the box
+    // textSizeMultiplier - by what factor we want to enlarge the size of a font
+    // font - address of selected custom font
+    // verticalSpacing - how many pixels between each row of text
+    // showBorder - Create a visible rectangle around the box
     // fontSize - size of the used font in pt
-    int offset = 48; // Note: some custom fonts are drawn from bottom-to-top, which requires an offset. Use an offset that best suits the font you use.
-    display.drawTextBox(800,300 + offset,1400,700,text,1,&FreeMono24pt7b,36,false,32);
+    int offset=32; // Note - some custom fonts are drawn from bottom-to-top which requires an offset, use an offset that best suits the font you use
+    display.drawTextBox(830,100+offset,1560,1150,text,1,&Roboto_Light_36,27,false,36);
 
     // Display both text boxes
     display.display();
@@ -175,6 +242,8 @@ void loop()
     // Nothing...
 }
 ```
+
+<InfoBox>This example uses a custom font (`Roboto_Light_36.h`) alongside the main `.ino` file. Get both files from the [**example folder on GitHub**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate13SPECTRA/Advanced/Other/Inkplate13SPECTRA_TextBox) and keep them in the same sketch folder.</InfoBox>
 
 <CenteredImage src="/img/13spectra/DSC00699.webp" alt="Example output displayed on e-paper display" caption="Example output displayed on e-paper display" width="1200px" />
 

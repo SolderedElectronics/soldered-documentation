@@ -19,7 +19,7 @@ Below is a simple example demonstrating how to connect to a WiFi network.
 # Include needed libraries
 import network
 import time
-from inkplate13SPECTRA import Inkplate
+from inkplate13_spectra import Inkplate
 
 # Enter your WiFi credentials here
 ssid = "YOUR_SSID_HERE"
@@ -39,9 +39,9 @@ def do_connect():
     print("network config:", sta_if.ifconfig())
     return True
 
-inkplate=Inkplate()
+inkplate = Inkplate()
 inkplate.begin()
-inkplate.setTextSize(2)
+inkplate.set_text_size(2)
 
 if do_connect():
     inkplate.print("Wifi connected")

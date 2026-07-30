@@ -12,79 +12,79 @@ Now that Inkplate is connected to the internet, you will likely want to send and
 Using `http.GET()` enables you to easily download and handle data on Inkplate however you want. Here is an example of how to GET an .html file and print it on Inkplate:
 
 ```cpp
-#include "Inkplate.h"   // Include the Inkplate library in the sketch
-#include <HTTPClient.h> // Include the HTTP library in this sketch
-#include <WiFi.h>       // Include the ESP32 WiFi library in our sketch
+#include "Inkplate.h"   //Include Inkplate library to the sketch
+#include <HTTPClient.h> //Include HTTP library to this sketch
+#include <WiFi.h>       //Include ESP32 WiFi library to our sketch
 
 #define ssid "" // Name of the WiFi network (SSID) that you want to connect Inkplate to
 #define pass "" // Password of that WiFi network
 
-Inkplate display; // Create an object from the Inkplate library
+Inkplate inkplate; // Create an object on Inkplate library
 
 void setup()
 {
-    Serial.begin(115200);                            // Begin Serial for debugging
-    display.begin();                                 // Initialize Inkplate library (you should call this function ONLY ONCE)
-    display.clearDisplay();                          // Clear frame buffer of display
-    display.display();                               // Put clear image on display
-    display.setTextSize(4);                          // Set text scaling to two (text will be two times bigger)
-    display.setCursor(0, 0);                         // Set print position
-    display.setTextColor(INKPLATE_BLACK);            // Set text color to black and background color to white
-    Serial.println("Scanning for WiFi networks..."); // Write text
+  Serial.begin(115200);                            // Begin Serial for debugging
+  inkplate.begin();                                 // Init Inkplate library (you should call this function ONLY ONCE)
+  inkplate.clearDisplay();                          // Clear frame buffer of display
+  inkplate.display();                               // Put clear image on display
+  inkplate.setTextSize(4);                          // Set text scaling to four (text will be two times bigger)
+  inkplate.setCursor(0, 0);                         // Set print position
+  inkplate.setTextColor(INKPLATE_BLACK);            // Set text color to black and background color to white
+  Serial.println("Scanning for WiFi networks..."); // Write text
 
-    int n =
-        WiFi.scanNetworks(); // Start searching for WiFi networks and store the number of found networks in variable n
-    if (n == 0)
-    { // If no networks are found, show the message and stop the program.
-        Serial.print("No WiFi networks found!");
-        while (true)
-            ;
-    }
-    else
+  int n =
+      WiFi.scanNetworks(); // Start searching WiFi networks and put the nubmer of found WiFi networks in variable n
+  if (n == 0)
+  { // If you did not find any network, show the message and stop the program.
+    Serial.print("No WiFi networks found!");
+    while (true);
+  }
+  else
+  {
+    if (n > 10)
+        n = 10; // If you did find, print name (SSID), encryption and signal strength of first 10 networks
+    for (int i = 0; i < n; i++)
     {
-        if (n > 10)
-            n = 10; // If networks are found, print the name (SSID), encryption, and signal strength of the first 10 networks
-        for (int i = 0; i < n; i++)
-        {
-            display.print(WiFi.SSID(i));
-            display.print((WiFi.encryptionType(i) == WIFI_AUTH_OPEN) ? 'O' : '*');
-            display.print('\n');
-            display.print(WiFi.RSSI(i), DEC);
-        }
-        display.display();
+      inkplate.print(WiFi.SSID(i));
+      inkplate.print((WiFi.encryptionType(i) == WIFI_AUTH_OPEN) ? 'O' : '*');
+      inkplate.print('\n');
+      inkplate.print(WiFi.RSSI(i), DEC);
     }
+    inkplate.display();
+  }
 
-    display.clearDisplay();         // Clear everything in the frame buffer
-    display.setCursor(0, 0);        // Set print cursor to a new position
-    Serial.print("Connecting to "); // Print the name of the WiFi network
-    Serial.print(ssid);
-    WiFi.begin(ssid, pass); // Try to connect to the WiFi network
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        delay(1000); // While connecting to the network, display a dot every second, just to know that Inkplate is alive.
-        Serial.print('.');
-    }
-    Serial.print("connected"); // If it's connected, notify the user
+  inkplate.clearDisplay();         // Clear everything in frame buffer
+  inkplate.setCursor(0, 0);        // Set print cursor to new position
+  Serial.print("Connecting to "); // Print the name of WiFi network
+  Serial.print(ssid);
+  WiFi.begin(ssid, pass); // Try to connect to WiFi network
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    delay(1000); // While it is connecting to network, display dot every second, just to know that Inkplate is
+                 // alive.
+    Serial.print('.');
+  }
+  Serial.print("connected"); // If it's connected, notify user
 
-    HTTPClient http;
-    if (http.begin("http://example.com/index.html"))
-    { // Now try to connect to some web page (in this example, www.example.com. And yes, this is a valid web page :))
-        if (http.GET() > 0)
-        { // If the connection was successful, try to read the content of the web page and display it on the screen
-            String htmlText;
-            htmlText = http.getString();
-            display.setTextSize(1); // Set a smaller text size, so everything can fit on the screen
-            display.clearDisplay();
-            display.setCursor(0, 0);
-            display.print(htmlText);
-            display.display();
-        }
+  HTTPClient http;
+  if (http.begin("http://example.com/index.html"))
+  { // Now try to connect to some web page (in this example www.example.com. And yes, this is a valid Web page :))
+    if (http.GET() > 0)
+    { // If connection was successful, try to read content of the Web page and display it on screen
+      String htmlText;
+      htmlText = http.getString();
+      inkplate.setTextSize(4);
+      inkplate.clearDisplay();
+      inkplate.setCursor(0, 0);
+      inkplate.print(htmlText);
+      inkplate.display();
     }
+  }
 }
 
 void loop()
 {
-    // Nothing
+  // Nothing
 }
 ```
 
@@ -118,6 +118,12 @@ void loop()
   returnType="int"
 />
 
+<QuickLink
+  title="Inkplate13SPECTRA_HTTP_Request.ino"
+  description="Full example of connecting to WiFi and making an HTTP GET request."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_HTTP_Request/Inkplate13SPECTRA_HTTP_Request.ino"
+/>
+
 ---
 
 ## POST request
@@ -137,8 +143,8 @@ WiFiClient client;
 #define POSTING_INTERVAL_IN_SESCS 20
 
 // Enter your WiFi credentials
-const char *ssid = "Soldered Electronics";
-const char *pass = "dasduino";
+const char *ssid = "YOUR_SSID_HERE";
+const char *pass = "YOUR_PASSWORD_HERE";
 
 // ThingSpeak settings
 char *server = "api.thingspeak.com";
@@ -232,6 +238,8 @@ void loop()
 }
 ```
 
+<CenteredImage src="/img/13spectra/post_req.png" alt="Serial Monitor output showing successful POST requests" caption="Serial Monitor output" width="1200px" />
+
 <FunctionDocumentation
   functionName="WiFi.mode()"
   description="This function sets the MCU WiFi chip as STA or AP."
@@ -260,4 +268,10 @@ void loop()
   parameters={[ 
     { type: 'String', name: 'url', description: 'URL of the specified website' },
   ]}
+/>
+
+<QuickLink
+  title="Inkplate13SPECTRA_HTTP_POST_ThingSpeak.ino"
+  description="Full example of connecting to WiFi and sending a POST request to ThingSpeak."
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_HTTP_POST_ThingSpeak/Inkplate13SPECTRA_HTTP_POST_ThingSpeak.ino"
 />

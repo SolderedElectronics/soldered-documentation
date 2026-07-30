@@ -47,11 +47,12 @@ void setup()
     Serial.println("\nWiFi OK! Downloading...");
 
     // Draw the first image from web.
-    // Monochromatic bitmap with 1 bit depth. Images like this load quickest.
+    // This image is 1600x1200px, matching Inkplate 13SPECTRA's native resolution exactly,
+    // so drawing it at (0, 0) fills the entire screen.
     // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter to true
     // will flip all colors on the image, making black white and white black. This may be necessary when exporting
-    // bitmaps from certain softwares. Forth parameter will dither the image. Photo taken by: Roberto Fernandez
-    if (!inkplate.image.draw("https://varipass.org/neowise_mono.bmp", 0, 0, true, false))
+    // bitmaps from certain softwares. Forth parameter will dither the image.
+    if (!inkplate.image.draw("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/master/examples/Inkplate13SPECTRA/Advanced/WEB_WiFi/Inkplate13SPECTRA_Show_JPG_With_HTTPClient/image.jpg", 0, 0, true, false))
     {
         // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
         // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!

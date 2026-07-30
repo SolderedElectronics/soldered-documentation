@@ -21,7 +21,7 @@ This example below fetches data from a webhook.site endpoint and prints the resp
 import network
 import time
 import urequests
-from inkplate13SPECTRA import Inkplate
+from inkplate13_spectra import Inkplate
 
 # Enter your WiFi credentials here
 ssid = "your ssid"
@@ -45,7 +45,7 @@ def do_connect():
 
 inkplate=Inkplate()
 inkplate.begin()
-inkplate.setTextSize(2)
+inkplate.set_text_size(2)
 
 if do_connect():
     inkplate.print("Wifi connected")
@@ -83,7 +83,7 @@ import network
 import time
 import urequests
 import ujson
-from inkplate13SPECTRA import Inkplate
+from inkplate13_spectra import Inkplate
 
 # Enter your WiFi credentials here
 ssid = ""
@@ -107,7 +107,7 @@ def do_connect():
 
 inkplate=Inkplate()
 inkplate.begin()
-inkplate.setTextSize(2)
+inkplate.set_text_size(2)
 
 if do_connect():
     data = {"message": "Hello from Inkplate 13SPECTRA!"}

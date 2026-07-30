@@ -89,7 +89,6 @@ Below is an example demonstrating functions for drawing graphics on the Inkplate
 
 ```cpp
 void setup(){
-    display.clear();
     display.clearDisplay();
     display.fillScreen(INKPLATE_WHITE);
 
@@ -116,19 +115,6 @@ void setup(){
     display.drawLine(40, 450, 760, 610, INKPLATE_BLUE - 1);
     display.drawLine(40, 480, 760, 640, INKPLATE_GREEN - 1);
 
-    for (int x = 40; x < 760; x += 8) {
-    uint16_t color = INKPLATE_BLACK;
-
-    if (x % 48 == 0) {
-      color = INKPLATE_RED;
-    } else if (x % 40 == 0) {
-      color = INKPLATE_YELLOW;
-    } else if (x % 32 == 0) {
-      color = INKPLATE_GREEN - 1;
-    } else if (x % 24 == 0) {
-      color = INKPLATE_BLUE - 1;
-    }
-
     // Simple text
     display.setTextSize(3);
     display.setTextColor(INKPLATE_BLACK);
@@ -141,7 +127,6 @@ void setup(){
 
     // Update e-paper
     display.display();
-}
 }
 
 ```
