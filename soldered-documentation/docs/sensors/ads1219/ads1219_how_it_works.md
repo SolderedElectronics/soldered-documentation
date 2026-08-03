@@ -49,7 +49,7 @@ The device includes a built-in **2.048 V internal voltage reference**, which eli
 
 ---
 
-## I2C Communication
+## I2C communication
 
 The ADS1219 talks over I2C at Standard-mode (100 kHz), Fast-mode (400 kHz), or Fast-mode Plus (1 Mbps), and never stretches the clock.
 

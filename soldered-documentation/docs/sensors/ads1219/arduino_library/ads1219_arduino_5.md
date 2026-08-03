@@ -59,7 +59,7 @@ If you are using the DRDY interrupt pin instead of polling, make sure it is conn
 
 </ExpandableSection>
 
-<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+<InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link, or ask on the [**Soldered community**](https://community.soldered.com), a great place to browse existing questions or post your own.</InfoBox>
 
 
 

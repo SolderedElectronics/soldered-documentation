@@ -30,7 +30,7 @@ The onboard PGA supports gains of **1 and 4**, and the data rate is configurable
 
 ---
 
-## Key Features
+## Key features
 
 - **Resolution:** 24-bit delta-sigma ADC  
 - **Input channels:** 4 (configurable as differential or single-ended)  

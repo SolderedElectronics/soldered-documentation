@@ -14,7 +14,7 @@ Click [**here**](/img/ads1219/Pinout.svg) for a high-resolution image of the pin
 
 ---
 
-## Pin Details
+## Pin details
 
 | Pin Marking  | Pin Name         | Description                                                              |
 | ------------ | ---------------- | ------------------------------------------------------------------------ |
@@ -50,7 +50,7 @@ Click [**here**](/img/ads1219/Pinout.svg) for a high-resolution image of the pin
 
 ---
 
-## Timing Characteristics
+## Timing characteristics
 
 The ADS1219 supports four programmable data rates, which directly determine conversion time:
 
@@ -68,13 +68,13 @@ The ADS1219 supports four programmable data rates, which directly determine conv
 ## Dimensions
 
 - **Board Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)  
-- **Header Pin Holes:** 1.5 mm  
+- **Header Pin Holes:** 1.0 mm  
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)  
 - Soldered boards are LEGO compatible! 🧱
 
 ---
 
-## Jumper Details
+## Jumper details
 
 This board contains hardware jumpers; see below for their locations and functions:
 
@@ -89,7 +89,7 @@ This board contains hardware jumpers; see below for their locations and function
 
 ---
 
-## Address Selection
+## Address selection
 
 Depending on how you configure the A0 and A1 jumpers, you can define different I2C addresses for the ADS1219:
 
