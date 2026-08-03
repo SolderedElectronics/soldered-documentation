@@ -129,7 +129,7 @@ If you don't need a fresh CO2 reading every time, `measureSingleShotRhtOnly()` g
 `measureSingleShotRhtOnly()` only updates the measurement inside the sensor. Call `readMeasurement()` afterward to actually pull it into the cache the getter functions read from.
 </InfoBox>
 
-Running the sketch above alternates between the two measurement types, producing output like this:
+Running the sketch above alternates between the two measurement types and produces output like this:
 
 <CenteredImage src="/img/scd43/single_shot.png" alt="SCD43 Serial Monitor output showing single-shot measurements" caption="Serial Monitor output alternating between full single-shot and RH-only measurements" width="1000px" />
 
@@ -137,7 +137,7 @@ Running the sketch above alternates between the two measurement types, producing
 
 ## Saving power between measurements
 
-Between single-shot readings, the sensor can be put into a low-power sleep state with `powerDown()`, then woken back up with `wakeUp()` right before the next measurement:
+Between single-shot readings, you can put the sensor into a low-power sleep state with `powerDown()`, then wake it back up with `wakeUp()` right before the next measurement:
 
 ```cpp
 sensor.powerDown();

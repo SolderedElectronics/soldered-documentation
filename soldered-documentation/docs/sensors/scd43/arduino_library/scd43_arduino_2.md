@@ -39,14 +39,16 @@ void setup()
   functionName="sensor.begin()"
   description="Initializes the SCD43 sensor over I2C, starts periodic measurement mode, and verifies the sensor is present on the bus."
   returnDescription="Returns true if the sensor was found and initialized successfully, false otherwise."
-  parameters={[]}
+  parameters={[
+    { type: 'TwoWire&', name: 'wire', description: 'Optional. The I2C bus to use. Defaults to Wire, pass a different TwoWire instance to use a second I2C bus.' },
+  ]}
 />
 
 ---
 
 ## Reading measurements
 
-The SCD43 produces a new measurement every 5 seconds. Call `readMeasurement()` in a loop - it returns `true` when fresh data is ready. Then use the individual getter functions to retrieve each value:
+The SCD43 produces a new measurement every 5 seconds. Call `readMeasurement()` in a loop: it returns `true` when fresh data is ready. Then use the individual getter functions to retrieve each value:
 
 ```cpp
 void loop()

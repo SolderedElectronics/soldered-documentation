@@ -42,7 +42,7 @@ Click [**here**](/img/scd43/pinout.png) for a high-resolution image of the pinou
 ## Dimensions
 
 - **Board Dimensions:** 22 × 22 mm (0.9 × 0.9 inch)
-- **Header Pin Holes:** 1.5 mm
+- **Header Pin Holes:** 1.0 mm
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
 - Soldered boards are LEGO compatible! 🧱
 

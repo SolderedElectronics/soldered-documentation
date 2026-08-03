@@ -36,4 +36,13 @@ To install the Arduino library, you can use the **Arduino library manager** or d
 | ------------------ | --------- |
 | Qwiic              | Qwiic     |
 
+If you'd rather wire the sensor directly instead of using a Qwiic cable, connect it to the **K1 header** like this:
+
+| **NULA Deepsleep** | **SCD43 (K1 header)** |
+| ------------------- | ----------------------- |
+| 3V3                  | 3V3                     |
+| GND                  | GND                     |
+| SDA                  | SDA                     |
+| SCL                  | SCL                     |
+
 <InfoBox>The SCD43 communicates over I2C with a **fixed address of 0x62**. This address cannot be changed.</InfoBox>
