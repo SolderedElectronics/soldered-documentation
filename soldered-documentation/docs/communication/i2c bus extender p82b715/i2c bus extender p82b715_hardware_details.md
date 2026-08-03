@@ -14,36 +14,38 @@ Click [**here**](/img/i2c%20bus%20extender%20p82b715/Pinout.png) for a high reso
 
 ---
 
-## Pin Details
+## Pin details
 
-### Qwiic connectors (K1, K2) — Local 3.3V I2C side
+### Qwiic connectors (K1, K2): local 3.3V I2C side
 
 | **Pin** | **Description**                          |
 |---------|------------------------------------------|
 | GND     | Ground.                                  |
 | 3V3     | 3.3V power input from the Qwiic cable.  |
-| SDA     | I²C data line — local (3.3V) side.      |
-| SCL     | I²C clock line — local (3.3V) side.     |
+| SDA     | I²C data line, local (3.3V) side.      |
+| SCL     | I²C clock line, local (3.3V) side.     |
 
-### Pin header (K3) — Local side breakout
+### Pin header (K3): local side breakout
 
-| **Pin** | **Description**                                             |
-|---------|-------------------------------------------------------------|
-| SCL     | I²C clock line — local (3.3V) side.                        |
-| SDA     | I²C data line — local (3.3V) side.                         |
-| VCC     | 3.3V power.                                                 |
-| GND     | Ground.                                                     |
+| **Pin** | **Description**                                                          |
+|---------|---------------------------------------------------------------------------|
+| SCL     | I²C clock line, local (Sx/Sy) side. Voltage set by **JP2** (5V or 3.3V). |
+| SDA     | I²C data line, local (Sx/Sy) side. Voltage set by **JP1** (5V or 3.3V).  |
+| VCC     | Fixed 5V, regardless of the JP1/JP2 SCL/SDA voltage setting.              |
+| GND     | Ground.                                                                    |
 
-### Screw terminal (K4) — Extended bus side
+<WarningBox>K3's VCC pin is always 5V, even if JP1/JP2 are set to 3.3V for SCL/SDA. If you're powering a 3.3V-only device from this header, don't use this pin, power it separately at 3.3V instead.</WarningBox>
+
+### Screw terminal (K4): extended bus side
 
 | **Pin** | **Description**                                                         |
 |---------|-------------------------------------------------------------------------|
-| SCL     | Buffered I²C clock line — connects to the long cable / remote device.  |
-| SDA     | Buffered I²C data line — connects to the long cable / remote device.   |
+| SCL     | Buffered I²C clock line, connects to the long cable / remote device.  |
+| SDA     | Buffered I²C data line, connects to the long cable / remote device.   |
 | GND     | Ground.                                                                 |
 
 <InfoBox>
-Connect your microcontroller to the **Qwiic ports (K1 or K2)** on the local side. Connect your long cable or remote I²C device to the **screw terminal (K4)** on the extended side. The onboard boost converter and level shifter operate automatically — no configuration needed for basic use.
+Connect your microcontroller to the **Qwiic ports (K1 or K2)** on the local side. Connect your long cable or remote I²C device to the **screw terminal (K4)** on the extended side. The onboard boost converter and level shifter operate automatically, so there's no configuration needed for basic use.
 </InfoBox>
 
 ---
@@ -62,43 +64,41 @@ Connect your microcontroller to the **Qwiic ports (K1 or K2)** on the local side
 
 ---
 
-## Jumper Details
+## Jumper details
 
 This board contains hardware jumpers; see below for their locations and functions:
 
 <WarningBox>Jumper images for this board are not yet available. We're working on it!</WarningBox>
 
-| **Jumper** | **Default State**        | **Function**                                                                                       |
+| **Jumper** | **Type**                 | **Function**                                                                                       |
 |------------|--------------------------|----------------------------------------------------------------------------------------------------|
-| **JP1**    | **NC** (Normally closed) | Connects 5V I²C pull-up resistors for the SDA and SCL lines on the extended (5V) side.           |
-| **JP2**    | **NC** (Normally closed) | Connects 3.3V I²C pull-up resistors for the SDA and SCL lines on the local (3.3V) side.          |
-| **JP3**    | **NC** (Normally closed) | Connects the SDA line to the 3.3V pull-up resistor network.                                       |
-| **JP4**    | **NC** (Normally closed) | Connects the SCL line to the 3.3V pull-up resistor network.                                       |
-| **JP5**    | **NO** (Normally open)   | Enables the onboard power LED. Bridge to connect the LED circuit and turn on the power indicator. |
+| **JP1**    | **NC** (3-pin selector)  | Selects the pull-up source for **SDA** on the local (Sx/Sy) side: 5V or 3.3V.                      |
+| **JP2**    | **NC** (3-pin selector)  | Selects the pull-up source for **SCL** on the local (Sx/Sy) side: 5V or 3.3V.                      |
+| **JP5**    | **NC** (Normally closed) | Enables the onboard power LED. Cut it to disconnect the LED circuit and turn off the power indicator. |
 
 <InfoBox>
 
-- **NC (Normally Closed)** means the jumper pads are connected by default.
-- **NO (Normally Open)** means the jumper pads are disconnected by default.
-- Cut JP1 or JP2 if your I²C bus already has external pull-up resistors to avoid driving conflicts.
-- JP5 is open by default — bridge it to enable the onboard purple power LED.
+- JP1 and JP2 each connect the middle pin to one of the two outer pins, picking either the 5V or the 3.3V pull-up resistor for that line. Set both jumpers to the same voltage so SDA and SCL match.
+- The extended side (screw terminal K4) has its own fixed 5V pull-ups and isn't affected by JP1/JP2.
+- Remove the shunt on JP1/JP2 if your I²C bus already has external pull-up resistors, to avoid driving conflicts.
+- JP5 is closed by default, so the power LED is on out of the box. Cut it if you want to disable the LED.
 
 </InfoBox>
 
 ---
 
-## Power Consumption
+## Power consumption
 
 - **Power input:** 3.3V via Qwiic
 - **Onboard boost converter:** Generates 5V internally for the P82B715 buffer chip
-- **Power LED:** Purple indicator LED, disabled by default — bridge JP5 to enable it
+- **Power LED:** Purple indicator LED, on by default. Cut JP5 to disable it
 
 ---
 
 ## Dimensions
 
 - **Board Dimensions:** 22 × 38 mm (0.9 × 1.5 inch)
-- **Header Pin Holes:** 1.5 mm
+- **Header Pin Holes:** 1.0 mm
 - **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
 - Soldered boards are LEGO compatible! 🧱
 
@@ -139,13 +139,13 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
 
-- **Copper layers** (`.Cu.gbr`) — Defines the traces and pads on the board.
-- **Solder mask layers** (`.Mask.gbr`) — Specifies the protective solder mask.
-- **Silkscreen layers** (`.Silkscreen.gbr`) — Contains text and component markings.
-- **Paste layers** (`.Paste.gbr`) — Used for stencil fabrication in SMD assembly.
-- **Drill files** (`.drl`) — Provides drilling coordinates for vias and holes.
-- **Board outline** (`.Edge_Cuts.gbr`) — Defines the shape of the PCB.
-- **Gerber job file** (`.gbrjob`) — Describes the set of Gerber files used for production.
+- **Copper layers** (`.Cu.gbr`): the traces and pads on the board.
+- **Solder mask layers** (`.Mask.gbr`): the protective solder mask.
+- **Silkscreen layers** (`.Silkscreen.gbr`): text and component markings.
+- **Paste layers** (`.Paste.gbr`): used for stencil fabrication in SMD assembly.
+- **Drill files** (`.drl`): drilling coordinates for vias and holes.
+- **Board outline** (`.Edge_Cuts.gbr`): the shape of the PCB.
+- **Gerber job file** (`.gbrjob`): describes the set of Gerber files used for production.
 
 These files are ready for fabrication and can be used in PCB manufacturing.
 
@@ -153,7 +153,7 @@ These files are ready for fabrication and can be used in PCB manufacturing.
 
 The **Compliance** section includes important regulatory and safety documentation for this product. These files ensure compliance with relevant industry standards and legal requirements.
 
-- **CE** — Certification document confirming compliance with EU safety, health, and environmental requirements.
-- **UKCA** — UKCA (UK Conformity Assessed) certification for the UK market.
-- **Safety Instructions** — Safety guidelines and precautions in English and German.
-- **Info.txt** — Contains product details such as SKU, country of origin, HS tariff code, and barcode.
+- **CE**: certification document confirming compliance with EU safety, health, and environmental requirements.
+- **UKCA**: UKCA (UK Conformity Assessed) certification for the UK market.
+- **Safety Instructions**: safety guidelines and precautions in English and German.
+- **Info.txt**: product details such as SKU, country of origin, HS tariff code, and barcode.

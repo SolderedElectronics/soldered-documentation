@@ -7,7 +7,7 @@ hide_title: false
 
 ## About the P82B715
 
-Since the P82B715 is a **transparent hardware bus buffer**, it requires no Arduino library. There is no sketch needed to configure the chip — it operates automatically as soon as power is applied.
+Since the P82B715 is a **transparent hardware bus buffer**, it requires no Arduino library. There's no sketch needed to configure the chip, it operates automatically as soon as power is applied.
 
 To use I²C devices through the extender, simply use whatever library you would normally use for those devices. The P82B715 is invisible to your code.
 
@@ -17,8 +17,8 @@ To use I²C devices through the extender, simply use whatever library you would 
 
 - **Standard-mode (100 kHz)** is recommended for longer cable runs to ensure reliable signal integrity.
 - **Fast-mode (400 kHz)** works for shorter runs or well-shielded cables.
-- Ensure pull-up resistors are present on both the local and extended sides. The onboard pull-ups (JP1–JP4) handle this by default.
-- If you have external pull-up resistors on your I²C bus, cut JP1–JP4 as needed to avoid parallel pull-up conflicts.
+- Ensure pull-up resistors are present on both the local and extended sides. The extended side (screw terminal) always has fixed 5V pull-ups; the local side's pull-ups (5V or 3.3V) are set by **JP1** (SDA) and **JP2** (SCL).
+- If you have external pull-up resistors on your I²C bus, remove the JP1/JP2 shunts as needed to avoid parallel pull-up conflicts.
 
 ---
 
