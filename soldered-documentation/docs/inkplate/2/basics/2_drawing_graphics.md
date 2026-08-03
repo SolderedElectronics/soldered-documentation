@@ -8,9 +8,7 @@ hide_title: true
 
 <SectionTitle title="Drawing Graphics" backgroundImage="/img/inkplate_2/hardware.png" />
 
-Inkplate 2 features a 2.13″ three-color e-paper display capable of rendering black, white, and red pixels. You can draw geometric shapes using the built-in Adafruit GFX functions, which are compatible with the Inkplate library.
-
-Inkplate 2 supports the Adafruit GFX graphics library for drawing.
+Inkplate 2 features a 2.13″ three-color e-paper display capable of rendering black, white, and red pixels. Draw geometric shapes using the Adafruit GFX functions built into the Inkplate library.
 
 <InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
   description="The core graphics library for Inkplate library, created by Adafruit."
@@ -19,11 +17,9 @@ Inkplate 2 supports the Adafruit GFX graphics library for drawing.
 
 ---
 
-## Drawing Geometric Shapes
+## Drawing geometric shapes
 
-Below is an example demonstrating functions used for drawing graphics on the Inkplate 2:
-
-Use these functions to draw pixels, lines, rectangles, circles, and more. Inkplate 2 supports three colors:
+The example below uses these functions to draw pixels, lines, rectangles, circles, and more. Inkplate 2 supports three colors:
 - `INKPLATE2_BLACK`
 - `INKPLATE2_RED`
 - `INKPLATE2_WHITE` (background/erase)
@@ -38,28 +34,28 @@ void setup() {
   inkplate.display();
 
   // Pixel replacements with small filled rectangles for visibility
-  inkplate.fillRect(30, 5, 5, 5, INKPLATE2_BLACK);
-  inkplate.fillRect(50, 5, 5, 5, INKPLATE2_RED);
+  inkplate.fillRect(10, 2, 6, 6, INKPLATE2_BLACK);
+  inkplate.fillRect(110, 2, 6, 6, INKPLATE2_RED);
 
   // Lines
-  inkplate.drawLine(10, 15, 100, 15, INKPLATE2_BLACK);
-  inkplate.drawLine(10, 25, 100, 25, INKPLATE2_RED);
+  inkplate.drawLine(10, 14, 200, 14, INKPLATE2_BLACK);
+  inkplate.drawLine(10, 20, 200, 20, INKPLATE2_RED);
 
   // Rectangles
-  inkplate.drawRect(10, 35, 40, 20, INKPLATE2_BLACK);
-  inkplate.fillRect(60, 35, 40, 20, INKPLATE2_RED);
+  inkplate.drawRect(10, 26, 70, 16, INKPLATE2_BLACK);
+  inkplate.fillRect(115, 26, 70, 16, INKPLATE2_RED);
 
   // Circles
-  inkplate.drawCircle(30, 65, 10, INKPLATE2_BLACK);
-  inkplate.fillCircle(70, 65, 10, INKPLATE2_RED);
+  inkplate.drawCircle(45, 52, 8, INKPLATE2_BLACK);
+  inkplate.fillCircle(150, 52, 8, INKPLATE2_RED);
 
   // Rounded rectangles
-  inkplate.drawRoundRect(10, 85, 40, 20, 5, INKPLATE2_BLACK);
-  inkplate.fillRoundRect(60, 85, 40, 20, 5, INKPLATE2_RED);
+  inkplate.drawRoundRect(10, 64, 70, 16, 4, INKPLATE2_BLACK);
+  inkplate.fillRoundRect(115, 64, 70, 16, 4, INKPLATE2_RED);
 
   // Triangles
-  inkplate.drawTriangle(10, 125, 40, 125, 25, 105, INKPLATE2_BLACK);
-  inkplate.fillTriangle(60, 125, 90, 125, 75, 105, INKPLATE2_RED);
+  inkplate.drawTriangle(10, 100, 40, 100, 25, 84, INKPLATE2_BLACK);
+  inkplate.fillTriangle(115, 100, 145, 100, 130, 84, INKPLATE2_RED);
 
   inkplate.display();
 }

@@ -8,11 +8,11 @@ hide_title: true
 
 <SectionTitle title="Deep Sleep" backgroundImage="img/arduino_bg.jpg" />
 
-Using deep sleep on Inkplate 2 is crucial for writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the displayed image, Inkplate 2 can consume little or no current while in deep sleep mode, enabling a sketch to run for months on battery.
+Using deep sleep on Inkplate 2 helps you get the most out of your battery. Since e-Paper doesn't need any power to retain the displayed image, Inkplate 2 can consume little or no current in deep sleep mode, so a sketch can run for months on a single battery.
 
 ---
 
-<InfoBox> When your ESP32 wakes up from deep sleep, it performs a reset and runs **main.py** again. That means your main script is executed on every every wake-up. </InfoBox>
+<InfoBox> When your ESP32 wakes up from deep sleep, it performs a reset and runs **main.py** again. That means your main script is executed on every wake-up. </InfoBox>
 
 <WarningBox> Make sure you’ve uploaded a **main.py** file to the ESP32. Put the code you want to run after each wake-up inside it.</WarningBox>
 
@@ -20,7 +20,7 @@ Using deep sleep on Inkplate 2 is crucial for writing a sketch that maximizes ba
 
 Basic example of using deep sleep on ESP32 and printing current RTC time.
 
-<InfoBox> The RTC can drift a little each day, so in order to keep time accurate it's best to resync with NTP once a day. </InfoBox>
+<InfoBox> The RTC can drift a little each day, so it's best to resync with NTP once a day to keep the time accurate. </InfoBox>
 
 ```python
 from inkplate2 import Inkplate
@@ -31,7 +31,7 @@ inkplate = Inkplate()
 
 inkplate.begin()
 
-inkplate.clearDisplay()
+inkplate.clear_display()
 
 # Check for reset reason and print message accordingly
 if machine.reset_cause() == machine.DEEPSLEEP_RESET:
@@ -42,7 +42,7 @@ else:
 # Get UTC time
 utc_time = time.localtime()
 
-# Convert UTC -> local time (e.g., UTC+2
+# Convert UTC -> local time (e.g., UTC+2)
 # Offset in seconds (hours * 3600)
 timezone_offset = (2 * 3600)
 

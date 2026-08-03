@@ -7,7 +7,7 @@ hide_title: true
 ---
 <SectionTitle title="RTC basics" backgroundImage="/img/rtc.png" />
 
-The real time clock on Inkplate 10 is the **onboard PCF85063 RTC**. The RTC uses an external clock source—an external XTAL of 32.768kHz.
+The real-time clock on Inkplate 2 is the **onboard PCF85063 RTC**, which uses an external 32.768kHz XTAL as its clock source.
 
 ---
 
@@ -38,7 +38,7 @@ void setup()
     inkplate.begin();        // Initialize the Inkplate library (this function should be called ONLY ONCE)
     inkplate.clearDisplay(); // Clear the display's frame buffer
     inkplate.display();      // Put the clear image on the display
-    inkplate.setTextSize(5); // Set text to be 5 times bigger than the classic 5x7 px text
+    inkplate.setTextSize(1); // Inkplate 2's screen is only 212 x 104 px, so keep default text size to fit the date and time
     inkplate.rtc.setTime(hour, minutes, seconds);    // Send time to RTC
     inkplate.rtc.setDate(weekday, day, month, year);   // Send date to RTC
 }
@@ -59,7 +59,7 @@ void loop()
         year = inkplate.rtc.getYear();       // Store year in a variable
 
         inkplate.clearDisplay();                                       // Clear content in the frame buffer
-        inkplate.setCursor(100, 300);                                  // Set the position of the text
+        inkplate.setCursor(25, 48);                                    // Set the position of the text
         printTime(hour, minutes, seconds, day, weekday, month, year);  // Print the time on the screen
 
         if (n > 9) // Check if you need to do a full refresh or if a partial update is sufficient

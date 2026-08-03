@@ -30,13 +30,6 @@ The **Inkplate 2** is a compact, energy-efficient **2.13-inch e-paper display** 
 />
 
 <QuickLink 
-  title="Inkplate 2 without e-paper Display" 
-  description="333227"
-  url="https://soldered.com/product/inkplate-2/"
-  image="/img/inkplate_2/withoutboard.png" 
-/>
-
-<QuickLink 
   title="Inkplate 2 with e-paper & enclosure" 
   description="333167"
   url="https://soldered.com/product/inkplate-2/"
@@ -50,7 +43,7 @@ The **Inkplate 2** is a compact, energy-efficient **2.13-inch e-paper display** 
   image="/img/inkplate_2/ennbat.png" 
 />
 
-## Key Features
+## Key features
 
 - **Display Size:** 2.13" e-paper
 - **Resolution:** 212 × 104 pixels

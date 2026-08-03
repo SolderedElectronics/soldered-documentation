@@ -6,7 +6,7 @@ id: drawing-img-web
 hide_title: false  
 ---
 
-Example showing how to connect to WiFi and render an image fetched from URL using `drawImage`.
+This example shows how to connect to WiFi and render an image fetched from a URL using `drawImage`.
 
 <InfoBox>Supported image formats: JPG, BMP, and PNG.</InfoBox>
 
@@ -39,7 +39,7 @@ if not do_connect():
 
 # Example usage
 drawLenght=time.ticks_ms()
-inkplate.drawImage(
+inkplate.draw_image(
     "https://i.imgur.com/VSRtgBr.jpeg",  # URL to image
     0, 0,                                # X, Y position
     dither = True						 # Enable/Disable dithering
@@ -54,11 +54,11 @@ inkplate.display()
 <CenteredImage src="/img/inkplate_2/img-web-no-dither.jpg" alt="Expected output on Inkplate display" caption="Example image displayed on Inkplate without Dithering" />
 
 <FunctionDocumentation
-    functionName="inkplate.drawImage()"
+    functionName="inkplate.draw_image()"
     description="This function draws an image from the specified char path (either web URL or local file path)"
     returnDescription="None"
     parameters={[ 
-        { type: "string", name: "path", description: "Path and filename of the image. Can be a URL (for web images) or a file path (on the microSD card)." },
+        { type: "string", name: "path", description: "Path and filename of the image. Can be a URL (for web images) or a local file path." },
         { type: "int", name: "x0", description: "X-coordinate of the image's upper-left corner in the framebuffer." },
         { type: "int", name: "y0", description: "Y-coordinate of the image's upper-left corner in the framebuffer." },
         { type: "bool", name: "invert", description: "If true, inverts colors." },

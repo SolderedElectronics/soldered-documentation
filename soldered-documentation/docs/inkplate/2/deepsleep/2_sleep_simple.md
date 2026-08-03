@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
 
-Using deep sleep on Inkplate 2 is key to writing a sketch that maximizes battery efficiency. Since the e-Paper display does not require power to retain the displayed image, Inkplate 2 can use little to no current while in deep sleep mode, allowing a sketch to run for months on battery.
+Using deep sleep on Inkplate 2 is key to writing a sketch that maximizes battery efficiency. Since the e-Paper display does not require power to retain the displayed image, Inkplate 2 can use little to no current while in deep sleep mode, so a sketch can run for months on battery.
 
 <InfoBox>If all peripherals are in sleep mode, deep sleep current will be around **20-30µA**</InfoBox>
 

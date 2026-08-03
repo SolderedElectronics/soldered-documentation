@@ -117,7 +117,6 @@ const sidebars = {
                 "inkplate/2/hardware/2-hardware-design",
                 "inkplate/2/hardware/2-hardware-open-source",
                 "inkplate/2/hardware/2-hardware-files",
-                "inkplate/2/hardware/2-hardware-jumpers",
                 "inkplate/2/hardware/2-hardware-battery",
                 "inkplate/2/hardware/2-hardware-free-gpio"
               ]
@@ -150,14 +149,6 @@ const sidebars = {
                 "inkplate/2/deepsleep/2-deep-sleep",
                 {
                   "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/2/microsd/2-microsd-basics",
-                    "inkplate/2/microsd/2-microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
                   "label": "Real Time Clock",
                   "items": [
                     "inkplate/2/rtc/2-rtc-basics",
@@ -187,15 +178,6 @@ const sidebars = {
                     "inkplate/2/micropython/wifi/wifi-init",
                     "inkplate/2/micropython/wifi/get-post-request",
                     "inkplate/2/micropython/wifi/drawing-img-web"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/2/micropython/microsd/formatting",
-                    "inkplate/2/micropython/microsd/read-write",
-                    "inkplate/2/micropython/microsd/display-img"
                   ]
                 },
                 {
