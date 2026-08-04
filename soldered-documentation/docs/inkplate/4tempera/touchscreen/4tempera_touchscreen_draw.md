@@ -1,12 +1,12 @@
 ---
 slug: /inkplate/4tempera/touchscreen/draw
-title: Inkplate 4TEMPERA – Touchscreen Draw
-sidebar_label: Touchscreen Draw
+title: Inkplate 4TEMPERA - Touchscreen draw
+sidebar_label: Touchscreen draw
 id: 4tempera-touchscreen-draw
 hide_title: true
 ---
 
-<SectionTitle title="Touchscreen Draw" backgroundImage="/img/touchscreen.jpg" />
+<SectionTitle title="Touchscreen draw" backgroundImage="/img/touchscreen.jpg" />
 
 This example demonstrates how to use the built-in touchscreen on the Inkplate 4TEMPERA to draw directly on the screen. It turns the device into a simple sketchpad using finger or stylus input.
 
@@ -14,7 +14,7 @@ This example demonstrates how to use the built-in touchscreen on the Inkplate 4T
 
 ---
 
-## Example Code
+## Example code
 
 The following sketch initializes the display and touchscreen and allows the user to draw by touching the screen. Touch coordinates are used to draw small black circles at the touched location.
 
@@ -28,30 +28,38 @@ The following sketch initializes the display and touchscreen and allows the user
     Select "Soldered Inkplate 4TEMPERA" from Tools -> Board menu.
 
     Want to learn more about Inkplate? Visit www.inkplate.io
-    Looking to get support? Write on our forums: https://forum.soldered.com/
+    Looking to get support? Ask on the Soldered community: https://community.soldered.com/
 */
 
 #include "Inkplate.h" // Include Inkplate library
 
-Inkplate display; // Create display object
+Inkplate display(INKPLATE_1BIT); // Create display object in monochrome mode
 
 void setup()
 {
     display.begin();               // Initialize the display
     display.clearDisplay();        // Clear the display
     display.display();             // Update the screen
+
+    // Initialize the touchscreen and keep it powered on
+    display.touchscreen.init(true);
 }
 
 void loop()
 {
-    // Check if the screen is being touched
-    if (display.ts.touched())
+    // Check if the touchscreen detects any touch
+    if (display.touchscreen.available())
     {
-        TPPoint p = display.ts.getPoint(0); // Get the first touch point
+        uint8_t n;
+        uint16_t x[2], y[2];
+        n = display.touchscreen.getData(x, y); // Get touch point coordinates (up to 2 fingers)
 
-        // Draw a small circle at the touch location
-        display.fillCircle(p.x, p.y, 2, BLACK);
-        display.display(); // Refresh the screen to show the change
+        if (n != 0)
+        {
+            // Draw a small circle at the first touch point
+            display.fillCircle(x[0], y[0], 2, BLACK);
+            display.display(); // Refresh the screen to show the change
+        }
     }
 
     delay(20); // Small delay to reduce CPU usage
@@ -61,17 +69,28 @@ void loop()
 ---
 
 <FunctionDocumentation
-  functionName="display.ts.touched()"
-  description="Checks if the touchscreen is being touched."
+  functionName="display.touchscreen.init()"
+  description="Initializes the touchscreen controller."
+  returnType="bool"
+  parameters={[
+    { type: 'uint8_t', name: 'powerState', description: 'Power state to leave the touchscreen in after initialization.' }
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="display.touchscreen.available()"
+  description="Checks if the touchscreen has new touch data available."
   returnType="bool"
 />
 
 <FunctionDocumentation
-  functionName="display.ts.getPoint()"
-  description="Returns the TPPoint (touch point) at a given index. Typically only index 0 is used for single touch."
-  returnType="TPPoint"
+  functionName="display.touchscreen.getData()"
+  description="Reads the coordinates of up to two simultaneous touch points into the provided arrays."
+  returnDescription="Returns the number of touch points detected."
+  returnType="uint8_t"
   parameters={[
-    { type: 'int', name: 'index', description: 'Touch point index (0 for the first point).' }
+    { type: 'uint16_t*', name: 'xPos', description: 'Array (size 2) that will be filled with the X coordinates of the detected touch points.' },
+    { type: 'uint16_t*', name: 'yPos', description: 'Array (size 2) that will be filled with the Y coordinates of the detected touch points.' }
   ]}
 />
 

@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/basics/printing-text  
-title: Inkplate 4TEMPERA – Printing Text
+title: Inkplate 4TEMPERA - Printing Text
 sidebar_label: Printing Text
 id: 4tempera-text  
 hide_title: true
@@ -14,7 +14,7 @@ Printing text on Inkplate is simple and requires only a few functions. The libra
 
 ---
 
-## Simple Text Printing 
+## Simple text printing 
 
 To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size:
 
@@ -28,10 +28,10 @@ void setup() {
   inkplate.setTextColor(BLACK);
   inkplate.setCursor(100,100);
   inkplate.setTextSize(6);
-  inkplate.print("Hi inkplate (in size 6)!");
+  inkplate.print("Hi (size 6)!");
   inkplate.setCursor(100,150);
   inkplate.setTextSize(5);
-  inkplate.print("Hi inkplate (in size 5)!");
+  inkplate.print("Inkplate (size 5)!");
   inkplate.setCursor(100,200);
   inkplate.setTextSize(4);
   inkplate.print("Hi inkplate (in size 4)!");
@@ -71,7 +71,7 @@ void loop() {
 
 ---
 
-## Text Background Color
+## Text background color
 
 To change the text color, use `setTextColor`. This function can also optionally set a background color, which prints a rectangle in that color behind the text. This can improve visibility in some cases.
 
@@ -87,7 +87,7 @@ To change the text color, use `setTextColor`. This function can also optionally 
 
 ---
 
-## Custom Fonts
+## Custom fonts
 
 The default font appears blocky because it is optimized for minimal memory usage. You can use custom fonts by downloading them from the [Adafruit GFX official repository](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/Fonts). Adafruit provides well-documented examples of using custom fonts [**here**](https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts).
 
@@ -204,5 +204,5 @@ Check out the full examples:
 <QuickLink 
   title="Inkplate4TEMPERA_TextBox.ino" 
   description="This example shows you how to use the TextBox function with and without special parameters"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/Other/Inkplate4TEMPERA_TextBox" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_TextBox" 
 />

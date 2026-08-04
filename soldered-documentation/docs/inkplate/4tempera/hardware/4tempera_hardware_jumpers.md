@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/hardware/jumpers
-title: Inkplate 4TEMPERA – Jumpers
+title: Inkplate 4TEMPERA - Jumpers
 sidebar_label: Jumpers
 id: 4tempera-hardware-jumpers
 ---
@@ -27,7 +27,7 @@ images={[
 | **Jumper** | **Default State**      | **Function**                                                                                                                                                             |
 | ---------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **JP1**    | **NO** (not connected) | When shorted, it keeps the microSD card powered at 3.3V at all times. Useful for troubleshooting or logging during deep sleep, though not ideal for low-power use.   |
-| **JP2**    | **NC** (connected)     | Connects `GPIO39` to the microSD card power enable line or interrupt (depending on routing). May be used for SD power switching or custom IRQ setups.                  |
+| **JP2**    | **NC** (connected)     | Connects the RTC's `CLKOUT`/interrupt pin to `GPIO39`, letting you use the RTC's clock output or alarm interrupt signal as a wake or timing source.                     |
 | **JP3**    | **NC** (connected)     | Connects `GPIO15` to the microSD Chip Select (CS) line. Needed for SD card communication.                                                                               |
 | **JP4**    | **NO** (not connected) | Connects `GPIO0` to a solderable pad. It is used to manually pull `GPIO0` low, which is often required to enter firmware flashing mode (ESP32 bootloader).          |
 | **JP5**    | **NC** (connected)     | Connects `GPIO0` through a capacitor to GND. It provides filtering or a soft pull-down to help stabilize boot mode logic and is typically left connected.             |

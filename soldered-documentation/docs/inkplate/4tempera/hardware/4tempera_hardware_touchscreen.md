@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/hardware/touchscreen
-title: Inkplate 4TEMPERA – Touchscreen
+title: Inkplate 4TEMPERA - Touchscreen
 sidebar_label: Touchscreen
 id: 4tempera-hardware-touchscreen
 hide_title: true
@@ -8,32 +8,32 @@ hide_title: true
 
 <SectionTitle title="Touchscreen Overview" backgroundImage="img/touchscreen.jpg" />
 
-The Inkplate 4 TEMPERA features a built-in **capacitive touchscreen** bonded to its **ED038TH2 e-paper panel**, providing smooth, direct interaction with the display surface. This integration makes it ideal for compact user interfaces, drawing apps, control panels, or other interactive applications — all while maintaining the low power consumption of e-paper.
+The Inkplate 4TEMPERA features a built-in **capacitive touchscreen** bonded to its **ED038TH2 e-paper panel**, providing smooth, direct interaction with the display surface. This integration makes it ideal for compact user interfaces, drawing apps, control panels, or other interactive applications, all while maintaining the low power consumption of e-paper.
 
 ---
 
-## Key Features
+## Key features
 
 - **Capacitive touch layer** integrated with the 3.8″ ED038TH2 e-paper display  
 - **Two-point multitouch support** for gesture recognition or dual-finger use  
 - Responsive touch tracking with fast screen updates  
-- No additional external touch hardware is required — the controller is built in  
+- No additional external touch hardware is required, as the controller is built in  
 - Works in both **1-bit (black-and-white)** and **3-bit (grayscale)** display modes
 
 ---
 
-## Usage and Design Considerations
+## Usage and design considerations
 
 - Optimized for use with **bare fingers** or **capacitive-compatible styluses**  
 - The touch surface spans the **entire display area**, enabling full-screen interactivity  
 - Touch input is temporarily **disabled during screen refreshes**, so avoid polling at those times  
 - Ideal for **compact interactive interfaces** in embedded or portable projects
 
-<InfoBox>Each display is sourced from previously deployed devices and thoroughly tested for touchscreen functionality during Inkplate 4 TEMPERA production and quality control.</InfoBox>
+<InfoBox>Each display is sourced from previously deployed devices and thoroughly tested for touchscreen functionality during Inkplate 4TEMPERA production and quality control.</InfoBox>
 
 ---
 
-## Tips for Effective Touch UI Design
+## Tips for effective touch UI design
 
 - Define **touch regions** visually using borders, labels, or icons  
 - Provide immediate on-screen feedback for user actions  

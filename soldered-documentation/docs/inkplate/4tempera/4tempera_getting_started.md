@@ -14,7 +14,7 @@ To get started with Arduino on Inkplate 4TEMPERA, follow a few simple steps to i
 
 ### 1. Install Arduino IDE
 
-If you haven’t installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
+If you haven't installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
 <WarningBox>Arduino IDE 2.0 or newer is required for Inkplate 4TEMPERA.</WarningBox>
 
 <CenteredImage src="/img/inkplate_4_tempera/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
@@ -37,7 +37,7 @@ Click `Install` here:
 
 ### 3. Install Inkplate library
 
-In the Arduino Library Manager, search for the Inkplate Motion library and click `Install`:  
+In the Arduino Library Manager, search for the Inkplate library and click `Install`:  
 <CenteredImage src="/img/inkplate_4_tempera/install_lib.png" alt="Install Inkplate library" caption="Installing Inkplate library" width="400px" />
 
 <InfoBox>It's also possible to install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
@@ -51,13 +51,13 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 ### Done!
 
-Inkplate 4TEMPERA setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! For details on how to upload code, see the next page in the documentation:
+Inkplate 4TEMPERA setup is complete. Now, try out some examples from the Arduino library - upload them and see the results for yourself! For details on how to upload code, see the next page in the documentation:
 
 ---
 
-## Light and Versatile Graphics Library (LVGL)
+## Light and versatile graphics library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LVGL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 
@@ -69,9 +69,9 @@ To upload your own sketch or an Arduino example to **Inkplate 4TEMPERA**, follow
 
 Use the provided **USB-C cable** to connect Inkplate 4TEMPERA to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
 
-<CenteredImage src="/img/inkplate_4_tempera/10_usb_connect.png" alt="Inkplate 4TEMPERA onboard USB-C connector" caption="Inkplate 4TEMPERA onboard USB-C connector" width="500px" />
+<CenteredImage src="/img/inkplate_4_tempera/usb_c.png" alt="Inkplate 4TEMPERA onboard USB-C connector" caption="Inkplate 4TEMPERA onboard USB-C connector" width="500px" />
 
-<CenteredImage src="/img/inkplate_4_tempera/10_power_button.png" alt="Inkplate 4TEMPERA onboard POWER button" caption="Inkplate 4TEMPERA onboard POWER button" width="500px" />
+<CenteredImage src="/img/inkplate_4_tempera/power.png" alt="Inkplate 4TEMPERA onboard POWER button" caption="Inkplate 4TEMPERA onboard POWER button" width="500px" />
 
 ### 2. Create a sketch
 
@@ -84,10 +84,9 @@ For the purposes of this documentation, we will use a pre-made example. Go to
 
 Before uploading the code, select the correct board definition. The table below should help you out:
 
-| Board Definition                   | Board Description                                                     |
-| ---------------------------------- | --------------------------------------------------------------------- |
-| Soldered inkplate_4_tempera        | The newer and more stylish version of the product, with a purple PCB. |
-| e-radionica.com Inkplate 4TEMPERA   | The older version, with a blue PCB.                                   |
+| Board Definition            | Board Description                                          |
+| ---------------------------- | ------------------------------------------------------------ |
+| Soldered Inkplate 4TEMPERA   | Select this board definition to upload code to Inkplate 4TEMPERA. |
 
 Click **Upload** in the Arduino IDE.
 
@@ -101,4 +100,4 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having trouble uploading your first code? Check out our [troubleshooting page](/inkplate/10/faq-troubleshooting/):
+Having trouble uploading your first code? Check out our [troubleshooting page](/inkplate/4tempera/faq-troubleshooting/):

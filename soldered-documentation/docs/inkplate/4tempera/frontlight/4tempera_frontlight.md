@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/frontlight/simple-frontlight
-title: Inkplate 4TEMPERA – Simple Frontlight
+title: Inkplate 4TEMPERA - Simple Frontlight
 sidebar_label: Simple Frontlight
 id: 4tempera-frontlight
 hide_title: true
@@ -10,13 +10,13 @@ hide_title: true
 
 Inkplate 4TEMPERA features a built-in frontlight, which allows the display to be visible in low-light environments. This page shows you how to control the frontlight using a simple sketch.
 
-<InfoBox>The frontlight brightness can be controlled using PWM (Pulse Width Modulation) via the `setFrontlight()` function, which takes a value between 0 (off) and 100 (full brightness).</InfoBox>
+<InfoBox>The frontlight brightness is controlled through the `frontlight` object. Call `setState(true)` to enable the frontlight circuit, then use `setBrightness()` with a value between 0 (off) and 63 (full brightness) to set the intensity.</InfoBox>
 
 ---
 
-## Frontlight Example Code
+## Frontlight example code
 
-The following example demonstrates how to turn on the frontlight at 50% brightness and keep it running:
+The following example demonstrates how to enable the frontlight and set it to roughly half brightness:
 
 ```cpp
 /*
@@ -26,7 +26,7 @@ The following example demonstrates how to turn on the frontlight at 50% brightne
     Make sure to select "Soldered Inkplate 4TEMPERA" from Tools -> Board menu.
 
     Want to learn more about Inkplate? Visit www.inkplate.io
-    Looking to get support? Write on our forums: https://forum.soldered.com/
+    Looking to get support? Ask on the Soldered community: https://community.soldered.com/
 */
 
 #include "Inkplate.h" // Include Inkplate library
@@ -35,14 +35,9 @@ Inkplate display; // Create Inkplate object
 
 void setup()
 {
-    display.begin();              // Initialize the display
-    display.setFrontlight(50);   // Set frontlight brightness to 50%
-    display.clearDisplay();      // Clear frame buffer
-    display.setCursor(0, 20);    // Set cursor position
-    display.setTextSize(2);      // Set text size
-    display.setTextColor(BLACK); // Set text color
-    display.print("Frontlight at 50%");
-    display.display();           // Refresh display
+    display.begin();                      // Initialize the display
+    display.frontlight.setState(true);    // Enable the frontlight circuit
+    display.frontlight.setBrightness(31); // Set frontlight brightness (0-63)
 }
 
 void loop()
@@ -54,11 +49,11 @@ void loop()
 ---
 
 <FunctionDocumentation
-  functionName="display.setFrontlight()"
+  functionName="display.frontlight.setBrightness()"
   description="Sets the frontlight brightness of the Inkplate 4TEMPERA."
   returnType="void"
   parameters={[
-    { type: 'uint8_t', name: 'value', description: 'Brightness value (0–100).' }
+    { type: 'uint8_t', name: 'value', description: 'Brightness value (0-63).' }
   ]}
 />
 
