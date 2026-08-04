@@ -8,7 +8,7 @@ hide_title: false
 
 ## Initializing Inkplate
 
-Here is a basic Inkplate object creation and display initialization which we will use in every example in following tutorials:
+Here is a basic Inkplate object creation and display initialization, which we'll use in every example in the following tutorials:
 
 ```python
 # Include inkplate library
@@ -31,21 +31,21 @@ inkplate.display()
 />
 <FunctionDocumentation
   functionName="inkplate.begin()"
-  description="In short, this function initializes the Inkplate object. It starts I2C, allocates the required memory for the frame buffer, and initializes the onboard peripherals."
+  description="Initializes the Inkplate object. It starts I2C, allocates the required memory for the frame buffer, and initializes the onboard peripherals."
   returnType="none"
 />
 <FunctionDocumentation
   functionName="inkplate.display()"
-  description="This function refreshes the display and draws what is currently in the frame buffer, this function must be called to update the display. This is a full refresh that completely wipes the e-Paper and then draws everything from the frame buffer."
+  description="This function refreshes the display and draws what is currently in the frame buffer. It must be called to update the display. This is a full refresh that completely wipes the e-Paper and then draws everything from the frame buffer."
   returnType="none"
 />
 
 ## Clear display
 
 <FunctionDocumentation
-  functionName="inkplate.clearDisplay()"
+  functionName="inkplate.clear_display()"
   description="This function clears everything stored in display buffer."
   returnType="none"
 />
 
-<InfoBox> Screen refresh time takes about **12 - 15 seconds**, screen may flicker while updating the display, but that is normal behaviour.</InfoBox>
+<InfoBox> Screen refresh time takes about **12 - 15 seconds**. The screen may flicker while updating, which is normal.</InfoBox>

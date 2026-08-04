@@ -63,6 +63,6 @@ void loop() {}
 To see more details, check out our full examples:
 <QuickLink 
   title="Inkplate_2_WiFi_examples" 
-  description="Inkpate 10 WiFi examples from Inkplate library"
+  description="Inkplate 2 WiFi examples from the Inkplate library"
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate2/Advanced/WEB_WiFi" 
 />

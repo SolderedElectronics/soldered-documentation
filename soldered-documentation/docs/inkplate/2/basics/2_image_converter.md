@@ -22,13 +22,13 @@ The Soldered Image Converter is a free web tool that converts images into `.h` h
 2. Upload your image (PNG, JPG, or BMP).
 3. Select **Inkplate 2** as the target board.
 4. Choose the display mode:
-   - **3-color (Black, White & Red)** — the only display mode on Inkplate 2
+   - **3-color (Black, White & Red)**: the only display mode on Inkplate 2
 5. Adjust dithering, resize, and other options as needed.
 6. Download the generated `image.h` file.
 
 ---
 
-## Using the Generated File
+## Using the generated file
 
 Place `image.h` in your sketch's project folder. To find this folder, go to `Sketch → Show Sketch Folder` in Arduino IDE.
 

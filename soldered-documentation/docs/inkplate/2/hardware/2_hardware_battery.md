@@ -10,7 +10,7 @@ hide_title: true
 
 <WarningBox>This page contains important information about using a battery with Inkplate 2. For safety reasons, **please read this page carefully!**</WarningBox>
 
-Inkplate 2 includes soldering pads for connecting a **3.7V Li-ion battery** directly to the board. The onboard charging IC, **MCP73831**, automatically charges the battery when Inkplate 2 is connected via **USB-C** and switches to battery power when unplugged. This design enables **long battery-powered operation**, especially in **low-power applications**.
+Inkplate 2 includes soldering pads for connecting a **3.7V Li-ion battery** directly to the board. The onboard charging IC, **MCP73831**, automatically charges the battery when Inkplate 2 is connected via **USB-C** and switches to battery power when unplugged. This lets it run for a long time on battery power, especially in low-power applications.
 
 <CenteredImage src="/img/inkplate_2/battery_connector.png" alt="Inkplate 2 battery JST connector" caption="Battery connector" width="500px"/>  
 
@@ -18,7 +18,7 @@ Inkplate 2 includes soldering pads for connecting a **3.7V Li-ion battery** dire
 
 ---
 
-## Battery Connection
+## Battery connection
 
 Unlike larger Inkplate boards, the Inkplate 2 does **not** include a JST connector for battery attachment. Instead, it provides clearly marked **soldering pads** on the PCB for manual connection of your Li-ion battery wires:
 
@@ -26,9 +26,9 @@ Unlike larger Inkplate boards, the Inkplate 2 does **not** include a JST connect
 
 ---
 
-## Supported Battery Types
+## Supported battery types
 
-Inkplate 2 is compatible with **3.7V Li-ion batteries**, ideally with **built-in protection circuits**. These can be sourced from your preferred electronics supplier or from the [**Soldered online store**](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/).
+Inkplate 2 is compatible with **3.7V Li-ion batteries**, ideally with built-in protection circuits. These can be sourced from your preferred electronics supplier or from the [**Soldered online store**](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/).
 
 Some recommended battery specs:
 - **Voltage:** 3.7V
@@ -40,30 +40,30 @@ Some recommended battery specs:
 
 ---
 
-## Charging Circuit: MCP73831
+## Charging circuit: MCP73831
 
-The **MCP73831** is a compact and highly integrated **Li-ion/Li-Polymer charge management controller**. It is preconfigured on Inkplate 2 to safely and efficiently manage charging behavior.
+The **MCP73831** is a compact Li-ion/Li-Polymer charge management controller. It's preconfigured on Inkplate 2 to manage charging safely and efficiently.
 
 Key features:
 - **USB-powered charging** (via USB-C)
 - **Automatic charge termination**
-- **Overvoltage and overcurrent protection**
-- **Trickle charging when full**
+- **Reverse discharge protection** and automatic power-down when USB power is removed
+- **Preconditioning (trickle) charging** for deeply discharged cells before fast charging begins
 - Compatible with single-cell 3.7V Li-ion batteries
 
 <FunctionDocumentation
   functionName="MCP73831"
   description="Single-cell Li-ion battery charge controller used on Inkplate 2"
-  returnDescription="Hardware only – automatic operation without user configuration"
+  returnDescription="Hardware only, automatic operation without user configuration"
 />
 
 <InfoBox>For advanced users: refer to the [**MCP73831 datasheet**](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf) for full technical details.</InfoBox>
 
 ---
 
-## Battery Safety Guidelines
+## Battery safety guidelines
 
-- Always check **battery polarity** before soldering.
-- Use **batteries with protection circuits** to avoid over-discharge.
-- **Do not charge damaged batteries**.
+- Always check battery polarity before soldering.
+- Use batteries with protection circuits to avoid over-discharge.
+- Do not charge damaged batteries.
 - Avoid short circuits on the battery pads during assembly.

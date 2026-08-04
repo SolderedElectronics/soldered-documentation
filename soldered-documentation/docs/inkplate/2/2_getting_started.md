@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
 
-To get started with Arduino on Inkplate 2, a few simple steps need to be completed to install the required software.
+To get started with Arduino on Inkplate 2, follow these steps to install the required software.
 
 ---
 
@@ -37,10 +37,10 @@ Click `Install` here:
 
 ### 3. Install Inkplate library
 
-In the Arduino Library Manager, search for the Inkplate Motion library and click `Install`:  
+In the Arduino Library Manager, search for the Inkplate library and click `Install`:  
 <CenteredImage src="/img/inkplate_2/install_lib.png" alt="Install Inkplate library" caption="Installing Inkplate library" width="400px" />
 
-<InfoBox>It's also possible to install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
+<InfoBox>You can also install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
 
 ### 4. Install CH340 driver
 
@@ -51,13 +51,13 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 ### Done!
 
-Inkplate 2 setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! See the next page in the documentation for details on how to upload code:
+Inkplate 2 setup is complete. Now, try out some examples from the Arduino library: upload one and see how it looks on the display. See the next page in the documentation for details on how to upload code:
 
 ---
 
 ## Light and Versatile Graphics Library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LVGL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 
@@ -75,7 +75,7 @@ Use the provided **USB-C cable** to connect Inkplate 2 to your computer. The boa
 
 ### 2. Create a sketch
 
-For the needs of this documentation, we will be using a premade example. Go to `File->Examples->InkplateLibrary->Inkplate2->Basic->Inkplate2_Hello_World`
+For this guide, we'll use a premade example. Go to `File->Examples->InkplateLibrary->Inkplate2->Basic->Inkplate2_Hello_World`
 
 <CenteredImage src="/img/inkplate_2/arduino_sketch.png" alt="Selecting a basic example for Inkplate 2" caption="Selecting a basic example for Inkplate 2" width="700px" />
 

@@ -41,32 +41,32 @@ if __name__ == "__main__":
     display.println("Welcome to Inkplate 2")
 
     # Print some larger text in red
-    display.setTextSize(1)
+    display.set_text_size(1)
     
-    display.setTextColor(display.RED)
+    display.set_text_color(display.RED)
     display.print("MicroPython!")
 
     # Fill a black circle and draw some white and red circles inside it
-    display.fillCircle(178, 16, 15, display.BLACK)
-    display.drawCircle(178, 16, 13, display.RED)
-    display.drawCircle(178, 16, 9, display.WHITE)
-    display.drawCircle(178, 16, 4, display.RED)
+    display.fill_circle(178, 16, 15, display.BLACK)
+    display.draw_circle(178, 16, 13, display.RED)
+    display.draw_circle(178, 16, 9, display.WHITE)
+    display.draw_circle(178, 16, 4, display.RED)
 
     # Draw a red checkerboard pattern with a loop
     for x in range(30):
-        display.fillRect(0 + (5*x*2), 38, 5, 5, display.RED)
+        display.fill_rect(0 + (5*x*2), 38, 5, 5, display.RED)
 
     for x in range(30):
-        display.fillRect(5 + (5*x*2), 42, 5, 5, display.RED)
+        display.fill_rect(5 + (5*x*2), 42, 5, 5, display.RED)
     
     # Draw some horizontal lines
-    display.drawLine(0, 49, 214, 49, display.BLACK)
-    display.drawLine(0, 51, 214, 51, display.RED)
-    display.drawLine(0, 53, 214, 53, display.BLACK)
-    display.drawLine(0, 55, 214, 55, display.RED)
+    display.draw_line(0, 49, 214, 49, display.BLACK)
+    display.draw_line(0, 51, 214, 51, display.RED)
+    display.draw_line(0, 53, 214, 53, display.BLACK)
+    display.draw_line(0, 55, 214, 55, display.RED)
 
     # Draw the soldered logo as a bitmap image in red
-    display.drawBitmap(0, 58, soldered_logo, 211, 44, display.RED)
+    display.draw_bitmap(0, 58, soldered_logo, 211, 44, display.RED)
 
     # Display everything on Inkplate's display
     # This function must be called after drawing, or else the display won't update 
@@ -76,10 +76,10 @@ if __name__ == "__main__":
 
 <CenteredImage src="/img/inkplate_2/graphics.jpg" alt="Colored bitmap example" caption="Simple graphics example" />
 
-<InfoBox> Image to Bitmap conversion via **[Soldered Image Converter](https://soldered.com/image-converter)** is coming soon! </InfoBox>
+<InfoBox> You can convert images to bitmaps using the **[Soldered Image Converter](https://tools.soldered.com/tools/image-converter/)**. </InfoBox>
 
 <FunctionDocumentation
-  functionName="inkplate.setTextColor()"
+  functionName="inkplate.set_text_color()"
   description="Sets the color of the text. Must be called before printing."
   returnDescription="None"
   parameters={[ 
@@ -87,7 +87,7 @@ if __name__ == "__main__":
   ]}
 />
 <FunctionDocumentation
-  functionName="inkplate.fillCircle()"
+  functionName="inkplate.fill_circle()"
   description="Function to draw a filled circle with specified color"
   returnDescription="None"
   parameters={[ 
@@ -98,7 +98,7 @@ if __name__ == "__main__":
   ]}
 />
 <FunctionDocumentation
-  functionName="inkplate.drawCircle()"
+  functionName="inkplate.draw_circle()"
   description="Function to draw a circle"
   returnDescription="None"
   parameters={[ 
@@ -109,7 +109,7 @@ if __name__ == "__main__":
   ]}
 />
 <FunctionDocumentation
-  functionName="inkplate.fillRect()"
+  functionName="inkplate.fill_rect()"
   description="Function to draw a color filled rectangle"
   returnDescription="None"
   parameters={[ 
@@ -121,7 +121,7 @@ if __name__ == "__main__":
   ]}
 />
 <FunctionDocumentation
-  functionName="inkplate.drawLine()"
+  functionName="inkplate.draw_line()"
   description="Function to draw a line from start to end"
   returnDescription="None"
   parameters={[ 
@@ -129,12 +129,11 @@ if __name__ == "__main__":
     { type: 'int', name: 'y0', description: 'Y coordinate for first point' },
     { type: 'int', name: 'x1', description: 'X coordinate for second point' },
     { type: 'int', name: 'y1', description: 'Y coordinate for second point' },
-    { type: 'int', name: 'width', description: 'Line width' },
     { type: 'int', name: 'c', description: 'Line color' }
   ]}
 />
 <FunctionDocumentation
-  functionName="inkplate.drawBitmap()"
+  functionName="inkplate.draw_bitmap()"
   description="Function which draws bitmap image"
   returnDescription="None"
   parameters={[ 
@@ -150,7 +149,7 @@ if __name__ == "__main__":
 <QuickLink
     title="Code Example on GitHub"
     description="Basic Black-White-Red example on GitHub"
-    url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate2/basicBWR.py"
+    url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/basic_bwr.py"
 />
 
 ---
@@ -162,5 +161,5 @@ if __name__ == "__main__":
 <QuickLink
     title="drawColoredBitmap"
     description="Example showing how to draw a colored bitmap stored in flash memory."
-    url="https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/Examples/Inkplate2/drawColoredBitmap"
+    url="https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/examples/inkplate2/drawcoloredbitmap"
 />

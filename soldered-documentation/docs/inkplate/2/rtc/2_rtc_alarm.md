@@ -12,7 +12,7 @@ This page provides two key examples for using the **real-time clock (RTC)** on t
 
 ---
 
-## Example 1: Fetching Time from the Internet
+## Example 1: fetching time from the internet
 
 This example shows how to use the **`Network`** object to retrieve the current date and time from an NTP server and display it on the screen.
 
@@ -56,7 +56,7 @@ This will print the current time and date based on your time zone, updated appro
 
 ---
 
-## Example 2: Periodic Alarm Wake-Up
+## Example 2: periodic alarm wake-up
 
 This example sets an RTC alarm that triggers periodically (every 1 hour and 30 minutes) and checks whether the target date/time has been reached.
 
@@ -103,8 +103,7 @@ void loop() {}
 
 void waitingScreen() {
     display.setTextSize(1);
-    display.printf("
-           Waiting for: ");
+    display.printf("\n           Waiting for: ");
     display.setTextSize(4);
     display.setCursor(0, 33);
     display.printf("  %2.1d:%02d", alarmHour, alarmMins);
@@ -127,7 +126,7 @@ This will keep the Inkplate in deep sleep, waking every 1.5 hours to check if th
 
 ---
 
-## Full Examples
+## Full examples
 
 <QuickLink 
   title="Inkplate2_RTC_Alarm.ino" 
