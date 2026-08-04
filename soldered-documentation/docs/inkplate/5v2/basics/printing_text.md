@@ -5,13 +5,13 @@ sidebar_label: Printing Text
 id: text
 ---
 
-Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts.
+Printing text on Inkplate takes only a few functions, and the library supports custom fonts too.
 
-<InfoBox>For complete examples of text printing, most Arduino projects in the [**library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate5V2) include some form of text output.</InfoBox>
+<InfoBox>For complete examples of text printing, most Arduino projects in the [library](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate5V2) include some form of text output.</InfoBox>
 
 ---
 
-## Simple Text Printing 
+## Simple text printing
 
 To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size: 
 
@@ -52,7 +52,7 @@ void loop() {
 <FunctionDocumentation
   functionName="inkplate.setTextSize()"
   description="Increases the text size by a given factor."
-  returnDescription="None"
+  returnType="None"
   parameters={[ 
     { type: 'uint8_t', name: 's', description: 'Size factor. 1 is default size, 2 is twice as large, 3 is three times larger, etc.' }
   ]}
@@ -68,13 +68,13 @@ void loop() {
 
 ---
 
-## Text Background Color
+## Text background color
 
-To change the text color, use `setTextColor`. This function can also optionally set a background color, which prints a rectangle in that color behind the text. This can improve visibility in some cases.
+To change the text color, use `setTextColor`. It can optionally set a background color as well, which prints a rectangle in that color behind the text. That can help readability in some cases.
 <FunctionDocumentation
   functionName="inkplate.setTextColor()"
   description="Sets the color of the text. Must be called before printing."
-  returnDescription="None"
+  returnType="None"
   parameters={[ 
     { type: 'uint16_t', name: 'c', description: 'Text color.' },
     { type: 'uint16_t', name: 'bg', description: 'Optional background color. Default is transparent.' }
@@ -83,11 +83,11 @@ To change the text color, use `setTextColor`. This function can also optionally 
 
 ---
 
-## Custom Fonts
+## Custom fonts
 
-The default font appears blocky as it is optimized for minimal memory usage. You can use custom fonts by downloading them from the [Adafruit GFX official repository](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/Fonts). Adafruit provides well-documented examples on using custom fonts [**here**](https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts). 
+The default font looks blocky because it's optimized for minimal memory usage. For something nicer, download a custom font from the [Adafruit GFX official repository](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/Fonts). Adafruit also has [examples on using custom fonts](https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts). 
 
-After downloading a font, place it in your sketch folder, include it, and use `setFont`:
+Once you've downloaded a font, place it in your sketch folder, include it, and use `setFont`:
 
 ```cpp
 #include "Inkplate.h"
@@ -123,7 +123,7 @@ void loop() {
 
 ## TextBox
 
-You can manually define the area in which text will appear by using the `drawTextBox()` function.
+You can define the area in which text appears with the `drawTextBox()` function.
 
 ```cpp
 #include "Inkplate.h"            // Include the Inkplate library in the sketch
@@ -175,7 +175,7 @@ void loop()
 
 <FunctionDocumentation
   functionName="inkplate.drawTextBox()"
-  description="This function creates a TextBox."
+  description="Creates a TextBox."
   returnType="void"
   parameters={[
     { type: 'uint16_t', name: 'x0', description: 'X coordinate of the upper left corner.' },
@@ -199,5 +199,5 @@ Check out the full examples:
 <QuickLink 
   title="Inkplate5V2_TextBox.ino" 
   description="This example will show you how to use the TextBox function with and without special parameters"
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/Other/Inkplate5V2_TextBox/Inkplate5V2_TextBox.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Basic/Inkplate5V2_TextBox/Inkplate5V2_TextBox.ino" 
 />

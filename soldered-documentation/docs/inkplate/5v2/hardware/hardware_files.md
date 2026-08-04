@@ -5,7 +5,7 @@ sidebar_label: Hardware files
 id: hardware-files  
 ---  
 
-The **hardware repositories** for Inkplate 5V2 hardware files can be found at the following links:
+The hardware files for Inkplate 5V2 live in the repository below:
 
 <QuickLink 
   title="Soldered Inkplate 5V2 hardware design" 
@@ -15,11 +15,11 @@ The **hardware repositories** for Inkplate 5V2 hardware files can be found at th
 
 ## Repository contents  
 
-The Inkplate 5V2 hardware repository contains everything you need to understand, modify, or manufacture the board. Below is an overview of the available files:
+The Inkplate 5V2 hardware repository holds what you need to understand, modify, or manufacture the board. Here's an overview of the files:
 
 ### CAD files
 
-We use [**KiCad**](https://www.kicad.org/), an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and PCB layout.
+We use [**KiCad**](https://www.kicad.org/), an open-source PCB design tool. You can open and edit the `.kicad_pro` project file, which includes both the schematic and the PCB layout.
 
 The `PANEL` files are used internally for production.
 
@@ -29,7 +29,7 @@ The `PANEL` files are used internally for production.
 
 ### Schematic
 
-The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from KiCad. The schematic is divided into sections based on functionality, making it easy to navigate.
+The `OUTPUTS` folder contains the schematic in `.pdf` format, exported from KiCad. It's split into sections by functionality, so it's easy to navigate.
 
 <CenteredImage src="/img/5v2/schematics.png" alt="Inkplate 5V2 schematic" caption="Inkplate 5V2 schematic 1/6" />
 
@@ -39,29 +39,31 @@ The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported fro
 
 The bill of materials (BOM) is provided in two formats:
 
-- A **standard `.csv` table**, listing all components, part numbers, and values.
-- An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.
+- A standard `.csv` table, listing all components, part numbers, and values.
+- An interactive BOM (`.html`) that highlights each component on the PCB, so parts are easy to locate and reference.
 
-<CenteredImage src="/img/5v2/ibom.png" alt="Inkplate 5V2 interactive BOM" caption="IBOM for 10" />
+<CenteredImage src="/img/5v2/ibom.png" alt="Inkplate 5V2 interactive BOM" caption="IBOM for Inkplate 5V2" />
 
 ---
 
 ### 3D files
 
-A **3D model** of the PCB is available in `.step` format, allowing you to inspect the board design in CAD software.
+A 3D model of the PCB is available in `.step` format, so you can inspect the board design in CAD software.
 
 ---
 
 ### Gerber files
 
-Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
+Gerber files carry the precise instructions for each layer of the board, which is what a PCB manufacturer needs. The repository includes the standard Gerber outputs in a .zip file:
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.
-- **Drill files** (`.drl`) – Provide drilling coordinates for vias and holes.
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.
+| File | What it holds |
+|---|---|
+| Copper layers (`.Cu.gbr`) | The traces and pads on the board. |
+| Solder mask layers (`.Mask.gbr`) | The protective solder mask. |
+| Silkscreen layers (`.Silkscreen.gbr`) | Text and component markings. |
+| Paste layers (`.Paste.gbr`) | Used for stencil fabrication in SMD assembly. |
+| Drill files (`.drl`) | Drilling coordinates for vias and holes. |
+| Board outline (`.Edge_Cuts.gbr`) | The shape of the PCB. |
+| Gerber job file (`.gbrjob`) | A description of the set of Gerber files used for production. |
 
-These files are ready for fabrication and can be used in PCB manufacturing.
+These files are ready to send straight to a PCB manufacturer.

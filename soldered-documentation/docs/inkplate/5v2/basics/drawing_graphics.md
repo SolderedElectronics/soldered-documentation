@@ -4,20 +4,20 @@ title: Inkplate 5V2 – Drawing graphics
 sidebar_label: Drawing graphics
 id: graphics  
 ---  
-Inkplate 5V2 allows you to draw graphics on a **1280 x 720px canvas**.
+Inkplate 5V2 gives you a 1280 x 720px canvas to draw on.
 
-<InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
+<InfoBox>Adafruit GFX is the graphics library included in the Inkplate library for drawing graphics. For more details, see the official repository:<QuickLink title="Adafruit GFX Library" 
   description="The core graphics library for Inkplate library, created by Adafruit."
   url="https://github.com/adafruit/Adafruit-GFX-Library" 
 /></InfoBox>
 
 ---
 
-## Drawing Geometric Shapes
+## Drawing geometric shapes
 
-Below is an example demonstrating the functions used for drawing graphics on the Inkplate 5V2:
+Here's an example using the drawing functions on Inkplate 5V2:
 
-<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/5v2/basics/basic-display-modes/) page for more details.</InfoBox>
+<InfoBox>The `color` parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. See the [display modes](/inkplate/5v2/basics/basic-display-modes/) page for more details.</InfoBox>
 
 ```cpp
 #include "Inkplate.h"
@@ -29,19 +29,19 @@ void setup() {
     // Draw a pixel
     inkplate.drawPixel(100, 50, 0);
     // Draw a line
-    inkplate.drawLine(0, 0, 1023, 757, 1);
+    inkplate.drawLine(0, 0, 1279, 719, 1);
     // Draw a rectangle
     inkplate.drawRect(100, 100, 200, 200, 2);
     // Draw a filled rectangle
     inkplate.fillRect(300, 100, 200, 300, 3);
     // Draw a circle
-    inkplate.drawCircle(512, 100, 75, 4);
+    inkplate.drawCircle(640, 100, 75, 4);
     // Draw a filled circle
-    inkplate.fillCircle(512, 100, 75, 5);
+    inkplate.fillCircle(860, 100, 75, 5);
     // Draw a rounded rectangle
     inkplate.drawRoundRect(310, 300, 400, 300, 10, 4);
     // Draw a filled rounded rectangle
-    inkplate.fillRoundRect(310, 300, 400, 300, 10, 3);
+    inkplate.fillRoundRect(750, 300, 400, 300, 10, 3);
     // Draw a triangle
     inkplate.drawTriangle(300, 500, 700, 500, 512, 200, 2);
     // Draw a filled triangle
@@ -55,12 +55,12 @@ void loop() {
 
 <CenteredImage src="/img/5v2/drawing_graphics.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="750px" />
 
-Below are the detailed references for these functions:
+Here are the references for these functions:
 
 <FunctionDocumentation
   functionName="inkplate.drawPixel()"
   description="Draws a single pixel on the display at the specified coordinates."
-  returnDescription="none"
+  returnType="none"
   parameters={[ 
     { type: 'int', name: 'x', description: 'The x-coordinate of the pixel.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the pixel.' },
@@ -71,7 +71,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.drawLine()"
   description="Draws a straight line between two points on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x0', description: 'The x-coordinate of the starting point.' },
     { type: 'int', name: 'y0', description: 'The y-coordinate of the starting point.' },
@@ -84,7 +84,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.drawRect()"
   description="Draws a rectangle outline on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },
@@ -97,7 +97,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.fillRect()"
   description="Draws a filled rectangle on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },
@@ -110,7 +110,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.drawCircle()"
   description="Draws a circle outline on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x', description: 'The x-coordinate of the circle center.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the circle center.' },
@@ -122,7 +122,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.fillCircle()"
   description="Draws a filled circle on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x', description: 'The x-coordinate of the circle center.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the circle center.' },
@@ -134,7 +134,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.drawRoundRect()"
   description="Draws a rounded rectangle outline on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },
@@ -148,7 +148,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.fillRoundRect()"
   description="Draws a filled rounded rectangle on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },
@@ -162,7 +162,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.drawTriangle()"
   description="Draws a triangle outline on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x0', description: 'The x-coordinate of the first vertex.' },
     { type: 'int', name: 'y0', description: 'The y-coordinate of the first vertex.' },
@@ -177,7 +177,7 @@ Below are the detailed references for these functions:
 <FunctionDocumentation
   functionName="inkplate.fillTriangle()"
   description="Draws a filled triangle on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x0', description: 'The x-coordinate of the first vertex.' },
     { type: 'int', name: 'y0', description: 'The y-coordinate of the first vertex.' },

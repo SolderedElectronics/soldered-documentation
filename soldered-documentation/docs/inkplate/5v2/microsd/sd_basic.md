@@ -6,21 +6,21 @@ id: microsd-basics
 hide_title: true
 ---
 
-<SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
+<SectionTitle title="MicroSD basics" />
 
-The built-in microSD card slot on Inkplate 5V2 can be extremely useful for your project. It can store a large number of high-quality image files for display and also allows reading and writing data between deep sleep cycles. This page contains basic examples to help you quickly get started with using the built-in microSD card slot.
+The built-in microSD card slot on Inkplate 5V2 is handy for a lot of projects. It can hold plenty of image files to display, and it lets you read and write data between deep sleep cycles. Below are some basic examples to get you started.
 
 <CenteredImage src="/img/inkplate10/10_sdcard.jpg" alt="MicroSD card slot on Inkplate 5V2" caption="MicroSD card slot on Inkplate 5V2" width="600px" />
 
-<InfoBox>Inkplate 5V2 uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
-<WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
-<WarningBox>All supported card types are: **SD, SDHC and SDXC**</WarningBox>
+<InfoBox>Inkplate 5V2 uses the [SdFat library](https://github.com/greiman/SdFat)</InfoBox>
+<WarningBox>Supported card formats are FAT16, FAT32 and exFAT.</WarningBox>
+<WarningBox>Supported card types are SD, SDHC and SDXC.</WarningBox>
 
 ---
 
 ## Preparing the microSD card before usage
 
-For best results, use the [**official SD card formatter**](https://www.sdcard.org/downloads/formatter/) to format the card to **FAT32** before use.
+For best results, use the [official SD card formatter](https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/) to format the card to FAT32 before use.
 
 <CenteredImage src="/img/inkplate10/sdcard_formatter.png" alt="Official SD card formatter" caption="The official SD Card formatter" width="400px" />
 
@@ -28,7 +28,7 @@ For best results, use the [**official SD card formatter**](https://www.sdcard.or
 
 ## Initializing
 
-Before the microSD card can be used in code, it must first be initialized. This process powers on the microSD card circuitry and performs all the necessary memory allocations. In this code snippet, the microSD card is initialized and the result of the initialization is checked:
+The microSD card has to be initialized before you can use it in code. This powers on the microSD card circuitry and makes the necessary memory allocations. The snippet below initializes the card and checks the result:
 ```cpp
 #include "Inkplate.h"            // Include Inkplate library in the sketch
 Inkplate inkplate(INKPLATE_1BIT); // Create an Inkplate object and set the library to 1 Bit mode (BW)
@@ -62,7 +62,7 @@ void loop()
 }
 ```
 <FunctionDocumentation
-    functionname="inkplate.sdCardInit()"
+    functionName="inkplate.sdCardInit()"
     description="Initializes SD card through SPI."
     returnDescription="Returns true if the initialization was successful, otherwise returns false."
 />
@@ -165,18 +165,96 @@ void loop()
   ]}
 />
 
-<InfoBox>In the above-mentioned functions, the file pointer acts as a marker indicating where reading continues. Subsequent calls to `file.print()` will continue from where you left off.</InfoBox>
+<InfoBox>In these functions, the file pointer marks where reading continues, so the next read picks up where you left off.</InfoBox>
 
-<InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
+---
+
+## Writing to a file
+
+Writing works the same way, except the file is opened with `FILE_WRITE` instead of `O_RDONLY`. This snippet creates `test.txt` on the card and writes a line of text into it:
+
+```cpp
+#include "Inkplate.h"            // Include Inkplate library in the sketch
+Inkplate display(INKPLATE_1BIT); // Create an Inkplate object and set the library to 1 Bit mode (BW)
+SdFile file;                     // Create an SdFile object used for accessing files on the SD card
+
+char *fileName = "test.txt";
+char *dataToWrite = "Hello! This is the file writing example for Inkplate 5V2.\n";
+
+void setup()
+{
+    display.begin();
+    display.clearDisplay();
+    display.display();
+    display.setTextSize(3);
+
+    // Initialize SD card. Display whether the SD card was initialized properly or not.
+    if (display.sdCardInit())
+    {
+        display.println("SD Card ok!");
+        display.partialUpdate();
+
+        // Open the file for writing. This creates it if it doesn't already exist.
+        if (!file.open(fileName, FILE_WRITE))
+        {
+            display.println("Error while creating the file!");
+            display.partialUpdate();
+            display.sdCardSleep();
+        }
+        else
+        {
+            display.println("Writing in the file...");
+            display.partialUpdate();
+            file.write(dataToWrite); // Write the data into the file
+            display.println("Data has been written successfully!");
+            display.partialUpdate();
+            file.close();          // Always close the file, otherwise the data may never reach the card
+            display.sdCardSleep(); // Put the SD card in sleep mode
+        }
+    }
+    else
+    { // If card initialization was not successful, display an error on screen and put the SD card in sleep mode
+        display.println("SD Card error!");
+        display.partialUpdate();
+        display.sdCardSleep();
+    }
+}
+
+void loop()
+{
+    // Nothing...
+}
+```
+
+<WarningBox>Always call `file.close()` after writing. If you skip it, the data may stay buffered and never get written to the card, and you end up with an empty or truncated file.</WarningBox>
+
+<InfoBox>`FILE_WRITE` is an SdFat shorthand for `O_CREAT | O_WRITE | O_AT_END`, so it creates the file if needed and appends to the end of it.</InfoBox>
+
+<FunctionDocumentation
+    functionName="file.write()"
+    description="Writes data to the file at the current position of the file pointer."
+    returnDescription="Returns the number of bytes written, or -1 if an error occurs."
+    parameters={[ 
+        { type: 'const char *', name: 'str', description: "The null-terminated string to write into the file." }
+    ]}
+/>
+
+<FunctionDocumentation
+    functionName="file.close()"
+    description="Closes the file and flushes any buffered data to the microSD card."
+    returnDescription="Returns true if the file was closed successfully; otherwise, returns false."
+/>
+
+<InfoBox>The same method works for writing a .csv file, which is a convenient way to store a table or a log of events.</InfoBox>
 
 <QuickLink 
-  title="Inkplate5V2_SD_TXT_Read.ino" 
+  title="Inkplate5V2_microSD_TXT_Read.ino" 
   description="This example shows you how to open .txt files and display their content on the Inkplate e-Paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate5V2/Advanced/SD/Inkplate5V2_SD_TXT_Read" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate5V2/Advanced/microSD/Inkplate5V2_microSD_TXT_Read" 
 />
 
 <QuickLink 
-  title="Inkplate5V2_SD_TXT_Write.ino" 
+  title="Inkplate5V2_microSD_TXT_Write.ino" 
   description="This example shows you how to write to a .txt file."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/SD/Inkplate5V2_SD_TXT_Write/Inkplate5V2_SD_TXT_Write.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/microSD/Inkplate5V2_microSD_TXT_Write/Inkplate5V2_microSD_TXT_Write.ino" 
 />

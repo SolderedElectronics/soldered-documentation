@@ -6,14 +6,14 @@ id: wifi-basics
 hide_title: true
 ---
 
-<SectionTitle title="WiFi basics" backgroundImage="/img/wifi.png" />
+<SectionTitle title="WiFi basics" />
 
-On Inkplate 5V2, WiFi is handled by the onboard ESP32 processor. These pages contain tutorials on how to use this processor to implement WiFi in your projects.
+On Inkplate 5V2, WiFi is handled by the onboard ESP32 processor. These pages show you how to use it for WiFi in your own projects.
 
 ---
 
 ## Connecting to WiFi
-These are the basic steps to connecting to WiFi, followed by explanations of the key functions:
+Here are the basic steps for connecting to WiFi, with the key functions explained below:
 ```cpp
 #include "Inkplate.h"
 #include <WiFi.h>
@@ -30,7 +30,7 @@ void setup(){
   while(WiFi.status()!=WL_CONNECTED){
     delay(500);
     inkplate.print('.');
-    inkplate.partialUpdate(true);
+    inkplate.partialUpdate();
     delay(1000);
   }
   inkplate.println("\nSuccessfully connected to WiFi");
@@ -40,25 +40,27 @@ void loop(){}
 ```
 <FunctionDocumentation
     functionName="WiFi.begin()"
-    description="Connects to a WiFi access point using the specified SSID and password. Sends an AT command to establish the connection. Avoid using the following characters in SSID and password: , {, }, \\"
-    returnDescription="Returns true if the command execution was successful, otherwise returns false."
+    description="Starts connecting to a WiFi access point using the specified SSID and password."
+    returnDescription="Returns wl_status_t enum value"
+    returnType="wl_status_t"
     parameters={[
-    { type: "char*", name: "_ssid", description: "Pointer to the SSID (AP name). Must be a valid UTF-8 string." },
-    { type: "char*", name: "_pass", description: "Pointer to the AP password. Maximum length is 63 characters." }
+    { type: "const char*", name: "ssid", description: "Network SSID (the access point name)." },
+    { type: "const char*", name: "passphrase", description: "Network password. Optional, depending on the network's security." }
   ]}
 />
 
 <FunctionDocumentation
   functionName="WiFi.status()"
-  description="Checks the connection status of the ESP32 WiFi module. Returns whether the module is connected to an access point."
-  returnDescription="Returns true if the ESP32 is connected to the AP, otherwise returns false."
+  description="Returns the current connection status of the ESP32 WiFi radio. Compare it against WL_CONNECTED to check whether the board is online."
+  returnDescription="Returns wl_status_t enum value"
+  returnType="wl_status_t"
 />
 
 ---
 
 ## Full example
 
-To see more details, check out our full examples:
+For more details, have a look at the full examples:
 <QuickLink 
   title="Inkplate 5V2 WiFi examples" 
   description="Inkplate 5V2 WiFi examples from the Inkplate library"

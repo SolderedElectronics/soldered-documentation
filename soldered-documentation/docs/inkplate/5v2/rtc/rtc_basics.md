@@ -8,7 +8,7 @@ hide_title: true
 
 ## Setting time and date
 
-Setting the current time and date is the most basic RTC usage. Once you set the time, it will continue ticking, allowing you to retrieve the current time accurately. Of course, the RTC isn't perfect, so during one day it may drift by a couple of seconds, either early or late. If you're using the RTC, **it's recommended to set it approximately once per day**.
+Setting the current time and date is the most basic RTC usage. Once you set the time, the RTC keeps ticking and you can read the current time back whenever you need it. It isn't perfect, though: over a day it can drift by a couple of seconds, early or late. If you're using the RTC, set it about once per day.
 
 ```cpp
 #include "Inkplate.h"            // Include Inkplate library to the sketch
@@ -64,7 +64,7 @@ void loop()
         }
         else
         {
-            inkplate.partialUpdate(false, true); // Do partial update and keep e-papr power supply on
+            inkplate.partialUpdate(false, true); // Do partial update and keep e-paper power supply on
             n++;                                // Keep track on how many times screen has been partially updated
         }
 
@@ -105,7 +105,7 @@ void print2Digits(uint8_t _d)
 
 <FunctionDocumentation
   functionName="inkplate.rtc.setTime()"
-  description="Method for setting time."
+  description="Sets the time."
   returnType="void"
   parameters={[ 
     { type: 'uint8_t', name: 'rtcHour', description: "RTC Hour value." },
@@ -116,18 +116,18 @@ void print2Digits(uint8_t _d)
 
 <FunctionDocumentation
   functionName="inkplate.rtc.setDate()"
-  description="Method for setting date."
-  returnDescription="void"
+  description="Sets the date."
+  returnType="void"
   parameters={[ 
     { type: 'uint8_t', name: 'rtcWeekday', description: "Weekday value." },
     { type: 'uint8_t', name: 'rtcDay', description: "Day of the month." },
-    { type: 'uint16_t', name: 'rtcMonth', description: "Month value." },
-    { type: 'uint8_t', name: 'yr', description: "Year value." }
+    { type: 'uint8_t', name: 'rtcMonth', description: "Month value." },
+    { type: 'uint16_t', name: 'yr', description: "Year value." }
   ]}
 />
 
 <FunctionDocumentation
   functionName="inkplate.rtc.getRtcData()"
   description="Reads time and date from the RTC and stores them in their corresponding variables."
-  returnDescription="void"
+  returnType="void"
 />

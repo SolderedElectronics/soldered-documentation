@@ -5,17 +5,17 @@ sidebar_label: Draw Image from Web
 id: wifi-image-from-web
 ---
 
-Drawing an image from the web on Inkplate 5V2 is simple using the `draw` function, which supports multiple image formats.
+You can draw an image from the web on Inkplate 5V2 with the `draw` function, which supports several image formats.
 
 <InfoBox>Supported formats: JPG, BMP, and PNG.</InfoBox>
 
 <WarningBox>JPG files **without** progressive encoding are supported.</WarningBox>
 
-<InfoBox>If you experience issues displaying an image, try re-saving it with an image editing program. The issue is usually related to the image format.</InfoBox>
+<InfoBox>If an image won't display, try re-saving it in an image editor. It's usually a format issue.</InfoBox>
 
 ---
 
-## Drawing an Image from a URL
+## Drawing an image from a URL
 
 Let's draw this image on Inkplate 5V2:
 <CenteredImage src="/img/5v2/sample_image.jpg" alt="Example Image" caption="Example image by @alexisg on Wallpaper Safari" />
@@ -23,7 +23,7 @@ Let's draw this image on Inkplate 5V2:
 ```cpp
 #include "Inkplate.h"            // Include the Inkplate library in the sketch
 #include "WiFi.h"                // Include the library for WiFi
-Inkplate display(INKPLATE_3BIT); // Create an object for the Inkplate library and set it to 1-bit mode (BW)
+Inkplate display(INKPLATE_3BIT); // Create an object for the Inkplate library and set it to 3-bit mode (grayscale)
 
 const char ssid[] = "";    // Your WiFi SSID
 const char *password = ""; // Your WiFi password
@@ -48,7 +48,7 @@ void setup()
     }
     display.println("\nWiFi OK! Downloading...");
     display.display();
-    if (!display.image.draw("https://i.imgur.com/ssqBZP9.jpeg", 0, 0, false, false))
+    if (!display.image.draw("https://varipass.org/destination.jpg", 0, 0, true, false))
     {
         // If something fails (for example, a wrong filename or incorrect bitmap format), write an error message on the screen.
         // REMEMBER! You can only use Windows Bitmap files with a color depth of 1, 4, 8, or 24 bits with no compression!
@@ -68,7 +68,7 @@ void loop()
 
 <FunctionDocumentation
     functionName="display.image.draw()"
-    description="Function draws an image from a char path."
+    description="Draws an image from a char path."
     returnDescription="Returns true if the image was successfully drawn, otherwise false."
     parameters={[ 
     { type: "const char*", name: "path", description: "Path and filename of the image. Can be a URL (for web images) or a file path (on the microSD card)." },
@@ -81,10 +81,10 @@ void loop()
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
-  title="Inkplate5V2_Image_From_Web.ino" 
+  title="Inkplate5V2_Show_Pictures_From_Web.ino" 
   description="Connect to WiFi and draw an image from the web."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/WEB_WiFi/Inkplate5V2_Show_Pictures_From_Web/Inkplate5V2_Show_Pictures_From_Web.ino" 
 />

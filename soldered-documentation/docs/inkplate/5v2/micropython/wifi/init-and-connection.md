@@ -5,13 +5,13 @@ sidebar_label: Initialization and connection
 id: init-and-connection
 ---
 
-Inkplate 5v2 can use its built-in ESP32 WiFi capabilities to connect to the internet. This page demonstrates a simple way to connect to a WiFi network.
+Inkplate 5v2 connects to the internet over WiFi using its built-in ESP32.
 
 ## Connecting to WiFi
 
-Below is a simple example demonstrating how to connect to a WiFi network.
+The example below connects to a WiFi network and prints the result on the display.
 
-<InfoBox>You only need to enter your **SSID** and **password** in the code example.</InfoBox>
+<InfoBox>You only need to enter your SSID and password in the code example.</InfoBox>
 
 ```python
 import network
@@ -41,8 +41,8 @@ def connect_wifi():
 
 inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.setTextSize(2)
-inkplate.setCursor(100,100)
+inkplate.set_text_size(2)
+inkplate.set_cursor(100,100)
 
 if connect_wifi():
     inkplate.print("Wifi connected!")
