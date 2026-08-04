@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/hardware/open-source
-title: Inkplate 4TEMPERA – Inkplate is open source
+title: Inkplate 4TEMPERA - Inkplate is open source
 sidebar_label: Inkplate is open source
 id: 4tempera-hardware-open-source
 hide_title: true
@@ -14,9 +14,9 @@ Inkplate is a **crowdfunded, open-source project**, and its software libraries a
 
 As a company, **Soldered** designs and manufactures a wide range of electronic products, supporting makers in bringing their ideas to life. Our products are developed **in-house** in Osijek, Croatia, with a strong commitment to open-source principles. We believe that sharing knowledge drives innovation, and we actively engage with makers of all experience levels.
 
-<InfoBox>Need help? Our team offers **free technical support**, so if you have any issues with your Inkplate or electronics project, don’t hesitate to [**reach out**](https://soldered.com/contact/).</InfoBox>
+<InfoBox>Need help? Our team offers **free technical support**, so if you have any issues with your Inkplate or electronics project, [**reach out**](https://soldered.com/contact/).</InfoBox>
 
-All designs in the Inkplate 4TEMPERA repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. For details, please refer to the [**LICENSE**](https://github.com/SolderedElectronics/Soldered-Inkplate-4TEMPERA-hardware-design/blob/main/LICENSE.md) files in our repositories.
+All designs in the Inkplate 4TEMPERA repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. For details, please refer to the [**LICENSE**](https://github.com/SolderedElectronics/Soldered-Inkplate-4-TEMPERA-with-glass-panel-hardware-design/blob/main/LICENSE.md) files in our repositories.
 
 ---
 

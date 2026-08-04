@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/hardware/battery
-title: Inkplate 4TEMPERA – Battery
+title: Inkplate 4TEMPERA - Battery
 sidebar_label: Battery
 id: 4tempera-hardware-battery
 hide_title: true
@@ -15,13 +15,13 @@ hide_title: true
 
 Inkplate 4TEMPERA includes a **2-pin 2mm JST connector**, allowing you to connect a **3.7V Li-ion battery**. The onboard charging IC, **MCP73831**, **automatically charges the battery** when the Inkplate is plugged into **USB-C** and switches to battery power when unplugged. A **charging indicator LED** provides real-time charging status.  
 
-<CenteredImage src="/img/inkplate10/battery_jst_connector.png" alt="Inkplate 4TEMPERA battery JST connector" caption="JST battery connector" width="500px"/>  
+<CenteredImage src="/img/inkplate_4_tempera/jst_connector.png" alt="Inkplate 4TEMPERA battery JST connector" caption="JST battery connector" width="500px"/>  
 
-<CenteredImage src="/img/inkplate10/CHRG_LED.jpg" alt="Inkplate 4TEMPERA Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
+<CenteredImage src="/img/inkplate_4_tempera/chrg.png" alt="Inkplate 4TEMPERA Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
 
 ---
 
-<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**.</InfoBox>  
+<InfoBox>The **correct battery polarity** is essential! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**.</InfoBox>  
 
 <CenteredImage src="/img/inkplate10/battery_polarity.png" alt="Battery polarity on Inkplate 4TEMPERA" caption="Battery polarity on Inkplate 4TEMPERA" width="500px"/>  
 
@@ -31,11 +31,11 @@ Inkplate 4TEMPERA includes a **2-pin 2mm JST connector**, allowing you to connec
 
 ## Compatible batteries
 
-Inkplate 4TEMPERA is compatible with **3.7V Li-ion batteries with protection**. If you purchased the **Inkplate 4TEMPERA enclosure and battery kit**, it includes a **[3000mAh 3.7V Li-ion battery](https://soldered.com/product/li-ion-battery-3000mah-3-7v/)** with a built-in protection circuit.  
+Inkplate 4TEMPERA is compatible with **3.7V Li-ion batteries with protection**. The built-in battery is a **1200mAh 3.7V Li-ion battery** with a protection circuit already installed, connected via the onboard JST connector.  
 
 <CenteredImage src="/img/inkplate_6_motion/li-ion-w-proteciton.webp" alt="3.7V li-ion battery with protection" caption="3.7V li-ion battery with protection" width="500px"/>  
 
-Any of **[Soldered’s 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
+Any of **[Soldered's 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
 
 <InfoBox>Due to shipping restrictions, **we cannot ship Li-ion batteries outside the EU**. If you're in the US, we recommend checking out [Adafruit's Li-ion battery stock](https://www.adafruit.com/category/574).</InfoBox>  
 

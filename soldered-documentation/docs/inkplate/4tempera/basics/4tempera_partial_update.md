@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/basics/partial-update  
-title: Inkplate 4TEMPERA – Partial Update
+title: Inkplate 4TEMPERA - Partial Update
 sidebar_label: Partial Update
 id: 4tempera-partial-update  
 hide_title: true  
@@ -12,7 +12,7 @@ Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a fas
 
 ---
 
-## Partial Update
+## Partial update
 
 Partial updates in black-and-white (1-bit) mode offer the fastest e-Paper update available on Inkplate.
 
@@ -29,13 +29,13 @@ void setup(){
   inkplate.setFullUpdateThreshold(40);
 }
 void loop(){
-  int x = -500; // Start from the left of the screen border
-  while (x < 1024)
+  int x = -300; // Start from the left of the screen border
+  while (x < 700)
   {
     inkplate.clearDisplay();
     inkplate.setCursor(x, 300); // Set cursor position
     inkplate.print("Partial updates!"); // Print scrolling text
-    inkplate.partialUpdate(true); // Perform a partial update
+    inkplate.partialUpdate(false, true); // Perform a partial update, leave power supply on
     x += 15; // Move 15 pixels to the right
   }
   inkplate.display(); // Perform a full update
@@ -48,7 +48,8 @@ void loop(){
   description="Performs a partial (fast) update on Inkplate, refreshing only changed pixels to prevent full-screen flickering."
   returnDescription="None"
   parameters={[ 
-    { type: 'uint8_t', name: '_leaveOn', description: "Optional. If set to 1, the e-Paper power supply remains on after the update. This speeds up consecutive partial updates but requires a full refresh afterward to prevent prolonged power draw." }
+    { type: 'bool', name: '_forced', description: "Optional. Can force a partial update while in deep sleep (for advanced use)." },
+    { type: 'bool', name: 'leaveOn', description: "Optional. If set to true, the e-Paper power supply remains on after the update. This speeds up consecutive partial updates but requires a full refresh afterward to prevent prolonged power draw." }
   ]}
 />
 <FunctionDocumentation
@@ -62,7 +63,7 @@ void loop(){
 
 ---
 
-## Full Examples
+## Full examples
 
 <QuickLink 
   title="Inkplate4TEMPERA_Partial_Update.ino" 

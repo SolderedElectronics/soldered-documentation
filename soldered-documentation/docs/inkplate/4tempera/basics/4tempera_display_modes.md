@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/basics/basic-display-modes
-title: Inkplate 4TEMPERA – Display modes
+title: Inkplate 4TEMPERA - Display modes
 sidebar_label: Display modes
 id: 4tempera-display-modes
 hide_title: true
@@ -42,7 +42,7 @@ void loop() {
 
 3-bit or grayscale mode allows drawing in eight different levels of brightness, not just black and white. See below for an approximate visualization of the black levels corresponding to their numerical values in the code:
 
-<CenteredImage src="/img/inkplate_6_flick/grayscale.png" alt="3bit grayscale" caption="Black levels in 3-bit mode" width="450px" />
+<CenteredImage src="/img/inkplate_4_tempera/grayscale.png" alt="3bit grayscale" caption="Black levels in 3-bit mode" width="450px" />
 
 ```cpp
 #include "Inkplate.h"
@@ -68,9 +68,9 @@ void loop() {
 ## Full example
 
 <QuickLink 
-  title="Inkplate4TEMPERA_Black_And_White.ino" 
+  title="Inkplate4TEMPERA_Black_White.ino" 
   description="Full example using black and white display mode on Inkplate 4TEMPERA." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Black_And_White" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Black_White" 
 />
 
 <QuickLink 

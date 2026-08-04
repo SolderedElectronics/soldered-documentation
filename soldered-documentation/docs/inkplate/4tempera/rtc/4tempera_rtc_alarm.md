@@ -1,12 +1,12 @@
 ---  
 slug: /inkplate/4tempera/rtc/alarm  
-title: Inkplate 4TEMPERA – RTC alarm
+title: Inkplate 4TEMPERA - RTC alarm
 sidebar_label: RTC alarm
 id: 4tempera-rtc-alarm  
 hide_title: true
 ---
 
-<SectionTitle title="RTC Alarm" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="RTC alarm" backgroundImage="/img/inkplate_4_tempera/tempera_front.png" />
 
 The onboard RTC supports creating an alarm that triggers at a specific time, allowing the firmware to detect and respond accordingly. Alarms can be configured to trigger once per day, per hour, or per minute.
 
@@ -147,7 +147,7 @@ void print2Digits(uint8_t _d)
 
 ---
 
-## Interrupt Alarm
+## Interrupt alarm
 The RTC alarm can also generate an **interrupt** instead of requiring polling. The alarm event can wake up the MCU from sleep or trigger an action immediately. To use this, you will need to globally declare a `volatile bool` (or an appropriate type) to use as the alarm flag and create a function to modify this flag:
 
 ```cpp
@@ -248,7 +248,7 @@ void print2Digits(uint8_t _d)
 
 ## Full examples
 
-For full working code examples that provide a great overview, a real-world use scenario, and **code comments**, see the links below:
+For full working examples with real-world use scenarios and code comments, see the links below:
 
 <QuickLink 
   title="Inkplate4TEMPERA_RTC_Alarm.ino" 

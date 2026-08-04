@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/4tempera/microsd/sd-basics
-title: Inkplate 4TEMPERA – MicroSD basics
+title: Inkplate 4TEMPERA - MicroSD basics
 sidebar_label: MicroSD basics
 id: 4tempera-microsd-basics
 hide_title: true
@@ -10,7 +10,7 @@ hide_title: true
 
 The built-in microSD card slot on Inkplate 4TEMPERA can be extremely useful for your project. It can store a vast number of high-quality image files to be displayed, and it can also read and write data during deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
 
-<CenteredImage src="/img/inkplate10/10_sdcard.jpg" alt="MicroSD card slot on Inkplate 4TEMPERA" caption="MicroSD card slot on Inkplate 4TEMPERA" width="600px" />
+<CenteredImage src="/img/inkplate_4_tempera/microsd.png" alt="MicroSD card slot on Inkplate 4TEMPERA" caption="MicroSD card slot on Inkplate 4TEMPERA" width="600px" />
 
 <InfoBox>Inkplate 4TEMPERA uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
@@ -20,7 +20,7 @@ The built-in microSD card slot on Inkplate 4TEMPERA can be extremely useful for 
 
 ## Preparing the microSD card before usage
 
-For best results, use the [**official SD card formatter**](https://www.sdcard.org/downloads/formatter/) to format the card to **FAT32** before use.
+For best results, use the [**official SD card formatter**](https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/) to format the card to **FAT32** before use.
 
 <CenteredImage src="/img/inkplate10/sdcard_formatter.png" alt="Official SD card formatter" caption="The official SD Card formatter" width="400px" />
 
@@ -63,7 +63,7 @@ void loop()
 }
 ```
 <FunctionDocumentation
-    functionname="inkplate.sdCardInit()"
+    functionName="inkplate.sdCardInit()"
     description="Initializes the SD card through SPI."
     returnDescription="Returns true if the initialization was successful, otherwise returns false."
 />
@@ -82,7 +82,7 @@ Place a sample `text.txt` file on the microSD card and add some content to it. T
    https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
 
    To work with the SD card on Inkplate, you will need to add one extra library.
-   Download and install it from here: https://github.com/e-radionicacom/Inkplate-6-SDFat-Arduino-Library
+   Download and install it from here: https://github.com/greiman/SdFat
 
    You can open your own .txt file, but to ensure this example works properly, the file should
    contain no more than 200 characters and must be named text.txt.
@@ -90,7 +90,7 @@ Place a sample `text.txt` file on the microSD card and add some content to it. T
    This example will show you how to open .txt files and display the content of that file on the Inkplate e-Paper display.
 
    Want to learn more about Inkplate? Visit www.inkplate.io
-   Looking to get support? Write on our forums: https://forum.soldered.com/
+   Looking to get support? Ask on the Soldered community: https://community.soldered.com/
    15 March 2024 by Soldered
 */
 
@@ -110,7 +110,7 @@ void setup()
     display.clearDisplay(); // Clear frame buffer of display
     display.display();      // Put clear image on display
     display.setRotation(1);
-    display.setFrontlight(15);
+    display.frontlight.setState(15);
     // Initialize SD card and display whether it was initialized properly.
     if (display.sdCardInit())
     {
@@ -200,13 +200,13 @@ void loop()
 <InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
 
 <QuickLink 
-  title="Inkplate4TEMPERA_SD_TXT_Read.ino" 
+  title="Inkplate4TEMPERA_microSD_TXT_Read.ino" 
   description="This example shows you how to open .txt files and display the content of that file on the Inkplate e-Paper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_TXT_Read" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Advanced/microSD/Inkplate4TEMPERA_microSD_TXT_Read" 
 />
 
 <QuickLink 
-  title="Inkplate4TEMPERA_SD_TXT_Write.ino" 
+  title="Inkplate4TEMPERA_microSD_TXT_Write.ino" 
   description="This example shows you how to write to a .txt file."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Advanced/SD/Inkplate4TEMPERA_SD_TXT_Write/Inkplate4TEMPERA_SD_TXT_Write.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Advanced/microSD/Inkplate4TEMPERA_microSD_TXT_Write/Inkplate4TEMPERA_microSD_TXT_Write.ino" 
 />
