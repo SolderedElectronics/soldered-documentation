@@ -6,7 +6,7 @@ id: deep-sleep
 hide_title: true  
 ---
 
-<SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Deep sleep" />
 
 Using deep sleep on Inkplate 6 is key to writing sketches that maximize battery efficiency. Since e-Paper does not require any power to retain the displayed image, Inkplate 6 can use little to no current while in deep sleep mode, allowing a sketch to run for months on battery.
 
@@ -18,13 +18,16 @@ Using deep sleep on Inkplate 6 is key to writing sketches that maximize battery 
 Check how deep sleep works with the example below:
 
 ```cpp
-#define uS_TO_S_FACTOR 1000000 // Conversion factor for micro seconds to seconds
-#define TIME_TO_SLEEP  20 // How long ESP32 will be in deep sleep (in seconds)
-void setup(){
+#define uS_TO_S_FACTOR 1000000ULL // Conversion factor for micro seconds to seconds
+#define TIME_TO_SLEEP  20      // How long ESP32 will be in deep sleep (in seconds)
+
+void setup()
+{
     // your code
     ///...
-    esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR); // Activate wake-up timer – wake up after 20s here
-    esp_deep_sleep_start(); // Put ESP32 into deep sleep. Program stops here.
+    rtc_gpio_isolate(GPIO_NUM_12); // Isolate/disable GPIO12 on ESP32 (only to reduce power consumption in sleep)
+    esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR); // Activate wake-up timer -- wake up after 20s here
+    esp_deep_sleep_start();                                        // Put ESP32 into deep sleep. Program stops here.
 }
 ```
 
@@ -41,7 +44,7 @@ void setup(){
 <FunctionDocumentation
   functionName="esp_deep_sleep_start()"
   description="This function enters deep sleep with the configured wakeup options."
-  returnType="None"
+  returnType="none"
 />
 
 ---
@@ -54,7 +57,7 @@ To wake the device by pressing the `Wake` button, use the ESP32 function `esp_sl
 // Go to sleep for TIME_TO_SLEEP seconds
 esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
 
-// Enable wakeup from deep sleep on GPIO 36 (wake button)
+// Enable wakeup from deep sleep on gpio 36 (wake button)
 esp_sleep_enable_ext0_wakeup(GPIO_NUM_36, LOW);
 
 // Go to sleep

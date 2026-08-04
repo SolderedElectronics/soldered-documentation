@@ -20,7 +20,7 @@ import os
 
 inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.initSDCard(fastBoot=True)
+inkplate.init_sd_card(fast_boot=True)
 
 #List files on the SD card
 print("FIles on SD:",os.listdir("sd"))

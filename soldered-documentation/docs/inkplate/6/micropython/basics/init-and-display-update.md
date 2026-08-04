@@ -19,7 +19,7 @@ inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
 
 # Clear the display buffer
-inkplate.clearDisplay()
+inkplate.clear_display()
 
 # Draw what is currently stored in frame buffer, needs to be called to update the display
 inkplate.display()
@@ -39,7 +39,7 @@ inkplate.display()
 | **VALUE** 	| **ENUM** 	|
 |---	|---	|
 | Black-White mode 	| `INKPLATE_1BIT`	|
-| Grayscale 	| `INKPLATE_2BIT` 	|
+| Grayscale (8 shades, 0-7) 	| `INKPLATE_2BIT` 	|
 </InfoBox>
 
 <FunctionDocumentation
@@ -48,7 +48,7 @@ inkplate.display()
 />
 
 <FunctionDocumentation
-    functionName="inkplate.clearDisplay()"
+    functionName="inkplate.clear_display()"
     description="Clears the internal frame buffer (does not change the panel until you update)."
 
 />

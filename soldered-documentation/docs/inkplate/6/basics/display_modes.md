@@ -15,17 +15,17 @@ As mentioned on the previous page, Inkplate 6 has two different display modes: b
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate display(INKPLATE_1BIT);
 void setup() {
-  inkplate.begin();
+  display.begin();
   // Clear the display
-  inkplate.clearDisplay();
-  inkplate.display();
+  display.clearDisplay();
+  display.display();
   // Draw a black pixel at x=100, y=100
-  inkplate.drawPixel(100,100,BLACK);
+  display.drawPixel(100,100,BLACK);
   // Draw a white pixel at x=200, y=200
-  inkplate.drawPixel(200,200,WHITE);
-  inkplate.display(); // Show on the display
+  display.drawPixel(200,200,WHITE);
+  display.display(); // Show on the display
 }
 void loop() {
 }
@@ -45,21 +45,21 @@ Let's draw a couple of pixels with different brightness levels:
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate display(INKPLATE_3BIT);
 void setup() {
-  inkplate.begin();
+  display.begin();
   // Clear the display
-  inkplate.clearDisplay();
-  inkplate.display();
+  display.clearDisplay();
+  display.display();
   // Draw a pixel with brightness level 0 at x=100, y=100
-  inkplate.drawPixel(100,100,0);
+  display.drawPixel(100,100,0);
   // Draw a pixel with brightness level 7 at x=200, y=200
-  inkplate.drawPixel(200,200,7);
+  display.drawPixel(200,200,7);
   // Draw a pixel with brightness level 3 at x=200, y=250
-  inkplate.drawPixel(200,250,3);
+  display.drawPixel(200,250,3);
   // Draw a pixel with brightness level 2 at x=250, y=200
-  inkplate.drawPixel(250,200,2);
-  inkplate.display(); // Show on the display
+  display.drawPixel(250,200,2);
+  display.display(); // Show on the display
 }
 void loop() {
 }

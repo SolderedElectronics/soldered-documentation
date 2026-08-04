@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />
 
-Here, we've gathered the most frequently asked questions along with detailed answers to help you get the most out of your device. We know that working with maker hardware and software can sometimes be challenging, so we created this resource to make things easier. Browse through the questions below—you might find the solution you're looking for.
+These are the questions we get asked most often about Inkplate 6, with answers. Have a look through before writing in. There is a good chance yours is already here.
 
 <ExpandableSection title="I can't upload code to Inkplate 6">
 If you're having trouble uploading code, try the following troubleshooting steps:
@@ -18,7 +18,7 @@ If you're having trouble uploading code, try the following troubleshooting steps
 - Reconnect via USB.
 
 #### Make sure that the device is turned ON
-This is a crucial step that is often forgotten. Make sure that the **ON** LED is turned on.
+Easy one to miss. Check that the blue **ON** LED is lit.
 
 #### Verify Arduino IDE version
 Inkplate 6 requires Arduino IDE 2.0+ for proper board and library support.  
@@ -29,7 +29,7 @@ If none of these steps resolve the issue, contact our support team [**here**](ht
 </ExpandableSection>
 
 <ExpandableSection title="Can I use partial update all the time on Inkplate 6?">
-To preserve display quality and extend the lifespan of the panel, it's recommended to perform a full update (`inkplate.display()`) after a certain number of partial updates.
+To preserve display quality and extend the lifespan of the panel, it's recommended to perform a full update (`display.display()`) after a certain number of partial updates.
 </ExpandableSection>
 
 <ExpandableSection title="My display won't refresh, what am I doing wrong?">
@@ -56,9 +56,9 @@ Try uploading these tested examples:
 />
 
 <QuickLink 
-  title="Inkplate6_Full_Screen_Colors.ino" 
-  description="Example of showing all of the colors of the Inkplate 6." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6/Basic/Inkplate6_Full_Screen_Colors/Inkplate6_Full_Screen_Colors.ino" 
+  title="Inkplate6_Black_And_White.ino" 
+  description="Example of drawing in black and white mode on the Inkplate 6." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6/Basic/Inkplate6_Black_And_White/Inkplate6_Black_And_White.ino" 
 />
 
 #### 3. Check your power source
@@ -79,32 +79,49 @@ If none of these steps resolve the issue, **contact our support team** [**here**
 If you notice **artifacts, streaks, or ghosting** on your Inkplate 6 display, follow these steps to clean the screen and check for potential connection issues:
 
 #### 1. Run a display cleaning cycle
-Try running the following sketch, which performs **30** full refresh cycles to remove any persistent artifacts:
+The library has a dedicated `burnInClean()` routine for this. It drives the panel's cleaning waveform directly, which shifts stuck particles better than alternating black and white full refreshes:
 
 ```cpp
-#include <Inkplate.h>
-Inkplate inkplate;
-int cleanTimes = 30;
+#include "Inkplate.h"             // Include Inkplate library to the sketch
+Inkplate display(INKPLATE_1BIT); // Create object on Inkplate library and set library to work in monochorme mode
+
+// Nubmer of clear cycles.
+#define CLEAR_CYCLES 20
+
+// Delay between clear cycles (in milliseconds)
+// NOTE: cycles delay should not be smaller than 5 seconds
+#define CYCLES_DELAY 5000
 
 void setup()
 {
-    inkplate.begin();
-    for(int i = 0; i < cleanTimes; i++)
-    {
-        inkplate.clearDisplay();
-        inkplate.display();
-        delay(500);
-        inkplate.fillRect(0, 0, 1024, 758, BLACK);
-        inkplate.display();
-        delay(500);
-    }
+  display.begin();        // Init library (you should call this function ONLY ONCE)
+  display.clearDisplay(); // Clear any data that may have been in (software) frame buffer.
+
+  int cycles = CLEAR_CYCLES;
+
+  // Clean the screen by running the burn in function which starts the cleaning sequence
+  display.burnInClean(cycles, CYCLES_DELAY);
+
+  // Print text when clearing is done.
+  display.setTextSize(4);
+  display.setCursor(100, 100);
+  display.print("Clearing done.");
+  display.display();
 }
 
 void loop()
 {
-    // Do nothing
+  // Empty...
 }
 ```
+
+<WarningBox>Keep `CYCLES_DELAY` at 5000 ms or more. Running the cycles back to back does not give the panel time to settle between them.</WarningBox>
+
+<QuickLink 
+  title="Inkplate6_Burn_In_Clean.ino" 
+  description="The full cleaning example from the Inkplate library." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6/Diagnostics/Inkplate6_Burn_In_Clean/Inkplate6_Burn_In_Clean.ino" 
+/>
 
 #### 2. Check the e-paper flat cable connector
 If artifacts persist after cleaning or appear as long vertical lines or streaks, it may indicate a loose, improperly connected, or possibly **damaged** flat cable.
@@ -118,7 +135,7 @@ If none of these steps resolve the issue, **contact our support team** [**here**
 </ExpandableSection>
 
 <ExpandableSection title="How to connect a battery to Inkplate?">
-All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-ion battery. Inkplate 6 features an onboard MCP73831 charging IC, which automatically charges the battery when connected via USB and seamlessly switches to battery power when unplugged.
+All Inkplate models have a 2-pin 2.0mm JST connector for a 3.7V Li-ion battery. Inkplate 6 has an onboard MCP73831 charger, so the battery charges whenever USB is connected, and the board switches over to battery power on its own when you unplug it.
 
 <CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 6 battery JST connector" caption="JST battery connector" width="500px"/>
 
@@ -132,7 +149,9 @@ Additionally, this documentation contains detailed hardware design insights on t
 </ExpandableSection>
 
 <ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 6?">
-We are currently working on making 3D enclosure files available in the [**Inkplate 6 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-hardware-design). Stay tuned for updates!
+The printable enclosure files are in the [**Inkplate 6 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-hardware-design), under `OUTPUTS/V1.2.1/3D printable files`. You will find `.stl` models for the top, the bottom and the case, along with a description file listing the recommended print settings.
+
+A `.step` model of the PCB itself is in the same `OUTPUTS/V1.2.1` folder if you would rather design your own enclosure around the board.
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 6 as an e-reader/monitor?">
@@ -144,9 +163,18 @@ However, if you're looking for a true e-ink monitor experience, Inkplate 6 is no
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 6 with ESPHome/Home Assistant?">
-At this time, Inkplate 6 is not officially supported by ESPHome.
+Yes. ESPHome ships an Inkplate display platform that covers Inkplate 6. Set the `model` key to `inkplate_6_v2` for current boards, or `inkplate_6` for the original revision:
 
-There is currently no ESPHome display component for this model, but we are actively working on expanding ESPHome compatibility for all Inkplate devices. Stay tuned for future updates!
+```yaml
+display:
+  - platform: inkplate6
+    model: inkplate_6_v2
+    greyscale: false
+    partial_updating: false
+    update_interval: 60s
+```
+
+See the [**ESPHome Inkplate documentation**](https://esphome.io/components/display/inkplate6.html) for the full list of configuration options and the GPIO pin assignments the platform expects.
 </ExpandableSection>
 
 <InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>

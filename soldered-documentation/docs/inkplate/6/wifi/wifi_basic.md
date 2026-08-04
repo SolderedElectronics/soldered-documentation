@@ -6,7 +6,7 @@ id: wifi-basics
 hide_title: true
 ---
 
-<SectionTitle title="WiFi basics" backgroundImage="/img/wifi.png" />
+<SectionTitle title="WiFi basics" />
 
 On Inkplate 6, WiFi is handled by the onboard ESP32 processor. These pages contain tutorials on how to use this processor to implement WiFi in your projects.
 
@@ -19,39 +19,41 @@ These are the basic steps to connecting to WiFi, followed by explanations of the
 #include <WiFi.h>
 const char* ssid="yourssid";
 const char* pass="yourpassword";
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate display(INKPLATE_1BIT);
 void setup(){
-  inkplate.begin();
-  inkplate.clearDisplay();
-  inkplate.display();
+  display.begin();
+  display.clearDisplay();
+  display.display();
   Serial.begin(115200);
   WiFi.begin(ssid, pass);
-  inkplate.print("Connecting to WiFi...");
+  display.print("Connecting to WiFi...");
   while(WiFi.status()!=WL_CONNECTED){
     delay(500);
-    inkplate.print('.');
-    inkplate.partialUpdate(true);
+    display.print('.');
+    display.partialUpdate(true);
     delay(1000);
   }
-  inkplate.println("\nSuccessfully connected to WiFi");
-  inkplate.display();
+  display.println("\nSuccessfully connected to WiFi");
+  display.display();
 }
 void loop(){}
 ```
 <FunctionDocumentation
     functionName="WiFi.begin()"
-    description="Connects to a WiFi access point using the specified SSID and password. Sends an AT command to establish the connection. Avoid using the following characters in SSID and password: , {, }, \\"
-    returnDescription="Returns true if the command execution was successful, otherwise returns false."
+    description="Starts connecting to a WiFi access point using the specified SSID and password. This is the standard ESP32 Arduino WiFi function, so the connection runs on the same ESP32 that runs your sketch."
+    returnType="wl_status_t"
+    returnDescription="The connection status at the moment the call returns. Poll WiFi.status() until it reports WL_CONNECTED."
     parameters={[
-    { type: "char*", name: "_ssid", description: "Pointer to the SSID (AP name). Must be a valid UTF-8 string." },
-    { type: "char*", name: "_pass", description: "Pointer to the AP password. Maximum length is 63 characters." }
+    { type: "const char*", name: "ssid", description: "The SSID (AP name) to connect to." },
+    { type: "const char*", name: "passphrase", description: "The AP password. Optional, depending on the network's security. Maximum length is 63 characters." }
   ]}
 />
 
 <FunctionDocumentation
   functionName="WiFi.status()"
-  description="Checks the connection status of the ESP32 WiFi module. Returns whether the module is connected to an access point."
-  returnDescription="Returns true if the ESP32 is connected to the AP, otherwise returns false."
+  description="Reports the current state of the ESP32 WiFi connection. Compare the result against WL_CONNECTED to check whether the board has joined the access point."
+  returnType="wl_status_t"
+  returnDescription="A status constant such as WL_IDLE_STATUS, WL_CONNECTED, WL_CONNECT_FAILED or WL_DISCONNECTED."
 />
 
 ---

@@ -15,7 +15,7 @@ Inkplate 6 includes a **2-pin, 2mm JST connector** that allows you to connect a 
 
 ---  
 
-<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**.</InfoBox>  
+<InfoBox>Get the **battery polarity** right. Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**.</InfoBox>  
 
 <CenteredImage src="/img/inkplate10/battery_polarity.png" alt="Battery polarity on Inkplate 6" caption="Battery polarity on Inkplate 6" width="500px"/>  
 
@@ -25,11 +25,11 @@ Inkplate 6 includes a **2-pin, 2mm JST connector** that allows you to connect a 
 
 ## Compatible batteries
 
-Inkplate 6 is compatible with **3.7V Li-ion batteries with protection**. If you purchased the **Inkplate 6 enclosure and battery kit**, it includes a **[3000mAh 3.7V Li-ion battery](https://soldered.com/product/li-ion-battery-3000mah-3-7v/)** with a built-in protection circuit.  
+Inkplate 6 is compatible with **3.7V Li-ion batteries with protection**. If you purchased the **Inkplate 6 enclosure and battery kit**, it includes a **[1200mAh 3.7V Li-ion battery](https://soldered.com/product/li-ion-battery-1200mah-3-7v/)** with a built-in protection circuit.  
 
 <CenteredImage src="/img/inkplate_6_motion/li-ion-w-proteciton.webp" alt="3.7V li-ion battery with protection" caption="3.7V li-ion battery with protection" width="500px"/>  
 
-Any of **[Soldered’s 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
+Any of **[Soldered's 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
 
 <InfoBox>Due to shipping restrictions, **we cannot ship Li-ion batteries outside the EU**. If you're in the US, we recommend checking out [Adafruit's Li-ion battery stock](https://www.adafruit.com/category/574).</InfoBox>  
 
@@ -39,12 +39,15 @@ Check out our [battery documentation](/li-ion-battery/overview/) page.
 
 ## Charging IC (MCP73831)
 
-The **MCP73831** is a compact, single-cell **Li-ion/Li-Polymer charge management controller**. It regulates the **charging process**, ensuring safe and efficient charging via USB. The chip follows a **constant-current / constant-voltage (CC/CV) charging profile**, automatically switching to **trickle charge** when the battery nears full capacity.
+The **MCP73831** is a single-cell Li-ion/Li-Polymer charge controller. It manages the whole charge cycle over USB so you do not have to. The chip uses a **constant-current / constant-voltage (CC/CV)** profile: a deeply discharged cell first gets a low **preconditioning (trickle) current**, then the full charge current until the cell reaches its regulation voltage, and finally constant voltage until the charge terminates.
+
+On Inkplate 6 the charge current is set by resistor **R10 (2.49 kΩ)** on the charger's `PROG` pin. The datasheet's equation is `I = 1000 / R_PROG(kΩ)` in mA, which works out to a charge current of roughly **400 mA**.
 
 Key features:  
 - **Automatic charge termination** when the battery is full  
-- **Overvoltage and overcurrent protection**  
-- **Charge status indicator** (connected to the onboard LED)
+- **Reverse discharge protection**, so the battery does not drain back into the charger  
+- **Thermal regulation**, which reduces the charge current if the chip gets hot  
+- **Charge status indicator** (connected to the onboard red LED)
 
 <InfoBox>For full technical details, refer to the **MCP73831 datasheet**:<QuickLink  
   title="MCP73831/2 Data Sheet"  

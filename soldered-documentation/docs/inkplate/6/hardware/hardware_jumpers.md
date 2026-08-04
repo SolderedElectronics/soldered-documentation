@@ -17,10 +17,10 @@ See the table below for a detailed explanation of each jumper's function:
 |---|---|---|
 | **JP1** 	| **NO** (not connected) 	| When shorted, it keeps the microSD card powered at 3.3v at all times. Useful for troubleshooting, but not ideal for low-power applications. |
 | **JP2** |  **Connected to IO34 by default** | Switch between connecting the INTB pin of the IO expander to the IO34 pin of the ESP32 or make that pin user-accessible. |
-| **JP3** |  **NC** (connected) 	| When shorted, it provides a connection to the onboard MOSFET that powers the microSD card. |
-| **JP4** |  **NC** (connected) 	| When shorted, enables the Chip Select function for communication with the microSD card. 	|
-| **JP5** | **Connected to INT by default** 	| Switch between a digital, open-drain, active low interrupt output and a programmable digital square-wave output that can be used as a system clock. 	|
-| **JP6** | **NC** (connected) 	| When shorted, it connects the battery terminal to the MCP73831. |
+| **JP3** |  **NC** (connected) 	| Connects pin P1-2 of IO expander 1 to the gate of the MOSFET that powers the microSD card, letting the library switch the card on and off. |
+| **JP4** |  **NC** (connected) 	| Connects the Chip Select pin of the microSD card slot to IO15 of the ESP32. Cut it to drive the card's CS from the GPIO15 breakout pad instead. 	|
+| **JP5** | **Connected to INT by default** 	| Selects what the RTC drives on IO39: a digital, open-drain, active low interrupt output, or a programmable digital square-wave output that can be used as a system clock. 	|
+| **JP6** | **NC** (connected) 	| Connects pin P1-1 of IO expander 1 to the MOSFET that enables the battery voltage divider, so battery voltage is only measured when requested. |
 
 <FlickityCarousel
 images={[

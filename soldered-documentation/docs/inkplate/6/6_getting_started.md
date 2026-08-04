@@ -6,7 +6,7 @@ id: quick-start-guide
 hide_title: True  
 pagination_prev: null  
 ---  
-<SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Quick start guide" />
 
 To get started with Arduino on Inkplate 6, follow a few simple steps to install the required software.
 
@@ -14,7 +14,7 @@ To get started with Arduino on Inkplate 6, follow a few simple steps to install 
 
 ### 1. Install Arduino IDE
 
-If you haven’t installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
+If you haven't installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
 <WarningBox>Arduino IDE 2.0 or newer is required for Inkplate 6.</WarningBox>
 
 <CenteredImage src="/img/inkplate10/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
@@ -29,16 +29,16 @@ https://github.com/SolderedElectronics/Inkplate-Board-Definitions-for-Arduino-ID
 
 Then add it to the `Additional boards manager URLs` in the Arduino settings:
 
-<CenteredImage src="/img/inkplate10/add_board_def.png" alt="Add Inkplate to Arduino boards Manager" caption="Adding the Inkplate boards link to Arduino IDE" width="600px" />
+<CenteredImage src="/img/6/add_board_def.png" alt="Add Inkplate to Arduino boards Manager" caption="Adding the Inkplate boards link to Arduino IDE" width="600px" />
 
 Now you can open the Boards Manager, search for Inkplate Boards, and install the Inkplate Boards board definitions.  
 Click `Install` here:  
-<CenteredImage src="/img/inkplate10/install_board.png" alt="Install Inkplate boards" caption="Adding Inkplate boards to Arduino IDE" width="400px" />
+<CenteredImage src="/img/6/install_board.png" alt="Install Inkplate boards" caption="Adding Inkplate boards to Arduino IDE" width="400px" />
 
 ### 3. Install Inkplate library
 
 In the Arduino Library Manager, search for the Inkplate library and click `Install`:  
-<CenteredImage src="/img/inkplate10/install_lib.png" alt="Install Inkplate library" caption="Installing Inkplate library" width="400px" />
+<CenteredImage src="/img/6/install_lib.png" alt="Install Inkplate library" caption="Installing Inkplate library" width="400px" />
 
 <InfoBox>It's also possible to install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
 
@@ -51,7 +51,7 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 ### Done!
 
-Inkplate 6 setup is complete. Now try out some examples from the Arduino library—upload them and see the results for yourself!
+Inkplate 6 setup is complete. Now try out some examples from the Arduino library, upload them and see the results for yourself!
 
 ---
 

@@ -36,22 +36,23 @@ inkplate.begin()
 # Note:
 # - This function must be called before accessing files on the SD card.
 # - The fastboot option has no effect if the device is already running.
-inkplate.initSDCard(fastBoot=True)
+inkplate.init_sd_card(fast_boot=True)
 
-inkplate.SDCardSleep()
+inkplate.sd_card_sleep()
 
 ```
 
 <FunctionDocumentation
-  functionName="inkplate.initSDCard()"
+  functionName="inkplate.init_sd_card()"
   description="Initialize the onboard microSD card interface, allowing images, fonts, and data files to be loaded from the SD card."
-  returnDescription="Boolean — True if the SD card was successfully initialized, otherwise False."
+  returnType="Boolean"
+  returnDescription="True if the SD card was initialized, otherwise False."
   parameters={[
-    { type: 'Boolean', name: 'fastBoot', description: 'Optional. If True (default), use faster initialization to reduce startup time.' }
+    { type: 'Boolean', name: 'fast_boot', description: 'Optional, defaults to False. If True, use faster initialization to reduce startup time.' }
   ]}
 />
 
 <FunctionDocumentation 
-functionName="inkplate.SDCardSleep()" 
+functionName="inkplate.sd_card_sleep()" 
 description="Puts the microSD card circuitry into low-power sleep mode to save energy when the card is not in use." 
 />
