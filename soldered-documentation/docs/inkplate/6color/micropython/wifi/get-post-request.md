@@ -8,13 +8,13 @@ hide_title: false
 
 Now that your Inkplate has internet access, you can use it to exchange information/data with sensors, custom services or your APIs. Below are examples showing how to receive and send data over the internet with Inkplate.
 
-## GET Request
+## GET request
 
 Use `HTTP GET` request to easily download and handle data on your Inkplate. This example shows how to use GET for `.html` file and print it on Inkplate.
 
 ```python
 # Include needed libraries
-from inkplate6COLOR import Inkplate
+from inkplate6_color import Inkplate
 import network
 import socket
 import time
@@ -26,8 +26,9 @@ PASSWORD = "YOU_PASSWORD_HERE"
 # Connect to WiFi network
 def do_connect():
     connected = False
+    sta_if = network.WLAN(network.STA_IF)
     if not sta_if.isconnected():
-        println("Connecting to network...")
+        print("Connecting to network...")
         sta_if.active(True)
         try:
             sta_if.connect(SSID, PASSWORD)
@@ -77,8 +78,8 @@ if not do_connect():
     raise SystemExit("WiFi connection failed")
 
 # Do a GET request to the webhook platform
-# Change the url to do GET request to a different page
-response = http_get("http://webhook.site/c8c5e570-639e-47bd-860a-e4343b8e9d85")
+# Replace this with your own webhook.site URL, or point it at any page you like
+response = http_get("http://webhook.site/YOUR-UNIQUE-WEBHOOK-ID")
 
 # Remove the header part from response so that we only print HTML part
 parts = response.split("\r\n\r\n", 1)
@@ -91,8 +92,8 @@ else:
 inkplate = Inkplate()
 inkplate.begin()
 
-# Set text size to double from the original size, so we can see the text better
-inkplate.setTextSize(1)
+# Keep the text at its original size so more of the page fits on screen
+inkplate.set_text_size(1)
 
 # Print response line by line
 inkplate.print(html)
@@ -103,14 +104,15 @@ inkplate.display()
 
 <CenteredImage src="/img/6color/get-request.jpg" alt="GET Request example" caption="Expected HTML output on display"/> 
 
-## POST Request
+## POST request
 
 To send data from Inkplate to a web server we'll use **[ThingSpeak.com](https://thingspeak.mathworks.com)**, which is a great free online IoT platform. To send data to ThingSpeak with a **POST request**, you need your channel's **Write API Key**. You can find this key under **Channels** tab in your account, opening the channel you created, and checking under the **API Keys** section. This key is used in your request when sending data.
 
 ```python
-from inkplate6COLOR import Inkplate
+from inkplate6_color import Inkplate
 import network
 import socket
+import time
 
 # Replace with your credentials
 SSID = ""
@@ -125,8 +127,9 @@ inkplate.begin()
 
 def do_connect():
     connected = False
+    sta_if = network.WLAN(network.STA_IF)
     if not sta_if.isconnected():
-        println("Connecting to network...")
+        print("Connecting to network...")
         sta_if.active(True)
         try:
             sta_if.connect(SSID, PASSWORD)
@@ -155,7 +158,7 @@ def do_connect():
 
 # Function to sent HTTP Post request
 def http_post(url, data, host):
-    addr = socket.getaddrinfo(host, 80)[0][-1] # 
+    addr = socket.getaddrinfo(host, 80)[0][-1]
     s = socket.socket()                        # Create a TCP socket
     s.connect(addr)                            # Connect to server (ThingSpeak)
 
@@ -164,7 +167,7 @@ def http_post(url, data, host):
         "POST /update HTTP/1.1\r\n"                            # Method (POST), path (/update), protocol (HTTP/1.1)
         "Host: " + host + "\r\n"                               # Specify host
         "Content-Type: application/x-www-form-urlencoded\r\n"  # Data format to send
-        "Content-Length: " + str(len(data)) + "\r\n"           # Content lenght
+        "Content-Length: " + str(len(data)) + "\r\n"           # Content length
         "Connection: close\r\n\r\n" +                          # Close connection after response + end of header
         data                                                   # The actual data
     )

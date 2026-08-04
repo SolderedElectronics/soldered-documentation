@@ -6,9 +6,9 @@ id: microsd-formatting
 hide_title: true
 ---
 
-<SectionTitle title="Formatting MicroSD" backgroundImage="img/arduino_bg.jpg" />
+<SectionTitle title="Formatting MicroSD" />
 
-Built in microSD card slot on the back of Inkplate 6COLOR can be a great asset for your projects, either for storing a very large number of high-quality images which can be displayed or reading and writing data between deep sleep cycles. This page walks through microSD initialization and image display.
+The built-in microSD card slot on the back of Inkplate 6COLOR can be a great asset for your projects, either for storing a very large number of high-quality images which can be displayed or reading and writing data between deep sleep cycles. This page covers formatting the card and initialising it in code.
 
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 
@@ -29,7 +29,7 @@ For best results, use the [**official SD card formatter**](https://www.sdcard.or
 Before the microSD card can be used, it must first be initialized. This powers on the microSD card circuitry and performs all the necessary memory allocations:
 
 ```python
-from inkplate6COLOR import Inkplate
+from inkplate6_color import Inkplate
 
 from os import listdir
 
@@ -42,13 +42,13 @@ inkplate.begin()
 # Initialize the SD card.
 # This function must be called before accessing files on the SD card.
 # The fastboot option has no effect if the device is already running.
-inkplate.initSDCard(fastBoot=True)
+inkplate.init_sd_card(fast_boot=True)
 ```
 
 <FunctionDocumentation
-    functionName="inkplate.initSDCard()"
+    functionName="inkplate.init_sd_card()"
     description="Initializes SD card through SPI"
     parameters={[
-        { type: "bool", name: "fastBoot", description: "If True, performs a soft reboot immediately after SD card initialization (only on cold start or hard reset) which significantly improves SD card read speeds." }
+        { type: "bool", name: "fast_boot", description: "If True, does a soft reset straight after mounting the card, but only when the board came up from a power-on, hard or watchdog reset. This gives noticeably faster reads afterwards." }
     ]}
 />

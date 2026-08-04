@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />
 
-Here, we've gathered the most frequently asked questions along with detailed answers to help you get the most out of your device. We know that working with maker hardware and software can sometimes be challenging, so we created this resource to make things easier. Browse through the questions below—you might find the solution you're looking for.
+These are the questions we get asked most often about Inkplate 6COLOR, with answers. Have a look through before writing in. There is a good chance yours is already here.
 
 <ExpandableSection title="I can't upload code to Inkplate 6COLOR">
 If you're having trouble uploading code, try the following troubleshooting steps.
@@ -18,7 +18,7 @@ If you're having trouble uploading code, try the following troubleshooting steps
 - Reconnect via USB.  
 
 #### Make sure that the device is turned ON
-This is a crucial step that is often forgotten. Make sure that the **ON** LED is turned on.
+Easy one to miss. Check that the **ON** LED is lit.
 
 #### Verify Arduino IDE version
 Inkplate 6COLOR requires Arduino IDE 2.0+ for proper board and library support.  
@@ -48,7 +48,7 @@ Make sure you're testing with an **unmodified Arduino example** from the Inkplat
 Try uploading these tested examples:
 
 <QuickLink 
-  title="Inkplate6COLOR_Hello_World.ino" 
+  title="Inkplate6COLOR_Hello_Wold.ino" 
   description="Writing 'Hello world' to the Inkplate 6COLOR." 
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6COLOR/Basic/Inkplate6COLOR_Hello_Wold/Inkplate6COLOR_Hello_Wold.ino" 
 />
@@ -80,19 +80,19 @@ Try running the following sketch, which performs **30** full refresh cycles to r
 
 ```cpp
 #include <Inkplate.h>
-Inkplate inkplate;
+Inkplate display;
 int cleanTimes = 30;
 
 void setup()
 {
-    inkplate.begin();
+    display.begin();
     for(int i = 0; i < cleanTimes; i++)
     {
-        inkplate.clearDisplay();
-        inkplate.display();
+        display.clearDisplay();
+        display.display();
         delay(500);
-        inkplate.fillRect(0, 0, 1024, 758, BLACK);
-        inkplate.display();
+        display.fillRect(0, 0, 600, 448, INKPLATE_BLACK);
+        display.display();
         delay(500);
     }
 }
@@ -102,6 +102,8 @@ void loop()
     // Do nothing
 }
 ```
+
+<WarningBox>A full refresh on this panel takes about 12 seconds, so 30 cycles will keep the board busy for roughly 12 minutes. Leave it running and come back to it.</WarningBox>
 
 #### 2. Check the e-paper flat cable connector
 If artifacts persist after cleaning or appear as long vertical lines or streaks, it may indicate a loose, improperly connected, or possibly **damaged** flat cable.
@@ -115,7 +117,7 @@ If none of these steps resolve the issue, **contact our support team** [**here**
 </ExpandableSection>
 
 <ExpandableSection title="How to connect a battery to Inkplate?">
-All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-ion battery. Inkplate 6COLOR features an onboard MCP73831 charging IC, which automatically charges the battery when connected via USB and seamlessly switches to battery power when unplugged.
+All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-ion battery. Inkplate 6COLOR has an onboard MCP73831 charger, so the battery charges whenever USB is connected, and the board switches over to battery power on its own when you unplug it.
 
 <CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 6COLOR battery JST connector" caption="JST battery connector" width="500px"/>
 
@@ -129,7 +131,9 @@ Additionally, this documentation contains detailed hardware design insights on t
 </ExpandableSection>
 
 <ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 6COLOR?">
-We are currently working on making 3D enclosure files available in the [**Inkplate 6COLOR hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-COLOR-hardware-design). Stay tuned for updates!
+The printable enclosure files are in the [**Inkplate 6COLOR hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-COLOR-hardware-design), under `OUTPUTS/V1.2.1/3D printable files`.
+
+A `.step` model of the PCB is in the same `OUTPUTS/V1.2.1` folder if you would rather design your own enclosure around the board.
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 6COLOR as an e-reader/monitor?">

@@ -15,25 +15,25 @@ Drawing an image from the web on Inkplate 6COLOR is simple using the `draw` func
 
 ---
 
-## Drawing an Image from a URL
+## Drawing an image from a URL
 
 Let's draw this image on Inkplate 6COLOR:
 <CenteredImage src="/img/6color/splash.jpg" alt="Example Image" caption="Example image" width="800px" />
 
 ```cpp
-#include "Inkplate.h"            // Include the Inkplate library in the sketch
-#include "WiFi.h"                // Include the WiFi library
-Inkplate display; // Create an Inkplate object and set the library to 1-bit mode (BW)
+#include "HTTPClient.h" //Include library for HTTPClient
+#include "Inkplate.h"   //Include Inkplate library to the sketch
+#include "WiFi.h"       //Include library for WiFi
+Inkplate display;       // Create an object on Inkplate library
 
-const char ssid[] = "";    // Your WiFi SSID
-const char *password = ""; // Your WiFi password
+const char ssid[] = ""; // Your WiFi SSID
+const char *password = "";     // Your WiFi password
 
 void setup()
 {
-  Serial.begin(115200);
-    display.begin();        // Initialize the Inkplate library (you should call this function ONLY ONCE)
-    display.clearDisplay(); // Clear the display's frame buffer
-    display.display();
+    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    display.clearDisplay(); // Clear frame buffer of display
+    display.display();      // Put clear image on display
 
     Serial.print("Connecting to WiFi...");
 
@@ -46,14 +46,45 @@ void setup()
         Serial.print(".");
     }
     Serial.println("\nWiFi OK! Downloading...");
-    if (!display.image.draw("https://i.imgur.com/EjIOxx7.jpeg", 0, 0, false, false))
+
+    // Draw the first image from web.
+    // Monochromatic bitmap with 1 bit depth. Images like this load quickest.
+    // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter to true
+    // will flip all colors on the image, making black white and white black. This may be necessary when exporting
+    // bitmaps from certain softwares. Forth parameter will dither the image. Photo taken by: Roberto Fernandez
+    if (!display.image.draw("https://varipass.org/neowise_mono.bmp", 0, 0, true, false))
     {
-        // If something fails (wrong filename or incorrect bitmap format), write an error message on the screen.
-        // REMEMBER! You can only use a Windows Bitmap file with a color depth of 1, 4, 8, or 24 bits with no compression!
+        // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
+        // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
         display.println("Image open error");
         display.display();
     }
     display.display();
+
+    if (!display.image.draw("https://varipass.org/neowise.bmp", 0, 0, true, false))
+    {
+        // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
+        // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
+        display.println("Image open error");
+        display.display();
+    }
+    display.display();
+
+    display.clearDisplay();
+    delay(3000);
+
+    // Try to load image and display it on e-paper at position X=0, Y=100
+    // NOTE: Both drawJpegFromWeb methods allow for an optional fifth "invert" parameter. Setting this parameter to
+    // true will flip all colors on the image, making black white and white black. forth parameter will dither the
+    // image.
+    if (!display.image.draw("https://varipass.org/destination.jpg", 0, 25, true, false))
+    {
+        // If is something failed (wrong filename or format), write error message on the screen.
+        display.println("Image open error");
+        display.display();
+    }
+    display.display();
+
     WiFi.mode(WIFI_OFF);
 }
 
@@ -73,7 +104,7 @@ void loop()
         { type: "const char*", name: "path", description: "Path and filename of the image. Can be a URL (for web images) or a file path (on the microSD card)." },
         { type: "int", name: "x", description: "X-coordinate of the image's upper-left corner in the framebuffer." },
         { type: "int", name: "y", description: "Y-coordinate of the image's upper-left corner in the framebuffer." },
-        { type: "uint8_t", name: "dither", description: "Dithering mode: 0 (disabled), 1 (enabled)." },
+        { type: "bool", name: "dither", description: "Dithering mode: false (disabled), true (enabled). Defaults to true." },
         { type: "bool", name: "invert", description: "If true, inverts colors." },
     ]}
 />

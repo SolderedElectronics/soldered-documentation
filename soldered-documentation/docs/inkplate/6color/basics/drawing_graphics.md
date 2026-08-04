@@ -14,7 +14,7 @@ Inkplate 6COLOR allows you to draw colorful graphics on a **600 x 448px canvas**
 
 ---
 
-## Drawing Geometric Shapes
+## Drawing geometric shapes
 
 Below is an example demonstrating functions for drawing graphics on the Inkplate 6COLOR:
 
@@ -32,7 +32,7 @@ Inkplate display;
 
 void setup()
 {
-    // Initialize the Inkplate
+    // Initialize Inkplate
     display.begin();
 
     // Draw a full screen of all colors
@@ -44,7 +44,7 @@ void setup()
     display.fillRect(5 * 600 / 7, 0, 600 / 7 + 2, 448, INKPLATE_YELLOW);
     display.fillRect(6 * 600 / 7, 0, 600 / 7 + 2, 448, INKPLATE_ORANGE);
 
-    // Show the image on the screen
+    // Show the Image on the screen
     display.display();
 }
 
@@ -59,9 +59,9 @@ void loop()
 Below are the detailed references for these functions:
 
 <FunctionDocumentation
-  functionName="inkplate.fillRect()"
+  functionName="display.fillRect()"
   description="Draws a filled rectangle on the display."
-  returnDescription="none"
+  returnType="none"
   parameters={[
     { type: 'int', name: 'x', description: 'The x-coordinate of the top-left corner.' },
     { type: 'int', name: 'y', description: 'The y-coordinate of the top-left corner.' },

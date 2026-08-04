@@ -6,11 +6,11 @@ id: deep-sleep
 hide_title: true  
 ---
 
-<SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Deep sleep" />
 
-Using deep sleep on Inkplate 6COLOR is crucial for writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the displayed image, Inkplate 6COLOR can consume little or no current while in deep sleep mode, enabling a sketch to run for months on battery.
+Deep sleep is how you get a sketch to run for months on a battery. E-paper needs no power to hold its image, so between refreshes the board can idle almost indefinitely.
 
-<InfoBox>If all peripherals are in sleep mode, the deep sleep current will be around **20-30µA**</InfoBox>
+<InfoBox>With all peripherals asleep, Inkplate 6COLOR draws about **18 µA** in deep sleep.</InfoBox>
 
 ---
 
@@ -18,7 +18,7 @@ Using deep sleep on Inkplate 6COLOR is crucial for writing a sketch that maximiz
 Check how deep sleep works with the example below:
 
 ```cpp
-#define uS_TO_S_FACTOR 1000000 // Conversion factor for micro seconds to seconds
+#define uS_TO_S_FACTOR 1000000ULL // Conversion factor for micro seconds to seconds
 #define TIME_TO_SLEEP  20 // How long ESP32 will be in deep sleep (in seconds)
 void setup(){
     // your code
@@ -41,7 +41,7 @@ void setup(){
 <FunctionDocumentation
   functionName="esp_deep_sleep_start()"
   description="This function enters deep sleep with the configured wakeup options."
-  returnType="None"
+  returnType="none"
 />
 
 ---

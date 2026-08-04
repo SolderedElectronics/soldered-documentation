@@ -8,10 +8,10 @@ hide_title: false
 
 Working with files on an SD card in MicroPython is just like using regular Python on your PC. You can open, read, write and append using the same commands, just include `/sd/` in your file path. Once inserted, SD card behaves like a normal folder.
 
-## Basic Write/Read example
+## Basic write and read example
 
 ```python
-from inkplate6COLOR import Inkplate
+from inkplate6_color import Inkplate
 from os import listdir
 
 # Create Inkplate object
@@ -21,7 +21,7 @@ inkplate = Inkplate()
 inkplate.begin()
 
 # Initialize the SD card.
-inkplate.initSDCard(fastBoot=True)
+inkplate.init_sd_card(fast_boot=True)
 
 # Writing to a .txt file
 with open("/sd/text.txt", "w") as f:
@@ -39,7 +39,7 @@ with open("/sd/text.txt", "r") as f:
 inkplate.display()
 
 # Put SD card to sleep
-inkplate.SDCardSleep()
+inkplate.sd_card_sleep()
 ```
 
 <WarningBox> Always `close()` files (or use `with`) to avoid file corruption. </WarningBox>

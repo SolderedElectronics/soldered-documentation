@@ -1,12 +1,12 @@
 ---  
-slug: /inkplate/6COLOR/battery/read-voltage  
+slug: /inkplate/6color/battery/read-voltage  
 title: Inkplate 6COLOR - Read Battery Voltage 
 sidebar_label: Read Battery Voltage
 id: read-bat  
 hide_title: true  
 ---
 
-<SectionTitle title="Read Battery Voltage" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Read Battery Voltage" />
 
 When running your **Inkplate 6COLOR board** on a **Li-ion battery**, it's helpful to know the battery's condition. Inkplate 6COLOR lets you measure the battery voltage directly, giving you an estimate of remaining capacity and help you decide if it's time to recharge.
 
@@ -19,6 +19,7 @@ When running your **Inkplate 6COLOR board** on a **Li-ion battery**, it's helpfu
 ```cpp
 #include "Inkplate.h"   // Include Inkplate library to the sketch
 #include "battSymbol.h" // Include .h file that contains byte array for battery symbol.
+// It is in same folder as this sketch. You can even open it (read it) by clicking on battSymbol.h tab in Arduino IDE
 Inkplate display; // Create an object on Inkplate library
 
 void setup()
@@ -43,9 +44,9 @@ void loop()
 ```
 
 <FunctionDocumentation
-  functionName="inkplate.readBattery()"
+  functionName="display.readBattery()"
   description="Reads the current battery voltage when running on battery power"
-  returnType="float"
+  returnType="double"
   returnDescription="Returns the measured battery voltage"
 />
 

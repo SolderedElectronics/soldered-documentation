@@ -6,20 +6,20 @@ id: deep-sleep
 hide_title: false  
 ---
 
-Using deep sleep on Inkplate 6COLOR is crucial for writing a sketch that maximizes battery efficiency. Since e-Paper does not require any power to retain the displayed image, Inkplate 6COLOR can consume little or no current while in deep sleep mode, enabling a sketch to run for months on battery.
+Deep sleep is how you get a sketch to run for months on a battery. E-paper needs no power to hold its image, so between refreshes the board can sit at about 18 µA.
 
 ---
 
-## Simple Deep Sleep
+## Simple deep sleep
 
-<InfoBox> When your ESP32 wakes up from deep sleep, it performs a reset and runs **main.py** again. That means your main script is executed on every every wake-up. </InfoBox>
+<InfoBox> When your ESP32 wakes up from deep sleep, it performs a reset and runs **main.py** again. That means your main script runs again on every wake-up. </InfoBox>
 
-<WarningBox> Make sure you’ve uploaded a **main.py** file to the ESP32. Put the code you want to run after each wake-up inside it.</WarningBox>
+<WarningBox> Make sure you've uploaded a **main.py** file to the ESP32. Put the code you want to run after each wake-up inside it.</WarningBox>
 
 Basic example of keeping a counter in **RTC memory** using **raw bytes** while ESP32 is in deep sleep.
 
 ```python
-from inkplate6COLOR import Inkplate
+from inkplate6_color import Inkplate
 import machine
 import time
 
@@ -37,7 +37,7 @@ inkplate = Inkplate()
 
 inkplate.begin()
 
-inkplate.clearDisplay()
+inkplate.clear_display()
 
 # Check for reset reason and print message accordingly
 if machine.reset_cause() == machine.DEEPSLEEP_RESET:
@@ -72,13 +72,13 @@ machine.deepsleep(10000)
 
 <FunctionDocumentation
     functionName="machine.deepsleep()"
-    description="This function puts the ESP32 in deep sleep mode for a predetermined number of seconds"
+    description="Puts the ESP32 into deep sleep for the given number of milliseconds. Call it with no argument to sleep until a wake source fires."
     parameters={[  
     { type: "int", name: "sleep_time_ms", description: "Deep sleep duration in milliseconds" }
   ]}
 />
 
-## Wake on Button press
+## Wake on button press
 
 ```python
 import esp32
@@ -101,7 +101,7 @@ machine.deepsleep()
 <FunctionDocumentation
     functionName="esp32.wake_on_ext0()"
     description="This function uses the external wakeup feature of the RTC_IO peripheral."
-    returnType="None"
+    returnType="none"
     parameters={[  
     { type: "machine.Pin", name: "Pin", description: "GPIO number used as wakeup source. Only GPIOs with RTC functionality can be used." },
     { type: "int", name: "level", description: "The input level that triggers wake-up" }

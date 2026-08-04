@@ -5,7 +5,7 @@ sidebar_label: RTC basics
 id: rtc-basics  
 hide_title: true  
 ---  
-<SectionTitle title="RTC basics" backgroundImage="/img/rtc.png" />
+<SectionTitle title="RTC basics" />
 
 The real-time clock on Inkplate 6COLOR is the **onboard PCF85063A RTC**. The RTC uses an external clock source, an external XTAL of 32.768kHz.
 
@@ -13,14 +13,16 @@ The real-time clock on Inkplate 6COLOR is the **onboard PCF85063A RTC**. The RTC
 
 ## Setting time and date
 
-Setting the current time and date is the most basic RTC usage. Once you set the time, it will continue ticking, and you will be able to retrieve the current time later accurately. Of course, the RTC isn't perfect, so over the course of a day it may drift a couple of seconds early or late. If you're using the RTC, **it's recommended to set it approximately once per day**.
+Setting the current time and date is the most basic RTC usage. Once you set the time, it will continue ticking, and you will be able to retrieve the current time later accurately. Of course, the RTC isn't perfect, so over the course of a day it may drift a couple of seconds early or late. The drift comes from the 32.768 kHz crystal rather than the RTC chip: at a typical ±20 ppm that works out to under two seconds a day. If you're using the RTC, **it's recommended to set it approximately once per day**.
+
+<InfoBox>If you would rather correct the drift than re-set the clock, the PCF85063A has an offset register for exactly this. Use `display.rtc.setClockOffset()`, and see the [**Inkplate6COLOR_RTC_Calibration**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6COLOR/Diagnostics/Inkplate6COLOR_RTC_Calibration/Inkplate6COLOR_RTC_Calibration.ino) example for how to measure and apply the correction.</InfoBox>
 
 ```cpp
-#include "Inkplate.h" // Include Inkplate library in the sketch
-Inkplate display;     // Create an object of the Inkplate library
+#include "Inkplate.h" // Include Inkplate library to the sketch
+Inkplate display;     // Create an object on Inkplate library
 
-#define REFRESH_DELAY 60000 // Delay between refreshes: one minute
-unsigned long time1;      // Time for measuring refresh in millis
+#define REFRESH_DELAY 60000 // Delay between refreshes one minute
+unsigned long time1;        // Time for measuring refresh in millis
 
 // Set clock
 uint8_t hour = 12;
@@ -36,14 +38,14 @@ uint8_t year = 23;
 void setup()
 {
     display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    display.rtc.reset();     // Reset RTC if there is some data in it
+    display.rtc.reset();     // reset RTC if there is some data in it
     display.clearDisplay(); // Clear frame buffer of display
     display.setTextSize(3); // Set text to be 3 times bigger than classic 5x7 px text
     display.setTextColor(INKPLATE_BLACK, INKPLATE_WHITE); // Set text color and background
 
     display.rtc.setTime(hour, minutes, seconds);    // Send time to RTC
-    display.rtc.setDate(weekday, day, month, year);   // Send date to RTC
-    getAndDisplayTime();                             // Display time on the screen
+    display.rtc.setDate(weekday, day, month, year); // Send date to RTC
+    getAndDisplayTime();                           // Display time on the screen
 }
 
 void loop()
@@ -61,20 +63,20 @@ void loop()
 
 void getAndDisplayTime()
 {
-    display.rtc.getRtcData(); // Get the time and date from the RTC
+    display.rtc.getRtcData(); // Get the time and date from RTC
 
-    seconds = display.rtc.getSecond();  // Store seconds in a variable
-    minutes = display.rtc.getMinute();    // Store minutes in a variable
-    hour = display.rtc.getHour();         // Store hours in a variable
-    day = display.rtc.getDay();           // Store day of month in a variable
-    weekday = display.rtc.getWeekday();   // Store day of week in a variable
-    month = display.rtc.getMonth();       // Store month in a variable
-    year = display.rtc.getYear();         // Store year in a variable
+    seconds = display.rtc.getSecond();  // Store senconds in a variable
+    minutes = display.rtc.getMinute();  // Store minutes in a variable
+    hour = display.rtc.getHour();       // Store hours in a variable
+    day = display.rtc.getDay();         // Store day of month in a variable
+    weekday = display.rtc.getWeekday(); // Store day of week in a variable
+    month = display.rtc.getMonth();     // Store month in a variable
+    year = display.rtc.getYear();       // Store year in a variable
 
-    display.clearDisplay();                                        // Clear content in frame buffer
-    display.setCursor(80, 300);                                    // Set position of the text
-    printTime(hour, minutes, seconds, day, weekday, month, year);  // Print the time on screen
-    display.display();                                             // Refresh the screen
+    display.clearDisplay();                                       // Clear content in frame buffer
+    display.setCursor(80, 300);                                   // Set position of the text
+    printTime(hour, minutes, seconds, day, weekday, month, year); // Print the time on screen
+    display.display();                                            // Refresh the screen
 }
 
 void printTime(uint8_t _hour, uint8_t _minutes, uint8_t _seconds, uint8_t _day, uint8_t _weekday, uint8_t _month,
@@ -109,7 +111,7 @@ void print2Digits(uint8_t _d)
 ```
 
 <FunctionDocumentation
-  functionName="inkplate.rtc.setTime()"
+  functionName="display.rtc.setTime()"
   description="Method for setting time."
   returnType="void"
   parameters={[  
@@ -120,9 +122,9 @@ void print2Digits(uint8_t _d)
 />
 
 <FunctionDocumentation
-  functionName="inkplate.rtc.setDate()"
+  functionName="display.rtc.setDate()"
   description="Method for setting date."
-  returnDescription="void"
+  returnType="void"
   parameters={[  
     { type: 'uint8_t', name: 'rtcWeekday', description: "Weekday value." },  
     { type: 'uint8_t', name: 'rtcDay', description: "Day of the month." },  
@@ -132,7 +134,7 @@ void print2Digits(uint8_t _d)
 />
 
 <FunctionDocumentation
-  functionName="inkplate.rtc.getRtcData()"
+  functionName="display.rtc.getRtcData()"
   description="Reads time and date from the RTC and stores them in their corresponding variables."
-  returnDescription="void"
+  returnType="void"
 />

@@ -12,7 +12,7 @@ Here is a basic Inkplate object creation and display initialization which we wil
 
 ```python
 # Include inkplate library
-from inkplate6COLOR import Inkplate
+from inkplate6_color import Inkplate
 
 # Create Inkplate object
 inkplate = Inkplate()
@@ -25,7 +25,7 @@ inkplate.display()
 ```
 
 <FunctionDocumentation
-  functionName="inkplate.Inkplate()"
+  functionName="Inkplate()"
   description="Creates an Inkplate object from the Inkplate class."
   returnType="none"
 />
@@ -43,7 +43,7 @@ inkplate.display()
 ## Clear display
 
 <FunctionDocumentation
-  functionName="inkplate.clearDisplay()"
+  functionName="inkplate.clear_display()"
   description="This function clears everything stored in display buffer."
   returnType="none"
 />
