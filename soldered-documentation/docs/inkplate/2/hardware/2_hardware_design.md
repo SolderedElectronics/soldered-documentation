@@ -6,7 +6,7 @@ id: 2-hardware-design
 hide_title: true
 ---
 
-<SectionTitle title="Hardware Design" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Hardware Design" />
 
 Inkplate 2 is an open-source, low-power development board based on an **ESP32 microcontroller**, with a **2.13-inch three-color (black, white and red)** e-paper display. It has a small footprint and works with Arduino and MicroPython. This page covers the Inkplate 2’s hardware design: schematics, specs, and component layout.
 

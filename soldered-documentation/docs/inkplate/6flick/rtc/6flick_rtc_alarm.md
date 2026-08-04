@@ -6,7 +6,7 @@ id: 6flick-rtc-alarm
 hide_title: true
 ---
 
-<SectionTitle title="RTC Alarm" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="RTC Alarm" />
 
 The onboard RTC supports creating an alarm that triggers at a specific time, allowing the firmware to detect and respond accordingly. Alarms can be configured to trigger once per day, per hour, or per minute.
 

@@ -6,7 +6,7 @@ id: 2-text
 hide_title: true  
 ---
 
-<SectionTitle title="Printing Text" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Printing Text" />
 
 Printing text on Inkplate 2 is simple, with support for three colors (black, white, red) and compatibility with the Adafruit GFX library.
 

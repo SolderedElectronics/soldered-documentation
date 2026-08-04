@@ -7,7 +7,9 @@ const SectionTitle = ({ title, backgroundImage, height }) => (
     <div
       className={styles.sectionTitle}
       style={{
-        '--background-image': `url(${backgroundImage})`,
+        // Omit the variable entirely when there's no image, so the ::before
+        // overlay doesn't request url(undefined)
+        ...(backgroundImage && { '--background-image': `url(${backgroundImage})` }),
         height: height || undefined, // Use the provided height or let CSS handle it
       }}
     >

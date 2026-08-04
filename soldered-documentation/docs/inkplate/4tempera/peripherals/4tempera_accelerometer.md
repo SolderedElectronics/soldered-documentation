@@ -6,7 +6,7 @@ id: 4tempera-periph-accelerometer
 hide_title: true
 ---
 
-<SectionTitle title="Accelerometer and gyroscope" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Accelerometer and gyroscope" />
 
 The **LSM6DS3** sensor on the Inkplate 4TEMPERA provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking. It is used both for general movement sensing and to demonstrate 3D projections based on device tilt.
 

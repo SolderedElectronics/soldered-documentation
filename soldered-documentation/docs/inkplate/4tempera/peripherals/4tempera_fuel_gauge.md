@@ -6,7 +6,7 @@ id: 4tempera-periph-fuel-gauge
 hide_title: true
 ---
 
-<SectionTitle title="Fuel gauge" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Fuel gauge" />
 
 The **BQ27441 fuel gauge** is an IC that precisely tracks the state of the lithium battery, including **voltage (mV)**, **state of charge (%)**, and **remaining capacity (mAh)**. It comes as an integrated sensor on Inkplate 4TEMPERA and uses a **0x55** address for **I2C communication**.
 

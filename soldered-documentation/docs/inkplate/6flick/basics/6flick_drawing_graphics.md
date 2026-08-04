@@ -6,7 +6,7 @@ id: 6flick-graphics
 hide_title: true
 ---
 
-<SectionTitle title="Drawing Graphics" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Drawing Graphics" />
 
 Inkplate 6FLICK allows you to draw graphics on a **1024 x 758px canvas**.
 

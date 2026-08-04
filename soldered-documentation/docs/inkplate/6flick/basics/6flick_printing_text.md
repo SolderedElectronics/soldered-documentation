@@ -6,7 +6,7 @@ id: 6flick-text
 hide_title: true
 ---
 
-<SectionTitle title="Printing Text" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Printing Text" />
 
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts.
 

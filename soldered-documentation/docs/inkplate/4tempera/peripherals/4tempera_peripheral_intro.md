@@ -6,7 +6,7 @@ id: 4tempera-periph-intro
 hide_title: true
 ---
 
-<SectionTitle title="Peripheral basics" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Peripheral basics" />
 
 Inkplate 4TEMPERA includes several onboard peripherals designed to extend its functionality and adapt it to a wide range of projects. These include sensors, a touchscreen, a frontlight system, and more. To conserve power and ensure proper initialization, each peripheral must be individually powered on before use.
 

@@ -6,7 +6,7 @@ id: 2-hardware-files
 hide_title: true  
 ---  
 
-<SectionTitle title="Hardware Files" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Hardware Files" />
 
 <QuickLink 
   title="Soldered Inkplate 2 hardware design" 

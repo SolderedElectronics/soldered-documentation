@@ -6,7 +6,7 @@ id: 4tempera-hardware-files
 hide_title: true
 ---
 
-<SectionTitle title="Hardware Files" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Hardware Files" />
 
 The **hardware repositories** for Inkplate 4TEMPERA hardware files can be found at the following links:
 

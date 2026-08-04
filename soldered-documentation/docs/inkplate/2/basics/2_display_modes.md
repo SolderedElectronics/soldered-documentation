@@ -6,7 +6,7 @@ id: 2-display-modes
 hide_title: true
 ---
 
-<SectionTitle title="Display Mode" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Display Mode" />
 
 Inkplate 2 uses a 2.13″ three-color e-paper display capable of showing black, white, and red content. Unlike other Inkplate models with multiple display modes (e.g., 1-bit black/white or 3-bit grayscale), Inkplate 2 operates in a single native color mode built for tri-color rendering. This page explains how to use the display's three colors in your code.
 

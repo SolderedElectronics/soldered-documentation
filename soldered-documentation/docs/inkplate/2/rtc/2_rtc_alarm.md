@@ -6,7 +6,7 @@ id: 2-rtc-alarm
 hide_title: true
 ---
 
-<SectionTitle title="RTC Alarm" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="RTC Alarm" />
 
 This page provides two key examples for using the **real-time clock (RTC)** on the Inkplate 2. The examples demonstrate how to retrieve the current time from the internet and how to set a periodic wake-up alarm using Inkplate's RTC functionality.
 

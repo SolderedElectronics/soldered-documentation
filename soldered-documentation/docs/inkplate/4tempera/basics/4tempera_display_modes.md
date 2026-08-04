@@ -6,7 +6,7 @@ id: 4tempera-display-modes
 hide_title: true
 ---
 
-<SectionTitle title="Display Modes" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Display Modes" />
 
 As mentioned on the previous page, Inkplate 4TEMPERA offers two display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page provides more information about both.
 

@@ -6,7 +6,7 @@ id: 6flick-hardware-files
 hide_title: true
 ---
 
-<SectionTitle title="Hardware Files" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Hardware Files" />
 
 The **hardware repositories** for Inkplate 6FLICK hardware files can be found at the following links:
 

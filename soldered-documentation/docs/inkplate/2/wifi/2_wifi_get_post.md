@@ -6,7 +6,7 @@ id: 2-wifi-get-post
 hide_title: true  
 ---  
 
-<SectionTitle title="GET & POST Requests" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="GET & POST Requests" />
 
 Now that Inkplate is connected to the internet, you will likely want to send and receive data, whether from sensors, messages, or your own APIs. This page contains examples of how to do that:
 

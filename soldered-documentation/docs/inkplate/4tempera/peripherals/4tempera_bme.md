@@ -6,7 +6,7 @@ id: 4tempera-periph-bme688
 hide_title: true
 ---
 
-<SectionTitle title="Environmental sensor" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Environmental sensor" />
 
 The **BME688** is a high-performance environmental sensor integrated into the Inkplate 4TEMPERA. It combines **temperature**, **humidity**, **barometric pressure**, **gas resistance**, and **altitude estimation** capabilities in one compact package. This makes it ideal for indoor air quality monitoring, weather stations, and general environmental sensing.
 
