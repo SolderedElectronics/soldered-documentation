@@ -150,4 +150,4 @@ At this time, Inkplate 6COLOR is not officially supported by ESPHome.
 There is currently no ESPHome display component for this model, but we are actively working on expanding ESPHome compatibility for all Inkplate devices. Stay tuned for future updates!
 </ExpandableSection>
 
-<InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+<InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link, or ask on the [**Soldered community**](https://community.soldered.com), where you can browse existing questions or post your own.</InfoBox>

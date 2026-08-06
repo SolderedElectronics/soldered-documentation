@@ -177,4 +177,4 @@ display:
 See the [**ESPHome Inkplate documentation**](https://esphome.io/components/display/inkplate6.html) for the full list of configuration options and the GPIO pin assignments the platform expects.
 </ExpandableSection>
 
-<InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+<InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link, or ask on the [**Soldered community**](https://community.soldered.com), where you can browse existing questions or post your own.</InfoBox>

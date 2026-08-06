@@ -149,4 +149,4 @@ Currently, Inkplate 6FLICK is **not officially supported by ESPHome**.
 We're working on extending support across all Inkplate models, and future firmware or component updates may enable this. Stay tuned for developments on this front!
 </ExpandableSection>
 
-<InfoBox>If you didn't find the answer you were looking for, please don't hesitate to [**contact our support team**](https://soldered.com/contact/). We're happy to help!</InfoBox>
+<InfoBox>If you didn't find the answer you were looking for, please don't hesitate to [**contact our support team**](https://soldered.com/contact/), or ask on the [**Soldered community**](https://community.soldered.com), where you can browse existing questions or post your own. We're happy to help!</InfoBox>
