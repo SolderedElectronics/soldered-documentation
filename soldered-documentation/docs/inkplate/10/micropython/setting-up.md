@@ -19,7 +19,7 @@ In order to get started with running your code on Inkplate, connect the device t
    
 2. Flash the **.bin** file onto the Inkplate device, this can be done via **[Soldered MicroPython Helper VS Code Extension](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper)** or the **[Thonny IDE](https://thonny.org)**
 
-### Flashing with the Micropython Helper extension
+### Flashing with the MicroPython Helper extension
 
 After **[setting up the MicroPython Helper extension](https://soldered.com/documentation/micropython/getting-started-with-vscode)**, go to `Install Micropython on your board` and pick `Upload Binary file from PC`, choose the **Inkplate-firmware.bin** file and wait for it to flash on the device.
 
@@ -42,13 +42,13 @@ On the bottom of that window click on the `≡` button and pick `Select local Mi
 4. With the mpremote package, we can **upload the Inkplate modules** onto the device with the following command:
 
 ```
-  mpremote mip install github:SolderedElectronics/Inkplate-micropython/YOUR_DEVICE
+  mpremote mip install github:SolderedElectronics/Inkplate-micropython/boards/YOUR_DEVICE
 ```
 
 or if you're running a Windows OS:
 
 ```
-  python -m mpremote mip install github:SolderedElectronics/Inkplate-micropython/YOUR_DEVICE
+  python -m mpremote mip install github:SolderedElectronics/Inkplate-micropython/boards/YOUR_DEVICE
 ```
 
 <QuickLink
@@ -60,7 +60,7 @@ or if you're running a Windows OS:
 Use the following command to install the MicroPython library for INKPLATE 10:
 
 ```
-  mpremote mip install github:SolderedElectronics/Inkplate-micropython/Inkplate10
+  mpremote mip install github:SolderedElectronics/Inkplate-micropython/boards/inkplate10
 ```
 
 **You only have to do steps 1-4 once when writing MicroPython firmware on your Inkplate!**

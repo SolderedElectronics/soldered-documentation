@@ -1,12 +1,12 @@
 ---  
 slug: /inkplate/10/temperature/read-temperature
-title: Inkplate 10 - Read Temperature 
-sidebar_label: Read Temperature
+title: Inkplate 10 - Read temperature 
+sidebar_label: Read temperature
 id: read-temp
 hide_title: true
 ---
 
-<SectionTitle title="Read Temperature" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Read temperature" />
 
 Inkplate 10 integrates **TPS65186** power supply chip for e-paper display. The chip supports measurement of an **external NTC (Negative Temperature Coefficient) thermistor** allowing monitoring of display panel temperature in range from -10°C to 85°C. This in turn can be used to give an approximate room temperature measurements. 
 
@@ -36,7 +36,7 @@ void loop()
 {
     int temperature = display.readTemperature();            // Read temperature from on-board temperature sensor
     display.clearDisplay();                                 // Clear frame buffer of display
-    display.image.draw(tempSymbol, 100, 100, 38, 79); // Draw temperature symbol at position X=100, Y=100
+    display.image.draw(tempSymbol, 100, 100, 38, 79, BLACK); // Draw temperature symbol at position X=100, Y=100
     display.setCursor(150, 125);
     display.print(temperature, DEC); // Print temperature
     display.print('C');
@@ -46,7 +46,7 @@ void loop()
 ```
 
 <FunctionDocumentation
-  functionName="inkplate.readTemperature()"
+  functionName="display.readTemperature()"
   description="Reads the onboard temperature sensor"
   returnType="int"
   returnDescription="Returns the measured temperature in °C"

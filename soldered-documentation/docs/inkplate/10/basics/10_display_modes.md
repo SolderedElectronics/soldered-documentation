@@ -15,17 +15,17 @@ As mentioned on the previous page, Inkplate 10 has two different display modes: 
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate display(INKPLATE_1BIT);
 void setup() {
-  inkplate.begin();
+  display.begin();
   // Clear the display
-  inkplate.clearDisplay();
-  inkplate.display();
+  display.clearDisplay();
+  display.display();
   // Draw a black pixel at x=100, y=100
-  inkplate.drawPixel(100,100,BLACK);
+  display.drawPixel(100,100,BLACK);
   // Draw a white pixel at x=200, y=200
-  inkplate.drawPixel(200,200,WHITE);
-  inkplate.display(); // Show on the display
+  display.drawPixel(200,200,WHITE);
+  display.display(); // Show on the display
 }
 void loop() {
 }
@@ -37,7 +37,7 @@ void loop() {
 
 ## Grayscale mode
 
-3-bit or grayscale mode offers the possibility to draw in 8 different levels of brightness, not just black and white. See below for an approximate visualization of black levels as they correspond to their numerical value in code:
+In 3-bit or grayscale mode you get 8 levels of brightness instead of only black and white, where 0 is black and 7 is white. Below is an approximate visualization of those levels and the numerical value each one has in code:
 
 <CenteredImage src="/img/inkplate10/grayscale.png" alt="3bit grayscale" caption="Black levels in 3-bit mode" width="450px" />
 
@@ -45,32 +45,32 @@ Let's draw a couple of rectangles (with a black outline) of different brightness
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_3BIT);
+Inkplate display(INKPLATE_3BIT);
 
 void setup() 
 {
-  inkplate.begin();
+  display.begin();
   // Clear the display
-  inkplate.clearDisplay();
-  inkplate.display();
+  display.clearDisplay();
+  display.display();
 
   // Draw a filled rectangle with a black outline at (100, 100)
-  inkplate.fillRect(100, 100, 10, 10, 0); // Black fill
-  inkplate.drawRect(100, 100, 10, 10, 0); // Black outline
+  display.fillRect(100, 100, 10, 10, 0); // Black fill
+  display.drawRect(100, 100, 10, 10, 0); // Black outline
 
   // Draw a filled rectangle with a black outline at (200, 200)
-  inkplate.fillRect(200, 200, 10, 10, 7); // White fill
-  inkplate.drawRect(200, 200, 10, 10, 0); // Black outline
+  display.fillRect(200, 200, 10, 10, 7); // White fill
+  display.drawRect(200, 200, 10, 10, 0); // Black outline
 
   // Draw a filled rectangle with a black outline at (200, 250)
-  inkplate.fillRect(200, 250, 10, 10, 3); // Light gray fill
-  inkplate.drawRect(200, 250, 10, 10, 0); // Black outline
+  display.fillRect(200, 250, 10, 10, 3); // Mid gray fill
+  display.drawRect(200, 250, 10, 10, 0); // Black outline
 
   // Draw a filled rectangle with a black outline at (250, 200)
-  inkplate.fillRect(250, 200, 10, 10, 2); // Dark gray fill
-  inkplate.drawRect(250, 200, 10, 10, 0); // Black outline
+  display.fillRect(250, 200, 10, 10, 2); // Dark gray fill
+  display.drawRect(250, 200, 10, 10, 0); // Black outline
 
-  inkplate.display(); // Show on the display
+  display.display(); // Show on the display
 }
 
 void loop() 

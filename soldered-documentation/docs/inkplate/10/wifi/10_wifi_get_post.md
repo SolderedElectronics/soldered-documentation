@@ -21,25 +21,25 @@ Using `client.GET()` will enable you to easily download and handle data on Inkpl
 #define ssid "yourssid" // Name of the WiFi network (SSID) that you want to connect Inkplate to
 #define pass "yourpassword" // Password of that WiFi network
 
-Inkplate inkplate(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
 
 void setup()
 {
-    inkplate.begin();                                  // Init Inkplate library (you should call this function ONLY ONCE)
-    inkplate.clearDisplay();                           // Clear frame buffer of display
-    inkplate.display();                                // Put clear image on inkplate
-    inkplate.setTextSize(2);                           // Set text scaling to two (text will be two times bigger)
-    inkplate.setCursor(0, 0);                          // Set print position
-    inkplate.setTextColor(BLACK, WHITE);               // Set text color to black and background color to white
-    inkplate.println("Scanning for WiFi networks..."); // Write text
-    inkplate.display();                                // Send everything to inkplate (refresh inkplate)
+    display.begin();                                  // Init Inkplate library (you should call this function ONLY ONCE)
+    display.clearDisplay();                           // Clear frame buffer of display
+    display.display();                                // Put clear image on display
+    display.setTextSize(2);                           // Set text scaling to two (text will be two times bigger)
+    display.setCursor(0, 0);                          // Set print position
+    display.setTextColor(BLACK, WHITE);               // Set text color to black and background color to white
+    display.println("Scanning for WiFi networks..."); // Write text
+    display.display();                                // Send everything to display (refresh display)
 
     int n = WiFi.scanNetworks(); // Start searching WiFi networks and put the nubmer of found WiFi networks in variable
                                  // n
     if (n == 0)
     { // If you did not find any network, show the message and stop the program.
-        inkplate.print("No WiFi networks found!");
-        inkplate.partialUpdate();
+        display.print("No WiFi networks found!");
+        display.partialUpdate();
         while (true)
             ;
     }
@@ -49,41 +49,41 @@ void setup()
             n = 10; // If you did find, print name (SSID), encryption and signal strength of first 10 networks
         for (int i = 0; i < n; i++)
         {
-            inkplate.print(WiFi.SSID(i));
-            inkplate.print((WiFi.encryptionType(i) == WIFI_AUTH_OPEN) ? 'O' : '*');
-            inkplate.print('\n');
-            inkplate.print(WiFi.RSSI(i), DEC);
+            display.print(WiFi.SSID(i));
+            display.print((WiFi.encryptionType(i) == WIFI_AUTH_OPEN) ? 'O' : '*');
+            display.print('\n');
+            display.print(WiFi.RSSI(i), DEC);
         }
-        inkplate.partialUpdate(); //(Partial) refresh the screen
+        display.partialUpdate(); //(Partial) refresh the screen
     }
 
-    inkplate.clearDisplay();          // Clear everything in frame buffer
-    inkplate.setCursor(0, 0);         // Set print cursor to new position
-    inkplate.print("Connecting to "); // Print the name of WiFi network
-    inkplate.print(ssid);
+    display.clearDisplay();          // Clear everything in frame buffer
+    display.setCursor(0, 0);         // Set print cursor to new position
+    display.print("Connecting to "); // Print the name of WiFi network
+    display.print(ssid);
     WiFi.begin(ssid, pass); // Try to connect to WiFi network
     while (WiFi.status() != WL_CONNECTED)
     {
-        delay(1000); // While it is connecting to network, inkplate dot every second, just to know that Inkplate is
+        delay(1000); // While it is connecting to network, display dot every second, just to know that Inkplate is
                      // alive.
-        inkplate.print('.');
-        inkplate.partialUpdate();
+        display.print('.');
+        display.partialUpdate();
     }
-    inkplate.print("connected"); // If it's connected, notify user
-    inkplate.partialUpdate();
+    display.print("connected"); // If it's connected, notify user
+    display.partialUpdate();
 
     HTTPClient http;
     if (http.begin("http://example.com/index.html"))
     { // Now try to connect to some web page (in this example www.example.com. And yes, this is a valid Web page :))
         if (http.GET() > 0)
-        { // If connection was successful, try to read content of the Web page and inkplate it on screen
+        { // If connection was successful, try to read content of the Web page and display it on screen
             String htmlText;
             htmlText = http.getString();
-            inkplate.setTextSize(1); // Set smaller text size, so everything can fit on screen
-            inkplate.clearDisplay();
-            inkplate.setCursor(0, 0);
-            inkplate.print(htmlText);
-            inkplate.display();
+            display.setTextSize(1); // Set smaller text size, so everything can fit on screen
+            display.clearDisplay();
+            display.setCursor(0, 0);
+            display.print(htmlText);
+            display.display();
         }
     }
     else{

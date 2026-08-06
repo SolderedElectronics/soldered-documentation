@@ -6,7 +6,7 @@ id: 10-microsd-basics
 hide_title: true
 ---
 
-<SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
+<SectionTitle title="MicroSD basics" />
 
 The built-in microSD card slot on Inkplate 10 can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSDs card slot.
 
@@ -32,27 +32,27 @@ Before the microSD card can be used in code, it must first be initialized, this 
 ```cpp
 #include "Inkplate.h"            //Include Inkplate library to the sketch
 #include "SdFat.h"               //Include library for SD card
-Inkplate inkplate(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
 SdFile file;                     // Create SdFile object used for accessing files on SD card
 
 void setup()
 {
-    inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    inkplate.clearDisplay(); // Clear frame buffer of display
-    inkplate.display();      // Put clear image on display
-    inkplate.setTextSize(5);
+    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    display.clearDisplay(); // Clear frame buffer of display
+    display.display();      // Put clear image on display
+    display.setTextSize(5);
 
     // Init SD card. Display if SD card is init properly or not.
-    if (inkplate.sdCardInit())
+    if (display.sdCardInit())
     {
-        inkplate.println("SD Card ok! Reading data...");
-        inkplate.partialUpdate();
+        display.println("SD Card ok! Reading data...");
+        display.partialUpdate();
     }
     else
     { // If card init was not successful, display error on screen, put sd card in sleep mode, and stop the program (using infinite loop)
-        inkplate.println("SD Card error!");        
-        inkplate.partialUpdate();
-        inkplate.sdCardSleep();
+        display.println("SD Card error!");        
+        display.partialUpdate();
+        display.sdCardSleep();
         while (true)
             ;
     }
@@ -63,7 +63,7 @@ void loop()
 }
 ```
 <FunctionDocumentation
-    functionName="inkplate.sdCardInit()"
+    functionName="display.sdCardInit()"
     description="Initializes sd card trough SPI."
     returnDescription="Returns true if the initialization was successful, otherwise returns false."
 />
@@ -132,7 +132,7 @@ void loop()
 <FunctionDocumentation
     functionName="file.open()"
     description="Open a file in the current working directory."
-    returnDescription="Returns true is openning is successfull, otherwise returns false."
+    returnDescription="Returns true if opening was successful, otherwise returns false."
     parameters={[
     { type: 'const char *', name: 'path', description: "The path to the file which is being opened, if it's in the root folder just write the filename." },
     { type: 'oflag_t', name: 'oflag', description: "The settings for opening the file. The different flags have to be OR'd, eg. O_CREAT | O_RDWR. Below is a table of these flags and what they mean." }
@@ -172,13 +172,13 @@ void loop()
 <InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
 
 <QuickLink 
-  title="Inkplate10_SD_TXT_Read.ino" 
+  title="Inkplate10_microSD_TXT_Read.ino" 
   description="This example will show you how to open .txt files and display the content of that file on Inkplate epaper display."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/microSD/Inkplate10_microSD_TXT_Read/Inkplate10_microSD_TXT_Read.ino" 
 />
 
 <QuickLink 
-  title="Inkplate10_SD_TXT_Write.ino" 
+  title="Inkplate10_microSD_TXT_Write.ino" 
   description="This example will show you how to write in .txt file."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/microSD/Inkplate10_microSD_TXT_Write/Inkplate10_microSD_TXT_Write.ino" 
 />

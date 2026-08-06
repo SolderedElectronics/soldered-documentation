@@ -1,7 +1,7 @@
 ---
 slug: /inkplate/10/micropython/wifi/draw-image-from-wifi
-title: Inkplate 10 MicroPython - Draw Image from WiFi
-sidebar_label: Draw Image from WiFi
+title: Inkplate 10 MicroPython - Draw image from WiFi
+sidebar_label: Draw image from WiFi
 id: draw-image-from-wifi
 ---
 
@@ -11,7 +11,7 @@ Inkplate 10 can connect to WiFi and fetch images directly from the internet. Thi
 
 ## Downloading and displaying an image
 
-Below is a complere example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
+Below is a complete example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
 
 ```python
 import network
@@ -45,7 +45,7 @@ inkplate.begin()
 if not do_connect():
     raise SystemExit("WiFi connection failed")
 
-inkplate.drawImage(
+inkplate.draw_image(
     "https://i.imgur.com/6vMuKxa.jpeg",
     0, 0,
     invert=False,
@@ -58,7 +58,7 @@ inkplate.display()
 ```
 
 <FunctionDocumentation
-functionName="inkplate.drawImage()"
+functionName="inkplate.draw_image()"
 description="Download and draw an image from a URL or local file path onto the display buffer."
 parameters={[
 { type: 'String', name: 'path', description: 'Image URL or local file path.' },

@@ -70,7 +70,7 @@ returnDescription="Response object with .status_code and .text."
 
 ## Making a POST request
 
-You can also send data to the server. In this examplem we will send **JSON** payload to the webhook URL.
+You can also send data to the server. In this example we will send a **JSON** payload to the webhook URL.
 
 ```python
 
@@ -105,10 +105,10 @@ def connect_wifi():
 # Initialize Inkplate display
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
-inkplate.setTextSize(2)
-inkplate.setCursor(50, 100)
+inkplate.set_text_size(2)
+inkplate.set_cursor(50, 100)
 
 if connect_wifi():
     # Data to send

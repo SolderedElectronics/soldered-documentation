@@ -6,9 +6,9 @@ id: 10-deep-sleep
 hide_title: true
 ---
 
-<SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Deep sleep" />
 
-Using deep sleep on Inkplate 10 is key to writing a sketch which maximizes battery efficiency. Since e-Paper does not need any kind of power to retain the image displayed - Inkplate 10 can use little to no current while in deep sleep mode, and have a sketch running for months on battery.
+Deep sleep is what makes a battery-powered Inkplate sketch practical. E-paper holds its image without any power, so Inkplate 10 can draw almost nothing while asleep and still keep a sketch running for months on a battery.
 
 <InfoBox>If all peripherals are in sleep mode, deep sleep current will be around **20-30µA**</InfoBox>
 
@@ -41,7 +41,7 @@ void setup(){
 
 <FunctionDocumentation
   functionName="esp_deep_sleep_start()"
-  description="This function enters deep sleep wit the configured wakeup options."
+  description="This function enters deep sleep with the configured wakeup options."
   returnType="None"
 />
 
@@ -69,7 +69,7 @@ esp_deep_sleep_start();
   returnDescription="Returns ESP error constant"
   returnType="int"
   parameters={[
-    { type: 'gpio_num_t', name: 'gpio_num', description: 'GPIO number used as wakeup source. Only GPIOs which are have RTC functionality can be used.' },
+    { type: 'gpio_num_t', name: 'gpio_num', description: 'GPIO number used as wakeup source. Only GPIOs which have RTC functionality can be used.' },
     { type: 'int', name: 'level', description: 'Input level which will trigger wakeup.' },
   ]}
 />

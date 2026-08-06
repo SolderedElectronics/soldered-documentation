@@ -31,7 +31,7 @@ if (!display.image.draw("image1.bmp", 0, 0, 1))
     }
 display.display();
 ```
-Now, lets draw `image2.bmp` by frst loading it using SdFat library class and then displaying it on epaper:
+Now, let's draw `image2.bmp` by first loading it using the SdFat library class and then displaying it on epaper:
 
 ```cpp
 if (file.open("image2.bmp", O_RDONLY))
@@ -74,7 +74,7 @@ if (!display.image.draw("pyramid.jpg", 100, 0, true, false))
 ## Full example
 
 <QuickLink 
-  title="Inkplate10_SD_Pictures.ino" 
+  title="Inkplate10_microSD_Pictures.ino" 
   description="This example will show you how you can read .bmp and .jpeg files (pictures) from SD card and display that image on e-paper display."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/microSD/Inkplate10_microSD_Pictures/Inkplate10_microSD_Pictures.ino" 
 />

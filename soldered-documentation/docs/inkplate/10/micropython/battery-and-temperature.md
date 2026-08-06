@@ -21,30 +21,30 @@ import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
 
 # Get battery voltage as a string
-battery = str(inkplate.readBattery())
-inkplate.setTextSize(2)
-inkplate.printText(350, 350, "Battery voltage: " + battery + "V")
-inkplate.partialUpdate()
+battery = str(inkplate.read_battery())
+inkplate.set_text_size(2)
+inkplate.print_text(350, 350, "Battery voltage: " + battery + "V")
+inkplate.partial_update()
 
 # Get temperature reading as a string
-temperature = str(inkplate.readTemperature())
-inkplate.printText(350, 400, "Temperature: " + temperature + "C")
-inkplate.partialUpdate()
+temperature = str(inkplate.read_temperature())
+inkplate.print_text(350, 400, "Temperature: " + temperature + "C")
+inkplate.partial_update()
 ```
 
 <FunctionDocumentation 
-functionName="inkplate.readBattery()" 
+functionName="inkplate.read_battery()" 
 description="Measure the current battery voltage of the Inkplate board." 
 returnType="float" 
 returnDescription="Battery voltage in volts." />
 
 <FunctionDocumentation 
-functionName="inkplate.readTemperature()" 
-description="Measure the temperature of the Inkplate board’s internal sensor." 
+functionName="inkplate.read_temperature()" 
+description="Measure the temperature of the Inkplate board's internal sensor." 
 returnType="float" 
 returnDescription="Temperature in degrees Celsius." />
 

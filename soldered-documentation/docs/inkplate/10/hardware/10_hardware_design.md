@@ -16,9 +16,9 @@ Inkplate 10 is an **open-source** product, and we are happy to share an overview
 
 ## Basic overview
 
-The Inkplate 10 features a 9.7″ e-paper display, USB-C connectivity for both power and programming, abundant GPIO pins with I2C, SPI, and Qwiic header, on-board ESP32–driven Wi‑Fi/Bluetooth, CH340C USB‑to‑UART bridging, microSD expansion,chac and TI-based power management (battery charging and temperature sensing) — all in a form factor primed for custom enclosures.
+Inkplate 10 pairs a 9.7" e-paper display with an ESP32 for Wi-Fi and Bluetooth, USB-C for both power and programming, and a CH340C USB-to-UART bridge. You also get plenty of GPIO with I2C, SPI and a Qwiic header, a microSD slot, and TI-based power management that handles battery charging and temperature sensing. The form factor is made for custom enclosures.
 
-<InfoBox>Fun fact: Inkplate 10 displays come from reused Kindle E-Books </InfoBox>
+<InfoBox>Fun fact: Inkplate 10 displays are recovered from used Kindle e-readers.</InfoBox>
 
 ---
 
@@ -36,7 +36,7 @@ Here is an overview of on‑board components with their locations:
 
 The **ED097OC1** is a **9.7-inch** e-paper display panel from **E Ink Holdings Inc.** This model is **without a frontlight or touchscreen**, making it ideal for **low-power, high-contrast applications** such as **e-book readers**.  
 
-It features **an 825 × 1200 resolution (150 PPI)**, **reflective matte treatment**, and a **7:1 contrast ratio**. The display operates in a **0°C to 50°C** temperature range and can be stored in temperatures as low as **-25°C**.  
+It features **a 1200 × 825 resolution (150 PPI)**, **reflective matte treatment**, and a **7:1 contrast ratio**. The display operates in a **0°C to 50°C** temperature range and can be stored in temperatures as low as **-25°C**.  
 
 See the table below for detailed specifications:  
 
@@ -45,7 +45,7 @@ See the table below for detailed specifications:
 | **Brand**        | E Ink |
 | **Model Number** | ED097OC1 / ED097OC2 / ED097OC4|
 | **Diagonal Size** | 9.7 inches |
-| **Resolution** | 825 × 1200 pixels (212 PPI) |
+| **Resolution** | 1200 × 825 pixels (150 PPI) |
 | **Pixel Format** | Rectangle |
 | **Active Area** | 202.8(W)×139.425(H) mm |
 | **Outline Dimensions** | 218.8(H)×156.425(V)×1.28(D) mm |

@@ -15,12 +15,12 @@ See the table below for a detailed explanation of each jumper's function:
 
 | **Jumper** 	| **Default State** 	| **Function** 	|
 |---	|---	|---	|
-| **JP1** 	| **NO**(not connected) 	| When shorted, it keeps the microSD card powered at 3.3v at all times. Useful for troubleshooting, but not ideal for low-power applications. 	|
-| **JP2** 	| **Connected to INT by default** 	| Switch between a digital, open-drain, active low interrupt output and a programmable digital quare-wavee output that can be used as a system clock. 	|
+| **JP1** 	| **NO** (not connected) 	| When shorted, it keeps the microSD card powered at 3.3V at all times. Useful for troubleshooting, but not ideal for low-power applications. 	|
+| **JP2** 	| **Connected to INT by default** 	| Switch between a digital, open-drain, active low interrupt output and a programmable digital square-wave output that can be used as a system clock. 	|
 | **JP3** 	| **NC** (connected) 	| When shorted, enables Chip Select function for communication with microSD card. 	|
-| **JP4** 	| **NC** (connected) 	| When shorted, it enables interupt pin on PCAL6416A	|
-| **JP5** 	| **NC** (connected) 	| When shorted, it provides a connection to onboard MOSFET that powers the microSD card. 
-| **JP6** 	| **NC** (connected) 	| When shorted, it connects the battery terminal to MCP73831 	|
+| **JP4** 	| **NC** (connected) 	| When shorted, it enables the interrupt pin on the PCAL6416A	|
+| **JP5** 	| **NC** (connected) 	| When shorted, it provides a connection to the onboard MOSFET that powers the microSD card. 	|
+| **JP6** 	| **NC** (connected) 	| When shorted, it connects the battery terminal to the MCP73831. 	|
 <FlickityCarousel
 images={[
 {src:'/img/inkplate10/jp1.webp', alt: 'Jumper JP1', caption:'JP1'},
