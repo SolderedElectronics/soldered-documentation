@@ -63,8 +63,8 @@ void loop()
 }
 ```
 <FunctionDocumentation
-    functionname="display.sdCardInit()"
-    description="Initializes sd card trough SPI."
+    functionName="display.sdCardInit()"
+    description="Initializes the microSD card through SPI."
     returnDescription="Returns true if the initialization was successful, otherwise returns false."
 />
 
