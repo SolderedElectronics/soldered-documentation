@@ -57,7 +57,7 @@ Inkplate 10 setup is complete. Now, try out some examples from the Arduino libra
 
 ## Light and Versatile Graphics Library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LVGL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 

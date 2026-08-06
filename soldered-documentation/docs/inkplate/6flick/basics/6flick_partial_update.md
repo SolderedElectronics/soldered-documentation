@@ -1,18 +1,18 @@
 ---
 slug: /inkplate/6flick/basics/partial-update
-title: Inkplate 6FLICK – Partial Update
-sidebar_label: Partial Update
+title: Inkplate 6FLICK – Partial update
+sidebar_label: Partial update
 id: 6flick-partial-update
 hide_title: true
 ---
 
-<SectionTitle title="Partial Updates" />
+<SectionTitle title="Partial updates" />
 
-Instead of `display.update()`, you can use `display.partialUpdate()` for a faster display refresh. This prevents full-screen flickering by updating only the pixels that have changed in the frame buffer.
+Instead of `display.display()`, you can use `display.partialUpdate()` for a faster display refresh. This prevents full-screen flickering by updating only the pixels that have changed in the frame buffer.
 
 ---
 
-## Partial Update
+## Partial update
 
 Partial updates in black-and-white (1-bit) mode offer the fastest e-Paper update available on Inkplate.
 
