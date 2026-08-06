@@ -6,7 +6,7 @@ id: read-temp
 hide_title: true
 ---
 
-<SectionTitle title="Read Temperature" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Read Temperature" />
 
 Inkplate 6FLICK integrates **TPS65186** power supply chip for e-paper display. The chip supports measurement of an **external NTC (Negative Temperature Coefficient) thermistor** allowing monitoring of display panel temperature in range from -10°C to 85°C. This in turn can be used to give an approximate room temperature measurements. 
 
@@ -21,8 +21,8 @@ Inkplate 6FLICK integrates **TPS65186** power supply chip for e-paper display. T
 ```cpp
 #include "Inkplate.h"   // Include Inkplate library to the sketch
 #include "tempSymbol.h" // Include .h file that contains byte array for temperature symbol.
+// It is in same folder as this sketch. You can even open it (read it) by clicking on tempSymbol.h tab in Arduino IDE
 Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1-bit mode (BW)
-
 void setup()
 {
     display.begin();                    // Init Inkplate library (you should call this function ONLY ONCE)
@@ -33,8 +33,11 @@ void setup()
 void loop()
 {
     int temperature = display.readTemperature();            // Read temperature from on-board temperature sensor
+                                                            // NOTE: The temperature readings are not 100% accurate!
+                                                            // See header comment for more details.
+
     display.clearDisplay();                                 // Clear everything in frame buffer of e-paper display
-    display.image.draw(tempSymbol, 100, 100, 38, 79); // Draw temperature symbol at position X=100, Y=100
+    display.image.draw(tempSymbol, 100, 100, 38, 79, BLACK); // Draw temperature symbol at position X=100, Y=100
     display.setCursor(150, 120);
     display.print(temperature, DEC); // Print temperature
     display.print('C');
@@ -44,7 +47,7 @@ void loop()
 ```
 
 <FunctionDocumentation
-  functionName="inkplate.readTemperature()"
+  functionName="display.readTemperature()"
   description="Reads the onboard temperature sensor"
   returnType="int"
   returnDescription="Returns the measured temperature in °C"

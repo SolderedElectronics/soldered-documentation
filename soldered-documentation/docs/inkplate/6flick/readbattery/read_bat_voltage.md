@@ -6,7 +6,7 @@ id: read-bat
 hide_title: true  
 ---
 
-<SectionTitle title="Read Battery Voltage" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Read Battery Voltage" />
 
 When running your **Inkplate 6FLICK board** on a **Li-ion battery**, it's helpful to know the battery's condition. Inkplate 6FLICK lets you measure the battery voltage directly, giving you an estimate of remaining capacity and help you decide if it's time to recharge.
 
@@ -19,6 +19,7 @@ When running your **Inkplate 6FLICK board** on a **Li-ion battery**, it's helpfu
 ```cpp
 #include "Inkplate.h"   // Include Inkplate library to the sketch
 #include "battSymbol.h" // Include .h file that contains byte array for battery symbol.
+// It is in same folder as this sketch. You can even open it (read it) by clicking on battSymbol.h tab in Arduino IDE
 Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1-bit mode (BW)
 
 void setup()
@@ -32,7 +33,7 @@ void loop()
 {
     float voltage = display.readBattery();                   // Read battery voltage
     display.clearDisplay();                                  // Clear everything in frame buffer of e-paper display
-    display.image.draw(battSymbol, 100, 100, 106, 45); // Draw battery symbol at position X=100 Y=100
+    display.image.draw(battSymbol, 100, 100, 106, 45, BLACK); // Draw battery symbol at position X=100 Y=100
     display.setCursor(210, 120);
     display.print(voltage, 2); // Print battery voltage
     display.print('V');
@@ -42,7 +43,7 @@ void loop()
 ```
 
 <FunctionDocumentation
-  functionName="inkplate.readBattery()"
+  functionName="display.readBattery()"
   description="Reads the current battery voltage when running on battery power"
   returnType="float"
   returnDescription="Returns the measured battery voltage"

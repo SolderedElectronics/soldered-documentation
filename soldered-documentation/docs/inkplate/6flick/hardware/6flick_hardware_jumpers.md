@@ -29,10 +29,10 @@ images={[
 | **Jumper** | **Default State**      | **Function**                                                                                                                                                             |
 | ---------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **JP1**    | **NO** (not connected) | When shorted, it keeps the microSD card powered at 3.3V at all times. Useful for troubleshooting or logging during deep sleep, though not ideal for low-power use.   |
-| **JP2**    | **NC** (connected)     | Connects `GPIO15` to the microSD Chip Select (CS) line. Needed for SD card communication.                                                                               |
-| **JP3**    | **NC** (connected)     | Connects `GPIO39` to the microSD card power enable line or interrupt (depending on routing). May be used for SD power switching or custom IRQ setups.                  |
-| **JP4**    | **NO** (not connected) | Connects `GPIO0` to a solderable pad. It is used to manually pull `GPIO0` low, which is often required to enter firmware flashing mode (ESP32 bootloader).          |
-| **JP5**    | **NC** (connected)     | Connects `GPIO0` through a capacitor to GND. It provides filtering or a soft pull-down to help stabilize boot mode logic and is typically left connected.             |
-| **JP6**    | **NC** (connected)     | Connects `GPIO34` to the interrupt output of the touch controller (`INT B`), which is required for interrupt-driven touch detection.                                  |
-| **JP7**    | **NC** (connected)     | Connects the SD card power enable signal to the power MOSFET; if left open, the SD card will not be powered by software control.                                        |
-| **JP8**    | **NC** (connected)     | Connects VBAT (battery voltage) to the frontlight MOSFET, controlling whether the frontlight is powered via battery input.                                              |
+| **JP2**    | **NC** (connected)     | Connects the microSD Chip Select line to `IO15` (`SPI_CS`) on the ESP32. Cut it to drive the card's CS from the `GPIO15` breakout pad instead.                       |
+| **JP3**    | **NC** (connected)     | Selects what the RTC drives on `IO39`: its interrupt output, or the `CLKOUT` square-wave output. Nothing to do with the microSD card.                                |
+| **JP4**    | **NO** (not connected) | Shorts out `R58`, the 47 Ω series resistor on the `GPIO0` to `EPD_CL` clock line. Only for signal-integrity experiments on the e-paper clock.                        |
+| **JP5**    | **NC** (connected)     | Connects `C61`, a 100 pF filter capacitor, to that same `EPD_CL` clock line. Leave it connected unless you are deliberately tuning the clock edge.                   |
+| **JP6**    | **NC** (connected)     | Connects `IO34` to `INTB`, the interrupt output of **IO expander 1**. Cut it to free `IO34` for your own use.                                                        |
+| **JP7**    | **NC** (connected)     | Connects `SD_ENABLE` to pin P1-5 of IO expander 1, letting the library switch microSD card power on and off.                                                          |
+| **JP8**    | **NC** (connected)     | Connects `V_BAT_MOS` to pin P1-1 of IO expander 1. This enables the battery voltage divider, so battery voltage is only measured when requested.                      |

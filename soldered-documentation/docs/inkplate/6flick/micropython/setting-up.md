@@ -13,13 +13,13 @@ Using MicroPython on your Inkplate board is very simple and straightforward, jus
 
 ## Setting up Inkplate with MicroPython
 
-In order to get started with running your code on Inkplate, connect the device to your computer via USB and follow these steps:
+To start running your code on Inkplate, connect the device to your computer via USB and follow these steps:
 
 1. Download the `Inkplate-firmware.bin` file onto your computer
    
 2. Flash the **.bin** file onto the Inkplate device, this can be done via **[Soldered MicroPython Helper VS Code Extension](https://marketplace.visualstudio.com/items?itemName=SolderedElectronics.soldered-micropython-helper)** or the **[Thonny IDE](https://thonny.org)**
 
-### Flashing with the Micropython Helper extension
+### Flashing with the MicroPython Helper extension
 
 After **[setting up the MicroPython Helper extension](https://soldered.com/documentation/micropython/getting-started-with-vscode)**, go to `Install Micropython on your board` and pick `Upload Binary file from PC`, choose the **Inkplate-firmware.bin** file and wait for it to flash on the device.
 
@@ -29,7 +29,7 @@ After **[setting up the MicroPython Helper extension](https://soldered.com/docum
 
 In the Thonny IDE, go to `Run -> Configure interpreter` and on the bottom of the window go to `Install or update Micropython`. 
 
-<CenteredImage src="/img/inkplate10-micropython/thonny_cfg_install.png" alt="Inkplate 6 FLICK Thonny" caption="Install or update Micropython" width="500px"/>
+<CenteredImage src="/img/inkplate10-micropython/thonny_cfg_install.png" alt="Inkplate 6FLICK Thonny" caption="Install or update Micropython" width="500px"/>
 
 On the bottom of that window click on the `≡` button and pick `Select local MicroPython image`, choose the Inkplate-firmware.bin file on your computer and press `Install`.
 

@@ -18,17 +18,17 @@ As mentioned on the previous page, Inkplate 6FLICK has two different display mod
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate display(INKPLATE_1BIT);
 void setup() {
-  inkplate.begin();
+  display.begin();
   // Clear the display
-  inkplate.clearDisplay();
-  inkplate.display();
+  display.clearDisplay();
+  display.display();
   // Draw a black pixel at x=100, y=100
-  inkplate.drawPixel(100,100,BLACK);
+  display.drawPixel(100,100,BLACK);
   // Draw a white pixel at x=200, y=200
-  inkplate.drawPixel(200,200,WHITE);
-  inkplate.display(); // Show on the display
+  display.drawPixel(200,200,WHITE);
+  display.display(); // Show on the display
 }
 void loop() {
 }
@@ -46,19 +46,19 @@ void loop() {
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_3BIT);
+Inkplate display(INKPLATE_3BIT);
 void setup() {
-  inkplate.begin();
+  display.begin();
   // Clear the display
-  inkplate.clearDisplay();
-  inkplate.display();
+  display.clearDisplay();
+  display.display();
   // Draw a black pixel at x=100, y=100
-  inkplate.drawPixel(100,100,0);
+  display.drawPixel(100,100,0);
   // Draw a filled rectangle
-  inkplate.fillRect(300, 100, 100, 100, 6);
-  inkplate.fillRect(300, 300, 100, 100, 4);
-  inkplate.fillRect(300, 500, 100, 100, 2);
-  inkplate.display(); // Show on the display
+  display.fillRect(300, 100, 100, 100, 6);
+  display.fillRect(300, 300, 100, 100, 4);
+  display.fillRect(300, 500, 100, 100, 2);
+  display.display(); // Show on the display
 }
 void loop() {
 }

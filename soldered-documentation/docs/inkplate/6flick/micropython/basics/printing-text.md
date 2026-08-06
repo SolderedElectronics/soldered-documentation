@@ -5,25 +5,26 @@ sidebar_label: Printing text
 id: printing-text
 ---
 
-Inkplate 6 FLICK allows you to print text on a **1024 x 758 px canvas**.
+Inkplate 6FLICK allows you to print text on a **1024 x 758 px canvas**.
 
 ## Displaying basic information
 
 Below is a simple example demonstrating the simple way of displaying the information on the Inkplate display.
 
 ```python
-from inkplate6FLICK import Inkplate
-import time
+from inkplate6_flick import Inkplate  # Include the Inkplate module
 
-inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
-inkplate.begin()
-inkplate.clearDisplay()
-inkplate.display()
+inkplate = Inkplate(Inkplate.INKPLATE_1BIT)  # Create a display instance (8-level grayscale)
 
-#Putting the text in display buffer
-inkplate.print("Hello World!")
-inkplate.display()
+inkplate.begin()  # Initialize the display
 
+inkplate.set_text_size(2)  # Scale up the font size
+
+inkplate.set_cursor(380, 350)  # Set the cursor from where the text will be written
+
+inkplate.print("Hello world!")  # Print to the display buffer
+
+inkplate.display()  # Display what is drawn to the buffer
 ```
 
 <FunctionDocumentation
@@ -40,11 +41,11 @@ inkplate.display()
 
 ## Displaying text in Grayscale and more text parameters
 
-Inkplate 6 FLICK also lets you render 2-bit grayscale graphics (0-3) on its canvas. You can also modify different text parameters, such as: text color, text size and text wrapping. Below is a simple example demonstrating different text colors using grayscale and different text styles:
+Inkplate 6FLICK also lets you render 2-bit grayscale graphics (0-3) on its canvas. You can also modify different text parameters, such as: text color, text size and text wrapping. Below is a simple example demonstrating different text colors using grayscale and different text styles:
 
 
 <InfoBox>
-Color parameter in 'setTextColor()' changes text color as per table below:
+Color parameter in 'set_text_color()' changes text color as per table below:
 
 | **VALUE** 	| **COLOR** 	|
 |---	|---	|
@@ -55,7 +56,7 @@ Color parameter in 'setTextColor()' changes text color as per table below:
 </InfoBox>
 
 ```python
-from inkplate6FLICK import Inkplate
+from inkplate6_flick import Inkplate
 import time
 
 # Create Inkplate object in 2-bit grayscale mode
@@ -65,26 +66,26 @@ inkplate = Inkplate(Inkplate.INKPLATE_2BIT)
 inkplate.begin()
 
 # Clear the frame buffer
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
 
 
-inkplate.setCursor(50, 50)       
-inkplate.setTextSize(1)          
-inkplate.setTextColor(0)         # black
+inkplate.set_cursor(50, 50)       
+inkplate.set_text_size(1)          
+inkplate.set_text_color(0)         # black
 inkplate.print("Size 1")
 
-inkplate.setCursor(50, 100)
-inkplate.setTextSize(2)          
-inkplate.setTextColor(1)         # dark gray
+inkplate.set_cursor(50, 100)
+inkplate.set_text_size(2)          
+inkplate.set_text_color(1)         # dark gray
 inkplate.print("Size 2")
 
-inkplate.setCursor(50, 180)
-inkplate.setTextSize(3)          
-inkplate.setTextColor(2)         # light gray
+inkplate.set_cursor(50, 180)
+inkplate.set_text_size(3)          
+inkplate.set_text_color(2)         # light gray
 inkplate.print("Size 3")
 
-inkplate.setTextColor(0)         # black
+inkplate.set_text_color(0)         # black
 long_text = (
     "This is a very long line of text intended to demonstrate how wrapping works. "
     "When wrap mode is enabled, the text will continue onto the next line once it "
@@ -92,14 +93,14 @@ long_text = (
     "or larger blocks of text without worrying about manually inserting line breaks. "
     "It is especially useful for rendering user interfaces, menus, or e-books."
 )
-inkplate.setCursor(50, 340)
-inkplate.setTextSize(1)
-inkplate.setTextWrapping(True)       
+inkplate.set_cursor(50, 340)
+inkplate.set_text_size(1)
+inkplate.set_text_wrapping(True)       
 inkplate.print(long_text)
 
-inkplate.setCursor(50, 480)
-inkplate.setTextSize(1)
-inkplate.setTextWrapping(False)      
+inkplate.set_cursor(50, 480)
+inkplate.set_text_size(1)
+inkplate.set_text_wrapping(False)      
 inkplate.print(long_text)
 
 inkplate.display()
@@ -107,7 +108,7 @@ inkplate.display()
 
 ---
 <FunctionDocumentation
-  functionName="inkplate.setCursor()"
+  functionName="inkplate.set_cursor()"
   description="Set the cursor position for the next text to be rendered."
   parameters={[
     { type: 'Number', name: 'x', description: 'X coordinate for the text start.' },
@@ -116,7 +117,7 @@ inkplate.display()
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextSize()"
+  functionName="inkplate.set_text_size()"
   description="Set the text size scaling factor."
   parameters={[
     { type: 'Number', name: 'size', description: 'Scale factor (1 = normal, 2 = double, 3 = triple, …).' }
@@ -124,7 +125,7 @@ inkplate.display()
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextColor"
+  functionName="inkplate.set_text_color"
   description="Set the text color (grayscale level) used for text rendering."
   parameters={[
     { type: 'Number', name: 'color', description: 'Grayscale value for text (0 = white to 3 = black in 2-bit mode).' }
@@ -132,7 +133,7 @@ inkplate.display()
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextWrapping()"
+  functionName="inkplate.set_text_wrapping()"
   description="Enable or disable automatic text wrapping when reaching the display edge."
   returnDescription="Nothing"
   parameters={[
@@ -140,4 +141,4 @@ inkplate.display()
   ]}
 />
 
-<CenteredImage src="/img/inkplate6flick-micropython/text.jpg" alt="Inkplate 6flick running the example code" caption="Simple grayscale example with different text styles." width="800px" />
+<CenteredImage src="/img/inkplate6flick-micropython/text.jpg" alt="Inkplate 6FLICK running the example code" caption="Simple grayscale example with different text styles." width="800px" />

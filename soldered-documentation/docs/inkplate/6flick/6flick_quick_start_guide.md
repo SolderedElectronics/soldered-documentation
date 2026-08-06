@@ -6,7 +6,7 @@ id: 6flick-quick-start-guide
 hide_title: true  
 ---
 
-<SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Quick start guide" />
 
 To get started with Arduino on Inkplate 6FLICK, complete a few simple steps to install the required software.
 
@@ -14,7 +14,7 @@ To get started with Arduino on Inkplate 6FLICK, complete a few simple steps to i
 
 ### 1. Install Arduino IDE
 
-If you haven’t installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
+If you haven't installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
 <WarningBox>Arduino IDE 2.0 or newer is required for Inkplate 6FLICK.</WarningBox>
 
 <CenteredImage src="/img/inkplate_6_flick/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
@@ -51,7 +51,7 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 ### Done!
 
-Inkplate 6FLICK setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! See the next page in the documentation for details on how to upload code:
+Inkplate 6FLICK setup is complete. Now, try out some examples from the Arduino library, upload them and see the results for yourself! See the next page in the documentation for details on how to upload code:
 
 ---
 

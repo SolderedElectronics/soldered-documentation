@@ -18,7 +18,7 @@ This section demonstrates setting a simple RTC alarm that is checked using polli
 
 ```cpp
 #include "Inkplate.h"            // Include Inkplate library to the sketch
-Inkplate inkplate(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1-bit mode (BW)
+Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1-bit mode (BW)
 
 #define REFRESH_DELAY 1000 // Delay between refreshes
 unsigned long time1;       // Time for measuring refresh in millis
@@ -32,7 +32,7 @@ uint8_t seconds = 30;
 uint8_t weekday = 1;
 uint8_t day = 20;
 uint8_t month = 2;
-uint8_t year = 23;
+uint8_t year = 22;
 
 // Set alarm time and date (alarm will be generated 10 seconds after board power up)
 uint8_t alarmHour = 12;
@@ -43,14 +43,14 @@ uint8_t alarmDay = 20;
 
 void setup()
 {
-    inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    inkplate.clearDisplay(); // Clear frame buffer of inkplate
-    inkplate.display();      // Put clear image on inkplate
-    inkplate.setTextSize(5); // Set text to be 5 times bigger than classic 5x7 px text
+    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    display.clearDisplay(); // Clear frame buffer of display
+    display.display();      // Put clear image on display
+    display.setTextSize(5); // Set text to be 5 times bigger than classic 5x7 px text
 
-    inkplate.rtc.setTime(hour, minutes, seconds);                                         // Send time to RTC
-    inkplate.rtc.setDate(weekday, day, month, year);                                      // Send date to RTC
-    inkplate.rtc.setAlarm(alarmSeconds, alarmMinutes, alarmHour, alarmDay, alarmWeekday); // Set alarm
+    display.rtc.setTime(hour, minutes, seconds);                                         // Send time to RTC
+    display.rtc.setDate(weekday, day, month, year);                                      // Send date to RTC
+    display.rtc.setAlarm(alarmSeconds, alarmMinutes, alarmHour, alarmDay, alarmWeekday); // Set alarm
 }
 
 // Variable that keeps count on how much screen has been partially updated
@@ -59,34 +59,34 @@ void loop()
 {
     if ((unsigned long)(millis() - time1) > REFRESH_DELAY)
     {
-        inkplate.rtc.getRtcData();           // Get the time and date from RTC
-        seconds = inkplate.rtc.getSecond();  // Store seconds in a variable
-        minutes = inkplate.rtc.getMinute();  // Store minutes in a variable
-        hour = inkplate.rtc.getHour();       // Store hours in a variable
-        day = inkplate.rtc.getDay();         // Store day of month in a variable
-        weekday = inkplate.rtc.getWeekday(); // Store day of week in a variable
-        month = inkplate.rtc.getMonth();     // Store month in a variable
-        year = inkplate.rtc.getYear();       // Store year in a variable
+        display.rtc.getRtcData();           // Get the time and date from RTC
+        seconds = display.rtc.getSecond();  // Store senconds in a variable
+        minutes = display.rtc.getMinute();  // Store minutes in a variable
+        hour = display.rtc.getHour();       // Store hours in a variable
+        day = display.rtc.getDay();         // Store day of month in a variable
+        weekday = display.rtc.getWeekday(); // Store day of week in a variable
+        month = display.rtc.getMonth();     // Store month in a variable
+        year = display.rtc.getYear();       // Store year in a variable
 
-        inkplate.clearDisplay();                                       // Clear content in frame buffer
-        inkplate.setCursor(100, 300);                                  // Set position of the text
+        display.clearDisplay();                                       // Clear content in frame buffer
+        display.setCursor(100, 300);                                  // Set position of the text
         printTime(hour, minutes, seconds, day, weekday, month, year); // Print the time on screen
 
-        if (inkplate.rtc.checkAlarmFlag()) // Check if alarm has occurred
+        if (display.rtc.checkAlarmFlag()) // Check if alarm has occurred
         {
-            inkplate.rtc.clearAlarmFlag(); // It's recommended to clear alarm flag after alarm has occurred
-            inkplate.setCursor(400, 400); // Set new position for cursor
-            inkplate.print("ALARM!");
+            display.rtc.clearAlarmFlag(); // It's recommended to clear alarm flag after alarm has occurred
+            display.setCursor(400, 400); // Set new position for cursor
+            display.print("ALARM!");
         }
 
         if (n > 9) // Check if you need to do full refresh or you can do partial update
         {
-            inkplate.display(true); // Do a full refresh
+            display.display(true); // Do a full refresh
             n = 0;
         }
         else
         {
-            inkplate.partialUpdate(false, true); // Do partial update and keep e-paper power supply on
+            display.partialUpdate(false, true); // Do partial update and keep e-papr power supply on
             n++;                                // Keep track on how many times screen has been partially updated
         }
 
@@ -101,32 +101,32 @@ void printTime(uint8_t _hour, uint8_t _minutes, uint8_t _seconds, uint8_t _day, 
     char *wday[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     print2Digits(_hour);
-    inkplate.print(':');
+    display.print(':');
     print2Digits(_minutes);
-    inkplate.print(':');
+    display.print(':');
     print2Digits(_seconds);
 
-    inkplate.print(' ');
+    display.print(' ');
 
-    inkplate.print(wday[_weekday]);
-    inkplate.print(", ");
+    display.print(wday[_weekday]);
+    display.print(", ");
     print2Digits(_day);
-    inkplate.print('/');
+    display.print('/');
     print2Digits(_month);
-    inkplate.print('/');
-    inkplate.print(_year, DEC);
+    display.print('/');
+    display.print(_year, DEC);
 }
 
 void print2Digits(uint8_t _d)
 {
     if (_d < 10)
-        inkplate.print('0');
-    inkplate.print(_d, DEC);
+        display.print('0');
+    display.print(_d, DEC);
 }
 ```
 
 <FunctionDocumentation
-    functionName="inkplate.rtc.setAlarm()"
+    functionName="display.rtc.setAlarm()"
     description="Sets the alarm to all the parameters."
     returnType="void"
     parameters={[ 
@@ -139,7 +139,7 @@ void print2Digits(uint8_t _d)
 />
 
 <FunctionDocumentation
-  functionName="inkplate.rtc.checkAlarmFlag()"
+  functionName="display.rtc.checkAlarmFlag()"
   description="Checks if the alarm flag is on"
   returnDescription="Returns true if the alarm flag is on"
   returnType="bool"
@@ -147,12 +147,12 @@ void print2Digits(uint8_t _d)
 
 ---
 
-## Interrupt Alarm
+## Interrupt alarm
 The RTC alarm can also generate an **interrupt** instead of requiring polling. The alarm event can wake up the MCU from sleep or trigger an action immediately. To use this, you will need to globally declare a `volatile bool` to use as the alarm flag and a function that modifies this flag:
 
 ```cpp
 #include "Inkplate.h"             // Include Inkplate library to the sketch
-Inkplate inkplate(INKPLATE_1BIT);  // Create an object on Inkplate library and also set library into 1-bit mode (BW)
+Inkplate display(INKPLATE_1BIT);  // Create an object on Inkplate library and also set library into 1-bit mode (BW)
 
 volatile int _alarmFlag = 0;      // Variable to store alarm flag
 
@@ -165,17 +165,18 @@ void setup()
 {
     pinMode(39, INPUT_PULLUP);      // Set RTC INT pin on ESP32 GPIO39 as input with pullup resistor enabled
 
-    inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    inkplate.clearDisplay(); // Clear frame buffer of inkplate
-    inkplate.display();      // Put clear image on inkplate
-    inkplate.setTextSize(5); // Set text to be 5 times bigger than classic 5x7 px text
-  
-    inkplate.rtc.setEpoch(1589610300);
-    inkplate.rtc.setAlarmEpoch(inkplate.rtc.getEpoch() + 10, RTC_ALARM_MATCH_DHHMMSS);
 
-    // inkplate.rtc.setTime(6, 25, 0);        // Or you can use other way to set the time and date
-    // inkplate.rtc.setDate(6, 16, 5, 2020);
-    // inkplate.rtc.setAlarm(10, 25, 6, 16, 6); // Set alarm 10 seconds from now
+    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    display.clearDisplay(); // Clear frame buffer of display
+    display.display();      // Put clear image on display
+    display.setTextSize(5); // Set text to be 5 times bigger than classic 5x7 px text
+  
+    display.rtc.setEpoch(1772184403);
+    display.rtc.setAlarmEpoch(display.rtc.getEpoch() + 10, RTC_ALARM_MATCH_DHHMMSS);
+
+    // display.rtc.setTime(6, 25, 0);        // Or you can use other way to set the time and date
+    // display.rtc.setDate(6, 16, 5, 2020);
+    // display.rtc.setAlarm(10, 25, 6, 16, 6); // Set alarm 10 seconds from now
   
     attachInterrupt(39, alarmISR, FALLING); // Set interrupt function and interrupt mode
 }
@@ -184,29 +185,29 @@ void setup()
 int n = 0;
 void loop()
 {
-    inkplate.clearDisplay();         // Clear frame buffer of inkplate
-    inkplate.setCursor(100, 100);    // Set position of the text
-    inkplate.rtc.getRtcData();          // Get the time and date from RTC
+    display.clearDisplay();         // Clear frame buffer of display
+    display.setCursor(100, 100);    // Set position of the text
+    display.rtc.getRtcData();          // Get the time and date from RTC
 
     // Print the time on screen
-    printTime(inkplate.rtc.getHour(), inkplate.rtc.getMinute(), inkplate.rtc.getSecond(), inkplate.rtc.getDay(), inkplate.rtc.getWeekday(), inkplate.rtc.getMonth(), inkplate.rtc.getYear());
+    printTime(display.rtc.getHour(), display.rtc.getMinute(), display.rtc.getSecond(), display.rtc.getDay(), display.rtc.getWeekday(), display.rtc.getMonth(), display.rtc.getYear());
     
     if (_alarmFlag)     // Check alarm flag
     {
         // _alarmFlag = 0;              // Uncomment if you want to clear this flag
-        inkplate.rtc.clearAlarmFlag();    // It's recommended to clear alarm flag after alarm has occurred
-        inkplate.setCursor(200, 200);    // Set position of the text
-        inkplate.print("ALARM");         // Print text
+        display.rtc.clearAlarmFlag();    // It's recommended to clear alarm flag after alarm has occurred
+        display.setCursor(200, 200);    // Set position of the text
+        display.print("ALARM");         // Print text
     }
     
     if (n > 9) // Check if you need to do full refresh or you can do partial update
     {
-        inkplate.display(true); // Do a full refresh
+        display.display(true); // Do a full refresh
         n = 0;
     }
     else
     {
-        inkplate.partialUpdate(false, true); // Do partial update and keep e-paper power supply on
+        display.partialUpdate(false, true); // Do partial update and keep e-papr power supply on
         n++;                                // Keep track on how many times screen has been partially updated
     }
 
@@ -220,27 +221,27 @@ void printTime(uint8_t _hour, uint8_t _minutes, uint8_t _seconds, uint8_t _day, 
     char *wday[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     print2Digits(_hour);
-    inkplate.print(':');
+    display.print(':');
     print2Digits(_minutes);
-    inkplate.print(':');
+    display.print(':');
     print2Digits(_seconds);
 
-    inkplate.print(' ');
+    display.print(' ');
 
-    inkplate.print(wday[_weekday]);
-    inkplate.print(", ");
+    display.print(wday[_weekday]);
+    display.print(", ");
     print2Digits(_day);
-    inkplate.print('/');
+    display.print('/');
     print2Digits(_month);
-    inkplate.print('/');
-    inkplate.print(_year, DEC);
+    display.print('/');
+    display.print(_year, DEC);
 }
 
 void print2Digits(uint8_t _d)
 {
     if (_d < 10)
-        inkplate.print('0');
-    inkplate.print(_d, DEC);
+        display.print('0');
+    display.print(_d, DEC);
 }
 ```
 

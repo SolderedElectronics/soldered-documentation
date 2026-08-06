@@ -18,7 +18,7 @@ Inkplate 6FLICK includes a **2-pin 2mm JST connector**, allowing you to connect 
 
 ---
 
-<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**.</InfoBox>  
+<InfoBox>Get the **battery polarity** right. Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**.</InfoBox>  
 
 <CenteredImage src="/img/inkplate10/battery_polarity.png" alt="Battery polarity on Inkplate 6FLICK" caption="Battery polarity on Inkplate 6FLICK" width="500px"/>  
 
@@ -32,7 +32,7 @@ Inkplate 6FLICK is compatible with **3.7V Li-ion batteries with protection**. If
 
 <CenteredImage src="/img/inkplate_6_motion/li-ion-w-proteciton.webp" alt="3.7V li-ion battery with protection" caption="3.7V li-ion battery with protection" width="500px"/>  
 
-Any of **[Soldered’s 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
+Any of **[Soldered's 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
 
 <InfoBox>Due to shipping restrictions, **we cannot ship Li-ion batteries outside the EU**. If you're in the US, we recommend checking out [Adafruit's Li-ion battery stock](https://www.adafruit.com/category/574).</InfoBox>  
 
@@ -42,11 +42,14 @@ Check out our [battery documentation](/li-ion-battery/overview/) page.
 
 ## Charging IC (MCP73831)
 
-The **MCP73831** is a compact, single-cell **Li-ion/Li-Polymer charge management controller** that regulates the **charging process**, ensuring safe and efficient charging via USB. The chip follows a **constant-current/constant-voltage (CC/CV) charging profile**, automatically switching to **trickle charge** when the battery nears full capacity.
+The **MCP73831** is a single-cell Li-ion/Li-Polymer charge controller. It manages the whole charge cycle over USB so you do not have to. The chip uses a **constant-current / constant-voltage (CC/CV)** profile: a deeply discharged cell first gets a low **preconditioning (trickle) current**, then the full charge current until the cell reaches its regulation voltage, and finally constant voltage until the charge terminates.
+
+On Inkplate 6FLICK the charge current is set by resistor **R39 (2.49 kΩ)** on the charger's `PROG` pin. The datasheet's equation is `I = 1000 / R_PROG(kΩ)` in mA, which works out to a charge current of roughly **400 mA**.
 
 Key features:  
 - **Automatic charge termination** when the battery is full  
-- **Overvoltage and overcurrent protection**  
+- **Reverse discharge protection**, so the battery does not drain back into the charger  
+- **Thermal regulation**, which reduces the charge current if the chip gets hot  
 - **Charge status indicator** (connected to the onboard LED)  
 
 <InfoBox>For full technical details, refer to the **MCP73831 datasheet**:<QuickLink  

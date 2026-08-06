@@ -22,7 +22,7 @@ Webhook.site will generate a unique URL for your personal use. Use `http://` ins
 import network
 import time
 import urequests
-from inkplate6FLICK import Inkplate
+from inkplate6_flick import Inkplate
 
 # Your WiFi credentials
 SSID = "YourNetwork"
@@ -78,7 +78,7 @@ import network
 import time
 import urequests
 import ujson
-from inkplate6FLICK import Inkplate
+from inkplate6_flick import Inkplate
 
 # Your WiFi credentials
 SSID = "YourNetwork"
@@ -105,10 +105,10 @@ def connect_wifi():
 # Initialize Inkplate display
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
-inkplate.setTextSize(2)
-inkplate.setCursor(50, 100)
+inkplate.set_text_size(2)
+inkplate.set_cursor(50, 100)
 
 if connect_wifi():
     # Data to send

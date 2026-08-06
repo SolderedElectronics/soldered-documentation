@@ -15,30 +15,30 @@ Below is a example that demonstrates how to draw basic shapes in **Black-White d
 <InfoBox> If you want to use the grayscale mode, simply change the constructor value and instead of using `inkplate.BLACK` use a numeric value: 0-3</InfoBox>
 
 ```python
-from inkplate6FLICK import Inkplate
+from inkplate6_flick import Inkplate
 import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
 
-inkplate.drawPixel(100, 100, inkplate.BLACK)
-inkplate.drawRect(50, 50, 75, 75, inkplate.BLACK)
-inkplate.drawCircle(200, 200, 30, inkplate.BLACK)
-inkplate.fillCircle(300, 300, 30, inkplate.BLACK)
-inkplate.drawFastHLine(20, 100, 50, inkplate.BLACK)
-inkplate.drawFastVLine(100, 20, 50, inkplate.BLACK)
-inkplate.drawLine(100, 100, 400, 400, inkplate.BLACK)
-inkplate.drawRoundRect(100, 10, 100, 100, 10, inkplate.BLACK)
-inkplate.fillRoundRect(10, 100, 100, 100, 10, inkplate.BLACK)
-inkplate.drawTriangle(300, 100, 400, 150, 400, 100, inkplate.BLACK)
+inkplate.draw_pixel(100, 100, inkplate.BLACK)
+inkplate.draw_rect(50, 50, 75, 75, inkplate.BLACK)
+inkplate.draw_circle(200, 200, 30, inkplate.BLACK)
+inkplate.fill_circle(300, 300, 30, inkplate.BLACK)
+inkplate.draw_fast_hline(20, 100, 50, inkplate.BLACK)
+inkplate.draw_fast_vline(100, 20, 50, inkplate.BLACK)
+inkplate.draw_line(100, 100, 400, 400, inkplate.BLACK)
+inkplate.draw_round_rect(100, 10, 100, 100, 10, inkplate.BLACK)
+inkplate.fill_round_rect(10, 100, 100, 100, 10, inkplate.BLACK)
+inkplate.draw_triangle(300, 100, 400, 150, 400, 100, inkplate.BLACK)
 
 inkplate.display()
 ```
 
 <FunctionDocumentation
-functionName="inkplate.drawPixel()"
+functionName="inkplate.draw_pixel()"
 description="Set a single pixel in the frame buffer."
 parameters={[
 { type: 'Number', name: 'x', description: 'X coordinate.' },
@@ -48,7 +48,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawRect()"
+functionName="inkplate.draw_rect()"
 description="Draw an unfilled rectangle outline."
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
@@ -60,7 +60,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawCircle()"
+functionName="inkplate.draw_circle()"
 description="Draw an unfilled circle."
 parameters={[
 { type: 'Number', name: 'x0', description: 'Center X.' },
@@ -71,7 +71,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.fillCircle()"
+functionName="inkplate.fill_circle()"
 description="Draw a filled circle."
 parameters={[
 { type: 'Number', name: 'x0', description: 'Center X.' },
@@ -82,7 +82,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawFastHLine()"
+functionName="inkplate.draw_fast_hline()"
 description="Draw a horizontal line quickly."
 parameters={[
 { type: 'Number', name: 'x', description: 'Start X.' },
@@ -93,7 +93,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawFastVLine()"
+functionName="inkplate.draw_fast_vline()"
 description="Draw a vertical line quickly."
 parameters={[
 { type: 'Number', name: 'x', description: 'X position.' },
@@ -104,7 +104,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawLine()"
+functionName="inkplate.draw_line()"
 description="Draw a line from one point to another."
 parameters={[
 { type: 'Number', name: 'x0', description: 'Start X.' },
@@ -116,7 +116,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawRoundRect()"
+functionName="inkplate.draw_round_rect()"
 description="Draw an unfilled rectangle with rounded corners."
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
@@ -129,7 +129,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.fillRoundRect()"
+functionName="inkplate.fill_round_rect()"
 description="Draw a filled rectangle with rounded corners."
 parameters={[
 { type: 'Number', name: 'x', description: 'Left X.' },
@@ -142,7 +142,7 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="inkplate.drawTriangle()"
+functionName="inkplate.draw_triangle()"
 description="Draw a triangle outline using three vertices."
 parameters={[
 { type: 'Number', name: 'x0', description: 'Vertex A X.' },
@@ -155,4 +155,4 @@ parameters={[
 ]}
 />
 
-<CenteredImage src="/img/inkplate6flick-micropython/shapes.jpg" alt="Inkplate 6flick running the example code" caption="Simple predefined shapes." width="800px" />
+<CenteredImage src="/img/inkplate6flick-micropython/shapes.jpg" alt="Inkplate 6FLICK running the example code" caption="Simple predefined shapes." width="800px" />

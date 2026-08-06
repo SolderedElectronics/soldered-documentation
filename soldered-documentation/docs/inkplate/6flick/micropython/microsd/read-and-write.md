@@ -15,12 +15,12 @@ Before running this example, make sure your SD card is formatted as **FAT16, FAT
 To learn how to format the microSD card click [**here**](/inkplate/6/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
 
 ```python
-from inkplate6FLICK import Inkplate
+from inkplate6_flick import Inkplate
 import os
 
 inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.initSDCard(fastBoot=True)
+inkplate.init_sd_card(fast_boot=True)
 
 #List files on the SD card
 print("FIles on SD:",os.listdir("sd"))
