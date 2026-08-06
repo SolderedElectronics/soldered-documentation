@@ -6,7 +6,7 @@ id: inkplate-lvgl-library
 pagination_next: null
 ---
 
-<SectionTitle title="Inkplate LVGL Library" backgroundImage="/img/arduino_bg.jpg" /> 
+<SectionTitle title="Inkplate LVGL Library" /> 
 
 **[Light and Versatile Graphics Library (LVGL)](https://lvgl.io)** is a free and open-source embedded graphics library used to create awesome looking **graphical user interfaces (GUIs)** for embedded systems that use microcontrollers and microprocessors. It provides a wide range of built-in widgets, animations, and styling options for many different kinds of displays, all designed to be lightweight and efficient since it's targeted for resource-constrained devices. Inkplate LVGL Library brings **full LVGL support** to the Soldered Inkplate family of e-paper displays.
 
