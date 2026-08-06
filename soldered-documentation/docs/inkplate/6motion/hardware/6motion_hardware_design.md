@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/hardware/design
-title: 6Motion - Hardware design
+title: Inkplate 6MOTION - Hardware design
 sidebar_label: Hardware design
 id: 6motion-hardware-design
 hide_title: true
@@ -10,7 +10,7 @@ hide_title: true
 
 <SectionTitle title="Hardware design" backgroundImage="/img/inkplate_6_motion/6_motion_hw.png" />
 
-Inkplate 6 MOTION is an **open-source** product, and we are happy to share an overview of its hardware design. On the following pages, you'll find schematics, KiCad design files, and other technical details related to the hardware. Whether you're looking to modify, troubleshoot, or simply understand the inner workings of Inkplate, this section has everything you need.  
+Inkplate 6MOTION is an **open-source** product, and we are happy to share an overview of its hardware design. On the following pages, you'll find schematics, KiCad design files, and other technical details related to the hardware. Whether you're looking to modify, troubleshoot, or simply understand the inner workings of Inkplate, this section has everything you need.  
 
 <InfoBox>All hardware designs and resources are provided under an [**open-source license**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-MOTION-hardware-design/blob/main/LICENSE.md), meaning you're free to explore, modify, and improve upon them as needed.</InfoBox>  
 
@@ -18,21 +18,21 @@ Inkplate 6 MOTION is an **open-source** product, and we are happy to share an ov
 
 ## Basic overview
 
-Inkplate 6 MOTION’s hardware consists of two separate board designs, each serving a distinct purpose.
+Inkplate 6MOTION's hardware consists of two separate board designs, each serving a distinct purpose.
 
 The main board houses key components, including the e-Paper connectors, ESP32-C3 co-processor, microSD card slot, power switch, USB connector, and various supporting components.
 The STM32 board is dedicated to the **STM32H743** microcontroller and external DRAM, ensuring precise timing and efficient memory management.
-This secondary board is referred to as the Inkplate 6 MOTION STM board, as its main function is to break out the STM32’s pins for connection to peripherals while maintaining stable communication with the DRAM.
+This secondary board is referred to as the Inkplate 6MOTION STM board, as its main function is to break out the STM32's pins for connection to peripherals while maintaining stable communication with the DRAM.
 
-<CenteredImage src="/img/inkplate_6_motion/motion_stm32.jpg" alt="STM32H743 on Inkplate 6 MOTION" caption="STM32H743 on Inkplate 6 MOTION" />
+<CenteredImage src="/img/inkplate_6_motion/motion_stm32.jpg" alt="STM32H743 on Inkplate 6MOTION" caption="STM32H743 on Inkplate 6MOTION" />
 
 ---
 
 ## Components
 
 Here is an overview of on-board components with their locations:
-<CenteredImage src="/img/inkplate_6_motion/inkplate_motion_hw_front.jpg" alt="Inkplate 6 MOTION front" caption="Inkplate 6 MOTION front"  />
-<CenteredImage src="/img/inkplate_6_motion/inkplate_motion_hw_back.jpg" alt="Inkplate 6 MOTION back" caption="Inkplate 6 MOTION back" />
+<CenteredImage src="/img/inkplate_6_motion/inkplate_motion_hw_front.jpg" alt="Inkplate 6MOTION front" caption="Inkplate 6MOTION front"  />
+<CenteredImage src="/img/inkplate_6_motion/inkplate_motion_hw_back.jpg" alt="Inkplate 6MOTION back" caption="Inkplate 6MOTION back" />
 
 <InfoBox>What is referred to here as easyC is actually **qwiic** connectors</InfoBox>
 

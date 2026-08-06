@@ -1,11 +1,11 @@
 ---
 slug: /inkplate/6motion/wifi/MQTT
-title: 6Motion - MQTT
+title: Inkplate 6MOTION - MQTT
 sidebar_label: MQTT
 id: 6motion-wifi-mqtt
 ---
 
-Using **MQTT** on Inkplate 6 MOTION allows sending and receiving messages over the network using the lightweight MQTT protocol, commonly used for IoT applications. The following sections explain how to connect to an MQTT broker, subscribe to topics, and send or receive messages.
+Using **MQTT** on Inkplate 6MOTION allows sending and receiving messages over the network using the lightweight MQTT protocol, commonly used for IoT applications. The following sections explain how to connect to an MQTT broker, subscribe to topics, and send or receive messages.
 
 ---
 
@@ -13,7 +13,7 @@ Using **MQTT** on Inkplate 6 MOTION allows sending and receiving messages over t
 
 To establish an MQTT connection, first initialize the MQTT library with `mqtt.begin()`, set the MQTT server using `mqtt.setServer()`, and attempt to connect with `mqtt.connect()`. Once connected, subscribe to a topic using `mqtt.subscribe()`.
 
-<WarningBox>Make sure the Inkplate 6 MOTION is connected to a **Wi-Fi network** before attempting to use MQTT.</WarningBox>
+<WarningBox>Make sure the Inkplate 6MOTION is connected to a **Wi-Fi network** before attempting to use MQTT.</WarningBox>
 
 ```cpp
 // Initialize the MQTT library and set the internal buffer for RX messages
@@ -109,7 +109,7 @@ inkplate.partialUpdate(true);
 
 ## Sending and receiving messages
 
-Once connected and subscribed, messages can be published using mqtt.publish(), and received by checking mqtt.available().
+Once connected and subscribed, messages can be published using `mqtt.publish()`, and received by checking `mqtt.available()`.
 
 ```cpp
 // Check if a new message is available on the subscribed topic
@@ -223,6 +223,6 @@ For a complete MQTT implementation, including connecting, subscribing, publishin
 
 <QuickLink 
   title="Inkplate_6_Motion_WiFi_MQTT.ino" 
-  description="Full example on how to init, subscribe, unsubscribe, transmit and recieve data via MQTT"
+  description="Full example on how to init, subscribe, unsubscribe, transmit and receive data via MQTT"
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Web_WiFi/Inkplate_6_Motion_WiFi_MQTT/Inkplate_6_Motion_WiFi_MQTT.ino" 
 />

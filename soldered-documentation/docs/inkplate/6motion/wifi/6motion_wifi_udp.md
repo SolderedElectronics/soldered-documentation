@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/wifi/udp
-title: 6Motion - UDP
+title: Inkplate 6MOTION - UDP
 sidebar_label: UDP
 id: 6motion-wifi-udp
 ---
@@ -11,7 +11,7 @@ It's possible to use UDP servers to easily retrieve the current time, which is u
 
 ---
 
-## Getting Time via a UDP Server
+## Getting time from a UDP server
 
 Here's how to get time data via UDP:
 
@@ -107,7 +107,7 @@ void loop()
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
   title="Inkplate_6_Motion_WiFi_UDP.ino" 

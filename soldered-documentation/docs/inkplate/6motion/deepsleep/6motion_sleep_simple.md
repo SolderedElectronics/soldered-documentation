@@ -1,14 +1,14 @@
 ---
 slug: /inkplate/6motion/low-power/deep-sleep
-title: 6Motion - Deep sleep
+title: Inkplate 6MOTION - Deep sleep
 sidebar_label: Deep sleep
 id: 6motion-deep-sleep
 hide_title: true
 ---
 
-<SectionTitle title="Deep sleep" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Deep sleep" />
 
-Using deep sleep on Inkplate 6 MOTION is key to writing a sketch which maximizes battery efficiency. Since e-Paper does not need any kind of power to retain the image displayed - Inkplate 6 MOTION can use little to no current while in deep sleep mode, and have a sketch running for months on battery.
+Deep sleep is what makes a battery-powered Inkplate sketch practical. E-paper holds its image without any power, so Inkplate 6MOTION can draw almost nothing while asleep and still keep a sketch running for months on a battery.
 
 <InfoBox>If all peripherals are in sleep mode, deep sleep current will be around **20-30µA**</InfoBox>
 
@@ -16,7 +16,7 @@ Using deep sleep on Inkplate 6 MOTION is key to writing a sketch which maximizes
 
 ## Simple deep sleep
 
-The function below is a compound of all function calls required to put Inkplate 6 MOTION in deep sleep mode:
+The function below is a compound of all function calls required to put Inkplate 6MOTION in deep sleep mode:
 
 ```cpp
 void deepSleep()
@@ -38,20 +38,21 @@ void deepSleep()
 
 <InfoBox>For more information on turning off peripherals via `peripheralState`, see [**this**](/inkplate/6motion/peripherals/introduction#powering-off) page</InfoBox>
 
-To create a sketch which uses deep sleep - it's common practice to put all code in the `setup` function, and then at the end put Inkplate into deep sleep.
+In a sketch built around deep sleep, it's common practice to put all your code in `setup()` and then put Inkplate to sleep at the end.
 
 ---
 
 ## Wake on button press
 
-To wake on button press of the `WAKE` button, use the STM32 function `HAL_PWR_EnableWakeUpPin` after resetting the wakeup flags. Setting wakeup reasons  
+To wake on button press of the `WAKE` button, use the STM32 function `HAL_PWR_EnableWakeUpPin` after resetting the wakeup flags:
+
 ```cpp
 // Check if the wake up from sleep did reset the board. If so, clear the flags
 if (__HAL_PWR_GET_FLAG(PWR_FLAG_SB) != RESET)
 {
     // Clear Standby flag
     __HAL_PWR_CLEAR_FLAG(PWR_FLAG_SB);
-    // Wake-up button on Inkplate 6 Motion is PC13 = WAKEUP PIN 4.
+    // Wake-up button on Inkplate 6MOTION is PC13 = WAKEUP PIN 4.
     HAL_PWR_DisableWakeUpPin(PWR_WAKEUP_PIN4);
 }
 // Enable wake up button. By setting PC13 to low (button press), Inkplate will wake up
@@ -64,13 +65,15 @@ The most common usage of deep sleep is to periodically wake Inkplate to refresh 
 <QuickLink 
   title="RTC deep sleep wakeup" 
   description="How to use the built-in RTC to set a timer wake up from deep sleep"
-  url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/DeepSleep/Inkplate_6_Motion_Deep_Sleep/Inkplate_6_Motion_Deep_Sleep.ino" 
+  url="/inkplate/6motion/rtc/wakeup" 
 />
+
+---
 
 ## Full examples
 
 <QuickLink 
-  title="Inkplate 6 MOTION deep sleep example" 
-  description="This example demonstrates a sketch structured around deep sleep, it's an overview of all the deep sleep possibilies on Inkplate 6 MOTION, with waking on timer or pushbutton"
+  title="Inkplate 6MOTION deep sleep example" 
+  description="This example demonstrates a sketch structured around deep sleep, it's an overview of all the deep sleep possibilities on Inkplate 6MOTION, with waking on timer or pushbutton"
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/DeepSleep/Inkplate_6_Motion_Deep_Sleep/Inkplate_6_Motion_Deep_Sleep.ino" 
 />

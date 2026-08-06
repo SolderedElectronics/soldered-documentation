@@ -891,8 +891,7 @@ const sidebars = {
                     "inkplate/6motion/wifi/6motion-wifi-image-from-web",
                     "inkplate/6motion/wifi/6motion-wifi-get-post",
                     "inkplate/6motion/wifi/6motion-wifi-mqtt",
-                    "inkplate/6motion/wifi/6motion-wifi-udp",
-                    "inkplate/6motion/wifi/6motion-esp32-modem"
+                    "inkplate/6motion/wifi/6motion-wifi-udp"
                   ]
                 },
                 "inkplate/6motion/deepsleep/6motion-deep-sleep",
@@ -928,8 +927,7 @@ const sidebars = {
                 }
               ]
             },
-            "inkplate/6motion/6motion-faq-troubleshooting",
-            "inkplate/6motion/6motion-additional-resources"
+            "inkplate/6motion/6motion-faq-troubleshooting"
           ]
         },
         {

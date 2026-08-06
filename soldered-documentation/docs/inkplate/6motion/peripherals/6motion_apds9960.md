@@ -1,18 +1,18 @@
 ---
 slug: /inkplate/6motion/peripherals/apds9960
-title: 6Motion - Gesture and proximity sensor
+title: Inkplate 6MOTION - Gesture and proximity sensor
 sidebar_label: Gesture and proximity sensor
 id: 6motion-periph-apds9960
 ---
 
 
 
-The **APDS9960** sensor enables **gesture recognition, proximity sensing, ambient light detection, and color sensing**. It's located on the front of your Inkplate 6 MOTION, at the top edge of the PCB. It's usages can be navigating user menus with gestures or detecting if someone is in front of Inkplate, is the light in the room on or off etc.
+The **APDS9960** sensor enables **gesture recognition, proximity sensing, ambient light detection, and color sensing**. It's located on the front of your Inkplate 6MOTION, at the top edge of the PCB. You can use it to navigate menus with gestures, detect whether someone is standing in front of Inkplate, or check whether the light in the room is on.
 
-<CenteredImage src="/img/inkplate_6_motion/6motion_apds9960.jpg" alt="APDS9960 gesture and proximity sensor on the front of Inkplate 6 MOTION" caption="APDS9960 on the Inkplate 6 MOTION" width="600px" />
+<CenteredImage src="/img/inkplate_6_motion/6motion_apds9960.jpg" alt="APDS9960 gesture and proximity sensor on the front of Inkplate 6MOTION" caption="APDS9960 on the Inkplate 6MOTION" width="600px" />
 
 <InfoBox>The **APDS9960** implementation in the Inkplate library uses this library from **SparkFun**:<QuickLink title="SparkFun APDS9960 RGB and Gesture Sensor Arduino Library" 
-  description="The original library which is included in the Inkplate 6 MOTION library"
+  description="The original library which is included in the Inkplate 6MOTION library"
   url="https://github.com/sparkfun/SparkFun_APDS-9960_Sensor_Arduino_Library" 
 /></InfoBox>
 
@@ -21,11 +21,11 @@ The **APDS9960** sensor enables **gesture recognition, proximity sensing, ambien
 ## Initialization
 
 <InfoBox>Before using the **APDS9960**, it must be turned on via `peripheralState`, see this page for more info:<QuickLink 
-  title="Peripheral basics" description="How to power peripherals on and off on Inkplate 6 MOTION"
+  title="Peripheral basics" description="How to power peripherals on and off on Inkplate 6MOTION"
   url="/inkplate/6motion/peripherals/introduction#powering-on" 
 /></InfoBox>
 
-Initialiazion is simply done with `inkplate.apds9960.init()` which also returns if the sensor initialization was successful or not:
+Initialization is simply done with `inkplate.apds9960.init()` which also returns if the sensor initialization was successful or not:
 ```cpp
 // Turn on the gesture sensor peripheral
 inkplate.peripheralState(INKPLATE_PERIPHERAL_APDS9960, true);
@@ -115,7 +115,7 @@ Possible gestures to detect are as follows:
 
 ## Using interrupts
 
-Instead of polling, you can use **interrupts** to trigger gesture recognition. In your sketch, you will need to create a `volatile` flag which will become set when and the APDS9960 interrupt pin changes state:
+Instead of polling, you can use **interrupts** to trigger gesture recognition. In your sketch, you will need to create a `volatile` flag which will become set when the APDS9960 interrupt pin changes state:
 ```cpp
 // ISR flag - Automatically set to true in case of Interrupt event from the IO Expander
 volatile bool isrFlag = false;
@@ -126,7 +126,7 @@ void ioExpanderISR()
 }
 ```
 <InfoBox>The APDS9960 interrupt pin is **IO_PIN_A0** on the internal IO expander.</InfoBox>
-Then, in the body of the sketch, attatch the interrupt and use the flag to detect if there is a new gesture:
+Then, in the body of the sketch, attach the interrupt and use the flag to detect if there is a new gesture:
 
 ```cpp
 // Let's enable interrupts
@@ -134,7 +134,7 @@ Then, in the body of the sketch, attatch the interrupt and use the flag to detec
 inkplate.internalIO.pinModeIO(IO_PIN_A0, INPUT, true);
 // Set interrupts on IO expander
 inkplate.internalIO.setIntPinIO(IO_PIN_A0);
-// Enable interrptus on STM32
+// Enable interrupts on STM32
 // NOTE: Must be set to CHANGE!
 attachInterrupt(digitalPinToInterrupt(PG13), ioExpanderISR, CHANGE);
 
@@ -265,11 +265,11 @@ while (true)
 
 ## Full examples
 
-For full working code examples, which provide a great overwiew, a real-world use scenario and **code comments**, see the links below:
+For full working code examples, which provide a great overview, a real-world use scenario and **code comments**, see the links below:
 
 <QuickLink 
   title="Inkplate_6_MOTION_GestureSensor_Gesture.ino" 
-  description="Full Arduino example on how to use the basic features of the APDS9960 gesture sensor on Inkplate 6 MOTION"
+  description="Full Arduino example on how to use the basic features of the APDS9960 gesture sensor on Inkplate 6MOTION"
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_GestureSensor_Gesture/Inkplate_6_MOTION_GestureSensor_Gesture.ino" 
 />
 

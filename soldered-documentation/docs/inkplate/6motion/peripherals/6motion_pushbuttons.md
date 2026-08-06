@@ -1,17 +1,17 @@
 ---
 slug: /inkplate/6motion/peripherals/buttons
-title: 6Motion - User Buttons
-sidebar_label: User Buttons
+title: Inkplate 6MOTION - User buttons
+sidebar_label: User buttons
 id: 6motion-periph-buttons
 ---
 
-The **Inkplate 6 MOTION** features **three onboard buttons** that can be used for **user interaction** or to wake the device from deep sleep. These buttons are:
+The **Inkplate 6MOTION** features **three onboard buttons** that can be used for **user interaction** or to wake the device from deep sleep. These buttons are:
 
 - **USER1** (`INKPLATE_USER1`)
 - **USER2** (`INKPLATE_USER2`)
 - **WAKE** (`INKPLATE_WAKE`)
 
-The **WAKE** button has a special function - it can be used to wake up the Inkplate 6 MOTION from deep sleep. See [**here**](/inkplate/6motion/low-power/deep-sleep#wake-on-button-press) for more info on waking via **WAKE** button.
+The **WAKE** button has a special function: it can wake Inkplate 6MOTION from deep sleep. See [**here**](/inkplate/6motion/low-power/deep-sleep#wake-on-button-press) for more info on waking via **WAKE** button.
 
 ---
 
@@ -28,7 +28,7 @@ pinMode(INKPLATE_WAKE, INPUT_PULLUP);
 
 ---
 
-## Reading Button Presses
+## Reading button presses
 
 A simple way to detect button presses is using `digitalRead()`. The example below waits for a button press and identifies which button was pressed by returning an integer:
 

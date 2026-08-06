@@ -1,22 +1,22 @@
 ---
 slug: /inkplate/6motion/basics/drawing-graphics
-title: 6Motion - Drawing graphics
+title: Inkplate 6MOTION - Drawing graphics
 sidebar_label: Drawing graphics
 id: 6motion-graphics
 ---
 
-Inkplate 6 MOTION allows you to draw graphics on a **1024x758px canvas**.
+Inkplate 6MOTION allows you to draw graphics on a **1024x758px canvas**.
 
-<InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate MOTION library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
-  description="The core graphics library for Inkplate MOTION, created by Adafruit."
+<InfoBox>**Adafruit GFX** is the graphics library included in the Inkplate Motion library for drawing graphics. For more details, refer to the **official repository**:<QuickLink title="Adafruit GFX Library" 
+  description="The core graphics library for Inkplate Motion, created by Adafruit."
   url="https://github.com/adafruit/Adafruit-GFX-Library" 
 /></InfoBox>
 
 ---
 
-## Drawing Geometric Shapes
+## Drawing geometric shapes
 
-Below is an example demonstrating functions used for drawing graphics on the Inkplate 6 MOTION:
+Below is an example demonstrating functions used for drawing graphics on the Inkplate 6MOTION:
 
 <InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 15. Refer to the [**display modes**](/inkplate/6motion/basics/basic-display-modes/) page for more details.</InfoBox>
 

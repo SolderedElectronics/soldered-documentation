@@ -1,12 +1,12 @@
 ---
 slug: /inkplate/6motion/wifi/get-post
-title: 6Motion - GET & POST requests
+title: Inkplate 6MOTION - GET & POST requests
 sidebar_label: GET & POST requests
 id: 6motion-wifi-get-post
 ---
 
 
-Now that Inkplate is connected to the internet, you will likely want to send and recieve data on it form sensors, messages, from your custom API's etc. This page contains examples on how to send and recieve data on Inkplate via the internet:
+Now that Inkplate is connected to the internet, you will likely want to send and receive data on it: sensor readings, messages, or data from your own APIs. This page contains examples on how to send and receive data on Inkplate via the internet:
 
 ---
 
@@ -156,9 +156,9 @@ The randomly generated number will then be visible on webhook.site.
 
 ## POST request with JSON
 
-It's possible not only to send data the old-school HTTP way, using the `ArduinoJSON` library it's possible to send data from Inkplate in this powerful and versatile format:
+You don't have to send data as plain form fields. With the `ArduinoJson` library, Inkplate can post JSON instead:
 ```cpp
-// Include ArduinoJSON library. Get it from here: https://github.com/bblanchon/ArduinoJson
+// Include ArduinoJson library. Get it from here: https://github.com/bblanchon/ArduinoJson
 #include <ArduinoJson.h>
 
 // Add webhook.site URL here, something like
@@ -241,6 +241,6 @@ void sendPostWithJson()
 
 <QuickLink 
   title="Inkplate_6_Motion_HTTP_POST.ino" 
-  description="Full example on how to send data to a webserver via HTTP and POST request on Inkplate 6 MOTION"
+  description="Full example on how to send data to a webserver via HTTP and POST request on Inkplate 6MOTION"
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Web_WiFi/Inkplate_6_Motion_HTTP_POST/Inkplate_6_Motion_HTTP_POST.ino" 
 />

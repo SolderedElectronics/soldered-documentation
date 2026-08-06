@@ -1,11 +1,11 @@
 ---
 slug: /inkplate/6motion/uploading-code
-title: 6Motion - Uploading code
+title: Inkplate 6MOTION - Uploading code
 sidebar_label: Uploading code
 id: 6motion-uploading-code
 ---
 
-To upload your own sketch or an Arduino example to **Inkplate 6 MOTION**, follow this brief guide.  
+To upload your own sketch or an Arduino example to **Inkplate 6MOTION**, follow this brief guide.  
 
 <InfoBox>You are uploading code to the onboard **STM32H743**. The **ESP32 co-processor** comes pre-programmed with firmware and **should not be modified**!</InfoBox>  
 
@@ -13,9 +13,9 @@ To upload your own sketch or an Arduino example to **Inkplate 6 MOTION**, follow
 
 ## 1. Connect Inkplate via USB and power it on 
 
-Use the provided **USB-C cable** to connect Inkplate 6 MOTION to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.  
+Use the provided **USB-C cable** to connect Inkplate 6MOTION to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.  
 
-<CenteredImage src="/img/inkplate_6_motion/6motion_usb_connect.jpg" alt="Connect Inkplate 6 MOTION via USB" caption="Connecting Inkplate via USB-C" width="500px" />  
+<CenteredImage src="/img/inkplate_6_motion/6motion_usb_connect.jpg" alt="Connect Inkplate 6MOTION via USB" caption="Connecting Inkplate via USB-C" width="500px" />  
 
 ---
 
@@ -23,15 +23,15 @@ Use the provided **USB-C cable** to connect Inkplate 6 MOTION to your computer. 
 
 To enter **programming mode**, press the **PROGRAMMING button** located next to **USER2**.  
 
-<CenteredImage src="/img/inkplate_6_motion/prog_button.jpg" alt="Inkplate 6 MOTION programming button" caption="Programming button, next to USER2" width="500px" />  
+<CenteredImage src="/img/inkplate_6_motion/prog_button.jpg" alt="Inkplate 6MOTION programming button" caption="Programming button, next to USER2" width="500px" />  
 
-If your **Inkplate 6 MOTION is inside an enclosure**, use the provided **programming tool** to press the button.  
+If your **Inkplate 6MOTION is inside an enclosure**, use the provided **programming tool** to press the button.  
 
-<CenteredImage src="/img/inkplate_6_motion/programming_tool.png" alt="Inkplate 6 MOTION programming tool" caption="Inkplate 6 MOTION programming tool" width="500px" />  
+<CenteredImage src="/img/inkplate_6_motion/programming_tool.png" alt="Inkplate 6MOTION programming tool" caption="Inkplate 6MOTION programming tool" width="500px" />  
 
 <WarningBox>The programming tool is located within the enclosure!</WarningBox>
 
-<InfoBox>To confirm the device is in programming mode, open the **Serial Monitor** (115200 baud) on Inkplate 6 MOTION’s port. It should display:  
+<InfoBox>To confirm the device is in programming mode, open the **Serial Monitor** (115200 baud) on Inkplate 6MOTION's port. It should display:  
 `Programming mode active.`</InfoBox>  
 
 ---
@@ -57,7 +57,7 @@ If uploading fails, try using the BOOT switch. This is a switch on the back of t
 3. **Upload your code** via Arduino.  
 4. Once done, **switch BOOT back to `0`** to return to normal operation.  
 
-Also, verify you are using Arduino IDE 2.0. Inkplate 6 MOTION requires **Arduino IDE 2.0** or later for proper **board and library support**. If you are using an older version, update to **Arduino 2.0+** for the best compatibility.
+Also, verify you are using Arduino IDE 2.0. Inkplate 6MOTION requires **Arduino IDE 2.0** or later for proper **board and library support**. If you are using an older version, update to **Arduino 2.0+** for the best compatibility.
 
 If you are having problems with uploading a sketch where it uploads to a certain percentage, please [**contact us via support**](https://soldered.com/contact/).
 
@@ -67,6 +67,6 @@ From here, you may continue browsing the **hardware** documentation or start exp
 
 <QuickLink 
   title="Arduino library basics" 
-  description="See how to initialize and update Inkplate 6 MOTION's e-Paper display."
+  description="See how to initialize and update Inkplate 6MOTION's e-Paper display."
   url="/inkplate/6motion/basics/initialization" 
 />

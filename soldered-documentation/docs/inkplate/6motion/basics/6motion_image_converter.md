@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/basics/image-converter
-title: 6Motion - Soldered Image Converter
+title: Inkplate 6MOTION - Soldered Image Converter
 sidebar_label: Soldered Image Converter
 id: 6motion-image-converter
 ---
@@ -16,11 +16,11 @@ Soldered Image Converter is an open-source Python program by Soldered. It is use
 
 After converting images, export the .h files and save them in your Inkplate sketch's project folder. To find this folder, go to `Sketch -> Show Sketch Folder` in Arduino.
 
-Place the exported .h files in that folder, then include them in the sketch and use the `drawImage` function.
+Place the exported .h files in that folder, then include them in the sketch and draw them with `drawBitmap()` for 1-bit images or `drawBitmap4Bit()` for 4-bit grayscale ones.
 
 ---
 
-## Black and White Bitmap
+## Black and white bitmap
 
 ```cpp
 // Include Inkplate Motion library
@@ -61,7 +61,7 @@ void loop()
 
 ---
 
-## Grayscale Image
+## Grayscale image
 
 ```cpp
 // Include Inkplate Motion library
@@ -71,8 +71,8 @@ void loop()
 Inkplate inkplate; // Create Inkplate object
 void setup()
 {
-    // Initialize Inkplate in black and white mode
-    inkplate.begin(INKPLATE_BLACKWHITE); 
+    // Initialize Inkplate in grayscale mode - required for 4-bit images
+    inkplate.begin(INKPLATE_GRAYSCALE); 
 
     // Draw the grayscale image at (0, 0)
     // The image is pre-dithered using Floyd-Steinberg in the image converter
@@ -99,7 +99,7 @@ void loop()
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
   title="Inkplate_6_Motion_Image_Converter.ino" 

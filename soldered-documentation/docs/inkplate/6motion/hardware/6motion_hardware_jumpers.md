@@ -1,11 +1,11 @@
 ---
 slug: /inkplate/6motion/hardware/jumpers
-title: 6Motion - Jumpers
+title: Inkplate 6MOTION - Jumpers
 sidebar_label: Jumpers
 id: 6motion-hardware-jumpers
 ---
 
-Inkplate 6 MOTION features several **on-board jumpers**, which can be used to modify the behavior of certain components. Some jumpers are **connected by default**, while others need to be manually shorted.
+Inkplate 6MOTION features several **on-board jumpers**, which can be used to modify the behavior of certain components. Some jumpers are **connected by default**, while others need to be manually shorted.
 
 See the table below for a detailed explanation of each jumper's function:  
 
@@ -18,9 +18,9 @@ See the table below for a detailed explanation of each jumper's function:
 | **JP1** | **Open** (not connected) | When shorted, it **keeps the microSD card powered at 3.3V** at all times. Useful for troubleshooting, but not ideal for low-power applications. |
 | **JP2** | **Connected by default** | Bridges the **WAKE button** with **PC13**, allowing the board to wake from deep sleep via button press. |
 | **JP3** | **Connected by default** | Bridges the **USER1 button** with **PG6**, enabling button input functionality. |
-| **JP4** | **Connected by default** | Bridges the **USER2 button** with **PG0**, allowing interaction with USER2. |
+| **JP4** | **Connected by default** | Bridges the **USER2 button** with **PA0**, allowing interaction with USER2. |
 
-## STM Board jumpers
+## STM board jumpers
 
 | Jumper  | Default State | Function |
 |---------|--------------|----------|
