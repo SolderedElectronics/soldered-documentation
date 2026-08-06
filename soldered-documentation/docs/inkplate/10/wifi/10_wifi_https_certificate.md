@@ -10,6 +10,8 @@ Now that Inkplate is connected to the internet, you will likely want to securely
 ## HTTPS example
 This example will show you how to download a .bmp file from web securely by providing a certificate for the website that will be validated upon connection. Using `applyHttpsCertificate()` you can store the certificate for your connection:
 
+<InfoBox>The `certificate` string below is intentionally left empty, it's a placeholder for **your own** website's certificate. Paste your certificate's contents (in PEM format) between the quotes before uploading.</InfoBox>
+
 ```cpp
 Inkplate display(INKPLATE_1BIT);
 const char* certificate = ""; //insert your certificate

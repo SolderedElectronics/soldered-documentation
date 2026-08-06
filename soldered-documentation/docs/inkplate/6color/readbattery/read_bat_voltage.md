@@ -43,6 +43,8 @@ void loop()
 }
 ```
 
+<InfoBox>This example uses a battery symbol bitmap (`battSymbol.h`) alongside the main `.ino` file. Get both files from the [**example folder on GitHub**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6COLOR/Advanced/Other/Inkplate6COLOR_Read_Battery_Voltage) and keep them in the same sketch folder.</InfoBox>
+
 <FunctionDocumentation
   functionName="display.readBattery()"
   description="Reads the current battery voltage when running on battery power"

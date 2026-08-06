@@ -175,6 +175,8 @@ void loop()
 }
 ```
 
+<InfoBox>This example uses a custom font (`Roboto_Light_36.h`) alongside the main `.ino` file. Get both files from the [**example folder on GitHub**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/Other/Inkplate6FLICK_TextBox) and keep them in the same sketch folder.</InfoBox>
+
 <CenteredImage src="/img/inkplate_6_flick/printing_text_textbox.png" alt="Expected output on Inkplate display" caption="Expected output on Inkplate display." width="1000px" />
 
 <FunctionDocumentation

@@ -46,6 +46,8 @@ void loop()
 }
 ```
 
+<InfoBox>This example uses a temperature symbol bitmap (`tempSymbol.h`) alongside the main `.ino` file. Get both files from the [**example folder on GitHub**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/Other/Inkplate6FLICK_Read_Temperature) and keep them in the same sketch folder.</InfoBox>
+
 <FunctionDocumentation
   functionName="display.readTemperature()"
   description="Reads the onboard temperature sensor"
