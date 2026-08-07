@@ -15,9 +15,9 @@ hide_title: true
 
 Inkplate 4TEMPERA includes a **2-pin 2mm JST connector**, allowing you to connect a **3.7V Li-ion battery**. The onboard charging IC, **MCP73831**, **automatically charges the battery** when the Inkplate is plugged into **USB-C** and switches to battery power when unplugged. A **charging indicator LED** provides real-time charging status.  
 
-<CenteredImage src="/img/inkplate_4_tempera/jst_connector.png" alt="Inkplate 4TEMPERA battery JST connector" caption="JST battery connector" width="500px"/>  
+<CenteredImage src="/img/inkplate_4_tempera/jst_connector.webp" alt="Inkplate 4TEMPERA battery JST connector" caption="JST battery connector" width="500px"/>  
 
-<CenteredImage src="/img/inkplate_4_tempera/chrg.png" alt="Inkplate 4TEMPERA Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
+<CenteredImage src="/img/inkplate_4_tempera/chrg.webp" alt="Inkplate 4TEMPERA Onboard charging indicator LED" caption="Onboard charging indicator LED" width="500px"/>  
 
 ---
 

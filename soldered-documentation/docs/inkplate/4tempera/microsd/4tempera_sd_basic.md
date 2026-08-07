@@ -10,7 +10,7 @@ hide_title: true
 
 The built-in microSD card slot on Inkplate 4TEMPERA can be extremely useful for your project. It can store a vast number of high-quality image files to be displayed, and it can also read and write data during deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
 
-<CenteredImage src="/img/inkplate_4_tempera/microsd.png" alt="MicroSD card slot on Inkplate 4TEMPERA" caption="MicroSD card slot on Inkplate 4TEMPERA" width="600px" />
+<CenteredImage src="/img/inkplate_4_tempera/microsd.webp" alt="MicroSD card slot on Inkplate 4TEMPERA" caption="MicroSD card slot on Inkplate 4TEMPERA" width="600px" />
 
 <InfoBox>Inkplate 4TEMPERA uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>

@@ -69,9 +69,9 @@ To upload your own sketch or an Arduino example to **Inkplate 4TEMPERA**, follow
 
 Use the provided **USB-C cable** to connect Inkplate 4TEMPERA to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when properly connected.
 
-<CenteredImage src="/img/inkplate_4_tempera/usb_c.png" alt="Inkplate 4TEMPERA onboard USB-C connector" caption="Inkplate 4TEMPERA onboard USB-C connector" width="500px" />
+<CenteredImage src="/img/inkplate_4_tempera/usb_c.webp" alt="Inkplate 4TEMPERA onboard USB-C connector" caption="Inkplate 4TEMPERA onboard USB-C connector" width="500px" />
 
-<CenteredImage src="/img/inkplate_4_tempera/power.png" alt="Inkplate 4TEMPERA onboard POWER button" caption="Inkplate 4TEMPERA onboard POWER button" width="500px" />
+<CenteredImage src="/img/inkplate_4_tempera/power.webp" alt="Inkplate 4TEMPERA onboard POWER button" caption="Inkplate 4TEMPERA onboard POWER button" width="500px" />
 
 ### 2. Create a sketch
 
