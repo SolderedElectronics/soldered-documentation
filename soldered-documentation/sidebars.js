@@ -2531,7 +2531,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'I2C BUS EXTENDER P82B715 EDIT THIS NAME',
+          label: 'I2C Bus Extender P82B715',
           items: [
             {
               type: 'doc',
@@ -2544,24 +2544,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'communication/i2c bus extender p82b715/i2c bus extender p82b715-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'communication/i2c bus extender p82b715/arduino_library/i2c bus extender p82b715-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'communication/i2c bus extender p82b715/arduino_library/i2c bus extender p82b715-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'communication/i2c bus extender p82b715/arduino_library/i2c bus extender p82b715-arduino-3',
-                },
-              ],
             },
           ],
         },

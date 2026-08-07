@@ -27,14 +27,14 @@ Click [**here**](/img/i2c%20bus%20extender%20p82b715/Pinout.png) for a high reso
 
 ### Pin header (K3): local side breakout
 
-| **Pin** | **Description**                                                          |
-|---------|---------------------------------------------------------------------------|
-| SCL     | I²C clock line, local (Sx/Sy) side. Voltage set by **JP2** (5V or 3.3V). |
-| SDA     | I²C data line, local (Sx/Sy) side. Voltage set by **JP1** (5V or 3.3V).  |
-| VCC     | Fixed 5V, regardless of the JP1/JP2 SCL/SDA voltage setting.              |
-| GND     | Ground.                                                                    |
+| **Pin** | **Description**                                                     |
+|---------|----------------------------------------------------------------------|
+| GND     | Ground.                                                              |
+| VCC     | 5V from the onboard boost converter.                                 |
+| SDA     | I²C data line on the P82B715's Sx/Sy side. Always 5V logic.        |
+| SCL     | I²C clock line on the P82B715's Sx/Sy side. Always 5V logic.       |
 
-<WarningBox>K3's VCC pin is always 5V, even if JP1/JP2 are set to 3.3V for SCL/SDA. If you're powering a 3.3V-only device from this header, don't use this pin, power it separately at 3.3V instead.</WarningBox>
+<WarningBox>K3 is a 5V header. Its SDA and SCL sit at 5V logic and VCC is 5V, whatever you do with JP1 and JP2, which only switch the pull-ups. Don't power a 3.3V-only device from this header, and don't wire its SDA/SCL straight to a 3.3V-only part. Use a Qwiic port instead, that side is level shifted to 3.3V.</WarningBox>
 
 ### Screw terminal (K4): extended bus side
 
@@ -68,19 +68,19 @@ Connect your microcontroller to the **Qwiic ports (K1 or K2)** on the local side
 
 This board contains hardware jumpers; see below for their locations and functions:
 
-<WarningBox>Jumper images for this board are not yet available. We're working on it!</WarningBox>
+{/* TODO: add the JP1, JP2 and JP5 jumper photos here once available */}
 
 | **Jumper** | **Type**                 | **Function**                                                                                       |
 |------------|--------------------------|----------------------------------------------------------------------------------------------------|
-| **JP1**    | **NC** (3-pin selector)  | Selects the pull-up source for **SDA** on the local (Sx/Sy) side: 5V or 3.3V.                      |
-| **JP2**    | **NC** (3-pin selector)  | Selects the pull-up source for **SCL** on the local (Sx/Sy) side: 5V or 3.3V.                      |
+| **JP1**    | **NC** (3-pad SMD jumper) | Connects the **5V** rail to the SDA and SCL pull-ups on the 5V nets (K3 and the P82B715's Sx/Sy). One trace per line, so you can cut either or both. |
+| **JP2**    | **NC** (3-pad SMD jumper) | Connects the **3V3** rail to the SDA and SCL pull-ups on the Qwiic side of the level shifter. One trace per line.                                    |
 | **JP5**    | **NC** (Normally closed) | Enables the onboard power LED. Cut it to disconnect the LED circuit and turn off the power indicator. |
 
 <InfoBox>
 
-- JP1 and JP2 each connect the middle pin to one of the two outer pins, picking either the 5V or the 3.3V pull-up resistor for that line. Set both jumpers to the same voltage so SDA and SCL match.
-- The extended side (screw terminal K4) has its own fixed 5V pull-ups and isn't affected by JP1/JP2.
-- Remove the shunt on JP1/JP2 if your I²C bus already has external pull-up resistors, to avoid driving conflicts.
+- JP1 and JP2 each have a centre pad on a supply rail and a trace running out to the SDA and the SCL pull-up. They pick which side of the level shifter gets pulled up, not which voltage a line runs at.
+- The local pull-ups are 10 kΩ. The extended side (screw terminal K4) has its own fixed 470 Ω pull-ups to 5V and isn't affected by JP1 or JP2.
+- Cut a JP1 or JP2 trace if your I²C bus already has external pull-up resistors, to avoid running them in parallel.
 - JP5 is closed by default, so the power LED is on out of the box. Cut it if you want to disable the LED.
 
 </InfoBox>

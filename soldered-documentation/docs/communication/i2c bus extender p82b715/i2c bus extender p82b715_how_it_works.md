@@ -1,14 +1,14 @@
 ---
 slug: /i2c-bus-extender-p82b715/how-it-works
-title: How it works
+title: P82B715 I2C Bus Extender - How it works
 sidebar_label: How it works
 id: i2c bus extender p82b715-how-it-works
 hide_title: false
 ---
 
-The **P82B715 I2C Bus Extender** breakout board extends the range of standard I²C communication far beyond its usual limits. At its core is the **P82B715** chip by [**NXP/Texas Instruments**](https://www.ti.com/product/P82B715), a bidirectional I²C bus buffer that gives **10× impedance transformation**. That dramatically reduces the effective capacitance seen on each side of the bus, letting I²C signals travel over cable runs of up to **50 metres**.
+The **P82B715 I2C Bus Extender** breakout board extends the range of standard I²C communication far beyond its usual limits. At its core is the **P82B715** chip by [**NXP/Texas Instruments**](https://www.ti.com/product/P82B715), a bidirectional I²C bus buffer that drives **10× lower-impedance bus wiring**. Each side is buffered from the other, so the long cable's capacitance never reaches your microcontroller's bus and I²C signals can travel over twisted-pair runs of up to **50 meters**.
 
-<WarningBox>Chip photo not yet available. We're working on it!</WarningBox>
+{/* TODO: add the onboard P82B715 chip photo here once available */}
 
 ---
 
@@ -26,7 +26,7 @@ For an in-depth look at technical specifications, refer to the official P82B715 
 
 ## I²C bus limitations
 
-Standard I²C has a maximum bus capacitance of **400 pF**, which limits usable cable length to only a few metres. As capacitance increases, signal rise times slow down and communication becomes unreliable or fails entirely.
+Standard I²C has a maximum bus capacitance of **400 pF**, which limits usable cable length to only a few meters. As capacitance increases, signal rise times slow down and communication becomes unreliable or fails entirely.
 
 The P82B715 solves this by **isolating the local side from the extended side**. Each side is driven independently, so the capacitive load of the long cable does not affect the microcontroller's I²C bus.
 
@@ -36,14 +36,12 @@ The P82B715 solves this by **isolating the local side from the extended side**. 
 
 The P82B715 operates as a transparent, bidirectional buffer:
 
-- **Local side (Sx/Sy):** Connects to the Qwiic ports (K1/K2) through an onboard level shifter, and directly to header K3. Supports up to **400 pF** bus capacitance. Its logic level is **jumper-selectable** (see below): 3.3V or 5V.
-- **Extended side (Lx/Ly):** Connects to the screw terminal (K4) for the long cable run. Fixed at **5V**, supports up to **3000 pF** bus capacitance and cable runs of up to **50 m**.
-
-Both sides are driven by the same VCC (5V), but the P82B715's current-mode signaling lets each side sit at a different logic level at the same time. That's what makes the jumper-selectable local side possible without any extra circuitry.
+- **Local side (Sx/Sy):** Runs at **5V**. It goes straight to header K3, and reaches the Qwiic ports (K1/K2) through an onboard level shifter that converts it to 3.3V. Supports up to **400 pF** bus capacitance.
+- **Extended side (Lx/Ly):** Connects to the screw terminal (K4) for the long cable run. Also **5V**, supports up to **3000 pF** bus capacitance and runs of up to **50 m**.
 
 The chip is completely invisible to the I²C protocol. It adds no address, register, or configuration layer, so the microcontroller communicates directly with remote devices using their original I²C addresses.
 
-Both **Standard-mode (100 kHz)** and **Fast-mode (400 kHz)** are supported.
+The chip keeps all the normal I²C operating modes. In practice, use **Standard-mode (100 kHz)** for long runs and save faster clocks for short, well behaved cable.
 
 ---
 
@@ -52,9 +50,9 @@ Both **Standard-mode (100 kHz)** and **Fast-mode (400 kHz)** are supported.
 This breakout board adds supporting components around the P82B715:
 
 1. **Boost converter (TPS613222A):** Steps up the 3.3V Qwiic supply to **5V**, powering the P82B715 chip and the fixed 5V pull-ups on the extended side.
-2. **Level shifter (dual NMOS):** Sits between the Qwiic connectors (always 3.3V) and the local side (Sx/Sy). If JP1/JP2 select 5V for the local side, this shifter does real level conversion; if they select 3.3V, both sides already match and the shifter just passes the signal through.
+2. **Level shifter (dual NMOS):** Sits between the Qwiic connectors and the P82B715's Sx/Sy pins, translating between 3.3V and 5V in both directions. It is always in circuit.
 
-Your microcontroller always sees **3.3V I²C** on the Qwiic side, regardless of how the local side is jumpered. The extended side (screw terminal) is always 5V.
+So your microcontroller sees **3.3V I²C** on the Qwiic side, while header K3, the P82B715 and the screw terminal all sit at 5V.
 
 ---
 
@@ -66,9 +64,9 @@ I²C's SDA and SCL lines are open-drain: a device can only pull a line low, neve
 
 The resistor value matters: too high and rise times get too slow for reliable communication as bus capacitance increases (exactly the problem the P82B715 is built to work around), too low and it wastes power and can't be pulled fully low by the sinking device. This board provides pull-ups differently on each side:
 
-- **Extended side (Lx/Ly, screw terminal K4):** Fixed 5V pull-ups, always active. There's no jumper for these.
-- **Local side (Sx/Sy, header K3 and Qwiic ports):** Selectable pull-ups, set independently per line:
-  - **JP1** selects the SDA pull-up source: 5V or 3.3V.
-  - **JP2** selects the SCL pull-up source: 5V or 3.3V.
+- **Extended side (Lx/Ly, screw terminal K4):** Fixed 470 Ω pull-ups to 5V, always active. There's no jumper for these.
+- **Local side:** 10 kΩ pull-ups, enabled per voltage domain rather than per line:
+  - **JP1** ties the **5V** rail to the pull-ups on the 5V nets, the ones shared by the P82B715's Sx/Sy pins and header K3.
+  - **JP2** ties the **3V3** rail to the pull-ups on the Qwiic side of the level shifter.
 
-Normally, set JP1 and JP2 to the same voltage so SDA and SCL match. If your I²C bus or remote device already has external pull-up resistors, remove the jumper to avoid driving conflicts caused by parallel pull-ups.
+Both are SMD jumpers with a centre pad on the rail and one trace out to each line, closed from the factory. Cut one trace to drop the pull-up on just that line, or both to drop the pair. Do that when the device on that side already brings its own pull-ups, so the resistors don't end up in parallel.
