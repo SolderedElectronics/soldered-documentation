@@ -142,3 +142,15 @@ inkplate.display()
 />
 
 <CenteredImage src="/img/inkplate6flick-micropython/text.jpg" alt="Inkplate 6FLICK running the example code" caption="Simple grayscale example with different text styles." width="800px" />
+
+---
+
+## Full examples
+
+<QuickLink title="hello_world.py" 
+description="Display text on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6flick/hello_world.py" />
+
+<QuickLink title="custom_font.py" 
+description="Swap in one of the extra typefaces shipped under fonts/ instead of the default font." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6flick/custom_font.py" />

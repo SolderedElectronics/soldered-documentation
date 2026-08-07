@@ -32,13 +32,7 @@ Inkplate 2 is a compact, plug-and-play e-paper board with support for **Wi-Fi** 
 
 <InfoBox>Inkplate 2 works well for low-power, always-on displays such as clocks, tags, signs, and small IoT dashboards. It’s beginner-friendly, yet capable enough for advanced applications.</InfoBox>
 
----
-
-## Components
-
-Here is an overview of the onboard components and their locations:
-<CenteredImage src="/img/inkplate_2/front.png" alt="Inkplate 2 front" caption="Inkplate 2 front"  />
-<CenteredImage src="/img/inkplate_2/back.png" alt="Inkplate 2 back" caption="Inkplate 2 back" />
+<CenteredImage src="/img/inkplate_2/back.png" alt="Inkplate 2 back side" caption="Inkplate 2, back side" />
 
 ---
 

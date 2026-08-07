@@ -4,6 +4,7 @@ title: Inkplate 6MOTION - FAQ and troubleshooting
 sidebar_label: FAQ and troubleshooting
 id: 6motion-faq-troubleshooting
 hide_title: true
+pagination_next: null
 ---
 
 

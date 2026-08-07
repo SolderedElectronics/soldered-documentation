@@ -48,3 +48,11 @@ returnType="float"
 returnDescription="Temperature in degrees Celsius." />
 
 <CenteredImage src="/img/inkplate5v2-micropython/battery-volt-temp.jpg" alt="Inkplate 5v2 running the example code" caption="Displaying battery and temperature data on Inkplate display." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="battery_and_temperature.py" 
+description="Read the battery voltage and temperature and display them on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate5v2/battery_and_temperature.py" />

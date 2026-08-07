@@ -191,3 +191,15 @@ inkplate.display()
     { type: 'int', name: 'c', description: 'Triangle fill color' }
   ]}
 />
+
+---
+
+## Full examples
+
+<QuickLink title="basic_color.py" 
+description="Example showing how to draw shapes around the upper left corner and then rotate the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/basic_color.py" />
+
+<QuickLink title="draw_color_image.py" 
+description="Draw a small pre-packed color image buffer directly onto the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/draw_color_image.py" />

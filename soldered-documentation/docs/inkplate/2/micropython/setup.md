@@ -26,8 +26,6 @@ Use the following command to install the MicroPython library for INKPLATE 2:
   mpremote mip install github:SolderedElectronics/Inkplate-micropython/Inkplate2
 ```
 
-<SuccessBox> Now you can upload examples and write code with the IDE of your choosing! </SuccessBox>
-
 <QuickLink
   title="Inkplate MicroPython Library"
   description="GitHub repo for Inkplate MicroPython library"

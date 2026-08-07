@@ -48,3 +48,11 @@ inkplate.display()
   returnType="none"
 />
 <InfoBox> Screen refresh time takes about **12 seconds** which is expected for this kind of display. You may also see it flicker in multiple colors during refresh but that is normal behaviour. </InfoBox>
+
+---
+
+## Full example
+
+<QuickLink title="hello_world.py" 
+description="Example showing how to display colorful text on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/hello_world.py" />

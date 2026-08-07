@@ -71,4 +71,18 @@ Below are the detailed references for these functions:
   ]}
 />
 
+---
 
+## Full examples
+
+<QuickLink 
+  title="Inkplate6COLOR_Full_Screen_Colors.ino" 
+  description="Full example drawing every color the Inkplate 6COLOR panel can show." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6COLOR/Basic/Inkplate6COLOR_Full_Screen_Colors/Inkplate6COLOR_Full_Screen_Colors.ino" 
+/>
+
+<QuickLink 
+  title="Inkplate6COLOR_Simple.ino" 
+  description="Full example drawing basic shapes and text on Inkplate 6COLOR." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6COLOR/Basic/Inkplate6COLOR_Simple/Inkplate6COLOR_Simple.ino" 
+/>

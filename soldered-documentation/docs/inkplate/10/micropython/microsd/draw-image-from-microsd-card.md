@@ -65,7 +65,7 @@ Available options for **dithering** algorithm:
 | `Inkplate.KERNEL_FLOYD_STEINBERG` | 0 |
 | `Inkplate.KERNEL_JJN` | 1 |
 | `Inkplate.KERNEL_STUCKI` | 2 |
-| `Inkplate.KERNEL_BURKES `| 3 |
+| `Inkplate.KERNEL_BURKES` | 3 |
 
 **Performance Notes**
 - JPG: ~3 seconds (or ~14s with dithering)
@@ -77,3 +77,23 @@ Available options for **dithering** algorithm:
 
 
 <CenteredImage src="/img/inkplate10-micropython/imgweb.jpg" alt="Inkplate 10 running the example code" caption="Displaying an image from SD card." width="1000px" />
+
+---
+
+## Full examples
+
+<QuickLink title="display_image_sd.py" 
+description="Initialize an SD card and render an image located on it." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/display_image_sd.py" />
+
+<QuickLink title="display_image_sd_jpeg_c.py" 
+description="Decode a JPEG from the microSD card through the C decode path (ROM tjpgd) with Floyd-Steinberg dithering, and draw it in grayscale." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/display_image_sd_jpeg_c.py" />
+
+<QuickLink title="display_image_sd_png_c.py" 
+description="Decode a PNG from the microSD card through the C decode path (pngle plus ROM miniz) with Floyd-Steinberg dithering, and draw it in grayscale. Alpha is ignored." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/display_image_sd_png_c.py" />
+
+<QuickLink title="display_image_sd_bmp_c.py" 
+description="Decode a BMP from the microSD card through the C decode path (24-bit, 1/4/8-bit indexed and 16-bit 555/565) with Floyd-Steinberg dithering, and draw it in grayscale." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/display_image_sd_bmp_c.py" />

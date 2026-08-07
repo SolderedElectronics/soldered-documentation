@@ -108,3 +108,13 @@ void loop()
         { type: "bool", name: "invert", description: "If true, inverts colors." },
     ]}
 />
+
+---
+
+## Full example
+
+<QuickLink 
+  title="Inkplate6COLOR_Show_Pictures_From_Web.ino" 
+  description="Connect to WiFi and draw an image from the web." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6COLOR/Advanced/WEB_WiFi/Inkplate6COLOR_Show_Pictures_From_Web/Inkplate6COLOR_Show_Pictures_From_Web.ino" 
+/>

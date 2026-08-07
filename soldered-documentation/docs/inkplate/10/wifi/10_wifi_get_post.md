@@ -5,7 +5,7 @@ sidebar_label: GET & POST requests
 id: 10-wifi-get-post
 ---
 
-Now that Inkplate is connected to the internet, you will likely want to send and receive data on it from sensors, messages, from your custom API's etc. This page contains examples on how to send and receive data on Inkplate via the internet:
+Now that Inkplate is connected to the internet, you will likely want to send and receive data on it from sensors, messages, from your custom APIs, etc. This page contains examples on how to send and receive data on Inkplate via the internet:
 
 ---
 
@@ -34,7 +34,7 @@ void setup()
     display.println("Scanning for WiFi networks..."); // Write text
     display.display();                                // Send everything to display (refresh display)
 
-    int n = WiFi.scanNetworks(); // Start searching WiFi networks and put the nubmer of found WiFi networks in variable
+    int n = WiFi.scanNetworks(); // Start searching WiFi networks and put the number of found WiFi networks in variable
                                  // n
     if (n == 0)
     { // If you did not find any network, show the message and stop the program.
@@ -86,9 +86,6 @@ void setup()
             display.display();
         }
     }
-    else{
-        
-    }
 }
 
 void loop()
@@ -101,7 +98,7 @@ void loop()
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
-    description="This function attemps to connect to WiFi"
+    description="This function attempts to connect to WiFi"
     returnDescription="Returns wl_status_t enum value"
     returnType="wl_status_t"
     parameters={[
@@ -114,10 +111,10 @@ void loop()
 <FunctionDocumentation
   functionName="http.begin()"
   description="This function attempts to open a HTTP communication to given url"
-  returnDescription="Returns true if communication is succesfull, otherwise returns false."
+  returnDescription="Returns true if communication is successful, otherwise returns false."
   returnType="bool"
   parameters={[
-    { type: 'String', name: 'url', description: 'Url if the specified website' },
+    { type: 'String', name: 'url', description: 'Url of the specified website' },
   ]}
 />
 
@@ -127,6 +124,7 @@ void loop()
   returnDescription="Returns the size of available data"
   returnType="int"
 />
+
 ---
 
 ## POST request
@@ -207,8 +205,8 @@ void setup()
 
 void loop()
 {
-    // Every POSTING_INTERVAL_IN_SESCS seconds make the POST request
-    if ((unsigned long)(millis() - lastConnectionTime) > POSTING_INTERVAL_IN_SESCS * 1000LL)
+    // Every POSTING_INTERVAL_IN_SECS seconds make the POST request
+    if ((unsigned long)(millis() - lastConnectionTime) > POSTING_INTERVAL_IN_SECS * 1000UL)
     {
         // Clear frame buffer of display
         display.clearDisplay();
@@ -267,7 +265,7 @@ void loop()
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
-    description="This function attemps to connect to WiFi"
+    description="This function attempts to connect to WiFi"
     returnDescription="Returns wl_status_t enum value"
     returnType="wl_status_t"
     parameters={[
@@ -280,9 +278,25 @@ void loop()
 <FunctionDocumentation
   functionName="http.begin()"
   description="This function attempts to open a HTTP communication to given url"
-  returnDescription="Returns true if communication is succesfull, otherwise returns false."
+  returnDescription="Returns true if communication is successful, otherwise returns false."
   returnType="bool"
   parameters={[
-    { type: 'String', name: 'url', description: 'Url if the specified website' },
+    { type: 'String', name: 'url', description: 'Url of the specified website' },
   ]}
+/>
+
+---
+
+## Full examples
+
+<QuickLink 
+  title="Inkplate10_HTTP_Request.ino" 
+  description="Inkplate 10 WiFi GET request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/WEB_WiFi/Inkplate10_HTTP_Request/Inkplate10_HTTP_Request.ino" 
+/>
+
+<QuickLink 
+  title="Inkplate10_HTTP_POST_Request.ino" 
+  description="Inkplate 10 WiFi POST request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/WEB_WiFi/Inkplate10_HTTP_POST_Request/Inkplate10_HTTP_POST_Request.ino" 
 />

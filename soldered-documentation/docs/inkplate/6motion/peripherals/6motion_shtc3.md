@@ -12,7 +12,7 @@ The **SHTC3** sensor provides accurate **temperature and humidity measurements**
 
 The sensor allows you to retrieve temperature readings in **Celsius or Fahrenheit**, as well as **humidity percentages**. The readings must be updated manually before retrieving values.
 
-<InfoBox>The **SHTC3** implementation in the Inkplate library uses this library from **SparkFun**:<QuickLink 
+<InfoBox>The **SHTC3** implementation in the Inkplate Motion library uses this library from **SparkFun**:<QuickLink 
   title="SparkFun SHTC3 Humidity and Temperature Sensor Library" 
   description="The original library which is included in the Inkplate 6MOTION library"
   url="https://github.com/sparkfun/SparkFun_SHTC3_Arduino_Library"/></InfoBox>

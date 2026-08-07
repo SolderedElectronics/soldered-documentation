@@ -146,3 +146,15 @@ returnDescription="Response object with .status_code and .text."
 />
 
 <CenteredImage src="/img/inkplate10-micropython/post-output.png" alt="Inkplate 10 running the example code" caption="POST request message on webhook.site." width="800px" />
+
+---
+
+## Full examples
+
+<QuickLink title="get_request.py" 
+description="Connect to WiFi and perform an HTTP GET request using urequests." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/get_request.py" />
+
+<QuickLink title="post_request.py" 
+description="Connect to WiFi and perform an HTTP POST request with a JSON payload using urequests." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/post_request.py" />

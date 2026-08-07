@@ -61,6 +61,6 @@ void loop(){}
 To see more details, check out our full examples:
 <QuickLink 
   title="Inkplate 6FLICK WiFi examples" 
-  description="Inkpate 6FLICK WiFi examples from Inkplate library"
+  description="Inkplate 6FLICK WiFi examples from Inkplate library"
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/WEB_WiFi" 
 />

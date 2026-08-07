@@ -20,13 +20,7 @@ Inkplate 10 pairs a 9.7" e-paper display with an ESP32 for Wi-Fi and Bluetooth, 
 
 <InfoBox>Fun fact: Inkplate 10 displays are recovered from used Kindle e-readers.</InfoBox>
 
----
-
-## Components
-
-Here is an overview of on‑board components with their locations:
-<CenteredImage src="/img/inkplate10/inkplate_10_hw_front.jpg" alt="Inkplate 10 front" caption="Inkplate 10 front"  />
-<CenteredImage src="/img/inkplate10/inkplate_10_hw_back.jpg" alt="Inkplate 10 back" caption="Inkplate 10 back" />
+<CenteredImage src="/img/inkplate10/inkplate_10_hw_back.jpg" alt="Inkplate 10 back side" caption="Inkplate 10, back side" />
 
 <InfoBox>The term "easyC" used here actually refers to **qwiic** connectors.</InfoBox>
 

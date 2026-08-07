@@ -198,3 +198,15 @@ inkplate.display()
 ```
 
 <CenteredImage src="/img/6color/post-request.jpg" alt="POST example" caption="Expected HTTP response output on display" />
+
+---
+
+## Full examples
+
+<QuickLink title="get_request.py" 
+description="Connect to WiFi and perform an HTTP GET request over a socket." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/get_request.py" />
+
+<QuickLink title="post_request.py" 
+description="Connect to WiFi and POST a field value to ThingSpeak over a socket." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/post_request.py" />

@@ -13,6 +13,15 @@ See the table below for a detailed explanation of each jumper's function:
 
 ## Inkplate board jumpers
 
+<FlickityCarousel
+images={[
+  { src: '/img/inkplate_6_motion/JP1.jpg', alt: 'Jumper JP1', caption: 'JP1' },
+  { src: '/img/inkplate_6_motion/JP2.jpg', alt: 'Jumper JP2', caption: 'JP2' },
+  { src: '/img/inkplate_6_motion/JP3.jpg', alt: 'Jumper JP3', caption: 'JP3' },
+  { src: '/img/inkplate_6_motion/JP4.jpg', alt: 'Jumper JP4', caption: 'JP4' },
+]}
+/>
+
 | Jumper  | Default State | Function |
 |---------|--------------|----------|
 | **JP1** | **Open** (not connected) | When shorted, it **keeps the microSD card powered at 3.3V** at all times. Useful for troubleshooting, but not ideal for low-power applications. |
@@ -21,6 +30,15 @@ See the table below for a detailed explanation of each jumper's function:
 | **JP4** | **Connected by default** | Bridges the **USER2 button** with **PA0**, allowing interaction with USER2. |
 
 ## STM board jumpers
+
+These two jumpers are on the **STM board**, the daughterboard that carries the STM32H743 and the SDRAM. You'll find both just right of the STM32, inside the `INKPLATE 6 MOTION STM BOARD` silkscreen.
+
+<FlickityCarousel
+images={[
+  { src: '/img/inkplate_6_motion/stm_JP1.jpg', alt: 'STM board jumper JP1', caption: 'JP1' },
+  { src: '/img/inkplate_6_motion/stm_JP2.jpg', alt: 'STM board jumper JP2', caption: 'JP2' },
+]}
+/>
 
 | Jumper  | Default State | Function |
 |---------|--------------|----------|

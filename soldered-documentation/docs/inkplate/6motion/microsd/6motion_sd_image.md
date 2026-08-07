@@ -16,7 +16,7 @@ To draw images from the microSD card, use the `draw` function.
 
 ## Drawing PNG, JPG and BMP files from the microSD card
 
-Let's draw the example images of different formats on Inkplate, download them from the [**Inkplate library**](https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/tree/main/examples/Inkplate6Motion/Advanced/SD/Inkplate_6_Motion_Images_From_SD) and place them in the root folder of the microSD card:
+Let's draw the example images of different formats on Inkplate, download them from the [**Inkplate Motion library**](https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/tree/main/examples/Inkplate6Motion/Advanced/SD/Inkplate_6_Motion_Images_From_SD) and place them in the root folder of the microSD card:
 <CenteredImage src="/img/inkplate_6_motion/6motion_images_on_sd.png" alt="Images on the microSD card" caption="Images on the microSD card" width="500px" />
 
 Let's draw `image1.png` at coordinates 0, 0 and using the Floyd-Steinberg dither kernel:

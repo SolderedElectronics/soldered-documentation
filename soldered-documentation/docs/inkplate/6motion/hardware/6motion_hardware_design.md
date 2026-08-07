@@ -26,13 +26,7 @@ This secondary board is referred to as the Inkplate 6MOTION STM board, as its ma
 
 <CenteredImage src="/img/inkplate_6_motion/motion_stm32.jpg" alt="STM32H743 on Inkplate 6MOTION" caption="STM32H743 on Inkplate 6MOTION" />
 
----
-
-## Components
-
-Here is an overview of on-board components with their locations:
-<CenteredImage src="/img/inkplate_6_motion/inkplate_motion_hw_front.jpg" alt="Inkplate 6MOTION front" caption="Inkplate 6MOTION front"  />
-<CenteredImage src="/img/inkplate_6_motion/inkplate_motion_hw_back.jpg" alt="Inkplate 6MOTION back" caption="Inkplate 6MOTION back" />
+<CenteredImage src="/img/inkplate_6_motion/inkplate_motion_hw_back.jpg" alt="Inkplate 6MOTION back side" caption="Inkplate 6MOTION, back side" />
 
 <InfoBox>What is referred to here as easyC is actually **qwiic** connectors</InfoBox>
 

@@ -116,7 +116,7 @@ Available options for **dithering** algorithm:
 | `Inkplate.KERNEL_FLOYD_STEINBERG` | 0 |
 | `Inkplate.KERNEL_JJN` | 1 |
 | `Inkplate.KERNEL_STUCKI` | 2 |
-| `Inkplate.KERNEL_BURKES `| 3 |
+| `Inkplate.KERNEL_BURKES` | 3 |
 
 **Performance Notes**
 - JPG: ~3 seconds (or ~14s with dithering)
@@ -124,3 +124,11 @@ Available options for **dithering** algorithm:
 - BMP: ~20 seconds (or ~40s with dithering)
 - Maximum image file size: ~800kB
 </InfoBox>
+
+---
+
+## Full example
+
+<QuickLink title="display_image_sd.py" 
+description="Example showing how to initialize an SD card and render an image located on it." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/displayimagesd/display_image_sd.py" />

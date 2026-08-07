@@ -107,3 +107,11 @@ machine.deepsleep()
     { type: "int", name: "level", description: "The input level that triggers wake-up" }
   ]}
 />
+
+---
+
+## Full example
+
+<QuickLink title="deep_sleep.py" 
+description="Count deep sleep cycles using RTC memory and show the count on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/deep_sleep.py" />

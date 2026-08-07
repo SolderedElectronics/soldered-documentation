@@ -52,3 +52,11 @@ inkplate.display()
   returnType="float"
   returnDescription="Returns the measured battery voltage"
 />
+
+---
+
+## Full example
+
+<QuickLink title="battery_read.py" 
+description="Example showing how to read the battery voltage." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/battery_read.py" />

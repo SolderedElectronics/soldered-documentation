@@ -21,7 +21,7 @@ Inkplate 6FLICK allows you to draw graphics on a **1024 x 758px canvas**.
 
 Below is an example demonstrating how to use various functions to draw graphics on the Inkplate 6FLICK:
 
-<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/10/basics/basic-display-modes/) page for more details.</InfoBox>
+<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/6flick/basics/basic-display-modes/) page for more details.</InfoBox>
 
 ```cpp
 #include "Inkplate.h"

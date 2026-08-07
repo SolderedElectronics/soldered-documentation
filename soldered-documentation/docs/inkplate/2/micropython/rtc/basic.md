@@ -84,3 +84,11 @@ while True:
     { type: "tuple", name: "date_time_tuple", description: "8-tuple which expresses a time as localtime" }
   ]}
 />
+
+---
+
+## Full example
+
+<QuickLink title="rtc.py" 
+description="Set the onboard RTC from an NTP server and show the time on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/rtc.py" />

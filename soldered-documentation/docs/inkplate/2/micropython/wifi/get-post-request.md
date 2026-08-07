@@ -175,3 +175,15 @@ http_post(WEBHOOK_URL, data)
 # Display HTTP response 
 inkplate.display()
 ```
+
+---
+
+## Full examples
+
+<QuickLink title="get_request.py" 
+description="Connect to WiFi and perform an HTTP GET request over a socket." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/get_request.py" />
+
+<QuickLink title="post_request.py" 
+description="Connect to WiFi and perform an HTTP POST request with a JSON payload using urequests." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/post_request.py" />

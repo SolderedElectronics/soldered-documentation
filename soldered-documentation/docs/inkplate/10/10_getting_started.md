@@ -102,8 +102,8 @@ Before uploading the code, select the correct board definition. The table below 
 
 | Board Definition               | Board Description                                                                                          |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| Soldered Inkplate10            | The newer version of the Inkplate 10, the PCB is purple.                                  |
-| e-radionica.com Inkplate 10    | The older version; the PCB is blue.                                                                        |
+| Soldered Inkplate 10           | The newer version of the Inkplate 10, the PCB is purple.                                  |
+| e-radionica Inkplate 10        | The older version; the PCB is blue.                                                                        |
 
 Click **Upload** in the Arduino IDE.
 

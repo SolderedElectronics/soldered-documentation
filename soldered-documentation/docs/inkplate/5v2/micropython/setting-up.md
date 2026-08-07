@@ -65,8 +65,6 @@ Use this command to install the MicroPython library for Inkplate 5v2:
 
 You only have to do steps 1-4 once, when first writing MicroPython firmware to your Inkplate.
 
-<SuccessBox> Now you can upload examples and write code in the IDE of your choice. </SuccessBox>
-
 <QuickLink
   title="Inkplate MicroPython Library"
   description="GitHub repo for Inkplate MicroPython library"

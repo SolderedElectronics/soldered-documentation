@@ -54,18 +54,16 @@ or if you're running a Windows OS:
 <QuickLink
   title="Installing MicroPython on Inkplate"
   description="Guide that walks you through MicroPython setup on your Inkplate"
-  url="#"
+  url="https://soldered.com/documentation/micropython/overview"
 />
 
-Use the following command to install the MicroPython library for INKPLATE 6:
+Use the following command to install the MicroPython library for Inkplate 6:
 
 ```
   mpremote mip install github:SolderedElectronics/Inkplate-micropython/boards/inkplate6
 ```
 
 **You only have to do steps 1-4 once when writing MicroPython firmware on your Inkplate!**
-
-<SuccessBox> Now you can upload examples and write code with the IDE of your choosing! </SuccessBox>
 
 <QuickLink
   title="Inkplate MicroPython Library"

@@ -62,8 +62,8 @@ Because the panels are reclaimed rather than newly made, expect the occasional c
 
 - **Display Size:** 6.0" e-paper (ED060XC3, touchscreen with frontlight)
 - **Resolution:** 1024 × 758 pixels
-- **Refresh Time:** 225 ms (1-bit), 1.26s (3-bit greyscale)
-- **Color Support:** 3-bit greyscale (8 shades)
+- **Refresh Time:** 225 ms (1-bit), 1.26s (3-bit grayscale)
+- **Color Support:** 3-bit grayscale (8 shades)
 - **Touchscreen:** 2-point capacitive multi-touch
 - **Lighting:** Adjustable in 64 brightness steps
 - **Microcontroller:** ESP32-WROVER (Wi-Fi + Bluetooth 4.2 BR/EDR and BLE)

@@ -59,3 +59,11 @@ parameters={[
 />
 
 <CenteredImage src="/img/inkplate6flick-micropython/frontlight.jpg" alt="Inkplate 6FLICK running the example code" caption="Displaying battery and temperature data on Inkplate display." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="frontlight.py" 
+description="Turn on the frontlight and ramp its brightness up and down." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6flick/frontlight.py" />

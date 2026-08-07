@@ -18,12 +18,7 @@ Inkplate 5V2 is an open-source product, so its full hardware design is out in th
 
 Inkplate 5V2 has a 5.17-inch e-paper display, USB-C for both power and programming, and plenty of GPIO pins with I2C, SPI, and a Qwiic header. The onboard ESP32 handles Wi-Fi and Bluetooth, the CH340C bridges USB to UART, and there's a microSD slot for storage. Power management runs on a mix of TI ICs for the e-paper supply and regulation (which also handles temperature sensing through a built-in NTC input) and a Microchip charger IC for the battery.
 
----
-
-## Components
-
-Here is an overview of on-board components with their locations:
-<CenteredImage src="/img/5v2/Inkplate5_v2_back.webp" alt="Inkplate 5V2 back" caption="Inkplate 5V2 back" width="1000px" />
+<CenteredImage src="/img/5v2/Inkplate5_v2_back.webp" alt="Inkplate 5V2 back side" caption="Inkplate 5V2, back side" width="1000px" />
 
 ---
 

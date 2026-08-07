@@ -68,3 +68,11 @@ parameters={[
 { type: 'String', name: 'PASSWORD', description: 'The WiFi password.' }
 ]}
 />
+
+---
+
+## Full example
+
+<QuickLink title="example_network.py" 
+description="Connects to a WiFi network, performs an HTTP GET request and prints the response on the display." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/example_network.py" />

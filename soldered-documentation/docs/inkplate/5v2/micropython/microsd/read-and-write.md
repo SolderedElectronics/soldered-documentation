@@ -63,3 +63,11 @@ All available `mode` options:
 
 
 <CenteredImage src="/img/inkplate10-micropython/read-write-output.png" alt="Serial output of the read and write example" caption="Example output" width="800px" />
+
+---
+
+## Full example
+
+<QuickLink title="microsd_read_write.py" 
+description="List, write and read back a text file on the microSD card." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate5v2/microsd_read_write.py" />

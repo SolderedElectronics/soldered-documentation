@@ -28,14 +28,7 @@ The form factor and component layout are optimized for integration into enclosur
 
 <InfoBox>Fun fact: Inkplate 6FLICK reuses displays from **Kindle e-readers**, extending the life of high-quality e-paper panels that would otherwise be discarded.</InfoBox>
 
----
-
-## Components Overview
-
-The following labeled images show the front and back of the Inkplate 6FLICK board, highlighting key components:
-
-<CenteredImage src="/img/inkplate_6_flick/Inkplate6flick_front.png" alt="Inkplate 6FLICK front" caption="Inkplate 6FLICK, front view" />
-<CenteredImage src="/img/inkplate_6_flick/Inkplate6flick_back.png" alt="Inkplate 6FLICK back" caption="Inkplate 6FLICK, back view" />
+<CenteredImage src="/img/inkplate_6_flick/Inkplate6flick_back.png" alt="Inkplate 6FLICK back side" caption="Inkplate 6FLICK, back side" />
 
 ---
 

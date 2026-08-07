@@ -5,13 +5,14 @@ sidebar_label: Soldered Image Converter
 id: 6motion-image-converter
 ---
 
-<CenteredImage src="/img/inkplate_6_motion/image_converter.png" alt="Soldered Image Converter" caption="Graphical user interface of the Soldered Image Converter" width="800px" />
+<CenteredImage src="/img/image_converter_web.png" alt="Soldered Image Converter" caption="Soldered Image Converter web tool" width="1000px" />
 
-Soldered Image Converter is an open-source Python program by Soldered. It is used to convert images for Inkplate boards into .h files, which can be included in Arduino sketches for Inkplate and then displayed.
+The Soldered Image Converter is a free web tool that converts images into `.h` header files ready to include in your Arduino sketch and display on Inkplate.
+
 <QuickLink 
-  title="Soldered Image Converter Repository" 
-  description="See the README in this repository for details on how to download and install the Soldered Image Converter."
-  url="https://github.com/SolderedElectronics/Soldered-Image-Converter/" 
+  title="Soldered Image Converter" 
+  description="Open the web-based image converter tool."
+  url="https://tools.soldered.com/tools/image-converter/" 
 />
 
 After converting images, export the .h files and save them in your Inkplate sketch's project folder. To find this folder, go to `Sketch -> Show Sketch Folder` in Arduino.

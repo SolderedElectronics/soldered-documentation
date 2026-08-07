@@ -5,7 +5,7 @@ sidebar_label: Formatting the microSD card
 id: formatting-the-microsd-card
 ---
 
-The bulit-in microSD card slot on the back of Inkplate 6 can be a great asset for your projects, either for storing a very large number of high-quality images which can be displayed or reading and writing data between deep sleep cycles.
+The built-in microSD card slot on the back of Inkplate 6 can be a great asset for your projects, either for storing a very large number of high-quality images which can be displayed or reading and writing data between deep sleep cycles.
 
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 

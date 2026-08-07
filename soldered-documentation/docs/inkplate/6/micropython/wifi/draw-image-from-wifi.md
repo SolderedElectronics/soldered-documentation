@@ -11,7 +11,7 @@ Inkplate 6 can connect to WiFi and fetch images directly from the internet. This
 
 ## Downloading and displaying an image
 
-Below is a complere example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
+Below is a complete example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
 
 ```python
 # Include needed libraries
@@ -124,7 +124,7 @@ Available options for **dithering** algorithm:
 | `Inkplate.KERNEL_FLOYD_STEINBERG` | 0 |
 | `Inkplate.KERNEL_JJN` | 1 |
 | `Inkplate.KERNEL_STUCKI` | 2 |
-| `Inkplate.KERNEL_BURKES `| 3 |
+| `Inkplate.KERNEL_BURKES` | 3 |
 
 **Performance Notes**
 - JPG: ~3 seconds (or ~7s with dithering)
@@ -135,3 +135,11 @@ Available options for **dithering** algorithm:
 </InfoBox>
 
 <CenteredImage src="/img/inkplate6-micropython/imgweb.jpg" alt="Inkplate 6 running the example code" caption="Displaying an image from web." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="display_image_web.py" 
+description="Connects to a WiFi network and renders an image straight from a URL." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/display_image_web.py" />

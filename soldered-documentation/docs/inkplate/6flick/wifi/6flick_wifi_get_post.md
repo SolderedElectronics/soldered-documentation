@@ -37,7 +37,7 @@ void setup()
     display.println("Scanning for WiFi networks..."); // Write text
     display.display();                                // Send everything to display (refresh display)
 
-    int n = WiFi.scanNetworks(); // Start searching WiFi networks and put the nubmer of found WiFi networks in variable
+    int n = WiFi.scanNetworks(); // Start searching WiFi networks and put the number of found WiFi networks in variable
                                  // n
     if (n == 0)
     { // If you did not find any network, show the message and stop the program.
@@ -126,6 +126,7 @@ void loop()
   returnDescription="Returns the size of available data"
   returnType="int"
 />
+
 ---
 
 ## POST request

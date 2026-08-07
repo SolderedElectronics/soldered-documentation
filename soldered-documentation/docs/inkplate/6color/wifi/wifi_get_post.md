@@ -35,7 +35,7 @@ void setup()
     Serial.println("Scanning for WiFi networks..."); // Write text
 
     int n =
-        WiFi.scanNetworks(); // Start searching WiFi networks and put the nubmer of found WiFi networks in variable n
+        WiFi.scanNetworks(); // Start searching WiFi networks and put the number of found WiFi networks in variable n
     if (n == 0)
     { // If you did not find any network, show the message and stop the program.
         Serial.print("No WiFi networks found!");
@@ -251,4 +251,20 @@ void loop()
   parameters={[ 
     { type: 'String', name: 'url', description: 'URL of the specified website' },
   ]}
+/>
+
+---
+
+## Full examples
+
+<QuickLink 
+  title="Inkplate6COLOR_HTTP_Request.ino" 
+  description="Inkplate 6COLOR WiFi GET request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6COLOR/Advanced/WEB_WiFi/Inkplate6COLOR_HTTP_Request/Inkplate6COLOR_HTTP_Request.ino" 
+/>
+
+<QuickLink 
+  title="Inkplate6COLOR_HTTP_POST_Request.ino" 
+  description="Inkplate 6COLOR WiFi POST request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6COLOR/Advanced/WEB_WiFi/Inkplate6COLOR_HTTP_POST_Request/Inkplate6COLOR_HTTP_POST_Request.ino" 
 />

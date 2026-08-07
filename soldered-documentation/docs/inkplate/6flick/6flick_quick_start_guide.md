@@ -37,7 +37,7 @@ Click `Install` here:
 
 ### 3. Install Inkplate library
 
-In the Arduino Library Manager, search for the Inkplate Motion library and click `Install`:  
+In the Arduino Library Manager, search for the Inkplate library and click `Install`:  
 <CenteredImage src="/img/inkplate_6_flick/install_lib.png" alt="Install Inkplate library" caption="Installing Inkplate library" width="400px" />
 
 <InfoBox>It's also possible to install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
@@ -81,12 +81,7 @@ For the purposes of this documentation, we will use a pre-made example. Go to
 
 ### 3. Upload the code
 
-Before uploading the code, select the correct board definition. The table below should help you out:
-
-| Board Definition                  | Board Description                                                        |
-| --------------------------------- | ------------------------------------------------------------------------ |
-| Soldered inkplate_6_flick         | The newer and more stylish version of the product, with a purple PCB.    |
-| e-radionica.com Inkplate 6FLICK    | The older version, with a blue PCB.                                      |
+Before uploading the code, select **Soldered Inkplate 6FLICK** as the board definition. It's the only one for this board, since Inkplate 6FLICK came out after the switch to the Soldered brand.
 
 Click **Upload** in the Arduino IDE.
 
@@ -100,4 +95,4 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having trouble uploading your first code? Check out our [troubleshooting page](/inkplate/10/faq-troubleshooting/):
+Having trouble uploading your first code? Check out our [troubleshooting page](/inkplate/6flick/faq-troubleshooting/):

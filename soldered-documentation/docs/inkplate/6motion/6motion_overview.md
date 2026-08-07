@@ -46,7 +46,7 @@ The board runs two processors: an **STM32H743** does the work, and an **ESP32-C3
 
 ## Key features
 
-- **Display Size:** 6.0" e-paper (greyscale, motion-optimized)
+- **Display Size:** 6.0" e-paper (grayscale, motion-optimized)
 - **Resolution:** 1024 × 758 pixels (212 PPI)
 - **Refresh Rate:** 91 ms (partial), 500 ms (full B&W), 800 ms (full grayscale)
 - **Grayscale Support:** 4-bit (16 shades)

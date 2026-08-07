@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="MicroSD basics" />
 
-The built-in microSD card slot on Inkplate 10 can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSDs card slot.
+The built-in microSD card slot on Inkplate 10 can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSD card slot.
 
 <CenteredImage src="/img/inkplate10/10_sdcard.jpg" alt="MicroSD card slot on Inkplate 10" caption="MicroSD card slot on Inkplate 10" width="600px" />
 
@@ -90,7 +90,7 @@ void setup()
         display.println("SD Card ok! Reading data...");
         display.partialUpdate();
 
-        // Try to load text with max lenght of 200 chars.
+        // Try to load text with max length of 200 chars.
         if (!file.open("/text.txt", O_RDONLY))
         { // If it fails to open, send error message to display, otherwise read the file.
             display.println("File open error");

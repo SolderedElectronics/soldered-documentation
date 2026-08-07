@@ -4,6 +4,7 @@ title: Inkplate 6COLOR - FAQ and troubleshooting
 sidebar_label: FAQ and troubleshooting
 id: faq-troubleshooting
 hide_title: true
+pagination_next: null
 ---
 
 <SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />

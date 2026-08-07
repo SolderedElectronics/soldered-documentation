@@ -279,3 +279,19 @@ void loop()
     { type: 'uint16_t', name: 'port', description: 'Port to connect to, 80 for plain HTTP.' },
   ]}
 />
+
+---
+
+## Full examples
+
+<QuickLink 
+  title="Inkplate5V2_HTTP_Request.ino" 
+  description="Inkplate 5V2 WiFi GET request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/WEB_WiFi/Inkplate5V2_HTTP_Request/Inkplate5V2_HTTP_Request.ino" 
+/>
+
+<QuickLink 
+  title="Inkplate5V2_HTTP_POST_Request.ino" 
+  description="Inkplate 5V2 WiFi POST request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/WEB_WiFi/Inkplate5V2_HTTP_POST_Request/Inkplate5V2_HTTP_POST_Request.ino" 
+/>

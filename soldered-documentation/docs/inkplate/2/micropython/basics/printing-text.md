@@ -114,3 +114,15 @@ inkplate.display()
 ```
 
 <CenteredImage src="/img/inkplate_2/drippy-font.jpg" alt="Expected output on Inkplate display" caption="Drippy Custom Font Example" />
+
+---
+
+## Full examples
+
+<QuickLink title="hello_world.py" 
+description="Displays 'Hello world!' text on the Inkplate 2 screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/hello_world.py" />
+
+<QuickLink title="custom_font.py" 
+description="Swap in one of the extra typefaces shipped under fonts/ instead of the default font." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/custom_font.py" />

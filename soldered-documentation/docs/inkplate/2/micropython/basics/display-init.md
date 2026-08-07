@@ -49,3 +49,11 @@ inkplate.display()
 />
 
 <InfoBox> Screen refresh time takes about **12 - 15 seconds**. The screen may flicker while updating, which is normal.</InfoBox>
+
+---
+
+## Full example
+
+<QuickLink title="hello_world.py" 
+description="Displays 'Hello world!' text on the Inkplate 2 screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/hello_world.py" />

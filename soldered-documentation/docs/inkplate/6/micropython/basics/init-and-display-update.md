@@ -57,3 +57,11 @@ inkplate.display()
     functionName="inkplate.display()"
     description="Performs a full-screen refresh, sending the current frame buffer to the panel."
 />
+
+---
+
+## Full example
+
+<QuickLink title="hello_world.py" 
+description="Creates the Inkplate object, initializes the display and prints a line of text to the panel." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/hello_world.py" />

@@ -88,3 +88,11 @@ while True:
   returnType="Dictionary"
   returnDescription="Return dictionary with RTC time values as integers"
 />
+
+---
+
+## Full example
+
+<QuickLink title="rtc.py" 
+description="Example showing how to use the onboard RTC to preserve time across reboots." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/rtc.py" />

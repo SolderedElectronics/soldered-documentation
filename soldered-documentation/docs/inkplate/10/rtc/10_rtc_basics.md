@@ -136,3 +136,13 @@ void print2Digits(uint8_t _d)
   description="Reads time and date from the RTC, and stores them in their corresponding variables."
   returnDescription="void"
 />
+
+---
+
+## Full example
+
+<QuickLink 
+  title="Inkplate10_RTC_Simple.ino" 
+  description="This example will show how to set time and date, how to read time, and how to print time on Inkplate using partial updates." 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/RTC/Inkplate10_RTC_Simple/Inkplate10_RTC_Simple.ino" 
+/>

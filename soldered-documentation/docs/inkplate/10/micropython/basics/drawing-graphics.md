@@ -156,3 +156,15 @@ parameters={[
 />
 
 <CenteredImage src="/img/inkplate10-micropython/shapes.jpg" alt="Inkplate 10 running the example code" caption="Simple predefined shapes." width="800px" />
+
+---
+
+## Full examples
+
+<QuickLink title="basic_bw.py" 
+description="Draw basic black and white shapes and a Soldered logo bitmap." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/basic_bw.py" />
+
+<QuickLink title="basic_grayscale.py" 
+description="Draw different shades of gray in grayscale mode and display a Soldered logo bitmap." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/basic_grayscale.py" />

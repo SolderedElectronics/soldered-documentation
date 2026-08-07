@@ -27,28 +27,28 @@ There is a microSD slot, a real-time clock with a coin-cell backup, and you can 
 ## Which product is this documentation for?
 
 <QuickLink 
-  title=" Inkplate 6COLOR" 
+  title="Inkplate 6COLOR" 
   description="333238"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
   image="/img/6color/333238.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6COLOR without e-paper Display" 
+  title="Inkplate 6COLOR without e-paper Display" 
   description="333240"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
   image="/img/6color/boardonly.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6COLOR with e-paper & enclosure" 
+  title="Inkplate 6COLOR with e-paper & enclosure" 
   description="333239"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
   image="/img/6color/enclosure.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6COLOR with e-paper, Enclosure & Battery" 
+  title="Inkplate 6COLOR with e-paper, Enclosure & Battery" 
   description="333231"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
   image="/img/6color/ennbat.png" 

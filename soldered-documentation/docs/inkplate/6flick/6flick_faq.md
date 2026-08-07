@@ -4,6 +4,7 @@ title: Inkplate 6FLICK - FAQ and troubleshooting
 sidebar_label: FAQ and troubleshooting
 id: 6flick-faq-troubleshooting
 hide_title: true
+pagination_next: null
 ---
 
 <SectionTitle title="FAQ and Troubleshooting" backgroundImage="/img/faq.webp" />
@@ -131,8 +132,10 @@ All hardware design files, including schematics, KiCad files, and gerbers, are a
 You can also find documentation on the [**hardware design page**](/inkplate/6flick/hardware/design).
 </ExpandableSection>
 
-<ExpandableSection title="Where can I download 3D enclosure files?">
-We're working on providing 3D printable enclosure models. Once ready, they'll be available in the [**Inkplate 6FLICK hardware repo**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design). Stay tuned!
+<ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 6FLICK?">
+They're in the [**Inkplate 6FLICK hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design/tree/main/OUTPUTS/V1.2.0/3D%20files). The `OUTPUTS/V1.2.0/3D files` folder has print-ready `.stl` files for the top and bottom of the case.
+
+If you'd rather modify the case than print it as is, the editable sources are under `CAD/V1.2.0/Source 3D files` as `.step`. There is also a `.step` model of the PCB itself in `OUTPUTS/V1.2.0`, handy for designing your own enclosure around the board.
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 6FLICK as an external monitor or e-reader?">

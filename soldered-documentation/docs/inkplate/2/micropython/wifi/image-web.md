@@ -83,3 +83,11 @@ Available options for **dithering** algorithm:
 - BMP: ~6 seconds (or ~7s with dithering)
 - Maximum image file size: ~800kB
 </InfoBox>
+
+---
+
+## Full example
+
+<QuickLink title="display_image_web.py" 
+description="Connects to WiFi and renders an image fetched from a URL." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/display_image_web.py" />

@@ -20,13 +20,7 @@ Inkplate 6COLOR is built around a 7-color e-paper panel and an ESP32-WROVER, whi
 
 Unlike the monochrome Inkplates, this panel needs no external power supply chip: the AC057TC1 has its own gate and source drivers, timing controller and DC-DC boost circuit built in, and the ESP32 talks to it over SPI. Battery charging is handled by a Microchip MCP73831, and the 3.3 V rail comes from a TI TPS7A2633. For expansion there are free GPIO pins, a 16-pin I/O expander, I2C, SPI, an easyC/Qwiic header and a microSD slot.
 
----
-
-## Components
-
-Here is an overview of on‑board components with their locations:
-<CenteredImage src="/img/6color/placeholder.jpg" alt="Inkplate 6COLOR front" caption="Inkplate 6COLOR front" width="400px" />
-<CenteredImage src="/img/6color/placeholder.jpg" alt="Inkplate 6COLOR back" caption="Inkplate 6COLOR back" width="400px" />
+<CenteredImage src="/img/6color/back.webp" alt="Inkplate 6COLOR back side" caption="Inkplate 6COLOR, back side" width="1000px" />
 
 ---
 

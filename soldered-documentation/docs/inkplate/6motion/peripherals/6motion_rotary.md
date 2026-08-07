@@ -13,7 +13,7 @@ The **Inkplate 6MOTION** includes a **AS5600 magnetic rotary encoder**, which al
 
 The dial made to interface with the rotary encoder is **transparent**! It's made this way so that the **first** onboard [**RGB LED**](/inkplate/6motion/peripherals/leds/) can change its color when it lights up!
 
-<InfoBox>The **AS5600** implementation in the Inkplate library uses this library from **Rob Tillaart**:<QuickLink 
+<InfoBox>The **AS5600** implementation in the Inkplate Motion library uses this library from **Rob Tillaart**:<QuickLink 
   title="AS5600" 
   description="Arduino library for AS5600 and AS5600L magnetic rotation meter"
   url="https://github.com/RobTillaart/AS5600"/></InfoBox>
@@ -69,6 +69,6 @@ You can use the following factors for conversion:
 
 This example tracks the rotary encoder's angle and updates the display when the angle changes by 2 degrees:
 <QuickLink title="Inkplate_6_MOTION_Rotary_Encoder.ino"
-description="Full rotary encoder example in the Inkplate library"
+description="Full rotary encoder example in the Inkplate Motion library"
 url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_Rotary_Encoder/Inkplate_6_MOTION_Rotary_Encoder.ino"
 />

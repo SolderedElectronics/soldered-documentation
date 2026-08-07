@@ -76,3 +76,11 @@ machine.deepsleep(10000)
     { type: "int", name: "sleep_time_ms", description: "Deep sleep duration in milliseconds" }
   ]}
 />
+
+---
+
+## Full example
+
+<QuickLink title="deep_sleep.py" 
+description="Enter deep sleep and report the wake reason on the next boot." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/deep_sleep.py" />

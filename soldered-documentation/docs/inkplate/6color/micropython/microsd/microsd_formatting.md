@@ -8,7 +8,7 @@ hide_title: true
 
 <SectionTitle title="Formatting MicroSD" />
 
-The built-in microSD card slot on the back of Inkplate 6COLOR can be a great asset for your projects, either for storing a very large number of high-quality images which can be displayed or reading and writing data between deep sleep cycles. This page covers formatting the card and initialising it in code.
+The built-in microSD card slot on the back of Inkplate 6COLOR can be a great asset for your projects, either for storing a very large number of high-quality images which can be displayed or reading and writing data between deep sleep cycles. This page covers formatting the card and initializing it in code.
 
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 

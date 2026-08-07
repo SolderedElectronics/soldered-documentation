@@ -89,3 +89,11 @@ Available options for **dithering** algorithm:
 </InfoBox>
 
 <CenteredImage src="/img/inkplate5v2-micropython/imgweb.jpg" alt="Inkplate 5v2 running the example code" caption="Displaying an image from web." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="display_image_web.py" 
+description="Connect to WiFi and render an image from a URL." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate5v2/display_image_web.py" />

@@ -88,7 +88,7 @@ void setup()
         display.println("SD Card ok! Reading data...");
         display.display();
 
-        // Try to load text with max lenght of 200 chars.
+        // Try to load text with max length of 200 chars.
         if (!file.open("/text.txt", O_RDONLY))
         { // If it fails to open, send error message to display, otherwise read the file.
             display.println("File open error");

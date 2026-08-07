@@ -11,7 +11,7 @@ The **APDS9960** sensor enables **gesture recognition, proximity sensing, ambien
 
 <CenteredImage src="/img/inkplate_6_motion/6motion_apds9960.jpg" alt="APDS9960 gesture and proximity sensor on the front of Inkplate 6MOTION" caption="APDS9960 on the Inkplate 6MOTION" width="600px" />
 
-<InfoBox>The **APDS9960** implementation in the Inkplate library uses this library from **SparkFun**:<QuickLink title="SparkFun APDS9960 RGB and Gesture Sensor Arduino Library" 
+<InfoBox>The **APDS9960** implementation in the Inkplate Motion library uses this library from **SparkFun**:<QuickLink title="SparkFun APDS9960 RGB and Gesture Sensor Arduino Library" 
   description="The original library which is included in the Inkplate 6MOTION library"
   url="https://github.com/sparkfun/SparkFun_APDS-9960_Sensor_Arduino_Library" 
 /></InfoBox>

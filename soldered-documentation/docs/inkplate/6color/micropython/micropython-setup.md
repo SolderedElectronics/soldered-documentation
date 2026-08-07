@@ -68,8 +68,6 @@ Use the following command to install the MicroPython library for Inkplate 6COLOR
 
 **You only have to do steps 1-4 once when writing MicroPython firmware on your Inkplate!**
 
-<SuccessBox> Now you can upload examples and write code with the IDE of your choosing! </SuccessBox>
-
 <QuickLink
   title="Inkplate MicroPython Library"
   description="GitHub repo for Inkplate MicroPython library"

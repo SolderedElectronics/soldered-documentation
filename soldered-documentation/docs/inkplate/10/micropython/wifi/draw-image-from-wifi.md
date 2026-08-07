@@ -78,7 +78,7 @@ Available options for **dithering** algorithm:
 | `Inkplate.KERNEL_FLOYD_STEINBERG` | 0 |
 | `Inkplate.KERNEL_JJN` | 1 |
 | `Inkplate.KERNEL_STUCKI` | 2 |
-| `Inkplate.KERNEL_BURKES `| 3 |
+| `Inkplate.KERNEL_BURKES` | 3 |
 
 **Performance Notes**
 - JPG: ~3 seconds (or ~14s with dithering)
@@ -89,3 +89,11 @@ Available options for **dithering** algorithm:
 </InfoBox>
 
 <CenteredImage src="/img/inkplate10-micropython/imgweb.jpg" alt="Inkplate 10 running the example code" caption="Displaying an image from web." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="display_image_web.py" 
+description="Connect to WiFi and render an image from a URL." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/display_image_web.py" />

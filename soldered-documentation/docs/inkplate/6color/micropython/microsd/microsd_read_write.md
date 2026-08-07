@@ -45,3 +45,11 @@ inkplate.sd_card_sleep()
 <WarningBox> Always `close()` files (or use `with`) to avoid file corruption. </WarningBox>
 
 <CenteredImage src="/img/6color/read-write.jpg" alt="Example code" caption="Example display from .txt file" />
+
+---
+
+## Full example
+
+<QuickLink title="microsd_read_write.py" 
+description="List, write and read back a text file on the microSD card." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/microsd_read_write.py" />

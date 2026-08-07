@@ -52,7 +52,7 @@ int getButtonPress() {
 
 ## Full example
 
-For an all-in-one demonstration, the Inkplate library provides an example:
+For an all-in-one demonstration, the Inkplate Motion library provides an example:
 
 <QuickLink title="Inkplate_6_MOTION_Buttons.ino"
 description="Full example with pressing buttons and printing out which one was pressed"

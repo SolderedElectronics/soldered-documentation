@@ -338,3 +338,19 @@ void loop()
     { type: 'String', name: 'url', description: 'URL of the specified website' },
   ]}
 />
+
+---
+
+## Full examples
+
+<QuickLink 
+  title="Inkplate2_HTTP_Request.ino" 
+  description="Inkplate 2 WiFi GET request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Advanced/WEB_WiFi/Inkplate2_HTTP_Request/Inkplate2_HTTP_Request.ino" 
+/>
+
+<QuickLink 
+  title="Inkplate2_HTTP_POST_Request.ino" 
+  description="Inkplate 2 WiFi POST request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Advanced/WEB_WiFi/Inkplate2_HTTP_POST_Request/Inkplate2_HTTP_POST_Request.ino" 
+/>

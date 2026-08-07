@@ -163,3 +163,11 @@ if __name__ == "__main__":
     description="Example showing how to draw a colored bitmap stored in flash memory."
     url="https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/examples/inkplate2/drawcoloredbitmap"
 />
+
+---
+
+## Full example
+
+<QuickLink title="draw_colored_bitmap.py" 
+description="Draws a colored bitmap stored in flash memory to the Inkplate 2 display." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/drawcoloredbitmap/draw_colored_bitmap.py" />

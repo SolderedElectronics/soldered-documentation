@@ -30,15 +30,7 @@ The board layout is optimized for enclosures and integration into compact applic
 
 <InfoBox>Fun fact: TEMPERA units also reuse genuine e-paper panels, giving a second life to commercial-grade displays while helping reduce waste.</InfoBox>
 
----
-
-## Components overview
-
-The following images show the front and back of the Inkplate 4TEMPERA board, with major components visible for easy identification:
-
-<CenteredImage src="/img/inkplate_4_tempera/tempera.png" alt="Inkplate 4TEMPERA front" caption="Inkplate 4TEMPERA - front view" />
-<CenteredImage src="/img/inkplate_4_tempera/tempera_front.png" alt="Inkplate 4TEMPERA front" caption="Inkplate 4TEMPERA - front mounted components" />
-<CenteredImage src="/img/inkplate_4_tempera/tempera_rear.png" alt="Inkplate 4TEMPERA back" caption="Inkplate 4TEMPERA - back mounted components" />
+<CenteredImage src="/img/inkplate_4_tempera/tempera_rear.png" alt="Inkplate 4TEMPERA back side" caption="Inkplate 4TEMPERA, back side" />
 
 ---
 

@@ -20,6 +20,8 @@ Inkplate 6 is built around a 6″ e-paper panel and an ESP32-WROVER, which handl
 
 The e-paper rails come from a TI TPS65186, which also reads the panel's NTC thermistor so you can get a temperature reading. Battery charging is handled by a Microchip MCP73831. For expansion there are free GPIO pins, I2C, SPI, an easyC/Qwiic header and a microSD slot.
 
+<CenteredImage src="/img/6/back.webp" alt="Inkplate 6 back side" caption="Inkplate 6, back side" width="1000px" />
+
 ---
 
 ## E-paper panel

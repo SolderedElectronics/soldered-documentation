@@ -4,6 +4,7 @@ title: Inkplate 6 - FAQ and troubleshooting
 sidebar_label: FAQ and troubleshooting
 id: faq-troubleshooting  
 hide_title: true  
+pagination_next: null
 ---
 
 <SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />
@@ -83,9 +84,9 @@ The library has a dedicated `burnInClean()` routine for this. It drives the pane
 
 ```cpp
 #include "Inkplate.h"             // Include Inkplate library to the sketch
-Inkplate display(INKPLATE_1BIT); // Create object on Inkplate library and set library to work in monochorme mode
+Inkplate display(INKPLATE_1BIT); // Create object on Inkplate library and set library to work in monochrome mode
 
-// Nubmer of clear cycles.
+// Number of clear cycles.
 #define CLEAR_CYCLES 20
 
 // Delay between clear cycles (in milliseconds)

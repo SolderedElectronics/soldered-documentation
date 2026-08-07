@@ -7,7 +7,7 @@ id: 6motion-periph-accelerometer
 
 The **LSM6DSO32** sensor on Inkplate 6MOTION provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking.
 
-<InfoBox>The **LSM6DSO32** implementation in the Inkplate library uses this library from **Adafruit**:<QuickLink title="Adafruit LSM6DS" 
+<InfoBox>The **LSM6DSO32** implementation in the Inkplate Motion library uses this library from **Adafruit**:<QuickLink title="Adafruit LSM6DS" 
   description="The Adafruit LSM6DS 6-DoF Accelerometer and Gyroscope Sensor Library for Arduino, included in the Inkplate 6MOTION library"
   url="https://github.com/adafruit/Adafruit_LSM6DS" 
 /></InfoBox>
@@ -207,6 +207,6 @@ inkplate.printf("Gyro Z: %.2f °/s\n", gyro.gyro.z);
 For the best all-in-one overview of this peripheral, have a look at this Arduino example which projects a 3D cube from the accelerometer data and also prints the gyroscope data:
 
 <QuickLink title="Inkplate_6_MOTION_Accelerometer_Cube.ino" 
-  description="Full LSM6DSO32 example in the Inkplate library"
+  description="Full LSM6DSO32 example in the Inkplate Motion library"
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_Accelerometer_Cube/Inkplate_6_MOTION_Accelerometer_Cube.ino" 
 />

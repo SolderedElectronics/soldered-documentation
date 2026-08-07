@@ -8,7 +8,7 @@ id: 6motion-periph-wsled
 
 The **Inkplate 6MOTION** includes **two WS2812 RGB LEDs**, allowing full-color control for notifications, status indicators, or creative lighting effects.
 
-<InfoBox>The **WS2812** implementation in the Inkplate library uses this library from **Adafruit**:<QuickLink 
+<InfoBox>The **WS2812** implementation in the Inkplate Motion library uses this library from **Adafruit**:<QuickLink 
   title="Adafruit NeoPixel Library" 
   description="The original library which is included in the Inkplate 6MOTION library"
   url="https://github.com/adafruit/Adafruit_NeoPixel"/></InfoBox>
@@ -92,9 +92,9 @@ inkplate.led.show();
 
 ## Full example
 
-For an in-depth example, check out the Inkplate library:
+For an in-depth example, check out the Inkplate Motion library:
 
 <QuickLink title="Inkplate_6_MOTION_WSLED.ino"
-description="Full WS2812 LED example in the Inkplate library"
+description="Full WS2812 LED example in the Inkplate Motion library"
 url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_WSLED/Inkplate_6_MOTION_WSLED.ino"
 />

@@ -25,28 +25,28 @@ The high-resolution screen supports **grayscale rendering**, **partial updates**
 ## Which product is this documentation for?
 
 <QuickLink 
-  title=" Inkplate 10" 
+  title="Inkplate 10" 
   description="333241"
   url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/333241.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 10 without e-paper Display" 
+  title="Inkplate 10 without e-paper Display" 
   description="333243"
   url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/boardonly.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 10 with e-paper & enclosure" 
+  title="Inkplate 10 with e-paper & enclosure" 
   description="333242"
   url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/enclosure.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 10 with e-paper, Enclosure & Battery" 
+  title="Inkplate 10 with e-paper, Enclosure & Battery" 
   description="333247"
   url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/ennbat.png" 

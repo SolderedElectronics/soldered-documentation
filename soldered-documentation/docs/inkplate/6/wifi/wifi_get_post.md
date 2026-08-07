@@ -34,7 +34,7 @@ void setup()
     display.println("Scanning for WiFi networks..."); // Write text
     display.display();                                // Send everything to display (refresh display)
 
-    int n = WiFi.scanNetworks(); // Start searching WiFi networks and put the nubmer of found WiFi networks in variable
+    int n = WiFi.scanNetworks(); // Start searching WiFi networks and put the number of found WiFi networks in variable
                                  // n
     if (n == 0)
     { // If you did not find any network, show the message and stop the program.
@@ -123,6 +123,7 @@ void loop()
   returnDescription="Returns the size of available data"
   returnType="int"
 />
+
 ---
 
 ## POST request
@@ -253,4 +254,20 @@ void loop()
   parameters={[  
     { type: 'String', name: 'url', description: 'Url of the specified website' },
   ]}
+/>
+
+---
+
+## Full examples
+
+<QuickLink 
+  title="Inkplate6_HTTP_Request.ino" 
+  description="Inkplate 6 WiFi GET request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6/Advanced/WEB_WiFi/Inkplate6_HTTP_Request/Inkplate6_HTTP_Request.ino" 
+/>
+
+<QuickLink 
+  title="Inkplate6_HTTP_POST_Request.ino" 
+  description="Inkplate 6 WiFi POST request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6/Advanced/WEB_WiFi/Inkplate6_HTTP_POST_Request/Inkplate6_HTTP_POST_Request.ino" 
 />
