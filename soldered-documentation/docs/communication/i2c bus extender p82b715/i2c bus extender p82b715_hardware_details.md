@@ -29,10 +29,10 @@ Click [**here**](/img/i2c%20bus%20extender%20p82b715/Pinout.png) for a high reso
 
 | **Pin** | **Description**                                                     |
 |---------|----------------------------------------------------------------------|
-| GND     | Ground.                                                              |
-| VCC     | 5V from the onboard boost converter.                                 |
-| SDA     | I²C data line on the P82B715's Sx/Sy side. Always 5V logic.        |
 | SCL     | I²C clock line on the P82B715's Sx/Sy side. Always 5V logic.       |
+| SDA     | I²C data line on the P82B715's Sx/Sy side. Always 5V logic.        |
+| VCC     | 5V from the onboard boost converter.                                 |
+| GND     | Ground.                                                              |
 
 <WarningBox>K3 is a 5V header. Its SDA and SCL sit at 5V logic and VCC is 5V, whatever you do with JP1 and JP2, which only switch the pull-ups. Don't power a 3.3V-only device from this header, and don't wire its SDA/SCL straight to a 3.3V-only part. Use a Qwiic port instead, that side is level shifted to 3.3V.</WarningBox>
 
