@@ -6,11 +6,11 @@ id: read-bat
 hide_title: true  
 ---
 
-<SectionTitle title="Read Battery Voltage" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Read Battery Voltage" />
 
-When running your **Inkplate 5V2** board on a **Li-ion battery**, it's helpful to know the battery's condition. Inkplate 5V2 lets you measure the battery voltage directly, giving you an estimate of remaining capacity and help you decide if it's time to recharge.
+When your Inkplate 5V2 runs on a Li-ion battery, it's useful to know how much charge is left. Inkplate 5V2 can measure the battery voltage directly, which gives you an estimate of the remaining capacity and tells you when it's time to recharge.
 
-<WarningBox>Connecting and using the battery correctly is important! Please refer to the <a href="/inkplate/5v2/hardware/battery">battery usage page</a> for guidance before use. </WarningBox> 
+<WarningBox>Connecting and using the battery correctly matters. Have a look at the <a href="/inkplate/5v2/hardware/battery">battery usage page</a> before you start. </WarningBox> 
 
 ---
 
@@ -45,7 +45,7 @@ void loop()
 <FunctionDocumentation
   functionName="inkplate.readBattery()"
   description="Reads the current battery voltage when running on battery power"
-  returnType="float"
+  returnType="double"
   returnDescription="Returns the measured battery voltage"
 />
 

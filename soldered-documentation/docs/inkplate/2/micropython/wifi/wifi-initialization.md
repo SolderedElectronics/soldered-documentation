@@ -105,3 +105,11 @@ inkplate.display()
         { type: "Tuple", name: "(ip, subnet, gateway, dns)", description: "Network parameters" }
   ]}
 />
+
+---
+
+## Full example
+
+<QuickLink title="example_network.py" 
+description="Connects to WiFi and fetches data from the internet." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/example_network.py" />

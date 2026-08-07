@@ -1,7 +1,7 @@
 ---
 slug: /inkplate/6motion/basics/printing-text
-title: 6Motion - Printing Text
-sidebar_label: Printing Text
+title: Inkplate 6MOTION - Printing text
+sidebar_label: Printing text
 id: 6motion-text
 ---
 
@@ -11,7 +11,7 @@ Printing text on Inkplate is simple and requires only a few functions. The libra
 
 ---
 
-## Simple Text Printing
+## Simple text printing
 
 To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size: 
 
@@ -53,7 +53,7 @@ inkplate.display(); // As always, call display to render the text on the e-Paper
 
 ---
 
-## Text Background Color
+## Text background color
 
 To change the text color, use `setTextColor`. This function can also optionally set a background color, which prints a rectangle in that color behind the text. This can improve visibility in some cases.
 <FunctionDocumentation
@@ -68,7 +68,7 @@ To change the text color, use `setTextColor`. This function can also optionally 
 
 ---
 
-## Custom Fonts
+## Custom fonts
 
 The default font appears blocky as it is optimized for minimal memory usage. You can use custom fonts by downloading them from the [Adafruit GFX official repository](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/Fonts). Adafruit provides well-documented examples on using custom fonts [**here**](https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts). 
 
@@ -108,7 +108,7 @@ void loop()
 
 ---
 
-## Additional Text Printing Options
+## Additional text printing options
 
 Use `setTextWrap` to enable or disable automatic text wrapping when reaching the edge of the e-Paper display:
 <FunctionDocumentation

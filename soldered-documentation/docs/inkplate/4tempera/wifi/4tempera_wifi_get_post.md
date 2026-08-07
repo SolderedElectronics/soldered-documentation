@@ -1,12 +1,12 @@
 ---
 slug: /inkplate/4tempera/wifi/get-post
-title: Inkplate 4TEMPERA – GET & POST requests
+title: Inkplate 4TEMPERA - GET & POST requests
 sidebar_label: GET & POST requests
 id: 4tempera-wifi-get-post
 hide_title: true
 ---
 
-<SectionTitle title="GET & POST Requests" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="GET & POST requests" backgroundImage="/img/inkplate_4_tempera/tempera_front.png" />
 
 Now that Inkplate is connected to the internet, you will likely want to send and receive data from sensors, messages, and your custom APIs. This page contains examples of how to send and receive data on Inkplate via the internet:
 
@@ -86,9 +86,6 @@ void setup()
             inkplate.print(htmlText);
             inkplate.display();
         }
-    }
-    else{
-        
     }
 }
 
@@ -287,7 +284,7 @@ void loop()
 
 To see more details, check out our full examples:
 <QuickLink 
-  title="Inkplate4TEMPERA_HTTP_GET_Request.ino" 
+  title="Inkplate4TEMPERA_HTTP_Request.ino" 
   description="Inkplate 4TEMPERA WiFi GET request example from the Inkplate library"
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate4TEMPERA/Advanced/WEB_WiFi/Inkplate4TEMPERA_HTTP_Request/Inkplate4TEMPERA_HTTP_Request.ino" 
 />

@@ -6,7 +6,7 @@ id: 6flick-microsd-basics
 hide_title: true
 ---
 
-<SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
+<SectionTitle title="MicroSD basics" />
 
 The built-in microSD card slot on Inkplate 6FLICK can be of great use for your project. It can store a very large number of high-quality image files to be displayed, and it can also read and write data during deep sleep cycles. This page contains basic examples that will help you quickly get started with using the built-in microSD card slot.
 
@@ -32,27 +32,27 @@ Before the microSD card can be used in code, it must first be initialized. This 
 ```cpp
 #include "Inkplate.h"            //Include Inkplate library to the sketch
 #include "SdFat.h"               //Include library for SD card
-Inkplate inkplate(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
+Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
 SdFile file;                     // Create SdFile object used for accessing files on SD card
 
 void setup()
 {
-    inkplate.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
-    inkplate.clearDisplay(); // Clear frame buffer of display
-    inkplate.display();      // Put clear image on display
-    inkplate.setTextSize(5);
+    display.begin();        // Init Inkplate library (you should call this function ONLY ONCE)
+    display.clearDisplay(); // Clear frame buffer of display
+    display.display();      // Put clear image on display
+    display.setTextSize(5);
 
     // Init SD card. Display if SD card is init properly or not.
-    if (inkplate.sdCardInit())
+    if (display.sdCardInit())
     {
-        inkplate.println("SD Card ok! Reading data...");
-        inkplate.partialUpdate();
+        display.println("SD Card ok! Reading data...");
+        display.partialUpdate();
     }
     else
     { // If card init was not successful, display error on screen, put sd card in sleep mode, and stop the program (using infinite loop)
-        inkplate.println("SD Card error!");        
-        inkplate.partialUpdate();
-        inkplate.sdCardSleep();
+        display.println("SD Card error!");        
+        display.partialUpdate();
+        display.sdCardSleep();
         while (true)
             ;
     }
@@ -63,8 +63,8 @@ void loop()
 }
 ```
 <FunctionDocumentation
-    functionname="inkplate.sdCardInit()"
-    description="Initializes sd card trough SPI."
+    functionName="display.sdCardInit()"
+    description="Initializes the microSD card through SPI."
     returnDescription="Returns true if the initialization was successful, otherwise returns false."
 />
 
@@ -73,34 +73,8 @@ void loop()
 ## Reading and writing
 Place a sample `text.txt` file on the microSD card and write something in it. This code snippet will read it and print it to the e-Paper:
 ```cpp
-/*
-   Inkplate6FLICK_SD_TXT_Read example for Soldered Inkplate 6FLICK
-   For this example you will need only a micro USB cable, Inkplate 6FLICK and a SD card
-   loaded with text.txt file that can be found inside folder of this example.
-   Select "Soldered Inkplate 6FLICK" from Tools -> Board menu.
-   Don't have "Inkplate 6FLICK(ESP32)" option? Follow our tutorial and add it:
-   https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
-
-   To work with SD card on Inkplate, you will need to add one extra library.
-   Download and install it from here: https://github.com/e-radionicacom/Inkplate-6-SDFat-Arduino-Library
-
-   You can open your own .txt file, but in order for this example to work properly it should
-   not have more than 200 chars and you should name it text.txt
-
-   This example will show you how to open .txt files and display the content of that file on the Inkplate epaper display.
-
-   Want to learn more about Inkplate? Visit www.inkplate.io
-   Looking to get support? Write on our forums: https://forum.soldered.com/
-   15 March 2024 by Soldered
-*/
-
-// Next 3 lines are a precaution, you can ignore those, and the example would also work without them
-#ifndef ARDUINO_INKPLATE6FLICK
-#error "Wrong board selection for this example, please select Soldered Inkplate 6FLICK"
-#endif
-
 #include "Inkplate.h"            //Include Inkplate library to the sketch
-#include "SdFat.h"               //Include library for SD card
+
 Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1 Bit mode (BW)
 SdFile file;                     // Create SdFile object used for accessing files on SD card
 
@@ -110,8 +84,8 @@ void setup()
     display.clearDisplay(); // Clear frame buffer of display
     display.display();      // Put clear image on display
     display.setRotation(1);
-    display.setFrontlight(15);
-    // Init SD card. Display if SD card is init properly or not.
+    display.frontlight.setState(15);
+    // Init SD card. Display if SD card is init propery or not.
     if (display.sdCardInit())
     {
         display.println("SD Card ok! Reading data...");
@@ -125,18 +99,18 @@ void setup()
         }
         else
         {
-            display.clearDisplay();    // Clear everything that is stored in the frame buffer of the epaper
-            display.setCursor(0, 0);   // Set print position at the beginning of the screen
+            display.clearDisplay();    // Clear everything that is stored in frame buffer of epaper
+            display.setCursor(0, 0);   // Set print position at the begining of the screen
             char text[3001];           // Array where data from SD card is stored (max 200 chars here)
-            int len = file.fileSize(); // Read how big the file that we are opening is
+            int len = file.fileSize(); // Read how big is file that we are opening
             if (len > 3000)
-                len = 3000;       // If it's more than 3000 bytes, limit to max 3000 bytes
-            file.read(text, len); // Read data from the file and save it in the text array
-            text[len] = 0;        // Put null terminating character at the end of the data
+                len = 3000;       // If it's more than 200 bytes (200 chars), limit to max 200 bytes
+            file.read(text, len); // Read data from file and save it in text array
+            text[len] = 0;        // Put null terminating char at the and of data
             display.setTextSize(2);
             display.print(text);   // Print data/text
             display.sdCardSleep(); // Put sd card in sleep mode
-            display.display();     // Do a full refresh of the display
+            display.display();     // Do a full refresh of display
         }
     }
     else
@@ -154,7 +128,6 @@ void loop()
 {
     // Nothing...
 }
-
 ```
 
 <FunctionDocumentation
@@ -200,13 +173,13 @@ void loop()
 <InfoBox>Using this method, it's possible to write to a .csv file, making it easy to store a table or log of events!</InfoBox>
 
 <QuickLink 
-  title="Inkplate6FLICK_SD_TXT_Read.ino" 
+  title="Inkplate6FLICK_microSD_TXT_Read.ino" 
   description="This example will show you how to open .txt files and display the content of that file on Inkplate epaper display."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_TXT_Read" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/microSD/Inkplate6FLICK_microSD_TXT_Read" 
 />
 
 <QuickLink 
-  title="Inkplate6FLICK_SD_TXT_Write.ino" 
+  title="Inkplate6FLICK_microSD_TXT_Write.ino" 
   description="This example will show you how to write to a .txt file."
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/SD/Inkplate6FLICK_SD_TXT_Write/Inkplate6FLICK_SD_TXT_Write.ino" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/microSD/Inkplate6FLICK_microSD_TXT_Write/Inkplate6FLICK_microSD_TXT_Write.ino" 
 />

@@ -1,14 +1,14 @@
 ---  
 slug: /inkplate/4tempera/peripherals/accelerometer  
-title: Inkplate 4TEMPERA – Accelerometer and gyroscope
+title: Inkplate 4TEMPERA - Accelerometer and gyroscope
 sidebar_label: Accelerometer and gyroscope
 id: 4tempera-periph-accelerometer  
 hide_title: true
 ---
 
-<SectionTitle title="Accelerometer and Gyroscope" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Accelerometer and gyroscope" />
 
-The **LSM6DS3** sensor on the Inkplate 4 TEMPERA provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking. It is used both for general movement sensing and to demonstrate 3D projections based on device tilt.
+The **LSM6DS3** sensor on the Inkplate 4TEMPERA provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking. It is used both for general movement sensing and to demonstrate 3D projections based on device tilt.
 
 <InfoBox>The **LSM6DS3** implementation in the Inkplate library is built-in and does not require installing an external library.</InfoBox>
 
@@ -42,7 +42,7 @@ if (inkplate.lsm6ds3.begin() != 0) {
 
 ---
 
-## Reading Data
+## Reading data
 
 Once initialized, you can read accelerometer and gyroscope values directly:
 
@@ -68,7 +68,7 @@ float gz = inkplate.lsm6ds3.readFloatGyroZ();
 
 ---
 
-## 3D Projection Demo
+## 3D projection demo
 
 In the official example, the LSM6DS3's accelerometer values are used to control the tilt of a **3D wireframe cube**, illustrating how orientation data can be used for interactive graphics:
 
@@ -92,11 +92,11 @@ It uses the following sequence:
 - Project to 2D screen space
 - Adjust projection scale and center based on display size
 
-This approach enables smooth, interactive rendering—an ideal demo for providing visual feedback based on motion.
+This approach enables smooth, interactive rendering, providing visual feedback based on motion.
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
   title="Inkplate4TEMPERA_Accelerometer_Gyroscope_Read.ino" 

@@ -1,7 +1,7 @@
 ---
 slug: /inkplate/10/wifi/image-from-web
-title: Inkplate 10 – Draw Image from Web
-sidebar_label: Draw Image from Web
+title: Inkplate 10 – Draw image from web
+sidebar_label: Draw image from web
 id: 10-wifi-image-from-web
 ---
 
@@ -48,7 +48,7 @@ void setup()
     }
     display.println("\nWiFi OK! Downloading...");
     display.partialUpdate();
-    if (!display.image.draw("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
+    if (!display.image.draw("https://docs.soldered.com/img/inkplate_6_motion/sample_image.jpg", 0, 0, false, false))
     {
         // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
         // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no compression!
@@ -80,10 +80,10 @@ void loop()
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
-  title="Inkplate10_Image_From_Web.ino" 
+  title="Inkplate10_Show_Pictures_From_Web.ino" 
   description="Connect to WiFi and draw an image from the web."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate10/Advanced/WEB_WiFi/Inkplate10_Show_Pictures_From_Web/Inkplate10_Show_Pictures_From_Web.ino" 
 />

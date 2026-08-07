@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6color/overview  
-title:  Inkplate 6COLOR - Overview  
+title: Inkplate 6COLOR - Overview  
 sidebar_label: Overview  
 id: 6color-overview
 hide_title: True  
@@ -11,56 +11,56 @@ tags:
   - 333239
   - 333231
   - Inkplate 6COLOR
-  - Inkplate 6 COLOR
   - Inkplate6COLOR
 ---
 
-<SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Overview" />
 
-**Inkplate 6COLOR** is a vibrant evolution of the Inkplate e-paper family, featuring a **5.85-inch color e-paper display** capable of rendering **7 distinct colors**: Black, White, Red, Yellow, Blue, Green, and Orange. Powered by the reliable **ESP32 microcontroller** and designed for plug-and-play usability, it's ideal for creative, low-power display applications that need more than just black and white.
+**Inkplate 6COLOR** is a 5.65-inch color e-paper display with an ESP32 behind it. The panel shows **7 colors**: black, white, red, yellow, blue, green and orange. Like every e-paper display it keeps the image with the power off, and it stays readable in direct sunlight.
 
-Like all Inkplate devices, it runs on minimal energy, drawing just **18 µA in deep sleep**, and comes with a **microSD slot**, **real-time clock**, and full support for **Arduino** and **MicroPython**. With optional 3D-printed enclosure and battery options, Inkplate 6COLOR is a complete and flexible solution for colorful e-paper development.
+The trade-off for color is speed. A full refresh takes around **12 seconds** and there is no partial update, so this board suits things you redraw now and then: a weather panel, a photo frame, a dashboard on the wall. It draws **18 µA in deep sleep**, so a battery lasts a long time between those redraws.
 
+There is a microSD slot, a real-time clock with a coin-cell backup, and you can program it in Arduino or MicroPython. Enclosure and battery kits are available if you want it finished rather than bare.
 
-<CenteredImage src="/img/6color/333238.png" alt=" Inkplate 6COLOR" caption=" Inkplate 6COLOR e-paper display board"/>
+<CenteredImage src="/img/6color/333238.png" alt="Inkplate 6COLOR" caption="Inkplate 6COLOR e-paper display board"/>
 
 ## Which product is this documentation for?
 
 <QuickLink 
-  title=" Inkplate 6COLOR" 
+  title="Inkplate 6COLOR" 
   description="333238"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
   image="/img/6color/333238.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6COLOR without e-paper Display" 
+  title="Inkplate 6COLOR without e-paper Display" 
   description="333240"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
   image="/img/6color/boardonly.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6COLOR with e-paper & enclosure" 
+  title="Inkplate 6COLOR with e-paper & enclosure" 
   description="333239"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
   image="/img/6color/enclosure.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6COLOR with e-paper, Enclosure & Battery" 
+  title="Inkplate 6COLOR with e-paper, Enclosure & Battery" 
   description="333231"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
   image="/img/6color/ennbat.png" 
 />
 
-## Key Features
+## Key features
 
-- **Display Size:** 5.85" color e-paper
+- **Display Size:** 5.65" color e-paper (AC057TC1)
 - **Resolution:** 600 × 448 pixels
 - **Color Support:** 7 colors (Black, White, Red, Yellow, Blue, Green, Orange)
-- **Refresh Time:** ~12 seconds (full refresh)
-- **Microcontroller:** ESP32 (Wi-Fi + Bluetooth 4.0 BLE)
+- **Refresh Time:** ~12 seconds (full refresh; no partial update)
+- **Microcontroller:** ESP32-WROVER (Wi-Fi + Bluetooth 4.2 BR/EDR and BLE)
 - **Power Supply:** USB or Li-Ion battery (charger onboard)
 - **Power Consumption:** 18 µA in deep sleep mode
 - **Programming Support:** Arduino (Adafruit GFX compatible), MicroPython

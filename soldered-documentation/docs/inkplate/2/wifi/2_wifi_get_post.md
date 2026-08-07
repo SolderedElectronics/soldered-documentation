@@ -6,23 +6,23 @@ id: 2-wifi-get-post
 hide_title: true  
 ---  
 
-<SectionTitle title="GET & POST Requests" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="GET & POST Requests" />
 
-Now that Inkplate is connected to the internet, you will likely want to send and receive data on it from sensors, messages, or your custom APIs. This page contains examples of how to send and receive data on Inkplate via the internet:
+Now that Inkplate is connected to the internet, you will likely want to send and receive data, whether from sensors, messages, or your own APIs. This page contains examples of how to do that:
 
 ---
 
 ## GET request
 
-Using `client.GET()` will enable you to easily download and handle data on Inkplate however you want. Here is an example of how to GET a .html file and print it on Inkplate:
+Using `client.GET()`, you can download and handle data on Inkplate however you want. Here's an example of how to GET a .html file and print it on Inkplate:
 
 ```cpp
 /*
     Inkplate2_HTTP_Request example for Soldered Inkplate 2
     For this example you will need USB cable, Inkplate 2 and stable WiFi Internet connection
     Select "Soldered Inkplate2" from Tools -> Board menu.
-    Don't have "Soldered Inkplate2" option? Follow our tutorial and add it:
-    https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
+    Don't have "Soldered Inkplate2" option? Follow our quick start guide and add it:
+    https://docs.soldered.com/inkplate/2/quick-start-guide/
 
     This example will show you how to connect to a WiFi network, get data from the Internet and display that data on the e-paper.
     This example is NOT about how to parse HTML data from the Internet - it will just print HTML on the screen.
@@ -30,7 +30,7 @@ Using `client.GET()` will enable you to easily download and handle data on Inkpl
     In quotation marks you will need to write your WiFi SSID and WiFi password in order to connect to your WiFi network.
 
     Want to learn more about Inkplate? Visit www.inkplate.io
-    Looking to get support? Write on our forums: https://forum.soldered.com/
+    Looking to get support? Ask on our community: https://community.soldered.com
     30 March 2022 by Soldered
 */
 
@@ -169,15 +169,15 @@ void loop()
 
 ## POST request
 
-To send data from Inkplate to a web server, you can use the same built-in `WiFiClient` class. Let's use [**ThingSpeak.com**](https://thingspeak.mathworks.com/), which is a great resource for testing POST and GET requests. By visiting the site, you get a unique URL to which a POST request from Inkplate can be sent and that data will then be visible on the site:
+To send data from Inkplate to a web server, you can use the same built-in `WiFiClient` class. Let's use [**ThingSpeak.com**](https://thingspeak.mathworks.com/) for testing POST and GET requests. By visiting the site, you get a unique URL where Inkplate can POST data, which then appears on the site:
 
 ```cpp
 /*
    Inkplate2_HTTP_POST_Request example for Soldered Inkplate2
    For this example you will need USB cable, Inkplate2 and stable WiFi Internet connection.
    Select "Soldered Inkplate2" from Tools -> Board menu.
-   Don't have "Soldered Inkplate2" option? Follow our tutorial and add it:
-   https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
+   Don't have "Soldered Inkplate2" option? Follow our quick start guide and add it:
+   https://docs.soldered.com/inkplate/2/quick-start-guide/
 
    This example will show you how to connect to a WiFi network and send a POST request via HTTP.
    We will use ThingSpeak API to see post requests. It's a free API that allows you to store and retrieve data using
@@ -192,7 +192,7 @@ To send data from Inkplate to a web server, you can use the same built-in `WiFiC
    When you send a POST request, open your channel and you will see the graph with your sent data.
 
    Want to learn more about Inkplate? Visit www.inkplate.io
-   Looking to get support? Write on our forums: https://forum.soldered.com/
+   Looking to get support? Ask on our community: https://community.soldered.com
    26 January 2023 by Soldered
 */
 
@@ -337,4 +337,20 @@ void loop()
   parameters={[ 
     { type: 'String', name: 'url', description: 'URL of the specified website' },
   ]}
+/>
+
+---
+
+## Full examples
+
+<QuickLink 
+  title="Inkplate2_HTTP_Request.ino" 
+  description="Inkplate 2 WiFi GET request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Advanced/WEB_WiFi/Inkplate2_HTTP_Request/Inkplate2_HTTP_Request.ino" 
+/>
+
+<QuickLink 
+  title="Inkplate2_HTTP_POST_Request.ino" 
+  description="Inkplate 2 WiFi POST request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate2/Advanced/WEB_WiFi/Inkplate2_HTTP_POST_Request/Inkplate2_HTTP_POST_Request.ino" 
 />

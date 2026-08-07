@@ -1,26 +1,26 @@
 ---
 slug: /inkplate/6motion/peripherals/rotary-encoder
-title: 6Motion - Rotary Encoder
-sidebar_label: Rotary Encoder
+title: Inkplate 6MOTION - Rotary encoder
+sidebar_label: Rotary encoder
 id: 6motion-periph-rotary
 ---
 
-The **Inkplate 6 MOTION** includes a **AS5600 magnetic rotary encoder**, which allows precise rotation tracking. It is ideal for navigating menus or fine tuning numerical input values. 
+The **Inkplate 6MOTION** includes a **AS5600 magnetic rotary encoder**, which allows precise rotation tracking. It is ideal for navigating menus or fine tuning numerical input values. 
 
-<InfoBox>This peripheral IC is mostly relevant to you only if you have the Inkplate 6 MOTION with **enclosure**, as it cointains the perfectly-placed **dial** with magnet to interface with the rotary encoder IC.</InfoBox>
+<InfoBox>This peripheral IC is mostly relevant to you only if you have the Inkplate 6MOTION with **enclosure**, as it contains the perfectly placed **dial** with magnet to interface with the rotary encoder IC.</InfoBox>
 
-<CenteredImage src="/img/inkplate_6_motion/6motion_rotary.jpg" alt="Inkplate 6 MOTION Rotary Encoder" caption="Rotary encoder on the Inkplate 6 MOTION enclosure" width="600px" />
+<CenteredImage src="/img/inkplate_6_motion/6motion_rotary.jpg" alt="Inkplate 6MOTION Rotary Encoder" caption="Rotary encoder on the Inkplate 6MOTION enclosure" width="600px" />
 
-The dial made to interface with the rotary encoder is **transparent**! It's made this way so that the **first** onboard [**RGB LED**](/inkplate/6motion/peripherals/leds/) can change it's color when it lights up!
+The dial made to interface with the rotary encoder is **transparent**! It's made this way so that the **first** onboard [**RGB LED**](/inkplate/6motion/peripherals/leds/) can change its color when it lights up!
 
-<InfoBox>The **AS5600** implementation in the Inkplate library uses this library from **Rob Tillaart**:<QuickLink 
+<InfoBox>The **AS5600** implementation in the Inkplate Motion library uses this library from **Rob Tillaart**:<QuickLink 
   title="AS5600" 
   description="Arduino library for AS5600 and AS5600L magnetic rotation meter"
   url="https://github.com/RobTillaart/AS5600"/></InfoBox>
 
 ---
 
-## Initializaiton
+## Initialization
 
 Before using the rotary encoder, it must be **powered on and initialized**.
 
@@ -65,10 +65,10 @@ You can use the following factors for conversion:
 
 ---
 
-## Full Example
+## Full example
 
 This example tracks the rotary encoder's angle and updates the display when the angle changes by 2 degrees:
 <QuickLink title="Inkplate_6_MOTION_Rotary_Encoder.ino"
-description="Full rotary encoder example in the Inkplate library"
+description="Full rotary encoder example in the Inkplate Motion library"
 url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_Rotary_Encoder/Inkplate_6_MOTION_Rotary_Encoder.ino"
 />

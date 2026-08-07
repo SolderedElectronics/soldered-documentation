@@ -6,7 +6,7 @@ id: 6flick-quick-start-guide
 hide_title: true  
 ---
 
-<SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Quick start guide" />
 
 To get started with Arduino on Inkplate 6FLICK, complete a few simple steps to install the required software.
 
@@ -14,7 +14,7 @@ To get started with Arduino on Inkplate 6FLICK, complete a few simple steps to i
 
 ### 1. Install Arduino IDE
 
-If you haven’t installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
+If you haven't installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
 <WarningBox>Arduino IDE 2.0 or newer is required for Inkplate 6FLICK.</WarningBox>
 
 <CenteredImage src="/img/inkplate_6_flick/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
@@ -37,7 +37,7 @@ Click `Install` here:
 
 ### 3. Install Inkplate library
 
-In the Arduino Library Manager, search for the Inkplate Motion library and click `Install`:  
+In the Arduino Library Manager, search for the Inkplate library and click `Install`:  
 <CenteredImage src="/img/inkplate_6_flick/install_lib.png" alt="Install Inkplate library" caption="Installing Inkplate library" width="400px" />
 
 <InfoBox>It's also possible to install the library manually by downloading it from the [**GitHub repository**](https://github.com/SolderedElectronics/Inkplate-Arduino-library).</InfoBox>
@@ -51,13 +51,13 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 ### Done!
 
-Inkplate 6FLICK setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! See the next page in the documentation for details on how to upload code:
+Inkplate 6FLICK setup is complete. Now, try out some examples from the Arduino library, upload them and see the results for yourself! See the next page in the documentation for details on how to upload code:
 
 ---
 
 ## Light and Versatile Graphics Library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LVGL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 
@@ -81,12 +81,7 @@ For the purposes of this documentation, we will use a pre-made example. Go to
 
 ### 3. Upload the code
 
-Before uploading the code, select the correct board definition. The table below should help you out:
-
-| Board Definition                  | Board Description                                                        |
-| --------------------------------- | ------------------------------------------------------------------------ |
-| Soldered inkplate_6_flick         | The newer and more stylish version of the product, with a purple PCB.    |
-| e-radionica.com Inkplate 6FLICK    | The older version, with a blue PCB.                                      |
+Before uploading the code, select **Soldered Inkplate 6FLICK** as the board definition. It's the only one for this board, since Inkplate 6FLICK came out after the switch to the Soldered brand.
 
 Click **Upload** in the Arduino IDE.
 
@@ -100,4 +95,4 @@ Hard resetting via RTS pin...
 
 ### Troubleshooting
 
-Having trouble uploading your first code? Check out our [troubleshooting page](/inkplate/10/faq-troubleshooting/):
+Having trouble uploading your first code? Check out our [troubleshooting page](/inkplate/6flick/faq-troubleshooting/):

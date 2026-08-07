@@ -1,18 +1,18 @@
 ---  
 slug: /inkplate/4tempera/microsd/sd-image  
-title: Inkplate 4TEMPERA – Image from microSD
+title: Inkplate 4TEMPERA - Image from microSD
 sidebar_label: Image from microSD
 id: 4tempera-microsd-image  
 hide_title: true  
 ---
 
-<SectionTitle title="Display Images from SD Card" backgroundImage="img/sd_picture.jpg" />
+<SectionTitle title="Display images from SD card" backgroundImage="img/sd_picture.jpg" />
 
 The `Inkplate4TEMPERA_SD_Pictures` example demonstrates how to load and display image files from a microSD card on the Inkplate 4TEMPERA. This method is ideal for dynamic content such as photo slideshows or interface elements loaded at runtime.
 
 ---
 
-## SD Card Image Display
+## SD card image display
 
 The Inkplate library can render BMP and JPG images directly from an SD card. This allows you to present rich graphical content without hardcoding images into your firmware.
 
@@ -57,7 +57,7 @@ void setup()
         display.clearDisplay();
         if (file.open("image2.bmp", O_RDONLY))
         {
-            display.image.drawBitmapFromSd(&file, 0, 0);
+            display.image.drawBitmapFromSd(&file, 0, 0, 1);
         }
         else
         {
@@ -71,7 +71,7 @@ void setup()
         if (!display.image.draw("pyramid.jpg", 100, 0, true, false))
         {
             // If something fails (wrong filename or incorrect format), write an error message on the screen.
-            // You can turn off dithering for somewhat faster image loading by changing the fifth parameter to false, or
+            // You can turn off dithering for somewhat faster image loading by changing the fourth parameter to false, or
             // by removing the parameter completely.
             display.println("Image open error");
         }       

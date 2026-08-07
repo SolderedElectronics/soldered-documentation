@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/6flick/overview  
-title:  Inkplate 6FLICK - Overview  
+title: Inkplate 6FLICK - Overview  
 sidebar_label: Overview  
 id: 6flick-overview
 hide_title: True  
@@ -11,62 +11,65 @@ tags:
   - 333318
   - 333320
   - Inkplate 6FLICK
-  - Inkplate 6 FLICK
   - Inkplate6FLICK
 ---
 
-<SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Overview" />
 
-**Inkplate 6 FLICK** is a user-friendly, all-in-one **6-inch e-paper touchscreen display** with built-in frontlight and fast refresh. Designed for effortless development, just plug it in via USB-C, open the Arduino IDE, and start displaying content within minutes. With **multi-touch input**, **64-step adjustable lighting**, and **partial update support**, it's ideal for interactive and always-on applications.
+**Inkplate 6FLICK** is a 6-inch e-paper display with a capacitive touchscreen and a frontlight, driven by an ESP32. The panel is a recycled ED060XC3 pulled from e-readers, so it holds its image with the power off and stays readable in sunlight. Unlike the other Inkplates, this one you can touch and read in the dark.
 
-Powered by the popular **ESP32 microcontroller**, it provides **Wi-Fi and Bluetooth** connectivity, ultra-low power consumption, and versatile expansion through **GPIO, I²C, SPI, and EasyC/Qwiic**. Like all Inkplates, it's also eco-friendly—featuring **recycled e-paper screens** from refurbished e-readers. Whether for kiosks, dashboards, or creative installations, Inkplate 6 FLICK is ready to go, out of the box.
+Touch is two-point capacitive, and the frontlight runs across 64 brightness steps. Partial updates land in about 225 ms, which is quick enough for menus and drawing rather than just static pages.
+
+Wi-Fi and Bluetooth are built in. You can program it in Arduino or MicroPython, and expand it over GPIO, I²C, SPI and the easyC/Qwiic header.
+
+Because the panels are reclaimed rather than newly made, expect the occasional cosmetic mark on the glass. It does not affect how the display works.
 
 
 
-<CenteredImage src="/img/inkplate_6_flick/333317.png" alt=" Inkplate 6FLICK" caption=" Inkplate 6FLICK e-paper display board"/>
+<CenteredImage src="/img/inkplate_6_flick/333317.png" alt="Inkplate 6FLICK" caption="Inkplate 6FLICK e-paper display board"/>
 
 ## Which product is this documentation for?
 
 <QuickLink 
-  title=" Inkplate 6FLICK" 
+  title="Inkplate 6FLICK" 
   description="333317"
   url="https://soldered.com/product/inkplate-6flick/"
   image="/img/inkplate_6_flick/333317.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6FLICK without e-paper Display" 
+  title="Inkplate 6FLICK without e-paper Display" 
   description="333319"
   url="https://soldered.com/product/inkplate-6flick/"
   image="/img/inkplate_6_flick/boardonly.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6FLICK with e-paper & enclosure" 
+  title="Inkplate 6FLICK with e-paper & enclosure" 
   description="333318"
   url="https://soldered.com/product/inkplate-6flick/"
   image="/img/inkplate_6_flick/enclosure.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 6FLICK with e-paper, Enclosure & Battery" 
+  title="Inkplate 6FLICK with e-paper, Enclosure & Battery" 
   description="333320"
   url="https://soldered.com/product/inkplate-6flick/"
   image="/img/inkplate_6_flick/ennbat.png" 
 />
 
-## Key Features
+## Key features
 
-- **Display Size:** 6.0" e-paper (touchscreen with lighting)
+- **Display Size:** 6.0" e-paper (ED060XC3, touchscreen with frontlight)
 - **Resolution:** 1024 × 758 pixels
-- **Refresh Time:** 225 ms (1-bit), 1.26s (3-bit greyscale)
-- **Color Support:** 3-bit greyscale (8 shades)
+- **Refresh Time:** 225 ms (1-bit), 1.26s (3-bit grayscale)
+- **Color Support:** 3-bit grayscale (8 shades)
 - **Touchscreen:** 2-point capacitive multi-touch
 - **Lighting:** Adjustable in 64 brightness steps
-- **Microcontroller:** ESP32 (Wi-Fi + Bluetooth 4.0 BLE)
+- **Microcontroller:** ESP32-WROVER (Wi-Fi + Bluetooth 4.2 BR/EDR and BLE)
 - **Power Supply:** USB-C or Li-Ion battery (charger included)
 - **Power Consumption:** 23 µA in deep sleep mode
-- **Programming Support:** Arduino (Adafruit GFX compatible)
+- **Programming Support:** Arduino (Adafruit GFX compatible), MicroPython
 - **Storage:** microSD card slot for media/data
 - **Clock:** Real-Time Clock (RTC) with battery backup
 - **Expansion:** GPIO, I²C, SPI, EasyC/Qwiic-compatible

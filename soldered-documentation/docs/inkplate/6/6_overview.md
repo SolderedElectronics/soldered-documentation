@@ -14,11 +14,13 @@ tags:
   - Inkplate6
 ---
 
-<SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Overview" />
 
-**Inkplate 6** brings the power and elegance of **6-inch e-paper** to the hands of makers, students, and product designers. Designed for low-power, always-on display applications, it features a **recycled 800×600 pixel E-Ink screen**, an **ESP32 microcontroller**, and full **Wi-Fi + Bluetooth** connectivity all in a plug-and-play, Arduino-compatible form factor. It supports **grayscale rendering**, **partial updates**, and is optimized for both performance and sustainability.
+**Inkplate 6** is a 6-inch e-paper display with an ESP32 behind it. The panel is a recycled 800 × 600 E-Ink screen pulled from e-readers, so it stays readable in direct sunlight and holds its image with the power off. Wi-Fi and Bluetooth are built in, and the board is Arduino compatible out of the box.
 
-With support for Arduino (Adafruit GFX-compatible) and MicroPython, plus easy expansion via GPIO, I²C, SPI, and the EasyC/Qwiic ecosystem, **Inkplate 6** is ideal for low-energy projects that demand crystal-clear, sunlight-readable display output. Its recycled e-reader displays give new life to unused screens, making it an eco-conscious choice for modern prototyping.
+You can program it in Arduino (the library is Adafruit GFX compatible) or MicroPython. It draws in black and white or in eight levels of grayscale, and supports partial updates when you only need to change part of the screen. For anything you want to add, there are free GPIO pins plus I²C, SPI and an easyC/Qwiic header.
+
+Because the panels are reclaimed rather than newly made, expect the occasional cosmetic scratch on the glass. It does not affect how the display works.
 
 <CenteredImage src="/img/6/333232.png" alt="Inkplate 6" caption="Inkplate 6 e-paper display board"/>
 
@@ -52,15 +54,15 @@ With support for Arduino (Adafruit GFX-compatible) and MicroPython, plus easy ex
   image="/img/6/ennbat.png" 
 />
 
-## Key Features
+## Key features
 
 - **Display Size:** 6" e-paper (black, white + grayscale)
 - **Resolution:** 800 × 600 pixels
-- **Refresh Rate:** 1.26s (full), 264 ms (partial)
-- **Microcontroller:** ESP32 (Wi-Fi + Bluetooth 4.0 BLE)
+- **Refresh Rate:** 1.26s (full), 0.26s (partial)
+- **Microcontroller:** ESP32-WROVER (Wi-Fi + Bluetooth 4.2 BR/EDR and BLE)
 - **Power Supply:** USB or Li-Ion battery (charger included)
 - **Power Consumption:** 25 µA in deep sleep mode
-- **Programming Support:** Arduino (Adafruit GFX), MicroPython (in development)
+- **Programming Support:** Arduino (Adafruit GFX), MicroPython
 - **Storage:** microSD card slot for image loading and data logging
 - **Clock:** Real-Time Clock (PCF85063A) with battery holder
 - **Expansion:** GPIO, I²C, SPI, EasyC/Qwiic-compatible

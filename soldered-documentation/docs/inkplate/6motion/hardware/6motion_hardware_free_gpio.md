@@ -8,7 +8,7 @@ id: 6motion-hardware-free-gpio
 Inkplate 6MOTION's onboard **STM32H743** has some pins reserved for internal use (for example, the connection to the e-paper display) and cannot be used for end-user applications. This page contains a list of the available GPIO pins that can be used for external applications.
 
 <WarningBox>The onboard ESP32-C3-WROOM-02 is used as a Wi-Fi co-processor and therefore cannot be used for other purposes</WarningBox>
-If you don't need pin details and are just interested in the pins, here are the Inkplate 6motion that are **not connected to any external component**:
+If you don't need pin details and are just interested in the pins, here are the Inkplate 6MOTION pins that are **not connected to any external component**:
 ``PB10, PB11, PA10, PA9, PA8, PA12, PA11, PB13, PB12, PG11, PC5, PC4, PC1, PA7, PA2, PA1, PD3, PC6, PC2-C, PC3-C, PB4, PC12, PD2, PC11, PC10, PC9, PC8``
 
 <CenteredImage src="/img/inkplate_6_motion/free_gpio.jpg" alt="Inkplate 6MOTION free pins" caption="Inkplate 6MOTION free pins" />
@@ -28,7 +28,7 @@ See the table below for pin functions and what each pin is connected to:
 |PA8|**FREE**|MCO1, TIM1_CH1, HRTIM_CHB2, TIM8_BKIN2, I2C3_SCL, USART1_CK, OTG_FS_SOF, UART7_RX, TIM8_BKIN2_COMP12, LCD_B3, LCD_R6, EVENTOUT|
 |PA12|**FREE**|TIM1_ETR, HRTIM_CHD2, LPUART1_RTS/LPUART1_DE, SPI2_SCK/I2S2_CK, UART4_TX, USART1_RTS/USART1_DE, SAI2_FS_B, FDCAN1_TX, OTG_FS_DP, LCD_R5, EVENTOUT|
 |PA11|**FREE**|TIM1_CH4, HRTIM_CHD1, LPUART1_CTS, SPI2_NSS/I2S2_WS, UART4_RX, USART1_CTS/USART1_NSS, FDCAN1_RX, OTG_FS_DM, LCD_R4, EVENTOUT|
-|PB13|**FREE**|TIM1_CH1N, LPTIM2_OUT, SPI2_SCK/I2S2_CK, DFSDM1_CKIN1, USART3_CTS/USART3_NSS, FDCAN2_TX, OTG_HS_ULPI_D6, ETH_MII_TXD1/ETH_RM II_TXD1, UART5_TX, EVENTOUT|
+|PB13|**FREE**|TIM1_CH1N, LPTIM2_OUT, SPI2_SCK/I2S2_CK, DFSDM1_CKIN1, USART3_CTS/USART3_NSS, FDCAN2_TX, OTG_HS_ULPI_D6, ETH_MII_TXD1/ETH_RMII_TXD1, UART5_TX, EVENTOUT|
 |PB12|**FREE**|TIM1_BKIN, I2C2_SMBA, SPI2_NSS/I2S2_WS, DFSDM1_DATIN1, USART3_CK, FDCAN2_RX, OTG_HS_ULPI_D5, ETH_MII_TXD0/ETH_RMII_TXD0, OTG_HS_ID, TIM1_BKIN_COMP12, UART5_RX, EVENTOUT|
 |PG11|**FREE**|LPTIM1_IN2, HRTIM_EEV4, SPI1_SCK/I2S1_CK, SPDIFRX1_IN1, SDMMC2_D2, ETH_MII_TX_EN/ETH_RMII_TX_EN, DCMI_D3, LCD_B3, EVENTOUT|
 |PC5|**FREE**|SAI1_D3, DFSDM1_DATIN2, SPDIFRX1_IN4, SAI4_D3, ETH_MII_RXD1/ETH_RMII_RXD1, FMC_SDCKE0, COMP1_OUT, EVENTOUT|

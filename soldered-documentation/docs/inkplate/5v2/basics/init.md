@@ -5,15 +5,15 @@ sidebar_label: Initialization
 id: init  
 hide_title: true  
 ---  
-<SectionTitle title="Initialization" backgroundImage="img/arduino_bg.jpg" />
+<SectionTitle title="Initialization" />
 
-Let's get started writing our first Inkplate sketch! Before using Inkplate in your Arduino code, it must be initialized in the `setup()` function of your sketch. This page contains details on how to do that.
+Let's write your first Inkplate sketch. Before you can use Inkplate in your Arduino code, it has to be initialized in the `setup()` function of your sketch. Here's how to do that.
 
 ---
 
 ## Initializing Inkplate and updating the display
 
-The most basic sketch on Inkplate 5V2 is as follows: it initializes Inkplate in memory and clears the e-paper display:
+Here's the most basic sketch for Inkplate 5V2. It initializes Inkplate in memory and clears the e-paper display:
 
 ```cpp
 // Include Inkplate Arduino Library.
@@ -40,14 +40,14 @@ void loop()
 />
 <FunctionDocumentation
   functionName="inkplate.begin()"
-  description="In short, this function initializes the Inkplate object. This starts I2C, allocates the required memory for the frame buffer, and initializes the on-board peripherals."
+  description="Initializes the Inkplate object. This starts I2C, allocates the required memory for the frame buffer, and initializes the on-board peripherals."
   returnType="none"
 />
 <FunctionDocumentation
   functionName="inkplate.display()"
-  description="This function refreshes the display and draws what’s currently in the frame buffer. To update the display, this function must be called. This is a full refresh, completely wiping the e-paper and then drawing what’s in the frame buffer."
+  description="This function refreshes the display and draws what's currently in the frame buffer. To update the display, this function must be called. This is a full refresh, completely wiping the e-paper and then drawing what's in the frame buffer."
   returnType="none"
-  parameters={[{ type: 'uint8_t ', name: '_leaveOn', description: "Optional. If set to true, the e-paper won't get turned off after the refresh – this speeds up consecutive refreshes. It's best to use this with partialUpdate and not with this function." }]}
+  parameters={[{ type: 'uint8_t ', name: '_leaveOn', description: "Optional. If set to true, the e-paper won't get turned off after the refresh, which speeds up consecutive refreshes. It's best to use this with partialUpdate and not with this function." }]}
 />
 
 ---
@@ -58,6 +58,6 @@ If you want to use Inkplate in portrait mode or any 90-degree rotation, use `ink
 <FunctionDocumentation
   functionName="inkplate.setRotation()"
   description="Sets the cardinal rotation of the display. This automatically adjusts the (0, 0) x-y coordinate origin point."
-  returnDescription="none"
-  parameters={[{ type: 'uint8_t ', name: '_rotation', description: "Ranges from 0 to 270. 0 is the default rotation; 1 represents a rotation of 90 degrees, 2 represents a rotation of 180 degrees, and 3 represents a rotation of 270 degrees." }]}
+  returnType="none"
+  parameters={[{ type: 'uint8_t ', name: '_rotation', description: "Accepts 0 to 3. 0 is the default rotation, 1 is 90 degrees, 2 is 180 degrees, and 3 is 270 degrees. The value is masked with & 3, so passing 90, 180 or 270 will not do what you expect." }]}
 />

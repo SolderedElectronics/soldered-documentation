@@ -1,11 +1,11 @@
 ---
 slug: /inkplate/10/micropython/microsd/draw-image-from-microsd-card
-title: Inkplate 10 MicroPython - Draw Image from microSD card
-sidebar_label: Draw Image from microSD card
+title: Inkplate 10 MicroPython - Draw image from microSD card
+sidebar_label: Draw image from microSD card
 id: draw-image-from-microsd-card
 ---
 
-Inkpalte 10 can load and render images directly from the onboard microSD card. This example shows how to initialize the SD card, list its contents and display a JPEG, PNG or BMP image on screen.
+Inkplate 10 can load and render images directly from the onboard microSD card. This example shows how to initialize the SD card, list its contents and display a JPEG, PNG or BMP image on screen.
 
 ---
 
@@ -14,7 +14,7 @@ Inkpalte 10 can load and render images directly from the onboard microSD card. T
 Before running this example, make sure your SD card is formatted as **FAT16, FAT32 or exFAT** and inserted into Inkplate 10.
 To learn how to format the microSD card click [**here**](/inkplate/10/micropython/microsd/formatting-the-microsd-card/#preparing-the-microsd-card-before-usage)
 
-The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate10/displayImageSd/mountain.jpg).
+The picture used in the example can be downloaded directly from the [Inkplate MicroPython Library](https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/image.jpg).
 
 ```python
 from inkplate10 import Inkplate
@@ -23,12 +23,12 @@ from os import listdir
 
 inkplate = Inkplate(Inkplate.INKPLATE_2BIT)
 inkplate.begin()
-inkplate.initSDCard(fastBoot=True)
+inkplate.init_sd_card(fastBoot=True)
 print(listdir("/sd"))
 
 # Draw image onto the buffer
 drawLength = time.ticks_ms()
-inkplate.drawImage(
+inkplate.draw_image(
     "sd/mountain.jpg",
     0, 0,
     invert=False,
@@ -40,12 +40,12 @@ print("Time it took to draw to buffer: {} ms".format(drawLength))
 inkplate.display()
 
 # Put SD card interface to sleep
-inkplate.SDCardSleep()
-# To wake it again, use: inkplate.SDCardWake()
+inkplate.sd_card_sleep()
+# To wake it again, use: inkplate.sd_card_wake()
 ```
 
 <FunctionDocumentation
-functionName="inkplate.drawImage()"
+functionName="inkplate.draw_image()"
 description="Draw an image from a file path or URL into the display buffer."
 parameters={[
 { type: 'String', name: 'path', description: 'Path to image (e.g. "sd/mountain.jpg") or URL.' },
@@ -65,7 +65,7 @@ Available options for **dithering** algorithm:
 | `Inkplate.KERNEL_FLOYD_STEINBERG` | 0 |
 | `Inkplate.KERNEL_JJN` | 1 |
 | `Inkplate.KERNEL_STUCKI` | 2 |
-| `Inkplate.KERNEL_BURKES `| 3 |
+| `Inkplate.KERNEL_BURKES` | 3 |
 
 **Performance Notes**
 - JPG: ~3 seconds (or ~14s with dithering)
@@ -77,3 +77,23 @@ Available options for **dithering** algorithm:
 
 
 <CenteredImage src="/img/inkplate10-micropython/imgweb.jpg" alt="Inkplate 10 running the example code" caption="Displaying an image from SD card." width="1000px" />
+
+---
+
+## Full examples
+
+<QuickLink title="display_image_sd.py" 
+description="Initialize an SD card and render an image located on it." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/display_image_sd.py" />
+
+<QuickLink title="display_image_sd_jpeg_c.py" 
+description="Decode a JPEG from the microSD card through the C decode path (ROM tjpgd) with Floyd-Steinberg dithering, and draw it in grayscale." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/display_image_sd_jpeg_c.py" />
+
+<QuickLink title="display_image_sd_png_c.py" 
+description="Decode a PNG from the microSD card through the C decode path (pngle plus ROM miniz) with Floyd-Steinberg dithering, and draw it in grayscale. Alpha is ignored." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/display_image_sd_png_c.py" />
+
+<QuickLink title="display_image_sd_bmp_c.py" 
+description="Decode a BMP from the microSD card through the C decode path (24-bit, 1/4/8-bit indexed and 16-bit 555/565) with Floyd-Steinberg dithering, and draw it in grayscale." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/displayimagesd/display_image_sd_bmp_c.py" />

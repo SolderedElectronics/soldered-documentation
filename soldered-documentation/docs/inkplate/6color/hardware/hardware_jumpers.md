@@ -17,10 +17,10 @@ See the table below for a detailed explanation of each jumper's function:
 |---|---|---|
 | **JP1** | **Connected to IO34 by default** | Switch between connecting the Interrupt pin of the IO expander to the IO34 pin on the ESP32 or the K1 output header on the board |
 | **JP2** | **Connected to P1_2 by default** | Switch between connecting the SD_ENABLE pin of the microSD card reader to pin 12 on the IO expander or the K20 output header on the board |
-| **JP3** | **Connected to P1_1 by default** | Switch between connecting the V_BAT_MOS pin to pin 12 on the IO expander or the K26 output header on the board |
+| **JP3** | **Connected to P1_1 by default** | Switch between connecting V_BAT_MOS, which enables the battery voltage divider, to pin 11 on the IO expander or the K26 output header on the board |
 | **JP4** | **NO** (not connected) | When shorted, it keeps the microSD card powered at 3.3V at all times. Useful for troubleshooting, but not ideal for low-power applications. |
-| **JP5** | **Connected to GPIO39 by default** | Switch between connecting the interrupt pin of the RTC to the GPIO39 pin or to the CLKOUT_RTC pin |
-| **JP6** | **Connected to SPI_CS(IO15) by default** | Switch between connecting the CS pin of the microSD card reader to the IO15 pin or the SD0 pin on the ESP32 |
+| **JP5** | **Connected to GPIO39 by default** | Selects what the RTC drives on GPIO39: the interrupt output, or the CLKOUT square-wave output |
+| **JP6** | **Connected to SPI_CS(IO15) by default** | Switch between connecting the CS pin of the microSD card reader to IO15 or to the GPIO15 breakout pad |
 
 <FlickityCarousel
 images={[

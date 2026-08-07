@@ -8,7 +8,7 @@ id: 10-hardware-free-gpio
 Inkplate 10's onboard **ESP32 WROVER-E** has some pins reserved for internal use (for example, the connection to the e-paper display) and cannot be used for end-user applications. This page contains a list of the available GPIO pins that can be used for external applications.
 
 If you don't need pin details and are just interested in the pins, here are the Inkplate 10 pins that are **not connected to any external component**:
-`` IO26``, ``GPIO EXPANDER 1: P1-3 to P1-7``, ``GPIO EXPANDER: P0-0 to P1-7``
+``IO26``, ``GPIO expander 1: P1-3 to P1-7``, ``GPIO expander 2: P0-0 to P1-7``
 
 <CenteredImage src="/img/inkplate10/free_gpio.webp" alt="Inkplate 10 free pins" caption="Inkplate 10 free pins" />
 
@@ -30,7 +30,7 @@ See the table below for pin functions and what each pin is connected to:
 | IO35         | V_BAT            | ADC1_CH7, RTC_GPIO5                                                        |
 | IO36         | WAKEUP BUTTON    | ADC1_CH0, RTC_GPIO0                                                        |
 | IO39         | JP2 [**Check jumper details**](/inkplate/10/hardware/jumpers/#board-jumpers) | ADC1_CH3, RTC_GPIO3 |
-|P1-1| JP6 [**Check jumper details**](/inkplate/10/hardware/jumpers/#board-jumpers)| SD_DATA1, EMAC_TX_ER |
-|P1-2| JP5 [**Check jumper details**](/inkplate/10/hardware/jumpers/#board-jumpers)| SD_DATA1, EMAC_TX_ER |
-| GPIO Expander 1: P1-3 _ P1-7 | **FREE** |SD_DATA1, EMAC_TX_ER |
-| GPIO Expander 2: P0-0 - P1-7| **FREE** |SD_DATA1, EMAC_TX_ER |
+| GPIO expander 1: P1-1 | JP6 [**Check jumper details**](/inkplate/10/hardware/jumpers/#board-jumpers) | General-purpose I/O on the PCAL6416A |
+| GPIO expander 1: P1-2 | JP5 [**Check jumper details**](/inkplate/10/hardware/jumpers/#board-jumpers) | General-purpose I/O on the PCAL6416A |
+| GPIO expander 1: P1-3 to P1-7 | **FREE** | General-purpose I/O on the PCAL6416A |
+| GPIO expander 2: P0-0 to P1-7 | **FREE** | General-purpose I/O on the PCAL6416A |

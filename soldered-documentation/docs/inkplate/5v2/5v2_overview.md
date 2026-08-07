@@ -17,11 +17,11 @@ tags:
   - Inkplate5Gen2
 ---
 
-<SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Overview" />
 
-**Inkplate 5 Gen2** is a versatile, low-power **5.2-inch e-paper development board** designed for makers, educators, and product developers. Built on the reliable **ESP32 microcontroller**, it offers **Wi-Fi** and **Bluetooth 4.0 (BLE)** connectivity, fast screen refresh rates, and excellent sunlight readability. This fully open-source device is ready to use right out of the box and can be programmed using both **Arduino** and **MicroPython**.
+Inkplate 5V2 is a low-power 5.2-inch e-paper development board for makers, educators, and product developers. It's built around the ESP32 microcontroller, so you get Wi-Fi and Bluetooth 4.0 (BLE) connectivity, along with fast screen refresh and good readability in sunlight. The board is fully open source, works out of the box, and can be programmed with Arduino or MicroPython.
 
-Its **ultra-low power consumption**, at just 18 µA in deep sleep, makes it ideal for long-term, battery-powered applications. With a **microSD card slot**, **RTC**, and **GPIO expansion** via EasyC/Qwiic, it's the perfect foundation for custom display projects.
+In deep sleep it draws 18 µA, which suits projects that run on a battery for a long time. A microSD card slot, an RTC, and GPIO expansion over EasyC/Qwiic give you a solid base for a custom display project.
 
 <CenteredImage src="/img/5v2/333333.png" alt="Inkplate 5v2" caption="Inkplate 5v2 e-paper display board"/>
 
@@ -55,18 +55,17 @@ Its **ultra-low power consumption**, at just 18 µA in deep sleep, makes it idea
   image="/img/5v2/ennbat.png" 
 />
 
-## Key Features
+## Key features
 
-- **Display Size:** 5.2" e-paper (black, white + 6 grayscale levels)
-- **Resolution:** 720 × 1280 pixels
-- **Refresh Rate:** 0.99s (full), 0.22s (partial)
-- **Microcontroller:** ESP32 (Wi-Fi + Bluetooth 4.0 BLE)
-- **Power Consumption:** 18 µA in deep sleep mode
-- **Power Supply:** USB or Li-Ion battery (with onboard charger)
-- **Programming Support:** Arduino, MicroPython
-- **Storage:** microSD card slot for image/data loading
-- **Expansion:** GPIO, I²C, SPI, EasyC/Qwiic-compatible
-- **Enclosure Options:**
-  - With e-paper screen & 3D-printed casing
-  - With screen, casing, and 1200mAh battery
-  - Without screen (for custom integrations)
+| **Feature** | **Details** |
+|---|---|
+| Display size | 5.2" e-paper (black, white + 6 grayscale levels) |
+| Resolution | 720 × 1280 pixels |
+| Refresh rate | 0.99s (full), 0.22s (partial) |
+| Microcontroller | ESP32 (Wi-Fi + Bluetooth 4.0 BLE) |
+| Power consumption | 18 µA in deep sleep mode |
+| Power supply | USB or Li-Ion battery (with onboard charger) |
+| Programming support | Arduino, MicroPython |
+| Storage | microSD card slot for image/data loading |
+| Expansion | GPIO, I²C, SPI, EasyC/Qwiic-compatible |
+| Enclosure options | With e-paper screen & 3D-printed casing<br />With screen, casing, and 1200mAh battery<br />Without screen (for custom integrations) |

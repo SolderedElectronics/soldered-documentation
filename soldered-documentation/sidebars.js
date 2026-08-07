@@ -117,7 +117,6 @@ const sidebars = {
                 "inkplate/2/hardware/2-hardware-design",
                 "inkplate/2/hardware/2-hardware-open-source",
                 "inkplate/2/hardware/2-hardware-files",
-                "inkplate/2/hardware/2-hardware-jumpers",
                 "inkplate/2/hardware/2-hardware-battery",
                 "inkplate/2/hardware/2-hardware-free-gpio"
               ]
@@ -150,14 +149,6 @@ const sidebars = {
                 "inkplate/2/deepsleep/2-deep-sleep",
                 {
                   "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/2/microsd/2-microsd-basics",
-                    "inkplate/2/microsd/2-microsd-image"
-                  ]
-                },
-                {
-                  "type": "category",
                   "label": "Real Time Clock",
                   "items": [
                     "inkplate/2/rtc/2-rtc-basics",
@@ -187,15 +178,6 @@ const sidebars = {
                     "inkplate/2/micropython/wifi/wifi-init",
                     "inkplate/2/micropython/wifi/get-post-request",
                     "inkplate/2/micropython/wifi/drawing-img-web"
-                  ]
-                },
-                {
-                  "type": "category",
-                  "label": "MicroSD",
-                  "items": [
-                    "inkplate/2/micropython/microsd/formatting",
-                    "inkplate/2/micropython/microsd/read-write",
-                    "inkplate/2/micropython/microsd/display-img"
                   ]
                 },
                 {
@@ -909,8 +891,7 @@ const sidebars = {
                     "inkplate/6motion/wifi/6motion-wifi-image-from-web",
                     "inkplate/6motion/wifi/6motion-wifi-get-post",
                     "inkplate/6motion/wifi/6motion-wifi-mqtt",
-                    "inkplate/6motion/wifi/6motion-wifi-udp",
-                    "inkplate/6motion/wifi/6motion-esp32-modem"
+                    "inkplate/6motion/wifi/6motion-wifi-udp"
                   ]
                 },
                 "inkplate/6motion/deepsleep/6motion-deep-sleep",
@@ -946,8 +927,7 @@ const sidebars = {
                 }
               ]
             },
-            "inkplate/6motion/6motion-faq-troubleshooting",
-            "inkplate/6motion/6motion-additional-resources"
+            "inkplate/6motion/6motion-faq-troubleshooting"
           ]
         },
         {

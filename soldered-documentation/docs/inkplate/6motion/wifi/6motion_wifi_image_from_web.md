@@ -1,7 +1,7 @@
 ---
 slug: /inkplate/6motion/wifi/image-from-web
-title: 6Motion - Draw Image from Web
-sidebar_label: Draw Image from Web
+title: Inkplate 6MOTION - Draw image from web
+sidebar_label: Draw image from web
 id: 6motion-wifi-image-from-web
 ---
 
@@ -16,14 +16,14 @@ Drawing an image from the web on Inkplate 6MOTION is simple using the `draw` fun
 
 ---
 
-## Drawing an Image from a URL
+## Drawing an image from a URL
 
 Let's draw this image of the Eurodom building in Osijek, Croatia on Inkplate 6MOTION:
 <CenteredImage src="/img/inkplate_6_motion/sample_image.jpg" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
 
 ```cpp
 // Ensure Inkplate is connected to the internet
-const char * imageUrl = "docs.inkplate.com/img/sample_image.jpg";
+const char * imageUrl = "https://docs.soldered.com/img/inkplate_6_motion/sample_image.jpg";
 // Draw the image using Floyd-Steinberg dither kernel
 if (!inkplate.image.draw(imageUrl, 0, 0, false, 1, FS_KERNEL, FS_KERNEL_SIZE))
 {
@@ -45,7 +45,7 @@ inkplate.partialUpdate();
     { type: "int", name: "_y", description: "Y-coordinate of the image's upper-left corner in the framebuffer." },
     { type: "bool", name: "_invert", description: "If true, inverts colors." },
     { type: "uint8_t", name: "_dither", description: "Dithering mode: 0 (disabled), 1 (enabled)." },
-    { type: "const KernelElement*", name: "_ditherKernelParameters", description: "Dithering kernel to be used. Options: FS_KERNEL (Floyd-Steinberg), STUCKI_KERNEL, SIERRA_KERNEL, SIERRA_LITE_KERNEL, ATKINSON_KERNEL, BURKES_KERNEL." },
+    { type: "const KernelElement*", name: "_ditherKernelParameters", description: "Dithering kernel to be used. Options: FS_KERNEL (Floyd-Steinberg), STUCKI_KERNEL, SIERRA_KERNEL, SIERRA_LITE_KERNEL, ATKINSON_KERNEL, BURKES_KERNEL, JJN_KERNEL." },
     { type: "size_t", name: "_ditherKernelParametersSize", description: "Size of the selected dithering kernel, e.g., FS_KERNEL_SIZE." },
     { type: "enum InkplateImageDecodeFormat", name: "_format", description: "Optional. Forces a specific image format if automatic detection fails." },
     { type: "enum InkplateImagePathType", name: "_pathType", description: "Optional. Forces a specific image source (web or microSD card)." }
@@ -74,7 +74,7 @@ In case of an error, you can use `getError()`:
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
   title="Inkplate_6_Motion_Image_From_Web.ino" 

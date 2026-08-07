@@ -16,36 +16,64 @@ Battery should be connected like this:
 ## Reading battery voltage and temperature
 
 ```python
+# Include needed libraries
 from inkplate6 import Inkplate
-import time
 
+# Create Inkplate object in 1-bit mode, black and white colors only
+# For 8-level grayscale, see basic_grayscale.py
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
+
+# Initialize the display, needs to be called only once
 inkplate.begin()
-inkplate.clearDisplay()
+
+# Clear the frame buffer
+inkplate.clear_display()
+
+# This has to be called every time you want to update the screen
+# Drawing or printing text will have no effect on the display itself before you call this function
 inkplate.display()
 
-# Get battery voltage as a string
-battery = str(inkplate.readBattery())
-inkplate.setTextSize(2)
-inkplate.printText(100,100, "Battery voltage: " + battery + "V")
-inkplate.partialUpdate()
+# Get the battery reading as a string
+battery = str(inkplate.read_battery())
 
-# Get temperature reading as a string
-temperature = str(inkplate.readTemperature())
-inkplate.printText(100,150, "Temperature: " + temperature + "C")
-inkplate.partialUpdate()
+# Set text size to double from the original size, so we can see the text better
+inkplate.set_text_size(2)
+
+# Print the text at coordinates 100,100 (from the upper left corner)
+inkplate.print_text(100, 100, "Battery voltage: " + battery + "V")
+
+# Show it on the display
+inkplate.display()
+
+# Get the temperature reading, also as a string
+temperature = str(inkplate.read_temperature())
+
+# Print the text at coordinates 100, 150, and also add the measurement unit
+inkplate.print_text(100, 150, "Temperature: " + temperature + "C")
+
+# Show it on the display -- partial_update() is faster than a full display() for
+# small changes like this
+inkplate.partial_update()
 ```
 
 <FunctionDocumentation 
-functionName="inkplate.readBattery()" 
+functionName="inkplate.read_battery()" 
 description="Measure the current battery voltage of the Inkplate board." 
 returnType="float" 
 returnDescription="Battery voltage in volts." />
 
 <FunctionDocumentation 
-functionName="inkplate.readTemperature()" 
-description="Measure the temperature of the Inkplate board’s internal sensor." 
-returnType="float" 
+functionName="inkplate.read_temperature()" 
+description="Measure the panel temperature. The TPS65186 reads the on-board NTC thermistor and reports a value between -10°C and 85°C, accurate to within ±1°C between 0°C and 50°C." 
+returnType="int" 
 returnDescription="Temperature in degrees Celsius." />
 
 <CenteredImage src="/img/inkplate6-micropython/battery-volt-temp.jpg" alt="Inkplate 6 running the example code" caption="Displaying battery and temperature data on Inkplate display." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="battery_and_temperature.py" 
+description="Reads the battery voltage and the panel temperature and displays both on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/battery_and_temperature.py" />

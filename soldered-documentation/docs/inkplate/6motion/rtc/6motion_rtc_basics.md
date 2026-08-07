@@ -1,14 +1,14 @@
 ---
 slug: /inkplate/6motion/rtc/basics
-title: 6Motion - RTC basics
+title: Inkplate 6MOTION - RTC basics
 sidebar_label: RTC basics
 id: 6motion-rtc-basics
 hide_title: true
 ---
 
-<SectionTitle title="RTC basics" backgroundImage="/img/rtc.png" />
+<SectionTitle title="RTC basics" />
 
-The real time clock on Inkplate 6 MOTION is the **internal RTC of the STM32H743ZIT6**. The RTC uses an external clock source, an external XTAL of 32.768kHz.
+The real time clock on Inkplate 6MOTION is the **internal RTC of the STM32H743ZIT6**. The RTC uses an external clock source, an external XTAL of 32.768kHz.
 
 ---
 
@@ -76,7 +76,7 @@ if (!inkplate.rtc.isRTCSet()) {
   ]}
 />
 
-<WarningBox>In the current version of the Inkplate 6 MOTION library, you cannot use epoch to set the time in the RTC.</WarningBox>
+<WarningBox>In the current version of the Inkplate 6MOTION library, you cannot use epoch to set the time in the RTC.</WarningBox>
 
 ---
 
@@ -115,7 +115,7 @@ returnDescription="Returns an RTC_DateTypeDef structure containing the current d
 parameters={[
 { type: 'uint8_t*', name: '_d', description: "Pointer to store the day of the month." },
 { type: 'uint8_t*', name: '_m', description: "Pointer to store the month value." },
-{ type: 'uint16_t*', name: '_y', description: "Pointer to store the year value." },
+{ type: 'uint8_t*', name: '_y', description: "Pointer to store the year value." },
 { type: 'uint8_t*', name: '_weekday', description: "Pointer to store the weekday value." }
 ]}
 />
@@ -125,7 +125,7 @@ parameters={[
 ## Full examples
 
 <QuickLink 
-  title="Inkplate_6_Motion_Fast_Animation.ino" 
-  description="Full Arduino example on how to get and set time via the internal RTC on Inkplate 6 MOTION"
+  title="Inkplate_6_Motion_Simple_RTC.ino" 
+  description="Full Arduino example on how to get and set time via the internal RTC on Inkplate 6MOTION"
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/RTC/Inkplate_6_Motion_Simple_RTC/Inkplate_6_Motion_Simple_RTC.ino" 
 />

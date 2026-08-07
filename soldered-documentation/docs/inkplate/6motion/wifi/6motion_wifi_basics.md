@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/wifi/wifi-basics
-title: 6Motion - WiFi basics
+title: Inkplate 6MOTION - WiFi basics
 sidebar_label: WiFi basics
 id: 6motion-wifi-basics
 hide_title: true
@@ -8,7 +8,7 @@ hide_title: true
 
 
 
-<SectionTitle title="WiFi basics" backgroundImage="/img/wifi.png" />
+<SectionTitle title="WiFi basics" />
 
 On Inkplate 6MOTION, WiFi is handled by the onboard ESP32 co-processor, these pages contain tutorials on how to use this co-processor to simply connect to WiFi and get and send data.
 
@@ -49,7 +49,7 @@ void setup()
     // Connect to WiFi:
     WiFi.begin(WIFI_SSID, WIFI_PASS);
 
-    // Wait until Inkplate is connected connected
+    // Wait until Inkplate is connected
     inkplate.print("Connecting to Wi-Fi...");
     while (!WiFi.connected())
     {

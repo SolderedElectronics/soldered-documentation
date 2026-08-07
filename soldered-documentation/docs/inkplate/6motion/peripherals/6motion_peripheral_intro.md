@@ -1,12 +1,12 @@
 ---
 slug: /inkplate/6motion/peripherals/introduction
-title: 6Motion - Peripheral basics
+title: Inkplate 6MOTION - Peripheral basics
 sidebar_label: Peripheral basics
 id: 6motion-periph-intro
 ---
 
 
-Inkplate 6 MOTION has some useful peripherals, including **sensors**, **LEDs** and **user inputs**. They are all integrated in the Inkplate MOTION library. This page contains a quick overview of functions which are in common with all peripherals.
+Inkplate 6MOTION has some useful peripherals, including **sensors**, **LEDs** and **user inputs**. They are all integrated in the Inkplate Motion library. This page contains a quick overview of functions which are in common with all peripherals.
 
 ---
 
@@ -22,7 +22,7 @@ inkplate.peripheralState(INKPLATE_PERIPHERAL_APDS9960, true);
 
 <FunctionDocumentation
   functionName="inkplate.peripheralState()"
-  description="Enables or disables Inkplate 6 Motion peripherals to save power during sleep."
+  description="Enables or disables Inkplate 6MOTION peripherals to save power during sleep."
   returnDescription="none"
   parameters={[
     { type: 'uint8_t', name: '_peripheral', description: "Selected peripheral (e.g., INKPLATE_PERIPHERAL_SDRAM, INKPLATE_PERIPHERAL_ROTARY_ENCODER). See below for the full list." },

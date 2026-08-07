@@ -5,19 +5,18 @@ sidebar_label: Printing text
 id: printing-text
 ---
 
-Inkplate 10 allows you to print text on a **1280 x 720 px canvas**.
+Inkplate 5v2 prints text on a 1280 x 720 px canvas.
 
 ## Displaying basic information
 
-Below is a simple example demonstrating the simple way of displaying the information on the Inkplate display.
+Here is the simplest way to put text on the Inkplate display.
 
 ```python
 from inkplate5v2 import Inkplate
-import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
 
 #Putting the text in display buffer
@@ -38,53 +37,52 @@ inkplate.display()
 
 ---
 
-## Displaying text in Grayscale and more text parameters
+## Displaying text in grayscale and more text parameters
 
-Inkplate 5v2 also lets you render 2-bit grayscale graphics (0-3) on its canvas. You can also modify different text parameters, such as: text color, text size and text wrapping. Below is a simple example demonstrating different text colors using grayscale and different text styles:
+Inkplate 5v2 can also render grayscale graphics on its canvas, using 8 shades from 0 to 7. Text parameters such as text color, text size and text wrapping can be changed as well. The example below shows text in different grayscale colors and styles:
 
 
 <InfoBox>
-Color parameter in 'setTextColor()' changes text color as per table below:
+The color parameter in `set_text_color()` sets the text color as shown in the table below:
 
 | **VALUE** 	| **COLOR** 	|
 |---	|---	|
 | 0 	| Black 	|
-| 1 	| Dark grey 	|
-| 2 	| Light grey 	|
-| 3 	| White 	|
+| 1-3 	| Dark greys 	|
+| 4-6 	| Light greys 	|
+| 7 	| White 	|
 </InfoBox>
 
 ```python
 from inkplate5v2 import Inkplate
-import time
 
-# Create Inkplate object in 2-bit grayscale mode
+# Create Inkplate object in grayscale mode (8 shades, 0-7)
 inkplate = Inkplate(Inkplate.INKPLATE_2BIT)
 
 # Initialize the display, needs to be called only once
 inkplate.begin()
 
 # Clear the frame buffer
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
 
 
-inkplate.setCursor(50, 50)       
-inkplate.setTextSize(1)          
-inkplate.setTextColor(0)         # black
+inkplate.set_cursor(50, 50)       
+inkplate.set_text_size(1)          
+inkplate.set_text_color(0)         # black
 inkplate.print("Size 1")
 
-inkplate.setCursor(50, 100)
-inkplate.setTextSize(2)          
-inkplate.setTextColor(1)         # dark gray
+inkplate.set_cursor(50, 100)
+inkplate.set_text_size(2)          
+inkplate.set_text_color(2)         # dark gray
 inkplate.print("Size 2")
 
-inkplate.setCursor(50, 180)
-inkplate.setTextSize(3)          
-inkplate.setTextColor(2)         # light gray
+inkplate.set_cursor(50, 180)
+inkplate.set_text_size(3)          
+inkplate.set_text_color(5)         # light gray
 inkplate.print("Size 3")
 
-inkplate.setTextColor(0)         # black
+inkplate.set_text_color(0)         # black
 long_text = (
     "This is a very long line of text intended to demonstrate how wrapping works. "
     "When wrap mode is enabled, the text will continue onto the next line once it "
@@ -92,14 +90,14 @@ long_text = (
     "or larger blocks of text without worrying about manually inserting line breaks. "
     "It is especially useful for rendering user interfaces, menus, or e-books."
 )
-inkplate.setCursor(50, 340)
-inkplate.setTextSize(1)
-inkplate.setTextWrapping(True)       
+inkplate.set_cursor(50, 340)
+inkplate.set_text_size(1)
+inkplate.set_text_wrapping(True)       
 inkplate.print(long_text)
 
-inkplate.setCursor(50, 460)
-inkplate.setTextSize(1)
-inkplate.setTextWrapping(False)      
+inkplate.set_cursor(50, 460)
+inkplate.set_text_size(1)
+inkplate.set_text_wrapping(False)      
 inkplate.print(long_text)
 
 inkplate.display()
@@ -107,7 +105,7 @@ inkplate.display()
 
 ---
 <FunctionDocumentation
-  functionName="inkplate.setCursor()"
+  functionName="inkplate.set_cursor()"
   description="Set the cursor position for the next text to be rendered."
   parameters={[
     { type: 'Number', name: 'x', description: 'X coordinate for the text start.' },
@@ -116,28 +114,40 @@ inkplate.display()
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextSize()"
+  functionName="inkplate.set_text_size()"
   description="Set the text size scaling factor."
   parameters={[
-    { type: 'Number', name: 'size', description: 'Scale factor (1 = normal, 2 = double, 3 = triple, …).' }
+    { type: 'Number', name: 'size', description: 'Scale factor (1 = normal, 2 = double, 3 = triple, and so on).' }
   ]}
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextColor"
+  functionName="inkplate.set_text_color()"
   description="Set the text color (grayscale level) used for text rendering."
   parameters={[
-    { type: 'Number', name: 'color', description: 'Grayscale value for text (0 = white to 3 = black in 2-bit mode).' }
+    { type: 'Number', name: 'color', description: 'Grayscale value for text, from 0 (black) to 7 (white) in grayscale mode.' }
   ]}
 />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextWrapping()"
-  description="Enable or disable automatic text wrapping when reaching the display edge."
-  returnDescription="Nothing"
+  functionName="inkplate.set_text_wrapping()"
+  description="Enable or disable automatic text wrapping when reaching the display edge. Note that wrapped lines restart at the left edge of the screen (x = 0), not at the x position you set with set_cursor()."
+  returnType="None"
   parameters={[
     { type: 'Boolean', name: 'wrap', description: 'True to wrap text, False to let it continue off-screen.' }
   ]}
 />
 
-<CenteredImage src="/img/inkplate5v2-micropython/text.jpg" alt="Inkplate 10 running the example code" caption="Simple grayscale example with different text styles." width="800px" />
+<CenteredImage src="/img/inkplate5v2-micropython/text.jpg" alt="Inkplate 5v2 running the example code" caption="Simple grayscale example with different text styles." width="800px" />
+
+---
+
+## Full examples
+
+<QuickLink title="hello_world.py" 
+description="Display text on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate5v2/hello_world.py" />
+
+<QuickLink title="custom_font.py" 
+description="Swap in one of the extra typefaces shipped under fonts/ instead of the default font." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate5v2/custom_font.py" />

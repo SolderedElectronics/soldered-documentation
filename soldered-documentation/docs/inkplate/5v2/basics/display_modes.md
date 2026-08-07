@@ -5,7 +5,7 @@ sidebar_label: Display modes
 id: display-modes  
 ---  
 
-As mentioned on the previous page, Inkplate 5V2 has two different display modes: black and white (1-bit) mode and grayscale (3-bit) mode. This page contains more information on both.
+As mentioned on the previous page, Inkplate 5V2 has two display modes: black and white (1-bit) and grayscale (3-bit). Here's a closer look at both.
 
 ---  
 
@@ -37,7 +37,7 @@ void loop() {
 
 ## Grayscale mode
 
-3-bit or grayscale mode offers the possibility to draw in 8 different levels of brightness, not just black and white. See below for an approximate visualization of black levels as they correspond to their numerical value in code:
+3-bit or grayscale mode lets you draw in 8 levels of brightness instead of only black and white. Below is an approximate visualization of the black levels and the numerical value each one has in code:
 
 <CenteredImage src="/img/inkplate10/grayscale.png" alt="3bit grayscale" caption="Black levels in 3-bit mode" width="450px" />
 
@@ -45,7 +45,7 @@ Let's draw a couple of pixels of different brightness levels:
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate inkplate(INKPLATE_3BIT);
 void setup() {
   inkplate.begin();
   // Clear the display

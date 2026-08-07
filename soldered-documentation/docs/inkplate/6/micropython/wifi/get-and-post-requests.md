@@ -70,7 +70,7 @@ returnDescription="Response object with .status_code and .text."
 
 ## Making a POST request
 
-You can also send data to the server. In this examplem we will send **JSON** payload to the webhook URL.
+You can also send data to the server. In this example we will send **JSON** payload to the webhook URL.
 
 ```python
 
@@ -105,10 +105,10 @@ def connect_wifi():
 # Initialize Inkplate display
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
-inkplate.setTextSize(2)
-inkplate.setCursor(50, 100)
+inkplate.set_text_size(2)
+inkplate.set_cursor(50, 100)
 
 if connect_wifi():
     # Data to send
@@ -146,3 +146,15 @@ returnDescription="Response object with .status_code and .text."
 />
 
 <CenteredImage src="/img/inkplate10-micropython/post-output.png" alt="Inkplate 6 running the example code" caption="POST request message on webhook.site." width="800px" />
+
+---
+
+## Full examples
+
+<QuickLink title="get_request.py" 
+description="Connect to WiFi and perform an HTTP GET request using urequests." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/get_request.py" />
+
+<QuickLink title="post_request.py" 
+description="Connect to WiFi and perform an HTTP POST request with a JSON payload using urequests." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/post_request.py" />

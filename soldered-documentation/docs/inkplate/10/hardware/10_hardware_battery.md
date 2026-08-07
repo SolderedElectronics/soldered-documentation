@@ -15,7 +15,7 @@ Inkplate 10 includes a **2-pin 2mm JST connector**, allowing you to connect a **
 
 ---
 
-<InfoBox>The **correct battery polarity** is crucial! Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**. </InfoBox>  
+<InfoBox>Get the **battery polarity** right. Check the **markings on the PCB** before connecting a battery. When orienting the **JST connector with the notch at the top**, the **positive (+) terminal is on the left**, and the **negative (-) terminal is on the right**. </InfoBox>  
 
 
 <CenteredImage src="/img/inkplate10/battery_polarity.png" alt="Battery polarity on Inkplate 10" caption="Battery polarity on Inkplate 10" width="500px"/>  
@@ -31,7 +31,7 @@ Inkplate 10 is compatible with **3.7V Li-ion batteries with protection**. If you
 
 <CenteredImage src="/img/inkplate_6_motion/li-ion-w-proteciton.webp" alt="3.7V li-ion battery with protection" caption="3.7V li-ion battery with protection" width="500px"/>  
 
-Any of **[Soldered’s 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
+Any of **[Soldered's 3.7V Li-ion batteries](https://soldered.com/categories/power-sources-batteries/batteries/lithium-batteries/)** will work as long as they fit inside your enclosure.  
 
 <InfoBox>Due to shipping restrictions, **we cannot ship Li-ion batteries outside the EU**. If you're in the US, we recommend checking out [Adafruit's Li-ion battery stock](https://www.adafruit.com/category/574).</InfoBox>  
 
@@ -42,11 +42,11 @@ Check out our [battery documentation](/li-ion-battery/overview/) page.
 
 ## Charging IC (MCP73831)  
 
-The **MCP73831** is a compact, single-cell **Li-ion/Li-Polymer charge management controller**. It regulates the **charging process**, ensuring safe and efficient charging via USB. The chip follows a **constant-current / constant-voltage (CC/CV) charging profile**, automatically switching to **trickle charge** when the battery nears full capacity.  
+The **MCP73831** is a compact, single-cell **Li-ion/Li-Polymer charge management controller**. It regulates the **charging process**, ensuring safe and efficient charging via USB. The chip follows a **constant-current / constant-voltage (CC/CV) charging profile**. A deeply discharged cell first gets a gentle **preconditioning (trickle) charge**, then full constant current, and finally constant voltage as it approaches full.  
 
 Key features:  
 - **Automatic charge termination** when the battery is full  
-- **Overvoltage and overcurrent protection**  
+- **Thermal regulation and reverse-discharge protection**  
 - **Charge status indicator** (connected to the onboard LED)  
 
 <InfoBox>For full technical details, refer to the **MCP73831 datasheet**:<QuickLink  

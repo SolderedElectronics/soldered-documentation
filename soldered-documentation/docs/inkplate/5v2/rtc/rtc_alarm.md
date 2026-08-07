@@ -5,13 +5,13 @@ sidebar_label: RTC alarm
 id: rtc-alarm  
 ---  
 
-The onboard RTC supports creating an alarm that triggers at a specific time, allowing the firmware to detect and respond accordingly. Alarms can be configured to trigger once per day, per hour, or per minute.
+The onboard RTC can set an alarm that triggers at a specific time, which your firmware can then detect and act on. Alarms can be set to trigger once per day, per hour, or per minute.
 
 ---  
 
 ## Simple alarm
 
-This section demonstrates setting a simple RTC alarm that is checked using polling. The firmware continuously checks the alarm flag and responds when it is triggered.
+Here's a simple RTC alarm that's checked by polling. The firmware keeps reading the alarm flag and reacts once it's set.
 
 ```cpp
 #include "Inkplate.h"            // Include Inkplate library to the sketch
@@ -83,7 +83,7 @@ void loop()
         }
         else
         {
-            inkplate.partialUpdate(false, true); // Do partial update and keep e-papr power supply on
+            inkplate.partialUpdate(false, true); // Do partial update and keep e-paper power supply on
             n++;                                // Keep track on how many times screen has been partially updated
         }
 
@@ -144,8 +144,8 @@ void print2Digits(uint8_t _d)
 
 ---  
 
-## Interrupt Alarm
-The RTC alarm can also generate an **interrupt** instead of requiring polling. The alarm event can wake up the MCU from sleep or trigger an action immediately. To use this, you will need to globally declare a `volatile bool` to use as the alarm flag and a function which modifies this flag:
+## Interrupt alarm
+The RTC alarm can also generate an interrupt instead of requiring polling. The alarm event can wake the MCU from sleep or trigger an action immediately. For this, declare a global `volatile` flag variable, plus a function that sets that flag:
 
 ```cpp
 #include "Inkplate.h"             // Include Inkplate library to the sketch
@@ -245,7 +245,7 @@ void print2Digits(uint8_t _d)
 
 ## Full examples
 
-For full working code examples, which provide a great overview, a real-world use scenario, and **code comments**, see the links below:
+For full working code examples with comments, see the links below:
 
 <QuickLink 
   title="Inkplate5V2_RTC_Simple.ino" 

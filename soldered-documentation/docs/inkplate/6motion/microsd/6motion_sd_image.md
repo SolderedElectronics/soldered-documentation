@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/microsd/sd-image
-title: 6Motion - Image from microSD
+title: Inkplate 6MOTION - Image from microSD
 sidebar_label: Image from microSD
 id: 6motion-microsd-image
 ---
@@ -16,7 +16,7 @@ To draw images from the microSD card, use the `draw` function.
 
 ## Drawing PNG, JPG and BMP files from the microSD card
 
-Let's draw the example images of different formats on Inkplate, download them from the [**Inkplate library**](https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/tree/main/examples/Inkplate6Motion/Advanced/SD/Inkplate_6_Motion_Images_From_SD) and place them in the root folder of the microSD card:
+Let's draw the example images of different formats on Inkplate, download them from the [**Inkplate Motion library**](https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/tree/main/examples/Inkplate6Motion/Advanced/SD/Inkplate_6_Motion_Images_From_SD) and place them in the root folder of the microSD card:
 <CenteredImage src="/img/inkplate_6_motion/6motion_images_on_sd.png" alt="Images on the microSD card" caption="Images on the microSD card" width="500px" />
 
 Let's draw `image1.png` at coordinates 0, 0 and using the Floyd-Steinberg dither kernel:
@@ -41,7 +41,7 @@ else
 Here are some more examples: drawing `image2.jpg` without dithering, and `image3.bmp` with Sierra Lite dithering:
 
 ```cpp
-inkplate.image.draw("image2.jpg", 0, 0, false, 0, NULL, 0));
+inkplate.image.draw("image2.jpg", 0, 0, false, 0, NULL, 0);
 ```
 
 ```cpp
@@ -58,7 +58,7 @@ inkplate.image.draw("image3.bmp", 0, 0, false, 1, SIERRA_LITE_KERNEL, SIERRA_LIT
     { type: "int", name: "_y", description: "Y position of the image in the ePaper framebuffer (upper-left corner)." },
     { type: "bool", name: "_invert", description: "If true, colors are inverted." },
     { type: "uint8_t", name: "_dither", description: "Dithering mode: 0 (disabled), 1 (enabled)." },
-    { type: "const KernelElement*", name: "_ditherKernelParameters", description: "Dithering kernel to be used. Options: FS_KERNEL (Floyd-Steinberg), STUCKI_KERNEL (Stucki), SIERRA_KERNEL (Sierra), SIERRA_LITE_KERNEL (Sierra Lite), ATKINSON_KERNEL (Atkinson), BURKES_KERNEL (Burke)." },
+    { type: "const KernelElement*", name: "_ditherKernelParameters", description: "Dithering kernel to be used. Options: FS_KERNEL (Floyd-Steinberg), STUCKI_KERNEL (Stucki), SIERRA_KERNEL (Sierra), SIERRA_LITE_KERNEL (Sierra Lite), ATKINSON_KERNEL (Atkinson), BURKES_KERNEL (Burkes), JJN_KERNEL (Jarvis, Judice and Ninke)." },
     { type: "size_t", name: "_ditherKernelParametersSize", description: "Size of the selected dithering kernel. Use the kernel name with the '_SIZE' suffix, e.g., FS_KERNEL_SIZE." },
     { type: "enum InkplateImageDecodeFormat", name: "_format", description: "Optional. Forces a specific image format if automatic detection fails." },
     { type: "enum InkplateImagePathType", name: "_pathType", description: "Optional. Forces a specific image source (web or microSD card)." }

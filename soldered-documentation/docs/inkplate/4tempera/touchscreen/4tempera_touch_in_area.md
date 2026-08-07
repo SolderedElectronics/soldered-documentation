@@ -1,22 +1,22 @@
 ---  
 slug: /inkplate/4tempera/touchscreen/touch-in-area  
-title: Inkplate 4TEMPERA – Touch in Area
-sidebar_label: Touch in Area
+title: Inkplate 4TEMPERA - Touch in area
+sidebar_label: Touch in area
 id: 4tempera-touch-in-area  
 hide_title: true  
 ---
 
-<SectionTitle title="Touch in Area" backgroundImage="img/touch_area.jpg" />
+<SectionTitle title="Touch in area" backgroundImage="img/touch_area.jpg" />
 
 The `Inkplate4TEMPERA_Touch_In_Area` example demonstrates how to detect touch input within a specific rectangular area of the Inkplate 4TEMPERA's screen. This is useful for creating interactive buttons or UI zones without relying on predefined widgets.
 
 ---
 
-## Touch in Area
+## Touch in area
 
-This example uses `inkplate.touchInArea(x1, y1, x2, y2)` to determine if the screen has been touched within a specific region, enabling basic interactive UI design.
+This example uses `inkplate.touchscreen.touchInArea(x1, y1, w, h)` to determine if the screen has been touched within a specific region, enabling basic interactive UI design.
 
-<InfoBox>You can use `touchInArea()` in both black-and-white (1-bit) and grayscale (3-bit) modes. For optimal responsiveness, avoid calling display updates within tight touch polling loops unless needed.</InfoBox>
+<InfoBox>You can use `touchscreen.touchInArea()` in both black-and-white (1-bit) and grayscale (3-bit) modes. For optimal responsiveness, avoid calling display updates within tight touch polling loops unless needed.</InfoBox>
 
 ```cpp
 #include "Inkplate.h"
@@ -39,7 +39,7 @@ void setup()
     inkplate.clearDisplay();
 
     // Initialize touchscreen and keep it powered on
-    if (inkplate.tsInit(true))
+    if (inkplate.touchscreen.init(true))
     {
         Serial.println("Touchscreen init ok");
     }
@@ -56,7 +56,7 @@ void setup()
 
 void loop()
 {
-    if (inkplate.touchInArea(x_position, y_position, x_position + 100, y_position + 50))
+    if (inkplate.touchscreen.touchInArea(x_position, y_position, 100, 50))
     {
         x_position += 100;
         y_position += 100;
@@ -83,14 +83,14 @@ void loop()
 ```
 
 <FunctionDocumentation
-functionName="inkplate.touchInArea()"
+functionName="inkplate.touchscreen.touchInArea()"
 description="Checks if a touch event occurred within a defined rectangular area on the screen."
 returnDescription="Returns true if a touch is detected within the specified area, false otherwise."
 parameters={[ 
-{ type: 'int', name: 'x1', description: 'X coordinate of the top-left corner of the area.' },
-{ type: 'int', name: 'y1', description: 'Y coordinate of the top-left corner of the area.' },
-{ type: 'int', name: 'x2', description: 'X coordinate of the bottom-right corner of the area.' },
-{ type: 'int', name: 'y2', description: 'Y coordinate of the bottom-right corner of the area.' }
+{ type: 'int16_t', name: 'x1', description: 'X coordinate of the top-left corner of the area.' },
+{ type: 'int16_t', name: 'y1', description: 'Y coordinate of the top-left corner of the area.' },
+{ type: 'int16_t', name: 'w', description: 'Width of the area, in pixels.' },
+{ type: 'int16_t', name: 'h', description: 'Height of the area, in pixels.' }
 ]}
 />
 

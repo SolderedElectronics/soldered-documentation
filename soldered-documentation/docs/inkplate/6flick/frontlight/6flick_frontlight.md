@@ -6,68 +6,103 @@ id: 6flick-frontlight
 hide_title: true
 ---
 
-<SectionTitle title="Simple Frontlight Control" backgroundImage="/img/frontlight.jpg" />
+<SectionTitle title="Simple Frontlight Control" />
 
-This basic example demonstrates how to control the **frontlight/backlight brightness** of the Inkplate 6Flick using simple function calls.
+This basic example demonstrates how to control the **frontlight brightness** of the Inkplate 6FLICK using simple function calls.
 
 The frontlight allows for better visibility in dim environments while preserving the paper-like appearance of the e-paper screen.
 
 ---
 
-## Example Overview
+## Example overview
 
-This sketch shows how to control the brightness of the frontlight using `setFrontlight()` from the Inkplate API. You can control the brightness using PWM values from `0` (off) to `255` (maximum brightness).
+Two calls do the work. `frontlight.setState()` powers the frontlight circuit on or off, and `frontlight.setBrightness()` sets the level. Brightness runs from `0` to `63`, giving you 64 steps.
+
+<WarningBox>Nothing will light up until you call `display.frontlight.setState(true)`. The brightness value on its own does not enable the circuit.</WarningBox>
 
 ```cpp
-/*
-    Inkplate6FLICK_Simple_Frontlight example for Soldered Inkplate 6Flick
+#include "Inkplate.h" //Include Inkplate library
 
-    This example shows how to control the frontlight on Inkplate 6Flick.
+Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate class
 
-    Select "Soldered Inkplate 6Flick" from Tools -> Board menu.
-
-    Want to learn more about Inkplate? Visit www.inkplate.io
-    Looking to get support? Write on our forums: https://forum.soldered.com/
-*/
-
-#include "Inkplate.h"
-
-Inkplate display; // Create the display object
+int b = 31; // Variable that holds intensity of the frontlight
 
 void setup()
 {
-    display.begin();              // Initialize the display
-    display.clearDisplay();       // Clear the screen buffer
-    display.setTextSize(2);
-    display.setCursor(0, 20);
-    display.println("Frontlight test!");
-    display.display();            // Refresh screen
-
-    delay(1000);
-
-    display.setFrontlight(0);     // Turn off frontlight
-    delay(1000);
-    display.setFrontlight(50);    // Set low brightness
-    delay(1000);
-    display.setFrontlight(150);   // Medium brightness
-    delay(1000);
-    display.setFrontlight(255);   // Full brightness
+    Serial.begin(115200);    // Set up a serial communication of 115200 baud
+    display.begin();         // Init Inkplate library
+    display.frontlight.setState(true); // Enable frontlight circuit
+    display.frontlight.setBrightness(b); // Set frontlight intensity
 }
 
 void loop()
 {
-    // Nothing to do in loop
+    if (Serial.available()) // Change frontlight value by sending "+" sign into serial monitor to increase frontlight or
+                            // "-" sign to decrese frontlight
+                            // try to find hidden lightshow ;)
+    {
+        bool change = false;    // Variable that indicates that frontlight value has changed and intessity has to be updated
+        char c = Serial.read(); // Read incomming serial data
+
+        if (c == '+' && b < 63) // If is received +, increase frontlight
+        {
+            b++;
+            change = true;
+        }
+        if (c == '-' && b > 0) // If is received -, decrease frontlight
+        {
+            b--;
+            change = true;
+        }
+
+        if (c == 's')
+        {
+            for (int j = 0; j < 4; ++j)
+            {
+                for (int i = 0; i < 64; ++i)
+                {
+                    display.frontlight.setBrightness(i);
+                    delay(30);
+                }
+
+                for (int i = 63; i >= 0; --i)
+                {
+                    display.frontlight.setBrightness(i);
+                    delay(30);
+                }
+            }
+
+            change = true;
+        }
+
+        if (change) // If frontlight valuse has changed, update the intensity and show current value of frontlight
+        {
+            display.frontlight.setBrightness(b);
+            Serial.print("Frontlight:");
+            Serial.print(b, DEC);
+            Serial.println("/63");
+        }
+    }
 }
 ```
 
 ---
 
 <FunctionDocumentation
-  functionName="setFrontlight()"
-  description="Sets the brightness of the frontlight/backlight on the Inkplate 6Flick."
+  functionName="display.frontlight.setState()"
+  description="Turns the frontlight circuit on or off. This must be enabled before any brightness value has an effect."
   returnType="void"
   parameters={[
-    { type: 'uint8_t', name: 'level', description: 'Brightness level (0 = off, 255 = full brightness).' }
+    { type: 'bool', name: '_e', description: 'true turns the frontlight on, false turns it off.' }
+  ]}
+/>
+
+<FunctionDocumentation
+  functionName="display.frontlight.setBrightness()"
+  description="Sets the frontlight brightness. The value is written to the on-board MCP47A1 DAC over I2C."
+  returnType="void"
+  parameters={[
+    { type: 'uint8_t', name: '_v', description: 'Brightness level from 0 to 63. Values above 63 are masked, so 64 behaves as 0.' }
   ]}
 />
 
@@ -75,17 +110,18 @@ void loop()
 
 ## Notes
 
-- The **frontlight is automatically turned off** after sleep or reboot, so be sure to call `setFrontlight()` again in `setup()` if needed.
-- The frontlight controller uses PWM to set brightness, so intermediate values may cause visible flickering depending on environment lighting.
+- The frontlight is off after every reset, so call `setState(true)` again in `setup()`.
+- Brightness is set by an I2C DAC rather than PWM, so there is no flicker at intermediate levels.
+- Turn the frontlight off before deep sleep. It stays lit otherwise and will drain the battery.
 
 ---
 
-## Full Example
+## Full example
 
 You can find the complete example in the Inkplate Arduino library repository:
 
 <QuickLink 
   title="Inkplate6FLICK_Simple_Frontlight" 
-  description="Basic usage example of the frontlight on Inkplate 6Flick." 
+  description="Basic usage example of the frontlight on Inkplate 6FLICK." 
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Simple_Frontlight/Inkplate6FLICK_Simple_Frontlight.ino" 
 />

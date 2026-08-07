@@ -41,8 +41,8 @@ def connect_wifi():
 
 inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.setTextSize(2)
-inkplate.setCursor(100,100)
+inkplate.set_text_size(2)
+inkplate.set_cursor(100,100)
 
 if connect_wifi():
     inkplate.print("Wifi connected!")
@@ -68,3 +68,11 @@ parameters={[
 { type: 'String', name: 'PASSWORD', description: 'The WiFi password.' }
 ]}
 />
+
+---
+
+## Full example
+
+<QuickLink title="example_network.py" 
+description="Connects to a WiFi network, performs an HTTP GET request and prints the response on the display." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/example_network.py" />

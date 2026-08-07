@@ -6,7 +6,7 @@ id: 2-wifi-https-certificate
 hide_title: true
 ---
 
-<SectionTitle title="HTTPS Certificate" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="HTTPS Certificate" />
 
 Now that Inkplate is connected to the internet, you will likely want to securely receive data from a website. This page contains an example of how to implement an HTTPS certificate into your connection.
 

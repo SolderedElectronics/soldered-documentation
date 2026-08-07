@@ -6,7 +6,7 @@ id: 6flick-graphics
 hide_title: true
 ---
 
-<SectionTitle title="Drawing Graphics" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Drawing Graphics" />
 
 Inkplate 6FLICK allows you to draw graphics on a **1024 x 758px canvas**.
 
@@ -17,41 +17,41 @@ Inkplate 6FLICK allows you to draw graphics on a **1024 x 758px canvas**.
 
 ---
 
-## Drawing Geometric Shapes
+## Drawing geometric shapes
 
 Below is an example demonstrating how to use various functions to draw graphics on the Inkplate 6FLICK:
 
-<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/10/basics/basic-display-modes/) page for more details.</InfoBox>
+<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/6flick/basics/basic-display-modes/) page for more details.</InfoBox>
 
 ```cpp
 #include "Inkplate.h"
-Inkplate inkplate(INKPLATE_3BIT);
+Inkplate display(INKPLATE_3BIT);
 void setup() {
-    inkplate.begin();
-    inkplate.clearDisplay();
-    inkplate.display();
+    display.begin();
+    display.clearDisplay();
+    display.display();
     // Draw a pixel
-    inkplate.drawPixel(100, 50, 0);
+    display.drawPixel(100, 50, 0);
     // Draw a line
-    inkplate.drawLine(0, 0, 1023, 757, 1);
+    display.drawLine(0, 0, 1023, 757, 1);
     // Draw a rectangle
-    inkplate.drawRect(100, 100, 200, 200, 2);
+    display.drawRect(100, 100, 200, 200, 2);
     // Draw a filled rectangle
-    inkplate.fillRect(300, 100, 200, 300, 3);
+    display.fillRect(300, 100, 200, 300, 3);
     // Draw a circle
-    inkplate.drawCircle(512, 100, 75, 4);
+    display.drawCircle(512, 100, 75, 4);
     // Draw a filled circle
-    inkplate.fillCircle(512, 100, 75, 5);
+    display.fillCircle(512, 100, 75, 5);
     // Draw a rounded rectangle
-    inkplate.drawRoundRect(310, 300, 400, 300, 10, 4);
+    display.drawRoundRect(310, 300, 400, 300, 10, 4);
     // Draw a filled rounded rectangle
-    inkplate.fillRoundRect(310, 300, 400, 300, 10, 3);
+    display.fillRoundRect(310, 300, 400, 300, 10, 3);
     // Draw a triangle
-    inkplate.drawTriangle(300, 500, 700, 500, 512, 200, 2);
+    display.drawTriangle(300, 500, 700, 500, 512, 200, 2);
     // Draw a filled triangle
-    inkplate.fillTriangle(350, 467, 650, 467, 512, 250, 1);
+    display.fillTriangle(350, 467, 650, 467, 512, 250, 1);
     // Update the display to render the drawings
-    inkplate.display();
+    display.display();
 }
 void loop() {
 }
@@ -62,7 +62,7 @@ void loop() {
 Below are the detailed references for these functions:
 
 <FunctionDocumentation
-  functionName="inkplate.drawPixel()"
+  functionName="display.drawPixel()"
   description="Draws a single pixel on the display at the specified coordinates."
   returnDescription="none"
   parameters={[ 
@@ -73,7 +73,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.drawLine()"
+  functionName="display.drawLine()"
   description="Draws a straight line between two points on the display."
   returnDescription="none"
   parameters={[ 
@@ -86,7 +86,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.drawRect()"
+  functionName="display.drawRect()"
   description="Draws a rectangle outline on the display."
   returnDescription="none"
   parameters={[ 
@@ -99,7 +99,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.fillRect()"
+  functionName="display.fillRect()"
   description="Draws a filled rectangle on the display."
   returnDescription="none"
   parameters={[ 
@@ -112,7 +112,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.drawCircle()"
+  functionName="display.drawCircle()"
   description="Draws a circle outline on the display."
   returnDescription="none"
   parameters={[ 
@@ -124,7 +124,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.fillCircle()"
+  functionName="display.fillCircle()"
   description="Draws a filled circle on the display."
   returnDescription="none"
   parameters={[ 
@@ -136,7 +136,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.drawRoundRect()"
+  functionName="display.drawRoundRect()"
   description="Draws a rounded rectangle outline on the display."
   returnDescription="none"
   parameters={[ 
@@ -150,7 +150,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.fillRoundRect()"
+  functionName="display.fillRoundRect()"
   description="Draws a filled rounded rectangle on the display."
   returnDescription="none"
   parameters={[ 
@@ -164,7 +164,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.drawTriangle()"
+  functionName="display.drawTriangle()"
   description="Draws a triangle outline on the display."
   returnDescription="none"
   parameters={[ 
@@ -179,7 +179,7 @@ Below are the detailed references for these functions:
 />
 
 <FunctionDocumentation
-  functionName="inkplate.fillTriangle()"
+  functionName="display.fillTriangle()"
   description="Draws a filled triangle on the display."
   returnDescription="none"
   parameters={[ 

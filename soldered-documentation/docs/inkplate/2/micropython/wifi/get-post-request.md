@@ -23,6 +23,8 @@ import time
 SSID = "YOUR_SSID_HERE"
 PASSWORD = "YOU_PASSWORD_HERE"
 
+sta_if = network.WLAN(network.STA_IF)
+
 def do_connect():
     connected = False
     if not sta_if.isconnected():
@@ -90,8 +92,8 @@ else:
 inkplate = Inkplate()
 inkplate.begin()
 
-# Set text size to double from the original size, so we can see the text better
-inkplate.setTextSize(1)
+# Set the text to its default size
+inkplate.set_text_size(1)
 
 # Print response line by line
 inkplate.print(html)
@@ -104,7 +106,7 @@ inkplate.display()
 
 ## POST Request
 
-This example shows how to **JSON** data through  `POST` requets to Webhook server.
+This example shows how to send **JSON** data through a `POST` request to a webhook server.
 
 ```python
 from inkplate2 import Inkplate
@@ -155,7 +157,7 @@ def do_connect():
         return False
 
 def http_post(url, text_data):
-    response = urequests.post(url, json=data)
+    response = urequests.post(url, json=text_data)
     print("Status code:", response.status_code)
     inkplate.print(f"Body: {response.text}")
 
@@ -173,3 +175,15 @@ http_post(WEBHOOK_URL, data)
 # Display HTTP response 
 inkplate.display()
 ```
+
+---
+
+## Full examples
+
+<QuickLink title="get_request.py" 
+description="Connect to WiFi and perform an HTTP GET request over a socket." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/get_request.py" />
+
+<QuickLink title="post_request.py" 
+description="Connect to WiFi and perform an HTTP POST request with a JSON payload using urequests." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/post_request.py" />

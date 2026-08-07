@@ -12,7 +12,7 @@ To get started with MicroPython on your Inkplate, follow the instructions on thi
 
 ---
 
-Using MicroPython on your Inkplate board is very simple and straightforward, just plug in a USB cable, load the MicroPython firmware and the required libraries and run your script on Inkplate itself.
+Using MicroPython on your Inkplate board is simple: plug in a USB cable, load the MicroPython firmware and required libraries, and run your script on the Inkplate itself.
 
 <QuickLink
   title="Installing MicroPython on Inkplate"
@@ -25,8 +25,6 @@ Use the following command to install the MicroPython library for INKPLATE 2:
 ```
   mpremote mip install github:SolderedElectronics/Inkplate-micropython/Inkplate2
 ```
-
-<SuccessBox> Now you can upload examples and write code with the IDE of your choosing! </SuccessBox>
 
 <QuickLink
   title="Inkplate MicroPython Library"

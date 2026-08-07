@@ -1,12 +1,12 @@
 ---  
 slug: /inkplate/4tempera/wifi/image-from-web  
-title: Inkplate 4TEMPERA – Draw Image from Web
-sidebar_label: Draw Image from Web
+title: Inkplate 4TEMPERA - Draw image from web
+sidebar_label: Draw image from web
 id: 4tempera-wifi-image-from-web  
 hide_title: true
 ---
 
-<SectionTitle title="Draw Image from Web" backgroundImage="/img/wifi.png" />
+<SectionTitle title="Draw image from web" backgroundImage="/img/wifi.png" />
 
 Drawing an image from the web on Inkplate 4TEMPERA is simple using the `draw` function, which supports multiple image formats.
 
@@ -18,7 +18,7 @@ Drawing an image from the web on Inkplate 4TEMPERA is simple using the `draw` fu
 
 ---
 
-## Drawing an Image from a URL
+## Drawing an image from a URL
 
 Let's draw this image of the Eurodom building in Osijek, Croatia, on Inkplate 4TEMPERA:  
 <CenteredImage src="/img/inkplate_6_motion/sample_image.jpg" alt="Example Image" caption="Example image by @filipbaotic on Pexels" />
@@ -51,7 +51,7 @@ void setup()
     }
     display.println("\nWiFi OK! Downloading...");
     display.partialUpdate();
-    if (!display.image.draw("https://docs.inkplate.com/img/sample_image.jpg", 0, 0, false, false))
+    if (!display.image.draw("https://varipass.org/destination.jpg", 0, 0, false, false))
     {
         // If something failed (wrong filename or unsupported bitmap format), write an error message on the screen.
         // REMEMBER! You can only use Windows Bitmap files with a color depth of 1, 4, 8, or 24 bits with no compression!
@@ -85,7 +85,7 @@ void loop()
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
   title="Inkplate4TEMPERA_Image_From_Web.ino" 

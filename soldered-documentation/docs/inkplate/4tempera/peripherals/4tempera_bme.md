@@ -1,14 +1,14 @@
 ---
 slug: /inkplate/4tempera/peripherals/bme688
-title: Inkplate 4TEMPERA – Environmental sensor (BME688)
+title: Inkplate 4TEMPERA - Environmental sensor (BME688)
 sidebar_label: Environmental sensor (BME688)
 id: 4tempera-periph-bme688
 hide_title: true
 ---
 
-<SectionTitle title="Environmental Sensor" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Environmental sensor" />
 
-The **BME688** is a high-performance environmental sensor integrated into the Inkplate 4 TEMPERA. It combines **temperature**, **humidity**, **barometric pressure**, **gas resistance**, and **altitude estimation** capabilities in one compact package. This makes it ideal for indoor air quality monitoring, weather stations, and general environmental sensing.
+The **BME688** is a high-performance environmental sensor integrated into the Inkplate 4TEMPERA. It combines **temperature**, **humidity**, **barometric pressure**, **gas resistance**, and **altitude estimation** capabilities in one compact package. This makes it ideal for indoor air quality monitoring, weather stations, and general environmental sensing.
 
 ---
 
@@ -19,7 +19,7 @@ The **BME688** is a high-performance environmental sensor integrated into the In
 - Barometric pressure in hectopascals (hPa)
 - Gas resistance (used to estimate air quality)
 - Approximate altitude (based on pressure)
-- Fully supported by the Inkplate library — no need to install external drivers
+- Fully supported by the Inkplate library, no need to install external drivers
 
 <InfoBox>The BME688 is powered using `inkplate.wakePeripheral(INKPLATE_BME688)`. Always ensure it's enabled before attempting to read values.</InfoBox>
 
@@ -40,7 +40,7 @@ inkplate.bme688.begin();
 
 ---
 
-## Reading Sensor Data
+## Reading sensor data
 
 Once the sensor is initialized, you can read individual values:
 
@@ -64,7 +64,7 @@ float altitude = inkplate.bme688.readAltitude(); // m
 
 ---
 
-## Displaying Data
+## Displaying data
 
 Use standard `Inkplate` drawing functions to display sensor readings alongside icons or labels. The `partialUpdate()` method can be used to update the screen without flicker, and full refreshes can be used occasionally to maintain image quality.
 
@@ -80,7 +80,7 @@ inkplate.partialUpdate();
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
   title="Inkplate4TEMPERA_BME688_Read.ino" 

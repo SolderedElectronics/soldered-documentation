@@ -5,13 +5,13 @@ sidebar_label: GET & POST requests
 id: wifi-get-post
 ---
 
-Now that Inkplate is connected to the internet, you will likely want to send and receive data from sensors, messages, your custom APIs, etc. This page contains examples on how to send and receive data on Inkplate via the internet:
+Now that Inkplate is online, you'll probably want to send and receive data: sensor readings, messages, your own APIs, and so on. Here are examples of doing that over the internet.
 
 ---
 
 ## GET request
 
-Using `client.GET()` will enable you to easily download and handle data on Inkplate however you want. Here is an example on how to GET a .html file and print it on Inkplate:
+With `http.GET()` you can download data and handle it on Inkplate however you want. Here's an example that GETs a .html file and prints it on Inkplate:
 
 ```cpp
 #include "Inkplate.h"   //Include Inkplate library to the sketch
@@ -84,9 +84,6 @@ void setup()
             inkplate.display();
         }
     }
-    else{
-        
-    }
 }
 
 void loop()
@@ -100,7 +97,7 @@ void loop()
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
-    description="This function attempts to connect to WiFi"
+    description="Attempts to connect to WiFi."
     returnDescription="Returns wl_status_t enum value"
     returnType="wl_status_t"
     parameters={[  
@@ -111,7 +108,7 @@ void loop()
 
 <FunctionDocumentation
   functionName="http.begin()"
-  description="This function attempts to open a HTTP communication to given url"
+  description="Attempts to open HTTP communication to the given url."
   returnDescription="Returns true if communication is successful, otherwise returns false."
   returnType="bool"
   parameters={[  
@@ -121,15 +118,16 @@ void loop()
 
 <FunctionDocumentation
   functionName="http.GET()"
-  description="This function handles GET requests."
+  description="Handles GET requests."
   returnDescription="Returns the size of available data"
   returnType="int"
 />
+
 ---
 
 ## POST request
 
-To send data from Inkplate to a web server, you can use the same built-in `WiFiClient` class. Let's use [**ThingSpeak.com**](https://thingspeak.mathworks.com/), which is a great resource for testing POST and GET requests. By visiting the site, you get a unique URL to which you can send a POST request from Inkplate, and the data will then be visible on the site:
+To send data from Inkplate to a web server, use the built-in `WiFiClient` class. This example uses [ThingSpeak.com](https://thingspeak.mathworks.com/), which is handy for testing POST requests. Create a free account and a channel, copy your Write API Key into the sketch, and the data you send will show up as a graph on your channel:
 
 ```cpp
 /*
@@ -161,7 +159,7 @@ const char *ssid = "";
 const char *pass = "";
 
 // ThingSpeak settings
-char *server = "api.thingspeak.com";
+const char *server = "api.thingspeak.com";
 String writeAPIKey = ""; // Enter your Write API Key
 
 // Variable that holds last connection time
@@ -206,7 +204,7 @@ void setup()
 void loop()
 {
     // Every POSTING_INTERVAL_IN_SECS seconds make the POST request
-    if ((unsigned long)(millis() - lastConnectionTime) > POSTING_INTERVAL_IN_SECS * 1000LL)
+    if ((unsigned long)(millis() - lastConnectionTime) > POSTING_INTERVAL_IN_SECS * 1000UL)
     {
         // Clear frame buffer of display
         display.clearDisplay();
@@ -229,24 +227,21 @@ void loop()
             String data = "field1=" + String(field1Data); // shows how to include additional field data in HTTP post
 
             // POST data to ThingSpeak
-            if (client.connect(server, 80))
-            {
-                client.println("POST /update HTTP/1.1");
-                client.println("Host: api.thingspeak.com");
-                client.println("Connection: close");
-                client.println("User-Agent: ESP32WiFi/1.1");
-                client.println("X-THINGSPEAKAPIKEY: " + writeAPIKey);
-                client.println("Content-Type: application/x-www-form-urlencoded");
-                client.print("Content-Length: ");
-                client.print(data.length());
-                client.print("\n\n");
-                client.print(data);
+            client.println("POST /update HTTP/1.1");
+            client.println("Host: api.thingspeak.com");
+            client.println("Connection: close");
+            client.println("User-Agent: ESP32WiFi/1.1");
+            client.println("X-THINGSPEAKAPIKEY: " + writeAPIKey);
+            client.println("Content-Type: application/x-www-form-urlencoded");
+            client.print("Content-Length: ");
+            client.println(data.length());
+            client.println(); // Empty line marks the end of the headers
+            client.print(data);
 
-                Serial.print("The POST request is done: ");
-                Serial.println(data);
-                lastConnectionTime = millis();
-                delay(250);
-            }
+            Serial.print("The POST request is done: ");
+            Serial.println(data);
+            lastConnectionTime = millis();
+            delay(250);
         }
         client.stop();
     }
@@ -256,7 +251,7 @@ void loop()
 
 <FunctionDocumentation
   functionName="WiFi.mode()"
-  description="This function sets the MCU WiFi chip as STA or AP."
+  description="Sets the MCU WiFi chip as STA or AP."
   returnType="bool"
   parameters={[  
     { type: 'wifi_mode_t', name: 'mode', description: 'WiFi mode value, can be either WIFI_MODE_STA or WIFI_MODE_AP' },
@@ -265,7 +260,7 @@ void loop()
 
 <FunctionDocumentation
     functionName="WiFi.begin()"
-    description="This function attempts to connect to WiFi"
+    description="Attempts to connect to WiFi."
     returnDescription="Returns wl_status_t enum value"
     returnType="wl_status_t"
     parameters={[  
@@ -275,11 +270,28 @@ void loop()
 />
 
 <FunctionDocumentation
-  functionName="http.begin()"
-  description="This function attempts to open a HTTP communication to given url"
-  returnDescription="Returns true if communication is successful, otherwise returns false."
+  functionName="client.connect()"
+  description="Opens a TCP connection to the given server and port."
+  returnDescription="Returns true if the connection succeeded, otherwise returns false."
   returnType="bool"
   parameters={[  
-    { type: 'String', name: 'url', description: 'Url of the specified website' },
+    { type: 'const char*', name: 'host', description: 'Hostname or IP address of the server.' },
+    { type: 'uint16_t', name: 'port', description: 'Port to connect to, 80 for plain HTTP.' },
   ]}
+/>
+
+---
+
+## Full examples
+
+<QuickLink 
+  title="Inkplate5V2_HTTP_Request.ino" 
+  description="Inkplate 5V2 WiFi GET request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/WEB_WiFi/Inkplate5V2_HTTP_Request/Inkplate5V2_HTTP_Request.ino" 
+/>
+
+<QuickLink 
+  title="Inkplate5V2_HTTP_POST_Request.ino" 
+  description="Inkplate 5V2 WiFi POST request example from the Inkplate library" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/WEB_WiFi/Inkplate5V2_HTTP_POST_Request/Inkplate5V2_HTTP_POST_Request.ino" 
 />

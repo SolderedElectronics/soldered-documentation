@@ -6,7 +6,7 @@ id: 6flick-hardware-open-source
 hide_title: true
 ---
 
-<SectionTitle title="Inkplate is open source" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Inkplate is open source" />
 
 Inkplate is a **crowdfunded, open-source project**, and its software libraries are built upon other free, community-driven libraries. Open-source has been essential to the development of Inkplate, and at [**Soldered Electronics**](https://soldered.com/about-us/), we believe in giving back by sharing the knowledge and resources we've gained along the way.  
 
@@ -14,9 +14,9 @@ Inkplate is a **crowdfunded, open-source project**, and its software libraries a
 
 As a company, **Soldered** designs and manufactures a wide range of electronic products, supporting makers in bringing their ideas to life. Our products are developed **in-house** in Osijek, Croatia, with a strong commitment to open-source principles. We believe that sharing knowledge drives innovation, and we actively engage with makers of all experience levels.  
 
-<InfoBox>Need help? Our team offers **free technical support**, so if you have any issues with your Inkplate or electronics project, don’t hesitate to [**reach out**](https://soldered.com/contact/).</InfoBox>  
+<InfoBox>Need help? Our team offers **free technical support**, so if you have any issues with your Inkplate or electronics project, don't hesitate to [**reach out**](https://soldered.com/contact/).</InfoBox>  
 
-All designs in the Inkplate 6FLICK repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. For details, check the [**LICENSE**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design/blob/0552552410c75d7dd4bcbb29ad8a3da2e37524c3/LICENSE.md) files in our repositories.
+All designs in the Inkplate 6FLICK repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. For details, check the [**LICENSE**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design/blob/main/LICENSE.md) files in our repositories.
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 
 <SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
 
-**Inkplate 4TEMPERA** is a compact, all-in-one **3.8-inch touchscreen e-paper device** designed for low-power, always-on display applications. Built around the powerful **ESP32 microcontroller**, it features **Wi-Fi and Bluetooth connectivity**, a built-in **Li-Ion battery**, **frontlighting**, and a wide array of sensors, all enclosed in a sleek 3D-printed case. It’s perfect for makers, developers, and anyone seeking a sustainable e-paper solution, as each device reuses an ED038TH2 E Ink panel that was originally destined for e-waste.
+**Inkplate 4TEMPERA** is a compact, all-in-one **3.8-inch touchscreen e-paper device** for low-power, always-on display applications. It's built around an **ESP32 microcontroller** with **Wi-Fi and Bluetooth connectivity**, a built-in **Li-Ion battery**, **frontlighting**, and a set of onboard sensors, all inside a 3D-printed case. Each device reuses an ED038TH2 E Ink panel that would otherwise have ended up as e-waste, so you get a sustainable e-paper board whether you're prototyping or building something to last.
 
 <CenteredImage src="/img/inkplate_4_tempera/withglass.png" alt="Inkplate 4TEMPERA" caption="Inkplate 4TEMPERA"/>
 
@@ -23,18 +23,18 @@ tags:
 <QuickLink 
   title="Inkplate 4TEMPERA with glass panel" 
   description="333308"
-  url="https://soldered.com/product/inkplate-4-tempera/"
+  url="https://solde.red/333308"
   image="/img/inkplate_4_tempera/withglass.png" 
 />
 
 <QuickLink 
   title="Inkplate 4TEMPERA without glass panel" 
   description="333307"
-  url="https://soldered.com/product/inkplate-2/"
+  url="https://solde.red/333307"
   image="/img/inkplate_4_tempera/withoutglasss.png" 
 />
 
-## Key Features
+## Key features
 
 - **Display Size:** 3.8" touchscreen e-paper (grayscale with partial update support)
 - **Resolution:** 600 × 600 pixels

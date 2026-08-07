@@ -11,16 +11,28 @@ Inkplate 6 can connect to WiFi and fetch images directly from the internet. This
 
 ## Downloading and displaying an image
 
-Below is a complere example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
+Below is a complete example that connects to WiFi and loads an image from the web. Make sure to replace the **SSID** and **password** with your own WiFi credentials.
 
 ```python
+# Include needed libraries
 import network
 import time
 from inkplate6 import Inkplate
 
-SSID = "ENTER_SSID_HERE"
-PASSWORD = "ENTER_PASSWORD_HERE"
+# WiFi credentials (replace with your own)
+SSID = "YOUR_SSID_HERE"
+PASSWORD = "YOUR_PASSWORD_HERE"
 
+
+# Connects to a WiFi network using given SSID and PASSWORD.
+#
+# Returns:
+# - True if successfully connected
+# - False if connection fails within the timeout period
+#
+# Notes:
+# - Timeout is set to 30 seconds
+# - Prints network IP config on success
 def do_connect():
     sta_if = network.WLAN(network.STA_IF)
     if not sta_if.isconnected():
@@ -28,7 +40,7 @@ def do_connect():
         sta_if.active(True)
         sta_if.connect(SSID, PASSWORD)
 
-        timeout = 30
+        timeout = 30  # seconds
         start = time.ticks_ms()
         while not sta_if.isconnected():
             if time.ticks_diff(time.ticks_ms(), start) > timeout * 1000:
@@ -38,27 +50,61 @@ def do_connect():
     print("Network config:", sta_if.ifconfig())
     return True
 
-# Create Inkplate in 2-bit grayscale mode
+
+# Create Inkplate object in 2-bit (real 8-level GS3) grayscale mode
 inkplate = Inkplate(Inkplate.INKPLATE_2BIT)
+
+# Initialize the display, needs to be called only once
 inkplate.begin()
 
+# Connect to WiFi
 if not do_connect():
     raise SystemExit("WiFi connection failed")
 
-inkplate.drawImage(
-    "https://i.imgur.com/6vMuKxa.jpeg",
-    0, 0,
-    invert=False,
-    dither=True,
-    kernel_type=Inkplate.KERNEL_FLOYD_STEINBERG
+# Draw an image on the screen.
+#
+# Parameters:
+# - path: File path to the image. Supports local paths (e.g., from SD card) or URLs.
+#         Supported formats: JPG, PNG, BMP.
+#
+# - x0: X-coordinate of the top-left corner where the image will be displayed.
+#
+# - y0: Y-coordinate of the top-left corner where the image will be displayed.
+#
+# - invert (bool, default=False): If True, inverts the image colors.
+#
+# - dither (bool, default=False): If True, applies a dithering algorithm to
+#   the image for better grayscale rendering.
+#
+# - kernel_type (int): Specifies the dithering algorithm to use.
+#     Available options:
+#       Inkplate.KERNEL_FLOYD_STEINBERG = 0
+#       Inkplate.KERNEL_JJN             = 1
+#       Inkplate.KERNEL_STUCKI          = 2
+#       Inkplate.KERNEL_BURKES          = 3
+#
+# Performance Notes:
+# - JPG: ~3 seconds (or ~7s with dithering)
+# - PNG: ~10 seconds (or ~14s with dithering)
+# - BMP: ~15 seconds (or ~20s with dithering)
+# - Maximum image file size: ~800kB
+#
+# Example usage:
+inkplate.draw_image(
+    "https://i.imgur.com/8yvGmvs.jpeg",  # URL to image
+    0,
+    0,  # X, Y position
+    invert=False,  # Do not invert colors
+    dither=True,  # Enable dithering
+    kernel_type=Inkplate.KERNEL_FLOYD_STEINBERG,  # Dithering algorithm
 )
 
+# Show the image from the internal buffer
 inkplate.display()
-
 ```
 
 <FunctionDocumentation
-functionName="inkplate.drawImage()"
+functionName="inkplate.draw_image()"
 description="Download and draw an image from a URL or local file path onto the display buffer."
 parameters={[
 { type: 'String', name: 'path', description: 'Image URL or local file path.' },
@@ -78,14 +124,22 @@ Available options for **dithering** algorithm:
 | `Inkplate.KERNEL_FLOYD_STEINBERG` | 0 |
 | `Inkplate.KERNEL_JJN` | 1 |
 | `Inkplate.KERNEL_STUCKI` | 2 |
-| `Inkplate.KERNEL_BURKES `| 3 |
+| `Inkplate.KERNEL_BURKES` | 3 |
 
 **Performance Notes**
-- JPG: ~3 seconds (or ~14s with dithering)
-- PNG: ~9 seconds (or ~19s with dithering)
-- BMP: ~20 seconds (or ~40s with dithering)
+- JPG: ~3 seconds (or ~7s with dithering)
+- PNG: ~10 seconds (or ~14s with dithering)
+- BMP: ~15 seconds (or ~20s with dithering)
 - Maximum image file size: ~800kB
 
 </InfoBox>
 
 <CenteredImage src="/img/inkplate6-micropython/imgweb.jpg" alt="Inkplate 6 running the example code" caption="Displaying an image from web." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="display_image_web.py" 
+description="Connects to a WiFi network and renders an image straight from a URL." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/display_image_web.py" />

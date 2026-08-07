@@ -6,13 +6,13 @@ id: 6flick-microsd-image
 hide_title: true  
 ---
 
-<SectionTitle title="Display Images from SD Card" backgroundImage="img/sd_picture.jpg" />
+<SectionTitle title="Display Images from SD Card" />
 
-The `Inkplate6FLICK_SD_Pictures` example demonstrates how to load and display image files from a microSD card on the Inkplate 6Flick. This is ideal for dynamic content such as photo slideshows or interface elements loaded at runtime.
+The `Inkplate6FLICK_microSD_Pictures` example demonstrates how to load and display image files from a microSD card on the Inkplate 6FLICK. This is ideal for dynamic content such as photo slideshows or interface elements loaded at runtime.
 
 ---
 
-## SD Card Image Display
+## Drawing images from the microSD card
 
 The Inkplate library can render BMP and JPG images directly from an SD card. This allows you to present rich graphical content without hardcoding images into your firmware.
 
@@ -21,39 +21,39 @@ The Inkplate library can render BMP and JPG images directly from an SD card. Thi
 <InfoBox>By default, the SD card must be inserted before power-up or reset. If hot-swapping is necessary, reinitialize the SD card interface using `SD.begin()`.</InfoBox>
 
 ```cpp
-#include "Inkplate.h"            // Include the Inkplate library in the sketch
-Inkplate display(INKPLATE_3BIT); // Create an Inkplate object and set the library to 3-bit mode
-SdFile file;                   // Create an SdFile object for accessing files on the SD card
+#include "Inkplate.h"            // Include Inkplate library to the sketch
+Inkplate display(INKPLATE_3BIT); // Create an object on Inkplate library and also set library into 3 Bit mode
+SdFile file;                     // Create SdFile object used for accessing files on SD card
 
 void setup()
 {
-    display.begin();           // Initialize the Inkplate library (you should call this function ONLY ONCE)
-    display.clearDisplay();    // Clear the display's frame buffer
-    display.setTextColor(BLACK); // Set the text color to black
-    display.setTextSize(3);    // Set font size to 3
+    display.begin();             // Init Inkplate library (you should call this function ONLY ONCE)
+    display.clearDisplay();      // Clear frame buffer of display
+    display.setTextColor(BLACK); // Set text color to black
+    display.setTextSize(3);      // Set font size to 3
 
-    // Initialize SD card. Display whether the SD card is initialized properly or not.
+    // Init SD card. Display if SD card is init propery or not.
     if (display.sdCardInit())
     {
         display.println("SD Card OK! Reading image...");
         display.display();
 
-        // If the card is properly initialized, try to load an image and display it on the e-paper at position X=0, Y=0.
+        // If card is properly init, try to load image and display it on e-paper at position X=0, Y=0
         // NOTE: Both drawImage methods allow for an optional fifth "invert" parameter. Setting this parameter
-        // to true will invert all colors in the image, making black white and white black. This may be necessary when
-        // exporting bitmaps from certain software.
+        // to true will flip all colors on the image, making black white and white black. This may be necessary when
+        // exporting bitmaps from certain softwares.
         if (!display.image.draw("image1.bmp", 0, 0, 1))
         {
-            // If something fails (wrong filename or incorrect bitmap format), write an error message on the screen.
-            // REMEMBER! You can only use Windows Bitmap files with color depths of 1, 4, 8, or 24 bits with no
-            // compression! You can turn off dithering for somewhat faster image loading by changing the last 1 to 0, or
-            // by removing the 1 argument completely.
+            // If is something failed (wrong filename or wrong bitmap format), write error message on the screen.
+            // REMEMBER! You can only use Windows Bitmap file with color depth of 1, 4, 8 or 24 bits with no
+            // compression! You can turn of dithering for somewhat faster image load by changing the last 1 to 0, or
+            // removing the 1 argument completely
             display.println("Image open error");
         }
         display.display();
         delay(5000);
 
-        // Now try to load an image using the SdFat library class (for more advanced users) and display the image on the e-paper.
+        // Now try to load image using SdFat library class (for more advanced users) and display image on epaper.
         display.clearDisplay();
         if (file.open("image2.bmp", O_RDONLY))
         {
@@ -66,25 +66,25 @@ void setup()
         display.display();
         delay(5000);
     
-        // Now draw a JPEG.
+        // Now draw a JPEG
         display.clearDisplay();
         if (!display.image.draw("pyramid.jpg", 100, 0, true, false))
         {
-            // If something fails (wrong filename or incorrect format), write an error message on the screen.
-            // You can turn off dithering for somewhat faster image loading by changing the fifth parameter to false, or
-            // by removing the parameter completely.
+            // If is something failed (wrong filename or wrong format), write error message on the screen.
+            // You can turn off dithering for somewhat faster image load by changing the fifth parameter to false, or
+            // removing the parameter completely
             display.println("Image open error");
         }       
         display.display();
     }
     else
     {
-        // If SD card initialization is not successful, display an error on the screen.
+        // If SD card init not success, display error on screen
         display.println("SD Card error!");        
         display.display();
     }
 
-    // Turn off the MOSFET that powers the SD card.
+    // Turn off the MOSFET that powers the SD card
     display.sdCardSleep();
 }
 
@@ -114,7 +114,7 @@ void loop()
 ## Full example
 
 <QuickLink 
-  title="Inkplate6FLICK_SD_Pictures.ino" 
+  title="Inkplate6FLICK_microSD_Pictures.ino" 
   description="This example will show you how to read .bmp and .jpeg files (pictures) from an SD card and display the image on an e-paper display."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/microSD/Inkplate6FLICK_microSD_Pictures" 
 />

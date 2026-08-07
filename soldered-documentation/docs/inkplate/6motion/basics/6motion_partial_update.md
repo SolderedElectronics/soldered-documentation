@@ -1,23 +1,23 @@
 ---
 slug: /inkplate/6motion/basics/partial-update
-title: 6Motion - Partial Update
-sidebar_label: Partial Update
+title: Inkplate 6MOTION - Partial update
+sidebar_label: Partial update
 id: 6motion-partial-update
 hide_title: true
 ---
 
-<SectionTitle title="Partial Updates" backgroundImage="img/partial_update.jpg" />
+<SectionTitle title="Partial updates" />
 
-Instead of `inkplate.update()`, you can use `inkplate.partialUpdate()` for a faster display refresh. This prevents full-screen flickering, updating only the pixels that have changed in the frame buffer.
+Instead of `inkplate.display()`, you can use `inkplate.partialUpdate()` for a faster display refresh. This prevents full-screen flickering, updating only the pixels that have changed in the frame buffer.
 
 ---
 
-## Partial Update
+## Partial update
 
 Partial updates in black-and-white (1-bit) mode offer the fastest e-Paper update available on Inkplate.
 
 <WarningBox>It is recommended to perform a full update after a certain number of partial updates to maintain the lifespan and image quality of the e-Paper display. Around 50 partial updates should still look good, depending on the content being displayed. Use `inkplate.setFullUpdateTreshold()` to automate this process.</WarningBox>
-<InfoBox>Partial updates are also supported in grayscale (4-bit) mode, but they are significantly faster and more effective in black-and-white mode. In grayscale mode, their primary benefit is reducing full-screen flickering.</InfoBox>
+<InfoBox>Partial updates are also supported in grayscale (4-bit) mode, but they are much faster and cleaner in black-and-white mode. In grayscale mode, their primary benefit is reducing full-screen flickering.</InfoBox>
 
 ```cpp
 // Include Inkplate Motion library
@@ -71,14 +71,14 @@ void loop()
 
 ---
 
-## Drawing Fast Bitmaps
+## Drawing fast bitmaps
 
-For the fastest bitmap rendering on Inkplate 6 MOTION, use `drawBitmapFast`. To convert images for displaying with this function, use the [**Soldered Image Converter**](/inkplate/6motion/basics/image-converter/). **For the moment, this function supports only bitmaps size 1024x758px**.
+For the fastest bitmap rendering on Inkplate 6MOTION, use `drawBitmapFast`. To convert images for displaying with this function, use the [**Soldered Image Converter**](/inkplate/6motion/basics/image-converter/). **For the moment, this function supports only bitmaps size 1024x758px**.
 
 This efficiently fills the framebuffer with the provided bitmap data:
 
 ```cpp
-inkplate.drawBitmapFast(&imageFrame);
+inkplate.drawBitmapFast((const uint8_t *)imageFrame);
 ```
 <FunctionDocumentation
   functionName="inkplate.drawBitmapFast()"
@@ -93,20 +93,20 @@ inkplate.drawBitmapFast(&imageFrame);
 
 ---
 
-## Full Examples
+## Full examples
 
 <QuickLink 
   title="Inkplate_6_Motion_Partial_Update.ino" 
-  description="Example demonstrating the use of partialUpdate for fast display refreshes on Inkplate 6 MOTION."
+  description="Example demonstrating the use of partialUpdate for fast display refreshes on Inkplate 6MOTION."
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Basic/Inkplate_6_Motion_Partial_Update/Inkplate_6_Motion_Partial_Update.ino" 
 />
 <QuickLink 
   title="Inkplate_6_Motion_Fast_Animation.ino" 
-  description="Example demonstrating drawBitmapFast for rendering animations on Inkplate 6 MOTION. Review the included files in the sketch for more details."
+  description="Example demonstrating drawBitmapFast for rendering animations on Inkplate 6MOTION. Review the included files in the sketch for more details."
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Basic/Inkplate_6_Motion_Fast_Animation/Inkplate_6_Motion_Fast_Animation.ino" 
 />
 <QuickLink 
   title="Soldered Image Converter" 
-  description="Convert images to bitmaps for display on Inkplate 6 MOTION using the Soldered Image Converter."
+  description="Convert images to bitmaps for display on Inkplate 6MOTION using the Soldered Image Converter."
   url="/inkplate/6motion/basics/image-converter" 
 />

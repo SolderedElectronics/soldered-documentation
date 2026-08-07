@@ -1,6 +1,6 @@
 ---  
 slug: /inkplate/4tempera/basics/initialization  
-title: Inkplate 4TEMPERA – Initialization
+title: Inkplate 4TEMPERA - Initialization
 sidebar_label: Initialization
 id: 4tempera-init  
 hide_title: true  
@@ -11,7 +11,7 @@ Let's get started by writing our first Inkplate sketch! Before using Inkplate in
 
 ---
 
-## Initializing Inkplate and Updating the Display
+## Initializing Inkplate and updating the display
 
 The most basic sketch on Inkplate 4TEMPERA is as follows. It initializes Inkplate in memory and clears the e-paper display:
 
@@ -34,7 +34,7 @@ void loop()
 ```
 
 <FunctionDocumentation
-  FunctionName="Inkplate inkplate()"
+  functionName="Inkplate inkplate()"
   description="Creates inkplate object from inkplate class."
   returnType="none"
   parameters={[ 
@@ -57,7 +57,7 @@ void loop()
 
 ---
 
-## Display Rotation
+## Display rotation
 
 If you want to use Inkplate in portrait mode or any 90-degree rotation, use `inkplate.setRotation()`:
 <FunctionDocumentation

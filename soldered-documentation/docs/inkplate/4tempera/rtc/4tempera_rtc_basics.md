@@ -1,13 +1,13 @@
 ---  
 slug: /inkplate/4tempera/rtc/basics  
-title: Inkplate 4TEMPERA – RTC basics
+title: Inkplate 4TEMPERA - RTC basics
 sidebar_label: RTC basics
 id: 4tempera-rtc-basics  
 hide_title: true  
 ---  
 <SectionTitle title="RTC basics" backgroundImage="/img/rtc.png" />
 
-The real time clock on Inkplate is the **onboard PCF85063 RTC**. The RTC uses an external clock source—an external XTAL of 32.768kHz.
+The real time clock on Inkplate is the **onboard PCF85063A RTC**. The RTC uses an external clock source: a 32.768kHz XTAL.
 
 ---
 
@@ -122,7 +122,7 @@ void print2Digits(uint8_t _d)
 <FunctionDocumentation
   functionName="inkplate.rtc.setDate()"
   description="Method for setting date."
-  returnDescription="void"
+  returnType="void"
   parameters={[ 
     { type: 'uint8_t', name: 'rtcWeekday', description: "Weekday value." },
     { type: 'uint8_t', name: 'rtcDay', description: "Day of the month." },
@@ -134,12 +134,12 @@ void print2Digits(uint8_t _d)
 <FunctionDocumentation
   functionName="inkplate.rtc.getRtcData()"
   description="Reads time and date from the RTC and stores them in their corresponding variables."
-  returnDescription="void"
+  returnType="void"
 />
 
 ## Full example
 
-For full working code examples that provide a great overview, a real-world use scenario, and **code comments**, see the links below:
+For a full working example with a real-world use scenario and code comments, see the link below:
 
 <QuickLink 
   title="Inkplate4TEMPERA_RTC_Simple.ino" 

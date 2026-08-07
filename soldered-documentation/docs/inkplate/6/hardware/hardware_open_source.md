@@ -5,16 +5,16 @@ sidebar_label: Inkplate is open source
 id: hardware-open-source  
 ---  
 
-Inkplate is a **crowdfunded, open-source project**, and its software libraries build upon other free, community-driven libraries. Open source has been essential to the development of Inkplate, and at [**Soldered Electronics**](https://soldered.com/about-us/), we believe in giving back by sharing the knowledge and resources we've gained along the way.
+Inkplate started as a crowdfunded project and it has been open source since then. The libraries are built on other free, community-maintained libraries, so publishing ours back is the least we can do.
 
 <CenteredImage src="/img/inkplate_6_motion/open_source_hardware.png" alt="Open source logo" />
 
-As a company, **Soldered** designs and manufactures a wide range of electronic products, supporting makers in bringing their ideas to life. Our products are developed **in-house** in Osijek, Croatia, with a strong commitment to open-source principles. We believe that sharing knowledge drives innovation, and we actively engage with makers of all experience levels.
+Everything is designed in-house in Osijek, Croatia. The schematics, KiCad files, gerbers and BOM are all in the hardware repository, so you can read exactly how the board works, change it, or build your own version of it.
 
-<InfoBox>Need help? Our team offers **free technical support**, so if you have any issues with your Inkplate or electronics project, don’t hesitate to [**reach out**](https://soldered.com/contact/).</InfoBox>
+<InfoBox>Stuck on something? Technical support is free, so [**get in touch**](https://soldered.com/contact/) if your Inkplate or your project is not behaving.</InfoBox>
 
-All designs in the Inkplate 6 repository are distributed **without warranty** and are provided **"AS IS"**. While we strive to ensure the quality of our work, we cannot guarantee that these resources will meet every use case. The responsibility for using, modifying, or implementing these designs lies solely with the user. For details, check the [**LICENSE**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-hardware-design/blob/main/LICENSE.md) files in our repositories.
+The designs come with no warranty and are provided "AS IS". We test our work, but we cannot promise it fits every use case, and what you do with the files is on you. The [**LICENSE**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-hardware-design/blob/main/LICENSE.md) file in the repository has the exact terms.
 
 ---
 
-The following page contains links and details regarding the Inkplate 6 hardware repositories.
+The next page lists the Inkplate 6 hardware repositories and what is in them.

@@ -1,12 +1,12 @@
 ---  
 slug: /inkplate/4tempera/hardware/open-source-files  
-title: Inkplate 4TEMPERA – Hardware files
+title: Inkplate 4TEMPERA - Hardware files
 sidebar_label: Hardware files
 id: 4tempera-hardware-files  
 hide_title: true
 ---
 
-<SectionTitle title="Hardware Files" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Hardware Files" />
 
 The **hardware repositories** for Inkplate 4TEMPERA hardware files can be found at the following links:
 
@@ -59,12 +59,12 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.
-- **Drill files** (`.drl`) – Provides drilling coordinates for vias and holes.
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.
+- **Copper layers** (`.Cu.gbr`): defines the traces and pads on the board.
+- **Solder mask layers** (`.Mask.gbr`): specifies the protective solder mask.
+- **Silkscreen layers** (`.Silkscreen.gbr`): contains text and component markings.
+- **Paste layers** (`.Paste.gbr`): used for stencil fabrication in SMD assembly.
+- **Drill files** (`.drl`): provides drilling coordinates for vias and holes.
+- **Board outline** (`.Edge_Cuts.gbr`): defines the shape of the PCB.
+- **Gerber job file** (`.gbrjob`): describes the set of Gerber files used for production.
 
 These files are ready for fabrication and can be used in PCB manufacturing.

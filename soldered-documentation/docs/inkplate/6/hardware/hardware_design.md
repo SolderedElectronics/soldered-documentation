@@ -16,7 +16,11 @@ Inkplate 6 is an **open-source** product, and we are happy to share an overview 
 
 ## Basic overview
 
-The Inkplate 6 features a 6″ e-paper display, USB-C connectivity for both power and programming, abundant GPIO pins with I2C, SPI, and Qwiic header, on‑board ESP32–driven Wi‑Fi/Bluetooth, CH340C USB‑to‑UART bridging, microSD expansion, and TI-based power management (battery charging and temperature sensing) — all in a form factor primed for custom enclosures.
+Inkplate 6 is built around a 6″ e-paper panel and an ESP32-WROVER, which handles both Wi-Fi and Bluetooth. A single USB-C port covers power and programming, with a CH340C doing the USB-to-UART conversion.
+
+The e-paper rails come from a TI TPS65186, which also reads the panel's NTC thermistor so you can get a temperature reading. Battery charging is handled by a Microchip MCP73831. For expansion there are free GPIO pins, I2C, SPI, an easyC/Qwiic header and a microSD slot.
+
+<CenteredImage src="/img/6/back.webp" alt="Inkplate 6 back side" caption="Inkplate 6, back side" width="1000px" />
 
 ---
 
@@ -24,7 +28,9 @@ The Inkplate 6 features a 6″ e-paper display, USB-C connectivity for both powe
 
 The **ED060SC7** is a **6-inch** e-paper display panel from **E Ink Holdings Inc.** This model is **without a frontlight or touchscreen**, making it ideal for **low-power, high-contrast applications** such as **e-book readers**.
 
-It features **a 600 × 800 resolution**, a **reflective matte treatment**, and supports 3-bit grayscale. The display operates in a **0°C to 50°C** temperature range and can be stored in temperatures as low as **-25°C**.
+It has **480,000 pixels**, a **reflective matte treatment**, and supports 3-bit grayscale. The display operates in a **0°C to 50°C** temperature range and can be stored between **-25°C and 70°C**.
+
+Inkplate mounts the panel in landscape, so the frame buffer you draw into is **800 px wide by 600 px tall**. The datasheet below quotes the panel's own portrait orientation, where the 600-pixel axis is H and the 800-pixel axis is V, the same panel, described along the other axis.
 
 See the table below for detailed specifications:
 
@@ -33,10 +39,12 @@ See the table below for detailed specifications:
 | **Brand**                 | E Ink                                                     |
 | **Model Number**          | ED060SC7                                                 |
 | **Diagonal Size**         | 6 inches                                               |
-| **Resolution**            | 600 x 800 pixels                                           |
+| **Resolution**            | 600 (H) x 800 (V) pixels                                   |
 | **Pixel Format**          | Rectangle                                                 |
+| **Pixel Pitch**           | 0.151 (H) 0.153 (V) mm                                    |
 | **Active Area**           | 90.6 (H) 122.4 (V) mm                                     |
-| **Outline Dimensions**    | 101.8(W) 138.4(H) 1.18(D) (panel area height)             |
+| **Outline Dimensions**    | 101.8 (W) 138.4 (H) 1.18 (D) mm                           |
+| **Module Weight**         | 34 g                                                      |
 | **Touchscreen**           | No (this version has no touchscreen)                      |
 | **Backlight**             | No backlight, no driver                                   |
 | **Interface**             | Parallel                                                  |

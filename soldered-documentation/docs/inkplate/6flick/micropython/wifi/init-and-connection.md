@@ -16,7 +16,7 @@ Below is a simple example demonstrating how to connect to a WiFi network.
 ```python
 import network
 import time
-from inkplate6FLICK import Inkplate
+from inkplate6_flick import Inkplate
 
 #Enter your WiFi credentials here
 SSID="YOUR SSID"
@@ -41,8 +41,8 @@ def connect_wifi():
 
 inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.setTextSize(2)
-inkplate.setCursor(100,100)
+inkplate.set_text_size(2)
+inkplate.set_cursor(100,100)
 
 if connect_wifi():
     inkplate.print("Wifi connected!")
@@ -68,3 +68,11 @@ parameters={[
 { type: 'String', name: 'PASSWORD', description: 'The WiFi password.' }
 ]}
 />
+
+---
+
+## Full example
+
+<QuickLink title="example_network.py" 
+description="Connect to WiFi and get data from the internet." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6flick/example_network.py" />

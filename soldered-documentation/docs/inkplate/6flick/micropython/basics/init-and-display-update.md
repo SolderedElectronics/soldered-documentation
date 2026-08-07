@@ -10,7 +10,7 @@ id: init-and-display-update
 Here is a basic Inkplate object creation and display initialization which we will use in every example in following tutorials:
 
 ```python
-from inkplate6FLICK import Inkplate
+from inkplate6_flick import Inkplate
 
 # Create Inkplate object
 inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
@@ -19,7 +19,7 @@ inkplate=Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
 
 # Clear the display buffer
-inkplate.clearDisplay()
+inkplate.clear_display()
 
 # Draw what is currently stored in frame buffer, needs to be called to update the display
 inkplate.display()
@@ -48,7 +48,7 @@ inkplate.display()
 />
 
 <FunctionDocumentation
-    functionName="inkplate.clearDisplay()"
+    functionName="inkplate.clear_display()"
     description="Clears the internal frame buffer (does not change the panel until you update)."
 
 />
@@ -57,3 +57,11 @@ inkplate.display()
     functionName="inkplate.display()"
     description="Performs a full-screen refresh, sending the current frame buffer to the panel."
 />
+
+---
+
+## Full example
+
+<QuickLink title="hello_world.py" 
+description="Display text on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6flick/hello_world.py" />

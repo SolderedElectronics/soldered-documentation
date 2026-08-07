@@ -6,11 +6,11 @@ id: read-temp
 hide_title: true
 ---
 
-<SectionTitle title="Read Temperature" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Read Temperature" />
 
-Inkplate 5V2 integrates **TPS65186** power supply chip for e-paper display. The chip supports measurement of an **external NTC (Negative Temperature Coefficient) thermistor** allowing monitoring of display panel temperature in range from -10°C to 85°C. This in turn can be used to give an approximate room temperature measurements. 
+Inkplate 5V2 uses the TPS65186 power supply chip to drive the e-paper display. The chip can measure an external NTC (Negative Temperature Coefficient) thermistor, so you can monitor the display panel temperature in the range from -10°C to 85°C. That also gives you an approximate room temperature reading. 
 
-<InfoBox>Note that the readings are intended for onboard temperature monitoring and are only an approximation of room temperature!</InfoBox>
+<InfoBox>The readings are meant for onboard temperature monitoring, so treat them as an approximation of room temperature.</InfoBox>
 
 <CenteredImage src="/img/5v2/5v2_tps_highlight.png" alt="TPS highlight image" caption="Onboard TPS chip" />
 
@@ -48,7 +48,7 @@ void loop()
 <FunctionDocumentation
   functionName="inkplate.readTemperature()"
   description="Reads the onboard temperature sensor"
-  returnType="int"
+  returnType="int8_t"
   returnDescription="Returns the measured temperature in °C"
 />
 

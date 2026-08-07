@@ -4,13 +4,14 @@ title: Inkplate 6FLICK - FAQ and troubleshooting
 sidebar_label: FAQ and troubleshooting
 id: 6flick-faq-troubleshooting
 hide_title: true
+pagination_next: null
 ---
 
 <SectionTitle title="FAQ and Troubleshooting" backgroundImage="/img/faq.webp" />
 
-Here, we've gathered the most frequently asked questions and answers to help you get the most out of your Inkplate 6Flick. Whether you're new to e-paper development or troubleshooting an issue, this page is here to guide you through common problems and solutions.
+Here, we've gathered the most frequently asked questions and answers to help you get the most out of your Inkplate 6FLICK. Whether you're new to e-paper development or troubleshooting an issue, this page is here to guide you through common problems and solutions.
 
-<ExpandableSection title="I can't upload code to Inkplate 6Flick">
+<ExpandableSection title="I can't upload code to Inkplate 6FLICK">
 If you're having trouble uploading code, try the following steps:
 
 #### Restart the device
@@ -21,7 +22,7 @@ If you're having trouble uploading code, try the following steps:
 This is a commonly overlooked step. Ensure the **ON** LED is lit.
 
 #### Check Arduino IDE version
-Inkplate 6Flick requires **Arduino IDE 2.0 or newer**. Update your IDE if you're using an older version to avoid compatibility issues.
+Inkplate 6FLICK requires **Arduino IDE 2.0 or newer**. Update your IDE if you're using an older version to avoid compatibility issues.
 
 #### Still having issues?
 If none of these steps help, contact our support team [**here**](https://soldered.com/contact/) and include details of your setup and what you've tried so far.
@@ -39,7 +40,7 @@ Hard resetting via RTS pin...
 ```
 
 #### 2. Test with official examples
-Try uploading unmodified Inkplate 6Flick examples to verify that the hardware is working:
+Try uploading unmodified Inkplate 6FLICK examples to verify that the hardware is working:
 
 <QuickLink 
   title="Inkplate6FLICK_Black_And_White.ino" 
@@ -55,7 +56,7 @@ Try uploading unmodified Inkplate 6Flick examples to verify that the hardware is
 - Check the **flat cable connection** between the e-paper panel and the board.
 - Gently re-seat the cable if needed.
 
-<CenteredImage src="/img/inkplate_6_motion/flat_cable.jpg" alt="Inkplate 6Flick flat cable" caption="E-paper flat cable connector" width="500px" />
+<CenteredImage src="/img/inkplate_6_motion/flat_cable.jpg" alt="Inkplate 6FLICK flat cable" caption="E-paper flat cable connector" width="500px" />
 
 #### 5. Still not working?
 Contact [**Soldered support**](https://soldered.com/contact/) for further assistance.
@@ -80,7 +81,7 @@ Still having issues? Contact [**support**](https://soldered.com/contact/) for he
 If you're having trouble with touch input:
 
 #### 1. Make sure you're using your finger
-The Inkplate 6Flick uses a **capacitive touchscreen**, which works best with bare fingers or compatible styluses. Gloves and fingernails won't register properly.
+The Inkplate 6FLICK uses a **capacitive touchscreen**, which works best with bare fingers or compatible styluses. Gloves and fingernails won't register properly.
 
 #### 2. Ensure the screen isn't refreshing
 Touch input is disabled during screen updates. Wait until the display finishes refreshing before polling for touch.
@@ -111,42 +112,44 @@ The frontlight draws additional current. Ensure you're using a stable power sour
 Use the official brightness control example to confirm hardware functionality:
 
 <QuickLink 
-  title="Inkplate6FLICK_Frontlight.ino" 
+  title="Inkplate6FLICK_Simple_Frontlight.ino" 
   description="Adjust frontlight brightness in real time." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Advanced/Frontlight/Inkplate6FLICK_Frontlight/Inkplate6FLICK_Frontlight.ino"
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate6FLICK/Basic/Inkplate6FLICK_Simple_Frontlight/Inkplate6FLICK_Simple_Frontlight.ino"
 />
 </ExpandableSection>
 
-<ExpandableSection title="How do I connect a battery to Inkplate 6Flick?">
-Inkplate 6Flick has a **2-pin 2.0mm JST connector** for a 3.7V Li-ion battery. It includes an onboard charger (MCP73831) that charges the battery when USB is connected.
+<ExpandableSection title="How do I connect a battery to Inkplate 6FLICK?">
+Inkplate 6FLICK has a **2-pin 2.0mm JST connector** for a 3.7V Li-ion battery. It includes an onboard charger (MCP73831) that charges the battery when USB is connected.
 
-<CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Battery JST connector" caption="JST battery connector on Inkplate 6Flick" width="500px" />
+<CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Battery JST connector" caption="JST battery connector on Inkplate 6FLICK" width="500px" />
 
 <WarningBox>**Important:** Be sure to match the battery polarity! Reversing polarity can permanently damage the board. See the [**battery connection page**](/inkplate/6flick/hardware/battery) for more info.</WarningBox>
 </ExpandableSection>
 
-<ExpandableSection title="Where can I find schematics and hardware files for Inkplate 6Flick?">
-All hardware design files—including schematics, KiCad files, and gerbers—are available in the [**Inkplate 6Flick hardware GitHub repo**](https://github.com/SolderedElectronics/Soldered-Inkplate-6Flick-hardware-design).
+<ExpandableSection title="Where can I find schematics and hardware files for Inkplate 6FLICK?">
+All hardware design files, including schematics, KiCad files, and gerbers, are available in the [**Inkplate 6FLICK hardware GitHub repo**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design).
 
 You can also find documentation on the [**hardware design page**](/inkplate/6flick/hardware/design).
 </ExpandableSection>
 
-<ExpandableSection title="Where can I download 3D enclosure files?">
-We're working on providing 3D printable enclosure models. Once ready, they’ll be available in the [**Inkplate 6Flick hardware repo**](https://github.com/SolderedElectronics/Soldered-Inkplate-6Flick-hardware-design). Stay tuned!
+<ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 6FLICK?">
+They're in the [**Inkplate 6FLICK hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-6-FLICK-hardware-design/tree/main/OUTPUTS/V1.2.0/3D%20files). The `OUTPUTS/V1.2.0/3D files` folder has print-ready `.stl` files for the top and bottom of the case.
+
+If you'd rather modify the case than print it as is, the editable sources are under `CAD/V1.2.0/Source 3D files` as `.step`. There is also a `.step` model of the PCB itself in `OUTPUTS/V1.2.0`, handy for designing your own enclosure around the board.
 </ExpandableSection>
 
-<ExpandableSection title="Can I use Inkplate 6Flick as an external monitor or e-reader?">
+<ExpandableSection title="Can I use Inkplate 6FLICK as an external monitor or e-reader?">
 Short answer: **No**.
 
 Inkplate is a microcontroller-based platform designed to run Arduino sketches. It does not function as a traditional monitor or plug-and-play e-reader. However, you can write a sketch that displays data sent over USB or Wi-Fi.
 
-If you’re looking for a real-time e-ink monitor, Inkplate 6Flick is not the right fit.
+If you're looking for a real-time e-ink monitor, Inkplate 6FLICK is not the right fit.
 </ExpandableSection>
 
-<ExpandableSection title="Is Inkplate 6Flick compatible with ESPHome or Home Assistant?">
-Currently, Inkplate 6Flick is **not officially supported by ESPHome**.
+<ExpandableSection title="Is Inkplate 6FLICK compatible with ESPHome or Home Assistant?">
+Currently, Inkplate 6FLICK is **not officially supported by ESPHome**.
 
 We're working on extending support across all Inkplate models, and future firmware or component updates may enable this. Stay tuned for developments on this front!
 </ExpandableSection>
 
-<InfoBox>If you didn’t find the answer you were looking for, please don’t hesitate to [**contact our support team**](https://soldered.com/contact/). We're happy to help!</InfoBox>
+<InfoBox>If you didn't find the answer you were looking for, please don't hesitate to [**contact our support team**](https://soldered.com/contact/), or ask on the [**Soldered community**](https://community.soldered.com), where you can browse existing questions or post your own. We're happy to help!</InfoBox>

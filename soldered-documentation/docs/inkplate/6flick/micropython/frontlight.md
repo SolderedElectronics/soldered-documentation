@@ -14,38 +14,32 @@ Inkplate 6FLICK includes a **built-in frontlight** that can be enabled, disabled
 ## Controlling the frontlight
 
 ```python
-from inkplate6FLICK import Inkplate
+# Include required libraries
+from inkplate6_flick import Inkplate
 import time
 
 # Create Inkplate object in 1-bit (black and white) mode
 display = Inkplate(Inkplate.INKPLATE_1BIT)
 
-# Initialize the display
+# Initialize the display, needs to be called only once
 display.begin()
 
-# Clear display buffer and refresh once
-display.clearDisplay()
-display.display()
-
 # Enable the frontlight
-display.frontlight(True)
-display.display()
+display.set_frontlight(True)
 
-# Set frontlight brightness (0–64)
-display.setFrontlight(0)
+# Frontlight brightness can be set from 0 (dimmest) to 63 (brightest)
+display.set_frontlight_brightness(0)
 
-# Gradually increase brightness
+# Gradually increase the brightness, then decrease it back down
 for i in range(0, 64):
-    display.setFrontlight(i)
-    time.sleep(0.5)
+    display.set_frontlight_brightness(i)
+    time.sleep(0.05)
+for i in range(63, -1, -1):
+    display.set_frontlight_brightness(i)
+    time.sleep(0.05)
 
-# Gradually decrease brightness
-for v in range(0, 64):
-    display.setFrontlight(60 - v)
-    time.sleep(0.5)
-
-# Turn off the frontlight
-display.frontlight(False)
+# Turn the frontlight off
+display.set_frontlight(False)
 ```
 
 <FunctionDocumentation
@@ -57,11 +51,19 @@ parameters={[
 />
 
 <FunctionDocumentation
-functionName="display.setFrontlight(level)"
+functionName="display.set_frontlight(level)"
 description="Set the frontlight brightness level."
 parameters={[
   { type: 'int', name: 'level', description: 'Brightness value between 0 (off) and 64 (maximum brightness).' }
 ]}
 />
 
-<CenteredImage src="/img/inkplate6flick-micropython/frontlight.jpg" alt="Inkplate 6flick running the example code" caption="Displaying battery and temperature data on Inkplate display." width="1000px" />
+<CenteredImage src="/img/inkplate6flick-micropython/frontlight.jpg" alt="Inkplate 6FLICK running the example code" caption="Displaying battery and temperature data on Inkplate display." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="frontlight.py" 
+description="Turn on the frontlight and ramp its brightness up and down." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6flick/frontlight.py" />

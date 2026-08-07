@@ -6,7 +6,7 @@ id: get-and-post-requests
 ---
 
 Inkplate 5v2 can connect to the internet and make HTTP requests.
-This example demonstrates how to perform a simple **GET** and **POST** request using the 'urequests' library, with [webhook.site](http://webhook.site) as the test server.
+This example performs a GET and a POST request using the `urequests` library, with [webhook.site](http://webhook.site) as the test server.
 
 ---
 
@@ -64,13 +64,13 @@ returnType="Response"
 returnDescription="Response object with .status_code and .text."
 />
 
-<CenteredImage src="/img/inkplate10-micropython/get-output.png" alt="Inkplate 10 running the example code" caption="Example code output." width="1000px" />
+<CenteredImage src="/img/inkplate10-micropython/get-output.png" alt="Serial output of the GET request example" caption="Example code output." width="1000px" />
 
 ---
 
 ## Making a POST request
 
-You can also send data to the server. In this examplem we will send **JSON** payload to the webhook URL.
+You can also send data to the server. This example sends a JSON payload to the webhook URL.
 
 ```python
 
@@ -105,14 +105,14 @@ def connect_wifi():
 # Initialize Inkplate display
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
-inkplate.setTextSize(2)
-inkplate.setCursor(50, 100)
+inkplate.set_text_size(2)
+inkplate.set_cursor(50, 100)
 
 if connect_wifi():
     # Data to send
-    data = {"message": "Hello from Inkplate 10!"}
+    data = {"message": "Hello from Inkplate 5v2!"}
 
     # Perform POST request
     try:
@@ -145,4 +145,16 @@ returnType="Response"
 returnDescription="Response object with .status_code and .text."
 />
 
-<CenteredImage src="/img/inkplate10-micropython/post-output.png" alt="Inkplate 10 running the example code" caption="POST request message on webhook.site." width="800px" />
+<CenteredImage src="/img/inkplate10-micropython/post-output.png" alt="POST request received on webhook.site" caption="POST request message on webhook.site." width="800px" />
+
+---
+
+## Full examples
+
+<QuickLink title="get_request.py" 
+description="Connect to WiFi and perform an HTTP GET request using urequests." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate5v2/get_request.py" />
+
+<QuickLink title="post_request.py" 
+description="Connect to WiFi and perform an HTTP POST request with a JSON payload using urequests." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate5v2/post_request.py" />

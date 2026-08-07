@@ -1,16 +1,16 @@
 ---
 slug: /inkplate/6motion/peripherals/leds
-title: 6Motion - RGB LEDs
+title: Inkplate 6MOTION - RGB LEDs
 sidebar_label: RGB LEDs
 id: 6motion-periph-wsled
 ---
 
 
-The **Inkplate 6 MOTION** includes **two WS2812 RGB LEDs**, allowing full-color control for notifications, status indicators, or creative lighting effects.
+The **Inkplate 6MOTION** includes **two WS2812 RGB LEDs**, allowing full-color control for notifications, status indicators, or creative lighting effects.
 
-<InfoBox>The **WS2812** implementation in the Inkplate library uses this library from **Adafruit**:<QuickLink 
+<InfoBox>The **WS2812** implementation in the Inkplate Motion library uses this library from **Adafruit**:<QuickLink 
   title="Adafruit NeoPixel Library" 
-  description="The original library which is included in the Inkplate 6 MOTION library"
+  description="The original library which is included in the Inkplate 6MOTION library"
   url="https://github.com/adafruit/Adafruit_NeoPixel"/></InfoBox>
 
 ---
@@ -19,13 +19,13 @@ The **Inkplate 6 MOTION** includes **two WS2812 RGB LEDs**, allowing full-color 
 
 Before using the LEDs, they must be **powered on and initialized**.
 
-<InfoBox>**RGB LEDs** sensor must be powered on via `peripheralState`. See this page for more details: <QuickLink 
+<InfoBox>The **RGB LEDs** must be powered on via `peripheralState`. See this page for more details: <QuickLink 
   title="Peripheral basics" 
-  description="How to power peripherals on and off on Inkplate 6 MOTION"
+  description="How to power peripherals on and off on Inkplate 6MOTION"
   url="/inkplate/6motion/peripherals/introduction#powering-on" 
 /></InfoBox>
 
-'begin' initializes the NeoPixel library. You can use `setBrightness` as a general setting for the brightness of both of the LEDs:
+`begin()` initializes the NeoPixel library. You can use `setBrightness` as a general setting for the brightness of both of the LEDs:
 
 ```cpp
 // Power on LEDs
@@ -55,7 +55,7 @@ inkplate.led.setBrightness(125);
 
 ---
 
-## Changing Colors
+## Changing colors
 
 To set a specific color on an LED, use `setPixelColor()`, then call `show()` to apply changes.
 
@@ -90,11 +90,11 @@ inkplate.led.show();
 
 ---
 
-## Full Example
+## Full example
 
-For an in-depth example, check out the Inkplate library:
+For an in-depth example, check out the Inkplate Motion library:
 
 <QuickLink title="Inkplate_6_MOTION_WSLED.ino"
-description="Full WS2812 LED example in the Inkplate library"
+description="Full WS2812 LED example in the Inkplate Motion library"
 url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_WSLED/Inkplate_6_MOTION_WSLED.ino"
 />

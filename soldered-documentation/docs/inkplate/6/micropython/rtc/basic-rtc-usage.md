@@ -16,7 +16,7 @@ This example shows how to set the RTC time and date, and then continuously displ
 
 ---
 
-## Basic RTC Example
+## Basic RTC example
 
 ```python
 # Include all the required libraries
@@ -24,72 +24,74 @@ from inkplate6 import Inkplate
 import time
 
 # Create Inkplate object in 1-bit mode, black and white colors only
-# For 2-bit grayscale, see basicGrayscale.py
+# For 8-level grayscale, see basic_grayscale.py
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 
-    
+
 # Initialize the display, needs to be called only once
 inkplate.begin()
 
-inkplate.clearDisplay()
+# Clear the frame buffer
+inkplate.clear_display()
 
+# This has to be called every time you want to update the screen
+# Drawing or printing text will have no effect on the display itself before you call this function
 inkplate.display()
 
-inkplate.setTextSize(2)
+inkplate.set_text_size(3)
 
 # This is how to set the RTC's time
 # Arguments are hour, minute, seconds
-inkplate.rtcSetTime(9,39,10)
+inkplate.rtc_set_time(9, 39, 10)
 # And this is the date
 # Arguments are weekday, day in month, month and year
-inkplate.rtcSetDate(5,9,2,2024)
+inkplate.rtc_set_date(5, 9, 2, 2024)
 
 # Infinite loop
 while True:
-    inkplate.clearDisplay()
-    rtcData = inkplate.rtcGetData()
-    
-    hour = rtcData['hour']
-    minute = rtcData['minute']
-    second = rtcData['second']
-    
-    if hour < 10:
-        hour="0"+str(hour)
-    if minute < 10:
-        minute="0"+str(minute)
-    if second < 10:
-        second="0"+str(second)
-    
-    inkplate.setCursor(450,300)
-    current_time=str(hour)+":"+str(minute)+":"+str(second)
-    inkplate.print(current_time)
-    inkplate.partialUpdate()
+    inkplate.clear_display()
+    rtc_data = inkplate.rtc_get_data()
 
+    hour = rtc_data["hour"]
+    minute = rtc_data["minute"]
+    second = rtc_data["second"]
+
+    if hour < 10:
+        hour = "0" + str(hour)
+    if minute < 10:
+        minute = "0" + str(minute)
+    if second < 10:
+        second = "0" + str(second)
+
+    inkplate.set_cursor(280, 300)
+    current_time = str(hour) + ":" + str(minute) + ":" + str(second)
+    inkplate.print(current_time)
+    inkplate.partial_update()
 ```
 
 <FunctionDocumentation
-functionName="inkplate.rtcSetTime()"
+functionName="inkplate.rtc_set_time()"
 description="Set the RTC's current time."
 parameters={[
-{ type: 'Number', name: 'hour', description: 'Hour (0–23).' },
-{ type: 'Number', name: 'minute', description: 'Minute (0–59).' },
-{ type: 'Number', name: 'second', description: 'Second (0–59).' }
+{ type: 'Number', name: 'hour', description: 'Hour (0-23).' },
+{ type: 'Number', name: 'minute', description: 'Minute (0-59).' },
+{ type: 'Number', name: 'second', description: 'Second (0-59).' }
 ]}
 />
 
 <FunctionDocumentation
-functionName="inkplate.rtcSetDate()"
+functionName="inkplate.rtc_set_date()"
 description="Set the RTC's current date."
 parameters={[
-{ type: 'Number', name: 'weekday', description: 'Day of the week (1 = Monday … 7 = Sunday).' },
-{ type: 'Number', name: 'day', description: 'Day of the month (1–31).' },
-{ type: 'Number', name: 'month', description: 'Month (1–12).' },
+{ type: 'Number', name: 'weekday', description: 'Day of the week (0 = Sunday, 1 = Monday, … 6 = Saturday).' },
+{ type: 'Number', name: 'day', description: 'Day of the month (1-31).' },
+{ type: 'Number', name: 'month', description: 'Month (1-12).' },
 { type: 'Number', name: 'year', description: 'Full year (e.g., 2025).' }
 ]}
 />
 
 <FunctionDocumentation 
-functionName="inkplate.rtcGetData()" 
+functionName="inkplate.rtc_get_data()" 
 description="Read the current RTC date and time." 
 returnDescription="Dictionary containing keys: `hour`, `minute`, `second`, `weekday`, `day`, `month`, `year`." 
 parameters={[]} />
@@ -100,6 +102,6 @@ parameters={[]} />
 
 ## Full example
 
-<QuickLink title="Inkplate6-RTC.py" 
+<QuickLink title="rtc.py" 
 description="An example showing how to set and read time/date using the onboard RTC, and display it continuously on the screen." 
-url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/Examples/Inkplate6/RTC.py" />
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6/rtc.py" />

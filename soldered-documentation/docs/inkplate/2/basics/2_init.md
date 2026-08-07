@@ -13,7 +13,7 @@ Let's get started writing our first Inkplate sketch! Before using Inkplate in Ar
 
 ## Initializing Inkplate and updating the display
 
-The most basic sketch for Inkplate 10 is as follows: it initializes Inkplate in memory and clears the e-paper display:
+The most basic sketch for Inkplate 2 initializes Inkplate in memory and clears the e-paper display:
 
 ```cpp
 // Include Inkplate Arduino Library.
@@ -42,7 +42,7 @@ void loop()
 />
 <FunctionDocumentation
   functionName="inkplate.begin()"
-  description="In short, this function initializes the Inkplate object. This starts I2C, allocates the required memory for the frame buffer, and initializes the onboard peripherals."
+  description="This function initializes the Inkplate object, starting I2C, allocating memory for the frame buffer, and initializing the onboard peripherals."
   returnType="none"
 />
 <FunctionDocumentation

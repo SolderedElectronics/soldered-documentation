@@ -18,13 +18,7 @@ Inkplate 13SPECTRA is an **open-source** product, and we're happy to share an ov
 
 The Inkplate 13SPECTRA features a 13.3" e-paper display, USB-C connectivity for both power and programming, abundant GPIO pins with I2C and Qwiic header, onboard ESP32-driven WiFi/Bluetooth, CH340 USB-to-UART bridging, microSD expansion, and TI-based power management (battery charging and temperature sensing), RTC and more.
 
----
-
-## Components
-
-Here is an overview of on-board components with their locations:
-
-<CenteredImage src="/img/13spectra/inkplate-13-spectra-technical-hw-overview.jpg" alt="Inkplate 13SPECTRA backside" caption="Inkplate 13SPECTRA backside" width="1200px" />
+<CenteredImage src="/img/13spectra/inkplate-13-spectra-technical-hw-overview.jpg" alt="Inkplate 13SPECTRA back side" caption="Inkplate 13SPECTRA, back side" width="1200px" />
 
 ---
 

@@ -1,19 +1,19 @@
 ---
 slug: /inkplate/6motion/microsd/sd-basics
-title: 6Motion - MicroSD basics
+title: Inkplate 6MOTION - MicroSD basics
 sidebar_label: MicroSD basics
 id: 6motion-microsd-basics
 hide_title: true
 ---
 
 
-<SectionTitle title="MicroSD basics" backgroundImage="/img/microsd.jpg" />
+<SectionTitle title="MicroSD basics" />
 
-The built-in microSD card slot on Inkplate 6 MOTION can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSDs card slot.
+The built-in microSD card slot on Inkplate 6MOTION can be of great use for your project. It can store a very large number of quality image files to be displayed and read and write data between deep sleeps. This page contains basic examples which will help you quickly get started with using the built-in microSD card slot.
 
-<CenteredImage src="/img/inkplate_6_motion/6motion_sdcard.jpg" alt="MicroSD card in Inkplate 6 MOTION" caption="8GB microSD card inserted in Inkplate 6 MOTION" width="600px" />
+<CenteredImage src="/img/inkplate_6_motion/6motion_sdcard.jpg" alt="MicroSD card in Inkplate 6MOTION" caption="8GB microSD card inserted in Inkplate 6MOTION" width="600px" />
 
-<InfoBox>Inkplate 6 MOTION uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
+<InfoBox>Inkplate 6MOTION uses the [**SdFat library**](https://github.com/greiman/SdFat)</InfoBox>
 <WarningBox>All supported card formats are: **FAT16, FAT32, exFAT**</WarningBox>
 <WarningBox>All supported card types are: **SD, SDHC and SDXC**</WarningBox>
 
@@ -98,7 +98,7 @@ inkplate.partialUpdate();
 
 Writing to a `writeFile.txt` file on the microSD card is similar:
 ```cpp
-char * testString = "Hi Inkplate!"; 
+const char *testString = "Hi Inkplate!"; 
 // Let's create the .txt file and write to it
 // This will create the file if it doesn't exist, and open it in read-write mode if it exists:
 File file = inkplate.sdFat.open("writeFile.txt", O_CREAT | O_RDWR);
@@ -162,7 +162,7 @@ Before diving into the function details, here is the full example which provides
   ]}
 />
 
-<InfoBox>In the above mentioned functions, the file pointer is like a marker where you continue reading the file from, so subsequent calls to `file.print()` and `file.print()` will continue from where you left off.</InfoBox>
+<InfoBox>In the above mentioned functions, the file pointer is like a marker where you continue reading the file from, so subsequent calls to `file.print()` and `file.read()` will continue from where you left off.</InfoBox>
 
 <FunctionDocumentation
   functionName="file.close()"

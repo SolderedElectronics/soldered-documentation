@@ -1,6 +1,6 @@
 ---
 slug: /inkplate/6motion/rtc/wakeup
-title: 6Motion - RTC wakeup
+title: Inkplate 6MOTION - RTC wakeup
 sidebar_label: RTC wakeup
 id: 6motion-rtc-wakeup
 ---
@@ -8,7 +8,7 @@ id: 6motion-rtc-wakeup
 
 Other than just measuring time while Inkplate is running, it's possible to use the built-in RTC to wake Inkplate up from deep sleep at a certain time.
 
-<InfoBox>For more info on deep sleep on Inkplate 6 MOTION, see [**this**](/inkplate/6motion/low-power/deep-sleep/) page.</InfoBox>
+<InfoBox>For more info on deep sleep on Inkplate 6MOTION, see [**this**](/inkplate/6motion/low-power/deep-sleep/) page.</InfoBox>
 
 <WarningBox>If you want to keep RTC data between sleeps and power-offs, place a **CR2032 battery** in the battery holder.</WarningBox>
 
@@ -43,7 +43,7 @@ if (!inkplate.rtc.isRTCSet())
 
 <FunctionDocumentation functionName="inkplate.rtc.enableAlarm()" 
   description="Sets an RTC alarm that can wake the Inkplate from deep sleep at a specific time." 
-  returnDescription="Returns true if the alarm was successfully enabled, false otherwise." 
+  returnDescription="none" 
   parameters={[
     { type: 'uint8_t', name: 'day', description: "Day of the month for the RTC alarm." }, 
     { type: 'uint8_t', name: 'hour', description: "Hour of the alarm time (24-hour format)." }, 
@@ -62,7 +62,7 @@ For more info on `alarmMask` check the [**RTC alarm**](/inkplate/6motion/rtc/ala
 
 <FunctionDocumentation functionName="inkplate.rtc.enableAlarmInterrupt()" 
   description="Enables an interrupt for the RTC alarm event. This allows Inkplate to wake up from deep sleep when the alarm triggers." 
-  returnDescription="Returns true if the interrupt was successfully enabled, false otherwise." 
+  returnDescription="none" 
   parameters={[
     { type: 'void(*)()', name: 'callback', description: "Pointer to a function that executes when the alarm triggers. Use NULL if no callback function is required." }
   ]} 
@@ -76,7 +76,7 @@ For more info on `alarmMask` check the [**RTC alarm**](/inkplate/6motion/rtc/ala
 For a complete example that demonstrates how to use RTC alarms to wake Inkplate from deep sleep, see the link below:
 
 <QuickLink 
-  title="Inkplate_6_Motion_RTC_Alarm_Interrupt.ino" 
+  title="Inkplate_6_Motion_RTC_Deep_Sleep_Wakeup.ino" 
   description="Full example demonstrating how to configure RTC wake-up from deep sleep." 
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/RTC/Inkplate_6_Motion_RTC_Deep_Sleep_Wakeup/Inkplate_6_Motion_RTC_Deep_Sleep_Wakeup.ino" 
 />

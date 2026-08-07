@@ -8,7 +8,7 @@ hide_title: false
 
 Printing text on Inkplate is simple and requires only a few functions. The library also supports custom fonts of different sizes.
 
-## Simple Colored Text Example
+## Simple colored text example
 
 <InfoBox>
 There are a total of **7 colors** to choose from:
@@ -23,47 +23,52 @@ There are a total of **7 colors** to choose from:
 | ORANGE | INKPLATE_ORANGE | 6 |
 </InfoBox>
 
-To print text, use `setCursor` followed by `print`. If you're using the default font, you may want to use `setTextSize` to increase the font size:
+To print text, use `set_cursor` followed by `print`. If you're using the default font, you may want to use `set_text_size` to increase the font size:
 
 ```python
-inkplate.setTextSize(2) # Scale up the font size
+from inkplate6_color import Inkplate  # Include the Inkplate module
 
-inkplate.setCursor(180,180) # Set the cursor from where the text will be written
+inkplate = Inkplate()  # Create an instance of the display
+inkplate.begin()  # Initialize the display
 
-helloWorld = "Hello world!" # Declare the string we want to print
+inkplate.set_text_size(2)  # Scale up the font size
 
-i = 0 # Declare the counter we will use to iterate through the colors
+inkplate.set_cursor(180, 180)  # Set the cursor from where the text will be written
+
+hello_world = "Hello world!"  # Declare the string we want to print
+
+i = 0  # Declare the counter we will use to iterate through the colors
 
 # Iterate through each character in the string
-for char in helloWorld:
+for char in hello_world:
     # Change the color of every character
-    inkplate.setTextColor(i)
+    inkplate.set_text_color(i)
     # Print a single character to the framebuffer
     inkplate.print(char)
     # Iterate the color counter
     i = i + 1
-    if (i == 1): # If the color is white, skip it
+    if i == 1:  # If the color is white, skip it
         i = i + 1
-    elif (i // 7 > 0): # If we displayed all 7 colors, return to the first one
+    elif i // 7 > 0:  # If we displayed all 7 colors, return to the first one
         i = 0
 
-inkplate.display() # Display what is drawn to the buffer
+inkplate.display()  # Display what is drawn to the buffer
 ```
 
 <CenteredImage src="/img/6color/hello-world.jpg" alt="Expected output on Inkplate display" caption="Hello world output on display" />
 
 <FunctionDocumentation
-  functionName="inkplate.setTextSize()"
+  functionName="inkplate.set_text_size()"
   description="Increases the text size by a given factor."
-  returnDescription="None"
+  returnType="none"
   parameters={[ 
     { type: 'int', name: 's', description: 'Size factor. 1 is default size, 2 is twice as large, 3 is three times larger, etc.' }
   ]}
 />
 <FunctionDocumentation
-  functionName="inkplate.setCursor()"
+  functionName="inkplate.set_cursor()"
   description="Move the cursor to point at given position on the screen starting from the upper left corner."
-  returnDescription="None"
+  returnType="none"
   parameters={[ 
     { type: 'int', name: 'x', description: 'X coordinate value' },
     { type: 'int', name: 'y', description: 'Y coordinate value' }
@@ -72,25 +77,25 @@ inkplate.display() # Display what is drawn to the buffer
 <FunctionDocumentation
   functionName="inkplate.print()"
   description="Prints text at the previously set cursor position. This is the standard print function."
-  returnDescription="None"
+  returnType="none"
   parameters={[ 
     { type: 'char', name: 'text', description: 'String to print on the display.' }
   ]}
 />
 <FunctionDocumentation
-  functionName="inkplate.setTextColor()"
+  functionName="inkplate.set_text_color()"
   description="Sets the color of the text. Must be called before printing."
-  returnDescription="None"
+  returnType="none"
   parameters={[ 
     { type: 'int', name: 'color', description: 'Set text color.' }
   ]}
 />
 
 ## Alternative fonts example
-Here we will print text using different fonts on our Inkplate board. All of the fonts are available on **[Inkplate-MicroPython GitHub](https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/Fonts)**, just upload **.py** file to your board and import it in your code:
+Here we will print text using different fonts on our Inkplate board. All of the fonts are available on **[Inkplate-MicroPython GitHub](https://github.com/SolderedElectronics/Inkplate-micropython/tree/master/fonts)**, just upload **.py** file to your board and import it in your code:
 
 ```python
-from inkplate6COLOR import Inkplate
+from inkplate6_color import Inkplate
 # Import custom fonts
 import FreeMono_12px as Mono12
 import FreeSerifBold_18px as SerifBold18
@@ -111,21 +116,21 @@ sansBoldOblique = "Sans Bold Oblique 32px Example"
 serifExample = "Serif Italic 48px Example"
 
 # Set cursor and print example texts using different font styles
-inkplate.setCursor(0, 20)
+inkplate.set_cursor(0, 20)
 
-inkplate.setFont(Mono12)
+inkplate.set_font(Mono12)
 inkplate.println(mono)
 
-inkplate.setFont(SerifBold18)
+inkplate.set_font(SerifBold18)
 inkplate.println(serifBold)
 
-inkplate.setFont(SansOblique24)
+inkplate.set_font(SansOblique24)
 inkplate.println(sansOblique)
 
-inkplate.setFont(SansBoldOblique32)
+inkplate.set_font(SansBoldOblique32)
 inkplate.println(sansBoldOblique)
 
-inkplate.setFont(SerifItalic48)
+inkplate.set_font(SerifItalic48)
 inkplate.print(serifExample)
 
 inkplate.display() # Display what is drawn in the buffer
@@ -133,7 +138,7 @@ inkplate.display() # Display what is drawn in the buffer
 
 <CenteredImage src="/img/6color/custom-fonts.jpg" alt="Expected output on Inkplate display" caption="Custom Fonts Example" />
 
-## Custom Fonts
+## Custom fonts
 Alternatively, if you want to create your own custom font to use on your board you just take and **.ttf** or **.otf** font and turn it into a Python bytearray using the following command:
 
 ```
@@ -144,19 +149,19 @@ where number 20 represents maximum font size.
 
 <InfoBox> This external python script can be found on this **[GitHub repo](https://github.com/peterhinch/micropython-font-to-py)**. </InfoBox>
 
-## Example of Custom Font
+## Custom font example
 
 ```python
-from inkplate6COLOR import Inkplate
+from inkplate6_color import Inkplate
 import drippy as drippy
 
 inkplate = Inkplate()
 
 inkplate.begin()
 
-inkplate.setFont(drippy)
-inkplate.setTextSize(3)
-inkplate.setCursor(25, 140)
+inkplate.set_font(drippy)
+inkplate.set_text_size(3)
+inkplate.set_cursor(25, 140)
 inkplate.println("Drippy font :D")
 
 inkplate.display()
@@ -165,3 +170,15 @@ inkplate.display()
 ```
 
 <CenteredImage src="/img/6color/drippy.jpg" alt="Expected output on Inkplate display" caption="Drippy Custom Font Example" />
+
+---
+
+## Full examples
+
+<QuickLink title="hello_world.py" 
+description="Example showing how to display colorful text on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/hello_world.py" />
+
+<QuickLink title="custom_font.py" 
+description="Swap in one of the extra typefaces shipped under fonts/ instead of the default font." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate6color/custom_font.py" />

@@ -4,12 +4,13 @@ title: Inkplate 10 - FAQ and troubleshooting
 sidebar_label: FAQ and troubleshooting
 id: 10-faq-troubleshooting
 hide_title: true
+pagination_next: null
 ---
 
 
 <SectionTitle title="FAQ and troubleshooting" backgroundImage="/img/faq.webp" />
 
-Here, we've gathered the most frequently asked questions along with detailed answers to help you get the most out of your device. We know that working with maker hardware and software can sometimes be challenging, so we created this resource to make things easier. Browse through the questions below—you might find the solution you're looking for.
+Here, we've gathered the most frequently asked questions and answers to help you get the most out of your Inkplate 10. Whether you're new to e-paper development or troubleshooting an issue, this page is here to guide you through common problems and solutions.
 
 <ExpandableSection title="I can't upload code to Inkplate 10">
 If you're having trouble uploading code, try the following troubleshooting steps.
@@ -19,7 +20,7 @@ If you're having trouble uploading code, try the following troubleshooting steps
 - Reconnect via USB.  
 
 #### Make sure that the device is turned ON
-This is a very crucial step that is often forgotten about. Make sure that the **ON** LED is turned on.
+This one is easy to forget. Make sure the **ON** LED is lit.
 
 #### Verify Arduino IDE version
 Inkplate 10 requires Arduino IDE 2.0+ for proper board and library support.  
@@ -36,7 +37,7 @@ If your Inkplate 10 display is not refreshing, follow these steps to diagnose an
 
 #### 1. Verify that the code is uploading correctly
 - **Enable verbose output** in Arduino under **File → Preferences**, then check the **compile and upload logs**.
-- When uploading , a successful upload should print:
+- A successful upload ends with:
 
 ```
 Leaving... 
@@ -81,19 +82,19 @@ Try running the following sketch, which performs **30** full refresh cycles to r
 
 ```cpp
 #include <Inkplate.h>
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate display(INKPLATE_1BIT);
 int cleanTimes = 30;
 
 void setup()
 {
-    inkplate.begin();
+    display.begin();
     for(int i = 0; i < cleanTimes; i++)
     {
-        inkplate.clearDisplay();
-        inkplate.display();
+        display.clearDisplay();
+        display.display();
         delay(500);
-        inkplate.fillRect(0, 0, 1024, 758, BLACK);
-        inkplate.display();
+        display.fillRect(0, 0, 1200, 825, BLACK);
+        display.display();
         delay(500);
     }
 }
@@ -116,11 +117,11 @@ If none of these steps resolve the issue, **contact our support team** [**here**
 </ExpandableSection>
 
 <ExpandableSection title="Can I use partial update all the time on Inkplate 10?">
-To preserve display quality and extend the lifespan of the panel, it's recommended to perform a full update (`inkplate.display()`) after a certain number of partial updates. 
+To preserve display quality and extend the lifespan of the panel, it's recommended to perform a full update (`display.display()`) after a certain number of partial updates. 
 </ExpandableSection>
 
 <ExpandableSection title="How to connect a battery to Inkplate?">
-All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-ion battery. Inkplate 10 features an onboard MCP73831 charging IC, which automatically charges the battery when connected via USB and seamlessly switches to battery power when unplugged.
+All Inkplate models have a 2-pin 2.0mm JST connector for connecting a 3.7V Li-ion battery. Inkplate 10 features an onboard MCP73831 charging IC, which automatically charges the battery when connected via USB and switches over to battery power on its own when you unplug it.
 
 <CenteredImage src="/img/inkplate_6_motion/battery_jst_connector.jpg" alt="Inkplate 10 battery JST connector" caption="JST battery connector" width="500px"/>
 
@@ -134,7 +135,9 @@ Additionally, this documentation contains detailed hardware design insights on t
 </ExpandableSection>
 
 <ExpandableSection title="Where can I download the 3D files for the enclosure for Inkplate 10?">
-We are currently working on making 3D enclosure files available in the [**Inkplate 10 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design). Stay tuned for updates!
+They're in the [**Inkplate 10 hardware repository**](https://github.com/SolderedElectronics/Soldered-Inkplate-10-hardware-design/tree/main/OUTPUTS/V1.3.1/3D%20printable%20files). The `OUTPUTS/V1.3.1/3D printable files` folder has print-ready `.stl` files for the top and bottom of the case, along with a description text file covering the settings we use.
+
+If you'd rather modify the case than print it as is, the editable sources are under `CAD/V1.3.1/Source 3D files` as `.step`, and the V1.3.0 folder also includes Fusion 360 `.f3d` and `.f3z` files.
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 10 as an e-reader/monitor?">
@@ -146,9 +149,18 @@ However, if you're looking for a true e-ink monitor experience, Inkplate 10 is n
 </ExpandableSection>
 
 <ExpandableSection title="Can I use Inkplate 10 with ESPHome/Home Assistant?">
-At this time, Inkplate 10 is not officially supported by ESPHome.  
+Yes. ESPHome ships an Inkplate display platform that covers Inkplate 10. Set the `model` key to `inkplate_10`:
 
-There is currently no ESPHome display component for this model, but we are actively working on expanding ESPHome compatibility for all Inkplate devices. Stay tuned for future updates!
+```yaml
+display:
+  - platform: inkplate6
+    model: inkplate_10
+    greyscale: false
+    partial_updating: false
+    update_interval: 60s
+```
+
+The platform is named `inkplate6` for all Inkplate models, so don't be thrown by the name. See the [**ESPHome Inkplate documentation**](https://esphome.io/components/display/inkplate6.html) for the full list of configuration options and the GPIO pin assignments the platform expects.
 </ExpandableSection>
 
-<InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>
+<InfoBox>In case you haven't found the answer to your question, please **Contact us** via [**this**](https://soldered.com/contact/) link, or ask on the [**Soldered community**](https://community.soldered.com), where you can browse existing questions or post your own.</InfoBox>

@@ -6,15 +6,15 @@ id: quick-start-guide
 hide_title: True  
 pagination_prev: null  
 ---  
-<SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Quick start guide" />
 
-To get started with Arduino on Inkplate 5V2, follow a few simple steps to install the required software.
+To use Arduino with Inkplate 5V2, you first need to install the required software. Here's how.
 
 ---
 
 ### 1. Install Arduino IDE
 
-If you haven’t installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
+If you haven't installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
 <WarningBox>Arduino IDE 2.0 or newer is required for Inkplate 5V2.</WarningBox>
 
 <CenteredImage src="/img/inkplate10/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
@@ -29,11 +29,11 @@ https://github.com/SolderedElectronics/Inkplate-Board-Definitions-for-Arduino-ID
 
 And add it to the `Additional boards manager URLs` in the Arduino settings:
 
-<CenteredImage src="/img/inkplate10/add_board_def.png" alt="Add Inkplate to Arduino boards Manager" caption="Adding the Inkplate boards link to Arduino IDE" width="600px" />
+<CenteredImage src="/img/5v2/add_board_def.png" alt="Add Inkplate to Arduino boards Manager" caption="Adding the Inkplate boards link to Arduino IDE" width="600px" />
 
-Now you can open the Boards Manager, search for Inkplate Boards, and install the Inkplate Boards board definitions.  
+Now open the Boards Manager, search for Inkplate Boards, and install the Inkplate Boards board definitions.  
 Click `Install` here:  
-<CenteredImage src="/img/inkplate10/install_board.png" alt="Install Inkplate boards" caption="Adding Inkplate boards to Arduino IDE" width="400px" />
+<CenteredImage src="/img/5v2/install_board.png" alt="Install Inkplate boards" caption="Adding Inkplate boards to Arduino IDE" width="400px" />
 
 ### 3. Install Inkplate library
 
@@ -46,28 +46,28 @@ In the Arduino Library Manager, search for the Inkplate library and click `Insta
 
 <InfoBox>Mac and Linux users can skip this step because the CH340 driver is already installed.</InfoBox>
 
-The CH340 is an onboard chip that enables serial communication over USB. If the driver is not installed, download it from **[this link](https://soldered.com/blogs/learn/ch340-driver-installation)**. Start the installation and follow the instructions:  
+The CH340 is an onboard chip that handles serial communication over USB. If you don't have the driver yet, download it from **[this link](https://soldered.com/blogs/learn/ch340-driver-installation)**, then start the installation and follow the instructions:  
 <CenteredImage src="/img/inkplate10/ch340.png" alt="Install CH340 Driver" caption="Installing the CH340 Driver on Windows" width="350px" />
 
 ### Done!
 
-Inkplate 5V2 setup is complete. Now try out some examples from the Arduino library—upload them and see the results for yourself!
+Inkplate 5V2 setup is complete. Try out some examples from the Arduino library, upload them and see the results for yourself.
 
 ---
 
 ## Light and Versatile Graphics Library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> If you want more customization and room for complex GUI design, LVGL is supported on Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started. </InfoBox>
 
 ---
 
 ## Uploading code
 
-To upload your own sketch or an Arduino example to **Inkplate 5V2**, follow this brief guide.
+Here's how to upload your own sketch, or one of the Arduino examples, to Inkplate 5V2.
 
 ### 1. Connect Inkplate via USB and power it on
 
-Use the provided **USB-C cable** to connect Inkplate 5V2 to your computer. Ensure that the board is powered on by pressing the **POWER ON** button. The **blue power LED** will light up when it is properly connected.
+Use the provided USB-C cable to connect Inkplate 5V2 to your computer, then press the POWER ON button. The blue power LED lights up when the board is connected properly.
 
 <CenteredImage src="/img/inkplate10/10_usb_connect.png" alt="Inkplate 5V2 onboard USB-C connector" caption="Inkplate 5V2 onboard USB-C connector" width="500px" />
 
@@ -75,17 +75,17 @@ Use the provided **USB-C cable** to connect Inkplate 5V2 to your computer. Ensur
 
 ### 2. Create a sketch
 
-For this documentation, we will use a pre-made example. Go to `File->Examples->InkplateLibrary->Inkplate5V2->Basic->Inkplate5V2_Hello_World`.
+We'll use a pre-made example here. Go to `File->Examples->InkplateLibrary->Inkplate5V2->Basic->Inkplate5V2_Hello_World`.
 
 <CenteredImage src="/img/5v2/hello_world.png" alt="Selecting a basic example for Inkplate 5V2" caption="Selecting a basic example for Inkplate 5V2" width="700px" />
 
 ### 3. Upload the code
 
-Click **Upload** in the Arduino IDE.
+Click `Upload` in the Arduino IDE.
 
 <CenteredImage src="/img/5v2/upload.png" alt="Arduino IDE Upload Button" caption="Arduino IDE Upload Button" width="500px" />
 
-Once the process completes, **Inkplate will restart automatically** and run the newly uploaded code. Arduino's upload log should read:
+Once the upload finishes, Inkplate restarts on its own and runs the new code. Arduino's upload log should read:
 ```
 Leaving...
 Hard resetting via RTS pin...

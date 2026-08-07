@@ -6,9 +6,9 @@ id: read-temp
 hide_title: true
 ---
 
-<SectionTitle title="Read Temperature" backgroundImage="/img/deepsleep.jpg" />
+<SectionTitle title="Read Temperature" />
 
-Inkplate 6 integrates **TPS65186** power supply chip for e-paper display. The chip supports measurement of an **external NTC (Negative Temperature Coefficient) thermistor** allowing monitoring of display panel temperature in range from -10°C to 85°C. This in turn can be used to give an approximate room temperature measurements. 
+Inkplate 6 integrates **TPS65186** power supply chip for e-paper display. The chip supports measurement of an **external NTC (Negative Temperature Coefficient) thermistor** allowing monitoring of display panel temperature in range from -10°C to 85°C. Readings are accurate to within ±1°C between 0°C and 50°C, and the value is clamped at both ends of the range. This in turn can be used to give an approximate room temperature measurements. 
 
 <InfoBox>Note that the readings are intended for onboard temperature monitoring and are only an approximation of room temperature!</InfoBox>
 
@@ -21,6 +21,7 @@ Inkplate 6 integrates **TPS65186** power supply chip for e-paper display. The ch
 ```cpp
 #include "Inkplate.h"   // Include Inkplate library to the sketch
 #include "tempSymbol.h" // Include .h file that contains byte array for temperature symbol.
+// It is in same folder as this sketch. You can even open it (read it) by clicking on tempSymbol.h tab in Arduino IDE
 Inkplate display(INKPLATE_1BIT); // Create an object on Inkplate library and also set library into 1-bit mode (BW)
 
 void setup()
@@ -36,7 +37,7 @@ void loop()
 {
     int temperature = display.readTemperature();            // Read temperature from on-board temperature sensor
     display.clearDisplay();                                 // Clear everything in frame buffer of e-paper display
-    display.image.draw(tempSymbol, 100, 100, 38, 79); // Draw temperature symbol at position X=100, Y=100
+    display.image.draw(tempSymbol, 100, 100, 38, 79, BLACK); // Draw temperature symbol at position X=100, Y=200
     display.setCursor(150, 125);
     display.print(temperature, DEC); // Print temperature
     display.print('C');
@@ -45,10 +46,12 @@ void loop()
 }
 ```
 
+<InfoBox>This example uses a temperature symbol bitmap (`tempSymbol.h`) alongside the main `.ino` file. Get both files from the [**example folder on GitHub**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6/Advanced/Other/Inkplate6_Read_Temperature) and keep them in the same sketch folder.</InfoBox>
+
 <FunctionDocumentation
-  functionName="inkplate.readTemperature()"
+  functionName="display.readTemperature()"
   description="Reads the onboard temperature sensor"
-  returnType="int"
+  returnType="int8_t"
   returnDescription="Returns the measured temperature in °C"
 />
 

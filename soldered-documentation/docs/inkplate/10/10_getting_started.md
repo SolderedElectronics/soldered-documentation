@@ -6,7 +6,7 @@ id: 10-quick-start-guide
 hide_title: true  
 ---
 
-<SectionTitle title="Quick start guide" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Quick start guide" />
 
 To get started with Arduino on Inkplate 10, a few simple steps need to be completed to install the required software.
 
@@ -14,7 +14,7 @@ To get started with Arduino on Inkplate 10, a few simple steps need to be comple
 
 ### 1. Install Arduino IDE
 
-If you haven’t installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
+If you haven't installed it yet, download and install the Arduino IDE from the **[official website](https://www.arduino.cc/en/software)**.  
 <WarningBox>Arduino IDE 2.0 or newer is required for Inkplate 10.</WarningBox>
 
 <CenteredImage src="/img/inkplate10/arduino_ide.png" alt="Install Arduino IDE" caption="Arduino IDE 2.0" width="600px" />
@@ -51,13 +51,13 @@ The CH340 is an onboard chip that enables serial communication over USB. If the 
 
 ### Done!
 
-Inkplate 10 setup is complete. Now, try out some examples from the Arduino library—upload them and see the results for yourself! If you need some help with uploading code, check out the section below.
+Inkplate 10 setup is complete. Now, try out some examples from the Arduino library, upload them and see the results for yourself! If you need some help with uploading code, check out the section below.
 
 ---
 
 ## Light and Versatile Graphics Library (LVGL)
 
-<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LGVL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
+<InfoBox> Alternatively, if you're looking for advanced customization and complex GUI design options, **LVGL is fully supported** on our Inkplate boards. Check out this **[page](/inkplate/lvgl-library)** to get started! </InfoBox>
 
 ---
 
@@ -102,8 +102,8 @@ Before uploading the code, select the correct board definition. The table below 
 
 | Board Definition               | Board Description                                                                                          |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| Soldered Inkplate10            | The newer version of the Inkplate 10, the PCB is purple.                                  |
-| e-radionica.com Inkplate 10    | The older version; the PCB is blue.                                                                        |
+| Soldered Inkplate 10           | The newer version of the Inkplate 10, the PCB is purple.                                  |
+| e-radionica Inkplate 10        | The older version; the PCB is blue.                                                                        |
 
 Click **Upload** in the Arduino IDE.
 

@@ -14,9 +14,9 @@ tags:
   - Inkplate10
 ---
 
-<SectionTitle title="Overview" backgroundImage="/img/arduino_bg.jpg" />
+<SectionTitle title="Overview" />
 
-**Inkplate 10** brings the clarity and efficiency of large-format e-paper to DIY electronics. With its **9.7-inch recycled E-Ink display**, ultra-low power design, and full **Wi-Fi + Bluetooth** support, it’s ideal for smart dashboards, wall-mounted displays, and always-on visual interfaces. Just plug it in and start developing. Inkplate 10 is fully compatible with **Arduino** and **MicroPython**, and it’s entirely **open-source**.
+**Inkplate 10** brings the clarity and efficiency of large-format e-paper to DIY electronics. With its **9.7-inch recycled E-Ink display**, ultra-low power design, and full **Wi-Fi + Bluetooth** support, it's ideal for smart dashboards, wall-mounted displays, and always-on visual interfaces. Just plug it in and start developing. Inkplate 10 is fully compatible with **Arduino** and **MicroPython**, and it's entirely **open-source**.
 
 The high-resolution screen supports **grayscale rendering**, **partial updates**, and fast refresh times, while its **ESP32 microcontroller** ensures smooth wireless operation. It also includes a **microSD slot**, **RTC**, and **GPIO expansion** through **I²C, SPI, and EasyC/Qwiic**. Whether battery- or USB-powered, this display works for weeks or months thanks to its energy-efficient design. And with a **3D-printed case and optional battery**, Inkplate 10 is ready to go wherever your project takes it.
 
@@ -25,34 +25,34 @@ The high-resolution screen supports **grayscale rendering**, **partial updates**
 ## Which product is this documentation for?
 
 <QuickLink 
-  title=" Inkplate 10" 
+  title="Inkplate 10" 
   description="333241"
-  url="https://soldered.com/product/inkplate-10-9-7-e-paper-board-copy/"
+  url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/333241.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 10 without e-paper Display" 
+  title="Inkplate 10 without e-paper Display" 
   description="333243"
-  url="https://soldered.com/product/inkplate-10-9-7-e-paper-board-copy/"
+  url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/boardonly.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 10 with e-paper & enclosure" 
+  title="Inkplate 10 with e-paper & enclosure" 
   description="333242"
-  url="https://soldered.com/product/inkplate-10-9-7-e-paper-board-copy/"
+  url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/enclosure.png" 
 />
 
 <QuickLink 
-  title=" Inkplate 10 with e-paper, Enclosure & Battery" 
+  title="Inkplate 10 with e-paper, Enclosure & Battery" 
   description="333247"
-  url="https://soldered.com/product/inkplate-10-9-7-e-paper-board-copy/"
+  url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/ennbat.png" 
 />
 
-## Key Features
+## Key features
 
 - **Display Size:** 9.7" e-paper (grayscale)
 - **Resolution:** 1200 × 825 pixels

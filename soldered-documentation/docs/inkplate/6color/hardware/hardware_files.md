@@ -13,7 +13,7 @@ The **hardware repositories** for Inkplate 6COLOR hardware files can be found on
   url="https://github.com/SolderedElectronics/Soldered-Inkplate-6-COLOR-hardware-design" 
 />
 
-## Repository contents  
+## Repository contents
 
 The Inkplate 6COLOR hardware repository contains everything you need to understand, modify, or manufacture the board. Below is an overview of the available files.  
 
@@ -31,7 +31,7 @@ The `PANEL` files are used internally for production.
 
 The **OUTPUTS** folder contains the **schematic** in `.pdf` format, exported from KiCad. The schematic is divided into sections based on functionality, making it easy to navigate.
 
-<CenteredImage src="/img/6color/schematics.png" alt="Inkplate 6COLOR schematic" caption="Inkplate 6COLOR schematic 1/6" />  
+<CenteredImage src="/img/6color/schematics.png" alt="Inkplate 6COLOR schematic" caption="Inkplate 6COLOR schematic 1/5" />  
 
 ---
 
@@ -42,7 +42,7 @@ The bill of materials (BOM) is provided in two formats:
 - A **standard `.csv` table**, listing all components, part numbers, and values.  
 - An **interactive BOM (`.html`)** that visually highlights each component on the PCB, making it easy to locate and reference parts.  
 
-<CenteredImage src="/img/6color/ibom.png" alt="Inkplate 6COLOR interactive BOM" caption="IBOM for 10" />
+<CenteredImage src="/img/6color/ibom.png" alt="Inkplate 6COLOR interactive BOM" caption="Interactive BOM for Inkplate 6COLOR" />
 
 ---
 
@@ -52,16 +52,16 @@ A **3D model** of the PCB is available in `.step` format, allowing you to inspec
 
 ---
 
-### Gerber files 
+### Gerber files
 
 Gerber files are essential for PCB manufacturing, as they contain precise instructions for each layer of the board. The repository includes standard Gerber outputs in a .zip file, such as:  
 
-- **Copper layers** (`.Cu.gbr`) – Defines the traces and pads on the board.  
-- **Solder mask layers** (`.Mask.gbr`) – Specifies the protective solder mask.  
-- **Silkscreen layers** (`.Silkscreen.gbr`) – Contains text and component markings.  
-- **Paste layers** (`.Paste.gbr`) – Used for stencil fabrication in SMD assembly.  
-- **Drill files** (`.drl`) – Provide drilling coordinates for vias and holes.  
-- **Board outline** (`.Edge_Cuts.gbr`) – Defines the shape of the PCB.  
-- **Gerber job file** (`.gbrjob`) – Describes the set of Gerber files used for production.  
+- Copper layers (`.Cu.gbr`) define the traces and pads on the board.  
+- Solder mask layers (`.Mask.gbr`) specify where the protective solder mask goes.  
+- Silkscreen layers (`.Silkscreen.gbr`) hold the text and component markings.  
+- Paste layers (`.Paste.gbr`) are used to make the stencil for SMD assembly.  
+- Drill files (`.drl`) give the coordinates for vias and holes.  
+- The board outline (`.Edge_Cuts.gbr`) defines the shape of the PCB.  
+- The Gerber job file (`.gbrjob`) lists which Gerber files belong to the set.  
 
 These files are ready for fabrication and can be used in PCB manufacturing.

@@ -8,9 +8,9 @@ hide_title: true
 
 <SectionTitle title="RTC Basic usage" backgroundImage="img/arduino_bg.jpg" />
 
-This page shows how to get time from NTP server and keep track using RTC.
+This page shows how to get the time from an NTP server and keep track of it using the RTC.
 
-<InfoBox> The RTC can drift a little each day, so in order to keep time accurate it's best to resync with NTP once a day. </InfoBox>
+<InfoBox> The RTC can drift a little each day, so it's best to resync with NTP once a day to keep the time accurate. </InfoBox>
 
 ---
 
@@ -41,13 +41,13 @@ except:
 
 while True:
     # Clear the display buffer and set cursor at upper left corner
-    inkplate.clearDisplay()
-    inkplate.setCursor(0, 0)
+    inkplate.clear_display()
+    inkplate.set_cursor(0, 0)
         
     # Get UTC time
     utc_time = time.localtime()
 
-    # Convert UTC -> local time (e.g., UTC+2
+    # Convert UTC -> local time (e.g., UTC+2)
     # Offset in seconds (hours * 3600)
     timezone_offset = (2 * 3600)
 
@@ -84,3 +84,11 @@ while True:
     { type: "tuple", name: "date_time_tuple", description: "8-tuple which expresses a time as localtime" }
   ]}
 />
+
+---
+
+## Full example
+
+<QuickLink title="rtc.py" 
+description="Set the onboard RTC from an NTP server and show the time on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate2/rtc.py" />

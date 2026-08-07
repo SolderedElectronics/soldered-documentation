@@ -6,15 +6,15 @@ id: 2-text
 hide_title: true  
 ---
 
-<SectionTitle title="Printing Text" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Printing Text" />
 
-Printing text on Inkplate 2 is simple and intuitive. With support for **three colors** (black, white, red) and compatibility with the **Adafruit GFX** library, text rendering is flexible and customizable.
+Printing text on Inkplate 2 is simple, with support for three colors (black, white, red) and compatibility with the Adafruit GFX library.
 
 <InfoBox>For complete examples of text printing, most Arduino projects in the [**Inkplate library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate2) include some form of text output.</InfoBox>
 
 ---
 
-## Basic Text Printing
+## Basic text printing
 
 To print text, use `setCursor`, `setTextSize`, and `print`. Below is a basic usage example:
 
@@ -35,6 +35,7 @@ void setup() {
   inkplate.print("Red text!");
 
   inkplate.setCursor(10, 70);
+  inkplate.setTextSize(1); // Smaller size so the string fits within the 212px screen width
   inkplate.setTextColor(INKPLATE2_WHITE, INKPLATE2_BLACK); // white text on black background
   inkplate.print("Text w/ background");
 
@@ -77,7 +78,7 @@ void loop() {}
 
 ---
 
-## Custom Fonts
+## Custom fonts
 
 Inkplate 2 also supports custom fonts from the Adafruit GFX library. Download a font, include it in your sketch, and pass it to `setFont()`:
 

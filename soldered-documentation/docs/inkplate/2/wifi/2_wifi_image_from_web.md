@@ -14,9 +14,9 @@ You can download and display images directly from the internet on your Inkplate 
 
 ## Supported formats
 
-- **BMP** – 1-bit, 4-bit, 8-bit, and 24-bit depth BMP images (uncompressed)
-- **JPG** – Must be **Baseline DCT, Huffman encoded**
-- **PNG** – Common formats supported; dithering is applied automatically if needed
+- **BMP**: 1-bit, 4-bit, 8-bit, and 24-bit depth BMP images (uncompressed)
+- **JPG**: Must be **Baseline DCT, Huffman encoded**
+- **PNG**: Common formats supported; dithering is applied automatically if needed
 
 <InfoBox>Images must be equal to or smaller than 212x104 pixels. For best performance and compatibility, convert images using common tools like GIMP or Photoshop and re-save them if issues occur.</InfoBox>
 
@@ -47,7 +47,7 @@ void setup()
     // Set settings for error printing
     display.setCursor(10, 10);
     display.setTextSize(2);
-    display.setTextColor(BLACK);
+    display.setTextColor(INKPLATE2_BLACK);
 
     // Connect to the WiFi network.
     WiFi.mode(WIFI_MODE_STA);
@@ -67,7 +67,7 @@ void setup()
     // will flip all colors on the image, making black white and white black. This may be necessary when exporting
     // bitmaps from certain software.
     // The fourth parameter dithers the image, but this image is already dithered,
-    // so it is not needed to dither it again while drawing.
+    // so there's no need to dither it again while drawing.
     display.clearDisplay();
 
     if (!display.image.draw("https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Arduino-library/"
@@ -191,7 +191,7 @@ void loop()
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
   title="Inkplate2_Show_Pictures_From_Web.ino" 

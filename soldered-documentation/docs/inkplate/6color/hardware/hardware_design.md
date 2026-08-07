@@ -16,25 +16,21 @@ Inkplate 6COLOR is an **open-source** product, and we are happy to share an over
 
 ## Basic overview
 
-The Inkplate 6COLOR features a 5.8″ e-paper display, USB-C connectivity for both power and programming, abundant GPIO pins with I2C, SPI, and Qwiic header, on‑board ESP32–driven Wi‑Fi/Bluetooth, CH340C USB‑to‑UART bridging, microSD expansion, and TI-based power management (battery charging and temperature sensing) — all in a form factor primed for custom enclosures.
+Inkplate 6COLOR is built around a 7-color e-paper panel and an ESP32-WROVER, which handles Wi-Fi and Bluetooth. A single USB-C port covers power and programming, with a CH340C doing the USB-to-UART conversion.
 
----
+Unlike the monochrome Inkplates, this panel needs no external power supply chip: the AC057TC1 has its own gate and source drivers, timing controller and DC-DC boost circuit built in, and the ESP32 talks to it over SPI. Battery charging is handled by a Microchip MCP73831, and the 3.3 V rail comes from a TI TPS7A2633. For expansion there are free GPIO pins, a 16-pin I/O expander, I2C, SPI, an easyC/Qwiic header and a microSD slot.
 
-## Components
-
-Here is an overview of on‑board components with their locations:
-<CenteredImage src="/img/6color/placeholder.jpg" alt="Inkplate 6COLOR front" caption="Inkplate 6COLOR front" width="400px" />
-<CenteredImage src="/img/6color/placeholder.jpg" alt="Inkplate 6COLOR back" caption="Inkplate 6COLOR back" width="400px" />
+<CenteredImage src="/img/6color/back.webp" alt="Inkplate 6COLOR back side" caption="Inkplate 6COLOR, back side" width="1000px" />
 
 ---
 
 ## E-paper panel
 
-The **AC057TC1** is a **5.65-inch** e-paper display panel from **E Ink Holdings Inc.** This model is **without a frontlight or touchscreen**, making it ideal for **low-power, high-contrast applications** such as **e-book readers**.  
+The **AC057TC1** is a **5.65-inch** e-paper panel from **E Ink Holdings Inc.**, built on their ACeP (Advanced Color ePaper) technology. There is no frontlight and no touchscreen. Each pixel mixes its own color, so the panel needs no color filter array.
 
-It features **a 600 × 488 resolution (132 DPI)**, **reflective matte treatment**, and can display **7 colors:** Black, White, Red, Yellow, Blue, Green, and Orange. The display operates in a **15°C to 35°C** temperature range and can be stored in temperatures as low as **-25°C**.  
+It has a **600 × 448 resolution (132 DPI)**, a reflective matte finish, and displays **7 colors:** black, white, red, yellow, blue, green and orange. Note the narrow operating range of **15°C to 35°C**, which is tighter than the monochrome Inkplates.
 
-The inclusion of colors comes at the cost of the **screen refresh time**, which takes **12 seconds**
+Color costs you refresh time. A full refresh takes about **12 seconds**, and the panel cannot do partial updates at all, so plan your project around occasional redraws rather than anything animated.
 
 See the table below for detailed specifications:  
 
@@ -42,10 +38,11 @@ See the table below for detailed specifications:
 |-----------------------|-----------------------------------------------------------|
 | **Brand**             | E Ink                                                     |
 | **Model Number**      | AC057TC1                                                  |
-| **Diagonal Size**     | 5.65 inches                                               |
-| **Resolution**        | 600 x 488 pixels (132 DPI)                                  |
+| **Diagonal Size**     | 5.65 inches (active area)                                 |
+| **Resolution**        | 600 x 448 pixels (132 DPI)                                |
 | **Pixel Format**      | Square                                                    |
-| **Active Area**       | 191.5 x 191.5 um                                          |
+| **Pixel Pitch**       | 191.5 x 191.5 um                                          |
+| **Active Area**       | 114.9 (H) x 85.8 (V) mm                                   |
 | **Outline Dimensions**| 125.4(H) x 99.5(V) x 0.91(D) mm                             |
 | **Touchscreen**       | No (this version has no touchscreen)                      |
 | **Backlight**         | No backlight, no driver                                   |

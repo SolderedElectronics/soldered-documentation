@@ -5,13 +5,13 @@ sidebar_label: HTTPS certificate
 id: wifi-https-certificate
 ---
 
-Now that Inkplate is connected to the internet, you will likely want to securely receive data from a website. This page contains an example of how to implement an HTTPS certificate for your connection.
+Now that Inkplate is online, you'll probably want to receive data from a website securely. Here's an example of using an HTTPS certificate for your connection.
 
 ## HTTPS example
-This example shows how to download a .bmp file from the web securely by providing a certificate for the website that will be validated upon connection. Using `applyHttpsCertificate()` you can store the certificate for your connection:
+This example downloads a .bmp file from the web securely. You provide a certificate for the website, which is validated when the connection is made. Use `applyHttpsCertificate()` to store the certificate for your connection:
 
 ```cpp
-Inkplate inkplate;
+Inkplate inkplate(INKPLATE_1BIT);
 const char* certificate = ""; // Insert your certificate
 //..
 void setup(){
@@ -32,7 +32,7 @@ void setup(){
 ---
 
 ## Full example
-Check out all the above-mentioned functions in this example:
+See these functions at work in a complete sketch:
 
 <QuickLink 
   title="Inkplate5V2_HTTPS_With_Certificate.ino" 

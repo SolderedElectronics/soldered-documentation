@@ -15,7 +15,7 @@ To draw images from the microSD card, use the `display.image.draw()` function.
 
 ## Drawing PNG, JPG and BMP files from the microSD card
 
-Let's draw example images of different formats on Inkplate. Download them from the [**Inkplate library**](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate5V2/Advanced/SD/Inkplate5V2_SD_Pictures) and place them in the root folder of the microSD card:
+Let's draw a few example images of different formats on Inkplate. Download them from the [Inkplate library](https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate5V2/Advanced/microSD/Inkplate5V2_microSD_Pictures) and place them in the root folder of the microSD card:
 
 ```cpp
 /*
@@ -24,16 +24,16 @@ Let's draw example images of different formats on Inkplate. Download them from t
    loaded with images that can be found inside the folder of this example.
    Select "Soldered Inkplate5 V2" from Tools -> Board menu.
    Don't see the "Soldered Inkplate5 V2" option? Follow our tutorial to add it:
-   https://soldered.com/learn/add-inkplate-6-board-definition-to-arduino-ide/
+   https://docs.soldered.com/inkplate/5v2/quick-start-guide/
 
    This example shows you how to read .bmp and .jpeg files (pictures) from an SD card and
    display the image on the e-paper display. You can open .bmp, .jpeg, or .png files (but there are 
    some limitations in the library) that have a color depth of 1 bit (BW bitmap), 4 bit, 8 bit, or 
-   24 bit AND have a resolution smaller than 960x540; otherwise, it won't fit on the screen. Format your
+   24 bit AND have a resolution smaller than 1280x720; otherwise, it won't fit on the screen. Format your
    SD card in the standard FAT file format.
 
    Want to learn more about Inkplate? Visit www.inkplate.io
-   Looking to get support? Write on our forums: https://forum.soldered.com/
+   Looking to get support? Ask on the Soldered community: https://community.soldered.com/
    15 April 2024 by Soldered
 */
 
@@ -123,7 +123,7 @@ void loop()
 
 <FunctionDocumentation
     functionName="display.image.draw()"
-    description="The function draws an image from the given path."
+    description="Draws an image from the given path."
     returnDescription="Returns true if the image was successfully drawn, otherwise false."
     parameters={[  
     { type: "const char*", name: "path", description: "The path and filename of the image. Can be a URL (for web images) or a file path (on the microSD card)." },
@@ -139,7 +139,7 @@ void loop()
 ## Full example
 
 <QuickLink 
-  title="Inkplate5V2_SD_Pictures.ino" 
+  title="Inkplate5V2_microSD_Pictures.ino" 
   description="This example shows you how to read .bmp and .jpeg files (pictures) from the SD card and display them on the e-paper display."
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/blob/master/examples/Inkplate5V2/Advanced/microSD/Inkplate5V2_microSD_Pictures/Inkplate5V2_microSD_Pictures.ino" 
 />

@@ -1,18 +1,18 @@
 ---  
 slug: /inkplate/4tempera/peripherals/apds9960  
-title: Inkplate 4TEMPERA – Gesture and proximity sensor
+title: Inkplate 4TEMPERA - Gesture and proximity sensor
 sidebar_label: Gesture and proximity sensor
 id: 4tempera-periph-apds9960  
 hide_title: true
 ---
 
-<SectionTitle title="Gesture and Proximity Sensor" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Gesture and proximity sensor" />
 
-The **APDS9960** sensor on the Inkplate 4 TEMPERA enables **gesture recognition, proximity sensing, ambient light measurement, and basic RGB color detection**. It’s perfect for swipe-based user interface interaction, detecting nearby motion, or adapting the display based on room lighting.
+The **APDS9960** sensor on the Inkplate 4TEMPERA enables **gesture recognition, proximity sensing, ambient light measurement, and basic RGB color detection**. It's useful for swipe-based user interface interaction, detecting nearby motion, or adapting the display based on room lighting.
 
 ---
 
-## Initialization and Configuration
+## Initialization and configuration
 
 Before using the sensor, power it on and initialize it:
 
@@ -40,14 +40,14 @@ inkplate.apds9960.enableLightSensor(false);
 ```
 
 <FunctionDocumentation functionName="inkplate.apds9960.enableProximitySensor()" description="Enables the proximity sensing feature." returnDescription="Returns true on success." parameters={[{ type: 'bool', name: 'interrupts', description: 'Set true to use interrupts, false for polling.' }]} />
-<FunctionDocumentation functionName="inkplate.apds9960.setProximityGain()" description="Sets the gain for proximity detection." returnDescription="None" parameters={[{ type: 'uint8_t', name: 'gain', description: 'Gain value (0–3)' }]} />
+<FunctionDocumentation functionName="inkplate.apds9960.setProximityGain()" description="Sets the gain for proximity detection." returnDescription="None" parameters={[{ type: 'uint8_t', name: 'gain', description: 'Gain value (0-3)' }]} />
 <FunctionDocumentation functionName="inkplate.apds9960.enableGestureSensor()" description="Enables gesture sensing." returnDescription="Returns true if successful." />
-<FunctionDocumentation functionName="inkplate.apds9960.setGestureGain()" description="Sets the sensitivity of gesture detection." returnDescription="None" parameters={[{ type: 'uint8_t', name: 'gain', description: 'Gain value (0–3)' }]} />
+<FunctionDocumentation functionName="inkplate.apds9960.setGestureGain()" description="Sets the sensitivity of gesture detection." returnDescription="None" parameters={[{ type: 'uint8_t', name: 'gain', description: 'Gain value (0-3)' }]} />
 <FunctionDocumentation functionName="inkplate.apds9960.enableLightSensor()" description="Enables the ambient and RGB light sensing." returnDescription="Returns true on success." parameters={[{ type: 'bool', name: 'interrupts', description: 'Set true to enable interrupt mode.' }]} />
 
 ---
 
-## Gesture Detection
+## Gesture detection
 
 ```cpp
 if (inkplate.apds9960.isGestureAvailable()) {
@@ -68,7 +68,7 @@ if (inkplate.apds9960.isGestureAvailable()) {
 
 ---
 
-## Proximity Reading
+## Proximity reading
 
 ```cpp
 uint8_t proximity;
@@ -76,11 +76,11 @@ inkplate.apds9960.readProximity(proximity);
 inkplate.print(proximity);
 ```
 
-<FunctionDocumentation functionName="inkplate.apds9960.readProximity()" description="Reads the proximity value from the sensor." returnDescription="Returns true if successful." parameters={[{ type: 'uint8_t&', name: 'val', description: 'Variable to store the proximity value (0–255).' }]} />
+<FunctionDocumentation functionName="inkplate.apds9960.readProximity()" description="Reads the proximity value from the sensor." returnDescription="Returns true if successful." parameters={[{ type: 'uint8_t&', name: 'val', description: 'Variable to store the proximity value (0-255).' }]} />
 
 ---
 
-## Color Reading (RGB)
+## Color reading (RGB)
 
 ```cpp
 uint16_t red, green, blue;
@@ -96,7 +96,7 @@ inkplate.printf("Red: %d Green: %d Blue: %d", red, green, blue);
 
 ---
 
-## Ambient Light
+## Ambient light
 
 ```cpp
 uint16_t ambient;
@@ -108,7 +108,7 @@ inkplate.print(ambient);
 
 ---
 
-## Gesture Types
+## Gesture types
 
 | Gesture   | Enum Value  | Description                            |
 | --------- | ----------- | -------------------------------------- |
@@ -122,7 +122,7 @@ inkplate.print(ambient);
 
 ---
 
-## Example Sketch
+## Example sketch
 
 The following full example demonstrates how to use all APDS9960 sensor features, including:
 - Gesture recognition

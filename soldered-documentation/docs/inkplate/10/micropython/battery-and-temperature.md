@@ -21,31 +21,39 @@ import time
 
 inkplate = Inkplate(Inkplate.INKPLATE_1BIT)
 inkplate.begin()
-inkplate.clearDisplay()
+inkplate.clear_display()
 inkplate.display()
 
 # Get battery voltage as a string
-battery = str(inkplate.readBattery())
-inkplate.setTextSize(2)
-inkplate.printText(350, 350, "Battery voltage: " + battery + "V")
-inkplate.partialUpdate()
+battery = str(inkplate.read_battery())
+inkplate.set_text_size(2)
+inkplate.print_text(350, 350, "Battery voltage: " + battery + "V")
+inkplate.partial_update()
 
 # Get temperature reading as a string
-temperature = str(inkplate.readTemperature())
-inkplate.printText(350, 400, "Temperature: " + temperature + "C")
-inkplate.partialUpdate()
+temperature = str(inkplate.read_temperature())
+inkplate.print_text(350, 400, "Temperature: " + temperature + "C")
+inkplate.partial_update()
 ```
 
 <FunctionDocumentation 
-functionName="inkplate.readBattery()" 
+functionName="inkplate.read_battery()" 
 description="Measure the current battery voltage of the Inkplate board." 
 returnType="float" 
 returnDescription="Battery voltage in volts." />
 
 <FunctionDocumentation 
-functionName="inkplate.readTemperature()" 
-description="Measure the temperature of the Inkplate board’s internal sensor." 
+functionName="inkplate.read_temperature()" 
+description="Measure the temperature of the Inkplate board's internal sensor." 
 returnType="float" 
 returnDescription="Temperature in degrees Celsius." />
 
 <CenteredImage src="/img/inkplate10-micropython/battery-volt-temp.jpg" alt="Inkplate 10 running the example code" caption="Displaying battery and temperature data on Inkplate display." width="1000px" />
+
+---
+
+## Full example
+
+<QuickLink title="battery_and_temperature.py" 
+description="Read the battery voltage and temperature and display them on the screen." 
+url="https://github.com/SolderedElectronics/Inkplate-micropython/blob/master/examples/inkplate10/battery_and_temperature.py" />

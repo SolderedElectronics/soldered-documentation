@@ -1,26 +1,27 @@
 ---
 slug: /inkplate/6motion/basics/image-converter
-title: 6Motion - Soldered Image Converter
+title: Inkplate 6MOTION - Soldered Image Converter
 sidebar_label: Soldered Image Converter
 id: 6motion-image-converter
 ---
 
-<CenteredImage src="/img/inkplate_6_motion/image_converter.png" alt="Soldered Image Converter" caption="Graphical user interface of the Soldered Image Converter" width="800px" />
+<CenteredImage src="/img/image_converter_web.png" alt="Soldered Image Converter" caption="Soldered Image Converter web tool" width="1000px" />
 
-Soldered Image Converter is an open-source Python program by Soldered. It is used to convert images for Inkplate boards into .h files, which can be included in Arduino sketches for Inkplate and then displayed.
+The Soldered Image Converter is a free web tool that converts images into `.h` header files ready to include in your Arduino sketch and display on Inkplate.
+
 <QuickLink 
-  title="Soldered Image Converter Repository" 
-  description="See the README in this repository for details on how to download and install the Soldered Image Converter."
-  url="https://github.com/SolderedElectronics/Soldered-Image-Converter/" 
+  title="Soldered Image Converter" 
+  description="Open the web-based image converter tool."
+  url="https://tools.soldered.com/tools/image-converter/" 
 />
 
 After converting images, export the .h files and save them in your Inkplate sketch's project folder. To find this folder, go to `Sketch -> Show Sketch Folder` in Arduino.
 
-Place the exported .h files in that folder, then include them in the sketch and use the `drawImage` function.
+Place the exported .h files in that folder, then include them in the sketch and draw them with `drawBitmap()` for 1-bit images or `drawBitmap4Bit()` for 4-bit grayscale ones.
 
 ---
 
-## Black and White Bitmap
+## Black and white bitmap
 
 ```cpp
 // Include Inkplate Motion library
@@ -61,7 +62,7 @@ void loop()
 
 ---
 
-## Grayscale Image
+## Grayscale image
 
 ```cpp
 // Include Inkplate Motion library
@@ -71,8 +72,8 @@ void loop()
 Inkplate inkplate; // Create Inkplate object
 void setup()
 {
-    // Initialize Inkplate in black and white mode
-    inkplate.begin(INKPLATE_BLACKWHITE); 
+    // Initialize Inkplate in grayscale mode - required for 4-bit images
+    inkplate.begin(INKPLATE_GRAYSCALE); 
 
     // Draw the grayscale image at (0, 0)
     // The image is pre-dithered using Floyd-Steinberg in the image converter
@@ -99,7 +100,7 @@ void loop()
 
 ---
 
-## Full Example
+## Full example
 
 <QuickLink 
   title="Inkplate_6_Motion_Image_Converter.ino" 

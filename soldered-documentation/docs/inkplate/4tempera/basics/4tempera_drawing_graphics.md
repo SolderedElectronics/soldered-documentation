@@ -1,12 +1,12 @@
 ---  
 slug: /inkplate/4tempera/basics/drawing-graphics  
-title: Inkplate 4TEMPERA – Drawing graphics
+title: Inkplate 4TEMPERA - Drawing graphics
 sidebar_label: Drawing graphics
 id: 4tempera-graphics  
 hide_title: true
 ---
 
-<SectionTitle title="Drawing Graphics" backgroundImage="/img/inkplate_2/hardware.png" />
+<SectionTitle title="Drawing Graphics" />
 
 Inkplate 4TEMPERA allows you to draw graphics on a **600 x 600 px canvas**.
 
@@ -17,11 +17,11 @@ Inkplate 4TEMPERA allows you to draw graphics on a **600 x 600 px canvas**.
 
 ---
 
-## Drawing Geometric Shapes
+## Drawing geometric shapes
 
 Below is an example demonstrating how to use various functions to draw graphics on the Inkplate 4TEMPERA:
 
-<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/10/basics/basic-display-modes/) page for more details.</InfoBox>
+<InfoBox>The **color** parameter in these functions depends on the display mode. In black-and-white mode, use `BLACK` or `WHITE`. In grayscale mode, use values from 0 to 7. Refer to the [**display modes**](/inkplate/4tempera/basics/basic-display-modes/) page for more details.</InfoBox>
 
 ```cpp
 #include "Inkplate.h"
@@ -33,23 +33,23 @@ void setup() {
     // Draw a pixel
     inkplate.drawPixel(100, 50, 0);
     // Draw a line
-    inkplate.drawLine(0, 0, 1023, 757, 1);
+    inkplate.drawLine(0, 0, 599, 599, 1);
     // Draw a rectangle
-    inkplate.drawRect(100, 100, 200, 200, 2);
+    inkplate.drawRect(50, 100, 150, 150, 2);
     // Draw a filled rectangle
-    inkplate.fillRect(300, 100, 200, 300, 3);
+    inkplate.fillRect(250, 100, 150, 150, 3);
     // Draw a circle
-    inkplate.drawCircle(512, 100, 75, 4);
+    inkplate.drawCircle(500, 100, 75, 4);
     // Draw a filled circle
-    inkplate.fillCircle(512, 100, 75, 5);
+    inkplate.fillCircle(500, 300, 75, 5);
     // Draw a rounded rectangle
-    inkplate.drawRoundRect(310, 300, 400, 300, 10, 4);
+    inkplate.drawRoundRect(50, 300, 150, 150, 10, 4);
     // Draw a filled rounded rectangle
-    inkplate.fillRoundRect(310, 300, 400, 300, 10, 3);
+    inkplate.fillRoundRect(250, 300, 150, 150, 10, 3);
     // Draw a triangle
-    inkplate.drawTriangle(300, 500, 700, 500, 512, 200, 2);
+    inkplate.drawTriangle(50, 580, 200, 580, 125, 470, 2);
     // Draw a filled triangle
-    inkplate.fillTriangle(350, 467, 650, 467, 512, 250, 1);
+    inkplate.fillTriangle(250, 580, 400, 580, 325, 470, 1);
     // Update the display to render the drawings
     inkplate.display();
 }
@@ -198,9 +198,9 @@ Below are the detailed references for these functions:
 ## Full example
 
 <QuickLink 
-  title="Inkplate4TEMPERA_Black_And_White.ino" 
+  title="Inkplate4TEMPERA_Black_White.ino" 
   description="Full example using black and white display mode on Inkplate 4TEMPERA." 
-  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Black_And_White" 
+  url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate4TEMPERA/Basic/Inkplate4TEMPERA_Black_White" 
 />
 
 <QuickLink 

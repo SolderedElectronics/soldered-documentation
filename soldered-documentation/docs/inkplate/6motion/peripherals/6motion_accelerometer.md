@@ -1,14 +1,14 @@
 ---
 slug: /inkplate/6motion/peripherals/accelerometer
-title: 6Motion - Accelerometer and gyroscope
+title: Inkplate 6MOTION - Accelerometer and gyroscope
 sidebar_label: Accelerometer and gyroscope
 id: 6motion-periph-accelerometer
 ---
 
-The **LSM6DSO32** sensor on Inkplate 6 MOTION provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking.
+The **LSM6DSO32** sensor on Inkplate 6MOTION provides **accelerometer and gyroscope data**, allowing motion detection, tilt sensing, and rotation tracking.
 
-<InfoBox>The **LSM6DSO32** implementation in the Inkplate library uses this library from **Adafruit**:<QuickLink title="Adafruit LSM6DS" 
-  description="The Adafruit LSM6DS 6-DoF Accelerometer and Gyroscope Sensor Library for Arduino, included in the Inkplate 6 MOTION library"
+<InfoBox>The **LSM6DSO32** implementation in the Inkplate Motion library uses this library from **Adafruit**:<QuickLink title="Adafruit LSM6DS" 
+  description="The Adafruit LSM6DS 6-DoF Accelerometer and Gyroscope Sensor Library for Arduino, included in the Inkplate 6MOTION library"
   url="https://github.com/adafruit/Adafruit_LSM6DS" 
 /></InfoBox>
 
@@ -20,8 +20,8 @@ Before retrieving accelerometer and gyroscope data, the **LSM6DSO32** sensor mus
 
 <InfoBox>The **LSM6DSO32** sensor must be powered on via `peripheralState`. See this page for more details: <QuickLink 
   title="Peripheral basics" 
-  description="How to power peripherals on and off on Inkplate 6 MOTION"
-  url="/Inkplate-6MOTION/peripherals/introduction#powering-on" 
+  description="How to power peripherals on and off on Inkplate 6MOTION"
+  url="/inkplate/6motion/peripherals/introduction#powering-on" 
 /></InfoBox>
 
 ```cpp
@@ -39,7 +39,7 @@ if (!inkplate.lsm6dso32.begin_I2C())
 ```
 <FunctionDocumentation
   functionName="inkplate.lsm6dso32.begin_I2C()"
-  description="Initializes the LSM6DSO32 sensor over I2C. This is the only relevant 'begin' function for Inkplate 6 MOTION as the sensor is connected on the PCB via I2C and no other way. In real usage, this function is called without any parameters as all the defaults are set correctly for Inkplate 6  MOTION."
+  description="Initializes the LSM6DSO32 sensor over I2C. This is the only relevant 'begin' function for Inkplate 6MOTION as the sensor is connected on the PCB via I2C and no other way. In real usage, this function is called without any parameters as all the defaults are set correctly for Inkplate 6MOTION."
   returnDescription="Returns true if initialization was successful, otherwise false."
   parameters={[
     { type: 'uint8_t', name: 'i2c_address', description: "Optional. The I2C address to use." },
@@ -94,9 +94,10 @@ The gyroscope's `range` can also be configured:
 | **500°/s**  | `LSM6DS_GYRO_RANGE_500_DPS`  |
 | **1000°/s** | `LSM6DS_GYRO_RANGE_1000_DPS` |
 | **2000°/s** | `LSM6DS_GYRO_RANGE_2000_DPS` |
-| **4000°/s** | `ISM330DHCX_GYRO_RANGE_4000_DPS` |
 
 <InfoBox>The current gyroscope range can be retrieved with: `inkplate.lsm6dso32.getGyroRange()`</InfoBox>
+
+<WarningBox>Adafruit's shared LSM6DS header also defines `ISM330DHCX_GYRO_RANGE_4000_DPS`. That range belongs to the ISM330DHCX, not the LSM6DSO32, so don't use it here. The LSM6DSO32 tops out at ±2000°/s.</WarningBox>
 
 ---
 
@@ -139,9 +140,9 @@ As a general setting, you can set the `data rate` of the LSM6DSO32. This refers 
   description="Retrieves the latest sensor readings, including acceleration, gyroscope, and temperature data."
   returnDescription="Returns true if the data was successfully read."
   parameters={[
-    { type: 'sensors_event_t&', name: 'accel', description: "Structure to store acceleration event data." },
-    { type: 'sensors_event_t&', name: 'gyro', description: "Structure to store gyroscope event data." },
-    { type: 'sensors_event_t&', name: 'temp', description: "Structure to store temperature event data." },
+    { type: 'sensors_event_t*', name: 'accel', description: "Pointer to the structure which stores acceleration event data." },
+    { type: 'sensors_event_t*', name: 'gyro', description: "Pointer to the structure which stores gyroscope event data." },
+    { type: 'sensors_event_t*', name: 'temp', description: "Pointer to the structure which stores temperature event data." },
   ]}
 />
 
@@ -154,8 +155,11 @@ When calling `getEvent()`, three `sensors_event_t` structures are filled:
 - **Gyroscope values** are stored in `gyro.gyro.x/y/z`
 - **Temperature readings** (if applicable) are stored in `temp.temperature`
 ```cpp
+// Structures which the readings get written into
+sensors_event_t accel, gyro, temp;
+
 // Make measurement
-inkplate.lsm6dso32.getEvent();
+inkplate.lsm6dso32.getEvent(&accel, &gyro, &temp);
 
 // Read values from the accelerometer
 float accelX = accel.acceleration.x;
@@ -203,6 +207,6 @@ inkplate.printf("Gyro Z: %.2f °/s\n", gyro.gyro.z);
 For the best all-in-one overview of this peripheral, have a look at this Arduino example which projects a 3D cube from the accelerometer data and also prints the gyroscope data:
 
 <QuickLink title="Inkplate_6_MOTION_Accelerometer_Cube.ino" 
-  description="Full LSM6DSO32 example in the Inkplate library"
+  description="Full LSM6DSO32 example in the Inkplate Motion library"
   url="https://github.com/SolderedElectronics/Inkplate_Motion_Arduino_Library/blob/main/examples/Inkplate6Motion/Advanced/Sensors_Other/Inkplate_6_MOTION_Accelerometer_Cube/Inkplate_6_MOTION_Accelerometer_Cube.ino" 
 />

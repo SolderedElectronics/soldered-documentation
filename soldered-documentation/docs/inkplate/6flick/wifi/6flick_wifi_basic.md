@@ -6,7 +6,7 @@ id: 6flick-wifi-basics
 hide_title: true
 ---
 
-<SectionTitle title="WiFi basics" backgroundImage="/img/wifi.png" />
+<SectionTitle title="WiFi basics" />
 
 On Inkplate 6FLICK, WiFi is handled by the onboard ESP32 processor. These pages contain tutorials on how to use this processor to implement WiFi in your projects.
 
@@ -19,22 +19,22 @@ These are the basic steps for connecting to WiFi, followed by the key function e
 #include <WiFi.h>
 const char* ssid="yourssid";
 const char* pass="yourpassword";
-Inkplate inkplate(INKPLATE_1BIT);
+Inkplate display(INKPLATE_1BIT);
 void setup(){
-  inkplate.begin();
-  inkplate.clearDisplay();
-  inkplate.display();
+  display.begin();
+  display.clearDisplay();
+  display.display();
   Serial.begin(115200);
   WiFi.begin(ssid, pass);
-  inkplate.print("Connecting to WiFi...");
+  display.print("Connecting to WiFi...");
   while(WiFi.status()!=WL_CONNECTED){
     delay(500);
-    inkplate.print('.');
-    inkplate.partialUpdate(true);
+    display.print('.');
+    display.partialUpdate(true);
     delay(1000);
   }
-  inkplate.println("\nSuccessfully connected to WiFi");
-  inkplate.display();
+  display.println("\nSuccessfully connected to WiFi");
+  display.display();
 }
 void loop(){}
 ```
@@ -60,7 +60,7 @@ void loop(){}
 
 To see more details, check out our full examples:
 <QuickLink 
-  title="Inkplate_6FLICK_WiFi_examples" 
-  description="Inkpate 6FLICK WiFi examples from Inkplate library"
+  title="Inkplate 6FLICK WiFi examples" 
+  description="Inkplate 6FLICK WiFi examples from Inkplate library"
   url="https://github.com/SolderedElectronics/Inkplate-Arduino-library/tree/master/examples/Inkplate6FLICK/Advanced/WEB_WiFi" 
 />
