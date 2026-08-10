@@ -3409,6 +3409,50 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'PCAL6416A I/O Expander',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/pcal6416a/pcal6416a-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/pcal6416a/pcal6416a-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/pcal6416a/pcal6416a-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/pcal6416a/arduino_library/pcal6416a-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'I2C Bus Extender P82B715',
           items: [
             {
