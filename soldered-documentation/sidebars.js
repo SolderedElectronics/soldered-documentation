@@ -1112,6 +1112,50 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'ADS1219 24-bit ADC',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/ads1219/ads1219-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ads1219/ads1219-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/ads1219/ads1219-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/ads1219/arduino_library/ads1219-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ads1219/arduino_library/ads1219-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ads1219/arduino_library/ads1219-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ads1219/arduino_library/ads1219-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/ads1219/arduino_library/ads1219-arduino-5',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'CO2 Sensor SCD43',
           items: [
             {
