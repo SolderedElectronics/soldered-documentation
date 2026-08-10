@@ -2817,6 +2817,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: '5W Audio Amplifier PAM8406',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/pam8406/pam8406-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/pam8406/pam8406-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/pam8406/pam8406-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Smart LED WS2812B',
           items: [
             {
