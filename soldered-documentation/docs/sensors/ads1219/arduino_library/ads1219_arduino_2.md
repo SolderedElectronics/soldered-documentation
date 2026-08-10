@@ -15,9 +15,11 @@ This page covers the simplest way to read the ADS1219: one conversion at a time,
 Before reading any channel, the ADS1219 needs a reference voltage to measure against - every conversion result is scaled relative to it.
 
 - **Internal reference:** the ADS1219 has a built-in **2.048V** reference. No extra wiring needed - leave REFP/REFN unconnected and select `ADS1219_VREF_INTERNAL`.
-- **External reference:** for a different or more precise reference voltage, feed it into **REFP** and **REFN** directly. The simplest option is tying REFP to VCC and REFN to GND, giving you a reference equal to your supply voltage (3.3V or 5V). For higher accuracy, connect a dedicated voltage reference IC or a lab power supply/voltage generator instead.
+- **External reference:** for a different or more precise reference voltage, feed it into **REFP** and **REFN** directly. The simplest option is tying REFP to VCC and REFN to GND, giving you a reference equal to your supply voltage (3.3V or 5V) - that's what this page uses. For higher accuracy, or for a reference deliberately different from your supply rail, connect a dedicated voltage reference IC or a bench voltage generator instead. [**Channel Selection**](/ads1219/arduino/multiplexer) walks through that setup with a generator.
 
 <InfoBox>Whichever reference you use, you need to know its exact voltage - the library takes it as a parameter when converting a raw reading to millivolts, so an inaccurate reference value produces an inaccurate result even though the raw ADC code itself is correct.</InfoBox>
+
+<WarningBox>An external reference must be between **0.75 V** and **AVDD**, and **REFN has to be tied to the board's GND**. The ADS1219 measures both reference pins against its own internal ground, so a floating source has no defined level relative to the chip.</WarningBox>
 
 ---
 
@@ -25,7 +27,9 @@ Before reading any channel, the ADS1219 needs a reference voltage to measure aga
 
 Connect the ADS1219 board via Qwiic, and wire REFP/REFN to your chosen reference (VCC/GND for the simplest option, or an external precision reference/voltage generator).
 
-Connect a signal source to **AIN0** and **AIN1** - this example reads the voltage difference between them.
+Connect a signal source to **AIN0** and **AIN1** - this example reads the voltage difference between them. In the Serial Monitor capture further down, that signal comes from a **potentiometer** wired across 3V3 and GND with its wiper on AIN0, which is why the readings sweep as it's turned.
+
+<InfoBox>The board ships with unpopulated headers, so wires resting in the plated holes won't make reliable contact. Solder them in - a floating input reads a steady value near 0 mV regardless of what you've connected.</InfoBox>
 
 ---
 

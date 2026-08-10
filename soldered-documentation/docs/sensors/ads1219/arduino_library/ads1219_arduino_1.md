@@ -53,6 +53,8 @@ If you prefer, you can use I2C pins to manually connect:
 
 </InfoBox>
 
+<InfoBox>In the Arduino IDE, select **ESP32 Dev Module** as the board definition for the NULA Deepsleep. That's why the Serial Monitor captures throughout this documentation are labelled `ESP32 Dev Module` rather than by the board's own name.</InfoBox>
+
 ---
 
 ## Using a custom I2C address

@@ -56,14 +56,11 @@ The onboard PGA supports gains of **1 and 4**, and the data rate is configurable
 
 {/*
 TODO - outstanding items for this module:
-- Product photo needed (Overview)
-- Chip-on-board photo needed (How it Works)
-- JP1/JP2 jumper photos needed (Hardware details)
-- A0/A1 address-selection photos needed, 8 total (Hardware details)
+- Product photo needed (Overview). Note the commented-out QuickLink above still points at
+  ads1219.JPG, which no longer exists - repoint it at the new photo when it lands.
 - Connections/wiring photo needed (Arduino - Reading with Interrupt)
 - Connections/wiring photo needed (Arduino - Single-Shot Reading)
 - Connections/wiring photo needed (Arduino - Multiplexer/Channel Selection)
-- Dedicated example still needed showing a distinct external reference voltage (voltage generator/precision reference at a value other than VCC) - deferred, not yet started
 - Product page link still commented out above, pending the real product page going live
 */}
 

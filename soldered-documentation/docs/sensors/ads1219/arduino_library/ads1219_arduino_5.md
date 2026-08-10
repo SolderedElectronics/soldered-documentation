@@ -38,6 +38,13 @@ Verify that your signal source is correctly connected to the AIN pins. For singl
 #### Check the gain setting
 If the input signal is larger than the selected gain range allows, the ADC will saturate and return the maximum or minimum value. For example, with `ADS1219_GAIN_1` and the internal 2.048 V reference, the input must stay within ±2.048 V. Reduce the gain or use a lower reference voltage accordingly.
 
+The tell-tale sign is that the printed millivolt value equals your reference voltage **exactly** - `2500.000` when you passed `2500.0f`, for instance. That's `getConversionMillivolts()` reporting a raw code pinned at full scale (8388607), which means the input is at or above the top of the range rather than being measured. Printing `adc.getConversionRaw()` alongside makes it unmistakable.
+
+<CenteredImage src="/img/ads1219/first_reading.png" alt="Serial Monitor showing a clipped reading" caption="A clipped channel: every sample reports exactly the reference voltage, with no variation at all" width="100%" />
+
+#### Check that the input is actually connected
+The board ships with unpopulated headers. A wire pushed into a plated hole without solder often makes no connection at all, and a floating analog input settles at a small steady value near 0 mV - so it looks like a working measurement of nothing. If a channel reads a stable near-zero figure that ignores your signal source, measure directly between that AIN hole and a GND hole before suspecting the code.
+
 #### Make sure you call start()
 In both single-shot and continuous modes, `adc.startSync()` must be called to begin conversions. Without it, `readConversion()` will return stale or zero data.
 

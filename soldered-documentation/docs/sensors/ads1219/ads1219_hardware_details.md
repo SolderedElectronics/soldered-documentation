@@ -8,7 +8,7 @@ hide_title: False
 
 ## Pinout
 
-<CenteredImage src="/img/ads1219/Pinout.png" alt="ADS1219 pinout" caption="ADS1219 pinout diagram" />
+<CenteredImage src="/img/ads1219/pinout.png" alt="ADS1219 pinout" caption="ADS1219 pinout diagram" />
 
 Click [**here**](/img/ads1219/Pinout.svg) for a high-resolution image of the pinout.
 
@@ -78,7 +78,13 @@ The ADS1219 supports four programmable data rates, which directly determine conv
 
 This board contains hardware jumpers; see below for their locations and functions:
 
-<ErrorBox>Photos of the JP1 and JP2 jumpers are not available yet! We're working on it.</ErrorBox>
+<FlickityCarousel
+  images={[
+    { src: '/img/ads1219/JP1.webp', alt: 'ADS1219 jumper 1', caption: 'JP1 (front side)' },
+    { src: '/img/ads1219/JP2.webp', alt: 'ADS1219 jumper 2', caption: 'JP2 (back side)' },
+  ]}
+  jumpers={true}
+/>
 
 | Jumper  | Default State            | Function                                                                        |
 | ------- | ------------------------ | ------------------------------------------------------------------------------- |
@@ -93,7 +99,15 @@ This board contains hardware jumpers; see below for their locations and function
 
 Depending on how you configure the A0 and A1 jumpers, you can define different I2C addresses for the ADS1219:
 
-<ErrorBox>Photos of the A0/A1 address jumper configurations are not available yet! We're working on it.</ErrorBox>
+<FlickityCarousel
+  images={[
+    { src: '/img/ads1219/A0.webp', alt: 'ADS1219 A0 address pads', caption: 'A0 pads' },
+    { src: '/img/ads1219/A1.webp', alt: 'ADS1219 A1 address pads', caption: 'A1 pads' },
+  ]}
+  jumpers={true}
+/>
+
+Both pad groups sit on the back of the board and are marked with single letters on the silkscreen: **C** is SCL, **D** is SDA, **V** is VCC and **G** is DGND. Bridge the pad you want, and make sure only one is bridged per group.
 
 | Address       | A1   | A0   |
 | :-----------: | :--: | :--: |

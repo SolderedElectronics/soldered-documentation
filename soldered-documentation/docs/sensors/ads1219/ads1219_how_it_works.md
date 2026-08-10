@@ -8,7 +8,7 @@ hide_title: False
 
 The ADS1219 is a precision **24-bit delta-sigma analog-to-digital converter (ADC)** manufactured by [**Texas Instruments**](https://www.ti.com/product/ADS1219). When using our board, you are communicating directly with the onboard ADS1219 via **I2C communication**.
 
-<ErrorBox>A photo of the ADS1219 chip on the board is not available yet! We're working on it.</ErrorBox>
+<CenteredImage src="/img/ads1219/chip.webp" alt="ADS1219 chip on the board" caption="ADS1219 on the board" width="500px" />
 
 ---
 
