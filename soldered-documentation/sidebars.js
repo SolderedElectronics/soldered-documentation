@@ -1112,6 +1112,58 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'CO2 Sensor SCD43',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/scd43/scd43-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/scd43/scd43-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/scd43/scd43-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-6',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/scd43/arduino_library/scd43-arduino-7',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'BHI385 smart IMU breakout',
           items: [
             {
