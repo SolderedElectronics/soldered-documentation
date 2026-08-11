@@ -89,6 +89,13 @@ void loop()
 />
 
 <FunctionDocumentation
+  functionName="adc.reset()"
+  description="Performs a soft reset, returning the configuration register to its defaults (gain 1, 20 SPS, differential AIN0/AIN1, internal reference). Useful for putting the ADC back to a known state without re-checking the I2C connection the way begin() does."
+  returnDescription="Boolean value, true on success."
+  parameters={[]}
+/>
+
+<FunctionDocumentation
   functionName="adc.setVoltageReference()"
   description="Selects the voltage reference source used for conversion."
   returnDescription="Boolean value, true on success."

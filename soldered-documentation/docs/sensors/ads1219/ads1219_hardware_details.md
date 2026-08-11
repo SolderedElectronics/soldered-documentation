@@ -109,6 +109,8 @@ Depending on how you configure the A0 and A1 jumpers, you can define different I
 
 Both pad groups sit on the back of the board and are marked with single letters on the silkscreen: **C** is SCL, **D** is SDA, **V** is VCC and **G** is DGND. Bridge the pad you want, and make sure only one is bridged per group.
 
+Both groups are bridged to **G** when the board leaves the factory, giving the default address of **0x40** printed on the back. The addresses below are 7-bit and unshifted, which is what an I2C scanner and the Arduino `Wire` library both report.
+
 | Address       | A1   | A0   |
 | :-----------: | :--: | :--: |
 | **0x40** (default) | DGND | DGND |

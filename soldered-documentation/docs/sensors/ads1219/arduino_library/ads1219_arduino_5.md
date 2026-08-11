@@ -56,6 +56,44 @@ If you are using an external voltage reference (`ADS1219_VREF_EXTERNAL`), make s
 
 </ExpandableSection>
 
+<ExpandableSection title="My readings are noisy or drifting!">
+
+#### Give a bench supply a load and time to warm up
+A bench supply feeding the ADS1219 is running almost unloaded, because the reference input draws about 10 nA and the analog inputs are buffered. With nothing to regulate against, the supply's output wanders. Fitting a resistor between 470 Ω and 2.2 kΩ across the supply's output terminals took our noise from 150 mV of wander down to 0.112 mV. Give it a few minutes to settle too: straight after switch-on ours climbed about 5 mV in 10 seconds. A reading that moves steadily in one direction is warm-up drift rather than noise.
+
+#### Measure the converter's own noise floor
+Tie a channel directly to GND and read it with the matching `ADS1219_MUX_SINGLE_x` setting. That measures the ADC against itself, with your signal source out of the picture. Expect a few tens of microvolts: ours held within 22 µV of zero, against the datasheet figure of 19.71 µV peak-to-peak at 20 SPS and gain 1. If a grounded channel is far worse than that, the problem is upstream of the chip in the grounding, the lead dress or a marginal solder joint, and no amount of averaging in software will recover it.
+
+#### Use a lower data rate
+Noise rises with data rate because there is less time to average between conversions. At 20 SPS and gain 1 the effective resolution is about 19.6 bits; at 1000 SPS it drops to roughly 16.8 bits. If you don't need the speed, `ADS1219_DR_20SPS` is the quietest setting and the default.
+
+#### Keep the leads short
+At 24 bits, half a metre of unshielded wire is an antenna. Twist each signal wire together with its ground return and keep both as short as practical.
+
+</ExpandableSection>
+
+<ExpandableSection title="My external reference doesn't seem to be used!">
+
+#### Read the configuration register back
+`adc.getConfigReg()` returns the register the chip is actually running on. The `vref` bit must read 1 for an external reference. If it reads 0 the device is still on the internal 2.048 V reference and nothing downstream will be correct.
+
+```cpp
+ads1219_config_reg_t cfg;
+if (adc.getConfigReg(cfg))
+{
+    Serial.print("vref bit = ");
+    Serial.println(cfg.vref); // 1 = external, 0 = internal
+}
+```
+
+#### Check REFN is grounded and the voltage is in range
+The ADS1219 measures REFP and REFN against its own internal ground, so an external source left floating has no defined level relative to the chip. Tie REFN to the board's GND. The reference itself has to sit between 0.75 V and AVDD.
+
+#### Compare the same input against two references
+Read one unchanged signal twice, once with `ADS1219_VREF_INTERNAL` and `getConversionMillivolts(2048.0f)`, then again with your external reference and its measured value. The raw code must change by the ratio of the two references while the reported millivolts stay put. If the raw code doesn't move at all, the external reference is not being applied.
+
+</ExpandableSection>
+
 <ExpandableSection title="My continuous mode stops producing new results!">
 
 #### Check the data rate and polling speed

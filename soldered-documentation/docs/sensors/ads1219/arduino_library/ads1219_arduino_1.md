@@ -32,11 +32,11 @@ To install the Arduino library, use the **Arduino library manager** or download 
 
 ## Connections
 
-Below is an example connection diagram for **NULA Deepsleep**. These pins will be used in the examples throughout this documentation.
+Below is an example connection diagram for the **NULA DeepSleep ESP32-S3**. These pins will be used in the examples throughout this documentation.
 
 If your board has a Qwiic connector, connect it directly to the ADS1219 board with a Qwiic cable:
 
-| **NULA Deepsleep** | **ADS1219 Board** |
+| **NULA DeepSleep** | **ADS1219 Board** |
 | ------------------- | ------------------ |
 | Qwiic                | Qwiic               |
 
@@ -44,7 +44,7 @@ If your board has a Qwiic connector, connect it directly to the ADS1219 board wi
 
 If you prefer, you can use I2C pins to manually connect:
 
-| **NULA Deepsleep** | **ADS1219 Board** |
+| **NULA DeepSleep** | **ADS1219 Board** |
 | ------------------- | ------------------ |
 | IO8 (Default SDA pin) | SDA                 |
 | IO9 (Default SCL pin) | SCL                 |
@@ -53,7 +53,17 @@ If you prefer, you can use I2C pins to manually connect:
 
 </InfoBox>
 
-<InfoBox>In the Arduino IDE, select **ESP32 Dev Module** as the board definition for the NULA Deepsleep. That's why the Serial Monitor captures throughout this documentation are labelled `ESP32 Dev Module` rather than by the board's own name.</InfoBox>
+<InfoBox>
+
+In the Arduino IDE, select **Soldered NULA DeepSleep ESP32-S3** as the board definition, or **ESP32S3 Dev Module** if it doesn't appear in the list. The Serial Monitor labels its output with whichever board definition you picked, so that name is what shows up in the captures on the following pages.
+
+<QuickLink  
+  title="NULA DeepSleep ESP32-S3 - Getting started"  
+  description="Installing the board definition and uploading your first sketch"  
+  url="/nula-deepsleep-esp32-s3/arduino"  
+/>
+
+</InfoBox>
 
 ---
 

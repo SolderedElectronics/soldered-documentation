@@ -12,41 +12,21 @@ This page covers selecting which of the ADS1219's four input channels (or which 
 
 ## Connections
 
-This example uses a **bench voltage generator on two channels**: one supplies the reference voltage, the other supplies the signal being measured. Using a reference that isn't simply your supply rail is the point here - it shows the ADS1219 measuring against a reference you chose, rather than against whatever VCC happens to be.
+This example is wired with a bench supply on two channels: CH1 provides the reference voltage, CH2 provides the signal being measured. Driving the reference from something other than your supply rail is deliberate. It shows the ADS1219 measuring against a reference you picked rather than against whatever VCC happens to be, and 2.500 V sits clear of both the 2.048 V internal reference and the 3.3 V rail, so a reference that isn't working can't accidentally produce a believable number.
 
 | Generator channel | Set to    | Goes to                     |
 | ----------------- | --------- | --------------------------- |
 | **CH1**           | **2.500 V** | **REFP** (+) and **REFN** (-) |
 | **CH2**           | **1.000 V** | **AIN0** (+) and **GND** (-)  |
 
+<CenteredImage src="/img/ads1219/mux_connections.webp" alt="ADS1219 wired to a NULA DeepSleep and a two-channel bench supply" caption="The four labelled leads go to the bench supply - the Qwiic cable handles power and I2C" width="100%" />
+
 Connect the board to your development board with a **Qwiic cable** for power and I2C, then wire the generator as above. Two things are easy to get wrong:
 
 - **REFN must be tied to the board's GND.** The ADS1219 measures REFP and REFN against its own internal ground, so a generator output left floating has no defined level relative to the chip and the reading becomes meaningless. With REFN grounded, the reference is simply whatever you dial into CH1.
 - **The signal on AIN0 must stay below the reference.** At gain 1 the full-scale input range *is* the reference voltage, so 1.000 V against a 2.500 V reference leaves comfortable headroom.
 
-2.500 V is picked deliberately: it's clear of both the 2.048 V internal reference and the 3.3 V rail, so if the reference weren't being applied correctly, the readings couldn't accidentally look right.
-
-<WarningBox>
-
-**Put a resistor across each supply channel's output terminals** - anything from 470 Ω to 2.2 kΩ. The ADS1219's reference input draws about 10 nA and its analog inputs are buffered, so a bench supply driving them is running with no load at all, and its constant-voltage loop has nothing to regulate against.
-
-On our bench this single resistor took the noise from **150 mV of wander down to 0.112 mV** - a factor of 1340. Fit it at the supply's terminals rather than at the board, so the load current doesn't flow through the wires feeding the ADC.
-
-</WarningBox>
-
-<InfoBox>
-
-**Measure the voltages, don't trust the front panel.** A 30 V bench supply asked for 1.000 V is working in the bottom 3% of its range, where its absolute error is worst - ours actually delivered **0.9907 V** at a 1.000 V setting, nearly 1% low.
-
-That doesn't matter for accuracy as long as you know the real value: pass the *measured* reference into `getConversionMillivolts()`, and expect readings that match your *measured* input. Our 1.000 V setting read back as ~990 mV, and that was correct.
-
-</InfoBox>
-
-<WarningBox>The reference voltage must be between **0.75 V** and **AVDD** (3.3 V on a 3V3 system, since AVDD is tied to VCC through JP2). Set the generator's voltage **before** enabling its output, and never apply more than AVDD to REFP.</WarningBox>
-
-<InfoBox>The board ships with unpopulated headers. Wires resting in the plated holes do not make reliable contact - solder them in, or you'll read a steady value near 0 mV from a floating input no matter what the generator is doing.</InfoBox>
-
-This example reads AIN0 single-ended, but any of the mux options below can be swapped in instead - move the CH2 wire to the matching AIN pin.
+<WarningBox>The reference voltage must be between **0.75 V** and **AVDD** (3.3 V on a 3V3 system, since AVDD is tied to VCC through JP2). Set the supply's voltage **before** enabling its output, and never apply more than AVDD to REFP.</WarningBox>
 
 ---
 
@@ -111,8 +91,6 @@ void loop()
 <InfoBox>Swap `ADS1219_MUX_SINGLE_0` for any of the other mux constants to read a different channel or pair - everything else in the sketch stays the same. `ADS1219_MUX_DIFF_P0_N1` (AIN0 vs AIN1) is the default at power-on.</InfoBox>
 
 Open the **Serial Monitor** at **115200 baud** to see the reading for whichever channel you selected. Expect a value matching the voltage you **measured** on AIN0, not the one you dialled in - our supply was set to 1.000 V but actually delivering about 0.989 V, so readings landed at roughly **989 mV**, which is correct.
-
-<InfoBox>Give the supply a few minutes to warm up before trusting the numbers. Straight after switching on, ours drifted upward by about 5 mV over 10 seconds and wandered by 13 mV; once settled, the same setup held to **0.1 mV** across dozens of samples. A reading that climbs steadily in one direction is warm-up drift, not noise.</InfoBox>
 
 <CenteredImage src="/img/ads1219/an0.png" alt="Serial Monitor output reading AIN0" caption="ADS1219_MUX_SINGLE_0 - AIN0 against a 2.500 V external reference, settled to within 0.1 mV" width="100%" />
 

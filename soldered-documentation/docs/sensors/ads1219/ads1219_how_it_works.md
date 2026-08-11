@@ -53,7 +53,7 @@ The device includes a built-in **2.048 V internal voltage reference**, which eli
 
 The ADS1219 talks over I2C at Standard-mode (100 kHz), Fast-mode (400 kHz), or Fast-mode Plus (1 Mbps), and never stretches the clock.
 
-Its address comes from how the **A0** and **A1** pins are wired, each tied to GND, VCC, SDA, or SCL gives one of 16 addresses (0x40-0x4F), letting multiple boards share a bus. See [Address Selection](/ads1219/hardware#address-selection) for the full table.
+Its address comes from how the **A0** and **A1** pins are wired, each tied to GND, VCC, SDA, or SCL gives one of 16 addresses (0x40-0x4F), letting multiple boards share a bus. Both pins are tied to GND from the factory, so the board arrives at **0x40**. See [Address Selection](/ads1219/hardware#address-selection) for the full table.
 
 Six commands control the device: reset, start/restart a conversion, power down, read the latest result, or read/write the configuration register, which holds gain, data rate, input channel, reference source, and operating mode all in one place.
 

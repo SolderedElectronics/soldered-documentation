@@ -9,11 +9,11 @@ pagination_prev: null
 
 ## ADS1219 24-bit ADC
 
-The **ADS1219** is a precision **24-bit delta-sigma analog-to-digital converter (ADC)** with a built-in **programmable gain amplifier (PGA)**, an internal voltage reference, and an **I2C interface**. It features **four input channels** that can be configured as differential or single-ended inputs.
+The **ADS1219** is a precision **24-bit delta-sigma analog-to-digital converter (ADC)** with a built-in **programmable gain amplifier (PGA)**, an internal voltage reference, and an **I2C interface**. Plug in a **Qwiic cable** and it reports readings over I2C at a default address of **0x40**. It has **four input channels** that can be configured as differential or single-ended inputs.
 
-The onboard PGA supports gains of **1 and 4**, and the data rate is configurable between **20, 90, 330, and 1000 SPS**. The device includes a **2.048 V internal reference** but can also accept an external reference via the REFP and REFN pins. Multiple ADS1219 boards can be connected to the same I2C bus by configuring the address via onboard jumpers.
+The onboard PGA supports gains of **1 and 4**, and the data rate is configurable between **20, 90, 330, and 1000 SPS**. The device includes a **2.048 V internal reference** but can also accept an external reference via the REFP and REFN pins. Up to 16 ADS1219 boards can share one I2C bus, since the onboard jumpers move the address anywhere between **0x40** and **0x4F**.
 
-<ErrorBox>A product photo for this board is not available yet! We're working on it.</ErrorBox>
+<CenteredImage src="/img/ads1219/izo_w.webp" alt="ADS1219 24-bit ADC 4-channel breakout board" caption="ADS1219 24-bit ADC 4-channel with PGA" width="500px" />
 
 ---
 
@@ -23,7 +23,7 @@ The onboard PGA supports gains of **1 and 4**, and the data rate is configurable
   title="ADS1219 24-bit ADC 4-channel with PGA"
   description="333380"
   url="https://solde.red/333380"
-  image="/img/ads1219/ads1219.JPG" 
+  image="/img/ads1219/izo_w.webp" 
 /> */}
 
 <WarningBox>The product page for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) for more information.</WarningBox>
@@ -56,12 +56,13 @@ The onboard PGA supports gains of **1 and 4**, and the data rate is configurable
 
 {/*
 TODO - outstanding items for this module:
-- Product photo needed (Overview). Note the commented-out QuickLink above still points at
-  ads1219.JPG, which no longer exists - repoint it at the new photo when it lands.
-- Connections/wiring photo needed (Arduino - Reading with Interrupt)
+- Connections/wiring photo needed (Arduino - Reading with Interrupt). The existing
+  interrupt.JPG shows a Dasduino, not the NULA DeepSleep the pages specify - recapture.
 - Connections/wiring photo needed (Arduino - Single-Shot Reading)
-- Connections/wiring photo needed (Arduino - Multiplexer/Channel Selection)
-- Product page link still commented out above, pending the real product page going live
+- Product page link above is commented out, pending the real product page going live
+  (solde.red/333380 still 404s). The image path is already set to izo_w.webp.
+- Hardware repository link (KiCad/Gerbers/BOM) once published - see the WarningBox
+  on the Hardware details page
 */}
 
 
