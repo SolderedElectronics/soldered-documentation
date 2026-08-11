@@ -133,28 +133,67 @@ if ($problems.Count -gt 0) {
 
     # BatchMode=yes makes ssh fail instead of prompting for a password,
     # so an unauthorized key gives a clean failure rather than hanging.
+    # The remote command echoes a distinct marker per outcome, so we can tell
+    # "logged in but folder not writable" apart from "could not log in at all".
+    $remoteCmd = "if [ -w '$($config['REMOTE_PATH'])' ]; then echo DEPLOY_OK; " +
+                 "elif [ -e '$($config['REMOTE_PATH'])' ]; then echo DEPLOY_NOWRITE; " +
+                 "else echo DEPLOY_NOPATH; fi"
+
     $sshArgs = @(
         "-i", $keyPath,
         "-o", "BatchMode=yes",
         "-o", "StrictHostKeyChecking=accept-new",
         "-o", "ConnectTimeout=10",
         $target,
-        "test -w '$($config['REMOTE_PATH'])' && echo DEPLOY_OK"
+        $remoteCmd
     )
 
-    $result = & ssh @sshArgs 2>&1
+    # Keep stdout and stderr apart: ssh writes notices (like the first-connection
+    # "Permanently added ... to the list of known hosts") to stderr, and merging
+    # them into stdout hides the real error.
+    $errFile = [System.IO.Path]::GetTempFileName()
+    $result  = (& ssh @sshArgs 2>$errFile) -join "`n"
     $sshExit = $LASTEXITCODE
+    $stderr  = (Get-Content $errFile -Raw)
+    Remove-Item $errFile -ErrorAction SilentlyContinue
 
-    if ($sshExit -eq 0 -and $result -match "DEPLOY_OK") {
-        Report-Ok "Connected as $target"
+    if ($stderr) { $stderr = $stderr.Trim() }
+
+    if ($result -match "DEPLOY_OK") {
+        Report-Ok "Logged in as $target"
         Report-Ok "You can write to $($config['REMOTE_PATH'])"
-    } elseif ($sshExit -eq 0) {
-        Report-Fail "Connected, but cannot write to $($config['REMOTE_PATH'])" `
+    } elseif ($result -match "DEPLOY_NOWRITE") {
+        Report-Ok "Logged in as $target"
+        Report-Fail "Cannot write to $($config['REMOTE_PATH'])" `
                     "Your key works. Ask the server admin to grant write access to the docs folder."
+    } elseif ($result -match "DEPLOY_NOPATH") {
+        Report-Ok "Logged in as $target"
+        Report-Fail "The folder $($config['REMOTE_PATH']) does not exist on the server" `
+                    "Check REMOTE_PATH in deploy.env, or ask the server admin."
     } else {
-        Report-Fail "Could not connect to $target" `
-                    "Send the server admin your public key (shown above) so it can be authorized."
-        Write-Host "          ssh said: $result" -ForegroundColor DarkGray
+        # No marker came back, so the login itself failed. Classify from stderr.
+        if ($stderr -match "Permission denied") {
+            Report-Fail "Server refused your key (logged in as $($config['REMOTE_USER']))" `
+                        "Send the server admin your public key (shown above) so it can be authorized."
+        } elseif ($stderr -match "timed out|Network is unreachable|No route to host") {
+            Report-Fail "Could not reach $($config['REMOTE_HOST']) on port 22" `
+                        "REMOTE_HOST must be the server's IP address, not the docs website address."
+        } elseif ($stderr -match "Could not resolve|Name or service not known") {
+            Report-Fail "Could not resolve $($config['REMOTE_HOST'])" `
+                        "Check REMOTE_HOST in deploy.env - it should be the server's IP address."
+        } elseif ($stderr -match "Host key verification failed") {
+            Report-Fail "Host key verification failed" `
+                        "The server's identity changed. Ask the server admin before continuing."
+        } else {
+            Report-Fail "Could not connect to $target" `
+                        "Send the full output of this script to the server admin."
+        }
+
+        if ($stderr) {
+            Write-Host "          ssh said: $stderr" -ForegroundColor DarkGray
+        } else {
+            Write-Host "          ssh exit code: $sshExit (no error message)" -ForegroundColor DarkGray
+        }
     }
 }
 
