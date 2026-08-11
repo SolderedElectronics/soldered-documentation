@@ -2,7 +2,7 @@
 
 ![Soldered Documentation](https://docs.soldered.com/assets/images/soldered_docs_social_card-ad511a2bacbd799beb36ea797101074f.jpg)
 
-Welcome to the **Soldered Documentation** repository! This repository hosts all official documentation for Soldered products, which is published at [soldered.com/documentation/](https://soldered.com/documentation/). The documentation is built using [Docusaurus](https://docusaurus.io/).  
+Welcome to the **Soldered Documentation** repository! This repository hosts all official documentation for Soldered products, which is published at [docs.soldered.com](https://docs.soldered.com/). The documentation is built using [Docusaurus](https://docusaurus.io/).  
 
 ### This documentation is a work in progress!
 
@@ -39,16 +39,16 @@ npm install
 
 (Docusaurus and all other required packages will be installed automatically based on the provided `package-lock.json`.)
 
-### Editing Documentation
-
-- Create a new branch for your edits:
-
-```bash
-git checkout -b your-branch-name
-```
+### Where things live
 
 - All documentation files are located in the `/docs` folder. Edit existing markdown files or create new ones directly in this folder.
 - Images used in the documentation should be placed in the `/static/img` folder.
+
+### Editing Documentation
+
+Using your LLM of choice in this folder, create a branch for the docs you're currently writing and edit them there. Once you're happy, merge to master using the LLM to cherry-pick only the files you've added.
+
+Working on a branch keeps unfinished pages off master, and cherry-picking only your new files avoids clobbering pages someone else changed in the meantime.
 
 ### Previewing Your Changes
 
@@ -60,9 +60,19 @@ npm run start
 
 A local development server will start, typically accessible at [http://localhost:3000](http://localhost:3000). **All changes you make will be automatically reflected in real-time.**
 
+Preview before you deploy. There is no staging site — what you build is what goes live.
+
 ### Publishing Changes
 
-Once you're satisfied with your edits, commit your changes and create a pull request. After approval, your edits will be deployed live.
+Commit everything using the LLM by telling it `commit everything`, then build and deploy.
+
+Deploying is a one-time setup per computer (SSH key, then a `deploy.env` file), after which it is a single command:
+
+```bash
+./deploy.sh
+```
+
+Run `.\check_env.ps1` on Windows to verify your machine is set up correctly — it checks your tools, config, and SSH access to the server, and tells you what to fix if something is missing. Full setup instructions are in `DEPLOY_SETUP.md`.
 
 ---
 

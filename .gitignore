@@ -1,6 +1,8 @@
 node_modules/
 /documentation-buddy/static/uploads
 .env
+deploy.env
+DEPLOY_SETUP.md
 soldered-documentation/docs/process_titles.py
 .DS_Store
 /inkplate_library
