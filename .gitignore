@@ -6,3 +6,5 @@ DEPLOY_SETUP.md
 soldered-documentation/docs/process_titles.py
 .DS_Store
 /inkplate_library
+.claude
+.claude-flow
