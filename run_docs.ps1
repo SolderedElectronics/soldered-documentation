@@ -41,7 +41,7 @@ Start-Sleep -Seconds 2
 
 # Launch Documentation Buddy in another new PowerShell window
 Write-Host "Starting Documentation Buddy in documentation-buddy directory..." -ForegroundColor Green
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location -Path '$buddyDir'; python documentation_buddy.py"
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location -Path '$buddyDir'; py documentation_buddy.py"
 
 # Open the browser to Documentation Buddy after a short delay (default port is 5000)
 Start-Sleep -Seconds 5  # Give Documentation Buddy a short time to initialize
