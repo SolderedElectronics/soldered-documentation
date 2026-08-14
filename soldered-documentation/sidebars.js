@@ -1156,6 +1156,54 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'AS5600 Position Sensor',
+          items: [
+            {
+              type: 'doc',
+              id: 'sensors/as5600/as5600-overview',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/as5600/as5600-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'sensors/as5600/as5600-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'sensors/as5600/arduino_library/as5600-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/as5600/arduino_library/as5600-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/as5600/arduino_library/as5600-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/as5600/arduino_library/as5600-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/as5600/arduino_library/as5600-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'sensors/as5600/arduino_library/as5600-arduino-6',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'CO2 Sensor SCD43',
           items: [
             {
