@@ -34,7 +34,7 @@ if (-not (Test-DirectoryExists -Path $buddyDir)) {
 
 # Launch Docusaurus in a new PowerShell window
 Write-Host "Starting Docusaurus in soldered-documentation directory..." -ForegroundColor Green
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location -Path '$docusaurusDir'; npm start"
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location -Path '$docusaurusDir'; `$env:NO_UPDATE_NOTIFIER = '1'; npm start"
 
 # Brief pause to allow first window to initialize
 Start-Sleep -Seconds 2
