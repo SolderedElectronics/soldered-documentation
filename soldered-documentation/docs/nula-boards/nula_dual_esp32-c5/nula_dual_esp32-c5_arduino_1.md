@@ -1,5 +1,5 @@
 ---
-slug: /nula_dual_esp32-c5/arduino/getting-started
+slug: /nula-dual-esp32-c5/arduino
 title: NULA Dual ESP32-C5 - Getting started with Arduino
 sidebar_label: Getting started with Arduino
 id: nula_dual_esp32-c5-arduino-1
@@ -12,7 +12,7 @@ pagination_next: null
 ## Arduino board definition
 
 To program your **NULA Dual ESP32-C5**, use the **official Espressif Arduino core for ESP32**.  
-This package now includes a dedicated **Soldered NULA Dual ESP32C5** board definition, so there's no need to configure a generic ESP32-C5 target.
+Version **3.3.10** and newer include a dedicated **Soldered NULA Dual ESP32C5** board definition, so there's no need to configure a generic ESP32-C5 target.
 
 <QuickLink
   title="Arduino ESP32 core"
@@ -54,6 +54,19 @@ Once installed, select your board from the menu:
 
 <InfoBox>The board has an automatic reset/download circuit, so uploading normally just works from a single click of **Upload**. If that ever fails, you can enter download mode manually: hold the **USER** button while pressing **RESET**, then release both.</InfoBox>
 
+<InfoBox>**No port showing up?** The USB-C port is served by an onboard **CH340K** bridge, so the board appears as a USB serial port rather than a native USB device. Windows and macOS usually have the driver already; if no port appears, install the CH340 driver and reconnect the board.</InfoBox>
+
+<InfoBox>Leave **Tools → USB CDC On Boot** set to **Disabled**. Serial output travels through the CH340K bridge, so enabling USB CDC leaves you with no serial output at all.</InfoBox>
+
+---
+
+## Board settings worth changing
+
+Two defaults are worth adjusting before you start a larger project:
+
+- **Tools → PSRAM → Enabled.** The module carries 8 MB of PSRAM, but it is disabled by default and your sketch cannot use it until you turn it on.
+- **Tools → Partition Scheme → 8M with spiffs (3MB APP/1.5MB SPIFFS).** The default scheme only reserves about 1.25 MB for your sketch even though the board has 8 MB of flash. Switch to the 8 MB scheme if you run out of program space.
+
 ---
 
 ## Example sketch
@@ -73,4 +86,27 @@ void loop() {
 }
 ```
 
-Open the **Serial Monitor** at **115200 baud** - you should see the hello message printed once per second.
+Open the **Serial Monitor** at **115200 baud** - the hello message appears once after each reset, followed by `Running...` once per second.
+
+---
+
+## Onboard RGB LED
+
+The board carries a WS2812B addressable LED on **IO8**, which the board definition exposes as `RGB_BUILTIN`:
+
+```cpp
+void setup() {
+  // Nothing to set up - rgbLedWrite() handles the pin for you
+}
+
+void loop() {
+  rgbLedWrite(RGB_BUILTIN, 64, 0, 0);  // red
+  delay(500);
+  rgbLedWrite(RGB_BUILTIN, 0, 64, 0);  // green
+  delay(500);
+  rgbLedWrite(RGB_BUILTIN, 0, 0, 64);  // blue
+  delay(500);
+}
+```
+
+<InfoBox>Because the LED sits on **IO8**, anything else you connect to that pin shares it with the LED.</InfoBox>
