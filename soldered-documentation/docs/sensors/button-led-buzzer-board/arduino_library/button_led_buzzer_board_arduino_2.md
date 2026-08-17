@@ -1,5 +1,5 @@
 ---
-slug: /button_led_buzzer_board/arduino/buttons
+slug: /button-led-buzzer-board/arduino/buttons
 title: Button, LED & Buzzer Board - Buttons
 sidebar_label: Buttons
 id: button_led_buzzer_board-arduino-2
@@ -114,4 +114,10 @@ Open the **Serial Monitor** at **115200 baud** and press the buttons to see the 
   title="Buttons.ino"
   description="Full button test example for the Soldered Button, LED & Buzzer Board"
   url="https://github.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/blob/main/examples/Buttons/Buttons.ino"
+/>
+
+<QuickLink
+  title="ButtonInteraction.ino"
+  description="Lights the matching LED and sounds the buzzer as each button is pressed"
+  url="https://github.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/blob/main/examples/ButtonInteraction/ButtonInteraction.ino"
 />

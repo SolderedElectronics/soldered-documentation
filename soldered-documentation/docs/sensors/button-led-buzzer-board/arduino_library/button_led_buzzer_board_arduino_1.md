@@ -1,8 +1,8 @@
 ---
-slug: /button_led_buzzer_board/arduino/getting-started 
+slug: /button-led-buzzer-board/arduino/getting-started
 title: Button, LED & Buzzer Board - Getting started
 sidebar_label: Getting started
-id: button_led_buzzer_board-arduino-1 
+id: button_led_buzzer_board-arduino-1
 hide_title: false
 ---
 
@@ -37,4 +37,20 @@ Click **Code → Download ZIP** on the repository page, then in the Arduino IDE 
 | **NULA Deepsleep** | **Button, LED & Buzzer Board** |
 | ------------------ | ------------------------------ |
 | Qwiic              | Qwiic                          |
+
+<InfoBox>The board answers on I2C address **0x30** by default. If you changed it with the onboard DIP switch, pass the new address to the constructor: `ButtonLedBuzzerBoard_Soldered board(0x31);`</InfoBox>
+
+---
+
+## Examples
+
+The library ships five example sketches:
+
+<QuickLink
+  title="FullDemo.ino"
+  description="Exercises the buttons, LEDs and buzzer together - a good first upload to check everything works"
+  url="https://github.com/SolderedElectronics/Soldered-Button-LED-Buzzer-Board-Arduino-Library/blob/main/examples/FullDemo/FullDemo.ino"
+/>
+
+The remaining four - `Buttons`, `LEDs`, `Buzzer` and `ButtonInteraction` - are covered on the pages that follow.
 

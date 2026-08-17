@@ -1,5 +1,5 @@
 ---
-slug: /button_led_buzzer_board/arduino/leds
+slug: /button-led-buzzer-board/arduino/leds
 title: Button, LED & Buzzer Board - LEDs
 sidebar_label: LEDs
 id: button_led_buzzer_board-arduino-4

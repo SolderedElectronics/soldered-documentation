@@ -1,8 +1,8 @@
 ---
-slug: /button_led_buzzer_board/overview
+slug: /button-led-buzzer-board/overview
 title: Button, LED & Buzzer Board - Overview
 sidebar_label: Overview
-id: button_led_buzzer_board-overview 
+id: button_led_buzzer_board-overview
 hide_title: false
 pagination_prev: null
 ---
@@ -16,7 +16,7 @@ pagination_prev: null
 
 ## Button, LED & Buzzer Board
 
-The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board designed for quick prototyping and learning. It combines three essential components on a single board: **three tactile push buttons** for digital input, **three addressable RGB LEDs** for visual feedback, and a **passive buzzer** for audio output. The board is **Qwiic compatible**, making it easy to connect to any Qwiic-enabled microcontroller without soldering. This board is an ideal starting point for beginners exploring digital I/O, and a handy utility board for any project that needs simple user interaction without extra wiring.
+The **Button, LED & Buzzer Board** puts **three tactile push buttons**, **three addressable RGB LEDs** and a **passive buzzer** on one small board, all driven by an onboard **ATtiny404**. The host talks to it over **I2C**, so the whole board costs you two pins no matter how much of it you use. Connect it with a Qwiic cable and there is nothing to solder. It fits any project that needs a few buttons and some visible or audible feedback without the wiring that usually comes with them.
 
 {/* PLACEHOLDER: Add product image here. Place the image at /static/img/button_led_buzzer_board/333182.jpg and replace this comment with:
 <CenteredImage src="/img/button_led_buzzer_board/333182.jpg" alt="Button, LED & Buzzer Board" caption="Button, LED & Buzzer Board" />
@@ -32,12 +32,12 @@ The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board desig
 
 ## Key Features
 
-- **Voltage:** 3.3V / 5V
+- **Voltage:** 3.3 V, supplied over Qwiic
 - **Buttons:** 3 tactile push buttons, read as a bitmask over I2C
 - **LEDs:** 3 addressable RGB LEDs (WS2812B), individually controllable
 - **Buzzer:** Passive buzzer for audio output
 - **Microcontroller:** ATtiny404
-- **Communication:** I2C (Qwiic compatible), default I2C address: **0x30**
+- **Communication:** I2C (Qwiic compatible), default I2C address: **0x30**, changeable with the onboard DIP switch
 - **Mounting:** **Two mounting holes** for secure attachment
 - **Dimensions:** 38 × 22 mm (1.5 × 0.9 inch)
 
@@ -47,7 +47,7 @@ The **Button, LED & Buzzer Board** is a compact, all-in-one breakout board desig
 
 <QuickLink 
   title="Qwiic cable" 
-  description="Qwiic (formerly easyC) compatible cables with connectors on both ends, available in various lengths."
+  description="Qwiic compatible cables with connectors on both ends, available in various lengths."
   url="https://soldered.com/product/easyc-cable/"
   image="/img/333311.webp" 
 />

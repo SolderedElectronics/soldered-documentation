@@ -1,5 +1,5 @@
 ---
-slug: /button_led_buzzer_board/arduino/buzzer
+slug: /button-led-buzzer-board/arduino/buzzer
 title: Button, LED & Buzzer Board - Buzzer
 sidebar_label: Buzzer
 id: button_led_buzzer_board-arduino-3
@@ -45,6 +45,8 @@ board.setBuzzer(1000); // Play a 1 kHz tone
 delay(500);
 board.setBuzzer(0);    // Turn the buzzer off
 ```
+
+<InfoBox>The buzzer will play a wide range of frequencies, but it is at its loudest around its resonant frequency of **2.7 kHz**. Tones far above or below that come out noticeably quieter, so use something near 2.7 kHz when you want the board to be heard.</InfoBox>
 
 <FunctionDocumentation
   functionName="board.setBuzzer()"

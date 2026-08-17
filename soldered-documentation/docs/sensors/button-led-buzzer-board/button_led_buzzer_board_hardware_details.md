@@ -1,8 +1,8 @@
 ---
-slug: /button_led_buzzer_board/hardware 
+slug: /button-led-buzzer-board/hardware
 title: Button, LED & Buzzer Board - Hardware details
 sidebar_label: Hardware details
-id: button_led_buzzer_board-hardware 
+id: button_led_buzzer_board-hardware
 hide_title: false
 ---
 
@@ -15,15 +15,26 @@ Click [**here**](/img/button_led_buzzer_board/pinout.png) for a high resolution 
 
 ## Pin details
 
+The five through-holes are split across two separate headers, one on each side of the board.
+
+**UPDI header** (left side):
+
 | Pin Marking | Pin Name | Description |
 |---|---|---|
-| **VCC** | Power | Supply voltage |
+| **VCC** | Power | 3.3 V supply, the same rail the Qwiic connectors carry |
 | **UPDI** | Programming | UPDI programming interface for the onboard microcontroller |
 | **GND** | Ground | Common ground for power and signals |
-| **SCL** | I2C Clock | I2C clock line |
-| **SDA** | I2C Data | I2C data line |
+
+**I2C header** (right side):
+
+| Pin Marking | Pin Name | Description |
+|---|---|---|
+| **SCL** | I2C Clock | I2C clock line, the same net as both Qwiic connectors |
+| **SDA** | I2C Data | I2C data line, the same net as both Qwiic connectors |
 
 <InfoBox>The board has two identical **Qwiic connectors** wired in parallel, so you can daisy-chain other Qwiic devices from it.</InfoBox>
+
+<InfoBox>The I2C header carries only **SCL** and **SDA** - it has no power pins. If you wire the board up by hand instead of using a Qwiic cable, take **VCC** and **GND** from the UPDI header on the other side.</InfoBox>
 
 ---
 
@@ -32,14 +43,30 @@ Click [**here**](/img/button_led_buzzer_board/pinout.png) for a high resolution 
 - **3 tactile push buttons**, numbered 1-3 on the silkscreen. Each is read as one bit over I2C.
 - **3 addressable RGB LEDs (WS2812B)**, one next to each button, individually controllable.
 - **1 passive piezo buzzer**, driven with a PWM signal to produce a tone.
+- **1 three-position DIP switch**, used to set the I2C address (see below).
+
+---
+
+## I2C address
+
+The board answers on **0x30** out of the box. The three-position DIP switch on the top of the board is wired to the address inputs of the onboard ATtiny404, so you can give each board a different address and run several of them on the same bus.
+
+The library's constructor takes the address, so pass it in if you have changed the switch:
+
+```cpp
+ButtonLedBuzzerBoard_Soldered board(0x31);
+```
+
+<InfoBox>All switches off is the default **0x30**. If you are unsure which address a board is set to, run an I2C scanner sketch and see which address responds.</InfoBox>
 
 ---
 
 ## Dimensions
 
-- **Board Dimensions:** 22 × 38 mm (0.9 × 1.5 inch)
-- **Header Pin Holes:** 1.5 mm
-- **Screw Holes:** Designed for M3 screws (3.2 mm diameter)
+- **Board Dimensions:** 38 × 22 mm (1.5 × 0.9 inch)
+- **Board thickness:** 1.6 mm, 2-layer PCB
+- **Header Pin Holes:** 1.0 mm, on the standard 2.54 mm pitch
+- **Screw Holes:** Two 3.2 mm holes, designed for M3 screws
 - Soldered boards are LEGO compatible! 🧱
 
 ---
@@ -49,6 +76,8 @@ Click [**here**](/img/button_led_buzzer_board/pinout.png) for a high resolution 
 Schematics, KiCad files, Gerber files and more can be found in the GitHub repository:
 
 <WarningBox>The hardware repository for this board is not available yet! We're working on it. In the meantime, please [**contact us**](https://soldered.com/contact/) to receive the hardware files.</WarningBox>
+
+These pages describe hardware revision **v1.1**.
 
 The hardware repository contains everything you need to understand, modify, or manufacture the board. The different output folders are versioned. You can check which board version you have specifically by finding the version mark on the PCB.
 

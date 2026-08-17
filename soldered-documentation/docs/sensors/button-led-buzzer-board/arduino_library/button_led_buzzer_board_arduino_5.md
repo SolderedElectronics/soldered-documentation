@@ -1,8 +1,8 @@
 ---
-slug: /button_led_buzzer_board/arduino/troubleshooting 
+slug: /button-led-buzzer-board/arduino/troubleshooting
 title: Button, LED & Buzzer Board - Troubleshooting
 sidebar_label: Troubleshooting
-id: button_led_buzzer_board-arduino-5 
+id: button_led_buzzer_board-arduino-5
 hide_title: false
 pagination_next: null
 ---
@@ -21,7 +21,10 @@ If you are connecting the board using standard I2C pins on your microcontroller,
 Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the board is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller's I2C bus.
 
 #### Check for conflicting devices
-If you have multiple I2C devices connected to the same bus, make sure none of them have conflicting addresses. Verify that no other device on the bus shares the same I2C address as the Button, LED & Buzzer Board.
+If you have multiple I2C devices connected to the same bus, make sure none of them have conflicting addresses. Verify that no other device on the bus shares the same I2C address as the Button, LED & Buzzer Board. If something else needs 0x30, change this board's address with the onboard DIP switch and pass the new address to the constructor.
+
+#### Check the address DIP switch
+If the board was working and suddenly isn't found, check that the three-position DIP switch hasn't been knocked out of position. With all switches off the board answers on **0x30**, and the address in your sketch has to match whatever the switch is set to.
 
 #### Try reinitializing
 If the board fails to initialize on the first attempt, try calling `board.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
@@ -63,7 +66,7 @@ Make sure the board is receiving stable power. Insufficient voltage or a weak US
 If you are using a `delay()` in your loop, make sure it is short enough to allow the buzzer signal to be generated correctly. Long delays can interrupt PWM generation and silence the buzzer.
 
 #### Check board initialization
-The buzzer is controlled through the onboard ATTiny404. If `board.begin()` did not succeed, buzzer commands will have no effect. Confirm the board initializes correctly before sending buzzer commands.
+The buzzer is controlled through the onboard ATtiny404. If `board.begin()` did not succeed, buzzer commands will have no effect. Confirm the board initializes correctly before sending buzzer commands.
 
 </ExpandableSection>
 
