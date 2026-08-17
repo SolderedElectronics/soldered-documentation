@@ -1,6 +1,6 @@
 ---
 slug: /li-ion-battery/overview
-title: Li Ion Battery - Overview
+title: Li-Ion Battery - Overview
 sidebar_label: Overview
 id: li-ion-battery-overview
 hide_title: false
@@ -9,7 +9,9 @@ pagination_prev: null
 
 ## 3.7V Li-Ion Batteries
 
-The **Li-Ion Batteries** offered are a **versatile and reliable power solution** for a wide range of electronic projects, including those using **Dasduino** and **Inkplate** devices. Equipped with a **JST-PH-2mm connector**, these batteries ensure easy integration and compatibility with numerous development boards and embedded systems. Each battery features **on-board protection**, safeguarding against overcharging, over-discharging, and short circuits, making them a safe and durable choice for powering your applications.
+These are **3.7V Li-Ion pouch cells** in capacities from **40mAh to 10000mAh**, each fitted with a **JST-PH-2mm connector** that plugs straight into **Dasduino**, **Inkplate** and other Soldered boards. Every cell carries its own protection circuit, which disconnects the battery if it is overcharged, discharged too far, or shorted.
+
+<WarningBox>Li-Ion cells must be charged with a charger that follows the **CC/CV** profile (constant current, then constant voltage), never from a bench supply or any other fixed-voltage source. The on-board protection circuit is a last line of defence, not a substitute for a proper charger.</WarningBox>
 
 <CenteredImage src="/img/li-ion-battery/333288.jpg" alt="Li-ion battery 5000mAh 3.7V" caption="Li-ion battery 5000mAh 3.7V"/>
 
@@ -26,13 +28,13 @@ The **Li-Ion Batteries** offered are a **versatile and reliable power solutio
 <QuickLink 
   title="Li-ion battery 100mAh 3.7V" 
   description="Li-ion battery 100mAh 3.7V"
-  url="https://soldered.com/product/li-ion-battery-100mah-3-7v-copy/"
+  url="https://soldered.com/product/li-ion-battery-100mah-3-7v/"
   image="/img/li-ion-battery/333276.jpg" 
 />
 <QuickLink 
   title="Li-ion battery 380mAh 3.7V" 
   description="Li-ion battery 380mAh 3.7V" 
-  url="https://soldered.com/product/li-ion-battery-40mah-3-7v/"
+  url="https://soldered.com/product/li-ion-battery-380-mah-3-7v/"
   image="/img/li-ion-battery/333277.jpg" 
 />
 <QuickLink 
@@ -46,12 +48,6 @@ The **Li-Ion Batteries** offered are a **versatile and reliable power solutio
   description="Li-ion battery 600mAh 3.7V" 
   url="https://soldered.com/product/li-ion-baterija-600mah-3-7v/"
   image="/img/li-ion-battery/333279.jpg" 
-/>
-<QuickLink 
-  title="Li-ion battery 680mAh 3.7V" 
-  description="Li-ion battery 680mAh 3.7V" 
-  url="https://soldered.com/product/li-ion-battery-380mah-3-7v-copy/"
-  image="/img/li-ion-battery/333280.jpg" 
 />
 <QuickLink 
   title="Li-ion battery 900mAh 3.7V" 
@@ -118,11 +114,12 @@ The **Li-Ion Batteries** offered are a **versatile and reliable power solutio
 
 ## Key Features
 
-*   **Wide Capacity Range**: Available in capacities from **40mAh to 10000mAh**, catering to both low-power and high-energy applications. 
-*   **Standard JST-PH-2mm Connector**: Ensures easy integration with devices like **Dasduino** and **Inkplate**.  
-*   **On-Board Protection**: Built-in circuit protection against **overcharging, over-discharging, and short circuits**, ensuring safety and durability. 
-*   **Nominal Voltage**: **3.7V**
-*   **Compact and Lightweight Design**: Ideal for portable and space-constrained projects.
+*   **Capacity range**: **40mAh to 10000mAh**, in 15 sizes
+*   **Nominal voltage**: **3.7V**, fully charged at 4.2V
+*   **Connector**: **JST-PH-2mm**, the same one used on Dasduino and Inkplate boards
+*   **On-board protection**: against **overcharging, over-discharging and short circuits**
+*   **Charging**: requires a **CC/CV** charger
+*   **Certification**: **CE** and **UKCA** for every SKU, listed in the table on the hardware details page
 ---
 ## You may also need
 
