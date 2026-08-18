@@ -27,8 +27,6 @@ Click [**here**](/img/usb-c-pd-breadboard-power-supply/pinout.png) for a high-re
 
 ## Jumper details
 
-JP1 controls the onboard power LED:
-
 <InfoBox>Image coming soon.</InfoBox>
 
 | Jumper  | Default State            | Function                                                                                          |
@@ -40,7 +38,7 @@ JP1 controls the onboard power LED:
 
 ## Switch details
 
-S1, the voltage selection, and current selection switches control power and output:
+Voltage selection switch and current selection switches control power and output:
 
 <InfoBox>Images coming soon.</InfoBox>
 
