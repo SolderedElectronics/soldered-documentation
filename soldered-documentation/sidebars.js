@@ -1060,6 +1060,15 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'NULA Core',
+          items: [
+            { type: 'doc', id: 'nula-boards/nula-core/core_overview' },
+            { type: 'doc', id: 'nula-boards/nula-core/core_hardware_details' },
+            { type: 'doc', id: 'nula-boards/nula-core/core_arduino_1' },
+          ],
+        },
+        {
+          type: 'category',
           label: 'NULA DeepSleep ESP32-S3',
           items: [
             { type: 'doc', id: 'nula-boards/deepsleep-esp32-s3/deepsleep-esp32-s3_overview' },
