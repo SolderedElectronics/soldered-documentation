@@ -70,9 +70,9 @@ Soldered boards are LEGO compatible! 🧱
 
 <FlickityCarousel
   images={[
-    { src: '/img/under_construction.png', alt: 'nula-core-jumper1', caption: 'JP1' },
-    { src: '/img/under_construction.png', alt: 'nula-core-jumper2', caption: 'JP2' },
-    { src: '/img/under_construction.png', alt: 'nula-core-jumper3', caption: 'JP3' }
+    { src: '/img/nula-core/JP1.webp', alt: 'nula-core-jumper1', caption: 'JP1' },
+    { src: '/img/nula-core/JP2.webp', alt: 'nula-core-jumper2', caption: 'JP2' },
+    { src: '/img/nula-core/JP3.webp', alt: 'nula-core-jumper3', caption: 'JP3' }
   ]}
   jumpers={true}
 />
