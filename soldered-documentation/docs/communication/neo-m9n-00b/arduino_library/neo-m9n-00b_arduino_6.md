@@ -1,0 +1,73 @@
+---
+slug: /neo-m9n-00b/arduino/troubleshooting
+title: NEO-M9N-00B - Troubleshooting
+sidebar_label: Troubleshooting
+id: neo-m9n-00b-arduino-6
+hide_title: False
+pagination_next: null
+---
+
+This page contains some tips if you are having problems using this product.
+
+<ExpandableSection title="My GNSS module won't initialize!">
+
+#### Check wiring
+Make sure your Qwiic cable is properly connected and in good condition. Try using the same cable with another Qwiic-compatible device to verify that it works. If the issue persists, swap it out for a different cable to rule out any possible damage or defects.
+
+#### Check I2C pins
+If you are connecting the module using standard I2C pins on your microcontroller, double-check that you are using the correct ones. Different microcontrollers have designated I2C pins that may not always be labeled the same way. Check your microcontroller's documentation to confirm the correct pin assignments.
+
+#### Scan for I2C devices
+Run an [**I2C scanner sketch**](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main/I2C_Scanner) on your microcontroller to check if the module is detected. If the scanner does not find any devices, there might be a wiring issue, incorrect pull-up resistors, or a problem with the microcontroller's I2C bus.
+
+#### Try reinitializing
+If the module fails to initialize on the first attempt, try calling `myGNSS.begin()` again in your code or resetting your microcontroller. Some initialization issues may be resolved by a simple reboot.
+
+</ExpandableSection>
+
+<ExpandableSection title="I'm not getting a GPS fix!">
+
+#### Move to an open outdoor area
+The NEO-M9N-00B requires a clear view of the sky to receive satellite signals. Walls, roofs, and dense foliage can block or weaken signals. Make sure you are outdoors with an unobstructed view above you.
+
+#### Wait for a cold start to complete
+On first power-up or after a long period without power, the module performs a cold start and may take several minutes to acquire a fix. Once a fix has been obtained at least once, subsequent warm starts are significantly faster.
+
+#### Check the antenna connection
+Make sure the GNSS antenna is securely connected to the module's antenna port. A loose or missing antenna will prevent satellite acquisition entirely.
+
+#### Check the SIV count
+Use `myGNSS.getSIV()` to read the number of satellites in view. A value of 0 indicates no satellites are being received. A fix typically requires at least 4 satellites.
+
+#### Verify time and date validity
+Use `myGNSS.getTimeValid()` and `myGNSS.getDateValid()` to check whether the module has a confirmed time and date lock. If these return false, the fix is not yet complete.
+
+</ExpandableSection>
+
+<ExpandableSection title="SPI isn't working!">
+
+#### Set the SPI protocol with u-center (required)
+The module will not respond to commands over SPI until its SPI port's protocol is set to UBX. This step is required, not optional, JP4 and correct wiring alone are not enough. Connect the module over UART or I2C once, open it in **u-center**, and set the SPI port's input and output protocol to **UBX only**. See [Configuring the module with u-center](/neo-m9n-00b/arduino/geting-started#configuring-the-module-with-u-center) for the exact steps.
+
+#### Check the JP4 jumper
+SPI only works when the **JP4** jumper is re-bridged to its SPI position. Left at its default position, the module stays in I2C + UART mode and won't respond to any SPI traffic.
+
+#### Check the CS pin
+Make sure the chip select pin defined in your sketch matches the one physically wired to the module's SDA/SPI CS pin.
+
+</ExpandableSection>
+
+<ExpandableSection title="Other common issues">
+
+#### My coordinates are inaccurate
+Check the SIV count with `myGNSS.getSIV()`. A fix based on only 4-5 satellites is much less accurate than one based on 10 or more. Moving to a more open area, or waiting longer for additional satellites to be acquired, usually improves accuracy.
+
+#### My fix is intermittent or keeps dropping
+This is usually an antenna or environment issue rather than a wiring one. Check that the antenna connector is fully seated, and make sure nothing (a metal enclosure, a nearby wall) is intermittently blocking the sky view.
+
+#### The module isn't responding to library commands
+Double-check that the module is actually initialized successfully, that is, that `myGNSS.begin()` returned `true`, before calling any other function. Commands sent before a successful `begin()` will silently fail.
+
+</ExpandableSection>
+
+<InfoBox>In case you haven't found the answer to your question, please **contact us** via [**this**](https://soldered.com/contact/) link.</InfoBox>

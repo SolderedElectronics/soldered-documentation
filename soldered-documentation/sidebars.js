@@ -3871,6 +3871,54 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'NEO-M9N-00B GNSS Module',
+          items: [
+            {
+              type: 'doc',
+              id: 'communication/neo-m9n-00b/neo-m9n-00b-overview',
+            },
+            {
+              type: 'doc',
+              id: 'communication/neo-m9n-00b/neo-m9n-00b-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'communication/neo-m9n-00b/neo-m9n-00b-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-3',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-5',
+                },
+                {
+                  type: 'doc',
+                  id: 'communication/neo-m9n-00b/arduino_library/neo-m9n-00b-arduino-6',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'TCA9548A I2C Expander',
           items: [
             {
