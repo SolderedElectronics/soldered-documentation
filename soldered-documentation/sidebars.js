@@ -25,12 +25,15 @@ const sidebars = {
     {
       type: 'category',
       label: 'General Information',
-      // CH340 drivers
       // Soldered board dimensions (LEGO compatible)
       items: [
         {
           type: 'doc',
           id: 'misc/qwiic',
+        },
+        {
+          type: 'doc',
+          id: 'misc/ch340-drivers',
         },
       ],
     },
@@ -4325,6 +4328,219 @@ const sidebars = {
               id: 'batteries and power supplies/battery-protection/battery-protection-how-it-works',
             },
           ],
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Beginner Kits',
+      items: [
+        {
+          type: 'category',
+          label: 'Embedded Journey Kit - Zero to Hero',
+          items: [
+            {
+              type: 'doc',
+              id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-breadboard-fundementals',
+              label: 'Breadboard fundamentals',
+            },
+            {
+              type: 'category',
+              label: 'Arduino',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-setting-arduino-enviroment',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-serial-print-hello-world',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-led-blinking',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-button-counter',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-button-debounce',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-photoresistor-analog-read',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-buzzer-beep',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-measuring-distance',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-distance-fade-led',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-print-message',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-auto-scroll-text',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-reading-temperature-and-humidity',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-connecting-and-getting-data',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-wifi-led-control',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-sending-data',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-smart-weather-station',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-mini-piano',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-parking-sensor',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-rgb-led-controller',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-shift-register-binary-counter',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-morse-code-transmitter',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-alarm-clock',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-led-traffic-light',
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'MicroPython',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/micropython-setup',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/hello-world',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/led-blinking',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/button-counter',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/button-debounce',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/photoresistor-analog-read',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/buzzer-beep',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/measuring-distance',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/distance-fade-led',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/lcd-message',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/lcd-autoscroll',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/reading-temperature-and-humidity',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/connection-getting-data',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/wifi-led-control',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/sending-data',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/smart-weather-station',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/mini-piano',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/parking-sensor',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/rgb-led-controller',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/shift-register',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/morse-code-transmitter',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/alarm-clock',
+                },
+                {
+                  type: 'doc',
+                  id: 'beginner kits/soldered-nula-beginner-kit-micropython/led-traffic-light',
+                },
+              ]
+            },
+          ]
         },
       ]
     },

@@ -63,5 +63,12 @@ void loop() {
 ```
 
 
-<InfoBox>If uploading fails, double-check that the correct board and port are selected.  
-The NULA Mini ESP32-C6 uses **native USB**, so no external driver is required.</InfoBox>
+<InfoBox>If uploading fails, double-check that the correct board and port are selected.</InfoBox>
+
+If no port appears at all, the **CH340 driver** is most likely missing. The NULA Mini ESP32-C6 talks to your computer through an onboard CH340 USB-to-serial chip, and neither Windows nor macOS ships a driver for it.
+
+<QuickLink
+  title="CH340 drivers"
+  description="Installing the driver on Windows, macOS and Linux, and what to do when the board still is not detected."
+  url="/ch340-drivers"
+/>
