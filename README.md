@@ -74,6 +74,8 @@ Deploying is a one-time setup per computer (SSH key, then a `deploy.env` file), 
 
 Run `.\check_env.ps1` on Windows to verify your machine is set up correctly — it checks your tools, config, and SSH access to the server, and tells you what to fix if something is missing. Full setup instructions are in `DEPLOY_SETUP.md`.
 
+Do not add `-a` to the `rsync` line in `deploy.sh`. The build folder on Windows reports mode `700` for every file, and `-a` would copy that onto the server. The site is served through POSIX ACLs, where the group bits act as the ACL mask, so mode `700` makes the `nginx` entry ineffective and every page returns 403 including the homepage. The flags there set the modes explicitly instead, and the comment above them explains each one.
+
 ---
 
 ## Soldered Documentation Buddy

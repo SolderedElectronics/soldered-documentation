@@ -49,8 +49,21 @@ fi
 
 echo "Deploying to $REMOTE_HOST:$REMOTE_PATH as $REMOTE_USER..."
 
-# Sync build folder to server, deleting files on remote that no longer exist locally
-rsync -avz --delete \
+# Sync build folder to server, deleting files on remote that no longer exist locally.
+#
+# Do NOT use -a here. It implies -p -o -g -t, and the build folder on Windows reports
+# mode 700 for every file, so -a pushes that onto the server. The live site serves via
+# POSIX ACLs (user:nginx:r-x per file), and since the group bits are the ACL mask, mode
+# 700 sets mask::--- and makes every ACL entry ineffective. nginx can then read nothing
+# and the whole site 403s, homepage included. This took docs.soldered.com down on
+# 2026-08-26. Set the modes explicitly instead: 2775 on directories matches the site
+# root and keeps the setgid bit, so new files stay in the docs group.
+#
+# -t is kept so file times transfer and later deploys stay incremental; only
+# --omit-dir-times is dropped, because the directories are root-owned. Without it rsync emits about
+# 1500 'failed to set times' errors and exits 23, which masks real failures.
+rsync -rltvz --delete --omit-dir-times --no-perms --no-owner --no-group \
+    --chmod=D2775,F664 \
     -e "ssh -i $SSH_KEY" \
     "$DOCUSAURUS_DIR/build/" \
     "$REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH/"
