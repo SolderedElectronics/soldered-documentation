@@ -9,6 +9,8 @@ pagination_next: null
 
 The PAM8406 is a Class-D stereo audio amplifier made by [**Diodes Incorporated**](https://www.diodes.com/part/view/PAM8406). Instead of amplifying an analog waveform directly the way a Class-AB amplifier does, it converts the incoming audio signal into a high-frequency switching pattern and uses that to drive the speaker. This board wraps the PAM8406 with input coupling, an output filter, and a control header, so you can feed it line-level stereo audio and get amplified sound out the other side.
 
+<CenteredImage src="/img/pam8406/chip.webp" alt="The PAM8406 amplifier IC highlighted on the board" caption="The PAM8406 amplifier IC on the board" width="600px"/>
+
 ---
 
 ## Datasheet
@@ -43,10 +45,3 @@ The PAM8406 delivers **5W into a 2Ω load** or **3.14W into 4Ω**, both at 5V an
 
 The PAM8406 doesn't use a data bus like I2C or SPI. Three digital pins on the K3 header control it directly: MODE picks Class-D or Class-AB, SHDN shuts the whole chip down when pulled low, and MUTE silences the output when pulled low. All three work with a plain `digitalWrite()`, no library needed. SHDN and MUTE both have internal pull-ups inside the PAM8406, so the amplifier runs normally even with nothing connected to them.
 
----
-
-## Connection example
-
-A typical setup feeds a line-level audio source (a phone, computer, or media player) into K1 via the 3.5mm jack, powers the board from a 2.5–5.5V supply through K3, and wires a speaker to the K4/K5 screw terminals.
-
-<WarningBox>A photo of this connection is coming soon.</WarningBox>

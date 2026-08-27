@@ -11,13 +11,20 @@ pagination_prev: null
 
 This board is a stereo Class-D audio amplifier built around the **PAM8406**, delivering up to **5W per channel** into a 2Ω speaker load. Audio comes in through an onboard **3.5mm stereo jack** or an alternate wired input header, and each channel is filtered and broken out to its own screw terminal for connecting a speaker directly. A separate control header exposes the amplifier's **mode**, **shutdown**, and **mute** pins, so a microcontroller can enable, disable, or mute playback in software. The board runs directly from **2.5V to 5.5V** with no onboard regulator, so whatever voltage you feed it is what the amplifier sees.
 
+<CenteredImage src="/img/pam8406/izo_w.webp" alt="5W Stereo Audio Amplifier PAM8406" caption="5W Stereo Audio Amplifier PAM8406" width="800px"/>
+
+<br></br>
+
 ---
 
 ## Which products is this documentation for?
 
-<WarningBox>
-This product is **coming soon** and is not yet available in our store. Check back soon!
-</WarningBox>
+<QuickLink
+title="5W Stereo Audio Amplifier PAM8406"
+description="Stereo Class-D amplifier delivering up to 5W per channel, with a 3.5mm aux input and screw terminal speaker outputs."
+url="https://soldered.com/products/soldered-5w-audio-amplifier-pam8406-board"
+image="/img/pam8406/izo_w.webp"
+/>
 
 ---
 
@@ -34,8 +41,5 @@ This product is **coming soon** and is not yet available in our store. Check bac
 
 {/*
 TODO - outstanding items for this module:
-- Product photo needed (Overview)
-- JP1/JP2 jumper photos needed (Hardware details)
-- IC-on-board photo needed (Hardware details, How it works)
-- Product page QuickLink still pending, replace WarningBox once the real product page/SKU goes live
+- Connection example section was removed pending a wiring photo, re-add it to How it works once the photo exists
 */}

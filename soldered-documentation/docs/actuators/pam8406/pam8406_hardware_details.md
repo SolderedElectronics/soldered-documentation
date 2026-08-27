@@ -67,6 +67,14 @@ Do not exceed **6V** on VCC. This is the PAM8406's absolute maximum supply volta
 
 This board contains two hardware jumpers; see below for their locations and functions:
 
+<FlickityCarousel
+  images={[
+    { src: '/img/pam8406/JP1.webp', alt: 'pam8406-jumper1', caption: 'JP1' },
+    { src: '/img/pam8406/JP2.webp', alt: 'pam8406-jumper2', caption: 'JP2' }
+  ]}
+  jumpers={true}
+/>
+
 | Jumper | Default State | Function |
 | ------ | ------------- | -------- |
 | **JP1** | NC (Normally closed) | Powers the onboard status LED. Cut to disconnect the LED from VCC |
