@@ -249,6 +249,22 @@ folder segments in each doc id and appending ` (HRV)` to the category label, so
 ordering and labels match the English side line for line. If a page is ever added
 to the English kit, add it to both blocks or the two trees drift apart.
 
+### Morse code: `Morseov kod`, on both 7.6 pages
+
+Settled 2026-08-28. Arduino 7.6 was titled `7.6 Morseov predajnik`, which was
+rejected; both pages are now `7.6 Morseov kod`, matching the MicroPython page.
+
+For the record, the reference works lean the other way. **Hrvatski jezicni portal**
+lists `Morseovi znakovi`, `Morseova svjetiljka` and `Morseova abeceda` under the
+adjective *Morseov* and does not list `Morseov kod` at all, and **Hrvatska
+enciklopedija** glosses the code as *(Morseova abeceda)*. `Morseov kod` is closer
+to the English, it is what Croatian Wikipedia titles its article, and it is common
+in the press. It was tried as `Morseova abeceda` and changed back on request, so
+this is a deliberate choice - do not "correct" it later.
+
+The Arduino page title drops the "Transmitter" of the English title. The alt text
+on step 6 carries it instead, as `predajnik Morseovog koda`.
+
 ## Locked Croatian titles
 
 Fixed up front so forward references stay consistent. `sidebar_label` keeps the
@@ -305,7 +321,7 @@ English title from the same row.
 | 7.3 Parking Sensor | 7.3 Senzor za parkiranje |
 | 7.4 RGB LED Controller | 7.4 RGB LED kontroler |
 | 7.5 Shift Register Binary Counter | 7.5 Binarni brojac sa shift registrom |
-| 7.6 Morse Code Transmitter | 7.6 Morseov predajnik |
+| 7.6 Morse Code Transmitter | 7.6 Morseov kod |
 | 7.7 Alarm Clock | 7.7 Budilica |
 | 7.8 LED Traffic Light | 7.8 LED semafor |
 
