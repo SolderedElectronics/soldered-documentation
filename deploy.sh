@@ -49,6 +49,35 @@ fi
 
 echo "Deploying to $REMOTE_HOST:$REMOTE_PATH as $REMOTE_USER..."
 
+# How to reach the server. Plain ssh everywhere except Git Bash on Windows, where
+# two separate filesystem views get in the way and cost an afternoon if you meet
+# them cold:
+#
+#  1. Git Bash rewrites POSIX paths into C:/... before handing them to a native
+#     exe. rsync then reads the drive letter as a hostname and dies with "The
+#     source and destination cannot both be remote". MSYS_NO_PATHCONV=1 stops the
+#     rewriting, and the source path below is relative so there is no drive letter
+#     left to rewrite.
+#  2. The rsync on PATH here is a Cygwin build. It cannot exec the MSYS ssh at
+#     /usr/bin/ssh ("dup() in/out/err failed"), and it cannot see /c/... paths at
+#     all, so point it at the ssh.exe that ships beside it and hand that ssh both
+#     the key and known_hosts in /cygdrive form.
+RSH="ssh -i $SSH_KEY"
+case "$(uname -s)" in
+    MINGW*|MSYS*|CYGWIN*)
+        export MSYS_NO_PATHCONV=1
+        CYG_SSH="/c/ProgramData/chocolatey/lib/rsync/tools/bin/ssh.exe"
+        if [ -f "$CYG_SSH" ]; then
+            RSH="/cygdrive${CYG_SSH} -i /cygdrive${SSH_KEY}"
+            RSH="$RSH -o UserKnownHostsFile=/cygdrive${HOME}/.ssh/known_hosts"
+            RSH="$RSH -o StrictHostKeyChecking=accept-new"
+        else
+            echo "Warning: Cygwin ssh not found next to rsync; falling back to ssh on PATH."
+            echo "If rsync fails with 'dup() in/out/err failed', that is why."
+        fi
+        ;;
+esac
+
 # Sync build folder to server, deleting files on remote that no longer exist locally.
 #
 # Do NOT use -a here. It implies -p -o -g -t, and the build folder on Windows reports
@@ -62,10 +91,14 @@ echo "Deploying to $REMOTE_HOST:$REMOTE_PATH as $REMOTE_USER..."
 # -t is kept so file times transfer and later deploys stay incremental; only
 # --omit-dir-times is dropped, because the directories are root-owned. Without it rsync emits about
 # 1500 'failed to set times' errors and exits 23, which masks real failures.
+# The source is relative on purpose; see note 1 above. We are already in
+# $DOCUSAURUS_DIR from the build step, but cd again so this does not rely on it.
+cd "$DOCUSAURUS_DIR" || exit 1
+
 rsync -rltvz --delete --omit-dir-times --no-perms --no-owner --no-group \
     --chmod=D2775,F664 \
-    -e "ssh -i $SSH_KEY" \
-    "$DOCUSAURUS_DIR/build/" \
+    -e "$RSH" \
+    build/ \
     "$REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH/"
 
 if [ $? -eq 0 ]; then
