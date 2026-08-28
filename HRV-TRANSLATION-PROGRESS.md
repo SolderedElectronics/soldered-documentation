@@ -83,7 +83,7 @@ untouched.
 | resistor | otpornik |
 | pushbutton | tipka |
 | buzzer | buzzer |
-| power rail | naponska tračnica |
+| power rail | naponska vodilica (glossed once per page as "(power rails)") |
 
 ## Status
 
@@ -264,6 +264,16 @@ this is a deliberate choice - do not "correct" it later.
 
 The Arduino page title drops the "Transmitter" of the English title. The alt text
 on step 6 carries it instead, as `predajnik Morseovog koda`.
+
+### Power rails: `naponske vodilice`, not `naponske tračnice`
+
+Changed 2026-08-28 on request. `vodilica` replaced `tračnica` in all 371 places,
+not just the 29 that read "naponske tračnice": every bare reference (`plavu −
+tračnicu`, `tračnica mase`, `dva reda tračnica`) means the same breadboard rail, so
+leaving those would have defined one term and then used another. The two words
+decline identically, so the swap needed no agreement fixes. Each of the 24 pages
+that names the term glosses it once as `naponske vodilice (power rails)`, on the
+bold definitional mention on 0.1 and on the first mention elsewhere.
 
 ## Locked Croatian titles
 
