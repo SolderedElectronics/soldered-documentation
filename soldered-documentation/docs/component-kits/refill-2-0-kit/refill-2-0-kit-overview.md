@@ -27,11 +27,7 @@ It also covers ground the beginner kits do not. The three IRLZ44N MOSFETs let yo
 
 ## Which product is this documentation for?
 
-<QuickLink
-  title="Soldered Refill 2.0 Kit"
-  description="333413"
-  url="[PRODUCT_URL]"
-/>
+<ErrorBox>The product page for the **Soldered Refill 2.0 Kit** (SKU 333413) is coming soon! We're working on it!</ErrorBox>
 
 ---
 
