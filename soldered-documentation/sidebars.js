@@ -4753,6 +4753,26 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Component Kits',
+      items: [
+        {
+          type: 'category',
+          label: 'Soldered Refill 2.0 Kit',
+          items: [
+            {
+              type: 'doc',
+              id: 'component-kits/refill-2-0-kit/refill-2-0-kit-overview',
+            },
+            {
+              type: 'doc',
+              id: 'component-kits/refill-2-0-kit/refill-2-0-kit-components',
+            },
+          ]
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Solder Kits',
       items: [
         {
