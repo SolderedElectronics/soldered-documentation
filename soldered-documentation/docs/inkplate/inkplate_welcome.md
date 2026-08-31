@@ -100,6 +100,16 @@ Find your model here and get started quickly:
       { title: 'FAQ', url: '/inkplate/6motion/faq-troubleshooting/' },
     ]}
   />
+  <InkplateTile
+    title="Inkplate 13SPECTRA"
+    picture="/img/inkplate_models/13spectra.webp"
+    links={[
+      { title: 'Quick start guide', url: '/inkplate/13spectra/quick-start-guide/' },
+      { title: 'Hardware info', url: '/inkplate/13spectra/hardware/design/' },
+      { title: 'Arduino library', url: '/inkplate/13spectra/basics/initialization/' },
+      { title: 'FAQ', url: '/inkplate/13spectra/faq-troubleshooting/' },
+    ]}
+  />
 
 
 </div>
