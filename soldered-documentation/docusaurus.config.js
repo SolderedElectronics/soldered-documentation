@@ -111,14 +111,21 @@ const config = {
           },
         ],
       },
-      algolia: process.env.ALGOLIA_APP_ID
-        ? {
-          apiKey: process.env.ALGOLIA_API_KEY,
-          indexName: process.env.ALGOLIA_INDEX_NAME,
-          appId: process.env.ALGOLIA_APP_ID,
-          contextualSearch: false, // Important!
-        }
-        : undefined,
+      algolia: {
+        appId: 'QCU59GV33B',
+        // Search-only key. Its ACL is read-only (search/browse/listIndexes/
+        // settings) and Algolia intends it to be public - it ships in the client
+        // bundle either way. Hardcoded on purpose: when this was read from a
+        // gitignored .env, any deploy from a machine without one silently shipped
+        // a site with no search box, and the build still succeeded.
+        apiKey: '0c61799944feb4ad9ff1b87673475918',
+        indexName: 'Soldered Documentation',
+        // Adds language:* and docusaurus_tag:* facet filters. The crawler does tag
+        // every record, so turning this on works - it is just a no-op here, since
+        // the site has a single locale and no docs versioning. Revisit if either
+        // of those changes.
+        contextualSearch: false,
+      },
       footer: {
         links: [
           {
