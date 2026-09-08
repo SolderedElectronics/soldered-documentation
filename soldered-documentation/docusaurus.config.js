@@ -65,6 +65,22 @@ const config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            // The page was published with "fundementals" misspelled in its slug.
+            from: '/soldered-nula-beginner-kit-arduino/breadboard-fundementals',
+            to: '/soldered-nula-beginner-kit-arduino/breadboard-fundamentals',
+          },
+          {
+            from: '/soldered-nula-beginner-kit-arduino-hrv/breadboard-fundementals',
+            to: '/soldered-nula-beginner-kit-arduino-hrv/breadboard-fundamentals',
+          },
+        ],
+      },
+    ],
+    [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 80, // Adjust image quality (default is 75)
