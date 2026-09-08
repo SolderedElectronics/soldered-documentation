@@ -19,7 +19,7 @@ There is no microcontroller in the box. That is the point: the kit is meant to s
 
 ## Who is it for?
 
-If you finished the [**Embedded Journey Kit - Zero to Hero**](/soldered-nula-beginner-kit-arduino/breadboard-fundementals) or worked through the Inventor Kit, you have the boards and the sensors but you are probably short on resistors, jumper wires and LEDs. This kit refills exactly those.
+If you finished the [**Embedded Journey Kit - Zero to Hero**](/soldered-nula-beginner-kit-arduino/breadboard-fundamentals) or worked through the Inventor Kit, you have the boards and the sensors but you are probably short on resistors, jumper wires and LEDs. This kit refills exactly those.
 
 It also covers ground the beginner kits do not. The three IRLZ44N MOSFETs let you switch motors, LED strips and other loads that a GPIO pin cannot drive on its own, and the NE556 lets you build blinkers, tone generators and delay circuits with no code at all.
 

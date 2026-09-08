@@ -163,6 +163,6 @@ With two timers in one chip you can chain them, using one to gate or trigger the
 
 One large breadboard and one set of jumper wires, so the kit works standing on its own without borrowing parts from another project.
 
-The breadboard inner rows are connected in groups of five across the centre channel, and the two long rails down each edge carry power and ground. If that layout is new to you, [**0.1 Breadboard Fundamentals**](/soldered-nula-beginner-kit-arduino/breadboard-fundementals) explains it before you build anything.
+The breadboard inner rows are connected in groups of five across the centre channel, and the two long rails down each edge carry power and ground. If that layout is new to you, [**0.1 Breadboard Fundamentals**](/soldered-nula-beginner-kit-arduino/breadboard-fundamentals) explains it before you build anything.
 
 <InfoBox>The rail beside the red line and the rail beside the blue line are separate strips and are not connected to each other, nor are the rails on opposite edges of the board. Every rail you intend to use needs its own wire back to the supply.</InfoBox>
