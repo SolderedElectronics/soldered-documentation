@@ -4341,7 +4341,7 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-breadboard-fundementals',
+              id: 'beginner kits/soldered-nula-beginner-kit-arduino/nula-beginner-arduino-breadboard-fundamentals',
               label: 'Breadboard fundamentals',
             },
             {
@@ -4548,7 +4548,7 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'beginner kits/soldered-nula-beginner-kit-arduino-hrv/nula-beginner-arduino-breadboard-fundementals',
+              id: 'beginner kits/soldered-nula-beginner-kit-arduino-hrv/nula-beginner-arduino-breadboard-fundamentals',
               label: 'Osnove breadboarda',
             },
             {
