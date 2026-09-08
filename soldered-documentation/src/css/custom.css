@@ -203,6 +203,108 @@ table {
 }
 
 /* =============================
+     Centered Search Bar
+     ============================= */
+/* The navbar search item renders inside a CSS-module wrapper whose class
+   carries a build hash (currently navbarSearchContainer_Bca1). That hash
+   changes whenever the theme is rebuilt, so match a substring rather than
+   the generated name.
+
+   Centring uses absolute positioning instead of flex ordering because the
+   navbar's left and right item groups are separate flex containers - there
+   is no middle slot to place the search into. */
+.navbar__inner {
+  position: relative;
+}
+
+@media (min-width: 997px) {
+  .navbar [class*='navbarSearchContainer'] {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+  }
+
+  .navbar .DocSearch-Button {
+    width: clamp(220px, 26vw, 400px);
+  }
+}
+
+/* The navbar is saturated purple (near-black in dark mode), so the button is
+   drawn as a translucent well rather than a pale pill - it reads as part of
+   the bar instead of a chip sitting on top of it.
+
+   The --docsearch-* custom properties below are DocSearch v4 names. v4 renamed
+   several v3 variables; --docsearch-key-gradient and --docsearch-hit-active-color
+   set in the Search Styles section above are v3-only and no longer do anything. */
+.navbar .DocSearch-Button {
+  height: 38px;
+  padding: 0 6px 0 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-family: 'Source Sans 3', sans-serif;
+  --docsearch-icon-color: rgba(255, 255, 255, 0.92);
+  --docsearch-key-background: rgba(255, 255, 255, 0.18);
+  --docsearch-key-color: rgba(255, 255, 255, 0.92);
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.navbar .DocSearch-Button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: none;
+}
+
+/* :focus-visible rather than :focus so a mouse click does not leave a ring. */
+.navbar .DocSearch-Button:focus-visible {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.22);
+}
+
+.navbar .DocSearch-Button .DocSearch-Search-Icon {
+  width: 18px;
+  height: 18px;
+}
+
+.navbar .DocSearch-Button-Placeholder {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Dark mode's navbar is #1f2229, against which the same translucent white
+   reads far too bright - pull it back. */
+[data-theme='dark'] .navbar .DocSearch-Button {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  --docsearch-key-background: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme='dark'] .navbar .DocSearch-Button:hover {
+  background: rgba(255, 255, 255, 0.11);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Below Docusaurus's 996px breakpoint the hamburger appears and the left group
+   gets crowded, so return the search to normal flow. DocSearch collapses the
+   button to a bare icon on its own under 768px. */
+@media (max-width: 996px) {
+  .navbar [class*='navbarSearchContainer'] {
+    position: static;
+    transform: none;
+  }
+
+  .navbar .DocSearch-Button {
+    width: auto;
+  }
+}
+
+/* =============================
      Miscellaneous Styles
      ============================= */
 div[role=banner] {

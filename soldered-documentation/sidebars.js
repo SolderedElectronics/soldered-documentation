@@ -2895,6 +2895,46 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Smart LED WS2812B Grid 8x8',
+          items: [
+            {
+              type: 'doc',
+              id: 'actuators/ws2812-grid/ws2812-grid-overview',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/ws2812-grid/ws2812-grid-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'actuators/ws2812-grid/ws2812-grid-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-4',
+                },
+                {
+                  type: 'doc',
+                  id: 'actuators/ws2812-grid/arduino_library/ws2812-grid-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Smart LED WS2812B',
           items: [
             {
@@ -4237,6 +4277,24 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'USB-C PD Breadboard Power Supply',
+          items: [
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/usb-c-pd-breadboard-power-supply/usb-c-pd-breadboard-power-supply-overview',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/usb-c-pd-breadboard-power-supply/usb-c-pd-breadboard-power-supply-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'batteries and power supplies/usb-c-pd-breadboard-power-supply/usb-c-pd-breadboard-power-supply-how-it-works',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Li-Ion Batteries',
           items: [
             {
@@ -4941,6 +4999,48 @@ const sidebars = {
             },
           ]
         }
+      ],
+    },        
+    {
+      type: 'category',
+      label: 'Inputronic',
+      items: [
+        {
+          type: 'category',
+          label: 'Inputronic GRID',
+          items: [
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-grid/inputronic-grid-overview',
+            },
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-grid/inputronic-grid-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-grid/inputronic-grid-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
