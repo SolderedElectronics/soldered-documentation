@@ -7,6 +7,7 @@ hide_title: True
 pagination_prev: null
 tags: 
     - 333365
+    - 333366
     - inkplate 13
     - inkplate 13spectra
     - inkplate13spectra
@@ -28,12 +29,18 @@ It's built for long-term, low-power use. Run it for weeks or months on battery, 
 ## Which product is this documentation for?
 
 <QuickLink 
-  title=" Inkplate 13SPECTRA" 
+  title="Inkplate 13SPECTRA" 
   description="333365"
+  url="https://soldered.com/products/inkplate-13spectra"
+  image="/img/13spectra/333365.jpg" 
+/>
+
+<QuickLink 
+  title="Inkplate 13SPECTRA with e-paper, Enclosure & Battery" 
+  description="333366"
   url="https://soldered.com/products/inkplate-13spectra"
   image="/img/13spectra/hero.webp" 
 />
-
 
 ## Key features
 
@@ -46,5 +53,8 @@ It's built for long-term, low-power use. Run it for weeks or months on battery, 
 - **Clock:** Real-Time Clock (RTC) with battery holder
 - **Expansion:** GPIO, I²C, SPI, Qwiic-compatible
 - **Sustainability:** Recycled e-paper display (minor scratches possible)
+- **Enclosure Option:** With enclosure and 3000mAh battery
 - **Open Source:** Hardware and software
+- **Dimensions:** 290.7 × 214.8 × 10 mm / 11.45 × 8.46 × 0.4 inch
+- **Dimensions (with enclosure and battery):** 300.7 × 224.8 × 14.7 mm / 11.84 × 8.85 × 0.58 inch
 
