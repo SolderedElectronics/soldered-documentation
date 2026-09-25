@@ -156,10 +156,6 @@ const config = {
                 href: 'https://soldered.com/about-us/',
               },
               {
-                label: 'Why Soldered products?',
-                href: 'https://soldered.com/why-soldered-products/',
-              },
-              {
                 label: 'Contact us',
                 href: 'https://soldered.com/contact/',
               },
@@ -186,8 +182,8 @@ const config = {
                 href: 'https://inkplate.readthedocs.io/',
               },
               {
-                label: 'Getting started with Inkplate 6MOTION',
-                href: 'https://docs.inkplate.com/',
+                label: 'Meet the newest Inkplate: 13SPECTRA',
+                href: 'https://docs.soldered.com/inkplate/13spectra/overview/',
               },
               {
                 label: 'Inkplate Arduino Library',
@@ -195,7 +191,7 @@ const config = {
               },
               {
                 label: 'Soldered Image Converter',
-                href: 'https://docs.inkplate.com/Inkplate-6MOTION/basics/image-converter',
+                href: 'https://tools.soldered.com/tools/image-converter/',
               },
             ],
           },
