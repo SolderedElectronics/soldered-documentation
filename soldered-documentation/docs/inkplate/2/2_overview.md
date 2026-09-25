@@ -7,8 +7,6 @@ hide_title: True
 pagination_prev: null
 tags:
   - 333166
-  - 333227
-  - 333167
   - 333228
   - Inkplate 2
   - Inkplate2
@@ -30,13 +28,6 @@ The **Inkplate 2** is a compact, energy-efficient **2.13-inch e-paper display** 
 />
 
 <QuickLink 
-  title="Inkplate 2 with e-paper & enclosure" 
-  description="333167"
-  url="https://soldered.com/product/inkplate-2/"
-  image="/img/inkplate_2/enclosure.png" 
-/>
-
-<QuickLink 
   title="Inkplate 2 with e-paper, Enclosure & Battery" 
   description="333228"
   url="https://soldered.com/product/inkplate-2/"
@@ -52,7 +43,5 @@ The **Inkplate 2** is a compact, energy-efficient **2.13-inch e-paper display** 
 - **Power Consumption:** Ultra-low power in deep sleep mode
 - **Power Supply:** USB-C or Li-ion battery
 - **Connectivity:** Wi-Fi, Bluetooth (via ESP32)
-- **Dimensions for version without EPD:** 65.3 x 35 x 9.8 mm / 2.6 x 1.4 x 0.4 inch
 - **Dimensions for version with EPD:** 65.3 x 35 x 9.8 mm / 2.6 x 1.4 x 0.4 inch
-- **Dimensions for version with enclosure:** 79.3 x 44 x 15.7 mm / 3.1 x 1.7 x 0.6 inch
 - **Dimensions for version with enclosure and battery:** 79.3 x 44 x 15.7 mm / 3.1 x 1.7 x 0.6 inch

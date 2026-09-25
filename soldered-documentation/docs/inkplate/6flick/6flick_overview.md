@@ -7,8 +7,6 @@ hide_title: True
 pagination_prev: null  
 tags:
   - 333317
-  - 333319
-  - 333318
   - 333320
   - Inkplate 6FLICK
   - Inkplate6FLICK
@@ -35,20 +33,6 @@ Because the panels are reclaimed rather than newly made, expect the occasional c
   description="333317"
   url="https://soldered.com/product/inkplate-6flick/"
   image="/img/inkplate_6_flick/333317.png" 
-/>
-
-<QuickLink 
-  title="Inkplate 6FLICK without e-paper Display" 
-  description="333319"
-  url="https://soldered.com/product/inkplate-6flick/"
-  image="/img/inkplate_6_flick/boardonly.png" 
-/>
-
-<QuickLink 
-  title="Inkplate 6FLICK with e-paper & enclosure" 
-  description="333318"
-  url="https://soldered.com/product/inkplate-6flick/"
-  image="/img/inkplate_6_flick/enclosure.png" 
 />
 
 <QuickLink 

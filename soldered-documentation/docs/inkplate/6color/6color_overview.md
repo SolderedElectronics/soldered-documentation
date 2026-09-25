@@ -7,8 +7,6 @@ hide_title: True
 pagination_prev: null  
 tags:
   - 333238
-  - 333240
-  - 333239
   - 333231
   - Inkplate 6COLOR
   - Inkplate6COLOR
@@ -34,20 +32,6 @@ There is a microSD slot, a real-time clock with a coin-cell backup, and you can 
 />
 
 <QuickLink 
-  title="Inkplate 6COLOR without e-paper Display" 
-  description="333240"
-  url="https://soldered.com/product/inkplate-6color-e-paper-display/"
-  image="/img/6color/boardonly.png" 
-/>
-
-<QuickLink 
-  title="Inkplate 6COLOR with e-paper & enclosure" 
-  description="333239"
-  url="https://soldered.com/product/inkplate-6color-e-paper-display/"
-  image="/img/6color/enclosure.png" 
-/>
-
-<QuickLink 
   title="Inkplate 6COLOR with e-paper, Enclosure & Battery" 
   description="333231"
   url="https://soldered.com/product/inkplate-6color-e-paper-display/"
@@ -66,10 +50,7 @@ There is a microSD slot, a real-time clock with a coin-cell backup, and you can 
 - **Programming Support:** Arduino (Adafruit GFX compatible), MicroPython
 - **Storage:** microSD card slot for image display and data
 - **Expansion:** GPIO, I²C, SPI, EasyC/Qwiic-compatible
-- **Enclosure Options:**
-  - With 3D-printed enclosure
-  - With enclosure and 1200mAh battery
-  - Without e-paper display (custom integrations)
+- **Enclosure Option:** With enclosure and 1200mAh battery
 - **Open Source:** Hardware and software
 - **Dimensions (without EPD):** 131.5 × 105.5 × 10 mm / 5.2 × 4.2 × 0.4 inch
 - **Dimensions (with enclosure):** 140 × 119.3 × 13.6 mm / 5.5 × 4.7 × 0.5 inch

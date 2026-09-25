@@ -7,8 +7,6 @@ hide_title: True
 pagination_prev: null  
 tags:
   - 333241
-  - 333243
-  - 333242
   - 333247
   - Inkplate 10
   - Inkplate10
@@ -18,7 +16,7 @@ tags:
 
 **Inkplate 10** brings the clarity and efficiency of large-format e-paper to DIY electronics. With its **9.7-inch recycled E-Ink display**, ultra-low power design, and full **Wi-Fi + Bluetooth** support, it's ideal for smart dashboards, wall-mounted displays, and always-on visual interfaces. Just plug it in and start developing. Inkplate 10 is fully compatible with **Arduino** and **MicroPython**, and it's entirely **open-source**.
 
-The high-resolution screen supports **grayscale rendering**, **partial updates**, and fast refresh times, while its **ESP32 microcontroller** ensures smooth wireless operation. It also includes a **microSD slot**, **RTC**, and **GPIO expansion** through **I²C, SPI, and EasyC/Qwiic**. Whether battery- or USB-powered, this display works for weeks or months thanks to its energy-efficient design. And with a **3D-printed case and optional battery**, Inkplate 10 is ready to go wherever your project takes it.
+The high-resolution screen supports **grayscale rendering**, **partial updates**, and fast refresh times, while its **ESP32 microcontroller** ensures smooth wireless operation. It also includes a **microSD slot**, **RTC**, and **GPIO expansion** through **I²C, SPI, and EasyC/Qwiic**. Whether battery- or USB-powered, this display works for weeks or months thanks to its energy-efficient design. And in the version with a **3D-printed case and battery**, Inkplate 10 is ready to go wherever your project takes it.
 
 <CenteredImage src="/img/inkplate10/333241.png" alt=" Inkplate 10" caption=" Inkplate 10 e-paper display board"/>
 
@@ -29,20 +27,6 @@ The high-resolution screen supports **grayscale rendering**, **partial updates**
   description="333241"
   url="https://soldered.com/products/inkplate-10"
   image="/img/inkplate10/333241.png" 
-/>
-
-<QuickLink 
-  title="Inkplate 10 without e-paper Display" 
-  description="333243"
-  url="https://soldered.com/products/inkplate-10"
-  image="/img/inkplate10/boardonly.png" 
-/>
-
-<QuickLink 
-  title="Inkplate 10 with e-paper & enclosure" 
-  description="333242"
-  url="https://soldered.com/products/inkplate-10"
-  image="/img/inkplate10/enclosure.png" 
 />
 
 <QuickLink 
@@ -65,10 +49,7 @@ The high-resolution screen supports **grayscale rendering**, **partial updates**
 - **Clock:** Real-Time Clock (RTC) with battery holder
 - **Expansion:** GPIO, I²C, SPI, EasyC/Qwiic-compatible
 - **Sustainability:** Recycled e-paper display (minor scratches possible)
-- **Enclosure Options:**
-  - With 3D-printed enclosure
-  - With enclosure and 3000mAh battery
-  - Without e-paper display
+- **Enclosure Option:** With enclosure and 3000mAh battery
 - **Open Source:** Hardware and software
 - **Dimensions (without EPD):** 224.3 × 163 × 10 mm / 8.8 × 6.4 × 0.4 inch
 - **Dimensions (with enclosure):** 240 × 179.5 × 13.5 mm / 9.4 × 7.1 × 0.5 inch

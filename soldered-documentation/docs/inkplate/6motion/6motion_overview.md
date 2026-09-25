@@ -7,7 +7,6 @@ hide_title: True
 pagination_prev: null  
 tags:
   - 333321
-  - 333322
   - 333324
   - Inkplate 6MOTION
   - Inkplate6MOTION
@@ -28,13 +27,6 @@ The board runs two processors: an **STM32H743** does the work, and an **ESP32-C3
   description="333321"
   url="https://soldered.com/product/inkplate-6-motion/"
   image="/img/inkplate_6_motion/333321.png" 
-/>
-
-<QuickLink 
-  title="Inkplate 6MOTION with e-paper & enclosure" 
-  description="333322"
-  url="https://soldered.com/product/inkplate-6-motion/"
-  image="/img/inkplate_6_motion/enclosure.png" 
 />
 
 <QuickLink 
@@ -68,8 +60,5 @@ The board runs two processors: an **STM32H743** does the work, and an **ESP32-C3
 - **Ecosystem:** Fully compatible with EasyC
 - **Programming Support:** Arduino (examples available)
 - **Open Source:** hardware and software
-- **Enclosure Options:**
-  - With 3D-printed enclosure
-  - With enclosure and 1200mAh battery
-  - Without e-paper display
+- **Enclosure Option:** With enclosure and 1200mAh battery
 - **Dimensions (with enclosure):** 161 × 116 × 15 mm / 6.34 × 4.56 × 0.59 inch

@@ -7,8 +7,6 @@ hide_title: True
 pagination_prev: null
 tags:
   - 333333
-  - 333335
-  - 333334
   - 333336
   - Inkplate 5V2
   - Inkplate5V2
@@ -35,20 +33,6 @@ In deep sleep it draws 18 µA, which suits projects that run on a battery for a 
 />
 
 <QuickLink 
-  title="Inkplate 5v2 without e-paper Display" 
-  description="333335"
-  url="https://soldered.com/product/inkplate-5-gen2/"
-  image="/img/5v2/boardonly.png" 
-/>
-
-<QuickLink 
-  title="Inkplate 5v2 with e-paper & enclosure" 
-  description="333334"
-  url="https://soldered.com/product/inkplate-5-gen2/"
-  image="/img/5v2/enclosure.png" 
-/>
-
-<QuickLink 
   title="Inkplate 5v2 with e-paper, Enclosure & Battery" 
   description="333336"
   url="https://soldered.com/product/inkplate-5-gen2/"
@@ -68,4 +52,4 @@ In deep sleep it draws 18 µA, which suits projects that run on a battery for a 
 | Programming support | Arduino, MicroPython |
 | Storage | microSD card slot for image/data loading |
 | Expansion | GPIO, I²C, SPI, EasyC/Qwiic-compatible |
-| Enclosure options | With e-paper screen & 3D-printed casing<br />With screen, casing, and 1200mAh battery<br />Without screen (for custom integrations) |
+| Enclosure option | With screen, casing, and 1200mAh battery |

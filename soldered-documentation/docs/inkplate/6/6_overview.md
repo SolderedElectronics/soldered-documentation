@@ -7,8 +7,6 @@ hide_title: True
 pagination_prev: null  
 tags:
   - 333232
-  - 333234
-  - 333233
   - 333229
   - Inkplate 6
   - Inkplate6
@@ -34,20 +32,6 @@ Because the panels are reclaimed rather than newly made, expect the occasional c
 />
 
 <QuickLink 
-  title="Inkplate 6 without e-paper Display" 
-  description="333234"
-  url="https://soldered.com/product/inkplate-6-6-e-paper-board/"
-  image="/img/6/boardonly.png" 
-/>
-
-<QuickLink 
-  title="Inkplate 6 with e-paper & enclosure" 
-  description="333233"
-  url="https://soldered.com/product/inkplate-6-6-e-paper-board/"
-  image="/img/6/enclosure.png" 
-/>
-
-<QuickLink 
   title="Inkplate 6 with e-paper, Enclosure & Battery" 
   description="333229"
   url="https://soldered.com/product/inkplate-6-6-e-paper-board/"
@@ -67,9 +51,6 @@ Because the panels are reclaimed rather than newly made, expect the occasional c
 - **Clock:** Real-Time Clock (PCF85063A) with battery holder
 - **Expansion:** GPIO, I²C, SPI, EasyC/Qwiic-compatible
 - **Sustainability:** Recycled E-Ink display (minor cosmetic scratches possible)
-- **Enclosure Options:**
-  - With 3D-printed enclosure
-  - With enclosure and integrated 1200mAh battery
-  - Without e-paper display (custom display integration)
+- **Enclosure Option:** With enclosure and integrated 1200mAh battery
 - **Dimensions (without EPD):** 144.5 × 107.8 × 10 mm / 5.7 × 4.2 × 0.4 inch
 - **Dimensions (with enclosure):** 160.7 × 116.8 × 13.7 mm / 6.3 × 4.6 × 0.5 inch
