@@ -84,7 +84,7 @@ You can identify the 5.1 kΩ resistors by their **blue** (metal film) color — 
 
 | Resistor | Value | Position on PCB |
 |-----------|--------|----------------|
-| R2, R3    | 5.1 kΩ | Input network resistors |
+| R2, R3    | 5.1 kΩ | USB-C CC pull-down resistors |
 
 <CenteredImage src="/img/piano-solder-kit/tutorial/tutorial_08.jpg" alt="5.1 kΩ resistors" width="450px"/>
 
@@ -102,7 +102,7 @@ You can identify the 10 kΩ resistor by this color code:
 
 | Resistor | Value | Position on PCB |
 |-----------|--------|----------------|
-| R1, R4, R5, R20 | 10 kΩ | Pull-ups and feedback resistors |
+| R1, R4, R5, R20 | 10 kΩ | Octave selector (R1, R4, R5) and reset pull-up (R20) |
 
 <CenteredImage src="/img/piano-solder-kit/tutorial/tutorial_09.jpg" alt="10 kΩ resistors" width="450px"/>
 
@@ -151,8 +151,8 @@ The cathode (shorter leg) must be inserted into the shaded pad, and the anode (l
 | Capacitor | Value | Notes |
 |------------|--------|-------|
 | C1 | 100 µF | Power filtering |
-| C11 | 100 µF | Audio path |
-| C12 | 10 µF | Signal coupling |
+| C11 | 100 µF | Power filtering |
+| C12 | 10 µF | Power filtering |
 | C14 | 680 µF | Output capacitor (green) |
 
 <CenteredImage src="/img/piano-solder-kit/tutorial/parts_06.jpg" alt="Electrolytic capacitors" caption="Step 7: Solder the electrolytic capacitors"/>
@@ -181,7 +181,7 @@ Almost there! Let’s solder the mechanical parts.
 | Label | Value | Function |
 |--------|--------|----------|
 | VR1 | 10 kΩ | Volume control |
-| VR2 | 100 kΩ | Tone control |
+| VR2 | 100 kΩ | Arpeggio speed |
 
 The switches only fit one way in their respective slots (ON/OFF, octave selection, and arpeggio mode).
 
@@ -195,7 +195,7 @@ The switches only fit one way in their respective slots (ON/OFF, octave selectio
 
 ## Step 10: Finish the build
 
-Solder and attach the speaker wires to the speaker, then connect them to the speaker outputs on the board.  
+Solder and attach the speaker wires to the speaker, then connect them to the **SPEAKER** pads on the board. The pads are marked **+** and **−**: use the red wire for **+**.  
 The speaker includes a small piece of self-adhesive tape to attach it to the PCB.
 
 Then, you can insert the ICs into their sockets — **mind their orientation!**

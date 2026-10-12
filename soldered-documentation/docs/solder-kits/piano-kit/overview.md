@@ -9,7 +9,7 @@ hide_title: False
 ## Introduction
 
 
-The **Piano Solder Kit** is an educational electronics kit that teaches you the fundamentals of soldering and electronics by building a fully functional capacitive touch piano. Built around the classic **ATmega328P microcontroller** (which comes pre-programmed and ready to assemble) it generates tones and outputs sound to an external speaker through the **LM386 Audio Amplifier** for optimal loudness. The board also features an **arpeggio mode** with adjustable arpeggio speed control and **multiple octave settings**.
+The **Piano Solder Kit** is an educational electronics kit that teaches you the fundamentals of soldering and electronics by building a fully functional capacitive touch piano. Built around the classic **ATmega328P microcontroller** (which comes pre-programmed and ready to assemble) it generates tones and outputs sound to the included speaker through the **LM386 Audio Amplifier** for optimal loudness. The board also features an **arpeggio mode** with adjustable arpeggio speed control and **multiple octave settings**.
 
 <CenteredImage src="/img/piano-solder-kit/333181.jpg" alt="Piano Solder Kit" caption="Piano Solder Kit" />
 
@@ -44,14 +44,14 @@ The **Piano Solder Kit** is an educational electronics kit that teaches you the 
 - **Resistors:**  
   - 12 × 1 MΩ  
   - 1 × 100 kΩ  
-  - 5 × 10 kΩ  
+  - 4 × 10 kΩ  
   - 2 × 5.1 kΩ  
   - 1 × 100 Ω  
   - 1 × 10 Ω  
 - **Capacitors:**  
   - 7 × 100 nF (ceramic)  
   - 2 × electrolytic 100 µF  
-  - 1 × electrolytic 1000 µF  
+  - 1 × electrolytic 10 µF  
   - 1 × electrolytic 680 µF  
 - **Diodes:** 2 × 1N4007  
 - **8 Ω Speaker:** For instant sound playback  

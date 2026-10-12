@@ -15,7 +15,7 @@ After plugging in the finished board to USB-C for power toggle the **POWER** swi
 
 Press the capacitive touch buttons to play corresponding piano notes:
 
-<CenteredImage src="/img/piano-solder-kit/notes.jpg" alt="Notes" caption="Capacitive touch keys corresponing to Piano notes"/>
+<CenteredImage src="/img/piano-solder-kit/notes.jpg" alt="Notes" caption="Capacitive touch keys corresponding to Piano notes"/>
 
 You can adjust the total output volume using the volume potentiometer: 
 
@@ -35,4 +35,4 @@ The built-in arpeggio mode can be enabled by using the **ARPEGGIO** switch, and 
 
 <CenteredImage src="/img/piano-solder-kit/arp_1.jpg" alt="Arpeggio settings" caption="Arpeggio settings"/>
 
-After this mode is enabled, holding down multiple keys will change between the pressed automatically in an **ascending** manner.
+After this mode is enabled, holding down multiple keys will change between the pressed notes automatically in an **ascending** manner.
