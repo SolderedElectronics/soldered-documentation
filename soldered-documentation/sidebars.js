@@ -4602,6 +4602,23 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Inventor Kit',
+          collapsed: false,
+          items: [
+            {
+              type: 'doc',
+              id: 'beginner kits/soldered-nula-inventor-kit-arduino/nula-inventor-about-the-kit',
+              label: 'About the Inventor kit',
+            },
+            {
+              type: 'doc',
+              id: 'beginner kits/soldered-nula-inventor-kit-arduino/nula-inventor-components',
+              label: 'The components',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: 'Embedded Journey Kit - Zero to Hero (HRV)',
           items: [
             {

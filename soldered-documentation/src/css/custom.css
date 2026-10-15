@@ -153,6 +153,19 @@ table {
   margin-bottom: 20px;
 }
 
+/* A parts table: a narrow name, a narrow count, and the rest for the notes.
+   Wrap the markdown table in <div class="parts-table"> ... </div>. */
+.parts-table table {
+  width: 100%;
+  table-layout: fixed;
+}
+.parts-table th:nth-child(1),
+.parts-table td:nth-child(1) { width: 22%; }
+.parts-table th:nth-child(2),
+.parts-table td:nth-child(2) { width: 8%; text-align: center; }
+.parts-table th:nth-child(3),
+.parts-table td:nth-child(3) { width: 70%; text-align: left; }
+
 /* =============================
      Buttons
      ============================= */
