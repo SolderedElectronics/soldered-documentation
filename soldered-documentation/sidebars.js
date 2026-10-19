@@ -1100,7 +1100,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'NULA Ether W55RP20',
+          label: 'NULA Ethernet W55RP20',
           items: [
             {
               type: 'doc',

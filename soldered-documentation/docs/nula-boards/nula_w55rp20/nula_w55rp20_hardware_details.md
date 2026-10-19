@@ -1,6 +1,6 @@
 ---
 slug: /nula_w55rp20/hardware
-title: NULA Ether W55RP20 - Hardware details
+title: NULA Ethernet W55RP20 - Hardware details
 sidebar_label: Hardware details
 id: nula_w55rp20-hardware
 hide_title: True
@@ -10,7 +10,7 @@ hide_title: True
 
 ## Pinout
 
-<CenteredImage src="/img/nula_w55rp20/Pinout.png" alt="NULA Ether W55RP20 pinout" caption="NULA Ether W55RP20 Pinout Diagram"/>
+<CenteredImage src="/img/nula_w55rp20/Pinout.png" alt="NULA Ethernet W55RP20 pinout" caption="NULA Ethernet W55RP20 Pinout Diagram"/>
 
 Click <a href="/img/nula_w55rp20/Pinout.png" target="_blank" rel="noopener noreferrer"><strong>here</strong></a> for a high-resolution version of the pinout.
 
@@ -56,6 +56,14 @@ The board labels its GPIO pins **IO0-IO29** on the silkscreen, the same conventi
 
 ---
 
+## Ethernet port
+
+The **RJ45 jack** has the Ethernet magnetics and two status LEDs built in, and runs at **10/100 Mbit/s**.
+
+<WarningBox>The W55RP20 does **not** support auto-MDIX. Use a **straight-through** Ethernet cable to a switch or router, and a **crossover** cable to connect directly to a computer, a server or another W55RP20.</WarningBox>
+
+---
+
 ## Qwiic connector
 
 <CenteredImage src="/img/easyc_transparent.png" alt="Qwiic connector" width="550px" />
@@ -83,13 +91,11 @@ The board labels its GPIO pins **IO0-IO29** on the silkscreen, the same conventi
 
 The board has an onboard microSD card slot, connected over SPI1 (**IO10-IO13**). **IO9** controls power to the card through an onboard switch (see **JP3** and **JP4** in [jumper details](#jumper-details)), and **IO13** only reaches the card's CS line if **JP1** is bridged.
 
-<CenteredImage src="/img/nula_w55rp20/Pinout.png" alt="NULA Ether W55RP20 microSD reader location" caption="The microSD card slot sits near the top of the board, next to the SWD debug header" width="700px" />
-
 ---
 
 ## Battery support
 
-The board has a **JST battery connector** and a **VBAT** pin, alongside a charge status indicator, so it can run from a single-cell Li-Ion/Li-Po battery instead of USB-C power.
+The board has a **JST battery connector** and a **VBAT** pin, with an onboard **TP4056M** charger and a charge status indicator, so it can run from a single-cell Li-Ion/Li-Po battery instead of USB-C power.
 
 ---
 
@@ -170,7 +176,7 @@ Schematics, KiCad files, Gerber files and more can be found in the GitHub reposi
 {/* Once the repo is live, replace the WarningBox above with:
 
 <QuickLink
-  title="NULA Ether W55RP20 Hardware Design"
+  title="NULA Ethernet W55RP20 Hardware Design"
   description="GitHub hardware repository for this product"
   url="https://github.com/SolderedElectronics/..."
 />

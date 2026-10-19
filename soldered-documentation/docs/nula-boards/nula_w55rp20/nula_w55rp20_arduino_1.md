@@ -1,6 +1,6 @@
 ---
 slug: /nula_w55rp20/arduino/getting-started
-title: NULA Ether W55RP20 - Getting started with Arduino
+title: NULA Ethernet W55RP20 - Getting started with Arduino
 sidebar_label: Getting started with Arduino
 id: nula_w55rp20-arduino-1
 hide_title: True
@@ -11,7 +11,7 @@ pagination_next: null
 
 ## Arduino board definition
 
-To program the **NULA Ether W55RP20**, use the **RP2040 Arduino core** by Earle Philhower:
+To program the **NULA Ethernet W55RP20**, use the **RP2040 Arduino core** by Earle Philhower:
 
 <QuickLink
   title="RP2040 Arduino core"
@@ -146,7 +146,7 @@ Open the **Serial Monitor** at **115200 baud**. The board will print its IP addr
   description="Creates the Ethernet object. The argument is the GPIO pin connected to the W5500 chip select."
   returnDescription="None."
   parameters={[
-    { type: 'int', name: 'cs', description: 'Chip select pin number. Use 20 for the NULA Ether W55RP20.' },
+    { type: 'int', name: 'cs', description: 'Chip select pin number. Use 20 for the NULA Ethernet W55RP20.' },
   ]}
 />
 
