@@ -4269,6 +4269,42 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'Inputronic GRID',
+          items: [
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-grid/inputronic-grid-overview',
+            },
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-grid/inputronic-grid-hardware',
+            },
+            {
+              type: 'doc',
+              id: 'inputronic/inputronic-grid/inputronic-grid-how-it-works',
+            },
+            {
+              type: 'category',
+              label: 'Arduino library',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-1',
+                },
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-2',
+                },
+                {
+                  type: 'doc',
+                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-3',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -5018,48 +5054,6 @@ const sidebars = {
         }
       ],
     },        
-    {
-      type: 'category',
-      label: 'Inputronic',
-      items: [
-        {
-          type: 'category',
-          label: 'Inputronic GRID',
-          items: [
-            {
-              type: 'doc',
-              id: 'inputronic/inputronic-grid/inputronic-grid-overview',
-            },
-            {
-              type: 'doc',
-              id: 'inputronic/inputronic-grid/inputronic-grid-hardware',
-            },
-            {
-              type: 'doc',
-              id: 'inputronic/inputronic-grid/inputronic-grid-how-it-works',
-            },
-            {
-              type: 'category',
-              label: 'Arduino library',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-1',
-                },
-                {
-                  type: 'doc',
-                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-2',
-                },
-                {
-                  type: 'doc',
-                  id: 'inputronic/inputronic-grid/arduino_library/inputronic-grid-arduino-3',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
     {
       type: 'category',
       label: 'Prototyping',
