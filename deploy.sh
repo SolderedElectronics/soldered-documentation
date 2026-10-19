@@ -4,6 +4,7 @@
 #
 #   ./deploy.sh -n            show what would be uploaded and deleted, change nothing
 #   ./deploy.sh --skip-build  upload the existing build folder without rebuilding
+#   ./deploy.sh --latest      move this checkout to origin/master first, then deploy
 #   ./deploy.sh --force       bypass the checkout and mass-deletion guards
 #
 # Run check_env.ps1 first if you have never deployed from this machine.
@@ -15,6 +16,7 @@ ENV_FILE="$SCRIPT_DIR/deploy.env"
 DRY_RUN=0
 SKIP_BUILD=0
 FORCE=0
+LATEST=0
 # Above this many server-side deletions the deploy stops and asks to be looked at.
 # A normal deploy deletes only the previous build's hashed assets, a few dozen files.
 # Hundreds means the build is partial or aimed at the wrong directory, and --delete
@@ -28,6 +30,7 @@ usage() {
     echo ""
     echo "  -n, --dry-run       list what would change on the server, change nothing"
     echo "      --skip-build    deploy the existing build folder without rebuilding"
+    echo "      --latest        check out origin/master (detached) before building"
     echo "      --force         bypass the stale-checkout and mass-deletion guards"
     echo "      --max-deletes N raise the mass-deletion limit for this run (default 500)"
     echo "  -h, --help          show this help"
@@ -38,6 +41,7 @@ while [ $# -gt 0 ]; do
         -n|--dry-run)   DRY_RUN=1 ;;
         --skip-build)   SKIP_BUILD=1 ;;
         --force)        FORCE=1 ;;
+        --latest)       LATEST=1 ;;
         --max-deletes)
             shift
             MAX_DELETES="$1"
@@ -104,6 +108,25 @@ esac
 # succeeded, so nothing looked wrong, but it replaced the live site with a
 # searchless one. A deploy is only as current as the tree it is built from, and
 # nothing else in this script notices.
+# --latest is for a checkout kept only for deploying. It refuses to touch a
+# branch or uncommitted work, so it cannot move anyone's checkout off their work.
+if [ "$LATEST" -eq 1 ]; then
+    if [ -n "$(cd "$SCRIPT_DIR" && git status --porcelain)" ]; then
+        echo "Error: --latest needs a clean checkout, and this one has uncommitted changes."
+        exit 1
+    fi
+    if (cd "$SCRIPT_DIR" && git symbolic-ref -q HEAD >/dev/null); then
+        echo "Error: --latest only runs in a detached checkout kept for deploying,"
+        echo "and this one is on branch $(cd "$SCRIPT_DIR" && git symbolic-ref --short HEAD)."
+        exit 1
+    fi
+    if ! (cd "$SCRIPT_DIR" && git fetch --quiet origin && git checkout --quiet --detach origin/master); then
+        echo "Error: could not check out origin/master."
+        exit 1
+    fi
+    echo "Checked out origin/master: $(cd "$SCRIPT_DIR" && git log --oneline -1)"
+fi
+
 CHECKOUT_PROBLEMS=""
 
 if ! command -v git >/dev/null 2>&1; then
@@ -151,6 +174,15 @@ if [ -n "$CHECKOUT_PROBLEMS" ]; then
         echo "Or pass --force if you mean to deploy exactly this tree."
         exit 1
     fi
+fi
+
+# A node_modules linked in from another checkout changes webpack's module ids, so
+# every JS file gets a new name and the deploy deletes over a thousand old ones.
+# The pages are the same, but the deletion guard cannot tell that from a broken build.
+if [ "$SKIP_BUILD" -eq 0 ] && [ -L "$DOCUSAURUS_DIR/node_modules" ] && [ "$FORCE" -eq 0 ]; then
+    echo "Error: node_modules is a link to another checkout."
+    echo "Deploy from a checkout with its own node_modules (npm ci), or pass --force."
+    exit 1
 fi
 
 # ---------------------------------------------------------------
