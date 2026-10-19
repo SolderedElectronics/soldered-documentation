@@ -131,7 +131,7 @@ CHECKOUT_PROBLEMS=""
 
 if ! command -v git >/dev/null 2>&1; then
     echo "Warning: git not found; cannot check whether this checkout is current."
-elif [ ! -d "$SCRIPT_DIR/.git" ]; then
+elif ! (cd "$SCRIPT_DIR" && git rev-parse --git-dir >/dev/null 2>&1); then
     echo "Warning: not a git checkout; cannot check whether it is current."
 else
     if [ -n "$(cd "$SCRIPT_DIR" && git status --porcelain)" ]; then
