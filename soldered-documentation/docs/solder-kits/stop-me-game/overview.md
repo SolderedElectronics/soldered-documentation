@@ -24,7 +24,8 @@ The goal of the game is to press the button as soon as the green LED turns on. W
 - **7 LEDs** (6 red and 1 green)
 - **Pushbutton**
 - **Switch**
-- **7 330-ohm resistors**
+- **6 330-ohm resistors** (R1 to R3 and R5 to R7)
+- **1 4.7 kOhm resistor** (R4, for the green LED)
 - **CR2032 battery**
 - **CR2032 battery holder**
 - **Keychain holder**

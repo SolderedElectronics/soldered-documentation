@@ -8,13 +8,20 @@ hide_title: False
 On this page, we will guide step by step on how to assemble this kit.
 
 ## Step 1: Solder the resistors to the PCB.
-Solder the **330 Ohm** resistors to the PCB on pins marked **R1** to **R6**. their orientation doesn't matter.
+Solder the **330 Ohm** resistors to the PCB on pins marked **R1** to **R3** and **R5** to **R7**. Solder the **4.7 kOhm** resistor on pins marked **R4**, the one for the green LED. Their orientation doesn't matter.
 
-Find the resistors with markings as shown below:
+Find the 330 Ohm resistors with markings as shown below:
 
-<CenteredImage src="/img/stop-me-game/330ohm-resistor.jpg" alt="Markings for the 330 Ohm resistor" caption="Markings for the 330 Ohm resistor" width="600px"/>
+<CenteredImage src="/img/stop-me-game/330ohm-resistor.jpg" alt="Markings for the 330 Ohm resistor" caption="Markings for the 330 Ohm resistor (orange, orange, brown, gold)" width="600px"/>
 
-<CenteredImage src="/img/stop-me-game/resistors_highlighted.jpg" alt="Highlighted pins for resistors R1 to R6" caption="Highlighted pins for resistors R1 to R7" width="600px"/>
+The **4.7 kOhm** resistor has different markings (yellow, violet, red, gold):
+
+<CenteredImage src="/img/stop-me-game/4k7ohm-resistor.jpg" alt="Markings for the 4.7 kOhm resistor" caption="Markings for the 4.7 kOhm resistor (yellow, violet, red, gold)" width="600px"/>
+
+<CenteredImage src="/img/stop-me-game/resistors_highlighted.jpg" alt="Highlighted pins for resistors R1 to R7, with R4 marked in orange" caption="Highlighted pins for resistors R1 to R7. R4 (orange) is the 4.7 kOhm resistor, all the others (blue) are 330 Ohm" width="600px"/>
+
+The video below shows how to solder a resistor. Solder the 4.7 kOhm resistor on **R4** in exactly the same way.
+
 <ReactPlayer  src='../../img/stop-me-game/330-r-video.mp4' height='auto' width="600px" muted='true' autoPlay='true' loop='true' style={{ margin: '0 auto', display: 'block' }} />
 ---
 
